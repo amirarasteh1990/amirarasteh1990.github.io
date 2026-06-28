@@ -1,0 +1,11 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Books go to GitHub Releases, never committed here.
+# High-res painting masters stay in the private archive, never committed here.
+dist/
+masters/
+*.epub
+*.pdf
