@@ -1,16 +1,16 @@
-# amirarasteh.github.io
+# arasteh.art
 
 Personal portfolio site of **Amir Arasteh** — paintings and books — served via GitHub Pages.
 
 ## Structure
 - `index.html` — portfolio home (gallery of works)
-- `sounds/` — *Sounds, Book 1* section: cover, description, multilingual downloads
+- `sedaha/` — *Sounds, Book 1* section (URL `/sedaha/`): cover, description, multilingual downloads
 - `assets/` — styles and **web-resolution** images
 
 ## Books are NOT in this repo
 Book files (EPUB/PDF) are published as **GitHub Release** assets — a single rolling
 release (tag `books`) that is overwritten on each update (`gh release upload books ... --clobber`).
-The `sounds/` page links to those assets. This keeps the repo tiny and avoids git history bloat.
+The `sedaha/` page links to those assets. This keeps the repo tiny and avoids git history bloat.
 
 ## Images
 Only **web-resolution** copies of paintings live here (for display). High-resolution

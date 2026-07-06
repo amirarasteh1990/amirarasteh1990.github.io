@@ -29,7 +29,7 @@ SITE = Path(__file__).resolve().parent
 BOOK_VOL = SITE.parent / "1_Sedaha" / "Volume1"        # book working repo (sibling). Edit if moved.
 BOOK_SRC = BOOK_VOL / "00_source_md"
 EXPORT_PY = BOOK_VOL / "export_translation.py"
-SOUNDS = SITE / "sounds" / "index.html"
+SOUNDS = SITE / "sedaha" / "index.html"   # book page (URL /sedaha/; title text stays "Sounds")
 
 # Each region: file, id, mode ("block" | "inline"), src spec, optional "entities" for non-ASCII inline.
 #   src = ("md", md_path, block_id, lang_tag)   |   ("cfg", language_name, field_name)
