@@ -34,8 +34,6 @@ SOUNDS = SITE / "sedaha" / "index.html"   # book page (URL /sedaha/; title text 
 # Each region: file, id, mode ("block" | "inline"), src spec, optional "entities" for non-ASCII inline.
 #   src = ("md", md_path, block_id, lang_tag)   |   ("cfg", language_name, field_name)
 SYNC = [
-    {"file": SOUNDS, "id": "opening:EN", "mode": "block",
-     "src": ("md", BOOK_SRC / "00_Opening.md", "0007", "EN")},
     {"file": SOUNDS, "id": "title:EN", "mode": "inline", "src": ("cfg", "English", "title_text")},
     {"file": SOUNDS, "id": "author",   "mode": "inline", "src": ("cfg", "English", "author_text")},
     {"file": SOUNDS, "id": "title:FA", "mode": "inline", "src": ("cfg", "Farsi", "title_text"),
