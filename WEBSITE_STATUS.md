@@ -64,7 +64,10 @@ Each **live** edition carries a **Share** button next to its EPUB / PDF / Openin
 `data-share-url` / `data-share-title` / `data-share-text`; the shared URL is that language's
 **Opening page** (`/sedaha/read/xx/`). The script (delegated from `document`, so it covers any
 page that loads it) uses the native share sheet where the browser supports it and falls back to
-copy-to-clipboard with a small toast.
+copy-to-clipboard with a small toast. The share payload is the **link only** (title + URL, not the
+`data-share-text` line): some apps render text + URL as one block, so a pasted whole-message would
+not navigate. The poetic blurb + Opening painting ride in the page's OG card instead. `data-share-text`
+is kept on the buttons but unused, so the sentence can be re-enabled in one line in `share.js`.
 
 The **preview card** a chat app shows is read from the **static `og:` tags in the `<head>` of the
 shared page**, not from the button — crawlers don't run JS. Each read page already has its own
@@ -94,6 +97,13 @@ only to editions that have a real page to land on; "Coming soon" rows have none.
 - **No em dashes in prose.** The author dislikes them; use periods / commas / colons instead.
   (Em dashes inside page *titles and headings* are fine.)
 - Every page carries Open Graph + `twitter:card` meta for link-preview cards. Keep new pages consistent.
+- **Book naming: Sedaha-forward.** In share text, preview cards, page titles/meta and secondary
+  mentions, name the book **Sedaha (Sounds)** — or **«Sedaha»** (its own Persian quotation style)
+  in the poetic share line. Keep plain **Sounds** only where it is the registered/legal title
+  (the `/sedaha/` `<h1>`, which is auto-synced from the book source; the `/editions/first-edition/`
+  archival page) or a fixed handle/URL (`Sounds_AmirArasteh`; the `/paintings/sounds/` path). The
+  shared-opening cards use the **Opening painting** (`/assets/img/paintings/sounds/01.jpg` = the book's
+  Picture 1), not the cover.
 - **Never edit** `assets/img/logo-lockup.png` or the cover image. The logo is the author's full
   painting and is used whole (never cropped or redrawn).
 - New-edition announcements go to the Telegram channel: <https://t.me/Sounds_AmirArasteh>.
