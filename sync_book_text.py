@@ -30,14 +30,18 @@ BOOK_VOL = SITE.parent / "1_Sedaha" / "Volume1"        # book working repo (sibl
 BOOK_SRC = BOOK_VOL / "00_source_md"
 EXPORT_PY = BOOK_VOL / "export_translation.py"
 SOUNDS = SITE / "sedaha" / "index.html"   # book page (URL /sedaha/; title text stays "Sounds")
+READ = SITE / "sedaha" / "read" / "index.html"          # in-browser sample /sedaha/read/    (English)
+READ_FA = SITE / "sedaha" / "read" / "fa" / "index.html"  # in-browser sample /sedaha/read/fa/ (Persian)
+READ_DA = SITE / "sedaha" / "read" / "da" / "index.html"  # in-browser sample /sedaha/read/da/ (Danish)
+OPENING_MD = BOOK_SRC / "00_Opening.md"
 
 # Each region: file, id, mode ("block" | "inline"), src spec, optional "entities" for non-ASCII inline.
 #   src = ("md", md_path, block_id, lang_tag)   |   ("cfg", language_name, field_name)
 SYNC = [
     {"file": SOUNDS, "id": "title:EN", "mode": "inline", "src": ("cfg", "English", "title_text")},
-    {"file": SOUNDS, "id": "author",   "mode": "inline", "src": ("cfg", "English", "author_text")},
-    {"file": SOUNDS, "id": "title:FA", "mode": "inline", "src": ("cfg", "Farsi", "title_text"),
-     "entities": True},
+    {"file": READ, "id": "opening:EN", "mode": "block", "src": ("md", OPENING_MD, "0007", "EN")},
+    {"file": READ_FA, "id": "opening:FA", "mode": "block", "src": ("md", OPENING_MD, "0007", "FA")},
+    {"file": READ_DA, "id": "opening:DA", "mode": "block", "src": ("md", OPENING_MD, "0007", "DA")},
 ]
 
 

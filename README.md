@@ -2,6 +2,8 @@
 
 Personal portfolio site of **Amir Arasteh** — paintings and books — served via GitHub Pages.
 
+> Working on this site? See [`WEBSITE_STATUS.md`](WEBSITE_STATUS.md) for orientation and conventions.
+
 ## Structure
 - `index.html` — portfolio home (gallery of works)
 - `sedaha/` — *Sounds, Book 1* section (URL `/sedaha/`): cover, description, multilingual downloads
