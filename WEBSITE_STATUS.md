@@ -29,8 +29,20 @@ Static HTML/CSS, no framework, no build step.
 | `sitemap.xml`, `robots.txt` | Search-engine discoverability (update `sitemap.xml` when adding a page) |
 | `assets/css/style.css` | **The only stylesheet**, shared by all pages |
 | `assets/js/share.js` | Share-button behavior: native share sheet, clipboard fallback + toast (see below) |
+| `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
 | `sync_book_text.py` | Pulls canonical book text into the site (see below) |
+| `build_webfonts.py` | Regenerates `assets/fonts/` from the book repo's TTFs (run only when those change) |
+
+## Fonts
+
+The site uses the **book's own faces**, self-hosted as small woff2 subsets in `assets/fonts/`
+(both SIL OFL): **EB Garamond** for headings and all book-text surfaces (the reader pages, the
+hero excerpt), via the `--serif` CSS variable, falling back to Georgia; **Vazirmatn** for
+Arabic-script content site-wide via a `:lang(fa)`/`:lang(ar)`/… rule (the Persian reader, native
+names in the language list). UI chrome (buttons, cards, footer) stays the system sans stack.
+Regenerate with `build_webfonts.py` only if the book repo's TTFs change; never add a
+Google-Fonts/CDN `<link>` (self-hosted keeps the site dependency-free and private).
 
 ## Painting files vs the book's picture numbers
 
@@ -119,7 +131,9 @@ only to editions that have a real page to land on; "Coming soon" rows have none.
   Picture 1), not the cover.
 - **Never edit** `assets/img/logo-lockup.png` or the cover image. The logo is the author's full
   painting and is used whole (never cropped or redrawn).
-- New-edition announcements go to the Telegram channel: <https://t.me/Sounds_AmirArasteh>.
+- Announcements (new editions AND new paintings) go to the Telegram channel:
+  <https://t.me/Sounds_AmirArasteh>. It is linked from the home hub-note, every page footer,
+  and the book page's follow note; keep new pages' footers consistent.
 
 ## Common commands
 

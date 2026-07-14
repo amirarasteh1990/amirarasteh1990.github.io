@@ -1,8 +1,23 @@
+/* == brand webfonts: the book's own faces, subsetted from the book repo's TTFs ==
+   EB Garamond = the cover/interior serif (Latin); Vazirmatn = the Persian face.
+   Small woff2 subsets, self-hosted; system fonts remain the fallback. */
+@font-face{font-family:"EB Garamond";src:url(/assets/fonts/ebgaramond-regular.woff2) format("woff2");
+  font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url(/assets/fonts/ebgaramond-italic.woff2) format("woff2");
+  font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url(/assets/fonts/ebgaramond-semibold.woff2) format("woff2");
+  font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Vazirmatn";src:url(/assets/fonts/vazirmatn-regular.woff2) format("woff2");
+  font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Vazirmatn";src:url(/assets/fonts/vazirmatn-semibold.woff2) format("woff2");
+  font-weight:600;font-style:normal;font-display:swap}
+
 :root{
   --bg:#F5EFE3; --surface:#ffffff; --ink:#1f1b16; --muted:#6f675e;
   --paper:#F6EFDB; --line:#e8e2d9; --accent:#8a5a3b; --accent-ink:#ffffff;
   --max:980px; --radius:14px;
   --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
+  --serif:"EB Garamond",Georgia,"Times New Roman",serif;
 }
 *{box-sizing:border-box}
 body{margin:0;color:var(--ink);background-color:var(--bg);
@@ -28,7 +43,12 @@ body.book .site-footer .container{background:rgba(246,239,219,.55);border-radius
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:var(--max);margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.2}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
+/* Arabic-script languages get the book's Persian face wherever they appear
+   (the FA reader, native names in the language list, the فارسی switcher links) */
+:lang(fa),:lang(ar),:lang(ur),:lang(ps),:lang(prs),:lang(ckb),:lang(sd),
+:lang(bal),:lang(glk),:lang(mzn),:lang(lrc),:lang(ug){
+  font-family:"Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif}
 .site-header{padding:44px 0 0;text-align:center}
 .site-header h1{margin:0 0 8px;font-size:2.6rem}
 .tagline{color:var(--muted);margin:0;font-size:1.05rem}
@@ -72,6 +92,12 @@ a.card:hover{text-decoration:none}
 .foot-panel{max-width:600px;margin:0 auto;background:rgba(246,239,219,.4);border:1px solid var(--line);
   border-radius:16px;box-shadow:var(--shadow);padding:15px 22px;line-height:1.9;color:#332e26;
   backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+/* home: the follow-channel line under the hub cards */
+.hub-note{max-width:600px;margin:16px auto 0;text-align:center;font-size:.92rem;color:#5b4a38;
+  background:rgba(246,239,219,.8);border:1px solid var(--line);border-radius:12px;
+  padding:10px 18px;box-shadow:var(--shadow);
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.hub-note a{font-weight:600}
 body.home .site-footer .foot-panel a{color:#332e26}
 body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 
@@ -83,17 +109,17 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .book-hero h1{margin:0 0 6px;font-size:2.2rem}
 .book-hero .byline{color:var(--muted);margin:0 0 16px}
 .excerpt{margin:0 0 16px;padding:2px 0 2px 18px;border-left:3px solid var(--accent);
-  font-family:Georgia,"Times New Roman",serif;
-  font-style:italic;color:#43392f;font-size:1.06rem;line-height:1.7}
+  font-family:var(--serif);
+  font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
 /* shared lead paragraph under a page h1 */
 .lead{font-size:1.06rem;color:#3a322a;max-width:640px}
 .book-lead{margin:10px 0 2px;font-size:.98rem;line-height:1.55;color:#5a5344;max-width:46ch}
 .book-lead em{font-style:italic;color:#463c31}
 .opening{max-width:680px;margin:22px 0 4px}
-.opening .label{display:block;font-family:Georgia,serif;font-style:italic;
+.opening .label{display:block;font-family:var(--serif);font-style:italic;
   color:var(--muted);font-size:.95rem;margin-bottom:8px}
-.opening p{margin:0;font-family:Georgia,"Times New Roman",serif;
-  font-size:1.06rem;line-height:1.85;color:#3a322a}
+.opening p{margin:0;font-family:var(--serif);
+  font-size:1.1rem;line-height:1.85;color:#3a322a}
 .notice{background:#fbf3ea;border:1px solid #ecdcc7;border-radius:12px;
   padding:14px 16px;font-size:.92rem;color:#5b4a38}
 
@@ -188,11 +214,14 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .dl-hint strong{color:#463c31}
 
 /* == /sedaha/read/ — the opening, read in-browser == */
-.read-kicker{color:var(--muted);font-family:Georgia,serif;font-style:italic;font-size:.95rem;margin:22px 0 2px}
+.read-kicker{color:var(--muted);font-family:var(--serif);font-style:italic;font-size:.95rem;margin:22px 0 2px}
 .reader{max-width:34em;margin:6px 0 0}
 .reader h1{font-size:1.9rem;margin:0 0 22px}
-.reader p{font-family:Georgia,"Times New Roman",serif;
-  font-size:1.12rem;line-height:1.9;color:#33302a;margin:0 0 1.2em}
+.reader p{font-family:var(--serif);
+  font-size:1.18rem;line-height:1.9;color:#33302a;margin:0 0 1.2em}
+/* the Persian reader sets its own face and metrics (Vazirmatn runs larger than Garamond) */
+.reader p:lang(fa),.read-cta p:lang(fa){font-family:"Vazirmatn",Tahoma,sans-serif;
+  font-size:1.06rem;line-height:2.05}
 .read-cta{max-width:34em;background:#fbf3ea;border:1px solid #ecdcc7;border-radius:14px;
   padding:20px 22px;margin:32px 0 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}

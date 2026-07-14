@@ -37,8 +37,23 @@
       data-page-id="guestbook"
       data-page-url="https://arasteh.art/comments/"
       data-page-title="Comments — Amir Arasteh"
+      data-theme="light"
     ></div>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"
+      onerror="document.getElementById('cusdis-fallback').hidden=false"></script>
+
+    <!-- if cusdis.com is unreachable (down, or blocked on the visitor's network),
+         don't leave a silent blank: offer the email route instead -->
+    <p class="muted-note" id="cusdis-fallback" hidden>The comment box could not load.
+      Your network may be blocking it. You can always write by email:
+      <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p>
+    <script>
+    setTimeout(function(){
+      var t = document.getElementById('cusdis_thread');
+      if (t && !t.firstElementChild)
+        document.getElementById('cusdis-fallback').hidden = false;
+    }, 8000);
+    </script>
 
     <noscript><p class="muted-note">Comments need JavaScript. You can also write by email:
       <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p></noscript>
@@ -57,7 +72,8 @@
     <a href="/sedaha/">Books</a> &middot;
     <a href="/paintings/">Paintings</a> &middot;
     <a href="/support/">Support</a> &middot;
-    <a href="/license.html">License</a>
+    <a href="/license.html">License</a> &middot;
+    <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>
   </div>
 </footer>
 </body>
