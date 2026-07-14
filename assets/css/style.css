@@ -20,6 +20,11 @@ body.book .container{background:rgba(255,253,249,.82);border:1px solid rgba(232,
 body.book .site-footer .container{background:rgba(246,239,219,.55);border-radius:14px;
   padding:13px 22px;margin:0 auto 30px;box-shadow:var(--shadow)}
 @media (max-width:640px){body.book .container{border-radius:0;margin:0;padding:2px 18px 28px}}
+/* iOS Safari doesn't support background-attachment:fixed (renders the painting
+   zoomed/cropped); let it scroll normally there. */
+@supports (-webkit-touch-callout: none){
+  body.home,body.book{background-attachment:scroll}
+}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:var(--max);margin:0 auto;padding:0 20px}
@@ -78,13 +83,17 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .book-hero h1{margin:0 0 6px;font-size:2.2rem}
 .book-hero .byline{color:var(--muted);margin:0 0 16px}
 .excerpt{margin:0 0 16px;padding:2px 0 2px 18px;border-left:3px solid var(--accent);
+  font-family:Georgia,"Times New Roman",serif;
   font-style:italic;color:#43392f;font-size:1.06rem;line-height:1.7}
+/* shared lead paragraph under a page h1 */
+.lead{font-size:1.06rem;color:#3a322a;max-width:640px}
 .book-lead{margin:10px 0 2px;font-size:.98rem;line-height:1.55;color:#5a5344;max-width:46ch}
 .book-lead em{font-style:italic;color:#463c31}
 .opening{max-width:680px;margin:22px 0 4px}
 .opening .label{display:block;font-family:Georgia,serif;font-style:italic;
   color:var(--muted);font-size:.95rem;margin-bottom:8px}
-.opening p{margin:0;font-size:1.06rem;line-height:1.85;color:#3a322a}
+.opening p{margin:0;font-family:Georgia,"Times New Roman",serif;
+  font-size:1.06rem;line-height:1.85;color:#3a322a}
 .notice{background:#fbf3ea;border:1px solid #ecdcc7;border-radius:12px;
   padding:14px 16px;font-size:.92rem;color:#5b4a38}
 
@@ -102,6 +111,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .site-footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--line);
   color:var(--muted);font-size:.86rem;text-align:center}
 .site-footer a{color:var(--muted);text-decoration:underline}
+/* small colophon mark above the footer links: the full logo lockup (painting +
+   آرسته + ARASTEH), echoing the book's own colophon. Scaled only, never cropped. */
+.site-footer .foot-logo{display:block;width:84px;margin:4px auto 14px}
+.site-footer .foot-logo img{width:100%;height:auto;display:block}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}
@@ -178,7 +191,8 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .read-kicker{color:var(--muted);font-family:Georgia,serif;font-style:italic;font-size:.95rem;margin:22px 0 2px}
 .reader{max-width:34em;margin:6px 0 0}
 .reader h1{font-size:1.9rem;margin:0 0 22px}
-.reader p{font-size:1.12rem;line-height:1.9;color:#33302a;margin:0 0 1.2em}
+.reader p{font-family:Georgia,"Times New Roman",serif;
+  font-size:1.12rem;line-height:1.9;color:#33302a;margin:0 0 1.2em}
 .read-cta{max-width:34em;background:#fbf3ea;border:1px solid #ecdcc7;border-radius:14px;
   padding:20px 22px;margin:32px 0 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}

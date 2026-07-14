@@ -32,6 +32,19 @@ Static HTML/CSS, no framework, no build step.
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
 | `sync_book_text.py` | Pulls canonical book text into the site (see below) |
 
+## Painting files vs the book's picture numbers
+
+The gallery images (`assets/img/paintings/sounds/`) keep the book repo's FILE names, but the
+book's Picture Index numbers pictures sequentially, so the three mid-section paintings shift
+everything after them. Mapping (verified against the book PDF; used in the gallery's alts +
+lightbox captions): `01`=Picture 1 · Opening, `02`=Picture 2 · Book One, `03`=Picture 3,
+`03_2`=**Picture 4**, `04`=Picture 5, `05`=Picture 6, `06`=Picture 7, `06_2`=**Picture 8**,
+`07`=Picture 9, `08`=Picture 10, `08_2`=**Picture 11**, `09`=Picture 12 · End of Book One,
+`10`=Picture 13 · Back Cover, `cover`=the cover painting.
+
+Note: the read pages' CTA paragraph is localized per page (FA in Persian, DA in Danish); the
+rest of the site chrome stays English.
+
 ## Book files are NOT in the repo
 
 EPUB/PDF live as **GitHub Release assets**, not committed (keeps the repo small):
