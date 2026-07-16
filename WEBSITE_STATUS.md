@@ -100,6 +100,48 @@ shared page**, not from the button — crawlers don't run JS. Each read page alr
 card, edit that read page's head (the cover painting image is shared by all). Add a Share button
 only to editions that have a real page to land on; "Coming soon" rows have none.
 
+**Card wording (2026-07-16, author-set):** the read pages' cards are deliberately spare — one
+title line, one poetic line, no "free", nothing repeated; the painting, the title, and the domain
+(which is the author's name) carry the whole card. The description is the **author's own Persian
+line** with EN/DA renderings of it:
+
+| page | `og:title` | `og:description` |
+| --- | --- | --- |
+| `/sedaha/read/` | The opening of Sedaha (Sounds) | The thread of words that were once sounds. |
+| `/sedaha/read/fa/` | سرآغاز «صداها» | سررشته‌ی لغاتی که زمانی صدا بوده‌اند. |
+| `/sedaha/read/da/` | Åbningen af Sedaha (Sounds), på dansk | Tråden af ord, der engang var lyde. |
+
+The FA description (سررشته = the thread's end) is the reference — it names the very thread/yarn
+painting the card shows (Picture 1, `01.jpg`). The FA title drops "in Persian" / "Sedaha (Sounds)"
+because the Persian script and native title announce the language themselves. `og:site_name` was
+**removed from the read pages** — platforms fall back to showing arasteh.art. All three pages
+carry `og:locale` (`en_US` / `fa_IR` / `da_DK`). The `<title>` tag, `meta name="description"`,
+and `og:image:alt` stay fuller/English on purpose (browser tab / search snippet / screen readers,
+not the share card).
+
+## Generated Opening pages (`build_read_pages.py`, 111 languages)
+
+Beyond the hand-maintained EN/FA/DA pages, `/sedaha/read/<slug>/` exists for **all 111 other
+editions** of the book repo — every language listed on `/sedaha/` now has an Opening page.
+These pages are **fully generated** by `build_read_pages.py` — never edit them by hand. Each
+page pulls the edition's own Opening text (block 0007) and native Opening heading (block 0006)
+from the book repo (`Other_Languages/<CODE>/00_Opening.md`) and adds, from the generator's
+LANGS table: a native `og:title`, a native `og:description` (the "thread of words that were
+once sounds" line in that edition's own wording), a localized CTA ("the full <language>
+edition is on the way; until then the book is free in Persian, English, and Danish"),
+`og:locale`, and RTL handling (ar he ur ckb ps bal glk lrc mzn prs sd ug yi). No EPUB/PDF
+buttons — those editions aren't released yet; the CTA sends readers to `/sedaha/`. The script
+also idempotently wires an "Opening" link into each language's row on `/sedaha/` and the URLs
+into `sitemap.xml`. Slugs are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`,
+`me`).
+
+    python build_read_pages.py            # regenerate pages + wiring
+    python build_read_pages.py --check    # drift report only, exit 1 if stale
+
+Adding a language = adding one LANGS entry (plus its book-repo Opening) and re-running.
+When an edition's EPUB/PDF is released, its page graduates: either add download buttons to
+the generator template conditionally, or promote the page to hand-maintained like EN/FA/DA.
+
 ## Publishing: from edit to live
 
 **A. Website change (HTML / CSS / anything in this repo):**
