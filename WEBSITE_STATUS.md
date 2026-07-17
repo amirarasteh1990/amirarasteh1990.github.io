@@ -1,7 +1,7 @@
 # Website status & orientation — arasteh.art
 
 > Onboarding notes for anyone (human or agent) starting work on this site.
-> Last updated: 2026-07-12.
+> Last updated: 2026-07-17.
 
 **What it is:** Amir Arasteh's personal site (paintings + the book *Sounds / Sedaha*).
 Static HTML/CSS, no framework, no build step.
@@ -17,18 +17,19 @@ Static HTML/CSS, no framework, no build step.
 
 | Path | Page |
 | --- | --- |
-| `index.html` | Home, a 2×2 hub (Books / Paintings / Comments / Support) |
-| `sedaha/index.html` | The book page (`/sedaha/`): hero, hook line, download list of 114 languages |
+| `index.html` | Home: visible author name, primary Books / Paintings paths, quieter Guestbook / Support / Telegram links |
+| `sedaha/index.html` | The book page (`/sedaha/`): canonical cover preview, read-first hero, three complete editions, searchable openings in 114 languages |
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
-| `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (CSS-only lightbox) |
+| `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
 | `comments/index.html` | Guestbook (Cusdis embed) |
 | `support/index.html` | Donation links |
-| `license.html` | License (book = CC BY-NC-ND 4.0; paintings = All Rights Reserved) |
+| `license.html` | License (book = author's custom terms: free complete unchanged electronic sharing, all other rights reserved, NO CC claim per 2026-07-16 book decision; paintings = All Rights Reserved) |
 | `404.html` | Branded not-found page (GitHub Pages serves it automatically) |
 | `sitemap.xml`, `robots.txt` | Search-engine discoverability (update `sitemap.xml` when adding a page) |
 | `assets/css/style.css` | **The only stylesheet**, shared by all pages |
 | `assets/js/share.js` | Share-button behavior: native share sheet, clipboard fallback + toast (see below) |
+| `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, and trigger-focus restoration |
 | `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
 | `sync_book_text.py` | Pulls canonical book text into the site (see below) |
@@ -44,7 +45,14 @@ names in the language list). UI chrome (buttons, cards, footer) stays the system
 Regenerate with `build_webfonts.py` only if the book repo's TTFs change; never add a
 Google-Fonts/CDN `<link>` (self-hosted keeps the site dependency-free and private).
 
-## Painting files vs the book's picture numbers
+## Painting and cover files
+
+`sync_gallery.py` derives both gallery images and the web-sized English cover preview. Gallery
+masters come from `../1_Sedaha/Volume1/CoverPics`; `assets/img/book-cover.jpg` comes from the
+canonical generated `CoverPics/_generated/cover_EN.jpg`. Run `python sync_gallery.py --check`
+after a painting or cover rebuild.
+
+### Painting files vs the book's picture numbers
 
 The gallery images (`assets/img/paintings/sounds/`) keep the book repo's FILE names, but the
 book's Picture Index numbers pictures sequentially, so the three mid-section paintings shift
@@ -107,17 +115,21 @@ line** with EN/DA renderings of it:
 
 | page | `og:title` | `og:description` |
 | --- | --- | --- |
-| `/sedaha/read/` | The opening of Sedaha (Sounds) | The thread of words that were once sounds. |
+| `/sedaha/read/` | The opening of «Sounds» | The thread of words that were once sounds. |
 | `/sedaha/read/fa/` | سرآغاز «صداها» | سررشته‌ی لغاتی که زمانی صدا بوده‌اند. |
-| `/sedaha/read/da/` | Åbningen af Sedaha (Sounds), på dansk | Tråden af ord, der engang var lyde. |
+| `/sedaha/read/da/` | Åbningen af «Lyde», på dansk | Tråden af ord, der engang var lyde. |
 
 The FA description (سررشته = the thread's end) is the reference — it names the very thread/yarn
-painting the card shows (Picture 1, `01.jpg`). The FA title drops "in Persian" / "Sedaha (Sounds)"
-because the Persian script and native title announce the language themselves. `og:site_name` was
-**removed from the read pages** — platforms fall back to showing arasteh.art. All three pages
-carry `og:locale` (`en_US` / `fa_IR` / `da_DK`). The `<title>` tag, `meta name="description"`,
-and `og:image:alt` stay fuller/English on purpose (browser tab / search snippet / screen readers,
-not the share card).
+painting the card shows (Picture 1, `01.jpg`). The FA title drops "in Persian" because the
+Persian script announces the language itself. **Card title rule (2026-07-17, author-set): the
+book title in a card is that edition's OWN translated title in «…»** (FA «صداها», EN «Sounds»,
+DA «Lyde», DE «Klänge» …) — NOT the Latin "Sedaha (Sounds)". The generated pages pull the title
+from the edition's `00_Title_Info.md` block 0001 automatically; on these three hand pages it is
+literal. `og:site_name` was **removed from the read pages**; the "arasteh.art" line chat apps
+show under a card is the platform's own domain label from the URL and cannot be removed from
+our side. All three pages carry `og:locale` (`en_US` / `fa_IR` / `da_DK`). The `<title>` tag,
+`meta name="description"`, and `og:image:alt` stay fuller/English on purpose (browser tab /
+search snippet / screen readers, not the share card).
 
 ## Generated Opening pages (`build_read_pages.py`, 111 languages)
 
@@ -125,8 +137,11 @@ Beyond the hand-maintained EN/FA/DA pages, `/sedaha/read/<slug>/` exists for **a
 editions** of the book repo — every language listed on `/sedaha/` now has an Opening page.
 These pages are **fully generated** by `build_read_pages.py` — never edit them by hand. Each
 page pulls the edition's own Opening text (block 0007) and native Opening heading (block 0006)
-from the book repo (`Other_Languages/<CODE>/00_Opening.md`) and adds, from the generator's
-LANGS table: a native `og:title`, a native `og:description` (the "thread of words that were
+from the book repo (`Other_Languages/<CODE>/00_Opening.md`), plus the edition's own translated
+book title (first line of `00_Title_Info.md` block 0001), which replaces the "Sedaha (Sounds)"
+placeholder inside the LANGS `og_title`, wrapped «…» (or the 《…》/『…』 the ZH/JA entries carry).
+From the generator's LANGS table it adds: the `og:title` sentence, a native `og:description`
+(the "thread of words that were
 once sounds" line in that edition's own wording), a localized CTA ("the full <language>
 edition is on the way; until then the book is free in Persian, English, and Danish"),
 `og:locale`, and RTL handling (ar he ur ckb ps bal glk lrc mzn prs sd ug yi). No EPUB/PDF
@@ -164,13 +179,19 @@ the generator template conditionally, or promote the page to hand-maintained lik
 - **No em dashes in prose.** The author dislikes them; use periods / commas / colons instead.
   (Em dashes inside page *titles and headings* are fine.)
 - Every page carries Open Graph + `twitter:card` meta for link-preview cards. Keep new pages consistent.
+- Every page has a semantic `<main id="main">` landmark and a keyboard skip link. Shared text
+  controls target a 44px minimum height; compact language-list links remain at least 30px high.
+- The homepage keeps Books and Paintings as its only primary cards. Guestbook, Support, and
+  Telegram remain secondary links so the work leads the hierarchy.
 - **Book naming: Sedaha-forward.** In share text, preview cards, page titles/meta and secondary
   mentions, name the book **Sedaha (Sounds)** — or **«Sedaha»** (its own Persian quotation style)
   in the poetic share line. Keep plain **Sounds** only where it is the registered/legal title
   (the `/sedaha/` `<h1>`, which is auto-synced from the book source; the `/editions/first-edition/`
   archival page) or a fixed handle/URL (`Sounds_AmirArasteh`; the `/paintings/sounds/` path). The
   shared-opening cards use the **Opening painting** (`/assets/img/paintings/sounds/01.jpg` = the book's
-  Picture 1), not the cover.
+  Picture 1), not the cover. **Exception (2026-07-17):** in the read pages' `og:title` share cards,
+  the book is named by that edition's OWN translated title in «…», not the Latin brand (see
+  "Card wording" above).
 - **Never edit** `assets/img/logo-lockup.png` or the cover image. The logo is the author's full
   painting and is used whole (never cropped or redrawn).
 - Announcements (new editions AND new paintings) go to the Telegram channel:

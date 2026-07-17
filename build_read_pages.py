@@ -7,6 +7,9 @@ edition sources. Single source of truth = the book repo.
 Per language it renders one page from:
   * the edition's own Opening        — Other_Languages/<CODE>/00_Opening.md, block 0007
   * the edition's own Opening title  — block 0006 (page <h1> and browser-tab title)
+  * the edition's own book title     — 00_Title_Info.md, block 0001, first line: swapped
+                                       into og:title in place of the "Sedaha (Sounds)"
+                                       placeholder, wrapped «…» (or the CJK brackets)
   * the LANGS table below            — share-card lines (og:title / og:description),
                                        the localized CTA paragraph, lang/dir/og:locale
 
@@ -41,6 +44,8 @@ SITEMAP = SITE / "sitemap.xml"
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
 # slug = URL path under /sedaha/read/; code = folder in Other_Languages (also the lane tag).
+# In og_title, "Sedaha (Sounds)" is a PLACEHOLDER: at render time it is replaced by the
+# edition's own translated title (00_Title_Info.md block 0001), wrapped «…» / 《…》 / 『…』.
 LANGS = [
     {"code": "DE", "slug": "de", "lang": "de", "rtl": False, "locale": "de_DE", "en": "German", "native": "Deutsch",
      "og_title": "Der Auftakt von Sedaha (Sounds), auf Deutsch",
@@ -504,6 +509,40 @@ def _block(text: str, bid: str, code: str, fname: str) -> str:
     return out
 
 
+def _title(code: str) -> str:
+    """The edition's own book title: first line of block 0001 in 00_Title_Info.md."""
+    f = BOOK_LANGS / code / "00_Title_Info.md"
+    text = f.read_text(encoding="utf-8")
+    m = re.search(r"^##\s+0001\s*$", text, re.M)
+    if not m:
+        raise ValueError(f"{code}/00_Title_Info.md: block 0001 not found")
+    rest = text[m.end():]
+    nxt = re.search(r"^##\s+\S+\s*$", rest, re.M)
+    seg = rest[:nxt.start()] if nxt else rest
+    seg = re.sub(r"<!--.*?-->", "", seg, flags=re.S)
+    seg = re.sub(r"^\*\*[A-Za-z-]+\*\*\s*$", "", seg, flags=re.M)
+    for line in seg.splitlines():
+        line = line.strip()
+        if line and not line.startswith("{"):
+            return line
+    raise ValueError(f"{code}/00_Title_Info.md: no title line in block 0001")
+
+
+def _og_title(L: dict) -> str:
+    """og_title with the 'Sedaha (Sounds)' placeholder swapped for the edition's own
+    translated title, in «…» (the book's quotation device) or the CJK brackets the
+    entry already provides."""
+    t = _title(L["code"])
+    og = L["og_title"]
+    for opening, closing in (("《", "》"), ("『", "』")):
+        wrapped = f"{opening}Sedaha (Sounds){closing}"
+        if wrapped in og:
+            return og.replace(wrapped, f"{opening}{t}{closing}")
+    if "Sedaha (Sounds)" not in og:
+        raise ValueError(f"{L['code']}: og_title lacks the 'Sedaha (Sounds)' placeholder")
+    return og.replace("Sedaha (Sounds)", f"«{t}»")
+
+
 def _opening(code: str) -> tuple[str, list[str]]:
     """Return (native Opening heading, opening paragraphs) from the edition source."""
     f = BOOK_LANGS / code / "00_Opening.md"
@@ -543,7 +582,7 @@ def render(L: dict) -> str:
 <meta name="description" content="{_esc(meta_desc)}">
 <meta name="theme-color" content="#F5EFE3">
 <meta property="og:type" content="book">
-<meta property="og:title" content="{_esc(L['og_title'])}">
+<meta property="og:title" content="{_esc(_og_title(L))}">
 <meta property="og:description" content="{_esc(L['og_desc'])}">
 <meta property="og:image" content="https://arasteh.art/assets/img/paintings/sounds/01.jpg">
 <meta property="og:image:alt" content="The painting that opens Sedaha (Sounds), Book One, by Amir Arasteh.">
@@ -558,14 +597,14 @@ def render(L: dict) -> str:
 </head>
 <body class="book">
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="container" id="main">
+<main class="container" id="main">
   <a class="back" href="/sedaha/">&larr; Sounds</a>
 
   <p class="read-kicker">Sounds &middot; Book One</p>
   <p class="op-langs">Opening in: <a href="/sedaha/read/">English</a> &middot;
     <a href="/sedaha/read/fa/" lang="fa">فارسی</a> &middot;
     <a href="/sedaha/read/da/" lang="da">Dansk</a> &middot;
-    <span class="cur" lang="{L['lang']}">{L['native']}</span> &middot;
+    <span class="cur" lang="{L['lang']}" aria-current="page">{L['native']}</span> &middot;
     <a href="/sedaha/">+ more</a></p>
   <article class="reader" lang="{L['lang']}"{dir_attr}>
     <h1>{html.escape(h1, quote=False)}</h1>
@@ -575,11 +614,11 @@ def render(L: dict) -> str:
   <div class="read-cta">
     <p lang="{L['lang']}"{dir_attr}>{html.escape(L['cta'], quote=False)}</p>
     <div class="btns">
-      <button type="button" class="btn btn-share" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}">Share this opening</button>
+      <button type="button" class="btn btn-share" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>Share this opening</button>
     </div>
     <a class="read-back" href="/sedaha/">All languages &amp; downloads &rarr;</a>
   </div>
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -592,7 +631,7 @@ def render(L: dict) -> str:
     &copy; 2026 Amir Arasteh &middot;
     <a href="/sedaha/">Books</a> &middot;
     <a href="/paintings/">Paintings</a> &middot;
-    <a href="/comments/">Comments</a> &middot;
+    <a href="/comments/">Guestbook</a> &middot;
     <a href="/support/">Support</a> &middot;
     <a href="/license.html">License</a> &middot;
     <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>

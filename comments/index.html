@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comments &middot; Amir Arasteh</title>
-<meta name="description" content="Leave a note, a shared thread among readers of Sedaha (Sounds).">
+<title>Guestbook &middot; Amir Arasteh</title>
+<meta name="description" content="Reader notes and messages for Amir Arasteh and Sedaha (Sounds).">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Amir Arasteh">
-<meta property="og:title" content="Comments — Amir Arasteh">
+<meta property="og:title" content="Guestbook — Amir Arasteh">
 <meta property="og:description" content="Leave a note, a shared thread among readers of Sedaha (Sounds).">
 <meta property="og:image" content="https://arasteh.art/assets/img/cover.jpg">
 <meta property="og:image:alt" content="Cover painting of Sedaha (Sounds), Book One, by Amir Arasteh.">
@@ -21,44 +21,59 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-180.png">
 </head>
 <body>
-<div class="container">
+<a class="skip-link" href="#main">Skip to content</a>
+<main class="container" id="main">
   <a class="back" href="/">&larr; Amir Arasteh</a>
 
   <section>
-    <h1>Comments</h1>
+    <h1>Guestbook</h1>
     <p class="lead">Leave a note: where the book found you, or a
       line that stayed. Like the book, a thread passed from hand to hand:
       what you write here is open for others to read.</p>
 
     <!-- Cusdis (no login, privacy-friendly). Moderate at cusdis.com; keep pre-moderation ON. -->
+    <p class="guestbook-status" id="cusdis-loading" role="status">Loading the guestbook&hellip;</p>
     <div id="cusdis_thread"
       data-host="https://cusdis.com"
       data-app-id="240403ed-e12d-428a-9bdb-afa6d69d1061"
       data-page-id="guestbook"
       data-page-url="https://arasteh.art/comments/"
-      data-page-title="Comments — Amir Arasteh"
+      data-page-title="Guestbook — Amir Arasteh"
       data-theme="light"
     ></div>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"
-      onerror="document.getElementById('cusdis-fallback').hidden=false"></script>
-
     <!-- if cusdis.com is unreachable (down, or blocked on the visitor's network),
          don't leave a silent blank: offer the email route instead -->
     <p class="muted-note" id="cusdis-fallback" hidden>The comment box could not load.
       Your network may be blocking it. You can always write by email:
       <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p>
     <script>
-    setTimeout(function(){
+    (function(){
       var t = document.getElementById('cusdis_thread');
-      if (t && !t.firstElementChild)
-        document.getElementById('cusdis-fallback').hidden = false;
-    }, 8000);
+      var loading = document.getElementById('cusdis-loading');
+      var fallback = document.getElementById('cusdis-fallback');
+      function loaded(){
+        loading.hidden = true;
+        fallback.hidden = true;
+      }
+      window.showGuestbookFallback = function(){
+        loading.hidden = true;
+        fallback.hidden = false;
+      };
+      new MutationObserver(function(){
+        if (t.firstElementChild) loaded();
+      }).observe(t, {childList:true});
+      setTimeout(function(){
+        if (!t.firstElementChild) window.showGuestbookFallback();
+      }, 8000);
+    })();
     </script>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"
+      onerror="showGuestbookFallback()"></script>
 
-    <noscript><p class="muted-note">Comments need JavaScript. You can also write by email:
+    <noscript><p class="muted-note">The guestbook needs JavaScript. You can also write by email:
       <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p></noscript>
   </section>
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="container">

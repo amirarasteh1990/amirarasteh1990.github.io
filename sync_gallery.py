@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-sync_gallery.py — Re-derive the site's gallery images from the BOOK repo's painting
-masters (Volume1/CoverPics), so a repainted master never goes stale on the site.
+sync_gallery.py — Re-derive the site's gallery images and English book-cover preview
+from the BOOK repo, so neither the paintings nor the displayed cover can go stale.
 Single source of truth = the book repo.
 
 For every master it writes two JPEGs under assets/img/paintings/sounds/:
   * full  — longest edge 1500 px   (lightbox image)
   * th/   — longest edge  560 px   (gallery thumbnail)
+
+It also writes assets/img/book-cover.jpg from CoverPics/_generated/cover_EN.jpg
+at a web-sized 1200 px longest edge.
 
 A derived pair is only rewritten when the master is newer than the derived file
 (or with --force), so unchanged paintings keep identical bytes and a clean git diff.
@@ -28,10 +31,14 @@ SITE = Path(__file__).resolve().parent
 COVERPICS = SITE.parent / "1_Sedaha" / "Volume1" / "CoverPics"  # book working repo (sibling). Edit if moved.
 OUT = SITE / "assets" / "img" / "paintings" / "sounds"
 OUT_TH = OUT / "th"
+BOOK_COVER_MASTER = COVERPICS / "_generated" / "cover_EN.jpg"
+BOOK_COVER_OUT = SITE / "assets" / "img" / "book-cover.jpg"
 
 FULL_EDGE = 1500
 THUMB_EDGE = 560
+BOOK_COVER_EDGE = 1200
 QUALITY = 85
+LANCZOS = getattr(Image, "Resampling", Image).LANCZOS
 
 # master filename -> derived stem (everything ships as .jpg on the site)
 RENAME = {"00_CoverPhoto": "cover"}
@@ -50,7 +57,7 @@ def _masters() -> list[Path]:
 
 def _save_resized(im: Image.Image, dest: Path, edge: int) -> None:
     scale = edge / max(im.size)
-    resized = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+    resized = im.resize((round(im.width * scale), round(im.height * scale)), LANCZOS)
     resized.save(dest, "JPEG", quality=QUALITY, optimize=True)
 
 
@@ -88,8 +95,25 @@ def main() -> int:
             _save_resized(im, thumb, THUMB_EDGE)
         print(f"wrote  {full.relative_to(SITE)}  +  {thumb.relative_to(SITE)}")
 
+    cover_current = (
+        not args.force
+        and BOOK_COVER_OUT.is_file()
+        and BOOK_COVER_OUT.stat().st_mtime >= BOOK_COVER_MASTER.stat().st_mtime
+    )
+    if not cover_current:
+        stale += 1
+        if args.check:
+            print("STALE  assets/img/book-cover.jpg  (canonical English cover is newer)")
+        else:
+            with Image.open(BOOK_COVER_MASTER) as im:
+                im = ImageOps.exif_transpose(im)
+                if im.mode != "RGB":
+                    im = im.convert("RGB")
+                _save_resized(im, BOOK_COVER_OUT, BOOK_COVER_EDGE)
+            print(f"wrote  {BOOK_COVER_OUT.relative_to(SITE)}")
+
     if stale == 0:
-        print(f"gallery in sync with {COVERPICS} ({len(_masters())} paintings)")
+        print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")
     return 1 if (args.check and stale) else 0
 
 

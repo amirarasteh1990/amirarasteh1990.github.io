@@ -24,7 +24,6 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container">
-    <h1 class="visually-hidden">Amir Arasteh — paintings and books</h1>
     <div class="logo-panel">
       <picture>
         <source srcset="assets/img/logo-lockup-web.webp" type="image/webp">
@@ -32,12 +31,17 @@
              alt="Arasteh — Amir Arasteh, paintings and books">
       </picture>
     </div>
+    <div class="brand-copy">
+      <h1>Amir Arasteh</h1>
+      <p>Paintings and books</p>
+    </div>
   </div>
 </header>
 
 <main class="container" id="main">
-  <div class="hub">
-    <div class="cards cards--2x2">
+  <section class="hub" aria-labelledby="explore-heading">
+    <h2 class="visually-hidden" id="explore-heading">Explore the work</h2>
+    <div class="cards cards--primary">
 
       <a class="card card--plain" href="sedaha/">
         <div class="body">
@@ -53,24 +57,13 @@
         </div>
       </a>
 
-      <a class="card card--plain" href="comments/">
-        <div class="body">
-          <h3>Comments</h3>
-          <p>Leave a note, a thread shared among readers.</p>
-        </div>
-      </a>
-
-      <a class="card card--plain" href="support/">
-        <div class="body">
-          <h3>Support</h3>
-          <p>An independent work, supported by its readers. Help it continue.</p>
-        </div>
-      </a>
-
     </div>
-    <p class="hub-note">New editions and new paintings are announced on
-      <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>. A few notes a year.</p>
-  </div>
+    <nav class="hub-secondary" aria-label="More from Amir Arasteh">
+      <a href="comments/">Guestbook</a>
+      <a href="support/">Support</a>
+      <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>
+    </nav>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -79,7 +72,7 @@
       &copy; 2026 Amir Arasteh &middot;
       <a href="sedaha/">Books</a> &middot;
       <a href="paintings/">Paintings</a> &middot;
-      <a href="comments/">Comments</a> &middot;
+      <a href="comments/">Guestbook</a> &middot;
       <a href="support/">Support</a> &middot;
       <a href="license.html">License</a> &middot;
       <a href="https://t.me/Sounds_AmirArasteh">Telegram</a><br>
