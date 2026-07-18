@@ -6,7 +6,7 @@
 > Quick command reference: [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 **What it is:** Amir Arasteh's personal site (paintings + the book *Sounds / Sedaha*).
-Static HTML/CSS, no framework, no build step.
+Static HTML/CSS/JS, with no framework or deployment build step.
 
 ## Hosting / deploy
 
@@ -44,15 +44,15 @@ The site uses the **book's own faces**, self-hosted as small woff2 subsets in `a
 hero excerpt), via the `--serif` CSS variable, falling back to Georgia; **Vazirmatn** for
 Arabic-script content site-wide via a `:lang(fa)`/`:lang(ar)`/… rule (the Persian reader, native
 names in the language list). UI chrome (buttons, cards, footer) stays the system sans stack.
-Regenerate with `build_webfonts.py` only if the book repo's TTFs change; never add a
-Google-Fonts/CDN `<link>` (self-hosted keeps the site dependency-free and private).
+Regenerate only if the book repo's TTFs change; never add a Google-Fonts/CDN `<link>`
+(self-hosting keeps the site dependency-free and private). See [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 ## Painting and cover files
 
 `sync_gallery.py` derives both gallery images and the web-sized English cover preview. Gallery
 masters come from `../1_Sedaha/Volume1/CoverPics`; `assets/img/book-cover.jpg` comes from the
-canonical generated `CoverPics/_generated/cover_EN.jpg`. Run `python sync_gallery.py --check`
-after a painting or cover rebuild.
+canonical generated `CoverPics/_generated/cover_EN.jpg`. Verify derived images after a painting
+or cover rebuild; the check and rebuild commands are in [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 ### Painting files vs the book's picture numbers
 
@@ -72,7 +72,7 @@ rest of the site chrome stays English.
 EPUB/PDF live as **GitHub Release assets**, not committed (keeps the repo small):
 
 - tag `books` — rolling / current editions the `/sedaha/` page links to
-  (uploaded with `gh release upload books … --clobber`).
+  (same-name assets are replaced as editions are updated).
 - tag `first-edition-2026` — frozen registered set linked from `/editions/first-edition/`.
 
 Download links in the HTML point at these tags. **Release uploads are gated on the author
@@ -88,9 +88,8 @@ in three languages on the read pages — `/sedaha/read/` (EN), `/sedaha/read/fa/
 sample, add its `/sedaha/read/<xx>/` page with the markers and a `SYNC` entry (needs that language's
 opening in `00_Opening.md`).
 
-- `python sync_book_text.py --check` — report drift, change nothing.
-- `python sync_book_text.py` — rewrite synced regions.
-- Never hand-edit inside `<!--S:…-->` markers; they are overwritten on the next run.
+Never hand-edit inside `<!--S:…-->` markers; synchronization overwrites them. The check and apply
+commands are in [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 ## Share buttons (`assets/js/share.js`)
 
@@ -152,29 +151,22 @@ also idempotently wires an "Opening" link into each language's row on `/sedaha/`
 into `sitemap.xml`. Slugs are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`,
 `me`).
 
-    python build_read_pages.py            # regenerate pages + wiring
-    python build_read_pages.py --check    # drift report only, exit 1 if stale
-
-Adding a language = adding one LANGS entry (plus its book-repo Opening) and re-running.
+Adding a language means adding one LANGS entry plus its book-repo Opening, then regenerating and
+checking the pages using [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 When an edition's EPUB/PDF is released, its page graduates: either add download buttons to
 the generator template conditionally, or promote the page to hand-maintained like EN/FA/DA.
 
-## Publishing: from edit to live
+## Publishing model
 
-**A. Website change (HTML / CSS / anything in this repo):**
+- **Website changes:** after the relevant checks and diff review, the author commits and pushes
+  `main`; GitHub Pages usually publishes the site within about a minute.
+- **Book files:** rebuild editions in the sibling book repo (`../1_Sedaha/Volume1`), then replace
+  only the reviewed assets on the rolling `books` release. Existing `/sedaha/` links need no
+  website change.
+- A new language row, download link, or other HTML change still requires a website deployment.
 
-1. Edit the file(s).
-2. If a synced value changed upstream, run `python sync_book_text.py`.
-3. Optional sanity check: `python -m http.server 8000` and open `http://localhost:8000`.
-4. Author pushes: `git add -A && git commit -m "…" && git push`.
-5. Live at arasteh.art in ~1 min (GitHub Pages rebuilds automatically).
-
-**B. Book file change (EPUB / PDF):**
-
-1. Edit and rebuild the edition in the **book repo** (`../1_Sedaha/Volume1`, using that repo's own build tooling). The files are not built here.
-2. Author, after reviewing the exact files, uploads them: `gh release upload books <files> --clobber`.
-3. Done. The `/sedaha/` download links already point at the `books` tag, so the site serves the new file with **no website push needed**.
-4. Exception: if you added a *new* language row or link in `sedaha/index.html`, that is a website change, so also do flow A.
+Exact check, preview, commit, deployment, and release workflows live in
+[USEFUL_COMMANDS.md](USEFUL_COMMANDS.md). Public actions there are deliberately guarded.
 
 ## Conventions & do-not-touch
 
@@ -200,74 +192,8 @@ the generator template conditionally, or promote the page to hand-maintained lik
   <https://t.me/Sounds_AmirArasteh>. It is linked from the home hub-note, every page footer,
   and the book page's follow note; keep new pages' footers consistent.
 
-## Common commands
+## Analytics
 
-Run from the repo root (`c:\code\Others\1_Personal\amirarasteh.github.io`).
-
-**Preview locally** (it's static, no build):
-
-```bash
-python -m http.server 8000        # then open http://localhost:8000
-```
-
-**Sync book text** from the book repo:
-
-```bash
-python sync_book_text.py --check  # report drift only, change nothing
-python sync_book_text.py          # apply the sync
-```
-
-**Inspect changes:**
-
-```bash
-git status
-git diff
-```
-
-**Commit & deploy — AUTHOR ONLY.** Pushing to `main` publishes the live site
-(GitHub Pages rebuilds in ~1 min). An agent must never run these; leave changes in the
-working tree and let the author push.
-
-```bash
-git add -A
-git commit -m "message"
-git push                          # deploys to arasteh.art
-```
-
-**Publish book files (GitHub Releases) — AUTHOR ONLY, and only after reviewing the exact file set.**
-
-```bash
-# replace/add a current edition on the rolling 'books' tag
-gh release upload books Sedaha_English.pdf Sedaha_English.epub --clobber
-
-# create a tag the first time, if it doesn't exist yet
-gh release create books --title "Sounds — current editions" --notes "…"
-gh release create first-edition-2026 --title "Sounds — first edition (2026)" --notes "…"
-
-# list what a release currently holds
-gh release view books
-```
-
-**Download counts** (the only built-in analytics, per file, no dashboard):
-
-```bash
-# one line per file: count <tab> filename
-gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books \
-  --jq '.assets[] | "\(.download_count)\t\(.name)"'
-
-# same, sorted most-downloaded first
-gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books \
-  --jq '.assets[] | "\(.download_count)\t\(.name)"' | sort -rn
-```
-
-Swap `books` for `first-edition-2026` to count the frozen registered set instead.
-
-Notes:
-
-- Counts **release-asset downloads only** — people who clicked an EPUB/PDF link. It is
-  cumulative and tied to each asset, so replacing a file with `--clobber` resets that
-  file's counter to zero.
-- **Page views are not tracked.** GitHub Pages gives no visitor analytics, so views of
-  arasteh.art itself — home, the book page, the in-browser read/Opening samples,
-  paintings — are invisible. Measuring those would need an added analytics snippet
-  (none is on the site today).
+GitHub release assets expose cumulative download counts per file; replacing a same-name asset
+resets that file's count. The site has no page-view analytics, so visits to pages and in-browser
+samples are not tracked. See [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md) for the count commands.

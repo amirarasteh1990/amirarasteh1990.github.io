@@ -1,73 +1,105 @@
 # Useful website commands
 
-Run these from:
+PowerShell cheat sheet for `arasteh.art`. Each code block is designed to be copied by itself unless marked as a sequence.
+
+## Start here
+
+Go to the website repository:
 
 ```powershell
-cd C:\code\Others\1_Personal\amirarasteh.github.io
+Set-Location "C:\code\Others\1_Personal\amirarasteh.github.io"
 ```
 
-For conventions and ownership details, see [`WEBSITE_STATUS.md`](WEBSITE_STATUS.md).
-
-## Quick decision guide
-
-| Change | Command |
-| --- | --- |
-| Ordinary HTML, CSS, JS, or documentation | No build command |
-| Generated opening pages, language list, cards, or generator template | `python build_read_pages.py` |
-| Canonical title or EN/FA/DA opening changed in the book repo | `python sync_book_text.py` |
-| Gallery paintings or English cover preview changed | `python sync_gallery.py` |
-| Source TTF fonts changed | Run `build_webfonts.py` with the book virtual environment |
-| EPUB/PDF changed | Upload it to the `books` GitHub Release; do not commit it |
-
-The EN/FA/DA opening pages are hand-maintained. The other 111 opening pages are generated; never edit those generated files directly.
-
-## Inspect changes
+See what has changed:
 
 ```powershell
-# Before editing, when the working tree is clean
-git pull --ff-only
-
 git status --short
-git --no-pager diff --check
-git --no-pager diff --stat
-git --no-pager diff
 ```
+
+Before starting new work, update a clean working tree:
+
+```powershell
+git pull --ff-only
+```
+
+## Which maintenance command?
+
+| What changed? | What to run |
+| --- | --- |
+| Ordinary HTML, CSS, JS, or documentation | Nothing; inspect and commit |
+| Generated opening pages, language list, cards, or template | `build_read_pages.py` |
+| Canonical English title or EN/FA/DA opening | `sync_book_text.py` |
+| Gallery paintings or English cover preview | `sync_gallery.py` |
+| Source TTF fonts | `build_webfonts.py` with the book virtual environment |
+| EPUB/PDF | Upload to the `books` release; never commit book files |
+
+EN/FA/DA opening pages are hand-maintained. The other 111 opening pages are generated; never edit those generated HTML files directly.
 
 ## Generated opening pages
 
-```powershell
-# Check only; changes nothing and exits nonzero if stale
-python build_read_pages.py --check
+Check without changing files:
 
-# Regenerate, then verify
+```powershell
+python build_read_pages.py --check
+```
+
+Regenerate when needed:
+
+```powershell
 python build_read_pages.py
+```
+
+Verify afterward:
+
+```powershell
 python build_read_pages.py --check
 ```
 
 ## Synchronize canonical book text
 
+Check without changing files:
+
 ```powershell
-python sync_book_text.py --check
-python sync_book_text.py
 python sync_book_text.py --check
 ```
 
-Do not hand-edit text inside `SYNC` markers; synchronization overwrites it.
+Apply the synchronization:
+
+```powershell
+python sync_book_text.py
+```
+
+Verify afterward:
+
+```powershell
+python sync_book_text.py --check
+```
+
+Never hand-edit text inside `SYNC` markers; synchronization overwrites it.
 
 ## Gallery and cover preview
 
+Check derived images:
+
 ```powershell
 python sync_gallery.py --check
-python sync_gallery.py
-python sync_gallery.py --check
+```
 
-# Rebuild every derived image only when deliberately needed
+Rebuild changed images:
+
+```powershell
+python sync_gallery.py
+```
+
+Rebuild every derived image only when deliberately needed:
+
+```powershell
 python sync_gallery.py --force
 ```
 
 ## Webfonts
 
-Run only when the book repository's TTF files change:
+Run only when the source TTF files or font-generation logic change:
 
 ```powershell
 ..\1_Sedaha\Volume1\sedaha\Scripts\python.exe build_webfonts.py
@@ -75,84 +107,163 @@ Run only when the book repository's TTF files change:
 
 ## Preview locally
 
+Start the local server:
+
 ```powershell
 python -m http.server 8000
 ```
 
-Open <http://localhost:8000>, then press `Ctrl+C` to stop the server.
-
-## Stage, commit, and deploy
-
-Pushing `main` deploys the website through GitHub Pages.
+Open this in a second PowerShell window:
 
 ```powershell
-git add <files-or-folders-you-reviewed>
-git --no-pager diff --cached --check
+Start-Process "http://localhost:8000"
+```
+
+Press `Ctrl+C` in the server window to stop it.
+
+## Inspect before committing
+
+Check whitespace errors:
+
+```powershell
+git --no-pager diff --check
+```
+
+See a summary:
+
+```powershell
+git --no-pager diff --stat
+```
+
+Review the full changes:
+
+```powershell
+git --no-pager diff
+```
+
+## Commit and deploy — guarded
+
+Pushing `main` publishes through GitHub Pages. Complete these steps in order.
+
+1. Confirm that every listed change belongs in the commit:
+
+```powershell
+git status --short
+```
+
+2. Stage everything only after that review:
+
+```powershell
+git add -A
+```
+
+3. Check the staged files and staged content:
+
+```powershell
 git --no-pager diff --cached --stat
-git --no-pager diff --cached
-git commit -m "Describe the website change"
-git push origin main
 ```
-
-When every working-tree change is intentional, PowerShell 7 supports the documented one-liner:
 
 ```powershell
-git add -A && git commit -m "Describe the website change" && git push origin main
+git --no-pager diff --cached
 ```
 
-## Publish current EPUB/PDF files
+```powershell
+git --no-pager diff --cached --check
+```
 
-Book files belong in the rolling `books` release, not Git:
+4. Enter the commit message when prompted:
+
+```powershell
+$message = Read-Host "Commit message"; git commit -m $message
+```
+
+5. Deploy only after typing `PUSH` exactly:
+
+```powershell
+if ((Read-Host "Type PUSH to deploy to arasteh.art") -ceq "PUSH") { git push origin main } else { Write-Host "Cancelled; nothing was pushed." }
+```
+
+## Publish current EPUB/PDF files — guarded
+
+Check GitHub CLI authentication:
 
 ```powershell
 gh auth status
-gh release view books
-
-# Create the rolling release only if it does not exist
-gh release create books --title "Sounds — current editions" --notes "Current downloadable editions."
-
-# Upload selected files
-gh release upload books C:\path\to\Sedaha_English.pdf C:\path\to\Sedaha_English.epub --clobber
 ```
 
-Upload all normal EPUB/PDF files from the book registration folder while excluding print/wrap PDFs:
+Inspect the rolling release:
 
 ```powershell
-$files = Get-ChildItem "..\1_Sedaha\Volume1\registration" -File |
-    Where-Object {
-        $_.Extension -eq ".epub" -or
-        ($_.Extension -eq ".pdf" -and $_.BaseName -notmatch "_(print|wrap)$")
-    } |
-    Select-Object -ExpandProperty FullName
-
-$files
-gh release upload books @files --clobber
+gh release view books
 ```
 
-Review `$files` before uploading. Do not overwrite the frozen `first-edition-2026` release casually.
-Replacing a same-name asset with `--clobber` resets that asset's download count.
+If the release does not exist, create it only after typing `CREATE`:
+
+```powershell
+if ((Read-Host "Type CREATE to create the public books release") -ceq "CREATE") { gh release create books --title "Sounds — current editions" --notes "Current downloadable editions." } else { Write-Host "Cancelled; no release was created." }
+```
+
+Collect ordinary EPUB/PDF files while excluding print/wrap PDFs:
+
+```powershell
+$files = Get-ChildItem "..\1_Sedaha\Volume1\registration" -File | Where-Object { $_.Extension -eq ".epub" -or ($_.Extension -eq ".pdf" -and $_.BaseName -notmatch "_(print|wrap)$") } | Select-Object -ExpandProperty FullName
+```
+
+Review the exact upload list:
+
+```powershell
+$files
+```
+
+Upload and replace same-name assets only after typing `UPLOAD`:
+
+```powershell
+if ((Read-Host "Type UPLOAD to replace the listed public book assets") -ceq "UPLOAD") { gh release upload books @files --clobber } else { Write-Host "Cancelled; no assets were uploaded." }
+```
+
+`--clobber` replaces same-name assets and resets their download counts. The `first-edition-2026` release is frozen; do not overwrite it.
 
 ## Release assets and download counts
 
+List current assets:
+
 ```powershell
 gh release view books
+```
+
+List counts by file:
+
+```powershell
+gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books --jq '.assets[] | [.download_count, .name] | @tsv'
+```
+
+Show the most downloaded first:
+
+```powershell
+gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books --jq '.assets | sort_by(.download_count) | reverse[] | [.download_count, .name] | @tsv'
+```
+
+Inspect the frozen release without changing it:
+
+```powershell
 gh release view first-edition-2026
-
-# One row per asset
-gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books `
-    --jq '.assets[] | "\(.download_count)\t\(.name)"'
-
-# Most downloaded first
-gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books `
-    --jq '.assets | sort_by(.download_count) | reverse[] | "\(.download_count)\t\(.name)"'
 ```
 
 ## Verify live preview metadata
 
+Change only the URL when checking another language:
+
 ```powershell
-$url = "https://arasteh.art/sedaha/read/fa/"
-$response = Invoke-WebRequest $url -UseBasicParsing
-($response.Content -split "`n") | Select-String 'og:(title|description|url)'
+$url = "https://arasteh.art/sedaha/read/fa/"; ((Invoke-WebRequest $url -UseBasicParsing).Content -split '\r?\n') | Select-String 'og:(title|description|url)'
 ```
 
-For stale Telegram cards, open [@WebpageBot](https://t.me/WebpageBot), send `/updatepreview`, then send the exact URL and test with a new message.
+For stale Telegram cards, open [@WebpageBot](https://t.me/WebpageBot), send `/updatepreview`, then send the exact public URL and test with a new message.
+
+## Quick troubleshooting
+
+- PowerShell shows `>>`: it is waiting for more input. Press `Ctrl+C`, then copy the complete command again.
+- Git shows `(END)`: press `q` to leave the pager. Commands here use `--no-pager` where practical.
+- Git warns that LF will become CRLF: this is a harmless Windows line-ending warning.
+- `release not found`: inspect the tag name; create `books` only once and only with the guarded command above.
+
+For detailed architecture and conventions, see [`WEBSITE_STATUS.md`](WEBSITE_STATUS.md).
