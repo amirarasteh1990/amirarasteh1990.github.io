@@ -1,7 +1,9 @@
 # Website status & orientation — arasteh.art
 
 > Onboarding notes for anyone (human or agent) starting work on this site.
-> Last updated: 2026-07-17.
+> Last updated: 2026-07-18.
+>
+> Quick command reference: [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 **What it is:** Amir Arasteh's personal site (paintings + the book *Sounds / Sedaha*).
 Static HTML/CSS, no framework, no build step.
@@ -108,18 +110,18 @@ shared page**, not from the button — crawlers don't run JS. Each read page alr
 card, edit that read page's head (the cover painting image is shared by all). Add a Share button
 only to editions that have a real page to land on; "Coming soon" rows have none.
 
-**Card wording (2026-07-17, author-set):** the read pages' cards are deliberately spare — one
+**Card wording (2026-07-18, author-set):** the read pages' cards are deliberately spare — one
 title line, one poetic line, no "free", nothing repeated; the painting, the title, and the domain
 (which is the author's name) carry the whole card. The description is the **author's own Persian
 line** with EN/DA renderings of it:
 
 | page | `og:title` | `og:description` |
 | --- | --- | --- |
-| `/sedaha/read/` | The opening of «Sounds» | The thread of words that were once sounds ... |
-| `/sedaha/read/fa/` | سرآغاز «صداها» | سررشته‌ی کلماتی که زمانی صدا بوده‌اند ... |
-| `/sedaha/read/da/` | Åbningen af «Lyde», på dansk | Tråden af ord, der engang var lyde ... |
+| `/sedaha/read/` | The opening of «Sounds» | The thread of words that were once sounds… |
+| `/sedaha/read/fa/` | سرآغاز «صداها» | سررشته‌ی کلماتی که زمانی صدا بوده‌اند… |
+| `/sedaha/read/da/` | Åbningen af «Lyde», på dansk | Tråden af ord, der engang var lyde… |
 
-The FA description (سررشته = the thread's end) is the reference; its spaced three-dot ellipsis is intentional. It names the very thread/yarn
+The FA description (سررشته = the thread's end) is the reference. Every card description ends with a single typographic ellipsis, without a preceding space, to carry the thread forward into the book. It names the very thread/yarn
 painting the card shows (Picture 1, `01.jpg`). The FA title drops "in Persian" because the
 Persian script announces the language itself. **Card title rule (2026-07-17, author-set): the
 book title in a card is that edition's OWN translated title in «…»** (FA «صداها», EN «Sounds»,

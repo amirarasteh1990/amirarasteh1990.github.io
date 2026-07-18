@@ -2,7 +2,8 @@
 
 Personal portfolio site of **Amir Arasteh** — paintings and books — served via GitHub Pages.
 
-> Working on this site? See [`WEBSITE_STATUS.md`](WEBSITE_STATUS.md) for orientation and conventions.
+> Working on this site? See [WEBSITE_STATUS.md](WEBSITE_STATUS.md) for orientation and conventions.
+> For the command cheat sheet, see [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
 ## Structure
 - `index.html` — portfolio home with Books and Paintings as the primary paths
