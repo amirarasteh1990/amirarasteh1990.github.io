@@ -73,7 +73,7 @@ EPUB/PDF live as **GitHub Release assets**, not committed (keeps the repo small)
 
 - tag `books` — rolling / current editions the `/sedaha/` page links to
   (same-name assets are replaced as editions are updated).
-- tag `first-edition-2026` — frozen registered set linked from `/editions/first-edition/`.
+- tag `first-edition-1.0` — frozen registered set linked from `/editions/first-edition/`.
 
 Download links in the HTML point at these tags. **Release uploads are gated on the author
 reviewing the exact file set first**, so confirm assets are actually uploaded before assuming a link works.

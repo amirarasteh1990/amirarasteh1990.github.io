@@ -221,7 +221,7 @@ Upload and replace same-name assets only after typing `UPLOAD`:
 if ((Read-Host "Type UPLOAD to replace the listed public book assets") -ceq "UPLOAD") { gh release upload books @files --clobber } else { Write-Host "Cancelled; no assets were uploaded." }
 ```
 
-`--clobber` replaces same-name assets and resets their download counts. The `first-edition-2026` release is frozen; do not overwrite it.
+`--clobber` replaces same-name assets and resets their download counts. The `first-edition-1.0` release is frozen; do not overwrite it.
 
 ## Release assets and download counts
 
@@ -246,7 +246,7 @@ gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books --jq 
 Inspect the frozen release without changing it:
 
 ```powershell
-gh release view first-edition-2026
+gh release view first-edition-1.0
 ```
 
 ## Verify live preview metadata
