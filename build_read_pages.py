@@ -618,6 +618,8 @@ def render(L: dict) -> str:
 <meta property="og:title" content="{_esc(_og_title(L))}">
 <meta property="og:description" content="{_esc(L['og_desc'])}">
 <meta property="og:image" content="https://arasteh.art/assets/img/paintings/sounds/01.jpg">
+<meta property="og:image:width" content="1500">
+<meta property="og:image:height" content="1096">
 <meta property="og:image:alt" content="The painting that opens Sedaha (Sounds), Book One, by Amir Arasteh.">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="{L['locale']}">
@@ -642,7 +644,7 @@ def render(L: dict) -> str:
     <a href="/sedaha/read/fa/" lang="fa">فارسی</a> &middot;
     <a href="/sedaha/read/da/" lang="da">Dansk</a> &middot;
     <span class="cur" lang="{L['lang']}" aria-current="page">{L['native']}</span> &middot;
-    <a href="/sedaha/">+ more</a></p>
+    <a href="/sedaha/languages/">all 114 &rarr;</a></p>
   <article class="reader" lang="{L['lang']}"{dir_attr}>
     <h1>{html.escape(h1, quote=False)}</h1>
 {body}
@@ -659,6 +661,7 @@ def render(L: dict) -> str:
 
 {FOOTER}
 <script src="/assets/js/share.js" defer></script>
+<script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
 """

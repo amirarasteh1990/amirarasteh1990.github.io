@@ -107,7 +107,10 @@ The **preview card** a chat app shows is read from the **static `og:` tags in th
 shared page**, not from the button — crawlers don't run JS. Each read page already has its own
 `og:title` / `og:url`, so the card differs per language automatically. To reword or localize a
 card, edit that read page's head (the cover painting image is shared by all). Add a Share button
-only to editions that have a real page to land on; "Coming soon" rows have none.
+only to editions that have a real page to land on; unreleased language rows have none.
+(2026-07-24: the per-row "Coming soon" labels were removed from `/sedaha/` for a cleaner list;
+a row without download links is implicitly in preparation, and `/sedaha/languages/` carries the
+exact status.)
 
 **Card wording (2026-07-18, author-set):** the read pages' cards are deliberately spare — one
 title line, one poetic line, no "free", nothing repeated; the painting, the title, and the domain

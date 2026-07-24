@@ -72,6 +72,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 .reach-note a{font-weight:600}
 
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+h1+.cards{margin-top:26px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   overflow:hidden;box-shadow:var(--shadow);transition:transform .15s ease;
   display:flex;flex-direction:column}
@@ -378,6 +379,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   transition:opacity .2s ease,transform .2s ease}
 .to-top.show{opacity:1;transform:translateY(0);pointer-events:auto}
 .to-top:hover{background:#70472f}
+.to-top:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 .to-top svg{width:22px;height:22px}
 @media (max-width:760px){
   .to-top{right:14px;bottom:calc(58px + env(safe-area-inset-bottom) + 14px)}

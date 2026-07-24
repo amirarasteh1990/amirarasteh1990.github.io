@@ -23,11 +23,23 @@
     current = (index + shots.length) % shots.length;
     var shot = shots[current];
     var thumbnail = shot.querySelector('img');
+    image.classList.add('is-loading');
     image.src = shot.href;
     image.alt = thumbnail.alt;
     caption.textContent = shot.getAttribute('data-caption') || thumbnail.alt;
     if (counter) counter.textContent = (current + 1) + ' / ' + shots.length;
+    preload(current + 1);
+    preload(current - 1);
   }
+
+  // The neighbours are fetched ahead so arrows/swipes feel instant.
+  function preload(index) {
+    var href = shots[(index + shots.length) % shots.length].href;
+    var img = new Image();
+    img.src = href;
+  }
+
+  image.addEventListener('load', function () { image.classList.remove('is-loading'); });
 
   function open(index, source) {
     trigger = source;
