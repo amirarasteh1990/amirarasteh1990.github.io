@@ -3,6 +3,10 @@
 Thumbs.db
 desktop.ini
 
+# Python bytecode cache (build/sync scripts)
+__pycache__/
+*.pyc
+
 # Books go to GitHub Releases, never committed here.
 # High-res painting masters stay in the private archive, never committed here.
 dist/

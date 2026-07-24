@@ -29,6 +29,7 @@ git pull --ff-only
 | Ordinary HTML, CSS, JS, or documentation | Nothing; inspect and commit |
 | Generated opening pages, language list, cards, or template | `build_read_pages.py` |
 | Navigation shell — tab set, labels, or which tab a section highlights | `sync_appnav.py`, then `build_read_pages.py` |
+| Installability / PWA head tags (manifest, standalone hints) | `sync_head.py`, then `build_read_pages.py` |
 | Canonical English title or EN/FA/DA opening | `sync_book_text.py` |
 | Gallery paintings or English cover preview | `sync_gallery.py` |
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
@@ -104,6 +105,38 @@ python build_read_pages.py
 
 Never hand-edit markup inside `APPNAV` markers; the sync overwrites it. To change
 the tabs, labels, or icons, edit the `TABS` list in `sync_appnav.py`.
+
+## Installability (PWA)
+
+The site is installable: a phone can Add to Home Screen and launch it full-screen.
+This is the web-app manifest (`manifest.webmanifest`, with the `icon-192`,
+`icon-512` and `icon-maskable-512` images) plus a small head block owned by
+`sync_head.py` and stamped between `PWA` markers on every page.
+
+Check without changing files:
+
+```powershell
+python sync_head.py --check
+```
+
+Apply to every page:
+
+```powershell
+python sync_head.py
+```
+
+Then refresh the generated pages so they carry the same block:
+
+```powershell
+python build_read_pages.py
+```
+
+The app icons are derived once from `assets/img/apple-touch-icon-180.png`. Only
+regenerate them if that master changes:
+
+```powershell
+python -c "from PIL import Image; L=Image.Resampling.LANCZOS; s=Image.open('assets/img/apple-touch-icon-180.png').convert('RGB'); s.resize((192,192),L).save('assets/img/icon-192.png','PNG',optimize=True); s.resize((512,512),L).save('assets/img/icon-512.png','PNG',optimize=True); c=Image.new('RGB',(512,512),s.getpixel((2,2))); c.paste(s.resize((410,410),L),(51,51)); c.save('assets/img/icon-maskable-512.png','PNG',optimize=True)"
+```
 
 ## Gallery and cover preview
 

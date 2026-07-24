@@ -37,6 +37,7 @@ from pathlib import Path
 
 from sync_footers import footer_html  # one canonical footer for the whole site
 from sync_appnav import appnav_html   # one canonical nav shell for the whole site
+from sync_head import head_html        # one canonical PWA head block for the whole site
 
 SITE = Path(__file__).resolve().parent
 BOOK_VOL = SITE.parent / "1_Sedaha" / "Volume1"  # sibling book repo. Edit if moved.
@@ -53,6 +54,7 @@ RELEASE_URL = "https://github.com/amirarasteh1990/amirarasteh1990.github.io/rele
 FOOTER = footer_html()
 # Generated pages live in the book section, so their shell highlights "Books".
 NAV = appnav_html("books")
+HEAD = head_html()  # PWA manifest + standalone hints, before </head>
 
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
@@ -627,6 +629,7 @@ def render(L: dict) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-180.png">
+{HEAD}
 </head>
 <body class="book">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -806,6 +809,7 @@ def render_status(rows: list[dict]) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-180.png">
+{HEAD}
 </head>
 <body class="book">
 <a class="skip-link" href="#main">Skip to content</a>
