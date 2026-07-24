@@ -10,9 +10,12 @@ sync_footers.py / sync_appnav.py use).
 
 The block makes arasteh.art installable: a web-app manifest plus the iOS/Android
 "standalone" hints, so a phone can Add to Home Screen and launch it full-screen,
-without a browser chrome. It is delimited by <!-- PWA:START --> / <!-- PWA:END -->
-markers and inserted just before </head>. The apple-touch-icon, favicons and
-per-page theme-color already live in each head and are left untouched.
+without a browser chrome. It also carries the dark-mode theme-color, which pairs
+with the light theme-color already in each page head (that one has no media query,
+so it stays the default; the dark one overrides it only under a dark preference).
+It is delimited by <!-- PWA:START --> / <!-- PWA:END --> markers and inserted just
+before </head>. The apple-touch-icon, favicons and the light per-page theme-color
+already live in each head and are left untouched.
 
     python sync_head.py            rewrite every page
     python sync_head.py --check    report drift, change nothing; exit 1 if stale
@@ -38,6 +41,7 @@ def head_html() -> str:
         '<meta name="apple-mobile-web-app-capable" content="yes">\n'
         '<meta name="apple-mobile-web-app-status-bar-style" content="default">\n'
         '<meta name="apple-mobile-web-app-title" content="Arasteh">\n'
+        '<meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">\n'
         + END
     )
 

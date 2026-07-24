@@ -845,6 +845,7 @@ def render_status(rows: list[dict]) -> str:
 </main>
 
 {FOOTER}
+<script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
 """

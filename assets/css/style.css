@@ -309,15 +309,10 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
    additive: every existing header, hero, gallery and footer is untouched.
    ===================================================================== */
 
-/* App-like cross-page transitions on same-origin navigation. Progressive:
-   browsers without the View Transitions API simply navigate as before. */
-@view-transition{navigation:auto}
-
 .appnav{--appnav-h:56px;
   background:rgba(255,253,249,.9);
   -webkit-backdrop-filter:saturate(1.25) blur(10px);
-  backdrop-filter:saturate(1.25) blur(10px);
-  view-transition-name:appnav}
+  backdrop-filter:saturate(1.25) blur(10px)}
 .appnav-inner{max-width:var(--max);margin:0 auto;padding:0 16px;
   display:flex;align-items:center;gap:16px}
 .appnav-brand{display:inline-flex;align-items:center;
@@ -366,9 +361,112 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .share-toast{bottom:calc(58px + env(safe-area-inset-bottom) + 16px)}
 }
 
-/* honour the site's motion ethos: no page-transition animation, no tap-bounce */
+/* honour the site's motion ethos: no tap-bounce under reduced motion */
 @media (prefers-reduced-motion:reduce){
-  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){
-    animation:none!important}
   .appnav-tabs a:active{transform:none}
+}
+
+/* On phones the Home tab is always one tap away, so the top-of-page link back
+   to home is redundant; hide just those (hierarchical "up" links stay). */
+@media (max-width:760px){.back--home{display:none}}
+
+/* == back-to-top button (long pages only; shown by backtotop.js past a scroll) == */
+.to-top{position:fixed;right:18px;bottom:24px;z-index:70;width:46px;height:46px;
+  display:grid;place-items:center;padding:0;border:1px solid var(--accent);border-radius:50%;
+  background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.22);
+  cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;
+  transition:opacity .2s ease,transform .2s ease}
+.to-top.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.to-top:hover{background:#70472f}
+.to-top svg{width:22px;height:22px}
+@media (max-width:760px){
+  .to-top{right:14px;bottom:calc(58px + env(safe-area-inset-bottom) + 14px)}
+}
+@media (prefers-reduced-motion:reduce){.to-top{transition:opacity .001ms}}
+
+/* =====================================================================
+   Dark mode -- a warm, low-glare night palette. The paper look is kept:
+   parchment surfaces become deep warm browns, ink becomes warm cream.
+   Follows the OS/browser preference; light stays the default.
+   ===================================================================== */
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#17130f; --surface:#241f19; --ink:#ece3d4; --muted:#a99f8f;
+    --paper:#221d17; --line:#3a332a; --accent:#d99b6d; --accent-ink:#1c1712;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.5);
+  }
+  /* darken the cover-painting scrim so translucent panels stay legible */
+  body.home{background-image:linear-gradient(rgba(15,12,9,.62),rgba(15,12,9,.62)),url(/assets/img/cover.jpg)}
+  body.book{background-image:linear-gradient(rgba(15,12,9,.6),rgba(15,12,9,.6)),url(/assets/img/cover.jpg)}
+
+  /* translucent "sheet" panels floating over the painting */
+  body.book .container{background:rgba(28,23,18,.9);border-color:rgba(255,255,255,.08)}
+  body.book .site-footer .container{background:rgba(34,29,23,.82)}
+  .appnav{background:rgba(22,18,13,.9)}
+  .cards--primary .card{background:rgba(28,23,18,.86)}
+  .hub-secondary{background:rgba(28,23,18,.8);color:#d8cebd}
+  .hub-secondary a{color:#e0d7c7}
+  .foot-panel{background:rgba(28,23,18,.78);color:#d8cebd}
+  body.home .site-footer .foot-panel a{color:#e0d7c7}
+  .guestbook-status{background:rgba(28,23,18,.7);color:#d8cbb6}
+  .logo-panel{background:rgba(34,29,23,.05);border-color:rgba(255,255,255,.06)}
+
+  /* warm cream callout boxes */
+  .reach-note,.notice,.read-cta{background:#241d15;border-color:#3d3428;color:#d8cbb6}
+  .read-cta p{color:#cdbfa9}
+
+  /* inks that were hardcoded dark */
+  .brand-copy{color:#e6dccb} .brand-copy p{color:#a99f8f}
+  .lead,.opening p,.dl-intro,.dl-hint,.book-lead,.lang-key .what,.lang-search-result{color:#c6bba7}
+  .dl-hint strong,.book-lead em{color:#e6dccb}
+  .excerpt{color:#d3c6b0}
+  .reader p{color:#e2d8c6}
+  .op-langs .cur{color:#e6dccb}
+
+  /* editions list / continent panels */
+  .ed-featured{border-color:rgba(255,255,255,.10)}
+  .ed-featured .native{color:#e6dccb} .ed-featured .en{color:#a99f8f}
+  .continent{border-color:rgba(255,255,255,.08)}
+  .continent>h3{color:#cabfac;border-bottom-color:rgba(255,255,255,.10)}
+  .continent>h3 .ccount{color:#b3a892;background:rgba(255,255,255,.08)}
+  .ed-list li{border-bottom-color:rgba(255,255,255,.12)}
+  .ed-list .native{color:#e6dccb} .ed-list .en,.ed-list .soon{color:#a99f8f}
+  .ed-list li.live .native{color:#7fce97}
+  .ed-list .mini a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
+  .ed-list .mini a:hover{border-bottom-color:#7fce97}
+  .lang-toggle>summary{color:#cabfac;border-color:rgba(255,255,255,.10)}
+  .lang-toggle>summary:hover{color:#f0e7d7}
+
+  /* language search field */
+  .lang-search{border-color:rgba(255,255,255,.16)}
+  .lang-search::placeholder{color:#8f8676}
+
+  /* status table + badges */
+  .lang-key{border-color:rgba(255,255,255,.10)}
+  .lang-key .n{color:#a99f8f}
+  .lang-table td,.lang-table th{border-bottom-color:rgba(255,255,255,.12)}
+  .lang-table thead th{color:#a99f8f;border-bottom-color:rgba(255,255,255,.16)}
+  .lang-table .native{color:#e6dccb} .lang-table .en{color:#a99f8f}
+  .lang-table .links a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
+  .lang-table .links a:hover{border-bottom-color:#7fce97}
+  .badge.ready{color:#8ad9a3;background:rgba(127,206,151,.16);border-color:rgba(127,206,151,.34)}
+  .badge.review{color:#e0ad6b;background:rgba(224,173,107,.14);border-color:rgba(224,173,107,.3)}
+  .badge.translated{color:#cabfac;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+  .badge.revising{color:#a99f8f;border-color:rgba(255,255,255,.18)}
+
+  /* card cover placeholder ground */
+  .card a.cover{background:#2a241d}
+
+  /* app-shell tabs */
+  .appnav-tabs a{color:#b7ad9c}
+  .appnav-tabs a:hover{background:rgba(217,155,109,.12)}
+  .appnav-tabs a[aria-current="page"]{background:rgba(217,155,109,.16)}
+  .appnav-tabs a:active{background:rgba(217,155,109,.16)}
+
+  /* share toast + share button (ink var is light now, so set an explicit chip) */
+  .share-toast{background:#2c251d;color:#f2e9d8}
+  .btn-share{background:rgba(217,155,109,.16)}
+
+  /* back-to-top hover reads on the lighter accent */
+  .to-top:hover{background:#e8ab7e}
 }
