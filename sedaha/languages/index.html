@@ -53,16 +53,21 @@
 
   <h1>Where each language stands</h1>
   <p class="read-kicker">Sounds &middot; Book One</p>
-  <p class="lead">The opening is readable in all 114 languages today.
-    4 complete editions can be downloaded now; the rest are translated in full and
-    working their way through review. This page is generated from the book&rsquo;s own files,
-    so it is current.</p>
+  <p class="lead">The opening is readable in all 114 languages today;
+    4 complete editions can be downloaded now.</p>
 
   <div class="lang-key">
       <div class="key"><span class="badge ready">Ready to read</span> <span class="what">The complete book, free to download.</span> <span class="n">4</span></div>
       <div class="key"><span class="badge review">In final review</span> <span class="what">Translated in full; being checked before release.</span> <span class="n">6</span></div>
       <div class="key"><span class="badge translated">Translated</span> <span class="what">A full draft exists; review still to come.</span> <span class="n">94</span></div>
       <div class="key"><span class="badge revising">Being revised</span> <span class="what">Parts of this edition need reworking before it can be trusted.</span> <span class="n">10</span></div>
+  </div>
+
+  <div class="language-finder">
+    <label class="lang-search-label" for="langFilter">Find your language</label>
+    <input type="search" class="lang-search" id="langFilter" autocomplete="off"
+      placeholder="English or native language name&hellip;">
+    <p class="visually-hidden" id="langFilterStatus" role="status" aria-live="polite"></p>
   </div>
 
   <div class="lang-table-wrap">
@@ -189,6 +194,7 @@
       </tbody>
     </table>
   </div>
+  <p class="lang-noresult" hidden>No language matches that search yet.</p>
 
   <p class="lang-foot">Editions are released as they pass review, not on a schedule.
     <a href="https://t.me/Sounds_AmirArasteh">Follow on Telegram</a> to hear when new ones arrive.</p>
@@ -212,6 +218,27 @@
     Contact: <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>
   </div>
 </footer>
+<script>
+(function(){
+  var input = document.getElementById('langFilter');
+  if(!input) return;
+  var rows = document.querySelectorAll('.lang-table tbody tr');
+  var noResult = document.querySelector('.lang-noresult');
+  var status = document.getElementById('langFilterStatus');
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase(), n = 0;
+    rows.forEach(function(tr){
+      var hit = tr.textContent.toLowerCase().indexOf(q) > -1;
+      tr.style.display = hit ? '' : 'none';
+      if(hit) n += 1;
+    });
+    if(noResult) noResult.hidden = !(q && !n);
+    if(status) status.textContent = q ?
+      (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
+      'Showing all 114 languages.';
+  });
+})();
+</script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

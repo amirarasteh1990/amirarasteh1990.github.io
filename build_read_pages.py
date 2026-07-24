@@ -653,6 +653,9 @@ def render(L: dict) -> str:
   <div class="read-cta">
     <p lang="{L['lang']}"{dir_attr}>{html.escape(L['cta'], quote=False)}</p>
     <div class="btns">
+      <a class="btn" href="/sedaha/read/fa/" lang="fa">فارسی</a>
+      <a class="btn" href="/sedaha/read/">English</a>
+      <a class="btn" href="/sedaha/read/da/" lang="da">Dansk</a>
       <button type="button" class="btn btn-share" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>Share this opening</button>
     </div>
     <a class="read-back" href="/sedaha/">All languages &amp; downloads &rarr;</a>
@@ -822,13 +825,18 @@ def render_status(rows: list[dict]) -> str:
 
   <h1>Where each language stands</h1>
   <p class="read-kicker">Sounds &middot; Book One</p>
-  <p class="lead">The opening is readable in all {len(rows)} languages today.
-    {ready} complete editions can be downloaded now; the rest are translated in full and
-    working their way through review. This page is generated from the book&rsquo;s own files,
-    so it is current.</p>
+  <p class="lead">The opening is readable in all {len(rows)} languages today;
+    {ready} complete editions can be downloaded now.</p>
 
   <div class="lang-key">
 {legend}
+  </div>
+
+  <div class="language-finder">
+    <label class="lang-search-label" for="langFilter">Find your language</label>
+    <input type="search" class="lang-search" id="langFilter" autocomplete="off"
+      placeholder="English or native language name&hellip;">
+    <p class="visually-hidden" id="langFilterStatus" role="status" aria-live="polite"></p>
   </div>
 
   <div class="lang-table-wrap">
@@ -842,12 +850,34 @@ def render_status(rows: list[dict]) -> str:
       </tbody>
     </table>
   </div>
+  <p class="lang-noresult" hidden>No language matches that search yet.</p>
 
   <p class="lang-foot">Editions are released as they pass review, not on a schedule.
     <a href="https://t.me/Sounds_AmirArasteh">Follow on Telegram</a> to hear when new ones arrive.</p>
 </main>
 
 {FOOTER}
+<script>
+(function(){{
+  var input = document.getElementById('langFilter');
+  if(!input) return;
+  var rows = document.querySelectorAll('.lang-table tbody tr');
+  var noResult = document.querySelector('.lang-noresult');
+  var status = document.getElementById('langFilterStatus');
+  input.addEventListener('input', function(){{
+    var q = input.value.trim().toLowerCase(), n = 0;
+    rows.forEach(function(tr){{
+      var hit = tr.textContent.toLowerCase().indexOf(q) > -1;
+      tr.style.display = hit ? '' : 'none';
+      if(hit) n += 1;
+    }});
+    if(noResult) noResult.hidden = !(q && !n);
+    if(status) status.textContent = q ?
+      (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
+      'Showing all {len(rows)} languages.';
+  }});
+}})();
+</script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
