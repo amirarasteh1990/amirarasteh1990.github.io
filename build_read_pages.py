@@ -36,6 +36,7 @@ import sys
 from pathlib import Path
 
 from sync_footers import footer_html  # one canonical footer for the whole site
+from sync_appnav import appnav_html   # one canonical nav shell for the whole site
 
 SITE = Path(__file__).resolve().parent
 BOOK_VOL = SITE.parent / "1_Sedaha" / "Volume1"  # sibling book repo. Edit if moved.
@@ -50,6 +51,8 @@ RELEASE_URL = "https://github.com/amirarasteh1990/amirarasteh1990.github.io/rele
 # Generated pages carry the standard footer. Change it in sync_footers.py, then
 # rerun this script so the 111 Opening pages and /sedaha/languages/ follow.
 FOOTER = footer_html()
+# Generated pages live in the book section, so their shell highlights "Books".
+NAV = appnav_html("books")
 
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
@@ -627,6 +630,7 @@ def render(L: dict) -> str:
 </head>
 <body class="book">
 <a class="skip-link" href="#main">Skip to content</a>
+{NAV}
 <main class="container" id="main">
   <a class="back" href="/sedaha/">&larr; Sounds</a>
 
@@ -805,6 +809,7 @@ def render_status(rows: list[dict]) -> str:
 </head>
 <body class="book">
 <a class="skip-link" href="#main">Skip to content</a>
+{NAV}
 <main class="container" id="main">
   <a class="back" href="/sedaha/">&larr; Sounds</a>
 

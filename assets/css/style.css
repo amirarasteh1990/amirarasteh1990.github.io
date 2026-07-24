@@ -297,3 +297,78 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 /* guestbook loading state: never leave a silent empty embed area */
 .guestbook-status{margin:24px 0 12px;padding:14px 16px;border-left:3px solid var(--accent);
   background:rgba(255,253,249,.68);color:#5b4a38;font-size:.92rem}
+
+/* =====================================================================
+   Adaptive app shell -- one nav, two faces.
+   Phones (<=760px): a fixed bottom tab bar, thumb-reachable, safe-area
+     aware, with tap feedback -- the page feels like an app.
+   Laptops (>=761px): a sticky top navigation bar -- a full website.
+   The single <nav class="appnav"> markup is stamped after the skip-link
+   on every page by sync_appnav.py (and emitted by build_read_pages.py for
+   the generated pages), so the shell is byte-identical site-wide. Purely
+   additive: every existing header, hero, gallery and footer is untouched.
+   ===================================================================== */
+
+/* App-like cross-page transitions on same-origin navigation. Progressive:
+   browsers without the View Transitions API simply navigate as before. */
+@view-transition{navigation:auto}
+
+.appnav{--appnav-h:56px;
+  background:rgba(255,253,249,.9);
+  -webkit-backdrop-filter:saturate(1.25) blur(10px);
+  backdrop-filter:saturate(1.25) blur(10px);
+  view-transition-name:appnav}
+.appnav-inner{max-width:var(--max);margin:0 auto;padding:0 16px;
+  display:flex;align-items:center;gap:16px}
+.appnav-brand{display:inline-flex;align-items:center;
+  font-family:var(--serif);font-weight:600;font-size:1.18rem;color:var(--ink);
+  letter-spacing:.01em;white-space:nowrap}
+.appnav-brand:hover{text-decoration:none;color:var(--accent)}
+.appnav-tabs{list-style:none;margin:0;padding:0;display:flex}
+.appnav-tabs a{display:flex;align-items:center;gap:8px;color:#5a5344;
+  font-weight:600;text-decoration:none;border-radius:10px}
+.appnav-tabs a:hover{text-decoration:none}
+.appnav-tabs .ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;
+  stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.appnav-tabs a[aria-current="page"]{color:var(--accent)}
+.skip-link{z-index:120}                       /* stay above the shell */
+
+/* ---- laptops & up: sticky top navigation bar (a website) ---- */
+@media (min-width:761px){
+  html{scroll-padding-top:72px}               /* #main anchor clears the bar */
+  .appnav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+    box-shadow:0 1px 0 rgba(0,0,0,.02),0 6px 20px rgba(0,0,0,.04)}
+  .appnav-inner{height:var(--appnav-h);justify-content:space-between}
+  .appnav-brand{margin-inline-end:auto}
+  .appnav-tabs{gap:4px}
+  .appnav-tabs a{padding:8px 14px}
+  .appnav-tabs a:hover{background:rgba(138,90,59,.08);color:var(--accent)}
+  .appnav-tabs a[aria-current="page"]{background:rgba(138,90,59,.10)}
+}
+
+/* ---- phones: fixed bottom tab bar (an app) ---- */
+@media (max-width:760px){
+  .appnav{--appnav-h:58px;position:fixed;left:0;right:0;bottom:0;z-index:50;
+    border-top:1px solid var(--line);box-shadow:0 -2px 16px rgba(0,0,0,.06);
+    padding-bottom:env(safe-area-inset-bottom)}
+  .appnav-inner{padding:0;gap:0;align-items:stretch}
+  .appnav-brand{display:none}                 /* the page's own header carries the brand */
+  .appnav-tabs{flex:1;justify-content:space-around;align-items:stretch}
+  .appnav-tabs li{flex:1;display:flex}
+  .appnav-tabs a{flex:1;flex-direction:column;justify-content:center;gap:3px;
+    min-height:var(--appnav-h);padding:6px 2px;border-radius:0;
+    font-size:.66rem;letter-spacing:.01em;text-align:center;
+    -webkit-tap-highlight-color:transparent}
+  .appnav-tabs .ico{width:24px;height:24px}
+  .appnav-tabs a[aria-current="page"] .ico{stroke-width:2.3}
+  .appnav-tabs a:active{transform:scale(.9);background:rgba(138,90,59,.09)}
+  body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}  /* clear the bar */
+  .share-toast{bottom:calc(58px + env(safe-area-inset-bottom) + 16px)}
+}
+
+/* honour the site's motion ethos: no page-transition animation, no tap-bounce */
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){
+    animation:none!important}
+  .appnav-tabs a:active{transform:none}
+}

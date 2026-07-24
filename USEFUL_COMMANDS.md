@@ -28,6 +28,7 @@ git pull --ff-only
 | --- | --- |
 | Ordinary HTML, CSS, JS, or documentation | Nothing; inspect and commit |
 | Generated opening pages, language list, cards, or template | `build_read_pages.py` |
+| Navigation shell — tab set, labels, or which tab a section highlights | `sync_appnav.py`, then `build_read_pages.py` |
 | Canonical English title or EN/FA/DA opening | `sync_book_text.py` |
 | Gallery paintings or English cover preview | `sync_gallery.py` |
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
@@ -76,6 +77,33 @@ python sync_book_text.py --check
 ```
 
 Never hand-edit text inside `SYNC` markers; synchronization overwrites it.
+
+## Navigation shell
+
+The adaptive app shell (a bottom tab bar on phones, a sticky top bar on laptops)
+is one `<nav class="appnav">` block owned by `sync_appnav.py` and stamped into
+every page between `APPNAV` markers. Its styling lives in `assets/css/style.css`.
+
+Check without changing files:
+
+```powershell
+python sync_appnav.py --check
+```
+
+Apply to every page:
+
+```powershell
+python sync_appnav.py
+```
+
+Then refresh the generated pages so they carry the same block:
+
+```powershell
+python build_read_pages.py
+```
+
+Never hand-edit markup inside `APPNAV` markers; the sync overwrites it. To change
+the tabs, labels, or icons, edit the `TABS` list in `sync_appnav.py`.
 
 ## Gallery and cover preview
 
