@@ -31,6 +31,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import html
+import json
 import re
 import sys
 from pathlib import Path
@@ -55,6 +56,45 @@ FOOTER = footer_html()
 # Generated pages live in the book section, so their shell highlights "Books".
 NAV = appnav_html("books")
 HEAD = head_html()  # PWA manifest + standalone hints, before </head>
+
+
+def reader_tools_html() -> str:
+    """The reading toolbar: type size, measure, light/dark. Wordless on purpose --
+    it sits on 114 pages in 114 scripts, and an English label would be the only
+    English on a Khmer page. assets/js/reader.js gives it behaviour and remembers
+    the choice for every edition at once.
+
+    The three hand-written Opening pages (EN/FA/DA) carry this same block; check.py
+    compares them against this function so the four cannot drift apart."""
+    return (
+        '  <div class="reader-tools" role="group" aria-label="Reading settings">\n'
+        '    <button type="button" class="rt rt-smaller" aria-label="Smaller text" '
+        'title="Smaller text"><span class="a-sm" aria-hidden="true">A</span></button>\n'
+        '    <button type="button" class="rt rt-larger" aria-label="Larger text" '
+        'title="Larger text"><span class="a-lg" aria-hidden="true">A</span></button>\n'
+        '    <button type="button" class="rt rt-width" aria-label="Wider lines" '
+        'title="Wider lines" aria-pressed="false">'
+        '<svg aria-hidden="true" viewBox="0 0 24 24">'
+        '<path d="M3 4v16M21 4v16"/><path d="M7 12h10"/>'
+        '<path d="m9.5 9.5-2.5 2.5 2.5 2.5"/><path d="m14.5 9.5 2.5 2.5-2.5 2.5"/>'
+        '</svg></button>\n'
+        '    <button type="button" class="rt rt-theme" data-mode="auto" '
+        'aria-label="Colours: following the system. Switch to light." '
+        'title="Colours: following the system. Switch to light.">'
+        '<svg aria-hidden="true" viewBox="0 0 24 24">'
+        '<g class="i-auto"><circle cx="12" cy="12" r="7.5"/>'
+        '<path d="M12 4.5a7.5 7.5 0 0 1 0 15z" fill="currentColor" stroke="none"/></g>'
+        '<g class="i-light"><circle cx="12" cy="12" r="4.2"/>'
+        '<path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2'
+        'M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></g>'
+        '<g class="i-dark"><path d="M20.5 14.8A8.6 8.6 0 0 1 9.2 3.5'
+        'a8.6 8.6 0 1 0 11.3 11.3z"/></g>'
+        '</svg></button>\n'
+        '  </div>'
+    )
+
+
+READER_TOOLS = reader_tools_html()
 
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
@@ -596,6 +636,34 @@ def alternates() -> str:
     return "\n".join(rows)
 
 
+PERSIAN_ORIGINAL = {"@type": "Book", "name": "صداها", "inLanguage": "fa",
+                    "url": "https://arasteh.art/sedaha/read/fa/"}
+
+
+def book_ld(L: dict, url: str) -> str:
+    """schema.org for one edition. hreflang tells a crawler these pages are
+    alternates of one another; this says what they actually are -- one book, in
+    this language, free, translated from the Persian -- so a search engine can
+    offer the right edition to someone searching in their own language."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": _title(L["code"]),
+        "alternateName": "Sedaha (Sounds)",
+        "inLanguage": L["lang"],
+        "author": {"@type": "Person", "name": "Amir Arasteh", "url": "https://arasteh.art/"},
+        "publisher": {"@type": "Organization", "name": "Arasteh"},
+        "url": url,
+        "image": "https://arasteh.art/assets/img/paintings/sounds/01.jpg",
+        "bookFormat": "https://schema.org/EBook",
+        "isAccessibleForFree": True,
+        "translationOfWork": PERSIAN_ORIGINAL,
+        "datePublished": "2026",
+    }
+    body = json.dumps(data, ensure_ascii=False, indent=2)
+    return f'<script type="application/ld+json">\n{body}\n</script>'
+
+
 def render(L: dict) -> str:
     h1, paras = _opening(L["code"])
     dir_attr = ' dir="rtl"' if L["rtl"] else ""
@@ -625,6 +693,7 @@ def render(L: dict) -> str:
 <meta property="og:locale" content="{L['locale']}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="{url}">
+{book_ld(L, url)}
 {alternates()}
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -645,6 +714,7 @@ def render(L: dict) -> str:
     <a href="/sedaha/read/da/" lang="da">Dansk</a> &middot;
     <span class="cur" lang="{L['lang']}" aria-current="page">{L['native']}</span> &middot;
     <a href="/sedaha/languages/">all 114 &rarr;</a></p>
+{READER_TOOLS}
   <article class="reader" lang="{L['lang']}"{dir_attr}>
     <h1>{html.escape(h1, quote=False)}</h1>
 {body}
@@ -663,6 +733,7 @@ def render(L: dict) -> str:
 </main>
 
 {FOOTER}
+<script src="/assets/js/reader.js" defer></script>
 <script src="/assets/js/share.js" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
@@ -1048,6 +1119,58 @@ def patch_index(check: bool) -> bool:
     return True
 
 
+GALLERY = SITE / "paintings" / "sounds" / "index.html"
+IMAGE_NS = 'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"'
+
+
+def _paintings() -> list[tuple[str, str]]:
+    """(full-size URL, caption) for every painting in the gallery, read from the
+    gallery page itself so the sitemap cannot list a picture the site does not show."""
+    body = GALLERY.read_text(encoding="utf-8")
+    out = []
+    for href, caption in re.findall(
+            r'<a class="shot" href="([^"]+)" data-caption="([^"]+)"', body):
+        out.append(("https://arasteh.art" + href, html.unescape(caption)))
+    return out
+
+
+def patch_sitemap_images(check: bool) -> bool:
+    """Attach the paintings to the gallery's sitemap entry. Image search is how a
+    painting gets found by someone who was not looking for a book."""
+    body = SITEMAP.read_text(encoding="utf-8")
+    shots = _paintings()
+    if not shots:
+        print("[warn]  sitemap: no paintings found in the gallery page")
+        return True
+    tags = "".join(
+        "    <image:image>\n"
+        f"      <image:loc>{html.escape(url, quote=False)}</image:loc>\n"
+        f"      <image:title>{html.escape(cap, quote=False)}</image:title>\n"
+        "    </image:image>\n" for url, cap in shots)
+    want = re.search(
+        r'  <url>\n    <loc>https://arasteh\.art/paintings/sounds/</loc>\n'
+        r'(.*?)\n?(?:    <image:image>.*?</image:image>\n)*  </url>\n', body, re.S)
+    if not want:
+        print("[warn]  sitemap: /paintings/sounds/ entry not found")
+        return True
+    entry = (f'  <url>\n    <loc>https://arasteh.art/paintings/sounds/</loc>\n'
+             f'{want.group(1)}\n{tags}  </url>\n')
+    new = body[:want.start()] + entry + body[want.end():]
+    if IMAGE_NS not in new:
+        new = new.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+                          f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+                          f'        {IMAGE_NS}>', 1)
+    if new == body:
+        print(f"[ok]    sitemap: {len(shots)} paintings listed")
+        return True
+    if check:
+        print("[drift] sitemap: painting entries missing or stale")
+        return False
+    SITEMAP.write_text(new, encoding="utf-8", newline="\n")
+    print(f"[write] sitemap: {len(shots)} paintings listed on the gallery entry")
+    return True
+
+
 def patch_sitemap(check: bool) -> bool:
     body = SITEMAP.read_text(encoding="utf-8")
     today = datetime.date.today().isoformat()
@@ -1106,6 +1229,7 @@ def main() -> int:
     ok &= patch_feed(args.check, rows)
     ok &= patch_index(args.check)
     ok &= patch_sitemap(args.check)
+    ok &= patch_sitemap_images(args.check)
     if not args.check:
         print(f"done: {len(LANGS)} languages")
     return 1 if (args.check and not ok) else 0

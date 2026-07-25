@@ -33,6 +33,9 @@ git pull --ff-only
 | Canonical English title or EN/FA/DA opening | `sync_book_text.py` |
 | Gallery paintings or English cover preview | `sync_gallery.py` |
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
+| Language names (a new language, or a new script among them) | `build_name_fonts.py` |
+| Paintings added or renamed | `sync_gallery.py`, then `build_read_pages.py` (sitemap images) |
+| Anything at all, before pushing | `check.py` |
 | EPUB/PDF | Upload to the `books` release; never commit book files |
 
 EN/FA/DA opening pages are hand-maintained. The other 111 opening pages are generated; never edit those generated HTML files directly.
@@ -181,6 +184,27 @@ Start-Process "http://localhost:8000"
 ```
 
 Press `Ctrl+C` in the server window to stop it.
+
+## Check everything at once
+
+One command, no writes, run it last before a push. It runs every sync/build
+script's own `--check`, `node --check` on each script, and the checks that no
+single script owns: every local link resolving to a file, the service worker's
+shell paths existing, `sitemap.xml` / `feed.xml` / the manifest / all 115 JSON-LD
+blocks parsing, and the three hand-written opening pages still matching the
+markup the generator stamps into the other 111.
+
+```powershell
+python check.py
+```
+
+Skip the seven script `--check` runs (the slow part) and keep the rest:
+
+```powershell
+python check.py --quick
+```
+
+Anything that fails is listed again at the end; the exit code is 1.
 
 ## Inspect before committing
 

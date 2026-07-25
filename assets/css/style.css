@@ -115,6 +115,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
    neither covers falls through to the system as before. */
 .native,.cycler .slot{
   font-family:"Sedaha Names","Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif}
+/* A name in its own script sits inside English sentences everywhere on this
+   site. Isolating it keeps a right-to-left name from dragging the neighbouring
+   Latin punctuation to the wrong side of itself. */
+.native,.cycler .slot,.lang-offer b,.op-langs [lang]{unicode-bidi:isolate}
 .site-header{padding:44px 0 0;text-align:center}
 .site-header h1{margin:0 0 8px;font-size:2.6rem}
 .tagline{color:var(--muted);margin:0;font-size:1.05rem}
@@ -188,7 +192,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 /* the book's own scripts, one after another: the hundred alphabets are the
    work's plainest description. Held still under prefers-reduced-motion. */
 .cycler{margin:14px 0 4px;color:#5a5344;font-size:.94rem}
-.cycler .slot{display:inline-block;margin-inline-start:4px;color:#2f2a20;font-weight:600;font-size:1.14rem;
+/* margin-inline resolves against the SLOT's own direction, so a one-sided gap
+   lands on the wrong side of a right-to-left name and the script ends up glued
+   to "Read it in". Both sides, always. */
+.cycler .slot{display:inline-block;margin-inline:.4em;color:#2f2a20;font-weight:600;font-size:1.14rem;
   transition:opacity .3s ease,transform .3s ease}
 .cycler .slot.is-out{opacity:0;transform:translateY(-4px)}
 /* how much of the hundred is finished, without a sentence about it */
@@ -228,6 +235,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    آرسته + ARASTEH), echoing the book's own colophon. Scaled only, never cropped. */
 .site-footer .foot-logo{display:block;width:84px;margin:4px auto 14px}
 .site-footer .foot-logo img{width:100%;height:auto;display:block}
+/* Books, Paintings, Guestbook and Support are tabs under the thumb on a phone,
+   so the footer stops repeating them there. Each link carries its own leading
+   separator (sync_footers.py), which is why hiding one leaves no stray dot. */
+@media (max-width:760px){.site-footer .foot-link.is-tab{display:none}}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}
@@ -387,25 +398,56 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .dl-hint{color:#5a5344;font-size:.9rem;line-height:1.55;margin:14px 0 0;max-width:60ch}
 .dl-hint strong{color:#463c31}
 
-/* == /sedaha/read/ — the opening, read in-browser == */
-.read-kicker{max-width:34em;color:var(--muted);font-family:var(--serif);font-style:italic;
+/* == /sedaha/read/ — the opening, read in-browser ==
+   Type size and measure are the reader's, not the page's: --read-scale and
+   --read-measure are set on :root by assets/js/reader.js and remembered for all
+   114 openings. The values below are the defaults, so the page is complete
+   before any script runs. */
+.read-kicker{max-width:var(--read-measure,34em);color:var(--muted);font-family:var(--serif);font-style:italic;
   font-size:.95rem;margin:22px auto 2px}
-.reader{width:100%;max-width:34em;margin:6px auto 0}
-.reader h1{font-size:1.9rem;margin:0 0 22px}
+.reader{width:100%;max-width:var(--read-measure,34em);margin:6px auto 0}
+.reader h1{font-size:calc(1.9rem * var(--read-scale,1));margin:0 0 22px}
 .reader p{font-family:var(--serif);
-  font-size:1.18rem;line-height:1.9;color:#33302a;margin:0 0 1.2em}
+  font-size:calc(1.18rem * var(--read-scale,1));line-height:1.9;color:#33302a;margin:0 0 1.2em}
 /* the Persian reader sets its own face and metrics (Vazirmatn runs larger than Garamond) */
 .reader p:lang(fa),.read-cta p:lang(fa){font-family:"Vazirmatn",Tahoma,sans-serif;
   font-size:1.06rem;line-height:2.05}
-.read-cta{width:100%;max-width:34em;background:#fbf3ea;border:1px solid #ecdcc7;border-radius:8px;
+/* only the reading text follows the reader's size; the invitation below it is chrome */
+.reader p:lang(fa){font-size:calc(1.06rem * var(--read-scale,1))}
+.read-cta{width:100%;max-width:var(--read-measure,34em);background:#fbf3ea;border:1px solid #ecdcc7;border-radius:8px;
   padding:20px 22px;margin:32px auto 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}
 .read-cta .btns{display:flex;gap:8px;flex-wrap:wrap}
 .read-back{display:inline-block;margin-top:18px;font-size:.92rem}
 .read-entry{margin:8px 0 2px;font-size:1rem;font-weight:600}
-.op-langs{max-width:34em;font-size:.92rem;color:var(--muted);margin:2px auto 20px}
+.op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);margin:2px auto 20px}
 .op-langs a{font-weight:600}
 .op-langs .cur{color:#33302a;font-weight:700}
+
+/* reading toolbar: type size, measure, colours. Wordless, so it needs no
+   translating; it sits above the text, aligned to the end of the measure, and
+   stays out of the way until wanted. */
+.reader-tools{display:flex;justify-content:flex-end;gap:6px;
+  width:100%;max-width:var(--read-measure,34em);margin:0 auto 6px}
+.rt{display:grid;place-items:center;width:34px;height:34px;padding:0;
+  border:1px solid var(--line);border-radius:8px;background:transparent;
+  color:var(--muted);font-family:var(--serif);cursor:pointer;
+  transition:border-color .15s ease,color .15s ease,background .15s ease}
+.rt:hover{border-color:var(--accent);color:var(--accent)}
+.rt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.rt[disabled]{opacity:.35;cursor:default}
+.rt[disabled]:hover{border-color:var(--line);color:var(--muted)}
+.rt[aria-pressed="true"]{background:rgba(138,90,59,.10);border-color:var(--accent);color:var(--accent)}
+.rt svg{width:19px;height:19px;fill:none;stroke:currentColor;
+  stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.rt .a-sm{font-size:.8rem;line-height:1}
+.rt .a-lg{font-size:1.24rem;line-height:1}
+/* one button, three faces: system, light, dark */
+.rt-theme g{display:none}
+.rt-theme[data-mode="auto"] .i-auto,
+.rt-theme[data-mode="light"] .i-light,
+.rt-theme[data-mode="dark"] .i-dark{display:inline}
+@media (max-width:560px){.reader-tools{justify-content:center;margin-bottom:10px}}
 
 /* == share button (native share sheet, clipboard fallback + toast) == */
 button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
@@ -552,6 +594,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .excerpt{color:#d3c6b0}
   .reader p{color:#e2d8c6}
   .op-langs .cur{color:#e6dccb}
+  .rt[aria-pressed="true"]{background:rgba(217,155,109,.16)}
 
   /* editions list / continent panels */
   .ed-featured{border-color:rgba(255,255,255,.10)}
@@ -612,4 +655,34 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 
   /* back-to-top hover reads on the lighter accent */
   .to-top:hover{background:#e8ab7e}
+}
+
+/* =====================================================================
+   Print -- someone will print an opening, and the page they get should be
+   the text and nothing else. Navigation, toolbars, share buttons and the
+   invitation to read it elsewhere are all screen furniture; the painting
+   background would only eat ink. Link addresses are printed after the few
+   links that survive, since a printed underline points nowhere.
+   ===================================================================== */
+@media print{
+  :root{--read-measure:100%}
+  body,body.home,body.book{background:#fff!important;color:#000;
+    padding-bottom:0;font-size:11pt}
+  body.book .container,body.book .site-footer .container{background:none;border:none;
+    box-shadow:none;padding:0;margin:0}
+  .appnav,.reader-tools,.skip-link,.to-top,.share-toast,.btn,.read-cta,.back,
+  .op-langs,.language-finder,.region-chips,.lang-toggle,.foot-logo,.site-footer .foot-link,
+  .progress,.cycler,.lang-offer,.dl-grid,.editions-featured{display:none!important}
+  .container{max-width:none;padding:0}
+  .reader,.read-kicker{max-width:none;margin:0}
+  .reader h1{font-size:20pt;margin:0 0 12pt}
+  .reader p{color:#000;font-size:12pt;line-height:1.6;margin:0 0 .7em;
+    orphans:2;widows:2}
+  .reader p:lang(fa){font-size:12pt;line-height:1.9}
+  .site-footer{margin:18pt 0 0;padding-top:6pt;border-top:1px solid #ccc;
+    color:#444;font-size:8pt}
+  .site-footer a[href^="http"]::after{content:" (" attr(href) ")";color:#666}
+  a{color:#000;text-decoration:none}
+  h1,h2,h3{page-break-after:avoid;break-after:avoid}
+  img{max-width:100%}
 }

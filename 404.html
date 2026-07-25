@@ -35,6 +35,18 @@
   .notfound .links a:hover{background:var(--accent);color:var(--accent-ink)}
 </style>
 <!-- PWA:START (managed by sync_head.py — edit there, not the pages) -->
+<link rel="preload" href="/assets/fonts/ebgaramond-regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>/* theme switch: see sync_head.py. Repoints the stylesheet's own dark-mode media rule; with JS off the system preference decides, as before. */
+(function(){var K="arasteh-theme",R=[],M,B,i,j,r;
+for(i=0;i<document.styleSheets.length;i++){try{r=document.styleSheets[i].cssRules}catch(e){continue}for(j=0;j<r.length;j++){if(r[j].media&&/prefers-color-scheme[^)]*dark/.test(r[j].media.mediaText))R.push(r[j].media)}}
+M=document.querySelector('meta[name="theme-color"]:not([media])');B=M?M.content:"";
+function get(){try{return localStorage.getItem(K)||"auto"}catch(e){return"auto"}}
+function apply(t){var q=t=="dark"?"all":t=="light"?"not all":"(prefers-color-scheme:dark)";
+for(var i=0;i<R.length;i++){try{R[i].mediaText=q}catch(e){}}
+if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
+var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
+window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
+apply(get())})();</script>
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,14 +102,14 @@
         <img src="/assets/img/logo-lockup.png" width="380" height="676" alt="">
       </picture>
     </a>
-    &copy; 2026 Amir Arasteh &middot;
-    <a href="/sedaha/">Books</a> &middot;
-    <a href="/paintings/">Paintings</a> &middot;
-    <a href="/comments/">Guestbook</a> &middot;
-    <a href="/support/">Support</a> &middot;
-    <a href="/license.html">License</a> &middot;
-    <a href="https://t.me/Sounds_AmirArasteh">Telegram</a><br>
-    Contact: <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>
+    &copy; 2026 Amir Arasteh
+    <span class="foot-link is-tab"> &middot; <a href="/sedaha/">Books</a></span>
+    <span class="foot-link is-tab"> &middot; <a href="/paintings/">Paintings</a></span>
+    <span class="foot-link is-tab"> &middot; <a href="/comments/">Guestbook</a></span>
+    <span class="foot-link is-tab"> &middot; <a href="/support/">Support</a></span>
+    <span class="foot-link"> &middot; <a href="/license.html">License</a></span>
+    <span class="foot-link"> &middot; <a href="https://t.me/Sounds_AmirArasteh">Telegram</a></span>
+    <br>Contact: <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>
   </div>
 </footer>
 </body>

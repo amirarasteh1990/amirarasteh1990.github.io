@@ -1,7 +1,7 @@
 # Website status & orientation — arasteh.art
 
 > Onboarding notes for anyone (human or agent) starting work on this site.
-> Last updated: 2026-07-18.
+> Last updated: 2026-07-25.
 >
 > Quick command reference: [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
@@ -31,11 +31,24 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `sitemap.xml`, `robots.txt` | Search-engine discoverability (update `sitemap.xml` when adding a page) |
 | `assets/css/style.css` | **The only stylesheet**, shared by all pages |
 | `assets/js/share.js` | Share-button behavior: native share sheet, clipboard fallback + toast (see below) |
-| `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, and trigger-focus restoration |
+| `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, trigger-focus restoration, and one address per painting (`#picture-4`) |
+| `assets/js/reader.js` | The reading toolbar on the 114 opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
 | `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
+| `assets/fonts/names/…` | One tiny subset per script holding only the letters the 114 language names need (`build_name_fonts.py`) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
+| `sw.js` | Service worker: pages network-first, same-origin assets from cache, nothing cross-origin touched |
 | `sync_book_text.py` | Pulls canonical book text into the site (see below) |
 | `build_webfonts.py` | Regenerates `assets/fonts/` from the book repo's TTFs (run only when those change) |
+| `check.py` | One read-only command that runs every other script's `--check` plus the cross-script checks. Run before pushing |
+
+## Light and dark
+
+Dark mode is authored **once**, as the `@media (prefers-color-scheme:dark)` block at the
+end of `style.css`. The switch in the reading toolbar does not duplicate that palette under
+an attribute; it re-points that media rule at run time (`all` to force dark, `not all` to
+force light, the original query to follow the system again), from the small script
+`sync_head.py` puts in every `<head>`. So there is one copy of dark mode to maintain, and
+with JavaScript off the system preference still decides, exactly as before.
 
 ## Fonts
 

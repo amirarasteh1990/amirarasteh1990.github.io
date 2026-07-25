@@ -15,6 +15,10 @@ readable when the connection goes, and points at the Atom feed of new editions
 (/feed.xml, written by build_read_pages.py). It also carries the dark-mode theme-color, which pairs
 with the light theme-color already in each page head (that one has no media query,
 so it stays the default; the dark one overrides it only under a dark preference).
+It carries two more things that must be in every head: a preload for the one
+webfont used above the fold, and the theme switch (see THEME_JS below), which has
+to run after the stylesheet and before first paint or a stored choice flashes.
+
 It is delimited by <!-- PWA:START --> / <!-- PWA:END --> markers and inserted just
 before </head>. The apple-touch-icon, favicons and the light per-page theme-color
 already live in each head and are left untouched.
@@ -34,10 +38,42 @@ START = "<!-- PWA:START (managed by sync_head.py — edit there, not the pages) 
 END = "<!-- PWA:END -->"
 
 
+# Light/dark is authored once, as a (prefers-color-scheme:dark) block in
+# style.css. Duplicating that whole palette under a [data-theme] attribute just
+# to make it switchable would mean two copies of dark mode drifting apart, so
+# the switch re-points the stylesheet's own media rule instead: "all" to force
+# dark, "not all" to force light, the original query to follow the system again.
+# One authored copy; with JavaScript off, the system preference decides, exactly
+# as it did before. The control lives in the reading toolbar (assets/js/reader.js);
+# this runs in <head>, after the stylesheet, so a stored choice never flashes.
+THEME_JS = (
+    '<script>/* theme switch: see sync_head.py. Repoints the stylesheet\'s own '
+    'dark-mode media rule; with JS off the system preference decides, as before. */\n'
+    '(function(){var K="arasteh-theme",R=[],M,B,i,j,r;\n'
+    'for(i=0;i<document.styleSheets.length;i++){try{r=document.styleSheets[i].cssRules}'
+    'catch(e){continue}for(j=0;j<r.length;j++){if(r[j].media&&'
+    '/prefers-color-scheme[^)]*dark/.test(r[j].media.mediaText))R.push(r[j].media)}}\n'
+    'M=document.querySelector(\'meta[name="theme-color"]:not([media])\');B=M?M.content:"";\n'
+    'function get(){try{return localStorage.getItem(K)||"auto"}catch(e){return"auto"}}\n'
+    'function apply(t){var q=t=="dark"?"all":t=="light"?"not all":"(prefers-color-scheme:dark)";\n'
+    'for(var i=0;i<R.length;i++){try{R[i].mediaText=q}catch(e){}}\n'
+    'if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;\n'
+    'var d=document.documentElement;d.setAttribute("data-theme",t);'
+    'd.style.colorScheme=t=="auto"?"":t}\n'
+    'window.__theme={get:get,usable:R.length>0,'
+    'set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};\n'
+    'apply(get())})();</script>\n'
+)
+
+
 def head_html() -> str:
     """The managed head block, indented to sit at column 0 inside <head>."""
     return (
         START + "\n"
+        # the one face used above the fold on every page (headings, reading text)
+        '<link rel="preload" href="/assets/fonts/ebgaramond-regular.woff2" as="font" '
+        'type="font/woff2" crossorigin>\n'
+        + THEME_JS +
         '<link rel="manifest" href="/manifest.webmanifest">\n'
         '<meta name="mobile-web-app-capable" content="yes">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n'

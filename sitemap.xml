@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://arasteh.art/</loc>
     <lastmod>2026-07-12</lastmod>
@@ -39,6 +40,62 @@
     <loc>https://arasteh.art/paintings/sounds/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/cover.jpg</image:loc>
+      <image:title>Cover painting</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/01.jpg</image:loc>
+      <image:title>Picture 1 · Opening</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/02.jpg</image:loc>
+      <image:title>Picture 2 · Book One</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/03.jpg</image:loc>
+      <image:title>Picture 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/03_2.jpg</image:loc>
+      <image:title>Picture 4</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/04.jpg</image:loc>
+      <image:title>Picture 5</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/05.jpg</image:loc>
+      <image:title>Picture 6</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/06.jpg</image:loc>
+      <image:title>Picture 7</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/06_2.jpg</image:loc>
+      <image:title>Picture 8</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/07.jpg</image:loc>
+      <image:title>Picture 9</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/08.jpg</image:loc>
+      <image:title>Picture 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/08_2.jpg</image:loc>
+      <image:title>Picture 11</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/09.jpg</image:loc>
+      <image:title>Picture 12 · End of Book One</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://arasteh.art/assets/img/paintings/sounds/10.jpg</image:loc>
+      <image:title>Picture 13 · Back Cover</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://arasteh.art/comments/</loc>

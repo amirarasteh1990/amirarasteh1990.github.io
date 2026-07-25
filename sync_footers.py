@@ -7,6 +7,12 @@ literal HTML in the page. Left to hand-editing they drift, and they had --
 license.html and /editions/first-edition/ had no route back to the book at all,
 and the contact address appeared on four pages out of twelve for no reason.
 
+Four of the six links -- Books, Paintings, Guestbook, Support -- are also tabs in
+the bottom bar on a phone, where they sit under the reader's thumb the whole time.
+They are marked class="foot-link is-tab" and the stylesheet hides just those below
+761px, so a phone footer reads "(c) 2026 Amir Arasteh . License . Telegram" and
+the desktop footer is unchanged.
+
 This script owns the footer for the twelve hand-written pages. The 111 generated
 Opening pages and the generated /sedaha/languages/ page get the same footer by
 importing footer_html() from here, so `python build_read_pages.py` cannot
@@ -26,6 +32,12 @@ from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
 EMAIL = "amirarasteh1990@gmail.com"
+
+# On a phone the app shell puts these same destinations under the thumb, one tap
+# away, so repeating them in the footer is furniture. Derived from the tab set,
+# not typed again: adding a tab there retires its footer link here by itself.
+from sync_appnav import TABS  # noqa: E402 - a data import, and it imports nothing back
+TAB_KEYS = {key for key, *_rest in TABS}
 
 # The canonical set, in reading order. Keys are what a page passes to `omit`
 # when the link would point at the page you are already on.
@@ -55,23 +67,24 @@ def footer_html(omit: str = "", logo: bool = True, panel: bool = False) -> str:
     panel -- the homepage wraps its footer in .foot-panel to sit on the hero
     """
     pad = "      " if panel else "    "
-    shown = [(href, label) for key, href, label in LINKS if key != omit]
+    shown = [(key, href, label) for key, href, label in LINKS if key != omit]
 
-    # every link but the last is followed by a separator; the address moves to
-    # its own line, which keeps six links plus an email from wrapping awkwardly
-    lines = ['%s<a href="%s">%s</a>%s' % (pad, href, label,
-                                          " &middot;" if i < len(shown) - 1 else "<br>")
-             for i, (href, label) in enumerate(shown)]
-    lines.append('%sContact: <a href="mailto:%s">%s</a>' % (pad, EMAIL, EMAIL))
+    # Each link carries its own leading separator, so hiding a link on phones
+    # takes its "&middot;" with it and the line never opens with a stray dot.
+    # The address moves to its own line: six links plus an email wrap badly.
+    lines = ['%s<span class="foot-link%s"> &middot; <a href="%s">%s</a></span>'
+             % (pad, " is-tab" if key in TAB_KEYS else "", href, label)
+             for key, href, label in shown]
+    lines.append('%s<br>Contact: <a href="mailto:%s">%s</a>' % (pad, EMAIL, EMAIL))
     body = "\n".join(lines) + "\n"
 
     inner = LOGO if logo else ""
     if panel:
         inner += ('    <div class="foot-panel">\n'
-                  '      &copy; 2026 Amir Arasteh &middot;\n'
+                  '      &copy; 2026 Amir Arasteh\n'
                   + body + "    </div>\n")
     else:
-        inner += "    &copy; 2026 Amir Arasteh &middot;\n" + body
+        inner += "    &copy; 2026 Amir Arasteh\n" + body
 
     return ('<footer class="site-footer">\n'
             '  <div class="container">\n'

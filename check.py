@@ -1,0 +1,213 @@
+#!/usr/bin/env python3
+"""
+check.py — one command that answers "is the site consistent?"
+
+The site is stamped together by eight scripts: the nav shell, the footer, the head
+block, the book text, the gallery derivatives, the 111 Opening pages, the name
+subsets. Each can already answer --check on its own, but nobody remembers to run
+eight of them, and the interesting failures are the ones no single script owns: a
+link pointing at a file that was renamed, a service worker caching a path that no
+longer exists, a hand-written page drifting away from the generator that owns the
+same markup everywhere else.
+
+So this runs all of them, then the checks between them:
+
+  * every sync/build script's own --check
+  * node --check on each script in assets/js and on sw.js  (skipped if no node)
+  * every local href/src/srcset in all 124 pages resolves to a file on disk
+  * every url(...) in the stylesheet resolves, and every path in sw.js's SHELL
+  * sitemap.xml, feed.xml and the manifest parse, and every JSON-LD block is JSON
+  * the three hand-written Opening pages still carry the generator's own hreflang
+    cluster and reading toolbar, byte for byte
+
+Nothing here writes: it is safe to run at any time, and it is the last thing to
+run before a push.
+
+    python check.py            everything
+    python check.py --quick    skip the script --checks (the slow part)
+"""
+from __future__ import annotations
+
+import argparse
+import html as htmllib
+import json
+import re
+import shutil
+import subprocess
+import sys
+import urllib.parse
+import xml.dom.minidom
+from pathlib import Path
+
+SITE = Path(__file__).resolve().parent
+
+SCRIPTS = ["sync_appnav.py", "sync_footers.py", "sync_head.py", "sync_book_text.py",
+           "sync_gallery.py", "build_read_pages.py", "build_name_fonts.py"]
+
+SKIP_SCHEMES = ("http://", "https://", "mailto:", "tel:", "javascript:", "data:")
+
+failures: list[str] = []
+
+
+def report(label: str, ok: bool, detail: str = "") -> bool:
+    print(("[ok]    " if ok else "[FAIL]  ") + label + (("  " + detail) if detail else ""))
+    if not ok:
+        failures.append(label)
+    return ok
+
+
+def pages() -> list[Path]:
+    return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
+
+
+# --------------------------------------------------------------- the scripts
+def run_scripts() -> None:
+    for name in SCRIPTS:
+        proc = subprocess.run([sys.executable, name, "--check"], cwd=SITE,
+                              capture_output=True, text=True, encoding="utf-8", errors="replace")
+        bad = [ln for ln in (proc.stdout or "").splitlines()
+               if ln.startswith(("[drift]", "[stale]", "[warn]"))]
+        detail = bad[0] if bad else ""
+        report(f"{name} --check", proc.returncode == 0, detail)
+
+
+def run_node() -> None:
+    node = shutil.which("node")
+    if not node:
+        print("[skip]  node --check (node not installed)")
+        return
+    files = sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js"]
+    bad = []
+    for f in files:
+        proc = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
+        if proc.returncode != 0:
+            bad.append(f"{f.name}: {proc.stderr.strip().splitlines()[0]}")
+    report(f"node --check on {len(files)} scripts", not bad, bad[0] if bad else "")
+
+
+# ------------------------------------------------------------ the link graph
+def resolve(page: Path, url: str) -> Path | None:
+    """Where a link points on disk, or None if it is not ours to check."""
+    url = url.strip()
+    if not url or url.startswith("#") or url.lower().startswith(SKIP_SCHEMES):
+        return None
+    url = urllib.parse.urldefrag(url)[0].split("?")[0]
+    if not url:
+        return None
+    url = urllib.parse.unquote(url)
+    target = (SITE / url.lstrip("/")) if url.startswith("/") else (page.parent / url)
+    if url.endswith("/"):
+        target = target / "index.html"
+    return target
+
+
+def links_in(body: str) -> list[str]:
+    out = re.findall(r'(?:href|src)="([^"]+)"', body)
+    for sets in re.findall(r'srcset="([^"]+)"', body):
+        out += [part.strip().split(" ")[0] for part in sets.split(",") if part.strip()]
+    return out
+
+
+def crawl() -> None:
+    missing = []
+    for page in pages():
+        body = page.read_text(encoding="utf-8")
+        for url in links_in(body):
+            target = resolve(page, htmllib.unescape(url))
+            if target is not None and not target.exists():
+                missing.append(f"{page.relative_to(SITE).as_posix()} -> {url}")
+    report(f"{len(pages())} pages: every local link resolves", not missing,
+           f"{len(missing)} broken, first: {missing[0]}" if missing else "")
+
+    css = SITE / "assets" / "css" / "style.css"
+    body = css.read_text(encoding="utf-8")
+    bad = [u for u in re.findall(r'url\(([^)]+)\)', body)
+           if not u.strip('"\'').startswith("data:")
+           and not (SITE / u.strip('"\'').lstrip("/")).exists()]
+    report("style.css: every url() resolves", not bad, bad[0] if bad else "")
+    report("style.css: braces balanced", body.count("{") == body.count("}"),
+           f"{body.count('{')} open, {body.count('}')} close")
+
+    sw = (SITE / "sw.js").read_text(encoding="utf-8")
+    shell = re.search(r"var SHELL = \[(.*?)\];", sw, re.S)
+    paths = re.findall(r"'([^']+)'", shell.group(1)) if shell else []
+    gone = [p for p in paths if not (SITE / (p.lstrip("/") or "index.html")).exists()
+            and not (SITE / p.lstrip("/") / "index.html").exists()]
+    report(f"sw.js: {len(paths)} shell paths exist", bool(paths) and not gone,
+           gone[0] if gone else ("SHELL not found" if not paths else ""))
+
+
+# ---------------------------------------------------------- machine-readable
+def structured() -> None:
+    for name in ("sitemap.xml", "feed.xml"):
+        try:
+            xml.dom.minidom.parse(str(SITE / name))
+            report(f"{name} parses", True)
+        except Exception as exc:  # noqa: BLE001 - the message is the finding
+            report(f"{name} parses", False, str(exc))
+    try:
+        json.loads((SITE / "manifest.webmanifest").read_text(encoding="utf-8"))
+        report("manifest.webmanifest parses", True)
+    except Exception as exc:  # noqa: BLE001
+        report("manifest.webmanifest parses", False, str(exc))
+
+    bad, found = [], 0
+    for page in pages():
+        for block in re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                page.read_text(encoding="utf-8"), re.S):
+            found += 1
+            try:
+                json.loads(block)
+            except Exception as exc:  # noqa: BLE001
+                bad.append(f"{page.relative_to(SITE).as_posix()}: {exc}")
+    report(f"{found} JSON-LD blocks parse", not bad, bad[0] if bad else "")
+
+
+# ------------------------------------------------- hand-written vs generated
+def hand_written() -> None:
+    """The three hand-maintained Opening pages carry markup the generator owns for
+    the other 111. Nothing stamps it there, so compare it here."""
+    sys.path.insert(0, str(SITE))
+    import build_read_pages as gen
+
+    hand = ["sedaha/read/index.html", "sedaha/read/fa/index.html", "sedaha/read/da/index.html"]
+    for what, want in (("hreflang cluster", gen.alternates()),
+                       ("reading toolbar", gen.reader_tools_html())):
+        off = [rel for rel in hand
+               if want not in (SITE / rel).read_text(encoding="utf-8")]
+        report(f"EN/FA/DA Opening pages: {what} matches the generator", not off,
+               ", ".join(off))
+
+    missing = [rel for rel in hand
+               if "/assets/js/reader.js" not in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: reader.js loaded", not missing, ", ".join(missing))
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
+    ap.add_argument("--quick", action="store_true",
+                    help="skip the per-script --check runs (the slow part)")
+    args = ap.parse_args()
+
+    if args.quick:
+        print("[skip]  the seven script --checks (--quick)")
+    else:
+        run_scripts()
+    run_node()
+    crawl()
+    structured()
+    hand_written()
+
+    print()
+    if failures:
+        print(f"{len(failures)} check(s) failed:")
+        for f in failures:
+            print("  - " + f)
+        return 1
+    print("everything consistent.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
