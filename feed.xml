@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sedaha (Sounds) — new editions</title>
+  <subtitle>Complete editions of Book One by Amir Arasteh, as each is released.</subtitle>
+  <link href="https://arasteh.art/feed.xml" rel="self"/>
+  <link href="https://arasteh.art/sedaha/"/>
+  <id>https://arasteh.art/feed.xml</id>
+  <updated>2026-07-23T09:42:29Z</updated>
+  <author><name>Amir Arasteh</name><uri>https://arasteh.art/</uri></author>
+  <rights>The book is free to read and share, complete and unchanged.</rights>
+  <entry>
+    <title>English</title>
+    <link href="https://arasteh.art/sedaha/read/"/>
+    <id>https://arasteh.art/sedaha/read/</id>
+    <updated>2026-07-23T09:42:29Z</updated>
+    <summary>The complete English edition of Sedaha (Sounds), Book One: free to read, and to download as PDF and EPUB.</summary>
+  </entry>
+  <entry>
+    <title>Dansk · Danish</title>
+    <link href="https://arasteh.art/sedaha/read/da/"/>
+    <id>https://arasteh.art/sedaha/read/da/</id>
+    <updated>2026-07-23T09:42:29Z</updated>
+    <summary>The complete Danish edition of Sedaha (Sounds), Book One: free to read, and to download as PDF and EPUB.</summary>
+  </entry>
+  <entry>
+    <title>فارسی · Persian</title>
+    <link href="https://arasteh.art/sedaha/read/fa/"/>
+    <id>https://arasteh.art/sedaha/read/fa/</id>
+    <updated>2026-07-23T09:42:27Z</updated>
+    <summary>The complete Persian edition of Sedaha (Sounds), Book One: free to read, and to download as PDF and EPUB.</summary>
+  </entry>
+  <entry>
+    <title>Italiano · Italian</title>
+    <link href="https://arasteh.art/sedaha/read/it/"/>
+    <id>https://arasteh.art/sedaha/read/it/</id>
+    <updated>2026-07-23T09:42:27Z</updated>
+    <summary>The complete Italian edition of Sedaha (Sounds), Book One: free to read, and to download as PDF.</summary>
+  </entry>
+</feed>

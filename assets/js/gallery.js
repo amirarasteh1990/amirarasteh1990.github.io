@@ -1,6 +1,9 @@
 /* Accessible dialog viewer for the Sounds painting gallery.
    Click / tap a thumbnail to open; arrow keys, on-screen arrows, a swipe on
-   touch screens, or a tap on the painting itself move between works. */
+   touch screens, or a tap on the painting itself move between works.
+   Each painting also has its own address (/paintings/sounds/#picture-4), so a
+   single work can be linked to and shared, and the share button hands that
+   address to the system share sheet through share.js. */
 (function () {
   'use strict';
 
@@ -10,24 +13,51 @@
 
   var shots = Array.prototype.slice.call(gallery.querySelectorAll('.shot'));
   var image = document.getElementById('lightboxImage');
+  var source = document.getElementById('lightboxSource');
   var caption = document.getElementById('lightboxCaption');
   var counter = document.getElementById('lightboxCounter');
   var shell = document.getElementById('lightboxShell');
   var closeButton = document.getElementById('lightboxClose');
   var previousButton = document.getElementById('lightboxPrev');
   var nextButton = document.getElementById('lightboxNext');
+  var shareButton = document.getElementById('lightboxShare');
   var current = 0;
   var trigger;
+
+  // A painting's address comes from its caption, so links stay readable and
+  // survive a file being renamed: "Picture 4" -> #picture-4, the cover -> #cover.
+  function slugOf(shot) {
+    var text = (shot.getAttribute('data-caption') || '').toLowerCase();
+    var numbered = text.match(/picture\s+(\d+)/);
+    if (numbered) return 'picture-' + numbered[1];
+    if (text.indexOf('cover') === 0) return 'cover';
+    return text.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'painting';
+  }
+
+  var slugs = shots.map(slugOf);
+
+  function setUrl(hash) {
+    if (!window.history || !history.replaceState) return;
+    history.replaceState(null, '', hash ? '#' + hash : location.pathname + location.search);
+  }
 
   function show(index) {
     current = (index + shots.length) % shots.length;
     var shot = shots[current];
     var thumbnail = shot.querySelector('img');
     image.classList.add('is-loading');
+    if (source) source.srcset = shot.href.replace(/\.jpg$/i, '.webp');
     image.src = shot.href;
     image.alt = thumbnail.alt;
     caption.textContent = shot.getAttribute('data-caption') || thumbnail.alt;
     if (counter) counter.textContent = (current + 1) + ' / ' + shots.length;
+    setUrl(slugs[current]);
+    if (shareButton) {
+      shareButton.setAttribute('data-share-url',
+        location.origin + location.pathname + '#' + slugs[current]);
+      shareButton.setAttribute('data-share-title',
+        caption.textContent + ' — Sedaha (Sounds), Amir Arasteh');
+    }
     preload(current + 1);
     preload(current - 1);
   }
@@ -41,8 +71,8 @@
 
   image.addEventListener('load', function () { image.classList.remove('is-loading'); });
 
-  function open(index, source) {
-    trigger = source;
+  function open(index, openedBy) {
+    trigger = openedBy;
     show(index);
     dialog.showModal();
     closeButton.focus();
@@ -109,6 +139,18 @@
 
   dialog.addEventListener('close', function () {
     image.removeAttribute('src');
+    if (source) source.removeAttribute('srcset');
+    setUrl('');
     if (trigger) trigger.focus();
   });
+
+  // Arriving on /paintings/sounds/#picture-4 opens that painting straight away.
+  function openFromHash() {
+    var index = slugs.indexOf(decodeURIComponent(location.hash.slice(1)).toLowerCase());
+    if (index < 0) return;
+    if (dialog.open) show(index);
+    else open(index, shots[index]);
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
 })();

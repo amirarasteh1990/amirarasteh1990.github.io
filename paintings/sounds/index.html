@@ -47,6 +47,7 @@
   .lb-control:focus-visible{outline:2px solid #f5efe3;outline-offset:3px}
   .lb-control svg{width:22px;height:22px;stroke:currentColor}
   .lb-close{top:18px;right:18px}
+  .lb-share{top:18px;left:18px}
   .lb-prev{left:18px;top:50%;transform:translateY(-50%)}
   .lb-next{right:18px;top:50%;transform:translateY(-50%)}
   .lb-counter{position:absolute;top:22px;left:50%;transform:translateX(-50%);z-index:2;
@@ -68,6 +69,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Arasteh">
 <meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">
+<link rel="alternate" type="application/atom+xml" title="Sedaha (Sounds) — new editions" href="/feed.xml">
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>
 <!-- PWA:END -->
 </head>
 <body>
@@ -92,20 +95,20 @@
     <h1>Sedaha (Sounds) &mdash; Book One</h1>
     <p class="lead">The paintings made for the book, in the order they appear.</p>
     <div class="gallery" id="soundsGallery">
-      <a class="shot" href="/assets/img/paintings/sounds/cover.jpg" data-caption="Cover painting" aria-haspopup="dialog"><img src="/assets/img/paintings/sounds/th/cover.jpg" width="412" height="560" fetchpriority="high" alt="Cover painting of Sedaha (Sounds), Book One"><span class="shot-label">Cover</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/01.jpg" data-caption="Picture 1 &middot; Opening" aria-haspopup="dialog"><img src="/assets/img/paintings/sounds/th/01.jpg" width="560" height="409" alt="Picture 1 &middot; Opening, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 1 &middot; Opening</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/02.jpg" data-caption="Picture 2 &middot; Book One" aria-haspopup="dialog"><img src="/assets/img/paintings/sounds/th/02.jpg" width="553" height="560" alt="Picture 2 &middot; Book One, from Sedaha (Sounds)"><span class="shot-label">Picture 2 &middot; Book One</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/03.jpg" data-caption="Picture 3" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/03.jpg" width="560" height="420" alt="Picture 3, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 3</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/03_2.jpg" data-caption="Picture 4" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/03_2.jpg" width="560" height="418" alt="Picture 4, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 4</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/04.jpg" data-caption="Picture 5" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/04.jpg" width="560" height="440" alt="Picture 5, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 5</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/05.jpg" data-caption="Picture 6" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/05.jpg" width="362" height="560" alt="Picture 6, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 6</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/06.jpg" data-caption="Picture 7" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/06.jpg" width="560" height="424" alt="Picture 7, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 7</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/06_2.jpg" data-caption="Picture 8" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/06_2.jpg" width="426" height="560" alt="Picture 8, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 8</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/07.jpg" data-caption="Picture 9" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/07.jpg" width="560" height="434" alt="Picture 9, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 9</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/08.jpg" data-caption="Picture 10" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/08.jpg" width="560" height="402" alt="Picture 10, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 10</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/08_2.jpg" data-caption="Picture 11" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/08_2.jpg" width="560" height="417" alt="Picture 11, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 11</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/09.jpg" data-caption="Picture 12 &middot; End of Book One" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/09.jpg" width="555" height="560" alt="Picture 12 &middot; End of Book One, from Sedaha (Sounds)"><span class="shot-label">Picture 12 &middot; End</span></a>
-      <a class="shot" href="/assets/img/paintings/sounds/10.jpg" data-caption="Picture 13 &middot; Back Cover" aria-haspopup="dialog"><img loading="lazy" src="/assets/img/paintings/sounds/th/10.jpg" width="385" height="560" alt="Picture 13 &middot; Back Cover, from Sedaha (Sounds), Book One"><span class="shot-label">Picture 13 &middot; Back Cover</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/cover.jpg" data-caption="Cover painting" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/cover.webp" type="image/webp"><img src="/assets/img/paintings/sounds/th/cover.jpg" width="412" height="560" fetchpriority="high" alt="Cover painting of Sedaha (Sounds), Book One"></picture><span class="shot-label">Cover</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/01.jpg" data-caption="Picture 1 &middot; Opening" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/01.webp" type="image/webp"><img src="/assets/img/paintings/sounds/th/01.jpg" width="560" height="409" alt="Picture 1 &middot; Opening, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 1 &middot; Opening</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/02.jpg" data-caption="Picture 2 &middot; Book One" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/02.webp" type="image/webp"><img src="/assets/img/paintings/sounds/th/02.jpg" width="553" height="560" alt="Picture 2 &middot; Book One, from Sedaha (Sounds)"></picture><span class="shot-label">Picture 2 &middot; Book One</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/03.jpg" data-caption="Picture 3" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/03.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/03.jpg" width="560" height="420" alt="Picture 3, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 3</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/03_2.jpg" data-caption="Picture 4" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/03_2.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/03_2.jpg" width="560" height="418" alt="Picture 4, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 4</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/04.jpg" data-caption="Picture 5" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/04.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/04.jpg" width="560" height="440" alt="Picture 5, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 5</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/05.jpg" data-caption="Picture 6" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/05.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/05.jpg" width="362" height="560" alt="Picture 6, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 6</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/06.jpg" data-caption="Picture 7" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/06.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/06.jpg" width="560" height="424" alt="Picture 7, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 7</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/06_2.jpg" data-caption="Picture 8" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/06_2.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/06_2.jpg" width="426" height="560" alt="Picture 8, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 8</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/07.jpg" data-caption="Picture 9" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/07.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/07.jpg" width="560" height="434" alt="Picture 9, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 9</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/08.jpg" data-caption="Picture 10" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/08.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/08.jpg" width="560" height="402" alt="Picture 10, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 10</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/08_2.jpg" data-caption="Picture 11" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/08_2.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/08_2.jpg" width="560" height="417" alt="Picture 11, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 11</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/09.jpg" data-caption="Picture 12 &middot; End of Book One" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/09.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/09.jpg" width="555" height="560" alt="Picture 12 &middot; End of Book One, from Sedaha (Sounds)"></picture><span class="shot-label">Picture 12 &middot; End</span></a>
+      <a class="shot" href="/assets/img/paintings/sounds/10.jpg" data-caption="Picture 13 &middot; Back Cover" aria-haspopup="dialog"><picture><source srcset="/assets/img/paintings/sounds/th/10.webp" type="image/webp"><img loading="lazy" src="/assets/img/paintings/sounds/th/10.jpg" width="385" height="560" alt="Picture 13 &middot; Back Cover, from Sedaha (Sounds), Book One"></picture><span class="shot-label">Picture 13 &middot; Back Cover</span></a>
     </div>
     <p class="muted-note">All artwork &copy; Amir Arasteh. All Rights Reserved.</p>
   </section>
@@ -120,8 +123,14 @@
     <button class="lb-control lb-prev" id="lightboxPrev" type="button" aria-label="Previous painting" title="Previous painting">
       <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
     </button>
+    <button class="lb-control lb-share btn-share" id="lightboxShare" type="button" aria-label="Share this painting" title="Share this painting">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>
+    </button>
     <figure class="lb-figure">
-      <img id="lightboxImage" src="" alt="">
+      <picture>
+        <source id="lightboxSource" type="image/webp">
+        <img id="lightboxImage" src="" alt="">
+      </picture>
       <figcaption class="lb-cap" id="lightboxCaption" aria-live="polite"></figcaption>
     </figure>
     <button class="lb-control lb-next" id="lightboxNext" type="button" aria-label="Next painting" title="Next painting">
@@ -149,6 +158,7 @@
   </div>
 </footer>
 <script src="/assets/js/gallery.js" defer></script>
+<script src="/assets/js/share.js" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

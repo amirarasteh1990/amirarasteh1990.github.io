@@ -42,6 +42,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Arasteh">
 <meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">
+<link rel="alternate" type="application/atom+xml" title="Sedaha (Sounds) — new editions" href="/feed.xml">
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>
 <!-- PWA:END -->
 </head>
 <body class="book">
@@ -65,8 +67,8 @@
 
   <section class="book-hero">
     <div class="cover">
-      <img src="/assets/img/book-cover.jpg" width="884" height="1200"
-        alt="English cover of Sounds, Book One, by Amir Arasteh">
+      <picture><source srcset="/assets/img/book-cover.webp" type="image/webp"><img src="/assets/img/book-cover.jpg" width="884" height="1200"
+        alt="English cover of Sounds, Book One, by Amir Arasteh"></picture>
     </div>
     <div class="meta">
       <h1><!--S:title:EN-->Sounds<!--/S--></h1>
@@ -76,11 +78,14 @@
         <em>Sounds</em> lets you live inside it.</p>
       <p class="cycler" aria-hidden="true">Read it in<span class="slot" id="cyclerSlot" lang="fa" dir="rtl">فارسی</span></p>
       <a class="btn btn-primary book-primary" href="/sedaha/read/">Read the opening</a>
-      <!-- keep in step with the featured editions below -->
+      <!-- the two numbers below are stamped by build_read_pages.py from the release -->
       <div class="progress" aria-hidden="true"><span style="width:3.5%"></span></div>
       <p class="progress-note"><strong>4</strong> of 114 editions complete</p>
     </div>
   </section>
+
+  <!-- filled in by the script below only when the visitor's own language has an edition -->
+  <p class="lang-offer" id="langOffer" hidden></p>
 
   <section class="downloads">
     <div class="divider"></div>
@@ -133,7 +138,8 @@
       <p class="visually-hidden" id="langSearchStatus" role="status" aria-live="polite"></p>
     </div>
     <p class="muted-note">New editions are announced on
-      <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>. A few notes a year.</p>
+      <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>, or by
+      <a href="/feed.xml">feed</a>. A few notes a year.</p>
     <details class="lang-toggle" id="langDetails">
       <summary>Browse all 114 languages</summary>
       <div class="region-chips" role="group" aria-label="Filter the list by region">
@@ -443,6 +449,49 @@
   }
   openFromHash();
   window.addEventListener('hashchange', openFromHash);
+
+  /* The book's whole promise is that it finds you in your own language, so if the
+     browser asks for one this site has, say so once, quietly, and remember a No. */
+  (function(){
+    var offer = document.getElementById('langOffer');
+    if(!offer || location.hash) return;
+    try{ if(localStorage.getItem('sedaha-lang-offer') === 'off') return; }catch(e){}
+    var wanted = (navigator.languages || [navigator.language || '']).slice(0, 4);
+    var el = null;
+    for(var i = 0; i < wanted.length && !el; i++){
+      var tag = lc(String(wanted[i])).replace('_', '-');
+      var tries = [tag, tag.split('-')[0]];
+      for(var j = 0; j < tries.length && !el; j++){
+        if(tries[j] && tries[j] !== 'en') el = bySlug[tries[j]] || null;
+      }
+    }
+    var link = el && el.querySelector('a[href^="/sedaha/read/"]');
+    var native = el && el.querySelector('.native');
+    if(!link || !native) return;
+
+    var a = document.createElement('a');
+    a.href = link.getAttribute('href');
+    a.className = 'go';
+    a.appendChild(document.createTextNode('Read the opening in '));
+    var name = document.createElement('b');
+    name.textContent = native.textContent.trim();
+    if(native.getAttribute('lang')) name.setAttribute('lang', native.getAttribute('lang'));
+    if(native.getAttribute('dir')) name.setAttribute('dir', native.getAttribute('dir'));
+    a.appendChild(name);
+    a.appendChild(document.createTextNode(' →'));
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'lang-clear offer-dismiss';
+    close.setAttribute('aria-label', 'Hide this suggestion');
+    close.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+    close.addEventListener('click', function(){
+      offer.hidden = true;
+      try{ localStorage.setItem('sedaha-lang-offer', 'off'); }catch(e){}
+    });
+    offer.appendChild(a);
+    offer.appendChild(close);
+    offer.hidden = false;
+  })();
 })();
 
 /* The hero line cycles through the book's own alphabets, taken from the list

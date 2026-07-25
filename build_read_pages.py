@@ -722,8 +722,9 @@ def _configured() -> dict[str, str]:
     return tags
 
 
-def _released() -> dict[str, set[str]]:
-    """language name -> {'pdf','epub'} actually downloadable from the GitHub release.
+def _released() -> tuple[dict[str, set[str]], dict[str, str]]:
+    """language name -> {'pdf','epub'} downloadable from the GitHub release, plus
+    language name -> the newest of its assets' timestamps (used by the Atom feed).
 
     A reader can only read what is published, so the release is the truth here. If gh
     is unavailable we fall back to the local build dir and say so loudly, because that
@@ -733,24 +734,32 @@ def _released() -> dict[str, set[str]]:
     try:
         raw = subprocess.run(["gh", "release", "view", RELEASE_TAG, "--json", "assets"],
                              cwd=SITE, capture_output=True, text=True, timeout=60, check=True).stdout
-        names = [a["name"] for a in json.loads(raw)["assets"]]
+        assets = [(a["name"], a.get("updatedAt") or a.get("createdAt"))
+                  for a in json.loads(raw)["assets"]]
     except Exception as exc:  # noqa: BLE001 - any failure means "ask the filesystem"
         local = BOOK_VOL / "online"
         print(f"[warn]  gh release unavailable ({type(exc).__name__}); falling back to {local}")
         print("[warn]  the page may then list editions that are built locally but NOT uploaded")
-        names = [p.name for p in local.glob("Sedaha_*.*")] if local.is_dir() else []
+        assets = [(p.name, datetime.datetime.utcfromtimestamp(p.stat().st_mtime)
+                   .strftime("%Y-%m-%dT%H:%M:%SZ"))
+                  for p in local.glob("Sedaha_*.*")] if local.is_dir() else []
     out: dict[str, set[str]] = {}
-    for n in names:
-        m = re.fullmatch(r"Sedaha_(\w+)\.(pdf|epub)", n)
-        if m:
-            out.setdefault(m.group(1), set()).add(m.group(2))
-    return out
+    when: dict[str, str] = {}
+    for name, stamp in assets:
+        m = re.fullmatch(r"Sedaha_(\w+)\.(pdf|epub)", name)
+        if not m:
+            continue
+        out.setdefault(m.group(1), set()).add(m.group(2))
+        if stamp and stamp > when.get(m.group(1), ""):
+            when[m.group(1)] = stamp
+    return out, when
 
 
 def status_rows() -> list[dict]:
     """One row per edition, most-available first, then alphabetically by English name."""
     tier_a, excluded = _book_lists()
-    tags, released = _configured(), _released()
+    tags = _configured()
+    released, released_at = _released()
     rows = []
     for L in CORE + [dict(L, name=None, url=f"/sedaha/read/{L['slug']}/") for L in LANGS]:
         name = L["name"] or tags.get(L["code"])
@@ -765,7 +774,8 @@ def status_rows() -> list[dict]:
             state = "translated"
         rows.append({"native": L["native"], "en": L["en"], "lang": L["lang"], "rtl": L.get("rtl", False),
                      "url": L["url"], "state": state, "stem": f"Sedaha_{name}" if name else None,
-                     "fmts": sorted(fmts, reverse=True)})  # pdf before epub
+                     "fmts": sorted(fmts, reverse=True),  # pdf before epub
+                     "date": released_at.get(name) if name else None})
     order = {s[0]: i for i, s in enumerate(STATES)}
     rows.sort(key=lambda r: (order[r["state"]], r["en"]))
     return rows
@@ -859,7 +869,8 @@ def render_status(rows: list[dict]) -> str:
     <a href="mailto:amirarasteh1990@gmail.com">Write to me</a> and I&rsquo;ll look.</p>
 
   <p class="lang-foot">Editions are released as they pass review, not on a schedule.
-    <a href="https://t.me/Sounds_AmirArasteh">Follow on Telegram</a> to hear when new ones arrive.</p>
+    Hear when new ones arrive on <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>,
+    or by <a href="/feed.xml">feed</a>.</p>
 </main>
 
 {FOOTER}
@@ -921,8 +932,80 @@ def render_status(rows: list[dict]) -> str:
 """
 
 
-def patch_status_page(check: bool) -> bool:
-    rows = status_rows()
+FEED = SITE / "feed.xml"
+UNDATED = "2026-01-01T00:00:00Z"   # an edition whose release timestamp is unknown
+
+
+def render_feed(rows: list[dict]) -> str:
+    """An Atom feed of the complete editions, so following the work does not have
+    to mean Telegram (which part of the readership cannot reach)."""
+    ready = [r for r in rows if r["state"] == "ready"]
+    ready.sort(key=lambda r: (r["date"] or UNDATED, r["en"]), reverse=True)
+    updated = max((r["date"] or UNDATED for r in ready), default=UNDATED)
+    entries = []
+    for r in ready:
+        url = f"https://arasteh.art{r['url']}"
+        title = f"{r['native']} · {r['en']}" if r["native"] != r["en"] else r["en"]
+        files = " and ".join(f.upper() for f in r["fmts"]) or "the full text"
+        entries.append(
+            "  <entry>\n"
+            f"    <title>{html.escape(title)}</title>\n"
+            f'    <link href="{url}"/>\n'
+            f"    <id>{url}</id>\n"
+            f"    <updated>{r['date'] or UNDATED}</updated>\n"
+            f"    <summary>The complete {html.escape(r['en'])} edition of Sedaha (Sounds), "
+            f"Book One: free to read, and to download as {files}.</summary>\n"
+            "  </entry>")
+    return (
+        '<?xml version="1.0" encoding="utf-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+        "  <title>Sedaha (Sounds) — new editions</title>\n"
+        "  <subtitle>Complete editions of Book One by Amir Arasteh, as each is released.</subtitle>\n"
+        '  <link href="https://arasteh.art/feed.xml" rel="self"/>\n'
+        '  <link href="https://arasteh.art/sedaha/"/>\n'
+        "  <id>https://arasteh.art/feed.xml</id>\n"
+        f"  <updated>{updated}</updated>\n"
+        "  <author><name>Amir Arasteh</name><uri>https://arasteh.art/</uri></author>\n"
+        "  <rights>The book is free to read and share, complete and unchanged.</rights>\n"
+        + "\n".join(entries) + "\n</feed>\n")
+
+
+def patch_feed(check: bool, rows: list[dict]) -> bool:
+    feed = render_feed(rows)
+    if FEED.is_file() and FEED.read_text(encoding="utf-8") == feed:
+        print("[ok]    feed.xml: current")
+        return True
+    if check:
+        print("[drift] feed.xml: missing or stale")
+        return False
+    FEED.write_text(feed, encoding="utf-8", newline="\n")
+    print(f"[write] feed.xml  ({sum(1 for r in rows if r['state'] == 'ready')} editions)")
+    return True
+
+
+def patch_meter(check: bool, rows: list[dict]) -> bool:
+    """Keep /sedaha/'s hero meter honest: the ready count comes from the release,
+    the same source the status page uses, so the number cannot quietly go stale."""
+    ready = sum(1 for r in rows if r["state"] == "ready")
+    total = len(rows)
+    width = max(ready / total * 100, 1.2)
+    body = SOUNDS.read_text(encoding="utf-8")
+    new = re.sub(r'(<div class="progress" aria-hidden="true"><span style="width:)[\d.]+(%)',
+                 rf"\g<1>{width:.1f}\g<2>", body, count=1)
+    new = re.sub(r'(<p class="progress-note"><strong>)\d+(</strong> of )\d+( editions complete)',
+                 rf"\g<1>{ready}\g<2>{total}\g<3>", new, count=1)
+    if new == body:
+        print(f"[ok]    /sedaha/ meter: {ready} of {total}")
+        return True
+    if check:
+        print(f"[drift] /sedaha/ meter: should read {ready} of {total}")
+        return False
+    SOUNDS.write_text(new, encoding="utf-8", newline="\n")
+    print(f"[write] /sedaha/ meter: {ready} of {total}")
+    return True
+
+
+def patch_status_page(check: bool, rows: list[dict]) -> bool:
     page = render_status(rows)
     if STATUS_PAGE.is_file() and STATUS_PAGE.read_text(encoding="utf-8") == page:
         print("[ok]    /sedaha/languages/: current")
@@ -1017,7 +1100,10 @@ def main() -> int:
     if ok and args.check:
         print(f"[ok]    all {len(LANGS)} generated pages in sync")
 
-    ok &= patch_status_page(args.check)
+    rows = status_rows()
+    ok &= patch_status_page(args.check, rows)
+    ok &= patch_meter(args.check, rows)
+    ok &= patch_feed(args.check, rows)
     ok &= patch_index(args.check)
     ok &= patch_sitemap(args.check)
     if not args.check:

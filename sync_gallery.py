@@ -8,8 +8,13 @@ For every master it writes two JPEGs under assets/img/paintings/sounds/:
   * full  — longest edge 1500 px   (lightbox image)
   * th/   — longest edge  560 px   (gallery thumbnail)
 
+Each JPEG gets a WebP twin of the same pixels, roughly half the bytes. The pages
+serve it through <picture>/image-set and fall back to the JPEG where WebP is not
+supported, so the twins are an optimisation, never a requirement.
+
 It also writes assets/img/book-cover.jpg from CoverPics/_generated/cover_EN.jpg
-at a web-sized 1200 px longest edge.
+at a web-sized 1200 px longest edge, and a WebP twin for the two standing page
+images (cover.jpg, book-cover.jpg) that are used as CSS backgrounds.
 
 A derived pair is only rewritten when the master is newer than the derived file
 (or with --force), so unchanged paintings keep identical bytes and a clean git diff.
@@ -38,7 +43,10 @@ FULL_EDGE = 1500
 THUMB_EDGE = 560
 BOOK_COVER_EDGE = 1200
 QUALITY = 85
+WEBP_QUALITY = 80          # visually matched to JPEG 85 on these paintings
 LANCZOS = getattr(Image, "Resampling", Image).LANCZOS
+# page images that are not derived from CoverPics but still want a WebP twin
+STANDING = [SITE / "assets" / "img" / "cover.jpg", BOOK_COVER_OUT]
 
 # master filename -> derived stem (everything ships as .jpg on the site)
 RENAME = {"00_CoverPhoto": "cover"}
@@ -59,6 +67,18 @@ def _save_resized(im: Image.Image, dest: Path, edge: int) -> None:
     scale = edge / max(im.size)
     resized = im.resize((round(im.width * scale), round(im.height * scale)), LANCZOS)
     resized.save(dest, "JPEG", quality=QUALITY, optimize=True)
+    resized.save(dest.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
+
+
+def _twin_is_current(jpg: Path) -> bool:
+    webp = jpg.with_suffix(".webp")
+    return webp.is_file() and webp.stat().st_mtime >= jpg.stat().st_mtime
+
+
+def _write_twin(jpg: Path) -> None:
+    """WebP beside a JPEG this script does not itself derive (page backgrounds)."""
+    with Image.open(jpg) as im:
+        im.convert("RGB").save(jpg.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
 
 
 def main() -> int:
@@ -80,6 +100,7 @@ def main() -> int:
             and full.is_file() and thumb.is_file()
             and full.stat().st_mtime >= master.stat().st_mtime
             and thumb.stat().st_mtime >= master.stat().st_mtime
+            and _twin_is_current(full) and _twin_is_current(thumb)
         )
         if current:
             continue
@@ -99,6 +120,7 @@ def main() -> int:
         not args.force
         and BOOK_COVER_OUT.is_file()
         and BOOK_COVER_OUT.stat().st_mtime >= BOOK_COVER_MASTER.stat().st_mtime
+        and _twin_is_current(BOOK_COVER_OUT)
     )
     if not cover_current:
         stale += 1
@@ -111,6 +133,16 @@ def main() -> int:
                     im = im.convert("RGB")
                 _save_resized(im, BOOK_COVER_OUT, BOOK_COVER_EDGE)
             print(f"wrote  {BOOK_COVER_OUT.relative_to(SITE)}")
+
+    for jpg in STANDING:
+        if not jpg.is_file() or (not args.force and _twin_is_current(jpg)):
+            continue
+        stale += 1
+        if args.check:
+            print(f"STALE  {jpg.with_suffix('.webp').relative_to(SITE)}  (WebP twin missing or older)")
+        else:
+            _write_twin(jpg)
+            print(f"wrote  {jpg.with_suffix('.webp').relative_to(SITE)}")
 
     if stale == 0:
         print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")

@@ -12,6 +12,53 @@
 @font-face{font-family:"Vazirmatn";src:url(/assets/fonts/vazirmatn-semibold.woff2) format("woff2");
   font-weight:600;font-style:normal;font-display:swap}
 
+/* NAMEFONTS:START (managed by build_name_fonts.py — run it, do not edit this block) */
+/* One family, one face per script, each holding only the letters the 114
+   language names are spelled with. unicode-range keeps every other page
+   from touching them, and a script whose glyph is missing here simply
+   falls through to the reader's own system font. */
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/armenian.woff2) format("woff2");unicode-range:U+0530-058F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/hebrew.woff2) format("woff2");unicode-range:U+0590-05FF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/devanagari.woff2) format("woff2");unicode-range:U+0900-097F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/bengali.woff2) format("woff2");unicode-range:U+0980-09FF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/gurmukhi.woff2) format("woff2");unicode-range:U+0A00-0A7F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/gujarati.woff2) format("woff2");unicode-range:U+0A80-0AFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/oriya.woff2) format("woff2");unicode-range:U+0B00-0B7F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/tamil.woff2) format("woff2");unicode-range:U+0B80-0BFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/telugu.woff2) format("woff2");unicode-range:U+0C00-0C7F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/kannada.woff2) format("woff2");unicode-range:U+0C80-0CFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/malayalam.woff2) format("woff2");unicode-range:U+0D00-0D7F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/sinhala.woff2) format("woff2");unicode-range:U+0D80-0DFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/thai.woff2) format("woff2");unicode-range:U+0E00-0E7F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/lao.woff2) format("woff2");unicode-range:U+0E80-0EFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/myanmar.woff2) format("woff2");unicode-range:U+1000-109F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/georgian.woff2) format("woff2");unicode-range:U+10A0-10FF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/ethiopic.woff2) format("woff2");unicode-range:U+1200-137F}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/khmer.woff2) format("woff2");unicode-range:U+1780-17FF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/han.woff2) format("woff2");unicode-range:U+3400-9FFF}
+@font-face{font-family:"Sedaha Names";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/assets/fonts/names/hangul.woff2) format("woff2");unicode-range:U+AC00-D7AF}
+/* NAMEFONTS:END */
+
 :root{
   --bg:#F5EFE3; --surface:#ffffff; --ink:#1f1b16; --muted:#6f675e;
   --paper:#F6EFDB; --line:#e8e2d9; --accent:#8a5a3b; --accent-ink:#ffffff;
@@ -29,6 +76,14 @@ body.home{
 body.book{
   background-image:linear-gradient(rgba(245,239,227,.34),rgba(245,239,227,.34)),url(/assets/img/cover.jpg);
   background-size:cover;background-position:center;background-attachment:fixed;}
+/* Same painting, ~30% fewer bytes where WebP is understood. The url() above is
+   the fallback, so nothing changes for browsers without image-set(). */
+@supports (background-image:image-set(url(/assets/img/cover.webp) type("image/webp"))){
+  body.home{background-image:linear-gradient(rgba(245,239,227,.35),rgba(245,239,227,.35)),
+    image-set(url(/assets/img/cover.webp) type("image/webp"),url(/assets/img/cover.jpg) type("image/jpeg"))}
+  body.book{background-image:linear-gradient(rgba(245,239,227,.34),rgba(245,239,227,.34)),
+    image-set(url(/assets/img/cover.webp) type("image/webp"),url(/assets/img/cover.jpg) type("image/jpeg"))}
+}
 body.book .container{background:rgba(255,253,249,.94);border:1px solid rgba(232,226,217,.8);
   border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.14);padding:2px 30px 34px;margin:22px auto 44px;
   backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
@@ -54,6 +109,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 :lang(fa),:lang(ar),:lang(ur),:lang(ps),:lang(prs),:lang(ckb),:lang(sd),
 :lang(bal),:lang(glk),:lang(mzn),:lang(lrc),:lang(ug){
   font-family:"Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif}
+/* A language name is written in its own script, so it must never depend on the
+   visitor's system having a font for it: "Sedaha Names" carries just those
+   letters (build_name_fonts.py), Vazirmatn the Arabic-script ones, and anything
+   neither covers falls through to the system as before. */
+.native,.cycler .slot{
+  font-family:"Sedaha Names","Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif}
 .site-header{padding:44px 0 0;text-align:center}
 .site-header h1{margin:0 0 8px;font-size:2.6rem}
 .tagline{color:var(--muted);margin:0;font-size:1.05rem}
@@ -191,7 +252,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .continents{display:flex;flex-direction:column;gap:18px}
 /* each region is its own <details>: the full list opens one continent at a time
    instead of dropping 111 rows at once. Search opens whichever regions match. */
-.continent{background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.07);border-radius:8px;padding:15px 18px 17px}
+.continent{background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.07);border-radius:8px;padding:15px 18px 17px;
+  content-visibility:auto;contain-intrinsic-size:auto 300px}   /* skip rendering a region until it is near */
 .continent>summary{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}
 .continent>summary::-webkit-details-marker{display:none}
 .continent>summary::after{content:"\25BE";color:#a89f8d;flex:none;transition:transform .2s ease}
@@ -263,6 +325,15 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   font:inherit;font-size:.82rem;font-weight:600;line-height:1.5;cursor:pointer}
 .region-chip:hover{border-color:var(--accent);color:#2f2a20}
 .region-chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* one quiet line offering the visitor's own language, dismissable for good */
+.lang-offer{display:flex;align-items:center;gap:10px;margin:20px 0 0;padding:9px 8px 9px 15px;
+  border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
+  background:var(--surface);font-size:.95rem}
+.lang-offer[hidden]{display:none}
+.lang-offer .go{flex:1;min-width:0;color:var(--ink)}
+.lang-offer .go b{font-weight:600;color:var(--accent)}
+.offer-dismiss{position:static;transform:none;flex:none}
 
 /* a row arrived at by link (arasteh.art/sedaha/#ja) marks itself */
 .deep-target{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
@@ -451,6 +522,12 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   /* darken the cover-painting scrim so translucent panels stay legible */
   body.home{background-image:linear-gradient(rgba(15,12,9,.62),rgba(15,12,9,.62)),url(/assets/img/cover.jpg)}
   body.book{background-image:linear-gradient(rgba(15,12,9,.6),rgba(15,12,9,.6)),url(/assets/img/cover.jpg)}
+  @supports (background-image:image-set(url(/assets/img/cover.webp) type("image/webp"))){
+    body.home{background-image:linear-gradient(rgba(15,12,9,.62),rgba(15,12,9,.62)),
+      image-set(url(/assets/img/cover.webp) type("image/webp"),url(/assets/img/cover.jpg) type("image/jpeg"))}
+    body.book{background-image:linear-gradient(rgba(15,12,9,.6),rgba(15,12,9,.6)),
+      image-set(url(/assets/img/cover.webp) type("image/webp"),url(/assets/img/cover.jpg) type("image/jpeg"))}
+  }
 
   /* translucent "sheet" panels floating over the painting */
   body.book .container{background:rgba(28,23,18,.9);border-color:rgba(255,255,255,.08)}

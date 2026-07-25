@@ -10,7 +10,9 @@ sync_footers.py / sync_appnav.py use).
 
 The block makes arasteh.art installable: a web-app manifest plus the iOS/Android
 "standalone" hints, so a phone can Add to Home Screen and launch it full-screen,
-without a browser chrome. It also carries the dark-mode theme-color, which pairs
+without a browser chrome. It also registers /sw.js, which keeps a visited opening
+readable when the connection goes, and points at the Atom feed of new editions
+(/feed.xml, written by build_read_pages.py). It also carries the dark-mode theme-color, which pairs
 with the light theme-color already in each page head (that one has no media query,
 so it stays the default; the dark one overrides it only under a dark preference).
 It is delimited by <!-- PWA:START --> / <!-- PWA:END --> markers and inserted just
@@ -42,6 +44,10 @@ def head_html() -> str:
         '<meta name="apple-mobile-web-app-status-bar-style" content="default">\n'
         '<meta name="apple-mobile-web-app-title" content="Arasteh">\n'
         '<meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">\n'
+        '<link rel="alternate" type="application/atom+xml" '
+        'title="Sedaha (Sounds) — new editions" href="/feed.xml">\n'
+        '<script>if("serviceWorker" in navigator)addEventListener("load",function(){'
+        'navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>\n'
         + END
     )
 
