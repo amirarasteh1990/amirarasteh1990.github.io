@@ -65,8 +65,13 @@
 
   <div class="language-finder">
     <label class="lang-search-label" for="langFilter">Find your language</label>
-    <input type="search" class="lang-search" id="langFilter" autocomplete="off"
-      placeholder="English or native language name&hellip;">
+    <span class="lang-search-field">
+      <input type="search" class="lang-search" id="langFilter" autocomplete="off"
+        placeholder="Hindi, T&uuml;rk&ccedil;e, 日本語&hellip;">
+      <button type="button" class="lang-clear" id="langClearFilter" aria-label="Clear the search" hidden>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </span>
     <p class="visually-hidden" id="langFilterStatus" role="status" aria-live="polite"></p>
   </div>
 
@@ -194,7 +199,8 @@
       </tbody>
     </table>
   </div>
-  <p class="lang-noresult" hidden>No language matches that search yet.</p>
+  <p class="lang-noresult" hidden>No language matches that search yet.
+    <a href="mailto:amirarasteh1990@gmail.com">Write to me</a> and I&rsquo;ll look.</p>
 
   <p class="lang-foot">Editions are released as they pass review, not on a schedule.
     <a href="https://t.me/Sounds_AmirArasteh">Follow on Telegram</a> to hear when new ones arrive.</p>
@@ -219,13 +225,17 @@
   </div>
 </footer>
 <script>
+/* Filter the table, and answer deep links such as /sedaha/languages/#ja by
+   filling the search in, so the filtered table always explains itself. */
 (function(){
   var input = document.getElementById('langFilter');
   if(!input) return;
-  var rows = document.querySelectorAll('.lang-table tbody tr');
+  var rows = [].slice.call(document.querySelectorAll('.lang-table tbody tr'));
   var noResult = document.querySelector('.lang-noresult');
   var status = document.getElementById('langFilterStatus');
-  input.addEventListener('input', function(){
+  var clearBtn = document.getElementById('langClearFilter');
+  var flagged = null;
+  function apply(){
     var q = input.value.trim().toLowerCase(), n = 0;
     rows.forEach(function(tr){
       var hit = tr.textContent.toLowerCase().indexOf(q) > -1;
@@ -233,10 +243,37 @@
       if(hit) n += 1;
     });
     if(noResult) noResult.hidden = !(q && !n);
+    if(clearBtn) clearBtn.hidden = !q;
     if(status) status.textContent = q ?
       (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
       'Showing all 114 languages.';
+  }
+  function unflag(){ if(flagged){ flagged.classList.remove('deep-target'); flagged = null; } }
+  input.addEventListener('input', function(){ unflag(); apply(); });
+  if(clearBtn) clearBtn.addEventListener('click', function(){
+    input.value = ''; unflag(); apply(); input.focus();
   });
+
+  var bySlug = {};
+  rows.forEach(function(tr){
+    var a = tr.querySelector('a[href^="/sedaha/read/"]');
+    if(!a) return;
+    var slug = a.getAttribute('href').slice('/sedaha/read/'.length).replace('/', '') || 'en';
+    if(!bySlug[slug]) bySlug[slug] = tr;
+  });
+  function openFromHash(){
+    var tr = bySlug[decodeURIComponent(location.hash.slice(1)).toLowerCase()];
+    if(!tr) return;
+    var cell = tr.querySelector('th');
+    input.value = cell ? cell.textContent.trim() : '';
+    unflag();
+    apply();
+    tr.classList.add('deep-target');
+    flagged = tr;
+    tr.scrollIntoView({block: 'center'});
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
 })();
 </script>
 <script src="/assets/js/backtotop.js" defer></script>

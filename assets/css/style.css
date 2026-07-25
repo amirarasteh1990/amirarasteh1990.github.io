@@ -124,6 +124,18 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .book-lead{margin:18px 0 14px;font-size:.98rem;line-height:1.55;color:#5a5344;max-width:46ch}
 .book-lead em{font-style:italic;color:#463c31}
 .book-primary{margin-top:2px}
+/* the book's own scripts, one after another: the hundred alphabets are the
+   work's plainest description. Held still under prefers-reduced-motion. */
+.cycler{margin:14px 0 4px;color:#5a5344;font-size:.94rem}
+.cycler .slot{display:inline-block;margin-inline-start:4px;color:#2f2a20;font-weight:600;font-size:1.14rem;
+  transition:opacity .3s ease,transform .3s ease}
+.cycler .slot.is-out{opacity:0;transform:translateY(-4px)}
+/* how much of the hundred is finished, without a sentence about it */
+.progress{height:3px;max-width:260px;margin:16px 0 7px;border-radius:999px;
+  background:rgba(0,0,0,.10);overflow:hidden}
+.progress span{display:block;height:100%;min-width:6px;border-radius:999px;background:#2b6b3a}
+.progress-note{margin:0;color:#5a5344;font-size:.84rem}
+.progress-note strong{color:#2f2a20}
 .opening{max-width:680px;margin:22px 0 4px}
 .opening .label{display:block;font-family:var(--serif);font-style:italic;
   color:var(--muted);font-size:.95rem;margin-bottom:8px}
@@ -165,7 +177,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 }
 
 /* == editions: continent panels == */
-.continent>h3 .ccount{float:right;font-weight:600;font-size:.72rem;color:#625a50;
+.continent .ccount{margin-left:auto;font-weight:600;font-size:.72rem;color:#625a50;
   background:rgba(0,0,0,.05);border-radius:20px;padding:1px 9px;line-height:1.5}
 .dl-intro{color:#5a5344;max-width:56ch;margin:0 0 22px;line-height:1.55}
 .editions-featured{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 26px}
@@ -177,9 +189,17 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .edition-secondary{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 .edition-secondary .btn:not(.btn-icon){min-width:66px}
 .continents{display:flex;flex-direction:column;gap:18px}
+/* each region is its own <details>: the full list opens one continent at a time
+   instead of dropping 111 rows at once. Search opens whichever regions match. */
 .continent{background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.07);border-radius:8px;padding:15px 18px 17px}
-.continent>h3{margin:0 0 12px;font-size:.98rem;color:#4a4436;letter-spacing:.02em;
-  border-bottom:1px solid rgba(0,0,0,.09);padding-bottom:8px;font-weight:600}
+.continent>summary{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}
+.continent>summary::-webkit-details-marker{display:none}
+.continent>summary::after{content:"\25BE";color:#a89f8d;flex:none;transition:transform .2s ease}
+.continent[open]>summary::after{transform:rotate(180deg)}
+.continent>summary:hover h3{color:#2f2a20}
+.continent>summary>h3{display:flex;align-items:center;gap:10px;flex:1;min-width:0;margin:0;
+  font-size:.98rem;color:#4a4436;letter-spacing:.02em;font-weight:600}
+.continent[open]>summary{border-bottom:1px solid rgba(0,0,0,.09);padding-bottom:8px;margin-bottom:12px}
 .ed-list{list-style:none;margin:0;padding:0;display:grid;
   grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:9px 22px}
 .ed-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
@@ -207,16 +227,47 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .lang-toggle>summary:hover{border-color:var(--accent);color:#2f2a20}
 .lang-toggle[open]>summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
 .lang-toggle .continents{margin-top:16px}
-.language-finder{margin:24px 0 20px}
+/* the finder rides along while a long list is open, so the next search never
+   means scrolling back up. It sits under the sticky top bar on laptops. */
+.language-finder{position:sticky;top:0;z-index:6;margin:24px 0 20px;padding:12px 0 10px;
+  background:rgba(255,253,249,.93);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+@media (min-width:761px){.language-finder{top:56px}}
 .lang-search-label{display:block;margin:0 0 8px;font-family:var(--serif);font-size:1.12rem;font-weight:600}
-.lang-search{width:100%;box-sizing:border-box;margin:0;padding:12px 16px;min-height:48px;
+.lang-search-field{position:relative;display:block}
+.lang-search{width:100%;box-sizing:border-box;margin:0;padding:12px 46px 12px 16px;min-height:48px;
   border:1px solid rgba(0,0,0,.14);border-radius:8px;background:var(--surface);
   font:inherit;color:var(--ink)}
 .lang-search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,90,59,.12)}
 .lang-search::placeholder{color:#6f675e}
+/* the field carries its own clear button; drop the browser's */
+.lang-search::-webkit-search-cancel-button,
+.lang-search::-webkit-search-decoration{-webkit-appearance:none;appearance:none}
+.lang-clear{position:absolute;top:50%;right:6px;transform:translateY(-50%);width:36px;height:36px;
+  display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:transparent;
+  color:var(--muted);cursor:pointer}
+.lang-clear[hidden]{display:none}      /* author styles outrank the UA's [hidden] */
+.lang-clear:hover{color:var(--ink);background:rgba(0,0,0,.06)}
+.lang-clear svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .lang-search-result{margin:8px 0 0;color:#4d453b;font-size:.9rem}
 .ed-featured.search-match{outline:2px solid var(--accent);outline-offset:2px}
 .lang-noresult{color:var(--muted);font-size:.92rem;font-style:italic;margin-top:14px}
+.lang-noresult a{font-weight:600;font-style:normal}
+
+/* region chips: a second way into the list, for readers who would rather
+   point at a part of the world than type a name */
+.region-chips{display:flex;gap:8px;overflow-x:auto;margin:16px 0 0;padding:2px 0 6px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none}
+.region-chips::-webkit-scrollbar{display:none}
+.region-chip{flex:none;white-space:nowrap;min-height:36px;padding:6px 14px;border-radius:999px;
+  border:1px solid rgba(0,0,0,.12);background:var(--paper,#F6EFDB);color:#4a4436;
+  font:inherit;font-size:.82rem;font-weight:600;line-height:1.5;cursor:pointer}
+.region-chip:hover{border-color:var(--accent);color:#2f2a20}
+.region-chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* a row arrived at by link (arasteh.art/sedaha/#ja) marks itself */
+.deep-target{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+tr.deep-target{outline-offset:-2px}    /* table rows: keep the ring on the row box */
+tr.deep-target>th,tr.deep-target>td{background:rgba(138,90,59,.08)}
 
 /* == /sedaha/languages/ — generated status table == */
 .lang-key{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 22px;
@@ -429,8 +480,10 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .ed-featured{border-color:rgba(255,255,255,.10)}
   .ed-featured .native{color:#e6dccb} .ed-featured .en{color:#a99f8f}
   .continent{border-color:rgba(255,255,255,.08)}
-  .continent>h3{color:#cabfac;border-bottom-color:rgba(255,255,255,.10)}
-  .continent>h3 .ccount{color:#b3a892;background:rgba(255,255,255,.08)}
+  .continent>summary>h3{color:#cabfac}
+  .continent>summary:hover h3{color:#f0e7d7}
+  .continent[open]>summary{border-bottom-color:rgba(255,255,255,.10)}
+  .continent .ccount{color:#b3a892;background:rgba(255,255,255,.08)}
   .ed-list li{border-bottom-color:rgba(255,255,255,.12)}
   .ed-list .native{color:#e6dccb} .ed-list .en,.ed-list .soon{color:#a99f8f}
   .ed-list li.live .native{color:#7fce97}
@@ -440,8 +493,18 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .lang-toggle>summary:hover{color:#f0e7d7}
 
   /* language search field */
+  .language-finder{background:rgba(28,23,18,.93)}
   .lang-search{border-color:rgba(255,255,255,.16)}
   .lang-search::placeholder{color:#8f8676}
+  .lang-clear:hover{background:rgba(255,255,255,.08)}
+  .region-chip{border-color:rgba(255,255,255,.14);color:#cabfac}
+  .region-chip:hover{color:#f0e7d7}
+
+  /* hero: cycling scripts + completion meter */
+  .cycler{color:#a99f8f} .cycler .slot{color:#e6dccb}
+  .progress{background:rgba(255,255,255,.12)}
+  .progress span{background:#7fce97}
+  .progress-note{color:#a99f8f} .progress-note strong{color:#e6dccb}
 
   /* status table + badges */
   .lang-key{border-color:rgba(255,255,255,.10)}
@@ -451,6 +514,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .lang-table .native{color:#e6dccb} .lang-table .en{color:#a99f8f}
   .lang-table .links a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
   .lang-table .links a:hover{border-bottom-color:#7fce97}
+  tr.deep-target>th,tr.deep-target>td{background:rgba(217,155,109,.12)}
   .badge.ready{color:#8ad9a3;background:rgba(127,206,151,.16);border-color:rgba(127,206,151,.34)}
   .badge.review{color:#e0ad6b;background:rgba(224,173,107,.14);border-color:rgba(224,173,107,.3)}
   .badge.translated{color:#cabfac;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}

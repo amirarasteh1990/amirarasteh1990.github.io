@@ -74,7 +74,11 @@
       <p class="excerpt">&hellip; This is the loose end of a thread of words that were once sounds&hellip;</p>
       <p class="book-lead">You&rsquo;ve heard Persian culture is poetic.
         <em>Sounds</em> lets you live inside it.</p>
+      <p class="cycler" aria-hidden="true">Read it in<span class="slot" id="cyclerSlot" lang="fa" dir="rtl">فارسی</span></p>
       <a class="btn btn-primary book-primary" href="/sedaha/read/">Read the opening</a>
+      <!-- keep in step with the featured editions below -->
+      <div class="progress" aria-hidden="true"><span style="width:3.5%"></span></div>
+      <p class="progress-note"><strong>4</strong> of 114 editions complete</p>
     </div>
   </section>
 
@@ -118,8 +122,13 @@
     <p class="dl-hint"><strong>EPUB</strong> fits any screen. <strong>PDF</strong> keeps the printed page.</p>
     <div class="language-finder">
       <label class="lang-search-label" for="langSearch">Find your language</label>
-      <input type="search" class="lang-search" id="langSearch" autocomplete="off"
-        placeholder="English or native language name&hellip;">
+      <span class="lang-search-field">
+        <input type="search" class="lang-search" id="langSearch" autocomplete="off"
+          placeholder="Hindi, T&uuml;rk&ccedil;e, 日本語&hellip;">
+        <button type="button" class="lang-clear" id="langClear" aria-label="Clear the search" hidden>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </span>
       <p class="lang-search-result" id="langFeaturedResult" hidden></p>
       <p class="visually-hidden" id="langSearchStatus" role="status" aria-live="polite"></p>
     </div>
@@ -127,9 +136,20 @@
       <a href="https://t.me/Sounds_AmirArasteh">Telegram</a>. A few notes a year.</p>
     <details class="lang-toggle" id="langDetails">
       <summary>Browse all 114 languages</summary>
+      <div class="region-chips" role="group" aria-label="Filter the list by region">
+        <button type="button" class="region-chip" data-region="all" aria-pressed="true">All</button>
+        <button type="button" class="region-chip" data-region="me" aria-pressed="false">Middle East</button>
+        <button type="button" class="region-chip" data-region="south-asia" aria-pressed="false">South Asia</button>
+        <button type="button" class="region-chip" data-region="east-asia" aria-pressed="false">East Asia</button>
+        <button type="button" class="region-chip" data-region="central-asia" aria-pressed="false">Central Asia</button>
+        <button type="button" class="region-chip" data-region="west-europe" aria-pressed="false">West Europe</button>
+        <button type="button" class="region-chip" data-region="east-europe" aria-pressed="false">East Europe</button>
+        <button type="button" class="region-chip" data-region="nordic" aria-pressed="false">Nordic &amp; Baltic</button>
+        <button type="button" class="region-chip" data-region="africa" aria-pressed="false">Africa &amp; other</button>
+      </div>
     <div class="continents">
-      <div class="continent">
-        <h3>Middle East &amp; West Asia <span class="ccount">11</span></h3>
+      <details class="continent" data-region="me">
+        <summary><h3>Middle East &amp; West Asia <span class="ccount">11</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native" lang="ar" dir="rtl">العربية</span> <span class="en">Arabic</span></span> <span class="mini"><a href="/sedaha/read/ar/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="bal" dir="rtl">بلۏچی</span> <span class="en">Balochi</span></span> <span class="mini"><a href="/sedaha/read/bal/">Opening</a></span></li>
@@ -143,9 +163,9 @@
         <li><span class="name"><span class="native" lang="ps" dir="rtl">پښتو</span> <span class="en">Pashto</span></span> <span class="mini"><a href="/sedaha/read/ps/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="ur" dir="rtl">اردو</span> <span class="en">Urdu</span></span> <span class="mini"><a href="/sedaha/read/ur/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>South Asia <span class="ccount">14</span></h3>
+      </details>
+      <details class="continent" data-region="south-asia">
+        <summary><h3>South Asia <span class="ccount">14</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native" lang="as">অসমীয়া</span> <span class="en">Assamese</span></span> <span class="mini"><a href="/sedaha/read/as/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="bn">বাংলা</span> <span class="en">Bengali</span></span> <span class="mini"><a href="/sedaha/read/bn/">Opening</a></span></li>
@@ -162,9 +182,9 @@
         <li><span class="name"><span class="native" lang="ta">தமிழ்</span> <span class="en">Tamil</span></span> <span class="mini"><a href="/sedaha/read/ta/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="te">తెలుగు</span> <span class="en">Telugu</span></span> <span class="mini"><a href="/sedaha/read/te/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>East &amp; Southeast Asia <span class="ccount">15</span></h3>
+      </details>
+      <details class="continent" data-region="east-asia">
+        <summary><h3>East &amp; Southeast Asia <span class="ccount">15</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native" lang="my">မြန်မာ</span> <span class="en">Burmese</span></span> <span class="mini"><a href="/sedaha/read/my/">Opening</a></span></li>
         <li><span class="name"><span class="native">Cebuano</span> <span class="en">Cebuano</span></span> <span class="mini"><a href="/sedaha/read/ceb/">Opening</a></span></li>
@@ -182,9 +202,9 @@
         <li><span class="name"><span class="native" lang="th">ไทย</span> <span class="en">Thai</span></span> <span class="mini"><a href="/sedaha/read/th/">Opening</a></span></li>
         <li><span class="name"><span class="native">Tiếng Việt</span> <span class="en">Vietnamese</span></span> <span class="mini"><a href="/sedaha/read/vi/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>Central Asia &amp; Caucasus <span class="ccount">11</span></h3>
+      </details>
+      <details class="continent" data-region="central-asia">
+        <summary><h3>Central Asia &amp; Caucasus <span class="ccount">11</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native" lang="hy">Հայերեն</span> <span class="en">Armenian</span></span> <span class="mini"><a href="/sedaha/read/hy/">Opening</a></span></li>
         <li><span class="name"><span class="native">Azərbaycanca</span> <span class="en">Azerbaijani</span></span> <span class="mini"><a href="/sedaha/read/az/">Opening</a></span></li>
@@ -198,9 +218,9 @@
         <li><span class="name"><span class="native" lang="ug" dir="rtl">ئۇيغۇرچە</span> <span class="en">Uyghur</span></span> <span class="mini"><a href="/sedaha/read/ug/">Opening</a></span></li>
         <li><span class="name"><span class="native">Oʻzbekcha</span> <span class="en">Uzbek</span></span> <span class="mini"><a href="/sedaha/read/uz/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>Europe — Western <span class="ccount">21</span></h3>
+      </details>
+      <details class="continent" data-region="west-europe">
+        <summary><h3>Europe — Western <span class="ccount">21</span></h3></summary>
         <ul class="ed-list">
         <li class="live"><span class="name"><span class="native">Italiano</span> <span class="en">Italian</span></span> <span class="mini"><a href="/sedaha/read/it/">Opening</a></span> <span class="mini"><a href="https://github.com/amirarasteh1990/amirarasteh1990.github.io/releases/download/books/Sedaha_Italian.pdf">PDF</a></span></li>
         <li><span class="name"><span class="native">Euskara</span> <span class="en">Basque</span></span> <span class="mini"><a href="/sedaha/read/eu/">Opening</a></span></li>
@@ -224,9 +244,9 @@
         <li><span class="name"><span class="native">Español</span> <span class="en">Spanish</span></span> <span class="mini"><a href="/sedaha/read/es/">Opening</a></span></li>
         <li><span class="name"><span class="native">Cymraeg</span> <span class="en">Welsh</span></span> <span class="mini"><a href="/sedaha/read/cy/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>Europe — Eastern <span class="ccount">18</span></h3>
+      </details>
+      <details class="continent" data-region="east-europe">
+        <summary><h3>Europe — Eastern <span class="ccount">18</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native">Shqip</span> <span class="en">Albanian</span></span> <span class="mini"><a href="/sedaha/read/sq/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="be">Беларуская</span> <span class="en">Belarusian</span></span> <span class="mini"><a href="/sedaha/read/be/">Opening</a></span></li>
@@ -247,9 +267,9 @@
         <li><span class="name"><span class="native" lang="uk">Українська</span> <span class="en">Ukrainian</span></span> <span class="mini"><a href="/sedaha/read/uk/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="yi" dir="rtl">ייִדיש</span> <span class="en">Yiddish</span></span> <span class="mini"><a href="/sedaha/read/yi/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>Europe — Nordic &amp; Baltic <span class="ccount">10</span></h3>
+      </details>
+      <details class="continent" data-region="nordic">
+        <summary><h3>Europe — Nordic &amp; Baltic <span class="ccount">10</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native">Eesti</span> <span class="en">Estonian</span></span> <span class="mini"><a href="/sedaha/read/et/">Opening</a></span></li>
         <li><span class="name"><span class="native">Føroyskt</span> <span class="en">Faroese</span></span> <span class="mini"><a href="/sedaha/read/fo/">Opening</a></span></li>
@@ -262,9 +282,9 @@
         <li><span class="name"><span class="native">Norsk</span> <span class="en">Norwegian</span></span> <span class="mini"><a href="/sedaha/read/no/">Opening</a></span></li>
         <li><span class="name"><span class="native">Svenska</span> <span class="en">Swedish</span></span> <span class="mini"><a href="/sedaha/read/sv/">Opening</a></span></li>
         </ul>
-      </div>
-      <div class="continent">
-        <h3>Africa &amp; Others <span class="ccount">11</span></h3>
+      </details>
+      <details class="continent" data-region="africa">
+        <summary><h3>Africa &amp; Others <span class="ccount">11</span></h3></summary>
         <ul class="ed-list">
         <li><span class="name"><span class="native">Afrikaans</span> <span class="en">Afrikaans</span></span> <span class="mini"><a href="/sedaha/read/af/">Opening</a></span></li>
         <li><span class="name"><span class="native" lang="am">አማርኛ</span> <span class="en">Amharic</span></span> <span class="mini"><a href="/sedaha/read/am/">Opening</a></span></li>
@@ -278,10 +298,11 @@
         <li><span class="name"><span class="native">Yorùbá</span> <span class="en">Yoruba</span></span> <span class="mini"><a href="/sedaha/read/yo/">Opening</a></span></li>
         <li><span class="name"><span class="native">isiZulu</span> <span class="en">Zulu</span></span> <span class="mini"><a href="/sedaha/read/zu/">Opening</a></span></li>
         </ul>
-      </div>
+      </details>
     </div>
       <p class="muted-note">Complete editions follow, one release at a time.</p>
-      <p class="lang-noresult" hidden>No language matches that search yet.</p>
+      <p class="lang-noresult" hidden>No language matches that search yet.
+        <a href="mailto:amirarasteh1990@gmail.com">Write to me</a> and I&rsquo;ll look.</p>
     </details>
     <p class="reach-note">Don&rsquo;t see your mother tongue, or is its edition still on the way?
       <a href="mailto:amirarasteh1990@gmail.com">Write to me.</a>
@@ -318,43 +339,59 @@
 </footer>
 
 <script>
+/* The language finder: one search box, region chips, and deep links such as
+   arasteh.art/sedaha/#ja, which fill the search in so the filtered list always
+   explains itself. Every region is its own <details>; a search or a chip opens
+   only what it found, and clearing both closes what this script opened. */
 (function(){
   var input = document.getElementById('langSearch');
   var details = document.getElementById('langDetails');
   if(!input || !details) return;
-  var featured = document.querySelectorAll('.editions-featured .ed-featured');
-  var items = details.querySelectorAll('.ed-list li');
-  var panels = details.querySelectorAll('.continent');
+  var featured = [].slice.call(document.querySelectorAll('.editions-featured .ed-featured'));
+  var rows = [].slice.call(details.querySelectorAll('.ed-list li'));
+  var panels = [].slice.call(details.querySelectorAll('.continent'));
+  var chips = [].slice.call(details.querySelectorAll('.region-chip'));
   var comingNote = details.querySelector('.muted-note');
   var noResult = details.querySelector('.lang-noresult');
   var featuredResult = document.getElementById('langFeaturedResult');
   var searchStatus = document.getElementById('langSearchStatus');
+  var clearBtn = document.getElementById('langClear');
+  var region = 'all', flagged = null;
   var lc = function(s){ return s.toLowerCase(); };
-  input.addEventListener('input', function(){
+
+  function apply(){
     var q = lc(input.value.trim());
-    var searching = q.length > 0, fMatches = 0, lMatches = 0;
+    var searching = q.length > 0, narrowed = searching || region !== 'all';
+    var fMatches = 0, lMatches = 0;
     featured.forEach(function(c){
       var hit = lc(c.textContent).indexOf(q) > -1;
       c.classList.toggle('search-match', searching && hit);
       if(hit && searching) fMatches += 1;
     });
-    items.forEach(function(li){
-      var hit = lc(li.textContent).indexOf(q) > -1;
-      li.style.display = hit ? '' : 'none';
-      if(hit && searching) lMatches += 1;
-    });
     panels.forEach(function(p){
-      var any = Array.prototype.some.call(p.querySelectorAll('.ed-list li'),
-        function(li){ return li.style.display !== 'none'; });
-      p.style.display = any ? '' : 'none';
+      var inRegion = region === 'all' || p.getAttribute('data-region') === region;
+      var shown = 0;
+      [].forEach.call(p.querySelectorAll('.ed-list li'), function(li){
+        var hit = inRegion && lc(li.textContent).indexOf(q) > -1;
+        li.style.display = hit ? '' : 'none';
+        if(hit) shown += 1;
+      });
+      p.style.display = shown ? '' : 'none';
+      if(searching) lMatches += shown;
+      if(narrowed && shown){
+        if(!p.open){ p.open = true; p.setAttribute('data-auto', '1'); }
+      } else if(!narrowed && p.getAttribute('data-auto')){
+        p.open = false; p.removeAttribute('data-auto');
+      }
     });
-    if(comingNote) comingNote.style.display = searching ? 'none' : '';
+    if(comingNote) comingNote.style.display = narrowed ? 'none' : '';
     if(featuredResult){
       featuredResult.hidden = !(searching && fMatches);
       featuredResult.textContent = fMatches ?
         'A complete edition matching your search is available above.' : '';
     }
     if(noResult) noResult.hidden = !(searching && !fMatches && !lMatches);
+    if(clearBtn) clearBtn.hidden = !searching;
     if(searchStatus){
       var total = fMatches + lMatches;
       searchStatus.textContent = searching ?
@@ -362,7 +399,73 @@
           'No language matches that search.') : 'Showing all 114 languages.';
     }
     if(searching) details.open = lMatches > 0 || (!fMatches && !lMatches);
+  }
+
+  function unflag(){
+    if(flagged){ flagged.classList.remove('deep-target'); flagged = null; }
+  }
+  input.addEventListener('input', function(){ unflag(); apply(); });
+  if(clearBtn) clearBtn.addEventListener('click', function(){
+    input.value = ''; unflag(); apply(); input.focus();
   });
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      region = chip.getAttribute('data-region');
+      chips.forEach(function(o){ o.setAttribute('aria-pressed', String(o === chip)); });
+      unflag();
+      apply();
+    });
+  });
+
+  /* deep link: /sedaha/#fa, #ja, #zu - the row is found by its own Opening link */
+  var bySlug = {};
+  featured.concat(rows).forEach(function(el){
+    var a = el.querySelector('a[href^="/sedaha/read/"]');
+    if(!a) return;
+    var slug = a.getAttribute('href').slice('/sedaha/read/'.length).replace('/', '') || 'en';
+    if(!bySlug[slug]) bySlug[slug] = el;
+  });
+  function openFromHash(){
+    var el = bySlug[lc(decodeURIComponent(location.hash.slice(1)))];
+    if(!el) return;
+    var name = el.querySelector('.en');
+    region = 'all';
+    chips.forEach(function(o){
+      o.setAttribute('aria-pressed', String(o.getAttribute('data-region') === 'all'));
+    });
+    input.value = name ? name.textContent.trim() : '';
+    unflag();
+    apply();
+    if(el.tagName === 'LI') details.open = true;
+    el.classList.add('deep-target');
+    flagged = el;
+    el.scrollIntoView({block: 'center'});
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+})();
+
+/* The hero line cycles through the book's own alphabets, taken from the list
+   below so there is only ever one copy of the names. Still under reduced motion. */
+(function(){
+  var slot = document.getElementById('cyclerSlot');
+  if(!slot) return;
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var names = [].slice.call(document.querySelectorAll('.ed-list .native, .ed-featured .native'));
+  if(names.length < 2) return;
+  var i = 0;
+  setInterval(function(){
+    i = (i + 1 + Math.floor(Math.random() * 7)) % names.length;
+    var src = names[i];
+    slot.classList.add('is-out');
+    setTimeout(function(){
+      var lang = src.getAttribute('lang'), dir = src.getAttribute('dir');
+      slot.textContent = src.textContent.trim();
+      if(lang) slot.setAttribute('lang', lang); else slot.removeAttribute('lang');
+      if(dir) slot.setAttribute('dir', dir); else slot.removeAttribute('dir');
+      slot.classList.remove('is-out');
+    }, 300);
+  }, 2600);
 })();
 </script>
 <script src="/assets/js/share.js" defer></script>
