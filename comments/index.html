@@ -86,6 +86,34 @@ apply(get())})();</script>
       Your network may be blocking it. You can always write by email:
       <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p>
     <script>
+    /* The widget's own words.
+
+       cusdis.es.js serializes window.CUSDIS_LOCALE into the iframe it builds, so
+       this has to exist before that script runs. The keys and the English defaults
+       are read out of the widget bundle itself (cusdis.com/js/iframe.umd.js): a
+       key left out falls back to English AND logs a console warning, so every key
+       is given here even where the default is what we want.
+
+       "Reply..." was the label above the box, which is the wrong word for a
+       guestbook: nobody is replying to anything. The book unwinds a thread of
+       words for the reader to gather, so the reader's own end of it is what this
+       page is asking for. */
+    window.CUSDIS_LOCALE = {
+      powered_by: 'Comments powered by Cusdis',
+      post_comment: 'Leave it here',
+      loading: 'Loading',
+      email: 'Email (optional)',
+      nickname: 'Your name',
+      reply_placeholder: 'Your end of the thread',
+      reply_btn: 'Send',
+      sending: 'sending...',
+      mod_badge: 'MOD',
+      content_is_required: 'Write a line first',
+      nickname_is_required: 'Please add a name',
+      comment_has_been_sent: 'Your note is on its way. It appears here once I have read it.'
+    };
+    </script>
+    <script>
     (function(){
       var t = document.getElementById('cusdis_thread');
       var loading = document.getElementById('cusdis-loading');
@@ -106,8 +134,40 @@ apply(get())})();</script>
         loading.hidden = true;
         fallback.hidden = false;
       };
+      /* Room to write in.
+
+         The widget builds its iframe with srcdoc, which means that document is
+         SAME-ORIGIN with this page, so its stylesheet can be added to. (It is not
+         reachable from outside, only from here.) Its own CSS leaves the box at the
+         browser's default couple of lines, which suits a one-line reply and not a
+         paragraph, so give it the height of a real note. Their sheet already
+         allows resize:vertical, so anyone who wants more can drag for more.
+
+         Injected into <head>, so it applies to the app that mounts afterwards; the
+         widget re-measures on every DOM change inside itself and reports the taller
+         height back, which is what makes the iframe grow to fit. If this ever stops
+         being same-origin the catch leaves the box at its old size and nothing
+         else changes. */
+      function giveItRoom(){
+        var frame = t.querySelector('iframe');
+        if (!frame) return;
+        function inject(){
+          try {
+            var doc = frame.contentDocument;
+            if (!doc || doc.getElementById('room-to-write')) return;
+            var s = doc.createElement('style');
+            s.id = 'room-to-write';
+            s.textContent = 'textarea{min-height:190px!important;' +
+              'line-height:1.65!important;font-size:1rem!important;padding:10px!important}';
+            (doc.head || doc.documentElement).appendChild(s);
+          } catch (e) {}
+        }
+        frame.addEventListener('load', inject);
+        inject();
+      }
+
       new MutationObserver(function(){
-        if (t.firstElementChild) loaded();
+        if (t.firstElementChild) { loaded(); giveItRoom(); }
       }).observe(t, {childList:true});
       setTimeout(function(){
         if (!t.firstElementChild) window.showGuestbookFallback();

@@ -116,6 +116,19 @@ the way of that. The class turns two things off, in CSS only, so `sync_footers.p
   The **colophon logo stays** (2026-07-26: the author asked for it back), as do the copyright
   and the contact address, which is the page's own escape hatch when the Cusdis widget is
   blocked and the fallback text points at it.
+- **the widget's own words** are set through `window.CUSDIS_LOCALE`, defined in an inline
+  script *before* `cusdis.es.js` runs (that script serializes the object into the iframe it
+  builds, so setting it later does nothing). The keys, and the English defaults, are read out
+  of the widget bundle at `cusdis.com/js/iframe.umd.js`: `powered_by`, `post_comment`,
+  `loading`, `email`, `nickname`, `reply_placeholder`, `reply_btn`, `sending`, `mod_badge`,
+  `content_is_required`, `nickname_is_required`, `comment_has_been_sent`. **Supply all of
+  them**: a missing key falls back to English *and* logs a console warning. `reply_placeholder`
+  is the label above the box (was "Reply...", which is the wrong word for a guestbook).
+- **the widget's iframe is same-origin**, because the loader builds it with `srcdoc` rather
+  than a `src` URL. So its document can be reached from this page and styled: the inline
+  script appends one `<style>` to give the textarea the height of a real note. Wrapped in
+  try/catch, so if that ever changes the box simply keeps its default size. Note this also
+  means anything else inside the widget is reachable if ever needed.
 - the comment box is given a floor of 560px (460 on phones) and 44px of clearance beneath it.
   Cusdis renders into an iframe and sizes it from its own content, so until that message
   arrives the box is short and whatever follows sits right under a half-drawn form, which
