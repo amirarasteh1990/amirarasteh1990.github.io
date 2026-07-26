@@ -24,7 +24,7 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
 | `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
-| `comments/index.html` | Guestbook (Cusdis embed) |
+| `comments/index.html` | Guestbook (Cusdis embed). The only page with `<body class="writing">`: see below |
 | `support/index.html` | Donation links |
 | `license.html` | License (book = author's custom terms: free complete unchanged electronic sharing, all other rights reserved, NO CC claim per 2026-07-16 book decision; paintings = All Rights Reserved) |
 | `404.html` | Branded not-found page (GitHub Pages serves it automatically) |
@@ -33,6 +33,7 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `assets/js/share.js` | Share-button behavior: native share sheet, clipboard fallback + toast (see below) |
 | `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, trigger-focus restoration, and one address per painting (`#picture-4`) |
 | `assets/js/reader.js` | The reading toolbar on the 114 opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
+| `assets/js/lang-alias.js` | The other names each language answers to (Farsi, Bangla, Mandarin, Filipino, Castellano, Telegu…). Both language finders consult it; add freely, no rebuild needed |
 | `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
 | `assets/fonts/names/…` | One tiny subset per script holding only the letters the 114 language names need (`build_name_fonts.py`) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
@@ -49,6 +50,77 @@ an attribute; it re-points that media rule at run time (`all` to force dark, `no
 force light, the original query to follow the system again), from the small script
 `sync_head.py` puts in every `<head>`. So there is one copy of dark mode to maintain, and
 with JavaScript off the system preference still decides, exactly as before.
+
+Anything embedded from another origin has to be told separately. The guestbook widget
+(Cusdis) takes a `data-theme`, and it asks `window.__theme` **before** the system: reading
+the system alone left a white comment box on a dark page for anyone who had chosen dark by
+hand on an opening page. Any future embed needs the same three lines.
+
+## One availability story (`status_rows()` is the edition record)
+
+**Everything a visitor is told about what exists is derived from one record.** `status_rows()`
+in `build_read_pages.py` joins the book repo's own lists with the assets actually on the
+GitHub release, and yields per language: native and English name, direction, opening URL,
+state, formats, file sizes, release date, slug, share line.
+
+It used to feed only the status table and the hero counter, while the complete-edition cards
+and the marketing copy were kept by hand. That is exactly how the **Italian edition came to
+be complete, downloadable, and named nowhere a visitor would look** for six weeks. Consumers
+now generated from the record:
+
+| What | Function |
+| --- | --- |
+| The complete-edition cards on `/sedaha/` | `patch_featured` → `featured_html` (between `EDITIONS:` markers) |
+| Both descriptions + the hub card on `/`, and on `/sedaha/` | `patch_availability` → `availability` |
+| The hero count and the progress tally | `patch_meter`, `patch_availability` |
+| State + download links on all 114 browse rows | `patch_index` (`data-state`, used by the search) |
+| The status table, its filters and counts | `patch_status_page` → `render_status` |
+| The Atom feed | `patch_feed` |
+
+**Add a consumer here rather than a second list.** `check.py` verifies the cards sit inside
+their grid, that every complete edition is named on the page, and that the sentence is
+identical everywhere it is told.
+
+Two conventions worth keeping: **EPUB before PDF** everywhere (`FMT_ORDER`), and the status
+labels all describe the *complete edition* (`STATES`), because every one of the 114 already
+has a readable Opening and "Ready to read" did not distinguish anything.
+
+One coupling to know about: the "in final review" count comes from `TIER_A` in the **book
+repo's** `build.py`, read live. An uncommitted edit there changes what this site publishes.
+
+## The language finder
+
+One box, on `/sedaha/` and `/sedaha/languages/`. Three things make it forgiving:
+
+- `assets/js/lang-alias.js` — the other names a language answers to. **The first name in each
+  list is treated as a full name**, which is what makes "farsi" answer Persian outright rather
+  than shrug at Persian and Dari together.
+- accent folding, so `turkce` finds Türkçe and `espanol` finds Español. Letters that do not
+  decompose (ø, æ, ß, đ, ð, þ, ł, ı, œ) are mapped by hand, in both copies.
+- the language's own code, since the URLs already expose it: `ja`, `pt-br`.
+
+A search that lands on one language answers **in place**, with that language's own buttons.
+It used to say "a complete edition matching your search is available above", which sent the
+reader hunting for their own answer. Browsing is A–Z by default, because someone who knows
+their language name should not have to guess which region this site files it under; region
+browsing is still there behind a switch, and both views hold the *same* `<li>` elements,
+moved rather than copied, so there is one row per language and one place to search.
+
+## `body class="writing"` (the guestbook only)
+
+Every other page is read; the guestbook is written on, and both halves of the shell were in
+the way of that. The class turns two things off, in CSS only, so `sync_footers.py` and
+`sync_appnav.py` keep owning the markup on all 124 pages:
+
+- the footer logo and the whole link row are hidden under the comment box. The copyright and
+  the **contact address stay**: that address is the page's own escape hatch when the Cusdis
+  widget is blocked, and the fallback text points at it.
+- on phones the tab bar stops being fixed to the bottom of the screen and scrolls with the
+  page from the top. Fixed, it sat on the comment box exactly when the keyboard was up. It
+  cannot be hidden on focus instead: the widget is a cross-origin iframe, so the page never
+  learns that anyone is typing in it.
+
+Reuse it on any future page whose point is a form, not prose.
 
 ## Fonts
 
@@ -161,11 +233,30 @@ From the generator's LANGS table it adds: the `og:title` sentence, a native `og:
 (the "thread of words that were
 once sounds" line in that edition's own wording), a localized CTA ("the full <language>
 edition is on the way; until then the book is free in Persian, English, and Danish"),
-`og:locale`, and RTL handling (ar he ur ckb ps bal glk lrc mzn prs sd ug yi). No EPUB/PDF
-buttons — those editions aren't released yet; the CTA sends readers to `/sedaha/`. The script
-also idempotently wires an "Opening" link into each language's row on `/sedaha/` and the URLs
-into `sitemap.xml`. Slugs are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`,
-`me`).
+`og:locale`, and RTL handling (ar he ur ckb ps bal glk lrc mzn prs sd ug yi). The CTA's three
+buttons hand over the **complete** book (the FA/EN/DA EPUBs on the release), because the
+sentence above them says the whole book is free in those three; they used to lead to another
+Opening page, which read as a promise withdrawn. The script also idempotently wires an
+"Opening" link into each language's row on `/sedaha/` and the URLs into `sitemap.xml`. Slugs
+are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`, `me`).
+
+**These pages carry no visible English.** The chrome around the text used to: "← Sounds",
+"Sounds · Book One", "Opening in:", "all 114 →", "Share this opening". It is gone, not
+translated, because 114 translations of six strings is 684 unreviewed strings:
+
+- the two links out of the page name the book **in its own script** (`_title()` of that
+  edition), each inside its own `<span lang dir>` so an RTL title cannot drag the arrow
+  across (`unicode-bidi:isolate`)
+- the language strip (`op_langs_html()`) is a globe icon, the languages naming themselves,
+  and `114 →`
+- the share button is icon-only, like the reading toolbar
+- the redundant kicker is gone (the back link already names the book)
+- what English remains is invisible: `aria-label`s and the "Link copied" toast, each marked
+  `lang="en"` so a screen reader switches voice instead of reading English through, say, a
+  Japanese one
+
+`check.py` compares the three hand-written EN/FA/DA pages against `op_langs_html()` and
+`reader_tools_html()`, so the four cannot drift.
 
 Adding a language means adding one LANGS entry plus its book-repo Opening, then regenerating and
 checking the pages using [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).

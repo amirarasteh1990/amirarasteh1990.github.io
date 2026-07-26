@@ -12,6 +12,10 @@
       toast.className = 'share-toast';
       toast.setAttribute('role', 'status');
       toast.setAttribute('aria-live', 'polite');
+      /* the message is English on a page that may be in any of 114 languages;
+         saying so lets a screen reader switch voice instead of reading English
+         letters through, say, a Japanese one */
+      toast.setAttribute('lang', 'en');
       document.body.appendChild(toast);
     }
     toast.textContent = msg;

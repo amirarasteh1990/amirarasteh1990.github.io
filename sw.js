@@ -19,6 +19,7 @@ var SHELL = [
   '/sedaha/',
   '/assets/css/style.css',
   '/assets/js/reader.js',
+  '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
   '/assets/fonts/ebgaramond-regular.woff2',

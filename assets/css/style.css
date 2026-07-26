@@ -118,7 +118,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 /* A name in its own script sits inside English sentences everywhere on this
    site. Isolating it keeps a right-to-left name from dragging the neighbouring
    Latin punctuation to the wrong side of itself. */
-.native,.cycler .slot,.lang-offer b,.op-langs [lang]{unicode-bidi:isolate}
+.native,.cycler .slot,.lang-offer b,.op-langs [lang],
+.back [lang],.read-back [lang],.btn [lang]{unicode-bidi:isolate}
 .site-header{padding:44px 0 0;text-align:center}
 .site-header h1{margin:0 0 8px;font-size:2.6rem}
 .tagline{color:var(--muted);margin:0;font-size:1.05rem}
@@ -131,6 +132,9 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 .brand-copy p{margin:2px 0 0;color:#5f574d;font-size:.95rem}
 .divider{height:1px;background:var(--line);margin:28px 0}
 .section-title{font-size:1.5rem;margin:8px 0 20px}
+/* the book page now runs Find your language / Complete editions / Every opening /
+   Translation progress, so its headings need air between the steps */
+.downloads .section-title ~ .section-title{margin-top:40px}
 .muted-note{color:var(--muted);font-size:.9rem;margin-top:16px}
 .reach-note{background:#fbf3ea;border:1px solid #ecdcc7;border-radius:8px;
   padding:14px 18px;margin-top:22px;color:#5b4a38;font-size:.95rem;line-height:1.6}
@@ -198,11 +202,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .cycler .slot{display:inline-block;margin-inline:.4em;color:#2f2a20;font-weight:600;font-size:1.14rem;
   transition:opacity .3s ease,transform .3s ease}
 .cycler .slot.is-out{opacity:0;transform:translateY(-4px)}
-/* how much of the hundred is finished, without a sentence about it */
-.progress{height:3px;max-width:260px;margin:16px 0 7px;border-radius:999px;
-  background:rgba(0,0,0,.10);overflow:hidden}
-.progress span{display:block;height:100%;min-width:6px;border-radius:999px;background:#2b6b3a}
-.progress-note{margin:0;color:#5a5344;font-size:.84rem}
+/* what exists, in two numbers. There was a progress bar here, 3.5% full: an
+   honest number that read as 96% unfinished at the exact moment a visitor was
+   deciding whether to start. The numbers stayed; the bar went. */
+.progress-note{margin:16px 0 0;color:#5a5344;font-size:.84rem}
 .progress-note strong{color:#2f2a20}
 .opening{max-width:680px;margin:22px 0 4px}
 .opening .label{display:block;font-family:var(--serif);font-style:italic;
@@ -225,6 +228,24 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .btn-primary:hover{background:#70472f}
 .btn-icon{width:44px;padding:0;flex:none}
 .btn-icon svg,.btn svg{width:18px;height:18px;flex:none;stroke:currentColor}
+/* the file format beside a language name, quiet enough not to compete with it */
+.btn-fmt{font-size:.72rem;font-weight:600;letter-spacing:.04em;opacity:.72}
+/* what a download will cost you, before you tap it on a metered connection */
+.ed-meta{margin:10px 0 0;color:var(--muted);font-size:.78rem}
+
+/* == the search result: one question, one answer, in one place ==
+   It used to say "a complete edition matching your search is available above",
+   which sent the reader looking for their own answer somewhere else on the page. */
+.lang-result{margin:14px 0 4px;padding:16px 18px;border:1px solid var(--line);
+  border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
+.lang-result .lr-name{margin:0 0 4px;font-size:1.24rem;font-weight:600}
+.lang-result .lr-name .en{color:var(--muted);font-size:.9rem;font-weight:400;margin-inline-start:6px}
+.lang-result .lr-state{margin:0 0 12px;color:var(--muted);font-size:.9rem;line-height:1.5}
+.lang-result .lr-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+
+/* A-Z or by region: the same rows, two arrangements */
+.browse-modes{display:flex;gap:8px;margin:0 0 10px}
+.az-list{margin:4px 0 0}
 
 .license h2{font-size:1.3rem}
 .license p{color:var(--muted);font-size:.94rem}
@@ -239,6 +260,13 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    so the footer stops repeating them there. Each link carries its own leading
    separator (sync_footers.py), which is why hiding one leaves no stray dot. */
 @media (max-width:760px){.site-footer .foot-link.is-tab{display:none}}
+
+/* The guestbook is the one page where a visitor is writing rather than reading.
+   Everything under the comment box competed with it: the logo, then six links.
+   The markup stays canonical (sync_footers.py owns it); this page just keeps
+   quiet, and keeps the one line that matters if the box will not load. */
+.writing .site-footer{margin-top:34px;padding-top:16px}
+.writing .site-footer .foot-logo,.writing .site-footer .foot-link{display:none}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}
@@ -279,7 +307,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   border-bottom:1px dotted rgba(0,0,0,.10);padding-bottom:5px}
 .ed-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
 .ed-list .native{font-weight:600;color:#33302a}
-.ed-list li.live .native{color:#2b6b3a}
+/* a language whose whole book exists. The row used to be hand-marked "live";
+   build_read_pages.py now stamps the state from the release, so this cannot
+   disagree with the status page or the cards. */
+.ed-list li[data-state="ready"] .native{color:#2b6b3a}
 .ed-list .en{color:#625a50;font-size:.76rem}
 .ed-list .soon{color:#625a50;font-size:.72rem;font-style:italic;white-space:nowrap;flex:none}
 .ed-list .mini{white-space:nowrap;flex:none;display:flex;gap:8px}
@@ -420,9 +451,13 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .read-cta .btns{display:flex;gap:8px;flex-wrap:wrap}
 .read-back{display:inline-block;margin-top:18px;font-size:.92rem}
 .read-entry{margin:8px 0 2px;font-size:1rem;font-weight:600}
-.op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);margin:2px auto 20px}
+/* the language strip: a globe, then the languages naming themselves. No English
+   label, so it reads the same on a Khmer page as on this one. */
+.op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);margin:22px auto 20px}
 .op-langs a{font-weight:600}
 .op-langs .cur{color:#33302a;font-weight:700}
+.op-globe{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;
+  vertical-align:-2px;margin-inline-end:5px;opacity:.75}
 
 /* reading toolbar: type size, measure, colours. Wordless, so it needs no
    translating; it sits above the text, aligned to the end of the measure, and
@@ -524,6 +559,16 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .appnav-tabs a:active{transform:scale(.9);background:rgba(138,90,59,.09)}
   body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}  /* clear the bar */
   .share-toast{bottom:calc(58px + env(safe-area-inset-bottom) + 16px)}
+
+  /* The guestbook is for writing, and a bar fixed to the bottom of the screen
+     sits on the comment box exactly when the keyboard is up. Here alone the bar
+     scrolls with the page: it starts at the top, where the tabs are still one
+     tap away, and then gets out of the way and stays out. It cannot be hidden
+     on focus instead -- the comment box is a cross-origin iframe, so the page
+     never learns that someone is typing in it. */
+  .writing .appnav{position:static;padding-bottom:0;box-shadow:none;
+    border-top:0;border-bottom:1px solid var(--line)}
+  .writing{padding-bottom:0}
 }
 
 /* honour the site's motion ethos: no tap-bounce under reduced motion */
@@ -620,10 +665,8 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .region-chip{border-color:rgba(255,255,255,.14);color:#cabfac}
   .region-chip:hover{color:#f0e7d7}
 
-  /* hero: cycling scripts + completion meter */
+  /* hero: cycling scripts + what exists */
   .cycler{color:#a99f8f} .cycler .slot{color:#e6dccb}
-  .progress{background:rgba(255,255,255,.12)}
-  .progress span{background:#7fce97}
   .progress-note{color:#a99f8f} .progress-note strong{color:#e6dccb}
 
   /* status table + badges */
@@ -672,7 +715,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
     box-shadow:none;padding:0;margin:0}
   .appnav,.reader-tools,.skip-link,.to-top,.share-toast,.btn,.read-cta,.back,
   .op-langs,.language-finder,.region-chips,.lang-toggle,.foot-logo,.site-footer .foot-link,
-  .progress,.cycler,.lang-offer,.dl-grid,.editions-featured{display:none!important}
+  .cycler,.lang-offer,.dl-grid,.editions-featured{display:none!important}
   .container{max-width:none;padding:0}
   .reader,.read-kicker{max-width:none;margin:0}
   .reader h1{font-size:20pt;margin:0 0 12pt}

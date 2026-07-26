@@ -179,9 +179,62 @@ def hand_written() -> None:
         report(f"EN/FA/DA Opening pages: {what} matches the generator", not off,
                ", ".join(off))
 
+    # the language strip differs per page (each marks a different language current),
+    # so ask the generator for the one that page should be carrying
+    off = [rel for rel, slug in zip(hand, ("", "fa/", "da/"))
+           if gen.op_langs_html(slug) not in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: language strip matches the generator", not off,
+           ", ".join(off))
+
+    stale = [rel for rel in hand
+             if "read-kicker" in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: no leftover English kicker", not stale, ", ".join(stale))
+
     missing = [rel for rel in hand
                if "/assets/js/reader.js" not in (SITE / rel).read_text(encoding="utf-8")]
     report("EN/FA/DA Opening pages: reader.js loaded", not missing, ", ".join(missing))
+
+
+def availability() -> None:
+    """One availability story, told the same everywhere.
+
+    The generator can be perfectly happy while the page is wrong: it stamps the
+    cards between markers, and the markers once sat INSIDE the grid they were
+    meant to fill, so four correct cards rendered outside their container. And
+    the whole reason this section exists is that Italian was complete for weeks
+    while three pages said three. So check the structure and the agreement, not
+    just the drift."""
+    sys.path.insert(0, str(SITE))
+    import build_read_pages as gen
+
+    rows = gen.status_rows()
+    done = [r["en"] for r in gen.complete_rows(rows)]
+    book = (SITE / "sedaha" / "index.html").read_text(encoding="utf-8")
+
+    grid = re.search(r'<div class="editions-featured">(.*?)</div>\s*</section>|'
+                     r'<div class="editions-featured">(.*?)\n    </div>', book, re.S)
+    inside = len(re.findall(r'<div class="ed-featured"', grid.group(0))) if grid else 0
+    total = len(re.findall(r'<div class="ed-featured"', book))
+    report(f"/sedaha/: all {total} edition cards sit inside their grid",
+           bool(grid) and inside == total == len(done),
+           f"{inside} inside, {total} on the page, {len(done)} complete")
+
+    told = [name for name in done if re.search(rf'\b{re.escape(name)}\b', book)]
+    report(f"/sedaha/: every complete edition is named ({', '.join(done)})",
+           len(told) == len(done), ", ".join(n for n in done if n not in told))
+
+    home = (SITE / "index.html").read_text(encoding="utf-8")
+    sentence = gen.availability(rows)["long"]
+    pages = {"index.html": home, "sedaha/index.html": book}
+    off = [name for name, body in pages.items() if sentence not in body]
+    report("the availability sentence is the same on every page that tells it",
+           not off, ", ".join(off))
+
+    stale = [name for name, body in pages.items()
+             if re.search(r"free to read in .*hundred", body)
+             and "og:image:alt" not in body.split("hundred")[0][-200:]]
+    report("no page still claims the whole book in a hundred languages", not stale,
+           ", ".join(stale))
 
 
 def main() -> int:
@@ -198,6 +251,7 @@ def main() -> int:
     crawl()
     structured()
     hand_written()
+    availability()
 
     print()
     if failures:

@@ -45,7 +45,7 @@ apply(get())})();</script>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>
 <!-- PWA:END -->
 </head>
-<body>
+<body class="writing">
 <a class="skip-link" href="#main">Skip to content</a>
 <!-- APPNAV:START (managed by sync_appnav.py — edit there, not the pages) -->
 <nav class="appnav" aria-label="Primary">
@@ -90,11 +90,14 @@ apply(get())})();</script>
       var t = document.getElementById('cusdis_thread');
       var loading = document.getElementById('cusdis-loading');
       var fallback = document.getElementById('cusdis-fallback');
-      // match the guestbook widget to the visitor's light/dark preference
-      if (t && window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        t.setAttribute('data-theme', 'dark');
-      }
+      /* Match the widget to the page. The reader may have overridden the system
+         on an opening page, and that choice is remembered site-wide, so ask
+         window.__theme first: asking the system alone left a white comment box
+         on a dark page for anyone who had chosen dark by hand. */
+      var chosen = (window.__theme && window.__theme.get()) || 'auto';
+      var dark = chosen === 'dark' || (chosen === 'auto' && window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (t) t.setAttribute('data-theme', dark ? 'dark' : 'light');
       function loaded(){
         loading.hidden = true;
         fallback.hidden = true;

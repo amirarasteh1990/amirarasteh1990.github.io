@@ -34,6 +34,8 @@ git pull --ff-only
 | Gallery paintings or English cover preview | `sync_gallery.py` |
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
 | Language names (a new language, or a new script among them) | `build_name_fonts.py` |
+| The other names a language answers to in search (Farsi, Bangla, Mandarin) | Edit `assets/js/lang-alias.js`; nothing to rebuild. First name in each list wins ties |
+| A new complete edition released (EPUB/PDF uploaded) | `build_read_pages.py`. It reads the release, so the cards, counts, copy and status all follow. Nothing to type by hand |
 | Paintings added or renamed | `sync_gallery.py`, then `build_read_pages.py` (sitemap images) |
 | Anything at all, before pushing | `check.py` |
 | EPUB/PDF | Upload to the `books` release; never commit book files |

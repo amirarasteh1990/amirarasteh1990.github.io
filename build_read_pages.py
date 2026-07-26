@@ -64,10 +64,14 @@ def reader_tools_html() -> str:
     English on a Khmer page. assets/js/reader.js gives it behaviour and remembers
     the choice for every edition at once.
 
+    Nothing here is visible English, but the labels a screen reader announces are,
+    so the group is marked lang="en": a Japanese reader's screen reader then says
+    them in an English voice instead of reading English letters through Japanese.
+
     The three hand-written Opening pages (EN/FA/DA) carry this same block; check.py
     compares them against this function so the four cannot drift apart."""
     return (
-        '  <div class="reader-tools" role="group" aria-label="Reading settings">\n'
+        '  <div class="reader-tools" role="group" lang="en" aria-label="Reading settings">\n'
         '    <button type="button" class="rt rt-smaller" aria-label="Smaller text" '
         'title="Smaller text"><span class="a-sm" aria-hidden="true">A</span></button>\n'
         '    <button type="button" class="rt rt-larger" aria-label="Larger text" '
@@ -95,6 +99,55 @@ def reader_tools_html() -> str:
 
 
 READER_TOOLS = reader_tools_html()
+
+# The three editions that exist in full. The strip above every opening offers them
+# in their own names, so a reader who wants the whole book can see where it is.
+COMPLETE = [("", "en", "English"), ("fa/", "fa", "فارسی"), ("da/", "da", "Dansk")]
+
+# The buttons under the localized invitation. That sentence tells the reader the
+# WHOLE book is free in these three, so the buttons hand over the whole book: they
+# used to lead to another Opening page, which read as a promise withdrawn. The
+# format is on the button so a download is never a surprise, and "EPUB" is the
+# file's own name in every language.
+FULL_BOOK_BTNS = "\n".join(
+    f'      <a class="btn" href="{RELEASE_URL}/Sedaha_{file}.epub" '
+    f'aria-label="{name}: the complete book, EPUB"><span lang="{lang}">{native}</span>'
+    f'<span class="btn-fmt" lang="en">EPUB</span></a>'
+    for file, lang, native, name in (("Farsi", "fa", "فارسی", "Persian"),
+                                     ("English", "en", "English", "English"),
+                                     ("Danish", "da", "Dansk", "Danish")))
+
+
+def op_langs_html(slug: str, lang: str = "", native: str = "") -> str:
+    """The strip above the opening: this same opening in the complete editions, the
+    language being read, and the way to the other 114.
+
+    It used to open with the words "Opening in:" and end with "all 114", which put
+    English on a page whose whole point is that it is not in English. A globe says
+    the same thing in no language, and the languages name themselves. The remaining
+    English is the label a screen reader announces, so the strip is marked lang="en"
+    and each name carries its own lang.
+
+    slug is the edition being read ("" for English, "fa/", "ja/" ...); lang/native
+    are needed only for an edition outside the complete three."""
+    out = ['  <nav class="op-langs" lang="en" aria-label="This opening in other languages">',
+           '    <svg class="op-globe" aria-hidden="true" viewBox="0 0 24 24">'
+           '<circle cx="12" cy="12" r="9"/><path d="M3.2 9.2h17.6M3.2 14.8h17.6"/>'
+           '<path d="M12 3c2.6 2.4 4 5.4 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.4-4-9s1.4-6.6 4-9z"/>'
+           '</svg>']
+    entries = list(COMPLETE)
+    if not any(s == slug for s, _l, _n in entries):
+        entries.append((slug, lang, native))
+    for i, (s, lg, name) in enumerate(entries):
+        tail = "" if i == len(entries) - 1 else " &middot;"
+        if s == slug:
+            out.append(f'    <span class="cur" lang="{lg}" aria-current="page">{name}</span>{tail}')
+        else:
+            out.append(f'    <a href="/sedaha/read/{s}" lang="{lg}">{name}</a>{tail}')
+    out.append('    &middot; <a href="/sedaha/languages/" aria-label="Where all 114 languages stand">'
+               '114 &rarr;</a>')
+    out.append('  </nav>')
+    return "\n".join(out)
 
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
@@ -667,6 +720,12 @@ def book_ld(L: dict, url: str) -> str:
 def render(L: dict) -> str:
     h1, paras = _opening(L["code"])
     dir_attr = ' dir="rtl"' if L["rtl"] else ""
+    # The book names itself, in its own script, instead of "Sounds" in Latin: the
+    # two links out of the reading page are the only place the page still had to
+    # say what book this is. Kept in a span of its own so the arrow beside it does
+    # not get dragged across by a right-to-left title.
+    own = (f'<span lang="{L["lang"]}"{dir_attr}>'
+           f'{html.escape(_title(L["code"]), quote=False)}</span>')
     url = f"https://arasteh.art/sedaha/read/{L['slug']}/"
     meta_desc = (f"Read the opening of Sedaha (Sounds), Book One by Amir Arasteh, "
                  f"in {L['en']}, then continue with the full book, free.")
@@ -706,14 +765,9 @@ def render(L: dict) -> str:
 <a class="skip-link" href="#main">Skip to content</a>
 {NAV}
 <main class="container" id="main">
-  <a class="back" href="/sedaha/">&larr; Sounds</a>
+  <a class="back" href="/sedaha/">&larr; {own}</a>
 
-  <p class="read-kicker">Sounds &middot; Book One</p>
-  <p class="op-langs">Opening in: <a href="/sedaha/read/">English</a> &middot;
-    <a href="/sedaha/read/fa/" lang="fa">فارسی</a> &middot;
-    <a href="/sedaha/read/da/" lang="da">Dansk</a> &middot;
-    <span class="cur" lang="{L['lang']}" aria-current="page">{L['native']}</span> &middot;
-    <a href="/sedaha/languages/">all 114 &rarr;</a></p>
+{op_langs_html(L['slug'] + '/', L['lang'], L['native'])}
 {READER_TOOLS}
   <article class="reader" lang="{L['lang']}"{dir_attr}>
     <h1>{html.escape(h1, quote=False)}</h1>
@@ -723,12 +777,10 @@ def render(L: dict) -> str:
   <div class="read-cta">
     <p lang="{L['lang']}"{dir_attr}>{html.escape(L['cta'], quote=False)}</p>
     <div class="btns">
-      <a class="btn" href="/sedaha/read/fa/" lang="fa">فارسی</a>
-      <a class="btn" href="/sedaha/read/">English</a>
-      <a class="btn" href="/sedaha/read/da/" lang="da">Dansk</a>
-      <button type="button" class="btn btn-share" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>Share this opening</button>
+{FULL_BOOK_BTNS}
+      <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
-    <a class="read-back" href="/sedaha/">All languages &amp; downloads &rarr;</a>
+    <a class="read-back" href="/sedaha/">{own} &rarr;</a>
   </div>
 </main>
 
@@ -751,16 +803,37 @@ def render(L: dict) -> str:
 
 # Reader-facing state -> (label, blurb). Order here is the order rows are sorted in.
 STATES = [
-    ("ready",     "Ready to read",   "The complete book, free to download."),
-    ("review",    "In final review", "Translated in full; being checked before release."),
-    ("translated", "Translated",     "A full draft exists; review still to come."),
-    ("revising",  "Being revised",   "Parts of this edition need reworking before it can be trusted."),
+    # Every one of the 114 has a readable Opening, so a label like "Ready to read"
+    # did not distinguish the four that exist as whole books. Each label now says
+    # what it says about the COMPLETE edition; the Opening is a given.
+    ("ready",     "Complete edition available",       "The whole book, free to download."),
+    ("review",    "Complete edition in final review", "Translated in full; being checked before release."),
+    ("translated", "Full draft translated",           "A complete draft exists; review still to come."),
+    ("revising",  "Complete edition being revised",   "Parts of this edition need reworking before it can be trusted."),
 ]
+
+# The state sentence a reader gets from the search result, in the second person.
+STATE_SENTENCE = {
+    "ready": "The complete book is available now.",
+    "review": "The complete edition is in final review.",
+    "translated": "A complete draft is translated; review still to come.",
+    "revising": "The complete edition is being revised.",
+}
+
+# EPUB first, everywhere. It was EPUB-then-PDF on the book page and PDF-then-EPUB
+# in the status table, which is small friction repeated 114 times.
+FMT_ORDER = ["epub", "pdf"]
+FMT_WHAT = {"epub": "Fits any screen", "pdf": "Keeps the printed page"}
+
 # Hand-written editions: not in LANGS (which covers only the generated pages).
+# share = that edition's own "thread of words" line, for the share sheet.
 CORE = [
-    {"code": "FA", "name": "Farsi", "en": "Persian", "native": "فارسی", "lang": "fa", "url": "/sedaha/read/fa/"},
-    {"code": "EN", "name": "English", "en": "English", "native": "English", "lang": "en", "url": "/sedaha/read/"},
-    {"code": "DA", "name": "Danish", "en": "Danish", "native": "Dansk", "lang": "da", "url": "/sedaha/read/da/"},
+    {"code": "FA", "name": "Farsi", "en": "Persian", "native": "فارسی", "lang": "fa", "rtl": True,
+     "url": "/sedaha/read/fa/", "share": "سررشته‌ی کلماتی که زمانی صدا بوده‌اند…"},
+    {"code": "EN", "name": "English", "en": "English", "native": "English", "lang": "en",
+     "url": "/sedaha/read/", "share": "The thread of words that were once sounds…"},
+    {"code": "DA", "name": "Danish", "en": "Danish", "native": "Dansk", "lang": "da",
+     "url": "/sedaha/read/da/", "share": "Tråden af ord, der engang var lyde…"},
 ]
 
 
@@ -793,9 +866,10 @@ def _configured() -> dict[str, str]:
     return tags
 
 
-def _released() -> tuple[dict[str, set[str]], dict[str, str]]:
-    """language name -> {'pdf','epub'} downloadable from the GitHub release, plus
-    language name -> the newest of its assets' timestamps (used by the Atom feed).
+def _released() -> tuple[dict[str, set[str]], dict[str, str], dict[tuple[str, str], int]]:
+    """language name -> {'pdf','epub'} downloadable from the GitHub release, the newest
+    of its assets' timestamps (used by the Atom feed), and (language, format) -> bytes,
+    so a download can say how big it is before anyone taps it on a metered connection.
 
     A reader can only read what is published, so the release is the truth here. If gh
     is unavailable we fall back to the local build dir and say so loudly, because that
@@ -805,32 +879,51 @@ def _released() -> tuple[dict[str, set[str]], dict[str, str]]:
     try:
         raw = subprocess.run(["gh", "release", "view", RELEASE_TAG, "--json", "assets"],
                              cwd=SITE, capture_output=True, text=True, timeout=60, check=True).stdout
-        assets = [(a["name"], a.get("updatedAt") or a.get("createdAt"))
+        assets = [(a["name"], a.get("updatedAt") or a.get("createdAt"), a.get("size") or 0)
                   for a in json.loads(raw)["assets"]]
     except Exception as exc:  # noqa: BLE001 - any failure means "ask the filesystem"
         local = BOOK_VOL / "online"
         print(f"[warn]  gh release unavailable ({type(exc).__name__}); falling back to {local}")
         print("[warn]  the page may then list editions that are built locally but NOT uploaded")
         assets = [(p.name, datetime.datetime.utcfromtimestamp(p.stat().st_mtime)
-                   .strftime("%Y-%m-%dT%H:%M:%SZ"))
+                   .strftime("%Y-%m-%dT%H:%M:%SZ"), p.stat().st_size)
                   for p in local.glob("Sedaha_*.*")] if local.is_dir() else []
     out: dict[str, set[str]] = {}
     when: dict[str, str] = {}
-    for name, stamp in assets:
+    size: dict[tuple[str, str], int] = {}
+    for name, stamp, nbytes in assets:
         m = re.fullmatch(r"Sedaha_(\w+)\.(pdf|epub)", name)
         if not m:
             continue
         out.setdefault(m.group(1), set()).add(m.group(2))
+        size[(m.group(1), m.group(2))] = nbytes
         if stamp and stamp > when.get(m.group(1), ""):
             when[m.group(1)] = stamp
-    return out, when
+    return out, when, size
+
+
+def _mb(nbytes: int) -> str:
+    """A file size a reader can weigh against their data allowance. One decimal is
+    enough; a book that reads "1.0 MB" and is really 1.04 has told no lie worth
+    correcting, and "1048576 bytes" tells nobody anything."""
+    if not nbytes:
+        return ""
+    mb = nbytes / 1048576
+    return f"{mb:.1f} MB" if mb >= 0.1 else f"{max(1, round(nbytes / 1024))} KB"
 
 
 def status_rows() -> list[dict]:
-    """One row per edition, most-available first, then alphabetically by English name."""
+    """One row per edition, most-available first, then alphabetically by English name.
+
+    THIS IS THE EDITION RECORD. Everything a visitor is told about availability comes
+    from here: the complete-edition cards on /sedaha/, the sentences on /sedaha/ and
+    the home page, the status table, the Atom feed, the counter. It used to feed only
+    the table and the counter, while the cards and the copy were kept by hand -- which
+    is exactly how the Italian edition came to be complete, downloadable, and mentioned
+    nowhere a visitor would look. Add a consumer here rather than a second list."""
     tier_a, excluded = _book_lists()
     tags = _configured()
-    released, released_at = _released()
+    released, released_at, sizes = _released()
     rows = []
     for L in CORE + [dict(L, name=None, url=f"/sedaha/read/{L['slug']}/") for L in LANGS]:
         name = L["name"] or tags.get(L["code"])
@@ -845,11 +938,32 @@ def status_rows() -> list[dict]:
             state = "translated"
         rows.append({"native": L["native"], "en": L["en"], "lang": L["lang"], "rtl": L.get("rtl", False),
                      "url": L["url"], "state": state, "stem": f"Sedaha_{name}" if name else None,
-                     "fmts": sorted(fmts, reverse=True),  # pdf before epub
+                     "slug": L["url"].rstrip("/").rsplit("/", 1)[-1] if L["url"] != "/sedaha/read/" else "en",
+                     "share": L.get("share") or L.get("og_desc", ""),
+                     "fmts": [f for f in FMT_ORDER if f in fmts],
+                     "size": {f: _mb(sizes.get((name, f), 0)) for f in fmts},
                      "date": released_at.get(name) if name else None})
     order = {s[0]: i for i, s in enumerate(STATES)}
     rows.sort(key=lambda r: (order[r["state"]], r["en"]))
     return rows
+
+
+# The original first, then the two it was published with, then the rest as they
+# arrive. Alphabetical order would open the shelf with Danish.
+FEATURED_FIRST = ["Persian", "English", "Danish"]
+
+
+def complete_rows(rows: list[dict]) -> list[dict]:
+    ready = [r for r in rows if r["state"] == "ready"]
+    return sorted(ready, key=lambda r: (FEATURED_FIRST.index(r["en"])
+                                        if r["en"] in FEATURED_FIRST else len(FEATURED_FIRST),
+                                        r["en"]))
+
+
+def and_list(names: list[str]) -> str:
+    if len(names) < 2:
+        return names[0] if names else ""
+    return ", ".join(names[:-1]) + " and " + names[-1]
 
 
 def render_status(rows: list[dict]) -> str:
@@ -866,11 +980,17 @@ def render_status(rows: list[dict]) -> str:
             native += f' <span class="en">{html.escape(r["en"])}</span>'
         label = next(lbl for s, lbl, _ in STATES if s == r["state"])
         links = [f'<a href="{r["url"]}">Opening</a>']
-        links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}">{f.upper()}</a>' for f in r["fmts"]]
-        body.append(f'      <tr><th scope="row">{native}</th>'
+        links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}" title="{r["size"].get(f, "")}">'
+                  f'{f.upper()}</a>' for f in r["fmts"]]
+        body.append(f'      <tr data-state="{r["state"]}"><th scope="row">{native}</th>'
                     f'<td><span class="badge {r["state"]}">{label}</span></td>'
                     f'<td class="links">{" ".join(links)}</td></tr>')
     ready = counts["ready"]
+    # one chip per state, each carrying its own count: a reader who came here to ask
+    # "what can I actually download" should get there without reading 114 rows
+    state_chips = "\n".join(
+        f'    <button type="button" class="region-chip" data-state="{s}" aria-pressed="false">'
+        f'{lbl} <span class="ccount">{counts[s]}</span></button>' for s, lbl, _ in STATES)
     return f"""<!DOCTYPE html>
 <!-- GENERATED by build_read_pages.py. Do not edit by hand: re-run  python build_read_pages.py -->
 <html lang="en">
@@ -907,7 +1027,9 @@ def render_status(rows: list[dict]) -> str:
   <h1>Where each language stands</h1>
   <p class="read-kicker">Sounds &middot; Book One</p>
   <p class="lead">The opening is readable in all {len(rows)} languages today;
-    {ready} complete editions can be downloaded now.</p>
+    {ready} complete editions can be downloaded now. Downloads are hosted on GitHub;
+    if that is blocked where you are, <a href="mailto:amirarasteh1990@gmail.com">write to
+    me</a> and I will send the files.</p>
 
   <div class="lang-key">
 {legend}
@@ -925,11 +1047,16 @@ def render_status(rows: list[dict]) -> str:
     <p class="visually-hidden" id="langFilterStatus" role="status" aria-live="polite"></p>
   </div>
 
+  <div class="region-chips" role="group" aria-label="Show only one state">
+    <button type="button" class="region-chip" data-state="all" aria-pressed="true">All {len(rows)}</button>
+{state_chips}
+  </div>
+
   <div class="lang-table-wrap">
     <table class="lang-table">
       <caption class="visually-hidden">Every language edition of Sounds, Book One, with its current state and available files</caption>
       <thead>
-        <tr><th scope="col">Language</th><th scope="col">State</th><th scope="col">Read</th></tr>
+        <tr><th scope="col">Language</th><th scope="col">State</th><th scope="col">Available now</th></tr>
       </thead>
       <tbody>
 {chr(10).join(body)}
@@ -945,6 +1072,8 @@ def render_status(rows: list[dict]) -> str:
 </main>
 
 {FOOTER}
+<!-- the other names each language answers to; must run before the filter below -->
+<script src="/assets/js/lang-alias.js"></script>
 <script>
 /* Filter the table, and answer deep links such as /sedaha/languages/#ja by
    filling the search in, so the filtered table always explains itself. */
@@ -955,17 +1084,41 @@ def render_status(rows: list[dict]) -> str:
   var noResult = document.querySelector('.lang-noresult');
   var status = document.getElementById('langFilterStatus');
   var clearBtn = document.getElementById('langClearFilter');
-  var flagged = null;
+  var chips = [].slice.call(document.querySelectorAll('.region-chip[data-state]'));
+  var flagged = null, only = 'all';
+
+  /* Fold accents away so a keyboard that cannot type them still finds the name:
+     turkce finds Turkce, espanol finds Espanol. Letters that do not decompose
+     into base plus mark are mapped by hand. Kept identical to /sedaha/. */
+  var LETTERS = {{'ø':'o','æ':'ae','ß':'ss','đ':'d','ð':'d',
+                 'þ':'th','ł':'l','ı':'i','œ':'oe','’':"'"}};
+  function fold(s){{
+    s = String(s).toLowerCase().replace(/[øæßđðþłıœ’]/g,
+                                        function(c){{ return LETTERS[c]; }});
+    return s.normalize ? s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '') : s;
+  }}
+
+  /* the row prints the language's own name and its English one; people also type
+     Farsi, Bangla, Mandarin, Filipino, or the code out of the URL. */
+  var ALIAS = window.LANG_ALIASES || {{}};
+  rows.forEach(function(tr){{
+    var a = tr.querySelector('a[href^="/sedaha/read/"]');
+    if(!a) return;
+    var slug = a.getAttribute('href').slice('/sedaha/read/'.length).replace('/', '') || 'en';
+    tr.setAttribute('data-hay', fold(tr.textContent + ' ' + (ALIAS[slug] || '') + ' ' + slug));
+  }});
+
   function apply(){{
-    var q = input.value.trim().toLowerCase(), n = 0;
+    var q = fold(input.value.trim()), n = 0;
     rows.forEach(function(tr){{
-      var hit = tr.textContent.toLowerCase().indexOf(q) > -1;
+      var hit = (tr.getAttribute('data-hay') || '').indexOf(q) > -1 &&
+                (only === 'all' || tr.getAttribute('data-state') === only);
       tr.style.display = hit ? '' : 'none';
       if(hit) n += 1;
     }});
     if(noResult) noResult.hidden = !(q && !n);
     if(clearBtn) clearBtn.hidden = !q;
-    if(status) status.textContent = q ?
+    if(status) status.textContent = (q || only !== 'all') ?
       (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
       'Showing all {len(rows)} languages.';
   }}
@@ -973,6 +1126,16 @@ def render_status(rows: list[dict]) -> str:
   input.addEventListener('input', function(){{ unflag(); apply(); }});
   if(clearBtn) clearBtn.addEventListener('click', function(){{
     input.value = ''; unflag(); apply(); input.focus();
+  }});
+  chips.forEach(function(chip){{
+    chip.addEventListener('click', function(){{
+      only = chip.getAttribute('data-state');
+      chips.forEach(function(c){{
+        c.setAttribute('aria-pressed', String(c.getAttribute('data-state') === only));
+      }});
+      unflag();
+      apply();
+    }});
   }});
 
   var bySlug = {{}};
@@ -986,6 +1149,10 @@ def render_status(rows: list[dict]) -> str:
     var tr = bySlug[decodeURIComponent(location.hash.slice(1)).toLowerCase()];
     if(!tr) return;
     var cell = tr.querySelector('th');
+    only = 'all';   // a state filter must not hide the row someone linked to
+    chips.forEach(function(c){{
+      c.setAttribute('aria-pressed', String(c.getAttribute('data-state') === 'all'));
+    }});
     input.value = cell ? cell.textContent.trim() : '';
     unflag();
     apply();
@@ -1054,17 +1221,154 @@ def patch_feed(check: bool, rows: list[dict]) -> bool:
     return True
 
 
+SHARE_SVG = ('<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" '
+             'stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/>'
+             '<path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>')
+
+
+def featured_html(rows: list[dict]) -> str:
+    """The complete-edition cards on /sedaha/, one per edition that exists as a whole
+    book, generated from the release. Hand-maintained, this block said three when the
+    answer was four: Italian had been complete and downloadable for weeks, visible only
+    as a PDF link inside a collapsed regional list."""
+    out = []
+    for r in complete_rows(rows):
+        lang = f' lang="{r["lang"]}"' + (' dir="rtl"' if r["rtl"] else "")
+        files = "\n".join(
+            f'          <a class="btn" href="{RELEASE_URL}/{r["stem"]}.{f}">Download {f.upper()}</a>'
+            for f in r["fmts"])
+        meta = " &middot; ".join(
+            [f'{f.upper()} {r["size"][f]}' for f in r["fmts"] if r["size"].get(f)] +
+            ([f'{r["date"][:4]} edition'] if r["date"] else []))
+        out.append(f"""      <div class="ed-featured" data-slug="{r['slug']}">
+        <p class="native"{lang if r["native"] != r["en"] else ""}>{html.escape(r['native'])}</p>
+        <p class="en">{html.escape(r['en'])}</p>
+        <a class="btn btn-primary edition-primary" href="{r['url']}">Read the opening</a>
+        <div class="edition-secondary">
+{files}
+          <button type="button" class="btn btn-icon btn-share" aria-label="Share the {r['en']} opening" title="Share the {r['en']} opening" data-share-url="https://arasteh.art{r['url']}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(r['share'])}">{SHARE_SVG}</button>
+        </div>
+        <p class="ed-meta">{meta}</p>
+      </div>""")
+    return "\n".join(out)
+
+
+def availability(rows: list[dict]) -> dict[str, str]:
+    """One availability story, in the few lengths the site needs it.
+
+    "Free to read in more than a hundred languages" was the old claim. It is not
+    false -- the Opening really is readable in 114 -- but a reader hears it as the
+    whole book in all of them, and the whole book exists in four. Every sentence
+    below distinguishes the two, and all of them are derived, so the day a fifth
+    edition is released no sentence has to be remembered."""
+    total = len(rows)
+    done = complete_rows(rows)
+    names = and_list([r["en"] for r in done])
+    return {
+        "total": str(total),
+        "ready": str(len(done)),
+        "names": names,
+        # the full sentence, for the book page and search-engine descriptions
+        "long": f"The opening in {total} languages. "
+                f"Complete editions in {names}.",
+        # the short one, for cards and share previews
+        "short": f"The opening in {total} languages &middot; "
+                 f"{len(done)} complete editions",
+        # the breakdown, which is project detail and belongs below the useful part
+        "tally": " &middot; ".join(
+            f"{sum(1 for r in rows if r['state'] == s)} {word}"
+            for s, word in (("ready", "complete"), ("review", "in final review"),
+                            ("translated", "translated drafts"), ("revising", "being revised"))) + ".",
+    }
+
+
+def patch_availability(check: bool, rows: list[dict]) -> bool:
+    """Stamp that one story everywhere it is told. Each target is matched by its own
+    anchor, and a target that stops matching is reported rather than skipped: a silent
+    miss here is precisely the failure this function exists to prevent."""
+    A = availability(rows)
+    plain = A["long"]
+    targets = [
+        (SOUNDS, r'(<meta name="description" content=")[^"]*(">)',
+         f'Sedaha (Sounds), Book 1 by Amir Arasteh. {plain} Free.'),
+        (SOUNDS, r'(<meta property="og:description" content=")[^"]*(">)',
+         f'By Amir Arasteh. {plain} Free.'),
+        (SOUNDS, r'(<p class="dl-intro">)(?:.|\n)*?(</p>)',
+         f'\n      {A["long"]}\n      <a href="/sedaha/languages/">Where every language stands &rarr;</a>\n    '),
+        (SITE / "index.html", r'(<meta name="description" content=")[^"]*(">)',
+         f'Paintings, and Sedaha (Sounds). {plain} Free.'),
+        (SITE / "index.html", r'(<meta property="og:description" content=")[^"]*(">)',
+         f'Paintings, and Sedaha (Sounds). {plain} Free.'),
+        (SITE / "index.html", r'(<p class="hub-book">)(?:.|\n)*?(</p>)',
+         f'<em>Sedaha (Sounds)</em>, Book One. {A["long"]}'),
+        # anchored on the closing tag like the rest: a pattern that ended on the link
+        # instead re-emitted the whitespace it had captured and grew the file each run
+        (SOUNDS, r'(<p class="muted-note tally">)(?:.|\n)*?(</p>)',
+         f'{A["tally"]}\n      <a href="/sedaha/languages/">'
+         f'Where every language stands &rarr;</a>\n    '),
+    ]
+    edits, misses = 0, []
+    bodies: dict[Path, str] = {}
+    for path, pattern, text in targets:
+        body = bodies.get(path) or path.read_text(encoding="utf-8")
+        new, n = re.subn(pattern, lambda m, t=text: m.group(1) + t + m.group(2), body, count=1)
+        if n == 0:
+            misses.append(f"{path.name}: {pattern[:40]}")
+            continue
+        if new != body:
+            edits += 1
+        bodies[path] = new
+    if misses:
+        print(f"[warn]  availability copy: {len(misses)} anchor(s) not found - {misses[0]}")
+        return False
+    if not edits:
+        print(f"[ok]    availability copy: {A['ready']} complete of {A['total']}")
+        return True
+    if check:
+        print(f"[drift] availability copy: should say {A['ready']} complete ({A['names']})")
+        return False
+    for path, body in bodies.items():
+        path.write_text(body, encoding="utf-8", newline="\n")
+    print(f"[write] availability copy: {A['ready']} complete ({A['names']})")
+    return True
+
+
+def patch_featured(check: bool, rows: list[dict]) -> bool:
+    body = SOUNDS.read_text(encoding="utf-8")
+    block = featured_html(rows)
+    pattern = r'(<!-- EDITIONS:START[^>]*-->\n)(?:.|\n)*?(\n\s*<!-- EDITIONS:END -->)'
+    if not re.search(pattern, body):
+        print("[warn]  /sedaha/: EDITIONS markers not found - cards not generated")
+        return False
+    new = re.sub(pattern, lambda m: m.group(1) + block + m.group(2), body, count=1)
+    n = len(complete_rows(rows))
+    if new == body:
+        print(f"[ok]    /sedaha/ complete-edition cards: {n}")
+        return True
+    if check:
+        print(f"[drift] /sedaha/ complete-edition cards: should be {n}")
+        return False
+    SOUNDS.write_text(new, encoding="utf-8", newline="\n")
+    print(f"[write] /sedaha/ complete-edition cards: {n}")
+    return True
+
+
 def patch_meter(check: bool, rows: list[dict]) -> bool:
-    """Keep /sedaha/'s hero meter honest: the ready count comes from the release,
-    the same source the status page uses, so the number cannot quietly go stale."""
+    """Keep /sedaha/'s hero count honest: the ready count comes from the release,
+    the same source the status page uses, so the number cannot quietly go stale.
+
+    It used to be a 3.5%-full progress bar reading "4 of 114 editions complete",
+    directly under the Read button. True, but it argued against the book at the
+    moment of deciding: what a visitor saw first was 96% unfinished. The same two
+    numbers, said as what exists rather than what is missing."""
     ready = sum(1 for r in rows if r["state"] == "ready")
     total = len(rows)
-    width = max(ready / total * 100, 1.2)
     body = SOUNDS.read_text(encoding="utf-8")
-    new = re.sub(r'(<div class="progress" aria-hidden="true"><span style="width:)[\d.]+(%)',
-                 rf"\g<1>{width:.1f}\g<2>", body, count=1)
-    new = re.sub(r'(<p class="progress-note"><strong>)\d+(</strong> of )\d+( editions complete)',
-                 rf"\g<1>{ready}\g<2>{total}\g<3>", new, count=1)
+    note = (f'<p class="progress-note">The opening in <strong>{total}</strong> languages &middot;\n'
+            f'        <strong>{ready}</strong> complete editions so far</p>')
+    # a lambda, so nothing in the replacement text is read as a backreference
+    new = re.sub(r'<p class="progress-note">.*?</p>', lambda _m: note,
+                 body, count=1, flags=re.S)
     if new == body:
         print(f"[ok]    /sedaha/ meter: {ready} of {total}")
         return True
@@ -1091,31 +1395,47 @@ def patch_status_page(check: bool, rows: list[dict]) -> bool:
     return True
 
 
-def patch_index(check: bool) -> bool:
-    """Add an 'Opening' link to each generated language's row on /sedaha/ (idempotent)."""
+def patch_index(check: bool, rows: list[dict]) -> bool:
+    """Bring every browse row on /sedaha/ up to date with the edition record.
+
+    The regional grouping is a hand-made editorial judgement and lives only in that
+    page, so each <li> is edited in place rather than regenerated: its name span is
+    left exactly as written, and its state and its links are replaced. The state is
+    what lets the search answer "is the complete German edition out?" without the
+    reader going to a second page."""
     body = SOUNDS.read_text(encoding="utf-8")
-    orig = body
-    for L in LANGS:
-        href = f"/sedaha/read/{L['slug']}/"
-        if href in body:
-            continue
-        mini = f'<span class="mini"><a href="{href}">Opening</a></span> '
-        # row is identified by its English name span; link goes before the status span
-        pat = (rf'(<span class="en">{re.escape(L["en"])}</span></span>) '
-               rf'(<span class="(?:soon|mini)">)')
-        new_body, n = re.subn(pat, rf"\1 {mini}\2", body, count=1)
-        if n == 0:
-            print(f"[warn]  /sedaha/ row not found for {L['en']} - no Opening link added")
-            continue
-        body = new_body
-    if body == orig:
-        print("[ok]    /sedaha/ rows: all Opening links present")
+    by_en = {r["en"]: r for r in rows}
+    seen, unknown = set(), []
+
+    def redo(m: re.Match) -> str:
+        name_span = m.group(1)
+        en = re.search(r'<span class="en">([^<]*)</span>', name_span)
+        r = by_en.get(html.unescape(en.group(1))) if en else None
+        if r is None:
+            unknown.append(en.group(1) if en else m.group(0)[:40])
+            return m.group(0)
+        seen.add(r["en"])
+        mini = [f'<span class="mini"><a href="{r["url"]}">Opening</a></span>']
+        mini += [f'<span class="mini"><a href="{RELEASE_URL}/{r["stem"]}.{f}">{f.upper()}</a></span>'
+                 for f in r["fmts"]]
+        return (f'<li data-state="{r["state"]}">{name_span} ' + " ".join(mini) + "</li>")
+
+    new = re.sub(r'<li[^>]*>(<span class="name">.*?</span></span>).*?</li>', redo, body)
+    if unknown:
+        print(f"[warn]  /sedaha/ rows: {len(unknown)} not in the edition record - {unknown[0]}")
+        return False
+    missing = [r["en"] for r in rows if r["en"] not in seen]
+    if missing:
+        print(f"[warn]  /sedaha/ rows: {len(missing)} edition(s) have no row - {missing[0]}")
+        return False
+    if new == body:
+        print(f"[ok]    /sedaha/ rows: {len(seen)} current")
         return True
     if check:
-        print("[drift] /sedaha/ rows: Opening links missing")
+        print(f"[drift] /sedaha/ rows: state or links stale")
         return False
-    SOUNDS.write_text(body, encoding="utf-8", newline="\n")
-    print("[write] /sedaha/ rows: Opening links added")
+    SOUNDS.write_text(new, encoding="utf-8", newline="\n")
+    print(f"[write] /sedaha/ rows: {len(seen)} updated")
     return True
 
 
@@ -1225,9 +1545,11 @@ def main() -> int:
 
     rows = status_rows()
     ok &= patch_status_page(args.check, rows)
+    ok &= patch_featured(args.check, rows)
+    ok &= patch_availability(args.check, rows)
     ok &= patch_meter(args.check, rows)
     ok &= patch_feed(args.check, rows)
-    ok &= patch_index(args.check)
+    ok &= patch_index(args.check, rows)
     ok &= patch_sitemap(args.check)
     ok &= patch_sitemap_images(args.check)
     if not args.check:
