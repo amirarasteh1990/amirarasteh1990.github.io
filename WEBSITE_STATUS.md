@@ -136,10 +136,10 @@ Every other page is read; the guestbook is written on, and both halves of the sh
 the way of that. The class turns two things off, in CSS only, so `sync_footers.py` and
 `sync_appnav.py` keep owning the markup on all 124 pages:
 
-- the row of six links under the comment box is hidden (most are tabs under the thumb anyway).
-  The **colophon logo stays** (2026-07-26: the author asked for it back), as do the copyright
-  and the contact address, which is the page's own escape hatch when the Cusdis widget is
-  blocked and the fallback text points at it.
+- **the footer is the same as every other page's.** Two attempts to trim it were reverted at
+  the author's request: first the logo came back, then the link row. Do not try a third time.
+  The contact address in it is also the page's own escape hatch when the Cusdis widget is
+  blocked, and the fallback text points at it.
 - **the widget's own words** are set through `window.CUSDIS_LOCALE`, defined in an inline
   script *before* `cusdis.es.js` runs (that script serializes the object into the iframe it
   builds, so setting it later does nothing). The keys, and the English defaults, are read out

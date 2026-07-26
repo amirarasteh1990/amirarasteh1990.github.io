@@ -1323,8 +1323,10 @@ def patch_availability(check: bool, rows: list[dict], total: int | None = None) 
          f'Paintings, and Sedaha (Sounds). {plain} Free.'),
         (SITE / "index.html", r'(<meta property="og:description" content=")[^"]*(">)',
          f'Paintings, and Sedaha (Sounds). {plain} Free.'),
-        (SITE / "index.html", r'(<p class="hub-book">)(?:.|\n)*?(</p>)',
-         f'<em>Sedaha (Sounds)</em>, Book One. {A["long"]}'),
+        # The home page's Books card says only the title now (the author's call,
+        # 2026-07-27: the availability sentence made it a paragraph where a label
+        # belonged). The claim still travels with that page, in its description
+        # meta above, which is what a search engine and a shared link read.
         # anchored on the closing tag like the rest: a pattern that ended on the link
         # instead re-emitted the whitespace it had captured and grew the file each run
         (SOUNDS, r'(<p class="muted-note tally">)(?:.|\n)*?(</p>)',
