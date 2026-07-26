@@ -27,7 +27,6 @@ window.LANG_ALIASES = {
   ku: 'kurmanji kurdish kurdi northern kurdish',
   tg: 'tajik tajiki tojiki persian',
   ar: 'arabic arabi fusha',
-  he: 'hebrew ivrit israeli',
   yi: 'yiddish jewish',
   ur: 'urdu hindustani',
   hi: 'hindi hindustani',

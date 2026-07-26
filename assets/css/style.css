@@ -573,15 +573,16 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}  /* clear the bar */
   .share-toast{bottom:calc(58px + env(safe-area-inset-bottom) + 16px)}
 
-  /* The guestbook is for writing, and a bar fixed to the bottom of the screen
-     sits on the comment box exactly when the keyboard is up. Here alone the bar
-     scrolls with the page: it starts at the top, where the tabs are still one
-     tap away, and then gets out of the way and stays out. It cannot be hidden
-     on focus instead -- the comment box is a cross-origin iframe, so the page
-     never learns that someone is typing in it. */
-  .writing .appnav{position:static;padding-bottom:0;box-shadow:none;
-    border-top:0;border-bottom:1px solid var(--line)}
-  .writing{padding-bottom:0}
+  /* The tab bar belongs at the bottom of every page, this one included: it was
+     briefly made to scroll away here, which only made the guestbook the one page
+     where the tabs were somewhere else. It steps aside instead, and only for the
+     moment it is actually in the way -- while someone is typing in the comment
+     box, when the keyboard has already taken half the screen. comments/index.html
+     adds .is-typing from focus inside the widget, which IS reachable: the widget
+     builds its iframe with srcdoc, so that document is same-origin. The body
+     keeps its padding while the bar is away, so nothing jumps. */
+  .writing .appnav{transition:transform .18s ease}
+  .writing.is-typing .appnav{transform:translateY(110%)}
 }
 
 /* honour the site's motion ethos: no tap-bounce under reduced motion */
@@ -606,7 +607,8 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 @media (max-width:760px){
   .to-top{right:14px;bottom:calc(58px + env(safe-area-inset-bottom) + 14px)}
 }
-@media (prefers-reduced-motion:reduce){.to-top{transition:opacity .001ms}}
+@media (prefers-reduced-motion:reduce){.to-top{transition:opacity .001ms}
+  .writing .appnav{transition:none}}
 
 /* =====================================================================
    Dark mode -- a warm, low-glare night palette. The paper look is kept:

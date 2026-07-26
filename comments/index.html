@@ -160,6 +160,27 @@ apply(get())})();</script>
             s.textContent = 'textarea{min-height:190px!important;' +
               'line-height:1.65!important;font-size:1rem!important;padding:10px!important}';
             (doc.head || doc.documentElement).appendChild(s);
+
+            /* On a phone the tab bar is fixed across the bottom of the screen,
+               which is where the keyboard and this form end up. Being able to see
+               into this document means we can tell when someone is actually
+               typing, so the bar can step aside for exactly that moment instead
+               of being moved somewhere else on this page alone. The small delay
+               on the way out keeps it still while a finger moves between the
+               name field and the box. */
+            var settle;
+            doc.addEventListener('focusin', function (e) {
+              var tag = e.target && e.target.tagName;
+              if (tag !== 'TEXTAREA' && tag !== 'INPUT') return;
+              clearTimeout(settle);
+              document.body.classList.add('is-typing');
+            });
+            doc.addEventListener('focusout', function () {
+              clearTimeout(settle);
+              settle = setTimeout(function () {
+                document.body.classList.remove('is-typing');
+              }, 180);
+            });
           } catch (e) {}
         }
         frame.addEventListener('load', inject);

@@ -225,16 +225,35 @@ def availability() -> None:
 
     home = (SITE / "index.html").read_text(encoding="utf-8")
     sentence = gen.availability(rows)["long"]
-    pages = {"index.html": home, "sedaha/index.html": book}
-    off = [name for name, body in pages.items() if sentence not in body]
+    tellers = {"index.html": home, "sedaha/index.html": book}
+    off = [name for name, body in tellers.items() if sentence not in body]
     report("the availability sentence is the same on every page that tells it",
            not off, ", ".join(off))
 
-    stale = [name for name, body in pages.items()
+    stale = [name for name, body in tellers.items()
              if re.search(r"free to read in .*hundred", body)
              and "og:image:alt" not in body.split("hundred")[0][-200:]]
     report("no page still claims the whole book in a hundred languages", not stale,
            ", ".join(stale))
+
+    # An edition the author has asked the site not to carry must be absent from all
+    # of it, not merely unlinked: the page, the lists, the hreflang cluster, the
+    # sitemap, the feed, the search aliases. The book keeps it; the site is quiet.
+    for slug in sorted(gen.HIDDEN_SLUGS):
+        row = next((r for r in rows if r["slug"] == slug), None)
+        needles = [f"/sedaha/read/{slug}/", f'hreflang="{row["lang"]}"' if row else "",
+                   row["native"] if row else "", row["en"] if row else ""]
+        needles = [n for n in needles if n]
+        seen = []
+        for path in list(pages()) + [SITE / "sitemap.xml", SITE / "feed.xml",
+                                     SITE / "assets" / "js" / "lang-alias.js"]:
+            body = path.read_text(encoding="utf-8")
+            hit = [n for n in needles if n in body]
+            if hit:
+                seen.append(f"{path.relative_to(SITE).as_posix()} ({hit[0]})")
+        name = row["en"] if row else slug
+        report(f"{name} is hidden from the site, as asked", not seen,
+               f"{len(seen)} page(s), first: {seen[0]}" if seen else "")
 
 
 def main() -> int:

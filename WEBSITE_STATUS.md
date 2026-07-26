@@ -85,6 +85,30 @@ Two conventions worth keeping: **EPUB before PDF** everywhere (`FMT_ORDER`), and
 labels all describe the *complete edition* (`STATES`), because every one of the 114 already
 has a readable Opening and "Ready to read" did not distinguish anything.
 
+Complete editions are **counted, not listed**: "4 complete editions to download, more on the
+way". Naming them was right at four and wrong at twenty-four; the cards below the sentence are
+the list, and they generate themselves.
+
+## `HIDDEN_SLUGS` — editions the book has and the site does not show
+
+`{"he"}` since 2026-07-26, the author's decision: he writes from Iran and does not want the
+site to become a political object. **The book is untouched** — the edition is translated, and
+ships in the book repo and the releases. Only arasteh.art stays quiet about it.
+
+One line in `build_read_pages.py` removes the generated page (and deletes it if present), the
+browse row, the status row, the hreflang cluster entry, the sitemap URL and the feed entry.
+The search alias and the hand-written row were removed by hand; `check.py` verifies that the
+name, the native name, the URL and the hreflang tag appear on **no** page, in the sitemap, the
+feed or `lang-alias.js`.
+
+The published number stays **114, the number of languages the book has**, which is why
+`main()` passes `total` separately from the rows it lists. So the site says "the opening in
+114 languages" while listing 113. To keep that from reading as a puzzle, nothing invites a
+count of the list: the browse summary says "Browse every language", not "all 114", and the
+search status says "Showing every language". The per-region counts still sum to 113. If you
+would rather the number matched the list exactly, drop the `total` argument in `main()` and
+every sentence becomes 113.
+
 One coupling to know about: the "in final review" count comes from `TIER_A` in the **book
 repo's** `build.py`, read live. An uncommitted edit there changes what this site publishes.
 
@@ -135,10 +159,14 @@ the way of that. The class turns two things off, in CSS only, so `sync_footers.p
   reads as the footer crowding the form. `min-height` is deliberate: it beats the inline
   `height` the widget sets. Nothing on this page is positioned, so nothing can overlap
   anything; the fix is room, not z-order.
-- on phones the tab bar stops being fixed to the bottom of the screen and scrolls with the
-  page from the top. Fixed, it sat on the comment box exactly when the keyboard was up. It
-  cannot be hidden on focus instead: the widget is a cross-origin iframe, so the page never
-  learns that anyone is typing in it.
+- on phones the tab bar **stays at the bottom, as on every other page**, and slides out of
+  view only while someone is typing in the comment box, which is the one moment it is in the
+  way. `.is-typing` is added to `<body>` from `focusin` inside the widget's document and
+  removed 180ms after `focusout`, so moving between the name field and the box does not make
+  it flicker. The body keeps its padding while the bar is away, so nothing jumps.
+  (It was briefly made to scroll away from the top here instead. That fixed the overlap and
+  created a worse problem: the guestbook became the one page where the tabs were somewhere
+  else.)
 
 Reuse it on any future page whose point is a form, not prose.
 

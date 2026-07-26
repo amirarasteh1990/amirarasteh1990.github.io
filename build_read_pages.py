@@ -685,7 +685,8 @@ def alternates() -> str:
             f'<link rel="alternate" hreflang="fa" href="{READ_INDEX_URL}fa/">',
             f'<link rel="alternate" hreflang="da" href="{READ_INDEX_URL}da/">']
     rows += [f'<link rel="alternate" hreflang="{L["lang"]}" '
-             f'href="https://arasteh.art/sedaha/read/{L["slug"]}/">' for L in LANGS]
+             f'href="https://arasteh.art/sedaha/read/{L["slug"]}/">'
+             for L in LANGS if L["slug"] not in HIDDEN_SLUGS]
     return "\n".join(rows)
 
 
@@ -824,6 +825,22 @@ STATE_SENTENCE = {
 # in the status table, which is small friction repeated 114 times.
 FMT_ORDER = ["epub", "pdf"]
 FMT_WHAT = {"epub": "Fits any screen", "pdf": "Keeps the printed page"}
+
+# Editions the book has but this website does not show. The author's call, made
+# 2026-07-26: he writes from Iran and does not want the site to become a political
+# object. The BOOK is untouched -- the edition exists, is translated, and ships in
+# the repo and the releases; only arasteh.art stays quiet about it.
+#
+# Hiding is done here rather than by deleting the edition, so it is one line to
+# undo: the language keeps its LANGS entry, its Opening source, and its place in
+# the book. What this switch removes from the site is the generated page, the
+# browse row, the status row, the hreflang cluster, the sitemap and the feed.
+HIDDEN_SLUGS = {"he"}
+
+
+def shown(rows: list[dict]) -> list[dict]:
+    return [r for r in rows if r["slug"] not in HIDDEN_SLUGS]
+
 
 # Hand-written editions: not in LANGS (which covers only the generated pages).
 # share = that edition's own "thread of words" line, for the share sheet.
@@ -966,7 +983,8 @@ def and_list(names: list[str]) -> str:
     return ", ".join(names[:-1]) + " and " + names[-1]
 
 
-def render_status(rows: list[dict]) -> str:
+def render_status(rows: list[dict], total: int | None = None) -> str:
+    total = len(rows) if total is None else total
     counts = {s: sum(1 for r in rows if r["state"] == s) for s, _, _ in STATES}
     legend = "\n".join(
         f'      <div class="key"><span class="badge {s}">{lbl}</span> <span class="what">{blurb}</span>'
@@ -1003,7 +1021,7 @@ def render_status(rows: list[dict]) -> str:
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="arasteh.art">
 <meta property="og:title" content="Where each language stands">
-<meta property="og:description" content="The state of all {len(rows)} language editions of Sedaha (Sounds), Book One.">
+<meta property="og:description" content="The state of all {total} language editions of Sedaha (Sounds), Book One.">
 <meta property="og:image" content="https://arasteh.art/assets/img/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -1026,7 +1044,7 @@ def render_status(rows: list[dict]) -> str:
 
   <h1>Where each language stands</h1>
   <p class="read-kicker">Sounds &middot; Book One</p>
-  <p class="lead">The opening is readable in all {len(rows)} languages today;
+  <p class="lead">The opening is readable in all {total} languages today;
     {ready} complete editions can be downloaded now. Downloads are hosted on GitHub;
     if that is blocked where you are, <a href="mailto:amirarasteh1990@gmail.com">write to
     me</a> and I will send the files.</p>
@@ -1048,7 +1066,7 @@ def render_status(rows: list[dict]) -> str:
   </div>
 
   <div class="region-chips" role="group" aria-label="Show only one state">
-    <button type="button" class="region-chip" data-state="all" aria-pressed="true">All {len(rows)}</button>
+    <button type="button" class="region-chip" data-state="all" aria-pressed="true">All</button>
 {state_chips}
   </div>
 
@@ -1120,7 +1138,7 @@ def render_status(rows: list[dict]) -> str:
     if(clearBtn) clearBtn.hidden = !q;
     if(status) status.textContent = (q || only !== 'all') ?
       (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
-      'Showing all {len(rows)} languages.';
+      'Showing every language.';
   }}
   function unflag(){{ if(flagged){{ flagged.classList.remove('deep-target'); flagged = null; }} }}
   input.addEventListener('input', function(){{ unflag(); apply(); }});
@@ -1253,27 +1271,33 @@ def featured_html(rows: list[dict]) -> str:
     return "\n".join(out)
 
 
-def availability(rows: list[dict]) -> dict[str, str]:
+def availability(rows: list[dict], total: int | None = None) -> dict[str, str]:
     """One availability story, in the few lengths the site needs it.
 
     "Free to read in more than a hundred languages" was the old claim. It is not
     false -- the Opening really is readable in 114 -- but a reader hears it as the
     whole book in all of them, and the whole book exists in four. Every sentence
     below distinguishes the two, and all of them are derived, so the day a fifth
-    edition is released no sentence has to be remembered."""
-    total = len(rows)
+    edition is released no sentence has to be remembered.
+
+    The complete editions are counted, not listed. Naming them was right at four
+    and wrong at fourteen, and twenty more are on the way; the cards below the
+    sentence are the list, and they generate themselves.
+
+    `total` is the number of languages THE BOOK has, which is not always the number
+    this site lists: see HIDDEN_SLUGS. It defaults to the rows given."""
+    total = len(rows) if total is None else total
     done = complete_rows(rows)
-    names = and_list([r["en"] for r in done])
+    n = len(done)
+    editions = f"{n} complete edition{'' if n == 1 else 's'} to download, more on the way"
     return {
         "total": str(total),
-        "ready": str(len(done)),
-        "names": names,
+        "ready": str(n),
+        "names": and_list([r["en"] for r in done]),
         # the full sentence, for the book page and search-engine descriptions
-        "long": f"The opening in {total} languages. "
-                f"Complete editions in {names}.",
+        "long": f"The opening in {total} languages. {editions[0].upper()}{editions[1:]}.",
         # the short one, for cards and share previews
-        "short": f"The opening in {total} languages &middot; "
-                 f"{len(done)} complete editions",
+        "short": f"The opening in {total} languages &middot; {editions}",
         # the breakdown, which is project detail and belongs below the useful part
         "tally": " &middot; ".join(
             f"{sum(1 for r in rows if r['state'] == s)} {word}"
@@ -1282,11 +1306,11 @@ def availability(rows: list[dict]) -> dict[str, str]:
     }
 
 
-def patch_availability(check: bool, rows: list[dict]) -> bool:
+def patch_availability(check: bool, rows: list[dict], total: int | None = None) -> bool:
     """Stamp that one story everywhere it is told. Each target is matched by its own
     anchor, and a target that stops matching is reported rather than skipped: a silent
     miss here is precisely the failure this function exists to prevent."""
-    A = availability(rows)
+    A = availability(rows, total)
     plain = A["long"]
     targets = [
         (SOUNDS, r'(<meta name="description" content=")[^"]*(">)',
@@ -1353,7 +1377,7 @@ def patch_featured(check: bool, rows: list[dict]) -> bool:
     return True
 
 
-def patch_meter(check: bool, rows: list[dict]) -> bool:
+def patch_meter(check: bool, rows: list[dict], total: int | None = None) -> bool:
     """Keep /sedaha/'s hero count honest: the ready count comes from the release,
     the same source the status page uses, so the number cannot quietly go stale.
 
@@ -1362,10 +1386,10 @@ def patch_meter(check: bool, rows: list[dict]) -> bool:
     moment of deciding: what a visitor saw first was 96% unfinished. The same two
     numbers, said as what exists rather than what is missing."""
     ready = sum(1 for r in rows if r["state"] == "ready")
-    total = len(rows)
+    total = len(rows) if total is None else total
     body = SOUNDS.read_text(encoding="utf-8")
     note = (f'<p class="progress-note">The opening in <strong>{total}</strong> languages &middot;\n'
-            f'        <strong>{ready}</strong> complete editions so far</p>')
+            f'        <strong>{ready}</strong> complete editions, more on the way</p>')
     # a lambda, so nothing in the replacement text is read as a backreference
     new = re.sub(r'<p class="progress-note">.*?</p>', lambda _m: note,
                  body, count=1, flags=re.S)
@@ -1380,8 +1404,8 @@ def patch_meter(check: bool, rows: list[dict]) -> bool:
     return True
 
 
-def patch_status_page(check: bool, rows: list[dict]) -> bool:
-    page = render_status(rows)
+def patch_status_page(check: bool, rows: list[dict], total: int | None = None) -> bool:
+    page = render_status(rows, total)
     if STATUS_PAGE.is_file() and STATUS_PAGE.read_text(encoding="utf-8") == page:
         print("[ok]    /sedaha/languages/: current")
         return True
@@ -1503,7 +1527,19 @@ def patch_sitemap(check: bool) -> bool:
                             f"    <lastmod>{today}</lastmod>\n    <priority>0.6</priority>\n  </url>\n</urlset>")
         SITEMAP.write_text(body, encoding="utf-8", newline="\n")
         print("[write] sitemap: added /sedaha/languages/")
-    missing = [L for L in LANGS if f"/sedaha/read/{L['slug']}/</loc>" not in body]
+    # a hidden edition must not be advertised to crawlers either
+    for slug in HIDDEN_SLUGS:
+        gone = re.sub(rf'  <url>\n    <loc>https://arasteh\.art/sedaha/read/{slug}/</loc>\n'
+                      rf'(?:(?!</url>).)*?</url>\n', "", body, flags=re.S)
+        if gone != body:
+            if check:
+                print(f"[drift] sitemap: /sedaha/read/{slug}/ is hidden but still listed")
+                return False
+            body = gone
+            SITEMAP.write_text(body, encoding="utf-8", newline="\n")
+            print(f"[write] sitemap: removed the hidden /sedaha/read/{slug}/")
+    missing = [L for L in LANGS if f"/sedaha/read/{L['slug']}/</loc>" not in body
+               and L["slug"] not in HIDDEN_SLUGS]
     if not missing:
         print("[ok]    sitemap: all read pages present")
         return True
@@ -1530,6 +1566,20 @@ def main() -> int:
     ok = True
     for L in LANGS:
         dest = READ_DIR / L["slug"] / "index.html"
+        if L["slug"] in HIDDEN_SLUGS:
+            # the edition stays in the book; the site does not carry the page
+            if dest.is_file():
+                if args.check:
+                    print(f"[drift] {L['slug']}: hidden, but its page is still on the site")
+                    ok = False
+                else:
+                    dest.unlink()
+                    try:
+                        dest.parent.rmdir()
+                    except OSError:
+                        pass
+                    print(f"[write] removed sedaha/read/{L['slug']}/  (hidden: {L['en']})")
+            continue
         page = render(L)
         if dest.is_file() and dest.read_text(encoding="utf-8") == page:
             continue
@@ -1543,17 +1593,22 @@ def main() -> int:
     if ok and args.check:
         print(f"[ok]    all {len(LANGS)} generated pages in sync")
 
+    # `rows` is the book's record; `site` is what this website carries. They differ
+    # only by HIDDEN_SLUGS, and `total` stays the book's number: the sentences speak
+    # about the book's reach, the lists show what the site lists.
     rows = status_rows()
-    ok &= patch_status_page(args.check, rows)
-    ok &= patch_featured(args.check, rows)
-    ok &= patch_availability(args.check, rows)
-    ok &= patch_meter(args.check, rows)
-    ok &= patch_feed(args.check, rows)
-    ok &= patch_index(args.check, rows)
+    site, total = shown(rows), len(rows)
+    ok &= patch_status_page(args.check, site, total)
+    ok &= patch_featured(args.check, site)
+    ok &= patch_availability(args.check, site, total)
+    ok &= patch_meter(args.check, site, total)
+    ok &= patch_feed(args.check, site)
+    ok &= patch_index(args.check, site)
     ok &= patch_sitemap(args.check)
     ok &= patch_sitemap_images(args.check)
     if not args.check:
-        print(f"done: {len(LANGS)} languages")
+        hidden = ", ".join(r["en"] for r in rows if r["slug"] in HIDDEN_SLUGS)
+        print(f"done: {len(LANGS)} languages" + (f"  (hidden from the site: {hidden})" if hidden else ""))
     return 1 if (args.check and not ok) else 0
 
 

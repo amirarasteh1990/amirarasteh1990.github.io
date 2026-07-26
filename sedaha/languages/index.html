@@ -75,7 +75,7 @@ apply(get())})();</script>
   <div class="lang-key">
       <div class="key"><span class="badge ready">Complete edition available</span> <span class="what">The whole book, free to download.</span> <span class="n">4</span></div>
       <div class="key"><span class="badge review">Complete edition in final review</span> <span class="what">Translated in full; being checked before release.</span> <span class="n">19</span></div>
-      <div class="key"><span class="badge translated">Full draft translated</span> <span class="what">A complete draft exists; review still to come.</span> <span class="n">81</span></div>
+      <div class="key"><span class="badge translated">Full draft translated</span> <span class="what">A complete draft exists; review still to come.</span> <span class="n">80</span></div>
       <div class="key"><span class="badge revising">Complete edition being revised</span> <span class="what">Parts of this edition need reworking before it can be trusted.</span> <span class="n">10</span></div>
   </div>
 
@@ -92,10 +92,10 @@ apply(get())})();</script>
   </div>
 
   <div class="region-chips" role="group" aria-label="Show only one state">
-    <button type="button" class="region-chip" data-state="all" aria-pressed="true">All 114</button>
+    <button type="button" class="region-chip" data-state="all" aria-pressed="true">All</button>
     <button type="button" class="region-chip" data-state="ready" aria-pressed="false">Complete edition available <span class="ccount">4</span></button>
     <button type="button" class="region-chip" data-state="review" aria-pressed="false">Complete edition in final review <span class="ccount">19</span></button>
-    <button type="button" class="region-chip" data-state="translated" aria-pressed="false">Full draft translated <span class="ccount">81</span></button>
+    <button type="button" class="region-chip" data-state="translated" aria-pressed="false">Full draft translated <span class="ccount">80</span></button>
     <button type="button" class="region-chip" data-state="revising" aria-pressed="false">Complete edition being revised <span class="ccount">10</span></button>
   </div>
 
@@ -157,7 +157,6 @@ apply(get())})();</script>
       <tr data-state="translated"><th scope="row"><span class="native" lang="gu">ગુજરાતી</span> <span class="en">Gujarati</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/gu/">Opening</a></td></tr>
       <tr data-state="translated"><th scope="row"><span class="native" lang="ht">Kreyòl ayisyen</span> <span class="en">Haitian Creole</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/ht/">Opening</a></td></tr>
       <tr data-state="translated"><th scope="row"><span class="native" lang="ha">Hausa</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/ha/">Opening</a></td></tr>
-      <tr data-state="translated"><th scope="row"><span class="native" lang="he" dir="rtl">עברית</span> <span class="en">Hebrew</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/he/">Opening</a></td></tr>
       <tr data-state="translated"><th scope="row"><span class="native" lang="hi">हिन्दी</span> <span class="en">Hindi</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/hi/">Opening</a></td></tr>
       <tr data-state="translated"><th scope="row"><span class="native" lang="hu">Magyar</span> <span class="en">Hungarian</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/hu/">Opening</a></td></tr>
       <tr data-state="translated"><th scope="row"><span class="native" lang="ig">Igbo</span></th><td><span class="badge translated">Full draft translated</span></td><td class="links"><a href="/sedaha/read/ig/">Opening</a></td></tr>
@@ -297,7 +296,7 @@ apply(get())})();</script>
     if(clearBtn) clearBtn.hidden = !q;
     if(status) status.textContent = (q || only !== 'all') ?
       (n ? n + (n === 1 ? ' language.' : ' languages.') : 'No language matches that search.') :
-      'Showing all 114 languages.';
+      'Showing every language.';
   }
   function unflag(){ if(flagged){ flagged.classList.remove('deep-target'); flagged = null; } }
   input.addEventListener('input', function(){ unflag(); apply(); });
