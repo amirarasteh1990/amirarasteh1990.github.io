@@ -330,6 +330,37 @@ Show the most downloaded first:
 gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books --jq '.assets | sort_by(.download_count) | reverse[] | [.download_count, .name] | @tsv'
 ```
 
+### `show downloads` — counts plus change since last run
+
+A small helper (defined in `~/sedaha-cli.ps1`, auto-loaded by the PowerShell
+profile) prints each asset's count **and** how much it changed since the last
+time you ran it. The default already includes the diff:
+
+```powershell
+show downloads
+```
+
+Add a total line, or turn the diff off:
+
+```powershell
+show downloads --total
+```
+
+```powershell
+show downloads --no-diff
+```
+
+Peek at the diff without resetting the baseline:
+
+```powershell
+show downloads --no-save
+```
+
+The baseline snapshot lives in `~/.sedaha_download_counts.json` and only updates
+when the diff is shown (i.e. not with `--no-diff` or `--no-save`). Delete that
+file to reset the "since" point. If `show` is not recognized, the profile has not
+loaded yet — open a new terminal, or run `. $PROFILE` once.
+
 Inspect the frozen release without changing it:
 
 ```powershell

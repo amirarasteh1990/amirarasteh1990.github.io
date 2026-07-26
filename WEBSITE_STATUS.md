@@ -112,9 +112,16 @@ Every other page is read; the guestbook is written on, and both halves of the sh
 the way of that. The class turns two things off, in CSS only, so `sync_footers.py` and
 `sync_appnav.py` keep owning the markup on all 124 pages:
 
-- the footer logo and the whole link row are hidden under the comment box. The copyright and
-  the **contact address stay**: that address is the page's own escape hatch when the Cusdis
-  widget is blocked, and the fallback text points at it.
+- the row of six links under the comment box is hidden (most are tabs under the thumb anyway).
+  The **colophon logo stays** (2026-07-26: the author asked for it back), as do the copyright
+  and the contact address, which is the page's own escape hatch when the Cusdis widget is
+  blocked and the fallback text points at it.
+- the comment box is given a floor of 560px (460 on phones) and 44px of clearance beneath it.
+  Cusdis renders into an iframe and sizes it from its own content, so until that message
+  arrives the box is short and whatever follows sits right under a half-drawn form, which
+  reads as the footer crowding the form. `min-height` is deliberate: it beats the inline
+  `height` the widget sets. Nothing on this page is positioned, so nothing can overlap
+  anything; the fix is room, not z-order.
 - on phones the tab bar stops being fixed to the bottom of the screen and scrolls with the
   page from the top. Fixed, it sat on the comment box exactly when the keyboard was up. It
   cannot be hidden on focus instead: the widget is a cross-origin iframe, so the page never

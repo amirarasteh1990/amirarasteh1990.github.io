@@ -262,11 +262,24 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 @media (max-width:760px){.site-footer .foot-link.is-tab{display:none}}
 
 /* The guestbook is the one page where a visitor is writing rather than reading.
-   Everything under the comment box competed with it: the logo, then six links.
-   The markup stays canonical (sync_footers.py owns it); this page just keeps
-   quiet, and keeps the one line that matters if the box will not load. */
-.writing .site-footer{margin-top:34px;padding-top:16px}
-.writing .site-footer .foot-logo,.writing .site-footer .foot-link{display:none}
+   The colophon logo stays: it is the author's painting and it belongs at the foot
+   of his pages. What goes is the row of six links under the box, most of which are
+   tabs under the thumb anyway. The markup stays canonical (sync_footers.py owns
+   it); this page just keeps quiet, and keeps the line that matters if the comment
+   box will not load. */
+.writing .site-footer{margin-top:56px;padding-top:22px}
+.writing .site-footer .foot-link{display:none}
+
+/* Room to write. Cusdis renders into an iframe and sizes it from its own content,
+   so before that message arrives the box is short and whatever follows sits right
+   under a half-drawn form. A floor on the height keeps the writing area the
+   biggest thing on the page, and min-height beats the inline height the widget
+   sets. The margin below is what actually separates the form from the colophon. */
+.writing #cusdis_thread{min-height:560px;margin:18px 0 44px}
+.writing #cusdis_thread iframe{width:100%;min-height:560px;border:0}
+@media (max-width:560px){
+  .writing #cusdis_thread,.writing #cusdis_thread iframe{min-height:460px}
+}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}
