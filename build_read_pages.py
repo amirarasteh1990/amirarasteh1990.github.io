@@ -1053,6 +1053,16 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
         links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}">{f.upper()}'
                   f'{" &middot; " + r["size"][f] if r["size"].get(f) else ""}</a>'
                   for f in r["fmts"]]
+        # every language here can be passed on, complete or not: the reason to share
+        # one is that somebody reads it, not that its EPUB happens to be finished
+        links.append(
+            f'<button type="button" class="lnk-share btn-share" '
+            f'aria-label="Share the {r["en"]} opening" title="Share the {r["en"]} opening" '
+            f'data-share-url="https://arasteh.art{r["url"]}" '
+            f'data-share-title="Sedaha &mdash; Book One">'
+            f'<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2v13"/>'
+            f'<path d="m16 6-4-4-4 4"/>'
+            f'<path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>')
         body.append(f'      <tr data-state="{r["state"]}"><th scope="row">{native}</th>'
                     f'<td><span class="badge {r["state"]}">{label}</span></td>'
                     f'<td class="links">{" ".join(links)}</td></tr>')
