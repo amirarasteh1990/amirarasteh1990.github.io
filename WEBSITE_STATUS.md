@@ -54,6 +54,12 @@ force light, the original query to follow the system again), from the small scri
 `sync_head.py` puts in every `<head>`. So there is one copy of dark mode to maintain, and
 with JavaScript off the system preference still decides, exactly as before.
 
+**The logo needs paper in dark mode.** It is a painting with the name lettered into it in
+dark ink on transparency, so on a dark page the paisley survives and the wordmark vanishes.
+The dark block gives `.logo-panel`, `.site-footer .foot-logo` and `.nf-logo` a warm cream
+plate to sit on. The artwork is never filtered, inverted or cropped: it is given paper, which
+is how it is printed in the book.
+
 Anything embedded from another origin has to be told separately. The guestbook widget
 (Cusdis) takes a `data-theme`, and it asks `window.__theme` **before** the system: reading
 the system alone left a white comment box on a dark page for anyone who had chosen dark by

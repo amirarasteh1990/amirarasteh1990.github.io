@@ -1110,6 +1110,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
     <span class="lang-search-field">
       <input type="search" class="lang-search" id="langFilter" autocomplete="off"
         placeholder="Hindi, T&uuml;rk&ccedil;e, 日本語&hellip;">
+      <svg class="lang-search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       <button type="button" class="lang-clear" id="langClearFilter" aria-label="Clear the search" hidden>
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
       </button>

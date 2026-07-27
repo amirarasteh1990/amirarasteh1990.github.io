@@ -204,12 +204,16 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .doorway-links{margin:22px 0 0;color:var(--muted);font-size:.94rem;text-align:center}
 .doorway-links a{font-weight:600}
 /* one raised surface on the page, and it is the visitor's own answer */
+/* several matches: a short index, set like a contents page */
 .lr-match{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
-  flex-wrap:wrap;margin:0 0 8px;padding-bottom:8px;
-  border-bottom:1px dotted rgba(0,0,0,.10)}
+  flex-wrap:wrap;text-align:start;margin:0 0 10px;padding-bottom:10px;
+  border-bottom:1px dotted rgba(0,0,0,.14)}
 .lr-match:last-of-type{border-bottom:0}
-.dl-help{margin:12px 0 0;font-size:.88rem;color:var(--muted)}
-.dl-help summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.lr-match .native{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:#2f2a20}
+.lr-match .en{color:#625a50;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;
+  margin-inline-start:8px}
+.dl-help{margin:16px 0 0;font-size:.88rem;color:#5b5348;text-align:start}
+.dl-help summary{cursor:pointer;font-weight:600;color:var(--accent);text-align:center}
 .dl-help p{margin:8px 0 0;line-height:1.6}
 /* the project's own numbers, behind a disclosure on the catalogue page */
 .progress-detail{margin:26px 0 0}
@@ -252,14 +256,28 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .dl-list .mini a:hover{border-bottom-color:#2b6b3a}
 
 /* == the search result: one question, one answer, in one place ==
-   It used to say "a complete edition matching your search is available above",
-   which sent the reader looking for their own answer somewhere else on the page. */
-.lang-result{margin:14px 0 4px;padding:16px 18px;border:1px solid var(--line);
-  border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
-.lang-result .lr-name{margin:0 0 4px;font-size:1.24rem;font-weight:600}
-.lang-result .lr-name .en{color:var(--muted);font-size:.9rem;font-weight:400;margin-inline-start:6px}
-.lang-result .lr-state{margin:0 0 12px;color:var(--muted);font-size:.9rem;line-height:1.5}
-.lang-result .lr-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0}.license h2{font-size:1.3rem}
+   Set like a title page: the warm paper the edition cards used, a hairline frame
+   drawn a few millimetres inside the edge the way a bookplate is, the language's
+   own name in the book's serif, its English name in spaced capitals beneath a
+   short centred rule. The only raised surface on the page, because it is the one
+   thing the visitor asked for. */
+.lang-result{margin:16px 0 4px;padding:24px 22px 20px;text-align:center;
+  background:var(--paper);border:1px solid rgba(0,0,0,.10);border-radius:10px;
+  box-shadow:var(--shadow),inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(0,0,0,.10)}
+.lang-result .lr-name{margin:0;font-family:var(--serif);font-size:1.85rem;
+  font-weight:600;line-height:1.25;color:#2f2a20}
+.lang-result .lr-name .en{display:block;margin-top:5px;color:#625a50;font-family:inherit;
+  font-size:.76rem;font-weight:400;text-transform:uppercase;letter-spacing:.1em}
+/* the short rule a title page puts under its title */
+.lang-result .lr-name::after{content:"";display:block;width:46px;height:1px;
+  margin:13px auto 0;background:rgba(0,0,0,.18)}
+.lang-result .lr-state{margin:12px 0 16px;color:#5b5348;font-family:var(--serif);
+  font-style:italic;font-size:1rem;line-height:1.5}
+.lang-result .lr-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0}
+/* Read the opening takes the full width, the files sit under it: the shape the
+   edition cards had, which is the shape the author asked to keep. */
+.lang-result .lr-actions .btn-primary{flex:1 0 100%}
+.lang-result .lr-actions .btn:not(.btn-icon):not(.btn-primary){min-width:66px}.license h2{font-size:1.3rem}
 .license p{color:var(--muted);font-size:.94rem}
 .site-footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--line);
   color:var(--muted);font-size:.86rem;text-align:center}
@@ -321,10 +339,19 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 @media (min-width:761px){.language-finder{top:56px}}
 .lang-search-label{display:block;margin:0 0 8px;font-family:var(--serif);font-size:1.12rem;font-weight:600}
 .lang-search-field{position:relative;display:block}
-.lang-search{width:100%;box-sizing:border-box;margin:0;padding:12px 46px 12px 16px;min-height:48px;
-  border:1px solid rgba(0,0,0,.14);border-radius:8px;background:var(--surface);
-  font:inherit;color:var(--ink)}
-.lang-search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,90,59,.12)}
+/* It is the main action on the page, so it has to read as a search box at a
+   glance: a magnifier inside it, a border with real contrast rather than a 14%
+   hairline, and a little lift off the panel it sits on. A white field on a
+   near-white panel was almost invisible, and the dark version worse. */
+.lang-search-icon{position:absolute;top:50%;left:15px;transform:translateY(-50%);
+  width:19px;height:19px;fill:none;stroke:var(--muted);stroke-width:2;
+  stroke-linecap:round;pointer-events:none}
+.lang-search{width:100%;box-sizing:border-box;margin:0;padding:12px 46px 12px 44px;min-height:52px;
+  border:2px solid rgba(138,90,59,.34);border-radius:10px;background:var(--surface);
+  box-shadow:0 1px 2px rgba(0,0,0,.05);font:inherit;font-size:1.02rem;color:var(--ink)}
+.lang-search:hover{border-color:rgba(138,90,59,.5)}
+.lang-search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,90,59,.18)}
+.lang-search:focus+.lang-search-icon,.lang-search:focus~.lang-search-icon{stroke:var(--accent)}
 .lang-search::placeholder{color:#6f675e}
 /* the field carries its own clear button; drop the browser's */
 .lang-search::-webkit-search-cancel-button,
@@ -625,6 +652,18 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .reach-note,.notice,.read-cta{background:#241d15;border-color:#3d3428;color:#d8cbb6}
   .read-cta p{color:#cdbfa9}
 
+  /* the search answer, still a page from the book: darker paper, the frame drawn
+     in light rather than shadow, and the inks lifted to match */
+  .lang-result{background:#241d15;border-color:#3d3428;
+    box-shadow:var(--shadow),inset 0 0 0 6px #241d15,inset 0 0 0 7px rgba(255,255,255,.10)}
+  .lang-result .lr-name{color:#ece3d4}
+  .lang-result .lr-name .en{color:#a99f8f}
+  .lang-result .lr-name::after{background:rgba(255,255,255,.22)}
+  .lang-result .lr-state{color:#cdbfa9}
+  .lr-match{border-bottom-color:rgba(255,255,255,.14)}
+  .lr-match .native{color:#e6dccb} .lr-match .en{color:#a99f8f}
+  .dl-help{color:#c6bba7}
+
   /* inks that were hardcoded dark */
   .brand-copy{color:#e6dccb} .brand-copy p{color:#a99f8f}
   .lead,.opening p,.dl-intro,.dl-hint,.book-lead,.lang-key .what,.lang-search-result{color:#c6bba7}  .excerpt{color:#d3c6b0}
@@ -634,10 +673,24 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .ed-list li.live .native{color:#7fce97}
   .ed-list .mini a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
   .ed-list .mini a:hover{border-bottom-color:#7fce97}  .dl-list .native{color:#7fce97} .dl-list .en{color:#a99f8f}
-  .dl-list .mini a{color:#7fce97}  .dl-list .mini a:hover{border-bottom-color:#7fce97}  /* language search field */
+  .dl-list .mini a{color:#7fce97}  .dl-list .mini a:hover{border-bottom-color:#7fce97}  /* language search field: warm and clearly a field, not a slightly different
+     shade of the panel behind it */
   .language-finder{background:rgba(28,23,18,.93)}
-  .lang-search{border-color:rgba(255,255,255,.16)}
-  .lang-search::placeholder{color:#8f8676}
+  .lang-search{background:#2c251d;border-color:rgba(217,155,109,.45);
+    box-shadow:0 1px 2px rgba(0,0,0,.35)}
+  .lang-search:hover{border-color:rgba(217,155,109,.65)}
+  .lang-search::placeholder{color:#a2988a}
+  .lang-search-icon{stroke:#b3a892}
+
+  /* The logo is a painting with the name lettered into it in dark ink, so on a
+     dark page the lettering disappears while the paisley survives. The artwork is
+     never altered or filtered: it is given paper to sit on, which is how it is
+     printed in the book. */
+  .logo-panel{background:rgba(245,239,227,.92);border-color:rgba(245,239,227,.5)}
+  .site-footer .foot-logo{background:rgba(245,239,227,.9);border-radius:8px;
+    padding:8px 10px;box-sizing:content-box}
+  .nf-logo{background:rgba(245,239,227,.9);border-radius:8px;padding:10px 12px;
+    display:inline-block}
   .lang-clear:hover{background:rgba(255,255,255,.08)}
   .region-chip{border-color:rgba(255,255,255,.14);color:#cabfac}
   .region-chip:hover{color:#f0e7d7}
