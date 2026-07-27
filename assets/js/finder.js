@@ -277,6 +277,36 @@
     fallback.replaceWith(a);
   })();
 
+  /* Every language, built the first time it is asked for. The doorway carries no
+     catalogue in its markup: 113 rows are what made the old page a list instead of
+     a page. Opened, it is a plain A-Z of names, each going to its own opening; the
+     link to the full catalogue stays underneath for files and states. With no
+     scripting the summary still opens, and that link is what it shows. */
+  (function () {
+    var box = document.getElementById('allLangs');
+    if (!box) return;
+    var built = false;
+    box.addEventListener('toggle', function () {
+      if (!box.open || built) return;
+      built = true;
+      var list = el('ul', 'all-list');
+      LANGS.slice().sort(function (a, b) {
+        var x = fold(a.en), y = fold(b.en);
+        return x < y ? -1 : x > y ? 1 : 0;
+      }).forEach(function (L) {
+        var li = document.createElement('li');
+        var a = el('a', null, L.native);
+        a.href = L.url;
+        a.setAttribute('lang', L.lang);
+        if (L.rtl) a.setAttribute('dir', 'rtl');
+        if (L.en !== L.native) a.appendChild(el('span', 'en', L.en));
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      box.insertBefore(list, box.querySelector('.all-foot'));
+    });
+  })();
+
   /* The book's promise is that it finds you in your own language, so if the browser
      asks for one this site has, say so once, in a line rather than a box. */
   (function () {

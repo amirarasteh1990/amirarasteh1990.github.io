@@ -1338,6 +1338,12 @@ EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 # here unless its complete edition is actually on the release.
 QUICK_SLUGS = ["fa", "en", "ar", "es"]
 QUICK_FALLBACK = "zh"
+# The heading reads into the row: "Pick up the thread in  فارسی  English  …", which
+# is the book's own image for what a reader does — the author unwinds the thread of
+# words from his side, the reader gathers it from the other. NOT "most read": this
+# site keeps no analytics, and these five are chosen editorially, so that would be a
+# claim it cannot support. One line to change.
+QUICK_HEADING = "Pick up the thread in"
 
 
 def quick_starts_html(rows: list[dict]) -> str:
@@ -1368,7 +1374,7 @@ def quick_starts_html(rows: list[dict]) -> str:
                 else f'<span class="visually-hidden"> — {html.escape(r["en"])}</span>')
         links.append(f'        <a href="{r["url"]}" lang="{r["lang"]}"{rtl} '
                      f'data-slug="{r["slug"]}">{html.escape(r["native"])}{also}</a>')
-    return ('      <h2 class="quick-heading" id="quick-heading">Quick starts</h2>\n'
+    return (f'      <h2 class="quick-heading" id="quick-heading">{QUICK_HEADING}</h2>\n'
             f'      <nav class="quick-row" aria-labelledby="quick-heading" '
             f'data-fallback="{QUICK_FALLBACK}">\n' + "\n".join(links) + "\n      </nav>")
 

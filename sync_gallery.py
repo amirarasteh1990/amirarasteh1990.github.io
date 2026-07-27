@@ -70,6 +70,37 @@ def _save_resized(im: Image.Image, dest: Path, edge: int) -> None:
     resized.save(dest.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
 
 
+BAND_OUT = SITE / "assets" / "img" / "book-cover-band.jpg"
+BAND_EDGE = 640          # it is a texture behind five small chips, never examined
+
+
+def _write_band(check: bool) -> bool:
+    """The cover turned on its side, for the quick-start chips on /sedaha/.
+
+    A background image cannot be rotated in CSS, and rotating five pseudo-elements
+    to fake it costs paint on every scroll. One small derived file instead, made
+    the same way as every other derived image here so it is never hand-edited."""
+    if not BOOK_COVER_OUT.is_file():
+        return True
+    fresh = (BAND_OUT.is_file()
+             and BAND_OUT.stat().st_mtime >= BOOK_COVER_OUT.stat().st_mtime
+             and _twin_is_current(BAND_OUT))
+    if fresh:
+        print(f"[ok]    {BAND_OUT.name}: current")
+        return True
+    if check:
+        print(f"[stale] {BAND_OUT.name}")
+        return False
+    with Image.open(BOOK_COVER_OUT) as im:
+        turned = im.convert("RGB").rotate(90, expand=True)
+        scale = BAND_EDGE / max(turned.size)
+        turned = turned.resize((round(turned.width * scale), round(turned.height * scale)), LANCZOS)
+        turned.save(BAND_OUT, "JPEG", quality=QUALITY, optimize=True)
+        turned.save(BAND_OUT.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
+    print(f"[write] {BAND_OUT.name}  ({turned.width}x{turned.height})")
+    return True
+
+
 def _twin_is_current(jpg: Path) -> bool:
     webp = jpg.with_suffix(".webp")
     return webp.is_file() and webp.stat().st_mtime >= jpg.stat().st_mtime
@@ -144,6 +175,8 @@ def main() -> int:
             _write_twin(jpg)
             print(f"wrote  {jpg.with_suffix('.webp').relative_to(SITE)}")
 
+    if not _write_band(args.check):
+        stale += 1
     if stale == 0:
         print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")
     return 1 if (args.check and stale) else 0

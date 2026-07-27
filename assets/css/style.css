@@ -208,14 +208,55 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    cards, and quieter than the search above it, since the search is the page's
    real instrument. The names carry their own lang, so each is set in its own
    script's face and read in its own voice. */
-.quick-heading{margin:22px 0 8px;font-family:var(--serif);font-size:.78rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.quick-row{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:baseline}
-.quick-row a{font-family:var(--serif);font-size:1.12rem;color:#3d352a;text-decoration:none;
-  padding:5px 12px;border:1px solid var(--line);border-radius:999px;
-  background:rgba(255,255,255,.5);transition:border-color .15s ease,color .15s ease}
-.quick-row a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
-.quick-row a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* it reads into the row beneath it, so it is set as a phrase rather than a label:
+   "Pick up the thread in  فارسی  English …" */
+.quick-heading{margin:24px 0 10px;font-family:var(--serif);font-style:italic;
+  font-size:1.02rem;font-weight:400;color:var(--muted)}
+.quick-row{display:flex;flex-wrap:wrap;gap:10px}
+/* Each one is a small door with the cover painted on it. The cover is portrait, so
+   sync_gallery.py derives it turned on its side (book-cover-band): CSS cannot
+   rotate a background, and rotating five pseudo-elements would repaint on every
+   scroll. A scrim sits over the painting so the name stays legible on top of it. */
+.quick-row a{position:relative;isolation:isolate;overflow:hidden;
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:54px;min-width:104px;padding:10px 20px;
+  border:1px solid rgba(0,0,0,.18);border-radius:10px;
+  background-image:url(/assets/img/book-cover-band.jpg);
+  background-size:cover;background-position:center;
+  font-family:var(--serif);font-size:1.18rem;color:#fdf8ee;text-decoration:none;
+  text-shadow:0 1px 3px rgba(0,0,0,.65);
+  box-shadow:0 1px 3px rgba(0,0,0,.18);
+  transition:transform .15s ease,box-shadow .15s ease}
+@supports (background-image:image-set(url(/assets/img/book-cover-band.webp) type("image/webp"))){
+  .quick-row a{background-image:image-set(
+    url(/assets/img/book-cover-band.webp) type("image/webp"),
+    url(/assets/img/book-cover-band.jpg) type("image/jpeg"))}
+}
+.quick-row a::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:rgba(26,18,11,.56);transition:background .15s ease}
+.quick-row a:hover{text-decoration:none;transform:translateY(-1px);
+  box-shadow:0 4px 12px rgba(0,0,0,.24)}
+.quick-row a:hover::before{background:rgba(26,18,11,.42)}
+.quick-row a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.quick-row a{transition:none}.quick-row a:hover{transform:none}}
+
+/* every language, only when asked for: the doorway stays a doorway, and the list
+   is built from the same data the finder uses rather than sitting in the markup */
+.all-langs{margin:22px 0 0}
+.all-langs>summary{cursor:pointer;font-family:var(--serif);font-size:.98rem;
+  color:var(--accent);list-style:none;display:inline-flex;align-items:center;gap:7px;
+  min-height:44px}
+.all-langs>summary::-webkit-details-marker{display:none}
+.all-langs>summary::before{content:"▸";font-size:.8em;transition:transform .15s ease}
+.all-langs[open]>summary::before{transform:rotate(90deg)}
+.all-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  gap:2px 18px;margin:10px 0 0;padding:0;list-style:none}
+.all-list a{display:block;padding:7px 0;font-family:var(--serif);font-size:1rem;
+  color:#3d352a;text-decoration:none;border-bottom:1px dotted rgba(0,0,0,.12)}
+.all-list a:hover{color:var(--accent);text-decoration:none}
+.all-list .en{color:var(--muted);font-family:var(--sans);font-size:.72rem;
+  margin-inline-start:7px}
+.all-foot{margin:14px 0 0;font-size:.9rem}
 
 /* what a reader can have while their own edition is still coming. Set apart by a
    rule rather than a second box: it is a footnote to the answer, not a new one. */
@@ -690,8 +731,12 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .lang-result .lr-name .en{color:#a99f8f}
   .lang-result .lr-name::after{background:rgba(255,255,255,.22)}
   .lang-result .lr-state{color:#cdbfa9}
-  .quick-row a{color:#ddd2bf;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.05)}
-  .quick-row a:hover{border-color:var(--accent);color:var(--accent)}
+  /* the painting is the same, the scrim a little deeper so the names still read */
+  .quick-row a{border-color:rgba(255,255,255,.14)}
+  .quick-row a::before{background:rgba(14,10,7,.66)}
+  .quick-row a:hover::before{background:rgba(14,10,7,.5)}
+  .all-list a{color:#ddd2bf;border-bottom-color:rgba(255,255,255,.12)}
+  .all-list a:hover{color:var(--accent)}
   .lr-meanwhile{border-top-color:rgba(255,255,255,.20)}
   .lr-meanwhile-note{color:#c6bba7}
   .lr-match{border-bottom-color:rgba(255,255,255,.14)}
