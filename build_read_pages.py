@@ -1332,6 +1332,46 @@ def patch_feed(check: bool, rows: list[dict]) -> bool:
 
 EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 
+# Four editorially fixed quick starts, then a fifth the visitor's browser may
+# replace (assets/js/finder.js). Slugs only: every label, URL, direction and the
+# availability itself come from the edition record, so a language cannot appear
+# here unless its complete edition is actually on the release.
+QUICK_SLUGS = ["fa", "en", "ar", "es"]
+QUICK_FALLBACK = "zh"
+
+
+def quick_starts_html(rows: list[dict]) -> str:
+    """A few immediate choices, for a visitor who does not want to type.
+
+    Generated rather than written by hand, and generated from the same record as
+    everything else, because a hand-kept shortlist is exactly how Italian came to
+    be complete and named nowhere. Rendered server-side so it works without
+    scripting; the fifth is swapped in the browser when it can be."""
+    # "complete" here means a file is actually on the release, not merely a state
+    by_slug = {r["slug"]: r for r in rows if r["fmts"]}
+    picked, missing = [], []
+    for slug in QUICK_SLUGS + [QUICK_FALLBACK]:
+        if slug in by_slug:
+            picked.append(by_slug[slug])
+        else:
+            missing.append(slug)
+    if missing:
+        print(f"[warn]  quick starts: no complete edition for {', '.join(missing)} - left out")
+    links = []
+    for r in picked:
+        rtl = ' dir="rtl"' if r["rtl"] else ""
+        # The native name is the visible label and carries its own lang, so a screen
+        # reader pronounces it properly. The English name follows it, hidden, rather
+        # than living in an aria-label: a label can hold only one language, so it
+        # would have had to drop one of the two names or mispronounce the other.
+        also = ("" if r["en"] == r["native"]
+                else f'<span class="visually-hidden"> — {html.escape(r["en"])}</span>')
+        links.append(f'        <a href="{r["url"]}" lang="{r["lang"]}"{rtl} '
+                     f'data-slug="{r["slug"]}">{html.escape(r["native"])}{also}</a>')
+    return ('      <h2 class="quick-heading" id="quick-heading">Quick starts</h2>\n'
+            f'      <nav class="quick-row" aria-labelledby="quick-heading" '
+            f'data-fallback="{QUICK_FALLBACK}">\n' + "\n".join(links) + "\n      </nav>")
+
 
 def editions_js(rows: list[dict]) -> str:
     """Every edition the site carries, as data.
@@ -1355,6 +1395,26 @@ def editions_js(rows: list[dict]) -> str:
             "   The languages this site carries, for the finder on /sedaha/. The visible\n"
             "   catalogue lives at /sedaha/languages/; both come from status_rows(). */\n"
             "window.EDITIONS = [\n" + ",\n".join("  " + e for e in out) + "\n];\n")
+
+
+def patch_quick_starts(check: bool, rows: list[dict]) -> bool:
+    body = SOUNDS.read_text(encoding="utf-8")
+    pattern = r'(<!-- QUICK:START[^>]*-->\n)(?:.|\n)*?(\s*<!-- QUICK:END -->)'
+    if not re.search(pattern, body):
+        print("[warn]  /sedaha/: QUICK markers not found - quick starts not generated")
+        return False
+    block = quick_starts_html(rows)
+    new = re.sub(pattern, lambda m: m.group(1) + block + m.group(2), body, count=1)
+    n = len(re.findall(r'data-slug="', block))
+    if new == body:
+        print(f"[ok]    /sedaha/ quick starts: {n}")
+        return True
+    if check:
+        print(f"[drift] /sedaha/ quick starts: should be {n}")
+        return False
+    SOUNDS.write_text(new, encoding="utf-8", newline="\n")
+    print(f"[write] /sedaha/ quick starts: {n}")
+    return True
 
 
 def patch_editions_js(check: bool, rows: list[dict]) -> bool:
@@ -1648,6 +1708,7 @@ def main() -> int:
     # /sedaha/ is a doorway now: no cards, no rows, no browser. The languages reach
     # it as data instead, and the visible catalogue is /sedaha/languages/.
     ok &= patch_editions_js(args.check, site)
+    ok &= patch_quick_starts(args.check, site)
     ok &= patch_availability(args.check, site, total)
     ok &= patch_meter(args.check, site, total)
     ok &= patch_feed(args.check, site)

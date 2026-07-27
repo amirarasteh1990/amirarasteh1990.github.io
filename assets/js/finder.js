@@ -39,6 +39,18 @@
     L.first = (ALIAS[L.slug] || '').split(' ')[0];
   });
 
+  var bySlug = {};
+  LANGS.forEach(function (L) { bySlug[L.slug] = L; });
+
+  /* The book was published in these three, and they are what a reader whose own
+     edition is still coming can have tonight. The same three the opening pages
+     offer, for the same reason: an answer that says only "not yet" is not an
+     answer. Read from the data, so a language that loses its files drops out. */
+  var WHOLE = ['fa', 'en', 'da'].map(function (s) { return bySlug[s]; })
+    .filter(function (L) {
+      return L && (L.files || []).some(function (f) { return f[0] === 'epub'; });
+    });
+
   /* Typed in full beats typed in part: "german" is German, though it also sits
      inside Low German, and "farsi" is Persian, though Dari answers to it too.
      The first alias in a language's list counts as one of its full names. */
@@ -85,6 +97,32 @@
     return b;
   }
 
+  /* An edition still on its way used to leave the panel almost empty: a name and
+     one button. It can offer more than that without pretending: the whole book
+     exists in the three it was published in, and that is what the reader wants
+     tonight. Same offer the opening pages make, from the same data. */
+  function meanwhile(L) {
+    var others = WHOLE.filter(function (o) { return o.slug !== L.slug; });
+    if (!others.length) return null;
+    var wrap = el('div', 'lr-meanwhile');
+    wrap.appendChild(el('p', 'lr-meanwhile-note', 'Until it is ready, the whole book is free in'));
+    var acts = el('p', 'lr-actions');
+    others.forEach(function (o) {
+      var epub = (o.files || []).filter(function (f) { return f[0] === 'epub'; })[0];
+      var a = el('a', 'btn');
+      a.href = epub[2];
+      a.setAttribute('aria-label', o.en + ', the complete book, EPUB');
+      var n = el('span', null, o.native);
+      n.setAttribute('lang', o.lang);
+      if (o.rtl) n.setAttribute('dir', 'rtl');
+      a.appendChild(n);
+      a.appendChild(el('span', 'btn-fmt', 'EPUB'));
+      acts.appendChild(a);
+    });
+    wrap.appendChild(acts);
+    return wrap;
+  }
+
   function one(L) {
     result.textContent = '';
     result.appendChild(nameInto(el('p', 'lr-name'), L));
@@ -104,11 +142,14 @@
     acts.appendChild(shareButton(L));
     result.appendChild(acts);
 
-    /* Why a download leaves the site, and what to do if it cannot: shown only to
-       someone who has just been offered files, which is the only moment it helps.
-       It matters most to readers in Iran and Afghanistan, so it must be findable
-       there and invisible everywhere else. */
-    if (L.files && L.files.length) {
+    var soon = (L.files && L.files.length) ? null : meanwhile(L);
+    if (soon) result.appendChild(soon);
+
+    /* Why a download leaves the site, and what to do if it cannot: shown to anyone
+       who has just been offered files, whether their own or the three the book was
+       published in. It matters most to readers in Iran and Afghanistan, so it must
+       be findable there and invisible where no file has been offered at all. */
+    if ((L.files && L.files.length) || soon) {
       var help = document.createElement('details');
       help.className = 'dl-help';
       help.appendChild(el('summary', null, 'Download help'));
@@ -189,8 +230,6 @@
   });
 
   /* arasteh.art/sedaha/#ja still answers, so old links keep working */
-  var bySlug = {};
-  LANGS.forEach(function (L) { bySlug[L.slug] = L; });
   function fromHash() {
     var L = bySlug[decodeURIComponent(location.hash.slice(1)).toLowerCase()];
     if (!L) return;
@@ -200,6 +239,43 @@
   }
   fromHash();
   window.addEventListener('hashchange', fromHash);
+
+  /* Quick starts: five languages for someone who would rather not type. Four are
+     the author's, generated into the page from the release. The fifth is Chinese
+     until the browser tells us something better: a visitor whose own language has
+     a COMPLETE edition gets that instead, since a shortcut to an opening they
+     cannot finish is not much of a shortcut. Chinese stays for everyone else. */
+  (function () {
+    var row = document.querySelector('.quick-row');
+    if (!row) return;
+    var fallback = row.querySelector('[data-slug="' + row.getAttribute('data-fallback') + '"]');
+    if (!fallback) return;
+    var fixed = [].slice.call(row.querySelectorAll('[data-slug]'))
+      .map(function (a) { return a.getAttribute('data-slug'); })
+      .filter(function (s) { return s !== fallback.getAttribute('data-slug'); });
+
+    var mine = null;
+    var wanted = (navigator.languages || [navigator.language || '']).slice(0, 4);
+    for (var i = 0; i < wanted.length && !mine; i++) {
+      var tag = String(wanted[i]).toLowerCase().replace('_', '-');
+      var found = bySlug[tag] || bySlug[tag.split('-')[0]];
+      // only a language that is complete, and not already one of the four
+      if (found && found.files && found.files.length && fixed.indexOf(found.slug) < 0) mine = found;
+    }
+    if (!mine) return;
+
+    var a = el('a', null, mine.native);
+    a.href = mine.url;
+    a.setAttribute('lang', mine.lang);
+    if (mine.rtl) a.setAttribute('dir', 'rtl');
+    a.setAttribute('data-slug', mine.slug);
+    if (mine.en !== mine.native) {
+      // the English name follows the native one, hidden, so both are announced and
+      // each in its own voice. An aria-label could only have carried one of them.
+      a.appendChild(el('span', 'visually-hidden', ' — ' + mine.en));
+    }
+    fallback.replaceWith(a);
+  })();
 
   /* The book's promise is that it finds you in your own language, so if the browser
      asks for one this site has, say so once, in a line rather than a box. */
