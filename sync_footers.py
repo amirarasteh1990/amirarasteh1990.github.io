@@ -86,7 +86,9 @@ def footer_html(omit: str = "", logo: bool = True, panel: bool = False) -> str:
     else:
         inner += "    &copy; 2026 Amir Arasteh\n" + body
 
-    return ('<footer class="site-footer">\n'
+    # English on every page, including the 111 that are not in English: say so, so a
+    # screen reader announces it in an English voice. See the same note in sync_appnav.
+    return ('<footer class="site-footer" lang="en" dir="ltr">\n'
             '  <div class="container">\n'
             + inner +
             '  </div>\n'

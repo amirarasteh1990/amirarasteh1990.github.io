@@ -68,7 +68,11 @@ def appnav_html(current: str = "") -> str:
         )
     return (
         START + "\n"
-        '<nav class="appnav" aria-label="Primary">\n'
+        # Home, Books, Paintings, Guestbook, Support are English on all 124 pages,
+        # including the 111 whose <html lang> is not English. Saying so lets a screen
+        # reader switch voice for the shell instead of reading English words through,
+        # say, an Italian one. dir="ltr" for the same reason on the RTL editions.
+        '<nav class="appnav" lang="en" dir="ltr" aria-label="Primary">\n'
         '  <div class="appnav-inner">\n'
         '    <a class="appnav-brand" href="/">Arasteh</a>\n'
         '    <ul class="appnav-tabs">\n'
@@ -96,7 +100,10 @@ def current_for(rel: str) -> str:
     return ""                   # 404.html, license.html, editions/*
 
 
-SKIP_RE = re.compile(r'(<a class="skip-link" href="#main">[^<]*</a>)')
+# attributes are allowed after the href: the generated pages mark theirs lang="en",
+# since the shell is English on pages that are not. Anchoring on ">" made every one
+# of those 111 pages unstampable, and the shell then landed after <body> instead.
+SKIP_RE = re.compile(r'(<a class="skip-link" href="#main"[^>]*>[^<]*</a>)')
 BODY_RE = re.compile(r'(<body[^>]*>)')
 # a leading newline is swallowed so repeated runs stay byte-stable
 BLOCK_RE = re.compile(r'\n?' + re.escape(START) + r'.*?' + re.escape(END), re.S)

@@ -208,6 +208,19 @@ python check.py --quick
 
 Anything that fails is listed again at the end; the exit code is 1.
 
+### After pushing: is the public site this site?
+
+```powershell
+python check.py --live
+```
+
+Fetches the home page, the book page, the language page and the stylesheet from
+`arasteh.art` with a cache-busting query and compares each **byte for byte** with
+the file here. A failure means the public copy is a different file, so the deploy
+has not happened or has not finished; it never means something in this folder is
+wrong. It also prints the first character that differs, which usually says at a
+glance which change is missing.
+
 ## Inspect before committing
 
 Check whitespace errors:

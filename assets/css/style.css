@@ -121,9 +121,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 .native,.cycler .slot,.lang-offer b,.op-langs [lang],
 .back [lang],.read-back [lang],.btn [lang]{unicode-bidi:isolate}
 .site-header{padding:44px 0 0;text-align:center}
-.site-header h1{margin:0 0 8px;font-size:2.6rem}
-.tagline{color:var(--muted);margin:0;font-size:1.05rem}
-.logo-panel{width:fit-content;max-width:100%;margin:0 auto;background:rgba(246,239,219,.02);
+.site-header h1{margin:0 0 8px;font-size:2.6rem}.logo-panel{width:fit-content;max-width:100%;margin:0 auto;background:rgba(246,239,219,.02);
   border:1px solid rgba(232,226,217,.4);border-radius:8px;padding:12px 3px;
   backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
 .brand-logo{display:block;margin:0 auto;width:145px;max-width:46%;height:auto}
@@ -135,12 +133,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 /* the book page now runs Find your language / Complete editions / Every opening /
    Translation progress, so its headings need air between the steps */
 .downloads .section-title ~ .section-title{margin-top:40px}
-.muted-note{color:var(--muted);font-size:.9rem;margin-top:16px}
-.reach-note{background:#fbf3ea;border:1px solid #ecdcc7;border-radius:8px;
-  padding:14px 18px;margin-top:22px;color:#5b4a38;font-size:.95rem;line-height:1.6}
-.reach-note a{font-weight:600}
-
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.muted-note{color:var(--muted);font-size:.9rem;margin-top:16px}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
 h1+.cards{margin-top:26px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   overflow:hidden;box-shadow:var(--shadow);transition:transform .15s ease;
@@ -189,19 +182,40 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   font-family:var(--serif);
   font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
 /* shared lead paragraph under a page h1 */
-.lead{font-size:1.06rem;color:#3a322a;max-width:640px}
-.book-lead{margin:18px 0 14px;font-size:.98rem;line-height:1.55;color:#5a5344;max-width:46ch}
-.book-lead em{font-style:italic;color:#463c31}
-.book-primary{margin-top:2px}
-/* the book's own scripts, one after another: the hundred alphabets are the
+.lead{font-size:1.06rem;color:#3a322a;max-width:640px}/* the book's own scripts, one after another: the hundred alphabets are the
    work's plainest description. Held still under prefers-reduced-motion. */
 .cycler{margin:14px 0 4px;color:#5a5344;font-size:.94rem}
 /* margin-inline resolves against the SLOT's own direction, so a one-sided gap
    lands on the wrong side of a right-to-left name and the script ends up glued
    to "Read it in". Both sides, always. */
+/* The slot keeps a fixed height so a taller script cannot shift the search box
+   below it, and a minimum width so short names do not make the line twitch. */
 .cycler .slot{display:inline-block;margin-inline:.4em;color:#2f2a20;font-weight:600;font-size:1.14rem;
+  min-width:5.5em;min-height:1.5em;line-height:1.5;vertical-align:-.2em;
   transition:opacity .3s ease,transform .3s ease}
 .cycler .slot.is-out{opacity:0;transform:translateY(-4px)}
+/* == /sedaha/ as a doorway ==
+   The page asks one thing: which language. So it holds a cover, a title, a line of
+   the book, the cycling name, one count, and the search. No cards, no lists, no
+   browser: those are the catalogue, and the catalogue is /sedaha/languages/. */
+.finder-panel{max-width:640px;margin:34px auto 0}
+.finder-panel .section-title{font-size:1.15rem;letter-spacing:.02em;margin:0 0 10px}
+.finder-panel .language-finder{position:static;margin:0;padding:0}
+.doorway-links{margin:22px 0 0;color:var(--muted);font-size:.94rem;text-align:center}
+.doorway-links a{font-weight:600}
+/* one raised surface on the page, and it is the visitor's own answer */
+.lr-match{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  flex-wrap:wrap;margin:0 0 8px;padding-bottom:8px;
+  border-bottom:1px dotted rgba(0,0,0,.10)}
+.lr-match:last-of-type{border-bottom:0}
+.dl-help{margin:12px 0 0;font-size:.88rem;color:var(--muted)}
+.dl-help summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.dl-help p{margin:8px 0 0;line-height:1.6}
+/* the project's own numbers, behind a disclosure on the catalogue page */
+.progress-detail{margin:26px 0 0}
+.progress-detail summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.progress-detail .lang-key{margin-top:14px}
+
 /* what exists, in two numbers. There was a progress bar here, 3.5% full: an
    honest number that read as 96% unfinished at the exact moment a visitor was
    deciding whether to start. The numbers stayed; the bar went. */
@@ -229,28 +243,13 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .btn-icon{width:44px;padding:0;flex:none}
 .btn-icon svg,.btn svg{width:18px;height:18px;flex:none;stroke:currentColor}
 /* the file format beside a language name, quiet enough not to compete with it */
-.btn-fmt{font-size:.72rem;font-weight:600;letter-spacing:.04em;opacity:.72}
-/* what a download will cost you, before you tap it on a metered connection */
-.ed-meta{margin:10px 0 0;color:var(--muted);font-size:.78rem}
-
-/* Every other complete edition, one line each. A card apiece was right at three
-   and a wall at twenty-three; this is the same information at a twentieth of the
-   height, and anyone after one language uses the search box above. Deliberately
-   not .ed-list: that class belongs to the browse list, which a patcher rewrites. */
-.more-complete{margin:26px 0 0;color:var(--muted);font-size:.9rem}
-.more-complete strong{color:#2f2a20}
-.dl-list{list-style:none;margin:10px 0 0;padding:0;
-  display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
-.dl-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
-  padding:7px 0;border-bottom:1px dotted rgba(0,0,0,.10)}
-.dl-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
+.btn-fmt{font-size:.72rem;font-weight:600;letter-spacing:.04em;opacity:.72}.dl-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
 .dl-list .native{font-weight:600;color:#2b6b3a}
 .dl-list .en{color:#625a50;font-size:.76rem}
 .dl-list .mini{white-space:nowrap;flex:none;display:flex;gap:9px}
 .dl-list .mini a{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:#2b6b3a;
   text-decoration:none;border-bottom:1px solid transparent}
 .dl-list .mini a:hover{border-bottom-color:#2b6b3a}
-@media (max-width:520px){.dl-list{grid-template-columns:1fr}}
 
 /* == the search result: one question, one answer, in one place ==
    It used to say "a complete edition matching your search is available above",
@@ -260,13 +259,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .lang-result .lr-name{margin:0 0 4px;font-size:1.24rem;font-weight:600}
 .lang-result .lr-name .en{color:var(--muted);font-size:.9rem;font-weight:400;margin-inline-start:6px}
 .lang-result .lr-state{margin:0 0 12px;color:var(--muted);font-size:.9rem;line-height:1.5}
-.lang-result .lr-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0}
-
-/* A-Z or by region: the same rows, two arrangements */
-.browse-modes{display:flex;gap:8px;margin:0 0 10px}
-.az-list{margin:4px 0 0}
-
-.license h2{font-size:1.3rem}
+.lang-result .lr-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0}.license h2{font-size:1.3rem}
 .license p{color:var(--muted);font-size:.94rem}
 .site-footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--line);
   color:var(--muted);font-size:.86rem;text-align:center}
@@ -307,34 +300,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 
 /* == editions: continent panels == */
 .continent .ccount{margin-left:auto;font-weight:600;font-size:.72rem;color:#625a50;
-  background:rgba(0,0,0,.05);border-radius:20px;padding:1px 9px;line-height:1.5}
-.dl-intro{color:#5a5344;max-width:56ch;margin:0 0 22px;line-height:1.55}
-.editions-featured{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 26px}
-.ed-featured{flex:1 1 180px;background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.09);
-  border-radius:8px;padding:16px 14px;text-align:center}
-.ed-featured .native{font-size:1.3rem;font-weight:600;margin:0 0 1px;color:#2f2a20}
-.ed-featured .en{color:#625a50;font-size:.78rem;margin:0 0 12px;text-transform:uppercase;letter-spacing:.06em}
-.edition-primary{width:100%;margin-bottom:9px}
-.edition-secondary{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.edition-secondary .btn:not(.btn-icon){min-width:66px}
-.continents{display:flex;flex-direction:column;gap:18px}
-/* each region is its own <details>: the full list opens one continent at a time
-   instead of dropping 111 rows at once. Search opens whichever regions match. */
-.continent{background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.07);border-radius:8px;padding:15px 18px 17px;
-  content-visibility:auto;contain-intrinsic-size:auto 300px}   /* skip rendering a region until it is near */
-.continent>summary{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}
-.continent>summary::-webkit-details-marker{display:none}
-.continent>summary::after{content:"\25BE";color:#a89f8d;flex:none;transition:transform .2s ease}
-.continent[open]>summary::after{transform:rotate(180deg)}
-.continent>summary:hover h3{color:#2f2a20}
-.continent>summary>h3{display:flex;align-items:center;gap:10px;flex:1;min-width:0;margin:0;
-  font-size:.98rem;color:#4a4436;letter-spacing:.02em;font-weight:600}
-.continent[open]>summary{border-bottom:1px solid rgba(0,0,0,.09);padding-bottom:8px;margin-bottom:12px}
-.ed-list{list-style:none;margin:0;padding:0;display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:9px 22px}
-.ed-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
-  border-bottom:1px dotted rgba(0,0,0,.10);padding-bottom:5px}
-.ed-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
+  background:rgba(0,0,0,.05);border-radius:20px;padding:1px 9px;line-height:1.5}.ed-featured .native{font-size:1.3rem;font-weight:600;margin:0 0 1px;color:#2f2a20}
+.ed-featured .en{color:#625a50;font-size:.78rem;margin:0 0 12px;text-transform:uppercase;letter-spacing:.06em}.edition-secondary .btn:not(.btn-icon){min-width:66px}.ed-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
 .ed-list .native{font-weight:600;color:#33302a}
 /* a language whose whole book exists. The row used to be hand-marked "live";
    build_read_pages.py now stamps the state from the release, so this cannot
@@ -347,19 +314,6 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   text-decoration:none;border-bottom:1px solid rgba(43,107,58,.35);display:inline-flex;
   align-items:center;min-height:30px;padding:2px 0}
 .ed-list .mini a:hover{border-bottom-color:#2b6b3a}
-@media (max-width:520px){.ed-list{grid-template-columns:1fr}}
-
-/* collapsible full language list */
-.lang-toggle{margin:2px 0 4px}
-.lang-toggle>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;
-  align-items:center;gap:12px;background:var(--paper,#F6EFDB);border:1px solid rgba(0,0,0,.09);
-  border-radius:8px;padding:13px 18px;font-weight:600;color:#4a4436;font-size:.95rem}
-.lang-toggle>summary::-webkit-details-marker{display:none}
-.lang-toggle>summary::after{content:"\25BE";color:#a89f8d;display:inline-block;transition:transform .2s ease}
-.lang-toggle[open]>summary::after{transform:rotate(180deg)}
-.lang-toggle>summary:hover{border-color:var(--accent);color:#2f2a20}
-.lang-toggle[open]>summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
-.lang-toggle .continents{margin-top:16px}
 /* the finder rides along while a long list is open, so the next search never
    means scrolling back up. It sits under the sticky top bar on laptops. */
 .language-finder{position:sticky;top:0;z-index:6;margin:24px 0 20px;padding:12px 0 10px;
@@ -380,10 +334,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   color:var(--muted);cursor:pointer}
 .lang-clear[hidden]{display:none}      /* author styles outrank the UA's [hidden] */
 .lang-clear:hover{color:var(--ink);background:rgba(0,0,0,.06)}
-.lang-clear svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-.lang-search-result{margin:8px 0 0;color:#4d453b;font-size:.9rem}
-.ed-featured.search-match{outline:2px solid var(--accent);outline-offset:2px}
-.lang-noresult{color:var(--muted);font-size:.92rem;font-style:italic;margin-top:14px}
+.lang-clear svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}.lang-noresult{color:var(--muted);font-size:.92rem;font-style:italic;margin-top:14px}
 .lang-noresult a{font-weight:600;font-style:normal}
 
 /* region chips: a second way into the list, for readers who would rather
@@ -439,7 +390,26 @@ tr.deep-target>th,tr.deep-target>td{background:rgba(138,90,59,.08)}
   display:inline-block;min-height:30px;padding-top:4px}
 .lang-table .links a:hover{border-bottom-color:#2b6b3a}
 .lang-foot{color:var(--muted);font-size:.92rem;margin-top:26px}
-@media (max-width:520px){.lang-table{font-size:.9rem}.lang-table th,.lang-table td{padding-right:8px}}
+/* Below 640 the table stops being a table. Three columns of badges and small green
+   links on a phone meant sideways scrolling and tap targets a few pixels tall; each
+   edition becomes a stacked block instead, with its actions at a thumb's size. The
+   table is kept above that width, where it reads well. */
+@media (max-width:640px){
+  .lang-table-wrap{overflow-x:visible}
+  .lang-table,.lang-table tbody,.lang-table tr,.lang-table th,.lang-table td{display:block}
+  .lang-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .lang-table tr{padding:14px 0;border-bottom:1px solid var(--line)}
+  .lang-table th,.lang-table td{border:0;padding:0}
+  .lang-table tbody th{margin-bottom:6px}
+  .lang-table .native{font-size:1.05rem}
+  .lang-table .en{display:block;margin-top:1px}
+  .lang-table .links{white-space:normal;display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .lang-table .links a{font-size:.84rem;min-height:44px;display:inline-flex;align-items:center;
+    padding:0 12px;border:1px solid var(--line);border-radius:8px}
+  .lang-table .links a:hover{border-color:#2b6b3a}  .dl-list .mini{width:100%;margin-top:8px;gap:8px}
+  .dl-list .mini a{font-size:.84rem;min-height:44px;display:inline-flex;align-items:center;
+    padding:0 12px;border:1px solid var(--line);border-radius:8px;border-bottom-color:var(--line)}  .ed-list .mini{flex-wrap:wrap}
+}
 
 /* == accessibility helpers == */
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
@@ -452,13 +422,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important}
   .card:hover,.support-list a:hover,.gallery .shot:hover{transform:none}
-}
-
-/* download-format hint on /sedaha/ */
-.dl-hint{color:#5a5344;font-size:.9rem;line-height:1.55;margin:14px 0 0;max-width:60ch}
-.dl-hint strong{color:#463c31}
-
-/* == /sedaha/read/ — the opening, read in-browser ==
+}/* == /sedaha/read/ — the opening, read in-browser ==
    Type size and measure are the reader's, not the page's: --read-scale and
    --read-measure are set on :root by assets/js/reader.js and remembered for all
    114 openings. The values below are the defaults, so the page is complete
@@ -478,9 +442,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
   padding:20px 22px;margin:32px auto 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}
 .read-cta .btns{display:flex;gap:8px;flex-wrap:wrap}
-.read-back{display:inline-block;margin-top:18px;font-size:.92rem}
-.read-entry{margin:8px 0 2px;font-size:1rem;font-weight:600}
-/* the language strip: a globe, then the languages naming themselves. No English
+.read-back{display:inline-block;margin-top:18px;font-size:.92rem}/* the language strip: a globe, then the languages naming themselves. No English
    label, so it reads the same on a Khmer page as on this one. */
 .op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);margin:22px auto 20px}
 .op-langs a{font-weight:600}
@@ -665,35 +627,14 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 
   /* inks that were hardcoded dark */
   .brand-copy{color:#e6dccb} .brand-copy p{color:#a99f8f}
-  .lead,.opening p,.dl-intro,.dl-hint,.book-lead,.lang-key .what,.lang-search-result{color:#c6bba7}
-  .dl-hint strong,.book-lead em{color:#e6dccb}
-  .excerpt{color:#d3c6b0}
+  .lead,.opening p,.dl-intro,.dl-hint,.book-lead,.lang-key .what,.lang-search-result{color:#c6bba7}  .excerpt{color:#d3c6b0}
   .reader p{color:#e2d8c6}
   .op-langs .cur{color:#e6dccb}
-  .rt[aria-pressed="true"]{background:rgba(217,155,109,.16)}
-
-  /* editions list / continent panels */
-  .ed-featured{border-color:rgba(255,255,255,.10)}
-  .ed-featured .native{color:#e6dccb} .ed-featured .en{color:#a99f8f}
-  .continent{border-color:rgba(255,255,255,.08)}
-  .continent>summary>h3{color:#cabfac}
-  .continent>summary:hover h3{color:#f0e7d7}
-  .continent[open]>summary{border-bottom-color:rgba(255,255,255,.10)}
-  .continent .ccount{color:#b3a892;background:rgba(255,255,255,.08)}
-  .ed-list li{border-bottom-color:rgba(255,255,255,.12)}
-  .ed-list .native{color:#e6dccb} .ed-list .en,.ed-list .soon{color:#a99f8f}
+  .rt[aria-pressed="true"]{background:rgba(217,155,109,.16)}  .ed-featured .native{color:#e6dccb} .ed-featured .en{color:#a99f8f}  .continent .ccount{color:#b3a892;background:rgba(255,255,255,.08)}  .ed-list .native{color:#e6dccb} .ed-list .en,.ed-list .soon{color:#a99f8f}
   .ed-list li.live .native{color:#7fce97}
   .ed-list .mini a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
-  .ed-list .mini a:hover{border-bottom-color:#7fce97}
-  .more-complete{color:#a99f8f} .more-complete strong{color:#e6dccb}
-  .dl-list li{border-bottom-color:rgba(255,255,255,.12)}
-  .dl-list .native{color:#7fce97} .dl-list .en{color:#a99f8f}
-  .dl-list .mini a{color:#7fce97}
-  .dl-list .mini a:hover{border-bottom-color:#7fce97}
-  .lang-toggle>summary{color:#cabfac;border-color:rgba(255,255,255,.10)}
-  .lang-toggle>summary:hover{color:#f0e7d7}
-
-  /* language search field */
+  .ed-list .mini a:hover{border-bottom-color:#7fce97}  .dl-list .native{color:#7fce97} .dl-list .en{color:#a99f8f}
+  .dl-list .mini a{color:#7fce97}  .dl-list .mini a:hover{border-bottom-color:#7fce97}  /* language search field */
   .language-finder{background:rgba(28,23,18,.93)}
   .lang-search{border-color:rgba(255,255,255,.16)}
   .lang-search::placeholder{color:#8f8676}

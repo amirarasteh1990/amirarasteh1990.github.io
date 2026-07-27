@@ -29,6 +29,7 @@ run before a push.
 from __future__ import annotations
 
 import argparse
+import datetime
 import html as htmllib
 import json
 import re
@@ -198,38 +199,37 @@ def hand_written() -> None:
 def availability() -> None:
     """One availability story, told the same everywhere.
 
-    The generator can be perfectly happy while the page is wrong: it stamps the
-    cards between markers, and the markers once sat INSIDE the grid they were
-    meant to fill, so four correct cards rendered outside their container. And
-    the whole reason this section exists is that Italian was complete for weeks
-    while three pages said three. So check the structure and the agreement, not
-    just the drift."""
+    The generator can be perfectly happy while the page is wrong, and the reason
+    this exists is that Italian was complete and downloadable for weeks while
+    three pages said three. /sedaha/ is a doorway now and names no language at
+    all, so the guard moved with the data: what must hold is that editions.js
+    carries every edition the site shows, with the files each one really has."""
     sys.path.insert(0, str(SITE))
     import build_read_pages as gen
 
     rows = gen.status_rows()
-    done = [r["en"] for r in gen.complete_rows(rows)]
+    site_rows = gen.shown(rows)
+    done = [r["en"] for r in gen.complete_rows(site_rows)]
     book = (SITE / "sedaha" / "index.html").read_text(encoding="utf-8")
+    data = (SITE / "assets" / "js" / "editions.js").read_text(encoding="utf-8")
 
-    grid = re.search(r'<div class="editions-featured">(.*?)</div>\s*</div>|'
-                     r'<div class="editions-featured">(.*?)\n    </div>', book, re.S)
-    inside = len(re.findall(r'<div class="ed-featured"', grid.group(0))) if grid else 0
-    cards = len(re.findall(r'<div class="ed-featured"', book))
-    report(f"/sedaha/: all {cards} edition cards sit inside their grid",
-           bool(grid) and inside == cards and cards > 0,
-           f"{inside} inside, {cards} on the page")
+    listed = re.findall(r'"slug":"([^"]+)"', data)
+    report(f"editions.js carries all {len(site_rows)} languages the site shows",
+           len(listed) == len(site_rows),
+           f"{len(listed)} in the data, {len(site_rows)} in the record")
 
-    # a card each was a wall at twenty-three, so the rest are listed instead; between
-    # them the two must still account for every complete edition, with none twice
-    listed = len(re.findall(r'<li class="dl-row"', book))
-    report(f"/sedaha/: {cards} cards + {listed} listed = every complete edition",
-           cards + listed == len(done), f"{cards + listed} shown, {len(done)} complete")
+    ready = [ln for ln in data.splitlines() if '"state":"ready"' in ln]
+    report(f"editions.js marks all {len(done)} complete editions as such",
+           len(ready) == len(done), f"{len(ready)} ready in the data, {len(done)} complete")
 
-    # plain containment, not a word-boundary match: "Portuguese (Brazil)" ends in a
-    # bracket, and \b after it can never meet the "<" that follows in the markup
-    missing = [n for n in done if n not in book]
-    report(f"/sedaha/: every one of the {len(done)} complete editions is named",
-           not missing, ", ".join(missing))
+    fileless = [ln for ln in ready if '"files"' not in ln]
+    report("every complete edition in the data has files to offer", not fileless,
+           re.search(r'"en":"([^"]+)"', fileless[0]).group(1) if fileless else "")
+
+    stray = len(re.findall(r'<div class="ed-featured"|<li class="dl-row"|class="continent"',
+                           book))
+    report("/sedaha/ still holds no catalogue of its own", stray == 0,
+           f"{stray} catalogue elements found")
 
     home = (SITE / "index.html").read_text(encoding="utf-8")
     sentence = gen.availability(rows)["long"]
@@ -264,11 +264,76 @@ def availability() -> None:
                f"{len(seen)} page(s), first: {seen[0]}" if seen else "")
 
 
+LIVE = "https://arasteh.art"
+
+
+def live() -> None:
+    """Is the public site the site in this folder?
+
+    Asked because a reviewer read arasteh.art, saw four complete editions and
+    region-first browsing, and could not tell whether that was a stale crawler, a
+    stale CDN, or simply a deploy that had never happened. It was the third. Rather
+    than argue about caches, fetch the pages and compare them with what is here.
+
+    Each request carries a cache-busting query and a no-store header, so what comes
+    back is what GitHub Pages is serving now."""
+    import urllib.error
+    import urllib.request
+
+    pages_to_check = {
+        "/": SITE / "index.html",
+        "/sedaha/": SITE / "sedaha" / "index.html",
+        "/sedaha/languages/": SITE / "sedaha" / "languages" / "index.html",
+        "/assets/css/style.css": SITE / "assets" / "css" / "style.css",
+    }
+    stamp = str(int(datetime.datetime.now(datetime.timezone.utc).timestamp()))
+    for path, local in pages_to_check.items():
+        url = f"{LIVE}{path}?nocache={stamp}"
+        try:
+            req = urllib.request.Request(url, headers={
+                "Cache-Control": "no-store", "Pragma": "no-cache",
+                "User-Agent": "arasteh-check"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                body = r.read().decode("utf-8", "replace")
+        except Exception as exc:  # noqa: BLE001 - the message is the finding
+            report(f"live {path}", False, f"{type(exc).__name__}: {exc}")
+            continue
+        # byte comparison, not a keyword search: Pages serves these files verbatim,
+        # so anything short of equality means the public copy is a different file.
+        # Looking for a phrase instead would have passed happily on a version that
+        # merely shared that phrase, which is the ambiguity this exists to remove.
+        here = local.read_text(encoding="utf-8").replace("\r\n", "\n").strip()
+        there = body.replace("\r\n", "\n").strip()
+        if here == there:
+            report(f"live {path} is byte-for-byte this file", True)
+            continue
+        at = next((i for i, (a, b) in enumerate(zip(here, there)) if a != b),
+                  min(len(here), len(there)))
+        report(f"live {path} is byte-for-byte this file", False,
+               f"differs at character {at}: public has {there[at:at + 40]!r}")
+    print("\n    A failure above means the public copy is not this copy: either the")
+    print("    deploy has not happened, or it is still running. Nothing here is wrong.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
     ap.add_argument("--quick", action="store_true",
                     help="skip the per-script --check runs (the slow part)")
+    ap.add_argument("--live", action="store_true",
+                    help="also ask arasteh.art whether it is serving this version "
+                         "(run after pushing)")
     args = ap.parse_args()
+
+    if args.live:
+        live()
+        print()
+        if failures:
+            print(f"{len(failures)} check(s) failed:")
+            for f in failures:
+                print("  - " + f)
+            return 1
+        print("the public site matches this working tree.")
+        return 0
 
     if args.quick:
         print("[skip]  the seven script --checks (--quick)")

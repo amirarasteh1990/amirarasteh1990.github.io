@@ -20,7 +20,10 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | Path | Page |
 | --- | --- |
 | `index.html` | Home: visible author name, primary Books / Paintings paths, quieter Guestbook / Support / Telegram links |
-| `sedaha/index.html` | The book page (`/sedaha/`): canonical cover preview, read-first hero, three complete editions, searchable openings in 114 languages |
+| `sedaha/index.html` | The book page (`/sedaha/`): **a doorway, not a catalogue.** Cover, title, one line of the book, the cycling language, one availability line, the search, two links out. ~9 KB, from 89 |
+| `sedaha/languages/index.html` | **The catalogue.** Every language, its state, its files, with the project's own numbers behind a disclosure |
+| `assets/js/editions.js` | Generated: the languages as data, for the finder. The doorway carries no list of its own |
+| `assets/js/finder.js` | The search on `/sedaha/`, and the cycling line. Answers one / several / none in place |
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
 | `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
@@ -90,13 +93,24 @@ has a readable Opening and "Ready to read" did not distinguish anything.
 Complete editions are **counted, not listed** in prose: "23 complete editions to download,
 more on the way". Naming them was right at four and wrong at twenty-three.
 
-They are **shown** in two shapes, both generated, because a card apiece was right at three and
-a wall at twenty-three (28 KB of markup between the search box and the browse list):
+**Where they are shown moved on 2026-07-27.** `/sedaha/` became a doorway and shows no
+edition at all: cover, title, one line of the book, the cycling language, one availability
+line, the search, and two links out. Everything below that — the cards, the compact list, the
+A–Z and regional browsers, the progress section, the licence summary — moved to
+`/sedaha/languages/` or was dropped. The page went from 89 KB to about 9 KB, and the
+governing rule for anything added back is that it must serve **find my language** or **start
+reading**.
+
+The two shapes below are gone with it, kept here only because the reasoning still applies if
+a list ever returns:
 
 - **cards** for the three the book was published in, `FEATURED_FIRST`
 - **one line each** for every other complete edition, `more_complete_html`, in the compact form
-  the browse list uses. Anyone after one particular language uses the search box above, which
-  answers with that language's own download buttons.
+  the browse list uses, each with **its own share button** (`.lnk-share`): those editions had
+  one while they were cards, and moving them into a list must not take it away.
+- the **search result carries a share button too**, so any of the 113, including those with no
+  card and no files yet, can be passed on from the book page. Anyone after one particular
+  language uses the search box above, which answers with that language's own buttons.
 
 Two traps live here, both now guarded:
 
@@ -144,12 +158,40 @@ One box, on `/sedaha/` and `/sedaha/languages/`. Three things make it forgiving:
   decompose (ø, æ, ß, đ, ð, þ, ł, ı, œ) are mapped by hand, in both copies.
 - the language's own code, since the URLs already expose it: `ja`, `pt-br`.
 
-A search that lands on one language answers **in place**, with that language's own buttons.
-It used to say "a complete edition matching your search is available above", which sent the
-reader hunting for their own answer. Browsing is A–Z by default, because someone who knows
-their language name should not have to guess which region this site files it under; region
-browsing is still there behind a switch, and both views hold the *same* `<li>` elements,
-moved rather than copied, so there is one row per language and one place to search.
+**A row is searchable by its two printed names, its aliases and its code, and by nothing
+else.** Built field by field, deliberately: indexing the row's whole `textContent` swept in
+everything else printed there, so "pdf" matched 23 languages and "opening" matched all of
+them. The same rule applies on the status page, whose rows also carry a state label.
+
+A search answers **in place**, in all three cases: one language gets its name, its state and
+its buttons; several get a count and a row of names to pick from; none gets "No language
+matches X" with a way to browse and a way to write to the author. The container is a
+`role="region"` with `aria-live="polite"`, so a screen reader hears the answer without
+hunting for it. Before this, several matches showed nothing at all and a miss was announced
+at the foot of a collapsed list.
+
+On `/sedaha/` the finder is **data-driven** (`finder.js` reading `editions.js`), because that
+page carries no languages at all. Several matches show the first five and a way to all of
+them; a complete edition's answer also carries a **Download help** disclosure, which is the
+only place the GitHub-hosting note appears on the normal path, and the only moment it helps.
+Escape clears the field. On `/sedaha/languages/` the same rules filter the visible table.
+
+The A–Z and by-region browser that used to live on `/sedaha/` is gone with the rest of the
+catalogue; `/sedaha/languages/` is the one list now. If a browser is ever rebuilt there and
+it moves rows between arrangements, leave a **comment marker** where each row belongs rather
+than remembering `nextSibling`: the latter happens to work only because rows are separated by
+whitespace text nodes, and breaks the day the HTML is minified.
+
+The **shell is marked `lang="en" dir="ltr"`** — nav, footer, skip link, reading toolbar,
+share buttons. It is English on all 124 pages including the 111 that are not, and saying so
+lets a screen reader switch voice instead of reading English through an Italian or Japanese
+one. `sync_appnav`'s skip-link pattern allows attributes for exactly this reason: anchored on
+`">"`, it silently failed to find the skip link on all 111 generated pages.
+
+**Below 640px the status table stops being a table** and each edition becomes a stacked block
+with 44px tap targets, instead of three columns and sideways scrolling. File sizes are printed
+beside each download rather than hidden in a `title`, because a phone has no hover and the size
+is what decides whether a book is downloaded on mobile data.
 
 ## `body class="writing"` (the guestbook only)
 
