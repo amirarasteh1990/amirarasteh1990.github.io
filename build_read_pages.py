@@ -1336,7 +1336,7 @@ EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 # replace (assets/js/finder.js). Slugs only: every label, URL, direction and the
 # availability itself come from the edition record, so a language cannot appear
 # here unless its complete edition is actually on the release.
-QUICK_SLUGS = ["fa", "en", "ar", "es"]
+QUICK_SLUGS = ["fa", "en", "ar", "es", "de", "fr", "hi", "ja"]
 QUICK_FALLBACK = "zh"
 # The heading reads into the row: "Pick up the thread in  فارسی  English  …", which
 # is the book's own image for what a reader does — the author unwinds the thread of
@@ -1372,7 +1372,7 @@ def quick_starts_html(rows: list[dict]) -> str:
         # would have had to drop one of the two names or mispronounce the other.
         also = ("" if r["en"] == r["native"]
                 else f'<span class="visually-hidden"> — {html.escape(r["en"])}</span>')
-        links.append(f'        <a href="{r["url"]}" lang="{r["lang"]}"{rtl} '
+        links.append(f'        <a class="lang-box" href="{r["url"]}" lang="{r["lang"]}"{rtl} '
                      f'data-slug="{r["slug"]}">{html.escape(r["native"])}{also}</a>')
     return (f'      <h2 class="quick-heading" id="quick-heading">{QUICK_HEADING}</h2>\n'
             f'      <nav class="quick-row" aria-labelledby="quick-heading" '

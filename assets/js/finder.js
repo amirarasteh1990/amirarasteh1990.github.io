@@ -264,7 +264,7 @@
     }
     if (!mine) return;
 
-    var a = el('a', null, mine.native);
+    var a = el('a', 'lang-box', mine.native);
     a.href = mine.url;
     a.setAttribute('lang', mine.lang);
     if (mine.rtl) a.setAttribute('dir', 'rtl');
@@ -289,21 +289,33 @@
     box.addEventListener('toggle', function () {
       if (!box.open || built) return;
       built = true;
-      var list = el('ul', 'all-list');
-      LANGS.slice().sort(function (a, b) {
+      var byName = LANGS.slice().sort(function (a, b) {
         var x = fold(a.en), y = fold(b.en);
         return x < y ? -1 : x > y ? 1 : 0;
-      }).forEach(function (L) {
-        var li = document.createElement('li');
-        var a = el('a', null, L.native);
-        a.href = L.url;
-        a.setAttribute('lang', L.lang);
-        if (L.rtl) a.setAttribute('dir', 'rtl');
-        if (L.en !== L.native) a.appendChild(el('span', 'en', L.en));
-        li.appendChild(a);
-        list.appendChild(li);
       });
-      box.insertBefore(list, box.querySelector('.all-foot'));
+      var whole = byName.filter(function (L) { return L.files && L.files.length; });
+      var partial = byName.filter(function (L) { return !(L.files && L.files.length); });
+      var foot = box.querySelector('.all-foot');
+
+      /* The whole book first, then the openings: a reader looking for something to
+         finish should not have to pick it out of a hundred that only begin. */
+      [[whole, 'The whole book, in ' + whole.length + ' languages'],
+       [partial, 'The opening, in ' + partial.length + ' more']].forEach(function (pair) {
+        if (!pair[0].length) return;
+        var group = el('div', 'all-group');
+        group.appendChild(el('p', 'all-group-head', pair[1]));
+        var row = el('div', 'all-row');
+        pair[0].forEach(function (L) {
+          var a = el('a', 'lang-box', L.native);
+          a.href = L.url;
+          a.setAttribute('lang', L.lang);
+          if (L.rtl) a.setAttribute('dir', 'rtl');
+          if (L.en !== L.native) a.appendChild(el('span', 'visually-hidden', ' — ' + L.en));
+          row.appendChild(a);
+        });
+        group.appendChild(row);
+        box.insertBefore(group, foot);
+      });
     });
   })();
 

@@ -215,9 +215,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .quick-row{display:flex;flex-wrap:wrap;gap:10px}
 /* Each one is a small door with the cover painted on it. The cover is portrait, so
    sync_gallery.py derives it turned on its side (book-cover-band): CSS cannot
-   rotate a background, and rotating five pseudo-elements would repaint on every
-   scroll. A scrim sits over the painting so the name stays legible on top of it. */
-.quick-row a{position:relative;isolation:isolate;overflow:hidden;
+   rotate a background, and rotating a pseudo-element per box would repaint on every
+   scroll. A scrim sits over the painting so the name stays legible on top of it.
+   One class, used by the five above the search and by all 113 inside the list. */
+.lang-box{position:relative;isolation:isolate;overflow:hidden;
   display:inline-flex;align-items:center;justify-content:center;
   min-height:54px;min-width:104px;padding:10px 20px;
   border:1px solid rgba(0,0,0,.18);border-radius:10px;
@@ -228,17 +229,17 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   box-shadow:0 1px 3px rgba(0,0,0,.18);
   transition:transform .15s ease,box-shadow .15s ease}
 @supports (background-image:image-set(url(/assets/img/book-cover-band.webp) type("image/webp"))){
-  .quick-row a{background-image:image-set(
+  .lang-box{background-image:image-set(
     url(/assets/img/book-cover-band.webp) type("image/webp"),
     url(/assets/img/book-cover-band.jpg) type("image/jpeg"))}
 }
-.quick-row a::before{content:"";position:absolute;inset:0;z-index:-1;
+.lang-box::before{content:"";position:absolute;inset:0;z-index:-1;
   background:rgba(26,18,11,.56);transition:background .15s ease}
-.quick-row a:hover{text-decoration:none;transform:translateY(-1px);
+.lang-box:hover{text-decoration:none;transform:translateY(-1px);
   box-shadow:0 4px 12px rgba(0,0,0,.24)}
-.quick-row a:hover::before{background:rgba(26,18,11,.42)}
-.quick-row a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){.quick-row a{transition:none}.quick-row a:hover{transform:none}}
+.lang-box:hover::before{background:rgba(26,18,11,.42)}
+.lang-box:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.lang-box{transition:none}.lang-box:hover{transform:none}}
 
 /* every language, only when asked for: the doorway stays a doorway, and the list
    is built from the same data the finder uses rather than sitting in the markup */
@@ -249,14 +250,13 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .all-langs>summary::-webkit-details-marker{display:none}
 .all-langs>summary::before{content:"▸";font-size:.8em;transition:transform .15s ease}
 .all-langs[open]>summary::before{transform:rotate(90deg)}
-.all-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-  gap:2px 18px;margin:10px 0 0;padding:0;list-style:none}
-.all-list a{display:block;padding:7px 0;font-family:var(--serif);font-size:1rem;
-  color:#3d352a;text-decoration:none;border-bottom:1px dotted rgba(0,0,0,.12)}
-.all-list a:hover{color:var(--accent);text-decoration:none}
-.all-list .en{color:var(--muted);font-family:var(--sans);font-size:.72rem;
-  margin-inline-start:7px}
-.all-foot{margin:14px 0 0;font-size:.9rem}
+/* the same doors, in two groups: what exists whole, then what exists so far */
+.all-group{margin:16px 0 0}
+.all-group-head{margin:0 0 10px;font-family:var(--serif);font-style:italic;
+  font-size:.96rem;color:var(--muted)}
+.all-row{display:flex;flex-wrap:wrap;gap:8px}
+.all-row .lang-box{min-height:46px;min-width:92px;padding:8px 14px;font-size:1.04rem}
+.all-foot{margin:18px 0 0;font-size:.9rem}
 
 /* what a reader can have while their own edition is still coming. Set apart by a
    rule rather than a second box: it is a footnote to the answer, not a new one. */
@@ -732,9 +732,9 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .lang-result .lr-name::after{background:rgba(255,255,255,.22)}
   .lang-result .lr-state{color:#cdbfa9}
   /* the painting is the same, the scrim a little deeper so the names still read */
-  .quick-row a{border-color:rgba(255,255,255,.14)}
-  .quick-row a::before{background:rgba(14,10,7,.66)}
-  .quick-row a:hover::before{background:rgba(14,10,7,.5)}
+  .lang-box{border-color:rgba(255,255,255,.14)}
+  .lang-box::before{background:rgba(14,10,7,.66)}
+  .lang-box:hover::before{background:rgba(14,10,7,.5)}
   .all-list a{color:#ddd2bf;border-bottom-color:rgba(255,255,255,.12)}
   .all-list a:hover{color:var(--accent)}
   .lr-meanwhile{border-top-color:rgba(255,255,255,.20)}
