@@ -672,6 +672,31 @@ def _esc(s: str) -> str:
     return html.escape(s, quote=True)
 
 
+# Every localized invitation opens with the same true sentence -- "The book begins
+# here." -- and then says the complete edition is still coming. Once it HAS come,
+# that second half is false, so the first sentence is kept and the rest dropped.
+# Rewriting the promise in each language would be a translation job in the book
+# repo; taking the author's own words this far is not.
+SENTENCE_ENDS = ".!?。۔।։።។܀؟！？"
+
+
+def _first_sentence(text: str) -> str:
+    """The opening sentence, or "" when this script does not mark sentence ends.
+
+    Thai and Lao write without sentence punctuation, so there is nothing to cut on;
+    those pages get the buttons and no sentence, which says the same thing with
+    fewer risks than a guess would."""
+    for i, ch in enumerate(text):
+        if ch in SENTENCE_ENDS:
+            head = text[:i + 1].strip()
+            # Enough to be a sentence rather than an abbreviation. The bar is low on
+            # purpose: a character carries a whole word in Chinese, and "本はここから始まる。"
+            # is a complete sentence in ten characters. A length that suits German
+            # silently threw away every CJK opening.
+            return head if len(head) >= 5 else ""
+    return ""
+
+
 READ_INDEX_URL = "https://arasteh.art/sedaha/read/"
 
 
@@ -718,15 +743,38 @@ def book_ld(L: dict, url: str) -> str:
     return f'<script type="application/ld+json">\n{body}\n</script>'
 
 
-def render(L: dict) -> str:
+def render(L: dict, row: dict | None = None) -> str:
+    """One Opening page. `row` is that language's entry in the edition record, when
+    there is one: it is what tells this page whether the whole book now exists in
+    the language being read. Without it the page falls back to the invitation to
+    read the original three, which is what every page said before 23 editions were
+    complete and 20 of them were still saying "on the way"."""
     h1, paras = _opening(L["code"])
     dir_attr = ' dir="rtl"' if L["rtl"] else ""
     # The book names itself, in its own script, instead of "Sounds" in Latin: the
     # two links out of the reading page are the only place the page still had to
     # say what book this is. Kept in a span of its own so the arrow beside it does
     # not get dragged across by a right-to-left title.
+    title = _title(L["code"])
     own = (f'<span lang="{L["lang"]}"{dir_attr}>'
-           f'{html.escape(_title(L["code"]), quote=False)}</span>')
+           f'{html.escape(title, quote=False)}</span>')
+
+    # The invitation, in the language being read. Complete: its own files, labelled
+    # with the book's own title, and only the half of the sentence that is still
+    # true. Not complete yet: unchanged, the whole sentence and the original three.
+    if row and row["state"] == "ready" and row["fmts"]:
+        opener = _first_sentence(L["cta"])
+        cta_p = (f'    <p lang="{L["lang"]}"{dir_attr}>{html.escape(opener, quote=False)}</p>\n'
+                 if opener else "")
+        buttons = "\n".join(
+            f'      <a class="btn" href="{RELEASE_URL}/{row["stem"]}.{f}" '
+            f'aria-label="{row["en"]}: the complete book, {f.upper()}">'
+            f'<span lang="{L["lang"]}"{dir_attr}>{html.escape(title, quote=False)}</span>'
+            f'<span class="btn-fmt" lang="en">{f.upper()}</span></a>' for f in row["fmts"])
+    else:
+        cta_p = (f'    <p lang="{L["lang"]}"{dir_attr}>'
+                 f'{html.escape(L["cta"], quote=False)}</p>\n')
+        buttons = FULL_BOOK_BTNS
     url = f"https://arasteh.art/sedaha/read/{L['slug']}/"
     meta_desc = (f"Read the opening of Sedaha (Sounds), Book One by Amir Arasteh, "
                  f"in {L['en']}, then continue with the full book, free.")
@@ -776,9 +824,8 @@ def render(L: dict) -> str:
   </article>
 
   <div class="read-cta">
-    <p lang="{L['lang']}"{dir_attr}>{html.escape(L['cta'], quote=False)}</p>
-    <div class="btns">
-{FULL_BOOK_BTNS}
+{cta_p}    <div class="btns">
+{buttons}
       <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
     <a class="read-back" href="/sedaha/">{own} &rarr;</a>
@@ -1245,12 +1292,16 @@ SHARE_SVG = ('<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-wid
 
 
 def featured_html(rows: list[dict]) -> str:
-    """The complete-edition cards on /sedaha/, one per edition that exists as a whole
-    book, generated from the release. Hand-maintained, this block said three when the
-    answer was four: Italian had been complete and downloadable for weeks, visible only
-    as a PDF link inside a collapsed regional list."""
+    """The complete-edition cards on /sedaha/. Hand-maintained, this block said three
+    when the answer was four: Italian had been complete and downloadable for weeks,
+    visible only as a PDF link inside a collapsed regional list.
+
+    A card per complete edition worked at four and became a wall at twenty-three, so
+    only the three the book was first published in get one. The rest are listed by
+    more_complete_html() just below, in the compact form the browse list uses, and
+    anyone hunting for one language uses the search box above rather than either."""
     out = []
-    for r in complete_rows(rows):
+    for r in [r for r in complete_rows(rows) if r["en"] in FEATURED_FIRST]:
         lang = f' lang="{r["lang"]}"' + (' dir="rtl"' if r["rtl"] else "")
         files = "\n".join(
             f'          <a class="btn" href="{RELEASE_URL}/{r["stem"]}.{f}">Download {f.upper()}</a>'
@@ -1269,6 +1320,37 @@ def featured_html(rows: list[dict]) -> str:
         <p class="ed-meta">{meta}</p>
       </div>""")
     return "\n".join(out)
+
+
+def more_complete_html(rows: list[dict]) -> str:
+    """Every other complete edition, one line each: the name, and the files.
+
+    Deliberately NOT class="ed-list": that class belongs to the browse list inside
+    the language finder, and patch_index rewrites every <li> it finds there. Two
+    patchers editing the same rows would have fought each other forever."""
+    rest = [r for r in complete_rows(rows) if r["en"] not in FEATURED_FIRST]
+    if not rest:
+        return ""
+    items = []
+    for r in rest:
+        lang = f' lang="{r["lang"]}"' + (' dir="rtl"' if r["rtl"] else "")
+        name = f'<span class="native"{lang if r["native"] != r["en"] else ""}>' \
+               f'{html.escape(r["native"])}</span>'
+        if r["en"] != r["native"]:
+            name += f' <span class="en">{html.escape(r["en"])}</span>'
+        links = [f'<a href="{r["url"]}">Opening</a>']
+        links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}" '
+                  f'title="{r["en"]} {f.upper()}, {r["size"].get(f, "")}">{f.upper()}</a>'
+                  for f in r["fmts"]]
+        # class="dl-row" is not decoration: patch_index looks for <li> carrying a
+        # <span class="name"> and rewrites it as a browse row. These are not its
+        # rows, and it skips anything marked this way.
+        items.append(f'      <li class="dl-row"><span class="name">{name}</span> '
+                     f'<span class="mini">{" ".join(links)}</span></li>')
+    n = len(rest)
+    return (f'    <p class="more-complete"><strong>{n}</strong> more edition'
+            f'{"" if n == 1 else "s"} of the whole book, free to download:</p>\n'
+            f'    <ul class="dl-list">\n' + "\n".join(items) + "\n    </ul>")
 
 
 def availability(rows: list[dict], total: int | None = None) -> dict[str, str]:
@@ -1360,22 +1442,35 @@ def patch_availability(check: bool, rows: list[dict], total: int | None = None) 
 
 
 def patch_featured(check: bool, rows: list[dict]) -> bool:
+    """Two marked regions: the cards inside their grid, and the list of the rest just
+    after it. The MORE block generates its own <p> and <ul>, so unlike EDITIONS its
+    markers are siblings of what they own rather than sitting inside a container the
+    patch would then replace."""
     body = SOUNDS.read_text(encoding="utf-8")
-    block = featured_html(rows)
-    pattern = r'(<!-- EDITIONS:START[^>]*-->\n)(?:.|\n)*?(\n\s*<!-- EDITIONS:END -->)'
-    if not re.search(pattern, body):
-        print("[warn]  /sedaha/: EDITIONS markers not found - cards not generated")
-        return False
-    new = re.sub(pattern, lambda m: m.group(1) + block + m.group(2), body, count=1)
+    # the end group swallows the whitespace before its marker and re-emits it, so an
+    # EMPTY region matches too (there is no newline of its own to require). Each block
+    # ends on a tag, never on whitespace, so nothing accumulates between runs.
+    blocks = [(r'(<!-- EDITIONS:START[^>]*-->\n)(?:.|\n)*?(\s*<!-- EDITIONS:END -->)',
+               featured_html(rows), "EDITIONS"),
+              (r'(<!-- MORE:START[^>]*-->)(?:.|\n)*?(\s*<!-- MORE:END -->)',
+               "\n" + more_complete_html(rows), "MORE")]
+    new = body
+    for pattern, block, name in blocks:
+        if not re.search(pattern, new):
+            print(f"[warn]  /sedaha/: {name} markers not found - block not generated")
+            return False
+        new = re.sub(pattern, lambda m, b=block: m.group(1) + b + m.group(2), new, count=1)
     n = len(complete_rows(rows))
+    cards = sum(1 for r in complete_rows(rows) if r["en"] in FEATURED_FIRST)
+    what = f"{n} complete ({cards} as cards, {n - cards} listed)"
     if new == body:
-        print(f"[ok]    /sedaha/ complete-edition cards: {n}")
+        print(f"[ok]    /sedaha/ complete editions: {what}")
         return True
     if check:
-        print(f"[drift] /sedaha/ complete-edition cards: should be {n}")
+        print(f"[drift] /sedaha/ complete editions: should be {what}")
         return False
     SOUNDS.write_text(new, encoding="utf-8", newline="\n")
-    print(f"[write] /sedaha/ complete-edition cards: {n}")
+    print(f"[write] /sedaha/ complete editions: {what}")
     return True
 
 
@@ -1446,7 +1541,10 @@ def patch_index(check: bool, rows: list[dict]) -> bool:
                  for f in r["fmts"]]
         return (f'<li data-state="{r["state"]}">{name_span} ' + " ".join(mini) + "</li>")
 
-    new = re.sub(r'<li[^>]*>(<span class="name">.*?</span></span>).*?</li>', redo, body)
+    # the complete-editions list above uses the same inner markup and is owned by
+    # patch_featured; without this exclusion the two patchers rewrite each other
+    new = re.sub(r'<li(?![^>]*\bdl-row\b)[^>]*>(<span class="name">.*?</span></span>).*?</li>',
+                 redo, body)
     if unknown:
         print(f"[warn]  /sedaha/ rows: {len(unknown)} not in the edition record - {unknown[0]}")
         return False
@@ -1565,6 +1663,10 @@ def main() -> int:
     if not BOOK_LANGS.is_dir():
         sys.exit(f"Book repo not found: {BOOK_LANGS}")
 
+    # the record first: the Opening pages need to know which editions are complete
+    rows = status_rows()
+    by_slug = {r["slug"]: r for r in rows}
+
     ok = True
     for L in LANGS:
         dest = READ_DIR / L["slug"] / "index.html"
@@ -1582,7 +1684,7 @@ def main() -> int:
                         pass
                     print(f"[write] removed sedaha/read/{L['slug']}/  (hidden: {L['en']})")
             continue
-        page = render(L)
+        page = render(L, by_slug.get(L["slug"]))
         if dest.is_file() and dest.read_text(encoding="utf-8") == page:
             continue
         if args.check:
@@ -1598,7 +1700,6 @@ def main() -> int:
     # `rows` is the book's record; `site` is what this website carries. They differ
     # only by HIDDEN_SLUGS, and `total` stays the book's number: the sentences speak
     # about the book's reach, the lists show what the site lists.
-    rows = status_rows()
     site, total = shown(rows), len(rows)
     ok &= patch_status_page(args.check, site, total)
     ok &= patch_featured(args.check, site)

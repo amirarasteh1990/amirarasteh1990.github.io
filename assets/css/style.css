@@ -233,6 +233,25 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 /* what a download will cost you, before you tap it on a metered connection */
 .ed-meta{margin:10px 0 0;color:var(--muted);font-size:.78rem}
 
+/* Every other complete edition, one line each. A card apiece was right at three
+   and a wall at twenty-three; this is the same information at a twentieth of the
+   height, and anyone after one language uses the search box above. Deliberately
+   not .ed-list: that class belongs to the browse list, which a patcher rewrites. */
+.more-complete{margin:26px 0 0;color:var(--muted);font-size:.9rem}
+.more-complete strong{color:#2f2a20}
+.dl-list{list-style:none;margin:10px 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+.dl-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+  padding:7px 0;border-bottom:1px dotted rgba(0,0,0,.10)}
+.dl-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
+.dl-list .native{font-weight:600;color:#2b6b3a}
+.dl-list .en{color:#625a50;font-size:.76rem}
+.dl-list .mini{white-space:nowrap;flex:none;display:flex;gap:9px}
+.dl-list .mini a{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:#2b6b3a;
+  text-decoration:none;border-bottom:1px solid transparent}
+.dl-list .mini a:hover{border-bottom-color:#2b6b3a}
+@media (max-width:520px){.dl-list{grid-template-columns:1fr}}
+
 /* == the search result: one question, one answer, in one place ==
    It used to say "a complete edition matching your search is available above",
    which sent the reader looking for their own answer somewhere else on the page. */
@@ -666,6 +685,11 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .ed-list li.live .native{color:#7fce97}
   .ed-list .mini a{color:#7fce97;border-bottom-color:rgba(127,206,151,.4)}
   .ed-list .mini a:hover{border-bottom-color:#7fce97}
+  .more-complete{color:#a99f8f} .more-complete strong{color:#e6dccb}
+  .dl-list li{border-bottom-color:rgba(255,255,255,.12)}
+  .dl-list .native{color:#7fce97} .dl-list .en{color:#a99f8f}
+  .dl-list .mini a{color:#7fce97}
+  .dl-list .mini a:hover{border-bottom-color:#7fce97}
   .lang-toggle>summary{color:#cabfac;border-color:rgba(255,255,255,.10)}
   .lang-toggle>summary:hover{color:#f0e7d7}
 

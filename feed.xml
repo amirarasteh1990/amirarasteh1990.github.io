@@ -5,35 +5,168 @@
   <link href="https://arasteh.art/feed.xml" rel="self"/>
   <link href="https://arasteh.art/sedaha/"/>
   <id>https://arasteh.art/feed.xml</id>
-  <updated>2026-07-23T09:42:29Z</updated>
+  <updated>2026-07-27T12:01:38Z</updated>
   <author><name>Amir Arasteh</name><uri>https://arasteh.art/</uri></author>
   <rights>The book is free to read and share, complete and unchanged.</rights>
   <entry>
-    <title>English</title>
-    <link href="https://arasteh.art/sedaha/read/"/>
-    <id>https://arasteh.art/sedaha/read/</id>
-    <updated>2026-07-23T09:42:29Z</updated>
-    <summary>The complete English edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+    <title>Հայերեն · Armenian</title>
+    <link href="https://arasteh.art/sedaha/read/hy/"/>
+    <id>https://arasteh.art/sedaha/read/hy/</id>
+    <updated>2026-07-27T12:01:38Z</updated>
+    <summary>The complete Armenian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
   </entry>
   <entry>
-    <title>Dansk · Danish</title>
-    <link href="https://arasteh.art/sedaha/read/da/"/>
-    <id>https://arasteh.art/sedaha/read/da/</id>
-    <updated>2026-07-23T09:42:29Z</updated>
-    <summary>The complete Danish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+    <title>Українська · Ukrainian</title>
+    <link href="https://arasteh.art/sedaha/read/uk/"/>
+    <id>https://arasteh.art/sedaha/read/uk/</id>
+    <updated>2026-07-27T09:51:01Z</updated>
+    <summary>The complete Ukrainian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
   </entry>
   <entry>
-    <title>فارسی · Persian</title>
-    <link href="https://arasteh.art/sedaha/read/fa/"/>
-    <id>https://arasteh.art/sedaha/read/fa/</id>
-    <updated>2026-07-23T09:42:27Z</updated>
-    <summary>The complete Persian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+    <title>Türkçe · Turkish</title>
+    <link href="https://arasteh.art/sedaha/read/tr/"/>
+    <id>https://arasteh.art/sedaha/read/tr/</id>
+    <updated>2026-07-27T09:51:01Z</updated>
+    <summary>The complete Turkish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Svenska · Swedish</title>
+    <link href="https://arasteh.art/sedaha/read/sv/"/>
+    <id>https://arasteh.art/sedaha/read/sv/</id>
+    <updated>2026-07-27T09:51:00Z</updated>
+    <summary>The complete Swedish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Español · Spanish</title>
+    <link href="https://arasteh.art/sedaha/read/es/"/>
+    <id>https://arasteh.art/sedaha/read/es/</id>
+    <updated>2026-07-27T09:51:00Z</updated>
+    <summary>The complete Spanish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Русский · Russian</title>
+    <link href="https://arasteh.art/sedaha/read/ru/"/>
+    <id>https://arasteh.art/sedaha/read/ru/</id>
+    <updated>2026-07-27T09:51:00Z</updated>
+    <summary>The complete Russian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Português (Brasil) · Portuguese (Brazil)</title>
+    <link href="https://arasteh.art/sedaha/read/pt-br/"/>
+    <id>https://arasteh.art/sedaha/read/pt-br/</id>
+    <updated>2026-07-27T09:50:59Z</updated>
+    <summary>The complete Portuguese (Brazil) edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Português · Portuguese</title>
+    <link href="https://arasteh.art/sedaha/read/pt/"/>
+    <id>https://arasteh.art/sedaha/read/pt/</id>
+    <updated>2026-07-27T09:50:59Z</updated>
+    <summary>The complete Portuguese edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Polski · Polish</title>
+    <link href="https://arasteh.art/sedaha/read/pl/"/>
+    <id>https://arasteh.art/sedaha/read/pl/</id>
+    <updated>2026-07-27T09:50:58Z</updated>
+    <summary>The complete Polish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Norsk · Norwegian</title>
+    <link href="https://arasteh.art/sedaha/read/no/"/>
+    <id>https://arasteh.art/sedaha/read/no/</id>
+    <updated>2026-07-27T09:50:58Z</updated>
+    <summary>The complete Norwegian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Lietuvių · Lithuanian</title>
+    <link href="https://arasteh.art/sedaha/read/lt/"/>
+    <id>https://arasteh.art/sedaha/read/lt/</id>
+    <updated>2026-07-27T09:50:57Z</updated>
+    <summary>The complete Lithuanian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Latviešu · Latvian</title>
+    <link href="https://arasteh.art/sedaha/read/lv/"/>
+    <id>https://arasteh.art/sedaha/read/lv/</id>
+    <updated>2026-07-27T09:50:57Z</updated>
+    <summary>The complete Latvian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>한국어 · Korean</title>
+    <link href="https://arasteh.art/sedaha/read/ko/"/>
+    <id>https://arasteh.art/sedaha/read/ko/</id>
+    <updated>2026-07-27T09:50:56Z</updated>
+    <summary>The complete Korean edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>日本語 · Japanese</title>
+    <link href="https://arasteh.art/sedaha/read/ja/"/>
+    <id>https://arasteh.art/sedaha/read/ja/</id>
+    <updated>2026-07-27T09:50:56Z</updated>
+    <summary>The complete Japanese edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
   </entry>
   <entry>
     <title>Italiano · Italian</title>
     <link href="https://arasteh.art/sedaha/read/it/"/>
     <id>https://arasteh.art/sedaha/read/it/</id>
-    <updated>2026-07-23T09:42:27Z</updated>
-    <summary>The complete Italian edition of Sedaha (Sounds), Book One: free to read, and to download as PDF.</summary>
+    <updated>2026-07-27T09:50:56Z</updated>
+    <summary>The complete Italian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>فارسی · Persian</title>
+    <link href="https://arasteh.art/sedaha/read/fa/"/>
+    <id>https://arasteh.art/sedaha/read/fa/</id>
+    <updated>2026-07-27T09:50:54Z</updated>
+    <summary>The complete Persian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Deutsch · German</title>
+    <link href="https://arasteh.art/sedaha/read/de/"/>
+    <id>https://arasteh.art/sedaha/read/de/</id>
+    <updated>2026-07-27T09:50:54Z</updated>
+    <summary>The complete German edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Français · French</title>
+    <link href="https://arasteh.art/sedaha/read/fr/"/>
+    <id>https://arasteh.art/sedaha/read/fr/</id>
+    <updated>2026-07-27T09:50:54Z</updated>
+    <summary>The complete French edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>English</title>
+    <link href="https://arasteh.art/sedaha/read/"/>
+    <id>https://arasteh.art/sedaha/read/</id>
+    <updated>2026-07-27T09:50:53Z</updated>
+    <summary>The complete English edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Nederlands · Dutch</title>
+    <link href="https://arasteh.art/sedaha/read/nl/"/>
+    <id>https://arasteh.art/sedaha/read/nl/</id>
+    <updated>2026-07-27T09:50:52Z</updated>
+    <summary>The complete Dutch edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Dansk · Danish</title>
+    <link href="https://arasteh.art/sedaha/read/da/"/>
+    <id>https://arasteh.art/sedaha/read/da/</id>
+    <updated>2026-07-27T09:50:52Z</updated>
+    <summary>The complete Danish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>中文 · Chinese</title>
+    <link href="https://arasteh.art/sedaha/read/zh/"/>
+    <id>https://arasteh.art/sedaha/read/zh/</id>
+    <updated>2026-07-27T09:50:51Z</updated>
+    <summary>The complete Chinese edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>العربية · Arabic</title>
+    <link href="https://arasteh.art/sedaha/read/ar/"/>
+    <id>https://arasteh.art/sedaha/read/ar/</id>
+    <updated>2026-07-27T09:50:51Z</updated>
+    <summary>The complete Arabic edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
   </entry>
 </feed>

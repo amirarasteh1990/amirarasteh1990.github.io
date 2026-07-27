@@ -272,6 +272,21 @@ if ((Read-Host "Type PUSH to deploy to arasteh.art") -ceq "PUSH") { git push ori
 
 ## Publish current EPUB/PDF files — guarded
 
+The public files come from **`Volume1/online/`**, and only from there. That is where
+`python build.py online` puts them, flat and named `Sedaha_<Language>.{epub,pdf}`.
+
+Build them first, in the book repository:
+
+```powershell
+Set-Location "C:\code\Others\1_Personal\1_Sedaha\Volume1"; python build.py online
+```
+
+Then come back here:
+
+```powershell
+Set-Location "C:\code\Others\1_Personal\amirarasteh.github.io"
+```
+
 Check GitHub CLI authentication:
 
 ```powershell
@@ -290,25 +305,49 @@ If the release does not exist, create it only after typing `CREATE`:
 if ((Read-Host "Type CREATE to create the public books release") -ceq "CREATE") { gh release create books --title "Sounds — current editions" --notes "Current downloadable editions." } else { Write-Host "Cancelled; no release was created." }
 ```
 
-Collect ordinary EPUB/PDF files while excluding print/wrap PDFs:
+Collect what was built, newest first, with each file's size:
 
 ```powershell
-$files = Get-ChildItem "..\1_Sedaha\Volume1\registration" -File | Where-Object { $_.Extension -eq ".epub" -or ($_.Extension -eq ".pdf" -and $_.BaseName -notmatch "_(print|wrap)$") } | Select-Object -ExpandProperty FullName
+$files = Get-ChildItem "..\1_Sedaha\Volume1\online" -File | Where-Object { $_.Extension -eq ".epub" -or $_.Extension -eq ".pdf" } | Sort-Object LastWriteTime -Descending
 ```
 
-Review the exact upload list:
+Review the exact upload list before sending anything:
 
 ```powershell
-$files
+$files | Select-Object Name, @{n="MB";e={[math]::Round($_.Length/1MB,1)}}, LastWriteTime
 ```
+
+A language you did not rebuild is simply absent from that list, and its copy on the
+release is left untouched. If something you expected is missing, build it before
+uploading rather than uploading a partial set and forgetting.
 
 Upload and replace same-name assets only after typing `UPLOAD`:
 
 ```powershell
-if ((Read-Host "Type UPLOAD to replace the listed public book assets") -ceq "UPLOAD") { gh release upload books @files --clobber } else { Write-Host "Cancelled; no assets were uploaded." }
+if ((Read-Host "Type UPLOAD to replace the listed public book assets") -ceq "UPLOAD") { gh release upload books @($files.FullName) --clobber } else { Write-Host "Cancelled; no assets were uploaded." }
 ```
 
-`--clobber` replaces same-name assets and resets their download counts. The `first-edition-1.0` release is frozen; do not overwrite it.
+`--clobber` replaces same-name assets and **resets their download counts**.
+
+Then rebuild this site, because it reads the release: file sizes, the edition year,
+the complete-edition count, every availability sentence, the status table and the
+feed all come from those assets.
+
+```powershell
+python build_read_pages.py
+```
+
+```powershell
+python check.py
+```
+
+### Two places this must never point
+
+- **Not `Volume1/registration/`.** That folder is the archival deposit set, and it
+  also holds `_print` and `_wrap` PDFs that must never reach a reader.
+- **Not the `first-edition-1.0` release.** It is the frozen registered edition,
+  permanently linked from `/editions/first-edition/` with its own ISBNs. Nothing is
+  ever uploaded to it again. The rolling release is `books`.
 
 ## Release assets and download counts
 
@@ -360,12 +399,6 @@ The baseline snapshot lives in `~/.sedaha_download_counts.json` and only updates
 when the diff is shown (i.e. not with `--no-diff` or `--no-save`). Delete that
 file to reset the "since" point. If `show` is not recognized, the profile has not
 loaded yet — open a new terminal, or run `. $PROFILE` once.
-
-Inspect the frozen release without changing it:
-
-```powershell
-gh release view first-edition-1.0
-```
 
 ## Verify live preview metadata
 

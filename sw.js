@@ -11,7 +11,13 @@
    in the background. Nothing cross-origin is touched, so the book files on the
    GitHub release always come from the network. */
 
-var VERSION = 'arasteh-v1';
+/* Bump this whenever a deploy changes the stylesheet or a script. Pages are
+   network-first so they always arrive fresh, but assets are served from the cache
+   and refreshed afterwards -- so without a bump, a returning visitor gets the NEW
+   pages painted with the OLD stylesheet for one visit. On activate, every cache
+   whose name is not this one is deleted, so the whole shell is re-fetched.
+   v2: the complete-editions list, the search result card, the reading strip. */
+var VERSION = 'arasteh-v2';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

@@ -70,7 +70,9 @@ now generated from the record:
 
 | What | Function |
 | --- | --- |
+| What each Opening page offers below its text | `render(L, row)` — its own files once that edition is complete |
 | The complete-edition cards on `/sedaha/` | `patch_featured` → `featured_html` (between `EDITIONS:` markers) |
+| The list of every other complete edition | `patch_featured` → `more_complete_html` (between `MORE:` markers) |
 | Both descriptions + the hub card on `/`, and on `/sedaha/` | `patch_availability` → `availability` |
 | The hero count and the progress tally | `patch_meter`, `patch_availability` |
 | State + download links on all 114 browse rows | `patch_index` (`data-state`, used by the search) |
@@ -85,9 +87,28 @@ Two conventions worth keeping: **EPUB before PDF** everywhere (`FMT_ORDER`), and
 labels all describe the *complete edition* (`STATES`), because every one of the 114 already
 has a readable Opening and "Ready to read" did not distinguish anything.
 
-Complete editions are **counted, not listed**: "4 complete editions to download, more on the
-way". Naming them was right at four and wrong at twenty-four; the cards below the sentence are
-the list, and they generate themselves.
+Complete editions are **counted, not listed** in prose: "23 complete editions to download,
+more on the way". Naming them was right at four and wrong at twenty-three.
+
+They are **shown** in two shapes, both generated, because a card apiece was right at three and
+a wall at twenty-three (28 KB of markup between the search box and the browse list):
+
+- **cards** for the three the book was published in, `FEATURED_FIRST`
+- **one line each** for every other complete edition, `more_complete_html`, in the compact form
+  the browse list uses. Anyone after one particular language uses the search box above, which
+  answers with that language's own download buttons.
+
+Two traps live here, both now guarded:
+
+- `patch_index` rewrites any `<li>` holding a `<span class="name">` into a browse row. The
+  listed editions use that same inner markup, so they carry **`class="dl-row"`** and
+  `patch_index` skips them. Without that the two patchers rewrote each other on every run.
+- the `MORE:` end marker is matched with `(\s*<!-- MORE:END -->)`, no required newline, so the
+  region still matches when it is **empty**. Each generated block ends on a tag, never on
+  whitespace, so nothing accumulates between runs.
+
+`check.py` verifies that cards plus listed rows account for every complete edition, with none
+in both places.
 
 ## `HIDDEN_SLUGS` — editions the book has and the site does not show
 
@@ -287,6 +308,20 @@ sentence above them says the whole book is free in those three; they used to lea
 Opening page, which read as a promise withdrawn. The script also idempotently wires an
 "Opening" link into each language's row on `/sedaha/` and the URLs into `sitemap.xml`. Slugs
 are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`, `me`).
+
+**The invitation below the text follows the release.** Until an edition is complete, the page
+carries its whole localized sentence ("the complete German edition is on the way; until then
+the book is free in Persian, English and Danish") and the three EPUBs that exist. Once that
+edition **is** complete, the second half of that sentence is false, so `render()` keeps only
+its **first sentence** ("Das Buch beginnt hier.") and offers **that language's own** EPUB and
+PDF, labelled with the book's own title: "Klänge EPUB".
+
+Rewriting the promise in each language would be a translation job in the book repo; taking
+the author's own words that far is not. `_first_sentence()` cuts on the sentence mark of the
+script in question (`.。۔।։።។`, and more), and returns nothing for Thai and Lao, which write
+without sentence punctuation. A page that gets nothing shows the buttons alone, which says
+the same thing with no risk. **Its minimum length is 5 characters on purpose**: a bar that
+suited German threw away every CJK opening, since 本はここから始まる。 is a whole sentence in ten.
 
 **These pages carry no visible English.** The chrome around the text used to: "← Sounds",
 "Sounds · Book One", "Opening in:", "all 114 →", "Share this opening". It is gone, not

@@ -211,17 +211,25 @@ def availability() -> None:
     done = [r["en"] for r in gen.complete_rows(rows)]
     book = (SITE / "sedaha" / "index.html").read_text(encoding="utf-8")
 
-    grid = re.search(r'<div class="editions-featured">(.*?)</div>\s*</section>|'
+    grid = re.search(r'<div class="editions-featured">(.*?)</div>\s*</div>|'
                      r'<div class="editions-featured">(.*?)\n    </div>', book, re.S)
     inside = len(re.findall(r'<div class="ed-featured"', grid.group(0))) if grid else 0
-    total = len(re.findall(r'<div class="ed-featured"', book))
-    report(f"/sedaha/: all {total} edition cards sit inside their grid",
-           bool(grid) and inside == total == len(done),
-           f"{inside} inside, {total} on the page, {len(done)} complete")
+    cards = len(re.findall(r'<div class="ed-featured"', book))
+    report(f"/sedaha/: all {cards} edition cards sit inside their grid",
+           bool(grid) and inside == cards and cards > 0,
+           f"{inside} inside, {cards} on the page")
 
-    told = [name for name in done if re.search(rf'\b{re.escape(name)}\b', book)]
-    report(f"/sedaha/: every complete edition is named ({', '.join(done)})",
-           len(told) == len(done), ", ".join(n for n in done if n not in told))
+    # a card each was a wall at twenty-three, so the rest are listed instead; between
+    # them the two must still account for every complete edition, with none twice
+    listed = len(re.findall(r'<li class="dl-row"', book))
+    report(f"/sedaha/: {cards} cards + {listed} listed = every complete edition",
+           cards + listed == len(done), f"{cards + listed} shown, {len(done)} complete")
+
+    # plain containment, not a word-boundary match: "Portuguese (Brazil)" ends in a
+    # bracket, and \b after it can never meet the "<" that follows in the markup
+    missing = [n for n in done if n not in book]
+    report(f"/sedaha/: every one of the {len(done)} complete editions is named",
+           not missing, ", ".join(missing))
 
     home = (SITE / "index.html").read_text(encoding="utf-8")
     sentence = gen.availability(rows)["long"]
