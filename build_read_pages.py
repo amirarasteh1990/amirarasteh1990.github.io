@@ -1337,6 +1337,12 @@ EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 # availability itself come from the edition record, so a language cannot appear
 # here unless its complete edition is actually on the release.
 QUICK_SLUGS = ["fa", "en", "ar", "es", "de", "fr", "hi", "ja"]
+# A configured quick start appears whether or not its complete edition is out yet:
+# the author's call, 2026-07-28, for Hindi. Clicking it is still honest — the panel
+# behind it says the edition is in preparation and offers the whole book in the
+# three it was published in. The language the BROWSER swaps in is still required to
+# be complete (finder.js): a choice made for someone should be the safe one.
+QUICK_ALLOW_INCOMPLETE = True
 QUICK_FALLBACK = "zh"
 # The heading reads into the row: "Pick up the thread in  فارسی  English  …", which
 # is the book's own image for what a reader does — the author unwinds the thread of
@@ -1353,16 +1359,24 @@ def quick_starts_html(rows: list[dict]) -> str:
     everything else, because a hand-kept shortlist is exactly how Italian came to
     be complete and named nowhere. Rendered server-side so it works without
     scripting; the fifth is swapped in the browser when it can be."""
-    # "complete" here means a file is actually on the release, not merely a state
-    by_slug = {r["slug"]: r for r in rows if r["fmts"]}
-    picked, missing = [], []
+    by_slug = {r["slug"]: r for r in rows}
+    picked, missing, waiting = [], [], []
     for slug in QUICK_SLUGS + [QUICK_FALLBACK]:
-        if slug in by_slug:
-            picked.append(by_slug[slug])
-        else:
+        r = by_slug.get(slug)
+        if r is None:                       # not a language this site carries at all
             missing.append(slug)
+            continue
+        # "complete" means a file is actually on the release, not merely a state
+        if not r["fmts"] and not QUICK_ALLOW_INCOMPLETE:
+            missing.append(slug)
+            continue
+        if not r["fmts"]:
+            waiting.append(r["en"])
+        picked.append(r)
     if missing:
-        print(f"[warn]  quick starts: no complete edition for {', '.join(missing)} - left out")
+        print(f"[warn]  quick starts: {', '.join(missing)} not carried by the site - left out")
+    if waiting:
+        print(f"[note]  quick starts: {', '.join(waiting)} shown before its edition is out")
     links = []
     for r in picked:
         rtl = ' dir="rtl"' if r["rtl"] else ""
