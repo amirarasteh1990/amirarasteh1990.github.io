@@ -16,8 +16,11 @@
    and refreshed afterwards -- so without a bump, a returning visitor gets the NEW
    pages painted with the OLD stylesheet for one visit. On activate, every cache
    whose name is not this one is deleted, so the whole shell is re-fetched.
-   v2: the complete-editions list, the search result card, the reading strip. */
-var VERSION = 'arasteh-v2';
+   v2: the complete-editions list, the search result card, the reading strip.
+   v3: the dark logo, the painting band behind the language boxes, and the
+       vertical-rhythm pass -- all three are stylesheet or image changes, which is
+       exactly the case this counter exists for. */
+var VERSION = 'arasteh-v3';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

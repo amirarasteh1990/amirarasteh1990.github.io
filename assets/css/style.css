@@ -63,19 +63,30 @@
   --bg:#F5EFE3; --surface:#ffffff; --ink:#1f1b16; --muted:#6f675e;
   --paper:#F6EFDB; --line:#e8e2d9; --accent:#8a5a3b; --accent-ink:#ffffff;
   --max:980px; --radius:8px;
-  /* Vertical rhythm, in three steps. The rule is that every gap has exactly ONE
-     owner: the element above it never sets a bottom margin that the element below
-     also sets a top margin for. That is how the quick-start row came to sit hard
-     against the search heading — the row set nothing and the heading set nothing,
-     each assuming the other would.
-       tight    a label and the thing it labels
-       block    two parts of one section doing different jobs
-       section  where one section ends and the next begins
-     They scale with the viewport so the separation survives a phone, where a wrapped
-     row and the next heading are otherwise a few pixels apart. */
-  --gap-tight:12px;
-  --gap-block:clamp(28px,5vw,36px);
-  --gap-section:clamp(40px,8vw,56px);
+  /* Vertical rhythm. One rule behind it: every gap has exactly ONE owner. The
+     element above never sets a bottom margin that the element below also sets a top
+     margin for, because then the gap is whichever happened to be larger and nobody
+     decided it. That is how the quick-start row came to sit hard against the search
+     heading: the row set nothing, the heading set nothing, each assuming the other.
+       tight    a label and the text supporting it
+       control  a heading and its input or buttons
+       related  related controls, or a secondary action
+       section  a boundary between two distinct tasks
+       panel    the lead-in to a section's first heading
+       major    a boundary between major regions of the page
+     The upper steps scale with the viewport, so a separation that reads on a laptop
+     still reads on a phone, where a wrapped row and the next heading would otherwise
+     be a few pixels apart. Applied to named components only; there is deliberately no
+     `* + *` rule, because prose, navigation, the gallery and forms do not share a
+     rhythm. */
+  --flow-tight:8px;
+  --flow-control:12px;
+  --flow-related:20px;
+  --flow-section:clamp(28px,5vw,36px);
+  /* narrower than --flow-major on purpose: this gap sits directly above the gap
+     below the quick starts, and the two have to stay in proportion */
+  --flow-panel:clamp(34px,6vw,44px);
+  --flow-major:clamp(38px,7vw,52px);
   --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
   --serif:"EB Garamond",Georgia,"Times New Roman",serif;
 }
@@ -172,7 +183,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 .brand-copy h1{margin:0;font-size:2rem}
 .brand-copy p{margin:2px 0 0;color:#5f574d;font-size:.95rem}
 .divider{height:1px;background:var(--line);margin:28px 0}
-.section-title{font-size:1.5rem;margin:8px 0 20px}
+.section-title{font-size:1.5rem;line-height:1.25;margin:8px 0 20px}
 /* the book page now runs Find your language / Complete editions / Every opening /
    Translation progress, so its headings need air between the steps */
 .downloads .section-title ~ .section-title{margin-top:40px}
@@ -225,7 +236,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   font-family:var(--serif);
   font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
 /* shared lead paragraph under a page h1 */
-.lead{font-size:1.06rem;color:#3a322a;max-width:640px}/* the book's own scripts, one after another: the hundred alphabets are the
+.lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control)}/* the book's own scripts, one after another: the hundred alphabets are the
    work's plainest description. Held still under prefers-reduced-motion. */
 .cycler{margin:14px 0 4px;color:#5a5344;font-size:.94rem}
 /* margin-inline resolves against the SLOT's own direction, so a one-sided gap
@@ -252,10 +263,11 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    the book, the cycling name, one count, and the search. No cards, no lists, no
    browser: those are the catalogue, and the catalogue is /sedaha/languages/. */
 /* the panel owns the gap above itself, so nothing inside it has to */
-.finder-panel{max-width:640px;margin:var(--gap-section) auto 0}
-.finder-panel .section-title{font-size:1.15rem;letter-spacing:.02em;margin:0 0 10px}
+.finder-panel{max-width:640px;margin:var(--flow-panel) auto 0}
+.finder-panel .section-title{font-size:1.15rem;letter-spacing:.02em;line-height:1.25;
+  margin:0 0 var(--flow-control)}
 .finder-panel .language-finder{position:static;margin:0;padding:0}
-.doorway-links{margin:22px 0 0;color:var(--muted);font-size:.94rem;text-align:center}
+.doorway-links{margin:var(--flow-section) 0 0;color:var(--muted);font-size:.94rem;text-align:center}
 .doorway-links a{font-weight:600}
 /* one raised surface on the page, and it is the visitor's own answer */
 /* Quick starts: five ways in for someone who would rather not type. Text, not
@@ -264,8 +276,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    script's face and read in its own voice. */
 /* it reads into the row beneath it, so it is set as a phrase rather than a label:
    "Pick up the thread in  فارسی  English …" */
-.quick-heading{margin:0 0 var(--gap-tight);font-family:var(--serif);font-style:italic;
-  font-size:1.02rem;font-weight:400;color:var(--muted)}
+.quick-heading{margin:0 0 var(--flow-control);font-family:var(--serif);font-style:italic;
+  font-size:1.02rem;font-weight:400;line-height:1.3;color:var(--muted)}
 /* A wrapping flex row of fixed-width boxes, for one reason a grid cannot give:
    when nine boxes wrap as five and four, the short last row must sit centred under
    the first. Grid aligns a partial last row to the leading columns, which leaves it
@@ -282,8 +294,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    for a different reason. Being a sibling rule, it holds whether the boxes come out
    as one line or four, and whether or not the browser has swapped the last one for
    the visitor's own language — the row is one element either way. */
-.quick-row + .section-title{margin-block-start:var(--gap-block);
-  margin-block-end:var(--gap-tight)}
+.quick-row + .section-title{margin-block-start:var(--flow-section);
+  margin-block-end:var(--flow-control)}
 .quick-row .lang-box{flex:0 0 112px;inline-size:112px;min-inline-size:0;
   min-block-size:60px;display:inline-flex;align-items:center;justify-content:center;
   padding:8px 10px;text-align:center;line-height:1.12;white-space:normal;
@@ -320,7 +332,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 
 /* every language, only when asked for: the doorway stays a doorway, and the list
    is built from the same data the finder uses rather than sitting in the markup */
-.all-langs{margin:22px 0 0}
+.all-langs{margin:var(--flow-section) 0 0}
 .all-langs>summary{cursor:pointer;font-family:var(--serif);font-size:.98rem;
   color:var(--accent);list-style:none;display:inline-flex;align-items:center;gap:7px;
   min-height:44px}
@@ -357,7 +369,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .dl-help summary{cursor:pointer;font-weight:600;color:var(--accent);text-align:center}
 .dl-help p{margin:8px 0 0;line-height:1.6}
 /* the project's own numbers, behind a disclosure on the catalogue page */
-.progress-detail{margin:26px 0 0}
+.progress-detail{margin:var(--flow-section) 0 0}
 .progress-detail summary{cursor:pointer;font-weight:600;color:var(--accent)}
 .progress-detail .lang-key{margin-top:14px}
 
@@ -402,7 +414,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    own name in the book's serif, its English name in spaced capitals beneath a
    short centred rule. The only raised surface on the page, because it is the one
    thing the visitor asked for. */
-.lang-result{margin:16px 0 4px;padding:24px 22px 20px;text-align:center;
+.lang-result{margin:var(--flow-related) 0 0;padding:24px 22px 20px;text-align:center;
   background:var(--paper);border:1px solid rgba(0,0,0,.10);border-radius:10px;
   box-shadow:var(--shadow),inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(0,0,0,.10)}
 .lang-result .lr-name{margin:0;font-family:var(--serif);font-size:1.85rem;
@@ -420,7 +432,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .lang-result .lr-actions .btn-primary{flex:1 0 100%}
 .lang-result .lr-actions .btn:not(.btn-icon):not(.btn-primary){min-width:66px}.license h2{font-size:1.3rem}
 .license p{color:var(--muted);font-size:.94rem}
-.site-footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--line);
+/* the last major boundary on every page: content ends, the site speaks */
+.site-footer{margin:var(--flow-major) 0 40px;padding-top:22px;border-top:1px solid var(--line);
   color:var(--muted);font-size:.86rem;text-align:center}
 .site-footer a{color:var(--muted);text-decoration:underline}
 /* small colophon mark above the footer links: the full logo lockup (painting +
@@ -474,7 +487,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .ed-list .mini a:hover{border-bottom-color:#2b6b3a}
 /* the finder rides along while a long list is open, so the next search never
    means scrolling back up. It sits under the sticky top bar on laptops. */
-.language-finder{position:sticky;top:0;z-index:6;margin:24px 0 20px;padding:12px 0 10px;
+.language-finder{position:sticky;top:0;z-index:6;margin:var(--flow-control) 0 var(--flow-tight);padding:12px 0 10px;
   background:rgba(255,253,249,.93);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 @media (min-width:761px){.language-finder{top:56px}}
 .lang-search-label{display:block;margin:0 0 8px;font-family:var(--serif);font-size:1.12rem;font-weight:600}
@@ -506,7 +519,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 
 /* region chips: a second way into the list, for readers who would rather
    point at a part of the world than type a name */
-.region-chips{display:flex;gap:8px;overflow-x:auto;margin:16px 0 0;padding:2px 0 6px;
+.region-chips{display:flex;gap:8px;overflow-x:auto;margin:var(--flow-tight) 0 0;padding:2px 0 6px;
   -webkit-overflow-scrolling:touch;scrollbar-width:none}
 .region-chips::-webkit-scrollbar{display:none}
 .region-chip{flex:none;white-space:nowrap;min-height:36px;padding:6px 14px;border-radius:999px;
@@ -516,10 +529,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .region-chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 
 /* one quiet line offering the visitor's own language, dismissable for good */
-.lang-offer{display:flex;align-items:center;gap:10px;margin:20px 0 0;padding:9px 8px 9px 15px;
+.lang-offer{display:flex;align-items:center;gap:10px;margin:var(--flow-related) 0 0;padding:9px 8px 9px 15px;
   border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
   background:var(--surface);font-size:.95rem}
-.lang-offer[hidden]{display:none}
+.lang-offer[hidden],.lang-result[hidden]{display:none}
 .lang-offer .go{flex:1;min-width:0;color:var(--ink)}
 .lang-offer .go b{font-weight:600;color:var(--accent)}
 .offer-dismiss{position:static;transform:none;flex:none}
@@ -546,7 +559,8 @@ tr.deep-target>th,tr.deep-target>td{background:rgba(138,90,59,.08)}
    inset frame as the search answer, the languages in the book's serif, and a
    dotted rule carrying the eye from each name to what can be opened. 113 cards
    would be a wall; a ruled list is what a book does with a long enumeration. */
-.lang-table-wrap{overflow-x:auto;background:var(--paper);border:1px solid rgba(0,0,0,.10);
+.lang-table-wrap{margin-block-start:var(--flow-control);
+  overflow-x:auto;background:var(--paper);border:1px solid rgba(0,0,0,.10);
   border-radius:10px;padding:4px 20px;
   box-shadow:var(--shadow),inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(0,0,0,.10)}
 .lang-table{width:100%;border-collapse:collapse;font-size:.94rem}
@@ -565,7 +579,7 @@ tr.deep-target>th,tr.deep-target>td{background:rgba(138,90,59,.08)}
   text-decoration:none;border-bottom:1px solid rgba(43,107,58,.35);margin-right:10px;
   display:inline-block;min-height:30px;padding-top:4px}
 .lang-table .links a:hover{border-bottom-color:#2b6b3a}
-.lang-foot{color:var(--muted);font-size:.92rem;margin-top:26px}
+.lang-foot{color:var(--muted);font-size:.92rem;margin-top:var(--flow-related)}
 /* Below 640 the table stops being a table. Three columns of badges and small green
    links on a phone meant sideways scrolling and tap targets a few pixels tall; each
    edition becomes a stacked block instead, with its actions at a thumb's size. The
@@ -605,7 +619,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
    before any script runs. */
 .read-kicker{max-width:var(--read-measure,34em);color:var(--muted);font-family:var(--serif);font-style:italic;
   font-size:.95rem;margin:22px auto 2px}
-.reader{width:100%;max-width:var(--read-measure,34em);margin:6px auto 0}
+.reader{width:100%;max-width:var(--read-measure,34em);margin:0 auto}
 .reader h1{font-size:calc(1.9rem * var(--read-scale,1));margin:0 0 22px}
 .reader p{font-family:var(--serif);
   font-size:calc(1.18rem * var(--read-scale,1));line-height:1.9;color:#33302a;margin:0 0 1.2em}
@@ -620,7 +634,8 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .read-cta .btns{display:flex;gap:8px;flex-wrap:wrap}
 .read-back{display:inline-block;margin-top:18px;font-size:.92rem}/* the language strip: a globe, then the languages naming themselves. No English
    label, so it reads the same on a Khmer page as on this one. */
-.op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);margin:22px auto 20px}
+.op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);
+  margin:var(--flow-related) auto var(--flow-control)}
 .op-langs a{font-weight:600}
 .op-langs .cur{color:#33302a;font-weight:700}
 .op-globe{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;
@@ -630,7 +645,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
    translating; it sits above the text, aligned to the end of the measure, and
    stays out of the way until wanted. */
 .reader-tools{display:flex;justify-content:flex-end;gap:6px;
-  width:100%;max-width:var(--read-measure,34em);margin:0 auto 6px}
+  width:100%;max-width:var(--read-measure,34em);margin:0 auto var(--flow-control)}
 .rt{display:grid;place-items:center;width:34px;height:34px;padding:0;
   border:1px solid var(--line);border-radius:8px;background:transparent;
   color:var(--muted);font-family:var(--serif);cursor:pointer;
