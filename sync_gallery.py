@@ -127,6 +127,62 @@ def _write_band(check: bool) -> bool:
     return True
 
 
+# == the mark beside the excerpt on /sedaha/ ==
+# The line it sits next to is "... the loose end of a thread of words that were once
+# sounds...", and the opening painting is that sentence: a thread trailing in from
+# the left and running into the tangle. The crop is the point. Shrinking the whole
+# canvas destroys it -- the painting is 29% bare ground and its subject is fine
+# linear detail, so at 56px the thread disappears and what is left is a pale smudge.
+# Cropped tight to the loose end, that same 56px carries the thread plainly, and the
+# region is only 4% bare ground, so it is not a bright chip on a dark page either.
+# Square in the source, so nothing is squashed.
+# the site's own derived copy, not the CoverPics master: the masters are not all
+# the same shape, and the fractions below were chosen against this one. _write_band
+# takes its source the same way, for the same reason.
+MARK_SRC = OUT / "01.jpg"         # the opening painting
+MARK_OUT = SITE / "assets" / "img" / "loose-end.jpg"
+MARK_REGION = (0.0, 0.71, 0.213, 1.0)   # left, top, right, bottom, as fractions
+MARK_EDGE = 112                   # 2x a 56px mark
+
+
+def _write_excerpt_mark(check: bool) -> bool:
+    src = MARK_SRC
+    if not src.is_file():
+        print(f"[warn]  excerpt mark: {src.name} not found; run the gallery sync first")
+        return False
+    fresh = (MARK_OUT.is_file() and MARK_OUT.stat().st_mtime >= src.stat().st_mtime
+             and _twin_is_current(MARK_OUT))
+    if fresh:
+        print(f"[ok]    {MARK_OUT.name}: current")
+        return True
+    if check:
+        print(f"[stale] {MARK_OUT.name}")
+        return False
+    with Image.open(src) as im:
+        w, h = im.size
+        l, t, r, b = MARK_REGION
+        box = (int(w * l), int(h * t), int(w * r), int(h * b))
+        mark = im.convert("RGB").crop(box)
+    # The masters are not all the same shape as the site's derived copies, so the
+    # fractions above do not land on an exactly square region. A few per cent is
+    # fine and gets cropped away by fit(); more than that means the region has been
+    # edited to something this code should not silently stretch.
+    skew = abs(mark.width - mark.height) / max(mark.width, mark.height)
+    if skew > 0.02:
+        print(f"[warn]  excerpt mark: region is {mark.width}x{mark.height}, "
+              f"{skew:.0%} off square. Squashing the painting is not on. Not written.")
+        return False
+    # fit, not resize: the residue is cropped, never stretched
+    mark = ImageOps.fit(mark, (MARK_EDGE, MARK_EDGE), method=LANCZOS)
+    mark.info.clear()
+    mark.save(MARK_OUT, "JPEG", quality=QUALITY, optimize=True)
+    mark.save(MARK_OUT.with_suffix(".webp"), "WEBP",
+              quality=WEBP_QUALITY, method=6)
+    print(f"[write] {MARK_OUT.name}  ({MARK_EDGE}x{MARK_EDGE} from {src.name}, "
+          f"the loose end)")
+    return True
+
+
 # == collection tiles for /paintings/ ==
 # One entry per gallery. The crop is decided here and baked into the file, rather
 # than loaded full-size and cropped by CSS: these are 220 CSS px at their widest, so
@@ -323,6 +379,8 @@ def main() -> int:
     if not _write_logo_dark(args.check):
         stale += 1
     if not _write_collection_thumbs(args.check):
+        stale += 1
+    if not _write_excerpt_mark(args.check):
         stale += 1
     if stale == 0:
         print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")
