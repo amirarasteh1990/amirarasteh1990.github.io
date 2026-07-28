@@ -31,8 +31,12 @@
    v9: /sedaha/languages/ retired to a redirect, and the download + share bar added
        to the head of every Opening page.
    v10: the "Arasteh" wordmark dropped from the nav -- Home was the same link -- and
-        the tabs moved to the start of the bar. */
-var VERSION = 'arasteh-v10';
+        the tabs moved to the start of the bar.
+   v11: the all-languages list uses the quick-start box, with names shrunk to fit.
+   v12: the excerpt image is the author's own crop of the loose end, used unturned.
+        Same filename, different pixels and a different shape -- so a cached copy
+        would be both the wrong picture and the wrong width. */
+var VERSION = 'arasteh-v12';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

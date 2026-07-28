@@ -85,6 +85,32 @@
     revising: 'The complete edition is being revised.'
   };
 
+  /* Every door is the same size, so a name that does not fit gives up type size
+     rather than making its box wider -- one wide box among a hundred is what turns
+     a grid back into a list. Hindi, Armenian and Nederlands need a step or two;
+     most names need none.
+
+     The box clips its overflow, so scrollHeight past clientHeight is the test. It
+     is measured, not guessed from character counts, because a name's width depends
+     on its script: 中文 is two characters and wider than five Latin ones. Only ever
+     shrinks, never grows, and stops at a floor where a name would stop being
+     readable. The element must be laid out when this runs. */
+  var FIT_FLOOR = 0.74;              // rem
+  var FIT_STEPS = 7;
+  function fitLabel(a) {
+    var size = 1.18;                 // .lang-box's own font-size
+    for (var i = 0; i < FIT_STEPS && a.scrollHeight > a.clientHeight + 1; i++) {
+      size -= 0.06;
+      if (size < FIT_FLOOR) { size = FIT_FLOOR; }
+      a.style.fontSize = size.toFixed(2) + 'rem';
+      if (size === FIT_FLOOR) { break; }
+    }
+  }
+  function fitAll(root) {
+    var boxes = root.querySelectorAll('.lang-box');
+    for (var i = 0; i < boxes.length; i++) { fitLabel(boxes[i]); }
+  }
+
   function el(tag, cls, text) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;
@@ -302,6 +328,14 @@
     fallback.replaceWith(a);
   })();
 
+  /* The nine above the search are in the page from the start, and one of them may
+     have just been swapped for the visitor's own language, which can be a longer
+     name than the one it replaced. Same treatment, same rule. */
+  (function () {
+    var row = document.querySelector('.quick-row');
+    if (row) { fitAll(row); }
+  })();
+
   /* Every language, built the first time it is asked for. The doorway carries no
      catalogue in its markup: 113 rows are what made the old page a list instead of
      a page. Opened, it is a plain A-Z of names, each going to its own opening; the
@@ -341,6 +375,7 @@
         group.appendChild(row);
         box.insertBefore(group, foot);
       });
+      fitAll(box);          // now that they are in the document and measurable
     });
   })();
 

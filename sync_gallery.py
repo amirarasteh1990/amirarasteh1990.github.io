@@ -136,17 +136,20 @@ def _write_band(check: bool) -> bool:
 # The source is the site's own derived copy, not the CoverPics master, so the mark
 # still builds when the book repo is not beside the site. _write_band takes its
 # source the same way.
-MARK_SRC = OUT / "01.jpg"         # the opening painting
+# The master where it exists -- a crop this tight needs the pixels -- and the site's
+# own copy where it does not, so the mark still builds without the book repo.
+_MASTER_01 = COVERPICS / "01.jpg"
+MARK_SRC = _MASTER_01 if _MASTER_01.is_file() else OUT / "01.jpg"
 MARK_OUT = SITE / "assets" / "img" / "opening-mark.jpg"
-# The element is about 125 CSS px wide (three lines tall, proportions kept), so 256
-# covers a 2x display with a little over. Nothing is cropped, so no region here.
+# The author picked the crop: the loose end alone, on bare canvas, with none of the
+# tangle it runs into. As it is -- no turn, no flip.
+MARK_REGION = (0.000, 0.870, 0.090, 0.975)   # left, top, right, bottom, as fractions
+# 9% of the canvas is 135px on the site's own copy, which would have to be blown up
+# to reach a 2x display. The CoverPics master is ~5500px wide, so the same crop comes
+# out around 490px and is downscaled instead. The site copy is the fallback for when
+# the book repo is not beside the site; it prints a warning rather than going soft
+# without saying so.
 MARK_WIDTH = 256
-# Turned in the file, not by CSS. A transform on the element would be re-composited
-# on every scroll and would rotate the box as well as the paint; this is one asset
-# that arrives the right way up. Same reasoning as the band behind the language
-# boxes. Upside down, the weight of the tangle sits at the top and the bare canvas
-# falls to the bottom, where the text now sits.
-MARK_TURN = 180
 
 
 def _write_excerpt_mark(check: bool) -> bool:
@@ -163,16 +166,21 @@ def _write_excerpt_mark(check: bool) -> bool:
         print(f"[stale] {MARK_OUT.name}")
         return False
     with Image.open(src) as im:
-        mark = im.convert("RGB").rotate(MARK_TURN, expand=True)
-        ratio = mark.height / mark.width
-        # scaled, never fitted or cropped: the whole canvas, in its own proportions
-        mark = mark.resize((MARK_WIDTH, round(MARK_WIDTH * ratio)), LANCZOS)
+        w, h = im.size
+        l, t, r, b = MARK_REGION
+        mark = im.convert("RGB").crop((int(w * l), int(h * t), int(w * r), int(h * b)))
+    if mark.width < MARK_WIDTH:
+        print(f"[warn]  excerpt mark: the crop is only {mark.width}px wide, so it is "
+              f"being enlarged to {MARK_WIDTH}. Put CoverPics beside the site for a "
+              f"sharp one.")
+    ratio = mark.height / mark.width
+    mark = mark.resize((MARK_WIDTH, round(MARK_WIDTH * ratio)), LANCZOS)
     mark.info.clear()
     mark.save(MARK_OUT, "JPEG", quality=QUALITY, optimize=True)
     mark.save(MARK_OUT.with_suffix(".webp"), "WEBP",
               quality=WEBP_QUALITY, method=6)
     print(f"[write] {MARK_OUT.name}  ({mark.width}x{mark.height} from {src.name}, "
-          f"the whole painting, uncropped, turned {MARK_TURN})")
+          f"the loose end as it is: no turn, no flip)")
     return True
 
 
