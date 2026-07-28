@@ -22,8 +22,9 @@
    v4: the collection tiles on /paintings/, and the gallery CSS moved out of that
        page's inline <style> into the shared sheet -- so a cached stylesheet would
        now leave the Sounds gallery with no gallery rules at all.
-   v5: the loose-end mark beside the excerpt on /sedaha/. */
-var VERSION = 'arasteh-v5';
+   v5: the loose-end mark beside the excerpt on /sedaha/.
+   v6: the logo panel stripped to one treatment at every width. */
+var VERSION = 'arasteh-v6';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
