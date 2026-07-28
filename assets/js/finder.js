@@ -20,6 +20,26 @@
   var result = document.getElementById('langResult');
   if (!input || !result || !LANGS.length) return;
 
+  /* The catalogue page at /sedaha/languages/ is retired: the expandable list on
+     THIS page holds the same languages, already grouped by whether the whole book
+     exists or only the opening. Three places used to send the reader off to that
+     page; they now open the list in place, which is both faster and one page fewer
+     to keep in step. The href stays a real fragment so that with no scripting the
+     browser still jumps to the disclosure and the reader can open it. */
+  function toAllLangs(a) {
+    a.href = '#allLangs';
+    a.addEventListener('click', function () {
+      var box = document.getElementById('allLangs');
+      if (box) box.open = true;
+    });
+    return a;
+  }
+  // and so a link from another page, /sedaha/#allLangs, arrives with it open
+  if (location.hash === '#allLangs') {
+    var opened = document.getElementById('allLangs');
+    if (opened) opened.open = true;
+  }
+
   /* Fold a name to something a keyboard without that language can produce: the
      accents decompose away, and the letters that do not decompose (o with a
      stroke is one character, not o plus a mark) are mapped by hand. So turkce
@@ -109,8 +129,7 @@
        The count comes from the data, so the sentence cannot go stale again. */
     var whole = LANGS.filter(function (L) { return L.files && L.files.length; }).length;
     var note = el('p', 'lr-meanwhile-note', 'Until it is ready, the whole book can be read in ');
-    var all = el('a', null, whole + ' other languages');
-    all.href = '/sedaha/languages/';
+    var all = toAllLangs(el('a', null, whole + ' other languages'));
     note.appendChild(all);
     note.appendChild(document.createTextNode(', among them'));
     wrap.appendChild(note);
@@ -190,8 +209,7 @@
     });
     if (list.length > SHOW) {
       var all = el('p', 'lr-actions');
-      var a = el('a', 'btn', 'View all matches');
-      a.href = '/sedaha/languages/';
+      var a = toAllLangs(el('a', 'btn', 'View all matches'));
       all.appendChild(a);
       result.appendChild(all);
     }
@@ -202,8 +220,7 @@
     result.textContent = '';
     result.appendChild(el('p', 'lr-state', 'No language matches “' + q + '”.'));
     var acts = el('p', 'lr-actions');
-    var browse = el('a', 'btn', 'Browse all languages');
-    browse.href = '/sedaha/languages/';
+    var browse = toAllLangs(el('a', 'btn', 'Browse all languages'));
     var write = el('a', 'btn', 'Write to Amir');
     write.href = 'mailto:amirarasteh1990@gmail.com?subject=' +
       encodeURIComponent('Sedaha in ' + q);

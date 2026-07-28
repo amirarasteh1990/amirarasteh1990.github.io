@@ -173,6 +173,10 @@ def hand_written() -> None:
     import build_read_pages as gen
 
     hand = ["sedaha/read/index.html", "sedaha/read/fa/index.html", "sedaha/read/da/index.html"]
+    bare = [rel for rel in hand
+            if 'class="op-bar"' not in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: the top action bar is there too", not bare,
+           ", ".join(bare))
     for what, want in (("hreflang cluster", gen.alternates()),
                        ("reading toolbar", gen.reader_tools_html())):
         off = [rel for rel in hand
@@ -402,7 +406,7 @@ def live() -> None:
     pages_to_check = {
         "/": SITE / "index.html",
         "/sedaha/": SITE / "sedaha" / "index.html",
-        "/sedaha/languages/": SITE / "sedaha" / "languages" / "index.html",
+        # /sedaha/languages/ is retired: a redirect stub, nothing to compare
         "/assets/css/style.css": SITE / "assets" / "css" / "style.css",
     }
     stamp = str(int(datetime.datetime.now(datetime.timezone.utc).timestamp()))

@@ -103,6 +103,14 @@ def pages() -> list[Path]:
     return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
 
 
+# The retired /sedaha/languages/ is a redirect stub: no nav, no head block,
+# nothing to keep in step. Stamping a shell into a signpost would only make it
+# heavier than the page it points at.
+_pages = pages
+def pages():
+    return [p for p in _pages()
+            if p.relative_to(SITE).as_posix() != "sedaha/languages/index.html"]
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--check", action="store_true",

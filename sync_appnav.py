@@ -74,8 +74,7 @@ def appnav_html(current: str = "") -> str:
         # say, an Italian one. dir="ltr" for the same reason on the RTL editions.
         '<nav class="appnav" lang="en" dir="ltr" aria-label="Primary">\n'
         '  <div class="appnav-inner">\n'
-        '    <a class="appnav-brand" href="/">Arasteh</a>\n'
-        '    <ul class="appnav-tabs">\n'
+            '    <ul class="appnav-tabs">\n'
         + "\n".join(lis) + "\n"
         '    </ul>\n'
         '  </div>\n'
@@ -122,6 +121,14 @@ def restamp(html: str, current: str) -> str:
 def pages() -> list[Path]:
     return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
 
+
+# The retired /sedaha/languages/ is a redirect stub: no nav, no head block,
+# nothing to keep in step. Stamping a shell into a signpost would only make it
+# heavier than the page it points at.
+_pages = pages
+def pages():
+    return [p for p in _pages()
+            if p.relative_to(SITE).as_posix() != "sedaha/languages/index.html"]
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])

@@ -248,8 +248,12 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    A FLEX row, not an absolutely positioned mark. Absolute took the painting out of
    the paragraph's flow, so the paragraph stayed one line tall while the picture
    hung below it, over the line beneath. As a flex item the paragraph grows to hold
-   it, and align-items:center puts the painting's middle on the text's middle
-   whether the quote runs to one line or five.
+   it.
+
+   Aligned to the FOOT, so the last line of the quote sits on the painting's bottom
+   edge and any earlier lines stack upward into it. The painting is turned 180 in
+   the file for this: upside down its weight hangs from the top and the bare canvas
+   falls to the bottom, which is the corner the text now occupies.
 
    Height is stated in the text's own units -- three times the line box -- so it
    tracks the type at every size instead of being a pixel count that only suits one.
@@ -260,7 +264,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    A pseudo-element, so it is decorative by construction: a screen reader never
    meets it, and the sentence is not announced twice. */
 .excerpt{--mark-h:calc(3 * 1.7em);          /* three lines of this paragraph */
-  display:flex;align-items:center;gap:14px;margin:0 0 16px;
+  display:flex;align-items:flex-end;gap:14px;margin:0 0 16px;
   font-family:var(--serif);
   font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
 .excerpt::before{content:"";flex:none;
@@ -682,6 +686,26 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 /* reading toolbar: type size, measure, colours. Wordless, so it needs no
    translating; it sits above the text, aligned to the end of the measure, and
    stays out of the way until wanted. */
+/* One bar above the opening: what you can take away on the left, how you want to
+   read on the right. The downloads used to live only at the foot of the page, which
+   asked a reader who already knew they wanted the book to scroll past the whole
+   opening to reach it. */
+.op-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  width:100%;max-width:var(--read-measure,34em);margin:0 auto var(--flow-control)}
+.op-bar .reader-tools,.op-bar .op-actions{width:auto;max-width:none;margin:0}
+.op-actions{display:flex;align-items:center;gap:6px}
+/* the same height and border as the reading controls opposite them, so the bar
+   reads as one row of controls rather than two unrelated clusters */
+.op-act{display:grid;place-items:center;height:34px;padding:0 10px;
+  border:1px solid var(--line);border-radius:8px;background:transparent;
+  color:var(--muted);font-family:var(--serif);font-size:.72rem;font-weight:600;
+  letter-spacing:.06em;text-decoration:none;cursor:pointer;
+  transition:border-color .15s ease,color .15s ease}
+.op-act:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.op-act:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.op-act-icon{width:34px;padding:0}
+.op-act-icon svg{width:18px;height:18px;fill:none;stroke:currentColor}
+@media (prefers-reduced-motion:reduce){.op-act{transition:none}}
 .reader-tools{display:flex;justify-content:flex-end;gap:6px;
   width:100%;max-width:var(--read-measure,34em);margin:0 auto var(--flow-control)}
 .rt{display:grid;place-items:center;width:34px;height:34px;padding:0;
@@ -735,10 +759,6 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   backdrop-filter:saturate(1.25) blur(10px)}
 .appnav-inner{max-width:var(--max);margin:0 auto;padding:0 16px;
   display:flex;align-items:center;gap:16px}
-.appnav-brand{display:inline-flex;align-items:center;
-  font-family:var(--serif);font-weight:600;font-size:1.18rem;color:var(--ink);
-  letter-spacing:.01em;white-space:nowrap}
-.appnav-brand:hover{text-decoration:none;color:var(--accent)}
 .appnav-tabs{list-style:none;margin:0;padding:0;display:flex}
 .appnav-tabs a{display:flex;align-items:center;gap:8px;color:#5a5344;
   font-weight:600;text-decoration:none;border-radius:10px}
@@ -753,8 +773,9 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   html{scroll-padding-top:72px}               /* #main anchor clears the bar */
   .appnav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
     box-shadow:0 1px 0 rgba(0,0,0,.02),0 6px 20px rgba(0,0,0,.04)}
-  .appnav-inner{height:var(--appnav-h);justify-content:space-between}
-  .appnav-brand{margin-inline-end:auto}
+  /* the tabs start where the page's own text starts; nothing precedes them now
+     that the wordmark is gone, and Home is the link it duplicated */
+  .appnav-inner{height:var(--appnav-h);justify-content:flex-start}
   .appnav-tabs{gap:4px}
   .appnav-tabs a{padding:8px 14px}
   .appnav-tabs a:hover{background:rgba(138,90,59,.08);color:var(--accent)}
@@ -767,7 +788,6 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
     border-top:1px solid var(--line);box-shadow:0 -2px 16px rgba(0,0,0,.06);
     padding-bottom:env(safe-area-inset-bottom)}
   .appnav-inner{padding:0;gap:0;align-items:stretch}
-  .appnav-brand{display:none}                 /* the page's own header carries the brand */
   .appnav-tabs{flex:1;justify-content:space-around;align-items:stretch}
   .appnav-tabs li{flex:1;display:flex}
   .appnav-tabs a{flex:1;flex-direction:column;justify-content:center;gap:3px;

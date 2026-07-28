@@ -1,6 +1,6 @@
 /* The other names people call a language.
 
-   Both language finders (on /sedaha/ and /sedaha/languages/) used to match only
+   Both language finders (on /sedaha/ and the retired catalogue) used to match only
    the two names printed in the row: the language's own name, and its English one.
    So someone typing the single likeliest word on a Persian book's website --
    "Farsi" -- was told no language matched. Same for Bangla, Mandarin, Filipino,

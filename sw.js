@@ -24,8 +24,15 @@
        now leave the Sounds gallery with no gallery rules at all.
    v5: the loose-end mark beside the excerpt on /sedaha/.
    v6: the logo panel stripped to one treatment at every width.
-   v7: the excerpt painting, whole and centred against the text. */
-var VERSION = 'arasteh-v7';
+   v7: the excerpt painting, whole and centred against the text.
+   v8: that painting turned 180 and the text moved to its foot. The filename did
+       not change, only the pixels -- which is exactly the case a cache-first asset
+       strategy gets wrong without a bump: the new CSS with the old picture.
+   v9: /sedaha/languages/ retired to a redirect, and the download + share bar added
+       to the head of every Opening page.
+   v10: the "Arasteh" wordmark dropped from the nav -- Home was the same link -- and
+        the tabs moved to the start of the bar. */
+var VERSION = 'arasteh-v10';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
