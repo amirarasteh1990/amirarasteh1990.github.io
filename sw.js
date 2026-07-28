@@ -23,8 +23,9 @@
        page's inline <style> into the shared sheet -- so a cached stylesheet would
        now leave the Sounds gallery with no gallery rules at all.
    v5: the loose-end mark beside the excerpt on /sedaha/.
-   v6: the logo panel stripped to one treatment at every width. */
-var VERSION = 'arasteh-v6';
+   v6: the logo panel stripped to one treatment at every width.
+   v7: the excerpt painting, whole and centred against the text. */
+var VERSION = 'arasteh-v7';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

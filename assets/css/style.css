@@ -241,31 +241,38 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .book-hero .meta{flex:1 1 320px}
 .book-hero h1{margin:0 0 6px;font-size:2.2rem}
 .book-hero .byline{color:var(--muted);margin:0 0 16px}
-/* The mark beside the excerpt IS the painting, not an ornament. The line reads
-   "... the loose end of a thread of words that were once sounds ...", and this is
-   that thread: the corner of the opening painting where it trails in and runs into
-   the tangle. It replaces a flat accent rule that meant nothing.
+/* The painting beside the excerpt IS the line, not an ornament: "... the loose end
+   of a thread of words that were once sounds ..." is what the canvas shows, whole
+   and uncropped.
 
-   It has to be a crop, not the painting shrunk. Whole, the canvas is 29% bare
-   ground with fine linear detail, so at this size the thread vanishes and leaves a
-   pale smudge; cropped to the loose end, the same 56px carries it plainly and the
-   region is only 4% bare ground, so it is not a bright chip on a dark page either.
+   A FLEX row, not an absolutely positioned mark. Absolute took the painting out of
+   the paragraph's flow, so the paragraph stayed one line tall while the picture
+   hung below it, over the line beneath. As a flex item the paragraph grows to hold
+   it, and align-items:center puts the painting's middle on the text's middle
+   whether the quote runs to one line or five.
+
+   Height is stated in the text's own units -- three times the line box -- so it
+   tracks the type at every size instead of being a pixel count that only suits one.
+   Width is that height times the painting's own ratio, so the proportions are kept
+   by arithmetic rather than by trust, and background-size:contain guarantees it
+   even if the two disagree by a rounding hair.
 
    A pseudo-element, so it is decorative by construction: a screen reader never
    meets it, and the sentence is not announced twice. */
-.excerpt{--mark:56px;position:relative;margin:0 0 16px;
-  padding:2px 0 2px calc(var(--mark) + 14px);
+.excerpt{--mark-h:calc(3 * 1.7em);          /* three lines of this paragraph */
+  display:flex;align-items:center;gap:14px;margin:0 0 16px;
   font-family:var(--serif);
   font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
-.excerpt::before{content:"";position:absolute;inset-inline-start:0;inset-block-start:3px;
-  width:var(--mark);height:var(--mark);border-radius:3px;
-  background:url(/assets/img/loose-end.jpg) center/cover}
-@supports (background-image:image-set(url(/assets/img/loose-end.webp) type("image/webp"))){
+.excerpt::before{content:"";flex:none;
+  block-size:var(--mark-h);
+  inline-size:calc(var(--mark-h) * 1500 / 1096);   /* the painting's proportions */
+  border-radius:3px;
+  background:url(/assets/img/opening-mark.jpg) center/contain no-repeat}
+@supports (background-image:image-set(url(/assets/img/opening-mark.webp) type("image/webp"))){
   .excerpt::before{background-image:image-set(
-    url(/assets/img/loose-end.webp) type("image/webp"),
-    url(/assets/img/loose-end.jpg) type("image/jpeg"))}
+    url(/assets/img/opening-mark.webp) type("image/webp"),
+    url(/assets/img/opening-mark.jpg) type("image/jpeg"))}
 }
-@media (max-width:480px){.excerpt{--mark:44px}}
 /* shared lead paragraph under a page h1 */
 .lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control)}/* the book's own scripts, one after another: the hundred alphabets are the
    work's plainest description. Held still under prefers-reduced-motion. */
