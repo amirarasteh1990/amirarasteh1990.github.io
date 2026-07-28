@@ -43,7 +43,7 @@ apply(get())})();</script>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>
 <!-- PWA:END -->
 </head>
-<body>
+<body class="paintings-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <!-- APPNAV:START (managed by sync_appnav.py — edit there, not the pages) -->
 <nav class="appnav" lang="en" dir="ltr" aria-label="Primary">
@@ -65,27 +65,33 @@ apply(get())})();</script>
   <section>
     <h1>Paintings</h1>
 
-    <div class="cards">
-      <a class="card" href="/paintings/sounds/">
-        <span class="cover"><picture><source srcset="/assets/img/paintings/sounds/th/cover.webp" type="image/webp"><img src="/assets/img/paintings/sounds/th/cover.jpg" width="412" height="560" alt="Paintings from Sedaha (Sounds), Book One"></picture></span>
-        <div class="body">
-          <h3>Sedaha (Sounds) — Book One</h3>
-          <p>The paintings made for the book.</p>
+    <!-- Tiles, not cards: the whole tile is the link, and the gallery's name is
+         written across the foot of its own painting rather than in a white body
+         underneath. The image is decorative here -- the title is the link's
+         accessible name, so alt="" keeps a screen reader from saying it twice. -->
+    <div class="painting-collections">
+      <a class="painting-collection" href="/paintings/sounds/" data-gallery="sounds">
+        <picture class="painting-collection__media">
+          <source srcset="/assets/img/paintings/index/sounds.webp" type="image/webp">
+          <img src="/assets/img/paintings/index/sounds.jpg" width="480" height="360"
+               alt="" decoding="async">
+        </picture>
+        <!-- a div, not the span the sketch used: a span may hold only phrasing
+             content, and a heading inside one is invalid. <a> is transparent, so
+             flow content is fine here. -->
+        <div class="painting-collection__overlay">
+          <h2 class="painting-collection__title">Sedaha (Sounds) — Book One</h2>
         </div>
       </a>
-      <article class="card placeholder">
-        <div>
-          <h3>Landmarks of the World</h3>
-          <p>Coming soon.</p>
-        </div>
-      </article>
-      <article class="card placeholder">
-        <div>
-          <h3>A yarn-laden truck</h3>
-          <p>Coming soon.</p>
-        </div>
-      </article>
     </div>
+
+    <!-- Landmarks of the World and the yarn truck were tiles saying "Coming soon"
+         over nothing at all. A tile with no painting on it is an empty frame, and
+         next to a real gallery it reads as a link that is broken rather than one
+         that does not exist yet. They are named here instead, and become tiles the
+         day there is something to show. -->
+    <p class="muted-note">Landmarks of the World and A yarn-laden truck are still
+      being painted.</p>
     <p class="muted-note">All artwork &copy; Amir Arasteh. All Rights Reserved.</p>
   </section>
 </main>

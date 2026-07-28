@@ -127,6 +127,53 @@ def _write_band(check: bool) -> bool:
     return True
 
 
+# == collection tiles for /paintings/ ==
+# One entry per gallery. The crop is decided here and baked into the file, rather
+# than loaded full-size and cropped by CSS: these are 220 CSS px at their widest, so
+# shipping a gallery-sized painting to be squeezed by object-fit would be sending
+# twenty times the pixels anyone sees. `centering` is where in the source the 4:3
+# window sits -- 0.5, 0.42 keeps the poured centre of the Sounds painting and drops
+# more of the foot than the head.
+COLLECTION_DIR = SITE / "assets" / "img" / "paintings" / "index"
+COLLECTION_SIZE = (480, 360)          # 2x a 220px tile, with room over
+COLLECTION_THUMBS = {
+    "sounds": {"source": "00_CoverPhoto", "centering": (0.5, 0.42)},
+}
+
+
+def _write_collection_thumbs(check: bool) -> bool:
+    """A 4:3 tile per gallery, for the collection index."""
+    ok = True
+    COLLECTION_DIR.mkdir(parents=True, exist_ok=True)
+    for slug, spec in COLLECTION_THUMBS.items():
+        src = next((m for m in _masters() if m.stem == spec["source"]), None)
+        if src is None:
+            print(f"[warn]  collection tile {slug}: master {spec['source']} not found")
+            ok = False
+            continue
+        out = COLLECTION_DIR / f"{slug}.jpg"
+        fresh = (out.is_file() and out.stat().st_mtime >= src.stat().st_mtime
+                 and _twin_is_current(out))
+        if fresh:
+            print(f"[ok]    paintings/index/{out.name}: current")
+            continue
+        if check:
+            print(f"[stale] paintings/index/{out.name}")
+            ok = False
+            continue
+        with Image.open(src) as im:
+            tile = ImageOps.fit(im.convert("RGB"), COLLECTION_SIZE,
+                                method=LANCZOS, centering=spec["centering"])
+        tile.info.clear()             # no EXIF, no ICC: it is a 220px tile
+        tile.save(out, "JPEG", quality=BAND_JPEG_QUALITY, optimize=True)
+        tile.save(out.with_suffix(".webp"), "WEBP",
+                  quality=BAND_WEBP_QUALITY, method=6)
+        print(f"[write] paintings/index/{out.name}  "
+              f"({tile.width}x{tile.height} from {src.name}, "
+              f"centred {spec['centering'][0]:.2f},{spec['centering'][1]:.2f})")
+    return ok
+
+
 LOGO = SITE / "assets" / "img" / "logo-lockup.png"
 LOGO_DARK = SITE / "assets" / "img" / "logo-lockup-dark.png"
 LOGO_INK = (0xEC, 0xE3, 0xD4)     # the dark palette's warm cream
@@ -274,6 +321,8 @@ def main() -> int:
     if not _write_band(args.check):
         stale += 1
     if not _write_logo_dark(args.check):
+        stale += 1
+    if not _write_collection_thumbs(args.check):
         stale += 1
     if stale == 0:
         print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")

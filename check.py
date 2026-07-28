@@ -356,6 +356,33 @@ def band() -> None:
            f"{kb} KB webp" + ("" if kb <= 48 else "; too heavy for a chip texture"))
 
 
+def paintings() -> None:
+    """The collection index shows the galleries that exist, and only those.
+
+    The failure this guards against is the one the index started with: tiles saying
+    "Coming soon" over no image at all, sitting beside a real gallery and reading
+    like links that are broken rather than ones that do not exist yet. So the tile
+    count is held to the gallery folders on disk, and every tile must have a picture
+    to show."""
+    page = (SITE / "paintings" / "index.html").read_text(encoding="utf-8")
+    tiles = re.findall(r'<a class="painting-collection"[^>]*data-gallery="([^"]+)"', page)
+    folders = sorted(p.name for p in (SITE / "paintings").iterdir() if p.is_dir())
+    report("every gallery on disk has a tile, and no tile is invented",
+           sorted(tiles) == folders, f"{tiles} against {folders}")
+
+    missing = [g for g in tiles
+               if not (SITE / "assets" / "img" / "paintings" / "index" / f"{g}.webp").is_file()]
+    report("every tile has a painting to show", not missing, ", ".join(missing))
+
+    # the generic card system belongs to the home page; this index must not reach into it
+    css = (SITE / "assets" / "css" / "style.css").read_text(encoding="utf-8")
+    report("the paintings index overrides no shared card rule",
+           not re.search(r"\.paintings-page\s+\.cards?\b", css))
+    report("and the gallery's CSS is shared, not inlined per page",
+           "<style>" not in (SITE / "paintings" / "sounds" / "index.html")
+                            .read_text(encoding="utf-8"))
+
+
 LIVE = "https://arasteh.art"
 
 
@@ -438,6 +465,7 @@ def main() -> int:
     availability()
     logo()
     band()
+    paintings()
 
     print()
     if failures:
