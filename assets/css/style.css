@@ -267,25 +267,27 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   min-block-size:60px;display:inline-flex;align-items:center;justify-content:center;
   padding:8px 10px;text-align:center;line-height:1.12;white-space:normal;
   overflow-wrap:anywhere;text-wrap:balance;unicode-bidi:isolate}
-/* Each one is a small door with the cover painted on it. The cover is portrait, so
-   sync_gallery.py derives it turned on its side (book-cover-band): CSS cannot
-   rotate a background, and rotating a pseudo-element per box would repaint on every
-   scroll. A scrim sits over the painting so the name stays legible on top of it.
-   One class, used by the five above the search and by all 113 inside the list. */
+/* Each one is a small door with the painting on it — the painting alone, not the
+   cover: a hundred chips each wearing a miniature book jacket read as clutter. The
+   painting stands upright, so sync_gallery.py derives it laid down
+   (book-painting-band): CSS cannot rotate a background, and rotating a
+   pseudo-element per box would repaint on every scroll, a hundred times over once
+   the catalogue is open. A scrim sits over it so the name stays legible.
+   One class, used by the nine above the search and by all 113 inside the list. */
 .lang-box{position:relative;isolation:isolate;overflow:hidden;
   display:inline-flex;align-items:center;justify-content:center;
   min-height:54px;padding:10px 20px;
   border:1px solid rgba(0,0,0,.18);border-radius:10px;
-  background-image:url(/assets/img/book-cover-band.jpg);
+  background-image:url(/assets/img/book-painting-band.jpg);
   background-size:cover;background-position:center;
   font-family:var(--serif);font-size:1.18rem;color:#fdf8ee;text-decoration:none;
   text-shadow:0 1px 3px rgba(0,0,0,.65);
   box-shadow:0 1px 3px rgba(0,0,0,.18);
   transition:transform .15s ease,box-shadow .15s ease}
-@supports (background-image:image-set(url(/assets/img/book-cover-band.webp) type("image/webp"))){
+@supports (background-image:image-set(url(/assets/img/book-painting-band.webp) type("image/webp"))){
   .lang-box{background-image:image-set(
-    url(/assets/img/book-cover-band.webp) type("image/webp"),
-    url(/assets/img/book-cover-band.jpg) type("image/jpeg"))}
+    url(/assets/img/book-painting-band.webp) type("image/webp"),
+    url(/assets/img/book-painting-band.jpg) type("image/jpeg"))}
 }
 .lang-box::before{content:"";position:absolute;inset:0;z-index:-1;
   background:rgba(26,18,11,.56);transition:background .15s ease}

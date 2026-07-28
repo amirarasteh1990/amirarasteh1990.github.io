@@ -70,20 +70,40 @@ def _save_resized(im: Image.Image, dest: Path, edge: int) -> None:
     resized.save(dest.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
 
 
-BAND_OUT = SITE / "assets" / "img" / "book-cover-band.jpg"
-BAND_EDGE = 640          # it is a texture behind five small chips, never examined
+BAND_SRC = OUT / "cover.jpg"     # the painting itself, before covers.py letters it
+BAND_OUT = SITE / "assets" / "img" / "book-painting-band.jpg"
+# The largest box this sits behind is about 150 CSS px wide. background-size:cover on
+# a portrait painting matches the width and crops the height, so 512 is a 3x display
+# at 170 px, with room over. Bigger is pixels no one can see.
+BAND_EDGE = 512
+BAND_TURN = 270          # the painting stands upright; this lays it down
+# Lower than the galleries, because nobody looks at this the way they look at those.
+# Measured at what a box actually renders (112x60 at 2x, cover-cropped): dropping the
+# WebP from 80 to 68 costs 0.7/255 of mean error, well under noticing, and a quarter
+# of the file. The scrim over it narrows the visible range further still.
+BAND_WEBP_QUALITY = 68
+BAND_JPEG_QUALITY = 78
 
 
 def _write_band(check: bool) -> bool:
-    """The cover turned on its side, for the quick-start chips on /sedaha/.
+    """A quiet band of the painting, behind the language boxes.
 
-    A background image cannot be rotated in CSS, and rotating five pseudo-elements
-    to fake it costs paint on every scroll. One small derived file instead, made
-    the same way as every other derived image here so it is never hand-edited."""
-    if not BOOK_COVER_OUT.is_file():
+    Two things it is deliberately NOT. It is not the cover: the cover carries the
+    title and the author's name, and a hundred chips each wearing a tiny book jacket
+    read as clutter, not as texture. This comes from 00_CoverPhoto, the painting on
+    its own, so nothing legible survives the crop.
+
+    And it is not rotated in CSS. A background image cannot be turned, and turning a
+    pseudo-element per box repaints on every scroll, at a hundred boxes once the
+    catalogue is open. The turn is baked into the file instead: one asset, no
+    transform, nothing for the compositor to redo.
+
+    No ICC profile or EXIF is carried over. It is a texture under a dark scrim; the
+    metadata would be a third of the file."""
+    if not BAND_SRC.is_file():
         return True
     fresh = (BAND_OUT.is_file()
-             and BAND_OUT.stat().st_mtime >= BOOK_COVER_OUT.stat().st_mtime
+             and BAND_OUT.stat().st_mtime >= BAND_SRC.stat().st_mtime
              and _twin_is_current(BAND_OUT))
     if fresh:
         print(f"[ok]    {BAND_OUT.name}: current")
@@ -91,13 +111,19 @@ def _write_band(check: bool) -> bool:
     if check:
         print(f"[stale] {BAND_OUT.name}")
         return False
-    with Image.open(BOOK_COVER_OUT) as im:
-        turned = im.convert("RGB").rotate(90, expand=True)
-        scale = BAND_EDGE / max(turned.size)
-        turned = turned.resize((round(turned.width * scale), round(turned.height * scale)), LANCZOS)
-        turned.save(BAND_OUT, "JPEG", quality=QUALITY, optimize=True)
-        turned.save(BAND_OUT.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
-    print(f"[write] {BAND_OUT.name}  ({turned.width}x{turned.height})")
+    with Image.open(BAND_SRC) as im:
+        turned = im.convert("RGB").rotate(BAND_TURN, expand=True)
+    scale = BAND_EDGE / max(turned.size)
+    turned = turned.resize((round(turned.width * scale), round(turned.height * scale)),
+                           LANCZOS)
+    # resize carries .info forward, and Pillow writes any icc_profile or exif it
+    # finds there; emptying it is what keeps the file to pixels alone
+    turned.info.clear()
+    turned.save(BAND_OUT, "JPEG", quality=BAND_JPEG_QUALITY, optimize=True)
+    turned.save(BAND_OUT.with_suffix(".webp"), "WEBP",
+                quality=BAND_WEBP_QUALITY, method=6)
+    print(f"[write] {BAND_OUT.name}  ({turned.width}x{turned.height}, "
+          f"the painting laid down, no lettering)")
     return True
 
 

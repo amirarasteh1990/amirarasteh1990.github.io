@@ -335,6 +335,27 @@ def logo() -> None:
            not plaque, plaque[0] if plaque else "")
 
 
+def band() -> None:
+    """The texture behind the language boxes is the painting, not the cover.
+
+    Worth a check because the two look alike at a glance and the wrong one is the
+    cover composition, title lettering and all, tiled behind a hundred chips. The
+    asset is also a decoration under a scrim, so it has a weight ceiling: if it ever
+    creeps back up to gallery quality, that is a mistake, not a decision."""
+    css = (SITE / "assets" / "css" / "style.css").read_text(encoding="utf-8")
+    report("the language boxes no longer wear the cover",
+           "book-cover-band" not in css,
+           "" if "book-cover-band" not in css else "style.css still names the cover band")
+    jpg = SITE / "assets" / "img" / "book-painting-band.jpg"
+    webp = jpg.with_suffix(".webp")
+    if not report("the painting band exists", jpg.is_file() and webp.is_file(),
+                  "" if webp.is_file() else "run python sync_gallery.py"):
+        return
+    kb = webp.stat().st_size // 1024
+    report("the painting band stays a decoration", kb <= 48,
+           f"{kb} KB webp" + ("" if kb <= 48 else "; too heavy for a chip texture"))
+
+
 LIVE = "https://arasteh.art"
 
 
@@ -416,6 +437,7 @@ def main() -> int:
     hand_written()
     availability()
     logo()
+    band()
 
     print()
     if failures:
