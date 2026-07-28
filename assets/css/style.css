@@ -63,6 +63,19 @@
   --bg:#F5EFE3; --surface:#ffffff; --ink:#1f1b16; --muted:#6f675e;
   --paper:#F6EFDB; --line:#e8e2d9; --accent:#8a5a3b; --accent-ink:#ffffff;
   --max:980px; --radius:8px;
+  /* Vertical rhythm, in three steps. The rule is that every gap has exactly ONE
+     owner: the element above it never sets a bottom margin that the element below
+     also sets a top margin for. That is how the quick-start row came to sit hard
+     against the search heading — the row set nothing and the heading set nothing,
+     each assuming the other would.
+       tight    a label and the thing it labels
+       block    two parts of one section doing different jobs
+       section  where one section ends and the next begins
+     They scale with the viewport so the separation survives a phone, where a wrapped
+     row and the next heading are otherwise a few pixels apart. */
+  --gap-tight:12px;
+  --gap-block:clamp(28px,5vw,36px);
+  --gap-section:clamp(40px,8vw,56px);
   --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
   --serif:"EB Garamond",Georgia,"Times New Roman",serif;
 }
@@ -238,7 +251,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    The page asks one thing: which language. So it holds a cover, a title, a line of
    the book, the cycling name, one count, and the search. No cards, no lists, no
    browser: those are the catalogue, and the catalogue is /sedaha/languages/. */
-.finder-panel{max-width:640px;margin:34px auto 0}
+/* the panel owns the gap above itself, so nothing inside it has to */
+.finder-panel{max-width:640px;margin:var(--gap-section) auto 0}
 .finder-panel .section-title{font-size:1.15rem;letter-spacing:.02em;margin:0 0 10px}
 .finder-panel .language-finder{position:static;margin:0;padding:0}
 .doorway-links{margin:22px 0 0;color:var(--muted);font-size:.94rem;text-align:center}
@@ -250,7 +264,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    script's face and read in its own voice. */
 /* it reads into the row beneath it, so it is set as a phrase rather than a label:
    "Pick up the thread in  فارسی  English …" */
-.quick-heading{margin:24px 0 10px;font-family:var(--serif);font-style:italic;
+.quick-heading{margin:0 0 var(--gap-tight);font-family:var(--serif);font-style:italic;
   font-size:1.02rem;font-weight:400;color:var(--muted)}
 /* A wrapping flex row of fixed-width boxes, for one reason a grid cannot give:
    when nine boxes wrap as five and four, the short last row must sit centred under
@@ -262,7 +276,14 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    its own box and keeps its own direction, so an RTL name neither reverses the row
    nor drags itself to one edge. */
 .quick-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;
-  gap:10px;direction:ltr}
+  gap:10px;direction:ltr;margin:0}
+/* The gap below the row belongs to what comes next, not to the row: written as a
+   bottom margin it would have to be cancelled by anything that ever follows the row
+   for a different reason. Being a sibling rule, it holds whether the boxes come out
+   as one line or four, and whether or not the browser has swapped the last one for
+   the visitor's own language — the row is one element either way. */
+.quick-row + .section-title{margin-block-start:var(--gap-block);
+  margin-block-end:var(--gap-tight)}
 .quick-row .lang-box{flex:0 0 112px;inline-size:112px;min-inline-size:0;
   min-block-size:60px;display:inline-flex;align-items:center;justify-content:center;
   padding:8px 10px;text-align:center;line-height:1.12;white-space:normal;
