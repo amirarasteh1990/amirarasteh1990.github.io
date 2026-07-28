@@ -105,7 +105,15 @@
     var others = WHOLE.filter(function (o) { return o.slug !== L.slug; });
     if (!others.length) return null;
     var wrap = el('div', 'lr-meanwhile');
-    wrap.appendChild(el('p', 'lr-meanwhile-note', 'Until it is ready, the whole book is free in'));
+    /* Naming only these three read as though only three existed; there are now 23.
+       The count comes from the data, so the sentence cannot go stale again. */
+    var whole = LANGS.filter(function (L) { return L.files && L.files.length; }).length;
+    var note = el('p', 'lr-meanwhile-note', 'Until it is ready, the whole book can be read in ');
+    var all = el('a', null, whole + ' other languages');
+    all.href = '/sedaha/languages/';
+    note.appendChild(all);
+    note.appendChild(document.createTextNode(', among them'));
+    wrap.appendChild(note);
     var acts = el('p', 'lr-actions');
     others.forEach(function (o) {
       var epub = (o.files || []).filter(function (f) { return f[0] === 'epub'; })[0];
@@ -333,6 +341,10 @@
       if (!found && tag.split('-')[0] !== 'en') found = bySlug[tag.split('-')[0]] || null;
     }
     if (!found) return;
+    /* If the row above already offers it, saying it again here is the site telling
+       the same person the same thing twice. A complete edition lands in the row; an
+       opening-only one has no place there, and gets this line instead. */
+    if (document.querySelector('.quick-row [data-slug="' + found.slug + '"]')) return;
     offer.appendChild(document.createTextNode('Your language appears to be '));
     var b = document.createElement('b');
     b.textContent = found.native;
@@ -362,7 +374,7 @@
      fixed height so a long name cannot shift the page, and the timer stops while
      the tab is hidden rather than animating into an empty room. */
   (function () {
-    var slot = document.getElementById('cyclerSlot');
+    var slot = document.getElementById('cyclerName');
     if (!slot) return;
     var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
     var order = LANGS.slice();

@@ -101,6 +101,76 @@ def _write_band(check: bool) -> bool:
     return True
 
 
+LOGO = SITE / "assets" / "img" / "logo-lockup.png"
+LOGO_DARK = SITE / "assets" / "img" / "logo-lockup-dark.png"
+LOGO_INK = (0xEC, 0xE3, 0xD4)     # the dark palette's warm cream
+
+
+def _write_logo_dark(check: bool) -> bool:
+    """The same logo with its lettering in warm cream, for dark pages.
+
+    The lettering is dark ink and vanishes on a dark ground; a light plaque behind
+    it fixed the contrast and put a box in the middle of a minimal page. So the
+    lettering is recoloured and the background stays transparent.
+
+    THE PAINTING IS NOT TOUCHED. It occupies a solid block of rows at the top; the
+    lettering sits below a clear empty gap. Only pixels below that gap are altered,
+    and only their colour: every alpha value is copied through, so the glyph edges
+    keep their exact shape. Above the gap the file is copied pixel for pixel."""
+    if not LOGO.is_file():
+        return True
+    fresh = (LOGO_DARK.is_file()
+             and LOGO_DARK.stat().st_mtime >= LOGO.stat().st_mtime
+             and _twin_is_current(LOGO_DARK))
+    if fresh:
+        print(f"[ok]    {LOGO_DARK.name}: current")
+        return True
+    if check:
+        print(f"[stale] {LOGO_DARK.name}")
+        return False
+
+    with Image.open(LOGO) as src:
+        out = src.convert("RGBA")
+    w, h = out.size
+    px = out.load()
+
+    # the painting is the block of rows opaque nearly all the way across; the
+    # lettering sits below the first fully clear row after it
+    solid = [y for y in range(h)
+             if sum(1 for x in range(w) if px[x, y][3] > 40) > w * 0.9]
+    gap = next((y for y in range(solid[-1] + 1, h)
+                if all(px[x, y][3] <= 40 for x in range(w))), None) if solid else None
+    if gap is None:
+        print("[warn]  logo: painting and lettering not separable; not written")
+        return False
+
+    # Scoped by POSITION, not by colour. Recolouring the ink colours would have been
+    # neater and is wrong: ten of them are used by the painting as well, so remapping
+    # them repaints it. Only pixels below the clear gap are rewritten, and only their
+    # RGB: every alpha value is copied through, so the glyph edges keep their shape
+    # and everything above the gap is byte-for-byte the original.
+    changed = 0
+    for y in range(gap, h):
+        for x in range(w):
+            r, g, b, a = px[x, y]
+            if a == 0:
+                continue
+            if max(r, g, b) < 150 and max(r, g, b) - min(r, g, b) < 60:
+                px[x, y] = LOGO_INK + (a,)
+                changed += 1
+
+    # The PNG is ~3x the palette original, because a recoloured RGBA cannot go back
+    # to a full palette without requantising the painting. It is a fallback only: a
+    # browser old enough to lack WebP also lacks prefers-color-scheme, so it never
+    # asks for this file at all. The WebP everyone else gets is smaller than the
+    # light PNG.
+    out.save(LOGO_DARK, "PNG", optimize=True)
+    out.save(LOGO_DARK.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
+    print(f"[write] {LOGO_DARK.name}  (lettering below row {gap}: {changed} pixels "
+          f"recoloured; the painting is byte-for-byte the original)")
+    return True
+
+
 def _twin_is_current(jpg: Path) -> bool:
     webp = jpg.with_suffix(".webp")
     return webp.is_file() and webp.stat().st_mtime >= jpg.stat().st_mtime
@@ -176,6 +246,8 @@ def main() -> int:
             print(f"wrote  {jpg.with_suffix('.webp').relative_to(SITE)}")
 
     if not _write_band(args.check):
+        stale += 1
+    if not _write_logo_dark(args.check):
         stale += 1
     if stale == 0:
         print(f"gallery and book cover in sync with {COVERPICS} ({len(_masters())} paintings)")

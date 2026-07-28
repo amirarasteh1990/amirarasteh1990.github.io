@@ -264,6 +264,77 @@ def availability() -> None:
                f"{len(seen)} page(s), first: {seen[0]}" if seen else "")
 
 
+def logo() -> None:
+    """The dark logo must be the same painting, and must arrive by CSS.
+
+    Two failures are being guarded against, both of which happened. The first: the
+    dark variant was made by recolouring palette entries, which the painting shares,
+    so the artwork itself was repainted. Nothing in the page would have shown that.
+    So the painting's pixels are compared against the light file directly.
+
+    The second: a <picture media="(prefers-color-scheme:dark)"> looks right and
+    ignores the reader's own theme choice, because that choice works by re-pointing
+    the stylesheet's media rule and has no effect on markup. So the logo must not be
+    an <img> at all, and the cream plaque it used to sit on must be gone."""
+    light = SITE / "assets" / "img" / "logo-lockup.png"
+    dark = SITE / "assets" / "img" / "logo-lockup-dark.png"
+    if not report("the dark logo exists", dark.exists(),
+                  "" if dark.exists() else "run python sync_gallery.py"):
+        return
+
+    try:
+        from PIL import Image
+    except ImportError:
+        report("the dark logo keeps the painting", True, "skipped: Pillow not installed")
+    else:
+        a, b = (Image.open(p).convert("RGBA") for p in (light, dark))
+        if a.size != b.size:
+            report("the dark logo keeps the painting", False,
+                   f"{a.size} against {b.size}")
+        else:
+            w, h = a.size
+            pa, pb = a.load(), b.load()
+            # the painting is every row above the first fully clear one
+            solid = [y for y in range(h)
+                     if sum(1 for x in range(w) if pa[x, y][3] > 40) > w * 0.9]
+            gap = next((y for y in range(solid[-1] + 1, h)
+                        if all(pa[x, y][3] <= 40 for x in range(w))), h)
+            bad = next(((x, y) for y in range(gap) for x in range(w)
+                        if pa[x, y] != pb[x, y]), None)
+            report("the dark logo keeps the painting, pixel for pixel", bad is None,
+                   f"rows 0-{gap - 1} match" if bad is None
+                   else f"differs at {bad}; the artwork has been altered")
+            lit = sum(1 for y in range(gap, h) for x in range(w)
+                      if pb[x, y][3] > 0 and pb[x, y][:3] != pa[x, y][:3])
+            report("the dark logo relettered the name", lit > 0, f"{lit} pixels")
+
+    css = (SITE / "assets" / "css" / "style.css").read_text(encoding="utf-8")
+    imgs = [p.relative_to(SITE).as_posix() for p in pages()
+            if re.search(r"<img[^>]*logo-lockup", p.read_text(encoding="utf-8"))]
+    report("no page pins the logo to one theme with an <img>", not imgs,
+           f"{len(imgs)} page(s), first: {imgs[0]}" if imgs else "")
+
+    # a page's own <style> is later in the document than the sheet holding the dark
+    # rule, so declaring the image there silently defeats the swap on that page
+    own = [p.relative_to(SITE).as_posix() for p in pages()
+           if any("logo-lockup" in s for s in
+                  re.findall(r"<style[^>]*>(.*?)</style>",
+                             p.read_text(encoding="utf-8"), re.S))]
+    report("no page declares the logo image in its own <style>", not own,
+           f"{len(own)} page(s), first: {own[0]}" if own else "")
+
+    m = re.search(r"@media\s*\(prefers-color-scheme:\s*dark\)\s*\{(.*)", css, re.S)
+    block = m.group(1) if m else ""
+    report("the dark theme swaps the logo file",
+           "logo-lockup-dark" in block, "" if "logo-lockup-dark" in block
+           else "the dark block never names the dark asset")
+    plaque = [line.strip() for line in block.splitlines()
+              if re.search(r"(logo|nf-logo)\b", line)
+              and re.search(r"background:\s*rgba\(2[34]", line)]
+    report("the logo sits on no cream plaque in the dark",
+           not plaque, plaque[0] if plaque else "")
+
+
 LIVE = "https://arasteh.art"
 
 
@@ -344,6 +415,7 @@ def main() -> int:
     structured()
     hand_written()
     availability()
+    logo()
 
     print()
     if failures:

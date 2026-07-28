@@ -113,8 +113,21 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
    visitor's system having a font for it: "Sedaha Names" carries just those
    letters (build_name_fonts.py), Vazirmatn the Arabic-script ones, and anything
    neither covers falls through to the system as before. */
-.native,.cycler .slot{
-  font-family:"Sedaha Names","Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif}
+.native,.cycler-name,.lang-box{
+  font-family:"Sedaha Names","Vazirmatn",-apple-system,"Segoe UI",Tahoma,sans-serif;
+  /* the subsets exist at one weight only, so a bold ask would be faked, and faked
+     differently in every script. Size and colour do the emphasis instead. */
+  font-synthesis:none}
+/* :lang() above and these have the same specificity, so whichever came later won.
+   Naming both together puts the Arabic-script face back where it belongs: a Persian
+   name in a quick-start box was falling through EB Garamond, which has no Arabic. */
+:is(.lang-box,.cycler-name):lang(fa),:is(.lang-box,.cycler-name):lang(ar),
+:is(.lang-box,.cycler-name):lang(ur),:is(.lang-box,.cycler-name):lang(ps),
+:is(.lang-box,.cycler-name):lang(prs),:is(.lang-box,.cycler-name):lang(ckb),
+:is(.lang-box,.cycler-name):lang(sd),:is(.lang-box,.cycler-name):lang(bal),
+:is(.lang-box,.cycler-name):lang(glk),:is(.lang-box,.cycler-name):lang(mzn),
+:is(.lang-box,.cycler-name):lang(lrc),:is(.lang-box,.cycler-name):lang(ug){
+  font-family:"Vazirmatn",Tahoma,sans-serif}
 /* A name in its own script sits inside English sentences everywhere on this
    site. Isolating it keeps a right-to-left name from dragging the neighbouring
    Latin punctuation to the wrong side of itself. */
@@ -124,7 +137,24 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
 .site-header h1{margin:0 0 8px;font-size:2.6rem}.logo-panel{width:fit-content;max-width:100%;margin:0 auto;background:rgba(246,239,219,.02);
   border:1px solid rgba(232,226,217,.4);border-radius:8px;padding:12px 3px;
   backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
-.brand-logo{display:block;margin:0 auto;width:145px;max-width:46%;height:auto}
+/* The logo is drawn as a BACKGROUND, not an <img>, for one reason: the dark variant
+   has to follow the reader's manual theme choice, and only CSS does that (the theme
+   switch re-points the stylesheet's own dark media rule). A <picture> with
+   media="(prefers-color-scheme:dark)" would ignore a hand-picked theme, and two
+   <img> tags switched by display would make every visitor fetch both. The name is
+   carried by role="img" + aria-label on the element. */
+/* The painting itself, in one place for all three logos. It is deliberately NOT
+   declared in a page's own <style>: an inline rule comes later than this sheet and
+   would beat the dark swap below, which is how the 404 page lost its dark logo. Any
+   page adding a logo sets only size and position, never the image. */
+.brand-logo,.site-footer .foot-logo,.nf-logo{
+  background:url(/assets/img/logo-lockup.png) center/contain no-repeat}
+@supports (background-image:image-set(url(/assets/img/logo-lockup-web.webp) type("image/webp"))){
+  .brand-logo,.site-footer .foot-logo,.nf-logo{background-image:image-set(
+    url(/assets/img/logo-lockup-web.webp) type("image/webp"),
+    url(/assets/img/logo-lockup.png) type("image/png"))}
+}
+.brand-logo{display:block;margin:0 auto;width:145px;max-width:46%;aspect-ratio:380/676}
 .brand-copy{margin:14px auto 0;text-align:center;color:#2f2a20}
 .brand-copy h1{margin:0;font-size:2rem}
 .brand-copy p{margin:2px 0 0;color:#5f574d;font-size:.95rem}
@@ -190,8 +220,18 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    to "Read it in". Both sides, always. */
 /* The slot keeps a fixed height so a taller script cannot shift the search box
    below it, and a minimum width so short names do not make the line twitch. */
-.cycler .slot{display:inline-block;margin-inline:.4em;color:#2f2a20;font-weight:600;font-size:1.14rem;
-  min-width:5.5em;min-height:1.5em;line-height:1.5;vertical-align:-.2em;
+.cycler{display:flex;align-items:baseline;gap:.35em;white-space:nowrap}
+/* the track owns the reserved width and stays LTR, so the space it holds falls
+   AFTER the name whichever way that name runs. The name owns the direction. */
+.cycler-track{display:flex;justify-content:flex-start;direction:ltr;overflow:hidden;
+  width:11em;min-width:0;min-height:1.6em}
+.cycler-name{display:inline-block;white-space:nowrap;unicode-bidi:isolate;
+  color:#2f2a20;font-size:1.18rem;font-weight:400;line-height:1.4;
+  transition:opacity .3s ease,transform .3s ease}
+.cycler-name.is-out{opacity:0;transform:translateY(-3px)}
+/* kept for the three hand-written opening pages, which still use .slot */
+.cycler .slot{display:inline-block;margin-inline:.4em;color:#2f2a20;font-size:1.14rem;
+  min-height:1.5em;line-height:1.5;vertical-align:-.2em;
   transition:opacity .3s ease,transform .3s ease}
 .cycler .slot.is-out{opacity:0;transform:translateY(-4px)}
 /* == /sedaha/ as a doorway ==
@@ -212,7 +252,21 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    "Pick up the thread in  فارسی  English …" */
 .quick-heading{margin:24px 0 10px;font-family:var(--serif);font-style:italic;
   font-size:1.02rem;font-weight:400;color:var(--muted)}
-.quick-row{display:flex;flex-wrap:wrap;gap:10px}
+/* A wrapping flex row of fixed-width boxes, for one reason a grid cannot give:
+   when nine boxes wrap as five and four, the short last row must sit centred under
+   the first. Grid aligns a partial last row to the leading columns, which leaves it
+   looking unfinished. Boxes are a fixed width rather than taking it from their own
+   text, so Português (Brasil) does not come out twice the width of 中文.
+
+   direction:ltr keeps the visual order of the row stable; each name is isolated in
+   its own box and keeps its own direction, so an RTL name neither reverses the row
+   nor drags itself to one edge. */
+.quick-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;
+  gap:10px;direction:ltr}
+.quick-row .lang-box{flex:0 0 112px;inline-size:112px;min-inline-size:0;
+  min-block-size:60px;display:inline-flex;align-items:center;justify-content:center;
+  padding:8px 10px;text-align:center;line-height:1.12;white-space:normal;
+  overflow-wrap:anywhere;text-wrap:balance;unicode-bidi:isolate}
 /* Each one is a small door with the cover painted on it. The cover is portrait, so
    sync_gallery.py derives it turned on its side (book-cover-band): CSS cannot
    rotate a background, and rotating a pseudo-element per box would repaint on every
@@ -220,7 +274,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    One class, used by the five above the search and by all 113 inside the list. */
 .lang-box{position:relative;isolation:isolate;overflow:hidden;
   display:inline-flex;align-items:center;justify-content:center;
-  min-height:54px;min-width:104px;padding:10px 20px;
+  min-height:54px;padding:10px 20px;
   border:1px solid rgba(0,0,0,.18);border-radius:10px;
   background-image:url(/assets/img/book-cover-band.jpg);
   background-size:cover;background-position:center;
@@ -254,8 +308,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .all-group{margin:16px 0 0}
 .all-group-head{margin:0 0 10px;font-family:var(--serif);font-style:italic;
   font-size:.96rem;color:var(--muted)}
-.all-row{display:flex;flex-wrap:wrap;gap:8px}
-.all-row .lang-box{min-height:46px;min-width:92px;padding:8px 14px;font-size:1.04rem}
+.all-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px}
+.all-row .lang-box{width:100%;min-width:0;min-height:50px;padding:7px 10px;
+  font-size:1.04rem;text-align:center;line-height:1.12;text-wrap:balance;
+  white-space:normal;overflow-wrap:anywhere}
 .all-foot{margin:18px 0 0;font-size:.9rem}
 
 /* what a reader can have while their own edition is still coming. Set apart by a
@@ -346,8 +402,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .site-footer a{color:var(--muted);text-decoration:underline}
 /* small colophon mark above the footer links: the full logo lockup (painting +
    آرسته + ARASTEH), echoing the book's own colophon. Scaled only, never cropped. */
-.site-footer .foot-logo{display:block;width:84px;margin:4px auto 14px}
-.site-footer .foot-logo img{width:100%;height:auto;display:block}
+.site-footer .foot-logo{display:block;width:84px;margin:4px auto 14px;aspect-ratio:380/676}
 /* Books, Paintings, Guestbook and Support are tabs under the thumb on a phone,
    so the footer stops repeating them there. Each link carries its own leading
    separator (sync_footers.py), which is why hiding one leaves no stray dot. */
@@ -761,21 +816,26 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .lang-search::placeholder{color:#a2988a}
   .lang-search-icon{stroke:#b3a892}
 
-  /* The logo is a painting with the name lettered into it in dark ink, so on a
-     dark page the lettering disappears while the paisley survives. The artwork is
-     never altered or filtered: it is given paper to sit on, which is how it is
-     printed in the book. */
-  .logo-panel{background:rgba(245,239,227,.92);border-color:rgba(245,239,227,.5)}
-  .site-footer .foot-logo{background:rgba(245,239,227,.9);border-radius:8px;
-    padding:8px 10px;box-sizing:content-box}
-  .nf-logo{background:rgba(245,239,227,.9);border-radius:8px;padding:10px 12px;
-    display:inline-block}
+  /* The logo, lettered in warm cream instead of ink. Same painting, pixel for
+     pixel: sync_gallery.py rewrites only the rows below the painting, so this is
+     one file swapped for another rather than a filter over the artwork. No plaque,
+     no border, no blur — the transparent background stays transparent, which is
+     what the light version has always done. */
+  .brand-logo,.site-footer .foot-logo,.nf-logo{
+    background-image:url(/assets/img/logo-lockup-dark.png)}
+  @supports (background-image:image-set(url(/assets/img/logo-lockup-dark.webp) type("image/webp"))){
+    .brand-logo,.site-footer .foot-logo,.nf-logo{background-image:image-set(
+      url(/assets/img/logo-lockup-dark.webp) type("image/webp"),
+      url(/assets/img/logo-lockup-dark.png) type("image/png"))}
+  }
+  .logo-panel{background:none;border-color:transparent;
+    backdrop-filter:none;-webkit-backdrop-filter:none}
   .lang-clear:hover{background:rgba(255,255,255,.08)}
   .region-chip{border-color:rgba(255,255,255,.14);color:#cabfac}
   .region-chip:hover{color:#f0e7d7}
 
   /* hero: cycling scripts + what exists */
-  .cycler{color:#a99f8f} .cycler .slot{color:#e6dccb}
+  .cycler{color:#a99f8f} .cycler .slot,.cycler-name{color:#e6dccb}
   .progress-note{color:#a99f8f} .progress-note strong{color:#e6dccb}
 
   /* status table + badges */

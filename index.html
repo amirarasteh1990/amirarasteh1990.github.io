@@ -64,11 +64,11 @@ apply(get())})();</script>
 <header class="site-header">
   <div class="container">
     <div class="logo-panel">
-      <picture>
-        <source srcset="assets/img/logo-lockup-web.webp" type="image/webp">
-        <img class="brand-logo" width="380" height="676" fetchpriority="high" src="assets/img/logo-lockup.png"
-             alt="Arasteh — Amir Arasteh, paintings and books">
-      </picture>
+      <!-- a CSS background rather than an <img>, so the dark-lettered variant follows
+           a hand-picked theme as well as the system one. See .brand-logo in the
+           stylesheet; the name is carried by role and label. -->
+      <div class="brand-logo" role="img"
+           aria-label="Arasteh — Amir Arasteh, paintings and books"></div>
     </div>
     <div class="brand-copy">
       <h1>Amir Arasteh</h1>

@@ -50,12 +50,11 @@ LINKS = [
     ("telegram",  "https://t.me/Sounds_AmirArasteh", "Telegram"),
 ]
 
-LOGO = """    <a class="foot-logo" href="/" aria-label="Arasteh, home">
-      <picture>
-        <source srcset="/assets/img/logo-lockup-web.webp" type="image/webp">
-        <img src="/assets/img/logo-lockup.png" width="380" height="676" alt="">
-      </picture>
-    </a>
+# The painting is a CSS background, not an <img>, so that the dark variant follows
+# the reader's own theme choice and not only the system's: the theme switch works by
+# re-pointing the stylesheet's dark media rule, which a <picture media=...> ignores.
+# The link already names itself, so nothing is lost by the image having no alt.
+LOGO = """    <a class="foot-logo" href="/" aria-label="Arasteh, home"></a>
 """
 
 
@@ -114,7 +113,10 @@ PAGES = [
     ("sedaha/read/da/index.html",         dict()),
 ]
 
-FOOTER_RE = re.compile(r'<footer class="site-footer">.*?</footer>', re.S)
+# attributes are allowed: the footer carries lang="en" dir="ltr" now, and anchoring
+# on the closing ">" meant this could stamp a page once and never find it again.
+# Same trap as sync_appnav's skip-link pattern. Never anchor on a tag's ">".
+FOOTER_RE = re.compile(r'<footer class="site-footer"[^>]*>.*?</footer>', re.S)
 
 
 def main() -> int:

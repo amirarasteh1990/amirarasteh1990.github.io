@@ -109,13 +109,24 @@ COMPLETE = [("", "en", "English"), ("fa/", "fa", "فارسی"), ("da/", "da", "D
 # used to lead to another Opening page, which read as a promise withdrawn. The
 # format is on the button so a download is never a surprise, and "EPUB" is the
 # file's own name in every language.
-FULL_BOOK_BTNS = "\n".join(
-    f'      <a class="btn" href="{RELEASE_URL}/Sedaha_{file}.epub" '
-    f'aria-label="{name}: the complete book, EPUB"><span lang="{lang}">{native}</span>'
-    f'<span class="btn-fmt" lang="en">EPUB</span></a>'
-    for file, lang, native, name in (("Farsi", "fa", "فارسی", "Persian"),
-                                     ("English", "en", "English", "English"),
-                                     ("Danish", "da", "Dansk", "Danish")))
+def full_book_btns(complete: int) -> str:
+    """The three the book was published in, then the way to all the rest.
+
+    The localized sentence above these says the whole book is free in Persian,
+    English and Danish. That was the whole truth at three complete editions and
+    reads as a limit at twenty-three, so the row ends with the count and an arrow
+    to the catalogue. A number and an arrow, not an English phrase: these pages are
+    in 111 languages that are not English, and the strip at the top already uses
+    exactly this idiom."""
+    out = [f'      <a class="btn" href="{RELEASE_URL}/Sedaha_{file}.epub" '
+           f'aria-label="{name}: the complete book, EPUB"><span lang="{lang}">{native}</span>'
+           f'<span class="btn-fmt" lang="en">EPUB</span></a>'
+           for file, lang, native, name in (("Farsi", "fa", "فارسی", "Persian"),
+                                            ("English", "en", "English", "English"),
+                                            ("Danish", "da", "Dansk", "Danish"))]
+    out.append(f'      <a class="btn" href="/sedaha/languages/" lang="en" '
+               f'aria-label="All {complete} complete editions">{complete} &rarr;</a>')
+    return "\n".join(out)
 
 
 def op_langs_html(slug: str, lang: str = "", native: str = "") -> str:
@@ -743,7 +754,7 @@ def book_ld(L: dict, url: str) -> str:
     return f'<script type="application/ld+json">\n{body}\n</script>'
 
 
-def render(L: dict, row: dict | None = None) -> str:
+def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
     """One Opening page. `row` is that language's entry in the edition record, when
     there is one: it is what tells this page whether the whole book now exists in
     the language being read. Without it the page falls back to the invitation to
@@ -774,7 +785,7 @@ def render(L: dict, row: dict | None = None) -> str:
     else:
         cta_p = (f'    <p lang="{L["lang"]}"{dir_attr}>'
                  f'{html.escape(L["cta"], quote=False)}</p>\n')
-        buttons = FULL_BOOK_BTNS
+        buttons = full_book_btns(complete)
     url = f"https://arasteh.art/sedaha/read/{L['slug']}/"
     # The description a search engine shows to someone searching in this language.
     # It was English on every page; the edition's own "thread of words" line already
@@ -857,10 +868,13 @@ STATES = [
     # Every one of the 114 has a readable Opening, so a label like "Ready to read"
     # did not distinguish the four that exist as whole books. Each label now says
     # what it says about the COMPLETE edition; the Opening is a given.
-    ("ready",     "Complete edition available",       "The whole book, free to download."),
-    ("review",    "Complete edition in final review", "Translated in full; being checked before release."),
-    ("translated", "Full draft translated",           "A complete draft exists; review still to come."),
-    ("revising",  "Complete edition being revised",   "Parts of this edition need reworking before it can be trusted."),
+    # (state, short label, what it means). The short one is a command on a filter
+    # chip and a badge repeated down 113 rows, so it stays a word or two; the
+    # sentence explains it once, in the legend and the progress disclosure.
+    ("ready",     "Complete",        "The whole book, free to download."),
+    ("review",    "Final review",    "Translated in full; being checked before release."),
+    ("translated", "Draft translated", "A complete draft exists; review still to come."),
+    ("revising",  "Revising",        "Parts of this edition need reworking before it can be trusted."),
 ]
 
 # The state sentence a reader gets from the search result, in the second person.
@@ -1070,13 +1084,13 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
     A_tally = availability(rows, total)["tally"]
     # one chip per state, each carrying its own count: a reader who came here to ask
     # "what can I actually download" should get there without reading 114 rows
-    # a state nothing is in is not a filter, it is a dead end: the table empties and
-    # the only message left is the screen reader saying no language matched a search
-    # nobody typed. Disabled, so the count still reads as information.
+    # A state nothing is in is not a filter, it is a dead end. It was shown disabled;
+    # simply leaving it out is quieter, and the legend above still names every state
+    # with its count, so nothing is hidden from anyone who wants the whole picture.
     state_chips = "\n".join(
-        f'    <button type="button" class="region-chip" data-state="{s}" aria-pressed="false"'
-        f'{"" if counts[s] else " disabled"}>'
-        f'{lbl} <span class="ccount">{counts[s]}</span></button>' for s, lbl, _ in STATES)
+        f'    <button type="button" class="region-chip" data-state="{s}" aria-pressed="false">'
+        f'{lbl} <span class="ccount">{counts[s]}</span></button>'
+        for s, lbl, _ in STATES if counts[s])
     return f"""<!DOCTYPE html>
 <!-- GENERATED by build_read_pages.py. Do not edit by hand: re-run  python build_read_pages.py -->
 <html lang="en">
@@ -1508,6 +1522,10 @@ def patch_availability(check: bool, rows: list[dict], total: int | None = None) 
          f'Paintings, and Sedaha (Sounds). {plain} Free.'),
         (SITE / "index.html", r'(<meta property="og:description" content=")[^"]*(">)',
          f'Paintings, and Sedaha (Sounds). {plain} Free.'),
+        # what a search engine is told the book exists in: it said four while the
+        # page said twenty-three. Derived, so the two cannot part company again.
+        (SOUNDS, r'("inLanguage": )\[[^\]]*\](,)',
+         json.dumps([r["lang"] for r in complete_rows(rows)], ensure_ascii=False)),
         # The home page's Books card says only the title now (the author's call,
         # 2026-07-27: the availability sentence made it a paragraph where a label
         # belonged). The claim still travels with that page, in its description
@@ -1689,6 +1707,8 @@ def main() -> int:
     # the record first: the Opening pages need to know which editions are complete
     rows = status_rows()
     by_slug = {r["slug"]: r for r in rows}
+    # how many complete editions exist, for the row of buttons on each Opening
+    n_complete = len(complete_rows(shown(rows)))
 
     ok = True
     for L in LANGS:
@@ -1707,7 +1727,7 @@ def main() -> int:
                         pass
                     print(f"[write] removed sedaha/read/{L['slug']}/  (hidden: {L['en']})")
             continue
-        page = render(L, by_slug.get(L["slug"]))
+        page = render(L, by_slug.get(L["slug"]), n_complete)
         if dest.is_file() and dest.read_text(encoding="utf-8") == page:
             continue
         if args.check:

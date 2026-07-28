@@ -25,7 +25,7 @@
   "url": "https://arasteh.art/sedaha/",
   "image": "https://arasteh.art/assets/img/cover.jpg",
   "bookFormat": "https://schema.org/EBook",
-  "inLanguage": ["fa", "en", "da", "it"],
+  "inLanguage": ["fa", "en", "da", "ar", "hy", "zh", "nl", "fr", "de", "it", "ja", "ko", "lv", "lt", "no", "pl", "pt", "pt-BR", "ru", "es", "sv", "tr", "uk"],
   "isAccessibleForFree": true,
   "datePublished": "2026"
 }
@@ -94,7 +94,12 @@ apply(get())})();</script>
       <h1>Sedaha (<!--S:title:EN-->Sounds<!--/S-->)</h1>
       <!-- the book's own words, which say more than a description of them would -->
       <p class="excerpt">&hellip; the loose end of a thread of words that were once sounds&hellip;</p>
-      <p class="cycler" aria-hidden="true">Read it in<span class="slot" id="cyclerSlot" lang="fa" dir="rtl">فارسی</span></p>
+      <!-- The track reserves the width and stays left-to-right; the name inside it
+           carries the direction. When both were the same element, a right-to-left
+           name sat at the far end of its own reserved space and left a gap after
+           "Read it in". <bdi> isolates the name from the English around it. -->
+      <p class="cycler" aria-hidden="true"><span class="cycler-label">Read it in</span><span
+        class="cycler-track"><bdi class="cycler-name" id="cyclerName" lang="fa" dir="rtl">فارسی</bdi></span></p>
       <!-- the count is stamped by build_read_pages.py from the release -->
       <p class="progress-note">More than 100 openings &middot; <strong>23</strong> complete editions</p>
     </div>
@@ -152,12 +157,7 @@ apply(get())})();</script>
 
 <footer class="site-footer" lang="en" dir="ltr">
   <div class="container">
-    <a class="foot-logo" href="/" aria-label="Arasteh, home">
-      <picture>
-        <source srcset="/assets/img/logo-lockup-web.webp" type="image/webp">
-        <img src="/assets/img/logo-lockup.png" width="380" height="676" alt="">
-      </picture>
-    </a>
+    <a class="foot-logo" href="/" aria-label="Arasteh, home"></a>
     &copy; 2026 Amir Arasteh
     <span class="foot-link is-tab"> &middot; <a href="/paintings/">Paintings</a></span>
     <span class="foot-link is-tab"> &middot; <a href="/comments/">Guestbook</a></span>
