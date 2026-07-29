@@ -166,7 +166,12 @@ def _write_excerpt_mark(check: bool) -> bool:
         print(f"[stale] {MARK_OUT.name}")
         return False
     with Image.open(src) as im:
-        mark = im.convert("RGB")
+        # Mirrored, and only mirrored. In the file the thread trails off to the left,
+        # away from the sentence it belongs to; flipped, the loose end runs toward
+        # the words -- which is the whole point of putting it there. Done here rather
+        # than with a CSS transform: one asset, arriving the right way round, nothing
+        # for the compositor to redo on every scroll.
+        mark = ImageOps.mirror(im.convert("RGB"))
     # Only ever scaled DOWN. The author's file is what it is; enlarging it would be
     # inventing detail that is not in the picture they chose.
     if mark.width > MARK_WIDTH:
@@ -177,7 +182,7 @@ def _write_excerpt_mark(check: bool) -> bool:
     mark.save(MARK_OUT.with_suffix(".webp"), "WEBP",
               quality=WEBP_QUALITY, method=6)
     print(f"[write] {MARK_OUT.name}  ({mark.width}x{mark.height} from {src.name}, "
-          f"the author's own file, as it is)")
+          f"the author's own file, mirrored so the loose end faces the text)")
     return True
 
 
