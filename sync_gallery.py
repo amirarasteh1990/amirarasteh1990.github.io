@@ -136,14 +136,14 @@ def _write_band(check: bool) -> bool:
 # The source is the site's own derived copy, not the CoverPics master, so the mark
 # still builds when the book repo is not beside the site. _write_band takes its
 # source the same way.
-# The master where it exists -- a crop this tight needs the pixels -- and the site's
-# own copy where it does not, so the mark still builds without the book repo.
-_MASTER_01 = COVERPICS / "01.jpg"
-MARK_SRC = _MASTER_01 if _MASTER_01.is_file() else OUT / "01.jpg"
+# The author's own crop, placed here by hand. It is the master for this one image:
+# nothing derives it from the painting, because the choice of what to show -- how
+# much tangle, how much thread, how much bare canvas -- was made by eye and cannot
+# be expressed as a rectangle in a config. Replace the file to change the mark.
+MARK_SRC = SITE / "assets" / "img" / "loose-end.jpg"
 MARK_OUT = SITE / "assets" / "img" / "opening-mark.jpg"
 # The author picked the crop: the loose end alone, on bare canvas, with none of the
 # tangle it runs into. As it is -- no turn, no flip.
-MARK_REGION = (0.000, 0.870, 0.090, 0.975)   # left, top, right, bottom, as fractions
 # 9% of the canvas is 135px on the site's own copy, which would have to be blown up
 # to reach a 2x display. The CoverPics master is ~5500px wide, so the same crop comes
 # out around 490px and is downscaled instead. The site copy is the fallback for when
@@ -166,21 +166,18 @@ def _write_excerpt_mark(check: bool) -> bool:
         print(f"[stale] {MARK_OUT.name}")
         return False
     with Image.open(src) as im:
-        w, h = im.size
-        l, t, r, b = MARK_REGION
-        mark = im.convert("RGB").crop((int(w * l), int(h * t), int(w * r), int(h * b)))
-    if mark.width < MARK_WIDTH:
-        print(f"[warn]  excerpt mark: the crop is only {mark.width}px wide, so it is "
-              f"being enlarged to {MARK_WIDTH}. Put CoverPics beside the site for a "
-              f"sharp one.")
-    ratio = mark.height / mark.width
-    mark = mark.resize((MARK_WIDTH, round(MARK_WIDTH * ratio)), LANCZOS)
-    mark.info.clear()
+        mark = im.convert("RGB")
+    # Only ever scaled DOWN. The author's file is what it is; enlarging it would be
+    # inventing detail that is not in the picture they chose.
+    if mark.width > MARK_WIDTH:
+        mark = mark.resize((MARK_WIDTH, round(MARK_WIDTH * mark.height / mark.width)),
+                           LANCZOS)
+    mark.info.clear()          # drops the EXIF the file arrived with
     mark.save(MARK_OUT, "JPEG", quality=QUALITY, optimize=True)
     mark.save(MARK_OUT.with_suffix(".webp"), "WEBP",
               quality=WEBP_QUALITY, method=6)
     print(f"[write] {MARK_OUT.name}  ({mark.width}x{mark.height} from {src.name}, "
-          f"the loose end as it is: no turn, no flip)")
+          f"the author's own file, as it is)")
     return True
 
 

@@ -35,8 +35,9 @@
    v11: the all-languages list uses the quick-start box, with names shrunk to fit.
    v12: the excerpt image is the author's own crop of the loose end, used unturned.
         Same filename, different pixels and a different shape -- so a cached copy
-        would be both the wrong picture and the wrong width. */
-var VERSION = 'arasteh-v12';
+        would be both the wrong picture and the wrong width.
+   v13: the excerpt image is now the author's own file, square, at two lines tall. */
+var VERSION = 'arasteh-v13';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

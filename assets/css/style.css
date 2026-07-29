@@ -250,10 +250,9 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
    hung below it, over the line beneath. As a flex item the paragraph grows to hold
    it.
 
-   Aligned to the FOOT, so the last line of the quote sits on the image's bottom
-   edge and any earlier lines stack upward into it. The image is the author's own
-   crop -- the loose end alone, on bare canvas, none of the tangle it runs into --
-   used exactly as it is: no turn, no flip.
+   Centred against the text, so the image's middle sits on the text's middle whether
+   the quote runs to one line or five. The image is the author's own crop, used
+   exactly as it is: no turn, no flip.
 
    Height is stated in the text's own units -- three times the line box -- so it
    tracks the type at every size instead of being a pixel count that only suits one.
@@ -263,13 +262,13 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 
    A pseudo-element, so it is decorative by construction: a screen reader never
    meets it, and the sentence is not announced twice. */
-.excerpt{--mark-h:calc(3 * 1.7em);          /* three lines of this paragraph */
-  display:flex;align-items:flex-end;gap:14px;margin:0 0 16px;
+.excerpt{--mark-h:calc(2 * 1.7em);          /* two lines of this paragraph */
+  display:flex;align-items:center;gap:14px;margin:0 0 16px;
   font-family:var(--serif);
   font-style:italic;color:#43392f;font-size:1.12rem;line-height:1.7}
 .excerpt::before{content:"";flex:none;
   block-size:var(--mark-h);
-  inline-size:calc(var(--mark-h) * 256 / 218);     /* the crop's own proportions */
+  inline-size:var(--mark-h);           /* the author's file is square, so 1:1 */
   border-radius:3px;
   background:url(/assets/img/opening-mark.jpg) center/contain no-repeat}
 @supports (background-image:image-set(url(/assets/img/opening-mark.webp) type("image/webp"))){
