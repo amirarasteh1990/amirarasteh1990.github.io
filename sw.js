@@ -37,8 +37,10 @@
         Same filename, different pixels and a different shape -- so a cached copy
         would be both the wrong picture and the wrong width.
    v13: the excerpt image is now the author's own file, square, at two lines tall.
-   v14: that image mirrored, so the loose end runs toward the sentence. */
-var VERSION = 'arasteh-v14';
+   v14: that image mirrored, so the loose end runs toward the sentence.
+   v15: Paintings links go straight to the gallery, the lightbox no longer advances
+        on tap, download buttons carry sizes, guestbook trust lines. */
+var VERSION = 'arasteh-v15';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

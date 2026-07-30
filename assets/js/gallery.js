@@ -92,13 +92,10 @@
     if (event.target === shell) dialog.close();
   });
 
-  // Tapping the painting advances to the next one (unless the tap was really a
-  // swipe, handled below). The explicit close and arrow controls still stand.
-  var swiped = false;
-  image.addEventListener('click', function (event) {
-    event.stopPropagation();
-    if (!swiped) show(current + 1);
-  });
+  // Tapping the painting does nothing, deliberately. It used to advance, but a
+  // tap on a painting means "let me look", not "next" -- an accidental skip is
+  // the worst interruption an art viewer has. Arrows, swipe and keys all still
+  // move; the backdrop still closes. The painting itself is for looking at.
 
   // Horizontal swipe on touch screens moves between paintings.
   var startX = null, startY = null;
@@ -106,7 +103,6 @@
     if (event.touches.length !== 1) { startX = null; return; }
     startX = event.touches[0].clientX;
     startY = event.touches[0].clientY;
-    swiped = false;
   }, { passive: true });
   shell.addEventListener('touchend', function (event) {
     if (startX === null) return;
@@ -114,9 +110,7 @@
     var dx = touch.clientX - startX;
     var dy = touch.clientY - startY;
     if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
-      swiped = true;                       // suppress the click that follows
       show(dx < 0 ? current + 1 : current - 1);
-      window.setTimeout(function () { swiped = false; }, 300);
     }
     startX = null;
   }, { passive: true });

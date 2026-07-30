@@ -18,6 +18,10 @@
 <link rel="canonical" href="https://arasteh.art/comments/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- the guestbook's whole body is a third-party script + iframe from this host;
+     opening the connection while the page parses shaves the slowest part of the
+     eight seconds the loader is allowed before giving up -->
+<link rel="preconnect" href="https://cusdis.com" crossorigin>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -53,7 +57,7 @@ apply(get())})();</script>
     <ul class="appnav-tabs">
       <li><a href="/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.6 12 3l9 7.6"/><path d="M5.5 9.5V21h13V9.5"/></svg><span>Home</span></a></li>
       <li><a href="/sedaha/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5v14"/><path d="M12 6.5C10.4 5.2 7.8 4.5 4 4.5v14c3.8 0 6.4.7 8 2 1.6-1.3 4.2-2 8-2v-14c-3.8 0-6.4.7-8 2z"/></svg><span>Books</span></a></li>
-      <li><a href="/paintings/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15.5-4.5-4.5L5 19.5"/></svg><span>Paintings</span></a></li>
+      <li><a href="/paintings/sounds/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15.5-4.5-4.5L5 19.5"/></svg><span>Paintings</span></a></li>
       <li><a href="/comments/" aria-current="page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
@@ -68,6 +72,11 @@ apply(get())})();</script>
     <p class="lead">Leave a note: where the book found you, or a
       line that stayed. Like the book, a thread passed from hand to hand:
       what you write here is open for others to read.</p>
+    <!-- Both said up front, not discovered after the fact: a note that vanishes
+         into moderation with no warning reads as a note that was lost, and the
+         email route should not be a consolation prize shown only on failure. -->
+    <p class="muted-note">Notes appear after a quick read-through.
+      Prefer email? <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a></p>
 
     <!-- Cusdis (no login, privacy-friendly). Moderate at cusdis.com; keep pre-moderation ON. -->
     <p class="guestbook-status" id="cusdis-loading" role="status">Loading the guestbook&hellip;</p>
@@ -207,7 +216,7 @@ apply(get())})();</script>
     <a class="foot-logo" href="/" aria-label="Arasteh, home"></a>
     &copy; 2026 Amir Arasteh
     <span class="foot-link is-tab"> &middot; <a href="/sedaha/">Books</a></span>
-    <span class="foot-link is-tab"> &middot; <a href="/paintings/">Paintings</a></span>
+    <span class="foot-link is-tab"> &middot; <a href="/paintings/sounds/">Paintings</a></span>
     <span class="foot-link is-tab"> &middot; <a href="/support/">Support</a></span>
     <span class="foot-link"> &middot; <a href="/license.html">License</a></span>
     <span class="foot-link"> &middot; <a href="https://t.me/Sounds_AmirArasteh">Telegram</a></span>

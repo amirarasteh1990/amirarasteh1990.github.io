@@ -809,11 +809,18 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
         opener = _first_sentence(L["cta"])
         cta_p = (f'    <p lang="{L["lang"]}"{dir_attr}>{html.escape(opener, quote=False)}</p>\n'
                  if opener else "")
+        # The size rides on the format chip -- "EPUB · 4.6 MB" -- exactly as the
+        # finder already writes it, so the two decision points agree. A number is
+        # language-neutral, which is what lets it onto 20 pages that are not in
+        # English; the format-guidance SENTENCE lives only on the English page.
         buttons = "\n".join(
             f'      <a class="btn" href="{RELEASE_URL}/{row["stem"]}.{f}" '
-            f'aria-label="{row["en"]}: the complete book, {f.upper()}">'
+            f'aria-label="{row["en"]}: the complete book, {f.upper()}'
+            f'{", " + row["size"][f] if row["size"].get(f, "0 MB") != "0 MB" else ""}">'
             f'<span lang="{L["lang"]}"{dir_attr}>{html.escape(title, quote=False)}</span>'
-            f'<span class="btn-fmt" lang="en">{f.upper()}</span></a>' for f in row["fmts"])
+            f'<span class="btn-fmt" lang="en">{f.upper()}'
+            f'{" &middot; " + row["size"][f] if row["size"].get(f, "0 MB") != "0 MB" else ""}'
+            f'</span></a>' for f in row["fmts"])
     else:
         cta_p = (f'    <p lang="{L["lang"]}"{dir_attr}>'
                  f'{html.escape(L["cta"], quote=False)}</p>\n')
@@ -1719,6 +1726,48 @@ def patch_sitemap_images(check: bool) -> bool:
     return True
 
 
+HAND_PAGES = ["sedaha/read/index.html", "sedaha/read/fa/index.html",
+              "sedaha/read/da/index.html"]
+
+
+def patch_hand_sizes(check: bool, rows: list[dict]) -> bool:
+    """Stamp file sizes into the three hand-written Opening pages' buttons.
+
+    The generated pages get "EPUB · 4.6 MB" from the release at every build; a
+    hand-typed size on EN/FA/DA would freeze the number the day it was typed and
+    drift the first time an edition is re-uploaded. So the size is stamped by the
+    same build that reads the release, keyed on each button's own href -- the one
+    part of the anchor that names which file it is."""
+    by_stem = {r["stem"]: r for r in rows if r["fmts"]}
+    ok = True
+    for rel in HAND_PAGES:
+        path = SITE / rel
+        body = path.read_text(encoding="utf-8")
+        new = body
+        for stem, row in by_stem.items():
+            for f in row["fmts"]:
+                size = row["size"].get(f, "0 MB")
+                if size == "0 MB":
+                    continue
+                inner = (f'{f.upper()}<span class="btn-fmt" lang="en">'
+                         f'&middot; {size}</span>')
+                new = re.sub(
+                    rf'(<a class="btn" href="{re.escape(RELEASE_URL)}/{stem}\.{f}"'
+                    rf'[^>]*>).*?(</a>)',
+                    lambda m, i=inner: m.group(1) + i + m.group(2), new)
+        if new == body:
+            continue
+        if check:
+            print(f"[drift] {rel}: download sizes out of date")
+            ok = False
+            continue
+        path.write_text(new, encoding="utf-8", newline="\n")
+        print(f"[write] {rel}  (download sizes stamped from the release)")
+    if ok and not check:
+        print("[ok]    hand-written pages: download sizes current")
+    return ok
+
+
 def patch_sitemap(check: bool) -> bool:
     body = SITEMAP.read_text(encoding="utf-8")
     today = datetime.date.today().isoformat()
@@ -1816,6 +1865,7 @@ def main() -> int:
     ok &= patch_availability(args.check, site, total)
     ok &= patch_meter(args.check, site, total)
     ok &= patch_feed(args.check, site)
+    ok &= patch_hand_sizes(args.check, site)
     ok &= patch_sitemap(args.check)
     ok &= patch_sitemap_images(args.check)
     if not args.check:

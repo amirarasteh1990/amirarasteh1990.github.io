@@ -37,7 +37,12 @@ TABS = [
     ("books",     "/sedaha/",    "Books",
      '<path d="M12 6.5v14"/><path d="M12 6.5C10.4 5.2 7.8 4.5 4 4.5v14c3.8 0 '
      '6.4.7 8 2 1.6-1.3 4.2-2 8-2v-14c-3.8 0-6.4.7-8 2z"/>'),
-    ("paintings", "/paintings/", "Paintings",
+    # Straight to the one gallery that exists: /paintings/ is a collection index
+    # with a single tile, and a page whose only content is one door is a step, not
+    # a place. The index stays (the gallery's own back link walks up to it) and
+    # this href reverts the day a second collection ships. current_for() matches
+    # on the paintings/ prefix, so the tab stays lit on both pages.
+    ("paintings", "/paintings/sounds/", "Paintings",
      '<rect x="3" y="4.5" width="18" height="15" rx="2"/>'
      '<circle cx="8.5" cy="10" r="1.5"/><path d="m21 15.5-4.5-4.5L5 19.5"/>'),
     ("guestbook", "/comments/",  "Guestbook",

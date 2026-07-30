@@ -674,6 +674,9 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
   padding:20px 22px;margin:32px auto 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}
 .read-cta .btns{display:flex;gap:8px;flex-wrap:wrap}
+/* one quiet line after the buttons: which format suits what, and where it comes
+   from. English page only -- see the comment beside it in the markup. */
+.read-cta .dl-note{margin:12px 0 0;font-size:.85rem;color:var(--muted)}
 .read-back{display:inline-block;margin-top:18px;font-size:.92rem}/* the language strip: a globe, then the languages naming themselves. No English
    label, so it reads the same on a Khmer page as on this one. */
 .op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);
