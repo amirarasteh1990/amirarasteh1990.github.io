@@ -35,6 +35,7 @@ git pull --ff-only
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
 | Language names (a new language, or a new script among them) | `build_name_fonts.py` |
 | The other names a language answers to in search (Farsi, Bangla, Mandarin) | Edit `assets/js/lang-alias.js`; nothing to rebuild. First name in each list wins ties |
+| A guestbook note approved or featured in the private queue | `sync_guestbook.py --repo OWNER/PRIVATE_REPO` |
 | A new complete edition released (EPUB/PDF uploaded) | `build_read_pages.py`. It reads the release, so the cards, counts, copy and status all follow. Nothing to type by hand |
 | Paintings added or renamed | `sync_gallery.py`, then `build_read_pages.py` (sitemap images) |
 | Anything at all, before pushing | `check.py` |
@@ -171,6 +172,34 @@ Run only when the source TTF files or font-generation logic change:
 ..\1_Sedaha\Volume1\sedaha\Scripts\python.exe build_webfonts.py
 ```
 
+## Guestbook moderation
+
+Visitors need no account or email. Their notes arrive as issues in the separate
+private moderation repository. From its Issues screen, add the `approved` label
+to publish a note and optionally add `featured` to show it near the front. Add
+`rejected`, or remove `approved`, to unpublish it on the next sync.
+
+Pull all approved notes into one public JSON file per note and rebuild the compact
+browser index. Replace the repository placeholder with the private queue's name:
+
+```powershell
+python sync_guestbook.py --repo OWNER/PRIVATE_REPO
+```
+
+Validate the public archive without contacting GitHub or changing files:
+
+```powershell
+python sync_guestbook.py --check
+```
+
+Review the generated entry files and index in the working-tree diff, then run
+`python check.py`. The sync does not stage, commit, or push anything.
+
+The one-time intake setup is documented in `guestbook-worker/README.md`. After
+deploying it, put its HTTPS URL in the `guestbook-endpoint` meta tag in
+`comments/index.html`. Until that value exists, the form stays visibly and safely
+disabled while the approved-note archive remains browsable.
+
 ## Preview locally
 
 Start the local server:
@@ -200,7 +229,7 @@ markup the generator stamps into the other 111.
 python check.py
 ```
 
-Skip the seven script `--check` runs (the slow part) and keep the rest:
+Skip the eight script `--check` runs (the slow part) and keep the rest:
 
 ```powershell
 python check.py --quick

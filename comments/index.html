@@ -18,10 +18,9 @@
 <link rel="canonical" href="https://arasteh.art/comments/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/css/style.css">
-<!-- the guestbook's whole body is a third-party script + iframe from this host;
-     opening the connection while the page parses shaves the slowest part of the
-     eight seconds the loader is allowed before giving up -->
-<link rel="preconnect" href="https://cusdis.com" crossorigin>
+<!-- Set this to the deployed private-moderation Worker endpoint. Until then the
+     complete local interface stays visible, with submission safely disabled. -->
+<meta name="guestbook-endpoint" content="">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -49,7 +48,7 @@ apply(get())})();</script>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})});</script>
 <!-- PWA:END -->
 </head>
-<body class="writing">
+<body class="book writing">
 <a class="skip-link" href="#main">Skip to content</a>
 <!-- APPNAV:START (managed by sync_appnav.py — edit there, not the pages) -->
 <nav class="appnav" lang="en" dir="ltr" aria-label="Primary">
@@ -67,147 +66,99 @@ apply(get())})();</script>
 <main class="container" id="main">
   <a class="back back--home" href="/">&larr; Amir Arasteh</a>
 
-  <section>
+  <section class="guestbook-intro">
     <h1>Guestbook</h1>
     <p class="lead">Leave a note: where the book found you, or a
       line that stayed. Like the book, a thread passed from hand to hand:
       what you write here is open for others to read.</p>
-    <!-- Both said up front, not discovered after the fact: a note that vanishes
-         into moderation with no warning reads as a note that was lost, and the
-         email route should not be a consolation prize shown only on failure. -->
-    <p class="muted-note">Notes appear after a quick read-through.
-      Prefer email? <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a></p>
+    <p class="muted-note">No account or email is needed. Notes appear after a quiet
+      read-through.</p>
+  </section>
 
-    <!-- Cusdis (no login, privacy-friendly). Moderate at cusdis.com; keep pre-moderation ON. -->
-    <p class="guestbook-status" id="cusdis-loading" role="status">Loading the guestbook&hellip;</p>
-    <div id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id="240403ed-e12d-428a-9bdb-afa6d69d1061"
-      data-page-id="guestbook"
-      data-page-url="https://arasteh.art/comments/"
-      data-page-title="Guestbook — Amir Arasteh"
-      data-theme="light"
-    ></div>
-    <!-- if cusdis.com is unreachable (down, or blocked on the visitor's network),
-         don't leave a silent blank: offer the email route instead -->
-    <p class="muted-note" id="cusdis-fallback" hidden>The comment box could not load.
-      Your network may be blocking it. You can always write by email:
-      <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p>
-    <script>
-    /* The widget's own words.
+  <section class="guestbook-compose" aria-labelledby="leave-note-heading">
+    <header class="guestbook-section-head">
+      <p class="guestbook-kicker">Add to the thread</p>
+      <h2 id="leave-note-heading">Leave a reader note</h2>
+    </header>
+    <form id="guestbookForm">
+      <div class="guestbook-form-row">
+        <p class="guestbook-field">
+          <label for="guestbookName">Name or pen name</label>
+          <input id="guestbookName" name="name" type="text" maxlength="80"
+            autocomplete="name" required>
+        </p>
+        <p class="guestbook-field">
+          <label for="guestbookLanguage">Language of your note</label>
+          <input id="guestbookLanguage" name="language_label" type="search"
+            list="guestbookLanguages" maxlength="80" autocomplete="off" required>
+          <datalist id="guestbookLanguages"></datalist>
+        </p>
+      </div>
+      <p class="guestbook-field">
+        <label for="guestbookMessage">Your end of the thread</label>
+        <textarea id="guestbookMessage" name="message" rows="8" maxlength="3000"
+          required></textarea>
+        <span class="guestbook-field-note">Plain text, up to 3,000 characters.</span>
+      </p>
+      <p class="guestbook-honeypot" aria-hidden="true">
+        <label for="guestbookWebsite">Website</label>
+        <input id="guestbookWebsite" name="website" type="text" tabindex="-1"
+          autocomplete="off">
+      </p>
+      <p class="guestbook-consent">
+        <label><input name="consent" type="checkbox" required>
+          <span>I understand that my chosen name and note may be published on
+            arasteh.art and preserved in its public archive.</span></label>
+      </p>
+      <div class="guestbook-submit-row">
+        <button class="btn btn-primary" id="guestbookSubmit" type="submit">Leave it here</button>
+        <p class="guestbook-form-status" id="guestbookFormStatus" role="status"
+          aria-live="polite" hidden></p>
+      </div>
+    </form>
+    <noscript><p class="muted-note">JavaScript is needed to leave and browse reader notes.</p></noscript>
+  </section>
 
-       cusdis.es.js serializes window.CUSDIS_LOCALE into the iframe it builds, so
-       this has to exist before that script runs. The keys and the English defaults
-       are read out of the widget bundle itself (cusdis.com/js/iframe.umd.js): a
-       key left out falls back to English AND logs a console warning, so every key
-       is given here even where the default is what we want.
+  <section class="guestbook-featured" id="guestbookFeatured"
+    aria-labelledby="featured-notes-heading" hidden>
+    <header class="guestbook-section-head">
+      <p class="guestbook-kicker">From readers</p>
+      <h2 id="featured-notes-heading">Notes kept near the front</h2>
+    </header>
+    <div class="guestbook-grid guestbook-grid--featured" id="guestbookFeaturedEntries"></div>
+  </section>
 
-       "Reply..." was the label above the box, which is the wrong word for a
-       guestbook: nobody is replying to anything. The book unwinds a thread of
-       words for the reader to gather, so the reader's own end of it is what this
-       page is asking for. */
-    window.CUSDIS_LOCALE = {
-      powered_by: 'Comments powered by Cusdis',
-      post_comment: 'Leave it here',
-      loading: 'Loading',
-      email: 'Email (optional)',
-      nickname: 'Your name',
-      reply_placeholder: 'Your end of the thread',
-      reply_btn: 'Send',
-      sending: 'sending...',
-      mod_badge: 'MOD',
-      content_is_required: 'Write a line first',
-      nickname_is_required: 'Please add a name',
-      comment_has_been_sent: 'Your note is on its way. It appears here once I have read it.'
-    };
-    </script>
-    <script>
-    (function(){
-      var t = document.getElementById('cusdis_thread');
-      var loading = document.getElementById('cusdis-loading');
-      var fallback = document.getElementById('cusdis-fallback');
-      /* Match the widget to the page. The reader may have overridden the system
-         on an opening page, and that choice is remembered site-wide, so ask
-         window.__theme first: asking the system alone left a white comment box
-         on a dark page for anyone who had chosen dark by hand. */
-      var chosen = (window.__theme && window.__theme.get()) || 'auto';
-      var dark = chosen === 'dark' || (chosen === 'auto' && window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches);
-      if (t) t.setAttribute('data-theme', dark ? 'dark' : 'light');
-      function loaded(){
-        loading.hidden = true;
-        fallback.hidden = true;
-      }
-      window.showGuestbookFallback = function(){
-        loading.hidden = true;
-        fallback.hidden = false;
-      };
-      /* Room to write in.
-
-         The widget builds its iframe with srcdoc, which means that document is
-         SAME-ORIGIN with this page, so its stylesheet can be added to. (It is not
-         reachable from outside, only from here.) Its own CSS leaves the box at the
-         browser's default couple of lines, which suits a one-line reply and not a
-         paragraph, so give it the height of a real note. Their sheet already
-         allows resize:vertical, so anyone who wants more can drag for more.
-
-         Injected into <head>, so it applies to the app that mounts afterwards; the
-         widget re-measures on every DOM change inside itself and reports the taller
-         height back, which is what makes the iframe grow to fit. If this ever stops
-         being same-origin the catch leaves the box at its old size and nothing
-         else changes. */
-      function giveItRoom(){
-        var frame = t.querySelector('iframe');
-        if (!frame) return;
-        function inject(){
-          try {
-            var doc = frame.contentDocument;
-            if (!doc || doc.getElementById('room-to-write')) return;
-            var s = doc.createElement('style');
-            s.id = 'room-to-write';
-            s.textContent = 'textarea{min-height:190px!important;' +
-              'line-height:1.65!important;font-size:1rem!important;padding:10px!important}';
-            (doc.head || doc.documentElement).appendChild(s);
-
-            /* On a phone the tab bar is fixed across the bottom of the screen,
-               which is where the keyboard and this form end up. Being able to see
-               into this document means we can tell when someone is actually
-               typing, so the bar can step aside for exactly that moment instead
-               of being moved somewhere else on this page alone. The small delay
-               on the way out keeps it still while a finger moves between the
-               name field and the box. */
-            var settle;
-            doc.addEventListener('focusin', function (e) {
-              var tag = e.target && e.target.tagName;
-              if (tag !== 'TEXTAREA' && tag !== 'INPUT') return;
-              clearTimeout(settle);
-              document.body.classList.add('is-typing');
-            });
-            doc.addEventListener('focusout', function () {
-              clearTimeout(settle);
-              settle = setTimeout(function () {
-                document.body.classList.remove('is-typing');
-              }, 180);
-            });
-          } catch (e) {}
-        }
-        frame.addEventListener('load', inject);
-        inject();
-      }
-
-      new MutationObserver(function(){
-        if (t.firstElementChild) { loaded(); giveItRoom(); }
-      }).observe(t, {childList:true});
-      setTimeout(function(){
-        if (!t.firstElementChild) window.showGuestbookFallback();
-      }, 8000);
-    })();
-    </script>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"
-      onerror="showGuestbookFallback()"></script>
-
-    <noscript><p class="muted-note">The guestbook needs JavaScript. You can also write by email:
-      <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>.</p></noscript>
+  <section class="guestbook-archive" aria-labelledby="reader-notes-heading">
+    <header class="guestbook-archive-head">
+      <div>
+        <p class="guestbook-kicker">The open pages</p>
+        <h2 id="reader-notes-heading">Reader notes</h2>
+      </div>
+      <p class="guestbook-count" id="guestbookCount" aria-live="polite"></p>
+    </header>
+    <div class="guestbook-tools" id="guestbookTools" hidden>
+      <p class="guestbook-field guestbook-search-field">
+        <label for="guestbookSearch">Search the notes</label>
+        <input id="guestbookSearch" type="search" placeholder="A name or a line&hellip;"
+          autocomplete="off">
+      </p>
+      <p class="guestbook-field">
+        <label for="guestbookLanguageFilter">Language</label>
+        <select id="guestbookLanguageFilter"><option value="">All languages</option></select>
+      </p>
+      <p class="guestbook-field">
+        <label for="guestbookSort">Order</label>
+        <select id="guestbookSort">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+      </p>
+    </div>
+    <div class="guestbook-grid" id="guestbookEntries"></div>
+    <p class="guestbook-empty" id="guestbookEmpty">The first reader note is still
+      waiting. You can leave it above.</p>
+    <p class="guestbook-more-row"><button class="btn" id="guestbookMore" type="button"
+      hidden>Read more notes</button></p>
   </section>
 </main>
 
@@ -223,5 +174,9 @@ apply(get())})();</script>
     <br>Contact: <a href="mailto:amirarasteh1990@gmail.com">amirarasteh1990@gmail.com</a>
   </div>
 </footer>
+<script src="/assets/js/editions.js"></script>
+<script src="/assets/js/lang-alias.js"></script>
+<script src="/assets/js/guestbook.js" defer></script>
+<script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

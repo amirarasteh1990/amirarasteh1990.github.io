@@ -39,13 +39,15 @@
    v13: the excerpt image is now the author's own file, square, at two lines tall.
    v14: that image mirrored, so the loose end runs toward the sentence.
    v15: Paintings links go straight to the gallery, the lightbox no longer advances
-        on tap, download buttons carry sizes, guestbook trust lines. */
-var VERSION = 'arasteh-v15';
+        on tap, download buttons carry sizes, guestbook trust lines.
+   v16: the native guestbook page, script and repository-owned note index. */
+var VERSION = 'arasteh-v16';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
   '/',
   '/sedaha/',
+  '/comments/',
   '/assets/css/style.css',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
@@ -53,6 +55,8 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
+  '/assets/js/guestbook.js',
+  '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',
   '/assets/fonts/ebgaramond-semibold.woff2',
@@ -92,7 +96,7 @@ self.addEventListener('fetch', function (event) {
 
   var url;
   try { url = new URL(request.url); } catch (e) { return; }
-  if (url.origin !== self.location.origin) return;   // book files, embeds: untouched
+  if (url.origin !== self.location.origin) return;   // book files: untouched
 
   if (request.mode === 'navigate') {
     event.respondWith(
@@ -115,6 +119,21 @@ self.addEventListener('fetch', function (event) {
               );
             });
         })
+    );
+    return;
+  }
+
+  /* Reader notes change independently of the shell. Ask for the live index first,
+     then keep the last approved set available when the connection disappears. */
+  if (url.pathname === '/assets/data/guestbook.json') {
+    event.respondWith(
+      fetch(request).then(function (response) {
+        if (response && response.ok) {
+          var copy = response.clone();
+          caches.open(VERSION).then(function (cache) { cache.put(request, copy); });
+        }
+        return response;
+      }).catch(function () { return caches.match(request); })
     );
     return;
   }

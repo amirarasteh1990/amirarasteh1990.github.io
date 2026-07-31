@@ -4,8 +4,9 @@ check.py — one command that answers "is the site consistent?"
 
 The site is stamped together by eight scripts: the nav shell, the footer, the head
 block, the book text, the gallery derivatives, the 111 Opening pages, the name
-subsets. Each can already answer --check on its own, but nobody remembers to run
-eight of them, and the interesting failures are the ones no single script owns: a
+subsets, and the approved guestbook index. Each can already answer --check on its
+own, but nobody remembers to run eight of them, and the interesting failures are
+the ones no single script owns: a
 link pointing at a file that was renamed, a service worker caching a path that no
 longer exists, a hand-written page drifting away from the generator that owns the
 same markup everywhere else.
@@ -43,7 +44,8 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 
 SCRIPTS = ["sync_appnav.py", "sync_footers.py", "sync_head.py", "sync_book_text.py",
-           "sync_gallery.py", "build_read_pages.py", "build_name_fonts.py"]
+           "sync_gallery.py", "build_read_pages.py", "build_name_fonts.py",
+           "sync_guestbook.py"]
 
 SKIP_SCHEMES = ("http://", "https://", "mailto:", "tel:", "javascript:", "data:")
 
@@ -77,7 +79,8 @@ def run_node() -> None:
     if not node:
         print("[skip]  node --check (node not installed)")
         return
-    files = sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js"]
+    files = (sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js",
+             SITE / "guestbook-worker" / "worker.mjs"])
     bad = []
     for f in files:
         proc = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
@@ -152,6 +155,14 @@ def structured() -> None:
     except Exception as exc:  # noqa: BLE001
         report("manifest.webmanifest parses", False, str(exc))
 
+    try:
+        index = json.loads((SITE / "assets" / "data" / "guestbook.json")
+                           .read_text(encoding="utf-8"))
+        valid = index.get("version") == 1 and isinstance(index.get("entries"), list)
+        report("guestbook.json parses as a versioned entry index", valid)
+    except Exception as exc:  # noqa: BLE001
+        report("guestbook.json parses as a versioned entry index", False, str(exc))
+
     bad, found = [], 0
     for page in pages():
         for block in re.findall(
@@ -163,6 +174,29 @@ def structured() -> None:
             except Exception as exc:  # noqa: BLE001
                 bad.append(f"{page.relative_to(SITE).as_posix()}: {exc}")
     report(f"{found} JSON-LD blocks parse", not bad, bad[0] if bad else "")
+
+
+def guestbook() -> None:
+    """The native guestbook owns its public data and leaves no old embed behind."""
+    page = (SITE / "comments" / "index.html").read_text(encoding="utf-8")
+    report("the guestbook has an account-free native form",
+           'id="guestbookForm"' in page and 'type="email"' not in page)
+    report("the guestbook loads its repository-owned note reader",
+           '/assets/js/guestbook.js' in page)
+
+    legacy = []
+    # Keep the retired provider name and identifier out of the tree even in this
+    # guard, while still catching an accidental paste of either literal.
+    needles = ("cus" + "dis", "8b259adb-2d93-412b-925f-" + "530dd86d91a5")
+    suffixes = {".html", ".css", ".js", ".mjs", ".md", ".py", ".toml", ".json"}
+    for path in SITE.rglob("*"):
+        if not path.is_file() or ".git" in path.parts or path.suffix.lower() not in suffixes:
+            continue
+        body = path.read_text(encoding="utf-8", errors="replace").lower()
+        if any(needle in body for needle in needles):
+            legacy.append(path.relative_to(SITE).as_posix())
+    report("no legacy comment-service trace remains", not legacy,
+           legacy[0] if legacy else "")
 
 
 # ------------------------------------------------- hand-written vs generated
@@ -459,12 +493,13 @@ def main() -> int:
         return 0
 
     if args.quick:
-        print("[skip]  the seven script --checks (--quick)")
+        print("[skip]  the eight script --checks (--quick)")
     else:
         run_scripts()
     run_node()
     crawl()
     structured()
+    guestbook()
     hand_written()
     availability()
     logo()

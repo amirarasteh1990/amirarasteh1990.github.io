@@ -1,7 +1,7 @@
 # Website status & orientation — arasteh.art
 
 > Onboarding notes for anyone (human or agent) starting work on this site.
-> Last updated: 2026-07-25.
+> Last updated: 2026-08-01.
 >
 > Quick command reference: [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
@@ -27,7 +27,7 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
 | `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
-| `comments/index.html` | Guestbook (Cusdis embed). The only page with `<body class="writing">`: see below |
+| `comments/index.html` | Native guestbook: account-free reader-note form, multilingual archive, and book-page visual language |
 | `support/index.html` | Donation links |
 | `license.html` | License (book = author's custom terms: free complete unchanged electronic sharing, all other rights reserved, NO CC claim per 2026-07-16 book decision; paintings = All Rights Reserved) |
 | `404.html` | Branded not-found page (GitHub Pages serves it automatically) |
@@ -37,6 +37,11 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, trigger-focus restoration, and one address per painting (`#picture-4`) |
 | `assets/js/reader.js` | The reading toolbar on the 114 opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
 | `assets/js/lang-alias.js` | The other names each language answers to (Farsi, Bangla, Mandarin, Filipino, Castellano, Telegu…). Both language finders consult it; add freely, no rebuild needed |
+| `assets/js/guestbook.js` | Guestbook form, language picker, safe card rendering, search, language filter, sorting, and pagination |
+| `assets/data/guestbook.json` | Generated public index of approved notes; contains names, notes, languages, dates, and public IDs only |
+| `comments/entries/` | One public JSON file per approved note, kept as the durable repository archive |
+| `guestbook-worker/` | Small serverless intake endpoint. Validates submissions and opens private moderation issues without retaining visitor metadata |
+| `sync_guestbook.py` | Pulls approved private issues into public entry files and regenerates the guestbook index; never performs Git writes |
 | `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
 | `assets/fonts/names/…` | One tiny subset per script holding only the letters the 114 language names need (`build_name_fonts.py`) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
@@ -60,10 +65,8 @@ The dark block gives `.logo-panel`, `.site-footer .foot-logo` and `.nf-logo` a w
 plate to sit on. The artwork is never filtered, inverted or cropped: it is given paper, which
 is how it is printed in the book.
 
-Anything embedded from another origin has to be told separately. The guestbook widget
-(Cusdis) takes a `data-theme`, and it asks `window.__theme` **before** the system: reading
-the system alone left a white comment box on a dark page for anyone who had chosen dark by
-hand on an opening page. Any future embed needs the same three lines.
+The guestbook is native HTML and uses this same stylesheet, so its writing desk, reader-note
+cards, controls, and empty states follow the selected theme without a second theme system.
 
 ## One availability story (`status_rows()` is the edition record)
 
@@ -201,43 +204,52 @@ is what decides whether a book is downloaded on mobile data.
 
 ## `body class="writing"` (the guestbook only)
 
-Every other page is read; the guestbook is written on, and both halves of the shell were in
-the way of that. The class turns two things off, in CSS only, so `sync_footers.py` and
-`sync_appnav.py` keep owning the markup on all 124 pages:
+Every other page is read; the guestbook is written on. The page also carries `body.book`, so
+it has the cover painting, warm floating sheet, serif voice, inset bookplate frame, and dark
+palette of `/sedaha/`. The form and cards remain native page elements with no iframe or
+third-party visual layer.
 
-- **the footer is the same as every other page's.** Two attempts to trim it were reverted at
-  the author's request: first the logo came back, then the link row. Do not try a third time.
-  The contact address in it is also the page's own escape hatch when the Cusdis widget is
-  blocked, and the fallback text points at it.
-- **the widget's own words** are set through `window.CUSDIS_LOCALE`, defined in an inline
-  script *before* `cusdis.es.js` runs (that script serializes the object into the iframe it
-  builds, so setting it later does nothing). The keys, and the English defaults, are read out
-  of the widget bundle at `cusdis.com/js/iframe.umd.js`: `powered_by`, `post_comment`,
-  `loading`, `email`, `nickname`, `reply_placeholder`, `reply_btn`, `sending`, `mod_badge`,
-  `content_is_required`, `nickname_is_required`, `comment_has_been_sent`. **Supply all of
-  them**: a missing key falls back to English *and* logs a console warning. `reply_placeholder`
-  is the label above the box (was "Reply...", which is the wrong word for a guestbook).
-- **the widget's iframe is same-origin**, because the loader builds it with `srcdoc` rather
-  than a `src` URL. So its document can be reached from this page and styled: the inline
-  script appends one `<style>` to give the textarea the height of a real note. Wrapped in
-  try/catch, so if that ever changes the box simply keeps its default size. Note this also
-  means anything else inside the widget is reachable if ever needed.
-- the comment box is given a floor of 560px (460 on phones) and 44px of clearance beneath it.
-  Cusdis renders into an iframe and sizes it from its own content, so until that message
-  arrives the box is short and whatever follows sits right under a half-drawn form, which
-  reads as the footer crowding the form. `min-height` is deliberate: it beats the inline
-  `height` the widget sets. Nothing on this page is positioned, so nothing can overlap
-  anything; the fix is room, not z-order.
-- on phones the tab bar **stays at the bottom, as on every other page**, and slides out of
-  view only while someone is typing in the comment box, which is the one moment it is in the
-  way. `.is-typing` is added to `<body>` from `focusin` inside the widget's document and
-  removed 180ms after `focusout`, so moving between the name field and the box does not make
-  it flicker. The body keeps its padding while the bar is away, so nothing jumps.
-  (It was briefly made to scroll away from the top here instead. That fixed the overlap and
-  created a worse problem: the guestbook became the one page where the tabs were somewhere
-  else.)
+- **The footer is the same as every other page's.** The shared scripts still own its markup.
+- On phones the tab bar **stays at the bottom, as on every other page**, and slides below the
+  viewport only while a form field is focused. `guestbook.js` adds `.is-typing` to `<body>`
+  from the form's `focusin` event and removes it 180ms after `focusout`, so moving between
+  fields does not make it flicker. The body keeps its padding while the bar is away.
+- Form content is plain text. Cards are assembled with `textContent`, never `innerHTML`, and
+  each note receives its language and writing direction before rendering.
 
 Reuse it on any future page whose point is a form, not prose.
+
+## Guestbook data and moderation
+
+The repository is the public source of truth. Approved notes live individually under
+`comments/entries/`, while `assets/data/guestbook.json` is the compact index fetched by the
+page. This avoids one ever-growing hand-edited file while still requiring one request from a
+visitor. The index is network-first in `sw.js`, with the last approved copy available offline.
+
+Only public presentation fields enter the site repository: public ID, chosen name or pen name,
+plain-text note, language code and name, publication date, and optional featured state. There
+is no email field. The guest needs no GitHub account. The endpoint does not copy IP addresses,
+user-agent strings, or request headers into the moderation record.
+
+New notes pass through the Worker in `guestbook-worker/`. It validates the origin, content
+type, lengths, language, consent, and honeypot, then creates a readable issue in a separate
+**private** GitHub repository with labels `guestbook` and `pending`. The token is a Worker
+secret and never reaches the browser.
+
+Moderation is label-based:
+
+1. Read the note in the private repository's Issues screen.
+2. Add `approved` to publish it. Add `featured` as well to keep it near the front. Add
+   `rejected`, or remove `approved`, to unpublish it on the next sync.
+3. Run `python sync_guestbook.py --repo OWNER/PRIVATE_REPO` from the website repository.
+4. Review the working-tree diff, run `python check.py`, then use the normal author-owned
+   publishing workflow.
+
+The sync command writes public entry files and the index only. It never stages, commits, or
+pushes. Running `python sync_guestbook.py --check` validates the current archive without
+accessing GitHub. The empty endpoint meta in `comments/index.html` deliberately disables the
+submit button until the private repository and Worker are configured; the archive and all
+local UI remain usable meanwhile.
 
 ## Fonts
 

@@ -1097,8 +1097,9 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
         f' <span class="n">{counts[s]}</span></div>' for s, lbl, blurb in STATES)
     body = []
     for r in rows:
+        direction = ' dir="rtl"' if r["rtl"] else ""
         native = (f'<span class="native" lang="{r["lang"]}"'
-                  f'{" dir=\"rtl\"" if r["rtl"] else ""}>{html.escape(r["native"])}</span>')
+                  f'{direction}>{html.escape(r["native"])}</span>')
         # don't print "Igbo Igbo": the English name is only worth showing when it differs
         if r["en"] != r["native"]:
             native += f' <span class="en">{html.escape(r["en"])}</span>'
