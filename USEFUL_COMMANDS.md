@@ -174,10 +174,11 @@ Run only when the source TTF files or font-generation logic change:
 
 ## Guestbook moderation
 
-Visitors need no account or email. Their notes arrive as issues in the separate
-private moderation repository. From its Issues screen, add the `approved` label
-to publish a note and optionally add `featured` to show it near the front. Add
-`rejected`, or remove `approved`, to unpublish it on the next sync.
+Visitors choose **For Amir only** or **Share it with others**. Private notes are
+blocked from publication by the sync script. For a shareable note, add `approved`
+in the private repository to publish it and optionally add `featured` to show it
+near the front. Add `rejected`, or remove `approved`, to unpublish it on the next
+sync.
 
 Pull all approved notes into one public JSON file per note and rebuild the compact
 browser index. Replace the repository placeholder with the private queue's name:
@@ -197,8 +198,9 @@ Review the generated entry files and index in the working-tree diff, then run
 
 The one-time intake setup is documented in `guestbook-worker/README.md`. After
 deploying it, put its HTTPS URL in the `guestbook-endpoint` meta tag in
-`comments/index.html`. Until that value exists, the form stays visibly and safely
-disabled while the approved-note archive remains browsable.
+`comments/index.html`. Until that value exists, the active form uses the
+`guestbook-fallback-email` meta value to open a pre-addressed email containing the
+note and the visitor's audience choice.
 
 ## Preview locally
 

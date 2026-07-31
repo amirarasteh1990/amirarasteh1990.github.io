@@ -181,6 +181,18 @@ def guestbook() -> None:
     page = (SITE / "comments" / "index.html").read_text(encoding="utf-8")
     report("the guestbook has an account-free native form",
            'id="guestbookForm"' in page and 'type="email"' not in page)
+    report("the writing form asks for audience, not language",
+           'name="audience"' in page and 'id="guestbookLanguage"' not in page)
+    report("private and shareable notes are explicit choices",
+           bool(re.search(r'name="audience"[^>]*value="private"[^>]*checked', page))
+           and 'value="public"' in page)
+    report("the unconfigured form has a delivery fallback",
+           'name="guestbook-fallback-email"' in page)
+    submit = re.search(r'<button[^>]*id="guestbookSubmit"[^>]*>', page)
+    report("the guestbook submit button starts enabled",
+           bool(submit) and "disabled" not in submit.group(0))
+    report("confirmed submissions have a visible receipt",
+           'id="guestbookReceipt"' in page and 'Your note has been received.' in page)
     report("the guestbook loads its repository-owned note reader",
            '/assets/js/guestbook.js' in page)
 

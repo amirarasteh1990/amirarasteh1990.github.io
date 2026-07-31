@@ -19,8 +19,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/css/style.css">
 <!-- Set this to the deployed private-moderation Worker endpoint. Until then the
-     complete local interface stays visible, with submission safely disabled. -->
+     form opens a pre-addressed email as a transparent delivery fallback. -->
 <meta name="guestbook-endpoint" content="">
+<meta name="guestbook-fallback-email" content="amirarasteh1990@gmail.com">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -69,10 +70,10 @@ apply(get())})();</script>
   <section class="guestbook-intro">
     <h1>Guestbook</h1>
     <p class="lead">Leave a note: where the book found you, or a
-      line that stayed. Like the book, a thread passed from hand to hand:
-      what you write here is open for others to read.</p>
-    <p class="muted-note">No account or email is needed. Notes appear after a quiet
-      read-through.</p>
+      line that stayed. Pass it quietly to Amir, or add it to the thread
+      shared from reader to reader.</p>
+    <p class="muted-note">No account or email field is needed. Choose whether your
+      note stays with Amir or may join the notes shared here.</p>
   </section>
 
   <section class="guestbook-compose" aria-labelledby="leave-note-heading">
@@ -81,19 +82,11 @@ apply(get())})();</script>
       <h2 id="leave-note-heading">Leave a reader note</h2>
     </header>
     <form id="guestbookForm">
-      <div class="guestbook-form-row">
-        <p class="guestbook-field">
-          <label for="guestbookName">Name or pen name</label>
-          <input id="guestbookName" name="name" type="text" maxlength="80"
-            autocomplete="name" required>
-        </p>
-        <p class="guestbook-field">
-          <label for="guestbookLanguage">Language of your note</label>
-          <input id="guestbookLanguage" name="language_label" type="search"
-            list="guestbookLanguages" maxlength="80" autocomplete="off" required>
-          <datalist id="guestbookLanguages"></datalist>
-        </p>
-      </div>
+      <p class="guestbook-field">
+        <label for="guestbookName">Name or pen name</label>
+        <input id="guestbookName" name="name" type="text" maxlength="80"
+          autocomplete="name" required>
+      </p>
       <p class="guestbook-field">
         <label for="guestbookMessage">Your end of the thread</label>
         <textarea id="guestbookMessage" name="message" rows="8" maxlength="3000"
@@ -105,17 +98,33 @@ apply(get())})();</script>
         <input id="guestbookWebsite" name="website" type="text" tabindex="-1"
           autocomplete="off">
       </p>
-      <p class="guestbook-consent">
-        <label><input name="consent" type="checkbox" required>
-          <span>I understand that my chosen name and note may be published on
-            arasteh.art and preserved in its public archive.</span></label>
-      </p>
+      <fieldset class="guestbook-audience">
+        <legend>Who is this note for?</legend>
+        <label class="guestbook-audience-choice">
+          <input name="audience" type="radio" value="private" checked>
+          <span><strong>For Amir only</strong>
+            <small>A private note. It will never appear on this page.</small></span>
+        </label>
+        <label class="guestbook-audience-choice">
+          <input name="audience" type="radio" value="public">
+          <span><strong>Share it with others</strong>
+            <small>After a read-through, your chosen name and note may join the
+              public archive.</small></span>
+        </label>
+      </fieldset>
       <div class="guestbook-submit-row">
         <button class="btn btn-primary" id="guestbookSubmit" type="submit">Leave it here</button>
         <p class="guestbook-form-status" id="guestbookFormStatus" role="status"
           aria-live="polite" hidden></p>
       </div>
     </form>
+    <section class="guestbook-receipt" id="guestbookReceipt" tabindex="-1"
+      role="status" aria-live="polite" hidden>
+      <p class="guestbook-kicker">Received</p>
+      <h3>Thank you. Your note has been received.</h3>
+      <p id="guestbookReceiptText"></p>
+      <button class="btn" id="guestbookAnother" type="button">Leave another note</button>
+    </section>
     <noscript><p class="muted-note">JavaScript is needed to leave and browse reader notes.</p></noscript>
   </section>
 
@@ -175,7 +184,6 @@ apply(get())})();</script>
   </div>
 </footer>
 <script src="/assets/js/editions.js"></script>
-<script src="/assets/js/lang-alias.js"></script>
 <script src="/assets/js/guestbook.js" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>

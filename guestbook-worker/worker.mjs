@@ -51,10 +51,13 @@ function base64url(value) {
 function submission(raw) {
   var language = text(raw.language, 'Language', 2, 35);
   if (!/^(?:[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*|mul|und)$/.test(language)) {
-    throw new Error('Choose a language from the list.');
+    throw new Error('The note language could not be recognized.');
   }
   if (raw.website) throw new Error('The note could not be accepted.');
-  if (raw.consent !== true) throw new Error('Public-display consent is required.');
+  var audience = text(raw.audience, 'Audience', 6, 7);
+  if (audience !== 'private' && audience !== 'public') {
+    throw new Error('Choose who the note is for.');
+  }
   var now = new Date();
   return {
     id: now.toISOString().slice(0, 10) + '-' + crypto.randomUUID().slice(0, 8),
@@ -62,18 +65,26 @@ function submission(raw) {
     message: text(raw.message, 'Note', 1, 3000),
     language: language,
     language_name: line(raw.language_name, 'Language name', 1, 80),
+    audience: audience,
     submitted_at: now.toISOString()
   };
 }
 
 function issueBody(note) {
   var marker = base64url(JSON.stringify(note));
+  var moderation = note.audience === 'public'
+    ? 'Add the `approved` label to publish it on the next local guestbook sync. ' +
+      'Add `featured` as well to place it in the curated group.'
+    : 'This note is private. The sync script blocks it from publication even if ' +
+      'an approval label is added accidentally.';
   return '<!-- guestbook-submission:v1 ' + marker + ' -->\n\n' +
     '## Name or pen name\n\n<pre>' + escapeHtml(note.name) + '</pre>\n\n' +
-    '## Language\n\n' + escapeHtml(note.language_name) + ' (`' + note.language + '`)\n\n' +
+    '## Language (automatic)\n\n' + escapeHtml(note.language_name) + ' (`' + note.language + '`)\n\n' +
+    '## Audience\n\n' + (note.audience === 'public'
+      ? 'May be shared with readers after approval.'
+      : '**For Amir only. Never publish this note.**') + '\n\n' +
     '## Reader note\n\n<pre>' + escapeHtml(note.message) + '</pre>\n\n' +
-    '---\nSubmitted ' + note.submitted_at + '. Add the `approved` label to publish it ' +
-    'on the next local guestbook sync. Add `featured` as well to place it in the curated group.';
+    '---\nSubmitted ' + note.submitted_at + '. ' + moderation;
 }
 
 export default {
@@ -112,7 +123,7 @@ export default {
         body: JSON.stringify({
           title: 'Guestbook · ' + note.language_name + ' · ' + note.submitted_at.slice(0, 10),
           body: issueBody(note),
-          labels: ['guestbook', 'pending']
+          labels: ['guestbook', 'pending', note.audience === 'public' ? 'shareable' : 'private']
         })
       });
       if (!response.ok) {
@@ -121,7 +132,9 @@ export default {
       }
       return json({
         ok: true,
-        message: 'Your note is waiting for a quiet read-through before it appears here.'
+        message: note.audience === 'public'
+          ? 'Your note is waiting for a quiet read-through before it may appear here.'
+          : 'Your private note has been passed to Amir and will not be published.'
       }, 201, headers);
     } catch (error) {
       return json({ok:false, error:error && error.message ? error.message : 'The note could not be accepted.'}, 400, headers);

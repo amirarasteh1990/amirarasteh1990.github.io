@@ -8,7 +8,8 @@ change cannot make the published guestbook disappear.
 ## One-time setup
 
 1. Create a private GitHub repository for the moderation queue.
-2. Add labels named `guestbook`, `pending`, `approved`, `featured`, and `rejected`.
+2. Add labels named `guestbook`, `pending`, `private`, `shareable`, `approved`,
+   `featured`, and `rejected`.
 3. Create a fine-grained GitHub token limited to that private repository with
    Issues read/write permission and no Contents permission.
 4. Copy `wrangler.toml.example` to `wrangler.toml` and set `GITHUB_REPO`.
@@ -24,9 +25,11 @@ credential. It accepts requests only from the configured site origin.
 
 ## Moderation
 
-Read each private issue normally. Add `approved` to publish it on the next sync;
-add `featured` too for the curated reader-note group. Add `rejected`, or remove
-`approved`, to unpublish a previously approved note on the next sync.
+Read each private issue normally. A note labelled `private` is for the author only
+and the sync script refuses to publish it. For a note labelled `shareable`, add
+`approved` to publish it on the next sync and optionally add `featured` for the
+curated reader-note group. Add `rejected`, or remove `approved`, to unpublish a
+previously approved note.
 
 From the website repository, import everything approved and rebuild the public
 index:

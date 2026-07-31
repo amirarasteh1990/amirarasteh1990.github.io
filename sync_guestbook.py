@@ -122,7 +122,7 @@ def check() -> int:
     return 0
 
 
-def decode_submission(body: str, issue_number: int) -> dict:
+def decode_submission(body: str, issue_number: int) -> tuple[dict, str]:
     found = MARKER.search(body or "")
     if not found:
         raise GuestbookError(f"issue #{issue_number}: submission marker missing")
@@ -137,7 +137,10 @@ def decode_submission(body: str, issue_number: int) -> dict:
         date = dt.datetime.fromisoformat(submitted.replace("Z", "+00:00")).date().isoformat()
     except ValueError as exc:
         raise GuestbookError(f"issue #{issue_number}: invalid submitted_at") from exc
-    return validate_entry({
+    audience = clean_line(raw.get("audience"), "audience", 6, 7)
+    if audience not in {"private", "public"}:
+        raise GuestbookError(f"issue #{issue_number}: invalid audience")
+    entry = validate_entry({
         "id": raw.get("id"),
         "name": raw.get("name"),
         "message": raw.get("message"),
@@ -146,6 +149,7 @@ def decode_submission(body: str, issue_number: int) -> dict:
         "published": date,
         "featured": False,
     }, f"issue #{issue_number}")
+    return entry, audience
 
 
 def moderation_issues(repo: str) -> list[dict]:
@@ -177,10 +181,10 @@ def sync(repo: str | None) -> int:
             known_ids: set[str] = set()
             published_ids: set[str] = set()
             for issue in issues:
-                entry = decode_submission(issue.get("body") or "", int(issue["number"]))
+                entry, audience = decode_submission(issue.get("body") or "", int(issue["number"]))
                 known_ids.add(entry["id"])
                 labels = {label.get("name", "").lower() for label in issue.get("labels", [])}
-                if "approved" not in labels or "rejected" in labels:
+                if audience != "public" or "approved" not in labels or "rejected" in labels:
                     continue
                 entry["featured"] = "featured" in labels
                 published_ids.add(entry["id"])

@@ -14,4 +14,6 @@ python sync_guestbook.py --repo OWNER/PRIVATE_REPOSITORY
 
 The script creates the entry file and rebuilds the public index. Nobody needs to
 edit JSON by hand. Removing `approved`, or adding `rejected`, removes a previously
-published entry on the next sync, so takedowns use the same issue screen.
+published entry on the next sync, so takedowns use the same issue screen. Notes
+marked for the author only are never imported, even if they receive `approved` by
+mistake.

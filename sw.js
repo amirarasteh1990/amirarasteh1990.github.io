@@ -40,8 +40,9 @@
    v14: that image mirrored, so the loose end runs toward the sentence.
    v15: Paintings links go straight to the gallery, the lightbox no longer advances
         on tap, download buttons carry sizes, guestbook trust lines.
-   v16: the native guestbook page, script and repository-owned note index. */
-var VERSION = 'arasteh-v16';
+   v16: the native guestbook page, script and repository-owned note index.
+   v17: the private-or-public note choice and active email delivery fallback. */
+var VERSION = 'arasteh-v17';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

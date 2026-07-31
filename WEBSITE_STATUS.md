@@ -216,6 +216,14 @@ third-party visual layer.
   fields does not make it flicker. The body keeps its padding while the bar is away.
 - Form content is plain text. Cards are assembled with `textContent`, never `innerHTML`, and
   each note receives its language and writing direction before rendering.
+- The writing form has no language selector. It attaches the visitor's browser language as
+  archive metadata, without making language a condition for leaving a note.
+- The audience choice is explicit and defaults to **For Amir only**. A private note can never
+  enter the public index. **Share it with others** is the visitor's permission for moderation
+  and possible publication.
+- After the intake confirms that its private issue was created, the form is replaced by a
+  prominent **Your note has been received** panel with audience-specific privacy text. The
+  email fallback never claims receipt; it only says that the filled draft has been opened.
 
 Reuse it on any future page whose point is a form, not prose.
 
@@ -232,24 +240,28 @@ is no email field. The guest needs no GitHub account. The endpoint does not copy
 user-agent strings, or request headers into the moderation record.
 
 New notes pass through the Worker in `guestbook-worker/`. It validates the origin, content
-type, lengths, language, consent, and honeypot, then creates a readable issue in a separate
-**private** GitHub repository with labels `guestbook` and `pending`. The token is a Worker
-secret and never reaches the browser.
+type, lengths, automatic language metadata, audience, and honeypot, then creates a readable
+issue in a separate **private** GitHub repository. It adds `private` or `shareable` so the
+choice is unmistakable in the issue list. The token is a Worker secret and never reaches the
+browser.
 
 Moderation is label-based:
 
-1. Read the note in the private repository's Issues screen.
-2. Add `approved` to publish it. Add `featured` as well to keep it near the front. Add
-   `rejected`, or remove `approved`, to unpublish it on the next sync.
+1. Read the note in the private repository's Issues screen. Notes labelled `private` remain
+   there for the author only; the sync script refuses to publish them even if `approved` is
+   added accidentally.
+2. For a `shareable` note, add `approved` to publish it. Add `featured` as well to keep it
+   near the front. Add `rejected`, or remove `approved`, to unpublish it on the next sync.
 3. Run `python sync_guestbook.py --repo OWNER/PRIVATE_REPO` from the website repository.
 4. Review the working-tree diff, run `python check.py`, then use the normal author-owned
    publishing workflow.
 
 The sync command writes public entry files and the index only. It never stages, commits, or
 pushes. Running `python sync_guestbook.py --check` validates the current archive without
-accessing GitHub. The empty endpoint meta in `comments/index.html` deliberately disables the
-submit button until the private repository and Worker are configured; the archive and all
-local UI remain usable meanwhile.
+accessing GitHub. When the endpoint meta in `comments/index.html` is empty, submission opens a
+pre-addressed email with the note and audience choice already filled in. The form keeps its
+contents on the page. Once the Worker URL is configured, both private and shareable notes go
+straight to the private moderation queue without requiring an account or email address.
 
 ## Fonts
 

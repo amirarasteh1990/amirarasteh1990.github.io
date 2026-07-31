@@ -1,20 +1,22 @@
 /* Native guestbook for /comments/.
 
    Approved notes are read from the repository-owned JSON index. New notes go to
-   a small intake endpoint which creates a private moderation issue; the browser
-   never receives a GitHub credential and never renders visitor text as HTML. */
+   a small intake endpoint which creates a private moderation issue. Until that
+   endpoint is configured, a pre-addressed email is the visible delivery fallback.
+   The browser never receives a GitHub credential and never renders visitor text
+   as HTML. */
 (function () {
   'use strict';
 
   var LANGS = (window.EDITIONS || []).slice();
-  var ALIASES = window.LANG_ALIASES || {};
   var RTL = {ar:1, bal:1, ckb:1, fa:1, glk:1, he:1, lrc:1, mzn:1,
              prs:1, ps:1, sd:1, ug:1, ur:1, yi:1};
   var form = document.getElementById('guestbookForm');
-  var languageInput = document.getElementById('guestbookLanguage');
-  var languageList = document.getElementById('guestbookLanguages');
   var formStatus = document.getElementById('guestbookFormStatus');
   var submit = document.getElementById('guestbookSubmit');
+  var receipt = document.getElementById('guestbookReceipt');
+  var receiptText = document.getElementById('guestbookReceiptText');
+  var another = document.getElementById('guestbookAnother');
   var search = document.getElementById('guestbookSearch');
   var languageFilter = document.getElementById('guestbookLanguageFilter');
   var sort = document.getElementById('guestbookSort');
@@ -26,7 +28,9 @@
   var featuredSection = document.getElementById('guestbookFeatured');
   var featuredList = document.getElementById('guestbookFeaturedEntries');
   var endpointMeta = document.querySelector('meta[name="guestbook-endpoint"]');
+  var fallbackMeta = document.querySelector('meta[name="guestbook-fallback-email"]');
   var endpoint = endpointMeta ? endpointMeta.content.trim() : '';
+  var fallbackEmail = fallbackMeta ? fallbackMeta.content.trim() : '';
   var allEntries = [];
   var shown = 12;
 
@@ -48,29 +52,7 @@
     return {slug:code, lang:code || 'und', native:code || 'Other', en:code || 'Other', rtl:RTL[code]};
   }
 
-  function languageFromText(value) {
-    var q = fold(value).trim();
-    if (!q) return null;
-    if (q === 'multilingual' || q === 'multiple languages') return languageRecord('mul');
-    if (q === 'other') return languageRecord('und');
-    var exact = LANGS.filter(function (L) {
-      var names = [L.slug, L.lang, L.native, L.en].concat(String(ALIASES[L.slug] || '').split(' '));
-      return names.some(function (name) { return fold(name) === q; });
-    });
-    return exact.length === 1 ? exact[0] : null;
-  }
-
-  function populateLanguagePicker() {
-    if (!languageList) return;
-    LANGS.slice().sort(function (a, b) { return a.en.localeCompare(b.en); })
-      .concat([languageRecord('mul'), languageRecord('und')])
-      .forEach(function (L) {
-        var option = document.createElement('option');
-        option.value = L.en;
-        option.label = L.native === L.en ? L.en : L.native + ' · ' + L.en;
-        languageList.appendChild(option);
-      });
-
+  function preferredLanguage() {
     var wanted = (navigator.languages || [navigator.language || 'en']);
     for (var i = 0; i < wanted.length; i++) {
       var tag = String(wanted[i]).toLowerCase();
@@ -78,8 +60,9 @@
         return L.lang.toLowerCase() === tag || L.slug.toLowerCase() === tag ||
           L.lang.toLowerCase().split('-')[0] === tag.split('-')[0];
       })[0];
-      if (match) { languageInput.value = match.en; break; }
+      if (match) return match;
     }
+    return languageRecord('und');
   }
 
   function status(message, kind) {
@@ -89,32 +72,55 @@
     formStatus.hidden = !message;
   }
 
+  function showReceipt(audience, message) {
+    if (!receipt || !receiptText) return;
+    receiptText.textContent = message || (audience === 'public'
+      ? 'It is waiting for a read-through before it may join the public archive.'
+      : 'It has been passed to Amir privately and will not be published.');
+    form.hidden = true;
+    receipt.hidden = false;
+    receipt.focus();
+  }
+
+  function emailFallback(payload, reason) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fallbackEmail)) return false;
+    var visibility = payload.audience === 'public'
+      ? 'Share it with others after review'
+      : 'For Amir only; do not publish';
+    var subject = payload.audience === 'public'
+      ? 'A reader note for the arasteh.art guestbook'
+      : 'A private reader note for Amir';
+    var body = [
+      'Name or pen name: ' + payload.name,
+      'Visibility: ' + visibility,
+      '',
+      payload.message
+    ].join('\n');
+    status((reason ? reason + ' ' : '') +
+      'Your email app is opening with the note filled in. Nothing has been erased from this form.', 'quiet');
+    window.location.href = 'mailto:' + fallbackEmail + '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+    return true;
+  }
+
   function configureForm() {
     if (!form || !submit) return;
-    if (!endpoint) {
-      submit.disabled = true;
-      status('The new writing desk is ready locally and will open when its private moderation endpoint is connected.', 'quiet');
-    }
-
-    languageInput.addEventListener('input', function () { languageInput.setCustomValidity(''); });
     form.addEventListener('submit', function (event) {
       event.preventDefault();
-      if (!endpoint || submit.disabled) return;
-      var L = languageFromText(languageInput.value);
-      if (!L) {
-        languageInput.setCustomValidity('Choose a language from the list, Multilingual, or Other.');
-        languageInput.reportValidity();
-        return;
-      }
-      languageInput.setCustomValidity('');
+      if (submit.disabled) return;
+      var L = preferredLanguage();
       var payload = {
         name: form.elements.name.value.trim(),
         message: form.elements.message.value.trim(),
         language: L.lang,
         language_name: L.en,
-        consent: form.elements.consent.checked,
+        audience: form.elements.audience.value,
         website: form.elements.website.value
       };
+      if (!endpoint) {
+        if (!emailFallback(payload)) status('The note could not be delivered. Please use the contact address below.', 'error');
+        return;
+      }
       submit.disabled = true;
       submit.textContent = 'Sending…';
       status('Passing your note into the private review queue…');
@@ -129,10 +135,12 @@
         });
       }).then(function (data) {
         form.reset();
-        populateDefaultLanguage();
-        status(data.message || 'Your note is waiting for a quiet read-through before it appears here.', 'success');
+        status('');
+        showReceipt(payload.audience, data.message);
       }).catch(function (error) {
-        status(error.message || 'The note could not be sent. Please try again.', 'error');
+        if (!emailFallback(payload, 'The private writing desk could not be reached.')) {
+          status(error.message || 'The note could not be sent. Please try again.', 'error');
+        }
       }).finally(function () {
         submit.disabled = false;
         submit.textContent = 'Leave it here';
@@ -149,21 +157,11 @@
       clearTimeout(settle);
       settle = setTimeout(function () { document.body.classList.remove('is-typing'); }, 180);
     });
-  }
-
-  function populateDefaultLanguage() {
-    if (!languageInput) return;
-    languageInput.value = '';
-    var wanted = (navigator.languages || [navigator.language || 'en']);
-    for (var i = 0; i < wanted.length; i++) {
-      var tag = String(wanted[i]).toLowerCase();
-      var match = LANGS.filter(function (L) {
-        return L.lang.toLowerCase() === tag || L.slug.toLowerCase() === tag ||
-          L.lang.toLowerCase().split('-')[0] === tag.split('-')[0];
-      })[0];
-      if (match) { languageInput.value = match.en; return; }
-    }
-    languageInput.value = 'English';
+    if (another) another.addEventListener('click', function () {
+      receipt.hidden = true;
+      form.hidden = false;
+      document.getElementById('guestbookName').focus();
+    });
   }
 
   function dateLabel(value) {
@@ -192,6 +190,8 @@
     footer.appendChild(name);
     var details = document.createElement('span');
     details.className = 'guestbook-card-details';
+    details.lang = 'en';
+    details.dir = 'ltr';
     var language = document.createElement('span');
     language.className = 'guestbook-card-language';
     language.textContent = entry.language_name || L.en;
@@ -287,7 +287,6 @@
   });
   if (loadMore) loadMore.addEventListener('click', function () { shown += 12; render(); });
 
-  populateLanguagePicker();
   configureForm();
   load();
 })();
