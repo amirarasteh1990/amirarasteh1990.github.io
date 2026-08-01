@@ -130,11 +130,17 @@ export default {
         console.error('GitHub issue creation failed:', response.status);
         return json({ok:false, error:'The private review queue could not accept the note.'}, 502, headers);
       }
+      var created = await response.json().catch(function () { return {}; });
+      if (!created || !Number.isInteger(created.number)) {
+        console.error('GitHub issue creation returned no issue number.');
+        return json({ok:false, error:'Delivery could not be confirmed.'}, 502, headers);
+      }
       return json({
         ok: true,
+        received: true,
         message: note.audience === 'public'
-          ? 'Your note is waiting for a quiet read-through before it may appear here.'
-          : 'Your private note has been passed to Amir and will not be published.'
+          ? 'Amir has received it. After a read-through, it may join the public archive.'
+          : 'It is with Amir only and will not be published.'
       }, 201, headers);
     } catch (error) {
       return json({ok:false, error:error && error.message ? error.message : 'The note could not be accepted.'}, 400, headers);

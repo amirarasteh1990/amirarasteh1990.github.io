@@ -41,8 +41,9 @@
    v15: Paintings links go straight to the gallery, the lightbox no longer advances
         on tap, download buttons carry sizes, guestbook trust lines.
    v16: the native guestbook page, script and repository-owned note index.
-   v17: the private-or-public note choice and active email delivery fallback. */
-var VERSION = 'arasteh-v17';
+   v17: the private-or-public note choice.
+   v18: receipts require verified private-queue storage; no email fallback. */
+var VERSION = 'arasteh-v18';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [

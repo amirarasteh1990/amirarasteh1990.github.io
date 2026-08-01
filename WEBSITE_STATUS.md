@@ -221,9 +221,10 @@ third-party visual layer.
 - The audience choice is explicit and defaults to **For Amir only**. A private note can never
   enter the public index. **Share it with others** is the visitor's permission for moderation
   and possible publication.
-- After the intake confirms that its private issue was created, the form is replaced by a
-  prominent **Your note has been received** panel with audience-specific privacy text. The
-  email fallback never claims receipt; it only says that the filled draft has been opened.
+- After the intake verifies that its private issue was created, the form is replaced by a
+  prominent **Amir has received your note** panel with audience-specific privacy text. No
+  success state is shown for a timeout, malformed response, or failed issue creation; the
+  visitor's text stays in the form so it can be tried again.
 
 Reuse it on any future page whose point is a form, not prose.
 
@@ -258,10 +259,14 @@ Moderation is label-based:
 
 The sync command writes public entry files and the index only. It never stages, commits, or
 pushes. Running `python sync_guestbook.py --check` validates the current archive without
-accessing GitHub. When the endpoint meta in `comments/index.html` is empty, submission opens a
-pre-addressed email with the note and audience choice already filled in. The form keeps its
-contents on the page. Once the Worker URL is configured, both private and shareable notes go
-straight to the private moderation queue without requiring an account or email address.
+accessing GitHub. The endpoint meta in `comments/index.html` must contain the deployed Worker
+URL. Until it does, the button stays unavailable rather than claiming to deliver something it
+cannot store. Once configured, both private and shareable notes go straight to the private
+moderation queue without requiring an account or email address.
+
+For local development, no Worker host is required. `guestbook-worker/dev-server.mjs` adapts the
+same handler to Node at `http://127.0.0.1:8787/`; `guestbook.js` selects it automatically when
+the page itself is on localhost or 127.0.0.1. Credentials stay in the local process environment.
 
 ## Fonts
 

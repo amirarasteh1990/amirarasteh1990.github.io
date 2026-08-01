@@ -18,10 +18,9 @@
 <link rel="canonical" href="https://arasteh.art/comments/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/css/style.css">
-<!-- Set this to the deployed private-moderation Worker endpoint. Until then the
-     form opens a pre-addressed email as a transparent delivery fallback. -->
+<!-- Set this to the deployed private-moderation Worker endpoint. A receipt is
+     shown only after that endpoint confirms durable delivery. -->
 <meta name="guestbook-endpoint" content="">
-<meta name="guestbook-fallback-email" content="amirarasteh1990@gmail.com">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -72,7 +71,7 @@ apply(get())})();</script>
     <p class="lead">Leave a note: where the book found you, or a
       line that stayed. Pass it quietly to Amir, or add it to the thread
       shared from reader to reader.</p>
-    <p class="muted-note">No account or email field is needed. Choose whether your
+    <p class="muted-note">No account or email is needed. Choose whether your
       note stays with Amir or may join the notes shared here.</p>
   </section>
 
@@ -121,7 +120,7 @@ apply(get())})();</script>
     <section class="guestbook-receipt" id="guestbookReceipt" tabindex="-1"
       role="status" aria-live="polite" hidden>
       <p class="guestbook-kicker">Received</p>
-      <h3>Thank you. Your note has been received.</h3>
+      <h3>Thank you. Amir has received your note.</h3>
       <p id="guestbookReceiptText"></p>
       <button class="btn" id="guestbookAnother" type="button">Leave another note</button>
     </section>

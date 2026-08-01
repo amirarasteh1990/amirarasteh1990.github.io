@@ -80,13 +80,22 @@ def run_node() -> None:
         print("[skip]  node --check (node not installed)")
         return
     files = (sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js",
-             SITE / "guestbook-worker" / "worker.mjs"])
+             SITE / "guestbook-worker" / "worker.mjs",
+             SITE / "guestbook-worker" / "dev-server.mjs"])
     bad = []
     for f in files:
         proc = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
         if proc.returncode != 0:
             bad.append(f"{f.name}: {proc.stderr.strip().splitlines()[0]}")
     report(f"node --check on {len(files)} scripts", not bad, bad[0] if bad else "")
+
+    if not bad:
+        test = subprocess.run([node, str(SITE / "guestbook-worker" / "test.mjs")],
+                              capture_output=True, text=True, encoding="utf-8", errors="replace")
+        detail = (test.stderr or test.stdout).strip().splitlines()
+        report("guestbook verified-delivery pipeline",
+               test.returncode == 0,
+               detail[0] if test.returncode and detail else "")
 
 
 # ------------------------------------------------------------ the link graph
@@ -186,13 +195,16 @@ def guestbook() -> None:
     report("private and shareable notes are explicit choices",
            bool(re.search(r'name="audience"[^>]*value="private"[^>]*checked', page))
            and 'value="public"' in page)
-    report("the unconfigured form has a delivery fallback",
-           'name="guestbook-fallback-email"' in page)
+    endpoint = re.search(r'<meta name="guestbook-endpoint" content="([^"]*)">', page)
+    script = (SITE / "assets" / "js" / "guestbook.js").read_text(encoding="utf-8")
+    local = "http://127.0.0.1:8787/" in script and (SITE / "guestbook-worker" / "dev-server.mjs").is_file()
+    hosted = bool(endpoint) and endpoint.group(1).startswith("https://")
+    report("the guestbook has a local or hosted delivery path", hosted or local)
     submit = re.search(r'<button[^>]*id="guestbookSubmit"[^>]*>', page)
     report("the guestbook submit button starts enabled",
            bool(submit) and "disabled" not in submit.group(0))
     report("confirmed submissions have a visible receipt",
-           'id="guestbookReceipt"' in page and 'Your note has been received.' in page)
+           'id="guestbookReceipt"' in page and 'Amir has received your note.' in page)
     report("the guestbook loads its repository-owned note reader",
            '/assets/js/guestbook.js' in page)
 

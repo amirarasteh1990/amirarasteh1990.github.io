@@ -5,6 +5,32 @@ creates a private GitHub issue for moderation. It is intentionally only an intak
 pipe: approved public notes live in the website repository, so a future endpoint
 change cannot make the published guestbook disappear.
 
+## Run locally, without Cloudflare
+
+The local adapter runs the exact `worker.mjs` handler at
+`http://127.0.0.1:8787/`. When the site is opened on localhost or 127.0.0.1,
+`guestbook.js` uses that address automatically if the production endpoint meta is
+empty.
+
+In one PowerShell window, from the website repository:
+
+```powershell
+$env:GITHUB_TOKEN = gh auth token
+$env:GITHUB_OWNER = "amirarasteh1990"
+$env:GITHUB_REPO = "arasteh-guestbook-moderation"
+$env:ALLOWED_ORIGIN = "http://127.0.0.1:8000"
+node guestbook-worker/dev-server.mjs
+```
+
+In a second window:
+
+```powershell
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8000/comments/`. The GitHub token stays only in the local
+intake process and is never written to a file or sent to the browser.
+
 ## One-time setup
 
 1. Create a private GitHub repository for the moderation queue.
@@ -22,6 +48,20 @@ change cannot make the published guestbook disappear.
 
 The Worker does not collect email, persist IP addresses, or expose its GitHub
 credential. It accepts requests only from the configured site origin.
+
+A successful response is returned only after GitHub answers with a created issue
+number. The page uses the accompanying `received: true` value to show “Amir has
+received your note.” Errors and ambiguous responses never produce a receipt.
+
+Run the mocked intake contract test without network access:
+
+```powershell
+node guestbook-worker/test.mjs
+```
+
+It checks both audience paths, issue labels, the durable encoded payload, origin
+rejection, and that a GitHub response without an issue number cannot create a
+false receipt. `python check.py` runs this test automatically.
 
 ## Moderation
 

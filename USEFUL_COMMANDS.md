@@ -180,6 +180,10 @@ in the private repository to publish it and optionally add `featured` to show it
 near the front. Add `rejected`, or remove `approved`, to unpublish it on the next
 sync.
 
+For a complete local test without Cloudflare, follow the two-terminal commands in
+`guestbook-worker/README.md`. Local pages automatically use the local intake at
+`http://127.0.0.1:8787/`; the production endpoint meta can remain empty.
+
 Pull all approved notes into one public JSON file per note and rebuild the compact
 browser index. Replace the repository placeholder with the private queue's name:
 
@@ -198,9 +202,10 @@ Review the generated entry files and index in the working-tree diff, then run
 
 The one-time intake setup is documented in `guestbook-worker/README.md`. After
 deploying it, put its HTTPS URL in the `guestbook-endpoint` meta tag in
-`comments/index.html`. Until that value exists, the active form uses the
-`guestbook-fallback-email` meta value to open a pre-addressed email containing the
-note and the visitor's audience choice.
+`comments/index.html`. On the public site, submission remains unavailable until
+that value exists; localhost uses the local intake described above.
+There is deliberately no email fallback: the page says Amir received a note only
+after the Worker verifies that GitHub created its private moderation issue.
 
 ## Preview locally
 

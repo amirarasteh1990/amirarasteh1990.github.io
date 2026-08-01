@@ -1,10 +1,9 @@
 /* Native guestbook for /comments/.
 
    Approved notes are read from the repository-owned JSON index. New notes go to
-   a small intake endpoint which creates a private moderation issue. Until that
-   endpoint is configured, a pre-addressed email is the visible delivery fallback.
-   The browser never receives a GitHub credential and never renders visitor text
-   as HTML. */
+   a small intake endpoint which creates a private moderation issue. A receipt is
+   shown only after that endpoint verifies durable storage. The browser never
+   receives a GitHub credential and never renders visitor text as HTML. */
 (function () {
   'use strict';
 
@@ -28,9 +27,10 @@
   var featuredSection = document.getElementById('guestbookFeatured');
   var featuredList = document.getElementById('guestbookFeaturedEntries');
   var endpointMeta = document.querySelector('meta[name="guestbook-endpoint"]');
-  var fallbackMeta = document.querySelector('meta[name="guestbook-fallback-email"]');
   var endpoint = endpointMeta ? endpointMeta.content.trim() : '';
-  var fallbackEmail = fallbackMeta ? fallbackMeta.content.trim() : '';
+  if (!endpoint && /^(?:localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    endpoint = 'http://127.0.0.1:8787/';
+  }
   var allEntries = [];
   var shown = 12;
 
@@ -82,29 +82,12 @@
     receipt.focus();
   }
 
-  function emailFallback(payload, reason) {
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fallbackEmail)) return false;
-    var visibility = payload.audience === 'public'
-      ? 'Share it with others after review'
-      : 'For Amir only; do not publish';
-    var subject = payload.audience === 'public'
-      ? 'A reader note for the arasteh.art guestbook'
-      : 'A private reader note for Amir';
-    var body = [
-      'Name or pen name: ' + payload.name,
-      'Visibility: ' + visibility,
-      '',
-      payload.message
-    ].join('\n');
-    status((reason ? reason + ' ' : '') +
-      'Your email app is opening with the note filled in. Nothing has been erased from this form.', 'quiet');
-    window.location.href = 'mailto:' + fallbackEmail + '?subject=' + encodeURIComponent(subject) +
-      '&body=' + encodeURIComponent(body);
-    return true;
-  }
-
   function configureForm() {
     if (!form || !submit) return;
+    if (!endpoint) {
+      submit.disabled = true;
+      status('The guestbook is temporarily unavailable. Please return soon.', 'quiet');
+    }
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (submit.disabled) return;
@@ -117,10 +100,6 @@
         audience: form.elements.audience.value,
         website: form.elements.website.value
       };
-      if (!endpoint) {
-        if (!emailFallback(payload)) status('The note could not be delivered. Please use the contact address below.', 'error');
-        return;
-      }
       submit.disabled = true;
       submit.textContent = 'Sending…';
       status('Passing your note into the private review queue…');
@@ -134,13 +113,12 @@
           return data;
         });
       }).then(function (data) {
+        if (data.received !== true) throw new Error('Delivery was not confirmed. Your note is still here.');
         form.reset();
         status('');
         showReceipt(payload.audience, data.message);
       }).catch(function (error) {
-        if (!emailFallback(payload, 'The private writing desk could not be reached.')) {
-          status(error.message || 'The note could not be sent. Please try again.', 'error');
-        }
+        status(error.message || 'Delivery was not confirmed. Your note is still here; please try again.', 'error');
       }).finally(function () {
         submit.disabled = false;
         submit.textContent = 'Leave it here';
