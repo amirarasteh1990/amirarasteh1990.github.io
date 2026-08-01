@@ -30,6 +30,7 @@ run before a push.
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime
 import html as htmllib
 import json
@@ -79,24 +80,13 @@ def run_node() -> None:
     if not node:
         print("[skip]  node --check (node not installed)")
         return
-    files = (sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js",
-             SITE / "guestbook-worker" / "worker.mjs",
-             SITE / "guestbook-worker" / "dev-server.mjs"])
+    files = sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js"]
     bad = []
     for f in files:
         proc = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
         if proc.returncode != 0:
             bad.append(f"{f.name}: {proc.stderr.strip().splitlines()[0]}")
     report(f"node --check on {len(files)} scripts", not bad, bad[0] if bad else "")
-
-    if not bad:
-        test = subprocess.run([node, str(SITE / "guestbook-worker" / "test.mjs")],
-                              capture_output=True, text=True, encoding="utf-8", errors="replace")
-        detail = (test.stderr or test.stdout).strip().splitlines()
-        report("guestbook verified-delivery pipeline",
-               test.returncode == 0,
-               detail[0] if test.returncode and detail else "")
-
 
 # ------------------------------------------------------------ the link graph
 def resolve(page: Path, url: str) -> Path | None:
@@ -190,24 +180,34 @@ def structured() -> None:
 
 
 def guestbook() -> None:
-    """The native guestbook owns its public data and leaves no old embed behind."""
+    """The GitHub-only guestbook owns its public data and exposes no credential."""
     page = (SITE / "comments" / "index.html").read_text(encoding="utf-8")
-    report("the guestbook has an account-free native form",
-           'id="guestbookForm"' in page and 'type="email"' not in page)
-    report("the writing form asks for audience, not language",
-           'name="audience"' in page and 'id="guestbookLanguage"' not in page)
-    report("private and shareable notes are explicit choices",
-           bool(re.search(r'name="audience"[^>]*value="private"[^>]*checked', page))
-           and 'value="public"' in page)
-    endpoint = re.search(r'<meta name="guestbook-endpoint" content="([^"]*)">', page)
+    report("the guestbook has a simple public-note form",
+           'id="guestbookForm"' in page and 'type="email"' not in page
+           and 'name="audience"' not in page and 'maxlength="500"' in page)
+    report("the GitHub account and public-review handoff are explicit",
+           'A GitHub account is required' in page
+           and 'Your note will be public on GitHub' in page)
+    repository = re.search(
+        r'<meta name="guestbook-repository" content="([^"]+)">', page
+    )
     script = (SITE / "assets" / "js" / "guestbook.js").read_text(encoding="utf-8")
-    local = "http://127.0.0.1:8787/" in script and (SITE / "guestbook-worker" / "dev-server.mjs").is_file()
-    hosted = bool(endpoint) and endpoint.group(1).startswith("https://")
-    report("the guestbook has a local or hosted delivery path", hosted or local)
+    report("the form targets the public website repository",
+           bool(repository)
+           and repository.group(1) == "amirarasteh1990/amirarasteh1990.github.io"
+           and "https://github.com/" in script and "/issues/new" in script)
+    report("the browser contains no GitHub write credential",
+           "api.github.com" not in script and "Authorization" not in script
+           and "GITHUB_TOKEN" not in script and "guestbook-endpoint" not in page)
     submit = re.search(r'<button[^>]*id="guestbookSubmit"[^>]*>', page)
-    report("the guestbook submit button fails closed before configuration",
-           bool(submit) and "disabled" in submit.group(0)
-           and "submit.disabled = false" in script)
+    report("the form continues to GitHub instead of claiming receipt",
+           bool(submit) and "disabled" not in submit.group(0)
+           and "Review on GitHub" in page and "location.assign(target)" in script
+           and "target.length > 7500" in script
+           and 'id="guestbookReceipt"' not in page)
+    report("new issues carry the moderation labels and v2 marker",
+           "guestbook-submission:v2" in script
+           and "guestbook,pending,shareable" in script)
     script_url = re.search(r'<script src="(/assets/js/guestbook\.js\?v=([^"]+))"', page)
     sw = (SITE / "sw.js").read_text(encoding="utf-8")
     sw_version = re.search(r"var VERSION = 'arasteh-v([^']+)'", sw)
@@ -215,10 +215,42 @@ def guestbook() -> None:
               and script_url.group(2) == sw_version.group(1)
               and f"'{script_url.group(1)}'" in sw)
     report("the guestbook page and offline shell pin the same script version", pinned)
-    report("confirmed submissions have a visible receipt",
-           'id="guestbookReceipt"' in page and 'Amir has received your note.' in page)
     report("the guestbook loads its repository-owned note reader",
            '/assets/js/guestbook.js' in page)
+
+    workflow_path = SITE / ".github" / "workflows" / "publish-guestbook.yml"
+    workflow = workflow_path.read_text(encoding="utf-8") if workflow_path.is_file() else ""
+    report("approved issues rebuild and commit the repository-owned index",
+           "issues:" in workflow and "contents: write" in workflow
+           and "pages: write" in workflow
+           and "actions/checkout@v7" in workflow
+           and "github.actor == github.repository_owner" in workflow
+           and 'python sync_guestbook.py --repo "$GITHUB_REPOSITORY" --issue "$ISSUE_NUMBER"' in workflow
+           and "git add -- comments/entries assets/data/guestbook.json" in workflow
+           and 'repos/$GITHUB_REPOSITORY/pages/builds' in workflow)
+
+    try:
+        import sync_guestbook as guestbook_sync
+        sample = {
+            "id": "2026-08-02-abc12345",
+            "language": "en",
+            "language_name": "English",
+            "audience": "public",
+            "submitted_at": "2026-08-02T12:00:00.000Z",
+        }
+        token = base64.urlsafe_b64encode(
+            json.dumps(sample).encode("utf-8")
+        ).decode("ascii").rstrip("=")
+        body = (f"<!-- guestbook-submission:v2 {token} -->\n\n"
+                "## Name or pen name\n\n<pre>A Reader</pre>\n\n"
+                "## Language (automatic)\n\nEnglish (`en`)\n\n"
+                "## Reader note\n\n<pre>A &amp; B</pre>")
+        entry, audience = guestbook_sync.decode_submission(body, 1)
+        marker_ok = (entry["name"] == "A Reader" and entry["message"] == "A & B"
+                     and audience == "public")
+    except Exception:  # noqa: BLE001 - a failed parser is the finding
+        marker_ok = False
+    report("the public issue marker round-trips into a validated entry", marker_ok)
 
     legacy = []
     # Keep the retired provider name and identifier out of the tree even in this

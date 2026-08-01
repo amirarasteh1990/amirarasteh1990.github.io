@@ -521,18 +521,6 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .guestbook-field-note{display:block;margin-top:5px;color:var(--muted);font-size:.78rem}
 .guestbook-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;
   height:1px!important;overflow:hidden!important}
-.guestbook-audience{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:2px 0 20px;
-  padding:0;border:0}
-.guestbook-audience legend{width:100%;margin:0 0 8px;padding:0;font-family:var(--serif);
-  font-size:1.03rem;font-weight:600}
-.guestbook-audience-choice{display:flex;align-items:flex-start;gap:10px;min-width:0;padding:13px;
-  border:1.5px solid rgba(138,90,59,.26);border-radius:9px;background:rgba(255,253,249,.48);
-  cursor:pointer;transition:border-color .15s ease,background .15s ease}
-.guestbook-audience-choice:hover{border-color:rgba(138,90,59,.55)}
-.guestbook-audience-choice:has(input:checked){border-color:var(--accent);background:rgba(138,90,59,.09)}
-.guestbook-audience-choice input{flex:none;margin:5px 0 0;accent-color:var(--accent)}
-.guestbook-audience-choice strong{display:block;color:var(--ink);font-family:var(--serif);font-size:1.04rem}
-.guestbook-audience-choice small{display:block;margin-top:2px;color:var(--muted);font-size:.78rem;line-height:1.45}
 .guestbook-submit-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .guestbook-submit-row .btn{min-width:148px}
 .guestbook-submit-row .btn:disabled{cursor:not-allowed;filter:saturate(.35);opacity:.58}
@@ -541,10 +529,6 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .guestbook-form-status.is-success{border-color:#2b6b3a;color:#275d33}
 .guestbook-form-status.is-error{border-color:#a34237;color:#87372f}
 .guestbook-form-status.is-quiet{border-color:var(--line)}
-.guestbook-receipt{margin:4px 0 0;padding:24px 22px;border:1px solid rgba(43,107,58,.30);
-  border-radius:9px;background:rgba(255,253,249,.66);text-align:center;outline:none}
-.guestbook-receipt h3{margin:4px 0 7px;font-size:1.42rem;color:#275d33}
-.guestbook-receipt p:not(.guestbook-kicker){max-width:34rem;margin:0 auto 17px;color:var(--muted)}
 .guestbook-featured,.guestbook-archive{margin-top:var(--flow-major)}
 .guestbook-archive{padding-top:var(--flow-section);border-top:1px solid var(--line)}
 .guestbook-archive-head{display:flex;align-items:end;justify-content:space-between;gap:20px;
@@ -577,7 +561,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .guestbook-more-row{margin:20px 0 0;text-align:center}
 @media (max-width:680px){
   .guestbook-compose{padding:23px 18px 24px}
-  .guestbook-form-row,.guestbook-grid,.guestbook-audience{grid-template-columns:1fr}
+  .guestbook-form-row,.guestbook-grid{grid-template-columns:1fr}
   .guestbook-tools{grid-template-columns:1fr 1fr}
   .guestbook-search-field{grid-column:1/-1}
 }
@@ -1054,9 +1038,6 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .guestbook-field input:hover,.guestbook-field textarea:hover,.guestbook-field select:hover{
     border-color:rgba(217,155,109,.65)}
   .guestbook-tools{background:rgba(36,29,21,.58);border-color:#3d3428}
-  .guestbook-audience-choice{background:rgba(44,37,29,.58);border-color:#4b3d2e}
-  .guestbook-audience-choice:has(input:checked){background:rgba(217,155,109,.12)}
-  .guestbook-audience-choice strong{color:#e6dccb}
   .guestbook-card{background:#211b15;border-color:#3d3428}
   .guestbook-card.is-featured{background:#241d15;border-color:rgba(217,155,109,.32);
     box-shadow:var(--shadow),inset 0 0 0 5px #241d15,inset 0 0 0 6px rgba(255,255,255,.09)}
@@ -1065,8 +1046,6 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   .guestbook-form-status{background:rgba(28,23,18,.7);color:#d8cbb6}
   .guestbook-form-status.is-success{color:#8ad9a3}
   .guestbook-form-status.is-error{color:#e9a097}
-  .guestbook-receipt{background:rgba(28,23,18,.7);border-color:rgba(127,206,151,.34)}
-  .guestbook-receipt h3{color:#8ad9a3}
   .guestbook-empty{border-color:rgba(217,155,109,.32)}
 
   /* warm cream callout boxes */

@@ -18,9 +18,7 @@
 <link rel="canonical" href="https://arasteh.art/comments/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/css/style.css">
-<!-- Set this to the deployed private-moderation Worker endpoint. A receipt is
-     shown only after that endpoint confirms durable delivery. -->
-<meta name="guestbook-endpoint" content="">
+<meta name="guestbook-repository" content="amirarasteh1990/amirarasteh1990.github.io">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -69,10 +67,10 @@ apply(get())})();</script>
   <section class="guestbook-intro">
     <h1>Guestbook</h1>
     <p class="lead">Leave a note: where the book found you, or a
-      line that stayed. Pass it quietly to Amir, or add it to the thread
+      line that stayed. After Amir reads it, the note may join the thread
       shared from reader to reader.</p>
-    <p class="muted-note">No account or email is needed. Choose whether your
-      note stays with Amir or may join the notes shared here.</p>
+    <p class="muted-note">A GitHub account is required for the final submission.
+      Your note will be public on GitHub while Amir reviews it.</p>
   </section>
 
   <section class="guestbook-compose" aria-labelledby="leave-note-heading">
@@ -83,48 +81,27 @@ apply(get())})();</script>
     <form id="guestbookForm">
       <p class="guestbook-field">
         <label for="guestbookName">Name or pen name</label>
-        <input id="guestbookName" name="name" type="text" maxlength="80"
+        <input id="guestbookName" name="name" type="text" maxlength="40"
           autocomplete="name" required>
       </p>
       <p class="guestbook-field">
         <label for="guestbookMessage">Your end of the thread</label>
-        <textarea id="guestbookMessage" name="message" rows="8" maxlength="3000"
+        <textarea id="guestbookMessage" name="message" rows="8" maxlength="500"
           required></textarea>
-        <span class="guestbook-field-note">Plain text, up to 3,000 characters.</span>
+        <span class="guestbook-field-note">Plain text, up to 500 characters.</span>
       </p>
       <p class="guestbook-honeypot" aria-hidden="true">
         <label for="guestbookWebsite">Website</label>
         <input id="guestbookWebsite" name="website" type="text" tabindex="-1"
           autocomplete="off">
       </p>
-      <fieldset class="guestbook-audience">
-        <legend>Who is this note for?</legend>
-        <label class="guestbook-audience-choice">
-          <input name="audience" type="radio" value="private" checked>
-          <span><strong>For Amir only</strong>
-            <small>A private note. It will never appear on this page.</small></span>
-        </label>
-        <label class="guestbook-audience-choice">
-          <input name="audience" type="radio" value="public">
-          <span><strong>Share it with others</strong>
-            <small>After a read-through, your chosen name and note may join the
-              public archive.</small></span>
-        </label>
-      </fieldset>
       <div class="guestbook-submit-row">
-        <button class="btn btn-primary" id="guestbookSubmit" type="submit" disabled>Leave it here</button>
+        <button class="btn btn-primary" id="guestbookSubmit" type="submit">Review on GitHub</button>
         <p class="guestbook-form-status" id="guestbookFormStatus" role="status"
           aria-live="polite" hidden></p>
       </div>
     </form>
-    <section class="guestbook-receipt" id="guestbookReceipt" tabindex="-1"
-      role="status" aria-live="polite" hidden>
-      <p class="guestbook-kicker">Received</p>
-      <h3>Thank you. Amir has received your note.</h3>
-      <p id="guestbookReceiptText"></p>
-      <button class="btn" id="guestbookAnother" type="button">Leave another note</button>
-    </section>
-    <noscript><p class="muted-note">JavaScript is needed to leave and browse reader notes.</p></noscript>
+    <noscript><p class="muted-note">JavaScript is needed to prepare a GitHub submission and browse reader notes.</p></noscript>
   </section>
 
   <section class="guestbook-featured" id="guestbookFeatured"
@@ -183,7 +160,7 @@ apply(get())})();</script>
   </div>
 </footer>
 <script src="/assets/js/editions.js"></script>
-<script src="/assets/js/guestbook.js?v=19" defer></script>
+<script src="/assets/js/guestbook.js?v=20" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

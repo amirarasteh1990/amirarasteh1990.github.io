@@ -1,9 +1,9 @@
 /* Native guestbook for /comments/.
 
-   Approved notes are read from the repository-owned JSON index. New notes go to
-   a small intake endpoint which creates a private moderation issue. A receipt is
-   shown only after that endpoint verifies durable storage. The browser never
-   receives a GitHub credential and never renders visitor text as HTML. */
+   Approved notes are read from the repository-owned JSON index. New notes are
+   handed to GitHub as pre-filled public issues; no write credential is present in
+   the browser. Approved issue data is copied into the index by GitHub Actions.
+   Visitor text is never rendered as HTML on this page. */
 (function () {
   'use strict';
 
@@ -13,9 +13,6 @@
   var form = document.getElementById('guestbookForm');
   var formStatus = document.getElementById('guestbookFormStatus');
   var submit = document.getElementById('guestbookSubmit');
-  var receipt = document.getElementById('guestbookReceipt');
-  var receiptText = document.getElementById('guestbookReceiptText');
-  var another = document.getElementById('guestbookAnother');
   var search = document.getElementById('guestbookSearch');
   var languageFilter = document.getElementById('guestbookLanguageFilter');
   var sort = document.getElementById('guestbookSort');
@@ -26,11 +23,8 @@
   var loadMore = document.getElementById('guestbookMore');
   var featuredSection = document.getElementById('guestbookFeatured');
   var featuredList = document.getElementById('guestbookFeaturedEntries');
-  var endpointMeta = document.querySelector('meta[name="guestbook-endpoint"]');
-  var endpoint = endpointMeta ? endpointMeta.content.trim() : '';
-  if (!endpoint && /^(?:localhost|127\.0\.0\.1)$/.test(location.hostname)) {
-    endpoint = 'http://127.0.0.1:8787/';
-  }
+  var repositoryMeta = document.querySelector('meta[name="guestbook-repository"]');
+  var repository = repositoryMeta ? repositoryMeta.content.trim() : '';
   var allEntries = [];
   var shown = 12;
 
@@ -72,69 +66,82 @@
     formStatus.hidden = !message;
   }
 
-  function showReceipt(audience, message) {
-    if (!receipt || !receiptText) return;
-    receiptText.textContent = message || (audience === 'public'
-      ? 'It is waiting for a read-through before it may join the public archive.'
-      : 'It has been passed to Amir privately and will not be published.');
-    form.hidden = true;
-    receipt.hidden = false;
-    receipt.focus();
+  function escapeHtml(value) {
+    return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
-  function unavailableStatus() {
-    status('The guestbook is temporarily unavailable. You can still contact Amir at ', 'quiet');
-    if (!formStatus) return;
-    var contact = document.createElement('a');
-    contact.href = 'mailto:amirarasteh1990@gmail.com';
-    contact.textContent = 'amirarasteh1990@gmail.com';
-    formStatus.appendChild(contact);
-    formStatus.appendChild(document.createTextNode('.'));
+  function base64url(value) {
+    var bytes = new TextEncoder().encode(value);
+    var binary = '';
+    for (var i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+    return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+
+  function submissionId(now) {
+    var random = window.crypto && typeof window.crypto.randomUUID === 'function'
+      ? window.crypto.randomUUID().slice(0, 8)
+      : Math.random().toString(36).slice(2, 10).padEnd(8, '0');
+    return now.toISOString().slice(0, 10) + '-' + random;
+  }
+
+  function issueUrl(note) {
+    var metadata = {
+      id: note.id,
+      language: note.language,
+      language_name: note.language_name,
+      audience: 'public',
+      submitted_at: note.submitted_at
+    };
+    var marker = base64url(JSON.stringify(metadata));
+    var body = '<!-- guestbook-submission:v2 ' + marker + ' -->\n\n' +
+      '## Name or pen name\n\n<pre>' + escapeHtml(note.name) + '</pre>\n\n' +
+      '## Language (automatic)\n\n' + escapeHtml(note.language_name) +
+      ' (`' + note.language + '`)\n\n' +
+      '## Reader note\n\n<pre>' + escapeHtml(note.message) + '</pre>\n\n' +
+      '---\nSubmitted through https://arasteh.art/comments/. ' +
+      'Amir can add the `approved` label to publish this note.';
+    var url = new URL('https://github.com/' + repository + '/issues/new');
+    url.searchParams.set('title', 'Reader note from ' + note.name);
+    url.searchParams.set('body', body);
+    url.searchParams.set('labels', 'guestbook,pending,shareable');
+    return url.toString();
   }
 
   function configureForm() {
     if (!form || !submit) return;
-    if (!endpoint) {
+    if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) {
       submit.disabled = true;
-      unavailableStatus();
-    } else {
-      submit.disabled = false;
+      status('The GitHub guestbook repository is not configured.', 'error');
+      return;
     }
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (submit.disabled) return;
+      if (form.elements.website.value) {
+        status('The note could not be prepared.', 'error');
+        return;
+      }
       var L = preferredLanguage();
-      var payload = {
+      var now = new Date();
+      var note = {
+        id: submissionId(now),
         name: form.elements.name.value.trim(),
         message: form.elements.message.value.trim(),
         language: L.lang,
         language_name: L.en,
-        audience: form.elements.audience.value,
-        website: form.elements.website.value
+        submitted_at: now.toISOString()
       };
-      submit.disabled = true;
-      submit.textContent = 'Sending…';
-      status('Passing your note into the private review queue…');
-      fetch(endpoint, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload)
-      }).then(function (response) {
-        return response.json().catch(function () { return {}; }).then(function (data) {
-          if (!response.ok || !data.ok) throw new Error(data.error || 'The note could not be sent.');
-          return data;
-        });
-      }).then(function (data) {
-        if (data.received !== true) throw new Error('Delivery was not confirmed. Your note is still here.');
-        form.reset();
-        status('');
-        showReceipt(payload.audience, data.message);
-      }).catch(function (error) {
-        status(error.message || 'Delivery was not confirmed. Your note is still here; please try again.', 'error');
-      }).finally(function () {
-        submit.disabled = false;
-        submit.textContent = 'Leave it here';
-      });
+      if (!note.name || !note.message) {
+        status('Add your name and note before continuing.', 'error');
+        return;
+      }
+      var target = issueUrl(note);
+      if (target.length > 7500) {
+        status('This note is too long for GitHub\'s handoff. Please shorten it slightly.', 'error');
+        return;
+      }
+      status('Opening GitHub so you can review and submit this public note.', 'quiet');
+      location.assign(target);
     });
 
     var settle;
@@ -146,11 +153,6 @@
     form.addEventListener('focusout', function () {
       clearTimeout(settle);
       settle = setTimeout(function () { document.body.classList.remove('is-typing'); }, 180);
-    });
-    if (another) another.addEventListener('click', function () {
-      receipt.hidden = true;
-      form.hidden = false;
-      document.getElementById('guestbookName').focus();
     });
   }
 

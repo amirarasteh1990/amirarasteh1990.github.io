@@ -27,7 +27,7 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
 | `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
-| `comments/index.html` | Native guestbook: account-free reader-note form, multilingual archive, and book-page visual language |
+| `comments/index.html` | Native guestbook: GitHub-backed public reader-note form, multilingual archive, and book-page visual language |
 | `support/index.html` | Donation links |
 | `license.html` | License (book = author's custom terms: free complete unchanged electronic sharing, all other rights reserved, NO CC claim per 2026-07-16 book decision; paintings = All Rights Reserved) |
 | `404.html` | Branded not-found page (GitHub Pages serves it automatically) |
@@ -37,11 +37,11 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, trigger-focus restoration, and one address per painting (`#picture-4`) |
 | `assets/js/reader.js` | The reading toolbar on the 114 opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
 | `assets/js/lang-alias.js` | The other names each language answers to (Farsi, Bangla, Mandarin, Filipino, Castellano, Telegu…). Both language finders consult it; add freely, no rebuild needed |
-| `assets/js/guestbook.js` | Guestbook form, language picker, safe card rendering, search, language filter, sorting, and pagination |
+| `assets/js/guestbook.js` | GitHub issue handoff, automatic language metadata, safe card rendering, search, language filter, sorting, and pagination |
 | `assets/data/guestbook.json` | Generated public index of approved notes; contains names, notes, languages, dates, and public IDs only |
 | `comments/entries/` | One public JSON file per approved note, kept as the durable repository archive |
-| `guestbook-worker/` | Small serverless intake endpoint. Validates submissions and opens private moderation issues without retaining visitor metadata |
-| `sync_guestbook.py` | Pulls approved private issues into public entry files and regenerates the guestbook index; never performs Git writes |
+| `.github/workflows/publish-guestbook.yml` | GitHub-only moderation automation: approved public issues regenerate and commit the public entry files and index |
+| `sync_guestbook.py` | Pulls approved guestbook issues into public entry files and regenerates the index; the script itself never performs Git writes |
 | `assets/fonts/…` | Self-hosted woff2 subsets of the book's brand faces (see Fonts below) |
 | `assets/fonts/names/…` | One tiny subset per script holding only the letters the 114 language names need (`build_name_fonts.py`) |
 | `assets/img/…` | Web-resolution images only (hi-res masters kept private, not in repo) |
@@ -218,17 +218,17 @@ third-party visual layer.
   each note receives its language and writing direction before rendering.
 - The writing form has no language selector. It attaches the visitor's browser language as
   archive metadata, without making language a condition for leaving a note.
-- The audience choice is explicit and defaults to **For Amir only**. A private note can never
-  enter the public index. **Share it with others** is the visitor's permission for moderation
-  and possible publication.
-- After the intake verifies that its private issue was created, the form is replaced by a
-  prominent **Amir has received your note** panel with audience-specific privacy text. No
-  success state is shown for a timeout, malformed response, or failed issue creation; the
-  visitor's text stays in the form so it can be tried again.
-- The submit button is disabled in the HTML and enabled by `guestbook.js` only when a delivery
-  endpoint exists. The script URL is version-pinned in both `comments/index.html` and `sw.js`.
-  This prevents a returning browser from combining new form markup with an older cached
-  submission client during the first navigation after a deployment.
+- The writing surface contains only a name and a plain-text note. Notes are limited to 500
+  characters so the complete multilingual submission fits reliably in GitHub's pre-filled
+  issue URL.
+- The account and privacy boundary is explicit before submission: a GitHub account is required,
+  and every submitted issue is public while it awaits review. There is no private-note mode.
+- **Review on GitHub** opens a pre-filled issue in the public website repository. GitHub owns
+  the final authenticated submit action; the page never receives a repository credential and
+  never claims that an issue was created before GitHub shows the visitor the result.
+- The script URL is version-pinned in both `comments/index.html` and `sw.js`. This prevents a
+  returning browser from combining new form markup with an older cached submission client
+  during the first navigation after a deployment.
 
 Reuse it on any future page whose point is a form, not prose.
 
@@ -239,38 +239,40 @@ The repository is the public source of truth. Approved notes live individually u
 page. This avoids one ever-growing hand-edited file while still requiring one request from a
 visitor. The index is network-first in `sw.js`, with the last approved copy available offline.
 
-Only public presentation fields enter the site repository: public ID, chosen name or pen name,
-plain-text note, language code and name, publication date, and optional featured state. There
-is no email field. The guest needs no GitHub account. The endpoint does not copy IP addresses,
-user-agent strings, or request headers into the moderation record.
+Only public presentation fields enter the generated archive: public ID, chosen name or pen
+name, plain-text note, language code and name, publication date, and optional featured state.
+There is no email field, repository token, serverless endpoint, or third-party comment service.
 
-New notes pass through the Worker in `guestbook-worker/`. It validates the origin, content
-type, lengths, automatic language metadata, audience, and honeypot, then creates a readable
-issue in a separate **private** GitHub repository. It adds `private` or `shareable` so the
-choice is unmistakable in the issue list. The token is a Worker secret and never reaches the
-browser.
+New notes are prepared as public issues in `amirarasteh1990/amirarasteh1990.github.io`. The
+visitor reviews the pre-filled issue and performs GitHub's authenticated submit step. A small
+versioned marker carries the generated public ID, automatic language metadata, and submission
+time; the name and note remain human-readable in the issue. The importer validates all fields
+again before publishing.
 
 Moderation is label-based:
 
-1. Read the note in the private repository's Issues screen. Notes labelled `private` remain
-   there for the author only; the sync script refuses to publish them even if `approved` is
-   added accidentally.
-2. For a `shareable` note, add `approved` to publish it. Add `featured` as well to keep it
-   near the front. Add `rejected`, or remove `approved`, to unpublish it on the next sync.
-3. Run `python sync_guestbook.py --repo OWNER/PRIVATE_REPO` from the website repository.
-4. Review the working-tree diff, run `python check.py`, then use the normal author-owned
-   publishing workflow.
+1. A new issue arrives with `guestbook`, `pending`, and `shareable`. Read the visible note in
+   the public repository's Issues screen.
+2. Add `approved` to publish it. Add `featured` as well to keep it near the front. Add
+   `rejected`, or remove `approved`, to unpublish it.
+3. `.github/workflows/publish-guestbook.yml` runs on those label changes and on approved issue
+   edits only when the event actor is the repository owner. It syncs that one moderated issue,
+   validates the index, and commits only
+   `comments/entries/` and `assets/data/guestbook.json` as `github-actions[bot]`. A push made
+   with GitHub's built-in token does not start a legacy Pages build, so the workflow explicitly
+   requests one after a changed archive is pushed.
 
-The sync command writes public entry files and the index only. It never stages, commits, or
-pushes. Running `python sync_guestbook.py --check` validates the current archive without
-accessing GitHub. The endpoint meta in `comments/index.html` must contain the deployed Worker
-URL. Until it does, the button stays unavailable rather than claiming to deliver something it
-cannot store. Once configured, both private and shareable notes go straight to the private
-moderation queue without requiring an account or email address.
+The workflow uses GitHub's repository-scoped token with `issues: read`, `contents: write`, and
+`pages: write`; no personal token or secret is stored. Concurrency is serialized. A visitor's
+label or edit event cannot publish or revise an entry: only an owner action or an owner-run
+manual dispatch processes an issue. A malformed owner-selected issue fails loudly instead of
+publishing ambiguous data.
 
-For local development, no Worker host is required. `guestbook-worker/dev-server.mjs` adapts the
-same handler to Node at `http://127.0.0.1:8787/`; `guestbook.js` selects it automatically when
-the page itself is on localhost or 127.0.0.1. Credentials stay in the local process environment.
+For a manual recovery sync, run `python sync_guestbook.py --repo
+amirarasteh1990/amirarasteh1990.github.io --issue NUMBER`. The script writes public entry files
+and the index only; it never stages, commits, pushes, labels, or closes.
+`python sync_guestbook.py --check` validates the local archive without accessing GitHub. Local
+page previews need no backend and prepare the same GitHub issue URL as production.
 
 ## Fonts
 

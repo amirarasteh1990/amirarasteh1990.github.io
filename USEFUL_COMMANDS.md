@@ -35,7 +35,7 @@ git pull --ff-only
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
 | Language names (a new language, or a new script among them) | `build_name_fonts.py` |
 | The other names a language answers to in search (Farsi, Bangla, Mandarin) | Edit `assets/js/lang-alias.js`; nothing to rebuild. First name in each list wins ties |
-| A guestbook note approved or featured in the private queue | `sync_guestbook.py --repo OWNER/PRIVATE_REPO` |
+| A guestbook issue approved, featured, edited, or rejected | Automatic owner-only GitHub workflow; `sync_guestbook.py --repo amirarasteh1990/amirarasteh1990.github.io --issue NUMBER` is the manual recovery path |
 | A new complete edition released (EPUB/PDF uploaded) | `build_read_pages.py`. It reads the release, so the cards, counts, copy and status all follow. Nothing to type by hand |
 | Paintings added or renamed | `sync_gallery.py`, then `build_read_pages.py` (sitemap images) |
 | Anything at all, before pushing | `check.py` |
@@ -174,21 +174,17 @@ Run only when the source TTF files or font-generation logic change:
 
 ## Guestbook moderation
 
-Visitors choose **For Amir only** or **Share it with others**. Private notes are
-blocked from publication by the sync script. For a shareable note, add `approved`
-in the private repository to publish it and optionally add `featured` to show it
-near the front. Add `rejected`, or remove `approved`, to unpublish it on the next
-sync.
+Every submission is a public issue in the website repository and requires a
+GitHub account. Add `approved` to publish it and optionally add `featured` to show
+it near the front. Add `rejected`, or remove `approved`, to unpublish it. The
+`publish-guestbook.yml` workflow performs the sync and commits the generated files
+automatically after those label changes.
 
-For a complete local test without Cloudflare, follow the two-terminal commands in
-`guestbook-worker/README.md`. Local pages automatically use the local intake at
-`http://127.0.0.1:8787/`; the production endpoint meta can remain empty.
-
-Pull all approved notes into one public JSON file per note and rebuild the compact
-browser index. Replace the repository placeholder with the private queue's name:
+For manual recovery, pull all approved issues into one public JSON file per note
+and rebuild the compact browser index:
 
 ```powershell
-python sync_guestbook.py --repo OWNER/PRIVATE_REPO
+python sync_guestbook.py --repo amirarasteh1990/amirarasteh1990.github.io --issue NUMBER
 ```
 
 Validate the public archive without contacting GitHub or changing files:
@@ -197,15 +193,14 @@ Validate the public archive without contacting GitHub or changing files:
 python sync_guestbook.py --check
 ```
 
-Review the generated entry files and index in the working-tree diff, then run
-`python check.py`. The sync does not stage, commit, or push anything.
+Review manually generated entry files and the index in the working-tree diff, then
+run `python check.py`. The local sync does not stage, commit, or push anything.
+The automated workflow is the only path that commits generated guestbook data.
 
-The one-time intake setup is documented in `guestbook-worker/README.md`. After
-deploying it, put its HTTPS URL in the `guestbook-endpoint` meta tag in
-`comments/index.html`. On the public site, submission remains unavailable until
-that value exists; localhost uses the local intake described above.
-There is deliberately no email fallback: the page says Amir received a note only
-after the Worker verifies that GitHub created its private moderation issue.
+There is no Worker, Cloudflare deployment, personal access token, or browser-side
+repository credential. A local preview prepares the same pre-filled public GitHub
+issue as production; do not complete the final GitHub submission unless you intend
+to create a real test issue.
 
 ## Preview locally
 

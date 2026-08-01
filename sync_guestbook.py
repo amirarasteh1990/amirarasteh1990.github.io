@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Import approved private issues and build the public guestbook index.
+"""Import approved GitHub issues and build the public guestbook index.
 
 The browser-facing data contains only the chosen public name, note, language and
-date. Pending submissions stay in a private GitHub repository. This script never
-commits, stages, pushes, labels, closes, or otherwise writes to GitHub.
+date. Pending submissions stay as public issues in the website repository. This
+script never commits, stages, pushes, labels, closes, or otherwise writes to GitHub.
 
     python sync_guestbook.py --check
-    python sync_guestbook.py --repo OWNER/PRIVATE_REPOSITORY
+    python sync_guestbook.py --repo OWNER/REPOSITORY
+    python sync_guestbook.py --repo OWNER/REPOSITORY --issue NUMBER
 """
 from __future__ import annotations
 
 import argparse
 import base64
 import datetime as dt
+import html
 import json
 import re
 import shutil
@@ -23,7 +25,14 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 ENTRIES = SITE / "comments" / "entries"
 INDEX = SITE / "assets" / "data" / "guestbook.json"
-MARKER = re.compile(r"<!-- guestbook-submission:v1 ([A-Za-z0-9_-]+) -->")
+MARKER_V1 = re.compile(r"<!-- guestbook-submission:v1 ([A-Za-z0-9_-]+) -->")
+MARKER_V2 = re.compile(r"<!-- guestbook-submission:v2 ([A-Za-z0-9_-]+) -->")
+PUBLIC_BODY = re.compile(
+    r"## Name or pen name\s*\n+\s*<pre>(.*?)</pre>\s*\n+"
+    r"## Language \(automatic\).*?\n+"
+    r"## Reader note\s*\n+\s*<pre>(.*?)</pre>",
+    re.DOTALL,
+)
 ID_RE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]{6,64}$")
 LANG_RE = re.compile(r"^(?:[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*|mul|und)$")
 
@@ -122,16 +131,32 @@ def check() -> int:
     return 0
 
 
-def decode_submission(body: str, issue_number: int) -> tuple[dict, str]:
-    found = MARKER.search(body or "")
-    if not found:
-        raise GuestbookError(f"issue #{issue_number}: submission marker missing")
-    token = found.group(1)
+def decode_token(token: str, issue_number: int) -> dict:
     token += "=" * (-len(token) % 4)
     try:
-        raw = json.loads(base64.urlsafe_b64decode(token).decode("utf-8"))
+        value = json.loads(base64.urlsafe_b64decode(token).decode("utf-8"))
     except (ValueError, UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise GuestbookError(f"issue #{issue_number}: invalid submission marker") from exc
+    if not isinstance(value, dict):
+        raise GuestbookError(f"issue #{issue_number}: invalid submission marker")
+    return value
+
+
+def decode_submission(body: str, issue_number: int) -> tuple[dict, str]:
+    body = body or ""
+    v2 = MARKER_V2.search(body)
+    v1 = MARKER_V1.search(body)
+    if v2:
+        raw = decode_token(v2.group(1), issue_number)
+        fields = PUBLIC_BODY.search(body)
+        if not fields:
+            raise GuestbookError(f"issue #{issue_number}: public note fields missing")
+        raw["name"] = html.unescape(fields.group(1))
+        raw["message"] = html.unescape(fields.group(2))
+    elif v1:
+        raw = decode_token(v1.group(1), issue_number)
+    else:
+        raise GuestbookError(f"issue #{issue_number}: submission marker missing")
     submitted = clean_text(raw.get("submitted_at"), "submitted_at", 20, 40)
     try:
         date = dt.datetime.fromisoformat(submitted.replace("Z", "+00:00")).date().isoformat()
@@ -171,6 +196,54 @@ def moderation_issues(repo: str) -> list[dict]:
     return [issue for page in pages for issue in page if "pull_request" not in issue]
 
 
+def moderation_issue(repo: str, issue_number: int) -> dict:
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
+        raise GuestbookError("--repo must be OWNER/REPOSITORY")
+    if issue_number < 1:
+        raise GuestbookError("--issue must be a positive issue number")
+    gh = shutil.which("gh")
+    if not gh:
+        raise GuestbookError("GitHub CLI (gh) is not installed")
+    proc = subprocess.run([
+        gh, "api", f"repos/{repo}/issues/{issue_number}",
+    ], cwd=SITE, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if proc.returncode:
+        raise GuestbookError(proc.stderr.strip() or "GitHub issue lookup failed")
+    try:
+        issue = json.loads(proc.stdout)
+    except json.JSONDecodeError as exc:
+        raise GuestbookError("GitHub returned invalid JSON") from exc
+    if not isinstance(issue, dict) or "pull_request" in issue:
+        raise GuestbookError(f"issue #{issue_number}: not a guestbook issue")
+    return issue
+
+
+def sync_one(repo: str, issue_number: int) -> int:
+    try:
+        issue = moderation_issue(repo, issue_number)
+        entry, audience = decode_submission(issue.get("body") or "", issue_number)
+        labels = {label.get("name", "").lower() for label in issue.get("labels", [])}
+        path = ENTRIES / f"{entry['id']}.json"
+        publish = ("guestbook" in labels and audience == "public"
+                   and "approved" in labels and "rejected" not in labels)
+        action = "unchanged"
+        if publish:
+            entry["featured"] = "featured" in labels
+            old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+            write_json(path, entry)
+            action = "published" if old != entry else "unchanged"
+        elif path.exists():
+            path.unlink()
+            action = "removed"
+        entries = local_entries()
+        write_json(INDEX, index_object(entries))
+    except (OSError, json.JSONDecodeError, GuestbookError) as exc:
+        print(f"[error] {exc}", file=sys.stderr)
+        return 1
+    print(f"guestbook issue #{issue_number}: {action}; {len(entries)} published")
+    return 0
+
+
 def sync(repo: str | None) -> int:
     imported = 0
     updated = 0
@@ -181,9 +254,19 @@ def sync(repo: str | None) -> int:
             known_ids: set[str] = set()
             published_ids: set[str] = set()
             for issue in issues:
-                entry, audience = decode_submission(issue.get("body") or "", int(issue["number"]))
-                known_ids.add(entry["id"])
                 labels = {label.get("name", "").lower() for label in issue.get("labels", [])}
+                try:
+                    entry, audience = decode_submission(
+                        issue.get("body") or "", int(issue["number"])
+                    )
+                except GuestbookError:
+                    # Anyone can open a public issue. A malformed pending issue must
+                    # not block publishing; an approved malformed issue must fail
+                    # loudly because a maintainer explicitly selected it.
+                    if "approved" in labels and "rejected" not in labels:
+                        raise
+                    continue
+                known_ids.add(entry["id"])
                 if audience != "public" or "approved" not in labels or "rejected" in labels:
                     continue
                 entry["featured"] = "featured" in labels
@@ -221,10 +304,15 @@ def sync(repo: str | None) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--check", action="store_true", help="validate without writing")
-    parser.add_argument("--repo", help="private moderation repository, OWNER/REPOSITORY")
+    parser.add_argument("--repo", help="moderation repository, OWNER/REPOSITORY")
+    parser.add_argument("--issue", type=int, help="sync one owner-reviewed issue number")
     args = parser.parse_args()
     if args.check:
         return check()
+    if args.issue is not None:
+        if not args.repo:
+            parser.error("--issue requires --repo")
+        return sync_one(args.repo, args.issue)
     return sync(args.repo)
 
 

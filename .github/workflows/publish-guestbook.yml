@@ -1,0 +1,67 @@
+name: Publish approved guestbook notes
+
+on:
+  issues:
+    types: [labeled, unlabeled, edited]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Public guestbook issue number to resync
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  issues: read
+  pages: write
+
+concurrency:
+  group: publish-guestbook
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: >-
+      (github.event_name == 'workflow_dispatch' ||
+      github.actor == github.repository_owner) &&
+      (github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'guestbook') ||
+      github.event.label.name == 'guestbook')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild the approved guestbook files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+        run: python sync_guestbook.py --repo "$GITHUB_REPOSITORY" --issue "$ISSUE_NUMBER"
+
+      - name: Validate the generated index
+        run: python sync_guestbook.py --check
+
+      - name: Commit published-note changes
+        id: publish
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git add -- comments/entries assets/data/guestbook.json
+          if git diff --cached --quiet; then
+            echo "The approved guestbook is already current."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish approved guestbook notes"
+          git push origin "HEAD:$TARGET_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild the legacy GitHub Pages site
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
