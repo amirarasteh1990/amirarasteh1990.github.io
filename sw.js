@@ -42,8 +42,10 @@
         on tap, download buttons carry sizes, guestbook trust lines.
    v16: the native guestbook page, script and repository-owned note index.
    v17: the private-or-public note choice.
-   v18: receipts require verified private-queue storage; no email fallback. */
-var VERSION = 'arasteh-v18';
+   v18: receipts require verified private-queue storage; no email fallback.
+   v19: pin the guestbook form script to the page version, so a returning browser
+        cannot combine new form markup with an older cached submission client. */
+var VERSION = 'arasteh-v19';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -57,7 +59,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js',
+  '/assets/js/guestbook.js?v=19',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

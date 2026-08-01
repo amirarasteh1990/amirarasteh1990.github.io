@@ -225,6 +225,10 @@ third-party visual layer.
   prominent **Amir has received your note** panel with audience-specific privacy text. No
   success state is shown for a timeout, malformed response, or failed issue creation; the
   visitor's text stays in the form so it can be tried again.
+- The submit button is disabled in the HTML and enabled by `guestbook.js` only when a delivery
+  endpoint exists. The script URL is version-pinned in both `comments/index.html` and `sw.js`.
+  This prevents a returning browser from combining new form markup with an older cached
+  submission client during the first navigation after a deployment.
 
 Reuse it on any future page whose point is a form, not prose.
 

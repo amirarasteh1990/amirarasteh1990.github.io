@@ -82,11 +82,23 @@
     receipt.focus();
   }
 
+  function unavailableStatus() {
+    status('The guestbook is temporarily unavailable. You can still contact Amir at ', 'quiet');
+    if (!formStatus) return;
+    var contact = document.createElement('a');
+    contact.href = 'mailto:amirarasteh1990@gmail.com';
+    contact.textContent = 'amirarasteh1990@gmail.com';
+    formStatus.appendChild(contact);
+    formStatus.appendChild(document.createTextNode('.'));
+  }
+
   function configureForm() {
     if (!form || !submit) return;
     if (!endpoint) {
       submit.disabled = true;
-      status('The guestbook is temporarily unavailable. Please return soon.', 'quiet');
+      unavailableStatus();
+    } else {
+      submit.disabled = false;
     }
     form.addEventListener('submit', function (event) {
       event.preventDefault();

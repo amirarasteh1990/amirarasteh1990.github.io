@@ -144,8 +144,12 @@ def crawl() -> None:
     sw = (SITE / "sw.js").read_text(encoding="utf-8")
     shell = re.search(r"var SHELL = \[(.*?)\];", sw, re.S)
     paths = re.findall(r"'([^']+)'", shell.group(1)) if shell else []
-    gone = [p for p in paths if not (SITE / (p.lstrip("/") or "index.html")).exists()
-            and not (SITE / p.lstrip("/") / "index.html").exists()]
+    def local_shell_path(value: str) -> str:
+        return value.split("?", 1)[0].split("#", 1)[0]
+
+    gone = [p for p in paths
+            if not (SITE / (local_shell_path(p).lstrip("/") or "index.html")).exists()
+            and not (SITE / local_shell_path(p).lstrip("/") / "index.html").exists()]
     report(f"sw.js: {len(paths)} shell paths exist", bool(paths) and not gone,
            gone[0] if gone else ("SHELL not found" if not paths else ""))
 
@@ -201,8 +205,16 @@ def guestbook() -> None:
     hosted = bool(endpoint) and endpoint.group(1).startswith("https://")
     report("the guestbook has a local or hosted delivery path", hosted or local)
     submit = re.search(r'<button[^>]*id="guestbookSubmit"[^>]*>', page)
-    report("the guestbook submit button starts enabled",
-           bool(submit) and "disabled" not in submit.group(0))
+    report("the guestbook submit button fails closed before configuration",
+           bool(submit) and "disabled" in submit.group(0)
+           and "submit.disabled = false" in script)
+    script_url = re.search(r'<script src="(/assets/js/guestbook\.js\?v=([^"]+))"', page)
+    sw = (SITE / "sw.js").read_text(encoding="utf-8")
+    sw_version = re.search(r"var VERSION = 'arasteh-v([^']+)'", sw)
+    pinned = (bool(script_url) and bool(sw_version)
+              and script_url.group(2) == sw_version.group(1)
+              and f"'{script_url.group(1)}'" in sw)
+    report("the guestbook page and offline shell pin the same script version", pinned)
     report("confirmed submissions have a visible receipt",
            'id="guestbookReceipt"' in page and 'Amir has received your note.' in page)
     report("the guestbook loads its repository-owned note reader",
