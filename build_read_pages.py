@@ -1089,6 +1089,27 @@ def and_list(names: list[str]) -> str:
     return ", ".join(names[:-1]) + " and " + names[-1]
 
 
+def availability_phrase(n: int) -> str:
+    """The doorway's one availability line: how many languages the WHOLE BOOK is in.
+
+    Replaces "More than 100 openings - N complete editions" (author, 2026-08-05). That
+    line led with the Opening because for a long time the book itself existed in four
+    languages; leading with the smaller, truer number is no longer the honest emphasis
+    once the complete editions are the hundred.
+
+    Derived, never hard-coded, for the same reason every other sentence here is: the
+    round claim appears only when it is actually true. At 23 this says "23 languages";
+    it starts saying "over 100" the day the 100th edition is on the release, and no one
+    has to remember to change a string. `n` is the count of state=="ready" rows, i.e.
+    editions a reader can really download -- not editions that merely exist locally.
+    """
+    if n >= 100:
+        return "Available in over 100 languages"
+    if n == 1:
+        return "Available in 1 language"
+    return f"Available in <strong>{n}</strong> languages"
+
+
 def render_status(rows: list[dict], total: int | None = None) -> str:
     total = len(rows) if total is None else total
     counts = {s: sum(1 for r in rows if r["state"] == s) for s, _, _ in STATES}
@@ -1534,10 +1555,11 @@ def availability(rows: list[dict], total: int | None = None) -> dict[str, str]:
         "long": f"The opening in {total} languages. {editions[0].upper()}{editions[1:]}.",
         # the short one, for cards and share previews
         "short": f"The opening in {total} languages &middot; {editions}",
-        # the quiet one, for the doorway. No exact count of openings: "more than a
-        # hundred" is true however many editions the site is carrying or holding
-        # back, and it leaves nothing for a visitor to add up and query.
-        "quiet": f"More than 100 openings &middot; <strong>{n}</strong> complete editions",
+        # the quiet one, for the doorway. Now says what the reader can actually get
+        # -- the whole book -- instead of leading with the Opening count, which read
+        # as a hedge. Derived from n, so it states the true number until there really
+        # are 100+ and only then makes the round claim. See availability_phrase().
+        "quiet": availability_phrase(n),
         # the breakdown, which is project detail and belongs below the useful part
         "tally": " &middot; ".join(
             f"{sum(1 for r in rows if r['state'] == s)} {word}"
@@ -1614,8 +1636,7 @@ def patch_meter(check: bool, rows: list[dict], total: int | None = None) -> bool
     ready = sum(1 for r in rows if r["state"] == "ready")
     total = len(rows) if total is None else total
     body = SOUNDS.read_text(encoding="utf-8")
-    note = (f'<p class="progress-note">More than 100 openings &middot; '
-            f'<strong>{ready}</strong> complete editions</p>')
+    note = f'<p class="progress-note">{availability_phrase(ready)}</p>'
     # a lambda, so nothing in the replacement text is read as a backreference
     new = re.sub(r'<p class="progress-note">.*?</p>', lambda _m: note,
                  body, count=1, flags=re.S)

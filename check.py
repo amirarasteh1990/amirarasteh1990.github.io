@@ -338,7 +338,12 @@ def availability() -> None:
            f"{stray} catalogue elements found")
 
     home = (SITE / "index.html").read_text(encoding="utf-8")
-    sentence = gen.availability(rows)["long"]
+    # site_rows, not rows: patch_availability() stamps the pages from shown(rows), so
+    # checking against the unfiltered book list asks the pages to state a number they
+    # were never given. Dormant until 2026-08-05, because it only bites when a HIDDEN
+    # edition is downloadable — Hebrew ships on the release but not on the site, so the
+    # two counts diverged by exactly one the day the full set was uploaded.
+    sentence = gen.availability(site_rows, len(rows))["long"]
     tellers = {"index.html": home, "sedaha/index.html": book}
     off = [name for name, body in tellers.items() if sentence not in body]
     report("the availability sentence is the same on every page that tells it",

@@ -349,6 +349,43 @@ If the release does not exist, create it only after typing `CREATE`:
 if ((Read-Host "Type CREATE to create the public books release") -ceq "CREATE") { gh release create books --title "Sounds — current editions" --notes "Current downloadable editions." } else { Write-Host "Cancelled; no release was created." }
 ```
 
+### Publishing editions (the everyday way)
+
+`publish_editions.py` mirrors the book repo's `build.py online`: same selectors, so what
+you built is what you publish. It reads `TIER_A` and `HARD_EXCLUDE` out of the book repo,
+refuses hard-excluded editions even when you name them, and skips anything not built.
+
+```powershell
+python publish_editions.py --dry-run              # Tier A (default): 23 editions, 46 files
+python publish_editions.py --full --dry-run       # everything built: 107 editions, 214 files
+python publish_editions.py -l Chinese Urdu        # by name or code (ZH, UR)
+python publish_editions.py --full --format epub   # one format
+python publish_editions.py --full                 # upload, after the prompt
+```
+
+**The confirmation phrase is different for every run.** It is built from the scope and
+the two counts, so a phrase copied from these docs or from an earlier command will not
+fire a different one — typing `UPLOAD` from muscle memory cannot push 214 files when you
+meant three:
+
+| Command | Phrase it demands |
+| --- | --- |
+| `publish_editions.py` | `UPLOAD TIERA 23 EDITIONS 46 FILES` |
+| `publish_editions.py --full` | `UPLOAD FULL 107 EDITIONS 214 FILES` |
+| `publish_editions.py --full --format epub` | `UPLOAD FULL 107 EDITIONS 107 FILES` |
+| `publish_editions.py -l Chinese` | `UPLOAD NAMED 1 EDITIONS 2 FILES` |
+
+The counts move as editions are added, so read the prompt rather than this table.
+`--yes "<phrase>"` supplies it non-interactively; there is no blanket force flag.
+
+Then regenerate, because the site reads the release:
+
+```powershell
+python build_read_pages.py ; python check.py
+```
+
+### Publishing by hand (escape hatch)
+
 Collect what was built, newest first, with each file's size:
 
 ```powershell
