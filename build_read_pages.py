@@ -941,7 +941,18 @@ FMT_WHAT = {"epub": "Fits any screen", "pdf": "Keeps the printed page"}
 # undo: the language keeps its LANGS entry, its Opening source, and its place in
 # the book. What this switch removes from the site is the generated page, the
 # browse row, the status row, the hreflang cluster, the sitemap and the feed.
-HIDDEN_SLUGS = {"he"}
+#
+# `sr` (Serbian) hidden 2026-08-05, author's call, for a different reason and
+# probably not permanently: a publisher is reviewing the Serbian edition, and a
+# free public download alongside it would weaken that negotiation. Unhide when the
+# review concludes either way.
+#
+# NOTE: this switch governs arasteh.art only. It does NOT unpublish the files from
+# the GitHub release, which is a separate store with its own direct URLs -- see the
+# Hebrew note above, where remaining on the release is exactly what was wanted. For
+# Serbian it is not: the release assets have to be removed separately, or the book
+# stays one guessable URL away.
+HIDDEN_SLUGS = {"he", "sr"}
 
 
 def shown(rows: list[dict]) -> list[dict]:

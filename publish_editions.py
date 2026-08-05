@@ -47,6 +47,22 @@ ONLINE = BOOK_VOL / "online"
 RELEASE_TAG = "books"
 FORMATS = ("epub", "pdf")
 
+# Editions that must not go to the public release at all, whatever the selector.
+#
+# NOT the same thing as build_read_pages.HIDDEN_SLUGS, and deliberately a separate
+# list. Hebrew is hidden from arasteh.art but SHOULD stay on the release (2026-07-26);
+# these are withheld from the release itself. Conflating the two would either publish
+# something withheld or unpublish something that was only meant to be quiet.
+#
+# Without this, hiding an edition on the site would be undone by the next routine
+# `--full` run, silently, with no prompt that says so.
+WITHHELD = {
+    # Serbian, 2026-08-05: a publisher is reviewing the Serbian edition; a free public
+    # download alongside that review would weaken the negotiation. Remove this entry
+    # when the review concludes either way. Files stay built in Volume1/online/.
+    "Serbian": "a publisher is reviewing this edition (2026-08-05)",
+}
+
 
 def _console_safe(text: object) -> str:
     """The console here is cp1252; an edition name or gh error with a non-ASCII
@@ -141,10 +157,16 @@ def main() -> int:
 
     known = _editions()
     tier_a, excluded = _book_lists()
-    publishable = [n for n in known if n not in excluded]
+    publishable = [n for n in known if n not in excluded and n not in WITHHELD]
+    tier_a = [n for n in tier_a if n not in WITHHELD]
 
     if args.language:
         langs = _resolve(args.language, known)
+        held = [n for n in langs if n in WITHHELD]
+        if held:
+            raise SystemExit("refusing to publish withheld edition(s):\n"
+                             + "\n".join(f"  {n}: {WITHHELD[n]}" for n in sorted(held))
+                             + "\nRemove it from WITHHELD in publish_editions.py if that has changed.")
         blocked = [n for n in langs if n in excluded]
         if blocked:
             # build.py builds a named defective edition so you can proof it. Publishing
