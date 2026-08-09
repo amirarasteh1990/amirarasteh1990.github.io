@@ -49,8 +49,9 @@
    v21: publish valid notes automatically and notify Amir through issue assignment.
    v22: post through the account-free Worker and keep confirmed notes visible locally.
    v23: the Opening frontispiece layout; returning readers must not combine its new
-        figure markup with the old stylesheet's browser-default figure margins. */
-var VERSION = 'arasteh-v23';
+        figure markup with the old stylesheet's browser-default figure margins.
+   v24: justified long-form prose throughout the site, including every Opening. */
+var VERSION = 'arasteh-v24';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -64,7 +65,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=23',
+  '/assets/js/guestbook.js?v=24',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

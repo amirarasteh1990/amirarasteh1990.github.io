@@ -277,7 +277,13 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
     url(/assets/img/opening-mark.jpg) type("image/jpeg"))}
 }
 /* shared lead paragraph under a page h1 */
-.lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control)}/* the book's own scripts, one after another: the hundred alphabets are the
+.lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control)}
+/* Book text and the site's longer prose use an even edge on both sides. Auto
+   lets the browser choose the right spacing method for Latin, RTL and CJK text;
+   short labels, captions and controls keep their natural alignment. */
+.reader p,.opening p,.lead,.license p,.notice,.archival,.notfound p{
+  text-align:justify;text-justify:auto}
+/* the book's own scripts, one after another: the hundred alphabets are the
    work's plainest description. Held still under prefers-reduced-motion. */
 .cycler{margin:14px 0 4px;color:#5a5344;font-size:.94rem}
 /* margin-inline resolves against the SLOT's own direction, so a one-sided gap
