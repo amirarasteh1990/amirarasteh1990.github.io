@@ -227,10 +227,9 @@ def guestbook() -> None:
         r'<meta name="guestbook-endpoint" content="([^"]*)">', page
     )
     script = (SITE / "assets" / "js" / "guestbook.js").read_text(encoding="utf-8")
-    endpoint_ok = bool(endpoint) and (not endpoint.group(1) or
-                                      endpoint.group(1).startswith("https://"))
-    report("the form declares a secure Worker endpoint", endpoint_ok,
-           "deployment URL pending" if endpoint and not endpoint.group(1) else "")
+    endpoint_ok = (bool(endpoint) and endpoint.group(1) ==
+                   "https://arasteh-guestbook.amir-arasteh.workers.dev/")
+    report("the form declares the production Worker endpoint", endpoint_ok)
     report("the browser contains no GitHub write credential",
            "api.github.com" not in script and "Authorization" not in script
            and "GITHUB_TOKEN" not in script and "guestbook-endpoint" in page)
@@ -273,6 +272,7 @@ def guestbook() -> None:
         worker_config = json.loads(config_text)
         config_ok = (
             worker_config.get("workers_dev") is True
+            and worker_config.get("preview_urls") is False
             and worker_config.get("vars", {}).get("ALLOWED_ORIGINS") ==
             "https://arasteh.art"
             and worker_config.get("vars", {}).get("GITHUB_REPO") ==
@@ -284,7 +284,7 @@ def guestbook() -> None:
         )
     except (OSError, json.JSONDecodeError, IndexError):
         config_ok = False
-    report("Wrangler requires secrets and the free-plan rate limiter", config_ok)
+    report("Wrangler requires secrets, rate limiting, and no preview URLs", config_ok)
 
     workflow_path = SITE / ".github" / "workflows" / "publish-guestbook.yml"
     workflow = workflow_path.read_text(encoding="utf-8") if workflow_path.is_file() else ""

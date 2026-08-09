@@ -296,9 +296,10 @@ publishing.
 
 `guestbook-worker/wrangler.jsonc` is the deploy-time source of truth. It declares the production
 origin, public repository, two required secrets, and a three-attempts-per-minute rate limiter.
-The Worker runs on the Cloudflare Free plan at `workers.dev`; its deployed URL is copied into
-`comments/index.html` only after deployment succeeds. `node guestbook-worker/test.mjs` exercises
-the full intake contract without a network call or external write.
+The Worker runs on the Cloudflare Free plan at
+`https://arasteh-guestbook.amir-arasteh.workers.dev/`; that exact URL is configured in
+`comments/index.html`. Version preview URLs are disabled. `node guestbook-worker/test.mjs`
+exercises the full intake contract without a network call or external write.
 
 For a manual recovery sync, run `python sync_guestbook.py --repo
 amirarasteh1990/amirarasteh1990.github.io --issue NUMBER`. The script writes public entry files

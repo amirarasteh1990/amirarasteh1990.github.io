@@ -34,7 +34,17 @@ python -m http.server 8000 --bind 127.0.0.1
 Open `http://127.0.0.1:8000/comments/`. On localhost, the page automatically uses
 `http://127.0.0.1:8787/`. Mock mode never contacts GitHub or creates an issue.
 
-## One-time free-plan deployment
+## Production deployment
+
+The production Worker is deployed on the Cloudflare Workers Free plan at:
+
+`https://arasteh-guestbook.amir-arasteh.workers.dev/`
+
+The account uses encrypted Wrangler keyring authentication. `GITHUB_TOKEN` and
+`RATE_LIMIT_SALT` are stored as Cloudflare secrets, and preview URLs are disabled.
+The website origin is restricted to `https://arasteh.art`.
+
+The one-time setup used these boundaries:
 
 1. While signed in as the repository owner, create a fine-grained GitHub personal
    access token. Limit its repository access to `amirarasteh1990.github.io` and
@@ -45,14 +55,15 @@ Open `http://127.0.0.1:8000/comments/`. On localhost, the page automatically use
 4. Authenticate Wrangler with `npx wrangler login --use-keyring`. On Windows,
    Wrangler installs its keyring helper interactively and keeps the OAuth
    credential in the OS keychain instead of a plaintext file.
-5. Store the GitHub token with `npx wrangler secret put GITHUB_TOKEN`.
-6. Generate a random rate-limit salt, then store it with
-   `npx wrangler secret put RATE_LIMIT_SALT`. Never put either value in this repo.
-7. Run `npm test`, then `npm run deploy`.
-8. Copy the resulting `https://...workers.dev/` URL into the
-   `guestbook-endpoint` meta tag in `comments/index.html`.
-9. Bump the guestbook script and service-worker version together, run
-   `python check.py --quick`, and let the author commit and push the reviewed files.
+5. Store `GITHUB_TOKEN` and `RATE_LIMIT_SALT` as Cloudflare secrets. Never put
+   either value in this repo.
+6. Run `npm test`, then `npm run deploy`.
+7. Put the deployed URL in the `guestbook-endpoint` meta tag, bump the guestbook
+   script and service-worker version together, and run `python check.py --quick`.
+
+For a future code deployment, run `npm test` and then `npm run deploy`. To rotate
+the GitHub credential, run `npx wrangler secret put GITHUB_TOKEN` and enter the
+replacement only at Wrangler's hidden prompt.
 
 The rate-limit binding allows three accepted attempts per source address per
 minute. Its key is a SHA-256 digest salted with `RATE_LIMIT_SALT`; this code does

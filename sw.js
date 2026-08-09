@@ -52,8 +52,9 @@
         figure markup with the old stylesheet's browser-default figure margins.
    v24: justified long-form prose throughout the site, including every Opening.
    v25: version the stylesheet URL itself, so even the previous service worker
-        cannot serve pre-justification CSS during its replacement visit. */
-var VERSION = 'arasteh-v25';
+        cannot serve pre-justification CSS during its replacement visit.
+   v26: connect the production account-free guestbook endpoint. */
+var VERSION = 'arasteh-v26';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -67,7 +68,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=25',
+  '/assets/js/guestbook.js?v=26',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

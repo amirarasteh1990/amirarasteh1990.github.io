@@ -25,7 +25,7 @@
   var featuredList = document.getElementById('guestbookFeaturedEntries');
   var endpointMeta = document.querySelector('meta[name="guestbook-endpoint"]');
   var endpoint = endpointMeta ? endpointMeta.content.trim() : '';
-  if (!endpoint && /^(?:localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+  if (/^(?:localhost|127\.0\.0\.1)$/.test(location.hostname)) {
     endpoint = 'http://127.0.0.1:8787/';
   }
   var PENDING_KEY = 'arasteh-guestbook-pending-v1';
