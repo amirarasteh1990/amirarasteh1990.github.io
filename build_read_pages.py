@@ -19,12 +19,13 @@ It also (idempotently) wires discovery:
 
 The share-card description per language is derived from that edition's OWN Opening
 sentence (the "thread of words that were once sounds" image), so the card always
-speaks with the translation's own voice. The EN/FA/DA pages are NOT touched here —
-they are maintained by hand + sync_book_text.py.
+speaks with the translation's own voice. The EN/FA/DA opening text is maintained
+by hand + sync_book_text.py; this script stamps their shared reader shell only.
 
 Run whenever an Opening changes in the book repo, or when adding a language:
     python build_read_pages.py            # (re)generate all pages + wiring
     python build_read_pages.py --check    # report drift only; change nothing; exit 1 if stale
+    python build_read_pages.py --frontispiece-only  # refresh only this shared shell element
 """
 from __future__ import annotations
 
@@ -99,6 +100,23 @@ def reader_tools_html() -> str:
 
 
 READER_TOOLS = reader_tools_html()
+
+OPENING_FRONTISPIECE = """    <figure class="opening-frontispiece">
+      <picture>
+        <source
+          srcset="/assets/img/paintings/sounds/01.webp"
+          type="image/webp">
+        <img
+          src="/assets/img/paintings/sounds/01.jpg"
+          width="1500"
+          height="1096"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          lang="en"
+          alt="The painting that opens Sedaha (Sounds), Book One, by Amir Arasteh.">
+      </picture>
+    </figure>"""
 
 # The three editions that exist in full. The strip above every opening offers them
 # in their own names, so a reader who wants the whole book can see where it is.
@@ -876,6 +894,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
   </div>
   <article class="reader" lang="{L['lang']}"{dir_attr}>
     <h1>{html.escape(h1, quote=False)}</h1>
+{OPENING_FRONTISPIECE}
 {body}
   </article>
 
@@ -1763,6 +1782,42 @@ HAND_PAGES = ["sedaha/read/index.html", "sedaha/read/fa/index.html",
               "sedaha/read/da/index.html"]
 
 
+def patch_frontispieces(check: bool, paths: list[Path]) -> bool:
+    """Keep one canonical frontispiece directly after each Opening heading."""
+    figure_re = re.compile(
+        r'\n[ \t]*<figure class="opening-frontispiece">.*?</figure>', re.S)
+    ok = True
+    for path in paths:
+        body = path.read_text(encoding="utf-8")
+        reader = re.search(
+            r'<article class="reader"(?:\s[^>]*)?>.*?</article>', body, re.S)
+        if not reader:
+            print(f"[warn]  {path.relative_to(SITE).as_posix()}: reader article not found")
+            ok = False
+            continue
+        article = figure_re.sub("", reader.group(0))
+        heading = re.search(r'^    <h1>.*?</h1>$', article, re.M)
+        if not heading:
+            print(f"[warn]  {path.relative_to(SITE).as_posix()}: Opening heading not found")
+            ok = False
+            continue
+        article = (article[:heading.end()] + "\n" + OPENING_FRONTISPIECE
+                   + article[heading.end():])
+        new = body[:reader.start()] + article + body[reader.end():]
+        if new == body:
+            continue
+        rel = path.relative_to(SITE).as_posix()
+        if check:
+            print(f"[drift] {rel}: frontispiece missing or stale")
+            ok = False
+            continue
+        path.write_text(new, encoding="utf-8", newline="\n")
+        print(f"[write] {rel}  (opening frontispiece)")
+    if ok:
+        print(f"[ok]    opening frontispiece: {len(paths)} pages current")
+    return ok
+
+
 def patch_hand_sizes(check: bool, rows: list[dict]) -> bool:
     """Stamp file sizes into the three hand-written Opening pages' buttons.
 
@@ -1846,7 +1901,13 @@ def patch_sitemap(check: bool) -> bool:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Generate /sedaha/read/<lang>/ Opening pages from the book repo.")
     ap.add_argument("--check", action="store_true", help="report drift only; change nothing; exit 1 if stale")
+    ap.add_argument("--frontispiece-only", action="store_true",
+                    help="update only the shared frontispiece on existing Opening pages")
     args = ap.parse_args()
+    if args.frontispiece_only:
+        paths = sorted(READ_DIR.rglob("index.html"))
+        ok = patch_frontispieces(args.check, paths)
+        return 1 if (args.check and not ok) else 0
     if not BOOK_LANGS.is_dir():
         sys.exit(f"Book repo not found: {BOOK_LANGS}")
 
@@ -1898,6 +1959,7 @@ def main() -> int:
     ok &= patch_availability(args.check, site, total)
     ok &= patch_meter(args.check, site, total)
     ok &= patch_feed(args.check, site)
+    ok &= patch_frontispieces(args.check, [SITE / rel for rel in HAND_PAGES])
     ok &= patch_hand_sizes(args.check, site)
     ok &= patch_sitemap(args.check)
     ok &= patch_sitemap_images(args.check)

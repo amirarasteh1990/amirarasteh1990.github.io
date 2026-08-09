@@ -733,6 +733,9 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
   font-size:.95rem;margin:22px auto 2px}
 .reader{width:100%;max-width:var(--read-measure,34em);margin:0 auto}
 .reader h1{font-size:calc(1.9rem * var(--read-scale,1));margin:0 0 22px}
+.opening-frontispiece{width:100%;margin:0 0 clamp(28px,4vw,36px)}
+.opening-frontispiece picture,.opening-frontispiece img{display:block;width:100%}
+.opening-frontispiece img{height:auto;max-width:100%;border:0;border-radius:0;box-shadow:none}
 .reader p{font-family:var(--serif);
   font-size:calc(1.18rem * var(--read-scale,1));line-height:1.9;color:#33302a;margin:0 0 1.2em}
 /* the Persian reader sets its own face and metrics (Vazirmatn runs larger than Garamond) */
