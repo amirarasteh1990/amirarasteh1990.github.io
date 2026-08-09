@@ -4,7 +4,7 @@ check.py — one command that answers "is the site consistent?"
 
 The site is stamped together by eight scripts: the nav shell, the footer, the head
 block, the book text, the gallery derivatives, the 111 Opening pages, the name
-subsets, and the approved guestbook index. Each can already answer --check on its
+subsets, and the published guestbook index. Each can already answer --check on its
 own, but nobody remembers to run eight of them, and the interesting failures are
 the ones no single script owns: a
 link pointing at a file that was renamed, a service worker caching a path that no
@@ -43,6 +43,7 @@ import xml.dom.minidom
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
+IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
 SCRIPTS = ["sync_appnav.py", "sync_footers.py", "sync_head.py", "sync_book_text.py",
            "sync_gallery.py", "build_read_pages.py", "build_name_fonts.py",
@@ -61,7 +62,10 @@ def report(label: str, ok: bool, detail: str = "") -> bool:
 
 
 def pages() -> list[Path]:
-    return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
+    return sorted(
+        p for p in SITE.rglob("*.html")
+        if not IGNORED_DIRS.intersection(p.relative_to(SITE).parts)
+    )
 
 
 # --------------------------------------------------------------- the scripts
@@ -80,13 +84,22 @@ def run_node() -> None:
     if not node:
         print("[skip]  node --check (node not installed)")
         return
-    files = sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js"]
+    files = (sorted((SITE / "assets" / "js").glob("*.js")) + [SITE / "sw.js"] +
+             sorted((SITE / "guestbook-worker").glob("*.mjs")))
     bad = []
     for f in files:
         proc = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
         if proc.returncode != 0:
             bad.append(f"{f.name}: {proc.stderr.strip().splitlines()[0]}")
     report(f"node --check on {len(files)} scripts", not bad, bad[0] if bad else "")
+    worker_test = SITE / "guestbook-worker" / "test.mjs"
+    if worker_test.is_file():
+        proc = subprocess.run([node, str(worker_test)], cwd=SITE,
+                              capture_output=True, text=True, encoding="utf-8",
+                              errors="replace")
+        detail = (proc.stderr or proc.stdout or "").strip().splitlines()
+        report("account-free guestbook Worker contract",
+               proc.returncode == 0, detail[0] if proc.returncode and detail else "")
 
 # ------------------------------------------------------------ the link graph
 def resolve(page: Path, url: str) -> Path | None:
@@ -180,34 +193,36 @@ def structured() -> None:
 
 
 def guestbook() -> None:
-    """The GitHub-only guestbook owns its public data and exposes no credential."""
+    """The account-free guestbook owns its public data and exposes no credential."""
     page = (SITE / "comments" / "index.html").read_text(encoding="utf-8")
     report("the guestbook has a simple public-note form",
            'id="guestbookForm"' in page and 'type="email"' not in page
            and 'name="audience"' not in page and 'maxlength="500"' in page)
-    report("the GitHub account and public-review handoff are explicit",
-           'A GitHub account is required' in page
-           and 'Your note will be public on GitHub' in page)
-    repository = re.search(
-        r'<meta name="guestbook-repository" content="([^"]+)">', page
+    report("the account-free public handoff is explicit",
+           'No account is needed' in page
+           and 'chosen name and comment are public' in page
+           and 'Press Post' in page
+           and 'Amir receives a notification' in page)
+    endpoint = re.search(
+        r'<meta name="guestbook-endpoint" content="([^"]*)">', page
     )
     script = (SITE / "assets" / "js" / "guestbook.js").read_text(encoding="utf-8")
-    report("the form targets the public website repository",
-           bool(repository)
-           and repository.group(1) == "amirarasteh1990/amirarasteh1990.github.io"
-           and "https://github.com/" in script and "/issues/new" in script)
+    endpoint_ok = bool(endpoint) and (not endpoint.group(1) or
+                                      endpoint.group(1).startswith("https://"))
+    report("the form declares a secure Worker endpoint", endpoint_ok,
+           "deployment URL pending" if endpoint and not endpoint.group(1) else "")
     report("the browser contains no GitHub write credential",
            "api.github.com" not in script and "Authorization" not in script
-           and "GITHUB_TOKEN" not in script and "guestbook-endpoint" not in page)
+           and "GITHUB_TOKEN" not in script and "guestbook-endpoint" in page)
     submit = re.search(r'<button[^>]*id="guestbookSubmit"[^>]*>', page)
-    report("the form continues to GitHub instead of claiming receipt",
-           bool(submit) and "disabled" not in submit.group(0)
-           and "Review on GitHub" in page and "location.assign(target)" in script
-           and "target.length > 7500" in script
-           and 'id="guestbookReceipt"' not in page)
-    report("new issues carry the moderation labels and v2 marker",
-           "guestbook-submission:v2" in script
-           and "guestbook,pending,shareable" in script)
+    report("one Post button sends directly to the intake endpoint",
+           bool(submit) and ">Post</button>" in page
+           and "fetch(endpoint" in script and "data.posted !== true" in script
+           and "credentials: 'omit'" in script
+           and "location.assign(" not in script and "/issues/new" not in script)
+    report("a confirmed note appears immediately and survives a short refresh",
+           "addConfirmedEntry" in script and "localStorage" in script
+           and "PENDING_TTL" in script and "Publishing" in script)
     script_url = re.search(r'<script src="(/assets/js/guestbook\.js\?v=([^"]+))"', page)
     sw = (SITE / "sw.js").read_text(encoding="utf-8")
     sw_version = re.search(r"var VERSION = 'arasteh-v([^']+)'", sw)
@@ -218,17 +233,60 @@ def guestbook() -> None:
     report("the guestbook loads its repository-owned note reader",
            '/assets/js/guestbook.js' in page)
 
+    worker_path = SITE / "guestbook-worker" / "worker.mjs"
+    worker = worker_path.read_text(encoding="utf-8") if worker_path.is_file() else ""
+    config_path = SITE / "guestbook-worker" / "wrangler.jsonc"
+    config_text = config_path.read_text(encoding="utf-8") if config_path.is_file() else ""
+    report("the Worker creates only validated public guestbook issues",
+           "api.github.com/repos/" in worker
+           and "guestbook-submission:v2" in worker
+           and "['guestbook', 'pending', 'shareable']" in worker
+           and "GITHUB_TOKEN" in worker and "Authorization" in worker
+           and "message: cleanText(raw.message, 'Note', 1, 500)" in worker)
+    report("the Worker rate-limits a salted digest and stores no raw address",
+           "CF-Connecting-IP" in worker and "RATE_LIMIT_SALT" in worker
+           and "crypto.subtle.digest('SHA-256'" in worker
+           and "SUBMIT_RATE_LIMITER.limit" in worker
+           and "request_id" in worker
+           and "request.headers.get('User-Agent')" not in worker)
+    try:
+        worker_config = json.loads(config_text)
+        config_ok = (
+            worker_config.get("workers_dev") is True
+            and worker_config.get("vars", {}).get("ALLOWED_ORIGINS") ==
+            "https://arasteh.art"
+            and worker_config.get("vars", {}).get("GITHUB_REPO") ==
+            "amirarasteh1990.github.io"
+            and set(worker_config.get("secrets", {}).get("required", [])) ==
+            {"GITHUB_TOKEN", "RATE_LIMIT_SALT"}
+            and worker_config.get("ratelimits", [{}])[0].get("name") ==
+            "SUBMIT_RATE_LIMITER"
+        )
+    except (OSError, json.JSONDecodeError, IndexError):
+        config_ok = False
+    report("Wrangler requires secrets and the free-plan rate limiter", config_ok)
+
     workflow_path = SITE / ".github" / "workflows" / "publish-guestbook.yml"
     workflow = workflow_path.read_text(encoding="utf-8") if workflow_path.is_file() else ""
-    report("approved issues rebuild and commit the repository-owned index",
+    report("valid new issues publish and notify the owner automatically",
            "issues:" in workflow and "contents: write" in workflow
+           and "types: [opened, labeled, unlabeled, edited]" in workflow
+           and "issues: write" in workflow
            and "pages: write" in workflow
            and "actions/checkout@v7" in workflow
+           and "ref: ${{ github.event.repository.default_branch }}" in workflow
+           and "github.event.action == 'opened'" in workflow
            and "github.actor == github.repository_owner" in workflow
+           and "contains(github.event.issue.body, '<!-- guestbook-submission:v2 ')" in workflow
+           and "ensure_label guestbook" in workflow
+           and "ensure_label rejected" in workflow
+           and "--new-submission" in workflow
+           and "assignees[]=amirarasteh1990" in workflow
            and 'python sync_guestbook.py --repo "$GITHUB_REPOSITORY" --issue "$ISSUE_NUMBER"' in workflow
            and "git add -- comments/entries assets/data/guestbook.json" in workflow
            and 'repos/$GITHUB_REPOSITORY/pages/builds' in workflow)
 
+    automation_ok = False
     try:
         import sync_guestbook as guestbook_sync
         sample = {
@@ -248,9 +306,31 @@ def guestbook() -> None:
         entry, audience = guestbook_sync.decode_submission(body, 1)
         marker_ok = (entry["name"] == "A Reader" and entry["message"] == "A & B"
                      and audience == "public")
+        bound = guestbook_sync.bind_to_issue(
+            entry, {"created_at": "2026-08-03T08:30:00Z"}, 27
+        )
+        automation_ok = (
+            bound["id"] == "2026-08-03-issue-27"
+            and bound["published"] == "2026-08-03"
+            and guestbook_sync.should_publish(
+                {"guestbook", "pending", "shareable"}, "public", True
+            )
+            and not guestbook_sync.should_publish(
+                {"guestbook", "rejected"}, "public"
+            )
+            and not guestbook_sync.should_publish({"guestbook"}, "private", True)
+        )
+        try:
+            guestbook_sync.decode_submission(
+                body.replace("A &amp; B", "x" * 501), 2
+            )
+            automation_ok = False
+        except guestbook_sync.GuestbookError:
+            pass
     except Exception:  # noqa: BLE001 - a failed parser is the finding
         marker_ok = False
     report("the public issue marker round-trips into a validated entry", marker_ok)
+    report("GitHub-owned IDs and dates protect automatic publication", automation_ok)
 
     legacy = []
     # Keep the retired provider name and identifier out of the tree even in this
@@ -258,7 +338,9 @@ def guestbook() -> None:
     needles = ("cus" + "dis", "8b259adb-2d93-412b-925f-" + "530dd86d91a5")
     suffixes = {".html", ".css", ".js", ".mjs", ".md", ".py", ".toml", ".json"}
     for path in SITE.rglob("*"):
-        if not path.is_file() or ".git" in path.parts or path.suffix.lower() not in suffixes:
+        if (not path.is_file()
+                or IGNORED_DIRS.intersection(path.relative_to(SITE).parts)
+                or path.suffix.lower() not in suffixes):
             continue
         body = path.read_text(encoding="utf-8", errors="replace").lower()
         if any(needle in body for needle in needles):

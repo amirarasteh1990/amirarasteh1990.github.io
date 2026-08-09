@@ -45,8 +45,10 @@
    v18: receipts require verified private-queue storage; no email fallback.
    v19: pin the guestbook form script to the page version, so a returning browser
         cannot combine new form markup with an older cached submission client.
-   v20: replace the retired intake service with a GitHub-only public issue handoff. */
-var VERSION = 'arasteh-v20';
+   v20: replace the retired intake service with a GitHub-only public issue handoff.
+   v21: publish valid notes automatically and notify Amir through issue assignment.
+   v22: post through the account-free Worker and keep confirmed notes visible locally. */
+var VERSION = 'arasteh-v22';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -60,7 +62,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=20',
+  '/assets/js/guestbook.js?v=22',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',
@@ -129,7 +131,7 @@ self.addEventListener('fetch', function (event) {
   }
 
   /* Reader notes change independently of the shell. Ask for the live index first,
-     then keep the last approved set available when the connection disappears. */
+     then keep the last published set available when the connection disappears. */
   if (url.pathname === '/assets/data/guestbook.json') {
     event.respondWith(
       fetch(request).then(function (response) {

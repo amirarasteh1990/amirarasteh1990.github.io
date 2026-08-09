@@ -35,7 +35,8 @@ git pull --ff-only
 | Source TTF fonts | `build_webfonts.py` with the book virtual environment |
 | Language names (a new language, or a new script among them) | `build_name_fonts.py` |
 | The other names a language answers to in search (Farsi, Bangla, Mandarin) | Edit `assets/js/lang-alias.js`; nothing to rebuild. First name in each list wins ties |
-| A guestbook issue approved, featured, edited, or rejected | Automatic owner-only GitHub workflow; `sync_guestbook.py --repo amirarasteh1990/amirarasteh1990.github.io --issue NUMBER` is the manual recovery path |
+| Guestbook form or Worker | Run `node guestbook-worker/test.mjs`; deployment and secret setup live in `guestbook-worker/README.md` |
+| A guestbook issue opened, featured, edited, or rejected | New Worker-created notes publish automatically; later moderation is owner-only. `sync_guestbook.py --repo amirarasteh1990/amirarasteh1990.github.io --issue NUMBER` is the manual recovery path |
 | A new complete edition released (EPUB/PDF uploaded) | `build_read_pages.py`. It reads the release, so the cards, counts, copy and status all follow. Nothing to type by hand |
 | Paintings added or renamed | `sync_gallery.py`, then `build_read_pages.py` (sitemap images) |
 | Anything at all, before pushing | `check.py` |
@@ -174,14 +175,37 @@ Run only when the source TTF files or font-generation logic change:
 
 ## Guestbook moderation
 
-Every submission is a public issue in the website repository and requires a
-GitHub account. Add `approved` to publish it and optionally add `featured` to show
-it near the front. Add `rejected`, or remove `approved`, to unpublish it. The
-`publish-guestbook.yml` workflow performs the sync and commits the generated files
-automatically after those label changes.
+Visitors need no account. The comment form posts to the Cloudflare Worker, which
+validates and rate-limits the note before creating a public issue with an encrypted,
+issue-only GitHub token. The page displays GitHub's confirmed entry immediately.
+The workflow creates any missing moderation labels, publishes it permanently,
+marks it `pending`, and assigns it to `amirarasteh1990` so Amir receives a GitHub
+notification.
 
-For manual recovery, pull all approved issues into one public JSON file per note
-and rebuild the compact browser index:
+Remove `pending` after reading it; that label does not affect the website. Add
+`featured` to show a note near the front. Add `rejected` to remove it, or remove
+`rejected` to publish it again. Later edits and moderation actions are processed
+only when performed by the repository owner.
+
+Run the Worker contract without contacting GitHub:
+
+```powershell
+node guestbook-worker/test.mjs
+```
+
+For a full local page test, start the mock intake in one terminal:
+
+```powershell
+$env:MOCK_GITHUB = "1"
+node guestbook-worker/dev-server.mjs
+```
+
+Then start `python -m http.server 8000 --bind 127.0.0.1` in the website root and
+open `http://127.0.0.1:8000/comments/`. The mock confirms posts but creates no
+issue and performs no external write.
+
+For manual recovery, pull one issue into its public JSON file and rebuild the
+compact browser index:
 
 ```powershell
 python sync_guestbook.py --repo amirarasteh1990/amirarasteh1990.github.io --issue NUMBER
@@ -197,10 +221,12 @@ Review manually generated entry files and the index in the working-tree diff, th
 run `python check.py`. The local sync does not stage, commit, or push anything.
 The automated workflow is the only path that commits generated guestbook data.
 
-There is no Worker, Cloudflare deployment, personal access token, or browser-side
-repository credential. A local preview prepares the same pre-filled public GitHub
-issue as production; do not complete the final GitHub submission unless you intend
-to create a real test issue.
+The browser has no repository credential. The Cloudflare secret is a fine-grained
+token limited to Issues read/write on this one public repository. Never grant it
+Contents access and never place it in HTML, JavaScript, Wrangler variables,
+`.dev.vars.example`, shell history, or documentation. Follow
+`guestbook-worker/README.md` for the one-time free-plan deployment and endpoint
+configuration.
 
 ## Preview locally
 

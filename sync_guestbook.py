@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Import approved GitHub issues and build the public guestbook index.
+"""Import valid public GitHub issues and build the public guestbook index.
 
 The browser-facing data contains only the chosen public name, note, language and
-date. Pending submissions stay as public issues in the website repository. This
+date. New submissions publish automatically and stay as public issues in the
+website repository. This
 script never commits, stages, pushes, labels, closes, or otherwise writes to GitHub.
 
     python sync_guestbook.py --check
@@ -151,8 +152,12 @@ def decode_submission(body: str, issue_number: int) -> tuple[dict, str]:
         fields = PUBLIC_BODY.search(body)
         if not fields:
             raise GuestbookError(f"issue #{issue_number}: public note fields missing")
-        raw["name"] = html.unescape(fields.group(1))
-        raw["message"] = html.unescape(fields.group(2))
+        raw["name"] = clean_line(
+            html.unescape(fields.group(1)), "name", 1, 40
+        )
+        raw["message"] = clean_text(
+            html.unescape(fields.group(2)), "message", 1, 500
+        )
     elif v1:
         raw = decode_token(v1.group(1), issue_number)
     else:
@@ -175,6 +180,27 @@ def decode_submission(body: str, issue_number: int) -> tuple[dict, str]:
         "featured": False,
     }, f"issue #{issue_number}")
     return entry, audience
+
+
+def bind_to_issue(entry: dict, issue: dict, issue_number: int) -> dict:
+    """Use GitHub-owned values for identity and publication order."""
+    created = clean_text(issue.get("created_at"), "created_at", 20, 40)
+    try:
+        published = dt.datetime.fromisoformat(
+            created.replace("Z", "+00:00")
+        ).date().isoformat()
+    except ValueError as exc:
+        raise GuestbookError(f"issue #{issue_number}: invalid created_at") from exc
+    bound = dict(entry)
+    bound["id"] = f"{published}-issue-{issue_number}"
+    bound["published"] = published
+    return validate_entry(bound, f"issue #{issue_number}")
+
+
+def should_publish(labels: set[str], audience: str, new_submission: bool = False) -> bool:
+    """Publish valid public notes; only owner moderation may reject one."""
+    return ("guestbook" in labels and audience == "public"
+            and (new_submission or "rejected" not in labels))
 
 
 def moderation_issues(repo: str) -> list[dict]:
@@ -218,17 +244,17 @@ def moderation_issue(repo: str, issue_number: int) -> dict:
     return issue
 
 
-def sync_one(repo: str, issue_number: int) -> int:
+def sync_one(repo: str, issue_number: int, new_submission: bool = False) -> int:
     try:
         issue = moderation_issue(repo, issue_number)
         entry, audience = decode_submission(issue.get("body") or "", issue_number)
+        entry = bind_to_issue(entry, issue, issue_number)
         labels = {label.get("name", "").lower() for label in issue.get("labels", [])}
         path = ENTRIES / f"{entry['id']}.json"
-        publish = ("guestbook" in labels and audience == "public"
-                   and "approved" in labels and "rejected" not in labels)
+        publish = should_publish(labels, audience, new_submission)
         action = "unchanged"
         if publish:
-            entry["featured"] = "featured" in labels
+            entry["featured"] = not new_submission and "featured" in labels
             old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
             write_json(path, entry)
             action = "published" if old != entry else "unchanged"
@@ -259,15 +285,13 @@ def sync(repo: str | None) -> int:
                     entry, audience = decode_submission(
                         issue.get("body") or "", int(issue["number"])
                     )
+                    entry = bind_to_issue(entry, issue, int(issue["number"]))
                 except GuestbookError:
-                    # Anyone can open a public issue. A malformed pending issue must
-                    # not block publishing; an approved malformed issue must fail
-                    # loudly because a maintainer explicitly selected it.
-                    if "approved" in labels and "rejected" not in labels:
-                        raise
+                    # Anyone can open a public issue. A malformed issue must not
+                    # block a manual rebuild of the remaining valid archive.
                     continue
                 known_ids.add(entry["id"])
-                if audience != "public" or "approved" not in labels or "rejected" in labels:
+                if not should_publish(labels, audience):
                     continue
                 entry["featured"] = "featured" in labels
                 published_ids.add(entry["id"])
@@ -305,14 +329,18 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--check", action="store_true", help="validate without writing")
     parser.add_argument("--repo", help="moderation repository, OWNER/REPOSITORY")
-    parser.add_argument("--issue", type=int, help="sync one owner-reviewed issue number")
+    parser.add_argument("--issue", type=int, help="sync one guestbook issue number")
+    parser.add_argument("--new-submission", action="store_true",
+                        help="ignore owner-only labels on a newly opened issue")
     args = parser.parse_args()
     if args.check:
         return check()
     if args.issue is not None:
         if not args.repo:
             parser.error("--issue requires --repo")
-        return sync_one(args.repo, args.issue)
+        return sync_one(args.repo, args.issue, args.new_submission)
+    if args.new_submission:
+        parser.error("--new-submission requires --issue")
     return sync(args.repo)
 
 

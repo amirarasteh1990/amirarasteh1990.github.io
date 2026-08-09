@@ -28,6 +28,7 @@ import sys
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
+IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
 # (key, href, label, inner SVG). Keys double as the value a page passes as the
 # "current" tab. Five destinations -- the comfortable maximum for a tab bar.
@@ -124,7 +125,10 @@ def restamp(html: str, current: str) -> str:
 
 
 def pages() -> list[Path]:
-    return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
+    return sorted(
+        p for p in SITE.rglob("*.html")
+        if not IGNORED_DIRS.intersection(p.relative_to(SITE).parts)
+    )
 
 
 # The retired /sedaha/languages/ is a redirect stub: no nav, no head block,

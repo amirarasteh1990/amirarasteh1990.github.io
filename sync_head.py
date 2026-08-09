@@ -33,6 +33,7 @@ import sys
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
+IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
 START = "<!-- PWA:START (managed by sync_head.py — edit there, not the pages) -->"
 END = "<!-- PWA:END -->"
@@ -100,7 +101,10 @@ def restamp(html: str) -> str:
 
 
 def pages() -> list[Path]:
-    return sorted(p for p in SITE.rglob("*.html") if ".git" not in p.parts)
+    return sorted(
+        p for p in SITE.rglob("*.html")
+        if not IGNORED_DIRS.intersection(p.relative_to(SITE).parts)
+    )
 
 
 # The retired /sedaha/languages/ is a redirect stub: no nav, no head block,

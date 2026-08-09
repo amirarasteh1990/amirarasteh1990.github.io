@@ -1,8 +1,8 @@
-name: Publish approved guestbook notes
+name: Publish guestbook notes
 
 on:
   issues:
-    types: [labeled, unlabeled, edited]
+    types: [opened, labeled, unlabeled, edited]
   workflow_dispatch:
     inputs:
       issue_number:
@@ -12,7 +12,7 @@ on:
 
 permissions:
   contents: write
-  issues: read
+  issues: write
   pages: write
 
 concurrency:
@@ -22,19 +22,57 @@ concurrency:
 jobs:
   publish:
     if: >-
-      (github.event_name == 'workflow_dispatch' ||
-      github.actor == github.repository_owner) &&
-      (github.event_name == 'workflow_dispatch' ||
-      contains(github.event.issue.labels.*.name, 'guestbook') ||
-      github.event.label.name == 'guestbook')
+      github.event_name == 'workflow_dispatch' ||
+      (github.actor == github.repository_owner &&
+      github.event.action == 'opened' &&
+      contains(github.event.issue.body, '<!-- guestbook-submission:v2 ')) ||
+      (github.actor == github.repository_owner &&
+      github.event.action == 'edited' &&
+      contains(github.event.issue.labels.*.name, 'guestbook')) ||
+      (github.actor == github.repository_owner &&
+      (github.event.action == 'labeled' || github.event.action == 'unlabeled') &&
+      (github.event.label.name == 'featured' || github.event.label.name == 'rejected'))
     runs-on: ubuntu-latest
     steps:
       - name: Check out the website
         uses: actions/checkout@v7
         with:
+          ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
-      - name: Rebuild the approved guestbook files
+      - name: Prepare moderation labels and notify Amir
+        if: github.event_name == 'issues' && github.event.action == 'opened'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          ensure_label() {
+            name="$1"
+            color="$2"
+            description="$3"
+            if ! gh api "repos/$GITHUB_REPOSITORY/labels/$name" --silent 2>/dev/null; then
+              gh label create "$name" --repo "$GITHUB_REPOSITORY" \
+                --color "$color" --description "$description"
+            fi
+          }
+          ensure_label guestbook 8b5e3c "Reader notes submitted through arasteh.art"
+          ensure_label pending d4a373 "Unread guestbook note"
+          ensure_label shareable 9bb7a5 "Public note that may appear on the website"
+          ensure_label featured b06f47 "Show this note near the front"
+          ensure_label rejected 7b3030 "Remove this note from the public guestbook"
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" \
+            -f "labels[]=guestbook" -f "labels[]=pending" -f "labels[]=shareable" \
+            -f "assignees[]=amirarasteh1990"
+
+      - name: Publish a newly submitted note
+        if: github.event_name == 'issues' && github.event.action == 'opened'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python sync_guestbook.py --repo "$GITHUB_REPOSITORY" --issue "$ISSUE_NUMBER" --new-submission
+
+      - name: Apply an owner moderation action
+        if: github.event_name == 'workflow_dispatch' || github.event.action != 'opened'
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
@@ -43,20 +81,20 @@ jobs:
       - name: Validate the generated index
         run: python sync_guestbook.py --check
 
-      - name: Commit published-note changes
+      - name: Commit public-note changes
         id: publish
         env:
           TARGET_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           git add -- comments/entries assets/data/guestbook.json
           if git diff --cached --quiet; then
-            echo "The approved guestbook is already current."
+            echo "The public guestbook is already current."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Publish approved guestbook notes"
+          git commit -m "Publish guestbook notes"
           git push origin "HEAD:$TARGET_BRANCH"
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

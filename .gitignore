@@ -7,6 +7,12 @@ desktop.ini
 __pycache__/
 *.pyc
 
+# Cloudflare Worker local state and secrets
+guestbook-worker/node_modules/
+guestbook-worker/.wrangler/
+guestbook-worker/.dev.vars
+guestbook-worker/.env
+
 # Books go to GitHub Releases, never committed here.
 # High-res painting masters stay in the private archive, never committed here.
 dist/

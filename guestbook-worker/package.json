@@ -1,0 +1,14 @@
+{
+  "name": "arasteh-guestbook-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs",
+    "dev": "node dev-server.mjs",
+    "cf:dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}
