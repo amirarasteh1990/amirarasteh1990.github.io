@@ -39,7 +39,7 @@ from pathlib import Path
 
 from sync_footers import footer_html  # one canonical footer for the whole site
 from sync_appnav import appnav_html   # one canonical nav shell for the whole site
-from sync_head import head_html        # one canonical PWA head block for the whole site
+from sync_head import STYLE_HREF, head_html  # canonical stylesheet + PWA head block
 
 SITE = Path(__file__).resolve().parent
 BOOK_VOL = SITE.parent / "1_Sedaha" / "Volume1"  # sibling book repo. Edit if moved.
@@ -874,7 +874,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
 <link rel="canonical" href="{url}">
 {book_ld(L, url)}
 {alternates()}
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="{STYLE_HREF}">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -1205,7 +1205,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
 <meta property="og:url" content="https://arasteh.art/sedaha/languages/">
 <link rel="canonical" href="https://arasteh.art/sedaha/languages/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="{STYLE_HREF}">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">

@@ -15,6 +15,10 @@ readable when the connection goes, and points at the Atom feed of new editions
 (/feed.xml, written by build_read_pages.py). It also carries the dark-mode theme-color, which pairs
 with the light theme-color already in each page head (that one has no media query,
 so it stays the default; the dark one overrides it only under a dark preference).
+It also keeps the shared stylesheet URL versioned on every page. The query string
+is deliberate: a page fetched through an older service worker must miss that old
+worker's stylesheet cache and fetch the new CSS on the same visit.
+
 It carries two more things that must be in every head: a preload for the one
 webfont used above the fold, and the theme switch (see THEME_JS below), which has
 to run after the stylesheet and before first paint or a stored choice flashes.
@@ -37,6 +41,11 @@ IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
 START = "<!-- PWA:START (managed by sync_head.py — edit there, not the pages) -->"
 END = "<!-- PWA:END -->"
+
+# Keep this in step with sw.js. Unlike the service-worker cache name alone, this
+# version reaches a returning reader before the newly deployed worker activates.
+STYLE_VERSION = "25"
+STYLE_HREF = f"/assets/css/style.css?v={STYLE_VERSION}"
 
 
 # Light/dark is authored once, as a (prefers-color-scheme:dark) block in
@@ -91,10 +100,15 @@ def head_html() -> str:
 
 HEAD_END_RE = re.compile(r'</head>')
 BLOCK_RE = re.compile(r'\n?' + re.escape(START) + r'.*?' + re.escape(END), re.S)
+STYLE_HREF_RE = re.compile(
+    r'(?<=<link rel="stylesheet" href=")'
+    r'(?:/|(?:\.\./)*)?assets/css/style\.css(?:\?v=\d+)?(?=")'
+)
 
 
 def restamp(html: str) -> str:
-    """Remove any existing block, then insert a fresh one right before </head>."""
+    """Refresh the stylesheet URL and PWA block in one canonical pass."""
+    html = STYLE_HREF_RE.sub(STYLE_HREF, html)
     html = BLOCK_RE.sub("", html)
     block = head_html()
     return HEAD_END_RE.sub(lambda _m: block + "\n</head>", html, count=1)

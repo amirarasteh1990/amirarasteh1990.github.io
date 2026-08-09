@@ -50,22 +50,24 @@
    v22: post through the account-free Worker and keep confirmed notes visible locally.
    v23: the Opening frontispiece layout; returning readers must not combine its new
         figure markup with the old stylesheet's browser-default figure margins.
-   v24: justified long-form prose throughout the site, including every Opening. */
-var VERSION = 'arasteh-v24';
+   v24: justified long-form prose throughout the site, including every Opening.
+   v25: version the stylesheet URL itself, so even the previous service worker
+        cannot serve pre-justification CSS during its replacement visit. */
+var VERSION = 'arasteh-v25';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css',
+  '/assets/css/style.css?v=25',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
   '/assets/js/finder.js',
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=24',
+  '/assets/js/guestbook.js?v=25',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

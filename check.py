@@ -42,6 +42,8 @@ import urllib.parse
 import xml.dom.minidom
 from pathlib import Path
 
+from sync_head import STYLE_HREF
+
 SITE = Path(__file__).resolve().parent
 IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
@@ -155,6 +157,24 @@ def crawl() -> None:
             and not (SITE / local_shell_path(p).lstrip("/") / "index.html").exists()]
     report(f"sw.js: {len(paths)} shell paths exist", bool(paths) and not gone,
            gone[0] if gone else ("SHELL not found" if not paths else ""))
+
+    style_pages = []
+    stale_styles = []
+    for page in pages():
+        hrefs = re.findall(r'<link rel="stylesheet" href="([^"]+)"',
+                           page.read_text(encoding="utf-8"))
+        for href in hrefs:
+            style_pages.append(page)
+            if href != STYLE_HREF:
+                stale_styles.append(f"{page.relative_to(SITE).as_posix()} -> {href}")
+    report(f"{len(style_pages)} pages pin the current stylesheet",
+           bool(style_pages) and not stale_styles,
+           stale_styles[0] if stale_styles else "")
+    shell_styles = [p for p in paths
+                    if local_shell_path(p) == "/assets/css/style.css"]
+    report("the pages and offline shell pin the same stylesheet version",
+           shell_styles == [STYLE_HREF],
+           shell_styles[0] if shell_styles else "stylesheet missing from SHELL")
 
 
 # ---------------------------------------------------------- machine-readable
