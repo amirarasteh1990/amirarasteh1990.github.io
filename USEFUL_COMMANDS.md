@@ -480,13 +480,25 @@ gh api repos/amirarasteh1990/amirarasteh1990.github.io/releases/tags/books --jq 
 
 A small helper (defined in `~/sedaha-cli.ps1`, auto-loaded by the PowerShell
 profile) prints each asset's count **and** how much it changed since the last
-time you ran it. The default already includes the diff:
+time you ran it. By default it lists **only the assets whose count moved** —
+unchanged ones are hidden, so a quiet week prints one line:
 
 ```powershell
 show downloads
 ```
 
-Add a total line, or turn the diff off:
+```text
+No changes since the last run (2026-08-10 14:16).
+```
+
+Show every asset, unchanged ones included (these are the `(=)` rows):
+
+```powershell
+show downloads --all
+```
+
+Add a total line, or turn the diff off. `--no-diff` has nothing to compare
+against, so it implies `--all`:
 
 ```powershell
 show downloads --total
