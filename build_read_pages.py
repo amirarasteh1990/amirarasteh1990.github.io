@@ -1253,7 +1253,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
     </table>
   </div>
   <p class="lang-noresult" hidden>No language matches that search yet.
-    <a href="mailto:amirarasteh1990@gmail.com">Write to me</a> and I&rsquo;ll look.</p>
+    <a href="mailto:amirarasteh.art@gmail.com">Write to me</a> and I&rsquo;ll look.</p>
 
   <!-- The project's own numbers. Real, and secondary to "where is my language",
        so they wait behind a disclosure rather than meeting everyone first. -->
@@ -1269,7 +1269,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
   </details>
 
   <p class="lang-foot">Downloads are hosted on GitHub. If that is blocked where you are,
-    <a href="mailto:amirarasteh1990@gmail.com">write to me</a> and I will send the files.</p>
+    <a href="mailto:amirarasteh.art@gmail.com">write to me</a> and I will send the files.</p>
   <p class="lang-foot">Follow new editions on
     <a href="https://t.me/Sounds_AmirArasteh">Telegram</a> or by
     <a href="/feed.xml">feed</a>. The registered first edition (2026) has its own

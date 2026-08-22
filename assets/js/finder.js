@@ -210,7 +210,7 @@
         'The files are hosted on GitHub, so the download opens there. If that is blocked ' +
         'on your network, ');
       var mail = el('a', null, 'write to Amir');
-      mail.href = 'mailto:amirarasteh1990@gmail.com?subject=' +
+      mail.href = 'mailto:amirarasteh.art@gmail.com?subject=' +
         encodeURIComponent('Sedaha in ' + L.en);
       p.appendChild(mail);
       p.appendChild(document.createTextNode(' and he will send them to you.'));
@@ -248,7 +248,7 @@
     var acts = el('p', 'lr-actions');
     var browse = toAllLangs(el('a', 'btn', 'Browse all languages'));
     var write = el('a', 'btn', 'Write to Amir');
-    write.href = 'mailto:amirarasteh1990@gmail.com?subject=' +
+    write.href = 'mailto:amirarasteh.art@gmail.com?subject=' +
       encodeURIComponent('Sedaha in ' + q);
     acts.appendChild(browse);
     acts.appendChild(write);

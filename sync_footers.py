@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
-EMAIL = "amirarasteh1990@gmail.com"
+EMAIL = "amirarasteh.art@gmail.com"
 
 # On a phone the app shell puts these same destinations under the thumb, one tap
 # away, so repeating them in the footer is furniture. Derived from the tab set,
