@@ -15,7 +15,7 @@
   "shortcuts": [
     { "name": "Read the opening", "short_name": "Read", "url": "/sedaha/read/" },
     { "name": "Find your language", "short_name": "Languages", "url": "/sedaha/languages/" },
-    { "name": "Paintings", "short_name": "Paintings", "url": "/paintings/sounds/" }
+    { "name": "Paintings", "short_name": "Paintings", "url": "/paintings/" }
   ],
   "icons": [
     { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },

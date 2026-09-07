@@ -598,6 +598,25 @@ def paintings() -> None:
                if not (SITE / "assets" / "img" / "paintings" / "index" / f"{g}.webp").is_file()]
     report("every tile has a painting to show", not missing, ", ".join(missing))
 
+    # Every way in should reach the choice between galleries, not land inside one of
+    # them. While there was a single gallery, several links pointed straight at it on
+    # purpose; the notes beside them said to revert when a second shipped. The nav and
+    # the footer are generated and their scripts were duly changed. The home page's
+    # Paintings card and the installed app's Paintings shortcut are hand-written, were
+    # both missed, and between them are how most people arrive -- which is why this is
+    # now checked rather than remembered. A link to a specific painting (an image under
+    # assets/) is not a door and does not count.
+    into = re.compile(r'href="(?:\.{0,2}/)?paintings/[a-z0-9-]+/"')
+    doors = [path.relative_to(SITE).as_posix() for path in pages()
+             if not path.relative_to(SITE).as_posix().startswith("paintings/")
+             and into.search(path.read_text(encoding="utf-8"))]
+    shortcuts = json.loads((SITE / "manifest.webmanifest").read_text(encoding="utf-8"))
+    doors += ["manifest shortcut " + s.get("name", "?")
+              for s in shortcuts.get("shortcuts", [])
+              if re.match(r"/paintings/[a-z0-9-]+/", s.get("url", ""))]
+    report("nothing links past the gallery index into one gallery",
+           not doors, ", ".join(doors))
+
     # the generic card system belongs to the home page; this index must not reach into it
     css = (SITE / "assets" / "css" / "style.css").read_text(encoding="utf-8")
     report("the paintings index overrides no shared card rule",

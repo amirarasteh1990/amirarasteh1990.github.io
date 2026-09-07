@@ -58,8 +58,14 @@
         on the collection index again rather than jumping past it into Sounds. The
         nav is baked into every cached page, and gallery.js now finds its grid by
         class instead of the id only the Sounds page had -- a returning browser must
-        not combine the new pages with the old script. */
-var VERSION = 'arasteh-v27';
+        not combine the new pages with the old script.
+   v28: the two remaining doors into the Sounds gallery -- the home page's Paintings
+        card and the installed app's Paintings shortcut -- go to /paintings/ like
+        everything else. The manifest is an ASSET here, so it is served cache-first:
+        without this bump an installed app would keep the old shortcut, and the one
+        route into the site that does not go through a page would still land past
+        the new gallery. */
+var VERSION = 'arasteh-v28';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -73,7 +79,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=27',
+  '/assets/js/guestbook.js?v=28',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',
