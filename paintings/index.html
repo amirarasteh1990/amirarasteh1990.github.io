@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://arasteh.art/paintings/">
 <link rel="canonical" href="https://arasteh.art/paintings/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/css/style.css?v=25">
+<link rel="stylesheet" href="/assets/css/style.css?v=26">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -79,7 +79,10 @@ apply(get())})();</script>
              content, and a heading inside one is invalid. <a> is transparent, so
              flow content is fine here. -->
         <div class="painting-collection__overlay">
-          <h2 class="painting-collection__title">Sedaha (Sounds) — Book One</h2>
+          <h2 class="painting-collection__title">
+            <span class="painting-collection__line">Sedaha (Sounds)</span>
+            <span class="painting-collection__line">Book One</span>
+          </h2>
         </div>
       </a>
       <a class="painting-collection" href="/paintings/boteh-jegheh/" data-gallery="boteh-jegheh">
@@ -92,15 +95,23 @@ apply(get())})();</script>
           <h2 class="painting-collection__title">The World Through Boteh-Jegheh</h2>
         </div>
       </a>
+      <!-- A div, not an <a>: there is no gallery to open yet, and a tile that looks
+           like a link but goes nowhere is worse than one that plainly waits. The
+           hover lift is already scoped to [href] in the stylesheet, so this sits
+           still under the pointer and takes no keyboard focus. It becomes an <a>
+           the day the series has a page. -->
+      <div class="painting-collection painting-collection--soon" data-gallery-soon="yarn-truck">
+        <picture class="painting-collection__media">
+          <source srcset="/assets/img/paintings/index/yarn-truck.webp" type="image/webp">
+          <img src="/assets/img/paintings/index/yarn-truck.jpg" width="480" height="360"
+               alt="" decoding="async" loading="lazy">
+        </picture>
+        <div class="painting-collection__overlay">
+          <h2 class="painting-collection__title">A Yarn-Laden Truck</h2>
+          <p class="painting-collection__soon">Coming soon</p>
+        </div>
+      </div>
     </div>
-
-    <!-- Landmarks of the World and the yarn truck were tiles saying "Coming soon"
-         over nothing at all. A tile with no painting on it is an empty frame, and
-         next to a real gallery it reads as a link that is broken rather than one
-         that does not exist yet. They are named here instead, and become tiles the
-         day there is something to show -- as Boteh-Jegheh just did. -->
-    <p class="muted-note">Landmarks of the World and A yarn-laden truck are still
-      being painted.</p>
     <p class="muted-note">All artwork &copy; Amir Arasteh. All Rights Reserved.</p>
   </section>
 </main>

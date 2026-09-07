@@ -44,7 +44,7 @@ END = "<!-- PWA:END -->"
 
 # Keep this in step with sw.js. Unlike the service-worker cache name alone, this
 # version reaches a returning reader before the newly deployed worker activates.
-STYLE_VERSION = "25"
+STYLE_VERSION = "26"
 STYLE_HREF = f"/assets/css/style.css?v={STYLE_VERSION}"
 
 

@@ -594,9 +594,22 @@ def paintings() -> None:
     report("every gallery is either tiled or named on the index",
            not unreachable, ", ".join(unreachable))
 
-    missing = [g for g in tiles
+    # A promised series carries data-gallery-soon instead of data-gallery: same tile,
+    # no link, and no folder of its own yet. It still has to have a picture on it --
+    # that photograph is the whole reason it is allowed to be a tile rather than a
+    # line of prose.
+    soon = re.findall(r'<div class="painting-collection[^"]*"[^>]*'
+                      r'data-gallery-soon="([^"]+)"', page)
+    missing = [g for g in tiles + soon
                if not (SITE / "assets" / "img" / "paintings" / "index" / f"{g}.webp").is_file()]
     report("every tile has a painting to show", not missing, ", ".join(missing))
+
+    # The day a promised series gets a gallery, its tile has to stop saying "Coming
+    # soon" and start being a link -- otherwise the site holds a finished gallery
+    # behind a tile that tells visitors it does not exist.
+    overdue = [g for g in soon if (SITE / "paintings" / g).is_dir()]
+    report("no tile still promises a gallery that has shipped",
+           not overdue, ", ".join(overdue))
 
     # Every way in should reach the choice between galleries, not land inside one of
     # them. While there was a single gallery, several links pointed straight at it on

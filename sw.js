@@ -72,7 +72,7 @@ var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=25',
+  '/assets/css/style.css?v=26',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
   '/assets/js/finder.js',

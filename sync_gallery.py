@@ -375,9 +375,45 @@ def _write_excerpt_mark(check: bool) -> bool:
 COLLECTION_DIR = SITE / "assets" / "img" / "paintings" / "index"
 COLLECTION_SIZE = (480, 360)          # 2x a 220px tile, with room over
 
+# == tiles for series that have no gallery yet ==
+# A tile saying "Coming soon" over nothing at all is an empty frame, and that is why
+# these were prose for so long. With a photograph behind it the objection goes away:
+# there is something to look at, and the tile is a promise rather than a broken link.
+# It is still NOT a gallery -- no page, no <a>, and no entry in GALLERIES, so nothing
+# derives lightbox images or thumbnails for it. One picture, one tile, and that is all
+# until the series is real.
+PLACEHOLDER_TILES = {
+    "yarn-truck": {"masters": ARCHIVE / "yarn-truck", "source": "01",
+                   "centering": (0.5, 0.5)},
+}
+
+
+def _write_one_tile(slug: str, src: Path, centering: tuple, check: bool) -> bool:
+    """One 4:3 tile, cropped and written, or reported stale."""
+    out = COLLECTION_DIR / f"{slug}.jpg"
+    fresh = (out.is_file() and out.stat().st_mtime >= src.stat().st_mtime
+             and _twin_is_current(out))
+    if fresh:
+        print(f"[ok]    paintings/index/{out.name}: current")
+        return True
+    if check:
+        print(f"[stale] paintings/index/{out.name}")
+        return False
+    with Image.open(src) as im:
+        tile = ImageOps.fit(ImageOps.exif_transpose(im).convert("RGB"),
+                            COLLECTION_SIZE, method=LANCZOS, centering=centering)
+    tile.info.clear()             # no EXIF, no ICC: it is a 220px tile
+    tile.save(out, "JPEG", quality=BAND_JPEG_QUALITY, optimize=True)
+    tile.save(out.with_suffix(".webp"), "WEBP",
+              quality=BAND_WEBP_QUALITY, method=6)
+    print(f"[write] paintings/index/{out.name}  "
+          f"({tile.width}x{tile.height} from {src.name}, "
+          f"centred {centering[0]:.2f},{centering[1]:.2f})")
+    return True
+
 
 def _write_collection_thumbs(check: bool) -> bool:
-    """A 4:3 tile per gallery, for the collection index."""
+    """A 4:3 tile per gallery, and per series that is only promised so far."""
     ok = True
     COLLECTION_DIR.mkdir(parents=True, exist_ok=True)
     for gallery in GALLERIES:
@@ -392,26 +428,15 @@ def _write_collection_thumbs(check: bool) -> bool:
             print(f"[warn]  collection tile {slug}: master {wanted} not found")
             ok = False
             continue
-        out = COLLECTION_DIR / f"{slug}.jpg"
-        fresh = (out.is_file() and out.stat().st_mtime >= src.stat().st_mtime
-                 and _twin_is_current(out))
-        if fresh:
-            print(f"[ok]    paintings/index/{out.name}: current")
-            continue
-        if check:
-            print(f"[stale] paintings/index/{out.name}")
-            ok = False
-            continue
-        with Image.open(src) as im:
-            tile = ImageOps.fit(im.convert("RGB"), COLLECTION_SIZE,
-                                method=LANCZOS, centering=spec["centering"])
-        tile.info.clear()             # no EXIF, no ICC: it is a 220px tile
-        tile.save(out, "JPEG", quality=BAND_JPEG_QUALITY, optimize=True)
-        tile.save(out.with_suffix(".webp"), "WEBP",
-                  quality=BAND_WEBP_QUALITY, method=6)
-        print(f"[write] paintings/index/{out.name}  "
-              f"({tile.width}x{tile.height} from {src.name}, "
-              f"centred {spec['centering'][0]:.2f},{spec['centering'][1]:.2f})")
+        ok &= _write_one_tile(slug, src, spec["centering"], check)
+
+    for slug, spec in PLACEHOLDER_TILES.items():
+        folder = spec["masters"]
+        src = folder / f"{spec['source']}.jpg" if folder.is_dir() else None
+        if src is None or not src.is_file():
+            print(f"[wait]  {slug}: no photograph in {folder}")
+            continue          # a promise with nothing behind it stays prose
+        ok &= _write_one_tile(slug, src, spec["centering"], check)
     return ok
 
 

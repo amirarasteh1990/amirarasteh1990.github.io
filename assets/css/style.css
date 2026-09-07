@@ -949,15 +949,35 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 /* The scrim is always there, never on hover: a title that appears only when
    pointed at does not exist on a phone. Bottom-anchored, where a caption belongs,
    which also leaves a two-line title the full width and covers less of the
-   painting than a centred one would. */
+   painting than a vertically centred one would.
+   The TEXT is centred within that bottom band, which is a different question from
+   where the band sits: at 220px these are small tiles carrying two or three short
+   words, and centred they read as the card beside a picture rather than as a list
+   of files. */
 .painting-collection::after{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(to top,rgba(15,10,7,.88) 0%,rgba(15,10,7,.58) 43%,
     rgba(15,10,7,.08) 78%,transparent 100%);pointer-events:none}
 .painting-collection__overlay{position:absolute;inset-inline:12px;inset-block-end:10px;
-  z-index:2;display:block;color:#fff;text-align:start}
+  z-index:2;display:block;color:#fff;text-align:center}
+/* text-wrap:balance evens the lines out where a title has to wrap on its own, so
+   "The World Through Boteh-Jegheh" does not break as five words then one. Ignored
+   by browsers that do not have it, which simply wrap as before. */
 .painting-collection__title{margin:0;font-family:var(--serif);
   font-size:clamp(.94rem,3.8vw,1.16rem);font-weight:600;line-height:1.14;
-  color:inherit;text-shadow:0 1px 5px rgba(0,0,0,.75)}
+  color:inherit;text-shadow:0 1px 5px rgba(0,0,0,.75);text-wrap:balance}
+/* An authored line break, not a wrap: "Sedaha (Sounds) — Book One" left to itself
+   breaks after the dash and strands it at the end of the line. A block-level span
+   rather than a <br> so the two halves stay one heading for a screen reader. */
+.painting-collection__line{display:block}
+/* A series with a photograph but no gallery yet. It keeps the frame and the scrim,
+   so it reads as one of the set rather than as a hole in it, and says plainly that
+   there is nothing to open. Slightly dimmed, because a tile at full strength beside
+   two live ones invites the click it cannot answer. */
+.painting-collection--soon{cursor:default}
+.painting-collection--soon .painting-collection__media img{opacity:.72}
+.painting-collection__soon{margin:2px 0 0;font-size:clamp(.68rem,2.4vw,.76rem);
+  font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fff;
+  opacity:.85;text-shadow:0 1px 5px rgba(0,0,0,.75)}
 .painting-collection[href]{transition:transform .15s ease,box-shadow .15s ease}
 .painting-collection[href]:hover{transform:translateY(-2px);
   box-shadow:0 4px 14px rgba(0,0,0,.18);text-decoration:none}
