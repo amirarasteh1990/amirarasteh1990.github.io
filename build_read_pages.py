@@ -1727,13 +1727,20 @@ def patch_status_page(check: bool, rows: list[dict], total: int | None = None) -
 
 
 GALLERY = SITE / "paintings" / "sounds" / "index.html"
+
+
+def _galleries() -> list[tuple[str, Path]]:
+    """(slug, page) for every painting gallery on disk, in name order."""
+    root = SITE / "paintings"
+    return sorted((p.name, p / "index.html") for p in root.iterdir()
+                  if p.is_dir() and (p / "index.html").is_file())
 IMAGE_NS = 'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"'
 
 
-def _paintings() -> list[tuple[str, str]]:
-    """(full-size URL, caption) for every painting in the gallery, read from the
+def _paintings(page: Path) -> list[tuple[str, str]]:
+    """(full-size URL, caption) for every painting in one gallery, read from the
     gallery page itself so the sitemap cannot list a picture the site does not show."""
-    body = GALLERY.read_text(encoding="utf-8")
+    body = page.read_text(encoding="utf-8")
     out = []
     for href, caption in re.findall(
             r'<a class="shot" href="([^"]+)" data-caption="([^"]+)"', body):
@@ -1742,39 +1749,46 @@ def _paintings() -> list[tuple[str, str]]:
 
 
 def patch_sitemap_images(check: bool) -> bool:
-    """Attach the paintings to the gallery's sitemap entry. Image search is how a
-    painting gets found by someone who was not looking for a book."""
-    body = SITEMAP.read_text(encoding="utf-8")
-    shots = _paintings()
-    if not shots:
-        print("[warn]  sitemap: no paintings found in the gallery page")
+    """Attach the paintings to each gallery's sitemap entry. Image search is how a
+    painting gets found by someone who was not looking for a book -- which is truer
+    of a standalone series than of the ones bound into the book."""
+    body = new = SITEMAP.read_text(encoding="utf-8")
+    counted = []
+    for slug, page in _galleries():
+        shots = _paintings(page)
+        if not shots:
+            continue          # a gallery whose paintings have not arrived yet
+        tags = "".join(
+            "    <image:image>\n"
+            f"      <image:loc>{html.escape(url, quote=False)}</image:loc>\n"
+            f"      <image:title>{html.escape(cap, quote=False)}</image:title>\n"
+            "    </image:image>\n" for url, cap in shots)
+        want = re.search(
+            r'  <url>\n    <loc>https://arasteh\.art/paintings/' + re.escape(slug) +
+            r'/</loc>\n(.*?)\n?(?:    <image:image>.*?</image:image>\n)*  </url>\n',
+            new, re.S)
+        if not want:
+            print(f"[warn]  sitemap: /paintings/{slug}/ entry not found")
+            continue
+        entry = (f'  <url>\n    <loc>https://arasteh.art/paintings/{slug}/</loc>\n'
+                 f'{want.group(1)}\n{tags}  </url>\n')
+        new = new[:want.start()] + entry + new[want.end():]
+        counted.append(f"{slug} {len(shots)}")
+    if not counted:
+        print("[warn]  sitemap: no paintings found in any gallery page")
         return True
-    tags = "".join(
-        "    <image:image>\n"
-        f"      <image:loc>{html.escape(url, quote=False)}</image:loc>\n"
-        f"      <image:title>{html.escape(cap, quote=False)}</image:title>\n"
-        "    </image:image>\n" for url, cap in shots)
-    want = re.search(
-        r'  <url>\n    <loc>https://arasteh\.art/paintings/sounds/</loc>\n'
-        r'(.*?)\n?(?:    <image:image>.*?</image:image>\n)*  </url>\n', body, re.S)
-    if not want:
-        print("[warn]  sitemap: /paintings/sounds/ entry not found")
-        return True
-    entry = (f'  <url>\n    <loc>https://arasteh.art/paintings/sounds/</loc>\n'
-             f'{want.group(1)}\n{tags}  </url>\n')
-    new = body[:want.start()] + entry + body[want.end():]
     if IMAGE_NS not in new:
         new = new.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                           f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
                           f'        {IMAGE_NS}>', 1)
     if new == body:
-        print(f"[ok]    sitemap: {len(shots)} paintings listed")
+        print(f"[ok]    sitemap: paintings listed ({', '.join(counted)})")
         return True
     if check:
         print("[drift] sitemap: painting entries missing or stale")
         return False
     SITEMAP.write_text(new, encoding="utf-8", newline="\n")
-    print(f"[write] sitemap: {len(shots)} paintings listed on the gallery entry")
+    print(f"[write] sitemap: paintings listed ({', '.join(counted)})")
     return True
 
 

@@ -1,4 +1,4 @@
-/* Accessible dialog viewer for the Sounds painting gallery.
+/* Accessible dialog viewer for any painting gallery.
    Click / tap a thumbnail to open; arrow keys, on-screen arrows, a swipe on
    touch screens, or a tap on the painting itself move between works.
    Each painting also has its own address (/paintings/sounds/#picture-4), so a
@@ -8,7 +8,10 @@
   'use strict';
 
   var dialog = document.getElementById('galleryLightbox');
-  var gallery = document.getElementById('soundsGallery');
+  // Found by class, not by the id the Sounds page used to be alone in having.
+  // One gallery per page, so the first .gallery is the gallery; a second one
+  // ships nothing but its own markup and this file already knows what to do.
+  var gallery = document.querySelector('.gallery');
   if (!dialog || !gallery || typeof dialog.showModal !== 'function') return;
 
   var shots = Array.prototype.slice.call(gallery.querySelectorAll('.shot'));
@@ -26,7 +29,12 @@
 
   // A painting's address comes from its caption, so links stay readable and
   // survive a file being renamed: "Picture 4" -> #picture-4, the cover -> #cover.
+  // A generated gallery states the address instead, because its caption is a full
+  // museum line -- "Iran II - 2026 - 40 x 40 cm" would slug to a mouthful nobody
+  // would paste anywhere. data-slug lets that page keep #iran-ii.
   function slugOf(shot) {
+    var stated = shot.getAttribute('data-slug');
+    if (stated) return stated;
     var text = (shot.getAttribute('data-caption') || '').toLowerCase();
     var numbered = text.match(/picture\s+(\d+)/);
     if (numbered) return 'picture-' + numbered[1];

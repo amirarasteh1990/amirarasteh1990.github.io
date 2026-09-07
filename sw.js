@@ -53,8 +53,13 @@
    v24: justified long-form prose throughout the site, including every Opening.
    v25: version the stylesheet URL itself, so even the previous service worker
         cannot serve pre-justification CSS during its replacement visit.
-   v26: connect the production account-free guestbook endpoint. */
-var VERSION = 'arasteh-v26';
+   v26: connect the production account-free guestbook endpoint.
+   v27: a second gallery, The World Through Boteh-Jegheh, so the Paintings tab lands
+        on the collection index again rather than jumping past it into Sounds. The
+        nav is baked into every cached page, and gallery.js now finds its grid by
+        class instead of the id only the Sounds page had -- a returning browser must
+        not combine the new pages with the old script. */
+var VERSION = 'arasteh-v27';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -68,7 +73,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=26',
+  '/assets/js/guestbook.js?v=27',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

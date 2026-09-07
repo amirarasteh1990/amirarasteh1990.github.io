@@ -580,8 +580,19 @@ def paintings() -> None:
     page = (SITE / "paintings" / "index.html").read_text(encoding="utf-8")
     tiles = re.findall(r'<a class="painting-collection"[^>]*data-gallery="([^"]+)"', page)
     folders = sorted(p.name for p in (SITE / "paintings").iterdir() if p.is_dir())
-    report("every gallery on disk has a tile, and no tile is invented",
-           sorted(tiles) == folders, f"{tiles} against {folders}")
+
+    report("no tile is invented for a gallery that does not exist",
+           set(tiles) <= set(folders), f"{sorted(set(tiles) - set(folders))}")
+
+    # A gallery may exist as a page before it exists as paintings -- Boteh-Jegheh has a
+    # title and a statement of what the series is for, and neither needs a canvas to be
+    # worth reading. What it may NOT do is sit in the grid as an empty frame. So an
+    # untiled gallery is allowed exactly as far as the prose: the index must still send
+    # a reader to it, or it has silently fallen off the site.
+    unreachable = [g for g in folders
+                   if g not in tiles and f'href="/paintings/{g}/"' not in page]
+    report("every gallery is either tiled or named on the index",
+           not unreachable, ", ".join(unreachable))
 
     missing = [g for g in tiles
                if not (SITE / "assets" / "img" / "paintings" / "index" / f"{g}.webp").is_file()]
@@ -591,9 +602,11 @@ def paintings() -> None:
     css = (SITE / "assets" / "css" / "style.css").read_text(encoding="utf-8")
     report("the paintings index overrides no shared card rule",
            not re.search(r"\.paintings-page\s+\.cards?\b", css))
-    report("and the gallery's CSS is shared, not inlined per page",
-           "<style>" not in (SITE / "paintings" / "sounds" / "index.html")
-                            .read_text(encoding="utf-8"))
+    inlined = [g for g in folders
+               if "<style>" in (SITE / "paintings" / g / "index.html")
+                               .read_text(encoding="utf-8")]
+    report("and the galleries' CSS is shared, not inlined per page",
+           not inlined, ", ".join(inlined))
 
 
 LIVE = "https://arasteh.art"

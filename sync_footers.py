@@ -43,8 +43,8 @@ TAB_KEYS = {key for key, *_rest in TABS}
 # when the link would point at the page you are already on.
 LINKS = [
     ("books",     "/sedaha/",      "Books"),
-    # straight to the one gallery, like the nav tab; reverts when a second exists
-    ("paintings", "/paintings/sounds/", "Paintings"),
+    # back to the index, like the nav tab: a second gallery exists now
+    ("paintings", "/paintings/",      "Paintings"),
     ("guestbook", "/comments/",    "Guestbook"),
     ("support",   "/support/",     "Support"),
     ("license",   "/license.html", "License"),
@@ -104,10 +104,11 @@ PAGES = [
     ("license.html",                      dict(omit="license")),
     ("support/index.html",                dict(omit="support")),
     ("comments/index.html",               dict(omit="guestbook")),
-    # the footer's Paintings link now points at the gallery, so it is the GALLERY
-    # page that omits it as a self-link; the index keeps it as a way in
-    ("paintings/index.html",              dict()),
-    ("paintings/sounds/index.html",       dict(omit="paintings")),
+    # the footer's Paintings link points at the index again, so it is the INDEX
+    # that omits it as a self-link; each gallery keeps it as the way back up
+    ("paintings/index.html",              dict(omit="paintings")),
+    ("paintings/sounds/index.html",       dict()),
+    ("paintings/boteh-jegheh/index.html", dict()),
     ("sedaha/index.html",                 dict(omit="books")),
     ("editions/first-edition/index.html", dict()),
     ("sedaha/read/index.html",            dict()),
