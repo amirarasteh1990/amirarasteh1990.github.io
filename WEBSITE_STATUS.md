@@ -1,7 +1,7 @@
 # Website status & orientation — arasteh.art
 
 > Onboarding notes for anyone (human or agent) starting work on this site.
-> Last updated: 2026-08-01.
+> Last updated: 2026-10-07.
 >
 > Quick command reference: [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
@@ -20,23 +20,24 @@ Static HTML/CSS/JS, with no framework or deployment build step.
 | Path | Page |
 | --- | --- |
 | `index.html` | Home: visible author name, primary Books / Paintings paths, quieter Guestbook / Support / Telegram links |
-| `sedaha/index.html` | The book page (`/sedaha/`): **a doorway, not a catalogue.** Cover, title, one line of the book, the cycling language, one availability line, the search, two links out. ~9 KB, from 89 |
-| `sedaha/languages/index.html` | **The catalogue.** Every language, its state, its files, with the project's own numbers behind a disclosure |
-| `assets/js/editions.js` | Generated: the languages as data, for the finder. The doorway carries no list of its own |
+| `sedaha/index.html` | Book doorway: cover, excerpt, availability, nine quick language links, search, and a collapsed generated language list that works without JavaScript |
+| `sedaha/languages/index.html` | Retired catalogue URL; redirects to `/sedaha/#allLangs` |
+| `assets/js/editions.js` | Generated search data from the same edition record as the HTML language list |
 | `assets/js/finder.js` | The search on `/sedaha/`, and the cycling line. Answers one / several / none in place |
 | `sedaha/read/index.html` (+ `fa/`, `da/`) | In-browser samples: the book's Opening in English / Persian / Danish, each linked from that edition's "Opening" button and cross-linked (text synced) |
 | `editions/first-edition/index.html` | Frozen registered first-edition (2026) archival page + ISBNs |
-| `paintings/index.html`, `paintings/sounds/index.html` | Painting galleries (dialog viewer with captions, arrows, Escape, and focus restoration) |
+| `paintings/index.html` | Collection chooser: Sedaha, The World Through Boteh-Jegheh, and the forthcoming A Yarn-Laden Truck |
+| `paintings/sounds/index.html`, `paintings/boteh-jegheh/index.html` | Galleries with captioned dialogs, previous/next controls, keyboard navigation, and stable painting fragments |
 | `comments/index.html` | Native guestbook: account-free public comment form, multilingual archive, and book-page visual language |
 | `support/index.html` | Donation links |
 | `license.html` | License (book = author's custom terms: free complete unchanged electronic sharing, all other rights reserved, NO CC claim per 2026-07-16 book decision; paintings = All Rights Reserved) |
 | `404.html` | Branded not-found page (GitHub Pages serves it automatically) |
 | `sitemap.xml`, `robots.txt` | Search-engine discoverability (update `sitemap.xml` when adding a page) |
-| `assets/css/style.css` | **The only stylesheet**, shared by all pages |
+| `assets/css/style.css` | **The shared stylesheet**; Support also has a small page-specific style block |
 | `assets/js/share.js` | Share-button behavior: native share sheet, clipboard fallback + toast (see below) |
 | `assets/js/gallery.js` | Accessible painting dialog: previous/next, keyboard navigation, Escape, trigger-focus restoration, and one address per painting (`#picture-4`) |
-| `assets/js/reader.js` | The reading toolbar on the 114 opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
-| `assets/js/lang-alias.js` | The other names each language answers to (Farsi, Bangla, Mandarin, Filipino, Castellano, Telegu…). Both language finders consult it; add freely, no rebuild needed |
+| `assets/js/reader.js` | The reading toolbar on the 112 public opening pages: type size, measure, light/dark. Remembers the choice for every edition at once |
+| `assets/js/lang-alias.js` | The other names each language answers to (Farsi, Bangla, Mandarin, Filipino, Castellano, Telegu…). The book-page finder consults it; no page regeneration needed |
 | `assets/js/guestbook.js` | One-button Worker posting, immediate confirmed-note display, safe card rendering, search, language filter, sorting, and pagination |
 | `assets/data/guestbook.json` | Generated public index of published notes; contains names, notes, languages, dates, and public IDs only |
 | `comments/entries/` | One public JSON file per published note, kept as the durable repository archive |
@@ -60,11 +61,11 @@ force light, the original query to follow the system again), from the small scri
 `sync_head.py` puts in every `<head>`. So there is one copy of dark mode to maintain, and
 with JavaScript off the system preference still decides, exactly as before.
 
-**The logo needs paper in dark mode.** It is a painting with the name lettered into it in
-dark ink on transparency, so on a dark page the paisley survives and the wordmark vanishes.
-The dark block gives `.logo-panel`, `.site-footer .foot-logo` and `.nf-logo` a warm cream
-plate to sit on. The artwork is never filtered, inverted or cropped: it is given paper, which
-is how it is printed in the book.
+**The dark logo has its own lettering.** `sync_gallery.py` derives
+`logo-lockup-dark.png` with lighter lettering while preserving the painting pixels.
+CSS backgrounds select the light or dark variant for `.brand-logo`, `.foot-logo`, and
+`.nf-logo`, including a manually selected theme. `check.py` verifies that the painting
+is unchanged; do not redraw, filter, or crop the original logo.
 
 The guestbook is native HTML and uses this same stylesheet, so its writing desk, reader-note
 cards, controls, and empty states follow the selected theme without a second theme system.
@@ -76,132 +77,99 @@ in `build_read_pages.py` joins the book repo's own lists with the assets actuall
 GitHub release, and yields per language: native and English name, direction, opening URL,
 state, formats, file sizes, release date, slug, share line.
 
-It used to feed only the status table and the hero counter, while the complete-edition cards
-and the marketing copy were kept by hand. That is exactly how the **Italian edition came to
-be complete, downloadable, and named nowhere a visitor would look** for six weeks. Consumers
-now generated from the record:
+Current consumers:
 
 | What | Function |
 | --- | --- |
-| What each Opening page offers below its text | `render(L, row)` — its own files once that edition is complete |
-| The complete-edition cards on `/sedaha/` | `patch_featured` → `featured_html` (between `EDITIONS:` markers) |
-| The list of every other complete edition | `patch_featured` → `more_complete_html` (between `MORE:` markers) |
-| Both descriptions + the hub card on `/`, and on `/sedaha/` | `patch_availability` → `availability` |
-| The hero count and the progress tally | `patch_meter`, `patch_availability` |
-| State + download links on all 114 browse rows | `patch_index` (`data-state`, used by the search) |
-| The status table, its filters and counts | `patch_status_page` → `render_status` |
-| The Atom feed | `patch_feed` |
+| Opening-page downloads and top action bar | `render(L, row, n_complete)` |
+| Search data | `patch_editions_js` → `editions_js` |
+| Nine quick language links | `patch_quick_starts` → `quick_starts_html` |
+| Collapsed HTML language list | `patch_all_languages` → `all_languages_html`, between `LANGUAGES:` markers |
+| Homepage/book metadata and the book's availability line | `patch_availability`, `patch_meter` |
+| File sizes on the three hand-maintained Opening pages | `patch_hand_sizes` |
+| Atom feed | `patch_feed` |
 
-**Add a consumer here rather than a second list.** `check.py` verifies the cards sit inside
-their grid, that every complete edition is named on the page, and that the sentence is
-identical everywhere it is told.
+**Add consumers to this record instead of maintaining another edition list.** The old
+featured-card, regional-browser, and status-table layouts are no longer published.
+`patch_status_page` now maintains only the redirect to `/sedaha/#allLangs`.
 
-Two conventions worth keeping: **EPUB before PDF** everywhere (`FMT_ORDER`), and the status
-labels all describe the *complete edition* (`STATES`), because every one of the 114 already
-has a readable Opening and "Ready to read" did not distinguish anything.
+Keep **EPUB before PDF** (`FMT_ORDER`). Edition states describe the complete book;
+each displayed language already has an Opening. Counts are generated, never maintained
+in prose. `check.py` compares both the search data and static catalogue with the visible
+edition record and checks availability copy for consistency.
 
-Complete editions are **counted, not listed** in prose: "23 complete editions to download,
-more on the way". Naming them was right at four and wrong at twenty-three.
+The book page still serves **find my language** and **start reading**. Its full list
+is in a native `<details>` element, so it adds no visible catalogue until requested.
+Generate it with `build_read_pages.py`; never hand-edit the `LANGUAGES:` region.
 
-**Where they are shown moved on 2026-07-27.** `/sedaha/` became a doorway and shows no
-edition at all: cover, title, one line of the book, the cycling language, one availability
-line, the search, and two links out. Everything below that — the cards, the compact list, the
-A–Z and regional browsers, the progress section, the licence summary — moved to
-`/sedaha/languages/` or was dropped. The page went from 89 KB to about 9 KB, and the
-governing rule for anything added back is that it must serve **find my language** or **start
-reading**.
-
-The two shapes below are gone with it, kept here only because the reasoning still applies if
-a list ever returns:
-
-- **cards** for the three the book was published in, `FEATURED_FIRST`
-- **one line each** for every other complete edition, `more_complete_html`, in the compact form
-  the browse list uses, each with **its own share button** (`.lnk-share`): those editions had
-  one while they were cards, and moving them into a list must not take it away.
-- the **search result carries a share button too**, so any of the 113, including those with no
-  card and no files yet, can be passed on from the book page. Anyone after one particular
-  language uses the search box above, which answers with that language's own buttons.
-
-Two traps live here, both now guarded:
-
-- `patch_index` rewrites any `<li>` holding a `<span class="name">` into a browse row. The
-  listed editions use that same inner markup, so they carry **`class="dl-row"`** and
-  `patch_index` skips them. Without that the two patchers rewrote each other on every run.
-- the `MORE:` end marker is matched with `(\s*<!-- MORE:END -->)`, no required newline, so the
-  region still matches when it is **empty**. Each generated block ends on a tag, never on
-  whitespace, so nothing accumulates between runs.
-
-`check.py` verifies that cards plus listed rows account for every complete edition, with none
-in both places.
+If the release lookup fails, the existing generator warns and falls back to local book
+builds. Those files are not proof of publication. Verify the release before deploying
+regenerated availability data produced with that warning.
 
 ## `HIDDEN_SLUGS` — editions the book has and the site does not show
 
-`{"he"}` since 2026-07-26, the author's decision: he writes from Iran and does not want the
+`HIDDEN_SLUGS` currently contains `{"he", "sr"}`. The Hebrew exclusion dates from
+2026-07-26, the author's decision: he writes from Iran and does not want the
 site to become a political object. **The book is untouched** — the edition is translated, and
 ships in the book repo and the releases. Only arasteh.art stays quiet about it.
 
-One line in `build_read_pages.py` removes the generated page (and deletes it if present), the
-browse row, the status row, the hreflang cluster entry, the sitemap URL and the feed entry.
-The search alias and the hand-written row were removed by hand; `check.py` verifies that the
-name, the native name, the URL and the hreflang tag appear on **no** page, in the sitemap, the
-feed or `lang-alias.js`.
+Serbian was hidden on 2026-08-05 during publisher review. Preserve that exclusion
+until the author changes it; the website switch does not remove GitHub release assets.
 
-The published number stays **114, the number of languages the book has**, which is why
-`main()` passes `total` separately from the rows it lists. So the site says "the opening in
-114 languages" while listing 113. To keep that from reading as a puzzle, nothing invites a
-count of the list: the browse summary says "Browse every language", not "all 114", and the
-search status says "Showing every language". The per-region counts still sum to 113. If you
-would rather the number matched the list exactly, drop the `total` argument in `main()` and
-every sentence becomes 113.
+`shown(rows)` filters the public search data, quick links, static catalogue, and feed.
+The generator also excludes the Opening page, hreflang entry, and sitemap URL.
+`check.py` verifies the edition's name, native name, URL, and hreflang tag do not appear
+on public pages, in the sitemap/feed, or in `lang-alias.js`.
+
+The published total remains **114, the number of languages the book has**; the site
+lists 112. Preserve this author decision. The disclosure says "Browse all languages"
+and groups the visible editions by complete book versus Opening only.
 
 One coupling to know about: the "in final review" count comes from `TIER_A` in the **book
 repo's** `build.py`, read live. An uncommitted edit there changes what this site publishes.
 
 ## The language finder
 
-One box, on `/sedaha/` and `/sedaha/languages/`. Three things make it forgiving:
+There is one search box, on `/sedaha/`. Search indexes only native/English names,
+aliases from `assets/js/lang-alias.js`, and language codes. Accent folding also handles
+letters such as ø, æ, ß, đ, ð, þ, ł, ı, and œ. A full native/English name, code, or first
+alias takes precedence over partial matches: "farsi" resolves directly to Persian.
 
-- `assets/js/lang-alias.js` — the other names a language answers to. **The first name in each
-  list is treated as a full name**, which is what makes "farsi" answer Persian outright rather
-  than shrug at Persian and Dari together.
-- accent folding, so `turkce` finds Türkçe and `espanol` finds Español. Letters that do not
-  decompose (ø, æ, ß, đ, ð, þ, ł, ı, œ) are mapped by hand, in both copies.
-- the language's own code, since the URLs already expose it: `ja`, `pt-br`.
+- One match offers its Opening, state, available EPUB/PDF files and sizes, and Share.
+- Several matches show the first five. **View all matches** expands only the remaining
+  results for that query in the same result region and focuses the first added link.
+  Changing the query or clearing it resets the expanded results.
+- No match offers the complete language list and contact with the author.
+- Escape and the clear button reset the field. The result region uses `aria-live="polite"`.
 
-**A row is searchable by its two printed names, its aliases and its code, and by nothing
-else.** Built field by field, deliberately: indexing the row's whole `textContent` swept in
-everything else printed there, so "pdf" matched 23 languages and "opening" matched all of
-them. The same rule applies on the status page, whose rows also carry a state label.
+**Browse all languages works without JavaScript.** `build_read_pages.py` emits one link
+per visible edition, sorted by English name within two groups: complete books and
+Opening-only editions. Both groups link to the edition's Opening, where downloads are
+available. The links preserve native names, language tags, and RTL direction. JavaScript
+fits long labels after opening the disclosure; it never creates a duplicate list.
+`/sedaha/#allLangs` opens this disclosure when scripts run. The retired
+`/sedaha/languages/` redirects there.
 
-A search answers **in place**, in all three cases: one language gets its name, its state and
-its buttons; several get a count and a row of names to pick from; none gets "No language
-matches X" with a way to browse and a way to write to the author. The container is a
-`role="region"` with `aria-live="polite"`, so a screen reader hears the answer without
-hunting for it. Before this, several matches showed nothing at all and a miss was announced
-at the foot of a collapsed list.
+The nine quick choices are also static HTML. The finder may replace the Chinese fallback
+with a complete edition matching the visitor's browser language, if it is not already
+offered. The cycling language line respects reduced motion and pauses in hidden tabs.
 
-On `/sedaha/` the finder is **data-driven** (`finder.js` reading `editions.js`), because that
-page carries no languages at all. Several matches show the first five and a way to all of
-them; a complete edition's answer also carries a **Download help** disclosure, which is the
-only place the GitHub-hosting note appears on the normal path, and the only moment it helps.
-Escape clears the field. On `/sedaha/languages/` the same rules filter the visible table.
+Download help appears with file offers in search. The English Opening also explains EPUB
+versus PDF and GitHub hosting. The navigation/footer shell remains English and is marked
+with its language and direction; the Opening text and native names carry their own tags.
+File sizes are visible beside download buttons rather than available only on hover.
 
-The A–Z and by-region browser that used to live on `/sedaha/` is gone with the rest of the
-catalogue; `/sedaha/languages/` is the one list now. If a browser is ever rebuilt there and
-it moves rows between arrangements, leave a **comment marker** where each row belongs rather
-than remembering `nextSibling`: the latter happens to work only because rows are separated by
-whitespace text nodes, and breaks the day the HTML is minified.
+## Cache updates
 
-The **shell is marked `lang="en" dir="ltr"`** — nav, footer, skip link, reading toolbar,
-share buttons. It is English on all 124 pages including the 111 that are not, and saying so
-lets a screen reader switch voice instead of reading English through an Italian or Japanese
-one. `sync_appnav`'s skip-link pattern allows attributes for exactly this reason: anchored on
-`">"`, it silently failed to find the skip link on all 111 generated pages.
+Pages are fetched network-first. Same-origin assets are served from cache and refreshed
+in the background; GitHub downloads bypass the service worker. Bump `sw.js`'s `VERSION`
+when deploying changed assets. The stylesheet URL is owned by `sync_head.py` and must
+match the offline shell.
 
-**Below 640px the status table stops being a table** and each edition becomes a stacked block
-with 44px tap targets, instead of three columns and sideways scrolling. File sizes are printed
-beside each download rather than hidden in a `title`, because a phone has no hover and the size
-is what decides whether a book is downloaded on mobile data.
+The finder URL is versioned in `sedaha/index.html` and the shell. Keep these identical:
+an old finder would append its dynamic catalogue to the new static list. The guestbook
+script URL is also versioned in its page and the shell, and its query version must match
+the service worker version. `check.py` checks these relationships.
 
 ## `body class="writing"` (the guestbook only)
 
@@ -320,8 +288,9 @@ Regenerate only if the book repo's TTFs change; never add a Google-Fonts/CDN `<l
 
 ## Painting and cover files
 
-`sync_gallery.py` derives both gallery images and the web-sized English cover preview. Gallery
-masters come from `../1_Sedaha/Volume1/CoverPics`; `assets/img/book-cover.jpg` comes from the
+`sync_gallery.py` derives both gallery images and the web-sized English cover preview. The Sedaha gallery
+masters come from `../1_Sedaha/Volume1/CoverPics`; other collections use the sibling
+`../Paintings/` archive; `assets/img/book-cover.jpg` comes from the
 canonical generated `CoverPics/_generated/cover_EN.jpg`. Verify derived images after a painting
 or cover rebuild; the check and rebuild commands are in [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
 
@@ -374,14 +343,11 @@ copy-to-clipboard with a small toast. The share payload is the **link only** (ti
 not navigate. The poetic blurb + Opening painting ride in the page's OG card instead. `data-share-text`
 is kept on the buttons but unused, so the sentence can be re-enabled in one line in `share.js`.
 
-The **preview card** a chat app shows is read from the **static `og:` tags in the `<head>` of the
-shared page**, not from the button — crawlers don't run JS. Each read page already has its own
-`og:title` / `og:url`, so the card differs per language automatically. To reword or localize a
-card, edit that read page's head (the cover painting image is shared by all). Add a Share button
-only to editions that have a real page to land on; unreleased language rows have none.
-(2026-07-24: the per-row "Coming soon" labels were removed from `/sedaha/` for a cleaner list;
-a row without download links is implicitly in preparation, and `/sedaha/languages/` carries the
-exact status.)
+The **preview card** is read from the Opening page's static Open Graph tags, not
+from the share button. Each page has its own title and URL and uses the Opening painting
+(`assets/img/paintings/sounds/01.jpg`). For generated languages, edit the generator's
+metadata rather than its output. Opening-only editions can also be shared because they
+have real pages; the search result states whether the complete book is available.
 
 **Card wording (2026-07-18, author-set):** the read pages' cards are deliberately spare — one
 title line, one poetic line, no "free", nothing repeated; the painting, the title, and the domain
@@ -406,10 +372,11 @@ our side. All three pages carry `og:locale` (`en_US` / `fa_IR` / `da_DK`). The `
 `meta name="description"`, and `og:image:alt` stay fuller/English on purpose (browser tab /
 search snippet / screen readers, not the share card).
 
-## Generated Opening pages (`build_read_pages.py`, 111 languages)
+## Generated Opening pages (`build_read_pages.py`)
 
-Beyond the hand-maintained EN/FA/DA pages, `/sedaha/read/<slug>/` exists for **all 111 other
-editions** of the book repo — every language listed on `/sedaha/` now has an Opening page.
+Beyond the hand-maintained EN/FA/DA pages, the generator knows 111 other editions.
+It publishes 109 of those after `HIDDEN_SLUGS`, giving 112 public Opening pages in total.
+Every language listed on `/sedaha/` has an Opening page.
 These pages are **fully generated** by `build_read_pages.py` — never edit them by hand. Each
 page pulls the edition's own Opening text (block 0007) and native Opening heading (block 0006)
 from the book repo (`Other_Languages/<CODE>/00_Opening.md`), plus the edition's own translated
@@ -422,8 +389,7 @@ edition is on the way; until then the book is free in Persian, English, and Dani
 `og:locale`, and RTL handling (ar he ur ckb ps bal glk lrc mzn prs sd ug yi). The CTA's three
 buttons hand over the **complete** book (the FA/EN/DA EPUBs on the release), because the
 sentence above them says the whole book is free in those three; they used to lead to another
-Opening page, which read as a promise withdrawn. The script also idempotently wires an
-"Opening" link into each language's row on `/sedaha/` and the URLs into `sitemap.xml`. Slugs
+Opening page, which read as a promise withdrawn. The same generator maintains the search data, static language links, and sitemap URLs. Slugs
 are the lowercased book-repo folder codes (e.g. `prs`, `ckb`, `nds`, `me`).
 
 **The invitation below the text follows the release.** Until an edition is complete, the page
@@ -440,7 +406,8 @@ without sentence punctuation. A page that gets nothing shows the buttons alone, 
 the same thing with no risk. **Its minimum length is 5 characters on purpose**: a bar that
 suited German threw away every CJK opening, since 本はここから始まる。 is a whole sentence in ten.
 
-**These pages carry no visible English.** The chrome around the text used to: "← Sounds",
+**Opening-specific controls minimize visible English.** The shared navigation and footer
+remain English. The old Opening-specific labels were: "← Sounds",
 "Sounds · Book One", "Opening in:", "all 114 →", "Share this opening". It is gone, not
 translated, because 114 translations of six strings is 684 unreviewed strings:
 
@@ -460,8 +427,8 @@ translated, because 114 translations of six strings is 684 unreviewed strings:
 
 Adding a language means adding one LANGS entry plus its book-repo Opening, then regenerating and
 checking the pages using [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md).
-When an edition's EPUB/PDF is released, its page graduates: either add download buttons to
-the generator template conditionally, or promote the page to hand-maintained like EN/FA/DA.
+When an edition's EPUB/PDF is released, regeneration adds its own download buttons
+automatically. Keep the page generated; no promotion to hand-maintained HTML is needed.
 
 ## Publishing model
 
@@ -477,6 +444,17 @@ Exact check, preview, commit, deployment, and release workflows live in
 
 ## Conventions & do-not-touch
 
+- **Book-page excerpt (author-approved 2026-10-07):** Use
+  "… a thread of words that were once sounds…" in the book-page hero.
+  This shorter excerpt is website copy; the canonical Opening is maintained in the book repo.
+- **Boteh-Jegheh gallery introduction (author-approved 2026-10-07):**
+  "Rooted in Persian art, the boteh-jegheh (known as paisley in English) becomes a way
+  of looking at the world. Its familiar form takes on the colours and character of
+  different places."
+- **Book introduction (author-approved 2026-10-07):** Under the book-page title, use
+  “A novel originally written in Persian, accompanied by the author’s paintings.”
+- **Individual painting descriptions (author preference 2026-10-07):** Do not add descriptions
+  to the paintings. Keep the existing titles and labels.
 - **No em dashes in prose.** The author dislikes them; use periods / commas / colons instead.
   (Em dashes inside page *titles and headings* are fine.)
 - Every page carries Open Graph + `twitter:card` meta for link-preview cards. Keep new pages consistent.
@@ -487,8 +465,8 @@ Exact check, preview, commit, deployment, and release workflows live in
 - **Book naming: Sedaha-forward.** In share text, preview cards, page titles/meta and secondary
   mentions, name the book **Sedaha (Sounds)** — or **«Sedaha»** (its own Persian quotation style)
   in the poetic share line. Keep plain **Sounds** only where it is the registered/legal title
-  (the `/sedaha/` `<h1>`, which is auto-synced from the book source; the `/editions/first-edition/`
-  archival page) or a fixed handle/URL (`Sounds_AmirArasteh`; the `/paintings/sounds/` path). The
+  (the auto-synced title inside the `/sedaha/` heading's `Sedaha (Sounds)` wrapper;
+  the `/editions/first-edition/` archival page) or a fixed handle/URL (`Sounds_AmirArasteh`; the `/paintings/sounds/` path). The
   shared-opening cards use the **Opening painting** (`/assets/img/paintings/sounds/01.jpg` = the book's
   Picture 1), not the cover. **Exception (2026-07-17):** in the read pages' `og:title` share cards,
   the book is named by that edition's OWN translated title in «…», not the Latin brand (see
@@ -496,8 +474,8 @@ Exact check, preview, commit, deployment, and release workflows live in
 - **Never edit** `assets/img/logo-lockup.png` or the cover image. The logo is the author's full
   painting and is used whole (never cropped or redrawn).
 - Announcements (new editions AND new paintings) go to the Telegram channel:
-  <https://t.me/Sounds_AmirArasteh>. It is linked from the home hub-note, every page footer,
-  and the book page's follow note; keep new pages' footers consistent.
+  <https://t.me/Sounds_AmirArasteh>. It is linked from the home secondary links and full-page footers;
+  keep new pages' footers consistent.
 
 ## Analytics
 

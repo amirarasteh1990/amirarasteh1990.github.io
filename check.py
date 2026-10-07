@@ -176,6 +176,11 @@ def crawl() -> None:
            shell_styles == [STYLE_HREF],
            shell_styles[0] if shell_styles else "stylesheet missing from SHELL")
 
+    book = (SITE / "sedaha" / "index.html").read_text(encoding="utf-8")
+    finder = re.search(r'<script src="(/assets/js/finder\.js\?v=[^"]+)"', book)
+    report("the language finder and offline shell pin the same script version",
+           bool(finder) and finder.group(1) in paths)
+
 
 # ---------------------------------------------------------- machine-readable
 def structured() -> None:
@@ -421,6 +426,11 @@ def availability() -> None:
     book = (SITE / "sedaha" / "index.html").read_text(encoding="utf-8")
     data = (SITE / "assets" / "js" / "editions.js").read_text(encoding="utf-8")
 
+    catalogue = re.search(r'<!-- LANGUAGES:START[^>]*-->\n(.*?)\n[ \t]*<!-- LANGUAGES:END -->',
+                          book, re.S)
+    report("the static language list matches the visible edition record",
+           bool(catalogue) and catalogue.group(1) == gen.all_languages_html(site_rows))
+
     listed = re.findall(r'"slug":"([^"]+)"', data)
     report(f"editions.js carries all {len(site_rows)} languages the site shows",
            len(listed) == len(site_rows),
@@ -436,7 +446,7 @@ def availability() -> None:
 
     stray = len(re.findall(r'<div class="ed-featured"|<li class="dl-row"|class="continent"',
                            book))
-    report("/sedaha/ still holds no catalogue of its own", stray == 0,
+    report("/sedaha/ has no legacy catalogue cards or table", stray == 0,
            f"{stray} catalogue elements found")
 
     home = (SITE / "index.html").read_text(encoding="utf-8")

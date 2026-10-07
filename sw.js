@@ -65,7 +65,9 @@
         without this bump an installed app would keep the old shortcut, and the one
         route into the site that does not go through a page would still land past
         the new gallery. */
-var VERSION = 'arasteh-v28';
+/* v29: generated language links work without scripts; pin the enhanced finder
+   so a returning browser cannot append the old dynamic list to the new HTML. */
+var VERSION = 'arasteh-v29';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -75,11 +77,11 @@ var SHELL = [
   '/assets/css/style.css?v=26',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
-  '/assets/js/finder.js',
+  '/assets/js/finder.js?v=29',
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=28',
+  '/assets/js/guestbook.js?v=29',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',
