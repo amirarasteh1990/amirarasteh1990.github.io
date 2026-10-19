@@ -5,9 +5,23 @@
   <link href="https://arasteh.art/feed.xml" rel="self"/>
   <link href="https://arasteh.art/sedaha/"/>
   <id>https://arasteh.art/feed.xml</id>
-  <updated>2026-08-20T18:31:45Z</updated>
+  <updated>2026-10-19T13:19:33Z</updated>
   <author><name>Amir Arasteh</name><uri>https://arasteh.art/</uri></author>
   <rights>The book is free to read and share, complete and unchanged.</rights>
+  <entry>
+    <title>English</title>
+    <link href="https://arasteh.art/sedaha/read/"/>
+    <id>https://arasteh.art/sedaha/read/</id>
+    <updated>2026-10-19T13:19:33Z</updated>
+    <summary>The complete English edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
+  <entry>
+    <title>Dansk · Danish</title>
+    <link href="https://arasteh.art/sedaha/read/da/"/>
+    <id>https://arasteh.art/sedaha/read/da/</id>
+    <updated>2026-10-19T13:12:52Z</updated>
+    <summary>The complete Danish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
+  </entry>
   <entry>
     <title>ייִדיש · Yiddish</title>
     <link href="https://arasteh.art/sedaha/read/yi/"/>
@@ -721,20 +735,6 @@
     <id>https://arasteh.art/sedaha/read/fa/</id>
     <updated>2026-08-20T18:24:15Z</updated>
     <summary>The complete Persian edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
-  </entry>
-  <entry>
-    <title>English</title>
-    <link href="https://arasteh.art/sedaha/read/"/>
-    <id>https://arasteh.art/sedaha/read/</id>
-    <updated>2026-08-20T18:24:15Z</updated>
-    <summary>The complete English edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
-  </entry>
-  <entry>
-    <title>Dansk · Danish</title>
-    <link href="https://arasteh.art/sedaha/read/da/"/>
-    <id>https://arasteh.art/sedaha/read/da/</id>
-    <updated>2026-08-20T18:24:15Z</updated>
-    <summary>The complete Danish edition of Sedaha (Sounds), Book One: free to read, and to download as EPUB and PDF.</summary>
   </entry>
   <entry>
     <title>Deutsch · German</title>
