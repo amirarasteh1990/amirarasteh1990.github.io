@@ -514,9 +514,25 @@ Peek at the diff without resetting the baseline:
 show downloads --no-save
 ```
 
+Show the timeline of past runs: each line is one run, the downloads it found and
+the earlier run they happened after. GitHub gives no exact time or place for a
+download, so a download is dated to the gap between two runs. `--all` also lists
+runs that found nothing:
+
+```powershell
+show downloads --history
+```
+
+```text
+2026-10-20 15:57   since ?                  Sedaha_Chinese.pdf +1, Sedaha_Spanish.pdf +1
+2026-10-21 09:12   since 2026-10-20 15:57   Sedaha_Spanish.pdf +1
+```
+
 The baseline snapshot lives in `~/.sedaha_download_counts.json` and only updates
 when the diff is shown (i.e. not with `--no-diff` or `--no-save`). Delete that
-file to reset the "since" point. If `show` is not recognized, the profile has not
+file to reset the "since" point. Each saved run also adds one line to
+`~/.sedaha_download_history.jsonl`, which `--history` reads without contacting
+GitHub. If `show` is not recognized, the profile has not
 loaded yet — open a new terminal, or run `. $PROFILE` once.
 
 ## Verify live preview metadata
