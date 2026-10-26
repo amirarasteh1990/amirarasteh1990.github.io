@@ -17,8 +17,8 @@ out of the book repo so the two can never disagree. The hard-excluded editions a
 refused even when named explicitly: `build.py` lets you build one to proof it, but
 publishing is where "these never ship" has to actually bite.
 
-Hebrew is uploaded like any other edition. `HIDDEN_SLUGS` in build_read_pages.py keeps
-it off arasteh.art; the release still carries it (author's call, 2026-07-26).
+Hebrew is withheld from the release (author's call, 2026-10-26, reversing 2026-07-26) and
+`HIDDEN_SLUGS` in build_read_pages.py keeps it off arasteh.art; see WITHHELD below.
 
 THE CONFIRMATION PHRASE IS DIFFERENT EVERY TIME. It is built from what this specific
 run would do -- scope, edition count, file count -- so a phrase copied from an earlier
@@ -50,9 +50,9 @@ FORMATS = ("epub", "pdf")
 # Editions that must not go to the public release at all, whatever the selector.
 #
 # NOT the same thing as build_read_pages.HIDDEN_SLUGS, and deliberately a separate
-# list. Hebrew is hidden from arasteh.art but SHOULD stay on the release (2026-07-26);
-# these are withheld from the release itself. Conflating the two would either publish
-# something withheld or unpublish something that was only meant to be quiet.
+# list: HIDDEN_SLUGS only keeps an edition off arasteh.art, these are withheld from the
+# release itself. Conflating the two would either publish something withheld or
+# unpublish something that was only meant to be quiet.
 #
 # Without this, hiding an edition on the site would be undone by the next routine
 # `--full` run, silently, with no prompt that says so.
@@ -61,6 +61,10 @@ WITHHELD = {
     # download alongside that review would weaken the negotiation. Remove this entry
     # when the review concludes either way. Files stay built in Volume1/online/.
     "Serbian": "a publisher is reviewing this edition (2026-08-05)",
+    # Hebrew, 2026-10-26: the author's safety concern given the Iran-Israel situation; it
+    # was on the release (hidden on the site only) until then. Files stay built in
+    # Volume1/online/ and can be shared privately.
+    "Hebrew": "author's safety concern (2026-10-26)",
 }
 
 

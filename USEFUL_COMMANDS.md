@@ -514,6 +514,13 @@ Peek at the diff without resetting the baseline:
 show downloads --no-save
 ```
 
+Show only the files downloaded at least once, most-downloaded first. It is read-only:
+no diff, and the baseline is not touched. Add `--total` for a sum line:
+
+```powershell
+show downloads --downloaded --total
+```
+
 Show the timeline of past runs: each line is one run, the downloads it found and
 the earlier run they happened after. GitHub gives no exact time or place for a
 download, so a download is dated to the gap between two runs. `--all` also lists
@@ -527,6 +534,13 @@ show downloads --history
 2026-10-20 15:57   since ?                  Sedaha_Chinese.pdf +1, Sedaha_Spanish.pdf +1
 2026-10-21 09:12   since 2026-10-20 15:57   Sedaha_Spanish.pdf +1
 ```
+
+All counts are **lifetime** counts. A `--clobber` upload resets each replaced file's GitHub
+count to 0, so the helper adds the downloads of earlier copies, banked in
+`~/.sedaha_download_carry.json`. It spots a replaced file by its new asset id (kept in
+`~/.sedaha_download_assets.json`) and banks the count it last saw for that file, so run
+`show downloads` right before an upload to lose nothing. The carry file was seeded on
+2026-10-26 with the 82 downloads from before that day's full re-upload.
 
 The baseline snapshot lives in `~/.sedaha_download_counts.json` and only updates
 when the diff is shown (i.e. not with `--no-diff` or `--no-save`). Delete that
