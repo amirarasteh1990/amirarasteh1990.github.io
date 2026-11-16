@@ -130,13 +130,19 @@ def main() -> int:
     today = dt.datetime.now(dt.timezone.utc).date()
     days = [args.day] if args.day else [str(today - dt.timedelta(days=n))
                                           for n in range(args.days - 1, -1, -1)]
+    shown = 0
     for day in days:
         events = fetch_day(day, key)
+        if not events and not args.day:
+            continue                      # quiet days say nothing
+        shown += 1
         if args.raw:
             for e in sorted(events, key=lambda e: e["t"]):
                 print("\t".join(a(e.get(k, "")) for k in ("t", "r", "a", "m", "k", "c", "o", "n", "f", "u")))
         else:
             summarise(day, events)
+    if not shown:
+        print(f"no downloads recorded in the last {len(days)} day(s)")
     return 0
 
 

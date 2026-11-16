@@ -57,11 +57,9 @@ FORMATS = ("epub", "pdf")
 # Without this, hiding an edition on the site would be undone by the next routine
 # `--full` run, silently, with no prompt that says so.
 WITHHELD = {
-    # 2026-11-16, author: release both Hebrew and Serbian. Hebrew is released as is.
-    # Serbian stays held only until it is rebuilt: the current Volume1/online/ files
-    # still print the reviewer's name, which the author wants nowhere public
-    # (source credit already blanked to "Редактура: —"). Delete this entry after "build".
-    "Serbian": "rebuild first: current files still name the reviewer (2026-11-16)",
+    # 2026-11-16, author: release both Hebrew and Serbian. Serbian was held only
+    # until the rebuild that drops the reviewer's name; the 2026-11-16 build has
+    # no such name anywhere (checked page by page), so nothing is withheld now.
 }
 
 
