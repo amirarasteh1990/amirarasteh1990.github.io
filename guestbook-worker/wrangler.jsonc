@@ -1,26 +1,35 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "arasteh-guestbook",
-  "main": "worker.mjs",
-  "compatibility_date": "2026-08-09",
-  "workers_dev": true,
-  "preview_urls": false,
-  "vars": {
-    "ALLOWED_ORIGINS": "https://arasteh.art",
-    "GITHUB_OWNER": "amirarasteh1990",
-    "GITHUB_REPO": "amirarasteh1990.github.io"
-  },
-  "secrets": {
-    "required": ["GITHUB_TOKEN", "RATE_LIMIT_SALT"]
-  },
-  "ratelimits": [
-    {
-      "name": "SUBMIT_RATE_LIMITER",
-      "namespace_id": "7001",
-      "simple": {
-        "limit": 3,
-        "period": 60
-      }
-    }
-  ]
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "arasteh-guestbook",
+	"main": "worker.mjs",
+	"compatibility_date": "2026-08-09",
+	"workers_dev": true,
+	"preview_urls": false,
+	"vars": {
+		"ALLOWED_ORIGINS": "https://arasteh.art",
+		"GITHUB_OWNER": "amirarasteh1990",
+		"GITHUB_REPO": "amirarasteh1990.github.io"
+	},
+	"secrets": {
+		"required": [
+			"GITHUB_TOKEN",
+			"RATE_LIMIT_SALT"
+		]
+	},
+	"ratelimits": [
+		{
+			"name": "SUBMIT_RATE_LIMITER",
+			"namespace_id": "7001",
+			"simple": {
+				"limit": 3,
+				"period": 60
+			}
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "DOWNLOADS",
+			"id": "646223cfb0c9406f95c8bad04db7e07d"
+		}
+	]
 }

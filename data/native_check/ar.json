@@ -1,0 +1,32 @@
+{
+  "lang": "ar",
+  "slug": "ar",
+  "dir": "rtl",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "من هذه الجهة أفك خيط الكلمات، ومن الجهة الأخرى تجمعها يداك.",
+      "q": "Does this sentence read naturally?"
+    },
+    {
+      "id": "01/0014#2",
+      "where": "01/0014",
+      "text": "– انظر، ضعه في الفريزل. إن وضعته في الفريزل لا يصيبه شيء حتى لو مرّ عليه عام.",
+      "q": "Maman mispronounces freezer on purpose. Is that clear from 'الفريزل'?"
+    },
+    {
+      "id": "01/0132#3",
+      "where": "01/0132",
+      "text": "كان هناك تيفويد مثلًا، أو السل، أو الحصبة.",
+      "q": "Maman mispronounces typhoid on purpose. Does 'تيفويد' work as her mispronunciation?"
+    },
+    {
+      "id": "01/0206#4",
+      "where": "01/0206",
+      "text": "الآن أيضًا الأمر جيد، لكن الستريس يلازمني دائمًا: قد يأتي إلى هنا في أية لحظة.",
+      "q": "Maman mispronounces stress on purpose. Does 'الستريس' work as her mispronunciation?"
+    }
+  ]
+}

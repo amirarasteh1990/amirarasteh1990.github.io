@@ -556,3 +556,21 @@ GitHub release assets expose cumulative download counts per file; replacing a sa
 resets that file's count. The site has no page-view analytics, so visits to pages and in-browser
 samples are not tracked. See [USEFUL_COMMANDS.md](USEFUL_COMMANDS.md) for the count commands;
 `python download_counts.py` prints both the `books` and the `paintings` release.
+
+## Downloads through the Worker (2026-11-16)
+
+Every book and painting download links to
+`https://arasteh-guestbook.amir-arasteh.workers.dev/dl/<release>/<file>`
+(`build_read_pages.RELEASE_URL`, `sync_gallery.DOWNLOAD_BASE`, and the three
+hand-written Opening pages), with `rel="nofollow"`. The Worker records one event
+(time, file, country, network owner, browser/bot, user agent, referring site; never an
+IP address) and redirects to the GitHub release asset, which GitHub still counts.
+`python download_log.py` summarises the events and flags bursts; the key is in
+`~/.sedaha_stats_key`. Setup and limits: `guestbook-worker/README.md`.
+
+## Native-check pages for 103 languages (2026-11-16)
+
+`data/native_check/<slug>.json` holds 3 to 8 questions per edition, prepared in
+`Volume1/temp/native_check_2026-11-16/` (BRIEF.md, validate.py). Each Opening page
+invites readers in its own language (`data/native_check_invite.json`), in a light box
+(stylesheet v31). The eight editions awaiting retranslation and EN/FA/DA have none.

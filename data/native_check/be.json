@@ -1,0 +1,50 @@
+{
+  "lang": "be",
+  "slug": "be",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Гэта вольны канец ніткі слоў, якія некалі былі гукамі.",
+      "q": "Does this sentence read naturally?"
+    },
+    {
+      "id": "02/0005#2",
+      "where": "02/0005",
+      "text": "Святло маіх сноў ... святло маіх сноў запальвалася ... святло маіх сноў запалілася",
+      "q": "This line restarts twice. Does the middle attempt sound broken off, unfinished?"
+    },
+    {
+      "id": "03/0661#3",
+      "where": "03/0661",
+      "text": "– Месцы на конкур?",
+      "q": "Someone asks about entrance-exam ranks. Does 'Месцы на конкур' sound natural?"
+    },
+    {
+      "id": "04a/0044#4",
+      "where": "04a/0044",
+      "text": "– Пачатак другой часткі місіі. Батальён, направа круг!",
+      "q": "Big brother plays soldiers. Is 'направа круг' the right command for turning right?"
+    },
+    {
+      "id": "04b/0639#5",
+      "where": "04b/0639",
+      "text": "– То бок праз месяц пасля таго, як нам прыслалі гэты антыкварыят.",
+      "q": "Hooman mockingly calls someone an old antique. Does 'антыкварыят' fit here?"
+    },
+    {
+      "id": "04b/1263#6",
+      "where": "04b/1263",
+      "text": "– Віііжж, Баба, Баба, купіш мне гэтую вялікую ляльку?",
+      "q": "A toddler asks his dad ('Баба') for a doll. Does it sound like baby talk?"
+    },
+    {
+      "id": "04b/1312#7",
+      "where": "04b/1312",
+      "text": "Аж гаўнакружэнне пачынаецца. Чым больш пра гэта думаеш, тым мацнейшае гаўнакружэнне.",
+      "q": "A girl crudely jokes that a painting makes you dizzy. Is 'гаўнакружэнне' clear?"
+    }
+  ]
+}

@@ -49,7 +49,11 @@ SOUNDS = SITE / "sedaha" / "index.html"
 SITEMAP = SITE / "sitemap.xml"
 STATUS_PAGE = SITE / "sedaha" / "languages" / "index.html"
 RELEASE_TAG = "books"  # GitHub release the /sedaha/ download buttons point at
-RELEASE_URL = "https://github.com/amirarasteh1990/amirarasteh1990.github.io/releases/download/books"
+# Downloads go through the guestbook Worker, which records who fetched what
+# (download_log.py) and redirects to the GitHub release asset, still counted there.
+# rel="nofollow" on every such link: polite crawlers need not fetch the books.
+DOWNLOAD_WORKER = "https://arasteh-guestbook.amir-arasteh.workers.dev/dl"
+RELEASE_URL = f"{DOWNLOAD_WORKER}/books"
 
 # Generated pages carry the standard footer. Change it in sync_footers.py, then
 # rerun this script so the 111 Opening pages and /sedaha/languages/ follow.
@@ -181,7 +185,7 @@ def full_book_btns(complete: int) -> str:
     to the catalogue. A number and an arrow, not an English phrase: these pages are
     in 111 languages that are not English, and the strip at the top already uses
     exactly this idiom."""
-    out = [f'      <a class="btn" href="{RELEASE_URL}/Sedaha_{file}.epub" '
+    out = [f'      <a class="btn" href="{RELEASE_URL}/Sedaha_{file}.epub" rel="nofollow" '
            f'aria-label="{name}: the complete book, EPUB"><span lang="{lang}">{native}</span>'
            f'<span class="btn-fmt" lang="en">EPUB</span></a>'
            for file, lang, native, name in (("Farsi", "fa", "فارسی", "Persian"),
@@ -213,7 +217,7 @@ def top_actions_html(row: dict | None, url: str, desc: str, en: str, rtl: bool =
     and its foot keeps the fuller offer."""
     out = []
     for f in (row["fmts"] if row and row["state"] == "ready" and row["fmts"] else []):
-        out.append(f'    <a class="op-act" href="{RELEASE_URL}/{row["stem"]}.{f}" '
+        out.append(f'    <a class="op-act" href="{RELEASE_URL}/{row["stem"]}.{f}" rel="nofollow" '
                    f'aria-label="{row["en"]}: the complete book, {f.upper()}">'
                    f'{f.upper()}</a>')
     out.append(f'    <button type="button" class="op-act op-act-icon btn-share" '
@@ -961,14 +965,33 @@ def _terms_html(code: str, lang: str, dir_attr: str, path: Path | None = None) -
 NATIVE_CHECK_DATA = SITE / "data" / "native_check"
 
 
-def native_check_link(slug: str) -> str:
+def native_check_link(slug: str, lang: str = "en", rtl: bool = False) -> str:
     """The invitation line for /sedaha/check/<slug>/, or "" when there is no check.
-    The link carries its own lang/dir, so on a right-to-left page it sits where
-    that page's lines start and its arrow still follows the English words."""
+
+    In the page's own language when data/native_check_invite.json has a line for it
+    (it says the questions are in English, so nobody is surprised); otherwise the
+    English line. The link carries its own lang/dir and the arrow points the way
+    that language reads."""
     if not (NATIVE_CHECK_DATA / f"{slug}.json").is_file():
         return ""
+    text = _invites().get(slug)
+    if text:
+        arrow = "&larr;" if rtl else "&rarr;"
+        dir_ = "rtl" if rtl else "ltr"
+        return (f'    <p class="native-check-link"><a href="/sedaha/check/{slug}/" lang="{lang}" '
+                f'dir="{dir_}">{html.escape(text, quote=False)} {arrow}</a></p>\n')
     return (f'    <p class="native-check-link"><a href="/sedaha/check/{slug}/" lang="en" '
             f'dir="ltr">Native speaker? Help check this translation &rarr;</a></p>\n')
+
+
+NATIVE_CHECK_INVITES = SITE / "data" / "native_check_invite.json"
+
+
+def _invites() -> dict:
+    try:
+        return json.loads(NATIVE_CHECK_INVITES.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
 
 
 READ_INDEX_URL = "https://arasteh.art/sedaha/read/"
@@ -1045,7 +1068,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
         # language-neutral, which is what lets it onto 20 pages that are not in
         # English; the format-guidance SENTENCE lives only on the English page.
         buttons = "\n".join(
-            f'      <a class="btn" href="{RELEASE_URL}/{row["stem"]}.{f}" '
+            f'      <a class="btn" href="{RELEASE_URL}/{row["stem"]}.{f}" rel="nofollow" '
             f'aria-label="{row["en"]}: the complete book, {f.upper()}'
             f'{", " + row["size"][f] if row["size"].get(f, "0 MB") != "0 MB" else ""}">'
             f'<span lang="{L["lang"]}"{dir_attr}>{html.escape(title, quote=False)}</span>'
@@ -1121,7 +1144,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
 {buttons}
       <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="{url}" data-share-title="Sedaha (Sounds) &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
-{_terms_html(L['code'], L['lang'], dir_attr)}{native_check_link(L['slug'])}    <a class="read-back" href="/sedaha/">{own} {'&larr;' if L['rtl'] else '&rarr;'}</a>
+{_terms_html(L['code'], L['lang'], dir_attr)}{native_check_link(L['slug'], L['lang'], L['rtl'])}    <a class="read-back" href="/sedaha/">{own} {'&larr;' if L['rtl'] else '&rarr;'}</a>
   </div>
 </main>
 
@@ -1374,7 +1397,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
         # the size is printed, not left in a title attribute: a phone has no hover,
         # and how big a file is decides whether it is downloaded on mobile data
         links = [f'<a href="{r["url"]}">Opening</a>']
-        links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}">{f.upper()}'
+        links += [f'<a href="{RELEASE_URL}/{r["stem"]}.{f}" rel="nofollow">{f.upper()}'
                   f'{" &middot; " + r["size"][f] if r["size"].get(f) else ""}</a>'
                   for f in r["fmts"]]
         # every language here can be passed on, complete or not: the reason to share

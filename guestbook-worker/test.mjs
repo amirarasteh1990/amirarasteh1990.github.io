@@ -262,3 +262,87 @@ assert(checkUpstream.status === 502 && (await checkUpstream.json()).posted !== t
   'a GitHub failure produced a false check receipt');
 
 console.log('native-check Worker contract passed');
+
+// ---- downloads: /dl/<release>/<file> and /dl-stats ----
+function store() {
+  const rows = new Map();
+  return {
+    rows,
+    async put(key, value, options) { rows.set(key, options && options.metadata); },
+    async list({prefix, cursor}) {
+      const keys = [...rows.keys()].filter(k => k.startsWith(prefix)).sort()
+        .map(name => ({name, metadata: rows.get(name)}));
+      return {keys, list_complete: true};
+    }
+  };
+}
+function fetchFile(path, init = {}, cf = {}) {
+  const request = new Request('https://worker.example' + path, init);
+  Object.defineProperty(request, 'cf', {value: cf});
+  return request;
+}
+const dlEnv = Object.assign(environment(), {DOWNLOADS: store(), STATS_KEY: 'k3y-for-tests'});
+const waits = [];
+const ctx = {waitUntil(p) { waits.push(p); }};
+
+const got = await handle(fetchFile('/dl/books/Sedaha_English.pdf', {headers: {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0) Firefox/140.0',
+  'Referer': 'https://arasteh.art/sedaha/read/', 'CF-Connecting-IP': '203.0.113.8'}},
+  {country: 'DK', asn: 3292, asOrganization: 'TDC'}), dlEnv, githubSuccess, ctx);
+await Promise.all(waits);
+assert(got.status === 302, 'a download did not redirect');
+assert(got.headers.get('Location') ===
+  'https://github.com/owner/site/releases/download/books/Sedaha_English.pdf',
+  'a download redirected to the wrong place');
+assert(dlEnv.DOWNLOADS.rows.size === 1, 'a download was not recorded');
+const [[evKey, ev]] = [...dlEnv.DOWNLOADS.rows];
+assert(/^ev:\d{4}-\d{2}-\d{2}T[\d:.]+Z:[0-9a-f]{8}$/.test(evKey), 'event key shape');
+assert(ev.r === 'books' && ev.a === 'Sedaha_English.pdf' && ev.c === 'DK' &&
+  ev.o === 'TDC' && ev.n === 3292 && ev.k === 'browser' && ev.f === 'arasteh.art' && ev.m === 'GET',
+  'the event lost a field');
+assert(!JSON.stringify(ev).includes('203.0.113.8'), 'a raw address was stored');
+
+await handle(fetchFile('/dl/paintings/Arasteh_boteh-jegheh_iran-i.jpg',
+  {headers: {'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)'}}), dlEnv, githubSuccess);
+const bot = [...dlEnv.DOWNLOADS.rows.values()].find(e => e.r === 'paintings');
+assert(bot && bot.k === 'bot' && bot.f === '', 'a crawler was not marked as a bot');
+
+const before = dlEnv.DOWNLOADS.rows.size;
+for (const bad of ['/dl/books/../secret.pdf', '/dl/evil/Sedaha_English.pdf',
+  '/dl/books/Sedaha_English.exe', '/dl/books/%2e%2e%2fx.pdf', '/dl/books/',
+  '/dl/books/a/b.pdf', '/dl/books/https:%2F%2Fevil.example%2Fx.pdf']) {
+  const r = await handle(fetchFile(bad), dlEnv, githubSuccess);
+  assert(r.status === 404 && !r.headers.get('Location'), 'a bad download path was accepted: ' + bad);
+}
+const posted = await handle(fetchFile('/dl/books/Sedaha_English.pdf', {method: 'POST', body: 'x'}),
+  dlEnv, githubSuccess);
+assert(posted.status === 405, 'POST to a download was accepted');
+assert(dlEnv.DOWNLOADS.rows.size === before, 'a refused download was recorded');
+
+console.error = () => {};
+const noStore = await handle(fetchFile('/dl/books/Sedaha_Farsi.epub'),
+  Object.assign(environment(), {DOWNLOADS: {async put() { throw new Error('full'); }}}), githubSuccess);
+assert(noStore.status === 302, 'a failing store blocked the download');
+console.error = oldError;
+const bare = await handle(fetchFile('/dl/books/Sedaha_Farsi.epub'), environment(), githubSuccess);
+assert(bare.status === 302, 'a download without a store did not redirect');
+
+const today = new Date().toISOString().slice(0, 10);
+const noKey = await handle(fetchFile('/dl-stats?day=' + today), dlEnv, githubSuccess);
+assert(noKey.status === 401, 'stats were served without the key');
+const wrongKey = await handle(fetchFile('/dl-stats?day=' + today,
+  {headers: {Authorization: 'Bearer k3y-for-test'}}), dlEnv, githubSuccess);
+assert(wrongKey.status === 401, 'stats were served for a wrong key');
+const badDay = await handle(fetchFile('/dl-stats?day=yesterday',
+  {headers: {Authorization: 'Bearer k3y-for-tests'}}), dlEnv, githubSuccess);
+assert(badDay.status === 400, 'a malformed day was accepted');
+const stats = await handle(fetchFile('/dl-stats?day=' + today,
+  {headers: {Authorization: 'Bearer k3y-for-tests'}}), dlEnv, githubSuccess);
+const body = await stats.json();
+assert(stats.status === 200 && body.ok && body.events.length === 2 &&
+  body.events.every(e => /^\d{4}-\d{2}-\d{2}T/.test(e.t)), 'stats did not list the day');
+const unset = await handle(fetchFile('/dl-stats?day=' + today,
+  {headers: {Authorization: 'Bearer anything'}}), environment(), githubSuccess);
+assert(unset.status === 503, 'stats without a configured key did not refuse');
+
+console.log('download route contract passed');

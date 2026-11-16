@@ -1,0 +1,32 @@
+{
+  "lang": "ru",
+  "slug": "ru",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Это свободный конец нити из слов, которые когда-то были звуками.",
+      "q": "Does this sentence read naturally?"
+    },
+    {
+      "id": "Opening/0007#2",
+      "where": "Opening/0007",
+      "text": "С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их.",
+      "q": "The reader gathers up the words. Does 'собираешь их' sound natural here?"
+    },
+    {
+      "id": "Opening/0007#3",
+      "where": "Opening/0007",
+      "text": "Как в детстве, когда Маман распускала старые вещи на пряжу, а мы брали нить и ходили по дому, чтобы пряжа не скапливалась в кучу.",
+      "q": "Does this childhood memory read naturally?"
+    },
+    {
+      "id": "Opening/0007#4",
+      "where": "Opening/0007",
+      "text": "Может быть, твоё поколение появилось на несколько лет позже этого мира пряжи, но представь: когда-то в каком-то уголке мира дети вот так и играли.",
+      "q": "Does 'этого мира пряжи' (that world of yarn) sound natural?"
+    }
+  ]
+}

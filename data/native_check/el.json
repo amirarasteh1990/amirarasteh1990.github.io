@@ -1,0 +1,38 @@
+{
+  "lang": "el",
+  "slug": "el",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Αυτό είναι το ελεύθερο άκρο ενός νήματος λέξεων που κάποτε ήταν ήχοι.",
+      "q": "Does this sentence read naturally?"
+    },
+    {
+      "id": "Opening/0007#2",
+      "where": "Opening/0007",
+      "text": "Τώρα ξετυλίγω το νήμα των λέξεων, κι εσύ πάρε τες και φέρ’ τες στον κόσμο σου, για να μη συσσωρευτούν εδώ, στον δικό μου κόσμο.",
+      "q": "The reader takes the words away. Does 'πάρε τες και φέρ’ τες' sound natural?"
+    },
+    {
+      "id": "02/0005#3",
+      "where": "02/0005",
+      "text": "Το φως των ονείρων μου ... το φως των ονείρων μου άναβε ... το φως των ονείρων μου άναψε",
+      "q": "This line restarts twice. Does the middle attempt sound broken off, unfinished?"
+    },
+    {
+      "id": "04b/0391#4",
+      "where": "04b/0391",
+      "text": "– ... ο βλάκας αυτός υπέφερε από οξεία παραφροσύνη.",
+      "q": "Students mock a roommate's self-importance. Does 'οξεία παραφροσύνη' fit here?"
+    },
+    {
+      "id": "04b/1312#5",
+      "where": "04b/1312",
+      "text": "Σε ζαλίζει. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ ζαλίζεσαι.",
+      "q": "Is it clear this girl is swearing crudely about feeling dizzy?"
+    }
+  ]
+}

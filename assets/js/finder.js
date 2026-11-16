@@ -167,6 +167,7 @@
       var epub = (o.files || []).filter(function (f) { return f[0] === 'epub'; })[0];
       var a = el('a', 'btn');
       a.href = epub[2];
+      a.rel = 'nofollow';
       a.setAttribute('aria-label', o.en + ', the complete book, EPUB');
       var n = el('span', null, o.native);
       n.setAttribute('lang', o.lang);
@@ -199,6 +200,7 @@
     (L.files || []).forEach(function (f) {
       var a = el('a', 'btn', f[0].toUpperCase() + (f[1] ? ' · ' + f[1] : ''));
       a.href = f[2];
+      a.rel = 'nofollow';
       a.setAttribute('aria-label', L.en + ', the complete book, ' + f[0].toUpperCase());
       acts.appendChild(a);
     });

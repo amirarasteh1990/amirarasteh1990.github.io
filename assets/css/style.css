@@ -612,7 +612,12 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .nc-copy{width:100%;min-height:140px;padding:10px 12px;border:1px solid var(--line);
   border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
 /* the one English line on an Opening page that has a check waiting */
-.read-cta p.native-check-link{margin:var(--flow-control) 0 0;font-size:.85rem}
+.read-cta p.native-check-link{margin:var(--flow-control) 0 0;font-size:.88rem}
+/* v31: a light box, so the invitation is findable without shouting */
+.read-cta p.native-check-link a{display:inline-block;padding:7px 14px;border:1px solid var(--line);
+  border-radius:10px;background:var(--surface);color:var(--accent);text-decoration:none}
+.read-cta p.native-check-link a:hover,.read-cta p.native-check-link a:focus-visible{
+  border-color:var(--accent);text-decoration:underline}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}

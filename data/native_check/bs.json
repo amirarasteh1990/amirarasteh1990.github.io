@@ -1,0 +1,44 @@
+{
+  "lang": "bs",
+  "slug": "bs",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Kao u djetinjstvu, kad bi Maman odmotavala vunu sa starih odjevnih predmeta, a mi bismo uzeli nit i hodali po kući da se vuna ne bi nagomilala.",
+      "q": "Does this sentence read naturally?"
+    },
+    {
+      "id": "03/0176#2",
+      "where": "03/0176",
+      "text": "Taghi je bio ukrao pet rajčica iz voćarne strica Badiollaha.",
+      "q": "Badiollah is the local fruit seller, not a relative. Does 'strica' fit?"
+    },
+    {
+      "id": "04a/0031#3",
+      "where": "04a/0031",
+      "text": "Ujak Badiollah je opet ove godine donio zelene šljive.",
+      "q": "The same fruit seller, not a relative. Does 'Ujak' fit him?"
+    },
+    {
+      "id": "04a/0044#4",
+      "where": "04a/0044",
+      "text": "– Početak druge etape misije. Bataljon, desno krug!",
+      "q": "A small boy plays army and orders a right turn. Does 'desno krug' sound right?"
+    },
+    {
+      "id": "04b/1256#5",
+      "where": "04b/1256",
+      "text": "– Ako misliš auto ponijeti sa sobom, e baš.",
+      "q": "Taghi accepts a fight on one condition. Does 'e baš' read as yes?"
+    },
+    {
+      "id": "04b/1263#6",
+      "where": "04b/1263",
+      "text": "– Vrrrum, Baba, Baba, hoćeš mi kupiti ovu veliku lutku?",
+      "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+    }
+  ]
+}

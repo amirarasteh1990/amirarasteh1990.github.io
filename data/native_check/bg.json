@@ -1,0 +1,32 @@
+{
+  "lang": "bg",
+  "slug": "bg",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Тук не се случва нищо. Тук нищо няма да бъде оправено, нищо — съборено.",
+      "q": "Do these sentences read naturally?"
+    },
+    {
+      "id": "02/0005#2",
+      "where": "02/0005",
+      "text": "Светлината на сънищата ми ... светлината на сънищата ми светваше ... светлината на сънищата ми светна",
+      "q": "The narrator restarts this phrase twice. Does the middle attempt sound broken off?"
+    },
+    {
+      "id": "04b/1312#3",
+      "where": "04b/1312",
+      "text": "На човек му се завива свят. Колкото повече мислиш за него, толкова повече ти се завива свят.",
+      "q": "A student is meant to sound vulgar about dizziness here. Does it work?"
+    },
+    {
+      "id": "04b/1320#4",
+      "where": "04b/1320",
+      "text": "И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова повече ни се завива свят, и да го покажа на Нилуфар.",
+      "q": "Beit is a Persian word for a couplet. Does this sentence read naturally?"
+    }
+  ]
+}

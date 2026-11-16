@@ -652,7 +652,9 @@ def _labels(gallery: dict, masters: list[Path]) -> list[dict]:
 # beside the labels it comes from, because this script also writes the links.
 DOWNLOAD_REPO = "amirarasteh1990/amirarasteh1990.github.io"
 DOWNLOAD_RELEASE = "paintings"
-DOWNLOAD_BASE = (f"https://github.com/{DOWNLOAD_REPO}/releases/download/"
+# Through the guestbook Worker, which records the download (download_log.py) and
+# redirects to the release asset, so GitHub still counts it.
+DOWNLOAD_BASE = ("https://arasteh-guestbook.amir-arasteh.workers.dev/dl/"
                  f"{DOWNLOAD_RELEASE}/")
 ADDRESS_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SHOT_RE = re.compile(r'<a class="shot"[^>]*>')

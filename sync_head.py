@@ -45,7 +45,7 @@ END = "<!-- PWA:END -->"
 
 # Keep this in step with sw.js. Unlike the service-worker cache name alone, this
 # version reaches a returning reader before the newly deployed worker activates.
-STYLE_VERSION = "30"
+STYLE_VERSION = "31"
 STYLE_HREF = f"/assets/css/style.css?v={STYLE_VERSION}"
 
 # Pages whose <html lang> is written in the Arabic script. Their own text is set in

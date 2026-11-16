@@ -6,11 +6,20 @@
    POST /check  a native speaker's answers -> one `native-check` issue for Amir.
                 It never carries the guestbook marker or label, so the
                 guestbook workflow leaves it alone.
+   GET  /dl/<release>/<file>
+                a book or painting download: records one event in the
+                DOWNLOADS store (time, file, country, network owner, kind of
+                client, referring site) and redirects to the GitHub release
+                asset, which GitHub still counts. No IP address is stored.
+   GET  /dl-stats?day=YYYY-MM-DD
+                that day's events, for download_log.py; needs the STATS_KEY
+                secret as a Bearer token.
 
    Both validate, rate-limit a salted hash of the source address, and create a
    GitHub issue. The issue-only credential never reaches the browser. Raw IP
-   addresses, user agents, and email addresses are not stored or logged by this
-   code. */
+   addresses and email addresses are not stored or logged by this code. A
+   download event keeps the client's own self-description (its user agent, cut
+   to 160 characters) only so robots can be told from readers. */
 
 const MAX_BODY_BYTES = 8192;
 // A full check: up to 40 answers with 600-character notes, which in a three-byte
@@ -24,6 +33,116 @@ const CHECK_SLUG = /^[a-z]{2,3}(?:-[a-z]{2,4})?$/;
 const CHECK_VERSION = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,39}$/;
 const CHECK_ID = /^[A-Za-z0-9][A-Za-z0-9_./#-]{0,79}$/;
 const VERDICTS = {ok: 'Correct', change: 'Needs change'};
+
+// Downloads: only these releases, only plain file names, so /dl/ can never be
+// turned into a redirect to somewhere else.
+const DL_RELEASES = new Set(['books', 'paintings', 'first-edition-1.0']);
+const DL_FILE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.(?:pdf|epub|jpg|jpeg|zip)$/;
+const DL_PATH = /^\/dl\/([^/]+)\/([^/]+)$/;
+const DL_KEEP_SECONDS = 400 * 86400;
+const STATS_DAY = /^\d{4}-\d{2}-\d{2}$/;
+const BOT_AGENT = /bot|crawl|spider|slurp|archiv|preview|fetch|scan|monitor|curl|wget|python|httpclient|okhttp|go-http|java\/|libwww|headless|lighthouse|facebookexternalhit|whatsapp|telegram|discord|slack|embedly|validator|checker|scrap/i;
+
+function clientKind(agent) {
+  if (!agent) return 'none';
+  if (BOT_AGENT.test(agent)) return 'bot';
+  if (/^Mozilla\/|^Opera\//.test(agent)) return 'browser';
+  return 'other';
+}
+
+function plain(value, maximum) {
+  return String(value || '').replace(/[\u0000-\u001f\u007f]/g, ' ').slice(0, maximum);
+}
+
+function referringSite(referer) {
+  if (!referer) return '';
+  try {
+    return plain(new URL(referer).host, 80);
+  } catch {
+    return '?';
+  }
+}
+
+function sameSecret(given, expected) {
+  // constant time over the expected length, so the key cannot be guessed byte by byte
+  const a = String(given || '');
+  const b = String(expected || '').trim();
+  if (!b) return false;
+  let diff = a.length ^ b.length;
+  for (let i = 0; i < b.length; i += 1) diff |= (a.charCodeAt(i) || 0) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
+async function recordDownload(request, env, release, file) {
+  if (!env.DOWNLOADS || typeof env.DOWNLOADS.put !== 'function') return;
+  const cf = request.cf || {};
+  const agent = request.headers.get('User-Agent') || '';
+  const metadata = {
+    r: release,
+    a: file,
+    m: request.method,
+    c: plain(cf.country, 4),
+    o: plain(cf.asOrganization, 60),
+    n: Number.isInteger(cf.asn) ? cf.asn : 0,
+    k: clientKind(agent),
+    u: plain(agent, 160),
+    f: referringSite(request.headers.get('Referer'))
+  };
+  const random = crypto.getRandomValues(new Uint8Array(4));
+  const tag = Array.from(random, b => b.toString(16).padStart(2, '0')).join('');
+  await env.DOWNLOADS.put('ev:' + new Date().toISOString() + ':' + tag, '',
+    {metadata, expirationTtl: DL_KEEP_SECONDS});
+}
+
+async function download(request, env, ctx, url) {
+  const text = {'Cache-Control': 'no-store', 'Content-Type': 'text/plain; charset=utf-8',
+    'X-Content-Type-Options': 'nosniff', 'X-Robots-Tag': 'noindex, nofollow'};
+  const match = url.pathname.match(DL_PATH);
+  if (!match || !DL_RELEASES.has(match[1]) || !DL_FILE.test(match[2])) {
+    return new Response('Not found.', {status: 404, headers: text});
+  }
+  if (request.method !== 'GET' && request.method !== 'HEAD') {
+    return new Response('Method not allowed.', {status: 405, headers: text});
+  }
+  const owner = env.GITHUB_OWNER || 'amirarasteh1990';
+  const repo = env.GITHUB_REPO || 'amirarasteh1990.github.io';
+  const target = 'https://github.com/' + encodeURIComponent(owner) + '/' +
+    encodeURIComponent(repo) + '/releases/download/' + match[1] + '/' + match[2];
+  // the redirect never waits for, or fails because of, the record
+  const record = recordDownload(request, env, match[1], match[2]).catch(error => {
+    console.error('Download record failed', {name: error && error.name ? error.name : 'Error'});
+  });
+  if (ctx && typeof ctx.waitUntil === 'function') ctx.waitUntil(record);
+  else await record;
+  return new Response(null, {status: 302, headers: Object.assign({}, text,
+    {'Location': target})});
+}
+
+async function downloadStats(request, env, url) {
+  const headers = responseHeaders('', false);
+  headers['X-Robots-Tag'] = 'noindex, nofollow';
+  if (request.method !== 'GET') return json({ok: false, error: 'Method not allowed.'}, 405, headers);
+  if (!env.STATS_KEY || !env.DOWNLOADS) {
+    return json({ok: false, error: 'Download statistics are not configured.'}, 503, headers);
+  }
+  const auth = request.headers.get('Authorization') || '';
+  if (!sameSecret(auth.replace(/^Bearer\s+/i, ''), env.STATS_KEY)) {
+    return json({ok: false, error: 'Not allowed.'}, 401, headers);
+  }
+  const day = url.searchParams.get('day') || '';
+  if (!STATS_DAY.test(day)) return json({ok: false, error: 'day must be YYYY-MM-DD'}, 400, headers);
+  const events = [];
+  let cursor;
+  for (let page = 0; page < 10; page += 1) {
+    const listed = await env.DOWNLOADS.list({prefix: 'ev:' + day, cursor});
+    for (const key of listed.keys) {
+      events.push(Object.assign({t: key.name.slice(3, 27)}, key.metadata || {}));
+    }
+    if (listed.list_complete || !listed.cursor) break;
+    cursor = listed.cursor;
+  }
+  return json({ok: true, day, events}, 200, headers);
+}
 
 class PublicError extends Error {
   constructor(message, status = 400) {
@@ -246,8 +365,10 @@ function configured(env) {
   return Boolean(env.GITHUB_TOKEN && env.GITHUB_OWNER && env.GITHUB_REPO);
 }
 
-export async function handle(request, env, githubFetch = fetch) {
+export async function handle(request, env, githubFetch = fetch, ctx = null) {
   const url = new URL(request.url);
+  if (url.pathname.startsWith('/dl/')) return download(request, env, ctx, url);
+  if (url.pathname === '/dl-stats') return downloadStats(request, env, url);
   if (request.method === 'GET' && (url.pathname === '/' || url.pathname === '/health')) {
     return json({ok: true, service: 'arasteh-guestbook'}, 200,
       responseHeaders('', false));
@@ -372,7 +493,7 @@ export async function handle(request, env, githubFetch = fetch) {
 }
 
 export default {
-  fetch(request, env) {
-    return handle(request, env);
+  fetch(request, env, ctx) {
+    return handle(request, env, fetch, ctx);
   }
 };

@@ -297,12 +297,19 @@ def guestbook() -> None:
            and "['guestbook', 'pending', 'shareable']" in worker
            and "GITHUB_TOKEN" in worker and "Authorization" in worker
            and "message: cleanText(raw.message, 'Note', 1, 500)" in worker)
+    # The user agent may be read only by the download recorder (so robots can be
+    # told from readers), and that code must never see the address.
+    dl_start = worker.find("async function recordDownload")
+    dl_end = worker.find("async function download(", dl_start) if dl_start >= 0 else -1
+    dl_body = worker[dl_start:dl_end] if dl_start >= 0 and dl_end > dl_start else ""
+    ua = "request.headers.get('User-Agent')"
     report("the Worker rate-limits a salted digest and stores no raw address",
            "CF-Connecting-IP" in worker and "RATE_LIMIT_SALT" in worker
            and "crypto.subtle.digest('SHA-256'" in worker
            and "SUBMIT_RATE_LIMITER.limit" in worker
            and "request_id" in worker
-           and "request.headers.get('User-Agent')" not in worker)
+           and worker.count(ua) == dl_body.count(ua)
+           and "CF-Connecting-IP" not in dl_body and "cf.clientIp" not in dl_body)
     try:
         worker_config = json.loads(config_text)
         config_ok = (

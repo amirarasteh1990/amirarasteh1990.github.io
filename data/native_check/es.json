@@ -1,0 +1,26 @@
+{
+  "lang": "es",
+  "slug": "es",
+  "dir": "ltr",
+  "version": "2026-11-16",
+  "items": [
+    {
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "Aquí no ocurre nada. Aquí nada va a arreglarse ni a destruirse.",
+      "q": "The book's first lines. Do these two sentences read naturally?"
+    },
+    {
+      "id": "Opening/0007#2",
+      "where": "Opening/0007",
+      "text": "Desde este lado, voy desenredando el hilo de las palabras, y desde el otro lado, tú las vas recogiendo.",
+      "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"
+    },
+    {
+      "id": "Opening/0007#3",
+      "where": "Opening/0007",
+      "text": "Como en la infancia, cuando Maman destejía prendas viejas y nosotros tomábamos la hebra y dábamos vueltas por el interior de la casa para que la lana no se amontonara.",
+      "q": "A childhood game with yarn from old clothes. Does this read naturally?"
+    }
+  ]
+}

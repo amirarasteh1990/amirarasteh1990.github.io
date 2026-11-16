@@ -91,3 +91,32 @@ directly on GitHub.
 
 If the GitHub token expires, is revoked, or GitHub rejects a request, the Worker
 fails closed and the page does not claim that the note was posted.
+
+## Downloads (`/dl/`) and who makes them
+
+Every download button on arasteh.art points at
+`https://arasteh-guestbook.amir-arasteh.workers.dev/dl/<release>/<file>`
+(`books`, `paintings`, `first-edition-1.0`; plain file names only, so the route can
+never redirect anywhere else). The Worker stores one event in the `DOWNLOADS` KV
+namespace, then answers `302` to the GitHub release asset, which GitHub still counts
+(`download_counts.py`, `show downloads`).
+
+An event holds the time, the file, the country, the network owner (e.g. "Google LLC"),
+whether the client is a browser or a bot, its user agent (cut to 160 characters) and
+the site the click came from. It never holds an IP address, and it expires after 400
+days. Recording happens after the redirect is sent, so a full or missing store never
+blocks a download. The free plan allows 1,000 recorded downloads a day; past that
+the downloads still work and only the record is skipped.
+
+`GET /dl-stats?day=YYYY-MM-DD` returns one day's events to whoever presents the
+`STATS_KEY` secret as a Bearer token. `python download_log.py` (repo root) reads it.
+
+One-time setup, from this directory, signed in to the guestbook's Cloudflare account
+(amirarasteh1990@gmail.com):
+
+    npx wrangler kv namespace create sedaha-downloads --binding DOWNLOADS --update-config
+    python ..\download_log.py --setup
+    npm test
+    npm run deploy
+
+Deploy before pushing a site whose links point at `/dl/`: until then those links 404.
