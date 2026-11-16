@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guestbook &middot; Amir Arasteh</title>
-<meta name="description" content="Reader notes and messages for Amir Arasteh and Sedaha (Sounds).">
+<meta name="description" content="Leave a note for Amir and other readers of Sedaha (Sounds).">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="arasteh.art">
 <meta property="og:title" content="Guestbook — Amir Arasteh">
-<meta property="og:description" content="Leave a note, a shared thread among readers of Sedaha (Sounds).">
+<meta property="og:description" content="Leave a note for Amir and other readers of Sedaha (Sounds).">
 <meta property="og:image" content="https://arasteh.art/assets/img/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://arasteh.art/comments/">
 <link rel="canonical" href="https://arasteh.art/comments/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/css/style.css?v=26">
+<link rel="stylesheet" href="/assets/css/style.css?v=30">
 <!-- Account-free intake; repository credentials remain in Cloudflare secrets. -->
 <meta name="guestbook-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -37,6 +37,8 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
+document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -63,11 +65,9 @@ apply(get())})();</script>
 </nav>
 <!-- APPNAV:END -->
 <main class="container" id="main">
-  <a class="back back--home" href="/">&larr; Amir Arasteh</a>
-
   <section class="guestbook-intro">
     <h1>Guestbook</h1>
-    <p class="lead">Leave a note: where the book found you, or a line that stayed.</p>
+    <p class="lead">Leave a note, in any language: where the book found you, or a line that stayed.</p>
   </section>
 
   <section class="guestbook-compose" aria-labelledby="leave-note-heading">
@@ -75,16 +75,16 @@ apply(get())})();</script>
       <p class="guestbook-kicker">Add to the thread</p>
       <h2 id="leave-note-heading">Leave a reader note</h2>
     </header>
-    <p class="muted-note">No account is needed. Your chosen name and comment are public. Press Post, and Amir receives a notification.</p>
+    <p class="muted-note">No account needed. Your name and note will be public, and Amir is notified.</p>
     <form id="guestbookForm">
       <p class="guestbook-field">
         <label for="guestbookName">Name or pen name</label>
-        <input id="guestbookName" name="name" type="text" maxlength="40"
-          autocomplete="name" required>
+        <input id="guestbookName" name="name" type="text" maxlength="40" dir="auto"
+          autocomplete="nickname" required>
       </p>
       <p class="guestbook-field">
         <label for="guestbookMessage">Your end of the thread</label>
-        <textarea id="guestbookMessage" name="message" rows="8" maxlength="500"
+        <textarea id="guestbookMessage" name="message" rows="8" maxlength="500" dir="auto"
           required></textarea>
         <span class="guestbook-field-note">Plain text, up to 500 characters.</span>
       </p>
@@ -158,7 +158,7 @@ apply(get())})();</script>
   </div>
 </footer>
 <script src="/assets/js/editions.js"></script>
-<script src="/assets/js/guestbook.js?v=29" defer></script>
+<script src="/assets/js/guestbook.js?v=35" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

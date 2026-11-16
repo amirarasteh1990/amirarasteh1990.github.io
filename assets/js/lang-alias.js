@@ -16,7 +16,7 @@
    "farsi" answers Persian outright, even though Dari also answers to it further
    down its own list, and "dari" answers Dari. Put the strongest name first. */
 window.LANG_ALIASES = {
-  fa: 'farsi parsi iranian persian',
+  fa: 'farsi parsi iranian persian پارسی',
   prs: 'dari afghan persian farsi',
   ps: 'pashto pushtu pakhto afghan',
   bal: 'balochi baluchi baluch brahui',
@@ -28,6 +28,7 @@ window.LANG_ALIASES = {
   tg: 'tajik tajiki tojiki persian',
   ar: 'arabic arabi fusha',
   yi: 'yiddish jewish',
+  he: 'hebrew ivrit israeli',
   ur: 'urdu hindustani',
   hi: 'hindi hindustani',
   bn: 'bangla bengali',
@@ -43,7 +44,7 @@ window.LANG_ALIASES = {
   kn: 'kannada canarese',
   ml: 'malayalam malayali',
   sd: 'sindhi',
-  zh: 'chinese mandarin putonghua simplified',
+  zh: 'chinese mandarin putonghua simplified 汉语 普通话',
   ja: 'japanese nihongo',
   ko: 'korean hangugeo',
   th: 'thai siamese',

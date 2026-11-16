@@ -57,9 +57,28 @@ FOOTER = footer_html()
 # Generated pages live in the book section, so their shell highlights "Books".
 NAV = appnav_html("books")
 HEAD = head_html()  # PWA manifest + standalone hints, before </head>
+# (each Opening page takes head_html(its own lang): Arabic-script ones preload Vazirmatn)
+
+# The reading toolbar and the language strip in the words of a page that has a shell
+# of its own (sync_appnav.SHELL: Persian, author 2026-11-16). Every other page keeps
+# the English labels, marked lang="en". reader.js carries the same Persian strings
+# for the theme button it relabels as it is used.
+SHELL_WORDS = {
+    "fa": {
+        "reading": "تنظیمات خواندن",
+        "smaller": "متن کوچک" + "‌" + "تر",
+        "larger": "متن بزرگ" + "‌" + "تر",
+        "wider": "سطرهای بلندتر",
+        "theme": "رنگ" + "‌" + "ها: مطابق دستگاه. تغییر به روشن.",
+        "strip": "این سرآغاز به زبان" + "‌" + "های دیگر",
+        "whole": "کتاب کامل، به {n} زبان",
+        "share": "همرسانی این سرآغاز",
+    },
+}
+FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
 
-def reader_tools_html() -> str:
+def reader_tools_html(lang: str = "en") -> str:
     """The reading toolbar: type size, measure, light/dark. Wordless on purpose --
     it sits on 114 pages in 114 scripts, and an English label would be the only
     English on a Khmer page. assets/js/reader.js gives it behaviour and remembers
@@ -70,22 +89,31 @@ def reader_tools_html() -> str:
     them in an English voice instead of reading English letters through Japanese.
 
     The three hand-written Opening pages (EN/FA/DA) carry this same block; check.py
-    compares them against this function so the four cannot drift apart."""
+    compares them against this function so the four cannot drift apart.
+
+    lang -- "fa" gives the Persian page its labels in Persian (SHELL_WORDS)."""
+    w = SHELL_WORDS.get(lang, {})
+    reading = w.get("reading", "Reading settings")
+    smaller = w.get("smaller", "Smaller text")
+    larger = w.get("larger", "Larger text")
+    wider = w.get("wider", "Wider lines")
+    theme = w.get("theme", "Colours: following the system. Switch to light.")
     return (
-        '  <div class="reader-tools" role="group" lang="en" aria-label="Reading settings">\n'
-        '    <button type="button" class="rt rt-smaller" aria-label="Smaller text" '
-        'title="Smaller text"><span class="a-sm" aria-hidden="true">A</span></button>\n'
-        '    <button type="button" class="rt rt-larger" aria-label="Larger text" '
-        'title="Larger text"><span class="a-lg" aria-hidden="true">A</span></button>\n'
-        '    <button type="button" class="rt rt-width" aria-label="Wider lines" '
-        'title="Wider lines" aria-pressed="false">'
+        f'  <div class="reader-tools" role="group" lang="{lang if w else "en"}" '
+        f'aria-label="{reading}">\n'
+        f'    <button type="button" class="rt rt-smaller" aria-label="{smaller}" '
+        f'title="{smaller}"><span class="a-sm" aria-hidden="true">A</span></button>\n'
+        f'    <button type="button" class="rt rt-larger" aria-label="{larger}" '
+        f'title="{larger}"><span class="a-lg" aria-hidden="true">A</span></button>\n'
+        f'    <button type="button" class="rt rt-width" aria-label="{wider}" '
+        f'title="{wider}" aria-pressed="false">'
         '<svg aria-hidden="true" viewBox="0 0 24 24">'
         '<path d="M3 4v16M21 4v16"/><path d="M7 12h10"/>'
         '<path d="m9.5 9.5-2.5 2.5 2.5 2.5"/><path d="m14.5 9.5 2.5 2.5-2.5 2.5"/>'
         '</svg></button>\n'
-        '    <button type="button" class="rt rt-theme" data-mode="auto" '
-        'aria-label="Colours: following the system. Switch to light." '
-        'title="Colours: following the system. Switch to light.">'
+        f'    <button type="button" class="rt rt-theme" data-mode="auto" '
+        f'aria-label="{theme}" '
+        f'title="{theme}">'
         '<svg aria-hidden="true" viewBox="0 0 24 24">'
         '<g class="i-auto"><circle cx="12" cy="12" r="7.5"/>'
         '<path d="M12 4.5a7.5 7.5 0 0 1 0 15z" fill="currentColor" stroke="none"/></g>'
@@ -101,13 +129,30 @@ def reader_tools_html() -> str:
 
 READER_TOOLS = reader_tools_html()
 
-OPENING_FRONTISPIECE = """    <figure class="opening-frontispiece">
+# The Opening painting at the widths sync_gallery.py derives (RESPONSIVE there), the
+# 1500px original last. It is never wider than the reading column, 736px at its widest
+# ("Wider lines"), and the whole column on a phone, so a phone on a slow line takes
+# the 720 or 960 copy instead of the full painting (review 2026-11-14).
+_OPENING = "/assets/img/paintings/sounds/01"
+_OPENING_W = (720, 960, 1200)
+OPENING_SIZES = "(max-width: 776px) calc(100vw - 40px), 736px"
+
+
+def _opening_srcset(ext: str) -> str:
+    return ", ".join([f"{_OPENING}-{w}.{ext} {w}w" for w in _OPENING_W]
+                     + [f"{_OPENING}.{ext} 1500w"])
+
+
+OPENING_FRONTISPIECE = f"""    <figure class="opening-frontispiece">
       <picture>
         <source
-          srcset="/assets/img/paintings/sounds/01.webp"
+          srcset="{_opening_srcset('webp')}"
+          sizes="{OPENING_SIZES}"
           type="image/webp">
         <img
           src="/assets/img/paintings/sounds/01.jpg"
+          srcset="{_opening_srcset('jpg')}"
+          sizes="{OPENING_SIZES}"
           width="1500"
           height="1096"
           loading="eager"
@@ -153,7 +198,7 @@ SHARE_SVG = ('<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-wid
              '<path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>')
 
 
-def top_actions_html(row: dict | None, url: str, desc: str, en: str) -> str:
+def top_actions_html(row: dict | None, url: str, desc: str, en: str, rtl: bool = False) -> str:
     """The same offer as the foot of the page, at the head of it.
 
     A reader who arrives already knowing they want the book should not have to read
@@ -173,9 +218,12 @@ def top_actions_html(row: dict | None, url: str, desc: str, en: str) -> str:
                    f'{f.upper()}</a>')
     out.append(f'    <button type="button" class="op-act op-act-icon btn-share" '
                f'aria-label="Share this opening" title="Share this opening" '
-               f'data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" '
+               f'data-share-url="{url}" data-share-title="Sedaha (Sounds) &mdash; Book One" '
                f'data-share-text="{_esc(desc)}">{SHARE_SVG}</button>')
-    return ('  <div class="op-actions" lang="en" dir="ltr">\n'
+    # in reading order on a right-to-left page (EPUB first, on the right); held
+    # left-to-right everywhere else, as before
+    ltr = "" if rtl else ' dir="ltr"'
+    return (f'  <div class="op-actions" lang="en"{ltr}>\n'
             + "\n".join(out) + "\n  </div>")
 
 
@@ -190,8 +238,14 @@ def op_langs_html(slug: str, lang: str = "", native: str = "") -> str:
     and each name carries its own lang.
 
     slug is the edition being read ("" for English, "fa/", "ja/" ...); lang/native
-    are needed only for an edition outside the complete three."""
-    out = ['  <nav class="op-langs" lang="en" aria-label="This opening in other languages">',
+    are needed only for an edition outside the complete three.
+
+    The Persian page has a Persian shell (SHELL_WORDS), so there the labels are
+    Persian and the number is written in Persian digits."""
+    w = SHELL_WORDS.get(lang or slug.strip("/"), {})
+    ui = (lang or slug.strip("/")) if w else "en"
+    out = [f'  <nav class="op-langs" lang="{ui}" '
+           f'aria-label="{w.get("strip", "This opening in other languages")}">',
            '    <svg class="op-globe" aria-hidden="true" viewBox="0 0 24 24">'
            '<circle cx="12" cy="12" r="9"/><path d="M3.2 9.2h17.6M3.2 14.8h17.6"/>'
            '<path d="M12 3c2.6 2.4 4 5.4 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.4-4-9s1.4-6.6 4-9z"/>'
@@ -205,10 +259,35 @@ def op_langs_html(slug: str, lang: str = "", native: str = "") -> str:
             out.append(f'    <span class="cur" lang="{lg}" aria-current="page">{name}</span>{tail}')
         else:
             out.append(f'    <a href="/sedaha/read/{s}" lang="{lg}">{name}</a>{tail}')
-    out.append('    &middot; <a href="/sedaha/#allLangs" aria-label="Where all 114 languages stand">'
-               '114 &rarr;</a>')
+    # The site's one number (author 2026-11-13): how many languages the WHOLE book is
+    # in -- the same N as /sedaha/'s list head. It said 114 (the openings) here.
+    n = _n_complete()
+    # right-to-left pages lay the strip out right-to-left (<main dir="rtl">), so its
+    # last arrow points left, out of the strip (Persian review 2026-11-14)
+    arrow = "&larr;" if (lang or slug.strip("/")) in RTL_LANGS else "&rarr;"
+    shown_n = str(n).translate(FA_DIGITS) if ui == "fa" else str(n)
+    whole = (w["whole"].format(n=shown_n) if w
+             else f"The whole book, in {n} languages")
+    out.append(f'    &middot; <a href="/sedaha/#allLangs" aria-label="{whole}">'
+               f'{shown_n} {arrow}</a>')
     out.append('  </nav>')
     return "\n".join(out)
+
+
+# Opening pages whose language reads right-to-left (layout follows; see render())
+RTL_LANGS = {"fa", "ar", "ur", "ps", "ckb", "sd", "ug", "bal", "glk", "mzn",
+             "lrc", "prs", "he", "yi"}
+
+N_COMPLETE: int | None = None   # set by main() from the release; else read from editions.js
+
+
+def _n_complete() -> int:
+    """Complete editions: main() sets it from the release before anything is rendered;
+    a caller outside a run (check.py) gets the count in the published editions.js."""
+    if N_COMPLETE is not None:
+        return N_COMPLETE
+    data = (SITE / "assets" / "js" / "editions.js").read_text(encoding="utf-8")
+    return len(re.findall(r'"files":\[', data))
 
 # One entry per generated page. og_desc = the thread line in that edition's own words
 # (grounded in its Opening sentence); cta = localized two-sentence invitation.
@@ -712,6 +791,31 @@ def _og_title(L: dict) -> str:
     return og.replace("Sedaha (Sounds)", f"«{t}»")
 
 
+def _quoted_title(L: dict) -> str:
+    """The edition's own title in the brackets its og_title uses (《》, 『』, else «»)."""
+    t = _title(L["code"])
+    for opening, closing in (("《", "》"), ("『", "』")):
+        if f"{opening}Sedaha (Sounds){closing}" in L["og_title"]:
+            return f"{opening}{t}{closing}"
+    return f"«{t}»"
+
+
+def _author_own(code: str) -> str:
+    """The author's name as the edition's own title page writes it (block 0001, last
+    line), falling back to the Latin name."""
+    f = BOOK_LANGS / code / "00_Title_Info.md"
+    text = f.read_text(encoding="utf-8")
+    m = re.search(r"^##\s+0001\s*$", text, re.M)
+    if not m:
+        return "Amir Arasteh"
+    rest = text[m.end():]
+    nxt = re.search(r"^##\s+\S+\s*$", rest, re.M)
+    seg = re.sub(r"<!--.*?-->", "", rest[:nxt.start()] if nxt else rest, flags=re.S)
+    seg = re.sub(r"^\*\*[A-Za-z-]+\*\*\s*$", "", seg, flags=re.M)
+    lines = [l.strip() for l in seg.splitlines() if l.strip() and not l.strip().startswith("{")]
+    return lines[-1] if len(lines) >= 3 else "Amir Arasteh"
+
+
 def _opening(code: str) -> tuple[str, list[str]]:
     """Return (native Opening heading, opening paragraphs) from the edition source."""
     f = BOOK_LANGS / code / "00_Opening.md"
@@ -756,6 +860,115 @@ def _first_sentence(text: str) -> str:
             # silently threw away every CJK opening.
             return head if len(head) >= 5 else ""
     return ""
+
+
+# Under the download buttons of every Opening page: the edition's OWN terms, in the
+# reader's language (author 2026-11-13). Taken from its copyright page, 00_Title_Info.md
+# block 0002 -- the "complete and unchanged" sentence and the short-excerpt sentence
+# (each excerpt names the title, the author and arasteh.art) -- so it is the author's
+# notice, never a website translation. The full notice is inside every file.
+MASTER_TITLE_INFO = BOOK_VOL / "00_source_md" / "00_Title_Info.md"
+TERMS_ENDS = SENTENCE_ENDS + "။"                    # + the Burmese full stop
+# Thai marks no sentence ends: its excerpt sentence is found by its first words.
+TERMS_SENTENCE_START = {"TH": "ข้อความสั้น"}
+
+
+def _lane_lines(path: Path, tag: str, bid: str = "0002") -> list[str]:
+    """Non-empty lines of one language lane of a block, up to its '---' rule."""
+    text = path.read_text(encoding="utf-8")
+    m = re.search(rf"^##\s+{bid}\s*$", text, re.M)
+    if not m:
+        raise ValueError(f"{path.name}: block {bid} not found")
+    rest = text[m.end():]
+    nxt = re.search(r"^##\s+\S+\s*$", rest, re.M)
+    seg = re.sub(r"<!--.*?-->", "", rest[:nxt.start()] if nxt else rest, flags=re.S)
+    lane = re.search(rf"^\*\*{re.escape(tag)}\*\*\s*$(.*?)(?=^\*\*[A-Za-z-]+\*\*\s*$|\Z)",
+                     seg, re.M | re.S)
+    if not lane:
+        raise ValueError(f"{path.name}: no {tag} lane in block {bid}")
+    body = lane.group(1).split("\n---", 1)[0]
+    return [l.strip() for l in body.splitlines() if l.strip() and l.strip() != "{blank}"]
+
+
+def _terms(code: str, path: Path | None = None) -> str:
+    """The download terms in the edition's own words (see above)."""
+    lines = _lane_lines(path or BOOK_LANGS / code / "00_Title_Info.md", code)
+    screen = [l[len("{screen}"):].strip() for l in lines
+              if l.startswith("{screen}") and not l.startswith("{screen}>")]
+    if not screen:
+        raise ValueError(f"{code}: no sharing sentence in 00_Title_Info.md block 0002")
+    plain = [re.sub(r"^\{screen\}", "", l).strip() for l in lines
+             if not l.startswith(("{print}", "{screen}>"))]
+    rights = next((l for l in plain if "arasteh.art" in l), None)
+    if rights is None and code == "FA":
+        # Persian keeps the author's own wording: his sharing paragraph itself says the
+        # whole may travel freely and parts only with the work's name and source.
+        p = screen[0]
+        cut = min((i for i in (p.find(ch) for ch in TERMS_ENDS) if i > 0), default=-1)
+        return p[cut + 1:].strip() if cut > 0 else p
+    if rights is None:      # an edition without the excerpt sentence yet (GU is held)
+        return screen[0]
+    i = rights.find("arasteh.art")
+    k = i + len("arasteh.art")
+    if code in TERMS_SENTENCE_START:
+        s, j = rights.rfind(TERMS_SENTENCE_START[code], 0, i), k
+    else:
+        s = max(rights.rfind(ch, 0, i) for ch in TERMS_ENDS) + 1
+        after = [e for e in (rights.find(ch, k) for ch in TERMS_ENDS) if e >= 0]
+        j = min(after) + 1 if after else k
+    if s < 0:
+        raise ValueError(f"{code}: excerpt sentence not found")
+    gap = "" if screen[0][-1:] in "。！？" else " "     # CJK: no space
+    return f"{screen[0]}{gap}{rights[s:j].strip()}"
+
+
+MASTER_OPENING = BOOK_VOL / "00_source_md" / "00_Opening.md"
+
+
+def _own_words(code: str) -> tuple[str, str]:
+    """(the edition's own book title, its own word for the Opening) from the book
+    repo -- the core three from the master lanes -- or ("", "") if either is missing."""
+    try:
+        if code in ("EN", "FA", "DA"):
+            title = _lane_lines(MASTER_TITLE_INFO, code, "0001")[0]
+            opening = _lane_lines(MASTER_OPENING, code, "0006")[0]
+        else:
+            title = _title(code)
+            opening = _block((BOOK_LANGS / code / "00_Opening.md").read_text(encoding="utf-8"),
+                             "0006", code, "00_Opening.md")
+        return title.strip(), opening.strip()
+    except (OSError, ValueError, IndexError) as exc:
+        print(f"[warn]  {code}: no own title/opening word ({exc})")
+        return "", ""
+
+
+def _terms_html(code: str, lang: str, dir_attr: str, path: Path | None = None) -> str:
+    """The terms paragraph, or "" (with a note) if the source cannot supply it."""
+    try:
+        t = _terms(code, path)
+    except (OSError, ValueError) as exc:
+        print(f"[warn]  {code}: no download terms ({exc})")
+        return ""
+    if not t:
+        return ""
+    return (f'    <p class="muted-note dl-terms" lang="{lang}"{dir_attr}>'
+            f'{html.escape(t, quote=False)}</p>\n')
+
+
+# A language whose translation has questions waiting for a native speaker
+# (data/native_check/<slug>.json, pages by build_check_pages.py) gets one quiet
+# English line at the foot of its Opening. No data file, no line.
+NATIVE_CHECK_DATA = SITE / "data" / "native_check"
+
+
+def native_check_link(slug: str) -> str:
+    """The invitation line for /sedaha/check/<slug>/, or "" when there is no check.
+    The link carries its own lang/dir, so on a right-to-left page it sits where
+    that page's lines start and its arrow still follows the English words."""
+    if not (NATIVE_CHECK_DATA / f"{slug}.json").is_file():
+        return ""
+    return (f'    <p class="native-check-link"><a href="/sedaha/check/{slug}/" lang="en" '
+            f'dir="ltr">Native speaker? Help check this translation &rarr;</a></p>\n')
 
 
 READ_INDEX_URL = "https://arasteh.art/sedaha/read/"
@@ -836,7 +1049,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
             f'aria-label="{row["en"]}: the complete book, {f.upper()}'
             f'{", " + row["size"][f] if row["size"].get(f, "0 MB") != "0 MB" else ""}">'
             f'<span lang="{L["lang"]}"{dir_attr}>{html.escape(title, quote=False)}</span>'
-            f'<span class="btn-fmt" lang="en">{f.upper()}'
+            f'<span class="btn-fmt" lang="en" dir="ltr">{f.upper()}'
             f'{" &middot; " + row["size"][f] if row["size"].get(f, "0 MB") != "0 MB" else ""}'
             f'</span></a>' for f in row["fmts"])
     else:
@@ -848,7 +1061,12 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
     # It was English on every page; the edition's own "thread of words" line already
     # exists in its own words, so use that and let the English name of the language
     # follow it for the crawler's sake.
-    meta_desc = f"{L['og_desc']} — {_title(L['code'])}, {L['en']}. Amir Arasteh."
+    # 2026-11-13: no English word on a page that is not English -- the edition's own
+    # title, in the brackets its share card uses, and the author's name as the
+    # edition's title page writes it ("…— «Klänge» · Amir Arasteh" / "«Звуки» · Амир
+    # Арасте"). A middle dot and no closing stop: a Latin comma and full stop read
+    # wrong in Chinese, Japanese, Arabic, Devanagari and Thai, and "·" reads in all.
+    meta_desc = f"{L['og_desc']} — {_quoted_title(L)} · {_author_own(L['code'])}"
     body = "\n".join(f"    <p>{html.escape(p, quote=False)}</p>" for p in paras)
     return f"""<!DOCTYPE html>
 <!-- GENERATED by build_read_pages.py from the book repo's {L['code']} edition. Do not edit by hand:
@@ -879,17 +1097,17 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-180.png">
-{HEAD}
+{head_html(L['lang'])}
 </head>
 <body class="book">
 <a class="skip-link" href="#main" lang="en">Skip to content</a>
 {NAV}
-<main class="container" id="main">
-  <a class="back" href="/sedaha/">&larr; {own}</a>
+<main class="container" id="main"{dir_attr}>
+  <a class="back" href="/sedaha/">{'&rarr;' if L['rtl'] else '&larr;'} {own}</a>
 
 {op_langs_html(L['slug'] + '/', L['lang'], L['native'])}
   <div class="op-bar">
-{top_actions_html(row, url, L['og_desc'], L['en'])}
+{top_actions_html(row, url, L['og_desc'], L['en'], L['rtl'])}
 {READER_TOOLS}
   </div>
   <article class="reader" lang="{L['lang']}"{dir_attr}>
@@ -901,9 +1119,9 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
   <div class="read-cta">
 {cta_p}    <div class="btns">
 {buttons}
-      <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="{url}" data-share-title="Sedaha &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
+      <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="{url}" data-share-title="Sedaha (Sounds) &mdash; Book One" data-share-text="{_esc(L['og_desc'])}"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
-    <a class="read-back" href="/sedaha/">{own} &rarr;</a>
+{_terms_html(L['code'], L['lang'], dir_attr)}{native_check_link(L['slug'])}    <a class="read-back" href="/sedaha/">{own} {'&larr;' if L['rtl'] else '&rarr;'}</a>
   </div>
 </main>
 
@@ -971,7 +1189,7 @@ FMT_WHAT = {"epub": "Fits any screen", "pdf": "Keeps the printed page"}
 # Hebrew note above, where remaining on the release is exactly what was wanted. For
 # Serbian it is not: the release assets have to be removed separately, or the book
 # stays one guessable URL away.
-HIDDEN_SLUGS = {"he", "sr"}
+HIDDEN_SLUGS = set()  # 2026-11-16: author: show every ready edition (HE, SR un-hidden)
 
 
 def shown(rows: list[dict]) -> list[dict]:
@@ -1086,7 +1304,8 @@ def status_rows() -> list[dict]:
             state = "review"
         else:
             state = "translated"
-        rows.append({"native": L["native"], "en": L["en"], "lang": L["lang"], "rtl": L.get("rtl", False),
+        rows.append({"code": L["code"],
+                     "native": L["native"], "en": L["en"], "lang": L["lang"], "rtl": L.get("rtl", False),
                      "url": L["url"], "state": state, "stem": f"Sedaha_{name}" if name else None,
                      "slug": L["url"].rstrip("/").rsplit("/", 1)[-1] if L["url"] != "/sedaha/read/" else "en",
                      "share": L.get("share") or L.get("og_desc", ""),
@@ -1164,7 +1383,7 @@ def render_status(rows: list[dict], total: int | None = None) -> str:
             f'<button type="button" class="lnk-share btn-share" '
             f'aria-label="Share the {r["en"]} opening" title="Share the {r["en"]} opening" '
             f'data-share-url="https://arasteh.art{r["url"]}" '
-            f'data-share-title="Sedaha &mdash; Book One">'
+            f'data-share-title="Sedaha (Sounds) &mdash; Book One">'
             f'<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2v13"/>'
             f'<path d="m16 6-4-4-4 4"/>'
             f'<path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>')
@@ -1437,18 +1656,19 @@ def patch_feed(check: bool, rows: list[dict]) -> bool:
 
 EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 
-# Four editorially fixed quick starts, then a fifth the visitor's browser may
-# replace (assets/js/finder.js). Slugs only: every label, URL, direction and the
-# availability itself come from the edition record, so a language cannot appear
-# here unless its complete edition is actually on the release.
-QUICK_SLUGS = ["fa", "en", "ar", "es", "de", "fr", "hi", "ja"]
+# The quick starts are the three editions the book was published in (author
+# 2026-11-13, site clean-up: one way to choose, not six). The visitor's OWN language
+# gets its own large button above them (assets/js/lang-mine.js), so no slot here is
+# swapped by the browser any more. Slugs only: every label, URL and direction come
+# from the edition record. (Before: eight fixed + a fifth-slot swap, 2026-07-28.)
+QUICK_SLUGS = ["fa", "en", "da"]
 # A configured quick start appears whether or not its complete edition is out yet:
 # the author's call, 2026-07-28, for Hindi. Clicking it is still honest — the panel
 # behind it says the edition is in preparation and offers the whole book in the
 # three it was published in. The language the BROWSER swaps in is still required to
 # be complete (finder.js): a choice made for someone should be the safe one.
 QUICK_ALLOW_INCOMPLETE = True
-QUICK_FALLBACK = "zh"
+QUICK_FALLBACK = None
 # The heading reads into the row: "Pick up the thread in  فارسی  English  …", which
 # is the book's own image for what a reader does — the author unwinds the thread of
 # words from his side, the reader gathers it from the other. NOT "most read": this
@@ -1466,7 +1686,7 @@ def quick_starts_html(rows: list[dict]) -> str:
     scripting; the fifth is swapped in the browser when it can be."""
     by_slug = {r["slug"]: r for r in rows}
     picked, missing, waiting = [], [], []
-    for slug in QUICK_SLUGS + [QUICK_FALLBACK]:
+    for slug in QUICK_SLUGS + ([QUICK_FALLBACK] if QUICK_FALLBACK else []):
         r = by_slug.get(slug)
         if r is None:                       # not a language this site carries at all
             missing.append(slug)
@@ -1493,9 +1713,10 @@ def quick_starts_html(rows: list[dict]) -> str:
                 else f'<span class="visually-hidden"> — {html.escape(r["en"])}</span>')
         links.append(f'        <a class="lang-box" href="{r["url"]}" lang="{r["lang"]}"{rtl} '
                      f'data-slug="{r["slug"]}">{html.escape(r["native"])}{also}</a>')
+    fallback = f' data-fallback="{QUICK_FALLBACK}"' if QUICK_FALLBACK else ""
     return (f'      <h2 class="quick-heading" id="quick-heading">{QUICK_HEADING}</h2>\n'
-            f'      <nav class="quick-row" aria-labelledby="quick-heading" '
-            f'data-fallback="{QUICK_FALLBACK}">\n' + "\n".join(links) + "\n      </nav>")
+            f'      <nav class="quick-row" aria-labelledby="quick-heading"{fallback}>\n'
+            + "\n".join(links) + "\n      </nav>")
 
 
 def all_languages_html(rows: list[dict]) -> str:
@@ -1557,6 +1778,11 @@ def editions_js(rows: list[dict]) -> str:
         files = [[f, r["size"].get(f, ""), f"{RELEASE_URL}/{r['stem']}.{f}"] for f in r["fmts"]]
         entry = {"slug": r["slug"], "native": r["native"], "en": r["en"],
                  "lang": r["lang"], "url": r["url"], "state": r["state"]}
+        # the edition's own title and its own word for the Opening, for the
+        # your-language button (assets/js/lang-mine.js): «Klänge · Auftakt →»
+        title, opening = _own_words(r["code"])
+        if title and opening:
+            entry["title"], entry["opening"] = title, opening
         if r["rtl"]:
             entry["rtl"] = 1
         if files:
@@ -1628,6 +1854,12 @@ def availability(rows: list[dict], total: int | None = None) -> dict[str, str]:
         "long": f"The opening in {total} languages. {editions[0].upper()}{editions[1:]}.",
         # the short one, for cards and share previews
         "short": f"The opening in {total} languages &middot; {editions}",
+        # the share-preview + search descriptions (author 2026-11-13): one number, the
+        # languages the WHOLE book is in, said as a sentence
+        "book": (f"A novel by Amir Arasteh, written in Persian, with his paintings. "
+                 f"Free in {n} languages."),
+        "home": (f"The novel Sedaha (Sounds), free to read in {n} languages, "
+                 f"and the paintings that belong to it."),
         # the quiet one, for the doorway. Now says what the reader can actually get
         # -- the whole book -- instead of leading with the Opening count, which read
         # as a hedge. Derived from n, so it states the true number until there really
@@ -1646,20 +1878,19 @@ def patch_availability(check: bool, rows: list[dict], total: int | None = None) 
     anchor, and a target that stops matching is reported rather than skipped: a silent
     miss here is precisely the failure this function exists to prevent."""
     A = availability(rows, total)
-    plain = A["long"]
+    # The preview wording (author 2026-11-13): one number -- the languages the WHOLE
+    # book is in -- said as a sentence, where it used to list 114 openings and N
+    # complete editions "to download, more on the way".
+    book, home = A["book"], A["home"]
     targets = [
-        (SOUNDS, r'(<meta name="description" content=")[^"]*(">)',
-         f'Sedaha (Sounds), Book 1 by Amir Arasteh. {plain} Free.'),
-        (SOUNDS, r'(<meta property="og:description" content=")[^"]*(">)',
-         f'By Amir Arasteh. {plain} Free.'),
+        (SOUNDS, r'(<meta name="description" content=")[^"]*(">)', book),
+        (SOUNDS, r'(<meta property="og:description" content=")[^"]*(">)', book),
         # The book page itself no longer carries a sentence: it says the quiet line
         # (patch_meter) and nothing else. The full sentence survives where it does
         # work a visitor never sees, in the two descriptions a search engine and a
         # shared link read.
-        (SITE / "index.html", r'(<meta name="description" content=")[^"]*(">)',
-         f'Paintings, and Sedaha (Sounds). {plain} Free.'),
-        (SITE / "index.html", r'(<meta property="og:description" content=")[^"]*(">)',
-         f'Paintings, and Sedaha (Sounds). {plain} Free.'),
+        (SITE / "index.html", r'(<meta name="description" content=")[^"]*(">)', home),
+        (SITE / "index.html", r'(<meta property="og:description" content=")[^"]*(">)', home),
         # what a search engine is told the book exists in: it said four while the
         # page said twenty-three. Derived, so the two cannot part company again.
         (SOUNDS, r'("inLanguage": )\[[^\]]*\](,)',
@@ -1699,28 +1930,21 @@ def patch_availability(check: bool, rows: list[dict], total: int | None = None) 
 
 
 def patch_meter(check: bool, rows: list[dict], total: int | None = None) -> bool:
-    """Keep /sedaha/'s hero count honest: the ready count comes from the release,
-    the same source the status page uses, so the number cannot quietly go stale.
-
-    It used to be a 3.5%-full progress bar reading "4 of 114 editions complete",
-    directly under the Read button. True, but it argued against the book at the
-    moment of deciding: what a visitor saw first was 96% unfinished. The same two
-    numbers, said as what exists rather than what is missing."""
-    ready = sum(1 for r in rows if r["state"] == "ready")
-    total = len(rows) if total is None else total
+    """The hero count is RETIRED (author 2026-11-13, site clean-up): the page said
+    "over 100" in the hero, 105 in the list and 114 on the reading pages. The one
+    number left is the list's own "The whole book, in N languages", and the reading
+    pages' strip says the same N. This now only makes sure the old line is gone."""
     body = SOUNDS.read_text(encoding="utf-8")
-    note = f'<p class="progress-note">{availability_phrase(ready)}</p>'
-    # a lambda, so nothing in the replacement text is read as a backreference
-    new = re.sub(r'<p class="progress-note">.*?</p>', lambda _m: note,
-                 body, count=1, flags=re.S)
+    new = re.sub(r'\n[ \t]*(?:<!-- the count is stamped[^\n]*-->\n[ \t]*)?'
+                 r'<p class="progress-note">.*?</p>', "", body, count=1, flags=re.S)
     if new == body:
-        print(f"[ok]    /sedaha/ meter: {ready} of {total}")
+        print("[ok]    /sedaha/ hero count: retired")
         return True
     if check:
-        print(f"[drift] /sedaha/ meter: should read {ready} of {total}")
+        print("[drift] /sedaha/ hero count: the retired line is back")
         return False
     SOUNDS.write_text(new, encoding="utf-8", newline="\n")
-    print(f"[write] /sedaha/ meter: {ready} of {total}")
+    print("[write] /sedaha/ hero count removed (retired)")
     return True
 
 
@@ -1875,6 +2099,83 @@ def patch_frontispieces(check: bool, paths: list[Path]) -> bool:
     return ok
 
 
+# The three hand-written Opening pages take their terms line from the core
+# 00_Title_Info.md lanes, stamped here so it cannot drift from the book.
+HAND_TERMS = [("sedaha/read/index.html", "EN", "en", ""),
+              ("sedaha/read/fa/index.html", "FA", "fa", ' dir="rtl"'),
+              ("sedaha/read/da/index.html", "DA", "da", "")]
+
+
+def patch_hand_terms(check: bool) -> bool:
+    """Put (or refresh) the download-terms line under the hand-written pages' buttons."""
+    ok = True
+    for rel, tag, lang, dir_attr in HAND_TERMS:
+        path = SITE / rel
+        body = path.read_text(encoding="utf-8")
+        line = _terms_html(tag, lang, dir_attr, MASTER_TITLE_INFO)
+        if not line:
+            ok = False
+            continue
+        new = re.sub(
+            r'(<div class="read-cta">.*?<div class="btns">.*?\n    </div>\n)'
+            r'(    <p class="muted-note dl-terms"[^\n]*</p>\n)?',
+            lambda m: m.group(1) + line, body, count=1, flags=re.S)
+        if new == body:
+            continue
+        if check:
+            print(f"[drift] {rel}: download terms missing or out of date")
+            ok = False
+            continue
+        path.write_text(new, encoding="utf-8", newline="\n")
+        print(f"[write] {rel}  (download terms from 00_Title_Info.md)")
+    if ok and not check:
+        print("[ok]    hand-written pages: download terms current")
+    return ok
+
+
+def patch_hand_strip(check: bool) -> bool:
+    """The hand-written Opening pages carry the generator's language strip (check.py
+    compares them); stamp it, so its count follows the release like everywhere else."""
+    ok = True
+    for rel, slug in zip(HAND_PAGES, ("", "fa/", "da/")):
+        path = SITE / rel
+        body = path.read_text(encoding="utf-8")
+        new = re.sub(r'  <nav class="op-langs".*?</nav>', lambda _m: op_langs_html(slug),
+                     body, count=1, flags=re.S)
+        if new == body:
+            continue
+        if check:
+            print(f"[drift] {rel}: language strip out of date")
+            ok = False
+            continue
+        path.write_text(new, encoding="utf-8", newline="\n")
+        print(f"[write] {rel}  (language strip)")
+    return ok
+
+
+def patch_hand_check_link(check: bool) -> bool:
+    """The native-check line on the hand-written Opening pages: present, just above
+    the way back to the book, exactly when data/native_check/<slug>.json exists."""
+    ok = True
+    for rel, slug in zip(HAND_PAGES, ("en", "fa", "da")):
+        path = SITE / rel
+        body = path.read_text(encoding="utf-8")
+        new = re.sub(r'    <p class="native-check-link">[^\n]*</p>\n', "", body)
+        line = native_check_link(slug)
+        if line:
+            new = re.sub(r'(<div class="read-cta">.*?)(    <a class="read-back")',
+                         lambda m: m.group(1) + line + m.group(2), new, count=1, flags=re.S)
+        if new == body:
+            continue
+        if check:
+            print(f"[drift] {rel}: native-check line missing or stale")
+            ok = False
+            continue
+        path.write_text(new, encoding="utf-8", newline="\n")
+        print(f"[write] {rel}  (native-check line)")
+    return ok
+
+
 def patch_hand_sizes(check: bool, rows: list[dict]) -> bool:
     """Stamp file sizes into the three hand-written Opening pages' buttons.
 
@@ -1973,6 +2274,8 @@ def main() -> int:
     by_slug = {r["slug"]: r for r in rows}
     # how many complete editions exist, for the row of buttons on each Opening
     n_complete = len(complete_rows(shown(rows)))
+    global N_COMPLETE
+    N_COMPLETE = n_complete          # the strip's number on every Opening page
 
     ok = True
     for L in LANGS:
@@ -2019,6 +2322,9 @@ def main() -> int:
     ok &= patch_feed(args.check, site)
     ok &= patch_frontispieces(args.check, [SITE / rel for rel in HAND_PAGES])
     ok &= patch_hand_sizes(args.check, site)
+    ok &= patch_hand_terms(args.check)
+    ok &= patch_hand_strip(args.check)
+    ok &= patch_hand_check_link(args.check)
     ok &= patch_sitemap(args.check)
     ok &= patch_sitemap_images(args.check)
     if not args.check:

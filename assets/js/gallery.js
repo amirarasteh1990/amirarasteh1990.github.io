@@ -3,7 +3,9 @@
    touch screens, or a tap on the painting itself move between works.
    Each painting also has its own address (/paintings/sounds/#picture-4), so a
    single work can be linked to and shared, and the share button hands that
-   address to the system share sheet through share.js. */
+   address to the system share sheet through share.js. The download control
+   offers the painting's data-download: its badged 3000 px copy, a release asset
+   on GitHub, so each download is counted (make_painting_downloads.py). */
 (function () {
   'use strict';
 
@@ -24,8 +26,18 @@
   var previousButton = document.getElementById('lightboxPrev');
   var nextButton = document.getElementById('lightboxNext');
   var shareButton = document.getElementById('lightboxShare');
+  var downloadLink = document.getElementById('lightboxDownload');
   var current = 0;
   var trigger;
+  // the series this page shows, for the share title (it said "Sedaha (Sounds)" on
+  // every gallery); the page states it on its .gallery
+  var series = gallery.getAttribute('data-series') || 'Sedaha (Sounds)';
+  var loadToken = 0;
+  var themeMeta = document.querySelector('meta[name="theme-color"]:not([media])');
+  // A right-to-left page hangs its paintings right to left (style.css, .gallery), so
+  // there the next painting is to the left: arrow keys and swipes follow the wall.
+  var rtl = window.getComputedStyle(gallery).direction === 'rtl';
+  var themeBefore = themeMeta ? themeMeta.content : '';
 
   // A painting's address comes from its caption, so links stay readable and
   // survive a file being renamed: "Picture 4" -> #picture-4, the cover -> #cover.
@@ -53,9 +65,29 @@
     current = (index + shots.length) % shots.length;
     var shot = shots[current];
     var thumbnail = shot.querySelector('img');
+    // The thumbnail the reader tapped is already downloaded: show it at once, then
+    // swap in the full painting in the same format the page is showing (review
+    // 2026-11-14 -- on a slow line the viewer sat dark for seconds, and the JPG
+    // neighbours it prefetched were never shown, since the browser uses WebP).
+    var thumbSrc = thumbnail.currentSrc || thumbnail.src;
+    var useWebp = /\.webp(\?|$)/i.test(thumbSrc);
+    var full = useWebp ? shot.href.replace(/\.jpg$/i, '.webp') : shot.href;
+    var token = ++loadToken;
+    if (source) source.removeAttribute('srcset');
+    image.src = thumbSrc;
     image.classList.add('is-loading');
-    if (source) source.srcset = shot.href.replace(/\.jpg$/i, '.webp');
-    image.src = shot.href;
+    var loader = new Image();
+    loader.onload = function () {
+      if (token !== loadToken) return;
+      image.src = full;
+      image.classList.remove('is-loading');
+      preload(current + 1, useWebp);
+      preload(current - 1, useWebp);
+    };
+    loader.onerror = function () {
+      if (token === loadToken) image.classList.remove('is-loading');
+    };
+    loader.src = full;
     image.alt = thumbnail.alt;
     caption.textContent = shot.getAttribute('data-caption') || thumbnail.alt;
     if (counter) counter.textContent = (current + 1) + ' / ' + shots.length;
@@ -64,25 +96,31 @@
       shareButton.setAttribute('data-share-url',
         location.origin + location.pathname + '#' + slugs[current]);
       shareButton.setAttribute('data-share-title',
-        caption.textContent + ' — Sedaha (Sounds), Amir Arasteh');
+        caption.textContent + ' \u2014 ' + series + ', Amir Arasteh');
     }
-    preload(current + 1);
-    preload(current - 1);
+    // A painting without a download keeps the control hidden rather than dead.
+    if (downloadLink) {
+      var file = shot.getAttribute('data-download');
+      if (file) downloadLink.href = file;
+      else downloadLink.removeAttribute('href');
+      downloadLink.hidden = !file;
+    }
   }
 
-  // The neighbours are fetched ahead so arrows/swipes feel instant.
-  function preload(index) {
+  // The neighbours are fetched ahead so arrows/swipes feel instant -- after the
+  // painting being looked at has arrived, and in the format that will be shown.
+  function preload(index, webp) {
     var href = shots[(index + shots.length) % shots.length].href;
     var img = new Image();
-    img.src = href;
+    img.src = webp ? href.replace(/\.jpg$/i, '.webp') : href;
   }
-
-  image.addEventListener('load', function () { image.classList.remove('is-loading'); });
 
   function open(index, openedBy) {
     trigger = openedBy;
     show(index);
     dialog.showModal();
+    // the phone's status bar goes dark with the viewer, not cream above it
+    if (themeMeta) themeMeta.content = '#14120f';
     closeButton.focus();
   }
 
@@ -118,7 +156,7 @@
     var dx = touch.clientX - startX;
     var dy = touch.clientY - startY;
     if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
-      show(dx < 0 ? current + 1 : current - 1);
+      show((dx < 0) !== rtl ? current + 1 : current - 1);
     }
     startX = null;
   }, { passive: true });
@@ -126,10 +164,10 @@
   dialog.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowLeft') {
       event.preventDefault();
-      show(current - 1);
+      show(rtl ? current + 1 : current - 1);
     } else if (event.key === 'ArrowRight') {
       event.preventDefault();
-      show(current + 1);
+      show(rtl ? current - 1 : current + 1);
     } else if (event.key === 'Home') {
       event.preventDefault();
       show(0);
@@ -140,6 +178,8 @@
   });
 
   dialog.addEventListener('close', function () {
+    loadToken++;
+    if (themeMeta) themeMeta.content = themeBefore;
     image.removeAttribute('src');
     if (source) source.removeAttribute('srcset');
     setUrl('');

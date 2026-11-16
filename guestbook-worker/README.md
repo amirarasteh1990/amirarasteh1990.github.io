@@ -5,6 +5,19 @@ flow. It validates and rate-limits a note, creates a public issue in the website
 repository, and returns the canonical entry to the page immediately. The existing
 GitHub workflow then writes the permanent JSON entry and rebuilds GitHub Pages.
 
+It also serves the native-speaker check pages (`/sedaha/check/<slug>/`, written by
+`build_check_pages.py`). `POST /check` takes
+`{lang, page_version, name?, items: [{id, verdict: "ok"|"change", note?}]}`
+(1 to 40 answers, name up to 60 and notes up to 600 characters), with the same
+origin check, rate limiter and validation, and opens one issue titled
+`Native check: <Language> (<n> answers)`, labelled `native-check`, whose body
+starts with `<!-- native-check:v1 -->`. It never carries the guestbook marker or
+labels, so `publish-guestbook.yml` ignores it (`npm test` reads that workflow's
+conditions to prove it). The issue is opened with Amir's own token, and GitHub
+does not notify anyone of their own actions: find the answers under the
+`native-check` label. **The route exists only after a redeploy:** run `npm test`, then `npm run deploy`.
+Until then the check pages fall back to a prefilled email.
+
 The browser never receives a GitHub credential. The Worker token needs only
 **Issues: read and write** on `amirarasteh1990/amirarasteh1990.github.io`. It must
 not receive Contents, Actions, Administration, or account-wide repository access.

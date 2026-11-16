@@ -277,7 +277,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
     url(/assets/img/opening-mark.jpg) type("image/jpeg"))}
 }
 /* shared lead paragraph under a page h1 */
-.lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control)}
+.lead{font-size:1.06rem;color:#3a322a;max-width:640px;margin:0 0 var(--flow-control);
+  hyphens:auto;-webkit-hyphens:auto}
 /* Book text and the site's longer prose use an even edge on both sides. Auto
    lets the browser choose the right spacing method for Latin, RTL and CJK text;
    short labels, captions and controls keep their natural alignment. */
@@ -313,7 +314,8 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .finder-panel{max-width:640px;margin:var(--flow-panel) auto 0}
 .finder-panel .section-title{font-size:1.15rem;letter-spacing:.02em;line-height:1.25;
   margin:0 0 var(--flow-control)}
-.finder-panel .language-finder{position:static;margin:0;padding:0}
+.finder-panel .language-finder{position:static;margin:0;padding:0;
+  background:none;backdrop-filter:none;-webkit-backdrop-filter:none}
 .doorway-links{margin:var(--flow-section) 0 0;color:var(--muted);font-size:.94rem;text-align:center}
 .doorway-links a{font-weight:600}
 /* one raised surface on the page, and it is the visitor's own answer */
@@ -346,7 +348,14 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .quick-row .lang-box,.all-row .lang-box{flex:0 0 112px;inline-size:112px;min-inline-size:0;
   min-block-size:60px;display:inline-flex;align-items:center;justify-content:center;
   padding:8px 10px;text-align:center;line-height:1.12;white-space:normal;
-  overflow-wrap:anywhere;text-wrap:balance;unicode-bidi:isolate}
+  overflow-wrap:normal;text-wrap:balance;unicode-bidi:isolate}
+/* 360-420px phones: three 112px boxes and their gaps came to 356px against 354px of
+   room, so the quick starts wrapped 2+1 and the list fell to two columns (review
+   2026-11-14). A touch narrower there keeps three across. */
+@media (max-width:420px){
+  .quick-row,.all-row{gap:8px}
+  .quick-row .lang-box,.all-row .lang-box{flex-basis:100px;inline-size:100px}
+}
 /* Each one is a small door with the painting on it — the painting alone, not the
    cover: a hundred chips each wearing a miniature book jacket read as clutter. The
    painting stands upright, so sync_gallery.py derives it laid down
@@ -358,9 +367,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   display:inline-flex;align-items:center;justify-content:center;
   min-height:54px;padding:10px 20px;
   border:1px solid rgba(0,0,0,.18);border-radius:10px;
-  background-image:url(/assets/img/book-painting-band.jpg);
+  background-color:#3b2a20;background-image:url(/assets/img/book-painting-band.jpg);
   background-size:cover;background-position:center;
-  font-family:var(--serif);font-size:1.18rem;color:#fdf8ee;text-decoration:none;
+  font-family:"EB Garamond","Sedaha Names","Vazirmatn",Georgia,serif;
+  font-size:1.18rem;color:#fdf8ee;text-decoration:none;
   text-shadow:0 1px 3px rgba(0,0,0,.65);
   box-shadow:0 1px 3px rgba(0,0,0,.18);
   transition:transform .15s ease,box-shadow .15s ease}
@@ -448,7 +458,7 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .btn-icon{width:44px;padding:0;flex:none}
 .btn-icon svg,.btn svg{width:18px;height:18px;flex:none;stroke:currentColor}
 /* the file format beside a language name, quiet enough not to compete with it */
-.btn-fmt{font-size:.72rem;font-weight:600;letter-spacing:.04em;opacity:.72}.dl-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
+.btn-fmt{font-size:.72rem;font-weight:400;letter-spacing:.04em}.dl-list .name{display:flex;align-items:baseline;gap:7px;min-width:0;flex-wrap:wrap}
 .dl-list .native{font-weight:600;color:#2b6b3a}
 .dl-list .en{color:#625a50;font-size:.76rem}
 .dl-list .mini{white-space:nowrap;flex:none;display:flex;gap:9px}
@@ -557,6 +567,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   font-size:1.12rem;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
 .guestbook-message::before{content:"\201C";margin-inline-end:3px;color:var(--accent);font-size:1.35em;line-height:0}
 [dir="rtl"]>.guestbook-message::before{content:"\201D"}
+/* dir="auto" cards: kept as a separate rule, so a browser without :dir() drops only this */
+.guestbook-message:dir(rtl)::before{content:"\201D"}
+.guestbook-message,.guestbook-card-meta cite,.guestbook-field textarea{
+  font-family:"EB Garamond","Vazirmatn",Georgia,serif}
 .guestbook-card-meta{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
   margin-top:17px;padding-top:12px;border-top:1px solid var(--line);font-size:.78rem}
 .guestbook-card-meta cite{color:var(--ink);font-family:var(--serif);font-size:1rem;font-style:normal;font-weight:600}
@@ -578,6 +592,27 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
   .guestbook-archive-head,.guestbook-card-meta{align-items:flex-start;flex-direction:column}
   .guestbook-card-details{text-align:start}
 }
+/* == native-speaker check pages (/sedaha/check/<slug>/, build_check_pages.py) ==
+   The guestbook's form pieces again. Each line is a small leaf: the sentence in
+   the reading pages' own type (.reader p, in its language and direction), the
+   question, two choices and a note. Variables only, so dark mode follows. */
+.nc-form,.nc-fallback,.nc-thanks{max-width:760px;margin:var(--flow-related) auto 0}
+.nc-item{min-width:0;margin:0 0 var(--flow-related);padding:14px 20px 2px;
+  border:1px solid var(--line);border-radius:9px;background:var(--surface)}
+.nc-item legend{padding:0 6px;color:var(--muted);font-size:.78rem;letter-spacing:.04em}
+.nc-item .reader{max-width:none}
+.nc-item .reader p{margin:0 0 10px}
+.nc-q{margin:0 0 4px;font-weight:600}
+.nc-q bdi{font-weight:400}
+.nc-verdict{display:flex;flex-wrap:wrap;gap:0 22px;margin:0 0 6px}
+.nc-verdict label{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.nc-verdict input{width:20px;height:20px;margin:0;accent-color:var(--accent)}
+.nc-item .guestbook-field textarea{min-height:64px}
+.nc-optional{color:var(--muted);font-weight:400;font-size:.85em}
+.nc-copy{width:100%;min-height:140px;padding:10px 12px;border:1px solid var(--line);
+  border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+/* the one English line on an Opening page that has a check waiting */
+.read-cta p.native-check-link{margin:var(--flow-control) 0 0;font-size:.85rem}
 
 @media (max-width:560px){
   .site-header{padding:44px 0 20px}
@@ -742,13 +777,16 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .opening-frontispiece{width:100%;margin:0 0 clamp(28px,4vw,36px)}
 .opening-frontispiece picture,.opening-frontispiece img{display:block;width:100%}
 .opening-frontispiece img{height:auto;max-width:100%;border:0;border-radius:0;box-shadow:none}
-.reader p{font-family:var(--serif);
+.reader p{font-family:var(--serif);hyphens:auto;-webkit-hyphens:auto;
   font-size:calc(1.18rem * var(--read-scale,1));line-height:1.9;color:#33302a;margin:0 0 1.2em}
 /* the Persian reader sets its own face and metrics (Vazirmatn runs larger than Garamond) */
-.reader p:lang(fa),.read-cta p:lang(fa){font-family:"Vazirmatn",Tahoma,sans-serif;
+.reader p:lang(fa),.read-cta p:lang(fa),
+.reader p:lang(ar),.reader p:lang(prs),.reader p:lang(glk),.reader p:lang(mzn),.reader p:lang(lrc),
+.read-cta p:lang(ar),.read-cta p:lang(prs){font-family:"Vazirmatn",Tahoma,sans-serif;
   font-size:1.06rem;line-height:2.05}
 /* only the reading text follows the reader's size; the invitation below it is chrome */
-.reader p:lang(fa){font-size:calc(1.06rem * var(--read-scale,1))}
+.reader p:lang(fa),.reader p:lang(ar),.reader p:lang(prs),.reader p:lang(glk),
+.reader p:lang(mzn),.reader p:lang(lrc){font-size:calc(1.06rem * var(--read-scale,1))}
 .read-cta{width:100%;max-width:var(--read-measure,34em);background:#fbf3ea;border:1px solid #ecdcc7;border-radius:8px;
   padding:20px 22px;margin:32px auto 0}
 .read-cta p{margin:0 0 14px;color:#5b4a38;line-height:1.6}
@@ -756,6 +794,9 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 /* one quiet line after the buttons: which format suits what, and where it comes
    from. English page only -- see the comment beside it in the markup. */
 .read-cta .dl-note{margin:12px 0 0;font-size:.85rem;color:var(--muted)}
+.read-cta p.dl-terms{margin:var(--flow-control) 0 0;font-size:.85rem;color:var(--muted)}
+.read-cta p.dl-terms:lang(fa){font-size:.88rem;line-height:1.95}
+.support-contact p{text-align:start}
 .read-back{display:inline-block;margin-top:18px;font-size:.92rem}/* the language strip: a globe, then the languages naming themselves. No English
    label, so it reads the same on a Khmer page as on this one. */
 .op-langs{max-width:var(--read-measure,34em);font-size:.92rem;color:var(--muted);
@@ -809,6 +850,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .rt-theme[data-mode="light"] .i-light,
 .rt-theme[data-mode="dark"] .i-dark{display:inline}
 @media (max-width:560px){.reader-tools{justify-content:center;margin-bottom:10px}}
+@media (max-width:580px){.rt-width{display:none}}
 
 /* == share button (native share sheet, clipboard fallback + toast) == */
 button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
@@ -937,6 +979,13 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   min-inline-size:135px;max-inline-size:220px;aspect-ratio:4/3;
   border:1px solid var(--line);border-radius:10px;background:var(--surface);
   box-shadow:var(--shadow);color:#fff;text-decoration:none}
+/* desktop: the three tiles fill the column under the heading rather than stopping
+   at 220px in a centred cluster (review 2026-11-14); phones unchanged */
+@media (min-width:761px){
+  .painting-collection{max-inline-size:calc((100% - 2 * var(--collection-gap)) / 3)}
+}
+/* a hyphenated name stays whole on the narrowest phones ("Yarn-Laden") */
+.painting-collection__title .nb{white-space:nowrap}
 @media (max-width:280px){
   /* narrower than two readable tiles: one column, full width */
   .painting-collection{flex-basis:100%;inline-size:100%;min-inline-size:0;
@@ -993,25 +1042,42 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
    Moved here verbatim from an inline <style> on the Sounds page, so the next
    gallery inherits it instead of copying it. Nothing here is shared with the
    collection tiles above: individual paintings keep their own proportions, are
-   never cropped to a common shape, and stay one column on a phone. A gallery is
-   for looking at; the index above is only for choosing. */
-.gallery{column-count:3;column-gap:12px;margin-top:16px}
-.gallery .shot{position:relative;display:block;margin:0 0 12px;break-inside:avoid;border-radius:8px;
-  overflow:hidden;box-shadow:var(--shadow);transition:transform .15s ease;background:#25211d}
+   never cropped to a common shape. A gallery is for looking at; the index above
+   is only for choosing.
+   Rows, not columns (author 2026-11-16): the paintings hang in series order, row by
+   row, from where the page's text starts -- the left on these pages, the right on
+   a right-to-left one -- and in the same order at every width. column-count read
+   down the first column before the second, so the order scrambled, and changed
+   with the window. Each painting is as wide as its own shape: --ar, its width over
+   its height, is stated on each .shot (sync_gallery.py writes it; check.py holds
+   it to the img's width and height), so the paintings in a row grow in proportion
+   and end at one height, uncropped. The ::after takes the last row's spare room,
+   so a short last row keeps its size instead of swelling across the page. On a
+   phone a row holds one painting, or two narrow ones. */
+.gallery{--row-h:230px;display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+/* grow is --ar x 100, not --ar: grow factors that add up to less than 1 share out
+   only that fraction of the spare room, so a portrait alone on a phone's row (0.74)
+   stopped short of the edge. x100 keeps the proportions and always fills the row. */
+.gallery::after{content:"";flex:100000 1 0}
+.gallery .shot{position:relative;display:block;flex-grow:calc(var(--ar,1) * 100);flex-shrink:1;
+  flex-basis:calc(var(--ar,1) * var(--row-h));
+  min-width:0;align-self:flex-start;border-radius:8px;
+  overflow:hidden;box-shadow:var(--shadow);transition:transform .15s ease;background:var(--line)}
 .gallery .shot:hover{transform:translateY(-2px)}
 .gallery img{width:100%;height:auto;display:block}
-.shot-label{position:absolute;left:8px;bottom:8px;padding:4px 8px;border-radius:4px;
+.shot-label{position:absolute;inset-inline-start:8px;bottom:8px;padding:4px 8px;border-radius:4px;
   background:rgba(24,21,18,.78);color:#fff;font-size:.72rem;line-height:1.3;
   box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .gallery-dialog{width:100vw;max-width:none;height:100vh;max-height:none;margin:0;padding:0;
   border:0;background:transparent;overflow:hidden}
 .gallery-dialog::backdrop{background:rgba(20,18,15,.94)}
-.lightbox-shell{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px}
+.lightbox-shell{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding:72px 80px 20px}
 .lb-figure{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
   justify-content:center;gap:10px;margin:0;max-width:100%;max-height:100%}
-.lb-figure img{max-width:92vw;max-height:86vh;object-fit:contain;border-radius:4px;
+.lb-figure img{max-width:calc(100vw - 160px);max-height:calc(100vh - 130px);object-fit:contain;border-radius:4px;
   box-shadow:0 12px 48px rgba(0,0,0,.55);transition:opacity .18s ease}
-.lb-figure img.is-loading{opacity:.35}
+.lb-figure img.is-loading{filter:blur(1px)}
 .lb-cap{pointer-events:none;margin:0;
   color:#f5efe3;font:italic .95rem/1.4 var(--serif);
   text-shadow:0 1px 6px rgba(0,0,0,.6)}
@@ -1020,19 +1086,25 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 .lb-control:hover{background:rgba(245,239,227,.16)}
 .lb-control:focus-visible{outline:2px solid #f5efe3;outline-offset:3px}
 .lb-control svg{width:22px;height:22px;stroke:currentColor}
-.lb-close{top:18px;right:18px}
-.lb-share{top:18px;left:18px}
-.lb-prev{left:18px;top:50%;transform:translateY(-50%)}
-.lb-next{right:18px;top:50%;transform:translateY(-50%)}
+/* close, share and download mirror on a right-to-left page, as the arrows do;
+   download sits beside share, away from close */
+.lb-close{top:18px;inset-inline-end:18px}
+.lb-share{top:18px;inset-inline-start:18px}
+.lb-download{top:18px;inset-inline-start:72px}
+.lb-control[hidden]{display:none}   /* author display rule outranks the UA's [hidden] */
+/* previous/next follow the gallery's direction: on a right-to-left page the next
+   painting is to the left, as it hangs (gallery.js swaps the arrow keys to match) */
+.lb-prev{inset-inline-start:18px;top:50%;transform:translateY(-50%)}
+.lb-next{inset-inline-end:18px;top:50%;transform:translateY(-50%)}
+[dir="rtl"] .lb-prev svg,[dir="rtl"] .lb-next svg{transform:scaleX(-1)}
 .lb-counter{position:absolute;top:22px;left:50%;transform:translateX(-50%);z-index:2;
   color:#f5efe3;font:600 .8rem/1 var(--serif);letter-spacing:.08em;
   background:rgba(20,18,15,.5);padding:6px 13px;border-radius:999px;
   font-variant-numeric:tabular-nums}
-@media(max-width:820px){.gallery{column-count:2}}
 @media(max-width:480px){
-  .gallery{column-count:1}
-  .lightbox-shell{padding:12px 8px 68px}
-  .lb-figure img{max-width:96vw;max-height:78vh}
+  .gallery{--row-h:200px}
+  .lightbox-shell{padding:72px 8px 68px}
+  .lb-figure img{max-width:96vw;max-height:calc(100vh - 180px)}
   .lb-prev,.lb-next{top:auto;bottom:12px;transform:none}
 }
 
@@ -1167,7 +1239,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 
   /* share toast + share button (ink var is light now, so set an explicit chip) */
   .share-toast{background:#2c251d;color:#f2e9d8}
-  .btn-share{background:rgba(217,155,109,.16)}
+  .btn-share,.lb-download{background:rgba(217,155,109,.16)}   /* the lightbox pair alike */
 
   /* back-to-top hover reads on the lighter accent */
   .to-top:hover{background:#e8ab7e}
@@ -1186,7 +1258,7 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
     padding-bottom:0;font-size:11pt}
   body.book .container,body.book .site-footer .container{background:none;border:none;
     box-shadow:none;padding:0;margin:0}
-  .appnav,.reader-tools,.skip-link,.to-top,.share-toast,.btn,.read-cta,.back,
+  .appnav,.reader-tools,.skip-link,.to-top,.share-toast,.btn,.read-cta,.back,.op-bar,.lang-mine,
   .op-langs,.language-finder,.region-chips,.lang-toggle,.foot-logo,.site-footer .foot-link,
   .cycler,.lang-offer,.dl-grid,.editions-featured{display:none!important}
   .container{max-width:none;padding:0}
@@ -1202,3 +1274,55 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
   h1,h2,h3{page-break-after:avoid;break-after:avoid}
   img{max-width:100%}
 }
+
+/* ---- site clean-up, 2026-11-13 ------------------------------------------------------
+   The visitor's own language, as one button in its own words (assets/js/lang-mine.js),
+   first on the home page and the book page. The home page leads with the book: cover,
+   title and one button; Paintings follow as a smaller row. */
+.lang-mine{display:flex;align-items:center;justify-content:center;gap:10px;
+  max-width:680px;margin:0 auto var(--flow-section)}
+/* An author display rule outranks the UA [hidden] rule: the guestbook tools
+   (display:grid) and every .btn (inline-flex) stayed visible while hidden, so the
+   EMPTY guestbook offered a search, filters and 'Read more notes' over nothing. */
+.lang-mine[hidden],.guestbook-archive-head[hidden],.guestbook-tools[hidden],.btn[hidden]{display:none}
+.lang-mine-go{font-size:1.08rem;padding:12px 22px}
+.lang-mine-close{position:static;transform:none;flex:none;width:44px;height:44px;background:var(--surface);
+  border:1px solid var(--line);border-radius:50%}
+.home-book{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px;
+  max-width:680px;margin:0 auto;padding:22px;border:1px solid var(--line);
+  border-radius:var(--radius);background:var(--surface)}
+.home-book-cover{flex:0 0 170px;max-width:170px;border-radius:6px;overflow:hidden;
+  box-shadow:0 8px 28px rgba(0,0,0,.18);background:#332e26}
+.home-book-cover img{width:100%;height:auto;display:block}
+.home-book-meta{flex:1 1 260px}
+.home-book-meta h3{margin:0 0 6px;font-size:1.9rem;color:var(--ink)}
+.home-book-en{color:var(--muted);font-weight:400}
+.home-book-meta p{margin:0 0 16px;color:var(--muted)}
+.home-paintings{display:flex;align-items:center;gap:16px;max-width:680px;margin:28px auto 0;
+  padding:10px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface);color:var(--ink);text-decoration:none}
+.home-paintings:hover{text-decoration:none;border-color:var(--accent)}
+.home-paintings img{width:120px;height:90px;object-fit:cover;border-radius:6px;display:block}
+.home-paintings-text{color:var(--muted)}
+.home-paintings-text b{display:block;margin-bottom:2px;color:var(--accent);font-size:1.15rem}
+body.home .site-header{padding-top:clamp(16px,4vh,44px)}
+@media (max-width:560px){
+  .home-book{display:grid;grid-template-columns:104px 1fr;column-gap:16px;padding:16px;
+    align-items:center}
+  .home-book-cover{grid-row:1/3;max-width:none}
+  .home-book-meta{display:contents;text-align:start}
+  .home-book-meta h3{font-size:1.55rem;align-self:end}
+  .home-book-meta p{align-self:start;margin:0}
+  .home-book-meta .btn{grid-column:1/-1;margin-top:16px}
+}
+/* the tagline on the painting: 2.1:1 before, a soft halo lifts it (review 2026-11-14) */
+body.home .brand-copy p{color:#3a332a;
+  text-shadow:0 0 3px rgba(245,239,227,.95),0 0 10px rgba(245,239,227,.85)}
+@media (prefers-color-scheme:dark){
+  body.home .brand-copy p{color:#e7dccb;
+    text-shadow:0 0 3px rgba(23,19,15,.95),0 0 10px rgba(23,19,15,.85)}
+}
+/* the page background no longer repeats below short pages on tablets */
+html{min-height:100%}
+/* native controls and scrollbars follow the theme */
+:root{color-scheme:light dark}

@@ -27,6 +27,7 @@ Run whenever a painting in CoverPics changes:
 from __future__ import annotations
 
 import argparse
+import html as htmllib
 import io
 import re
 import sys
@@ -183,7 +184,11 @@ GALLERIES = [
         "title": "Sedaha (Sounds) — Book One",
         "masters": COVERPICS,
         "rename": {"00_CoverPhoto": "cover"},
-        "tile": {"source": "00_CoverPhoto", "centering": (0.5, 0.42)},
+        # 0.10, not 0.42 (author 2026-11-16): the 4:3 window sits high enough to keep
+        # the white loop whole, the one shape that reads at tile size, above the
+        # title's scrim. The tile is rebuilt only when its master is newer, so after
+        # changing a centering delete paintings/index/<slug>.jpg and run this again.
+        "tile": {"source": "00_CoverPhoto", "centering": (0.5, 0.10)},
         "managed": False,
     },
     {
@@ -637,6 +642,71 @@ def _labels(gallery: dict, masters: list[Path]) -> list[dict]:
     return out
 
 
+# == painting downloads ==
+# Every painting can be downloaded at 3000 px with the author's badge on it.
+# make_painting_downloads.py builds those files outside the repo and
+# publish_paintings.py uploads them to the `paintings` release, the way the books
+# live on `books`, so GitHub counts every download. The asset is named after the
+# painting's address on the site (#iran-ii, #picture-4), so the saved file says
+# which painting it is: Arasteh_boteh-jegheh_iran-ii.jpg. The name is decided here,
+# beside the labels it comes from, because this script also writes the links.
+DOWNLOAD_REPO = "amirarasteh1990/amirarasteh1990.github.io"
+DOWNLOAD_RELEASE = "paintings"
+DOWNLOAD_BASE = (f"https://github.com/{DOWNLOAD_REPO}/releases/download/"
+                 f"{DOWNLOAD_RELEASE}/")
+ADDRESS_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+SHOT_RE = re.compile(r'<a class="shot"[^>]*>')
+
+
+def address(caption: str, stated: str = "") -> str:
+    """A painting's address on its page: gallery.js slugOf(), the same rule.
+
+    A stated data-slug wins; otherwise "Picture 4 - Opening" is picture-4, a
+    caption starting "Cover" is cover, and anything else is its words joined."""
+    if stated:
+        return stated
+    text = htmllib.unescape(caption).lower()
+    numbered = re.search(r"picture\s+(\d+)", text)
+    if numbered:
+        return f"picture-{numbered.group(1)}"
+    if text.startswith("cover"):
+        return "cover"
+    return re.sub(r"[^a-z0-9]+", "-", text).strip("-") or "painting"
+
+
+def painting_addresses(gallery: dict) -> list[tuple[Path, str | None]]:
+    """Each master of one gallery with the address the site gives it, in hanging
+    order. A managed gallery's addresses come from _labels; an unmanaged page holds
+    the author's own captions, so its addresses are read from the page, matched by
+    file name. A master the page does not show gets None."""
+    masters = _masters(gallery)
+    if gallery.get("managed"):
+        return [(m, address(w["caption"], w["slug"]))
+                for m, w in zip(masters, _labels(gallery, masters))]
+    page = SITE / "paintings" / gallery["slug"] / "index.html"
+    shown: dict[str, str] = {}
+    if page.is_file():
+        for tag in SHOT_RE.findall(io.open(page, encoding="utf-8").read()):
+            href = re.search(r'\shref="([^"]+)"', tag)
+            caption = re.search(r'\sdata-caption="([^"]*)"', tag)
+            stated = re.search(r'\sdata-slug="([^"]*)"', tag)
+            if href:
+                shown[href.group(1).rsplit("/", 1)[-1]] = address(
+                    caption.group(1) if caption else "", stated.group(1) if stated else "")
+    return [(m, shown.get(_derived_name(m, gallery["rename"]))) for m in masters]
+
+
+def download_name(gallery: dict, painting: str) -> str:
+    """The release asset for one painting: stable, ASCII, and says what it is."""
+    if not ADDRESS_RE.match(painting):
+        raise ValueError(f"{gallery['slug']}: address {painting!r} is not ASCII a-z0-9-")
+    return f"Arasteh_{gallery['slug']}_{painting}.jpg"
+
+
+def download_url(gallery: dict, painting: str) -> str:
+    return DOWNLOAD_BASE + download_name(gallery, painting)
+
+
 def _write_gallery_markup(gallery: dict, check: bool) -> bool:
     """Rewrite the marked thumbnails block on one managed gallery's page."""
     if not gallery.get("managed"):
@@ -663,22 +733,29 @@ def _write_gallery_markup(gallery: dict, check: bool) -> bool:
         # fourth on, nobody is looking yet and the browser can take its time.
         priority = (' fetchpriority="high"' if position == 0
                     else ' loading="lazy"' if position >= 3 else "")
+        # --ar is the painting's own width over height: the gallery hangs in rows, each
+        # painting as wide as its shape asks for, so a row shares one height and nothing
+        # is cropped (style.css, .gallery). check.py holds it to the width and height.
+        # data-download: the badged 3000 px copy on the `paintings` release, which the
+        # lightbox offers (gallery.js); check.py holds it to make_painting_downloads.py
+        download = download_url(gallery, address(words["caption"], words["slug"]))
         shots.append(
             f'      <a class="shot" href="{base}/{name}"'
             f' data-caption="{words["caption"]}"'
             + (f' data-slug="{words["slug"]}"' if words["slug"] else "") +
-            f' aria-haspopup="dialog"><picture>'
+            f' data-download="{download}"'
+            f' aria-haspopup="dialog" style="--ar:{aspect(width, height)}"><picture>'
             f'<source srcset="{base}/th/{stem}.webp" type="image/webp">'
             f'<img{priority} src="{base}/th/{name}" width="{width}" height="{height}"'
             f' alt="{words["alt"]}"></picture>'
-            f'<span class="shot-label">{words["label"]}</span></a>'
+            f'<span class="shot-label" aria-hidden="true">{words["label"]}</span></a>'
         )
 
     # The block owns the whole grid, not just its contents, so a gallery with no
     # paintings yet is a sentence saying so rather than an empty frame -- the same
     # reason the collection index names its unpainted series instead of tiling them.
     block = (GALLERY_START + "\n"
-             '    <div class="gallery">\n'
+             f'    <div class="gallery" data-series="{gallery["title"]}">\n'
              + "\n".join(shots) + "\n"
              '    </div>\n'
              '    ' + GALLERY_END)
@@ -698,6 +775,121 @@ def _write_gallery_markup(gallery: dict, check: bool) -> bool:
     io.open(page, "w", encoding="utf-8", newline="").write(updated)
     print(f"[write] paintings/{gallery['slug']}/index.html  ({len(shots)} paintings)")
     return True
+
+
+def aspect(width: int, height: int) -> str:
+    """A painting's width over its height, as the gallery rows read it (--ar)."""
+    return f"{width / height:.4f}"
+
+
+# == smaller copies for the pages that show one image large ==
+# The book cover (home page, /sedaha/, the first edition) is never wider than 210
+# CSS px, and the Opening painting never wider than the 736px reading column, but
+# both shipped one file for every screen. These are the same pixels at narrower
+# widths, named <stem>-<width>, each with its WebP twin; the original stays the
+# largest choice in each srcset. Derived from the site's own copy, so they follow it
+# whenever that is rebuilt. The pages' srcset lists name these exact widths
+# (build_read_pages.OPENING_FRONTISPIECE for the Opening; check.py resolves every
+# srcset entry to a file).
+RESPONSIVE = [
+    (BOOK_COVER_OUT, (360, 720)),
+    (OUT / "01.jpg", (720, 960, 1200)),
+]
+
+
+def _write_responsive(check: bool) -> bool:
+    ok = True
+    for src, widths in RESPONSIVE:
+        if not src.is_file():
+            print(f"[warn]  {src.name}: missing, so no smaller copies")
+            ok = False
+            continue
+        for w in widths:
+            out = src.with_name(f"{src.stem}-{w}.jpg")
+            if (out.is_file() and out.stat().st_mtime >= src.stat().st_mtime
+                    and _twin_is_current(out)):
+                continue
+            if check:
+                print(f"[stale] {out.relative_to(SITE).as_posix()}")
+                ok = False
+                continue
+            with Image.open(src) as im:
+                im = im.convert("RGB") if im.mode != "RGB" else im
+                small = im.resize((w, round(im.height * w / im.width)), LANCZOS)
+            small.save(out, "JPEG", quality=QUALITY, optimize=True)
+            small.save(out.with_suffix(".webp"), "WEBP", quality=WEBP_QUALITY, method=6)
+            print(f"[write] {out.relative_to(SITE).as_posix()}  ({small.width}x{small.height})")
+    if ok:
+        print(f"[ok]    smaller copies: {sum(len(w) for _s, w in RESPONSIVE)} current")
+    return ok
+
+
+# == the link-preview card for the paintings pages ==
+# A chat app crops og:image to about 1.91:1, and the paintings pages offered a
+# portrait painting, so a preview showed a slice of it. One 1200x630 card per page
+# instead: the paintings side by side, whole and uncropped, on the site's paper
+# colour, sized to fill the width. No lettering: the card's title line names the
+# page, as on the reading pages.
+SHARE_DIR = PAINTINGS_OUT / "share"
+SHARE_SIZE = (1200, 630)
+SHARE_GROUND = (0xF5, 0xEF, 0xE3)       # --bg, the page's own paper
+SHARE_MARGIN, SHARE_GAP, SHARE_MAX_H = 56, 28, 470
+# card name -> the paintings on it, as (gallery, derived file stem)
+SHARE_CARDS = {
+    "paintings": [("sounds", "cover"), ("boteh-jegheh", "01_iran_2026_40x30"),
+                  ("sounds", "01")],
+    "sounds": [("sounds", "cover"), ("sounds", "01"), ("sounds", "02")],
+    "boteh-jegheh": [("boteh-jegheh", "01_iran_2026_40x30"),
+                     ("boteh-jegheh", "02_iran_2026_40x40"),
+                     ("boteh-jegheh", "03_iran_2026_40x40")],
+}
+
+
+def _write_share_cards(check: bool) -> bool:
+    from PIL import ImageDraw, ImageFilter
+    ok = True
+    SHARE_DIR.mkdir(parents=True, exist_ok=True)
+    for card, picks in SHARE_CARDS.items():
+        srcs = [PAINTINGS_OUT / g / f"{stem}.jpg" for g, stem in picks]
+        missing = [s for s in srcs if not s.is_file()]
+        if missing:
+            print(f"[warn]  share card {card}: {missing[0].name} not found")
+            ok = False
+            continue
+        out = SHARE_DIR / f"{card}.jpg"
+        if out.is_file() and all(out.stat().st_mtime >= s.stat().st_mtime for s in srcs):
+            continue
+        if check:
+            print(f"[stale] paintings/share/{out.name}")
+            ok = False
+            continue
+        ims = [Image.open(s).convert("RGB") for s in srcs]
+        ratios = [im.width / im.height for im in ims]
+        room = SHARE_SIZE[0] - 2 * SHARE_MARGIN - SHARE_GAP * (len(ims) - 1)
+        h = min(SHARE_MAX_H, int(room / sum(ratios)))
+        sizes = [(round(h * r), h) for r in ratios]
+        x = (SHARE_SIZE[0] - sum(w for w, _h in sizes) - SHARE_GAP * (len(ims) - 1)) // 2
+        y = (SHARE_SIZE[1] - h) // 2
+        canvas = Image.new("RGB", SHARE_SIZE, SHARE_GROUND)
+        # a soft shadow under each painting, so the pale canvases do not melt into
+        # the paper -- the shadow the gallery's own tiles cast
+        shade = Image.new("L", SHARE_SIZE, 0)
+        draw = ImageDraw.Draw(shade)
+        cx = x
+        for w, _h in sizes:
+            draw.rectangle((cx, y + 6, cx + w, y + h + 6), fill=70)
+            cx += w + SHARE_GAP
+        shade = shade.filter(ImageFilter.GaussianBlur(10))
+        canvas = Image.composite(Image.new("RGB", SHARE_SIZE, (40, 30, 20)), canvas, shade)
+        cx = x
+        for im, size in zip(ims, sizes):
+            canvas.paste(im.resize(size, LANCZOS), (cx, y))
+            cx += size[0] + SHARE_GAP
+        canvas.save(out, "JPEG", quality=QUALITY, optimize=True)
+        print(f"[write] paintings/share/{out.name}  ({len(ims)} paintings, {h}px tall)")
+    if ok:
+        print(f"[ok]    share cards: {len(SHARE_CARDS)} current")
+    return ok
 
 
 def main() -> int:
@@ -778,6 +970,10 @@ def main() -> int:
     if not _write_collection_thumbs(args.check):
         stale += 1
     if not _write_excerpt_mark(args.check):
+        stale += 1
+    if not _write_responsive(args.check):
+        stale += 1
+    if not _write_share_cards(args.check):
         stale += 1
     for gallery in GALLERIES:
         if not _write_gallery_markup(gallery, args.check):

@@ -27,6 +27,8 @@ import re
 import sys
 from pathlib import Path
 
+from sync_head import page_lang  # noqa: E402 - imports nothing back
+
 SITE = Path(__file__).resolve().parent
 IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
@@ -56,28 +58,62 @@ TABS = [
 START = "<!-- APPNAV:START (managed by sync_appnav.py — edit there, not the pages) -->"
 END = "<!-- APPNAV:END -->"
 
+# The shell speaks Persian on the Persian pages (author 2026-11-16) and English on
+# every other page. Only languages listed here get a shell of their own; a page in
+# any other language keeps the English one, marked as English. sync_footers.py and
+# build_read_pages.py read the same table, so one page never mixes two shells.
+ZWNJ = "‌"
+SHELL = {
+    "fa": {
+        "dir": "rtl",
+        "nav": "فهرست اصلی",
+        "tabs": {"home": "خانه", "books": "کتاب" + ZWNJ + "ها",
+                 "paintings": "نقاشی" + ZWNJ + "ها", "guestbook": "دفتر یادگاری",
+                 "support": "حمایت"},
+        # the footer (sync_footers.py)
+        "copyright": "&copy; ۲۰۲۶ امیر آرسته",
+        "license": "حق نشر", "telegram": "تلگرام", "contact": "تماس:",
+        "logo": "آرسته، خانه",
+        # the page itself (build_read_pages.py; the skip link is written in the page)
+        "skip": "رفتن به متن",
+    },
+}
 
-def appnav_html(current: str = "") -> str:
+
+def shell_lang(page_lang: str) -> str:
+    """The language a page's shell is written in: its own, if the site has the
+    words for it, otherwise English."""
+    return page_lang if page_lang in SHELL else "en"
+
+
+def appnav_html(current: str = "", lang: str = "en") -> str:
     """The whole <nav> element, at column 0, ready to sit after the skip-link.
 
     current -- key of the tab that points at this page (gets aria-current);
                "" for pages outside the five sections (404, license, editions).
+    lang    -- the page's language; a key of SHELL gets the shell in its own words.
     """
+    words = SHELL.get(lang)
     lis = []
     for key, href, label, svg in TABS:
         cur = ' aria-current="page"' if key == current else ""
         lis.append(
             '      <li><a href="%s"%s>'
             '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">%s</svg>'
-            '<span>%s</span></a></li>' % (href, cur, svg, label)
+            '<span>%s</span></a></li>'
+            % (href, cur, svg, words["tabs"][key] if words else label)
         )
+    # Home, Books, Paintings, Guestbook, Support are English on every page whose
+    # language has no shell of its own, including the 111 whose <html lang> is not
+    # English. Saying so lets a screen reader switch voice for the shell instead of
+    # reading English words through, say, an Italian one. dir="ltr" for the same
+    # reason on the RTL editions.
+    opening = ('<nav class="appnav" lang="%s" dir="%s" aria-label="%s">\n'
+               % (lang, words["dir"], words["nav"]) if words else
+               '<nav class="appnav" lang="en" dir="ltr" aria-label="Primary">\n')
     return (
         START + "\n"
-        # Home, Books, Paintings, Guestbook, Support are English on all 124 pages,
-        # including the 111 whose <html lang> is not English. Saying so lets a screen
-        # reader switch voice for the shell instead of reading English words through,
-        # say, an Italian one. dir="ltr" for the same reason on the RTL editions.
-        '<nav class="appnav" lang="en" dir="ltr" aria-label="Primary">\n'
+        + opening +
         '  <div class="appnav-inner">\n'
             '    <ul class="appnav-tabs">\n'
         + "\n".join(lis) + "\n"
@@ -115,9 +151,10 @@ BLOCK_RE = re.compile(r'\n?' + re.escape(START) + r'.*?' + re.escape(END), re.S)
 
 def restamp(html: str, current: str) -> str:
     """Remove any existing shell, then insert a fresh one after the skip-link
-    (or, failing that, right after the opening <body> tag)."""
+    (or, failing that, right after the opening <body> tag). The shell's language
+    follows the page's own <html lang>."""
     html = BLOCK_RE.sub("", html)
-    block = appnav_html(current)
+    block = appnav_html(current, shell_lang(page_lang(html)))
     if SKIP_RE.search(html):
         return SKIP_RE.sub(lambda m: m.group(1) + "\n" + block, html, count=1)
     return BODY_RE.sub(lambda m: m.group(1) + "\n" + block, html, count=1)

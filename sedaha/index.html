@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sedaha (Sounds) &mdash; Book 1 &middot; Amir Arasteh</title>
-<meta name="description" content="Sedaha (Sounds), Book 1 by Amir Arasteh. The opening in 114 languages. 105 complete editions to download, more on the way. Free.">
+<title>Sedaha (Sounds) &mdash; Book One &middot; Amir Arasteh</title>
+<meta name="description" content="A novel by Amir Arasteh, written in Persian, with his paintings. Free in 105 languages.">
 <meta property="og:type" content="book">
 <meta property="og:site_name" content="arasteh.art">
 <meta property="og:title" content="Sedaha (Sounds), Book One">
-<meta property="og:description" content="By Amir Arasteh. The opening in 114 languages. 105 complete editions to download, more on the way. Free.">
-<meta property="og:image" content="https://arasteh.art/assets/img/cover.jpg">
-<meta property="og:image:alt" content="Cover painting of Sedaha (Sounds), Book One, by Amir Arasteh.">
+<meta property="og:description" content="A novel by Amir Arasteh, written in Persian, with his paintings. Free in 105 languages.">
+<meta property="og:image" content="https://arasteh.art/assets/img/paintings/sounds/01.jpg">
+<meta property="og:image:width" content="1500">
+<meta property="og:image:height" content="1096">
+<meta property="og:image:alt" content="The painting that opens Sedaha (Sounds), Book One, by Amir Arasteh.">
 <meta name="theme-color" content="#F5EFE3">
 <meta property="og:url" content="https://arasteh.art/sedaha/">
 <link rel="canonical" href="https://arasteh.art/sedaha/">
@@ -30,7 +32,7 @@
   "datePublished": "2026"
 }
 </script>
-<link rel="stylesheet" href="/assets/css/style.css?v=26">
+<link rel="stylesheet" href="/assets/css/style.css?v=30">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -48,6 +50,8 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
+document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -75,14 +79,15 @@ apply(get())})();</script>
 <!-- APPNAV:END -->
 
 <main class="container" id="main">
-  <a class="back back--home" href="../">&larr; Amir Arasteh</a>
-
   <!-- Find a language or start reading. The generated catalogue stays collapsed
        until requested and works without scripts. Search uses the same edition
        record through assets/js/editions.js. -->
   <section class="book-hero">
     <div class="cover">
-      <picture><source srcset="/assets/img/book-cover.webp" type="image/webp"><img src="/assets/img/book-cover.jpg" width="884" height="1200" fetchpriority="high"
+      <picture><source srcset="/assets/img/book-cover-360.webp 360w, /assets/img/book-cover-720.webp 720w, /assets/img/book-cover.webp 884w"
+        sizes="(max-width: 560px) 168px, 210px" type="image/webp"><img src="/assets/img/book-cover.jpg"
+        srcset="/assets/img/book-cover-360.jpg 360w, /assets/img/book-cover-720.jpg 720w, /assets/img/book-cover.jpg 884w"
+        sizes="(max-width: 560px) 168px, 210px" width="884" height="1200" fetchpriority="high"
         alt="English cover of Sounds, Book One, by Amir Arasteh"></picture>
     </div>
     <div class="meta">
@@ -90,37 +95,29 @@ apply(get())})();</script>
            between the SYNC markers belongs to sync_book_text.py, so the wrapper is
            ours and the canonical English title still arrives from the book repo. -->
       <h1>Sedaha (<!--S:title:EN-->Sounds<!--/S-->)</h1>
-      <p class="byline">A novel originally written in Persian, accompanied by the author’s paintings.</p>
+      <p class="byline">A novel written in Persian, with the author’s paintings.</p>
       <!-- the book's own words, which say more than a description of them would -->
       <p class="excerpt">&hellip; a thread of words that were once sounds&hellip;</p>
-      <!-- The track reserves the width and stays left-to-right; the name inside it
-           carries the direction. When both were the same element, a right-to-left
-           name sat at the far end of its own reserved space and left a gap after
-           "Read it in". <bdi> isolates the name from the English around it. -->
-      <p class="cycler" aria-hidden="true"><span class="cycler-label">Read it in</span><span
-        class="cycler-track"><bdi class="cycler-name" id="cyclerName" lang="fa" dir="rtl">فارسی</bdi></span></p>
-      <!-- the count is stamped by build_read_pages.py from the release -->
-      <p class="progress-note">Available in over 100 languages</p>
+      <!-- The rotating "Read it in …" line and the hero count are retired (author
+           2026-11-13, site clean-up): one way to choose a language, and one number,
+           the list's own "The whole book, in N languages". -->
     </div>
   </section>
 
   <section class="finder-panel">
-    <!-- the five come first: a reader whose language is here needs no search at all.
-         Generated by build_read_pages.py from the release, so nothing appears whose
-         complete edition is not out; the finder swaps the last one for the
-         visitor's own language when it can. -->
+    <!-- The visitor's own language first, in its own words (assets/js/lang-mine.js):
+         filled only when the browser asks for, or the reader has opened, a language
+         this book is in; otherwise it stays hidden and English is the default. -->
+    <div class="lang-mine" id="langMine" hidden></div>
+
+    <!-- the three editions the book was published in. Generated by
+         build_read_pages.py from the edition record. -->
     <!-- QUICK:START (generated by build_read_pages.py - do not edit by hand) -->
       <h2 class="quick-heading" id="quick-heading">Pick up the thread in</h2>
-      <nav class="quick-row" aria-labelledby="quick-heading" data-fallback="zh">
+      <nav class="quick-row" aria-labelledby="quick-heading">
         <a class="lang-box" href="/sedaha/read/fa/" lang="fa" dir="rtl" data-slug="fa">فارسی<span class="visually-hidden"> — Persian</span></a>
         <a class="lang-box" href="/sedaha/read/" lang="en" data-slug="en">English</a>
-        <a class="lang-box" href="/sedaha/read/ar/" lang="ar" dir="rtl" data-slug="ar">العربية<span class="visually-hidden"> — Arabic</span></a>
-        <a class="lang-box" href="/sedaha/read/es/" lang="es" data-slug="es">Español<span class="visually-hidden"> — Spanish</span></a>
-        <a class="lang-box" href="/sedaha/read/de/" lang="de" data-slug="de">Deutsch<span class="visually-hidden"> — German</span></a>
-        <a class="lang-box" href="/sedaha/read/fr/" lang="fr" data-slug="fr">Français<span class="visually-hidden"> — French</span></a>
-        <a class="lang-box" href="/sedaha/read/hi/" lang="hi" data-slug="hi">हिन्दी<span class="visually-hidden"> — Hindi</span></a>
-        <a class="lang-box" href="/sedaha/read/ja/" lang="ja" data-slug="ja">日本語<span class="visually-hidden"> — Japanese</span></a>
-        <a class="lang-box" href="/sedaha/read/zh/" lang="zh" data-slug="zh">中文<span class="visually-hidden"> — Chinese</span></a>
+        <a class="lang-box" href="/sedaha/read/da/" lang="da" data-slug="da">Dansk<span class="visually-hidden"> — Danish</span></a>
       </nav>    <!-- QUICK:END -->
 
     <!-- Plain, deliberately. The heading above the boxes carries the thread; saying
@@ -139,12 +136,10 @@ apply(get())})();</script>
         </button>
       </span>
       <!-- one answer, in one place, whether it found one language, several or none -->
-      <div class="lang-result" id="langResult" role="region" aria-live="polite"
+      <div class="lang-result" id="langResult" role="region"
         aria-label="Language search result" hidden></div>
+      <p class="visually-hidden" id="langStatus" role="status" aria-live="polite"></p>
     </div>
-
-        <!-- filled in by the finder only when the visitor's own language has an edition -->
-    <p class="lang-offer" id="langOffer" hidden></p>
 
     <!-- Generated links are present before scripts run. The native disclosure
          keeps them out of the way until a reader asks to browse. -->
@@ -262,13 +257,15 @@ apply(get())})();</script>
         </div>
       </div>
       <div class="all-group">
-        <p class="all-group-head">The opening, in 7 more</p>
+        <p class="all-group-head">The opening, in 9 more</p>
         <div class="all-row">
           <a class="lang-box" href="/sedaha/read/sq/" lang="sq" data-slug="sq">Shqip<span class="visually-hidden" lang="en"> — Albanian</span></a>
           <a class="lang-box" href="/sedaha/read/am/" lang="am" data-slug="am">አማርኛ<span class="visually-hidden" lang="en"> — Amharic</span></a>
           <a class="lang-box" href="/sedaha/read/bn/" lang="bn" data-slug="bn">বাংলা<span class="visually-hidden" lang="en"> — Bengali</span></a>
+          <a class="lang-box" href="/sedaha/read/he/" lang="he" dir="rtl" data-slug="he">עברית<span class="visually-hidden" lang="en"> — Hebrew</span></a>
           <a class="lang-box" href="/sedaha/read/is/" lang="is" data-slug="is">Íslenska<span class="visually-hidden" lang="en"> — Icelandic</span></a>
           <a class="lang-box" href="/sedaha/read/se/" lang="se" data-slug="se">Davvisámegiella<span class="visually-hidden" lang="en"> — Northern Sami</span></a>
+          <a class="lang-box" href="/sedaha/read/sr/" lang="sr" data-slug="sr">Српски<span class="visually-hidden" lang="en"> — Serbian</span></a>
           <a class="lang-box" href="/sedaha/read/tl/" lang="tl" data-slug="tl">Tagalog</a>
           <a class="lang-box" href="/sedaha/read/vi/" lang="vi" data-slug="vi">Tiếng Việt<span class="visually-hidden" lang="en"> — Vietnamese</span></a>
         </div>
@@ -294,7 +291,8 @@ apply(get())})();</script>
 <!-- the editions themselves, then the other names they answer to, then the finder -->
 <script src="/assets/js/editions.js"></script>
 <script src="/assets/js/lang-alias.js"></script>
-<script src="/assets/js/finder.js?v=29" defer></script>
+<script src="/assets/js/lang-mine.js?v=35" defer></script>
+<script src="/assets/js/finder.js?v=35" defer></script>
 <script src="/assets/js/share.js" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>

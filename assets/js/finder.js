@@ -9,7 +9,7 @@
      several        how many, and up to five to choose from
      none           said plainly, with a way to browse and a way to write
 
-   It also runs the cycling "Read it in ..." line, because both need the same list.
+   (The cycling "Read it in ..." line it used to run was retired 2026-11-13.)
    Needs assets/js/lang-alias.js loaded first for the other names each language
    answers to. */
 (function () {
@@ -79,10 +79,10 @@
   }
 
   var STATE = {
-    ready: 'The complete book is available.',
-    review: 'The complete edition is in final review.',
-    translated: 'Complete edition in preparation.',
-    revising: 'The complete edition is being revised.'
+    ready: 'The whole book is free to read.',
+    review: 'The opening is here; the whole book is in final review.',
+    translated: 'The opening is here; the whole book is in preparation.',
+    revising: 'The opening is here; the whole book is being revised.'
   };
 
   /* Every door is the same size, so a name that does not fit gives up type size
@@ -99,7 +99,10 @@
   var FIT_STEPS = 7;
   function fitLabel(a) {
     var size = 1.18;                 // .lang-box's own font-size
-    for (var i = 0; i < FIT_STEPS && a.scrollHeight > a.clientHeight + 1; i++) {
+    // height for a name that wraps, width for one long word that cannot wrap (the
+    // box breaks between words only since 2026-11-14, not inside them)
+    for (var i = 0; i < FIT_STEPS && (a.scrollHeight > a.clientHeight + 1 ||
+         a.scrollWidth > a.clientWidth + 1); i++) {
       size -= 0.06;
       if (size < FIT_FLOOR) { size = FIT_FLOOR; }
       a.style.fontSize = size.toFixed(2) + 'rem';
@@ -136,7 +139,7 @@
     b.setAttribute('aria-label', 'Share the ' + L.en + ' opening');
     b.setAttribute('title', 'Share the ' + L.en + ' opening');
     b.setAttribute('data-share-url', 'https://arasteh.art' + L.url);
-    b.setAttribute('data-share-title', 'Sedaha — Book One');
+    b.setAttribute('data-share-title', 'Sedaha (Sounds) — Book One');
     b.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" ' +
       'stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/>' +
       '<path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg>';
@@ -151,7 +154,7 @@
     var others = WHOLE.filter(function (o) { return o.slug !== L.slug; });
     if (!others.length) return null;
     var wrap = el('div', 'lr-meanwhile');
-    /* Naming only these three read as though only three existed; there are now 23.
+    /* Naming only these three read as though only three existed; there are many more.
        The count comes from the data, so the sentence cannot go stale again. */
     var whole = LANGS.filter(function (L) { return L.files && L.files.length; }).length;
     var note = el('p', 'lr-meanwhile-note', 'Until it is ready, the whole book can be read in ');
@@ -176,11 +179,18 @@
     return wrap;
   }
 
+  /* The panel is not a live region any more: it was read out whole on every
+     keystroke, licence sentence included. One short line says what happened. */
+  var status = document.getElementById('langStatus');
+  function say(text) { if (status) status.textContent = text; }
+
   function one(L) {
     result.textContent = '';
+    say(L.native + (L.en !== L.native ? ', ' + L.en : '') + ': ' +
+      (STATE[L.state] || STATE.translated));
     result.appendChild(nameInto(el('p', 'lr-name'), L));
     result.appendChild(el('p', 'lr-state',
-      'The opening is ready to read. ' + (STATE[L.state] || STATE.translated)));
+      STATE[L.state] || STATE.translated));
 
     var acts = el('p', 'lr-actions');
     var read = el('a', 'btn btn-primary', 'Read the opening');
@@ -197,6 +207,19 @@
 
     var soon = (L.files && L.files.length) ? null : meanwhile(L);
     if (soon) result.appendChild(soon);
+
+    /* The terms every file carries, in one line under the offer (author 2026-11-13).
+       Each Opening page says the same in its own language, from the book's copyright
+       page; the whole notice is inside every file and on the License page. */
+    if ((L.files && L.files.length) || soon) {
+      var terms = el('p', 'muted-note dl-terms', 'The complete file may be shared freely, ' +
+        'unchanged. Short excerpts may be quoted if each names its source: the book’s ' +
+        'title, the author’s name and arasteh.art. ');
+      var lic = el('a', null, 'License');
+      lic.href = '/license.html';
+      terms.appendChild(lic);
+      result.appendChild(terms);
+    }
 
     /* Why a download leaves the site, and what to do if it cannot: shown to anyone
        who has just been offered files, whether their own or the three the book was
@@ -224,6 +247,7 @@
 
   function several(list, q) {
     result.textContent = '';
+    say(list.length + ' languages match');
     result.appendChild(el('p', 'lr-state', list.length + ' languages match “' + q + '”'));
     var matches = el('div', 'lr-matches');
     matches.id = 'langMatches';
@@ -256,6 +280,7 @@
 
   function none(q) {
     result.textContent = '';
+    say('No language matches');
     result.appendChild(el('p', 'lr-state', 'No language matches “' + q + '”.'));
     var acts = el('p', 'lr-actions');
     var browse = toAllLangs(el('a', 'btn', 'Browse all languages'));
@@ -274,7 +299,7 @@
     var typed = input.value.trim();
     var q = fold(typed);
     if (clearBtn) clearBtn.hidden = !typed;
-    if (!q) { result.hidden = true; result.textContent = ''; return; }
+    if (!q) { result.hidden = true; result.textContent = ''; say(''); return; }
     var hits = LANGS.filter(function (L) { return L.hay.indexOf(q) > -1; });
     var full = hits.filter(function (L) { return exact(L, q); });
     if (full.length === 1) one(full[0]);
@@ -303,46 +328,10 @@
   fromHash();
   window.addEventListener('hashchange', fromHash);
 
-  /* Quick starts: five languages for someone who would rather not type. Four are
-     the author's, generated into the page from the release. The fifth is Chinese
-     until the browser tells us something better: a visitor whose own language has
-     a COMPLETE edition gets that instead, since a shortcut to an opening they
-     cannot finish is not much of a shortcut. Chinese stays for everyone else. */
-  (function () {
-    var row = document.querySelector('.quick-row');
-    if (!row) return;
-    var fallback = row.querySelector('[data-slug="' + row.getAttribute('data-fallback') + '"]');
-    if (!fallback) return;
-    var fixed = [].slice.call(row.querySelectorAll('[data-slug]'))
-      .map(function (a) { return a.getAttribute('data-slug'); })
-      .filter(function (s) { return s !== fallback.getAttribute('data-slug'); });
-
-    var mine = null;
-    var wanted = (navigator.languages || [navigator.language || '']).slice(0, 4);
-    for (var i = 0; i < wanted.length && !mine; i++) {
-      var tag = String(wanted[i]).toLowerCase().replace('_', '-');
-      var found = bySlug[tag] || bySlug[tag.split('-')[0]];
-      // only a language that is complete, and not already one of the four
-      if (found && found.files && found.files.length && fixed.indexOf(found.slug) < 0) mine = found;
-    }
-    if (!mine) return;
-
-    var a = el('a', 'lang-box', mine.native);
-    a.href = mine.url;
-    a.setAttribute('lang', mine.lang);
-    if (mine.rtl) a.setAttribute('dir', 'rtl');
-    a.setAttribute('data-slug', mine.slug);
-    if (mine.en !== mine.native) {
-      // the English name follows the native one, hidden, so both are announced and
-      // each in its own voice. An aria-label could only have carried one of them.
-      a.appendChild(el('span', 'visually-hidden', ' — ' + mine.en));
-    }
-    fallback.replaceWith(a);
-  })();
-
-  /* The nine above the search are in the page from the start, and one of them may
-     have just been swapped for the visitor's own language, which can be a longer
-     name than the one it replaced. Same treatment, same rule. */
+  /* The three above the search (the editions the book was published in) get the
+     same fitting as the list. The visitor's own language now has its own button
+     (lang-mine.js, 2026-11-13); the old fifth-slot swap, the offer line and the
+     rotating 'Read it in' line are retired. */
   (function () {
     var row = document.querySelector('.quick-row');
     if (row) { fitAll(row); }
@@ -357,93 +346,5 @@
     function fitOpenList() { if (box.open) fitAll(box); }
     box.addEventListener('toggle', fitOpenList);
     fitOpenList();
-  })();
-
-  /* The book's promise is that it finds you in your own language, so if the browser
-     asks for one this site has, say so once, in a line rather than a box. */
-  (function () {
-    var offer = document.getElementById('langOffer');
-    if (!offer || location.hash) return;
-    try { if (localStorage.getItem('sedaha-lang-offer') === 'off') return; } catch (e) {}
-    var wanted = (navigator.languages || [navigator.language || '']).slice(0, 4);
-    var found = null;
-    for (var i = 0; i < wanted.length && !found; i++) {
-      var tag = String(wanted[i]).toLowerCase().replace('_', '-');
-      found = (tag !== 'en' && bySlug[tag]) || null;
-      if (!found && tag.split('-')[0] !== 'en') found = bySlug[tag.split('-')[0]] || null;
-    }
-    if (!found) return;
-    /* If the row above already offers it, saying it again here is the site telling
-       the same person the same thing twice. A complete edition lands in the row; an
-       opening-only one has no place there, and gets this line instead. */
-    if (document.querySelector('.quick-row [data-slug="' + found.slug + '"]')) return;
-    offer.appendChild(document.createTextNode('Your language appears to be '));
-    var b = document.createElement('b');
-    b.textContent = found.native;
-    b.setAttribute('lang', found.lang);
-    if (found.rtl) b.setAttribute('dir', 'rtl');
-    offer.appendChild(b);
-    offer.appendChild(document.createTextNode('. '));
-    var go = el('a', 'go', 'Read the opening →');
-    go.href = found.url;
-    offer.appendChild(go);
-    var close = el('button', 'lang-clear offer-dismiss');
-    close.type = 'button';
-    close.setAttribute('aria-label', 'Hide this suggestion');
-    close.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-    close.addEventListener('click', function () {
-      offer.hidden = true;
-      try { localStorage.setItem('sedaha-lang-offer', 'off'); } catch (e) {}
-    });
-    offer.appendChild(close);
-    offer.hidden = false;
-  })();
-
-  /* The cycling line. Atmosphere, not navigation: aria-hidden, unclickable, and
-     still under prefers-reduced-motion. Persian first because it is the original,
-     then the visitor's own language if this site has it, then the rest shuffled
-     once so nothing repeats until every language has had a turn. The slot keeps a
-     fixed height so a long name cannot shift the page, and the timer stops while
-     the tab is hidden rather than animating into an empty room. */
-  (function () {
-    var slot = document.getElementById('cyclerName');
-    if (!slot) return;
-    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
-    var order = LANGS.slice();
-    for (var i = order.length - 1; i > 0; i--) {          // one shuffle, then in order
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = order[i]; order[i] = order[j]; order[j] = t;
-    }
-    var mine = null, wanted = (navigator.languages || [navigator.language || '']).slice(0, 2);
-    for (var k = 0; k < wanted.length && !mine; k++) {
-      mine = bySlug[String(wanted[k]).toLowerCase().split('-')[0]] || null;
-    }
-    order = order.filter(function (L) { return L.slug !== 'fa' && (!mine || L.slug !== mine.slug); });
-    if (mine) order.unshift(mine);
-    if (still && still.matches) {                          // one language, no motion
-      show(mine || bySlug.fa || order[0]);
-      return;
-    }
-    var at = -1, timer = null;
-    function show(L) {
-      slot.textContent = L.native;
-      slot.setAttribute('lang', L.lang);
-      if (L.rtl) slot.setAttribute('dir', 'rtl'); else slot.removeAttribute('dir');
-    }
-    function step() {
-      at = (at + 1) % order.length;
-      var next = order[at];
-      slot.classList.add('is-out');
-      setTimeout(function () { show(next); slot.classList.remove('is-out'); }, 300);
-    }
-    function run() {
-      if (timer) return;
-      timer = setInterval(step, 3800);
-    }
-    function stop() { clearInterval(timer); timer = null; }
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) stop(); else run();
-    });
-    run();
   })();
 })();

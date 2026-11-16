@@ -2,10 +2,11 @@
 """
 check.py — one command that answers "is the site consistent?"
 
-The site is stamped together by eight scripts: the nav shell, the footer, the head
-block, the book text, the gallery derivatives, the 111 Opening pages, the name
-subsets, and the published guestbook index. Each can already answer --check on its
-own, but nobody remembers to run eight of them, and the interesting failures are
+The site is stamped together by ten scripts: the nav shell, the footer, the head
+block, the book text, the gallery derivatives, the 111 Opening pages, the
+native-check pages, the name subsets, the published guestbook index, and the
+painting downloads (built outside the repo). Each can already answer --check on its
+own, but nobody remembers to run ten of them, and the interesting failures are
 the ones no single script owns: a
 link pointing at a file that was renamed, a service worker caching a path that no
 longer exists, a hand-written page drifting away from the generator that owns the
@@ -20,6 +21,7 @@ So this runs all of them, then the checks between them:
   * sitemap.xml, feed.xml and the manifest parse, and every JSON-LD block is JSON
   * the three hand-written Opening pages still carry the generator's own hreflang
     cluster and reading toolbar, byte for byte
+  * every painting shown links the download make_painting_downloads.py built for it
 
 Nothing here writes: it is safe to run at any time, and it is the last thing to
 run before a push.
@@ -48,8 +50,8 @@ SITE = Path(__file__).resolve().parent
 IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
 
 SCRIPTS = ["sync_appnav.py", "sync_footers.py", "sync_head.py", "sync_book_text.py",
-           "sync_gallery.py", "build_read_pages.py", "build_name_fonts.py",
-           "sync_guestbook.py"]
+           "sync_gallery.py", "build_read_pages.py", "build_check_pages.py",
+           "build_name_fonts.py", "sync_guestbook.py", "make_painting_downloads.py"]
 
 SKIP_SCHEMES = ("http://", "https://", "mailto:", "tel:", "javascript:", "data:")
 
@@ -216,6 +218,35 @@ def structured() -> None:
                 bad.append(f"{page.relative_to(SITE).as_posix()}: {exc}")
     report(f"{found} JSON-LD blocks parse", not bad, bad[0] if bad else "")
 
+    # A link preview is fetched from the public URL, so a card that is missing here
+    # or not the size the page declares fails silently in every chat app at once.
+    try:
+        from PIL import Image
+    except ImportError:
+        Image = None
+    missing, wrong, cards = [], [], set()
+    for page in pages():
+        body = page.read_text(encoding="utf-8")
+        m = re.search(r'<meta property="og:image" content="https://arasteh\.art/([^"]+)">', body)
+        if not m:
+            continue
+        rel = page.relative_to(SITE).as_posix()
+        img = SITE / m.group(1)
+        cards.add(m.group(1))
+        if not img.is_file():
+            missing.append(f"{rel} -> {m.group(1)}")
+            continue
+        w = re.search(r'<meta property="og:image:width" content="(\d+)">', body)
+        h = re.search(r'<meta property="og:image:height" content="(\d+)">', body)
+        if Image and w and h:
+            with Image.open(img) as im:
+                if im.size != (int(w.group(1)), int(h.group(1))):
+                    wrong.append(f"{rel}: declares {w.group(1)}x{h.group(1)}, "
+                                 f"the file is {im.size[0]}x{im.size[1]}")
+    report(f"every page's preview image exists ({len(cards)} images)", not missing,
+           missing[0] if missing else "")
+    report("and is the size its page declares", not wrong, wrong[0] if wrong else "")
+
 
 def guestbook() -> None:
     """The account-free guestbook owns its public data and exposes no credential."""
@@ -224,10 +255,9 @@ def guestbook() -> None:
            'id="guestbookForm"' in page and 'type="email"' not in page
            and 'name="audience"' not in page and 'maxlength="500"' in page)
     report("the account-free public handoff is explicit",
-           'No account is needed' in page
-           and 'chosen name and comment are public' in page
-           and 'Press Post' in page
-           and 'Amir receives a notification' in page)
+           'No account needed' in page
+           and 'name and note will be public' in page
+           and 'Amir is notified' in page)
     endpoint = re.search(
         r'<meta name="guestbook-endpoint" content="([^"]*)">', page
     )
@@ -374,6 +404,70 @@ def guestbook() -> None:
            legacy[0] if legacy else "")
 
 
+def native_check() -> None:
+    """The native-speaker check pages (build_check_pages.py): one per data file,
+    each invited from its language's Opening, each posting to the Worker's /check
+    with an email fallback, and none of them offered to search engines."""
+    sys.path.insert(0, str(SITE))
+    import build_check_pages as nc
+    from sync_footers import EMAIL
+
+    data = sorted(p.stem for p in nc.DATA_DIR.glob("*.json")) if nc.DATA_DIR.is_dir() else []
+    built = (sorted(p.parent.name for p in nc.OUT_DIR.glob("*/index.html"))
+             if nc.OUT_DIR.is_dir() else [])
+    report(f"{len(data)} native-check data file(s): each has its page, no page is orphaned",
+           data == built, "" if data == built else f"data {data}, pages {built}")
+
+    def opening(slug: str) -> Path:
+        return SITE / "sedaha" / "read" / ("" if slug == "en" else slug) / "index.html"
+    unlinked = [s for s in data if not opening(s).is_file()
+                or f'href="/sedaha/check/{s}/"' not in opening(s).read_text(encoding="utf-8")]
+    report("and is linked from its language's Opening page", not unlinked, ", ".join(unlinked))
+    stray = sorted({f"{p.relative_to(SITE).as_posix()} -> {s}"
+                    for p in (SITE / "sedaha" / "read").rglob("index.html")
+                    for s in re.findall(r'href="/sedaha/check/([a-z-]+)/"',
+                                        p.read_text(encoding="utf-8")) if s not in data})
+    report("no Opening page invites a check that does not exist", not stray,
+           stray[0] if stray else "")
+
+    gb = re.search(r'<meta name="guestbook-endpoint" content="([^"]*)">',
+                   (SITE / "comments" / "index.html").read_text(encoding="utf-8"))
+    want = (gb.group(1) + "check") if gb else ""
+    script_path = SITE / "assets" / "js" / "native-check.js"
+    script = script_path.read_text(encoding="utf-8") if script_path.is_file() else ""
+    pages_ = {s: (nc.OUT_DIR / s / "index.html").read_text(encoding="utf-8") for s in built}
+    off = [s for s, body in pages_.items()
+           if f'<meta name="native-check-endpoint" content="{want}">' not in body
+           or f'<script src="{nc.SCRIPT}" defer></script>' not in body]
+    report("every check page posts to the guestbook Worker's /check",
+           bool(want) and nc.ENDPOINT == want and not off
+           and "fetch(endpoint" in script and "'http://127.0.0.1:8787/check'" in script
+           and "credentials: 'omit'" in script and "api.github.com" not in script,
+           ", ".join(off))
+    off = [s for s, body in pages_.items()
+           if f'id="ncMail" href="mailto:{EMAIL}"' not in body or 'id="ncFallback"' not in body]
+    report("every check page falls back to a prefilled email",
+           not off and "offerEmail(" in script and "MAILTO_LIMIT" in script
+           and "encodeURIComponent(plainText(" in script, ", ".join(off))
+    sw = (SITE / "sw.js").read_text(encoding="utf-8")
+    sw_version = re.search(r"var VERSION = 'arasteh-v([^']+)'", sw)
+    report("the check script is pinned to the service-worker version",
+           bool(sw_version) and nc.SCRIPT.endswith("?v=" + sw_version.group(1)))
+
+    listed = [name for name in ("sitemap.xml", "feed.xml")
+              if "/sedaha/check/" in (SITE / name).read_text(encoding="utf-8")]
+    indexable = [s for s, body in pages_.items()
+                 if '<meta name="robots" content="noindex">' not in body]
+    report("check pages are noindex and kept out of the sitemap and the feed",
+           not listed and not indexable, ", ".join(listed + indexable))
+
+    worker_path = SITE / "guestbook-worker" / "worker.mjs"
+    worker = worker_path.read_text(encoding="utf-8") if worker_path.is_file() else ""
+    report("the Worker files native checks apart from the guestbook",
+           "url.pathname !== '/check'" in worker and "'<!-- native-check:v1 -->'" in worker
+           and "labels: ['native-check']" in worker and "includes('<!--')" in worker)
+
+
 # ------------------------------------------------- hand-written vs generated
 def hand_written() -> None:
     """The three hand-maintained Opening pages carry markup the generator owns for
@@ -386,12 +480,16 @@ def hand_written() -> None:
             if 'class="op-bar"' not in (SITE / rel).read_text(encoding="utf-8")]
     report("EN/FA/DA Opening pages: the top action bar is there too", not bare,
            ", ".join(bare))
-    for what, want in (("hreflang cluster", gen.alternates()),
-                       ("reading toolbar", gen.reader_tools_html())):
-        off = [rel for rel in hand
-               if want not in (SITE / rel).read_text(encoding="utf-8")]
-        report(f"EN/FA/DA Opening pages: {what} matches the generator", not off,
-               ", ".join(off))
+    off = [rel for rel in hand
+           if gen.alternates() not in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: hreflang cluster matches the generator", not off,
+           ", ".join(off))
+    # the Persian page has a Persian shell (author 2026-11-16), so its toolbar is the
+    # generator's Persian one; English and Danish carry the English labels
+    off = [rel for rel, lang in zip(hand, ("en", "fa", "da"))
+           if gen.reader_tools_html(lang) not in (SITE / rel).read_text(encoding="utf-8")]
+    report("EN/FA/DA Opening pages: reading toolbar matches the generator", not off,
+           ", ".join(off))
 
     # the language strip differs per page (each marks a different language current),
     # so ask the generator for the one that page should be carrying
@@ -455,13 +553,15 @@ def availability() -> None:
     # were never given. Dormant until 2026-08-05, because it only bites when a HIDDEN
     # edition is downloadable — Hebrew ships on the release but not on the site, so the
     # two counts diverged by exactly one the day the full set was uploaded.
-    sentence = gen.availability(site_rows, len(rows))["long"]
-    tellers = {"index.html": home, "sedaha/index.html": book}
-    off = [name for name, body in tellers.items() if sentence not in body]
+    # 2026-11-13: each page tells it in its own sentence (availability()["home"] /
+    # ["book"]), both from the one count, so the number cannot differ between them
+    A = gen.availability(site_rows, len(rows))
+    tellers = {"index.html": (home, A["home"]), "sedaha/index.html": (book, A["book"])}
+    off = [name for name, (body, sentence) in tellers.items() if sentence not in body]
     report("the availability sentence is the same on every page that tells it",
            not off, ", ".join(off))
 
-    stale = [name for name, body in tellers.items()
+    stale = [name for name, (body, _sentence) in tellers.items()
              if re.search(r"free to read in .*hundred", body)
              and "og:image:alt" not in body.split("hundred")[0][-200:]]
     report("no page still claims the whole book in a hundred languages", not stale,
@@ -650,6 +750,96 @@ def paintings() -> None:
     report("and the galleries' CSS is shared, not inlined per page",
            not inlined, ", ".join(inlined))
 
+    # The galleries hang in rows (author 2026-11-16), each painting as wide as its
+    # --ar says. A stale or missing ratio does not break the page; it quietly makes
+    # one painting the wrong width and its whole row the wrong height.
+    def aspect(w: int, h: int) -> str:    # sync_gallery.aspect, without needing Pillow
+        return f"{w / h:.4f}"
+    off, hung = [], 0
+    for g in folders:
+        body = (SITE / "paintings" / g / "index.html").read_text(encoding="utf-8")
+        for shot in re.findall(r'<a class="shot" [^\n]*?</a>', body):
+            hung += 1
+            ar = re.search(r'style="--ar:([0-9.]+)"', shot)
+            wh = re.search(r'<img[^>]*\swidth="(\d+)" height="(\d+)"', shot)
+            if not ar or not wh or ar.group(1) != aspect(int(wh.group(1)), int(wh.group(2))):
+                off.append(f"{g}: {re.search(r'href=.([^ ]+). ', shot).group(1)}")
+    report(f"every painting states its own shape for the rows ({hung} paintings)",
+           hung > 0 and not off, off[0] if off else "")
+
+
+def downloads() -> None:
+    """Every painting shown offers its badged 3000 px download, by the name
+    make_painting_downloads.py gives it, and that file is built.
+
+    The link is a GitHub release asset that nothing on this site can see, so a
+    name that drifted from the built file would be a 404 discovered by a visitor.
+    The upload itself is the author's (publish_paintings.py); this checks that what
+    he would upload is what the pages ask for."""
+    import make_painting_downloads as mpd
+    import sync_gallery as sg
+
+    wanted, problems = mpd.expected()
+    report("every painting has an address to name its download by", not problems,
+           problems[0] if problems else "")
+    by_file = {(d.gallery, sg._derived_name(d.master, sg._gallery(d.gallery)["rename"])): d
+               for d in wanted}
+
+    wrong, controls, shown = [], [], 0
+    js = (SITE / "assets" / "js" / "gallery.js").read_text(encoding="utf-8")
+    sw_version = re.search(r"var VERSION = 'arasteh-v([^']+)'",
+                           (SITE / "sw.js").read_text(encoding="utf-8"))
+    unpinned = []
+    for gallery in sg.GALLERIES:
+        page = SITE / "paintings" / gallery["slug"] / "index.html"
+        if not page.is_file():
+            continue
+        body = page.read_text(encoding="utf-8")
+        shots = sg.SHOT_RE.findall(body)
+        if shots and 'id="lightboxDownload"' not in body:
+            controls.append(gallery["slug"])
+        if shots and not (sw_version and f'/assets/js/gallery.js?v={sw_version.group(1)}"'
+                          in body):
+            unpinned.append(gallery["slug"])
+        for tag in shots:
+            shown += 1
+            href = re.search(r'\shref="([^"]+)"', tag).group(1).rsplit("/", 1)[-1]
+            link = re.search(r'\sdata-download="([^"]*)"', tag)
+            d = by_file.get((gallery["slug"], href))
+            if d is None:
+                wrong.append(f"{gallery['slug']}/{href}: no master makes a download for it")
+            elif not link:
+                wrong.append(f"{gallery['slug']}/{href}: no data-download (wants {d.name})")
+            elif link.group(1) != d.url:
+                wrong.append(f"{gallery['slug']}/{href}: links "
+                             f"{link.group(1).rsplit('/', 1)[-1]}, the file is {d.name}")
+    report(f"every painting shown offers its download by its file's name "
+           f"({shown} paintings)", shown > 0 and not wrong, wrong[0] if wrong else "")
+    report("every gallery's viewer has the download control", not controls,
+           ", ".join(controls))
+    report("gallery.js points that control at the painting's download",
+           "lightboxDownload" in js and "data-download" in js)
+    report("the galleries pin gallery.js to the service-worker version", not unpinned,
+           ", ".join(unpinned))
+
+    missing = [f"_downloads/{d.gallery}/{d.name}" for d in wanted if not d.path.is_file()]
+    report(f"every download is built ({len(wanted)} files in {mpd.OUT_ROOT})",
+           bool(wanted) and not missing,
+           (missing[0] + "  run python make_painting_downloads.py") if missing else "")
+    # the masters carry the camera's GPS position; a public download must not
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    leaks = []
+    for d in wanted:
+        if d.path.is_file():
+            with Image.open(d.path) as im:
+                if len(im.getexif()) or max(im.size) > mpd.DESIGN["edge"]:
+                    leaks.append(d.name)
+    report("no download carries EXIF (GPS) or exceeds 3000 px", not leaks,
+           leaks[0] if leaks else "")
+
 
 LIVE = "https://arasteh.art"
 
@@ -723,18 +913,20 @@ def main() -> int:
         return 0
 
     if args.quick:
-        print("[skip]  the eight script --checks (--quick)")
+        print(f"[skip]  the {len(SCRIPTS)} script --checks (--quick)")
     else:
         run_scripts()
     run_node()
     crawl()
     structured()
     guestbook()
+    native_check()
     hand_written()
     availability()
     logo()
     band()
     paintings()
+    downloads()
 
     print()
     if failures:

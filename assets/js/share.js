@@ -5,6 +5,11 @@
 (function () {
   'use strict';
   var toast;
+  /* The Persian page has a Persian shell (author 2026-11-16); every other page,
+     whatever its language, keeps these few words in English, marked as such. */
+  var fa = document.documentElement.lang === 'fa';
+  var WORDS = fa ? { copied: 'پیوند کپی شد', copy: 'این پیوند را کپی کنید:' }
+                 : { copied: 'Link copied', copy: 'Copy this link:' };
 
   function showToast(msg) {
     if (!toast) {
@@ -15,7 +20,8 @@
       /* the message is English on a page that may be in any of 114 languages;
          saying so lets a screen reader switch voice instead of reading English
          letters through, say, a Japanese one */
-      toast.setAttribute('lang', 'en');
+      toast.setAttribute('lang', fa ? 'fa' : 'en');
+      if (fa) toast.setAttribute('dir', 'rtl');
       document.body.appendChild(toast);
     }
     toast.textContent = msg;
@@ -30,11 +36,11 @@
   function fallbackCopy(url) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(url).then(
-        function () { showToast('Link copied'); },
-        function () { window.prompt('Copy this link:', url); }
+        function () { showToast(WORDS.copied); },
+        function () { window.prompt(WORDS.copy, url); }
       );
     } else {
-      window.prompt('Copy this link:', url);
+      window.prompt(WORDS.copy, url);
     }
   }
 

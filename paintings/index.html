@@ -4,18 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paintings &middot; Amir Arasteh</title>
-<meta name="description" content="Galleries of original paintings by Amir Arasteh.">
+<meta name="description" content="Original paintings by Amir Arasteh: Sedaha (Sounds) and The World Through Boteh-Jegheh.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="arasteh.art">
-<meta property="og:title" content="Paintings">
-<meta property="og:description" content="Galleries of original paintings by Amir Arasteh.">
-<meta property="og:image" content="https://arasteh.art/assets/img/paintings/sounds/cover.jpg">
-<meta property="og:image:alt" content="A painting from Sedaha (Sounds), Book One, by Amir Arasteh.">
+<meta property="og:title" content="Paintings — Amir Arasteh">
+<meta property="og:description" content="Original paintings by Amir Arasteh: Sedaha (Sounds) and The World Through Boteh-Jegheh.">
+<!-- a 1200x630 card of whole paintings, from both series (sync_gallery.py SHARE_CARDS) -->
+<meta property="og:image" content="https://arasteh.art/assets/img/paintings/share/paintings.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three paintings by Amir Arasteh, side by side: the cover painting of Sedaha (Sounds), Iran I from The World Through Boteh-Jegheh, and Picture 1 of Sedaha.">
 <meta name="theme-color" content="#F5EFE3">
 <meta property="og:url" content="https://arasteh.art/paintings/">
 <link rel="canonical" href="https://arasteh.art/paintings/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/css/style.css?v=26">
+<link rel="stylesheet" href="/assets/css/style.css?v=30">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -33,6 +36,8 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
+document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -59,8 +64,6 @@ apply(get())})();</script>
 </nav>
 <!-- APPNAV:END -->
 <main class="container" id="main">
-  <a class="back back--home" href="/">&larr; Amir Arasteh</a>
-
   <section>
     <h1>Paintings</h1>
 
@@ -92,7 +95,7 @@ apply(get())})();</script>
                alt="" decoding="async" loading="lazy">
         </picture>
         <div class="painting-collection__overlay">
-          <h2 class="painting-collection__title">The World Through Boteh-Jegheh</h2>
+          <h2 class="painting-collection__title">The World Through <span class="nb">Boteh-Jegheh</span></h2>
         </div>
       </a>
       <!-- A div, not an <a>: there is no gallery to open yet, and a tile that looks
@@ -107,7 +110,7 @@ apply(get())})();</script>
                alt="" decoding="async" loading="lazy">
         </picture>
         <div class="painting-collection__overlay">
-          <h2 class="painting-collection__title">A Yarn-Laden Truck</h2>
+          <h2 class="painting-collection__title">A <span class="nb">Yarn-Laden</span> Truck</h2>
           <p class="painting-collection__soon">Coming soon</p>
         </div>
       </div>

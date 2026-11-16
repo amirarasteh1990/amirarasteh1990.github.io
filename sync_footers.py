@@ -36,7 +36,7 @@ EMAIL = "amirarasteh.art@gmail.com"
 # On a phone the app shell puts these same destinations under the thumb, one tap
 # away, so repeating them in the footer is furniture. Derived from the tab set,
 # not typed again: adding a tab there retires its footer link here by itself.
-from sync_appnav import TABS  # noqa: E402 - a data import, and it imports nothing back
+from sync_appnav import SHELL, TABS  # noqa: E402 - a data import, and it imports nothing back
 TAB_KEYS = {key for key, *_rest in TABS}
 
 # The canonical set, in reading order. Keys are what a page passes to `omit`
@@ -59,15 +59,20 @@ LOGO = """    <a class="foot-logo" href="/" aria-label="Arasteh, home"></a>
 """
 
 
-def footer_html(omit: str = "", logo: bool = True, panel: bool = False) -> str:
+def footer_html(omit: str = "", logo: bool = True, panel: bool = False,
+                lang: str = "en") -> str:
     """The whole <footer> element, indented to sit at column 0 of a page body.
 
     omit  -- key of the one link to leave out, because it points at this page
     logo  -- False only on the homepage, which the logo would link to itself
     panel -- the homepage wraps its footer in .foot-panel to sit on the hero
+    lang  -- a language with a shell of its own (sync_appnav.SHELL) gets the footer
+             in its own words; any other keeps the English one
     """
+    words = SHELL.get(lang, {})
     pad = "      " if panel else "    "
-    shown = [(key, href, label) for key, href, label in LINKS if key != omit]
+    shown = [(key, href, words.get("tabs", {}).get(key) or words.get(key) or label)
+             for key, href, label in LINKS if key != omit]
 
     # Each link carries its own leading separator, so hiding a link on phones
     # takes its "&middot;" with it and the line never opens with a stray dot.
@@ -75,19 +80,26 @@ def footer_html(omit: str = "", logo: bool = True, panel: bool = False) -> str:
     lines = ['%s<span class="foot-link%s"> &middot; <a href="%s">%s</a></span>'
              % (pad, " is-tab" if key in TAB_KEYS else "", href, label)
              for key, href, label in shown]
-    lines.append('%s<br>Contact: <a href="mailto:%s">%s</a>' % (pad, EMAIL, EMAIL))
+    lines.append('%s<br>%s <a href="mailto:%s">%s</a>'
+                 % (pad, words.get("contact", "Contact:"), EMAIL, EMAIL))
     body = "\n".join(lines) + "\n"
 
-    inner = LOGO if logo else ""
+    copyright_line = words.get("copyright", "&copy; 2026 Amir Arasteh")
+    inner = (LOGO.replace('"Arasteh, home"', '"%s"' % words["logo"]) if words else LOGO) \
+        if logo else ""
     if panel:
         inner += ('    <div class="foot-panel">\n'
-                  '      &copy; 2026 Amir Arasteh\n'
+                  '      ' + copyright_line + '\n'
                   + body + "    </div>\n")
     else:
-        inner += "    &copy; 2026 Amir Arasteh\n" + body
+        inner += "    " + copyright_line + "\n" + body
 
-    # English on every page, including the 111 that are not in English: say so, so a
-    # screen reader announces it in an English voice. See the same note in sync_appnav.
+    # English on every page whose language has no shell of its own, including the
+    # 111 that are not in English: say so, so a screen reader announces it in an
+    # English voice. See the same note in sync_appnav.
+    if words:
+        return ('<footer class="site-footer" lang="%s" dir="%s">\n' % (lang, words["dir"])
+                + '  <div class="container">\n' + inner + '  </div>\n</footer>')
     return ('<footer class="site-footer" lang="en" dir="ltr">\n'
             '  <div class="container">\n'
             + inner +
@@ -112,7 +124,7 @@ PAGES = [
     ("sedaha/index.html",                 dict(omit="books")),
     ("editions/first-edition/index.html", dict()),
     ("sedaha/read/index.html",            dict()),
-    ("sedaha/read/fa/index.html",         dict()),
+    ("sedaha/read/fa/index.html",         dict(lang="fa")),   # Persian shell
     ("sedaha/read/da/index.html",         dict()),
 ]
 

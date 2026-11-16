@@ -7,7 +7,7 @@ Personal portfolio site of **Amir Arasteh** — paintings and books — served v
 
 ## Structure
 - `index.html` — portfolio home with Books and Paintings as the primary paths
-- `sedaha/` — *Sounds, Book 1*: cover, language search, a collapsed language list, and links to multilingual Openings/downloads
+- `sedaha/` — *Sounds, Book One*: cover, language search, a collapsed language list, and links to multilingual Openings/downloads
 - `sedaha/languages/` — legacy URL redirecting to `/sedaha/#allLangs`
 - `paintings/` — collection chooser and the Sedaha / Boteh-Jegheh galleries
 - `comments/`, `support/` — public guestbook and support links
@@ -23,7 +23,7 @@ Only **web-resolution** copies of paintings live here (for display). High-resolu
 masters are kept in a separate private archive and are **not** committed to this repo.
 
 ## License
-See [`LICENSE`](LICENSE). In short: the **book** *Sedaha (Sounds), Book 1* may be read and
+See [`LICENSE`](LICENSE). In short: the **book** *Sedaha (Sounds), Book One* may be read and
 shared free of charge as the complete, unchanged file; all other rights are reserved by the
 author. All **paintings/artwork** are © Amir Arasteh, All Rights Reserved.
 

@@ -63,27 +63,54 @@
   });
   applyType();
 
-  /* ---- theme: auto -> light -> dark -> auto ---- */
+  /* ---- theme: every tap flips what is showing (review 2026-11-14) ----
+     It used to cycle auto -> light -> dark, so on a light system the first tap
+     (auto -> light) changed nothing a reader could see. Now each tap shows the
+     other palette, and stores "auto" whenever that is the system's own, so the
+     page goes back to following the system without a third state to pass through. */
   if (!theme) return;
   if (!window.__theme || !window.__theme.usable) { theme.remove(); return; }
 
-  var ORDER = ['auto', 'light', 'dark'];
-  var LABEL = {
-    auto: 'Colours: following the system. Switch to light.',
-    light: 'Colours: light. Switch to dark.',
-    dark: 'Colours: dark. Follow the system again.'
+  var sysQuery = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+  function sysDark() { return !!(sysQuery && sysQuery.matches); }
+  function showing(mode) { return mode === 'auto' ? (sysDark() ? 'dark' : 'light') : mode; }
+  // The Persian page has a Persian shell (author 2026-11-16): its toolbar says so
+  // with lang="fa", and the button keeps speaking Persian as it is relabelled.
+  var LABELS = {
+    en: { light: 'Colours: light. Switch to dark.',
+          dark: 'Colours: dark. Switch to light.',
+          auto: ' (Following the system.)' },
+    fa: { light: 'رنگ‌ها: روشن. تغییر به تیره.',
+          dark: 'رنگ‌ها: تیره. تغییر به روشن.',
+          auto: ' (مطابق دستگاه)' }
   };
+  var LABEL = LABELS[bar.getAttribute('lang')] || LABELS.en;
 
   function paint(mode) {
+    var label = LABEL[showing(mode)] + (mode === 'auto' ? LABEL.auto : '');
     theme.setAttribute('data-mode', mode);
-    theme.setAttribute('aria-label', LABEL[mode]);
-    theme.setAttribute('title', LABEL[mode]);
+    theme.setAttribute('aria-label', label);
+    theme.setAttribute('title', label);
   }
 
   theme.addEventListener('click', function () {
-    var next = ORDER[(ORDER.indexOf(window.__theme.get()) + 1) % ORDER.length];
+    var want = showing(window.__theme.get()) === 'dark' ? 'light' : 'dark';
+    var next = ((want === 'dark') === sysDark()) ? 'auto' : want;
     window.__theme.set(next);
     paint(next);
   });
   paint(window.__theme.get());
+})();
+
+/* Remember the edition a reader opened (author 2026-11-13): the your-language button
+   (lang-mine.js), the home page's "Read free in your language" button and the Books
+   tab (sync_head.py) then lead straight back to it. Its × forgets it again. */
+(function () {
+  var m = location.pathname.match(/^\/sedaha\/read\/(?:([a-z-]+)\/)?(?:index\.html)?$/);
+  if (!m) return;
+  try {
+    localStorage.setItem('sedaha-lang', m[1] || 'en');
+    localStorage.setItem('sedaha-lang-url', '/sedaha/read/' + (m[1] ? m[1] + '/' : ''));
+    localStorage.removeItem('sedaha-lang-offer');
+  } catch (e) {}
 })();

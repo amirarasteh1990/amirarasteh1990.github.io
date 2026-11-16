@@ -20,7 +20,8 @@ is deliberate: a page fetched through an older service worker must miss that old
 worker's stylesheet cache and fetch the new CSS on the same visit.
 
 It carries two more things that must be in every head: a preload for the one
-webfont used above the fold, and the theme switch (see THEME_JS below), which has
+webfont used above the fold (plus Vazirmatn on Arabic-script pages, read from the
+page's own <html lang>), and the theme switch (see THEME_JS below), which has
 to run after the stylesheet and before first paint or a stored choice flashes.
 
 It is delimited by <!-- PWA:START --> / <!-- PWA:END --> markers and inserted just
@@ -44,8 +45,17 @@ END = "<!-- PWA:END -->"
 
 # Keep this in step with sw.js. Unlike the service-worker cache name alone, this
 # version reaches a returning reader before the newly deployed worker activates.
-STYLE_VERSION = "26"
+STYLE_VERSION = "30"
 STYLE_HREF = f"/assets/css/style.css?v={STYLE_VERSION}"
+
+# Pages whose <html lang> is written in the Arabic script. Their own text is set in
+# Vazirmatn (the :lang() rule at the top of style.css names the same languages), so
+# they preload it as well, and only they do (author 2026-11-16): on the other pages
+# it would be a download nobody reads.
+ARABIC_SCRIPT = {"fa", "ar", "ur", "ps", "prs", "ckb", "sd", "bal", "glk", "mzn",
+                 "lrc", "ug"}
+VAZIRMATN_PRELOAD = ('<link rel="preload" href="/assets/fonts/vazirmatn-regular.woff2" '
+                     'as="font" type="font/woff2" crossorigin>\n')
 
 
 # Light/dark is authored once, as a (prefers-color-scheme:dark) block in
@@ -76,14 +86,30 @@ THEME_JS = (
 )
 
 
-def head_html() -> str:
-    """The managed head block, indented to sit at column 0 inside <head>."""
+# Once a reader has opened an edition's Opening (reader.js remembers it), the Books
+# tab leads straight back to it from every page outside the book section (author
+# 2026-11-13). Inside /sedaha/ it stays the book page, so the way to every other
+# language is never lost. Nothing happens for a visitor who has not chosen.
+BOOKS_TAB_JS = (
+    '<script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */\n'
+    'document.addEventListener("DOMContentLoaded",function(){try{'
+    'var u=localStorage.getItem("sedaha-lang-url");'
+    'if(!u||!/^\\/sedaha\\/read\\/([a-z-]+\\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;'
+    'var a=document.querySelector(\'.appnav a[href="/sedaha/"]\');if(a)a.href=u}catch(e){}});</script>\n'
+)
+
+
+def head_html(lang: str = "") -> str:
+    """The managed head block, indented to sit at column 0 inside <head>.
+
+    lang -- the page's <html lang>; an Arabic-script page also preloads Vazirmatn."""
     return (
         START + "\n"
         # the one face used above the fold on every page (headings, reading text)
         '<link rel="preload" href="/assets/fonts/ebgaramond-regular.woff2" as="font" '
         'type="font/woff2" crossorigin>\n'
-        + THEME_JS +
+        + (VAZIRMATN_PRELOAD if lang in ARABIC_SCRIPT else "")
+        + THEME_JS + BOOKS_TAB_JS +
         '<link rel="manifest" href="/manifest.webmanifest">\n'
         '<meta name="mobile-web-app-capable" content="yes">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n'
@@ -106,11 +132,20 @@ STYLE_HREF_RE = re.compile(
 )
 
 
+HTML_LANG_RE = re.compile(r'<html[^>]*\blang="([^"]+)"')
+
+
+def page_lang(html: str) -> str:
+    """The language a page declares on its <html> element ("" if none)."""
+    m = HTML_LANG_RE.search(html)
+    return m.group(1) if m else ""
+
+
 def restamp(html: str) -> str:
     """Refresh the stylesheet URL and PWA block in one canonical pass."""
     html = STYLE_HREF_RE.sub(STYLE_HREF, html)
     html = BLOCK_RE.sub("", html)
-    block = head_html()
+    block = head_html(page_lang(html))
     return HEAD_END_RE.sub(lambda _m: block + "\n</head>", html, count=1)
 
 

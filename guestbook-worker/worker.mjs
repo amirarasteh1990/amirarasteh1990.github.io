@@ -1,14 +1,29 @@
-/* Account-free intake for the arasteh.art guestbook.
+/* Account-free intake for the arasteh.art guestbook, and for the native-speaker
+   check pages (/sedaha/check/<slug>/).
 
-   The Worker validates one public note, rate-limits a salted hash of the source
-   address, and creates a GitHub issue. Its issue-only credential never reaches
-   the browser. Raw IP addresses, user agents, and email addresses are not stored
-   or logged by this code. */
+   POST /       one public guestbook note -> a `guestbook` issue the publishing
+                workflow turns into an entry.
+   POST /check  a native speaker's answers -> one `native-check` issue for Amir.
+                It never carries the guestbook marker or label, so the
+                guestbook workflow leaves it alone.
+
+   Both validate, rate-limit a salted hash of the source address, and create a
+   GitHub issue. The issue-only credential never reaches the browser. Raw IP
+   addresses, user agents, and email addresses are not stored or logged by this
+   code. */
 
 const MAX_BODY_BYTES = 8192;
+// A full check: up to 40 answers with 600-character notes, which in a three-byte
+// script (Devanagari, Bengali, Thai...) is about 72 KB of UTF-8.
+const MAX_CHECK_BYTES = 98304;
 const GITHUB_API_VERSION = '2026-03-10';
 const CONTROL_CHARACTERS = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/;
 const LANGUAGE = /^(?:[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*|mul|und)$/;
+const CHECK_MARKER = '<!-- native-check:v1 -->';
+const CHECK_SLUG = /^[a-z]{2,3}(?:-[a-z]{2,4})?$/;
+const CHECK_VERSION = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,39}$/;
+const CHECK_ID = /^[A-Za-z0-9][A-Za-z0-9_./#-]{0,79}$/;
+const VERDICTS = {ok: 'Correct', change: 'Needs change'};
 
 class PublicError extends Error {
   constructor(message, status = 400) {
@@ -109,7 +124,91 @@ function issueBody(note) {
     'This note publishes automatically. Amir is notified and can remove it if needed.';
 }
 
-async function rateLimit(request, env) {
+function optional(value) {
+  return value === undefined || value === null ||
+    (typeof value === 'string' && value.trim() === '');
+}
+
+// A native speaker's answers. Free text is refused if it holds an HTML comment
+// opener, so no answer can smuggle the guestbook workflow's marker into the issue.
+function checkSubmission(raw) {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
+    throw new PublicError('The form format was not recognized.');
+  }
+  if (raw.website) throw new PublicError('The answers could not be accepted.');
+  const lang = typeof raw.lang === 'string' ? raw.lang.trim() : '';
+  if (!CHECK_SLUG.test(lang)) throw new PublicError('The language could not be recognized.');
+  const pageVersion = cleanLine(raw.page_version, 'Page version', 1, 40);
+  if (!CHECK_VERSION.test(pageVersion)) {
+    throw new PublicError('The page version could not be recognized.');
+  }
+  const name = optional(raw.name) ? '' : cleanLine(raw.name, 'Name', 1, 60);
+  if (!Array.isArray(raw.items) || raw.items.length < 1 || raw.items.length > 40) {
+    throw new PublicError('Send between 1 and 40 answers.');
+  }
+  const seen = new Set();
+  const items = raw.items.map(item => {
+    if (!item || typeof item !== 'object' || Array.isArray(item)) {
+      throw new PublicError('An answer was not recognized.');
+    }
+    const id = typeof item.id === 'string' ? item.id.trim() : '';
+    if (!CHECK_ID.test(id) || seen.has(id)) {
+      throw new PublicError('An answer was not recognized.');
+    }
+    seen.add(id);
+    if (item.verdict !== 'ok' && item.verdict !== 'change') {
+      throw new PublicError('Each answer must be Correct or Needs change.');
+    }
+    const note = optional(item.note) ? '' : cleanText(item.note, 'Note', 1, 600);
+    return {id, verdict: item.verdict, note};
+  });
+  if ([name].concat(items.map(item => item.note)).some(text => text.includes('<!--'))) {
+    throw new PublicError('Notes cannot contain "<!--".');
+  }
+  return {lang, page_version: pageVersion, name, items};
+}
+
+function languageName(lang) {
+  try {
+    const name = new Intl.DisplayNames(['en'], {type: 'language'}).of(lang);
+    if (name && name.toLowerCase() !== lang) return name;
+  } catch {
+    // an unknown tag keeps its slug
+  }
+  return lang;
+}
+
+// Inline code renders visitor text literally: no HTML, no Markdown, and no
+// @mention notifies anyone. Line breaks become " / " so each answer stays one row.
+function literal(text) {
+  text = text.replace(/\s*\n\s*/g, ' / ');
+  const longest = Math.max(0, ...(text.match(/`+/g) || []).map(run => run.length));
+  const fence = '`'.repeat(longest + 1);
+  return fence + ' ' + text + ' ' + fence;
+}
+
+function checkIssue(answers) {
+  const language = languageName(answers.lang);
+  const n = answers.items.length;
+  const changes = answers.items.filter(item => item.verdict === 'change').length;
+  const rows = answers.items.map(item =>
+    '- `' + item.id + '` ' +
+    (item.verdict === 'change' ? '**' + VERDICTS.change + '**' : VERDICTS.ok) +
+    (item.note ? ': ' + literal(item.note) : ''));
+  return {
+    title: 'Native check: ' + language + ' (' + n + (n === 1 ? ' answer)' : ' answers)'),
+    body: CHECK_MARKER + '\n\n' +
+      '**' + language + '** (`' + answers.lang + '`), page version `' +
+      answers.page_version + '`, from ' +
+      (answers.name ? literal(answers.name) : 'an unnamed reader') + '.\n' +
+      n + (n === 1 ? ' answer' : ' answers') + ': ' + (n - changes) + ' Correct, ' +
+      changes + ' Needs change.\n\n' + rows.join('\n') + '\n\n' +
+      '---\nSent from https://arasteh.art/sedaha/check/' + answers.lang + '/.',
+    labels: ['native-check']
+  };
+}
+
+async function rateLimit(request, env, wait = 'Please wait a minute before posting another note.') {
   if (!env.RATE_LIMIT_SALT || !env.SUBMIT_RATE_LIMITER ||
       typeof env.SUBMIT_RATE_LIMITER.limit !== 'function') {
     throw new PublicError('The guestbook is not configured yet.', 503);
@@ -121,20 +220,20 @@ async function rateLimit(request, env) {
     .join('');
   const result = await env.SUBMIT_RATE_LIMITER.limit({key});
   if (!result || result.success !== true) {
-    throw new PublicError('Please wait a minute before posting another note.', 429);
+    throw new PublicError(wait, 429);
   }
 }
 
-async function readPayload(request) {
+async function readPayload(request, limit = MAX_BODY_BYTES, tooLarge = 'The note is too large.') {
   const contentType = (request.headers.get('Content-Type') || '').toLowerCase();
   if (!contentType.startsWith('application/json')) {
     throw new PublicError('The form format was not recognized.');
   }
   const declared = Number(request.headers.get('Content-Length') || 0);
-  if (declared > MAX_BODY_BYTES) throw new PublicError('The note is too large.');
+  if (declared > limit) throw new PublicError(tooLarge);
   const body = await request.text();
-  if (new TextEncoder().encode(body).length > MAX_BODY_BYTES) {
-    throw new PublicError('The note is too large.');
+  if (new TextEncoder().encode(body).length > limit) {
+    throw new PublicError(tooLarge);
   }
   try {
     return JSON.parse(body);
@@ -163,7 +262,7 @@ export async function handle(request, env, githubFetch = fetch) {
       ? new Response(null, {status: 204, headers})
       : json({ok: false, error: 'Origin not allowed.'}, 403, headers);
   }
-  if (url.pathname !== '/') {
+  if (url.pathname !== '/' && url.pathname !== '/check') {
     return json({ok: false, error: 'Not found.'}, 404, headers);
   }
   if (request.method !== 'POST') {
@@ -172,14 +271,31 @@ export async function handle(request, env, githubFetch = fetch) {
   if (!originAllowed) {
     return json({ok: false, error: 'Origin not allowed.'}, 403, headers);
   }
+  const check = url.pathname === '/check';
+  const failed = check ? 'The answers could not be sent just now.'
+    : 'The note could not be posted just now.';
   if (!configured(env)) {
-    return json({ok: false, error: 'The guestbook is not configured yet.'}, 503, headers);
+    return json({ok: false, error: check ? 'The check form is not configured yet.'
+      : 'The guestbook is not configured yet.'}, 503, headers);
   }
 
   try {
-    const raw = await readPayload(request);
-    const note = submission(raw);
-    await rateLimit(request, env);
+    let note;
+    let issue;
+    if (check) {
+      const raw = await readPayload(request, MAX_CHECK_BYTES, 'The answers are too large.');
+      issue = checkIssue(checkSubmission(raw));
+      await rateLimit(request, env, 'Please wait a minute before sending again.');
+    } else {
+      const raw = await readPayload(request);
+      note = submission(raw);
+      issue = {
+        title: 'Reader note from ' + note.name,
+        body: issueBody(note),
+        labels: ['guestbook', 'pending', 'shareable']
+      };
+      await rateLimit(request, env);
+    }
 
     let response;
     try {
@@ -195,15 +311,11 @@ export async function handle(request, env, githubFetch = fetch) {
             'User-Agent': 'arasteh-guestbook',
             'X-GitHub-Api-Version': GITHUB_API_VERSION
           },
-          body: JSON.stringify({
-            title: 'Reader note from ' + note.name,
-            body: issueBody(note),
-            labels: ['guestbook', 'pending', 'shareable']
-          })
+          body: JSON.stringify(issue)
         }
       );
     } catch {
-      return json({ok: false, error: 'The note could not be posted just now.'}, 502, headers);
+      return json({ok: false, error: failed}, 502, headers);
     }
 
     if (!response.ok) {
@@ -211,7 +323,7 @@ export async function handle(request, env, githubFetch = fetch) {
         status: response.status,
         request_id: response.headers.get('x-github-request-id') || undefined
       });
-      return json({ok: false, error: 'The note could not be posted just now.'}, 502, headers);
+      return json({ok: false, error: failed}, 502, headers);
     }
 
     const created = await response.json().catch(() => ({}));
@@ -219,7 +331,17 @@ export async function handle(request, env, githubFetch = fetch) {
         typeof created.created_at !== 'string' ||
         !/^\d{4}-\d{2}-\d{2}T/.test(created.created_at)) {
       console.error('GitHub issue creation returned an incomplete receipt');
-      return json({ok: false, error: 'Posting could not be confirmed.'}, 502, headers);
+      return json({ok: false, error: check ? 'Sending could not be confirmed.'
+        : 'Posting could not be confirmed.'}, 502, headers);
+    }
+
+    if (check) {
+      return json({
+        ok: true,
+        posted: true,
+        issue_number: created.number,
+        message: 'Sent. Thank you: Amir has your answers.'
+      }, 201, headers);
     }
 
     const published = created.created_at.slice(0, 10);
@@ -245,7 +367,7 @@ export async function handle(request, env, githubFetch = fetch) {
     console.error('Unexpected guestbook failure', {
       name: error && error.name ? error.name : 'Error'
     });
-    return json({ok: false, error: 'The note could not be posted just now.'}, 500, headers);
+    return json({ok: false, error: failed}, 500, headers);
   }
 }
 

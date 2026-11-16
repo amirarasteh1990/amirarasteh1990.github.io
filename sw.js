@@ -67,21 +67,36 @@
         the new gallery. */
 /* v29: generated language links work without scripts; pin the enhanced finder
    so a returning browser cannot append the old dynamic list to the new HTML. */
-var VERSION = 'arasteh-v29';
+/* v30: the download terms line under the finder's buttons (finder.js?v=30). */
+/* v31: site clean-up -- the home page leads with the book, the your-language button
+   (lang-mine.js) replaces the offer line, the rotating line and hero count are gone,
+   three quick starts instead of nine; stylesheet v27. */
+/* v32: wording pass -- share previews, the finder's answers, the app shortcut to the
+   language list (the manifest is an asset, served cache-first). */
+/* v33: the 2026-11-14 page-review fixes -- language boxes, right-to-left Opening
+   pages, lightbox loading, guestbook, home on phones; stylesheet v28. */
+/* v34: the 2026-11-16 batch -- galleries hang in rows, in series order; the
+   cover and Opening painting come in smaller copies (srcset); share cards for the
+   paintings pages; the Persian Opening's shell in Persian (reader.js, share.js and
+   backtotop.js speak it there); stylesheet v29. */
+/* v35: painting downloads -- the lightbox offers each painting's badged 3000 px
+   copy from the `paintings` release (gallery.js?v=35); stylesheet v30. */
+var VERSION = 'arasteh-v35';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=26',
+  '/assets/css/style.css?v=30',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
-  '/assets/js/finder.js?v=29',
+  '/assets/js/lang-mine.js?v=35',
+  '/assets/js/finder.js?v=35',
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=29',
+  '/assets/js/guestbook.js?v=35',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

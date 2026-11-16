@@ -23,6 +23,9 @@
   var loadMore = document.getElementById('guestbookMore');
   var featuredSection = document.getElementById('guestbookFeatured');
   var featuredList = document.getElementById('guestbookFeaturedEntries');
+  // The "Reader notes" heading waits for the first note (author 2026-11-13, site
+  // clean-up): an empty guestbook shows the form and one line, nothing more.
+  var archiveHead = document.querySelector('.guestbook-archive-head');
   var endpointMeta = document.querySelector('meta[name="guestbook-endpoint"]');
   var endpoint = endpointMeta ? endpointMeta.content.trim() : '';
   if (/^(?:localhost|127\.0\.0\.1)$/.test(location.hostname)) {
@@ -152,7 +155,7 @@
     }));
     populateFilter(allEntries);
     renderFeatured();
-    tools.hidden = false;
+    tools.hidden = allEntries.length <= 12;
     shown = 12;
     render();
   }
@@ -161,7 +164,7 @@
     if (!form || !submit) return;
     if (!validEndpoint(endpoint)) {
       submit.disabled = true;
-      status('The comment box is not connected yet.', 'error');
+      status('The note box is not connected yet.', 'error');
       return;
     }
     submit.disabled = false;
@@ -173,6 +176,17 @@
         return;
       }
       var L = preferredLanguage();
+      // The label follows the note's own script when the browser's language cannot
+      // be its language (review 2026-11-14): a Persian note from an English browser
+      // was labelled English. The reader's last Opening decides if it fits, else none.
+      var arabicScript = /[\u0600-\u06FF]/.test(form.elements.message.value);
+      var rtlLang = !!(L.rtl || RTL[String(L.lang).split('-')[0]]);
+      if (arabicScript !== rtlLang) {
+        var mine = '';
+        try { mine = localStorage.getItem('sedaha-lang') || ''; } catch (e) {}
+        var M = mine ? languageRecord(mine) : null;
+        L = (M && !!(M.rtl || RTL[mine]) === arabicScript) ? M : languageRecord('und');
+      }
       var payload = {
         name: form.elements.name.value.trim(),
         message: form.elements.message.value.trim(),
@@ -181,12 +195,12 @@
         website: form.elements.website.value
       };
       if (!payload.name || !payload.message) {
-        status('Add your name and comment before posting.', 'error');
+        status('Add your name and your note before posting.', 'error');
         return;
       }
       submit.disabled = true;
       submit.textContent = 'Posting\u2026';
-      status('Posting your comment\u2026', 'quiet');
+      status('Posting your note\u2026', 'quiet');
       var controller = typeof AbortController === 'function' ? new AbortController() : null;
       var timedOut = false;
       var timer = controller ? setTimeout(function () {
@@ -204,17 +218,27 @@
       }).then(function (response) {
         return response.json().catch(function () { return {}; }).then(function (data) {
           if (!response.ok || data.ok !== true || data.posted !== true) {
-            throw new Error(data.error || 'The comment could not be posted just now.');
+            throw new Error(data.error || 'The note could not be posted just now.');
           }
           return data;
         });
       }).then(function (data) {
         addConfirmedEntry(data.entry);
         form.reset();
+        // the new card lands below the form, off-screen on a phone: bring it into view
+        var fresh = list && list.querySelector('.guestbook-card');
+        if (fresh && fresh.scrollIntoView) {
+          var still = window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          fresh.scrollIntoView({behavior: still ? 'auto' : 'smooth', block: 'center'});
+        }
         status(data.message || 'Posted. Amir has been notified.', 'success');
       }).catch(function (error) {
+        // a lost connection used to show the browser's raw "Failed to fetch"
         status(timedOut ? 'Posting took too long. Please try again.' :
-          (error.message || 'The comment could not be posted just now.'), 'error');
+          error instanceof TypeError ?
+            'The guestbook could not be reached. Your note is still here; please try again.' :
+          (error.message || 'The note could not be posted just now.'), 'error');
       }).finally(function () {
         if (timer) clearTimeout(timer);
         submit.disabled = false;
@@ -246,7 +270,9 @@
     var article = document.createElement('article');
     article.className = 'guestbook-card' + (featured ? ' is-featured' : '');
     article.setAttribute('lang', entry.language === 'und' || entry.language === 'mul' ? 'en' : entry.language);
-    article.setAttribute('dir', L.rtl || RTL[String(entry.language).split('-')[0]] ? 'rtl' : 'auto');
+    // the note's own text decides its direction (review 2026-11-14): an English note
+    // from a Persian-language browser was forced right-to-left ("!Read it…")
+    article.setAttribute('dir', 'auto');
 
     var message = document.createElement('blockquote');
     message.className = 'guestbook-message';
@@ -262,11 +288,13 @@
     details.className = 'guestbook-card-details';
     details.lang = 'en';
     details.dir = 'ltr';
-    var language = document.createElement('span');
-    language.className = 'guestbook-card-language';
-    language.textContent = entry.language_name || L.en;
-    details.appendChild(language);
-    details.appendChild(document.createTextNode(' · '));
+    if (String(entry.language) !== 'und') {   // no label when the language is unknown
+      var language = document.createElement('span');
+      language.className = 'guestbook-card-language';
+      language.textContent = entry.language_name || L.en;
+      details.appendChild(language);
+      details.appendChild(document.createTextNode(' · '));
+    }
     var time = document.createElement('time');
     time.dateTime = entry.published;
     time.textContent = dateLabel(entry.published);
@@ -333,6 +361,7 @@
     empty.hidden = entries.length !== 0;
     count.textContent = entries.length === 1 ? 'One reader note' : entries.length + ' reader notes';
     loadMore.hidden = entries.length <= shown;
+    if (archiveHead) archiveHead.hidden = allEntries.length === 0;
   }
 
   function load() {
@@ -344,16 +373,17 @@
         allEntries = mergeEntries(data.entries);
         populateFilter(allEntries);
         renderFeatured();
-        tools.hidden = !allEntries.length;
+        tools.hidden = allEntries.length <= 12;   // a search over a handful is noise
         render();
       }).catch(function () {
         allEntries = mergeEntries([]);
         if (allEntries.length) {
           populateFilter(allEntries);
-          tools.hidden = false;
+          tools.hidden = allEntries.length <= 12;
           render();
         } else {
           tools.hidden = true;
+          if (archiveHead) archiveHead.hidden = true;
           empty.hidden = false;
           empty.textContent = 'The reader notes could not be opened just now. Please try again later.';
           count.textContent = '';

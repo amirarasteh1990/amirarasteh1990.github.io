@@ -14,7 +14,7 @@
   "categories": ["books", "art", "education"],
   "shortcuts": [
     { "name": "Read the opening", "short_name": "Read", "url": "/sedaha/read/" },
-    { "name": "Find your language", "short_name": "Languages", "url": "/sedaha/languages/" },
+    { "name": "Find your language", "short_name": "Languages", "url": "/sedaha/#allLangs" },
     { "name": "Paintings", "short_name": "Paintings", "url": "/paintings/" }
   ],
   "icons": [
