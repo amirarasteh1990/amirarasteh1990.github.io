@@ -1,38 +1,38 @@
 {
-  "lang": "az",
-  "slug": "az",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Eynilə uşaqlıqda — Maman köhnə paltarların ipini açanda, biz ipi götürüb evdə gəzirdik ki, yun üst-üstə yığılmasın.",
-      "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
-    },
-    {
-      "id": "04b/1003#2",
-      "where": "04b/1003",
-      "text": "– Bax nə gül dəstəsini suya verdin, beyni sıçmış.",
-      "q": "This Persian idiom is kept literally. Is it clear it means you messed up?"
-    },
-    {
-      "id": "04b/1070#3",
-      "where": "04b/1070",
-      "text": "Mərtəbələrin arasındakı boş fəzaya baxan dəlikciyə tərəf gedirəm və bir mərtəbə aşağıdan dördüncü mərtəbəyə baxıram.",
-      "q": "Is 'dəlikciyə' right for a window onto the open well between floors?"
-    },
-    {
-      "id": "04b/1225#4",
-      "where": "04b/1225",
-      "text": "Hamid dibdən qısaldılmış saçlarını örtmək üçün gözlüklü papaq qoymuşdu.",
-      "q": "Is 'gözlüklü papaq' right for a cap with a brim (a peaked cap)?"
-    },
-    {
-      "id": "04b/1256#5",
-      "where": "04b/1256",
-      "text": "– Əgər maşını özünlə aparmaq istəsən, ha.",
-      "q": "Taghi agrees to fight, on one condition. Does the final 'ha' read as yes?"
-    }
-  ]
+ "lang": "az",
+ "slug": "az",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Eynilə uşaqlıqda — Maman köhnə paltarların ipini açanda, biz ipi götürüb evdə gəzirdik ki, yun üst-üstə yığılmasın.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
+  },
+  {
+   "id": "04b/1003#2",
+   "where": "04b/1003",
+   "text": "– Bax nə gül dəstəsini suya verdin, beyni sıçmış.",
+   "q": "This Persian idiom is kept literally. Is it clear it means you messed up?"
+  },
+  {
+   "id": "04b/1070#3",
+   "where": "04b/1070",
+   "text": "Mərtəbələrin arasındakı boş fəzaya baxan dəlikciyə tərəf gedirəm və bir mərtəbə aşağıdan dördüncü mərtəbəyə baxıram.",
+   "q": "Is 'dəlikciyə' right for a window onto the open well between floors?"
+  },
+  {
+   "id": "04b/1225#4",
+   "where": "04b/1225",
+   "text": "Hamid dibdən qısaldılmış saçlarını örtmək üçün günlüklü papaq qoymuşdu.",
+   "q": "Is 'günlüklü papaq' right for a cap with a brim (a peaked cap)?"
+  },
+  {
+   "id": "04b/1256#5",
+   "where": "04b/1256",
+   "text": "– Əgər maşını özünlə aparmaq istəsən, ha.",
+   "q": "Taghi agrees to fight, on one condition. Does the final 'ha' read as yes?"
+  }
+ ]
 }

@@ -10,6 +10,7 @@ GitHub release, which still counts it as before (download_counts.py, `show downl
     python download_log.py                 # the last 7 days, summarised
     python download_log.py --days 30
     python download_log.py --day 2026-11-17 --raw    # every event of one day (TSV)
+    python download_log.py --file Japanese --days 30 # one edition: where it was fetched from
 
 The key lives in ~/.sedaha_stats_key (outside the repo) and as the Worker secret
 STATS_KEY; only someone holding it can read the events. Output is ASCII only (the
@@ -23,6 +24,7 @@ import datetime as dt
 import json
 import os
 import secrets
+import ssl
 import subprocess
 import sys
 import urllib.error
@@ -32,8 +34,40 @@ from pathlib import Path
 WORKER = "https://arasteh-guestbook.amir-arasteh.workers.dev/"
 KEY_FILE = Path.home() / ".sedaha_stats_key"
 WORKER_DIR = Path(__file__).resolve().parent / "guestbook-worker"
-KINDS = ("browser", "bot", "other", "none")
+KINDS = ("browser", "hosted", "bot", "other", "none")
 BURST_MINUTES, BURST_MIN = 30, 25   # this many downloads inside this window = a burst
+# A "browser" whose network owner looks like a hosting/cloud/VPN/proxy provider is counted
+# as "hosted": a real reader rarely downloads from a datacenter. Matched case-insensitively
+# against the network-owner name; extend the list when a new one shows up.
+HOSTING_HINTS = (
+    "hosting", "host ", "cloud", "server", "data center", "datacenter", "colo", "vps", "vpn",
+    "proxy", "amazon", "aws", "google", "microsoft", "azure", "oracle", "alibaba", "tencent",
+    "digitalocean", "linode", "akamai", "ovh", "hetzner", "vultr", "choopa", "m247",
+    "leaseweb", "contabo", "scaleway", "datacamp", "cdn77", "zenlayer", "g-core", "psychz",
+    "quadranet", "colocrossing", "hostinger", "ionos", "cloudflare", "fastly",
+    "collyer quay", "aceville", "income at raffles",   # Tencent Cloud's Singapore entities
+)
+# Cloud networks by AS number; the owner name alone can be a street address.
+HOSTING_ASNS = {
+    "132203": "Tencent Cloud", "45090": "Tencent Cloud", "45102": "Alibaba Cloud",
+    "16509": "Amazon", "14618": "Amazon", "15169": "Google", "396982": "Google Cloud",
+    "8075": "Microsoft", "14061": "DigitalOcean", "24940": "Hetzner", "16276": "OVH",
+    "63949": "Akamai/Linode", "20473": "Vultr", "31898": "Oracle Cloud", "9009": "M247",
+}
+
+
+def kind(e: dict) -> str:
+    """The client kind, with browser-looking clients on hosting/VPN networks split off."""
+    k = e.get("k", "none")
+    owner = (e.get("o") or "").lower()
+    if k == "browser" and (str(e.get("n", "")) in HOSTING_ASNS
+                           or any(h in owner for h in HOSTING_HINTS)):
+        return "hosted"
+    return k
+
+
+def provider(e: dict) -> str:
+    return HOSTING_ASNS.get(str(e.get("n", "")), e.get("o", ""))
 
 
 def a(text: object) -> str:
@@ -59,11 +93,23 @@ def setup(new: bool) -> int:
     return 0
 
 
+def tls() -> ssl.SSLContext:
+    """System roots plus certifi's, when present: some Pythons (Inkscape's, first on PATH
+    here) ship an OpenSSL that cannot see the Windows store and fail to verify the Worker."""
+    ctx = ssl.create_default_context()
+    try:
+        import certifi
+        ctx.load_verify_locations(certifi.where())
+    except Exception:
+        pass
+    return ctx
+
+
 def fetch_day(day: str, key: str) -> list[dict]:
     req = urllib.request.Request(f"{WORKER}dl-stats?day={day}", headers={
         "Authorization": f"Bearer {key}", "User-Agent": "arasteh-download-log"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(req, timeout=30, context=tls()) as r:
             return json.loads(r.read().decode("utf-8")).get("events", [])
     except urllib.error.HTTPError as exc:
         msg = {401: "the key was refused (run --setup again?)",
@@ -93,10 +139,17 @@ def top(counter: collections.Counter, n: int = 6) -> str:
 
 
 def summarise(day: str, events: list[dict]) -> None:
-    kinds = collections.Counter(e.get("k", "none") for e in events)
+    kinds = collections.Counter(kind(e) for e in events)
     print(f"\n{day}  total {len(events)}  " + "  ".join(f"{k} {kinds.get(k, 0)}" for k in KINDS))
     if not events:
         return
+    readers = [e for e in events if kind(e) == "browser"]
+    if len(readers) != len(events):
+        print(f"  readers   : {len(readers)} (browsers on home/mobile networks)"
+              + (f" from {top(collections.Counter(e.get('c', '') for e in readers))}" if readers else ""))
+    hosted = [e for e in events if kind(e) == "hosted"]
+    if hosted:
+        print(f"  hosted    : {top(collections.Counter(provider(e) for e in hosted), 4)}")
     print(f"  countries : {top(collections.Counter(e.get('c', '') for e in events))}")
     print(f"  networks  : {top(collections.Counter(e.get('o', '') for e in events))}")
     print(f"  came from : {top(collections.Counter(e.get('f', '') for e in events))}")
@@ -120,6 +173,7 @@ def main() -> int:
     ap.add_argument("--days", type=int, default=7, help="how many days back (default 7)")
     ap.add_argument("--day", help="one day, YYYY-MM-DD (UTC)")
     ap.add_argument("--raw", action="store_true", help="print every event as TSV")
+    ap.add_argument("--file", help="only files whose name contains this, e.g. Japanese or .epub")
     args = ap.parse_args()
     if args.setup:
         return setup(args.new_key)
@@ -133,12 +187,15 @@ def main() -> int:
     shown = 0
     for day in days:
         events = fetch_day(day, key)
+        if args.file:
+            events = [e for e in events if args.file.lower() in e.get("a", "").lower()]
         if not events and not args.day:
             continue                      # quiet days say nothing
         shown += 1
         if args.raw:
             for e in sorted(events, key=lambda e: e["t"]):
-                print("\t".join(a(e.get(k, "")) for k in ("t", "r", "a", "m", "k", "c", "o", "n", "f", "u")))
+                print("\t".join(a(kind(e) if k == "k" else e.get(k, ""))
+                                for k in ("t", "r", "a", "m", "k", "c", "o", "n", "f", "u")))
         else:
             summarise(day, events)
     if not shown:

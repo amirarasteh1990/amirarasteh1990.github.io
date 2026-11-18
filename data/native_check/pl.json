@@ -1,26 +1,18 @@
-{
-  "lang": "pl",
-  "slug": "pl",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.",
-      "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"
-    },
-    {
-      "id": "04b/1312#2",
-      "where": "04b/1312",
-      "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
-      "q": "A student's crude made-up word for a muddled head. Is 'gównozamęt' understandable?"
-    },
-    {
-      "id": "04b/1320#3",
-      "where": "04b/1320",
-      "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.",
-      "q": "Amir hunts for a Hafez verse with shaking hands. Does this read naturally?"
-    }
-  ]
-}
+{"lang": "pl", "slug": "pl", "dir": "ltr", "version": "2026-11-18",
+ "items": [
+  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.", "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"},
+  {"id": "04b/1312#2", "where": "04b/1312", "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.", "q": "A student's crude made-up word for a muddled head. Is 'gównozamęt' understandable?"},
+  {"id": "04b/1320#3", "where": "04b/1320", "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.", "q": "Amir hunts for a Hafez verse with shaking hands. Does this read naturally?"},
+  {"id": "01/0116#4", "where": "01/0116", "text": "Wychodź też na zewnątrz. Idź w jakieś spokone miejsce.", "q": "Maman mispronounces 'spokone' (quiet) on purpose. Is that clear?"},
+  {"id": "01/0148#5", "where": "01/0148", "text": "– Co i Uśmiechy?", "q": "Asked about a film, Maman catches only the end of its title. Is that clear?"},
+  {"id": "03/0191#6", "where": "03/0191", "text": "– Oho. Hamidzie Kocie, jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?", "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it land?"},
+  {"id": "03/0290#7", "where": "03/0290", "text": "– Czy Arasteh to przycięte Araasteh?", "q": "A guard puns on Arasteh and Araasteh (Persian: neat). Is the joke clear?"},
+  {"id": "03/0430#8", "where": "03/0430", "text": "– A z tym twoim chujowym sposobem mówienia powinieneś się nazywać Alat Delon.", "q": "A rude pun on the actor Alain Delon. Does 'Alat Delon' work as an insult?"},
+  {"id": "04a/0076#9", "where": "04a/0076", "text": "– To kamień z marmulu. Marmul znaczy bardzo drogi.", "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"},
+  {"id": "04b/0595#10", "where": "04b/0595", "text": "Orle Oko mówi peer-to-peer, a Taverny mówi Eldie-do-Eldie.", "q": "Amir misheard 'peer' as pir, Persian for elder. Does this punch line work?"},
+  {"id": "04b/1263#11", "where": "04b/1263", "text": "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?", "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?"},
+  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Tak, kupię ci lalkę.", "q": "Dad playfully echoes his toddler's baby talk. Does it sound like that?"},
+  {"id": "04b/1321#13", "where": "04b/1321", "text": "„To wino, które tam jest, jest prawdziwe nie jest przenośnią”.", "q": "He says this quoted line can be read two opposite ways. Can it?"},
+  {"id": "04b/1321#14", "where": "04b/1321", "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.", "q": "He nearly repeats the crude word, then stops himself. Is that clear?"},
+  {"id": "06/0056#15", "where": "06/0056", "text": "Ziemię sypali na nią burdożerem.", "q": "Maman mispronounces 'burdożerem' (bulldozer) on purpose. Is that clear?"}
+ ]}

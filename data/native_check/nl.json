@@ -1,26 +1,98 @@
 {
-  "lang": "nl",
-  "slug": "nl",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt.",
-      "q": "The writer may have died long ago. Does this sentence read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Momenten en beelden die verloren zouden zijn gegaan in het koortsachtige gemurmel van de gebeurtenissen in de wereld als ze hier niet waren opgeschreven.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "Opening/0007#3",
-      "where": "Opening/0007",
-      "text": "Zoals in onze kindertijd, toen Maman het garen uit oude kleren losmaakte, en wij de draad namen en ermee rondjes door het huis liepen zodat het garen zich niet zou ophopen.",
-      "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
-    }
-  ]
+ "lang": "nl",
+ "slug": "nl",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt.",
+   "q": "The writer may have died long ago. Does this sentence read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Momenten en beelden die verloren zouden zijn gegaan in het koortsachtige gemurmel van de gebeurtenissen in de wereld als ze hier niet waren opgeschreven.",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "Zoals in onze kindertijd, toen Maman het garen uit oude kleren losmaakte, en wij de draad namen en ermee rondjes door het huis liepen zodat het garen zich niet zou ophopen.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
+  },
+  {
+   "id": "01/0116#4",
+   "where": "01/0116",
+   "text": "Ga ook naar buiten. Ga naar stiele plekken.",
+   "q": "Maman mispronounces 'stiele' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "03/0191#5",
+   "where": "03/0191",
+   "text": "Oho, Hamid Kat, tot gisteren zei je nog \"langoor\". Nu ben je ineens zo beschaafd dat je \"ezel\" zegt?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0373#6",
+   "where": "03/0373",
+   "text": "Ik zeg, dat Ameroka heeft bevestigd dat Iran het nucleaire programma heeft stopgezet.",
+   "q": "Maman says 'Ameroka' for America, on purpose. Is that clear?"
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "En jij, met die lullige manier van praten van je, had Alat Delon moeten heten.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#8",
+   "where": "04a/0076",
+   "text": "Het is malmersteen. Malmer betekent heel duur.",
+   "q": "A child mispronounces marble and thinks it means expensive. Does that come through?"
+  },
+  {
+   "id": "04b/0387#9",
+   "where": "04b/0387",
+   "text": "Gisteravond hoorde ik je herkauwen.",
+   "q": "Eskandar teases Hooman for secretly eating sweets at night. Does 'herkauwen' work here?"
+  },
+  {
+   "id": "04b/0595#10",
+   "where": "04b/0595",
+   "text": "Arendsoog zegt peer-to-peer; het Oudje zegt oudje-tot-oudje.",
+   "q": "Amir misheard peer as pir, Persian for elder. Does 'oudje-tot-oudje' work?"
+  },
+  {
+   "id": "04b/1263#11",
+   "where": "04b/1263",
+   "text": "Vroeoem, Baba Baba, koop je die glote pop vool me?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1265#12",
+   "where": "04b/1265",
+   "text": "Ja, die koop ik. Als ik geld heb, koop ik een nog mooiere voor je, Baba's meisje.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "Je wordt er schijttureluurs van. Hoe meer je erover nadenkt, hoe schijttureluurser je wordt.",
+   "q": "A girl jokes with a crude made-up word for mind-bending. Does 'schijttureluurs' work?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "\"Die wijn daar is de echte wijn niet een metafoor.\"",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Met een bulderdozer gooiden ze aarde over haar heen.",
+   "q": "Maman says 'bulderdozer' for bulldozer, on purpose. Is that clear?"
+  }
+ ]
 }

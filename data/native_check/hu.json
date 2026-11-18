@@ -1,50 +1,122 @@
 {
-  "lang": "hu",
-  "slug": "hu",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Erről az oldalról kibontom a szavak fonalát, a másik oldalról te összeszeded azt.",
-      "q": "Is it clear that 'azt' refers to the words you gather up?"
-    },
-    {
-      "id": "03/0585#2",
-      "where": "03/0585",
-      "text": "Eszkandar és Mejszam elkezdtek elemezni, hogy ami a gépészmérnöki karon történt, az csupán egy csepp az egész tengerből.",
-      "q": "Is it clear the faculty's events are a small picture of the whole world?"
-    },
-    {
-      "id": "03/0664#3",
-      "where": "03/0664",
-      "text": "A tévéből azt mondták, csináltak egy bárányt, amely hasonlít a többi bárányhoz.",
-      "q": "TV news about Dolly, the cloned sheep. Does 'bárányt' sound right here?"
-    },
-    {
-      "id": "04b/0855#4",
-      "where": "04b/0855",
-      "text": "Addigra annak az embernek az ingéből kiinduló tűz, aki egy tunéziai utcán felgyújtotta magát, már több ország kiterjedésűvé nőtt, és lassan kihunyóban volt.",
-      "q": "About the Tunisian man who set himself on fire. Does this read naturally?"
-    },
-    {
-      "id": "04b/1227#5",
-      "where": "04b/1227",
-      "text": "Úgy tűnt, hallotta, hogy a sógoruk mestere unokatestvérének barátja Babylisst használt a hajához.",
-      "q": "Does 'mestere' clearly mean the master craftsman their brother-in-law works under?"
-    },
-    {
-      "id": "04b/1228#6",
-      "where": "04b/1228",
-      "text": "– Hamíd, az egész vagyonodat a sógorotok mestere unokatestvérének barátja, aki a leggazdagabb ember Teheránban, szavai miatt szórtad ki a szélbe.",
-      "q": "Is it clear Hamid wasted his fortune because of this rich friend's words?"
-    },
-    {
-      "id": "04b/1263#7",
-      "where": "04b/1263",
-      "text": "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
-      "q": "A toddler asks his dad for a doll. Does it sound like baby talk?"
-    }
-  ]
+ "lang": "hu",
+ "slug": "hu",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Erről az oldalról kibontom a szavak fonalát, a másik oldalról te összeszeded azt.",
+   "q": "Is it clear that 'azt' refers to the words you gather up?"
+  },
+  {
+   "id": "03/0585#2",
+   "where": "03/0585",
+   "text": "Eszkandar és Mejszam elkezdtek elemezni, hogy ami a gépészmérnöki karon történt, az csupán egy csepp az egész tengerből.",
+   "q": "Is it clear the faculty's events are a small picture of the whole world?"
+  },
+  {
+   "id": "03/0664#3",
+   "where": "03/0664",
+   "text": "A tévéből azt mondták, csináltak egy bárányt, amely hasonlít a többi bárányhoz.",
+   "q": "TV news about Dolly, the cloned sheep. Does 'bárányt' sound right here?"
+  },
+  {
+   "id": "04b/0855#4",
+   "where": "04b/0855",
+   "text": "Addigra annak az embernek az ingéből kiinduló tűz, aki egy tunéziai utcán felgyújtotta magát, már több ország kiterjedésűvé nőtt, és lassan kihunyóban volt.",
+   "q": "About the Tunisian man who set himself on fire. Does this read naturally?"
+  },
+  {
+   "id": "04b/1227#5",
+   "where": "04b/1227",
+   "text": "Úgy tűnt, hallotta, hogy a sógoruk mestere unokatestvérének barátja Babylisst használt a hajához.",
+   "q": "Does 'mestere' clearly mean the master craftsman their brother-in-law works under?"
+  },
+  {
+   "id": "04b/1228#6",
+   "where": "04b/1228",
+   "text": "– Hamíd, az egész vagyonodat a sógorotok mestere unokatestvérének barátja, aki a leggazdagabb ember Teheránban, szavai miatt szórtad ki a szélbe.",
+   "q": "Is it clear Hamid wasted his fortune because of this rich friend's words?"
+  },
+  {
+   "id": "04b/1263#7",
+   "where": "04b/1263",
+   "text": "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "01/0116#8",
+   "where": "01/0116",
+   "text": "Menj ki is. Menj csindez helyekre.",
+   "q": "Maman mispronounces 'csindez' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0166#9",
+   "where": "01/0166",
+   "text": "Hiába mondtam, ne üsd a gyerekeket, azt mondta, a háborúban lökötté váltam, nem tehetek róla.",
+   "q": "He means the war left him shell-shocked. Does 'lökötté váltam' say that?"
+  },
+  {
+   "id": "01/0203#10",
+   "where": "01/0203",
+   "text": "Bah, legalább nem tépte volna szét a hadirokkantpapírjait, én még hagyján, de ezek a gyerekek mit vétkeztek, hogy elviselik a vitáidat, hallgatják a kokht-kokht köhögésedet éjjel-nappal, tönkremegy az idegzetük, és semmi hasznot sem húznak abból, hogy hadirokkant vagy, legalábbis?",
+   "q": "Maman is reproaching Baba, speaking to him directly. Does this sentence read naturally?"
+  },
+  {
+   "id": "03/0191#11",
+   "where": "03/0191",
+   "text": "– Hamíd Macska, még tegnap khárt mondtál. Most már civilizált lettél, és olaghot mondasz?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0430#12",
+   "where": "03/0430",
+   "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alat Delon-nak kellett volna lennie. Ne hízelegj magadnak, nem Alain Delont értem, akiért összehúzod az orrodat...",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04b/0595#13",
+   "where": "04b/0595",
+   "text": "– De jól elszúrta. Sasszem azt mondja, peer-to-peer, Taverny meg azt mondja, pír-to-pír.",
+   "q": "Taverny (Amir) heard 'peer' as 'pír', Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1078#14",
+   "where": "04b/1078",
+   "text": "– Áá, kösz...",
+   "q": "Nilufár's thanks breaks off in the middle of the word. Does that come through?"
+  },
+  {
+   "id": "04b/1262#15",
+   "where": "04b/1262",
+   "text": "Autózás, a hét kővel játszott haft-sang, szamár-rendőr, paradicsom az utca közepén, és mindenekfölött a foci Kúcsán város Stadio delle Alpijában.",
+   "q": "A list of street games. Is 'paradicsom az utca közepén' clearly a game?"
+  },
+  {
+   "id": "04b/1265#16",
+   "where": "04b/1265",
+   "text": "– Igen, megveszem a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1312#17",
+   "where": "04b/1312",
+   "text": "Az embernek belezavarodik a feje. Minél többet gondolkodsz rajta, annál jobban belezavarodik a fejed.",
+   "q": "A girl uses a crude, made-up phrase for mind-bending. Does that come through?"
+  },
+  {
+   "id": "04b/1321#18",
+   "where": "04b/1321",
+   "text": "„Az a bor, amely amott van, igazság, nem képletes.”",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0201#19",
+   "where": "06/0201",
+   "text": "törött perzsájával – a nagynéném tanult egy keveset – valahogy megértette vele, hogy mielőtt a külföldiek jöttek Aahankeshire, pontosan így mondta: Aahankeshi, és a nagynéném is az ő perzsa szavát ismételte: Aahankeshi, vagyis „vashúzás”; az Aahankeshi előtt két kockacukorral itta a teáját, most viszont kénytelen egy kockával elviselni a tea keserűségét.",
+   "q": "Aahankeshi is the old man's word for building the railway. Does this make sense?"
+  }
+ ]
 }

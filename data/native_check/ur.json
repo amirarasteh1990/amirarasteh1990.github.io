@@ -1,38 +1,32 @@
 {
-  "lang": "ur",
-  "slug": "ur",
-  "dir": "rtl",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "اِس طرف سے میں الفاظ کا دھاگہ کھولتا جاتا ہوں، اُس طرف سے آپ اسے سمیٹتے جاتے ہیں۔",
-      "q": "Is it clear that 'اسے' refers to the words you gather up?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "جیسے بچپن میں مامان پرانے کپڑوں کا اُون کھولا کرتی تھیں اور ہم دھاگا اٹھا کر گھر کے اندر اندر پھرتے تھے تاکہ اُون گڈمڈ نہ ہو جائے۔",
-      "q": "'مامان' is kept from Persian (Mom). Does this sentence read naturally?"
-    },
-    {
-      "id": "04b/1023#3",
-      "where": "04b/1023",
-      "text": "میں منزلوں کے بیچ کی چار خالی جگہوں کے ایک دوسرے پر چڑھے دریچوں کے بیچ سے برآمدے کا دوسرا سرا دیکھنے کی کوشش کرتا ہوں۔",
-      "q": "Is 'دریچوں' the right word for the stacked openings between floors?"
-    },
-    {
-      "id": "04b/1385#4",
-      "where": "04b/1385",
-      "text": "میں اس کی یاد اور خاطرے میں ڈوب جاتا ہوں، اس کی یاد اور خاطرے، اس کے خاطرے، خاطرے، خاطرے، خاطرے۔",
-      "q": "Is 'خاطرے' a natural Urdu word for memory here?"
-    },
-    {
-      "id": "04b/1385#5",
-      "where": "04b/1385",
-      "text": "کوئی چیز میری گردن کے پیچھے ٹکراتی ہے۔ یہ اسی نیمکت کا تختہ ہے جس پر میں نیلوفر کے ساتھ بیٹھا تھا۔",
-      "q": "Is 'نیمکت' a natural Urdu word for a bench?"
-    }
-  ]
+ "lang": "ur",
+ "slug": "ur",
+ "dir": "rtl",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "اِس طرف سے میں الفاظ کا دھاگہ کھولتا جاتا ہوں، اُس طرف سے آپ اسے سمیٹتے جاتے ہیں۔",
+   "q": "Is it clear that 'اسے' refers to the words you gather up?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "جیسے بچپن میں مامان پرانے کپڑوں کا اُون کھولا کرتی تھیں اور ہم دھاگا اٹھا کر گھر کے اندر اندر پھرتے تھے تاکہ اُون گڈمڈ نہ ہو جائے۔",
+   "q": "'مامان' is kept from Persian (Mom). Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/1023#3",
+   "where": "04b/1023",
+   "text": "میں منزلوں کے بیچ کی چار خالی جگہوں کے ایک دوسرے پر چڑھے دریچوں کے بیچ سے برآمدے کا دوسرا سرا دیکھنے کی کوشش کرتا ہوں۔",
+   "q": "Is 'دریچوں' the right word for the stacked openings between floors?"
+  },
+  {
+   "id": "04b/1385#4",
+   "where": "04b/1385",
+   "text": "میں اس کی یاد اور اس کی یادوں میں ڈوب جاتا ہوں، اس کی یاد اور یادوں میں، اس کی یادوں میں، یادوں، یادوں، یادوں۔",
+   "q": "Memories keep coming back to him. Does this repeated line read naturally?"
+  }
+ ]
 }

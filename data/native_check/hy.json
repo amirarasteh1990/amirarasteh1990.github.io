@@ -1,32 +1,18 @@
-{
-  "lang": "hy",
-  "slug": "hy",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Այստեղ ոչինչ տեղի չի ունենում։ Ոչինչ չի շտկվի, ոչինչ չի քանդվի։",
-      "q": "From the opening page. Do these lines read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Ինչպես մանկության ժամանակ, երբ Մամանը հին հագուստներից մանվածքն էր քանդում, և մենք վերցնում էինք թելն ու տան մեջ պտտվում, որ մանվածքի թելերն իրար վրա չկուտակվեն։",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "04b/1312#3",
-      "where": "04b/1312",
-      "text": "Մարդ քաքապտույտ է ունենում։",
-      "q": "A girl jokes crudely: the painting makes you dizzy. Is 'քաքապտույտ' clear?"
-    },
-    {
-      "id": "04b/1320#4",
-      "where": "04b/1320",
-      "text": "Ու դողդոջուն ձեռքերով խելահեղորեն թերթում էի ղազալները, որ Հաֆեզից մի բեյթ գտնեմ ու ցույց տամ Նիլուֆարին՝ այնպիսի մի բեյթ, որ, նկարի պես, ինչպես այն մյուս աղջիկն էր ասել, որքան խորանանք դրա մեջ՝ այնքան մեր քաքապտույտն ուժեղանա։",
-      "q": "This echoes the girl's crude joke about dizziness. Does it read naturally?"
-    }
-  ]
-}
+{"lang": "hy", "slug": "hy", "dir": "ltr", "version": "2026-11-18",
+ "items": [
+  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Այստեղ ոչինչ տեղի չի ունենում։ Ոչինչ չի շտկվի, ոչինչ չի քանդվի։", "q": "From the opening page. Do these lines read naturally?"},
+  {"id": "Opening/0007#2", "where": "Opening/0007", "text": "Ինչպես մանկության ժամանակ, երբ Մամանը հին հագուստներից մանվածքն էր քանդում, և մենք վերցնում էինք թելն ու տան մեջ պտտվում, որ մանվածքի թելերն իրար վրա չկուտակվեն։", "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"},
+  {"id": "04b/1312#3", "where": "04b/1312", "text": "Մարդ քաքապտույտ է ունենում։", "q": "A girl jokes crudely: the painting makes you dizzy. Is 'քաքապտույտ' clear?"},
+  {"id": "04b/1320#4", "where": "04b/1320", "text": "Ու դողդոջուն ձեռքերով խելահեղորեն թերթում էի ղազալները, որ Հաֆեզից մի բեյթ գտնեմ ու ցույց տամ Նիլուֆարին՝ այնպիսի մի բեյթ, որ, նկարի պես, ինչպես այն մյուս աղջիկն էր ասել, որքան խորանանք դրա մեջ՝ այնքան մեր քաքապտույտն ուժեղանա։", "q": "This echoes the girl's crude joke about dizziness. Does it read naturally?"},
+  {"id": "01/0116#5", "where": "01/0116", "text": "Դուրս էլ գնա։ Հանգսիտ տեղեր գնա։", "q": "Maman mispronounces the word for quiet on purpose. Is that clear?"},
+  {"id": "01/0148#6", "where": "01/0148", "text": "– Ինչե՞րն ու ժպիտները։", "q": "Maman heard only the end of a TV title, Tears and Smiles. Does this work?"},
+  {"id": "03/0191#7", "where": "03/0191", "text": "– Օհո՜։ Համիդ կատու, մինչև երեկ «էշ» էիր ասում։ Հիմա մարդացե՞լ ես, ասում ես «ավանակ»։", "q": "Hamid switched from a rude word for donkey to a polite one. Is that clear?"},
+  {"id": "03/0430#8", "where": "03/0430", "text": "– Իսկ դու, քո այդ քութակ խոսելաձևով՝ անունդ պիտի լիներ Ալաթ Դելոն։", "q": "The nickname is meant as a rude pun on Alain Delon. Does it work?"},
+  {"id": "04a/0076#9", "where": "04a/0076", "text": "– Մարմալ քար է։ Մարմալ նշանակում է շատ թանկ։", "q": "A child mispronounces marble and thinks the word means expensive. Is that clear?"},
+  {"id": "04b/0387#10", "where": "04b/0387", "text": "– Երեկ գիշեր որոճալուդ ձայնը գալիս էր։", "q": "Teasing a friend who secretly eats sweets at night, like a cow. Does it work?"},
+  {"id": "04b/0595#11", "where": "04b/0595", "text": "– Բայց, հը, քաքեց։ Արծվաչյան ասում է փիեր-թու-փիեր, Խրաբաթցին ասում է փիր-թու-փիր։", "q": "Amir misheard peer as pir, Persian for elder. Does the joke work?"},
+  {"id": "04b/1263#12", "where": "04b/1263", "text": "– Վըժժժ, Բաբա՛, Բաբա՛, էս մե՛ց տիկնիկը ինձ կգընե՞ս։", "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"},
+  {"id": "04b/1265#13", "where": "04b/1265", "text": "– Հա, տիկնիկը կգնեմ քեզ։ Փող ձեռքս գա՝ դրանից էլ լավը կգնեմ քեզ, Բաբայի՛ աղջիկ։", "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"},
+  {"id": "04b/1321#14", "where": "04b/1321", "text": "«Այն գինին որ այնտեղ է իսկական գինի է ոչ փոխաբերություն»։", "q": "This Hafez line should allow two readings: real wine, and only a metaphor. Does it?"},
+  {"id": "06/0056#15", "where": "06/0056", "text": "Բուլդոզելով հող էին լցնում վրան։ Հող ու կիր։", "q": "Maman mispronounces bulldozer on purpose. Is that clear?"}
+ ]}

@@ -1,38 +1,104 @@
 {
-  "lang": "sk",
-  "slug": "sk",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "03/0119#2",
-      "where": "03/0119",
-      "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
-      "q": "Does 'pocit známosti' (a sense of having seen her before) sound natural?"
-    },
-    {
-      "id": "03/0590#3",
-      "where": "03/0590",
-      "text": "Keď plán večera poézie zlyhal, spomenul som si na Mamanin modlitebný chador.",
-      "q": "Is 'chador' (an Iranian prayer veil) spelled the usual Slovak way?"
-    },
-    {
-      "id": "04b/1263#4",
-      "where": "04b/1263",
-      "text": "– Vžžžum, Baba, Baba, kúpiš mi tú veľkú bábiku?",
-      "q": "A toddler asks his dad ('Baba') for a doll. Does it sound like baby talk?"
-    },
-    {
-      "id": "04b/1312#5",
-      "where": "04b/1312",
-      "text": "Z toho sa vám zatočí hlava. Čím viac o tom premýšľate, tým viac sa vám točí hlava.",
-      "q": "Is it clear this girl is swearing crudely about feeling dizzy?"
-    }
-  ]
+ "lang": "sk",
+ "slug": "sk",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "03/0119#2",
+   "where": "03/0119",
+   "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
+   "q": "Does 'pocit známosti' (a sense of having seen her before) sound natural?"
+  },
+  {
+   "id": "03/0590#3",
+   "where": "03/0590",
+   "text": "Keď plán večera poézie zlyhal, spomenul som si na Mamanin modlitebný chador.",
+   "q": "Is 'chador' (an Iranian prayer veil) spelled the usual Slovak way?"
+  },
+  {
+   "id": "04b/1263#4",
+   "where": "04b/1263",
+   "text": "– Vžžžum, Baba, Baba, kúpiš mi tú veľkú bábiku?",
+   "q": "A toddler asks her dad ('Baba') for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1312#5",
+   "where": "04b/1312",
+   "text": "Z toho sa vám zatočí hlava. Čím viac o tom premýšľate, tým viac sa vám točí hlava.",
+   "q": "Is it clear this girl is swearing crudely about feeling dizzy?"
+  },
+  {
+   "id": "01/0116#6",
+   "where": "01/0116",
+   "text": "Choď na tichée miesta.",
+   "q": "Maman mispronounces 'tichée' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "03/0135#7",
+   "where": "03/0135",
+   "text": "Yaser povedal, lebo Babov nákladiak Khavar sa nezmestí do uličky.",
+   "q": "Yaser means his own father's truck. Is that clear here?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "Hamíd Mačka, včera si hovoril khár. Teraz si sa stihol zdvoriliť a hovoríš somár?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0462#9",
+   "where": "03/0462",
+   "text": "– Máte sa dobre?",
+   "q": "She is silent, and he senses something is wrong. Does this question fit?"
+  },
+  {
+   "id": "03/0560#10",
+   "where": "03/0560",
+   "text": "– Povedzte svojej mame všetko.",
+   "q": "Maman says this to one boy, Omid. Does this wording fit?"
+  },
+  {
+   "id": "04b/0460#11",
+   "where": "04b/0460",
+   "text": "– Čo ťa zase trápi, že sa na nás naparuješ, Alat Delon?",
+   "q": "Alat Delon is a crude nickname. Does this line keep the crude joke going?"
+  },
+  {
+   "id": "04b/0743#12",
+   "where": "04b/0743",
+   "text": "Ležal som v tme izby a škárou vo dverách som videl Ghassema, ako sedí v hale pred televízorom a lúska semienka, a Maman sedela vedľa neho.",
+   "q": "They sit in the family's main living room. Does 'v hale' fit?"
+  },
+  {
+   "id": "04b/1265#13",
+   "where": "04b/1265",
+   "text": "– Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti ešte lepšiu, Babova dievčinka.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1320#14",
+   "where": "04b/1320",
+   "text": "A trasúcimi sa rukami som prekotne listoval ghazalmi, hľadajúc ten beit od Háfeza, o ktorom, ako povedala tá druhá dievčina, čím hlbšie sa doň norím, tým viac sa mi točí hlava – aby som ho mohol Niloofar ukázať.",
+   "q": "He recalls a girl's crude phrase for mind-bending confusion. Does that come through?"
+  },
+  {
+   "id": "04b/1321#15",
+   "where": "04b/1321",
+   "text": "Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "04b/1321#16",
+   "where": "04b/1321",
+   "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým viac sa ti to... viac sa ti točí hlava.",
+   "q": "He starts a crude word, stops, and says a polite one. Does that come through?"
+  }
+ ]
 }

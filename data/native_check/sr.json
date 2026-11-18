@@ -1,12 +1,104 @@
-{"lang": "sr", "slug": "sr", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "sr",
+ "slug": "sr",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Као у детињству, кад би Маман распредала предиво са старе одеће, а ми бисмо узели нит и кружили по кући да се предиво не би гомилало.",
-   "q": "Is it clear the children walk around inside the house, holding the yarn?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007",
+   "q": "Is it clear the children walk around inside the house, holding the yarn?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
    "text": "Можда је твоја генерација дошла коју годину касније за тај свет предива — али замисли: некад, негде у свету, деца су се тако играла.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "03/0091#3", "where": "03/0091",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "03/0091#3",
+   "where": "03/0091",
    "text": "Улазна врата су се отворила и ушли су. Врата се затворише.",
-   "q": "Amir pictures the scene as it happens. Does the tense of 'затворише' read naturally?"}
- ]}
+   "q": "Amir pictures the scene as it happens. Does 'затворише' read naturally here?"
+  },
+  {
+   "id": "01/0116#4",
+   "where": "01/0116",
+   "text": "Изађи и напоље. Иди на тиша места.",
+   "q": "Maman means quiet places and mispronounces the word on purpose. Is that clear?"
+  },
+  {
+   "id": "01/0152#5",
+   "where": "01/0152",
+   "text": "Волео бих да знам шта се дешава у Нини-џановој глави.",
+   "q": "Nini-jan is Maman, a woman. Does 'Нини-џановој глави' sound right?"
+  },
+  {
+   "id": "01/0203#6",
+   "where": "01/0203",
+   "text": "Па, зар барем није могао да не поцепа своје документе ратног инвалида? Заборавите мене; каква су то деца прегрешила да морају да трпе твоје свађе, да дан и ноћ слушају твоје кохт-кохт и да им нерви пуцају, а да ипак немају никакве користи од тога што си ратни инвалид?",
+   "q": "Maman speaks straight to Baba in both sentences. Does this read naturally?"
+  },
+  {
+   "id": "03/0135#7",
+   "where": "03/0135",
+   "text": "Јасер рече јер Бабин Хавар камион не стаје у сокак.",
+   "q": "It is Yaser's father's truck. Is that clear here?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "– Ох-хо. Хамиде Мачко, до јуче си говорио „хар“, а сад си се прокултурисао па говориш „магаре“?",
+   "q": "Hamid swapped a rude donkey word for a polite one. Does the teasing work?"
+  },
+  {
+   "id": "03/0278#9",
+   "where": "03/0278",
+   "text": "Каруби је љубав, искрено и објективно.",
+   "q": "Farid's slangy praise: Karroubi is love, honestly and truly. Does it sound natural?"
+  },
+  {
+   "id": "03/0430#10",
+   "where": "03/0430",
+   "text": "– А ти, с тим својим курчевим начином говора, требало је да ти је име Алат Делон.",
+   "q": "The nickname twists the actor Alain Delon into a crude insult. Does it work?"
+  },
+  {
+   "id": "04a/0076#11",
+   "where": "04a/0076",
+   "text": "– То је малмални камен. Малмал значи јако скупо.",
+   "q": "A child mispronounces marble and thinks it means expensive. Does that come across?"
+  },
+  {
+   "id": "04b/0595#12",
+   "where": "04b/0595",
+   "text": "– Али га је сјебао. Орлово Око каже пер ту пер, а Таверни каже Старе ту Старе.",
+   "q": "Amir misheard peer-to-peer as elder-to-elder. Does this punch line work?"
+  },
+  {
+   "id": "04b/1106#13",
+   "where": "04b/1106",
+   "text": "Попут оног вуненог кончића за који сам веровао да ме неће пустити да се изгубим, а који се, кад сам имао четири године, закачио за нечију ногу и у гужви се удаљио од мене и оставио ме самог.",
+   "q": "He means the strand of yarn he held as a child. Does 'вуненог кончића' fit?"
+  },
+  {
+   "id": "04b/1263#14",
+   "where": "04b/1263",
+   "text": "– Виииж, Баба, Баба, хоцес ли да ми купис ову велику лутку?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1312#15",
+   "where": "04b/1312",
+   "text": "Човека ухвати говновртоглавица. Што више размишљаш о томе, говновртоглавица је све јача.",
+   "q": "A girl coins a crude word meaning mind-bendingly confusing. Does 'говновртоглавица' work?"
+  },
+  {
+   "id": "06/0182#16",
+   "where": "06/0182",
+   "text": "Немој да једеш тугу због Тагија, чујеш, Нана-песар-џан. Ако ти једеш тугу, и ја једем тугу.",
+   "q": "Maman gently tells him not to grieve for Taghi. Does 'једеш тугу' sound natural here?"
+  }
+ ]
+}

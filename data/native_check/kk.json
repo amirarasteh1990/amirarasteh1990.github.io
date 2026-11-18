@@ -1,27 +1,50 @@
-{"lang": "kk", "slug": "kk", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "kk",
+ "slug": "kk",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Осы жақтан мен сөздер жібін тарқатайын, ана жақтан сен оны жинайсың.",
-   "q": "Is it clear that 'оны' refers to the words being gathered?"},
-  {"id": "01/0116#2", "where": "01/0116",
-   "text": "Сыртқа да шық. Тыныш жерлерге бар.",
-   "q": "Maman mispronounces the word for quiet on purpose. Does 'Тыныш' show that?"},
-  {"id": "03/0044#3", "where": "03/0044",
+   "q": "Is it clear that 'оны' refers to the words being gathered?"
+  },
+  {
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Сыртқа да шық. Хуаит жерлерге бар.",
+   "q": "Maman mispronounces the word for quiet on purpose. Does 'Хуаит' read as her mispronounced 'quiet'?"
+  },
+  {
+   "id": "03/0044#3",
+   "where": "03/0044",
    "text": "– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.",
-   "q": "A friend warns of a deadly attack from Farid. Is 'өлімші қадам' right for that?"},
-  {"id": "03/0045#4", "where": "03/0045",
+   "q": "A friend warns of a deadly attack from Farid. Is 'өлімші қадам' right for that?"
+  },
+  {
+   "id": "03/0045#4",
+   "where": "03/0045",
    "text": "Мазандаран ятауы бүгін жасыл алхоры бере ді, оның үстіне бізбен атауын білмейтін шөппен деп айтқанда, «Менің Қалам – Менің Мәдениетім» көрмесінің баспалдақтарымен Фаридпен бірге төмен жүріп бара жатқанымды байқадым.",
-   "q": "Farid hears a stall gives out green plums with a herb. Is this clear?"},
-  {"id": "03/0049#5", "where": "03/0049",
-   "text": "– Ия, оның конкур орны жақсы болды, екі таңбалы. Қошқарда бірінші болды.",
-   "q": "He came first in his town, Quchan. Is 'Қошқарда' right for that?"},
-  {"id": "03/0601#6", "where": "03/0601",
+   "q": "Farid hears a stall gives out green plums with a herb. Is this clear?"
+  },
+  {
+   "id": "03/0601#5",
+   "where": "03/0601",
    "text": "Ол дайындарымды «қандай ұятсыз адам қызыма жезөкше деп атауға батыл болды» деп жүз одан да жаман нәрселерімен бірге айтып, маңайды өрт алды.",
-   "q": "Negar's mother rages at the whole street. Does this sentence read naturally?"},
-  {"id": "04b/0204#7", "where": "04b/0204",
+   "q": "Negar's mother rages at the whole street. Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/0204#6",
+   "where": "04b/0204",
    "text": "– Сен бұндай нәрселер істемеуші едің ғой.",
-   "q": "Someone asks this in surprise. Does it read as a question?"},
-  {"id": "04b/0503#8", "where": "04b/0503",
+   "q": "Someone asks this in surprise. Does it read as a question?"
+  },
+  {
+   "id": "04b/0503#7",
+   "where": "04b/0503",
    "text": "Тек: «Шынымен осынша қарадүрсін өліп бара жатырмын ба?» деп ойлап тұрдым.",
-   "q": "Is 'қарадүрсін' right for dying just like that, for no reason?"}
- ]}
+   "q": "Is 'қарадүрсін' right for dying just like that, for no reason?"
+  }
+ ]
+}

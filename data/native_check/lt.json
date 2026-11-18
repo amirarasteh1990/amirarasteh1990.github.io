@@ -1,32 +1,98 @@
 {
-  "lang": "lt",
-  "slug": "lt",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta.",
-      "q": "From the opening page. Do these lines read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Kaip vaikystėje, kai Maman narstydavo siūlus iš senų drabužių, o mes imdavome siūlą ir sukdavome ratus po namus, kad siūlai nesikauptų į krūvą.",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "04b/1312#3",
-      "where": "04b/1312",
-      "text": "Žmogui šūdinai susisuka galva. Kuo daugiau apie tai galvoji, tuo šūdiniau ji sukasi.",
-      "q": "A girl jokes crudely: the painting makes you dizzy. Is 'šūdinai susisuka galva' clear?"
-    },
-    {
-      "id": "04b/1320#4",
-      "where": "04b/1320",
-      "text": "Ir drebančiomis rankomis greitai greitai varčiau gazeles, ieškodamas Hafezo beito, nuo kurio – kaip, anot tos kitos merginos, nuo to paveikslo – kuo giliau į jį panyrame, tuo šūdiniau mums sukasi galva, kad galėčiau parodyti jį Nilūfar.",
-      "q": "This echoes the girl's crude joke about dizziness. Does it read naturally?"
-    }
-  ]
+ "lang": "lt",
+ "slug": "lt",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta.",
+   "q": "From the opening page. Do these lines read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Kaip vaikystėje, kai Maman narstydavo siūlus iš senų drabužių, o mes imdavome siūlą ir sukdavome ratus po namus, kad siūlai nesikauptų į krūvą.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
+  },
+  {
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Žmogui šūdinai susisuka galva. Kuo daugiau apie tai galvoji, tuo šūdiniau ji sukasi.",
+   "q": "A girl jokes crudely: the painting makes you dizzy. Is 'šūdinai susisuka galva' clear?"
+  },
+  {
+   "id": "04b/1320#4",
+   "where": "04b/1320",
+   "text": "Ir drebančiomis rankomis greitai greitai varčiau gazeles, ieškodamas Hafezo beito, nuo kurio – kaip, anot tos kitos merginos, nuo to paveikslo – kuo giliau į jį panyrame, tuo šūdiniau mums sukasi galva, kad galėčiau parodyti jį Nilūfar.",
+   "q": "This echoes the girl's crude joke about dizziness. Does it read naturally?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "Eik ir į lauką. Eik ten, kur tyklu.",
+   "q": "Maman mispronounces 'tyklu' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0132#6",
+   "where": "01/0132",
+   "text": "Arba cholara, pavyzdžiui. Ir ji tiek daug nenužudė.",
+   "q": "Maman mispronounces 'cholara' on purpose; she means cholera. Is that clear?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "– Oh-ho. Hamidai Kate, iki vakar dar sakei „khar“. Dabar staiga tapai toks mandagus ir sakai „asilas“?",
+   "q": "Taghi mocks Hamid's switch from a rude to a polite donkey word. Is that clear?"
+  },
+  {
+   "id": "03/0278#8",
+   "where": "03/0278",
+   "text": "Karubis — tai meilė, tikra tiesa.",
+   "q": "Farid gushes about a politician in student slang. Does this sound natural?"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– O tau, su tuo bybišku kalbėjimu, reikėjo vadintis Alat Delonu.",
+   "q": "'Alat Delonu' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– Tai marmalo akmuo. Marmalas reiškia, kad labai brangu.",
+   "q": "A child mispronounces marble as 'marmalo' and thinks it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "Erelio Akis sako „peer-to-peer“, o Taverny sako „Seni-su-Seniu“.",
+   "q": "Amir misheard 'peer' as pir, Persian for elder, like his nickname. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "– Vviii, Baba, Baba, nupilksi man šitą didelę lėlytę?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1265#13",
+   "where": "04b/1265",
+   "text": "– Taip, nupilksiu tau lėlytę. Kai gausiu pinigų, nupilksiu tau dar geresnę, Babos dukrele.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "„Tas vynas ten yra tikras ne metafora.“",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Burdozeriu užvertė ją žemėmis. Žemėmis ir kalkėmis.",
+   "q": "Maman mispronounces 'Burdozeriu' on purpose; she means bulldozer. Is that clear?"
+  }
+ ]
 }

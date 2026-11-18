@@ -1,26 +1,18 @@
-{
-  "lang": "es",
-  "slug": "es",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Aquí no ocurre nada. Aquí nada va a arreglarse ni a destruirse.",
-      "q": "The book's first lines. Do these two sentences read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Desde este lado, voy desenredando el hilo de las palabras, y desde el otro lado, tú las vas recogiendo.",
-      "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"
-    },
-    {
-      "id": "Opening/0007#3",
-      "where": "Opening/0007",
-      "text": "Como en la infancia, cuando Maman destejía prendas viejas y nosotros tomábamos la hebra y dábamos vueltas por el interior de la casa para que la lana no se amontonara.",
-      "q": "A childhood game with yarn from old clothes. Does this read naturally?"
-    }
-  ]
-}
+{"lang": "es", "slug": "es", "dir": "ltr", "version": "2026-11-18",
+ "items": [
+  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Aquí no ocurre nada. Aquí nada va a arreglarse ni a destruirse.", "q": "The book's first lines. Do these two sentences read naturally?"},
+  {"id": "Opening/0007#2", "where": "Opening/0007", "text": "Desde este lado, voy desenredando el hilo de las palabras, y desde el otro lado, tú las vas recogiendo.", "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"},
+  {"id": "Opening/0007#3", "where": "Opening/0007", "text": "Como en la infancia, cuando Maman destejía prendas viejas y nosotros tomábamos la hebra y dábamos vueltas por el interior de la casa para que la lana no se amontonara.", "q": "A childhood game with yarn from old clothes. Does this read naturally?"},
+  {"id": "01/0116#4", "where": "01/0116", "text": "Sal también. Ve a lugares quaietos.", "q": "Maman mispronounces 'quaietos' (quiet) on purpose. Is that clear?"},
+  {"id": "03/0191#5", "where": "03/0191", "text": "– Hamid el Gato, hasta ayer decías burro. ¿Ahora eres civilizado y dices asno?", "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it land?"},
+  {"id": "03/0278#6", "where": "03/0278", "text": "Karroubi es amor, honestamente.", "q": "Farid gushes about a politician in slang. Does 'honestamente' sound natural here?"},
+  {"id": "03/0290#7", "where": "03/0290", "text": "– ¿Arasteh no es más que araasteh recortado?", "q": "A guard puns on Arasteh and araasteh (Persian: neat). Is the joke clear?"},
+  {"id": "03/0430#8", "where": "03/0430", "text": "– Y tú, con esa forma tan polla de hablar que tienes, deberías haberte llamado Alat Delon.", "q": "A rude pun on the actor Alain Delon. Does 'Alat Delon' work as an insult?"},
+  {"id": "04a/0076#9", "where": "04a/0076", "text": "– Es piedra de málmol. Málmol quiere decir muy caro.", "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"},
+  {"id": "04b/0595#10", "where": "04b/0595", "text": "Ojo de Águila dice peer to peer; Taverny dice Eldie a Eldie.", "q": "Amir misheard 'peer' as pir, Persian for elder. Does this punch line work?"},
+  {"id": "04b/1263#11", "where": "04b/1263", "text": "– Runrún, Baba, Baba, ¿me complas esa muñeca tan glande?", "q": "A toddler swaps r for l. Does 'glande' sound like cute baby talk here?"},
+  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Sí, te la complo.", "q": "Dad playfully echoes his toddler's baby talk. Does it sound like that?"},
+  {"id": "04b/1312#13", "where": "04b/1312", "text": "Le entra a uno un mareo de mierda. Cuanto más lo piensas, más mareo de mierda te entra.", "q": "A girl jokes crudely: the painting makes you dizzy. Does 'mareo de mierda' sound natural?"},
+  {"id": "04b/1321#14", "where": "04b/1321", "text": "«Aquel vino que está allí es real no es metáfora.»", "q": "He says this quoted line can be read two opposite ways. Can it?"},
+  {"id": "06/0056#15", "where": "06/0056", "text": "Con el burdózer echaron tierra sobre ella.", "q": "Maman mispronounces 'burdózer' (bulldozer) on purpose. Is that clear?"}
+ ]}

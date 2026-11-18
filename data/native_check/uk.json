@@ -1,6 +1,98 @@
-{"lang": "uk", "slug": "uk", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Тут нічого не відбувається. Тут нічого не буде виправлено і нічого не буде зруйновано.", "q": "These are the book's first lines. Do they read naturally?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007", "text": "З цього боку я розмотую нитку слів, а з іншого боку ти збираєш їх.", "q": "The writer unwinds a thread of words and you gather them. Is that clear?"},
-  {"id": "Opening/0007#3", "where": "Opening/0007", "text": "Як у дитинстві, коли Маман розпускала пряжу зі старого одягу, а ми брали нитку й кружляли з нею по хаті, щоб пряжа не збиралася в купу.", "q": "Is it clear the children walked around the house with the yarn?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Тут нічого не відбувається. Тут нічого не буде виправлено і нічого не буде зруйновано.",
+   "q": "These are the book's first lines. Do they read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "З цього боку я розмотую нитку слів, а з іншого боку ти збираєш їх.",
+   "q": "The writer unwinds a thread of words and you gather them. Is that clear?"
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "Як у дитинстві, коли Маман розпускала пряжу зі старого одягу, а ми брали нитку й кружляли з нею по хаті, щоб пряжа не збиралася в купу.",
+   "q": "Is it clear the children walked around the house with the yarn?"
+  },
+  {
+   "id": "01/0116#4",
+   "where": "01/0116",
+   "text": "Виходь теж. Ходи в спокойні місця.",
+   "q": "Maman mispronounces 'спокойні' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0132#5",
+   "where": "01/0132",
+   "text": "Або, наприклад, холяра. І вона стільки не вбивала.",
+   "q": "Maman says 'холяра' for cholera on purpose. Is that clear?"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "– Що і усмішки?",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "– Хаміде Кішко, ще вчора ти казав «ішак». Тепер ти цивілізований і кажеш «осел»?",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0290#8",
+   "where": "03/0290",
+   "text": "– Арасте — це вкорочене Араасте?",
+   "q": "The guard jokes Arasteh is a trimmed Araasteh (Persian for neat). Does it work?"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– А ти зі своїм паскудним способом говорити — тебе мали б звати Ален Членон.",
+   "q": "'Ален Членон' is a rude pun on the actor Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– Це мармульний камінь. Мармул означає дуже дорого.",
+   "q": "A child says 'Мармул' for marble, thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "– Але ж він усе просрав. Орлине Око каже «пір-ту-пір», а Тавернї каже Ельді-ту-Ельді.",
+   "q": "Amir misheard peer as pir, Persian for elder; Farid mocks it. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "– Вжжж, Баба, Баба, ти купиш мені оцю велику ляльтю?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "Починається якесь лайняне запаморочення. Що більше про це думаєш, то дужчим стає це лайняне запаморочення.",
+   "q": "A girl uses a crude made-up phrase for mind-bending. Does 'лайняне запаморочення' work?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "«Те вино там цілком справжнє хіба воно просто собі метафора». Це те саме.",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Бурдозером на неї насипали землю. Землю й вапно.",
+   "q": "Maman says 'Бурдозером' for bulldozer on purpose. Is that clear?"
+  }
+ ]
+}

@@ -109,11 +109,11 @@ window.EDITIONS = [
   {"slug":"yi","native":"ייִדיש","en":"Yiddish","lang":"yi","url":"/sedaha/read/yi/","state":"ready","title":"קלאַנגען","opening":"אָנהייב","rtl":1,"files":[["epub","4.8 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Yiddish.epub"],["pdf","10.0 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Yiddish.pdf"]]},
   {"slug":"yo","native":"Yorùbá","en":"Yoruba","lang":"yo","url":"/sedaha/read/yo/","state":"ready","title":"Àwọn Ohùn","opening":"Ìṣífípé","files":[["epub","4.7 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Yoruba.epub"],["pdf","9.5 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Yoruba.pdf"]]},
   {"slug":"zu","native":"isiZulu","en":"Zulu","lang":"zu","url":"/sedaha/read/zu/","state":"ready","title":"Amazwi","opening":"Ukuvula","files":[["epub","4.7 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Zulu.epub"],["pdf","9.3 MB","https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Zulu.pdf"]]},
-  {"slug":"sq","native":"Shqip","en":"Albanian","lang":"sq","url":"/sedaha/read/sq/","state":"revising","title":"Tingujt","opening":"Hapja"},
-  {"slug":"am","native":"አማርኛ","en":"Amharic","lang":"am","url":"/sedaha/read/am/","state":"revising","title":"ድምፆች","opening":"መክፈቻ"},
-  {"slug":"bn","native":"বাংলা","en":"Bengali","lang":"bn","url":"/sedaha/read/bn/","state":"revising","title":"ধ্বনি","opening":"শুরু"},
-  {"slug":"is","native":"Íslenska","en":"Icelandic","lang":"is","url":"/sedaha/read/is/","state":"revising","title":"Hljóð","opening":"Opnun"},
-  {"slug":"se","native":"Davvisámegiella","en":"Northern Sami","lang":"se","url":"/sedaha/read/se/","state":"revising","title":"Jienasat","opening":"Álgu"},
-  {"slug":"tl","native":"Tagalog","en":"Tagalog","lang":"tl","url":"/sedaha/read/tl/","state":"revising","title":"Mga Tunog","opening":"Pagbubukas"},
-  {"slug":"vi","native":"Tiếng Việt","en":"Vietnamese","lang":"vi","url":"/sedaha/read/vi/","state":"revising","title":"Âm thanh","opening":"Mở đầu"}
+  {"slug":"sq","native":"Shqip","en":"Albanian","lang":"sq","url":"/sedaha/read/sq/","state":"translated","title":"Tingujt","opening":"Hapja"},
+  {"slug":"am","native":"አማርኛ","en":"Amharic","lang":"am","url":"/sedaha/read/am/","state":"translated","title":"ድምፆች","opening":"መክፈቻ"},
+  {"slug":"bn","native":"বাংলা","en":"Bengali","lang":"bn","url":"/sedaha/read/bn/","state":"translated","title":"ধ্বনি","opening":"শুরু"},
+  {"slug":"is","native":"Íslenska","en":"Icelandic","lang":"is","url":"/sedaha/read/is/","state":"translated","title":"Hljóð","opening":"Opnun"},
+  {"slug":"se","native":"Davvisámegiella","en":"Northern Sami","lang":"se","url":"/sedaha/read/se/","state":"translated","title":"Jienasat","opening":"Álgu"},
+  {"slug":"tl","native":"Tagalog","en":"Tagalog","lang":"tl","url":"/sedaha/read/tl/","state":"translated","title":"Mga Tunog","opening":"Pagbubukas"},
+  {"slug":"vi","native":"Tiếng Việt","en":"Vietnamese","lang":"vi","url":"/sedaha/read/vi/","state":"translated","title":"Âm thanh","opening":"Mở đầu"}
 ];

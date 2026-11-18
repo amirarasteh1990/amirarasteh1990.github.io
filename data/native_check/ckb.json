@@ -1,11 +1,56 @@
-{"lang": "ckb", "slug": "ckb", "dir": "rtl", "version": "2026-11-16",
+{
+ "lang": "ckb",
+ "slug": "ckb",
+ "dir": "rtl",
+ "version": "2026-11-16",
  "items": [
-  {"id": "01/0004#1", "where": "01/0004", "text": "– زۆر باشت کرد، نینیجان. دەڵێن نووبەرەکان دەبێت زۆر بخەون.", "q": "They say babies need lots of sleep. Is 'نووبەرەکان' the right word for newborns?"},
-  {"id": "01/0274#2", "where": "01/0274", "text": "چەند وشەیەکی دیکە دەخەمە نێو قووڵبەنکەکەی کە بۆ نیلووفەر دروستم کردووە و بە هیواوانە حیساو دەکەم: ئەگەر ئاوەندەی بمێنمەوە، پێش گەشتنی هاوینەوە، قووڵبەنکەی خیاڵ پڕ دەبێت لە وشە.", "q": "Amir saves words for Niloofar like coins. Is 'قووڵبەنکەکەی' natural for piggy bank?"},
-  {"id": "03/0045#3", "where": "03/0045", "text": "بیروکەی دەستی کوژەرانەی فەرید کەمێکم جووڵاند، بەڵام نە تاقەتم هەبوو نە توانام. تەنها کەمێکم دانیشت.", "q": "Is it clear the narrator only tensed his lower back a little?"},
-  {"id": "03/0121#4", "where": "03/0121", "text": "هەر رۆژ دوو نیو خشتەی لە لایەکی شەقامدا و دوو لە لایەکی تردا دەدانین و لەنێوانیاندا دەلێزین.", "q": "Boys mark goals with half-bricks. Is it clear that 'دەلێزین' means they played?"},
-  {"id": "03/0361#5", "where": "03/0361", "text": "بەبێ ئەوەی بیبینیم، لەبەرچاوم تێپەڕی کە مەحبووبە پەردەی پێشی دەرگای حەوڵییەکەی ئەڵاند و دەرگاکەی داخست.", "q": "Mahboubeh lets go of the door curtain. Is 'ئەڵاند' the right verb?"},
-  {"id": "03/0459#6", "where": "03/0459", "text": "لە ناو ڕێگاکانی دانشکدەدا قەدەم دەلێستم و تەسەوور دەکردم کە یەک هەفتەی دیکە، شەش ڕۆژی دیکە، پێنج ڕۆژی دیکە، چوار ڕۆژی دیکە، سێ ڕۆژی دیکە، دوو ڕۆژی دیکە، فەردا، ئێرە لای نیلووفەر دادەنیشم.", "q": "Amir paces the halls, counting days until he sits beside Niloofar. Does this read naturally?"},
-  {"id": "03/0583#7", "where": "03/0583", "text": "– چاوی هەڵپەڕی، هەموو کەس لە فەرید پەڵەنگ ڕادەکات، ببینە تۆ چیتە کە فەرید پەڵەنگت لێ ڕادەکات.", "q": "Friends tease him: even Leopard Farid runs from him. Does it sound like natural teasing?"},
-  {"id": "04a/0027#8", "where": "04a/0027", "text": "پەڕەی یەکەم ئاسان بوو. خانووی ئێمە لە دەستپێکی کوێچەکەدایە.", "q": "Kids play a soldier game. Is 'پەڕەی یەکەم' clear as its first stage?"}
- ]}
+  {
+   "id": "01/0004#1",
+   "where": "01/0004",
+   "text": "– زۆر باشت کرد، نینیجان. دەڵێن نووبەرەکان دەبێت زۆر بخەون.",
+   "q": "They say babies need lots of sleep. Is 'نووبەرەکان' the right word for newborns?"
+  },
+  {
+   "id": "01/0274#2",
+   "where": "01/0274",
+   "text": "چەند وشەیەکی دیکە دەخەمە نێو ئەو قووڵبەنکەی کە بۆ نیلووفەرم دروست کردووە و بە هیواوە حیساب دەکەم: ئەگەر هەر ئاوا بەردەوام بم، پێش ئەوەی هاوین بگات، قووڵبەنکی خەیاڵ پڕ دەبێت لە وشە.",
+   "q": "Amir saves words for Niloofar like coins. Is 'قووڵبەنکی' natural for piggy bank?"
+  },
+  {
+   "id": "03/0045#3",
+   "where": "03/0045",
+   "text": "بیروکەی دەستی کوژەرانەی فەرید کەمێکم جووڵاند، بەڵام نە تاقەتم هەبوو نە توانام. تەنها کەمێکم دانیشت.",
+   "q": "Is it clear the narrator only tensed his lower back a little?"
+  },
+  {
+   "id": "03/0121#4",
+   "where": "03/0121",
+   "text": "هەر رۆژ دوو نیو خشتەی لە لایەکی شەقامدا و دوو لە لایەکی تردا دەدانین و لەنێوانیاندا دەلێزین.",
+   "q": "Boys mark goals with half-bricks. Is it clear that 'دەلێزین' means they played?"
+  },
+  {
+   "id": "03/0361#5",
+   "where": "03/0361",
+   "text": "بەبێ ئەوەی بیبینم، بەبەرچاومدا تێپەڕی کە مەحبووبە پەردەی بەردەم دەرگای حەوشەکەی بەردایەوە و دەرگاکەی داخست.",
+   "q": "Mahboubeh lets go of the door curtain. Is 'بەردایەوە' the right verb?"
+  },
+  {
+   "id": "03/0459#6",
+   "where": "03/0459",
+   "text": "لە ناو ڕێگاکانی دانشکدەدا قەدەم دەلێستم و تەسەوور دەکردم کە یەک هەفتەی دیکە، شەش ڕۆژی دیکە، پێنج ڕۆژی دیکە، چوار ڕۆژی دیکە، سێ ڕۆژی دیکە، دوو ڕۆژی دیکە، فەردا، ئێرە لای نیلووفەر دادەنیشم.",
+   "q": "Amir paces the halls, counting days until he sits beside Niloofar. Does this read naturally?"
+  },
+  {
+   "id": "03/0583#7",
+   "where": "03/0583",
+   "text": "– چاوی هەڵپەڕی، هەموو کەس لە فەرید پەڵەنگ ڕادەکات، ببینە تۆ چیتە کە فەرید پەڵەنگت لێ ڕادەکات.",
+   "q": "Friends tease him: even Leopard Farid runs from him. Does it sound like natural teasing?"
+  },
+  {
+   "id": "04a/0027#8",
+   "where": "04a/0027",
+   "text": "قۆناغی یەکەم ئاسان بوو. خانووی ئێمە لە دەستپێکی کوێچەکەدایە.",
+   "q": "Kids play a soldier game. Is 'قۆناغی یەکەم' clear as its first stage?"
+  }
+ ]
+}

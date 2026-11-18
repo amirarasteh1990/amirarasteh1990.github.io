@@ -1,7 +1,98 @@
-{"lang": "lv", "slug": "lv", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "lv",
+ "slug": "lv",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.", "q": "The book's first lines. Is it clear nothing will be fixed, and nothing torn down?"},
-  {"id": "04b/0181#2", "where": "04b/0181", "text": "– Apēd mana krāna galvu, cilvēk. Mums tevis ir gana.", "q": "A crude insult between students. Does 'krāna galvu' read as slang for penis?"},
-  {"id": "04b/0464#3", "where": "04b/0464", "text": "Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes.", "q": "A student mocks a classmate: a zero is too mild. Does this read naturally?"},
-  {"id": "04b/1178#4", "where": "04b/1178", "text": "Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.", "q": "Is it clear the choking feels like a climbing plant coiling around a person?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.",
+   "q": "The book's first lines. Is it clear nothing will be fixed, and nothing torn down?"
+  },
+  {
+   "id": "04b/0181#2",
+   "where": "04b/0181",
+   "text": "– Apēd mana krāna galvu, cilvēk. Mums tevis ir gana.",
+   "q": "A crude insult between students. Does 'krāna galvu' read as slang for penis?"
+  },
+  {
+   "id": "04b/0464#3",
+   "where": "04b/0464",
+   "text": "Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes.",
+   "q": "A student mocks a classmate: a zero is too mild. Does this read naturally?"
+  },
+  {
+   "id": "04b/1178#4",
+   "where": "04b/1178",
+   "text": "Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.",
+   "q": "Is it clear the choking feels like a climbing plant coiling around a person?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "Ej arī ārā. Dodies uz kluusām vietām.",
+   "q": "Maman mispronounces 'kluusām' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "– Kas un smaidi?",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "– Oh-ho. Hamid Kaķis, līdz vakardienai tu teici \"khar\". Tagad pēkšņi esi tik smalks un saki \"ēzelis\"?",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0290#8",
+   "where": "03/0290",
+   "text": "– Vai Arasteh ir apcirpts Araasteh?",
+   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Is that clear?"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– Un tev, ar to tavu pimpaino runas manieri, vajadzētu saukties Alat Delon.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– Tas ir marmala akmens. Marmals nozīmē ļoti dārgi.",
+   "q": "A child says 'Marmals' for marble, thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "– Bet viņš to sačakarēja. Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.",
+   "q": "Kroģis (Amir) misheard peer as pir, Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "– Vrūūūm, Baba, Baba, vai tu man nopirksi šo lielo lellīti?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.",
+   "q": "A girl coins a crude phrase for mind-bending confusion. Does 'sūdu juceklis' work?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "\"Tas vīns, kas tur atrodas, ir patiešām īsts nav metafora.\"",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Ar burdozeru viņai virsū uzgāza zemi. Zemi un kaļķi.",
+   "q": "Maman says 'burdozeru' for bulldozer on purpose. Is that clear?"
+  }
+ ]
+}

@@ -1,32 +1,98 @@
 {
-  "lang": "ar",
-  "slug": "ar",
-  "dir": "rtl",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "من هذه الجهة أفك خيط الكلمات، ومن الجهة الأخرى تجمعها يداك.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "01/0014#2",
-      "where": "01/0014",
-      "text": "– انظر، ضعه في الفريزل. إن وضعته في الفريزل لا يصيبه شيء حتى لو مرّ عليه عام.",
-      "q": "Maman mispronounces freezer on purpose. Is that clear from 'الفريزل'?"
-    },
-    {
-      "id": "01/0132#3",
-      "where": "01/0132",
-      "text": "كان هناك تيفويد مثلًا، أو السل، أو الحصبة.",
-      "q": "Maman mispronounces typhoid on purpose. Does 'تيفويد' work as her mispronunciation?"
-    },
-    {
-      "id": "01/0206#4",
-      "where": "01/0206",
-      "text": "الآن أيضًا الأمر جيد، لكن الستريس يلازمني دائمًا: قد يأتي إلى هنا في أية لحظة.",
-      "q": "Maman mispronounces stress on purpose. Does 'الستريس' work as her mispronunciation?"
-    }
-  ]
+ "lang": "ar",
+ "slug": "ar",
+ "dir": "rtl",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "من هذه الجهة أفك خيط الكلمات، ومن الجهة الأخرى تجمعها يداك.",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "01/0014#2",
+   "where": "01/0014",
+   "text": "– انظر، ضعه في الفريزل. إن وضعته في الفريزل لا يصيبه شيء حتى لو مرّ عليه عام.",
+   "q": "Maman mispronounces freezer on purpose. Is that clear from 'الفريزل'?"
+  },
+  {
+   "id": "01/0132#3",
+   "where": "01/0132",
+   "text": "كان هناك تيفويد مثلًا، أو السل، أو الحصبة.",
+   "q": "Maman mispronounces typhoid on purpose. Does 'تيفويد' work as her mispronunciation?"
+  },
+  {
+   "id": "01/0206#4",
+   "where": "01/0206",
+   "text": "الآن أيضًا الأمر جيد، لكن الستريس يلازمني دائمًا: قد يأتي إلى هنا في أية لحظة.",
+   "q": "Maman mispronounces stress on purpose. Does 'الستريس' work as her mispronunciation?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "اخرج أيضًا. اذهب إلى أماكن خَلْبة.",
+   "q": "Maman mispronounces 'خَلْبة' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "– ما وابتسامات؟",
+   "q": "Maman half-hears a TV series title, Tears and Smiles. Does this sound right?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "– أوهو. حميد القط، حتى الأمس كنت تقول «خر». الآن تحضّرت وتقول «حمار»؟",
+   "q": "Taghi mocks Hamid's switch from a rude to a polite donkey word. Is that clear?"
+  },
+  {
+   "id": "03/0278#8",
+   "where": "03/0278",
+   "text": "كروبي عشق، الحقّ والإنصاف.",
+   "q": "Farid gushes about a politician in student slang. Does this sound natural?"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– وأنت، بطريقة كلامك القضيبية تلك، كان ينبغي أن يكون اسمك آلَت دولون.",
+   "q": "'آلَت دولون' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– حجر مَلْمَل. مَلْمَل يعني غالي جداً.",
+   "q": "A child mispronounces marble as 'مَلْمَل' and thinks it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "عين النسر يقول پيير-تو-پيير، وخراباتي يقول پير-تو-پير.",
+   "q": "Amir misheard peer as 'پير', Persian for elder, like his nickname. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "– ويييژژژ، بابا بابا، أتشتلي لي هذه الدمية الكبيلة؟",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "تُصيب المرءَ بدوخة خرائية. كلما فكّرتِ فيها أكثر، ازدادت دوختكِ الخرائية.",
+   "q": "A girl uses a crude made-up phrase for mind-bending confusion. Does it work?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "«الخمرُ هناك حقيقةٌ لا مجاز».",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "صبوا فوقها التراب بالبولدوزل. تراباً وجيراً.",
+   "q": "Maman mispronounces 'بالبولدوزل' on purpose; she means bulldozer. Is that clear?"
+  }
+ ]
 }

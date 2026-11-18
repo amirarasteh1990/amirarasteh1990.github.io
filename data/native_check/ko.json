@@ -1,32 +1,98 @@
 {
-  "lang": "ko",
-  "slug": "ko",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.",
-      "q": "The book describes itself as a loose thread end. Does this read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "한때 이 소리들의 흔적을 종이 위에 그려 넣었던 마음이 오래전부터 더는 숨을 쉬지 않는지도 모른다.",
-      "q": "The writer may have died long ago. Does this sentence read naturally?"
-    },
-    {
-      "id": "Opening/0007#3",
-      "where": "Opening/0007",
-      "text": "어린 시절, 마망이 낡은 옷에서 털실을 풀어내고 실이 쌓이지 않도록 우리가 실 끝을 들고 집 안을 돌아다니던 것처럼.",
-      "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
-    },
-    {
-      "id": "04b/1312#4",
-      "where": "04b/1312",
-      "text": "개어지러워. 생각하면 할수록 더 개어지러워져.",
-      "q": "A girl uses crude slang on purpose. Does '개어지러워져' sound natural here?"
-    }
-  ]
+ "lang": "ko",
+ "slug": "ko",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.",
+   "q": "The book describes itself as a loose thread end. Does this read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "한때 이 소리들의 흔적을 종이 위에 그려 넣었던 마음이 오래전부터 더는 숨을 쉬지 않는지도 모른다.",
+   "q": "The writer may have died long ago. Does this sentence read naturally?"
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "어린 시절, 마망이 낡은 옷에서 털실을 풀어내고 실이 쌓이지 않도록 우리가 실 끝을 들고 집 안을 돌아다니던 것처럼.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "개어지러워. 생각하면 할수록 더 개어지러워져.",
+   "q": "A girl uses crude slang on purpose. Does '개어지러워져' sound natural here?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "바깥도 나가. 한작한 데로 가.",
+   "q": "Maman garbles the word for quiet on purpose: '한작한'. Is that clear?"
+  },
+  {
+   "id": "01/0132#6",
+   "where": "01/0132",
+   "text": "아니면 콜라라 같은 것도. 그것도 이만큼 죽이지는 않았어.",
+   "q": "Maman garbles the word for cholera on purpose: '콜라라'. Is that clear?"
+  },
+  {
+   "id": "01/0148#7",
+   "where": "01/0148",
+   "text": "– 뭐와 미소라고?",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "– 오호. 고양이 하미드, 어제까지만 해도 당나귀라고 하더니, 이제 사람 됐다고 나귀라고 하냐?",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0290#9",
+   "where": "03/0290",
+   "text": "– 아라스테는 아라아스테를 다듬은 건가요?",
+   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Is that clear?"
+  },
+  {
+   "id": "03/0430#10",
+   "where": "03/0430",
+   "text": "– 그리고 넌, 그 자지같은 말투로 봐서는 이름이 알라트 들롱이었어야 했어.",
+   "q": "'알라트 들롱' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#11",
+   "where": "04a/0076",
+   "text": "– 대리설 돌이야. 대리설은 아주 비싸다는 뜻이야.",
+   "q": "A child garbles marble as '대리설', thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#12",
+   "where": "04b/0595",
+   "text": "– 그런데 망쳤네. 독수리눈은 피어 투 피어라고 하는데, 태버니는 피르 투 피르라고 하네.",
+   "q": "Amir misheard peer as pir, Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "– 위이이잉, 바바 바바, 이 큰 인형 사 둘 꺼야?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "“그곳에 있는 바로 그 술은 진짜 술이 아니오 비유가 아니오”",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "불도젤로 그 위에 흙을 쏟았어. 흙과 석회를.",
+   "q": "Maman says '불도젤로' for bulldozer on purpose. Is that clear?"
+  }
+ ]
 }

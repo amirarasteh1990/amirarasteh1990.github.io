@@ -1,24 +1,50 @@
-{"lang": "th", "slug": "th", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "th",
+ "slug": "th",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "ที่นี่ไม่มีอะไรเกิดขึ้น ไม่มีสิ่งใดจะได้รับการแก้ไข และไม่มีสิ่งใดจะถูกทำลาย",
-   "q": "These are the book's first lines. Do they read naturally?"},
-  {"id": "01/0116#2", "where": "01/0116",
-   "text": "ออกไปข้างนอกด้วย ไปสถานที่ที่เงียบๆ บ้าง",
-   "q": "Maman mispronounces the word for quiet on purpose. Does 'เงียบๆ' show that?"},
-  {"id": "03/0355#3", "where": "03/0355",
+   "q": "These are the book's first lines. Do they read naturally?"
+  },
+  {
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "ออกไปข้างนอกด้วย ไปสถานที่ที่เหงียบๆ บ้าง",
+   "q": "Maman mispronounces the word for quiet on purpose. Does 'เหงียบๆ' show that?"
+  },
+  {
+   "id": "03/0355#3",
+   "where": "03/0355",
    "text": "ในบ้านปลายลานบ้าน ข้างเตาผิง ฉันนอนคว่ำหน้าอยู่",
-   "q": "Amir lies beside a room heater (a small stove). Is 'เตาผิง' right for it?"},
-  {"id": "04a/0060#4", "where": "04a/0060",
+   "q": "Amir lies beside a room heater (a small stove). Is 'เตาผิง' right for it?"
+  },
+  {
+   "id": "04a/0060#4",
+   "where": "04a/0060",
    "text": "– จบขั้นตอนสามของภารกิจ ที่นี่คือส่วนที่สำคัญที่สุด ...",
-   "q": "The speaker breaks off mid-sentence. Does the cut-off sound natural?"},
-  {"id": "04b/0964#5", "where": "04b/0964",
+   "q": "The speaker breaks off mid-sentence. Does the cut-off sound natural?"
+  },
+  {
+   "id": "04b/0964#5",
+   "where": "04b/0964",
    "text": "และในจินตนาการของฉัน ทุกวัน เวลาที่นิลูฟาร์กับซีนาเจอกัน พวกเขาจะจับมือกัน",
-   "q": "Is it clear that 'จับมือกัน' means a greeting handshake when they meet?"},
-  {"id": "04b/1260#6", "where": "04b/1260",
+   "q": "Is it clear that 'จับมือกัน' means a greeting handshake when they meet?"
+  },
+  {
+   "id": "04b/1260#6",
+   "where": "04b/1260",
    "text": "สองคนยืนบนน็อตล้อหลัง คนหนึ่งบนแร็ค คนหนึ่งบนแฮนด์ และอีกคนเกาะอยู่บนคานหน้า รวมคนที่ปั่นด้วยก็เป็นหกคนต่อจักรยานหนึ่งคัน",
-   "q": "Six boys ride on each bicycle. Does this read naturally?"},
-  {"id": "05/0001#7", "where": "05/0001",
+   "q": "Six boys ride on each bicycle. Does this read naturally?"
+  },
+  {
+   "id": "05/0001#7",
+   "where": "05/0001",
    "text": "ฉันยังคงขยับมือต่อไป พยายามดึงตัวเองและโลกของฉันขึ้นมาจากการจมอยู่ใต้เสียงอึกทึกอันเร่าร้อนของโลก",
-   "q": "His hand keeps moving in circles. Is that clear from 'ขยับมือ'?"}
- ]}
+   "q": "His hand keeps moving in circles. Is that clear from 'ขยับมือ'?"
+  }
+ ]
+}

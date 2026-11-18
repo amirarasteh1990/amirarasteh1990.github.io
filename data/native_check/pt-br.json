@@ -1,6 +1,98 @@
-{"lang": "pt-BR", "slug": "pt-br", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "pt-BR",
+ "slug": "pt-br",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Como na infância, quando Maman desmanchava as roupas velhas de lã, e nós pegávamos o fio e andávamos pela casa para que a lã não se amontoasse.", "q": "Does this sentence read naturally?"},
-  {"id": "04b/1312#2", "where": "04b/1312", "text": "Dá uma puta tontura. Quanto mais você pensa nisso, maior é a puta tontura.", "q": "A student jokes crudely about a famous painting. Does 'puta tontura' sound natural?"},
-  {"id": "04b/1320#3", "where": "04b/1320", "text": "Com as mãos tremendo, folheava às pressas os ghazals à procura de um beit de Hafez que, como aquela pintura, segundo aquela outra garota, dava uma puta tontura cada vez maior quanto mais a gente se afundava na profundidade dele.", "q": "Ghazal and beit are Persian poem terms. Does this sentence read naturally?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Como na infância, quando Maman desmanchava as roupas velhas de lã, e nós pegávamos o fio e andávamos pela casa para que a lã não se amontoasse.",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/1312#2",
+   "where": "04b/1312",
+   "text": "Dá uma puta tontura. Quanto mais você pensa nisso, maior é a puta tontura.",
+   "q": "A student jokes crudely about a famous painting. Does 'puta tontura' sound natural?"
+  },
+  {
+   "id": "04b/1320#3",
+   "where": "04b/1320",
+   "text": "Com as mãos tremendo, folheava às pressas os ghazals à procura de um beit de Hafez que, como aquela pintura, segundo aquela outra garota, dava uma puta tontura cada vez maior quanto mais a gente se afundava na profundidade dele.",
+   "q": "Ghazal and beit are Persian poem terms. Does this sentence read naturally?"
+  },
+  {
+   "id": "01/0116#4",
+   "where": "01/0116",
+   "text": "Sai também. Vai a lugares quaietos.",
+   "q": "Maman mispronounces 'quaietos' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0132#5",
+   "where": "01/0132",
+   "text": "Tinha o tifoid, por exemplo, ou a tuberculose, ou o sarampo.",
+   "q": "Maman mispronounces typhoid on purpose. Does 'tifoid' work as her mispronunciation?"
+  },
+  {
+   "id": "03/0191#6",
+   "where": "03/0191",
+   "text": "Hamid Gato, até ontem você dizia burro. Agora ficou civilizado e fala asno?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0373#7",
+   "where": "03/0373",
+   "text": "Estou dizendo essa coisa, que a Améroca confirmou que o Irã parou o programa nuclear.",
+   "q": "Maman says 'Améroca' for America, on purpose. Is that clear?"
+  },
+  {
+   "id": "03/0430#8",
+   "where": "03/0430",
+   "text": "E você, com esse jeito escroto de falar, seu nome devia ser Alat Delon.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#9",
+   "where": "04a/0076",
+   "text": "É pedra de málmore. Málmore quer dizer muito caro.",
+   "q": "A child mispronounces marble and thinks it means expensive. Does that come through?"
+  },
+  {
+   "id": "04b/0595#10",
+   "where": "04b/0595",
+   "text": "O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
+   "q": "Taverny (Amir) misheard peer as pir, Persian for elder. Does 'Eldie a Eldie' work?"
+  },
+  {
+   "id": "04b/1263#11",
+   "where": "04b/1263",
+   "text": "Vrrrum, Baba, Baba, me compla essa boneca tão glande?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1265#12",
+   "where": "04b/1265",
+   "text": "Sim, eu complo a boneca pra você. Quando eu tiver dinheiro, complo uma ainda melhor, menina do Baba.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "«Aquele vinho que ali está é real não é metáfora.»",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "Igual: quanto mais você pensa nestas dez palavras, mais pu..., coisa, mais tonto você fica.",
+   "q": "The nervous speaker starts the crude word, then stops himself. Does that come through?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Jogaram terra por cima dela com um burdozer.",
+   "q": "Maman says 'burdozer' for bulldozer, on purpose. Is that clear?"
+  }
+ ]
+}

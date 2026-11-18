@@ -1,15 +1,98 @@
-{"lang": "tr", "slug": "tr", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
    "text": "Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.",
-   "q": "Is it clear the children carried the yarn around the house?"},
-  {"id": "03/0590#3", "where": "03/0590",
+   "q": "Is it clear the children carried the yarn around the house?"
+  },
+  {
+   "id": "03/0590#3",
+   "where": "03/0590",
    "text": "Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.",
-   "q": "Is 'namaz çarşafı' right for Maman's full-length prayer cloak?"},
-  {"id": "04b/1312#4", "where": "04b/1312",
+   "q": "Is 'namaz çarşafı' right for Maman's full-length prayer cloak?"
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
    "text": "İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.",
-   "q": "A girl crudely says the painting makes your head spin. Is the meaning clear?"}
- ]}
+   "q": "A girl crudely says the painting makes your head spin. Is the meaning clear?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "Dışarı da çık. Tehna yerlere git.",
+   "q": "Maman mispronounces 'Tehna' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "– Ne ve Gülüşler?",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "– Oho. Hamid Kedi, düne kadar “eşek” diyordun. Şimdi adam oldun da “merkep” mi diyorsun?",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0290#8",
+   "where": "03/0290",
+   "text": "– Arasteh, “Araasteh”in budanmış hâli mi?",
+   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Is that clear?"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– Senin de o sikik konuşma biçiminle adın Alat Delon olmalıydı.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– Mermel taşı. Mermel çok pahalı demek.",
+   "q": "A child says 'Mermel' for marble, thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "– Ama sıçtı. Kartal Göz “peer-to-peer” diyor, Taverny “Pir-to-Pir” diyor.",
+   "q": "Taverny (Amir) misheard peer as pir, Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "– Vınnn, baba baba, şu büyük belebeği bana alıl mısın?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1265#13",
+   "where": "04b/1265",
+   "text": "– Evet, bebeği alılım. Param olunca onun daha iyisini alılım sana, Baba'nın kızı.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "“Oradaki şarap gerçektir, mecazi değildir.”",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Burdozerle üstüne toprak döktüler. Toprak ve kireç.",
+   "q": "Maman says 'Burdozerle' for bulldozer on purpose. Is that clear?"
+  }
+ ]
+}

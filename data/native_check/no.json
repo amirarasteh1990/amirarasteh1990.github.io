@@ -1,18 +1,98 @@
-{"lang": "no", "slug": "no", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Som i barndommen, da Maman pleide å trevle opp garnet fra gamle klær, og vi tok tråden og gikk rundt inne i huset slik at garnet ikke hopet seg opp.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "04b/1260#2", "where": "04b/1260",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/1260#2",
+   "where": "04b/1260",
    "text": "To sto på bakhjulets bolter, én på bagasjebæreren, én på styret, og én satt på framrøret. Med ham som trampet, ble det seks per sykkel.",
-   "q": "Six boys ride on each bicycle. Is the picture clear?"},
-  {"id": "04b/1260#3", "where": "04b/1260",
+   "q": "Six boys ride on each bicycle. Is the picture clear?"
+  },
+  {
+   "id": "04b/1260#3",
+   "where": "04b/1260",
    "text": "Yaser rullet på sparkene deres, under latteren deres.",
-   "q": "Yaser is rolling on the ground under their kicks. Does this read naturally?"},
-  {"id": "04b/1260#4", "where": "04b/1260",
+   "q": "Yaser is rolling on the ground under their kicks. Does this read naturally?"
+  },
+  {
+   "id": "04b/1260#4",
+   "where": "04b/1260",
    "text": "Om natten drømte jeg om at jeg trampet sykkelen gjennom luften for å slippe unna Yasers skrik.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "04b/1312#5", "where": "04b/1312",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/1312#5",
+   "where": "04b/1312",
    "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
-   "q": "She uses a crude made-up word for dizzy. Does 'drittsvimmel' work here?"}
- ]}
+   "q": "She uses a crude made-up word for dizzy. Does 'drittsvimmel' work here?"
+  },
+  {
+   "id": "01/0116#6",
+   "where": "01/0116",
+   "text": "Gå til stiele steder.",
+   "q": "Maman mispronounces 'stiele' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "03/0191#7",
+   "where": "03/0191",
+   "text": "Hamid Katt, i går sa du fortsatt «asen». Nå har du blitt så sivilisert at du sier «esel»?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0430#8",
+   "where": "03/0430",
+   "text": "Og du, med den pikk-aktige måten din å snakke på, burde ha hett Alat Delon.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#9",
+   "where": "04a/0076",
+   "text": "Det er marmelstein. Marmel betyr veldig dyrt.",
+   "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#10",
+   "where": "04b/0595",
+   "text": "Ørneøye sier peer-to-peer; Taverny sier Eldie-til-Eldie.",
+   "q": "Taverny (the Tavern Elder) mishears peer-to-peer as 'Eldie-til-Eldie'. Does the joke work?"
+  },
+  {
+   "id": "04b/1260#11",
+   "where": "04b/1260",
+   "text": "Han var gått tilbake for å hente sandalen min, og guttene fra det motsatte stredet lukket seg om ham som en ulveflokk.",
+   "q": "Yaser went back for the narrator's sandal and got surrounded. Does this read naturally?"
+  },
+  {
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "Brrrumm – Baba, Baba, viw du kjøpe meg den stole dukken?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "«Ekte er den vinen som er der ikke en metafor.»",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "Som det – jo mer du tenker over disse ti ordene, desto mer dri– altså, desto svimlere blir du.",
+   "q": "He starts the crude dizzy word, then corrects himself. Is that clear?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Med en bulderdozer kastet de jord over henne. Jord og kalk.",
+   "q": "Maman mispronounces 'bulderdozer' on purpose. Is that clear?"
+  }
+ ]
+}

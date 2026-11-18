@@ -1,38 +1,98 @@
 {
-  "lang": "fr",
-  "slug": "fr",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Il se peut même que l'esprit qui traça jadis ces sons sur le papier n'ait plus respiré depuis longtemps.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "De ce côté-ci, je déroule le fil des mots, et de l'autre côté, tu les recueilles.",
-      "q": "The reader gathers up the words. Does 'tu les recueilles' sound natural?"
-    },
-    {
-      "id": "Opening/0007#3",
-      "where": "Opening/0007",
-      "text": "Comme autrefois dans l'enfance, quand Maman défaisait la laine des vieux vêtements, et que nous prenions le fil et tournions en rond dans la maison afin que la laine ne s'accumule pas.",
-      "q": "Does this childhood memory read naturally?"
-    },
-    {
-      "id": "04b/1312#4",
-      "where": "04b/1312",
-      "text": "Ça vous fout un putain de tournis. Plus on y réfléchit, plus on a un putain de tournis.",
-      "q": "A girl swears about a puzzling painting. Does 'un putain de tournis' sound natural?"
-    },
-    {
-      "id": "04b/1320#5",
-      "where": "04b/1320",
-      "text": "Et de mes mains tremblantes, je parcourais rapidement les ghazals pour trouver, et montrer à Niloofar, un beit de Hafez dont, comme l'autre fille l'avait dit de cette peinture, plus on s'enfonce dans les profondeurs, plus on a un putain de tournis.",
-      "q": "Amir searches Hafez's poems for a couplet ('beit'). Does this read naturally?"
-    }
-  ]
+ "lang": "fr",
+ "slug": "fr",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Il se peut même que l'esprit qui traça jadis ces sons sur le papier n'ait plus respiré depuis longtemps.",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "De ce côté-ci, je déroule le fil des mots, et de l'autre côté, tu les recueilles.",
+   "q": "The reader gathers up the words. Does 'tu les recueilles' sound natural?"
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "Comme autrefois dans l'enfance, quand Maman défaisait la laine des vieux vêtements, et que nous prenions le fil et tournions en rond dans la maison afin que la laine ne s'accumule pas.",
+   "q": "Does this childhood memory read naturally?"
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "Ça vous fout un putain de tournis. Plus on y réfléchit, plus on a un putain de tournis.",
+   "q": "A girl swears about a puzzling painting. Does 'un putain de tournis' sound natural?"
+  },
+  {
+   "id": "04b/1320#5",
+   "where": "04b/1320",
+   "text": "Et de mes mains tremblantes, je parcourais rapidement les ghazals pour trouver, et montrer à Niloofar, un beit de Hafez dont, comme l'autre fille l'avait dit de cette peinture, plus on s'enfonce dans les profondeurs, plus on a un putain de tournis.",
+   "q": "Amir searches Hafez's poems for a couplet ('beit'). Does this read naturally?"
+  },
+  {
+   "id": "01/0116#6",
+   "where": "01/0116",
+   "text": "Va dans des endroits traïquilles.",
+   "q": "Maman mispronounces 'traïquilles' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0148#7",
+   "where": "01/0148",
+   "text": "Les quoi et Sourires ?",
+   "q": "Maman catches only the end of a TV series title. Is that clear?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "Hamid le Chat, hier encore tu disais bourrique. Maintenant tu es civilisé et tu dis âne ?",
+   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+  },
+  {
+   "id": "03/0290#9",
+   "where": "03/0290",
+   "text": "Arasteh, c'est Araasteh une fois « pirasteh » — élagué ?",
+   "q": "A guard jokes that the surname Arasteh was trimmed. Does this sentence make sense?"
+  },
+  {
+   "id": "03/0430#10",
+   "where": "03/0430",
+   "text": "Et toi, avec ta façon de parler de bite, ton prénom aurait dû être Alat Delon.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#11",
+   "where": "04a/0076",
+   "text": "C'est du malbre. Le malbre ça veut dire très cher.",
+   "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#12",
+   "where": "04b/0595",
+   "text": "Œil d'Aigle dit peer to peer ; Taverny dit pir à pir.",
+   "q": "Taverny (Tavern Elder) hears 'pir à pir'; pir is Persian for elder. Does it work?"
+  },
+  {
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "Vrouuum, Baba, Baba, tu m'atètes cette gande poupée ?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "« Ce vin qui est là-bas est réel non une métaphore. »",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "Avec le bulldozeur, ils ont déversé la terre sur elle. De la terre et de la chaux.",
+   "q": "Maman mispronounces 'bulldozeur' on purpose. Is that clear?"
+  }
+ ]
 }

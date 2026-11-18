@@ -1,38 +1,19 @@
-{
-  "lang": "hr",
-  "slug": "hr",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "S ove strane odmotavam nit riječi, a s druge strane ti skupljaš riječi.",
-      "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"
-    },
-    {
-      "id": "01/0116#2",
-      "where": "01/0116",
-      "text": "Idi i van. Idi na mirna mjesta.",
-      "q": "Maman mispronounces quiet on purpose. Does 'mirna' work as her mispronunciation?"
-    },
-    {
-      "id": "04b/1263#3",
-      "where": "04b/1263",
-      "text": "– Viiiž, Baba, Baba, hoćeš li mi kupiti ovu veliku lutku?",
-      "q": "A toddler asks his dad for a doll. Does it sound like baby talk?"
-    },
-    {
-      "id": "04b/1312#4",
-      "where": "04b/1312",
-      "text": "Čovjeka uhvati govnovrtoglavica. Što više razmišljaš o tome, sve te jače hvata govnovrtoglavica.",
-      "q": "A student's crude made-up word for dizziness. Is 'govnovrtoglavica' understandable?"
-    },
-    {
-      "id": "06/0298#5",
-      "where": "06/0298",
-      "text": "Srce mi je vedro pri pomisli da ćemo jednog dana sjediti jedno nasuprot drugome u kafiću, za stolom, kraj prozora, i dok kiša nježno sjeda na staklo, čitat ću joj priču, a ona će slušati sa zadovoljnim osmijehom.",
-      "q": "Amir imagines reading his story to Niloofar in a cafe. Does this read naturally?"
-    }
-  ]
-}
+{"lang": "hr", "slug": "hr", "dir": "ltr", "version": "2026-11-18",
+ "items": [
+  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "S ove strane odmotavam nit riječi, a s druge strane ti skupljaš riječi.", "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"},
+  {"id": "01/0116#2", "where": "01/0116", "text": "Idi i van. Idi na mirna mjesta.", "q": "Maman mispronounces quiet on purpose. Does 'mirna' work as her mispronunciation?"},
+  {"id": "04b/1263#3", "where": "04b/1263", "text": "– Viiiž, Baba, Baba, hoćeš li mi kupiti ovu veliku lutku?", "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"},
+  {"id": "04b/1312#4", "where": "04b/1312", "text": "Čovjeka uhvati govnovrtoglavica. Što više razmišljaš o tome, sve te jače hvata govnovrtoglavica.", "q": "A student's crude made-up word for dizziness. Is 'govnovrtoglavica' understandable?"},
+  {"id": "06/0298#5", "where": "06/0298", "text": "Srce mi je vedro pri pomisli da ćemo jednog dana sjediti jedno nasuprot drugome u kafiću, za stolom, kraj prozora, i dok kiša nježno sjeda na staklo, čitat ću joj priču, a ona će slušati sa zadovoljnim osmijehom.", "q": "Amir imagines reading his story to Niloofar in a cafe. Does this read naturally?"},
+  {"id": "03/0430#6", "where": "03/0430", "text": "– I ti, s tim svojim kurčevitim načinom govora, trebao si se zvati Alat Delon.", "q": "The nickname is meant as a rude pun on Alain Delon. Does it work?"},
+  {"id": "03/0528#7", "where": "03/0528", "text": "Za norouz stolom, kad sam čitao pjesmu za majku, Maman je umjesto da se raduje postala uznemirena.", "q": "He read the poem at the exact moment the year turned. Is that clear?"},
+  {"id": "03/0666#8", "where": "03/0666", "text": "Maman je bacila moj madrac na vrh dvorišnog zida.", "q": "Maman simply put his mattress up on the wall, without anger. Is that clear?"},
+  {"id": "04a/0042#9", "where": "04a/0042", "text": "– Zove se Quchan Bazaar i naša kuća je na kraju Quchan Bazaara.", "q": "Does 'Quchan Bazaar' sound natural as the name of the market?"},
+  {"id": "04a/0076#10", "where": "04a/0076", "text": "– To je mramal. Mramal znači jako skupo.", "q": "A child mispronounces marble and thinks the word means expensive. Is that clear?"},
+  {"id": "04b/0595#11", "where": "04b/0595", "text": "– Ali, eto, zeznuo je. Orlovo Oko kaže per tu per, a Taverni kaže Stari tu Stari.", "q": "Taverny (Amir) misheard peer as pir, Persian for elder. Does the joke work?"},
+  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Da, kupit ću ti lutku. Kad mi dođe novac, kupit ću ti i bolju od te, Babina djevojčice.", "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"},
+  {"id": "04b/1321#13", "where": "04b/1321", "text": "\"Ono vino što je onde istina je, ne metafora.\"", "q": "This Hafez line should allow two readings: real wine, and only a metaphor. Does it?"},
+  {"id": "04b/1322#14", "where": "04b/1322", "text": "Uvjeren da će mi odgovoriti, nazvah Maman i rekoh da su nam organizirali dopunsku nastavu pa moram ostati duže.", "q": "His made-up excuse is extra classes. Does 'dopunsku nastavu' mean that?"},
+  {"id": "06/0056#15", "where": "06/0056", "text": "Zemlju su nasipali burdožerom. Zemlju i vapno.", "q": "Maman mispronounces bulldozer on purpose. Is that clear?"},
+  {"id": "06/0236#16", "where": "06/0236", "text": "Khe, khe. Vukao si nas amo-tamo.", "q": "Does 'Vukao si nas amo-tamo' mean you wore us out?"}
+ ]}

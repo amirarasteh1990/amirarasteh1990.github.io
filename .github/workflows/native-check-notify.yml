@@ -1,0 +1,30 @@
+name: Notify about native-check answers
+
+# The guestbook Worker files each native speaker's answers as an issue under the
+# author's own token, so GitHub sends him no notification for it. A comment from
+# github-actions[bot] that @mentions him does: GitHub emails @mentions by default.
+# Nothing from the issue's body or title reaches the shell; only its number.
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  notify:
+    if: >-
+      github.actor == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'native-check') &&
+      contains(github.event.issue.body, '<!-- native-check:v1 -->')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mention the author on the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh issue comment "$ISSUE" --repo "$REPO" \
+            --body "@$OWNER new native-speaker answers have arrived (#$ISSUE)."

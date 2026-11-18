@@ -1,32 +1,98 @@
 {
-  "lang": "zh",
-  "slug": "zh",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "01/0206#2",
-      "where": "01/0206",
-      "text": "现在也还好，可我总有个压厉，怕他下一刻就过来了。",
-      "q": "Maman mangles the word for stress on purpose. Is that clear from '压厉'?"
-    },
-    {
-      "id": "03/0291#3",
-      "where": "03/0291",
-      "text": "《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。",
-      "q": "Is '加油！吉塔斯' the known Chinese title of the cartoon Ganbare Kickers?"
-    },
-    {
-      "id": "04b/1312#4",
-      "where": "04b/1312",
-      "text": "他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。",
-      "q": "A girl jokes crudely about a painting. Does '他妈的晕' sound natural?"
-    }
-  ]
+ "lang": "zh",
+ "slug": "zh",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "01/0206#2",
+   "where": "01/0206",
+   "text": "现在也还好，可我总有个压厉，怕他下一刻就过来了。",
+   "q": "Maman mangles the word for stress on purpose. Is that clear from '压厉'?"
+  },
+  {
+   "id": "03/0291#3",
+   "where": "03/0291",
+   "text": "《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。",
+   "q": "Is '加油！吉塔斯' the known Chinese title of the cartoon Ganbare Kickers?"
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。",
+   "q": "A girl jokes crudely about a painting. Does '他妈的晕' sound natural?"
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "也出去走走。去安净的地方。",
+   "q": "Maman garbles the word for quiet on purpose: '安净'. Is that clear?"
+  },
+  {
+   "id": "01/0132#6",
+   "where": "01/0132",
+   "text": "以前有伤汗，比如说，还有结核病、麻疹。",
+   "q": "Maman garbles the word for typhoid on purpose: '伤汗'. Is that clear?"
+  },
+  {
+   "id": "01/0148#7",
+   "where": "01/0148",
+   "text": "– 什么和微笑？",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "– 哦哟，哈米德·猫，你昨天还说“哈尔”，今天突然文明了，改说“驴”了？",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0290#9",
+   "where": "03/0290",
+   "text": "– “阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？",
+   "q": "The guard jokes Arasteh is a trimmed Araasteh (Persian: neat). Does this make sense?"
+  },
+  {
+   "id": "03/0430#10",
+   "where": "03/0430",
+   "text": "– 你呢，说话这副屌样，你的名字应该叫“阿拉特·德龙”。别自作多情，我说的不是阿兰·德龙，瞧你皱起鼻子......",
+   "q": "'阿拉特·德龙' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#11",
+   "where": "04a/0076",
+   "text": "– 是大米石。大米石就是很贵很贵的意思。",
+   "q": "A child garbles marble as '大米石', thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#12",
+   "where": "04b/0595",
+   "text": "——可他还是说砸了。鹰眼说的是皮尔对皮尔，酒馆客听成了长老对长老。",
+   "q": "Amir misheard peer as pir, Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "——嗖——巴巴巴巴，你给我买介个大娃娃好不好？",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "“那处之酒是真不是譬喻。”",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "他们用布尔多泽尔往她身上倒土。土和石灰。",
+   "q": "Maman garbles bulldozer on purpose as '布尔多泽尔'. Is that clear?"
+  }
+ ]
 }

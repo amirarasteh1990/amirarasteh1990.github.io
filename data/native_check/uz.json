@@ -1,56 +1,56 @@
 {
-  "lang": "uz",
-  "slug": "uz",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Xuddi bolaligimizda Maman eski kiyimlardan ipni yechar, biz esa ip uy ichida uyulib qolmasin deb uni ko'tarib xona-xona aylanardik.",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "03/0044#2",
-      "where": "03/0044",
-      "text": "– Oqsoqol, tur, ket — Qoplon Farid senga o'limchi harakat qilmasidan oldin.",
-      "q": "A dorm joke about a murderous move. Does 'o'limchi harakat' sound natural?"
-    },
-    {
-      "id": "03/0613#3",
-      "where": "03/0613",
-      "text": "Oshxona kirishining o'ng tarafimizdan va Abu Rayhon binosi pastki qavatiga kichik kirishning chap tarafimizdan o'tib, ko'rgazma va Abu Rayhon binosi o'rtasidagi yo'lni olamiz.",
-      "q": "Is it clear: dining hall on our right, small entrance on our left?"
-    },
-    {
-      "id": "04b/0204#4",
-      "where": "04b/0204",
-      "text": "– Sen bunaqa ishlarni qilmasding-ku.",
-      "q": "Amir asks, surprised. Does this line read as a question?"
-    },
-    {
-      "id": "04b/0418#5",
-      "where": "04b/0418",
-      "text": "Mayda gavdali, uzun pufak soch, katta ko'z, juda qora terili va o'ta kichik kalla — agar pufak sochlari bo'lmasa, kichkina gavdasida ham kichik ko'rinadigan bola edi.",
-      "q": "Is it clear his head, not the boy, would look small without the hair?"
-    },
-    {
-      "id": "04b/1227#6",
-      "where": "04b/1227",
-      "text": "Pochchalarining usta-mahram amakivachchasining do'sti sochini babiliss bilan jingalak qilarmish degan gapni eshitganga o'xshaydi.",
-      "q": "Is 'usta-mahram' clear as the master craftsman their in-law works under?"
-    },
-    {
-      "id": "04b/1228#7",
-      "where": "04b/1228",
-      "text": "– Hamid, butun mol-mulkingni Tehronning eng boyi bo'lgan pochchangizning usta-mahram amakivachchasining do'stining gapi yo'lida shamolga sovurding.",
-      "q": "Is it clear the friend, not the in-law, is Tehran's richest man?"
-    },
-    {
-      "id": "04b/1385#8",
-      "where": "04b/1385",
-      "text": "Bu Niloofarning gulpparlaridan biri. Uning tili ustida turibman.",
-      "q": "Amir stands on a water-lily petal. Is 'gulpparlaridan' spelled correctly?"
-    }
-  ]
+ "lang": "uz",
+ "slug": "uz",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Xuddi bolaligimizda Maman eski kiyimlardan ipni yechar, biz esa ip uy ichida uyulib qolmasin deb uni ko'tarib xona-xona aylanardik.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
+  },
+  {
+   "id": "03/0044#2",
+   "where": "03/0044",
+   "text": "– Oqsoqol, tur, ket — Qoplon Farid senga o'limchi harakat qilmasidan oldin.",
+   "q": "A dorm joke about a murderous move. Does 'o'limchi harakat' sound natural?"
+  },
+  {
+   "id": "03/0613#3",
+   "where": "03/0613",
+   "text": "Oshxona kirishining o'ng tarafimizdan va Abu Rayhon binosi pastki qavatiga kichik kirishning chap tarafimizdan o'tib, ko'rgazma va Abu Rayhon binosi o'rtasidagi yo'lni olamiz.",
+   "q": "Is it clear: dining hall on our right, small entrance on our left?"
+  },
+  {
+   "id": "04b/0204#4",
+   "where": "04b/0204",
+   "text": "– Sen bunaqa ishlarni qilmasding-ku.",
+   "q": "Amir asks, surprised. Does this line read as a question?"
+  },
+  {
+   "id": "04b/0418#5",
+   "where": "04b/0418",
+   "text": "Mayda gavdali, uzun pufak soch, katta ko'z, juda qora terili va o'ta kichik kalla — agar pufak sochlari bo'lmasa, kichkina gavdasida ham kichik ko'rinadigan bola edi.",
+   "q": "Is it clear his head, not the boy, would look small without the hair?"
+  },
+  {
+   "id": "04b/1227#6",
+   "where": "04b/1227",
+   "text": "Pochchalarining usta-mahram amakivachchasining do'sti sochini babiliss bilan jingalak qilarmish degan gapni eshitganga o'xshaydi.",
+   "q": "Is 'usta-mahram' clear as the master craftsman their in-law works under?"
+  },
+  {
+   "id": "04b/1228#7",
+   "where": "04b/1228",
+   "text": "– Hamid, butun mol-mulkingni pochchangizning ustasining amakivachchasining Tehronning eng boyi bo'lgan do'stining gapi yo'lida shamolga sovurding.",
+   "q": "Is it clear the friend, not the in-law, is Tehran's richest man?"
+  },
+  {
+   "id": "04b/1385#8",
+   "where": "04b/1385",
+   "text": "Bu Niloofarning gulpparlaridan biri. Uning tili ustida turibman.",
+   "q": "Amir stands on a water-lily petal. Is 'gulpparlaridan' spelled correctly?"
+  }
+ ]
 }

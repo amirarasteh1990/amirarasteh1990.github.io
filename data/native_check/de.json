@@ -1,26 +1,92 @@
 {
-  "lang": "de",
-  "slug": "de",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
-      "q": "From the opening page. Do these lines read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Wie damals in der Kindheit, wenn Maman das Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte.",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "Opening/0007#3",
-      "where": "Opening/0007",
-      "text": "Jetzt wickle ich den Faden der Wörter ab, und du hebst sie auf und trägst sie in deine eigene Welt, damit sie sich hier, in meiner Welt, nicht aufhäufen.",
-      "q": "You take the words with you. Does this sentence read naturally?"
-    }
-  ]
+ "lang": "de",
+ "slug": "de",
+ "dir": "ltr",
+ "version": "2026-11-18",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
+   "q": "From the opening page. Do these lines read naturally?"
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Wie damals in der Kindheit, wenn Maman das Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "Jetzt wickle ich den Faden der Wörter ab, und du hebst sie auf und trägst sie in deine eigene Welt, damit sie sich hier, in meiner Welt, nicht aufhäufen.",
+   "q": "You take the words with you. Does this sentence read naturally?"
+  },
+  {
+   "id": "01/0116#4",
+   "where": "01/0116",
+   "text": "Geh auch raus. Geh an stiele Orte.",
+   "q": "Maman mispronounces 'stiele' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0148#5",
+   "where": "01/0148",
+   "text": "– Die was und Lächeln?",
+   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+  },
+  {
+   "id": "03/0191#6",
+   "where": "03/0191",
+   "text": "– Oho, Hamid Katze, bis gestern hast du noch „Esel“ gesagt. Jetzt bist du plötzlich so fein und sagst „Grautier“?",
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "Und bei deiner beschissenen Art zu reden hättest du Alat Delon heißen müssen.",
+   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#8",
+   "where": "04a/0076",
+   "text": "– Das ist Marmelstein. Marmel bedeutet richtig teuer.",
+   "q": "A child says 'Marmel' for marble, thinking it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#9",
+   "where": "04b/0595",
+   "text": "– Aber er hat's verkackt. Adlerauge sagt Peer-to-Peer; Schenki sagt Äldi-zu-Äldi.",
+   "q": "Schenki (Amir) misheard 'Peer' as pir, Persian for elder. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#10",
+   "where": "04b/1263",
+   "text": "– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1265#11",
+   "where": "04b/1265",
+   "text": "– Ja, ich kauf dir die Puppe. Wenn ich Geld habe, kauf ich dir eine noch bessere, Babas Mädchen.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+  },
+  {
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "Davon wird man scheißverwirrt. Je mehr man darüber nachdenkt, desto scheißverwirrter wird man.",
+   "q": "A girl coins a crude word for mind-bending. Does 'scheißverwirrt' work?"
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "„Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.“",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#14",
+   "where": "06/0056",
+   "text": "Mit dem Bulldozel schütteten sie Erde über sie. Erde und Kalk.",
+   "q": "Maman says 'Bulldozel' for bulldozer on purpose. Is that clear?"
+  }
+ ]
 }

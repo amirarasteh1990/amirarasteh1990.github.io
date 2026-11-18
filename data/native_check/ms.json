@@ -1,32 +1,32 @@
 {
-  "lang": "ms",
-  "slug": "ms",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Dari sisi ini, aku mengurai benang kata-kata, dan dari sisi sana, kamu mengumpulkannya.",
-      "q": "The writer unravels a thread of words; you gather them. Does this read naturally?"
-    },
-    {
-      "id": "01/0132#2",
-      "where": "01/0132",
-      "text": "Ada tifoid, misalnya, atau batuk kering, atau campak.",
-      "q": "Maman garbles disease names on purpose. Does 'tifoid' work as her garbled word?"
-    },
-    {
-      "id": "04b/1312#3",
-      "where": "04b/1312",
-      "text": "Ini dia lukis dan di bawahnya dia tulis: ini bukan paip. Kepalamu jadi pening.",
-      "q": "A student puzzles over a painting of a pipe. Does this sound natural?"
-    },
-    {
-      "id": "04b/1320#4",
-      "where": "04b/1320",
-      "text": "Dan dengan tangan menggeletar aku cepat-cepat membelek-belek ghazal untuk mencari beit Hafez yang, seperti kata gadis yang seorang lagi, makin dalam kita menyelaminya makin pening kepala kita, agar boleh kutunjukkan kepada Niloofar.",
-      "q": "Is it clear Amir seeks a Hafez verse about growing dizzier the deeper one goes?"
-    }
-  ]
+ "lang": "ms",
+ "slug": "ms",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Dari sisi ini, aku mengurai benang kata-kata, dan dari sisi sana, kamu mengumpulkannya.",
+   "q": "The writer unravels a thread of words; you gather them. Does this read naturally?"
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "Ada tipoid, misalnya, atau batuk kering, atau campak.",
+   "q": "Maman garbles disease names on purpose. Does 'tipoid' work as her garbled word?"
+  },
+  {
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Ini dia lukis dan di bawahnya dia tulis: ini bukan paip. Kepalamu jadi pening tahi.",
+   "q": "A student puzzles over a pipe painting. Does 'pening tahi' work as crude slang?"
+  },
+  {
+   "id": "04b/1320#4",
+   "where": "04b/1320",
+   "text": "Dan dengan tangan menggeletar aku cepat-cepat membelek-belek ghazal untuk mencari beit Hafez yang, seperti kata gadis yang seorang lagi, makin dalam kita menyelaminya makin kita pening tahi, agar boleh kutunjukkan kepada Niloofar.",
+   "q": "Is it clear Amir seeks a Hafez verse about growing dizzier the deeper one goes?"
+  }
+ ]
 }

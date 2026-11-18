@@ -5,52 +5,52 @@
   "version": "2026-11-16",
   "items": [
     {
-      "id": "01/0132#1",
-      "where": "01/0132",
-      "text": "دومره شی مې نه لیدلی او نه اوریدلی وو. حتی نینۍ هم نه ویل.",
-      "q": "Is it clear that not even Grandma's generation spoke of such a thing?"
+      "id": "Opening/0007#1",
+      "where": "Opening/0007",
+      "text": "لکه په ماشومتوب کې چې مامان به د زړو جامو کاموا سپړله، موږ به یې تار واخیست او د کور دننه به پرې ګرځېدو، چې کاموا یو پر بل ونه غونډېږي.",
+      "q": "In childhood, Maman unravelled old woollens. Does this sentence read naturally?"
     },
     {
-      "id": "01/0274#2",
+      "id": "01/0166#2",
+      "where": "01/0166",
+      "text": "هر وخت به مې ویل ماشومان مه وهه، ویل به یې: جنګ کې موجي شوم، واک مې نلري. ولیدم چې داسې ده، نو پریږده مې کړ.",
+      "q": "She gave up trying to stop him. Does 'پریږده مې کړ' sound natural here?"
+    },
+    {
+      "id": "01/0274#3",
       "where": "01/0274",
-      "text": "او زه به هر کلمه او هره خبره د قلک درون له ورکوم او کله چې ټول یې ولیدل او واوریدل، موسکا به وکوي او خپل لاس به زما پر لاس کیږدي، چې د لومړي ځل لپاره، د هغې د پوست ګرموالی او حضور، پرته له هر پرده یې، د زما د وجود پوست باندې او درون کې جاري شي.",
-      "q": "Amir imagines showing Niloofar his piggy bank of words. Does this read naturally?"
+      "text": "او زه به د قلک دننه زېرمه توری په توری او کلمه په کلمه راوباسم او کله چې ټول یې ولیدل او واوریدل، موسکا به وکوي او خپل لاس به زما پر لاس کیږدي، چې د لومړي ځل لپاره، د هغې د پوست ګرموالی او حضور، پرته له هر پرده یې، د زما د وجود پوست باندې او درون کې جاري شي.",
+      "q": "Amir imagines Niloofar's hand on his for the first time. Does this sentence read naturally?"
     },
     {
-      "id": "03/0071#3",
+      "id": "03/0071#4",
       "where": "03/0071",
       "text": "باد وزیدل پیل کړل او د مشتو پاڼو سره د غولو د پوستکي له نمایشګاه تش چاپیریال کې ورکوي.",
-      "q": "Is 'د غولو د پوستکي' clear for an empty puffed-snack wrapper?"
+      "q": "Is 'د غولو د پوستکي' clear as a puffed-snack wrapper blown by the wind?"
     },
     {
-      "id": "03/0310#4",
+      "id": "03/0310#5",
       "where": "03/0310",
-      "text": "یقیناً پر همدغه زینو خپلې خبرې مرور کړي وې ترڅو یادش وي چې نرمه نشي، محکمه ودریږي او باورمي کړي چې باید هغه هیر کړم.",
-      "q": "Niloofar rehearsed her words on these stairs. Does this sentence read naturally?"
+      "text": "یقیناً پر همدغه زینو خپلې خبرې مرور کړي وې ترڅو یې یاد وي چې نرمه نشي، ټینګه ودرېږي او ما ته باور راکړي چې باید هغه هیر کړم.",
+      "q": "Niloofar had rehearsed her words on these stairs. Does 'مرور کړي وې' sound natural?"
     },
     {
-      "id": "03/0361#5",
-      "where": "03/0361",
-      "text": "د حیاط پای له کوره ووتم او د حیاط د اوږدوالي نهه ګامونه مې هم کيواله، او لاهم د نوي پیدا کولو خوشحالي زړه کې ولاريده.",
-      "q": "Is 'کيواله' clear for crossing the courtyard in nine steps?"
+      "id": "03/0576#6",
+      "where": "03/0576",
+      "text": "– ستا د هغو بلبلي سترګو قربان شم د عقاب سترګه جان، خو ستونزه د ترلاسه کوونکي سره ده؛ لیږوونکی یې سم نه شي کولی. که نه، زما د غاښو برش نه هماغه رنګ لري نه هماغه بڼه.",
+      "q": "Is it clear his toothbrush is unlike the other man's in colour and shape?"
     },
     {
-      "id": "04a/0047#6",
-      "where": "04a/0047",
-      "text": "هغه وژر وژر ناکی خوځوي. ډیر ناکي یې پر تله اچوي، بیا یو شان بیرته اخلي.",
-      "q": "Is 'ناکی' the right word for chickpeas at the grocer's?"
-    },
-    {
-      "id": "04b/0690#7",
-      "where": "04b/0690",
-      "text": "ځینې وختونه له ځان سره فکر کوم چې له زرو پیښو، یوازې یوه یې کیدای شول ونه شي چې یو شی پیدا نه شي.",
-      "q": "Is it clear that one missing event among a thousand would have changed everything?"
-    },
-    {
-      "id": "04b/0827#8",
+      "id": "04b/0827#7",
       "where": "04b/0827",
-      "text": "اسکندر د کوټې په منځ کې ناست و، ښي لاس یې پر زنګون تکیه کړی و او د همغه لاس مټ یې پر تندي ایښی و.",
-      "q": "Is it clear his elbow rests on his knee, his palm on his forehead?"
+      "text": "اسکندر د کوټې په منځ کې ناست و، ښي لاس یې پر زنګون تکیه کړی و او د همغه لاس ورغوی یې پر تندي ایښی و.",
+      "q": "Is it clear that Eskandar rests his right elbow on his knee?"
+    },
+    {
+      "id": "04b/1263#8",
+      "where": "04b/1263",
+      "text": "– ويييژژژ، بابا بابا، دا غټه ګوګوله لاته اخلې؟",
+      "q": "A toddler asks his dad for a big doll. Does it sound like baby talk?"
     }
   ]
 }

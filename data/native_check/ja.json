@@ -1,18 +1,98 @@
-{"lang": "ja", "slug": "ja", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-18",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "こちら側で、私は言葉の糸をほどく。向こう側で、あなたがその言葉を集める。",
-   "q": "Do these two sentences read naturally?"},
-  {"id": "03/0049#2", "where": "03/0049",
+   "q": "Do these two sentences read naturally?"
+  },
+  {
+   "id": "03/0049#2",
+   "where": "03/0049",
    "text": "– うん、コンクールでの彼の順位は本当に良かった、二桁だった。",
-   "q": "Is it clear 'コンクール' means Iran's national university entrance exam?"},
-  {"id": "04b/1213#3", "where": "04b/1213",
+   "q": "Is it clear 'コンクール' means Iran's national university entrance exam?"
+  },
+  {
+   "id": "04b/1213#3",
+   "where": "04b/1213",
    "text": "彼は私の謝罪に、肩に手を置くことで応えて去っていく。",
-   "q": "Does this sentence read naturally?"},
-  {"id": "04b/1213#4", "where": "04b/1213",
+   "q": "Does this sentence read naturally?"
+  },
+  {
+   "id": "04b/1213#4",
+   "where": "04b/1213",
    "text": "私の肩のせいで扉が閉まらない。手が私を内側へ引き入れ、扉が閉まる。",
-   "q": "Amir squeezes onto a crowded bus. Do these sentences read naturally?"},
-  {"id": "04b/1312#5", "where": "04b/1312",
+   "q": "Amir squeezes onto a crowded bus. Do these sentences read naturally?"
+  },
+  {
+   "id": "04b/1312#5",
+   "where": "04b/1312",
    "text": "クソほどくらくらする。考えれば考えるほど、クソほどくらくらするのよ。",
-   "q": "A girl crudely says the painting makes her dizzy. Is the meaning clear?"}
- ]}
+   "q": "A girl crudely says the painting makes her dizzy. Is the meaning clear?"
+  },
+  {
+   "id": "01/0116#6",
+   "where": "01/0116",
+   "text": "外にも出て。感静な場所に行って。",
+   "q": "Maman mispronounces '感静' on purpose; she means quiet. Is that clear?"
+  },
+  {
+   "id": "01/0132#7",
+   "where": "01/0132",
+   "text": "コリーラもそう。あれだって、こんなに多くは殺さなかった。",
+   "q": "Maman mispronounces 'コリーラ' on purpose; she means cholera. Is that clear?"
+  },
+  {
+   "id": "03/0191#8",
+   "where": "03/0191",
+   "text": "– おいおい。ハミード・猫、昨日まで「ハル」って言ってたのに、今日は急に上品になって「ロバ」って言うのか？",
+   "q": "Taghi mocks Hamid's switch from a rude to a polite donkey word. Is that clear?"
+  },
+  {
+   "id": "03/0373#9",
+   "where": "03/0373",
+   "text": "– アメロカが、イランが核計画を停止したと確認したっていうことよ。戦争になるの、それともならないの？",
+   "q": "Maman mispronounces 'アメロカ' on purpose; she means America. Is that clear?"
+  },
+  {
+   "id": "03/0430#10",
+   "where": "03/0430",
+   "text": "– お前も、そのクソみたいな喋り方では、名前はアラット・ドロンになるべきだったな。勘違いするなよ、アラン・ドロンのことじゃない。",
+   "q": "'アラット・ドロン' is meant as a rude pun on Alain Delon. Does it work?"
+  },
+  {
+   "id": "04a/0076#11",
+   "where": "04a/0076",
+   "text": "– だいりしの石だ。だいりしって、とても高いってことだ。",
+   "q": "A child mispronounces marble as 'だいりし' and thinks it means expensive. Is that clear?"
+  },
+  {
+   "id": "04b/0595#12",
+   "where": "04b/0595",
+   "text": "– でも、しくじったな。鷹の目はピア・トゥ・ピアって言うのに、酒場者は酒場じい・トゥ・酒場じいだとさ。",
+   "q": "Amir misheard 'ピア' as pir, Persian for elder, like his nickname. Does the joke work?"
+  },
+  {
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "– ブーーン、バーバ、バーバ、このおっきなおにんぎょ、かってくれう？",
+   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "「かしこにあるあの酒は本物いや比喩じゃない」。これも同じだ。",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+  },
+  {
+   "id": "06/0056#15",
+   "where": "06/0056",
+   "text": "ブルドゼルで土をかけたの。土と石灰を。",
+   "q": "Maman mispronounces 'ブルドゼル' on purpose; she means bulldozer. Is that clear?"
+  }
+ ]
+}
