@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Amir Arasteh — paintings and books</title>
-<meta name="description" content="The novel Sedaha (Sounds), free to read in 107 languages, and the paintings that belong to it.">
+<meta name="description" content="The novel Sedaha (Sounds), free to read in 106 languages, and the paintings that belong to it.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="arasteh.art">
 <meta property="og:title" content="Amir Arasteh — paintings and books">
-<meta property="og:description" content="The novel Sedaha (Sounds), free to read in 107 languages, and the paintings that belong to it.">
+<meta property="og:description" content="The novel Sedaha (Sounds), free to read in 106 languages, and the paintings that belong to it.">
 <meta property="og:image" content="https://arasteh.art/assets/img/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://arasteh.art/">
 <link rel="canonical" href="https://arasteh.art/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/css/style.css?v=31">
+<link rel="stylesheet" href="/assets/css/style.css?v=32">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -89,7 +89,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <div class="lang-mine" id="langMine" hidden></div>
 
     <div class="home-book">
-      <a class="home-book-cover" href="/sedaha/" tabindex="-1" aria-hidden="true">
+      <!-- the whole card is one link: the button below stretches over it (style.css
+           .home-book, author 2026-11-20), so the cover is no longer a link of its own -->
+      <div class="home-book-cover">
         <!-- 104px wide on a phone, 170px above that: the browser picks the copy
              that suits the screen (sync_gallery.py RESPONSIVE) -->
         <picture><source srcset="/assets/img/book-cover-360.webp 360w, /assets/img/book-cover-720.webp 720w, /assets/img/book-cover.webp 884w"
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
           src="/assets/img/book-cover.jpg" srcset="/assets/img/book-cover-360.jpg 360w, /assets/img/book-cover-720.jpg 720w, /assets/img/book-cover.jpg 884w"
           sizes="(max-width: 560px) 104px, 170px" width="884" height="1200" alt=""
           fetchpriority="high"></picture>
-      </a>
+      </div>
       <div class="home-book-meta">
         <h3>Sedaha <span class="home-book-en">(Sounds)</span></h3>
         <p>A novel, with the author&rsquo;s paintings.</p>
@@ -131,6 +133,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 </footer>
 <!-- the editions, then the your-language button that reads them -->
 <script src="/assets/js/editions.js" defer></script>
-<script src="/assets/js/lang-mine.js?v=35" defer></script>
+<script src="/assets/js/lang-mine.js?v=37" defer></script>
 </body>
 </html>

@@ -1296,6 +1296,14 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 .home-book{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px;
   max-width:680px;margin:0 auto;padding:22px;border:1px solid var(--line);
   border-radius:var(--radius);background:var(--surface)}
+/* The whole book card is one link, like the Paintings row below it (author
+   2026-11-20: the cover and title were dead to a click). The button's ::after
+   stretches over the card, so every part of it goes where the button goes -- the
+   book page, or the Opening a reader last opened (lang-mine.js) -- and a screen
+   reader still meets one link with one name. */
+.home-book{position:relative}
+.home-book #readMine::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+.home-book:has(#readMine:hover){border-color:var(--accent)}
 .home-book-cover{flex:0 0 170px;max-width:170px;border-radius:6px;overflow:hidden;
   box-shadow:0 8px 28px rgba(0,0,0,.18);background:#332e26}
 .home-book-cover img{width:100%;height:auto;display:block}

@@ -13,7 +13,11 @@
    language and stops offering it.
 
    The home page's "Read free in your language" button follows a remembered choice;
-   the Books tab does the same on every other page (sync_head.py). */
+   the Books tab does the same on every other page (sync_head.py).
+
+   On the book page (/sedaha/) there is no separate button: the same language takes
+   the third quick start, which is Dansk until it is known (author 2026-11-20 --
+   the detected language AMONG the choices, as the site had it before). */
 (function () {
   var data = window.EDITIONS || [];
   var bySlug = {};
@@ -32,6 +36,31 @@
       if (base === 'en') break;              // English first: English is the default
       mine = bySlug[tag] || bySlug[base] || null;
     }
+  }
+
+  // /sedaha/: فارسی, English and the third box (data-fallback, Dansk). Swap it
+  // for the visitor's language unless that is already one of the boxes. finder.js
+  // runs after this and fits the new label like the others.
+  var row = document.querySelector('.quick-row[data-fallback]');
+  if (row) {
+    var slot = row.querySelector('[data-slug="' + row.getAttribute('data-fallback') + '"]');
+    if (!slot || !mine || row.querySelector('[data-slug="' + mine.slug + '"]')) return;
+    var a = document.createElement('a');
+    a.className = 'lang-box';
+    a.href = mine.url;
+    a.setAttribute('lang', mine.lang);
+    if (mine.rtl) a.setAttribute('dir', 'rtl');
+    a.setAttribute('data-slug', mine.slug);
+    a.textContent = mine.native;
+    if (mine.en !== mine.native) {
+      var hid = document.createElement('span');
+      hid.className = 'visually-hidden';
+      hid.setAttribute('lang', 'en');
+      hid.textContent = ' — ' + mine.en;
+      a.appendChild(hid);
+    }
+    slot.parentNode.replaceChild(a, slot);
+    return;
   }
 
   var read = document.getElementById('readMine');

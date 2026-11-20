@@ -85,6 +85,10 @@
    who fetched what (download_log.py) and redirects to the release; rel=nofollow
    on download links (finder.js?v=36); the native-check line in each page's own
    language, in a light box; question pages for 103 languages; stylesheet v31. */
+/* lang-mine.js?v=37 (2026-11-20): on /sedaha/ the visitor's language takes the
+   third quick start (Danish until known) instead of a separate button.
+   style.css?v=32 (same day): the home page's whole book card is one link. A new
+   script URL is enough -- assets are fetched by URL -- so VERSION stays. */
 var VERSION = 'arasteh-v36';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
@@ -92,10 +96,10 @@ var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=31',
+  '/assets/css/style.css?v=32',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
-  '/assets/js/lang-mine.js?v=35',
+  '/assets/js/lang-mine.js?v=37',
   '/assets/js/finder.js?v=36',
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',

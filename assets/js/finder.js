@@ -330,10 +330,9 @@
   fromHash();
   window.addEventListener('hashchange', fromHash);
 
-  /* The three above the search (the editions the book was published in) get the
-     same fitting as the list. The visitor's own language now has its own button
-     (lang-mine.js, 2026-11-13); the old fifth-slot swap, the offer line and the
-     rotating 'Read it in' line are retired. */
+  /* The three above the search get the same fitting as the list. The third may
+     just have been swapped for the visitor's own language (lang-mine.js runs
+     first), which can be a longer name than Dansk. */
   (function () {
     var row = document.querySelector('.quick-row');
     if (row) { fitAll(row); }

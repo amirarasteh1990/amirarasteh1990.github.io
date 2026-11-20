@@ -1212,7 +1212,9 @@ FMT_WHAT = {"epub": "Fits any screen", "pdf": "Keeps the printed page"}
 # Hebrew note above, where remaining on the release is exactly what was wanted. For
 # Serbian it is not: the release assets have to be removed separately, or the book
 # stays one guessable URL away.
-HIDDEN_SLUGS = set()  # 2026-11-16: author: show every ready edition (HE, SR un-hidden)
+# 2026-11-16: author: show every ready edition (HE, SR un-hidden).
+# 2026-11-18: author: Greenlandic off the site until a native translator (1,584 known defects).
+HIDDEN_SLUGS = {"kl"}
 
 
 def shown(rows: list[dict]) -> list[dict]:
@@ -1679,19 +1681,22 @@ def patch_feed(check: bool, rows: list[dict]) -> bool:
 
 EDITIONS_JS = SITE / "assets" / "js" / "editions.js"
 
-# The quick starts are the three editions the book was published in (author
-# 2026-11-13, site clean-up: one way to choose, not six). The visitor's OWN language
-# gets its own large button above them (assets/js/lang-mine.js), so no slot here is
-# swapped by the browser any more. Slugs only: every label, URL and direction come
-# from the edition record. (Before: eight fixed + a fifth-slot swap, 2026-07-28.)
-QUICK_SLUGS = ["fa", "en", "da"]
+# Three quick starts: Persian and English fixed, and a third that is Danish until
+# the visitor's own language is known (author 2026-11-20: he liked the detected
+# language appearing AMONG the choices better than the separate button of
+# 2026-11-13). assets/js/lang-mine.js swaps it -- the language the reader last
+# opened, else the browser's -- and Danish stays for English browsers, for Persian
+# or Danish ones, and without scripts. Slugs only: every label, URL and direction
+# come from the edition record. (Before: fa/en/da + a separate button, 2026-11-13;
+# eight fixed + a fifth-slot swap, 2026-07-28.)
+QUICK_SLUGS = ["fa", "en"]
 # A configured quick start appears whether or not its complete edition is out yet:
 # the author's call, 2026-07-28, for Hindi. Clicking it is still honest — the panel
 # behind it says the edition is in preparation and offers the whole book in the
 # three it was published in. The language the BROWSER swaps in is still required to
 # be complete (finder.js): a choice made for someone should be the safe one.
 QUICK_ALLOW_INCOMPLETE = True
-QUICK_FALLBACK = None
+QUICK_FALLBACK = "da"
 # The heading reads into the row: "Pick up the thread in  فارسی  English  …", which
 # is the book's own image for what a reader does — the author unwinds the thread of
 # words from his side, the reader gathers it from the other. NOT "most read": this
