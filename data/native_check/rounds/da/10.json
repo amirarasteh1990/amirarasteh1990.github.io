@@ -1,0 +1,184 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "04b/1276#1",
+   "where": "04b/1276",
+   "text": "har vandret her.",
+   "q": "This is the poem's last line. Does it close the poem well?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "vil vide at",
+    "elskende og",
+    "berusede og",
+    "brændte"
+   ]
+  },
+  {
+   "id": "04b/1321#2",
+   "where": "04b/1321",
+   "text": "Man kan læse det på to måder. Hvis vi anser Hafez for at være toppen af flertydighed, vil jeg sige, at denne ene mesra er – er toppunk-punktet af flertydighed i Hafez' e-egne ord.",
+   "q": "Nervous and excited, Amir stammers as he explains a line of poetry. Does the stammering read naturally?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "04b/0558#3",
+   "where": "04b/0558",
+   "text": "– Hvad søger du at forstå, Flue? Differentialkvotienten? Meningen? Eller meningen med differentialkvotienten? Eller differentialkvotienten af meningen?",
+   "q": "Eskandar, a self-styled philosopher, lectures a struggling student. Does his mock-profound wordplay come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar, uden at ændre sin Buddha-agtige positur, sagde:"
+   ]
+  },
+  {
+   "id": "03/0624#4",
+   "where": "03/0624",
+   "text": "– Fedt, Tavernens Ældste. Det er perfekt til Arasteh.",
+   "q": "Farid gives Amir the nickname 'Tavernens Ældste' from a Hafez reading. Does it sound like a dorm nickname?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid sagde:"
+   ]
+  },
+  {
+   "id": "03/0628#5",
+   "where": "03/0628",
+   "text": "– Haha, Tavernens Ældste, Ældi – perfekt. Du ramte plet, Leopard-Farid.",
+   "q": "Hooman shortens the nickname to 'Ældi'. Does that sound like a natural nickname?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman skrev noget i bogen med en kuglepen og sagde:"
+   ]
+  },
+  {
+   "id": "03/0630#6",
+   "where": "03/0630",
+   "text": "– Han er Taverni, sandelig og ærligt talt.",
+   "q": "Farid coins a second short form, Taverni. Does 'sandelig og ærligt talt' sound natural from an excited student?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid sagde:"
+   ]
+  },
+  {
+   "id": "04b/0160#7",
+   "where": "04b/0160",
+   "text": "– Objektivt, bare fordi vi kom nogle dage for sent, opfører de her teheranere sig – dem, der kun kom ind på AmirKabir takket være lokalisering – som om det er os, der kom ind via kvote, ikke dem. Objektivt.",
+   "q": "Sajad complains that Tehran students treat them as if they got in unfairly. Does this read naturally?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad sagde:"
+   ]
+  },
+  {
+   "id": "03/0514#8",
+   "where": "03/0514",
+   "text": "– De dræbte Gaddafi. Objektivt, kom og se videoen.",
+   "q": "Sajad's habit word 'Objektivt' pops up even here. Does it sound like a funny verbal tic?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad sagde:"
+   ]
+  },
+  {
+   "id": "03/0504#9",
+   "where": "03/0504",
+   "text": "– Leopard-Farid, kom med den laptop, jeg vil også se. Jeg gider ikke rejse mig.",
+   "q": "Hooman calls his reckless friend 'Leopard-Farid'. Does that work as a dorm nickname?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman sagde:"
+   ]
+  },
+  {
+   "id": "03/0521#10",
+   "where": "03/0521",
+   "text": "– Åh, hvad skal den skide tænkerpositur nu til for?",
+   "q": "Hooman mocks Eskandar for striking a deep-thinker pose. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Et stykke tid sagde ingen noget. Så sagde Hooman:"
+   ]
+  },
+  {
+   "id": "03/0586#11",
+   "where": "03/0586",
+   "text": "– Enhver, der vil lukke filosofisk pis ud, kan gå ud i køkkenet. Pæren lyser også stærkere derude; så kommer der også lys ind i jeres hjerner.",
+   "q": "Hooman switches off the light on a late-night debate. Does his crude jab sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar og Meysam var begyndt at analysere, hvordan det, der var sket på maskiningeniørfakultetet, var en håndfuld, der viser hele læsset. De forbandt det med nutidens konkurrence- og forbrugssamfund og den slags. Diskussionen trak ud. Hooman slukkede lyset og sagde:"
+   ]
+  },
+  {
+   "id": "03/0612#12",
+   "where": "03/0612",
+   "text": "– Dit uduelige svin ... huuuuh ... med hovedet bøjet sådan ... huuuh ... hvor skal du hen så hurtigt?",
+   "q": "Hooman, out of breath, catches up with an old friend. Does this sound like affectionate crude teasing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "En hånd trækker min venstre skulder bagud. Det er Hooman. Han hiver efter vejret."
+   ]
+  },
+  {
+   "id": "03/0418#13",
+   "where": "03/0418",
+   "text": "– Hvad forskel gør det? Hvis McCain kommer til magten, fucker han Iran op, objektivt.",
+   "q": "Sajad worries about the US election. Does this sound like a young man's natural talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ørneøje, hids dig ikke sådan op, ellers tørrer din mælk ud. Hvad forskel gør det for dig og mig, om det bliver Obama eller ham den anden?"
+   ]
+  },
+  {
+   "id": "03/0392#14",
+   "where": "03/0392",
+   "text": "– Hvis du skider højt og flot på verden og alt i den, hvorfor er du så besat af quizzer og eksamener?",
+   "q": "Eskandar needles Hooman about caring so much for grades. Does this sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Jeg lå på siden på sengen med Hooman og Eskandar i synsfeltet uden egentlig at se på dem. Eskandar mumlede for sig selv i omtrent en time, før han vendte sig mod Hooman og sagde:"
+   ]
+  },
+  {
+   "id": "03/0415#15",
+   "where": "03/0415",
+   "text": "– Load nu, røvhul.",
+   "q": "Sajad swears at the slow internet. Does 'Load nu' sound like natural Danish slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Jeg sad på min seng og tænkte på det lille gule hårspænde, jeg den dag for første gang havde set i Niloofars hår. Sajad bandede over internethastigheden."
+   ]
+  },
+  {
+   "id": "04b/0464#16",
+   "where": "04b/0464",
+   "text": "– Er du Heisenberg eller Einstein, siden du forventer at få tyve og blive hædret for dine oplysende teorier?",
+   "q": "Iranian grades go up to twenty. Is Hooman's mocking question clear and natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman grinede og sagde:"
+   ]
+  }
+ ]
+}

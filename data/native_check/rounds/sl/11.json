@@ -1,0 +1,184 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r11",
+ "items": [
+  {
+   "id": "03/0521#1",
+   "where": "03/0521",
+   "text": "Fuj, kaj je spet s to usrano pozo misleca?",
+   "q": "Hooman mocks a roommate sitting in a thinker's pose. Does this sound like crude dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Nekaj časa ni prišel glas nikogar. Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "03/0268#2",
+   "where": "03/0268",
+   "text": "Nobeno ime ti ne pristoji, prekleto.",
+   "q": "Eskandar gives up hunting for a nickname for Hooman and raises his voice. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Glas mu je narastel in rekel je:"
+   ]
+  },
+  {
+   "id": "04b/0226#3",
+   "where": "04b/0226",
+   "text": "vsakič, ko sem prišel na predavanja in obveznosti za tisto zasrano drugo smer, sem videl, kako se prepirata.",
+   "q": "A friend grumbles crudely about his second degree course. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Še preden sem dokončal stavek, je vstala in vzela svoj nahrbtnik. Pospremil sem jo do pred stavbo Abu-Reyhan in tam sva se poslovila."
+   ]
+  },
+  {
+   "id": "04b/0567#4",
+   "where": "04b/0567",
+   "text": "Šel sem si umit obraz. Ne morem si umiti obraza čez očala, jebenec.",
+   "q": "Short-sighted Sajad snaps back at a friend who is cursing him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Orlov Pogled, Orlov Pogled, da bi te ..."
+   ]
+  },
+  {
+   "id": "04b/0690#5",
+   "where": "04b/0690",
+   "text": "Usrani mehanizmi sveta.",
+   "q": "Hooman, years later, curses the way the world works after a friend's death. Does 'Usrani mehanizmi sveta' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…pri njem. Včasih si mislim, da bi se izmed tisočih dogodkov lahko samo eden ne zgodil, da se ne bi zgodilo nekaj drugega. Dovolj bi bilo, da se profesorjem elektrotehnike in strojništva pred toliko leti ne bi nasršilo vzeti stavbe Abu-Reyhan ladjedelniški fakulteti, in Farid ne bi končal tako."
+   ]
+  },
+  {
+   "id": "04b/0512#6",
+   "where": "04b/0512",
+   "text": "Potem je čisto izginil in zdaj ne vem, kakšno govno žre.",
+   "q": "Hooman says crudely he has no idea what that guy is up to now. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…bi bil tako prijazen, da mu ne všečkam objav. Jaz pa sem mu odgovoril z velikanskim emotikonom palca gor, haha. Po nekaj časa je začel objavljati objave o propadanju sodobnega človeka zaradi družbenih omrežij, pa ni bilo nikogar, da bi mu rekel: starina, ti si sam kip neumnosti in propada, haha."
+   ]
+  },
+  {
+   "id": "04b/0818#7",
+   "where": "04b/0818",
+   "text": "Stari, poglej, kako daleč si pripeljal: celo Farid, ki ga boli kurac za nas in za sobo in za vse, se je oglasil.",
+   "q": "Hooman marvels that even Farid, who doesn't give a damn about anyone, spoke up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bilo je zadnjič, da se je Farid odzval na besede in dogodke v sobi, ne da bi ga kdo nagovoril. Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0738#8",
+   "where": "04b/0738",
+   "text": "Oh, ko bi ti le nekega dne lahko z nohti predrla tista tvoja ušesa, da se ne bi več ježila.",
+   "q": "She playfully threatens to pierce his ears with her nails so they stop pricking up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Dvignila je roko, stisnila nohte enega ob drugega in rekla:"
+   ]
+  },
+  {
+   "id": "04b/0182#9",
+   "where": "04b/0182",
+   "text": "Ti si večji vol od vseh. In postavo imaš za to.",
+   "q": "A young man insults a heavy-set roommate as the biggest ox of all. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pojej mu glavo, no, nimamo živcev zate. Kaj ti veš, kaj pomeni elektrotehnika na Sharifu? In sploh, te je kdo vprašal za mnenje?"
+   ]
+  },
+  {
+   "id": "04b/0562#10",
+   "where": "04b/0562",
+   "text": "Orlov Pogled, bog te ne obvaruj, razbil si mi križ.",
+   "q": "Eskandar half-jokingly curses Sajad for stepping on his back. Does 'bog te ne obvaruj' sound like a natural curse?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar je rekel z glasom, ki je razkrival, da komaj zajema sapo:"
+   ]
+  },
+  {
+   "id": "04b/0575#11",
+   "where": "04b/0575",
+   "text": "Pri materini duši, ne hodi po sobi brez očal.",
+   "q": "Eskandar begs Sajad, swearing by his mother's soul, to wear his glasses. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Orlov Pogled, Muho je že bog udaril, ne udari ga še ti."
+   ]
+  },
+  {
+   "id": "04b/0421#12",
+   "where": "04b/0421",
+   "text": "Leopard Farid, obvladaj živce in ne naredi morilske poteze.",
+   "q": "Hooman jokingly warns hot-headed Farid not to pull one of his murderous stunts. Does 'morilske poteze' sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "03/0576#13",
+   "where": "03/0576",
+   "text": "Umrl bi za tiste tvoje slavčje oči, Orlov Pogled-jan, ampak napaka je pri sprejemniku; oddajnik ne more rešiti problema.",
+   "q": "Farid jokes that the problem is Sajad's bad eyes, the receiver, not the transmitter. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0370#14",
+   "where": "04b/0370",
+   "text": "Nikogaršnja soba nima preproge, oče-jan, le mi imamo preprogo, in to zato, ker smo elitna soba.",
+   "q": "Eskandar boasts to his father that theirs is the elite room. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "In Niloofar je poslušala moje mrmranje. Ko sem vstopil v sobo, so fantje iz sobe in starejši moški, za katerega sem ugibal, da je Eskandarjev oče, sedeli na preprogi sredi sobe. Poldne je že minilo in nizko zahajajoče sonce je obsijalo srednji del preproge. Eskandar je govoril:"
+   ]
+  },
+  {
+   "id": "04b/1314#15",
+   "where": "04b/1314",
+   "text": "Morda boste rekli, da tako ne gre, da ni mogoče, da je domišljija in ni resnično. A je in vas resnično ljubim.",
+   "q": "He insists his love is real, not a fantasy. Does 'A je' say clearly that it is real?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Dvaintrideset mesecev je, kar vas ljubim. Od daleč. Ne da bi vedeli. V tišini. Brez ene besede."
+   ]
+  },
+  {
+   "id": "04b/1314#16",
+   "where": "04b/1314",
+   "text": "Dvaintrideset mesecev je, kar vas ljubim. Od daleč. Ne da bi vedeli.",
+   "q": "He finally declares his love to a girl he has always addressed politely. Does the polite 'vas' feel right here?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Šel sem in se ustavil pod platano na drugi strani pločnika ulice Valiasr ter čakal, da se Niloofar loči od drugih, da bi stopil naprej in ji iz obraza v obraz povedal, da jo ljubim."
+   ]
+  }
+ ]
+}

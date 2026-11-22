@@ -1,0 +1,195 @@
+{
+ "lang": "sk",
+ "slug": "sk",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "06/0264#1",
+   "where": "06/0264",
+   "text": "Ach, zakaždým, keď mu povieš, nech niečo donesie, akoby ho takto trafil prúd.",
+   "q": "Maman complains that her son jolts as if shocked whenever he is asked to fetch something. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "06/0192#2",
+   "where": "06/0192",
+   "text": "Mimochodom, Nana-pesar-jan, už si sa nasťahoval do nového bytu?",
+   "q": "Maman changes the subject to ask her son about his flat abroad. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Omid sa smeje a aj ja sa snažím smiať. Maman hovorí:"
+   ]
+  },
+  {
+   "id": "04b/0538#3",
+   "where": "04b/0538",
+   "text": "Nastal koniec sveta. Bibina generácia hovorievala, že keď nastane koniec sveta, zem sa bude stále triasť.",
+   "q": "Maman says it is the end of days, as the old people used to say. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Asi pred rokom."
+   ]
+  },
+  {
+   "id": "04b/0536#4",
+   "where": "04b/0536",
+   "text": "Jaj. Tak tie krajiny museli byť blízko seba. Kedy bolo to zemetrasenie v Bame?",
+   "q": "Maman reacts to news of an earthquake abroad. Does this sound like her everyday speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman povedala:"
+   ]
+  },
+  {
+   "id": "01/0158#5",
+   "where": "01/0158",
+   "text": "Ten s tým hlúpym učiteľom? Mm-hm, pozrite si ten. Je vtipný, zasmejte sa.",
+   "q": "Maman tells the family which film to watch tonight. Does this sound like her everyday speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "01/0077#6",
+   "where": "01/0077",
+   "text": "Sawaab je vtedy, keď sú ľudia radi, že sa vidia. Nie vtedy, keď sa len navzájom rozčuľujú.",
+   "q": "Maman says a good deed means people glad to see each other, not getting on each other's nerves. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Sawaab?"
+   ]
+  },
+  {
+   "id": "01/0214#7",
+   "where": "01/0214",
+   "text": "Prešli sme celú cestu z bulváru domov pešo a on stále zdvíhal ruku — akoby ju ľudia mali bozkávať ako svätú vec.",
+   "q": "Maman mocks her husband for holding up his gloved hand as if people should kiss it. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Nepamätáte si? Keď sa vrátil z Karbaly, mal na ruke bielu rukavicu."
+   ]
+  },
+  {
+   "id": "06/0066#8",
+   "where": "06/0066",
+   "text": "V nemocnici stále volali, rodina pani Adhamovej. Nikto sa nepohol.",
+   "q": "Maman recalls a sad moment at the hospital. Does this sound like her telling a story?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "03/0458#9",
+   "where": "03/0458",
+   "text": "Tento týždeň nemám vôbec čas. Budúci týždeň vo štvrtok o tretej, na tom istom mieste, kde sme sa stretli minule. Poviem ešte, že mám len pol hodiny.",
+   "q": "She writes him a short, cool message setting a time to meet. Does this message sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…unikol trýzni predstavovania si vecí, čo som hovoril Niloofar, hovorím si, že ak ma Niloofar neprijala, nebolo to kvôli mojim slovám, ale viac pre moje naliehanie na utajenie a preto, že som nikdy, ani pred vyjadrením svojich citov ani po ňom, nešiel priamo k Niloofar vo vnútri fakulty. Napísala:"
+   ]
+  },
+  {
+   "id": "01/0042#10",
+   "where": "01/0042",
+   "text": "Teraz zdvihni ruky smerom k nebu. Cítiš kvapky hliny na rukách?",
+   "q": "A girl leads him through a playful game of imagination. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Teraz si predstav, že sme na planéte uprostred inej galaxie. Tu je zem z vody a nebo zo zeme. To znamená, že namiesto dažďa padá z neba zem. Ale voda má farbu hliny a hlina je modrá."
+   ]
+  },
+  {
+   "id": "04b/0317#11",
+   "where": "04b/0317",
+   "text": "Tak ma to vytočí, keď takto mlčky sedíš. Mám chuť ti dať päsťou.",
+   "q": "A girl, exasperated by his silence, says she wants to punch him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…keď videl, že anjel nevie nič o láske ani milovaní, obrátil prejavy svojej krásy k Adamovi. Tak ako môžeš od jeho stvorenia čakať, že bude horieť pre niekoho, kto nevie o láske ani to prvé? Povzdychla si a para jej dychu sa v závitoch a slučkách zdvihla k nebu; ja som ju bez slova pozoroval."
+   ]
+  },
+  {
+   "id": "04b/0270#12",
+   "where": "04b/0270",
+   "text": "Viem, nie som žiadna hlupaňa, ale takto to nejde.",
+   "q": "A young woman says she is no fool, but this won't work. Does 'hlupaňa' sound natural for her?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– A kedykoľvek sa naučím niečo nové a zaujímavé, môžem rýchlo prísť a sadnúť si na túto lavičku a povedať to aj tebe. Nemusím čakať niekoľko mesiacov, či ťa azda zase uvidím. Ako to povedať, mnoho vecí, keď sa nepovedia hneď, zvetrá v ústach, zatuchne. Ten ich pôvab a sviežosť a živosť sa vytratí."
+   ]
+  },
+  {
+   "id": "04b/0228#13",
+   "where": "04b/0228",
+   "text": "Pred rokom dvoma som od Orlie Oko News počul, že ten frajerko odišiel do Austrálie tiež, tak akosi za dievčaťom, ktoré ste obaja milovali.",
+   "q": "Hooman gossips that the dandy rival followed the girl to Australia. Does 'ten frajerko' sound right?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– No hej, skrátka takto to bolo. Potom odišla do Austrálie."
+   ]
+  },
+  {
+   "id": "06/0050#14",
+   "where": "06/0050",
+   "text": "Amir, aj Dedko chytil Covid, ale ako keby nič — striasol to zo seba ako obyčajnú nádchu.",
+   "q": "His sister says Grandpa shook off Covid like a common cold. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Mahboubeh hovorí:"
+   ]
+  },
+  {
+   "id": "01/0174#15",
+   "where": "01/0174",
+   "text": "Hm, pozrite — spomenie si niekto z vás na jedinú dobrú vec o vašom Babovi? Povedzte, a budem mlčať.",
+   "q": "Maman challenges her children to name one good thing about their father. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "01/0188#16",
+   "where": "01/0188",
+   "text": "Je v tamtom dome. V dome na konci dvora. Stále sa učí.",
+   "q": "Maman says, half-mocking, that her husband studies all day in the house at the back of the yard. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman ukáže pohybom hlavy doprava a hovorí:"
+   ]
+  },
+  {
+   "id": "06/0238#17",
+   "where": "06/0238",
+   "text": "Takto sa poďakuješ?",
+   "q": "Maman, through clenched teeth, scolds one of her grown children for an ungrateful remark. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman, stískajúc zuby, hovorí:"
+   ]
+  }
+ ]
+}

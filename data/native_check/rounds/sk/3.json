@@ -1,0 +1,189 @@
+{
+ "lang": "sk",
+ "slug": "sk",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "03/0630#1",
+   "where": "03/0630",
+   "text": "Je Taverny, naozaj a úprimne.",
+   "q": "Farid adds a third nickname for Amir, 'Taverny', from the same tavern idea. Does this nickname sound natural to a Slovak reader?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Hooman písal niečo do knihy perom a hovoril:",
+    "– Haha, Starší z Krčmy, Krčmárik, výborne. Trafil si do čierneho, Leopard Farid.",
+    "Farid povedal:"
+   ]
+  },
+  {
+   "id": "03/0628#2",
+   "where": "03/0628",
+   "text": "Haha, Starší z Krčmy, Krčmárik, výborne. Trafil si do čierneho, Leopard Farid.",
+   "q": "Hooman shortens the nickname 'Starší z Krčmy' to a pet form. Does 'Krčmárik' work as that short nickname?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Objektívne.",
+    "Hooman písal niečo do knihy perom a hovoril:"
+   ]
+  },
+  {
+   "id": "06/0188#3",
+   "where": "06/0188",
+   "text": "Nedajbože, nehovor tak. Matka sa má obetovať za dieťa, nie dieťa za matku.",
+   "q": "Her son has just said he would give his life for her. Maman gently scolds him. Does this sound like her?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Dal by som za teba život, Nini-jan. Tá tvoja hlava tak dobre pracuje.",
+    "– Kheeeee, khe, khe."
+   ]
+  },
+  {
+   "id": "01/0069#4",
+   "where": "01/0069",
+   "text": "Hej, jigaram. Nech krúžim okolo teba. Výborne. Vždy sa usmievaj.",
+   "q": "Maman tells her son she would circle around him again and again, an old loving phrase. Does this line sound tender?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Usmejem sa a snažím sa natiahnuť kožu na čele čo najviac."
+   ]
+  },
+  {
+   "id": "03/0528#5",
+   "where": "03/0528",
+   "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
+   "q": "He read his poem to his mother at the very moment the year turned at Norouz. Does this line make that moment clear?",
+   "ctx": 0,
+   "kind": "known"
+  },
+  {
+   "id": "01/0152#6",
+   "where": "01/0152",
+   "text": "Jéééj. Kiežby som vedel, čo sa odohráva v Nini-janinej hlave.",
+   "q": "Ghassem lets out a long, fond sigh of delight at his mother's joke. Does 'Jéééj' sound like that here?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Nie, slzy nesťahujte. Stiahnite úsmevy.",
+    "Všetci sa smejú. Ghassem hovorí:"
+   ]
+  },
+  {
+   "id": "06/0186#7",
+   "where": "06/0186",
+   "text": "Dal by som za teba život, Nini-jan. Tá tvoja hlava tak dobre pracuje.",
+   "q": "Amir fondly praises his mother, whom the family lovingly call Nini, for her quick wit. Does this sound warm and natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Hovorím:"
+   ]
+  },
+  {
+   "id": "03/0278#8",
+   "where": "03/0278",
+   "text": "Karroubi je láska, úprimne.",
+   "q": "Farid gushes in student slang about a politician he adores. Does this sound like an excited young man?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Hej, Taverny, bež. Bež, poďme. Hovoria, že Karroubiho nepustili na univerzitu. Jeho prívrženci vylomili bránu Háfez a vstúpili. Dá sa povedať, že dobyli univerzitu."
+   ]
+  },
+  {
+   "id": "04b/0616#9",
+   "where": "04b/0616",
+   "text": "Dobre, Orlie Oko, dobre. Len si nestrkaj okuliare do laptopu.",
+   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does this tease land?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman povedal:"
+   ]
+  },
+  {
+   "id": "03/0490#10",
+   "where": "03/0490",
+   "text": "Daj pozor, aby si nepraskol, pán Kokot.",
+   "q": "Hooman shortens his rude nickname for Eskandar to 'pán Kokot' as Eskandar puffs himself up. Does this jab sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman povedal:"
+   ]
+  },
+  {
+   "id": "04b/0571#11",
+   "where": "04b/0571",
+   "text": "Najprv poďte zdokumentovať tento palec, a potom natočte film o čomkoľvek chcete.",
+   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film idea. Does this read as a rude joke?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Ľudia, poďme natočiť dokumentárny film o našej izbe.",
+    "Hooman vytiahol ruku spod prikrývky a povedal:"
+   ]
+  },
+  {
+   "id": "03/0055#12",
+   "where": "03/0055",
+   "text": "Ja proste takto rozprávam, a vy myslíte, že verše skladám.",
+   "q": "Hamid, a boy, answers in the rhythm and rhyme of his own poems. Does this line sound like a playful rhyme?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid povedal rovnakým rytmom, akým prednášal svoje básne:"
+   ]
+  },
+  {
+   "id": "04a/0080#13",
+   "where": "04a/0080",
+   "text": "Prečo ste nešli do marmolového domu?",
+   "q": "Ghassem, a boy, repeats his made-up word for marble. Does 'marmolového' read as the same childish mistake, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…Predné koleso sa točilo. Bol červený. Ako tie isté veľké červené dvere. Sadol som si vedľa žľabu. Nohy som dal do žľabu. Voda v ňom nebola. Srdce som mal prázdne. Muž sa vrátil. Predné koleso sa už netočilo. Dal Omidovi facku. Obaja sme plakali. Muž odišiel. Ghassem sa vrátil. Karhal nás. Povedal:"
+   ]
+  },
+  {
+   "id": "03/0373#14",
+   "where": "03/0373",
+   "text": "Hovorím to, čo Ameroka hovorí, že Irán zastavil jadrový program. Znamená to, že bude vojna alebo nie?",
+   "q": "Maman, worried about war, again says 'Ameroka' for America. Does the whole line sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Čo?"
+   ]
+  },
+  {
+   "id": "01/0132#15",
+   "where": "01/0132",
+   "text": "Strkaj nos do každého kúta. Starí ľudia hovorievali: nakukni do každého posledného rohu.",
+   "q": "Maman urges her son to explore and quotes an old saying. Does it sound like a folk saying she would use?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Mm-hm, dobre robíš. Kým máš príležitosť, choď pozrieť všetky dediny."
+   ]
+  },
+  {
+   "id": "04b/0591#16",
+   "where": "04b/0591",
+   "text": "Pír na pír?",
+   "q": "Amir mishears the computer term 'peer-to-peer' as 'Pír na pír'. Does his mishearing come across?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "– A to je čo?",
+    "– Nejaké elektronické peniaze peer-to-peer.",
+    "Ja som povedal:"
+   ]
+  }
+ ]
+}

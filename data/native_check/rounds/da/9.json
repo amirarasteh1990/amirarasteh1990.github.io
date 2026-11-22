@@ -1,0 +1,189 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r9",
+ "items": [
+  {
+   "id": "04b/0270#1",
+   "where": "04b/0270",
+   "text": "– Jeg ved det. Jeg er ingen dumrian. Men det her duer ikke.",
+   "q": "Niloofar answers Amir, half annoyed. Does 'Jeg er ingen dumrian' sound natural from her?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…hurtigt komme og sætte mig på denne bænk og fortælle dig det også. Jeg behøver ikke vente flere måneder på, om jeg måske ser dig igen. Hvordan skal jeg sige det? Hvis mange ting ikke bliver sagt lige her og nu, mister de smagen; de bliver hengemte. Deres ynde og friskhed og livlighed forsvinder."
+   ]
+  },
+  {
+   "id": "04b/0317#2",
+   "where": "04b/0317",
+   "text": "– Jeg bliver så gal, når du bare sidder der uden at sige noget. Jeg har lyst til at slå dig med knytnæven.",
+   "q": "Niloofar is exasperated by Amir's silence. Does 'slå dig med knytnæven' sound like her, playful and annoyed?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "03/0244#3",
+   "where": "03/0244",
+   "text": "– ... Salomons signetring tager jeg ikke for nogen pris, for af og til hviler over den hånden af ...",
+   "q": "Amir reads a broken-off line of Hafez. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/0935#4",
+   "where": "04b/0935",
+   "text": "– \"For Attar er det sødere at græde til daggry\" eller \"nu ligger han dybere dræbt\"?",
+   "q": "Niloofar asks which song he means by quoting two lines of an Attar poem. Is her question clear?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "– Vil du have, at jeg sender dig ét nummer?",
+    "– Ja, det med Attar-verset."
+   ]
+  },
+  {
+   "id": "02/0005#5",
+   "where": "02/0005",
+   "text": "Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt",
+   "q": "Amir rehearses his love poem, searching for words. Does 'blev tændt', like a lamp, work in a poem?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Mine drømme var mørke",
+    "Jeg kunne intet se",
+    "Du kom"
+   ]
+  },
+  {
+   "id": "02/0006#6",
+   "where": "02/0006",
+   "text": "Nu ... nu ... nu er du borte ...",
+   "q": "He rehearses the poem, faltering. Does the halting repetition read as poetry, not a mistake?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Du kom",
+    "Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt"
+   ]
+  },
+  {
+   "id": "04b/1387#7",
+   "where": "04b/1387",
+   "text": "Mine drømme var mørke",
+   "q": "This is the opening of Amir's short love poem. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1392#8",
+   "where": "04b/1392",
+   "text": "Lyset i mine drømme blinker nu",
+   "q": "In his poem the light flickers now that she is gone. Does 'blinker nu' work for that?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Lyset i mine drømme blev tændt",
+    "Nu er du borte"
+   ]
+  },
+  {
+   "id": "04b/1396#9",
+   "where": "04b/1396",
+   "text": "Jeg tror ikke, mine drømme tror på, at du er gået",
+   "q": "This is the last line of Amir's love poem. Does it end the poem well, as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Jeg nærer intet håb om din tilbagevenden",
+    "Men hvis din vej fører dig forbi",
+    "kom ind i mine drømme igen"
+   ]
+  },
+  {
+   "id": "04b/1393#10",
+   "where": "04b/1393",
+   "text": "Jeg nærer intet håb om din tilbagevenden",
+   "q": "A line from Amir's love poem. Does it read naturally as poetry, not stiff?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Nu er du borte",
+    "Lyset i mine drømme blinker nu"
+   ]
+  },
+  {
+   "id": "04b/1394#11",
+   "where": "04b/1394",
+   "text": "Men hvis din vej fører dig forbi",
+   "q": "A line from Amir's love poem. Does it read naturally as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Lyset i mine drømme blinker nu",
+    "Jeg nærer intet håb om din tilbagevenden"
+   ]
+  },
+  {
+   "id": "04b/1395#12",
+   "where": "04b/1395",
+   "text": "kom ind i mine drømme igen",
+   "q": "In his poem he asks her to come into his dreams one more time. Does this line say it naturally?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Jeg nærer intet håb om din tilbagevenden",
+    "Men hvis din vej fører dig forbi"
+   ]
+  },
+  {
+   "id": "04b/0520#13",
+   "where": "04b/0520",
+   "text": "– Ingen diskussioner på værelset i dag. Jeg fik tolv i idræt; jeg er pissesur og sviner jer til.",
+   "q": "Grades in Iran go up to twenty, so twelve is poor. Is it clear why Hooman is in a bad mood?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman sagde:"
+   ]
+  },
+  {
+   "id": "04b/1267#14",
+   "where": "04b/1267",
+   "text": "På alt kan der skrives",
+   "q": "This poem is written on a classroom board. Does its first line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…Baba med brød i hånden går jeg mod Enghelab-pladsen. Jeg når portalen til Teherans Universitet. Jeg var kommet for sent. Lokalet var fuldt, og de sent ankomne sad på gulvet hele vejen rundt langs væggene. Lige ved døren fandt jeg en ledig plads og satte mig. På tavlen stod der med smuk skrift:"
+   ]
+  },
+  {
+   "id": "04b/1270#15",
+   "where": "04b/1270",
+   "text": "skriv på vandet med dit eget blod",
+   "q": "A poem on a classroom board. Does this line read naturally as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "På alt kan der skrives",
+    "undtagen på vand",
+    "og hvis du krydser havet"
+   ]
+  },
+  {
+   "id": "04b/1275#16",
+   "where": "04b/1275",
+   "text": "brændte",
+   "q": "In the poem, 'brændte' means people consumed by love. Is that clear?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "vil vide at",
+    "elskende og",
+    "berusede og"
+   ]
+  }
+ ]
+}

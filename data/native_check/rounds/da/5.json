@@ -1,0 +1,190 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "04b/0150#1",
+   "where": "04b/0150",
+   "text": "– Hvis alder tæller, skulle du slikke Bahmans nosser. Han er mindst fem år ældre end os.",
+   "q": "Hooman mocks Eskandar for claiming respect because he is older. Does this crude put-down sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman pegede sin tykke, runde tommelfinger mod Eskandar og sagde:"
+   ]
+  },
+  {
+   "id": "04b/0353#2",
+   "where": "04b/0353",
+   "text": "– Og i den lortesituation, hvilke antikviteter fik vi kastet på os?",
+   "q": "Hooman calls two odd roommates 'antikviteter', Persian slang for weird people. Is the meaning clear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Han tømmer sin te og tørrer munden med bagsiden af hånden."
+   ]
+  },
+  {
+   "id": "03/0576#3",
+   "where": "03/0576",
+   "text": "– Jeg ville dø for de nattergaleøjne, du har, Ørneøje-jan, men problemet ligger hos modtageren; senderen kan ikke løse det. Min tandbørste er hverken samme farve eller samme form som din.",
+   "q": "Short-sighted Sajad keeps grabbing the wrong toothbrush; Farid teases that the fault is in his eyes. Does the joke come through?",
+   "ctx": 3,
+   "kind": "banter",
+   "before": [
+    "– Ørneøje, du tog min tandbørste igen.",
+    "– Objektivt, køb en anden farve næste gang.",
+    "Farid sagde:"
+   ]
+  },
+  {
+   "id": "03/0398#4",
+   "where": "03/0398",
+   "text": "– Røvhul. Objektivt set er dollaren ved at ramme 1500 toman, og du sidder og hakker på den stakkel?",
+   "q": "Sajad sprinkles 'Objektivt' into everything he says, as a verbal tic. Does it work as his catchphrase?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad lukkede sin laptop og råbte:"
+   ]
+  },
+  {
+   "id": "03/0490#5",
+   "where": "03/0490",
+   "text": "– Pas på, du ikke revner, hr. Pik.",
+   "q": "Eskandar has puffed out his chest proudly. Does Hooman's jab 'Pas på, du ikke revner' land?",
+   "ctx": 3,
+   "kind": "crude",
+   "before": [
+    "Eskandar rettede sig op, skød brystet frem og sagde:",
+    "– Jeg er en ekstremistisk nationalistisk anarkist.",
+    "Hooman sagde:"
+   ]
+  },
+  {
+   "id": "03/0432#6",
+   "where": "03/0432",
+   "text": "– ... og spidser munden som røven på en høne og slider dig selv op for at tale som ham. Det er ikke ham, jeg mener. Jeg mener Alain Piklon. Piiik. Punktum. Slut.",
+   "q": "Hooman finishes mocking Eskandar's way of talking with a crude pun on the actor Alain Delon. Does it sound funny and natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman rundede munden og gjorde næsen så lille og rynket, som han kunne – præcis som Eskandars ansigt blev, når han talte."
+   ]
+  },
+  {
+   "id": "04b/0162#7",
+   "where": "04b/0162",
+   "text": "– Ja, i samme øjeblik de ser os, klemmer de røvhullerne sammen og holder sådan afstand, at jeg har lyst til at plante begge fødder i ansigtet på dem.",
+   "q": "Farid complains that Tehran students act snooty toward them. Does 'klemmer de røvhullerne sammen' sound natural for that?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid sagde:"
+   ]
+  },
+  {
+   "id": "04b/0618#8",
+   "where": "04b/0618",
+   "text": "– Var Fluen her, ville hans antenner straks spidse sig: Hvad er det her for noget, siden det giver sådan et afkast?",
+   "q": "Farid jokes that their nosy roommate, nicknamed Fly, would be all ears at this. Does the line read naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid sagde:"
+   ]
+  },
+  {
+   "id": "04b/0690#9",
+   "where": "04b/0690",
+   "text": "Det ville have været nok, hvis elektro- og maskiningeniørprofessorerne mange år tidligere ikke havde fået pikken op at stå for at tage Abu-Reyhan-bygningen fra Skibsbygningsfakultetet",
+   "q": "Hooman, years later, uses crude slang for the professors' eagerness. Does 'fået pikken op at stå for' sound natural here?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0638#10",
+   "where": "03/0638",
+   "text": "Det lader vi ligge. Men hvorfor tager du den ikke, uanset hvor mange gange jeg ringer? Har du viderestillet mine opkald til et sted, du ikke burde?",
+   "q": "Hooman teases his friend for not answering his calls. Is the joke in the last question clear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Og hvis vi tæller den bagerste del med, hvor det bliver smallere og går næsten hen til Valiasr-porten, bliver det hundrede og halvfjerds meter. Fanden tage dig, du trak mig hundrede og halvfjerds meter efter dig med den her krop."
+   ]
+  },
+  {
+   "id": "04b/0738#11",
+   "where": "04b/0738",
+   "text": "– Åh, gid jeg en dag kunne gennembore de ører dér med mine negle, så du aldrig kan spidse dem mere.",
+   "q": "Niloofar, half annoyed and half playful, picks up his words about pricking up his ears. Does her reply read naturally?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Jo, når jeg sidder rundt om på fakultetet, leder jeg efter dit navn i de andres samtaler. Så snart dit navn dukker op, spidser jeg ører.",
+    "Hun løftede hånden, pressede neglene hårdt mod hinanden og sagde:"
+   ]
+  },
+  {
+   "id": "03/0118#12",
+   "where": "03/0118",
+   "text": "– Sikke en lækkerbisken.",
+   "q": "A schoolboy says this about a pretty girl. Does 'Sikke en lækkerbisken' sound like a boy his age?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Hun er meget smuk.",
+    "Yaser sagde:"
+   ]
+  },
+  {
+   "id": "04b/1062#13",
+   "where": "04b/1062",
+   "text": "– Når hun lærer vores navne, vil hun godt kunne lide os.",
+   "q": "A schoolboy spray-paints the boys' names across from a girl's house. Does his line sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Yaser, der var ved at spraye vores navne på muren over for Negars hus med en dåse, han havde stjålet fra sin fars Khavar-lastbil, sagde:"
+   ]
+  },
+  {
+   "id": "03/0055#14",
+   "where": "03/0055",
+   "text": "– Det er bare sådan, jeg taler; I hører mig tale, I tror, det er poesi.",
+   "q": "Hamid, a boy who fancies himself a poet, answers in rhythm. Does his line sound playful and natural?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Mester, fortæl os om dine digte og den måde, du digter dem på.",
+    "Hamid sagde, i den samme rytme som når han reciterede sine digte:"
+   ]
+  },
+  {
+   "id": "03/0126#15",
+   "where": "03/0126",
+   "text": "– Huh. Vennen til fætteren til vores svogers mesterhåndværker, der er den rigeste i Teheran, taler præcis sådan.",
+   "q": "Hamid always cites this absurdly long chain of people as his authority. Does the running joke come across?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Hold da op. Hørte I hende, drenge? Hun lød præcis som en fra Teheran!",
+    "Hamid sagde:"
+   ]
+  },
+  {
+   "id": "04b/0343#16",
+   "where": "04b/0343",
+   "text": "– Så er du en fucking førsteårsstuderende.",
+   "q": "Hooman learns a student is in his first year. Does 'fucking førsteårsstuderende' sound like casual, natural swearing?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Er det dit første år?",
+    "– Ja."
+   ]
+  }
+ ]
+}

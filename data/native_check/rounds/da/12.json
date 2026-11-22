@@ -1,0 +1,188 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r12",
+ "items": [
+  {
+   "id": "03/0175#1",
+   "where": "03/0175",
+   "text": "– Altså rigere end vennen til fætteren til ...",
+   "q": "Amir blurts out Hamid's catchphrase as a joke. Does it land?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Det slap ud af mig:"
+   ]
+  },
+  {
+   "id": "01/0040#2",
+   "where": "01/0040",
+   "text": "– Ikke noget med at snyde og åbne øjnene. Snyder du, syr jeg dig sammen.",
+   "q": "Niloofar playfully threatens Amir if he opens his eyes. Is 'syr jeg dig sammen' clear as a joking threat?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Det slog mig, at hvis ingen nogensinde havde været der, kunne hans fødder heller ikke nå dertil, og hans tilstedeværelse ville ikke længere plage mig. Kun mig og Niloofar. Niloofar lukkede øjnene, og jeg lukkede også mine."
+   ]
+  },
+  {
+   "id": "01/0073#3",
+   "where": "01/0073",
+   "text": "Han siger: »Et godt år kendes på dets forår.«",
+   "q": "Maman quotes a Persian saying, kept close to literal, that Ghassem uses as a joke. Is its meaning clear?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Ghassem laver sine spilopper igen."
+   ]
+  },
+  {
+   "id": "04b/0205#4",
+   "where": "04b/0205",
+   "text": "– Jeg tænkte, du er kommet fra udlandet, så lad mig servere dig venskabets indvolde på et fad.",
+   "q": "Hooman treats his old friend to tea. Is 'venskabets indvolde på et fad', a Persian image, clear?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Sådan noget plejede du da ikke at gøre?"
+   ]
+  },
+  {
+   "id": "03/0227#5",
+   "where": "03/0227",
+   "text": "– Intet problem. Jeg slås med jer begge på én gang, for I er bare et par små finker.",
+   "q": "A big teenager scoffs at two small boys who want to fight him. Is 'et par små finker' clear?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Negars fætter kastede et blik på mig og sagde:"
+   ]
+  },
+  {
+   "id": "04b/0820#6",
+   "where": "04b/0820",
+   "text": "– Men jeg tænker, gid det i det mindste var gået dig godt med frøken Armaaaan ...",
+   "q": "Hooman mockingly stretches the girl's surname, Arman. Does 'frøken Armaaaan' come across as teasing?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Ældi, se hvor langt du har drevet det: Farid, som ikke giver en fløjtende fis for os eller værelset eller nogen som helst, har talt.",
+    "Og han lo. Og han ler."
+   ]
+  },
+  {
+   "id": "04b/0897#7",
+   "where": "04b/0897",
+   "text": "– I kan bare gå tilbage til jeres jigily-jigily-pop og Soosan Khanom. Hvad skal I lytte til Moein for?",
+   "q": "Eskandar sneers at his roommates' taste in cheap pop music. Does 'jigily-jigily-pop' work for that?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar sagde:"
+   ]
+  },
+  {
+   "id": "01/0087#8",
+   "where": "01/0087",
+   "text": "– Han var blevet så mager og mørk, den hjerneløse abe.",
+   "q": "Maman, mocking a man she dislikes, calls him this. Does 'den hjerneløse abe' sound natural from a mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Vi ler. Maman, hvis hoved nu ligger mellem Omids hoved og Boteh-Jegheh-mønstrene på puden under hendes hoved, siger:"
+   ]
+  },
+  {
+   "id": "01/0265#9",
+   "where": "01/0265",
+   "text": "– Amir, er det godt at have hovedrollen?",
+   "q": "Maman has heard she has the lead role in a book. Does her question sound innocent and natural?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Nå – da han sagde, at han har seks hundrede og noget personer i sin bog, spurgte Maman ham: Er jeg også med i bogen? Hashem sagde: Du har hovedrollen.",
+    "Maman siger:"
+   ]
+  },
+  {
+   "id": "06/0165#10",
+   "where": "06/0165",
+   "text": "– Han havde drukket for meget sodavand.",
+   "q": "Maman explains what she thinks caused the young man's death. Does her line sound natural?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Nej. Han fik synkope.",
+    "Maman siger:"
+   ]
+  },
+  {
+   "id": "06/0066#11",
+   "where": "06/0066",
+   "text": "– På hospitalet råbte de hele tiden: »Pårørende til fru Adham!« Ingen rørte sig af pletten. Så kom sygeplejersken selv hen og sagde: »Jeg tror, hun hører til jer.«",
+   "q": "Maman tells how the hospital called for Naney's family by her surname. Does it sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Ja, det er smukt.",
+    "Maman siger:"
+   ]
+  },
+  {
+   "id": "06/0291#12",
+   "where": "06/0291",
+   "text": "– Han brokker sig uden grund, hæ, Amir-jan. Er det ikke det ene, finder han noget andet.",
+   "q": "Maman waves off a complaint. Does 'hæ' sound natural in her speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman siger:"
+   ]
+  },
+  {
+   "id": "04a/0008#13",
+   "where": "04a/0008",
+   "text": "– Nej. Så længe den her snor er i din hånd, bliver du ikke væk. Den anden ende er i min hånd. Sådan bliver du ikke væk.",
+   "q": "Maman reassures her four-year-old with a thread game. Does it sound like a mother talking to a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Maman sagde altid:"
+   ]
+  },
+  {
+   "id": "04a/0066#14",
+   "where": "04a/0066",
+   "text": "– Godt, min kvikke dreng. Når noget skræmmer dig, så brug et trick, så du ikke bliver bange.",
+   "q": "Maman praises her small son's trick for not being scared. Does it sound natural?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Jeg brugte altid et trick. I stedet for den røde dør kiggede jeg på muren på huset ved siden af. Den var hvid. Maman sagde:"
+   ]
+  },
+  {
+   "id": "04a/0020#15",
+   "where": "04a/0020",
+   "text": "– Okay, du må også komme med på missionen, men du skal være rigtig forsigtig. Etaperne er rigtig svære.",
+   "q": "Ghassem lets his little brother join the pretend mission. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem sagde:"
+   ]
+  },
+  {
+   "id": "04b/0370#16",
+   "where": "04b/0370",
+   "text": "– Ingen andres værelse har tæppe, Baba-jan. Det er kun os, der har tæppe, og det er, fordi vi er eliteværelset.",
+   "q": "Eskandar shows off the room to his visiting father. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Og Niloofar hørte min mumlen. Da jeg kom ind i værelset, sad drengene fra værelset og en ældre mand, som jeg gættede var Eskandars Baba, på tæppet midt i rummet. Det var efter middag, og den nedadgående sol oplyste midten af tæppet. Eskandar sagde:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "04b/0171#1",
+   "where": "04b/0171",
+   "text": "Daj no, ne govori s tem tako spodobno, v glavo mu bo udarilo.",
+   "q": "Hooman tells a friend not to be so polite to an odd roommate. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0434#2",
+   "where": "04b/0434",
+   "text": "Če se Kamyar ne bi delal važnega in bi ostal v domu, se ne bi sprostila postelja, da bi nam ti čudaki pripadli.",
+   "q": "Hooman blames a former roommate, a precious little shit, for moving out. Does this sound as crude as dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…mojo posteljo. Nato je z roko pomignil Meysamu in odšel leč na svojo posteljo, nad mojo. Eskandar je za hip strmel v vogale nekaj knjig, ki so štrlele izpod moje postelje, in se nato po vseh štirih splazil proti Bahmanovim knjigam. Sklonil je glavo in si ogledoval Bahmanove knjige. Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0454#3",
+   "where": "04b/0454",
+   "text": "in zablodeli bedak je namesto snovi iz knjige pri pouku razlagal lastne teorije",
+   "q": "Hooman mocks a former roommate who became a teacher and taught his own theories. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…drugi zablodeli bedak, ki mu na koncu nikoli nismo izvedeli imena, po diplomi dve leti nisem imel novic o njem. Potem je nenadoma nekaj objavil na Facebooku in se pritožil, da so ga odpustili. Iz njegove objave na Facebooku sem razbral, da je postal učitelj fizike na neki gimnaziji v svojem mestu,"
+   ]
+  },
+  {
+   "id": "04b/0486#4",
+   "where": "04b/0486",
+   "text": "Hočeš reči, da se ta naša usrana sreča, v kateri nam je žreb dodelil starino, kakršen si ti, kar naprej ponavlja?",
+   "q": "Hooman complains that their bad luck in getting this roommate keeps repeating. Does this read correctly?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…zadržal Farida, ki je kakor vzmet odskočil s svojega mesta. Zvok Hoomanovega tleska s prsti je odjeknil po sobi. Faridova blazina je švignila mimo Eskandarjeve glave in udarila ob steno. Blazina je padla za Meysama skupaj z enim ali dvema kosoma oblačil, obešenih na obešalniku. Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0721#5",
+   "where": "04b/0721",
+   "text": "Stari, namesto da se tako vlečeš po postelji in se igraš z jajci, vstani in jih pošlji.",
+   "q": "Hooman crudely tells lazy Amir to stop lolling on the bed and get on with it. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0723#6",
+   "where": "04b/0723",
+   "text": "No, če pa nisi tip, da bi se prijavljal in odhajal, zakaj si si pretrgal rit z opravljanjem izpita TOEFL?",
+   "q": "Hooman asks crudely why Amir busted his ass on an English exam if he never meant to leave. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "In zasmejal se je. Nič nisem rekel. Hooman je nadaljeval:"
+   ]
+  },
+  {
+   "id": "04b/0822#7",
+   "where": "04b/0822",
+   "text": "Hočem reči, iz korenine bi vse naneslo drugače in ne bi tako s kurcem v roki taval po ulicah.",
+   "q": "Hooman says crudely that Amir wouldn't be wandering the streets lost and lovesick. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ... pa bi šla skupaj."
+   ]
+  },
+  {
+   "id": "04b/0844#8",
+   "where": "04b/0844",
+   "text": "Kakšno sranje ti zdaj spet gloda po možganih?",
+   "q": "Hooman asks crudely what nonsense is going through Amir's head now. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Hooman, se ti je kdaj zgodilo, da si v sanjah nekomu nekaj pripovedoval, potem pa si podvomil, ali je bilo tisto prvo mora ali spomin?"
+   ]
+  },
+  {
+   "id": "04b/0893#9",
+   "where": "04b/0893",
+   "text": "Posral si tisti občutek, ki sem ga lovil iz pesmi, s tistim svojim zajebanim glasom.",
+   "q": "Hooman swears at a roommate for ruining a song's mood with his awful singing. Does this sound like crude dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0919#10",
+   "where": "04b/0919",
+   "text": "Lizanje riti ti ne pristaja.",
+   "q": "A roommate snaps back at Eskandar with a crude retort about sucking up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Le zakaj bi tele, kakršno si ti, sploh imelo Šajarianovo pesem na telefonu?"
+   ]
+  },
+  {
+   "id": "04b/0150#11",
+   "where": "04b/0150",
+   "text": "Če gre za leta, bi moral Bahmanu lizati jajca.",
+   "q": "Hooman mocks a roommate who demands respect for his age. Does this crude retort sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je proti Eskandarju nameril svoj debeli, zaobljeni palec in rekel:"
+   ]
+  },
+  {
+   "id": "04b/0385#12",
+   "where": "04b/0385",
+   "text": "Vedno zelo eleganten in slovesen, se posere prav na zgodovinskem ovinku.",
+   "q": "Hooman says crudely that Amir, always so proper, messes up right at the crucial moment. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Stari je Krčmar. Ne more si pomagati. Tako mu je tovarna nastavljena."
+   ]
+  },
+  {
+   "id": "04b/0353#13",
+   "where": "04b/0353",
+   "text": "In v tisti zasrani situaciji, kakšne starine so nam pripadle?",
+   "q": "Hooman, years later, recalls the odd roommates they got stuck with. Does 'starine' work as a mocking word for them?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Spije čaj do dna in si z robom dlani obriše usta."
+   ]
+  },
+  {
+   "id": "04b/0164#14",
+   "where": "04b/0164",
+   "text": "Eh, kurac na to našo srečo.",
+   "q": "Hooman curses their bad luck in ending up at this university. Does this clearly read as cursing bad luck?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je vzdihnil in obrnil obraz stran od Farida. Pogled mu je padel na Eskandarja in z bolečim tonom, kakor igla, ki se zapiči v staro rano, je zavpil:"
+   ]
+  },
+  {
+   "id": "03/0392#15",
+   "where": "03/0392",
+   "text": "Če te boli kurac za svet in vse v njem, zakaj si tako obseden s kvizi in izpiti?",
+   "q": "A roommate asks crudely why someone who doesn't give a damn about anything obsesses over exams. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Ulezel sem se na posteljo na bok in moje oči so videle Hoomana in Eskandarja, ne da bi jih nameraval opazovati. Potem ko je uro približno mrmral stvari pod nosom, se je Eskandar obrnil k Hoomanu in rekel:"
+   ]
+  },
+  {
+   "id": "03/0396#16",
+   "where": "03/0396",
+   "text": "Odgovor je, da ti ne pristoji lizati riti mojstru Hoomanu.",
+   "q": "Hooman crudely tells a roommate that kissing his ass doesn't suit him. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar ni hotel odnehati. Rekel je, da je treba to raziskati do korena, in bil je prepričan, da bi, če bi se našel odgovor na to vprašanje, to bila velika pomoč Hoomanu in vsemu človeštvu. Hooman je rekel:"
+   ]
+  }
+ ]
+}

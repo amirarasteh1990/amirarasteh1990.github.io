@@ -1,0 +1,189 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0345#1",
+   "where": "03/0345",
+   "text": "– Er De ikke færdig med det, De kom for?",
+   "q": "Niloofar, wanting to end the meeting, uses the very formal 'De'. Does it sound right between two students?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– De tyve minutter, De sagde, De havde, er ikke gået endnu.",
+    "Hun sagde:"
+   ]
+  },
+  {
+   "id": "03/0663#2",
+   "where": "03/0663",
+   "text": "De siger, det er for at holde børnene tæt på deres familier, men de har stukket en kæp op i røven på os alle sammen fra provinsen.",
+   "q": "Hooman rants about the regional university quota. Does 'stukket en kæp op i røven' clearly mean they were all screwed over?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Krøltop, du lyder så overrasket, som om du var kommet ind på universitetet uden at tage Konkur. Den her lokaliseringspolitik har kneppet os godt og grundigt."
+   ]
+  },
+  {
+   "id": "04b/0181#3",
+   "where": "04b/0181",
+   "text": "– Æd hovedet på min pik, mand. Vi orker dig ikke.",
+   "q": "Hooman, raising his thumb rudely, uses a crude Persian insult kept close to literal. Does it sound like a real insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman løftede tommelfingeren igen og sagde:"
+   ]
+  },
+  {
+   "id": "04b/0899#4",
+   "where": "04b/0899",
+   "text": "– Din pikhovedæder, hvorfor vrøvler du?",
+   "q": "Hooman swears at Eskandar with a crude Persian insult kept close to literal. Does 'pikhovedæder' work as a real insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman sagde:"
+   ]
+  },
+  {
+   "id": "04b/0378#5",
+   "where": "04b/0378",
+   "text": "– Lortehjerne, ingen kalder dig stum, bare fordi du lader være med at prutte.",
+   "q": "Eskandar twists a Persian saying, no one calls you mute if you stay silent, into a crude jab. Does it land?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…på det, Niloofar og jeg havde sagt til hinanden. Ganglyset gik ud, og støjen fra de andre værelser faldt også i søvn. I mørket og stilheden ved midnat gled Hoomans skygge ind ad døren og gik direkte til æsken med søde sager. Som om han snusede sig frem. Om morgenen vækkede Eskandar mig og sagde:"
+   ]
+  },
+  {
+   "id": "04b/0440#6",
+   "where": "04b/0440",
+   "text": "– Efter den der lokaliseringssag bliver jeg ikke overrasket over, hvad der end lander af pik på hovedet af os.",
+   "q": "Hooman uses a crude Persian image for any bad luck that falls on them. Is the meaning clear and natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bahman sagde, det var fint. Eskandar havde rakt hånden ind under min seng for at trække bogen frem, mens Meysam sad på knæ og redte sin soveplads op under knagerækken. Hooman kiggede på dem og sagde:"
+   ]
+  },
+  {
+   "id": "04b/0822#7",
+   "where": "04b/0822",
+   "text": "Altså, fra grunden ville det hele have udviklet sig anderledes, og du ville ikke gå rundt i gaderne med pik i hånden sådan.",
+   "q": "Hooman uses a crude Persian image, 'med pik i hånden', for aimless and empty-handed. Is the meaning clear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ... så kunne I være rejst sammen."
+   ]
+  },
+  {
+   "id": "04b/0209#8",
+   "where": "04b/0209",
+   "text": "– Pfff, men for helvede, du pakkede sammen og tog derover, og nu sidder du og griner af vores skæg og pik.",
+   "q": "Hooman teases his friend who moved abroad. Is 'griner af vores skæg og pik', a crude Persian image for mocking us, clear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Og han øser latter oven på latter."
+   ]
+  },
+  {
+   "id": "04b/0389#9",
+   "where": "04b/0389",
+   "text": "– Du kunne ikke engang æde hovedet på den. Men hold kæft, hvor var de kager gode. Med ananas.",
+   "q": "Hooman retorts with a crude Persian put-down meaning you couldn't do a thing. Is 'æde hovedet på den' clear?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– I nat kunne jeg høre dig tygge drøv. Ærgerligt min Baba sov, ellers var jeg stået op og trukket hvert eneste stykke slik ud af din strube.",
+    "Hooman sagde:"
+   ]
+  },
+  {
+   "id": "04b/0571#10",
+   "where": "04b/0571",
+   "text": "– Kom først og dokumentér denne tommelfinger, og lav så film om, hvad I vil.",
+   "q": "In Iran a raised thumb is a rude gesture, like the middle finger. Is Hooman's taunt clear?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Gutter, lad os lave en dokumentarfilm om vores værelse.",
+    "Hooman tog hånden frem under tæppet og sagde:"
+   ]
+  },
+  {
+   "id": "01/0090#11",
+   "where": "01/0090",
+   "text": "– Nej. Det er jo mig, der er staklen, jeg siger aldrig noget, jeg holder altid mund. Jeg ser bare til og spiser sorg.",
+   "q": "Maman says this; 'spiser sorg' is a Persian image for grieving in silence. Is the meaning clear?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "Jeg siger:",
+    "– Du sagde ikke noget til ham."
+   ]
+  },
+  {
+   "id": "03/0531#12",
+   "where": "03/0531",
+   "text": "Da han kom i fjor, havde hans kones brødre banket ham så meget, at han var sort over det hele.",
+   "q": "Maman means he was covered in bruises. Is 'sort over det hele' clear for that?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…blive forelskede. Lær personen at kende først, gift jer, og hvis I så vil, så bliv forelskede. Så skal du se, om jeg siger et ord. Abolfazl plejede at sige: Hvis I ikke går hen og beder om den piges hånd for mig, slår jeg mig selv ihjel. Jo, vi fik ægteskabet i stand, og hvad kom der så ud af det?"
+   ]
+  },
+  {
+   "id": "04b/0434#13",
+   "where": "04b/0434",
+   "text": "– Hvis Kamyar ikke havde været så skide fin på den og var forblevet på kollegiet, var der ikke kommet en ledig seng, så disse mærkværdigheder kunne falde i skødet på os.",
+   "q": "Hooman grumbles sarcastically about the two odd roommates they got stuck with. Does 'falde i skødet på os' work here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…under min seng. Så gjorde han tegn til Meysam med hånden og lagde sig i sin seng oven over min. Eskandar stirrede et øjeblik på hjørnerne af de få bøger, der stak frem under min seng, og kravlede så på alle fire hen mod Bahmans bøger. Han sænkede hovedet og kiggede på Bahmans bøger. Hooman sagde:"
+   ]
+  },
+  {
+   "id": "03/0394#14",
+   "where": "03/0394",
+   "text": "Enten har du slået hovedet et sted. Eller du er hjernepi... nå ja, du var allerede hjernepik, nu er du bare endnu mere hjernepik.",
+   "q": "Hooman mocks Eskandar's sudden question. Does 'hjernepik' work as a young man's insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Du er pludselig låst fast på det spørgsmål. Der er et par muligheder."
+   ]
+  },
+  {
+   "id": "04b/0146#15",
+   "where": "04b/0146",
+   "text": "– Lortehjerne. Du får mig til at åbne munden. Jeg mener: Har du bare hørt om det? Blev du ikke selv ramt?",
+   "q": "Hooman snaps at Eskandar, a roommate he finds annoying. Does 'Lortehjerne' sound like a natural crude insult?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Hørt?",
+    "– Ja, altså, nyheden bredte sig på universitetet."
+   ]
+  },
+  {
+   "id": "03/0396#16",
+   "where": "03/0396",
+   "text": "– Svaret er, at det ikke klæder dig at slikke Mester Hooman i røven.",
+   "q": "Hooman brushes off Eskandar's prying questions. Does 'det ikke klæder dig' sound natural in this crude put-down?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar gav sig ikke. Han sagde, det måtte undersøges til bunds, og han var sikker på, at hvis svaret på dette spørgsmål blev fundet, ville det være til stor hjælp for Hooman og hele menneskeheden. Hooman sagde:"
+   ]
+  }
+ ]
+}

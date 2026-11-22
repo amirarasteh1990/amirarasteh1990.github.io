@@ -1,0 +1,179 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04a/0002#1",
+   "where": "04a/0002",
+   "text": "Ej, Amir, našla sem te.",
+   "q": "Maman plays hide-and-seek with her small son and finds him. Does 'Ej' sound like a happy surprise?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…sem izpod zavese na dvorišče. Maman je temnela. Kot tisti dan, ko je šla elektrika. Pogledal sem skozi luknjo v sredini zavese. Maman se je napolnila s svetlobo. Vlekla je nit iz nekega oblačila. Bila je tako dolga. Zasmejal sem se. Maman je dvignila glavo. Oči so ji postale velike. Rekla je:"
+   ]
+  },
+  {
+   "id": "04a/0066#2",
+   "where": "04a/0066",
+   "text": "Bravo, moj bistri deček. Ko te je česa strah, se domisli zvijače, da te ne bo več strah.",
+   "q": "Maman praises her small son for a trick he uses against fear. Does this sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Vedno sem uporabil zvijačo. Namesto na rdeča vrata sem gledal na steno hiše poleg nje. Bila je bela. Maman je rekla:"
+   ]
+  },
+  {
+   "id": "04a/0008#3",
+   "where": "04a/0008",
+   "text": "Ne. Dokler je ta nit v tvoji roki, se ne boš izgubil. Drugi konec je v moji roki.",
+   "q": "Maman reassures her small son, who is afraid of getting lost. Does this sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman je vedno rekla:"
+   ]
+  },
+  {
+   "id": "01/0216#4",
+   "where": "01/0216",
+   "text": "Ja, naš Baba-jan je zelo lačen spoštovanja.",
+   "q": "Ghassem says sarcastically that their father hungers for respect. Does 'lačen spoštovanja' sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ghassem reče:"
+   ]
+  },
+  {
+   "id": "01/0224#5",
+   "where": "01/0224",
+   "text": "Ampak pristal je med napačnimi ljudmi – razbili smo mu še zadnjo trohico spoštovanja.",
+   "q": "Ghassem jokes that their father landed among the wrong people, who smashed his last bit of respect. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Hoče veliko spoštovanja."
+   ]
+  },
+  {
+   "id": "01/0152#6",
+   "where": "01/0152",
+   "text": "Oooo. Ko bi le vedel, kaj se dogaja v glavi Nini-jan.",
+   "q": "Ghassem lets out a long, fond sigh of delight at his mother's joke. Does 'Oooo' sound like that here?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Ne, ne jemljite solz. Vzemite nasmehe.",
+    "Vsi se zasmejejo. Ghassem reče:"
+   ]
+  },
+  {
+   "id": "04b/0751#7",
+   "where": "04b/0751",
+   "text": "Ooooo. Naj krožim okoli glavice Nini-jan, kako dobro dela.",
+   "q": "Ghassem fondly teases his mother, whom the family call Nini, for her clever question. Does this sound affectionate and natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Ghassem, pravim, ti ljudje, za katere Amir pravi, da tam v tujini ne verujejo dosti v boga, je tudi nje bog ustvaril?"
+   ]
+  },
+  {
+   "id": "03/0528#8",
+   "where": "03/0528",
+   "text": "Pri novoletni sofri, ko sem bral pesem za mamo, je Maman namesto da bi bila vesela postala zaskrbljena.",
+   "q": "He read his poem to his mother at the very moment the year turned at Norouz. Does this line make that moment clear?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "06/0044#9",
+   "where": "06/0044",
+   "text": "Ti samo pazi na hrano, za ostalo me ni briga.",
+   "q": "Maman urges her grown son abroad to eat well above all. Does this sound like a caring mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mm-hm, tako je shujšala. Zadnjič, ko sem jo šla skopat, na telesu ni ostalo niti malo mesa — samo kost in koža. Pravim, če bi lahko jedla, ne bi prišlo do tega. Nana-pesar-jan, res moraš paziti, kaj ješ. Jej dobre stvari. Stvari, ki te krepijo."
+   ]
+  },
+  {
+   "id": "06/0118#10",
+   "where": "06/0118",
+   "text": "Stari so vedno govorili, da besede nič ne stanejo — so samo vroč zrak.",
+   "q": "Maman quotes an old saying that words cost nothing. Does it sound like a folk saying?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Hmm, Ghassem govori samo zato, da bi se slišal."
+   ]
+  },
+  {
+   "id": "06/0090#11",
+   "where": "06/0090",
+   "text": "Medtem je Mahboub jokala cel teden brez prestanka.",
+   "q": "Maman recalls that back then her daughter cried for a whole week. Does 'Medtem' fit here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "06/0165#12",
+   "where": "06/0165",
+   "text": "Popil je preveč gaziranega.",
+   "q": "Maman says a man had been drinking too much soda. Does 'gaziranega' sound natural on its own?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "06/0291#13",
+   "where": "06/0291",
+   "text": "Išče si izgovore, da godrnja za prazen nič, hi-hi, Amir-jan.",
+   "q": "Maman gives a short laugh while complaining about her husband. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "06/0296#14",
+   "where": "06/0296",
+   "text": "Joj, Nini je naenkrat postala zaspana. Od jutra sem pokonci brez spanca.",
+   "q": "Maman, calling herself Nini, the family's pet name for her, says she suddenly feels sleepy. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman močno stisne oči in reče:"
+   ]
+  },
+  {
+   "id": "01/0001#15",
+   "where": "01/0001",
+   "text": "Salaam, jigaram. Kako si? Si zdrav? Se dobro počutiš?",
+   "q": "Maman greets her grown son warmly on a video call. Does this sound like a loving mother?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "01/0158#16",
+   "where": "01/0158",
+   "text": "Tisti film z neumnim učiteljem? Mm-hm, glejte tega. Ta film je smešen, nasmeje te.",
+   "q": "Maman tells the family which film to watch tonight. Does this sound like her everyday speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "04b/1301#1",
+   "where": "04b/1301",
+   "text": "Da bi Niloofar prišla, sem izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera.",
+   "q": "By the time she arrived, he had already chosen a poem to share his good news. Does this sentence say that?",
+   "ctx": 1,
+   "kind": "narration",
+   "before": [
+    "Vsi so se vključili v razpravo. Izkoristil sem priložnost in, ne da bi kdo opazil mene in mojo notranjo radost, vzel Hafeza ter odšel sesti na klop na Keshavarzovem bulvarju."
+   ]
+  },
+  {
+   "id": "04b/0351#2",
+   "where": "04b/0351",
+   "text": "Kaj je to, da sem bil prvak razreda in, ne vem, imel drugo diplomo, dodalo k dolžini mojega kurca – meni, čigar služba je zdaj obhajanje transformatorskih postaj?",
+   "q": "Hooman, whose job is now inspecting power substations, asks crudely what top grades added to his dick. Does this read naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Kakšni lepi dnevi, doktor? Serjem na tiste dni in na naš način razmišljanja. Resnično serjem na vse tisto perfekcionistično razmišljanje in dvopredmetnost in status elitnih študentov in tisoč drugih gnusob in strupov."
+   ]
+  },
+  {
+   "id": "04b/0353#3",
+   "where": "04b/0353",
+   "text": "Muho in tisto drugo bedno zabludelo nadlogo.",
+   "q": "Hooman recalls the two odd roommates they got: Fly and another deluded pest. Does this read correctly and naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– In v tisti zasrani situaciji, kakšne starine so nam pripadle?"
+   ]
+  },
+  {
+   "id": "04b/0394#4",
+   "where": "04b/0394",
+   "text": "... fuknjeni smo.",
+   "q": "Hooman complains that a university policy screwed them over. Does 'fuknjeni smo' say that here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…le prašni tekstilni tepih. Bahman se je naslonil na tretjo in četrto od šestih ozkih in dolgih omar v sobi, ki so stale nasproti Faridove in Sajadove postelje. Pograd, moj in Bahmanov, je preostanek sobe držal poravnan z omarami. Hooman je jedel rozine s čajem in tarnal nad pravilom o lokalizaciji."
+   ]
+  },
+  {
+   "id": "03/0580#5",
+   "where": "03/0580",
+   "text": "Kje na mojem vratu piše stopalo?",
+   "q": "Farid complains that Sajad used his neck as a foothold to climb into the top bunk. Does this retort sound natural?",
+   "ctx": 3,
+   "kind": "banter",
+   "before": [
+    "Trije so se smejali in Sajad je zapustil sobo. Nekaj časa je bilo slišati samo glasova Eskandarja in Meysama, vse dokler Faridov glas ni vzplaval, kot da se duši.",
+    "– Av, av. Orlov Pogled, vzemi nogo z mojega vratu.",
+    "– Oh, oprosti. Objektivno, skušam priti v svojo posteljo. Težko je."
+   ]
+  },
+  {
+   "id": "03/0531#6",
+   "where": "03/0531",
+   "text": "Abolfazl je govoril: če ne greste in mi ne prosita te deklice, se bom ubil.",
+   "q": "Maman recalls her son threatening to kill himself unless they asked for a girl's hand for him. Does this read correctly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Jaz ne pravim, da se ne smete zaljubiti. Najprej spoznajte osebo, se poročite, in potem, če hočete, se zaljubite. Poglejte, ali bom takrat rekla besedo."
+   ]
+  },
+  {
+   "id": "01/0140#7",
+   "where": "01/0140",
+   "text": "Potem samo pomisli, kaj mora naš ubogi Baba preživeti – vse te leta brez dela doma.",
+   "q": "Ghassem, holding back a laugh, mocks their idle father with fake pity. Does this sentence read correctly?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ghassem reče z glasom, iz katerega čutiš pridržan smeh:"
+   ]
+  },
+  {
+   "id": "03/0640#8",
+   "where": "03/0640",
+   "text": "Pfff, kur te. Postal si izseljeni, zdaj se ti za nas ne mudi. Ti s tujci zazrt samozaničevalec.",
+   "q": "An old friend teases Amir for moving abroad, calling him a foreigner-worshiping sellout. Does this sound like real teasing slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Oprosti mi, pri Bogu."
+   ]
+  },
+  {
+   "id": "04b/0181#9",
+   "where": "04b/0181",
+   "text": "Pojej mu glavo, no, nimamo živcev zate.",
+   "q": "Hooman, sticking up his thumb, tells a know-it-all to eat the head of his dick. Does 'Pojej mu glavo' carry that insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je znova dvignil palec in rekel:"
+   ]
+  },
+  {
+   "id": "03/0394#10",
+   "where": "03/0394",
+   "text": "Ali si možgan-... no, možgan-kurac si bil že, zdaj si pa še bolj možgan-kurac.",
+   "q": "Hooman starts an insult, stops, then makes it worse: dick-brained. Does 'možgan-kurac' work as a crude insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Naenkrat si se zafiksiral na to vprašanje. Obstaja več možnosti. Ali si si udaril glavo nekam."
+   ]
+  },
+  {
+   "id": "04b/0146#11",
+   "where": "04b/0146",
+   "text": "Možganadrek. Siliš me, da vse povem do konca.",
+   "q": "Hooman calls a roommate shit-for-brains. Does 'Možganadrek' work as a crude insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ja, no, glas se je razširil po fakulteti."
+   ]
+  },
+  {
+   "id": "03/0390#12",
+   "where": "03/0390",
+   "text": "Pravim ti, ne vidim, jebenec.",
+   "q": "Short-sighted Sajad swears at his friend; he says 'jebenec' all the time. Does it sound natural as his rude catchphrase?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Konec. Poglej konec. Poglej, kako hitro pobegne. Pajkovo hišo je tudi razbil. Ni zaman, da sem ga poimenoval Dokumentarni film o ščurku, ki je uničil pajkovo hišo."
+   ]
+  },
+  {
+   "id": "03/0638#13",
+   "where": "03/0638",
+   "text": "Kur te, sto sedemdeset metrov si me s to postavo vlekel za seboj.",
+   "q": "Hooman, panting, curses Amir for making him chase him so far. Does 'Kur te' sound natural as a curse?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Še če upoštevamo tisti zadnji del, ki postane ožji in gre skoraj do vrat Valiasr, postane sto sedemdeset metrov."
+   ]
+  },
+  {
+   "id": "03/0586#14",
+   "where": "03/0586",
+   "text": "Kdor hoče imeti brezpotrebno filozofsko razpravo, lahko gre v kuhinjo.",
+   "q": "Hooman crudely tells his roommates to take their philosophical bullshit to the kitchen. Does this sound as crude as he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar in Meysam sta začela analizirati, kako je tisto, kar se je zgodilo na Fakulteti za strojništvo, kaplja, ki pokaže morje. Povezala sta to s konkurenčnim, potrošniškim svetom danes in takimi stvarmi. Njuna razprava se je zavlekla. Hooman je ugasnil luč in rekel:"
+   ]
+  },
+  {
+   "id": "04b/0440#15",
+   "where": "04b/0440",
+   "text": "Po tisti zgodbi z lokalizacijo se ne bom čudil ničemur, kar nam pade na glavo.",
+   "q": "Hooman means that after that policy, whatever prick lands on their heads won't surprise him. Does this sound as crude as his usual talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bahman je rekel, da ni problema. Eskandar je segel z roko pod mojo posteljo, da bi izvlekel knjigo, Meysam pa je klečal in razgrinjal svoje ležišče pod obešalnikom. Hooman ju je opazoval in rekel:"
+   ]
+  },
+  {
+   "id": "04b/0717#16",
+   "where": "04b/0717",
+   "text": "Poslušaj, Stari-jan, med nama povedano: v tujino si odšel na tako usran način.",
+   "q": "Hooman tells Amir, between friends, that he got abroad by sheer dumb luck. Does this line say that?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman reče:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "lang": "da",
+ "slug": "da",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04b/0744#1",
+   "where": "04b/0744",
+   "text": "– Jeg lovede, at hvis han får det bedre, vil jeg gå til Mashhad som pilgrim.",
+   "q": "Maman makes a religious vow for her sick son. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…se Ghassem sidde i hallen foran fjernsynet, knække solsikkekerner, og Maman sidde ved siden af ham. Nyhederne talte om skader fra omfattende oversvømmelser i de nordlige og vestlige provinser. Set bagfra virkede Maman som en lille cirkel, der sad ved siden af et større rektangel. Maman sagde:"
+   ]
+  },
+  {
+   "id": "03/0458#2",
+   "where": "03/0458",
+   "text": "– Jeg har slet ikke tid i denne uge. Torsdag i næste uge klokken tre, samme sted som sidst. Bare så det er sagt: Jeg har kun en halv time.",
+   "q": "Niloofar writes a cool, brisk reply to Amir. Does her note sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…jeg sagde til Niloofar – at hvis Niloofar ikke tog imod mig, var det ikke på grund af mine ord, men snarere fordi jeg insisterede på at holde alt hemmeligt og aldrig, hverken før jeg gav udtryk for mine følelser eller bagefter, gik direkte hen imod Niloofar inde på fakultetet. Hun havde skrevet:"
+   ]
+  },
+  {
+   "id": "04b/0540#3",
+   "where": "04b/0540",
+   "text": "Med den hæshed, sukkerknalden har efterladt i min stemme, siger jeg:",
+   "q": "Amir has just choked on a sugar cube. Is 'den hæshed, sukkerknalden har efterladt' clear and natural?",
+   "ctx": 0,
+   "kind": "known"
+  },
+  {
+   "id": "04b/0953#4",
+   "where": "04b/0953",
+   "text": "Klasse A-kød. Virkelig lækker. Der er en scene, hvor pigen lægger sig nøgen på en stol, og fyren tegner hendes portræt.",
+   "q": "A schoolboy talks crudely about an actress to his friends. Does 'Klasse A-kød' sound like how boys would talk?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– Børn, vi har i et stykke tid set en film hjemme hos familien. Den hedder Tatanic. Skuespillerinden er prima kød."
+   ]
+  },
+  {
+   "id": "03/0383#5",
+   "where": "03/0383",
+   "text": "– Nej, Aeyzheimer er meget slem. En af mine veninder har fået Aeyzheimer; hun kan ikke genkende sine børn.",
+   "q": "Maman talks about a friend with the disease she keeps mispronouncing. Does she sound like a worried mother?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "Omid sagde:",
+    "– Nej, den her er meget slem. Der er heller ingen medicin imod den."
+   ]
+  },
+  {
+   "id": "06/0009#6",
+   "where": "06/0009",
+   "text": "– Jeg mener, har du bestået?",
+   "q": "Maman asks about his doctoral defense and hears there is no grade. Does her follow-up sound natural?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "Jeg siger:",
+    "– Der er ingen karakter, Nini-jan."
+   ]
+  }
+ ]
+}

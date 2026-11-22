@@ -1,0 +1,189 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "03/0430#1",
+   "where": "03/0430",
+   "text": "In ti, s tistim tvojim kurjaškim načinom govorjenja, bi moral imeti ime Alat Delon.",
+   "q": "Hooman twists the actor Alain Delon's name into 'Alat Delon', meant as a rude pun. Does the insult land as a joke?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0595#2",
+   "where": "04b/0595",
+   "text": "Ampak ga je zajebal. Orlov Pogled pravi pir tu pir, Krčmar pa Stari tu Stari.",
+   "q": "Farid mocks Amir for hearing 'pir tu pir' as 'Stari tu Stari' (pir is Persian for elder, like his nickname). Does the punch line work?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– Stari tu Stari?",
+    "Hooman je rekel:",
+    "– Pošljite salavat. Starešina Krčme je končno nekaj rekel.",
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Človeku se zmeša. Bolj ko razmišljaš o tem, bolj se ti zmeša.",
+   "q": "A student uses a crude made-up phrase for how a baffling painting scrambles your head. Does this line sound crude like that?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ... poglejte, kako zares vzbuja premislek. To je narisal in pod to zapisal: to ni pipa."
+   ]
+  },
+  {
+   "id": "04b/1320#4",
+   "where": "04b/1320",
+   "text": "bolj ko se potopiš v njegovo globino, bolj ti zmeša",
+   "q": "He recalls the girl's crude phrase about the painting and applies it to a poem. Does 'bolj ti zmeša' read naturally here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "In s tresočimi rokami sem naglo prelistaval gazele, da bi našel beit iz Hafeza, ob katerem se, kakor je rekla tisto drugo dekle,"
+   ]
+  },
+  {
+   "id": "04b/1321#5",
+   "where": "04b/1321",
+   "text": "Kakor tisto: bolj ko razmišljaš o teh desetih besedah, bolj se ti zme-zmeša.",
+   "q": "The stammering speaker nearly repeats the crude phrase, stops, and says a polite word instead. Does that come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj. »Tisto vino, ki je tam, je resnica, ne prispodoba.« Tudi to je isto. Kakor tista slika, ki jo je kazala tvoja pr-pr-prijateljica."
+   ]
+  },
+  {
+   "id": "04b/1321#6",
+   "where": "04b/1321",
+   "text": "»Tisto vino, ki je tam, je resnica, ne prispodoba.«",
+   "q": "This Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it allow both?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj."
+   ]
+  },
+  {
+   "id": "01/0116#7",
+   "where": "01/0116",
+   "text": "Pojdi tja, kjer je tihno.",
+   "q": "Maman says 'tihno' for quiet on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Oh, kako lepo. Ja, naročiš in prinesejo ti. Ampak Amir-jan, ne sedi ves čas doma. Pojdi tudi ven."
+   ]
+  },
+  {
+   "id": "03/0362#8",
+   "where": "03/0362",
+   "text": "Mahboub, to, kar pravijo v novicah, Ameroka ...",
+   "q": "Maman says 'Ameroka' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…za Konkoor. Zapustil sem hišo na koncu dvorišča in prehodil dolžino dvorišča v devetih korakih, z veseljem nad novim odkritjem, ki je v srcu še svetilo. Ko sem z dvorišča vstopil v dnevno sobo hiše, je Maman ležala pred televizorjem. Obe roki je imela položeni na trebuhu in govorila Mahboubeh:"
+   ]
+  },
+  {
+   "id": "03/0380#9",
+   "where": "03/0380",
+   "text": "Ayzheimer je najslabša bolezen.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Maman je rekla:"
+   ]
+  },
+  {
+   "id": "06/0052#10",
+   "where": "06/0052",
+   "text": "Na koncu je Mahboub poklicala in prišli so z anbulanco in odpeljali Naney",
+   "q": "Maman says 'anbulanco' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…bili previdni, v tem je stvar. Zdaj Dedek ne sliši in ne ve, kaj se dogaja, ampak Naney sem večkrat rekla: Haaj Khanom, sediš zunaj na ulici, dobila boš Covid, bog ne daj. Ona je le še bolj sedela zunaj. Ampak Amir, Naney je v prsih tako hropelo. Mahboub in drugim sem rekla — otroci, to je Covid."
+   ]
+  },
+  {
+   "id": "06/0056#11",
+   "where": "06/0056",
+   "text": "Zemljo so nasipali z burdožerjem. Zemljo in apno.",
+   "q": "Maman says 'burdožerjem' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…in tam pokopavajo tudi umrle za Covidom. Samo bog ve, ali so jo pravilno umili ali ne. Gledali smo od daleč. Ko so jo polagali v grob, se je za hip odprl mrtvaški prt — videla sem, da je zavita v oblačila, ki smo jih prinesli v bolnišnico, še vedno zavita v prt. Grobove so kopali zelo globoko."
+   ]
+  },
+  {
+   "id": "01/0132#12",
+   "where": "01/0132",
+   "text": "Ali cholara, na primer. Tudi ta ni pobila toliko.",
+   "q": "Maman says 'cholara' for cholera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem. Bil je na primer tifoid, ali tuberkuloza, ali ošpice. Tistim so rekli smrtonosni. Hmm, niti tiste niso pobile toliko."
+   ]
+  },
+  {
+   "id": "01/0132#13",
+   "where": "01/0132",
+   "text": "Bil je na primer tifoid, ali tuberkuloza, ali ošpice.",
+   "q": "Maman says 'tifoid' for typhoid fever on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…je prvič prišel, je televizija rekla dva od sto, zdaj pravi deset odstotkov. Mislim, za boga, to je zelo nepošteno. Nekdo kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem."
+   ]
+  },
+  {
+   "id": "01/0182#14",
+   "where": "01/0182",
+   "text": "Kakšen -ar pa ni bil?",
+   "q": "Maman echoes the ending of 'Ženskar', meaning their father was every other kind of rascal. Does her quip work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Ženskar pa tudi ni bil.",
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "01/0148#15",
+   "where": "01/0148",
+   "text": "Kaj in nasmehi?",
+   "q": "Maman, a little hard of hearing, catches only the end of the film title 'Solze in nasmehi'. Does her question come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Otroci, naj prenesem film Solze in nasmehi, da ga gledamo nocoj?",
+    "Maman obrne glavo in reče:"
+   ]
+  },
+  {
+   "id": "04a/0076#16",
+   "where": "04a/0076",
+   "text": "Marmalni kamen je. Marmal pomeni zelo drago.",
+   "q": "Ghassem, a boy, says 'Marmal' for marble and thinks it means expensive. Does it read as his childish mistake?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Šli smo naprej. Na pol poti je bila hiša. Njena stena je bila lepa. Ghassem je vedno rekel:"
+   ]
+  }
+ ]
+}

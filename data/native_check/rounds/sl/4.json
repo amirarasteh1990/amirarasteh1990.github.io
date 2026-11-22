@@ -1,0 +1,182 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0628#1",
+   "where": "03/0628",
+   "text": "Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
+   "q": "Hooman shortens the nickname 'Starešina Krčme' to a pet form. Does 'Stari' work as that short nickname?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Objektivno.",
+    "Hooman je s pisalom pisal kaj v knjigo in rekel:"
+   ]
+  },
+  {
+   "id": "03/0630#2",
+   "where": "03/0630",
+   "text": "Krčmar je, po resnici in pravici povedano.",
+   "q": "Farid adds a third nickname for Amir, 'Krčmar', from the same tavern idea. Does it sound natural as a nickname?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Hooman je s pisalom pisal kaj v knjigo in rekel:",
+    "– Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "06/0188#3",
+   "where": "06/0188",
+   "text": "Dež ne pada navzgor iz zemlje. Tudi stari so imeli dobre reke.",
+   "q": "Maman quotes an old saying and says the old folks had good sayings. Does 'dobre reke' mean good sayings here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Bog ne daj, ne govori tako. Ni otrok tisti, ki naj bo žrtev — ampak mati."
+   ]
+  },
+  {
+   "id": "01/0132#4",
+   "where": "01/0132",
+   "text": "Potakni nos v vsak košček. Stari so vedno govorili: pokukaj v vsak zadnji kotiček.",
+   "q": "Maman urges her son to explore and quotes an old saying. Does it sound like a folk saying she would use?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Mm-hm, prav delaš. Dokler imaš priložnost, pojdi in si oglej vse vasi."
+   ]
+  },
+  {
+   "id": "03/0055#5",
+   "where": "03/0055",
+   "text": "Tako pač govorim. Vi mislite, da recitujem pesmi.",
+   "q": "Hamid, a boy, answers in the rhythm and rhyme of his own poems. Does this line sound like a playful rhyme?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid je rekel v istem ritmu, s katerim je recitiral svoje pesmi:"
+   ]
+  },
+  {
+   "id": "03/0126#6",
+   "where": "03/0126",
+   "text": "Huh. Prijatelj bratranca mojstra našega svaka, ki je najbogatejši človek v Teheranu, govori natanko tako.",
+   "q": "Hamid, a boy, always boasts about a long chain of contacts ending in a rich man. Does this running joke sound natural and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0571#7",
+   "where": "04b/0571",
+   "text": "Najprej pridite in dokumentirajte ta palec, potem pa snemajte film o čemerkoli hočete.",
+   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film idea. Does this read as a rude joke?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Fantje, dajmo posneti dokumentarni film o naši sobi.",
+    "Hooman je izvlekel roko izpod odeje in rekel:"
+   ]
+  },
+  {
+   "id": "01/0069#8",
+   "where": "01/0069",
+   "text": "Naj krožim okoli tebe, jigaram. Vedno se smej.",
+   "q": "Maman tells her son she would circle around him again and again, an old loving phrase. Does this line sound tender?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Nasmehnem se in poizkušam raztegniti kožo na čelu, kolikor le zmorem."
+   ]
+  },
+  {
+   "id": "03/0385#9",
+   "where": "03/0385",
+   "text": "Bilo je pozno, ko sem prišel v dijaški dom.",
+   "q": "Amir, a university student, comes back late to the dormitory where he lives. Does 'dijaški dom' fit here?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "03/0491#10",
+   "where": "03/0491",
+   "text": "V istem hipu je ščurek privleklo izpod Hoomanovei postelje in se vrnil pod njo.",
+   "q": "A cockroach runs out from under Hooman's bed and back again. Does this sentence read correctly?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "04b/1062#11",
+   "where": "04b/1062",
+   "text": "Ko se naša imena navad, ji bomo všeč.",
+   "q": "A boy spray-painting their names says the girl will like them once she learns the names. Does this line read correctly?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Yaser je s sprejem, ki ga je suknil iz očetovega tovornjaka, na zid nasproti Negarine hiše pisal naša imena in govoril:"
+   ]
+  },
+  {
+   "id": "04b/0744#12",
+   "where": "04b/0744",
+   "text": "Zaobljubla sem se, da bom, če mu bo bolje, peš romala v Mašhad.",
+   "q": "Maman made a religious vow to walk to the shrine city if her son recovers. Does this line read correctly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…ki je sedel v dnevni sobi pred televizorjem in luščil bučna semena, in Maman, ki je sedela ob njem. Poročila so govorila o škodi zaradi obsežnih poplav v severnih in zahodnih provincah dežele. Od zadaj se mi je Maman zazdela kakor majhen krog, ki sedi ob večjem pravokotniku. Maman je govorila:"
+   ]
+  },
+  {
+   "id": "01/0042#13",
+   "where": "01/0042",
+   "text": "Torej namesto dežja pada s neba prst.",
+   "q": "A girl leads a playful imagination game: earth falls from the sky instead of rain. Does this sentence read correctly?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Zdaj si zamišljaj, da sva na planetu sredi druge galaksije. Tu je zemlja iz vode in nebo iz prsti."
+   ]
+  },
+  {
+   "id": "01/0170#14",
+   "where": "01/0170",
+   "text": "Godrnjanje? Godrnjanje je, kadar ti niso storili nič slabega.",
+   "q": "Maman, irritated, says talking about someone only counts as gossip if they haven't wronged you. Does 'Godrnjanje' mean gossip here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman obrne glavo v smer Mahboubehinega glasu in z rahlo razdraženim tonom reče:"
+   ]
+  },
+  {
+   "id": "01/0174#15",
+   "where": "01/0174",
+   "text": "Huh, poglejte – se kateremu od vas spomni ena dobra stvar pri vašem Babi?",
+   "q": "Maman challenges her children to name one good thing about their father. Does this question read correctly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "04b/0175#16",
+   "where": "04b/0175",
+   "text": "Ja. Tega Arasteja ne glej; pa naj je še tako čvekast, rang na Konkoorju mu je bil štiriinsedemdeset.",
+   "q": "Hooman calls quiet, dreamy Amir goofy but brags about his top exam rank. Does 'čvekast' fit for goofy?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  }
+ ]
+}

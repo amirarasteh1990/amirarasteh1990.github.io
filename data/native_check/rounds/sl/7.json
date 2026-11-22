@@ -1,0 +1,185 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r7",
+ "items": [
+  {
+   "id": "01/0166#1",
+   "where": "01/0166",
+   "text": "Samo šalimo se, da se smejemo, Nana-pesar-jan. Bi šel? Če bi šel, bi bila moja srčna želja.",
+   "q": "Maman says they are only joking, and if her husband ever left, it would answer her prayers. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "01/0166#2",
+   "where": "01/0166",
+   "text": "Kolikorkoli sem rekla, ne bíj otrok, je rekel: v vojni sem utrpel bojni šok, ne morem si pomagati.",
+   "q": "Maman quotes her husband's excuse that the war left him shell-shocked. Does it sound like plain everyday speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Samo šalimo se, da se smejemo, Nana-pesar-jan. Bi šel? Če bi šel, bi bila moja srčna želja. Za boga. Prisegam pri svojem življenju. Kar se je zgodilo s Hashemom in Abolfazlom, je bila tudi njegova krivda. Ves čas jih je tepel."
+   ]
+  },
+  {
+   "id": "03/0070#3",
+   "where": "03/0070",
+   "text": "Bojím se, da bo postal kot tisti njegov prijatelj, Hamid.",
+   "q": "Maman worries her son will end up like his poet friend Hamid. Does this line read correctly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Mahboubeh se je zasmejala in Maman je rekla:"
+   ]
+  },
+  {
+   "id": "04b/0538#4",
+   "where": "04b/0538",
+   "text": "Nastal je konec sveta. Njihova Bibi je govorila: ko pride konec sveta, se zemlja ves čas trese.",
+   "q": "Maman says it is the end of days, as the old people of Bibi's day used to say. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Pred približno enim letom."
+   ]
+  },
+  {
+   "id": "06/0009#5",
+   "where": "06/0009",
+   "text": "Mislim, si opravil?",
+   "q": "Maman asks her son whether he passed his doctoral defense. Does this short question sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Ni ocene, Nini-jan."
+   ]
+  },
+  {
+   "id": "03/0297#6",
+   "where": "03/0297",
+   "text": "Vse, kar delaš, so samo krpanke.",
+   "q": "One person scoffs that everything the other does is a patch job. Does 'samo krpanke' fit?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Kaj veš ti o teh rečeh? Sam vem, kaj počnem."
+   ]
+  },
+  {
+   "id": "03/0345#7",
+   "where": "03/0345",
+   "text": "Mar ni vaša zadeva zaključena?",
+   "q": "A girl coolly asks a boy who keeps her talking whether he has finished what he came for. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Dvajset minut, ki ste rekli, da jih imate, še ni poteklo.",
+    "Rekla je:"
+   ]
+  },
+  {
+   "id": "04b/0193#8",
+   "where": "04b/0193",
+   "text": "Kvečjemu so nadzornikom doma namesto prašnega tekstilnega tepiha dali tepih v modri barvi.",
+   "q": "Eskandar says at best the dorm monitors got blue carpeting instead of the dust-colored kind. Is this clear and natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Pa to je to. Doslej še nisem videl sobe s preprogo."
+   ]
+  },
+  {
+   "id": "04b/0462#9",
+   "where": "04b/0462",
+   "text": "Napisal sem lastne teorije o kvantni fiziki, naš neumni profesor pa mi je vzel in dal petindvajset stotink.",
+   "q": "Eskandar complains that his idiot professor gave his theories a quarter of a point. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar je še malo nadaljeval z vzdihovanjem in ječanjem, pa rekel:"
+   ]
+  },
+  {
+   "id": "04b/0186#10",
+   "where": "04b/0186",
+   "text": "Raje bi delil sobo z njimi kakor s kurčevcem, kot si ti.",
+   "q": "Hooman tells a roommate he'd rather room with anyone than a dick-brain like him. Does 'kurčevcem' work as a crude insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Prednjačenje Univerze AmirKabir v študentskih gibanjih je z ničemer primerljivo. Tudi če na Sharifu obstaja zbor tako imenovanih elit, iz katerih doslej ni prišla niti ena sama revolucionarna teorija."
+   ]
+  },
+  {
+   "id": "04b/0899#11",
+   "where": "04b/0899",
+   "text": "Požiralec tičjih glav, zakaj kvasiš neumnosti?",
+   "q": "Hooman hurls a crude insult at a roommate who is talking nonsense. Does 'Požiralec tičjih glav' sound like a real insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0343#12",
+   "where": "04b/0343",
+   "text": "Torej jeben zelenec.",
+   "q": "An older student teases a first-year casually, not as a real insult. Does 'jeben zelenec' sound like friendly crude teasing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ja."
+   ]
+  },
+  {
+   "id": "04b/1003#13",
+   "where": "04b/1003",
+   "text": "Glej, kakšno traparijo si zagrešil, posrani možgani.",
+   "q": "Eskandar snaps at Amir, calling him shit-for-brains. Does 'posrani možgani' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar se je obrnil k meni in glavo ter prsi pomaknil proti meni. Razširil je oči in z osornim tonom, ne da bi izgubil svoj prizvok Alaina Delona, rekel:"
+   ]
+  },
+  {
+   "id": "04b/0378#14",
+   "where": "04b/0378",
+   "text": "Možganadrek, nihče te ne bo imenoval nemega, če ne prdneš.",
+   "q": "Eskandar wakes Amir with a crude twist on an old saying about keeping quiet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…na svoji postelji in razmišljal o tem, o čemer sva govorila z Niloofar. Luči na hodniku so ugasnile in hrup iz drugih sob je tudi zaspal. V temi in tišini polnoči je Hoomanova senca vstopila skozi vrata in šla naravnost k škatli sladkic. Kakor da je vohljala. Zjutraj me je Eskandar zbudil in rekel:"
+   ]
+  },
+  {
+   "id": "04b/0997#15",
+   "where": "04b/0997",
+   "text": "No, kakršno koli sranje že.",
+   "q": "Eskandar, fed up with a back-and-forth argument, snaps: fine, whatever the fuck. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "In tako sta se prerekala sem in tja, in z vsakim prerekanjem so ponovitve dobivale na hitrosti. Dokler ni Eskandar rekel:"
+   ]
+  },
+  {
+   "id": "04b/0520#16",
+   "where": "04b/0520",
+   "text": "Danes ne razpravljajte v sobi, iz športne vzgoje sem dobil dvanajst, živci so mi v kurcu, pa vas bom opsoval.",
+   "q": "Hooman, in a foul mood after a bad grade, warns his roommates. Does this sound like how he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  }
+ ]
+}

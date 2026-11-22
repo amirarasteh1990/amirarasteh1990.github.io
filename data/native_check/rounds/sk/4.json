@@ -1,0 +1,185 @@
+{
+ "lang": "sk",
+ "slug": "sk",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0126#1",
+   "where": "03/0126",
+   "text": "Huh. Priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne, hovorí presne takto.",
+   "q": "Hamid, a boy, always boasts about a long chain of contacts ending in a rich man. Does this running joke sound natural and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid povedal:"
+   ]
+  },
+  {
+   "id": "04b/0182#2",
+   "where": "04b/0182",
+   "text": "Ty si zo všetkých najväčšia krava. A máš na to aj postavu.",
+   "q": "A young man insults a heavy-set roommate as the biggest cow of all. Does 'krava' work as an insult between men?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Zožer hlavičku môjho kokota, človeče, na teba nemáme nervy. Čo ty vieš, čo znamená elektrotechnika na Sharife? A vôbec, pýtal sa ťa niekto na názor?"
+   ]
+  },
+  {
+   "id": "04b/0935#3",
+   "where": "04b/0935",
+   "text": "„Pre Atára je lepšie plakať až do svitania“ alebo „teraz je viac zabitý“?",
+   "q": "She names a song by two lines of a poem by Attar. Does 'teraz je viac zabitý' read as a line of poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Hej, tú s Atárovým veršom."
+   ]
+  },
+  {
+   "id": "03/0345#4",
+   "where": "03/0345",
+   "text": "Nie je Vaša záležitosť vybavená?",
+   "q": "A girl coolly asks a boy who keeps her talking whether he has finished what he came for. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Tých dvadsať minút, čo ste hovorili, ešte neuplynulo.",
+    "Povedala:"
+   ]
+  },
+  {
+   "id": "04b/0440#5",
+   "where": "04b/0440",
+   "text": "Po tej lokalizácii ma už neprekvapí, nech nám na hlavu spadne akýkoľvek vták.",
+   "q": "Hooman means that after that policy, no matter what prick lands on them, he won't be surprised. Does 'vták' read as crude here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bahman povedal, že to nevadí. Eskandar zašiel rukou pod moju posteľ, aby knihu vytiahol, a Meysam kľačal na kolenách a rozprestieral si miesto pod vešiakom. Hooman sa na nich díval a povedal:"
+   ]
+  },
+  {
+   "id": "03/0586#6",
+   "where": "03/0586",
+   "text": "Ktokoľvek chce viesť sračkovú filozofickú diskusiu, môže ísť do kuchyne.",
+   "q": "Hooman crudely tells his roommates to take their philosophical bullshit to the kitchen. Does this sound like how a young man would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar a Meysam začali analyzovať, ako to, čo sa stalo na Strojníckej fakulte, je hrsť, podľa ktorej sa pozná celá kopa. Spojili to s konkurenčným a konzumným svetom dnešnej doby a podobnými vecami. Ich diskusia sa predĺžila. Hooman vypol svetlo a povedal:"
+   ]
+  },
+  {
+   "id": "03/0640#7",
+   "where": "03/0640",
+   "text": "Pfff, do riti. Teraz si expatriant, takže ti na nás nezáleží. Ty zapredaný uctievač cudzincov.",
+   "q": "An old friend teases Amir for moving abroad, calling him a sellout who worships foreigners. Does this sound like real teasing slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Prepáč, úprimne."
+   ]
+  },
+  {
+   "id": "03/0392#8",
+   "where": "03/0392",
+   "text": "Keď ti je svet aj všetko ostatné u riti, prečo si taký posadnutý testami a skúškami?",
+   "q": "A roommate asks crudely why someone who doesn't give a damn about anything obsesses over exams. Does 'u riti' sound natural here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Ľahol som si na bok na posteľ a oči mi videli Hoomana a Eskandara, hoci som ich sledovať nechcel. Potom, čo si Eskandar asi hodinu mrmlal niečo pod nos, obrátil sa k Hoomanovi a povedal:"
+   ]
+  },
+  {
+   "id": "01/0166#9",
+   "where": "01/0166",
+   "text": "Išiel by niekedy? Keby išiel, bolo by to mojím srdcovým prianím.",
+   "q": "Maman jokes that if her husband ever left, it would answer her prayers. Does this sound like how she would say it?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Len sa smejeme, Nana-pesar-jan."
+   ]
+  },
+  {
+   "id": "01/0261#10",
+   "where": "01/0261",
+   "text": "Mm-hm, zmenil sa veľmi, veľmi. Tak schudol a stmavol.",
+   "q": "Maman says a relative has grown thin and his skin darker from the sun. Does 'stmavol' sound natural for a person?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "04a/0054#11",
+   "where": "04a/0054",
+   "text": "Fuj, unavil som sa.",
+   "q": "A small boy groans on a long walk that he is tired. Does 'Fuj' fit a tired groan?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Bolo toho veľa. Až na koniec sveta. Možno nie. Ale bolo toho veľa. Vždy som sa unavil v strede. Ale nič som nehovoril. Raz Omid povedal:"
+   ]
+  },
+  {
+   "id": "06/0291#12",
+   "where": "06/0291",
+   "text": "Hľadá si výhovorky, aby reptal pre nič za nič, che, Amir-jan.",
+   "q": "Maman gives a short laugh while complaining about her husband. Does 'che' read as that little laugh?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman hovorí:"
+   ]
+  },
+  {
+   "id": "04b/0562#13",
+   "where": "04b/0562",
+   "text": "Orlie Oko, nech ti to Boh nedaruje, zničil si mi chrbát.",
+   "q": "Eskandar half-jokingly curses Sajad for stepping on his back. Does 'nech ti to Boh nedaruje' sound like a natural curse?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar povedal hlasom, ktorý naznačoval, že len ťažko dýcha:"
+   ]
+  },
+  {
+   "id": "03/0264#14",
+   "where": "03/0264",
+   "text": "Čo chceš, Eskandar? Čo sa s tebou deje?",
+   "q": "Hooman snaps at an annoying roommate: what the hell is wrong with you? Does this sound as rude as a young man would be?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Naozaj si myslíš, že ti to meno pristáva? Tomuto chlpatému telu, tejto tvári ozbrojenej až po zuby bradou a vlasmi. Ak si ty Hooman, tak ja som Zuzana."
+   ]
+  },
+  {
+   "id": "04b/0751#15",
+   "where": "04b/0751",
+   "text": "Jéééj. Nech krúžim okolo hlavičky Nini-jan, ako jej to dobre myslí.",
+   "q": "Ghassem fondly teases his mother, whom the family call Nini, for her clever question. Does this sound affectionate and natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Ghassem, hovorím, tí ľudia, o ktorých Amir hovorí, že v zahraničí veľmi neveria v Boha, tých tiež stvoril Boh?"
+   ]
+  },
+  {
+   "id": "04b/0385#16",
+   "where": "04b/0385",
+   "text": "Vždy veľmi elegantne a obradne sa vysere presne na historickej zákrute.",
+   "q": "Hooman says crudely that Amir, always so proper, messes up right at the crucial moment. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Krčmárik je Taverny. Nemôže za to. Má to tak nastavené od výroby."
+   ]
+  }
+ ]
+}

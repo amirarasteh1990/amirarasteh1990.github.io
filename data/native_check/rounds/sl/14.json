@@ -1,0 +1,63 @@
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-22.r14",
+ "items": [
+  {
+   "id": "01/0178#1",
+   "where": "01/0178",
+   "text": "Rada bi, da bi postal odvisnik in ne bil takšen.",
+   "q": "Maman says she would rather her husband were an addict than the way he is. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "01/0090#2",
+   "where": "01/0090",
+   "text": "Ne. Jaz sem ta revica, nikoli nič ne rečem, vedno molčim.",
+   "q": "Maman says, half-joking, that poor her never says a word. Does this sound like a mother teasing herself?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Nič mu nisi rekla."
+   ]
+  },
+  {
+   "id": "06/0264#3",
+   "where": "06/0264",
+   "text": "Uh, vsakič, ko mu rečeš, naj nekaj prinese, ga tako strese, kot da ga je udaril tok.",
+   "q": "Maman complains that her son jolts as if shocked whenever he is asked to fetch something. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "03/0458#4",
+   "where": "03/0458",
+   "text": "Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
+   "q": "She writes him a short, cool message setting a time to meet. Does this message sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…muke pri zamišljanju besed, ki sem jih rekel Niloofar, pravim, da Niloofar me ni sprejela ne zaradi mojih besed, temveč bolj zato, ker sem vztrajal pri skrivnostnosti in ker nikoli, ne pred razkritjem svojih čustev ne po njem, nisem šel naravnost k Niloofar v notranjosti fakultete. Napisala je:"
+   ]
+  },
+  {
+   "id": "04b/0317#5",
+   "where": "04b/0317",
+   "text": "Tako me razjeziš, kadar tako molče sediš. Najraje bi te udarila s pestjo.",
+   "q": "A girl, exasperated by his silence, says she wants to punch him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…da angel ne ve ničesar o ljubezni in ljubljenju, zato je svoja razodetja lepote namenil Adamu. Kako potem pričakuješ, da bo Njegovo stvarjenje gorelo za nekoga, ki o ljubezni ne ve niti prve stvari? Vzdihnila je. Para njenega diha se je v zavojih dvigala proti nebu, jaz pa sem jo molče gledal."
+   ]
+  }
+ ]
+}
