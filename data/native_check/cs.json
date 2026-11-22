@@ -1,21 +1,153 @@
-{"lang": "cs", "slug": "cs", "dir": "ltr", "version": "2026-11-18",
+{
+ "lang": "cs",
+ "slug": "cs",
+ "dir": "ltr",
+ "version": "2026-11-22",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Z této strany odvíjím nit slov a z druhé strany je sbíráš.", "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"},
-  {"id": "04b/0171#2", "where": "04b/0171", "text": "Tolik testů jsme nadělali a skončili na pokoji s tímhle antikem.", "q": "Students mock a roommate as an old relic. Does 'antikem' work as that insult?"},
-  {"id": "04b/0353#3", "where": "04b/0353", "text": "– A v té podělané situaci, jaké antiky nám přidělili?", "q": "Is it clear 'antiky' mocks the odd roommates they were given?"},
-  {"id": "04b/1320#4", "where": "04b/1320", "text": "A roztřesenýma rukama jsem překotně listoval ghazaly, hledaje ten beit od Hafeze, o němž, jak řekla ta druhá dívka, čím hlouběji se do něj nořím, tím víc se mi točí hlava – abych ho mohl Niloofar ukázat.", "q": "Amir hunts for a Hafez verse with shaking hands. Does this read naturally?"},
-  {"id": "01/0013#5", "where": "01/0013", "text": "Zbylo jen trochu lavashaku, který připravila Mahboub.", "q": "Is it clear that lavashak is a homemade fruit sweet?"},
-  {"id": "01/0116#6", "where": "01/0116", "text": "Choď i ven. Choď na techá místa.", "q": "Maman mispronounces 'techá' on purpose; she means quiet. Is that clear?"},
-  {"id": "01/0166#7", "where": "01/0166", "text": "Ať jsem říkala sebevíc, ať děti nebije, odpovídal: válka mě poznamenala, nemohu si pomoct.", "q": "Does 'válka mě poznamenala' mean he was shell-shocked in the war?"},
-  {"id": "03/0191#8", "where": "03/0191", "text": "– Hamide Kočko, ještě včera jsi říkal khar. Teď jsi kultivovaný a říkáš osel?", "q": "Hamid switched from a rude donkey word to a polite one. Is that clear?"},
-  {"id": "04a/0076#9", "where": "04a/0076", "text": "– To je mlamolový kámen. Mlamol znamená moc drahý.", "q": "A child says 'Mlamol' for marble and thinks it means expensive. Is that clear?"},
-  {"id": "04b/0460#10", "where": "04b/0460", "text": "– Co tě zase trápí, že se na nás naparuješ, Alate Delone?", "q": "A crude sexual jibe about getting it up at them. Does 'naparuješ' carry that?"},
-  {"id": "04b/0595#11", "where": "04b/0595", "text": "Orlí oko říká peer-to-peer, taverník říká pír na pír.", "q": "Amir mishears 'peer' as 'pír', Persian for elder. Does the joke work?"},
-  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Ano, koupím ti panenku. Až budu mít nějaké peníze, koupím ti ještě lepší, Babova holčičko.", "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"},
-  {"id": "04b/1312#13", "where": "04b/1312", "text": "Z toho se vám zatočí hlava. Čím víc o tom přemýšlíte, tím víc se vám točí hlava.", "q": "A girl uses a crude, made-up phrase for mind-bending. Does that come through?"},
-  {"id": "04b/1321#14", "where": "04b/1321", "text": "Jako to – čím víc přemýšlíš o těchhle deseti slovech, tím víc se ti to... víc se ti točí hlava.", "q": "He starts that crude phrase, then catches himself. Does that come through?"},
-  {"id": "04b/1321#15", "where": "04b/1321", "text": "„To víno, které je tam, je pravda, ne metafora.“", "q": "This Hafez line should read both as real wine and as metaphor. Does it?"},
-  {"id": "04b/1386#16", "where": "04b/1386", "text": "Pokaždé dojdu až k prahu čtení té básně a pokaždé průchod mezi mými rty a Niloofařinýma ušima zabliká a vyklouzne.", "q": "The passage to her ears blinks and backs away. Does 'zabliká a vyklouzne' say that?"},
-  {"id": "06/0056#17", "where": "06/0056", "text": "Burdozerem na ni sypali hlínu.", "q": "Maman mispronounces 'Burdozerem' (bulldozer) on purpose. Is that clear?"},
-  {"id": "06/0236#18", "where": "06/0236", "text": "Kašel, kašel. Vláčels nás.", "q": "Here it means you wore us out. Does 'Vláčels nás' say that?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Z této strany odvíjím nit slov a z druhé strany je sbíráš.",
+   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Choď i ven. Choď na techá místa.",
+   "q": "Maman says 'techá' for 'tichá' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Oho, jak dobré. Mm-hm, objednáš a přivezou ti to. Ale Amir-jan, nesedávej celou dobu doma."
+   ]
+  },
+  {
+   "id": "01/0166#3",
+   "where": "01/0166",
+   "text": "Ať jsem říkala sebevíc, ať děti nebije, odpovídal: válka mě poznamenala, nemohu si pomoct.",
+   "q": "Maman's husband excused beating the children by saying he was shell-shocked in the war. Does 'válka mě poznamenala' convey that?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0191#4",
+   "where": "03/0191",
+   "text": "– Hamide Kočko, ještě včera jsi říkal khar. Teď jsi kultivovaný a říkáš osel?",
+   "q": "In Persian, 'khar' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'osel'. Does the jab work?",
+   "ctx": 2,
+   "before": [
+    "– Pff, osle, kdo toho ví víc, přítel bratrance našeho švagrova mistra řemeslníka, ten nejbohatší muž v Teheránu, nebo ty, ty telátko? Dobře, jdi si koupit jedno. Až se sklo rozbije, neříkej, že jsem tě nevaroval.",
+    "Taghi řekl:"
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "A ty, se svým tím čuráckým způsobem řeči, měl ses jmenovat Alain Čurákon.",
+   "q": "'Alain Čurákon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "04a/0076#6",
+   "where": "04a/0076",
+   "text": "– To je mlamolový kámen. Mlamol znamená moc drahý.",
+   "q": "A little boy says 'Mlamol' for 'mramor' (marble) and thinks it means expensive; both mistakes are deliberate. Does it sound childlike?",
+   "ctx": 1,
+   "before": [
+    "Šli jsme dál. V půli cesty byl jeden dům. Jeho zeď byla hezká. Ghassem říkal:"
+   ]
+  },
+  {
+   "id": "04b/0171#7",
+   "where": "04b/0171",
+   "text": "Tolik testů jsme nadělali a skončili na pokoji s tímhle antikem.",
+   "q": "Students mock a roommate as an old relic. Does 'antikem' work as that insult?",
+   "ctx": 1,
+   "before": [
+    "– Ale člověče, nemluv s ním takhle zdvořile, stoupne mu to do hlavy."
+   ]
+  },
+  {
+   "id": "04b/0353#8",
+   "where": "04b/0353",
+   "text": "– A v té podělané situaci, jaké antiky nám přidělili?",
+   "q": "Is it clear 'antiky' mocks the odd roommates they were given?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/0460#9",
+   "where": "04b/0460",
+   "text": "– Co tě zase trápí, že se na nás naparuješ, Alaine Čurákone?",
+   "q": "The speaker mocks a roommate for 'getting it up at us'. Does 'naparuješ' carry that crude sense?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1265#10",
+   "where": "04b/1265",
+   "text": "– Ano, koupím ti panenku. Až budu mít nějaké peníze, koupím ti ještě lepší, Babova holčičko.",
+   "q": "The father answers by playfully copying his little girl's baby talk. Does his reply sound like that?",
+   "ctx": 2,
+   "before": [
+    "– Vžžžum, Babo, Babo, koupíš mi tu vekou panenku?",
+    "Zezadu se ozývá hlas:"
+   ]
+  },
+  {
+   "id": "04b/1312#11",
+   "where": "04b/1312",
+   "text": "Z toho se vám zatočí hlava. Čím víc o tom přemýšlíte, tím víc se vám točí hlava.",
+   "q": "An art student uses a crude made-up expression, roughly shit-dizzy, for a baffling painting. Does the line sound that crude?",
+   "ctx": 1,
+   "before": [
+    "– ...Podívejte se na to, je to opravdu zarážející. Tohle nakreslil a pod to napsal: toto není dýmka."
+   ]
+  },
+  {
+   "id": "04b/1320#12",
+   "where": "04b/1320",
+   "text": "A roztřesenýma rukama jsem překotně listoval ghazaly, hledaje ten beit od Hafeze, o němž, jak řekla ta druhá dívka, čím hlouběji se do něj nořím, tím víc se mi točí hlava – abych ho mohl Niloofar ukázat.",
+   "q": "A girl had said a painting makes your head spin more the deeper you look. Is the verse compared to that painting here?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "„To víno, které je tam, je pravda, ne metafora.“",
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1321#14",
+   "where": "04b/1321",
+   "text": "Jako to – čím víc přemýšlíš o těchhle deseti slovech, tím víc se ti to... víc se ti točí hlava.",
+   "q": "The stammering student nearly blurts out something crude here, then softens it. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– Tady. Poslechni si tohle. Pro-proboha, poslouchej. „To víno, které je tam, je pravda, ne metafora.“ Tohle je totéž. Je to jako ta malba, kterou ti ukazovala ka-kamarádka."
+   ]
+  },
+  {
+   "id": "04b/1386#15",
+   "where": "04b/1386",
+   "text": "Pokaždé dojdu až k prahu čtení té básně a pokaždé průchod mezi mými rty a Niloofařinýma ušima zabliká a vyklouzne.",
+   "q": "The passage to her ears blinks and backs away. Does 'zabliká a vyklouzne' say that?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0056#16",
+   "where": "06/0056",
+   "text": "Burdozerem na ni sypali hlínu.",
+   "q": "Maman says 'Burdozerem' for 'buldozerem' (bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0236#17",
+   "where": "06/0236",
+   "text": "Kašel, kašel. Vláčels nás.",
+   "q": "Baba complains that his son only took them to cemeteries and churches. Does 'Vláčels nás' mean you wore us out?",
+   "ctx": 1,
+   "before": [
+    "– ...kašel. Jo. Nikdy jsi nás nevzal na taková místa. Pořád hřbitov a Bůh ví co – kostel."
+   ]
+  }
+ ]
+}

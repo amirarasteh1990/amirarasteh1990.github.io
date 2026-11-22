@@ -1,56 +1,88 @@
 {
-  "lang": "nds",
-  "slug": "nds",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Grad so as in de Kinnertiet, wenn Maman dat Garn van ole Kleder afwickeln dee un wi den Faden nehmen deen un dör dat Huus lopen sünd, dormit dat Garn sik nich op'nanner höpt harr.",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "03/0060#2",
-      "where": "03/0060",
-      "text": "Hamid treck sien verblichen root Träger hooch, un mit en Beweeg vun de Rüchsiet vun sien Hand smeet he den Knütt an de reten Steed vun sien Träger vun de Schuller na de Rüch.",
-      "q": "Is it clear Hamid is wearing a faded red singlet with a torn strap?"
-    },
-    {
-      "id": "03/0583#3",
-      "where": "03/0583",
-      "text": "Kiek, wat du wesen muttst, dat du Leopard-Farid weglopen deist.",
-      "q": "The joke: you make Leopard Farid run away. Does 'weglopen deist' say that?"
-    },
-    {
-      "id": "04b/0554#4",
-      "where": "04b/0554",
-      "text": "– Anfang Esfand, wat is dat för'n Tiet för Klausuren?",
-      "q": "Is it clear that 'Esfand' is the name of a month?"
-    },
-    {
-      "id": "04b/0830#5",
-      "where": "04b/0830",
-      "text": "Mennigmaal, wenn Sajad Farids Nack mit en Foothold verwessel op sien Weg na sien egen Bett, keem Farid un sleep op Bahmans Bett.",
-      "q": "Sajad mistakes Farid's neck for a step. Is 'Foothold' natural here?"
-    },
-    {
-      "id": "04b/1003#6",
-      "where": "04b/1003",
-      "text": "– Kiek maal, wat för en Bloomenstruuk du in't Water smeten hest, Schietkopp.",
-      "q": "Someone scolds a friend: look what a mess you made. Is that clear?"
-    },
-    {
-      "id": "04b/1227#7",
-      "where": "04b/1227",
-      "text": "As harr he hört, de Fründ vun den Vedder vun ehr Swager sien Meester leet sien Hoor mit Babyliss maken.",
-      "q": "Is it clear 'Meester' is the master craftsman their in-law works under?"
-    },
-    {
-      "id": "04b/1263#8",
-      "where": "04b/1263",
-      "text": "– Viiiez, Baba, Baba, kaufst du mi disse groote Puppe?",
-      "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
-    }
-  ]
+ "lang": "nds",
+ "slug": "nds",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Grad so as in de Kinnertiet, wenn Maman dat Garn van ole Kleder afwickeln dee un wi den Faden nehmen deen un dör dat Huus lopen sünd, dormit dat Garn sik nich op'nanner höpt harr.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
+   "before": [
+    "Uptakt",
+    "…Se sünd upschreven worrn, üm en Bröch to warrn twüschen mien Welt un dien. En Bröch vun mien Welt, in den Ogenblick, wo ik disse Sätz schriev, to dien Welt, in den Ogenblick, wo du di hensettst, üm se to lesen. Van disse Siet af wickel ik den Faden vun Wöör af, un du sammelst de Wöör van jene Siet."
+   ]
+  },
+  {
+   "id": "03/0060#2",
+   "where": "03/0060",
+   "text": "Hamid treck sien verblichen root Träger hooch, un mit en Beweeg vun de Rüchsiet vun sien Hand smeet he den Knütt an de reten Steed vun sien Träger vun de Schuller na de Rüch.",
+   "q": "Is it clear Hamid is wearing a faded red singlet with a torn strap?",
+   "before": [
+    "De sülve Stimm, de na Ghassem över mien Konkur-Platz fraagt harr, sä heel liesen:",
+    "– Heh, Ostad Hamid, de dwaas Katt."
+   ]
+  },
+  {
+   "id": "03/0583#3",
+   "where": "03/0583",
+   "text": "Kiek, wat du wesen muttst, dat du Leopard-Farid weglopen deist.",
+   "q": "The joke: you make Leopard Farid run away. Does 'weglopen deist' say that?",
+   "before": [
+    "Farid nehm sien Küssen un Deek un keem, op dat Bett baven miene to slapen, dat Bett, wo Bahman de eersten twee Semester vun de Universität op slapen harr, un an düssen Avend weer dat bina dree Johr her, siet de Matratz de Wärm vun Bahman sien Liev vergeten harr. Hooman sä:",
+    "– Aadleroog, all lööpt vun Leopard-Farid weg."
+   ]
+  },
+  {
+   "id": "04b/0554#4",
+   "where": "04b/0554",
+   "text": "– Anfang Esfand, wat is dat för'n Tiet för Klausuren?",
+   "q": "Is it clear that 'Esfand' is the name of a month?",
+   "before": [
+    "– Ik heff wedder Null in Physik Twee kregen. Ik bün bannig arm dran.",
+    "Hooman sä:"
+   ]
+  },
+  {
+   "id": "04b/0830#5",
+   "where": "04b/0830",
+   "text": "Mennigmaal, wenn Sajad Farids Nack mit en Foothold verwessel op sien Weg na sien egen Bett, keem Farid un sleep op Bahmans Bett.",
+   "q": "Sajad mistakes Farid's neck for a step. Is 'Foothold' natural here?",
+   "before": [
+    "– Nee, he hett mi ok nich antwoort.",
+    "En poor Daag later antwoort he uns all mit een Maal. He harr schreven, he weer na dat Wohnheim för Verheirat verleggt un ut uns Zimmer utteen. Meysam sä, he weer dor op den Boden bequemer, un Bahmans Bett bleev leddig."
+   ]
+  },
+  {
+   "id": "04b/1003#6",
+   "where": "04b/1003",
+   "text": "– Kiek maal, wat för en Bloomenstruuk du in't Water smeten hest, Schietkopp.",
+   "q": "Someone scolds a friend: look what a mess you made. Is that clear?",
+   "before": [
+    "– Du büst ok en Rashid.",
+    "Eskandar dreih sik na mi hen un buugt Kopp un Bost na mi vörn. He harr de Ogen groot maakt un sä, mit en rugen Ton, ahn sien Alain-Delon-Ton to verleren:"
+   ]
+  },
+  {
+   "id": "04b/1227#7",
+   "where": "04b/1227",
+   "text": "As harr he hört, de Fründ vun den Vedder vun ehr Swager sien Meester leet sien Hoor mit Babyliss maken.",
+   "q": "Is it clear 'Meester' is the master craftsman their in-law works under?",
+   "before": [
+    "…schoren Hoor to verdecken. Buten den Fründ vun den Vedder vun ehr Swager sien Meester weer bloots disse Nackenhoor sien Stolt. He sett sik jümmer so, dat sien Nackenhoor na Negar ehr Huus wies. Sien Nackenhoor weer krullig, un Hamid harr jümmer en Hand an disse Krull. Eenmal harr he Yaser seggt:",
+    "– Weerst du parat, dien Vadder harr keen Geld un di fehlen een Hand un een Foot, un dorför harrst du mien Nackenhoor?"
+   ]
+  },
+  {
+   "id": "04b/1263#8",
+   "where": "04b/1263",
+   "text": "– Viiiez, Baba, Baba, kaufst du mi disse groote Puppe?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, mien Söhn. Waak op. Waak op för Maman. Dat weer allns bloots en Droom. Heff keen Angst, ik bün hier.",
+    "…düsterfarvene Still wegnehm un doch nich noog Licht harr, üm mi to leiden. En blinkend Lamp in de Hand vun en Deern, vun de ik nienich wüss, wo ehr Huusdöör-Klöör in de Bunt-Stift-Doos höört. En lütte Deern kummt viezig-viezig anlöppen un blifft blang mi stahn. Se kiekt de Speeltüüg an. Se seggt:"
+   ]
+  }
+ ]
 }

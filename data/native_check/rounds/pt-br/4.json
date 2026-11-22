@@ -1,0 +1,192 @@
+{
+ "lang": "pt-BR",
+ "slug": "pt-br",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0118#1",
+   "where": "03/0118",
+   "text": "Que gata.",
+   "q": "Teenage boys watch a pretty girl walk by; one says this. Does it sound like how boys would talk?",
+   "ctx": 3,
+   "kind": "banter",
+   "before": [
+    "…não. Sua camiseta cor-de-rosa estava visível embaixo do chador. Quando desceu os degraus e caminhou na direção oposta à nossa, o vento soprou por trás e colou o chador nas suas pernas. Sob a luz do início do verão, vimos claramente as flores vermelhas na sua calça verde. Hamid e Taghi disseram:",
+    "– Ela é muito bonita.",
+    "Yaser disse:"
+   ]
+  },
+  {
+   "id": "03/0663#2",
+   "where": "03/0663",
+   "text": "Com a desculpa de manter os estudantes perto da família, enfiaram um pau no rabo de todos nós, os do interior.",
+   "q": "Hooman crudely complains that a rule hurt students from the provinces. Does this sound like natural Brazilian swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Cacheado, você fica tão surpreso como se tivesse entrado na universidade sem o Konkoor. Essa política de localização nos fodeu."
+   ]
+  },
+  {
+   "id": "04b/0434#3",
+   "where": "04b/0434",
+   "text": "Se o Kamyar não tivesse bancado o merdinha metido a besta e tivesse ficado no dormitório, não ia ter cama vazia pra essas maravilhas caírem pra gente.",
+   "q": "Hooman crudely blames a fussy student who left the dorm. Does this sound like natural slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…sinal com a mão pro Meysam e foi se deitar na cama dele, por cima da minha. O Eskandar ficou um momento olhando fixo pros cantos dos poucos livros que apareciam embaixo da minha cama, e depois, de quatro, foi até os livros do Bahman. Baixou a cabeça e olhava pros livros do Bahman. O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0186#4",
+   "where": "04b/0186",
+   "text": "Eu teria preferido dividir quarto com eles em vez de um cabeça de pica igual a você.",
+   "q": "Hooman crudely tells a roommate he would rather room with anyone else. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– O papel pioneiro da Universidade AmirKabir nos movimentos estudantis não tem comparação. Sharif pode ter a sua coleção de chamadas elites, mas ainda não produziram uma única teoria revolucionária."
+   ]
+  },
+  {
+   "id": "01/0090#5",
+   "where": "01/0090",
+   "text": "Fico só olhando e comendo tristeza.",
+   "q": "Maman, a mother from a small town, says she swallows her sorrow in silence. Does this sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Você não disse nada para ele.",
+    "– Não. Sou eu a coitada, nunca digo nada, fico sempre calada."
+   ]
+  },
+  {
+   "id": "01/0184#6",
+   "where": "01/0184",
+   "text": "Quem quiser pode ficar com ele. A gente ainda dá alguma coisa por cima.",
+   "q": "Maman jokes that any woman can have her husband, with a bonus thrown in. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mulheres? Quem dera."
+   ]
+  },
+  {
+   "id": "04b/0738#7",
+   "where": "04b/0738",
+   "text": "Ai, quem me dera poder um dia furar esses seus ouvidos com as unhas, pra deixarem de se aguçar.",
+   "q": "Niloofar playfully threatens Amir, who just said his ears perk up at her name. Does her reply sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Bom, quando fico sentado na faculdade, procuro o seu nome nas conversas dos outros. Assim que ouço o seu nome, fico de orelha em pé.",
+    "Levantou a mão, apertou as unhas umas contra as outras e disse:"
+   ]
+  },
+  {
+   "id": "04b/1393#8",
+   "where": "04b/1393",
+   "text": "Não tenho esperança no seu regresso",
+   "q": "A line from a young man's love poem: he has no hope she will come back. Does it read as natural poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Agora você se foi",
+    "A luz dos meus sonhos agora pisca"
+   ]
+  },
+  {
+   "id": "01/0170#9",
+   "where": "01/0170",
+   "text": "Falar mal? Falar mal é quando a pessoa não fez mal nenhum a você.",
+   "q": "Maman, irritated, defends her complaints about her husband. Does this sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Não falem tanto mal do Baba.",
+    "A Maman vira a cabeça para a voz da Mahboubeh e diz com um tom ligeiramente irritado:"
+   ]
+  },
+  {
+   "id": "04a/0071#10",
+   "where": "04a/0071",
+   "text": "Meu coração ficava vazio. Eu não queria ir lá.",
+   "q": "A six-year-old tells how scared he felt. Does this sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– Do outro lado da escola tem um cemitério. É muito antigo. Alguns túmulos não têm pedra. Dá pra ver os ossos dos mortos."
+   ]
+  },
+  {
+   "id": "04a/0038#11",
+   "where": "04a/0038",
+   "text": "Entrada na rua principal: tsk-tsk.",
+   "q": "A boy playing soldier announces they are entering the main street, with a clicking sound. Does this sound natural?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Eu sempre faço o que a Maman fala. Eu fiz o que o Ghassem falou também. Ele dizia:"
+   ]
+  },
+  {
+   "id": "04a/0052#12",
+   "where": "04a/0052",
+   "text": "A terceira etapa é um cruzamento. Um cruzamento quer dizer que é muito grande.",
+   "q": "A boy explains a crossroads to his little brothers, with a child's logic. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "No caminho ele dizia:"
+   ]
+  },
+  {
+   "id": "04a/0024#13",
+   "where": "04a/0024",
+   "text": "Batalhão, em frente, marche!",
+   "q": "A boy plays soldier, shouting a drill command to his little brothers. Does it sound like a real marching order?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Primeiro ficávamos parados um pouquinho na sala. O Ghassem sempre dizia umas coisas. Depois ele dizia:"
+   ]
+  },
+  {
+   "id": "04a/0048#14",
+   "where": "04a/0048",
+   "text": "É da velhice, vizinha.",
+   "q": "An old shopkeeper explains his shaking hands to a woman from his street. Does the way he addresses her sound natural?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "…na frente da mercearia do Haaj Kazem. O Ghassem acenava pra ele. O Haaj Kazem sempre sacode as mãos. Quando a gente vai lá com a Maman, sacode também. Ele sacode os grãos-de-bico rápido, rápido. Fica colocando grãos-de-bico demais na balança, depois tira alguns. Naquele dia ele disse pra Maman:"
+   ]
+  },
+  {
+   "id": "04b/0784#15",
+   "where": "04b/0784",
+   "text": "Você é muito sneaky.",
+   "q": "A girl teases a shy student, slipping in the English word 'sneaky' as young Iranians do. Does that sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Hoje ouvi você falando com outras garotas na faculdade."
+   ]
+  },
+  {
+   "id": "03/0624#16",
+   "where": "03/0624",
+   "text": "Boa, o Ancião da Taverna. Isso é perfeito para o Arasteh.",
+   "q": "Farid picks a nickname for Amir from a line of Hafez. Does this sound like a playful nickname being given?",
+   "ctx": 3,
+   "kind": "banter",
+   "before": [
+    "O Hooman abriu o livro e leu:",
+    "– Sou servo do Ancião da Taverna, cuja graça...",
+    "O Farid disse:"
+   ]
+  }
+ ]
+}

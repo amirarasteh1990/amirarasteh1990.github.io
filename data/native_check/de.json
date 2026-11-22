@@ -2,91 +2,115 @@
  "lang": "de",
  "slug": "de",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
-   "q": "From the opening page. Do these lines read naturally?"
+   "q": "From the opening page. Do these lines read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#2",
    "where": "Opening/0007",
    "text": "Wie damals in der Kindheit, wenn Maman das Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte.",
-   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#3",
    "where": "Opening/0007",
    "text": "Jetzt wickle ich den Faden der Wörter ab, und du hebst sie auf und trägst sie in deine eigene Welt, damit sie sich hier, in meiner Welt, nicht aufhäufen.",
-   "q": "You take the words with you. Does this sentence read naturally?"
+   "q": "You take the words with you. Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte. Vielleicht kam deine Generation ein paar Jahre nach jener Welt aus Garn, aber stell dir vor: Einst, irgendwo auf der Welt, spielten Kinder auf diese Weise."
+   ]
   },
   {
-   "id": "01/0116#4",
-   "where": "01/0116",
-   "text": "Geh auch raus. Geh an stiele Orte.",
-   "q": "Maman mispronounces 'stiele' on purpose; she means quiet. Is that clear?"
-  },
-  {
-   "id": "01/0148#5",
+   "id": "01/0148#4",
    "where": "01/0148",
    "text": "– Die was und Lächeln?",
-   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+   "q": "Maman catches only the end of the title 'Tränen und Lächeln'. Does her puzzled reply sound natural?",
+   "ctx": 2,
+   "before": [
+    "– Kinder, soll ich Tränen und Lächeln herunterladen, damit wir es heute Abend anschauen?",
+    "Maman dreht den Kopf und sagt:"
+   ]
   },
   {
-   "id": "03/0191#6",
+   "id": "03/0191#5",
    "where": "03/0191",
    "text": "– Oho, Hamid Katze, bis gestern hast du noch „Esel“ gesagt. Jetzt bist du plötzlich so fein und sagst „Grautier“?",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?",
+   "ctx": 2,
+   "before": [
+    "– Na, Grautier, wer weiß es besser, der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, oder du, du Kalb? Na gut, geh und kauf dir eins. Wenn sein Glas bricht, sag nicht, ich hätte es dir nicht gesagt.",
+    "Taghi sagte:"
+   ]
   },
   {
-   "id": "03/0430#7",
+   "id": "03/0430#6",
    "where": "03/0430",
-   "text": "Und bei deiner beschissenen Art zu reden hättest du Alat Delon heißen müssen.",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "Und bei deiner pimmeligen Art zu reden hättest du Alain Pimmelon heißen müssen.",
+   "q": "'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#8",
+   "id": "04a/0076#7",
    "where": "04a/0076",
    "text": "– Das ist Marmelstein. Marmel bedeutet richtig teuer.",
-   "q": "A child says 'Marmel' for marble, thinking it means expensive. Is that clear?"
+   "q": "Both mistakes are intended: little Ghassem says 'Marmel' for Marmor and thinks it means expensive. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Wir gingen wieder weiter. Auf halbem Weg war ein Haus. Die Mauer war hübsch. Ghassem sagte immer:"
+   ]
   },
   {
-   "id": "04b/0595#9",
-   "where": "04b/0595",
-   "text": "– Aber er hat's verkackt. Adlerauge sagt Peer-to-Peer; Schenki sagt Äldi-zu-Äldi.",
-   "q": "Schenki (Amir) misheard 'Peer' as pir, Persian for elder. Does the joke work?"
-  },
-  {
-   "id": "04b/1263#10",
+   "id": "04b/1263#8",
    "where": "04b/1263",
    "text": "– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her father for a doll. Does it sound like a small child talking?",
+   "ctx": 1,
+   "before": [
+    "…hell genug war, um mir den Weg zu weisen. Eine blinkende Lampe in der Hand eines Mädchens, dessen Türfarbe ich nie kannte, die ich nie in einer Buntstift-Schachtel hätte finden können. Ein kleines Mädchen kommt sausend herangebraust und bleibt neben mir stehen. Es schaut die Spielzeuge an. Es sagt:"
+   ]
   },
   {
-   "id": "04b/1265#11",
+   "id": "04b/1265#9",
    "where": "04b/1265",
    "text": "– Ja, ich kauf dir die Puppe. Wenn ich Geld habe, kauf ich dir eine noch bessere, Babas Mädchen.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+   "q": "The father playfully answers in his little daughter's way of talking. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?",
+    "Eine Stimme kommt von hinter mir:"
+   ]
   },
   {
-   "id": "04b/1312#12",
+   "id": "04b/1312#10",
    "where": "04b/1312",
-   "text": "Davon wird man scheißverwirrt. Je mehr man darüber nachdenkt, desto scheißverwirrter wird man.",
-   "q": "A girl coins a crude word for mind-bending. Does 'scheißverwirrt' work?"
+   "text": "Davon wird man verdammt nochmal verwirrt. Je mehr man darüber nachdenkt, desto verwirrter wird man, verdammt nochmal.",
+   "q": "A student swears about a baffling painting. Does 'verdammt nochmal verwirrt' sound natural?",
+   "ctx": 1,
+   "before": [
+    "– ... Schaut, wie wirklich zum Nachdenken anregend das ist. Er hat das gezeichnet und darunter geschrieben: Das ist keine Pfeife."
+   ]
   },
   {
-   "id": "04b/1321#13",
+   "id": "04b/1321#11",
    "where": "04b/1321",
    "text": "„Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "A line by the poet Hafez, meant to read two ways: the wine is real, or only a metaphor. Do both readings come through?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#14",
+   "id": "06/0056#12",
    "where": "06/0056",
    "text": "Mit dem Bulldozel schütteten sie Erde über sie. Erde und Kalk.",
-   "q": "Maman says 'Bulldozel' for bulldozer on purpose. Is that clear?"
+   "q": "Maman says 'Bulldozel' for Bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
   }
  ]
 }

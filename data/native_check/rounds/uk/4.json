@@ -1,0 +1,183 @@
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0146#1",
+   "where": "04b/0146",
+   "text": "Через тебе я мушу все розжовувати. Я питаю, тобто ти тільки чув?",
+   "q": "A young man rudely presses a slow-witted roommate. Does this sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Лайномозкий."
+   ]
+  },
+  {
+   "id": "03/0490#2",
+   "where": "03/0490",
+   "text": "Дивись, не луснь, пане Члене.",
+   "q": "Hooman mocks a puffed-up roommate with a crude nickname. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "04b/0351#3",
+   "where": "04b/0351",
+   "text": "Справді насрав на всю ту перфекціоністику, і подвійні фахи, і те, що ми були серед найкращих студентів, і тисячу інших напастей і отрут.",
+   "q": "Hooman, now older, crudely dismisses the perfectionism of their student days. Does this sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0486#4",
+   "where": "04b/0486",
+   "text": "Тобто ти хочеш сказати, що це наше паскудне везіння, коли жереб випав нам і дав нам антикваріат на кшталт тебе, усе повторюється?",
+   "q": "Hooman sneers at an odd roommate they got by drawing lots. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…ліжка рукою втримав Фаріда, що, мов пружина, зірвався зі свого місця. Звук Хуманового клацання пальцями розкотився по кімнаті. Подушка Фаріда пролетіла повз голову Ескандара й ударилася об стіну. Подушка впала за Мейсамом разом з одним-двома предметами одягу, що висіли на вішаку. Хуман сказав:"
+   ]
+  },
+  {
+   "id": "03/0297#5",
+   "where": "03/0297",
+   "text": "Все, що ти робиш, — це приховувати.",
+   "q": "Maman tells her husband that all he ever does is patch things up. Does this sound natural?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Гм, так теж не можна — постійно вилучати «а» зі свідоцтв для школи і потім знову вставляти для інших установ.",
+    "– Яке тобі діло до цих справ? Я знаю, що роблю."
+   ]
+  },
+  {
+   "id": "04b/0193#6",
+   "where": "04b/0193",
+   "text": "Отож-бо. Я доти ніколи не бачив, щоб у якійсь кімнаті був килим.",
+   "q": "Eskandar has just been told why their room got a carpet. Does his reply follow naturally?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Уважай, що дали нам його для розради.",
+    "Ескандар, підводячись, сказав:"
+   ]
+  },
+  {
+   "id": "06/0033#7",
+   "where": "06/0033",
+   "text": "Гм, й я кажу — у мене теж серце важчає. Дайте мені піти побачити подруг.",
+   "q": "Maman, a mother from a small town, says she feels low and wants to visit her friends. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман каже:"
+   ]
+  },
+  {
+   "id": "06/0118#8",
+   "where": "06/0118",
+   "text": "Старі люди завжди казали: слова нічого не коштують — це просто гаряче повітря.",
+   "q": "Maman quotes an old saying that talk costs nothing. Does it sound like a saying she would really use?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Гм, Гасем просто балакає, щоб почути свій голос."
+   ]
+  },
+  {
+   "id": "06/0044#9",
+   "where": "06/0044",
+   "text": "Їж поживне. Речі, що дають тобі сили.",
+   "q": "Maman urges her son abroad to eat food that builds him up. Does it sound like a mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Мм-хм, вона так схудла. Востаннє, коли я прийшла й купала її, на тілі зовсім не залишилося м'яса — тільки шкіра та кістки. Я кажу: якби вона могла їсти, до цього б не дійшло. Нана-песар-джан, ти справді мусиш стежити за тим, що їси."
+   ]
+  },
+  {
+   "id": "04b/0181#10",
+   "where": "04b/0181",
+   "text": "Та з'їж головку мого хуя, нема в нас на тебе нервів.",
+   "q": "A young man in a dorm crudely tells a know-it-all roommate to shut up. Does this sound like how he would talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман знову підняв свій великий палець і сказав:"
+   ]
+  },
+  {
+   "id": "04b/0899#11",
+   "where": "04b/0899",
+   "text": "Пожирачу головок хуя, чого ти верзеш казна-що?",
+   "q": "Hooman crudely insults a dorm-mate who is talking nonsense. Does this sound like how a young man would swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "04b/0164#12",
+   "where": "04b/0164",
+   "text": "Та пішло в сраку це наше везіння.",
+   "q": "A young man, in pain, curses their bad luck crudely. Does this sound like a natural curse?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман зітхнув і відвернувся від Фаріда. Погляд його впав на Ескандара, і з болем у голосі, наче голка занурилася в стару рану, він закричав:"
+   ]
+  },
+  {
+   "id": "03/0394#13",
+   "where": "03/0394",
+   "text": "Або ти хуємоз... ну, ти й так був хуємозким, а тепер став ще хуємозкішим.",
+   "q": "Hooman coins a crude insult meaning dick-brained and stumbles over it for effect. Does the joke work?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ти раптово причепився до цього питання. Є кілька варіантів. Або ти вдарився головою."
+   ]
+  },
+  {
+   "id": "04b/0186#14",
+   "where": "04b/0186",
+   "text": "Я б радше жив в одній кімнаті з ними, ніж із таким хуємозким, як ти.",
+   "q": "A dorm student calls his roommate a crude name, dick-brained. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Першість університету Аміркабір у студентських рухах не зрівняти ні з чим. Нехай у Шаріфі й є свій гурт так званих еліт, але вони досі не створили жодної революційної теорії."
+   ]
+  },
+  {
+   "id": "04b/0378#15",
+   "where": "04b/0378",
+   "text": "Лайномозкий, ніхто тебе німим не назве, як не пукнеш.",
+   "q": "Eskandar uses a crude old saying to tell a friend nobody asked him to speak. Does it read as a real saying?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…Я лежав на своєму ліжку й думав про те, що ми з Нілуфар казали одне одному. Світло в коридорі згасло, і галас з інших кімнат теж позасинав. У темряві й тиші опівночі тінь Хумана ввійшла у двері й попрямувала просто до коробки із солодощами. Наче винюхувала. Уранці Ескандар розбудив мене й сказав:"
+   ]
+  },
+  {
+   "id": "03/0422#16",
+   "where": "03/0422",
+   "text": "Що на тебе знову найшло?",
+   "q": "Hooman, annoyed and yawning, snaps at a dorm-mate. Does this sound as rough as young men would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман зім'яв обгортку від цукерок у руці і кинув під ліжко. Звідти він дістав підручник «Ісламської думки» і поклав на матрац. Зівнув і сказав:"
+   ]
+  }
+ ]
+}

@@ -1,27 +1,88 @@
-{"lang": "ig", "slug": "ig", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "ig",
+ "slug": "ig",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Dịka mgbe m bụ nwata, mgbe Maman na-atọpụ eri akwa uwe ochie, anyị na-eburu eriri ahụ gburugburu ụlọ ka eri akwa ahụ ghara ịkpọkọta n'elu ibe ya.",
-   "q": "Is it clear the children walk around inside the house, holding the yarn?"},
-  {"id": "03/0355#2", "where": "03/0355",
+   "q": "Is it clear the children walk around inside the house, holding the yarn?",
+   "before": [
+    "Mmalite",
+    "…anya nke ihe omume ụwa ma a hapụ ide ha ede n'ebe a. E dere ha ka ha ghọọ àkwà mmiri n'agbata ụwa m na ụwa gị. Àkwà mmiri si n'ụwa m, n'oge m na-ede ahịrịokwu ndị a, gaa n'ụwa gị, n'oge ị ga-anọdụ ala ịgụ ha. Site n'akụkụ a, m na-atọpụ eriri okwu ahụ, gị onwe gị na-achịkọta ya site n'akụkụ nke ọzọ."
+   ]
+  },
+  {
+   "id": "03/0355#2",
+   "where": "03/0355",
    "text": "N'ime ụlọ nke dị na ngwụcha ogige ụlọ ahụ, n'akụkụ ekwu ọkụ, m tọgbọworo n'afọ m, nọ n'etiti uche ịchọta ụzọ mfe iji dozie ọtụtụ ajụjụ Konkoor ndị metụtara triigọnọmetrị site na iji cheekụl ọtụtụ ndị ahụ.",
-   "q": "Is it clear Amir solves trigonometry problems using the unit circle?"},
-  {"id": "03/0361#3", "where": "03/0361",
+   "q": "Is it clear Amir solves trigonometry problems using the unit circle?",
+   "before": [
+    "– Ya mere, sọsọ maka nchere ahụ niile m chere, nọdụ ala n'akụkụ m ntakịrị ọzọ.",
+    "…Ikuku enweghị oyi, ma obi m na-ere ọkụ. Ọ ka na-ere ọkụ ugbu a. Ọkụ nke icheta ntabi anya nkwụsị ahụ. Na eleghị anya, ọkụ nke ichefu ihe m na-eche na m ekwesighị ichefu. Ihe dị ka enweghị udo, otu udo na-enweghị nke guzo n'azụ ígwè ojii. Ewoo maka nchefu, ewoo maka ichefu, ewoo maka nchefu mmadụ."
+   ]
+  },
+  {
+   "id": "03/0361#3",
+   "where": "03/0361",
    "text": "Obi ụtọ maka ụzọ mfe na bara uru m chọtara, ebiliri m n'akụkụ ekwu ọkụ ahụ wee jiri urukurubụba mkpuchi akwụkwọ ahụ n'ahụ mgbidi, n'akụkụ ndụmọdụ Konkoor ndị ọzọ.",
-   "q": "Is it clear Amir tapes the sheet to the wall beside his other notes?"},
-  {"id": "04a/0047#4", "where": "04a/0047",
+   "q": "Is it clear Amir tapes the sheet to the wall beside his other notes?",
+   "before": [
+    "– Ọ dị mma.",
+    "N'ehihịghị m ya anya, ọ gafere n'ihu anya m: Mahboubeh na-ahapụ akwa mgbochi anya nke dị n'ihu ọnụ ụzọ ogige ụlọ wee mechie ọnụ ụzọ ahụ. Ọ bụ eziokwu. Achọghịkwa m icheta igu usoro na ndụmọdụ Konkoor dị iche iche nke isiokwu trigọnọmetrị."
+   ]
+  },
+  {
+   "id": "04a/0047#4",
+   "where": "04a/0047",
    "text": "Ọ na-emegharị nkwụ ọsọ ọsọ. Ọ na-awụ nkwụ karịrị akarị n'elu ihe ọtụtụ ahụ, wee were ụfọdụ laghachi.",
-   "q": "The grocer is weighing chickpeas. Is 'nkwụ' the right word for chickpeas?"},
-  {"id": "04b/0582#5", "where": "04b/0582",
+   "q": "The grocer is weighing chickpeas. Is 'nkwụ' the right word for chickpeas?",
+   "before": [
+    "– Njedebe akụkụ nke abụọ.",
+    "Anyị guzoro n'akụkụ ụlọ ahịa Haaj Kazem. Ghassem na-efeghar aka ya nye ya mgbe niile. Aka Haaj Kazem na-ama jijiji mgbe niile. Mgbe anyị na Maman gara ebe ahụ, ha na-amakwa jijiji."
+   ]
+  },
+  {
+   "id": "04b/0582#5",
+   "where": "04b/0582",
    "text": "Ihe ọ bụla ọ zụrụ n'oge ahụ, echere m na ọ ga-aba ụba ugbu a ruo puku ugboro iri.",
-   "q": "Does 'puku ugboro iri' clearly mean ten thousand times as much?"},
-  {"id": "04b/0951#6", "where": "04b/0951",
+   "q": "Does 'puku ugboro iri' clearly mean ten thousand times as much?",
+   "before": [
+    "– Anya Ugo, bịa. Ị hapụrụ enyo anya gị n'ụkwụ akwa m.",
+    "…ọ ga-abụrịrị onye nwetara akara ugo si Sharif tupu ọ hapụ Iran, ọ gaara ahapụ Iran ozugbo ọ gụsịrị bachelor. Ewezuga nke ahụ, nwoke aghụghọ ahụ ekwughị okwu ọ bụla banyere ego ọ tinyere, ma m ji ihe ọ bụla mara na o zụrụ Bitcoin n'oge ahụ ma kpakọba akụ ya. Isi ya na-anọ n'ime laptop ya mgbe niile."
+   ]
+  },
+  {
+   "id": "04b/0951#6",
+   "where": "04b/0951",
    "text": "– Enyi nwa nwanne nna anyị nwoke, onye nwe ọka aka nke ọgọ nwoke anyị, onye bụ ọgaranya kachasị na Tehran, gwara ya banyere ya.",
-   "q": "Does it clearly say: the friend of the cousin of our in-law's master craftsman?"},
-  {"id": "04b/1140#7", "where": "04b/1140",
+   "q": "Does it clearly say: the friend of the cousin of our in-law's master craftsman?",
+   "before": [
+    "– Nyeghachi m ya. Dị ka a ga-asị na ọ maara otu ndị nwere waya na-arụ ọrụ.",
+    "Taghi jidere aka Hamid na ikuku zọpụta walkman ahụ. Ma Yaser nwetakwara ọtụtụ aka na ụkwụ. Hamid kwuru:"
+   ]
+  },
+  {
+   "id": "04b/1140#7",
+   "where": "04b/1140",
    "text": "Anwapụta na ọ bụrụ na m rụsie ọrụ n'aka ya ntakịrị, n'ihu unu ọ ga-ada azụ kwuo ka unu gaa n'ihu.",
-   "q": "He bets the man would pull down his own trousers for them. Is that clear?"},
-  {"id": "04b/1150#8", "where": "04b/1150",
+   "q": "He bets the man would pull down his own trousers for them. Is that clear?",
+   "before": [
+    "…ọnwa atọ gara aga, elewo onwe ya n'ime ntakịrị ntakịrị, adịghịkwa akparịta ụka mmadụ nke ga-eme ka anyị mata atụmatụ ya. Obi ya na uche ya adabawo n'ala mbụ nke ụlọ Abu-Reyhan, n'etiti ụmụ akwụkwọ ngalaba nrụ ụgbọ mmiri. Eskandar nọdụrụ n'etiti ụlọ n'elu kapeeti, chere ihu Hooman na Sajad, na-asị:",
+    "– ... Unu chọrọ ịnwapụta ihe? Amaara m mmụọ mmadụ a dị ka ọbọ aka m ugbu a. Ihe ọ bụla ọ na-eme sitere n'echiche na-ezughị ezu. Lee ihe a nke ọ na-ada n'ịhụnanya. Mmadụ ọ na-ada n'ịhụnanya otu a n'ọnwa ole na ole? Ọzọkwa, nwaanyị lụrụ di."
+   ]
+  },
+  {
+   "id": "04b/1150#8",
+   "where": "04b/1150",
    "text": "O ji ọsọ karịa ọsọ ìhè gbapụ, ma ọ bụghị, agaara m etikwasị ya ihe n'ike.",
-   "q": "The speaker means he'd have hung him up by the backside. Is that clear?"}
- ]}
+   "q": "The speaker means he'd have hung him up by the backside. Is that clear?",
+   "before": [
+    "…ka ọ gaara adị mgbe ahụ. Ka Farid na-agba ọsọ, ụkwụ ya zọrọ akwụkwọ Eskandar, dọwaa mkpuchi akwụkwọ ozi ya. Otu akụkụ nke aha ogologo akwụkwọ ahụ pụtara ìhè: \"Puku Iri ... Ihe ịtụnanya, Ihe ọmụma ... Akụkọ ... Maka ...\" Farid abịaghị n'ụlọ ahụ ụbọchị abalị abụọ ma ọ bụ atọ. Eskandar nọ na-asị:",
+    "– Ngwere obere ahụ mebikwara iwu physics."
+   ]
+  }
+ ]
+}

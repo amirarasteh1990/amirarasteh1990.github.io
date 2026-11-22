@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/en/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/en/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,315 +72,318 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/">&larr; <span class="native" lang="en" dir="ltr">English</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="en" dir="ltr">English</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="en" data-language="English" data-version="2026-11-18" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="en" data-language="English" data-version="2026-11-22" novalidate>
     <fieldset class="nc-item" data-id="01/0004#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– You did the best thing, Nini-jan. They say newborns need a lot of sleep. Ten hours a day.</p>
+        <p class="nc-ctx">– Amir-jan, while you were all exchanging Norouz greetings with the children, I grabbed a little nap.</p>
+        <p class="nc-line">– You did the best thing, Nini-jan. They say newborns need a lot of sleep. Ten hours a day.</p>
       </div>
-      <p class="nc-q" id="q1">Nini, the children's pet name for Maman, means newborn. Does the teasing land?</p>
+      <p class="nc-q" id="q1">Amir calls his mother 'Nini', a family pet name meaning baby, after her nap. Does his teasing land?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0026#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Yeah, right.</p>
+        <p class="nc-ctx">…bunk above mine, the bed that for three years had been a reminder of Bahman's absence. Farid had put on his jeans, but he still had not put on his socks. He had a habit of putting on his trousers, then going over to sit on the bed and eat breakfast. With his mouth full, he called me again. I said:</p>
+        <p class="nc-ctx">– Farid, were you calling me?</p>
+        <p class="nc-line">– Yeah, right.</p>
       </div>
-      <p class="nc-q" id="q2">Asked if he was calling, Farid means of course I was. Is that clear?</p>
+      <p class="nc-q" id="q2">Farid has just called Amir twice. Does 'Yeah, right' clearly mean 'obviously I was calling you'?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0191#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Oh-ho. Hamid Cat, until yesterday you said "ass." Now you've gone all civilized and say "donkey"?</p>
+        <p class="nc-ctx">– Pfff, donkey, who knows better, the friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran, or you, you calf? Go on then, buy it. But when its glass breaks, don't say I didn't warn you.</p>
+        <p class="nc-ctx">Taghi said:</p>
+        <p class="nc-line">– Oh-ho. Hamid Cat, until yesterday you said "ass." Now you've gone all civilized and say "donkey"?</p>
       </div>
       <p class="nc-q" id="q3">Taghi mocks Hamid for swapping a rude word for a polite one. Does it land?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0278#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>In a way, you could say they conquered the university. Karroubi is love, honestly and truly.</p>
+        <p class="nc-ctx">– Hey, Taverny, run! Come on, let's go. They say they didn't let Karroubi into the university. His supporters broke the Hafez gate and came in.</p>
+        <p class="nc-line">In a way, you could say they conquered the university. Karroubi is love, honestly and truly.</p>
       </div>
       <p class="nc-q" id="q4">Farid is excited. Does 'Karroubi is love' sound like natural student slang?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0290#5">
+    <fieldset class="nc-item" data-id="03/0310#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Is Arasteh a trimmed-down Araasteh?</p>
+        <p class="nc-line">I press the elevator button. The elevator door opens. That day, Niloofar had come up the stairs. I go toward the stairwell. The voices of a boy and a girl drift out of the elevator. They call me sick.</p>
       </div>
-      <p class="nc-q" id="q5">The family dropped one a from Araasteh (Persian: neat). Is the joke clear?</p>
+      <p class="nc-q" id="q5">The riders mock him for calling the elevator, then walking off. Does 'sick' land?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0310#6">
+    <fieldset class="nc-item" data-id="03/0430#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>I press the elevator button. The elevator door opens. That day, Niloofar had come up the stairs. I go toward the stairwell. The voices of a boy and a girl drift out of the elevator. They call me sick.</p>
+        <p class="nc-line">– And with that dickish way you talk, your name should've been Alain Dickon. Don't flatter yourself. I don't mean Alain Delon, with the way you scrunch up your nose ...</p>
       </div>
-      <p class="nc-q" id="q6">The riders mock him for calling the elevator, then walking off. Does 'sick' land?</p>
+      <p class="nc-q" id="q6">Hooman's insult puns on the actor Alain Delon. Does 'Alain Dickon' land?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#7">
+    <fieldset class="nc-item" data-id="03/0588#7">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– And with that dickish way you talk, your name should've been Alain Dickon. Don't flatter yourself. I don't mean Alain Delon, with the way you scrunch up your nose ...</p>
+        <p class="nc-ctx">Meysam and Eskandar sat there in the dark, debating. The conversation had reached the meaning of life and was beginning to sound like an argument. Eskandar's voice kept rising until Meysam said:</p>
+        <p class="nc-line">– In my opinion, life is like a thousand-toman banknote: whichever side you look at, it smells of lentil rice.</p>
       </div>
-      <p class="nc-q" id="q7">Hooman's insult puns on the actor Alain Delon. Does 'Alain Dickon' land?</p>
+      <p class="nc-q" id="q7">Meysam ends a deep debate about life with a silly quip. Does the joke land?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n7">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0588#8">
+    <fieldset class="nc-item" data-id="03/0675#8">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– In my opinion, life is like a thousand-toman banknote: whichever side you look at, it smells of lentil rice.</p>
+        <p class="nc-ctx">…as memories passing through the mind, but as though I have been hurled back into that very moment, that very place. Several more times I found myself trapped behind the same door, within the same mingling of light and darkness. Each time, the same images passed before my eyes, damp and unsettling.</p>
+        <p class="nc-line">After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.</p>
       </div>
-      <p class="nc-q" id="q8">Meysam ends a deep debate about life with a silly quip. Does the joke land?</p>
+      <p class="nc-q" id="q8">The memory came loose from that one place. Is the screw image clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n8">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0675#9">
+    <fieldset class="nc-item" data-id="04a/0076#9">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.</p>
+        <p class="nc-ctx">We went on again. There was a house halfway there. Its wall was pretty. Ghassem always said:</p>
+        <p class="nc-line">– It's marmal stone. Marmal means really expensive.</p>
       </div>
-      <p class="nc-q" id="q9">The memory came loose from that one place. Is the screw image clear?</p>
+      <p class="nc-q" id="q9">Both mistakes are intended: little Ghassem says 'marmal' for marble and thinks it means expensive. Does it sound like a child?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n9">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04a/0076#10">
+    <fieldset class="nc-item" data-id="04b/0142#10">
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– It's marmal stone. Marmal means really expensive.</p>
+        <p class="nc-line">– Yeah, I've heard a few things about this localization business.</p>
       </div>
-      <p class="nc-q" id="q10">A boy mispronounces marble and thinks the word means expensive. Is that clear?</p>
+      <p class="nc-q" id="q10">Eskandar means the regional quota system for university places. Is 'localization' clear for that?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n10">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0142#11">
+    <fieldset class="nc-item" data-id="04b/0385#11">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Yeah, I've heard a few things about this localization business.</p>
+        <p class="nc-line">He can't help it. That's just his factory setting. Always so elegant and formal, shitting right at the historic turning point.</p>
       </div>
-      <p class="nc-q" id="q11">This means the regional quota for university places. Is 'localization' clear here?</p>
+      <p class="nc-q" id="q11">Hooman mocks Amir for messing up at a key moment. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n11">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0385#12">
+    <fieldset class="nc-item" data-id="04b/0953#12">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>He can't help it. That's just his factory setting. Always so elegant and formal, shitting right at the historic turning point.</p>
+        <p class="nc-line">– Kids, we've been watching a movie at our relatives' house.</p>
       </div>
-      <p class="nc-q" id="q12">Hooman mocks Amir for messing up at a key moment. Does this read naturally?</p>
+      <p class="nc-q" id="q12">A schoolboy addresses his friends. Does 'Kids' sound natural from him?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n12">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0387#13">
+    <fieldset class="nc-item" data-id="04b/1247#13">
       <legend>Line 13</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Last night I could hear you ruminating. Too bad my Baba was asleep, otherwise I'd have gotten up and pulled every single sweet out of your throat.</p>
+        <p class="nc-ctx">…A few days later, Taghi came to our usual spot with his toy car. Since Negar had entered our childish world, we had forgotten playing with cars. Not only playing with cars; all games had gone into the house of forgetting. I was very happy. With his own hands, Taghi was pinning himself to the mat.</p>
+        <p class="nc-line">With that toy car he pulled along behind him, he would surely fall from Negar's eyes.</p>
       </div>
-      <p class="nc-q" id="q13">Eskandar teases Hooman for chewing sweets at night like a cow. Does 'ruminating' land?</p>
+      <p class="nc-q" id="q13">The boys all want to impress Negar. Is the meaning of the Persian idiom 'fall from Negar's eyes' clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n13">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0595#14">
+    <fieldset class="nc-item" data-id="04b/1293#14">
       <legend>Line 14</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– But he fucked it up. Eagle Eye says peer-to-peer; Taverny says Eldie-to-Eldie.</p>
+        <p class="nc-line">That Dr. Shafiʿi Kadkani had taken my poem and said he'd read it later? Just a harvest-time promise?</p>
       </div>
-      <p class="nc-q" id="q14">Amir (Taverny, Eldie) misheard peer as pir, Persian for elder. Does the joke land?</p>
+      <p class="nc-q" id="q14">This is a Persian saying kept literal. Is the meaning of 'a harvest-time promise' clear here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n14">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0953#15">
+    <fieldset class="nc-item" data-id="04b/1312#15">
       <legend>Line 15</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>– Kids, we've been watching a movie at our relatives' house.</p>
+        <p class="nc-ctx">– ... Look at it, it's genuinely mind-bending. He drew this and wrote underneath it: this is not a pipe.</p>
+        <p class="nc-line">It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.</p>
       </div>
-      <p class="nc-q" id="q15">A schoolboy addresses his friends. Does 'Kids' sound natural from him?</p>
+      <p class="nc-q" id="q15">A student's crude made-up word for baffling. Does 'shit-dizzy' work as slang?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
         <label><input type="radio" name="v15" value="ok"> Correct</label>
         <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n15">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1125#16">
+    <fieldset class="nc-item" data-id="06/0056#16">
       <legend>Line 16</legend>
       <div class="reader nc-text" lang="en" dir="ltr">
-        <p>They saw the red and all their body hair fell right out, objectively.</p>
+        <p class="nc-line">They dumped earth over her with a buldozel. Earth and lime.</p>
       </div>
-      <p class="nc-q" id="q16">This means they got a sudden fright. Is the meaning clear?</p>
+      <p class="nc-q" id="q16">Maman says 'buldozel' for bulldozer on purpose. Does it read as her slip, not a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q16">
         <label><input type="radio" name="v16" value="ok"> Correct</label>
         <label><input type="radio" name="v16" value="change"> Needs change</label>
+        <label><input type="radio" name="v16" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n16">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n16">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="04b/1247#17">
-      <legend>Line 17</legend>
-      <div class="reader nc-text" lang="en" dir="ltr">
-        <p>With that toy car he pulled along behind him, he would surely fall from Negar's eyes.</p>
-      </div>
-      <p class="nc-q" id="q17">This means Taghi would lose Negar's respect. Is the meaning clear?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q17">
-        <label><input type="radio" name="v17" value="ok"> Correct</label>
-        <label><input type="radio" name="v17" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n17">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="04b/1293#18">
-      <legend>Line 18</legend>
-      <div class="reader nc-text" lang="en" dir="ltr">
-        <p>That Dr. Shafiʿi Kadkani had taken my poem and said he'd read it later? Just a harvest-time promise?</p>
-      </div>
-      <p class="nc-q" id="q18">A harvest-time promise means an empty, put-off promise. Is the meaning clear?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q18">
-        <label><input type="radio" name="v18" value="ok"> Correct</label>
-        <label><input type="radio" name="v18" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n18">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#19">
-      <legend>Line 19</legend>
-      <div class="reader nc-text" lang="en" dir="ltr">
-        <p>It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.</p>
-      </div>
-      <p class="nc-q" id="q19">A student's crude made-up word for baffling. Does 'shit-dizzy' work as slang?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q19">
-        <label><input type="radio" name="v19" value="ok"> Correct</label>
-        <label><input type="radio" name="v19" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n19">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="06/0056#20">
-      <legend>Line 20</legend>
-      <div class="reader nc-text" lang="en" dir="ltr">
-        <p>They dumped earth over her with a buldozel. Earth and lime.</p>
-      </div>
-      <p class="nc-q" id="q20">Maman mispronounces bulldozer on purpose. Is that clear?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q20">
-        <label><input type="radio" name="v20" value="ok"> Correct</label>
-        <label><input type="radio" name="v20" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n20">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <p class="guestbook-field">
@@ -418,7 +429,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

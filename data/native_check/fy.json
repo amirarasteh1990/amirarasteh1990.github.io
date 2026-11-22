@@ -1,50 +1,78 @@
 {
-  "lang": "fy",
-  "slug": "fy",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Lykas eartiids yn 'e bernejierren, as Maman it jern út 'e âlde klean losmakke, en wy de tried pakten en troch it hûs omrûnen, sadat it jern him net opsteapelje soe.",
-      "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
-    },
-    {
-      "id": "04b/0383#2",
-      "where": "04b/0383",
-      "text": "– Hy stie derop datst net wekke waard. En do, do praatst dochs nea, hiest dan ek juster dyn mûle net iepen dien?",
-      "q": "Is it clear he scolds: you should have kept your mouth shut yesterday?"
-    },
-    {
-      "id": "04b/0391#3",
-      "where": "04b/0391",
-      "text": "– ... dy idioat hie in slim gefal fan weanwize ynbylding.",
-      "q": "Does 'weanwize ynbylding' clearly mean he was badly deluded?"
-    },
-    {
-      "id": "04b/0508#4",
-      "where": "04b/0508",
-      "text": "– Ik wit allinnich noch dat de learaar my fan efteren beethold en ûnder myn ribbekast drukte, en it puntesliper der útsprong.",
-      "q": "Is 'puntesliper' the right word for a pencil sharpener?"
-    },
-    {
-      "id": "04b/0951#5",
-      "where": "04b/0951",
-      "text": "– De maat fan de neef fan de master fan ús sweager, dy't de rykste man fan Teheran is, hie it him ferteld.",
-      "q": "A comic chain of relatives. Is 'master' clear as a master craftsman here?"
-    },
-    {
-      "id": "04b/1248#6",
-      "where": "04b/1248",
-      "text": "De freon fan de neef fan de masterfeint fan ús sweager dy't de rykste man fan Teheran is, seit dat swart de kleur fan leafde is.",
-      "q": "Does 'masterfeint' clearly mean a master craftsman, a skilled tradesman?"
-    },
-    {
-      "id": "06/0294#7",
-      "where": "06/0294",
-      "text": "Doe kaam Baba wat te mopperjen en gie nei syn eigen hûs.",
-      "q": "Is it clear Baba came back, grumbled a bit, and went to his house?"
-    }
-  ]
+ "lang": "fy",
+ "slug": "fy",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Lykas eartiids yn 'e bernejierren, as Maman it jern út 'e âlde klean losmakke, en wy de tried pakten en troch it hûs omrûnen, sadat it jern him net opsteapelje soe.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
+   "before": [
+    "Oanhef",
+    "…opskreaun wiene. Se waarden opskreaun as in brêge tusken myn wrâld en dines. In brêge fan myn wrâld, yn it stuit dat ik dizze sinnen skriuw, nei dines, yn it stuit datsto dy deljoust om se te lêzen. Fan dizze kant ôf wynje ik de tried fan wurden ôf, en fan 'e oare kant ôf garrest do de wurden op."
+   ]
+  },
+  {
+   "id": "04b/0383#2",
+   "where": "04b/0383",
+   "text": "– Hy stie derop datst net wekke waard. En do, do praatst dochs nea, hiest dan ek juster dyn mûle net iepen dien?",
+   "q": "Is it clear he scolds: you should have kept your mouth shut yesterday?",
+   "before": [
+    "Ik sei:",
+    "– Ofskied naam?"
+   ]
+  },
+  {
+   "id": "04b/0391#3",
+   "where": "04b/0391",
+   "text": "– ... dy idioat hie in slim gefal fan weanwize ynbylding.",
+   "q": "Does 'weanwize ynbylding' clearly mean he was badly deluded?",
+   "before": [
+    "– Sels de kop hiest net iens opite kinnen. Mar wat wienen it foar lekkere snobbersguodsjes. Ananas.",
+    "– Kou, do bist in kou. In kealtsje fan Samiri."
+   ]
+  },
+  {
+   "id": "04b/0508#4",
+   "where": "04b/0508",
+   "text": "– Ik wit allinnich noch dat de learaar my fan efteren beethold en ûnder myn ribbekast drukte, en it puntesliper der útsprong.",
+   "q": "Is 'puntesliper' the right word for a pencil sharpener?",
+   "before": [
+    "– Hoe kaam it datsto net dea gyngst?",
+    "In pear tellen stilte. Miskien wachten, foar it earst en foar de lêste kear, alle jonges fan de keamer op Meysam om te praten."
+   ]
+  },
+  {
+   "id": "04b/0951#5",
+   "where": "04b/0951",
+   "text": "– De maat fan de neef fan de master fan ús sweager, dy't de rykste man fan Teheran is, hie it him ferteld.",
+   "q": "A comic chain of relatives. Is 'master' clear as a master craftsman here?",
+   "before": [
+    "– Jou him wer oan my. Alsof hy wit hoe't dy mei draden wurkje.",
+    "Taghi ving Hamid syn hân yn de loft en rêdde de Walkman. Mar Yaser krige noch in pear stompen en skoppen. Hamid sei:"
+   ]
+  },
+  {
+   "id": "04b/1248#6",
+   "where": "04b/1248",
+   "text": "De freon fan de neef fan de masterfeint fan ús sweager dy't de rykste man fan Teheran is, seit dat swart de kleur fan leafde is.",
+   "q": "Does 'masterfeint' clearly mean a master craftsman, a skilled tradesman?",
+   "before": [
+    "…autootsje yn 'e hân. Yaser wie net kommen. Myn autootsje en dat fan Hamid leken op elkoar. Myn autootsje wie blau en dat fan Hamid read. Wy hienen se foar fiifentweintich Toman kocht. Se wiene wat grutter as in lucifersdoaske. Wy praten oer waans autokleur it moaist wie. Taghi sei giel. Hamid sei:",
+    "– At der in swart west hie, hie ik swart nommen."
+   ]
+  },
+  {
+   "id": "06/0294#7",
+   "where": "06/0294",
+   "text": "Doe kaam Baba wat te mopperjen en gie nei syn eigen hûs.",
+   "q": "Is it clear Baba came back, grumbled a bit, and went to his house?",
+   "before": [
+    "Mahboubeh seit:",
+    "…kamen om de meter te lêzen, gie Baba de doar iepen dwaan, de stim fan de amtner kaam troch: jimme ferbrûk is heech, Haaj Agha. Maman wie healwei sliep en healwei wekker, en sei tsjin ús: sis him dat er de meter lêze moat en gean moat, wat giet it him oan hoefolle wy ferbrûkt hawwe?"
+   ]
+  }
+ ]
 }

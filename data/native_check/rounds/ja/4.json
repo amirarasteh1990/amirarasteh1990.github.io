@@ -1,0 +1,187 @@
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0181#1",
+   "where": "04b/0181",
+   "text": "俺のちんこの頭でも食ってろ、お前に付き合う神経はない。",
+   "q": "Hooman tells Eskandar off with a crude Persian insult. Does it sound like a real insult a young man would use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "フーマンはまた親指を立てて言った。"
+   ]
+  },
+  {
+   "id": "04b/0343#2",
+   "where": "04b/0343",
+   "text": "じゃあクソ一年坊主だな。",
+   "q": "A senior student mocks a first-year with a crude word. Does 'クソ一年坊主' sound like natural crude talk?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– 一年生か？",
+    "– はい。"
+   ]
+  },
+  {
+   "id": "04b/0146#3",
+   "where": "04b/0146",
+   "text": "脳みそクソ詰まりが。いちいち言わせるなよ。",
+   "q": "Hooman calls Eskandar dim-witted. Does '脳みそクソ詰まり' sound like a natural crude insult?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– 耳にしただと？",
+    "– ああ、まあな、大学じゅうに噂が広まったからな。"
+   ]
+  },
+  {
+   "id": "03/0394#4",
+   "where": "03/0394",
+   "text": "まあ、もともとチンコ脳だったのが、さらにチンコ脳になったか。",
+   "q": "Hooman mocks Eskandar as stupid with a crude made-up word. Does 'チンコ脳' sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– いきなりその質問に取り憑かれたな。いくつか可能性がある。どこかに頭をぶつけたか。それともチンコノ......"
+   ]
+  },
+  {
+   "id": "06/0238#5",
+   "where": "06/0238",
+   "text": "これがお礼の言い方なの？",
+   "q": "Maman, a mother from a small town, scolds her son through clenched teeth. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが歯を食いしばって言う。"
+   ]
+  },
+  {
+   "id": "03/0297#6",
+   "where": "03/0297",
+   "text": "あなたのやることはいつも場当たりばかりだ。",
+   "q": "During a quarrel, a wife snaps at her husband. Does this sound like a woman talking?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– だから、こんなふうじゃいけないのよ——学校向けには出生証明書の名字から「ア」を抜いて、また別の役所向けには戻したり。",
+    "– お前に何の関係がある。自分のやってることは自分が分かってる。"
+   ]
+  },
+  {
+   "id": "04b/0394#7",
+   "where": "04b/0394",
+   "text": "俺たちは犯られたんだ。",
+   "q": "Hooman crudely complains that the policy screwed them over. Does this crude phrase sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…下のラジエーターにもたれていた。部屋の絨毯は、ラジエーターのふもとからカーペットの上に敷いてあった。絨毯はファリードのベッドの下と、フーマンのベッドの端の少し手前までを覆っていた。最後の二メートル、いやフーマンが定規で測ったところでは部屋の最後の一メートル八十センチは、寮のどの部屋とも同じく、土埃色のカーペットだけが覆っていた。バフマンは、ファリードとサジャードのベッドの向かいに立つ、部屋の細長い六つのロッカーのうち三番目と四番目にもたれていた。私とバフマンの二段ベッドは、ロッカーと一列に並び、その側の残りの場所を占めていた。フーマンはお茶を飲み、レーズンを食べながら、地元枠制度を嘆いていた。"
+   ]
+  },
+  {
+   "id": "04b/0494#8",
+   "where": "04b/0494",
+   "text": "また、あの呪われた不連続に行き着く。",
+   "q": "A roommate swears while chasing a pompous theory about physics. Does '呪われた' sound natural here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– なぜなら、量子物理学の観点から問題を見たとしても......"
+   ]
+  },
+  {
+   "id": "04b/0520#9",
+   "where": "04b/0520",
+   "text": "体育が十二点だった、神経が苛立ってるから罵るぞ。",
+   "q": "Hooman warns his roommates that he is in a foul mood and will swear. Does this sound like a young man talking?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 今日は部屋で議論するな。"
+   ]
+  },
+  {
+   "id": "04b/0723#10",
+   "where": "04b/0723",
+   "text": "なんで尻を引き裂くようにしてトーフルの試験を受けたんだ?",
+   "q": "Hooman says Amir slaved away for an English test. Does '尻を引き裂くようにして' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– だいたいお前は出願して出ていくような人間じゃないだろ、"
+   ]
+  },
+  {
+   "id": "04b/0844#11",
+   "where": "04b/0844",
+   "text": "また何のたわごとがお前の脳みそに食らいついてるんだ?",
+   "q": "Hooman rudely asks what nonsense Amir is thinking now. Does this sound like natural crude talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– フーマン、夢の中で誰かに何かを語って、後になって、その最初のやつが悪夢だったのか記憶だったのか、わからなくなったことってあるか?"
+   ]
+  },
+  {
+   "id": "04b/0899#12",
+   "where": "04b/0899",
+   "text": "このちんこの頭食い野郎、何をたわごと並べてるんだ?",
+   "q": "Hooman insults a friend with a crude Persian-style curse. Does it sound like a real insult in Japanese?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "フーマンが言った。"
+   ]
+  },
+  {
+   "id": "04b/0562#13",
+   "where": "04b/0562",
+   "text": "鷹の目、お前なんか神様に許されるな、俺の腰をぶっ壊しやがって。",
+   "q": "Eskandar curses Sajad, half joking, after being bumped. Does '神様に許されるな' sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "エスカンダルは、息が苦しそうに上がってくるのがわかる声で言った。"
+   ]
+  },
+  {
+   "id": "04b/0600#14",
+   "where": "04b/0600",
+   "text": "大事なのは、俺がスーパーに行くたびに、金を払って牛乳とケーキを買って、体に放り込むってことだ。",
+   "q": "Hooman shrugs off the talk about Bitcoin. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– それの何がいいんだ?"
+   ]
+  },
+  {
+   "id": "04b/0598#15",
+   "where": "04b/0598",
+   "text": "客観的に、これが定着したら、銀行だの何だののお膳立てはぜんぶ片付くぞ。",
+   "q": "Sajad explains Bitcoin in plain student talk. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– ピア・トゥ・ピアってのは、仲介者なしってことだ。売り手と買い手のあいだで直接。仲介する貨幣システムが一切ない。"
+   ]
+  },
+  {
+   "id": "03/0640#16",
+   "where": "03/0640",
+   "text": "異国かぶれの自己喪失野郎め。",
+   "q": "Hooman jokingly scolds Amir for moving abroad. Does this insult sound natural between old friends?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ふん、このやろう。海外に住むようになって俺たちのことはどうでもいいのか。"
+   ]
+  }
+ ]
+}

@@ -1,50 +1,78 @@
 {
-  "lang": "lb",
-  "slug": "lb",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.",
-      "q": "Is it clear that 'en' refers to the words you gather up?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Sou wéi fréier an der Kandheet, wann d'Maman d'Wolle vun ale Kleeder ofgewéckelt huet, a mir de Fuedem geholl hunn a ronderëm d'Haus gelaf sinn, fir dass d'Wolle sech net opgehäift huet.",
-      "q": "Is it clear the children walked around inside the house, holding the thread?"
-    },
-    {
-      "id": "01/0140#3",
-      "where": "01/0140",
-      "text": "– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.",
-      "q": "Ghassem pities poor Baba, idle at home for years. Does this read naturally?"
-    },
-    {
-      "id": "03/0060#4",
-      "where": "03/0060",
-      "text": "Den Hamid huet den ausgebleechte roude Réim vu senger Ringer-Trikot eropgezunn an, mat enger Bewegung vum Réck vu senger Hand, de Knuet vum zerrëssene Punkt vun der Schëller op de Réck geworf.",
-      "q": "Hamid flicks the knot of his torn singlet strap onto his back. Is this clear?"
-    },
-    {
-      "id": "04b/0830#5",
-      "where": "04b/0830",
-      "text": "De Farid, wann de Sajad heiansdo bei sengem Rout op säi Bett dem Farid säi Hals mat engem Trëttlach verwiesselt huet, koum a schlief op dem Bahman sengem Bett.",
-      "q": "Sajad sometimes steps on Farid's neck climbing to his bunk. Is that clear?"
-    },
-    {
-      "id": "04b/0951#6",
-      "where": "04b/0951",
-      "text": "– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.",
-      "q": "Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?"
-    },
-    {
-      "id": "04b/1063#7",
-      "where": "04b/1063",
-      "text": "Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.",
-      "q": "Is it clear that Yaser's name was the one written largest?"
-    }
-  ]
+ "lang": "lb",
+ "slug": "lb",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.",
+   "q": "Is it clear that 'en' refers to the words you gather up?",
+   "before": [
+    "Optakt",
+    "…de Weltevenementer verluer gaange wieren, wa se hei net opgeschriwe ginn wieren. Si goufen opgeschriwwen, fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen."
+   ]
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Sou wéi fréier an der Kandheet, wann d'Maman d'Wolle vun ale Kleeder ofgewéckelt huet, a mir de Fuedem geholl hunn a ronderëm d'Haus gelaf sinn, fir dass d'Wolle sech net opgehäift huet.",
+   "q": "Is it clear the children walked around inside the house, holding the thread?",
+   "before": [
+    "Optakt",
+    "…fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen. Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op."
+   ]
+  },
+  {
+   "id": "01/0140#3",
+   "where": "01/0140",
+   "text": "– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.",
+   "q": "Ghassem pities poor Baba, idle at home for years. Does this read naturally?",
+   "before": [
+    "…schued ginn. Déi aarm Séil hat just d'Sëtzen um Enn vun der Strooss als Zäitverdreiw. Si sot, mäi Häerz verfault. Op d'mannst ech, och wa meng Kanner net hei sinn, beschäftegen ech mech e bësse mat mengem Strécken. Schaffen ass gutt, Amir. Wann ech näischt ze dinn hunn, halen ech et guer net aus.",
+    "De Ghassem seet, an sengem Toun kann een d'Laachen spieren:"
+   ]
+  },
+  {
+   "id": "03/0060#4",
+   "where": "03/0060",
+   "text": "Den Hamid huet den ausgebleechte roude Réim vu senger Ringer-Trikot eropgezunn an, mat enger Bewegung vum Réck vu senger Hand, de Knuet vum zerrëssene Punkt vun der Schëller op de Réck geworf.",
+   "q": "Hamid flicks the knot of his torn singlet strap onto his back. Is this clear?",
+   "before": [
+    "Déiselwecht Stëmm, déi de Ghassem no mengem Konkur-Rang gefrot hat, sot ganz leis:",
+    "– Heh, den Ostad Hamid, dee verduedelt Kaz."
+   ]
+  },
+  {
+   "id": "04b/0830#5",
+   "where": "04b/0830",
+   "text": "De Farid, wann de Sajad heiansdo bei sengem Rout op säi Bett dem Farid säi Hals mat engem Trëttlach verwiesselt huet, koum a schlief op dem Bahman sengem Bett.",
+   "q": "Sajad sometimes steps on Farid's neck climbing to his bunk. Is that clear?",
+   "before": [
+    "– Nee, hie huet och mir net geäntwert.",
+    "E puer Deeg méi spéit huet hien eis all zesumme geäntwert. Hie hätt geschriwwen, hie wier an d'Studentenheem fir bestuete Studente verluecht ginn an hätt eist Zëmmer verlooss. De Meysam sot, do um Buedem wier et méi gemittlech, an dem Bahman säi Bett ass eidel bliwwen."
+   ]
+  },
+  {
+   "id": "04b/0951#6",
+   "where": "04b/0951",
+   "text": "– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.",
+   "q": "Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?",
+   "before": [
+    "– Gëff mir en zréck. Als wéilt en och just wëssen, wéi déi mat Draht funktionéieren.",
+    "Den Taghi huet dem Hamid seng Hand an der Loft gepackt a de Walkman gerett. Awer de Yaser krut awer nach e puer Fauschten a Zerkéis. De Hamid sot:"
+   ]
+  },
+  {
+   "id": "04b/1063#7",
+   "where": "04b/1063",
+   "text": "Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.",
+   "q": "Is it clear that Yaser's name was the one written largest?",
+   "before": [
+    "De Yaser, wärend hie mat enger Spraydous, déi hie sengem Baba aus dem Khavar-Camion geklaut hat, eis Nimm op d'Mauer géintiwwer dem Haus vun der Negar geschriwwen huet, sot:",
+    "– Wa si eis Nimm léiert, gefält mir un eis."
+   ]
+  }
+ ]
 }

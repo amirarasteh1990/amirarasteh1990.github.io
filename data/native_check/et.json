@@ -1,38 +1,58 @@
 {
-  "lang": "et",
-  "slug": "et",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Siit küljelt kerin ma lahti sõnade lõnga, ja teiselt küljelt kogud sina sõnad kokku.",
-      "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"
-    },
-    {
-      "id": "03/0412#2",
-      "where": "03/0412",
-      "text": "Pika asfalttee ääres, mis viib Hafezi väravast ülikooli Valiasri väravani, seisab poiss ja ulatab möödujatele väikesi pabereid.",
-      "q": "A boy hands out leaflets on campus. Does this sentence read naturally?"
-    },
-    {
-      "id": "03/0446#3",
-      "where": "03/0446",
-      "text": "Seisin tema kõrval ja olime koos, samal ajal, söönud rohelisi ploome erilise ürdiga. Ilma et ta oleks seda teadnud.",
-      "q": "Amir eats the same snack beside Niloofar, unnoticed by her. Does this read naturally?"
-    },
-    {
-      "id": "04b/0556#4",
-      "where": "04b/0556",
-      "text": "– Ta oli palunud, et talt järjekorravälisel ajal eksamit küsitaks, et ta vahest läbi saaks.",
-      "q": "Is 'järjekorravälisel ajal' right for a special exam outside the usual schedule?"
-    },
-    {
-      "id": "04b/1312#5",
-      "where": "04b/1312",
-      "text": "See teeb inimese sitauimaseks. Mida rohkem mõtled, seda sitauimasemaks jääd.",
-      "q": "A student's crude made-up word for dizziness. Is 'sitauimaseks' understandable?"
-    }
-  ]
+ "lang": "et",
+ "slug": "et",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Siit küljelt kerin ma lahti sõnade lõnga, ja teiselt küljelt kogud sina sõnad kokku.",
+   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
+   "before": [
+    "Avamine",
+    "…ja kujundid, mis oleksid kadunud maailmasündmuste palavikulisse sosinasse, kui neid siia kirja ei oleks pandud. Need pandi kirja, et saada sillaks minu maailma ja sinu maailma vahel. Sild minu maailmast — sel hetkel, kui ma neid lauseid kirjutan — sinu maailma, sel hetkel, kui sa istud neid lugema."
+   ]
+  },
+  {
+   "id": "03/0412#2",
+   "where": "03/0412",
+   "text": "Pika asfalttee ääres, mis viib Hafezi väravast ülikooli Valiasri väravani, seisab poiss ja ulatab möödujatele väikesi pabereid.",
+   "q": "A boy hands out leaflets on campus. Does this sentence read naturally?",
+   "before": [
+    "– Ligi tuhat aastat. Mõtle sellele: üks käsi tuhat aastat tagasi kõverdas selle poti käepideme nii. Kas suudad ette kujutada? Hämmastav. Hämmastav.",
+    "Lahkun telgist."
+   ]
+  },
+  {
+   "id": "03/0446#3",
+   "where": "03/0446",
+   "text": "Seisin tema kõrval ja olime koos, samal ajal, söönud rohelisi ploome erilise ürdiga. Ilma et ta oleks seda teadnud.",
+   "q": "Amir eats the same snack beside Niloofar, unnoticed by her. Does this read naturally?",
+   "before": [
+    "– ... räägitakse ...",
+    "…ploomile tükikese ürti ja andis selle Niloofarile. Niloofar pistis rohelise ploomi suhu ja ta põskedesse tekkisid lohukesed. Oma ühepäevase võltskindlusega astusin tema kõrvale Mazandarani stendi juurde. Stendi töötaja pani rohelisele ploomile natuke sama erilist ürti ja ulatas selle mulle."
+   ]
+  },
+  {
+   "id": "04b/0556#4",
+   "where": "04b/0556",
+   "text": "– Ta oli palunud, et talt järjekorravälisel ajal eksamit küsitaks, et ta vahest läbi saaks.",
+   "q": "Is 'järjekorravälisel ajal' right for a special exam outside the usual schedule?",
+   "before": [
+    "– Mis aeg eksamiks on esfandikuu algus?",
+    "Ja muutus ärevaks, et äkki on tõesti eksamihooaeg ja tema on selle unustanud. Bahman märkas Hoomani ärevust. Ütles:"
+   ]
+  },
+  {
+   "id": "04b/1312#5",
+   "where": "04b/1312",
+   "text": "See teeb inimese sitauimaseks. Mida rohkem mõtled, seda sitauimasemaks jääd.",
+   "q": "A student's crude made-up word for dizziness. Is 'sitauimaseks' understandable?",
+   "before": [
+    "…nii nagu Niloofar tegi. Põlvest ülespoole oli tüdruk peidus Abu-Reyhani hoone suvise värvimise ja remondi teate taga. Süda pekslemas astusin ettepoole. See oli Niloofar – Niloofar ise. Ta seisis näoga Kunstiülikooli poole, mõne teise tüdruku kõrval. Üks tüdruk hoidis paberit teistele näha ja ütles:",
+    "– ...Vaadake seda, see paneb tõesti pea ringi käima. Ta joonistas selle ja kirjutas alla: see ei ole piip."
+   ]
+  }
+ ]
 }

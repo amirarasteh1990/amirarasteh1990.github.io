@@ -1,0 +1,107 @@
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04b/0370#1",
+   "where": "04b/0370",
+   "text": "誰の部屋にも絨毯なんてないんだ、バーバ・ジャン。",
+   "q": "Eskandar boasts to his visiting father about their room. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "ニルーファルは私のつぶやきを聞いていた。私が部屋に入ると、部屋の面々と、エスカンダルの父親だろうと見当をつけた年配の男が、部屋の真ん中の絨毯の上に座っていた。正午を過ぎ、傾きかけた陽が絨毯の真ん中あたりを照らしていた。エスカンダルはこう言っていた。"
+   ]
+  },
+  {
+   "id": "04b/0317#2",
+   "where": "04b/0317",
+   "text": "こうやって黙って座られると、ほんとに苛立つの。拳で殴ってやりたくなる。",
+   "q": "Niloofar is annoyed by Amir's silence. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…– 神がその壮麗な美を天使たちの前に顕したとき、彼らには愛がないと見た。その嫉妬の熱から、その顕れは純粋な火となり、アダムの粘土を打った。 彼女は私から顔をそらして空へ向け、とても静かに、胸の内を打ち明けるように言った。 – だって神は、神でありながら、天使が愛も愛し合うことも知らないと見たとき、その美の顕れをアダムのもとへ持っていったのよ。それなのに、その創られたものが、愛を知らない者の足もとで身を焦がすなんて、どうして期待できるの？ 彼女はため息をつき、吐く息の白い湯気がうねりながら空へ昇っていった。私は何も言わずに彼女を見ていた。"
+   ]
+  },
+  {
+   "id": "04b/1119#3",
+   "where": "04b/1119",
+   "text": "あんたたちはみんな、わたしの子どもみたいなものだよ。",
+   "q": "An old woman shelters students during street unrest. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "私たち三人は家に入り、その数瞬後には、ほかに十人か十五人がなだれ込んできた。老婆は、外が少し静まるまで二階で茶と果物でもどうぞと言った。私たちにはまだ聞き覚えのない二つの声が、私たち全員を代表して、これ以上ご迷惑はかけられませんと言った。老婆の勧めは聞き入れられず、彼女は二階へ上がっていった。数分後、果物の鉢と水差しを持って戻ってきた。彼女は言った。"
+   ]
+  },
+  {
+   "id": "06/0050#4",
+   "where": "06/0050",
+   "text": "たぶん耳が聞こえないから何が起きてるかわかってなくて、怖いという気持ちが湧かなかったんだと思う。",
+   "q": "Amir's sister explains how Grandpa shook off Covid. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– アミール、おじいちゃんもコロナにかかったんだけど、何でもなかったみたいに、ただの風邪のように軽く乗り越えたのよ。"
+   ]
+  },
+  {
+   "id": "03/0502#5",
+   "where": "03/0502",
+   "text": "うわっ。鳥肌が立った。",
+   "q": "Farid shudders at a gory video. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "ファリードが言った："
+   ]
+  },
+  {
+   "id": "04b/0618#6",
+   "where": "04b/0618",
+   "text": "蠅がいたら、今ごろこんな利益を生む代物は何だって、触角をぴんと立ててただろうな。",
+   "q": "Farid jokes about a roommate nicknamed Fly. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "ファリードが言った。"
+   ]
+  },
+  {
+   "id": "03/0624#7",
+   "where": "03/0624",
+   "text": "よし、酒場の長老か。アラステにぴったりだ。",
+   "q": "Farid praises a fortune read from the Hafez book. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "ファリードが言った："
+   ]
+  },
+  {
+   "id": "04b/0228#8",
+   "where": "04b/0228",
+   "text": "一、二年前に鷹の目ニュースで聞いたんだが、あの気取り屋もオーストラリアに行ったらしい。",
+   "q": "A friend passes on gossip about a rival. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– ああ、まあ、そんな感じだった。それから彼女はオーストラリアに行った。"
+   ]
+  },
+  {
+   "id": "04b/0173#9",
+   "where": "04b/0173",
+   "text": "じゃあお前らはずいぶん賢い坊やってわけだ。",
+   "q": "Eskandar mocks his roommates as clever boys. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "エスカンダルが言った。"
+   ]
+  }
+ ]
+}

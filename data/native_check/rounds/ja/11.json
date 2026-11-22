@@ -1,0 +1,177 @@
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-22.r11",
+ "items": [
+  {
+   "id": "04b/0316#1",
+   "where": "04b/0316",
+   "text": "神がその壮麗な美を天使たちの前に顕したとき、彼らには愛がないと見た。その嫉妬の熱から、その顕れは純粋な火となり、アダムの粘土を打った。",
+   "q": "Niloofar recites a Hafez verse about God's beauty and Adam. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1301#2",
+   "where": "04b/1301",
+   "text": "愛しい人が便りもよこさず、久しくなった；挨拶の一文字も書かず",
+   "q": "Niloofar reads the opening of a Hafez poem. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1275#3",
+   "where": "04b/1275",
+   "text": "焼かれし者たちが",
+   "q": "A poem on a blackboard ends with lovers, drunkards and the burned ones. Does '焼かれし者たちが' read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "知るように",
+    "恋する者たちと",
+    "酔える者たちと"
+   ]
+  },
+  {
+   "id": "04b/1270#4",
+   "where": "04b/1270",
+   "text": "おのが血で水の上に書きしるすがいい",
+   "q": "This is a line from a poem written on a blackboard. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "すべてのものに書くことができる",
+    "ただ水の上をのぞいて",
+    "そしてもし海を渡るのなら"
+   ]
+  },
+  {
+   "id": "04b/1267#5",
+   "where": "04b/1267",
+   "text": "すべてのものに書くことができる",
+   "q": "A poem written on a blackboard begins this way. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1271#6",
+   "where": "04b/1271",
+   "text": "おまえの後に続く者が",
+   "q": "This line continues the blackboard poem. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "そしてもし海を渡るのなら",
+    "おのが血で水の上に書きしるすがいい"
+   ]
+  },
+  {
+   "id": "04b/1392#7",
+   "where": "04b/1392",
+   "text": "僕の夢の灯は明滅している",
+   "q": "This is a line of Amir's closing poem to a lost love. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "君が来た",
+    "僕の夢の灯がともった",
+    "今、君は行ってしまった"
+   ]
+  },
+  {
+   "id": "04b/1394#8",
+   "where": "04b/1394",
+   "text": "でも、もし君の道がこのそばを通ったなら",
+   "q": "Amir's poem asks his lost love to come back in a dream. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "僕の夢の灯は明滅している",
+    "君が戻る望みは持っていない"
+   ]
+  },
+  {
+   "id": "04b/1396#9",
+   "where": "04b/1396",
+   "text": "僕の夢は、君が行ってしまったことを信じていないのだと思う",
+   "q": "This is a line from Amir's poem to a lost love. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "君が戻る望みは持っていない",
+    "でも、もし君の道がこのそばを通ったなら",
+    "もう一度、僕の夢に来ておくれ"
+   ]
+  },
+  {
+   "id": "04b/1393#10",
+   "where": "04b/1393",
+   "text": "君が戻る望みは持っていない",
+   "q": "Amir's poem to a lost love continues. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "今、君は行ってしまった",
+    "僕の夢の灯は明滅している"
+   ]
+  },
+  {
+   "id": "03/0244#11",
+   "where": "03/0244",
+   "text": "ソロモンの指輪を何ものにも替えないだろう",
+   "q": "Amir reads a fragment of a Hafez poem. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/0935#12",
+   "where": "04b/0935",
+   "text": "「アッタールは夜明けまで泣いていたほうが甘い」なのか、それとも「今やいっそう深く討たれた身となった」のやつか?",
+   "q": "Two lines are quoted from a song set to Attar's poems. Do they sound like song lyrics?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– ああ、アッタールの詩が入ってるやつ。"
+   ]
+  },
+  {
+   "id": "02/0001#13",
+   "where": "02/0001",
+   "text": "私の心は明るい。明日、目を開ければ、すべては終わり、闇はまた私の夢に戻ってくる。",
+   "q": "A poetic chapter ends its first passage this way. Does it read smoothly and poetically?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1099#14",
+   "where": "04b/1099",
+   "text": "裂け目の片側には、何年も抱えてきた信念の禁忌と聖域の重みがのしかかっていた。もう片側には、ニルーファルが立っていた。",
+   "q": "The narrator is torn between his old beliefs and a girl. Does this image read naturally?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "03/0458#15",
+   "where": "03/0458",
+   "text": "三十分しか時間がないということも伝えておきます。",
+   "q": "A student answers Amir by email, short and cool. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– 今週は全く時間がありません。来週の木曜日、三時に、前回と同じ場所で。"
+   ]
+  },
+  {
+   "id": "04b/0270#16",
+   "where": "04b/0270",
+   "text": "あなたはこの避難所から出て、本当に何かしなくちゃいけない。",
+   "q": "Niloofar tells shy Amir to come out of his shell and act. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– わかってる、わたしバカじゃないもの。でも、それじゃだめなの。"
+   ]
+  }
+ ]
+}

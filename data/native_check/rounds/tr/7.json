@@ -1,0 +1,178 @@
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-22.r7",
+ "items": [
+  {
+   "id": "04b/0175#1",
+   "where": "04b/0175",
+   "text": "Evet. Şu Arasteh'e bakma, bütün saçmalığına rağmen Konkur sıralaması yetmiş dörttü.",
+   "q": "Hooman brags about his goofy friend's high exam rank. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0173#2",
+   "where": "04b/0173",
+   "text": "O zaman çok zeki çocuklarsınız demek.",
+   "q": "Eskandar, just moved into the room, speaks to them a bit condescendingly. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0558#3",
+   "where": "04b/0558",
+   "text": "Söyle de iyileştireyim seni. Ama bil ki anlamak, yanlış anlamanın ta kendisidir.",
+   "q": "Eskandar plays a mock guru to a struggling student. Does this sound playfully pompous?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "04b/0462#4",
+   "where": "04b/0462",
+   "text": "Kuantum fiziği üzerine kendi teorilerimi yazdım, o salak hocamız da kalkmış bana çeyrek puan vermiş.",
+   "q": "Eskandar complains about his exam mark. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar bir süre daha ah-vahlarını sürdürüp dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0571#5",
+   "where": "04b/0571",
+   "text": "Önce gelin bu baş parmağı belgeleyin, sonra ne istiyorsanız onun hakkında film yapın.",
+   "q": "Hooman sticks out his thumb, a rude gesture in Iran, to mock the film idea. Does the brush-off come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman elini battaniyenin altından çıkarıp dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0593#6",
+   "where": "04b/0593",
+   "text": "Bir salavat getirin. Tavernanın Ulu Yaşlısı sonunda bir laf etti.",
+   "q": "Hooman mock-celebrates that quiet Amir has finally said something. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0600#7",
+   "where": "04b/0600",
+   "text": "Bunun nesi iyi? Mühim olan şu: ne zaman süpermarkete gitsem, para verir, sütümü ve kekimi alır, bedenime indiririm.",
+   "q": "Hooman, a big eater, shrugs off Bitcoin. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0598#8",
+   "where": "04b/0598",
+   "text": "Objektif olarak, eğer tutarsa bankaların ve bütün o işlerin tası tarağı toplanır.",
+   "q": "Sajad explains Bitcoin in his own words. Does this sound like natural talk?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "03/0504#9",
+   "where": "03/0504",
+   "text": "Hey Pars Farid, şu dizüstü bilgisayarı getir ben de bakayım. Kalkasım yok.",
+   "q": "Lazy Hooman asks Farid to bring the laptop over. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0628#10",
+   "where": "03/0628",
+   "text": "Haha, Tavernanın Ulu Yaşlısı, Eldie; mükemmel. Tam isabet, Pars Farid.",
+   "q": "Hooman approves the nickname Farid has just given Amir. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman kalemiyle kitaba bir şeyler yazıyordu ve dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0554#11",
+   "where": "04b/0554",
+   "text": "İsfend ayının başı ne biçim sınav zamanı?",
+   "q": "Hooman grumbles about an exam date. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0436#12",
+   "where": "04b/0436",
+   "text": "Hepsi de felsefe ve roman. Süper, Nietzsche de var. Ben Nietzsche'ye bayılırım.",
+   "q": "Eskandar digs through a roommate's books under the bed. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar başı hâlâ benim yatağımın altındayken dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0083#13",
+   "where": "03/0083",
+   "text": "Şimdiye kadar Babil Kulesi'nden ilham aldıklarını sanıyordum.",
+   "q": "Eskandar makes a clever-sounding remark about a building. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0081#14",
+   "where": "03/0081",
+   "text": "O zaman bu çayı Kartal Göz News'in sağlığına içelim.",
+   "q": "Farid raises a mock toast with tea. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0488#15",
+   "where": "03/0488",
+   "text": "Ben aşırılıkçı, milliyetçi bir anarşistim.",
+   "q": "Eskandar puffs out his chest and declares his politics. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar doğrulup göğsünü öne çıkararak dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0077#16",
+   "where": "03/0077",
+   "text": "Kartal Göz News'i inkâr edene lanet olsun.",
+   "q": "Farid mock-solemnly curses anyone who doubts Sajad's gossip, nicknamed Eagle Eye News. Does the joke work?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid dedi ki:"
+   ]
+  }
+ ]
+}

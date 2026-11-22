@@ -1,0 +1,213 @@
+{
+ "lang": "pl",
+ "slug": "pl",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04b/0317#1",
+   "where": "04b/0317",
+   "text": "– Tak mnie szlag trafia, kiedy siedzisz tak cicho. Mam ochotę przywalić ci pięścią.",
+   "q": "Niloofar gets angry at Amir's silence. Does this sound natural?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "04b/0271#2",
+   "where": "04b/0271",
+   "text": "Słuchaj, jeśli zakochujesz się w takich rzeczach, to podejdź do dowolnej dziewczyny na ulicy: nie tylko zmarszczy na ciebie brwi, ale jeszcze rzuci za tobą parę przekleństw.",
+   "q": "Niloofar mocks what Amir finds attractive in her. Does this sound like a young woman talking?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "04b/0271#3",
+   "where": "04b/0271",
+   "text": "– Znowu udaje głupiego. No mówię ci, opowiedz mi jakieś wspomnienie, cokolwiek, dla odmiany.",
+   "q": "Niloofar teases Amir for playing dumb. Does this sound natural?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "01/0042#4",
+   "where": "01/0042",
+   "text": "Tu grunt jest z wody, a niebo z ziemi. To znaczy: zamiast deszczu pada z nieba ziemia.",
+   "q": "Niloofar leads a playful imagination game. Does this sound natural spoken aloud?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "06/0165#5",
+   "where": "06/0165",
+   "text": "– Za dużo pił oranżady.",
+   "q": "Maman jokes that a man who died after heavy drinking had too much soda. Does her dry joke come across?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Nie. Miał synkopę.",
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "06/0264#6",
+   "where": "06/0264",
+   "text": "– Ugh, ilekroć prosisz go, żeby coś kupił, jakby go prąd poraził.",
+   "q": "Maman complains that her son hates running errands. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "06/0291#7",
+   "where": "06/0291",
+   "text": "– Narzeka bez powodu, he, Amir-dżan. Gdyby nie to, znalazłby coś innego.",
+   "q": "Maman brushes off her husband's grumbling. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "06/0296#8",
+   "where": "06/0296",
+   "text": "– O rany, Nini nagle zrobiła się senna. Jestem na nogach od rana i wcale nie spałam.",
+   "q": "Maman, who calls herself Nini, says she is suddenly sleepy. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mocno zaciska oczy i mówi:"
+   ]
+  },
+  {
+   "id": "06/0238#9",
+   "where": "06/0238",
+   "text": "– I tak okazujesz wdzięczność?",
+   "q": "Maman, through clenched teeth, scolds someone for being ungrateful. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman, zaciskając zęby, mówi:"
+   ]
+  },
+  {
+   "id": "06/0066#10",
+   "where": "06/0066",
+   "text": "– W szpitalu wciąż wołali: „Rodzina pani Adham!” Nikt się nie ruszył. Potem sama pielęgniarka podeszła i powiedziała: „Chyba ona jest z wami”.",
+   "q": "Maman tells how no one at the hospital answered for the old woman. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "06/0104#11",
+   "where": "06/0104",
+   "text": "– Hmm, ci ludzie nawet za jej życia za wiele dla niej nie zrobili.",
+   "q": "Maman criticises her in-laws. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "01/0265#12",
+   "where": "01/0265",
+   "text": "– Amir, główna rola to coś dobrego?",
+   "q": "Maman, who knows little about films, asks her son this. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "06/0108#13",
+   "where": "06/0108",
+   "text": "– Ooooooo! To ja jej powiedziałem. Nini uznała, że to dobry tekst, i powtórzyła go tobie.",
+   "q": "Ghassem, delighted, claims credit for a line their mother used. Does the exclamation sound natural?",
+   "ctx": 3,
+   "kind": "dialogue",
+   "before": [
+    "Ghassem mówi:",
+    "– A właśnie, Amir, kiedy Maman dzwoniła do ciebie kilka dni temu, czy powiedziała: „Gdybyś wiedział, jak bardzo cię kocham, zawstydziłbyś się”?",
+    "– Tak."
+   ]
+  },
+  {
+   "id": "03/0297#14",
+   "where": "03/0297",
+   "text": "– Wszystko, co robisz, to łatanina.",
+   "q": "Someone tells Amir that everything he does is a patch job. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– A co to wszystko ma wspólnego z tobą? Wiem, co robię."
+   ]
+  },
+  {
+   "id": "03/0580#15",
+   "where": "03/0580",
+   "text": "– Gdzie na mojej szyi jest napisane „punkt podparcia”?",
+   "q": "A roommate complains that someone climbing to his bed used his neck as a step. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Oj, przepraszam. Obiektywnie, próbuję dotrzeć do własnego łóżka. Trudno."
+   ]
+  },
+  {
+   "id": "04b/0228#16",
+   "where": "04b/0228",
+   "text": "Rok czy dwa temu słyszałem od Orle Oko News, że ten lalusiowaty też wyjechał do Australii, w pewnym sensie za dziewczyną, którą obaj kochaliście.",
+   "q": "Hooman passes on gossip about a rival. Does this sound natural?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "06/0050#17",
+   "where": "06/0050",
+   "text": "– Amir, Dziadek też zaraził się covidem, ale w ogóle nie było po nim znać. Przeszedł go jak zwykłe przeziębienie.",
+   "q": "Amir's sister tells him how their grandfather got through Covid. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Mahbube mówi:"
+   ]
+  },
+  {
+   "id": "04b/1062#18",
+   "where": "04b/1062",
+   "text": "– Jak nauczy się naszych imion, to nas polubi.",
+   "q": "A boy spray-paints names on a wall to win a girl over. Does it sound like a boy talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Jaser, wypisując nasze imiona na murze naprzeciwko domu Negar sprejem, który zwędził z ciężarówki Khavar swojego ojca, mówił:"
+   ]
+  },
+  {
+   "id": "04b/0193#19",
+   "where": "04b/0193",
+   "text": "W najlepszym razie zamiast wykładziny w kolorze kurzu studenci-opiekunowie pięter akademika dostawali niebieską wykładzinę.",
+   "q": "Eskandar remarks on the carpet in their dorm room. Does this sound like spoken talk?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "04b/0436#20",
+   "where": "04b/0436",
+   "text": "– A to wszystko filozofia i powieści. Ekstra, jest i Nietzsche. Uwielbiam Nietzschego.",
+   "q": "Eskandar rummages through a roommate's books. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar, wciąż z głową pod moim łóżkiem, powiedział:"
+   ]
+  }
+ ]
+}

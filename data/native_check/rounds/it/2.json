@@ -1,0 +1,185 @@
+{
+ "lang": "it",
+ "slug": "it",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0132#1",
+   "where": "01/0132",
+   "text": "C'era il tifoid, per esempio, o la tubercolosi, o il morbillo.",
+   "q": "Maman says 'tifoid' for tifo on purpose, an old woman's slip. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "O la colara, per esempio. Anche quella non ne ammazzava così tante.",
+   "q": "Maman says 'colara' for colera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0380#3",
+   "where": "03/0380",
+   "text": "La malattia peggiore è l'Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Maman, c'è una malattia che paralizza lentamente i muscoli. È una malattia molto brutta.",
+    "Maman disse:"
+   ]
+  },
+  {
+   "id": "06/0052#4",
+   "where": "06/0052",
+   "text": "Alla fine Mahboub ha chiamato; sono venuti con un'amublanza e hanno portato via Naney.",
+   "q": "Maman says 'amublanza' for ambulanza on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0362#5",
+   "where": "03/0362",
+   "text": "Mahboub, questa cosa che dicono al telegiornale, l'Ameroca",
+   "q": "Maman says 'Ameroca' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…Uscii dalla casa in fondo al cortile e percorsi la lunghezza del cortile in nove passi, con la gioia della nuova scoperta ancora accesa nel cuore. Quando entrai nel salone dal cortile, Maman era distesa davanti alla televisione. Aveva entrambe le mani sulla pancia e stava dicendo a Mahboubeh:"
+   ]
+  },
+  {
+   "id": "01/0182#6",
+   "where": "01/0182",
+   "text": "Che — aiolo non era?",
+   "q": "Maman, hard of hearing, catches only the end of 'donnaiolo'. Does her question read as that half-heard echo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Non era neanche un donnaiolo.",
+    "Maman dice:"
+   ]
+  },
+  {
+   "id": "01/0148#7",
+   "where": "01/0148",
+   "text": "Cosa e Sorrisi?",
+   "q": "Maman, hard of hearing, catches only the end of the TV series title 'Lacrime e Sorrisi'. Does her question read that way?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Ragazzi, scarico Lacrime e Sorrisi così lo vediamo stasera?",
+    "Maman gira la testa e dice:"
+   ]
+  },
+  {
+   "id": "03/0628#8",
+   "where": "03/0628",
+   "text": "Haha, l'Anziano della Taverna, Eldie — perfetto.",
+   "q": "Hooman shortens Amir's nickname 'Anziano della Taverna' to 'Eldie', a pet form of English elder. Does this short form work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman stava scrivendo qualcosa nel libro con una penna e disse:"
+   ]
+  },
+  {
+   "id": "04b/0595#9",
+   "where": "04b/0595",
+   "text": "Ma ha fatto una cagata. Occhio d'Aquila dice peer to peer; Taverny dice Eldie a Eldie.",
+   "q": "Amir misheard 'peer' as pir, Persian for an old sage, hence his nickname 'Eldie'. Does Farid's punch line work?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– Pir a pir?",
+    "Hooman disse:",
+    "– Mandate un salavat. L'Anziano della Taverna ha detto qualcosa, finalmente.",
+    "Farid disse:"
+   ]
+  },
+  {
+   "id": "04b/0387#10",
+   "where": "04b/0387",
+   "text": "Stanotte sentivo il rumore della tua ruminazione.",
+   "q": "Eskandar teases Hooman for munching sweets secretly at night, like a cow chewing cud. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Eskandar si girò verso Hooman e disse:"
+   ]
+  },
+  {
+   "id": "04b/0460#11",
+   "where": "04b/0460",
+   "text": "Che diavolo ti ha preso adesso, a rizzartelo contro di noi, Alain Cazzon?",
+   "q": "Hooman crudely mocks a pompous roommate, using his rude nickname 'Alain Cazzon'. Does this sound like real dorm teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0432#12",
+   "where": "03/0432",
+   "text": "Intendo Alain Cazzon. Caaazzon. Punto, fine.",
+   "q": "Hooman stretches out a rude nickname to mock a roommate, then closes the topic. Does this ending sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ...e fai la bocca come il culo di una gallina e ti ammazzi per parlare come lui. Non intendo quello."
+   ]
+  },
+  {
+   "id": "03/0490#13",
+   "where": "03/0490",
+   "text": "Attento a non incrinarti, signor Cazzon.",
+   "q": "A roommate has just called himself an extremist nationalist anarchist. Does Hooman's mocking reply work?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Eskandar raddrizzò la testa e il petto e disse:",
+    "– Sono un anarchico nazionalista estremista.",
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0616#14",
+   "where": "04b/0616",
+   "text": "Vabbè, Occhio d'Aquila, vabbè. Adesso non infilare gli occhiali nel portatile.",
+   "q": "Hooman teases short-sighted Sajad, whose face is almost touching the laptop screen. Does it sound like natural teasing?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Strinse gli occhi dietro gli occhiali e avvicinò la testa allo schermo del portatile.",
+    "– Se non ci credi, vieni a vedere di persona, oggettivamente.",
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "06/0186#15",
+   "where": "06/0186",
+   "text": "Darei qualsiasi cosa per te, Nini-jan. La tua testa funziona così bene.",
+   "q": "Amir lovingly praises his mother's quick thinking with a Persian turn of phrase. Does it sound warm and natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Dico:"
+   ]
+  },
+  {
+   "id": "03/0189#16",
+   "where": "03/0189",
+   "text": "Pfff, asino, chi lo sa meglio, l'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, o tu, vitello?",
+   "q": "A boy angrily calls his friend a donkey and a calf, meaning stupid. Do these insults sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid ribollì di rabbia e urlò:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-22.r12",
+ "items": [
+  {
+   "id": "06/0291#1",
+   "where": "06/0291",
+   "text": "Durup dururken söyleniyor, heh, Amir-jan. Bu olmazsa başka bir şey bulur.",
+   "q": "Maman shrugs off her husband's grumbling. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman der ki:"
+   ]
+  },
+  {
+   "id": "06/0296#2",
+   "where": "06/0296",
+   "text": "Vay, Nini'nin birden uykusu geldi. Sabahtan beri ayaktayım, hiç uyumadım.",
+   "q": "Maman, whom the family calls Nini, dodges a topic by saying she is sleepy. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman gözlerini sıkıca kapatır ve der ki:"
+   ]
+  },
+  {
+   "id": "01/0001#3",
+   "where": "01/0001",
+   "text": "Nevruzun kutlu olsun, Nana-pesar-jan. İnşallah senin için iyi bir yıl olsun.",
+   "q": "Maman phones her son abroad on Norouz, the Persian spring holiday. Does her greeting sound warm and natural?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04b/0744#4",
+   "where": "04b/0744",
+   "text": "Adadım, iyileşirse Meşhed'e yürüyerek gideceğim.",
+   "q": "Maman makes a religious vow for a sick relative. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…önünde oturup çekirdek çıtlattığını, Maman'ın da yanında oturduğunu görüyordum. Haberler, ülkenin kuzey ve batı illerindeki yaygın selin yol açtığı zararlardan söz ediyordu. Arkadan, Maman bana daha büyük bir dikdörtgenin yanında oturan küçük bir yuvarlak gibi göründü. Maman diyordu ki:"
+   ]
+  },
+  {
+   "id": "04a/0066#5",
+   "where": "04a/0066",
+   "text": "Aferin, zeki oğlum. Ne zaman bir şeyden korkarsan bir numara yap da korkmayasın.",
+   "q": "Maman praises her small son's trick for not being scared. Does she sound like a mother talking to a small child?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Sol taraf tehlikeli. O kırmızı kapılı ev çok sinirli yaşlı bir adamın evi. Baba'dan bile daha sinirli.",
+    "Ben bir numara yapardım. Kırmızı kapıya bakmak yerine yanındaki evin duvarına bakardım. Beyazdı. Maman dedi ki:"
+   ]
+  },
+  {
+   "id": "04a/0004#6",
+   "where": "04a/0004",
+   "text": "Seni dört kez buldum. Hadi gel, iyi oğlum, gel şunu al, evin içinde dolaş.",
+   "q": "Maman plays hide-and-seek with her four-year-old. Does she sound like a mother with a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Delikten uzaklaştım. Maman karardı. Maman hep dört kez kararıp yeniden aydınlanırdı. Derdi ki:"
+   ]
+  },
+  {
+   "id": "06/0192#7",
+   "where": "06/0192",
+   "text": "Neyse, Nana-pesar-jan, yeni yerine taşındın mı?",
+   "q": "Maman asks her son abroad whether he has moved house yet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Omid güler, ben de gülmeye çalışırım. Maman der ki:"
+   ]
+  },
+  {
+   "id": "04a/0001#8",
+   "where": "04a/0001",
+   "text": "Maman kararıyordu. Elektriğin gittiği o günkü gibi.",
+   "q": "A four-year-old describes his mother passing in and out of the light. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0005#9",
+   "where": "04a/0005",
+   "text": "Yoksa kayboldum mu? Elimde ip de yok.",
+   "q": "A six-year-old boy, alone outside the gate, wonders if he is lost. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0047#10",
+   "where": "04a/0047",
+   "text": "Nohutları hızlı hızlı sallar. Hep teraziye fazla nohut döker.",
+   "q": "A small boy describes the old grocer weighing chickpeas. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0036#11",
+   "where": "04a/0036",
+   "text": "Tamam, az koy, ama çok az değil. Birazcık az.",
+   "q": "A small boy bargains with his mother over salt on his plums. Does it sound like a small child?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Tuz zararlı.",
+    "Ben dedim ki:"
+   ]
+  },
+  {
+   "id": "04a/0018#12",
+   "where": "04a/0018",
+   "text": "Sabah avluya gittim. Maman çok akıllı olduğumu söyledi.",
+   "q": "A four-year-old boasts to his big brother. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ben dedim ki:"
+   ]
+  },
+  {
+   "id": "04a/0020#13",
+   "where": "04a/0020",
+   "text": "Olur, sen de göreve gel, ama çok dikkatli olman lazım. Aşamaları çok zor.",
+   "q": "An older brother, about ten, leads a pretend mission. Does he sound like a boy that age?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem dedi ki:"
+   ]
+  },
+  {
+   "id": "04a/0026#14",
+   "where": "04a/0026",
+   "text": "Görevin birinci aşaması başlıyor. Tabur, sola dön!",
+   "q": "A boy plays army commander for his little brothers. Does this sound like a child's game?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Sokağa çıkardık. Önce sokağın başına gitmemiz gerekirdi. Ghassem derdi ki:"
+   ]
+  },
+  {
+   "id": "04a/0038#15",
+   "where": "04a/0038",
+   "text": "Ana caddeye girmek: cık cık.",
+   "q": "The boy commander warns of the busy street with a 'cık cık'. Does it sound like a child's game?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Maman'ın sözünü hep dinlerim. Ghassem'in sözünü de dinledim. Derdi ki:"
+   ]
+  },
+  {
+   "id": "04a/0042#16",
+   "where": "04a/0042",
+   "text": "Adı Kuçan çarşısı, bizim ev de Kuçan çarşısının sonunda.",
+   "q": "Two small brothers argue about a street's name. Does it sound like a child talking?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Ana cadde burası.",
+    "Haşim dedi ki:"
+   ]
+  }
+ ]
+}

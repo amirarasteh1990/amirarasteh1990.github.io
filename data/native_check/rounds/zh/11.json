@@ -1,0 +1,177 @@
+{
+ "lang": "zh",
+ "slug": "zh",
+ "dir": "ltr",
+ "version": "2026-11-22.r11",
+ "items": [
+  {
+   "id": "04b/1394#1",
+   "where": "04b/1394",
+   "text": "可若你恰巧路过",
+   "q": "Amir's poem asks his lost love to come back in a dream. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "我梦的灯开始闪烁",
+    "我不抱你归来的希望"
+   ]
+  },
+  {
+   "id": "03/0244#2",
+   "where": "03/0244",
+   "text": "我绝不会以任何代价接受所罗门的那枚印戒",
+   "q": "Amir reads a fragment of a Hafez poem. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/0935#3",
+   "where": "04b/0935",
+   "text": "是“阿塔尔哭到天明更觉甜美”那句，还是“如今他被杀得更彻底了”那句？",
+   "q": "Two lines are quoted from a song set to Attar's poems. Do they sound like song lyrics?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "——好，就那首配着阿塔尔诗句的。"
+   ]
+  },
+  {
+   "id": "02/0001#4",
+   "where": "02/0001",
+   "text": "我心里亮堂堂的：明天，当我睁开眼睛，一切都会结束，黑暗会再次回到我的梦中。",
+   "q": "A poetic chapter ends its first passage this way. Does it read smoothly and poetically?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1099#5",
+   "where": "04b/1099",
+   "text": "缝的一边压着我多年信念中的种种界限与神圣性，沉甸甸的；缝的另一边，尼鲁法尔站着。",
+   "q": "The narrator is torn between his old beliefs and a girl. Does this image read naturally?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "03/0458#6",
+   "where": "03/0458",
+   "text": "我还要说，我只有半小时。",
+   "q": "A student answers Amir by email, short and cool. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– 这周我完全没有时间。下周四下午三点，上次我们见面的同一个地方。"
+   ]
+  },
+  {
+   "id": "04b/0270#7",
+   "where": "04b/0270",
+   "text": "你得从你这个庇护所里走出来，真真切切去做点什么，而不是跑来这儿坐着空想。",
+   "q": "Niloofar tells shy Amir to come out of his shell and act. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "——我知道，我又不傻。可这样不行。"
+   ]
+  },
+  {
+   "id": "04b/1314#8",
+   "where": "04b/1314",
+   "text": "我爱您已经三十二个月了。从远处。不让您知道。",
+   "q": "Shy Amir finally tells a fellow student he loves her, very formally. Does it sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "我走过去，在瓦利阿斯尔街这条人行道另一侧的那棵悬铃木下等着，等尼鲁法尔从其他人中抽身，好上前去当面告诉她：我爱她。"
+   ]
+  },
+  {
+   "id": "04b/0784#9",
+   "where": "04b/0784",
+   "text": "你可真狡猾。",
+   "q": "Niloofar playfully teases Amir for listening in on her. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "——今天在学院当中，你跟另外几个女生说话，我听见了。"
+   ]
+  },
+  {
+   "id": "03/0580#10",
+   "where": "03/0580",
+   "text": "我脖子上哪儿写着“落脚处”呢？",
+   "q": "Farid complains that Sajad stepped on his neck to climb into bed. Is this sarcastic complaint clear?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– 哎哟，哎哟。鹰眼，把你的脚从我脖子上挪开。",
+    "– 哎，对不起。客观地说，我是想回自己床上去。太难了。"
+   ]
+  },
+  {
+   "id": "01/0140#11",
+   "where": "01/0140",
+   "text": "那就想想我们可怜的巴巴要受多大的罪——他这么多年都闲坐在家里。",
+   "q": "Ghassem jokes, holding back a laugh, about his idle father. Does the irony come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "卡塞姆憋着笑，说道："
+   ]
+  },
+  {
+   "id": "01/0216#12",
+   "where": "01/0216",
+   "text": "嗯，我们的巴巴·江可真是饿极了，饿的是尊重。",
+   "q": "Ghassem jokes sarcastically that his father craves respect. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "卡塞姆说："
+   ]
+  },
+  {
+   "id": "01/0224#13",
+   "where": "01/0224",
+   "text": "可他偏偏找错了人；那点尊重被我们砸得一丝不剩。",
+   "q": "Ghassem jokes that the family never gave his father any respect. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– 他可真是饿极了，饿的是尊重。"
+   ]
+  },
+  {
+   "id": "03/0504#14",
+   "where": "03/0504",
+   "text": "我也要看。我没力气起来。",
+   "q": "Hooman is too lazy to get up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– 喂，豹子法里德，把那台笔记本拿过来，"
+   ]
+  },
+  {
+   "id": "03/0620#15",
+   "where": "03/0620",
+   "text": "嘿，豹子法里德，给我，我占一卦。",
+   "q": "Hooman wants the Hafez book to tell his fortune with it. Does '占一卦' fit here?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "胡曼说："
+   ]
+  },
+  {
+   "id": "04b/0421#16",
+   "where": "04b/0421",
+   "text": "豹子法里德，控制好你的脾气，别使出什么要命的招数。",
+   "q": "Hooman's running joke is Farid's sudden 'murderous moves'. Does '要命的招数' work as a teasing phrase?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "胡曼说："
+   ]
+  }
+ ]
+}

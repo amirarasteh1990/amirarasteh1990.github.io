@@ -1,0 +1,190 @@
+{
+ "lang": "zh",
+ "slug": "zh",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "03/0278#1",
+   "where": "03/0278",
+   "text": "嘿，塔维尼，快跑。",
+   "q": "Farid calls Amir by his nickname, which means tavern-goer. Does '塔维尼' read as that nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "我心想，也许在一个平行世界里，我根本就不会见到尼鲁法尔。但在我们所生活的这个版本的世界里，我脑子里关于尼鲁法尔的念头每天比前一天更多。甚至我的夜晚都伴着她的幻影一直到天亮。不到一个月，我的整个世界便缩减成了周日的上午和周二的下午。我走到大学的哈菲兹门。穿过两个从地下探出头来的大齿轮之间。那些年，这些齿轮还没有从地底冒出来、向彼此俯身弯合。阿米尔卡比尔理工大学是一所没有门楼的大学，只有一扇绿色栅栏门把大学与哈菲兹街的人行道隔开。法里德在学院里喊住我，说："
+   ]
+  },
+  {
+   "id": "03/0628#2",
+   "where": "03/0628",
+   "text": "哈哈，酒馆长老，埃尔迪，太棒了。",
+   "q": "Hooman turns Amir's nickname, Elder of the Tavern, into a short pet name. Does '埃尔迪' read as that short form?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "胡曼拿着笔在书上写着什么，说："
+   ]
+  },
+  {
+   "id": "03/0380#3",
+   "where": "03/0380",
+   "text": "最可怕的病是艾兹海默症。",
+   "q": "Maman says '艾兹海默症' for Alzheimer's (阿尔茨海默症) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0052#4",
+   "where": "06/0052",
+   "text": "最后玛赫布打了电话，安布拉斯来把娜内接走了。",
+   "q": "Maman says '安布拉斯' for ambulance (救护车), mangling the foreign word on purpose. Does it read as her slip?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– 但他们不注意，这才是问题。爷爷听不见，不知道是怎么回事，可我跟娜内说过好几次：哈吉·哈努姆，你们坐在胡同里，会感染新冠的，真主保佑，可千万别。他们不但不听，反而坐得更久了。但是阿米尔，娜内的胸口呼噜呼噜响得那么厉害。我跟玛赫布他们说：“孩子们，这是新冠。”"
+   ]
+  },
+  {
+   "id": "01/0182#5",
+   "where": "01/0182",
+   "text": "他没什么草来着？",
+   "q": "Maman, hard of hearing, catches only the end of '拈花惹草'. Does her puzzled question work as a half-heard echo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– 他也没有拈花惹草。",
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "03/0373#6",
+   "where": "03/0373",
+   "text": "我是说，阿梅罗卡的这份报告确认伊朗已经停止核计划。",
+   "q": "Maman mispronounces America on purpose as '阿梅罗卡'. Can a reader tell she means America?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– 玛赫布，我在跟你说话呢。",
+    "– 什么？"
+   ]
+  },
+  {
+   "id": "03/0290#7",
+   "where": "03/0290",
+   "text": "“阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？",
+   "q": "A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Is the joke understandable?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– 阿拉斯特先生。",
+    "我回过头看向他。"
+   ]
+  },
+  {
+   "id": "03/0309#8",
+   "where": "03/0309",
+   "text": "真主若愿，愿你永远都阿拉阿斯特。",
+   "q": "The guard blesses Amir with a pun on his surname; araasteh means neat. Does it read as a friendly joke?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "门卫微笑着说："
+   ]
+  },
+  {
+   "id": "04b/0182#9",
+   "where": "04b/0182",
+   "text": "你才是这里头最大的一头牛。瞧你这身板就配。",
+   "q": "A student calls his heavy-set roommate a cow, meaning a big fool. Does '一头牛' read as an insult here?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "——把我鸡巴的头吃了得了，伙计，我们没那闲心理你。沙里夫的电气工程是什么意思，你懂个屁？再说了，有谁征求你的意见了？"
+   ]
+  },
+  {
+   "id": "04b/0575#10",
+   "where": "04b/0575",
+   "text": "看在你妈的份上，别不戴眼镜在房间里走。",
+   "q": "Eskandar pleads with Sajad here; he is not swearing. Does '看在你妈的份上' read as a plea, not an insult?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "——鹰眼，苍蝇已经被真主收拾过了，你就别再收拾他了。"
+   ]
+  },
+  {
+   "id": "03/0055#11",
+   "where": "03/0055",
+   "text": "我说话就是这样；你们一听我开口，就以为我在念诗。",
+   "q": "Hamid, who fancies himself a poet, says this in the rhythm of his poems. Does it sound rhythmic and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "哈米德用朗诵诗歌时的那种节奏说："
+   ]
+  },
+  {
+   "id": "03/0126#12",
+   "where": "03/0126",
+   "text": "我们姐夫的师傅的堂兄弟的朋友，就是德黑兰最有钱的那个人，说话就是这样。",
+   "q": "Hamid's running boast quotes a far-off acquaintance, the richest man in Tehran. Does this long chain sound funny and natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– 嗯。"
+   ]
+  },
+  {
+   "id": "04b/0387#13",
+   "where": "04b/0387",
+   "text": "昨晚我都听见你反刍的声音了。",
+   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Is the joke clear?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "埃斯坎达尔转向胡曼，说："
+   ]
+  },
+  {
+   "id": "03/0576#14",
+   "where": "03/0576",
+   "text": "我愿为你那双夜莺般的眼睛去死，鹰眼·江，可问题出在接收端，发送端解决不了。",
+   "q": "Farid teases short-sighted Sajad: the toothbrushes look different, so the fault is Sajad's eyes. Is the joke clear?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "– 鹰眼，你又拿了我的牙刷。",
+    "– 客观地说，下次买个别的颜色的。",
+    "法里德说："
+   ]
+  },
+  {
+   "id": "04b/0616#15",
+   "where": "04b/0616",
+   "text": "你可别把眼镜怼进笔记本电脑里去。",
+   "q": "Farid teases short-sighted Sajad, who peers very closely at his laptop. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "——好啦好啦，鹰眼。"
+   ]
+  },
+  {
+   "id": "04b/1265#16",
+   "where": "04b/1265",
+   "text": "好，我给你买娃娃。",
+   "q": "A father answers his toddler's baby talk, playfully copying it. Does his reply sound like that?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "——嗖——巴巴巴巴，你给我买介个大娃娃好不好？",
+    "我身后传来一个声音："
+   ]
+  }
+ ]
+}

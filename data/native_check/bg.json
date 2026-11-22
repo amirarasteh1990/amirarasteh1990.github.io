@@ -2,115 +2,154 @@
  "lang": "bg",
  "slug": "bg",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Тук не се случва нищо. Тук нищо няма да бъде оправено, нищо — съборено.",
-   "q": "Do these sentences read naturally?"
+   "q": "Do these sentences read naturally?",
+   "ctx": 0
   },
   {
-   "id": "02/0005#2",
-   "where": "02/0005",
-   "text": "Светлината на сънищата ми ... светлината на сънищата ми светваше ... светлината на сънищата ми светна",
-   "q": "The narrator restarts this phrase twice. Does the middle attempt sound broken off?"
-  },
-  {
-   "id": "04b/1312#3",
-   "where": "04b/1312",
-   "text": "На човек му се завива свят. Колкото повече мислиш за него, толкова повече ти се завива свят.",
-   "q": "A student is meant to sound vulgar about dizziness here. Does it work?"
-  },
-  {
-   "id": "04b/1320#4",
-   "where": "04b/1320",
-   "text": "И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова повече ни се завива свят, и да го покажа на Нилуфар.",
-   "q": "Beit is a Persian word for a couplet. Does this sentence read naturally?"
-  },
-  {
-   "id": "01/0116#5",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "Ходи на тихни места.",
-   "q": "Maman says 'тихни' for quiet, on purpose. Is that clear?"
+   "q": "Maman, on the phone with her son, says 'тихни' for 'тихи' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ех, колко добре. Да, поръчваш и го донасят при теб. Ама Амир-джан, не стой вкъщи цяло време. Излизай навън също."
+   ]
   },
   {
-   "id": "03/0191#6",
+   "id": "02/0005#3",
+   "where": "02/0005",
+   "text": "Светлината на сънищата ми ... светлината на сънищата ми светваше ... светлината на сънищата ми светна",
+   "q": "In his poem, the narrator restarts this phrase twice, as if searching for the right verb. Does that come through?",
+   "ctx": 3,
+   "before": [
+    "Сънищата ми бяха тъмни",
+    "Не виждах нищо",
+    "Ти дойде"
+   ]
+  },
+  {
+   "id": "03/0191#4",
    "where": "03/0191",
    "text": "– О-хо. Хамид-котка, до вчера казваше харр. Сега ставаш учтив и казваш магаре?",
-   "q": "Taghi teases Hamid for switching to a politer word for donkey. Does the joke work?"
+   "q": "'харр' is Persian for donkey; Taghi mocks Hamid for now saying the politer 'магаре'. Does the teasing come through?",
+   "ctx": 3,
+   "before": [
+    "Хамид се разпали и извика:",
+    "– Пфф, магаре, кой знае повече — приятелят на братовчеда на майстора на зетя ни, дето е най-богатият в Техеран, или ти, телето? Хайде, купи си такава. Като се счупи стъклото, не казвай, че не съм те предупреждавал.",
+    "Таги каза:"
+   ]
   },
   {
-   "id": "03/0290#7",
-   "where": "03/0290",
-   "text": "– Арасте само „ааrasteh“ подрязано ли е?",
-   "q": "The guard jokes the surname is Persian araasteh (neat), trimmed. Does this make sense?"
-  },
-  {
-   "id": "03/0390#8",
+   "id": "03/0390#5",
    "where": "03/0390",
    "text": "– Казвам ти, нищо не виждам, мръснико.",
-   "q": "This should be a crude everyday insult, like asshole. Is 'мръснико' that crude?"
+   "q": "This should be a crude everyday insult, like asshole. Is 'мръснико' that crude?",
+   "ctx": 0
   },
   {
-   "id": "03/0430#9",
+   "id": "03/0430#6",
    "where": "03/0430",
-   "text": "– И ти, с тоя твой кур-начин на говорене, трябваше да те викат Алат Делон.",
-   "q": "'Алат Делон' is a rude pun on actor Alain Delon. Does the joke work?"
+   "text": "И ти, с тоя твой кур-начин на говорене, трябваше да те викат Ален Курлон.",
+   "q": "'Ален Курлон' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#10",
+   "id": "04a/0076#7",
    "where": "04a/0076",
    "text": "– Мрамор е. Мраморът значи много скъп.",
-   "q": "A child mangles the word marble, thinking it means expensive. Does that come through?"
+   "q": "A small boy wrongly thinks the word for marble means expensive; the mistake is intended. Does it sound like a child talking?",
+   "ctx": 1,
+   "before": [
+    "Вървяхме пак. По средата на пътя имаше една къща. Стената ѝ беше красива. Касем винаги казваше:"
+   ]
   },
   {
-   "id": "04b/1262#11",
+   "id": "04b/1262#8",
    "where": "04b/1262",
    "text": "Оттогава, година след година все повече и повече ме теглеше към молитвата, джамията и дуата.",
-   "q": "Is 'дуата' clear as prayers asking God for help?"
+   "q": "Is 'дуата' clear as prayers asking God for help?",
+   "ctx": 0
   },
   {
-   "id": "04b/1265#12",
+   "id": "04b/1265#9",
    "where": "04b/1265",
-   "text": "– Да, ще ти я колпя. Като ми дойдат пари, ще ти колпя още по-хубава, момичето на Баба.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+   "text": "– Да, ще ти я колпя. Като ми дойдат пари, ще ти колпя още по-хубава, момичето на татко.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "– Бръъъм, тате, тате, тая голяма колкла ще ми я колпиш ли?",
+    "Един глас зад мен казва:"
+   ]
   },
   {
-   "id": "04b/1321#13",
+   "id": "04b/1312#10",
+   "where": "04b/1312",
+   "text": "На човек му се завива свят. Колкото повече мислиш за него, толкова повече ти се завива свят.",
+   "q": "A student describing a Magritte painting should sound crude here, like saying shit-dizzy. Does this line sound that crude?",
+   "ctx": 1,
+   "before": [
+    "– ... вижте колко наистина наводящо на размисъл е. Това нарисувал и отдолу написал: това не е лула."
+   ]
+  },
+  {
+   "id": "04b/1320#11",
+   "where": "04b/1320",
+   "text": "И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова повече ни се завива свят, и да го покажа на Нилуфар.",
+   "q": "A nervous young man leafs through a book of poems. Does this long sentence read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "„Онова вино, което е там, е истина, не метафора.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This poem line should allow two readings: real wine, and wine as only a metaphor. Does it?",
+   "ctx": 0
   },
   {
-   "id": "04b/1321#14",
-   "where": "04b/1321",
-   "text": "Като същото — колкото повече мислиш за тези десет думи, толкова повече ти се за, нещо, замайва.",
-   "q": "He starts a crude word, stops, and picks a polite one. Does that come through?"
-  },
-  {
-   "id": "06/0023#15",
+   "id": "06/0023#13",
    "where": "06/0023",
    "text": "– Нося я, не се притеснявай, strees.",
-   "q": "Maman mispronounces stress on purpose. Does 'strees' work here?"
+   "q": "Maman says 'strees' for 'стрес' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Но ти носи своята, Нини-джан."
+   ]
   },
   {
-   "id": "06/0056#16",
+   "id": "06/0056#14",
    "where": "06/0056",
    "text": "Засипваха пръстта с бурдозер. Пръст и вар.",
-   "q": "Maman says 'бурдозер' for bulldozer on purpose. Is that clear?"
+   "q": "Maman says 'бурдозер' for 'булдозер' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…водят екзекутираните, и там, където погребват и умрелите от Ковид. Само бог знае дали я измиха ритуално, или не. Гледахме отдалеч. Когато я слагаха в гроба, за миг саванът се отвори – стори ми се, че са я увили в савана с дрехите, с които я заведохме в болницата. Гробовете копаеха много дълбоко."
+   ]
   },
   {
-   "id": "06/0236#17",
+   "id": "06/0236#15",
    "where": "06/0236",
    "text": "Все гробището и кой знае какво – църква. Кхе, кхе. Влачеше ни насам-натам.",
-   "q": "Meaning: you wore us out. Does 'Влачеше ни насам-натам' say that?"
+   "q": "Meaning: you wore us out. Does 'Влачеше ни насам-натам' say that?",
+   "ctx": 1,
+   "before": [
+    "– ...кхе. Да. Ти никога не ни водеше на такива места."
+   ]
   },
   {
-   "id": "06/0289#18",
+   "id": "06/0289#16",
    "where": "06/0289",
-   "text": "Баба каза, колко? Току-що ми дойде съобщение на телефона – два милиона.",
-   "q": "'Баба' is kept from Persian (Dad). Is it clear this is the father?"
+   "text": "Татко каза, колко? Току-що ми дойде съобщение на телефона – два милиона.",
+   "q": "A sister retells Dad's reply about the electricity bill. Does this read naturally?",
+   "ctx": 1,
+   "before": [
+    "…изпод одеялото, каза какво пак грачиш? Какво е сгрешил Амир? А татко каза, това е работа на Амир – дърпа конците оттам и казва, деца, съберете пари, купете това, купете онова, и дори не мисли за джоба на татко си, от който трябва да се плати сметката за ток. Тогава Маман каза, е, колко може да е?"
+   ]
   }
  ]
 }

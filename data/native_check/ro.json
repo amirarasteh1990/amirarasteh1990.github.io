@@ -2,97 +2,136 @@
  "lang": "ro",
  "slug": "ro",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.",
-   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?"
+   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#2",
    "where": "Opening/0007",
    "text": "De pe această parte, desfac firul cuvintelor, iar de pe cealaltă parte, tu le aduni.",
-   "q": "Is it clear that 'le' refers to the words you gather up?"
+   "q": "Is it clear that 'le' refers to the words you gather up?",
+   "ctx": 0
   },
   {
-   "id": "03/0661#3",
-   "where": "03/0661",
-   "text": "– Notele de la Konkoor?",
-   "q": "Konkoor is the university entrance exam. Is 'Notele' right for their exam ranks?"
-  },
-  {
-   "id": "04b/1312#4",
-   "where": "04b/1312",
-   "text": "Te apucă amețeala. Cu cât te gândești mai mult la asta, cu atât amețești mai tare.",
-   "q": "Thinking about the painting makes your head spin. Does this sound natural?"
-  },
-  {
-   "id": "01/0116#5",
+   "id": "01/0116#3",
    "where": "01/0116",
    "text": "Du-te la locuri limiștite.",
-   "q": "Maman mispronounces 'limiștite' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'limiștite' for 'liniștite' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Aaah, ce bine. Mm-hm, comănzi și ți le aduc. Dar Amir dragă, nu sta tot timpul acasă. Ieși și afară."
+   ]
   },
   {
-   "id": "03/0191#6",
+   "id": "03/0191#4",
    "where": "03/0191",
    "text": "Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici olāgh?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "Taghi teases Hamid: 'khar' and 'olāgh' are both Persian for donkey, 'khar' the cruder. Does the teasing come through?",
+   "ctx": 2,
+   "before": [
+    "– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.",
+    "Taghi spuse:"
+   ]
   },
   {
-   "id": "03/0430#7",
+   "id": "03/0430#5",
    "where": "03/0430",
-   "text": "Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alat Delon.",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.",
+   "q": "'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "03/0560#8",
+   "id": "03/0560#6",
    "where": "03/0560",
    "text": "– Spuneți-i mamei voastre totul.",
-   "q": "Maman says this to one boy, Omid. Does this wording fit?"
+   "q": "Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?",
+   "ctx": 1,
+   "before": [
+    "Am mers. Am stat vreo oră în viile de după clădirea ghetarului de lut din fața cimitirului vechi. Mahboubeh și Maryam legară sabzeh, și când se întunecase ne-am întors. Seara, Maman era întinsă pe covor în mijlocul casei și-și privea brățările. Ca și cum mi-ar fi vorbit mie, îi spuse lui Omid:"
+   ]
   },
   {
-   "id": "04b/1262#9",
+   "id": "03/0661#7",
+   "where": "03/0661",
+   "text": "– Notele de la Konkoor?",
+   "q": "Konkoor is Iran's university entrance exam, where students get a national rank. Is 'Notele' right for that rank?",
+   "ctx": 1,
+   "before": [
+    "– Din cauza notelor noastre la Konkoor."
+   ]
+  },
+  {
+   "id": "04b/1262#8",
    "where": "04b/1262",
    "text": "Joaca cu mașini, haft-sang, polițist-și-măgar, aruncatul cu roșii în mijlocul străzii și, mai presus de toate, fotbalul pe Stadio delle Alpi din orașul Quchan.",
-   "q": "A list of street games. Is it clear what 'haft-sang' is?"
+   "q": "A list of childhood street games. Does the list read clearly as games?",
+   "ctx": 1,
+   "before": [
+    "…primăverii, familia lui Negar s-a mutat din cartierul nostru din pricina supărărilor pricinuite de băieții de pe ulița din față, iar casa aceea s-a făcut la fel cu toate celelalte case din cartier. Rămăseserăm de capul nostru și, după multă vreme, ne-am întors iarăși la jocurile de altădată."
+   ]
   },
   {
-   "id": "04b/1263#10",
+   "id": "04b/1263#9",
    "where": "04b/1263",
    "text": "Vrrr, Baba, Baba, îmi cumpeli papușica aia male?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A small girl says this, pointing at a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…și liniștitoare și care n-avea destulă lumină ca să mă călăuzească. O lampă clipind în mâna unei fete despre care n-am știut niciodată în ce parte a cutiei de creioane colorate se așază culoarea ușii casei lor. O fetiță vine făcând „vrr-vrr” și se oprește lângă mine. Se uită la jucării. Spune:"
+   ]
   },
   {
-   "id": "04b/1320#11",
-   "where": "04b/1320",
-   "text": "Și, cu mâini tremurânde, treceam în grabă peste gazeluri ca să găsesc un beit din Hafez care, cum spunea cealaltă fată, cu cât te scufunzi mai adânc în el, cu atât amețești mai tare, și să i-l arăt lui Niloofar.",
-   "q": "He recalls a girl's crude phrase for mind-bending confusion. Does that come through?"
+   "id": "04b/1312#10",
+   "where": "04b/1312",
+   "text": "Te apucă amețeala. Cu cât te gândești mai mult la asta, cu atât amețești mai tare.",
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– ...Uitați-vă, e cu adevărat tulburător. A desenat asta și dedesubt a scris: aceasta nu este o pipă."
+   ]
+  },
+  {
+   "id": "04b/1321#11",
+   "where": "04b/1321",
+   "text": "Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”",
+   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
    "id": "04b/1321#12",
    "where": "04b/1321",
-   "text": "Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
    "text": "Ca aia, cu cât te gândești mai mult la aceste zece cuvinte, cu atât te apucă mai tare ame..., chestie, mai tare amețeala.",
-   "q": "He starts a crude word, stops, and says a polite one. Does that come through?"
+   "q": "He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– Ăsta e. Ascultă-l pe ăsta. Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.” E același lucru. E ca pictura aia pe care ți-o arăta prie-, prietena ta."
+   ]
   },
   {
-   "id": "06/0236#14",
+   "id": "06/0236#13",
    "where": "06/0236",
    "text": "Întotdeauna cimitirul și Dumnezeu știe ce – o biserică. Cof, cof. Ne-ai târât.",
-   "q": "Baba is joking. Does the last sentence mean you wore us out?"
+   "q": "Baba teases his son about the places he showed them. Does the last sentence mean you wore us out?",
+   "ctx": 1,
+   "before": [
+    "– ...cof. Da. Nu ne-ai dus niciodată în locuri de-astea."
+   ]
   },
   {
-   "id": "06/0262#15",
+   "id": "06/0262#14",
    "where": "06/0262",
    "text": "Tusea și sunetele cu care își drege glasul încă mi se strecoară în urechi.",
-   "q": "Does this sentence let you hear Baba's coughs and throat-clearing sounds?"
+   "q": "Does this sentence let you hear Baba's coughs and throat-clearing sounds?",
+   "ctx": 1,
+   "before": [
+    "Baba își ia rămas-bun și iese din cadru. Maman rămâne în tăcere. Se aude poarta ulicioarei deschizându-se și închizându-se, iar Baba iese cu tusea târându-se după el."
+   ]
   }
  ]
 }

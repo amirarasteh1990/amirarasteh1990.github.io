@@ -317,7 +317,7 @@ LANGS = [
      "cta": "Il libro comincia qui. L'edizione italiana completa è in arrivo; nel frattempo, l'intero libro si legge gratis: in persiano, in inglese e in danese."},
     {"code": "NL", "slug": "nl", "lang": "nl", "rtl": False, "locale": "nl_NL", "en": "Dutch", "native": "Nederlands",
      "og_title": "De opening van Sedaha (Sounds), in het Nederlands",
-     "og_desc": "De draad van woorden die ooit klanken waren…",
+     "og_desc": "De draad van woorden die ooit geluiden waren…",
      "cta": "Het boek begint hier. De volledige Nederlandse editie is onderweg; tot die tijd is het hele boek gratis te lezen: in het Perzisch, Engels en Deens."},
     {"code": "PT", "slug": "pt", "lang": "pt", "rtl": False, "locale": "pt_PT", "en": "Portuguese", "native": "Português",
      "og_title": "A abertura de Sedaha (Sounds), em português",
@@ -409,7 +409,7 @@ LANGS = [
      "cta": "Raamat algab siit. Täielik eestikeelne väljaanne on teel; seni saab kogu raamatut lugeda tasuta: pärsia, inglise ja taani keeles."},
     {"code": "TR", "slug": "tr", "lang": "tr", "rtl": False, "locale": "tr_TR", "en": "Turkish", "native": "Türkçe",
      "og_title": "Sedaha (Sounds) açılışı, Türkçe",
-     "og_desc": "Bir zamanlar ses olan kelimelerin ipliği…",
+     "og_desc": "Bir zamanlar ses olan sözcüklerden oluşan bir ip…",
      "cta": "Kitap burada başlıyor. Türkçe baskının tamamı yolda; o zamana kadar kitabın tümü ücretsiz okunabilir: Farsça, İngilizce ve Danca."},
     {"code": "AZ", "slug": "az", "lang": "az", "rtl": False, "locale": "az_AZ", "en": "Azerbaijani", "native": "Azərbaycanca",
      "og_title": "Sedaha (Sounds) açılışı, Azərbaycanca",
@@ -1133,7 +1133,7 @@ def render(L: dict, row: dict | None = None, complete: int = 3) -> str:
 {top_actions_html(row, url, L['og_desc'], L['en'], L['rtl'])}
 {READER_TOOLS}
   </div>
-  <article class="reader" lang="{L['lang']}"{dir_attr}>
+  <article class="reader" lang="{L['lang']}"{dir_attr} data-i18n-skip>
     <h1>{html.escape(h1, quote=False)}</h1>
 {OPENING_FRONTISPIECE}
 {body}
@@ -1738,7 +1738,7 @@ def quick_starts_html(rows: list[dict]) -> str:
         # than living in an aria-label: a label can hold only one language, so it
         # would have had to drop one of the two names or mispronounce the other.
         also = ("" if r["en"] == r["native"]
-                else f'<span class="visually-hidden"> — {html.escape(r["en"])}</span>')
+                else f'<span class="visually-hidden" lang="en" data-i18n-name> — {html.escape(r["en"])}</span>')
         links.append(f'        <a class="lang-box" href="{r["url"]}" lang="{r["lang"]}"{rtl} '
                      f'data-slug="{r["slug"]}">{html.escape(r["native"])}{also}</a>')
     fallback = f' data-fallback="{QUICK_FALLBACK}"' if QUICK_FALLBACK else ""
@@ -1769,7 +1769,7 @@ def all_languages_html(rows: list[dict]) -> str:
         for r in group:
             rtl = ' dir="rtl"' if r["rtl"] else ""
             also = ("" if r["en"] == r["native"] else
-                    '<span class="visually-hidden" lang="en"> — '
+                    '<span class="visually-hidden" lang="en" data-i18n-name> — '
                     + html.escape(r["en"]) + '</span>')
             lines.append(
                 f'          <a class="lang-box" href="{html.escape(r["url"], quote=True)}" '

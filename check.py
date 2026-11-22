@@ -32,6 +32,7 @@ run before a push.
 from __future__ import annotations
 
 import argparse
+import io
 import base64
 import datetime
 import html as htmllib
@@ -122,6 +123,9 @@ def resolve(page: Path, url: str) -> Path | None:
 
 
 def links_in(body: str) -> list[str]:
+    # an inline <script> (no attributes) builds its URLs at run time, e.g. the
+    # language bootstrap's '/assets/i18n/'+u+'.js': not a link to resolve here
+    body = re.sub(r"<script>.*?</script>", "", body, flags=re.S)
     out = re.findall(r'(?:href|src)="([^"]+)"', body)
     for sets in re.findall(r'srcset="([^"]+)"', body):
         out += [part.strip().split(" ")[0] for part in sets.split(",") if part.strip()]
@@ -443,6 +447,13 @@ def native_check() -> None:
     script_path = SITE / "assets" / "js" / "native-check.js"
     script = script_path.read_text(encoding="utf-8") if script_path.is_file() else ""
     pages_ = {s: (nc.OUT_DIR / s / "index.html").read_text(encoding="utf-8") for s in built}
+    # later rounds (rounds/<slug>/<n>.json -> /sedaha/check/<slug>/<n>/): the same checks apply
+    want_r = sorted(f"{s}/{n}" for s, ps in nc.data_rounds().items() for n, _ in ps)
+    built_r = (sorted(f"{p.parent.parent.name}/{p.parent.name}" for p in nc.OUT_DIR.glob("*/*/index.html"))
+               if nc.OUT_DIR.is_dir() else [])
+    report(f"{len(want_r)} later-round page(s): each round file has its page, none orphaned",
+           want_r == built_r, "" if want_r == built_r else f"data {want_r[:3]}, pages {built_r[:3]}")
+    pages_.update({k: (nc.OUT_DIR / k / "index.html").read_text(encoding="utf-8") for k in built_r})
     off = [s for s, body in pages_.items()
            if f'<meta name="native-check-endpoint" content="{want}">' not in body
            or f'<script src="{nc.SCRIPT}" defer></script>' not in body]
@@ -473,6 +484,14 @@ def native_check() -> None:
     report("the Worker files native checks apart from the guestbook",
            "url.pathname !== '/check'" in worker and "'<!-- native-check:v1 -->'" in worker
            and "labels: ['native-check']" in worker and "includes('<!--')" in worker)
+    # 2026-11-22: "Not sure" -- a page may offer only answers the Worker accepts
+    # (deploy the Worker before pushing pages that offer a new one)
+    vm = re.search(r"const VERDICTS = \{([^}]*)\}", worker)
+    accepted = set(re.findall(r"(\w+):\s*'", vm.group(1))) if vm else set()
+    offered = {v for body in pages_.values() for v in re.findall(r'type="radio" name="v\d+" value="(\w+)"', body)}
+    report("every answer a check page offers is one the Worker accepts",
+           bool(offered) and offered <= accepted,
+           ", ".join(sorted(offered - accepted)))
 
 
 # ------------------------------------------------- hand-written vs generated
@@ -775,6 +794,25 @@ def paintings() -> None:
            hung > 0 and not off, off[0] if off else "")
 
 
+def i18n() -> None:
+    """The site in the visitor's language (author 2026-11-22; build_i18n.py, i18n.js):
+    every dictionary complete and built, and the language switch on every page."""
+    import contextlib
+    import build_i18n
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        code = build_i18n.build(check_only=True)
+    lines = buf.getvalue().strip().splitlines()
+    report("i18n: every dictionary complete, well-formed and built", code == 0,
+           "" if code == 0 else (lines[-1] if lines else ""))
+    for ln in lines:
+        if ln.startswith("note:"):
+            print("        " + ln)
+    missing = [rel for rel in build_i18n.pages()
+               if 'class="langsw"' not in (SITE / rel).read_text(encoding="utf-8")]
+    report("i18n: the language switch is on every page", not missing, ", ".join(missing[:5]))
+
+
 def downloads() -> None:
     """Every painting shown offers its badged 3000 px download, by the name
     make_painting_downloads.py gives it, and that file is built.
@@ -934,6 +972,7 @@ def main() -> int:
     band()
     paintings()
     downloads()
+    i18n()
 
     print()
     if failures:

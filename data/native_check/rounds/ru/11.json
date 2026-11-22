@@ -1,0 +1,179 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r11",
+ "items": [
+  {
+   "id": "04a/0008#1",
+   "where": "04a/0008",
+   "text": "Нет. Пока эта нить у тебя в руке, ты не потеряешься. Другой конец у меня в руке.",
+   "q": "Maman comforts her four-year-old with a game of thread. Does she sound like a mother talking to a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорила:"
+   ]
+  },
+  {
+   "id": "04b/0536#2",
+   "where": "04b/0536",
+   "text": "Оххх ты. Ну, страны, верно, близко друг к другу были. А землетрясение в Баме когда было?",
+   "q": "Maman, watching news of a huge wave abroad, tries to make sense of it. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман сказала:"
+   ]
+  },
+  {
+   "id": "04b/0538#3",
+   "where": "04b/0538",
+   "text": "Настал конец времён. Поколение Биби говорило: когда настанет конец времён, земля будет всё время дрожать.",
+   "q": "Maman repeats what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Примерно год назад."
+   ]
+  },
+  {
+   "id": "06/0040#4",
+   "where": "06/0040",
+   "text": "Хм, мы думали, ты расстроишься, Нана-песар-джан. У тебя была защита докторской.",
+   "q": "Maman explains why the family kept bad news from her son. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "06/0044#5",
+   "where": "06/0044",
+   "text": "В последний раз, когда я пришла купать её, мяса на теле совсем не осталось – только кожа и кости.",
+   "q": "Maman describes how thin her old mother-in-law had become. Does it sound like her?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "06/0066#6",
+   "where": "06/0066",
+   "text": "Никто не шевелился. Потом сама медсестра подошла и говорит: «Кажется, она с вами».",
+   "q": "Maman tells how no one claimed the old woman at the hospital. Does this sound like natural storytelling?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– В больнице всё звали: «Родственники госпожи Адхам!»"
+   ]
+  },
+  {
+   "id": "06/0104#7",
+   "where": "06/0104",
+   "text": "Хм, эти люди даже при жизни почти ничего для неё не сделали.",
+   "q": "Maman says the relatives did little for the old woman. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "06/0253#8",
+   "where": "06/0253",
+   "text": "Хм, ты ездил туда как турист, отдохнуть и хорошо провести время – и тебе понравилось. Всех трудностей ты не видел.",
+   "q": "Maman gently corrects her son about a country he once visited. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "06/0264#9",
+   "where": "06/0264",
+   "text": "Эх, каждый раз, когда скажешь ему принести что-нибудь, его как током шибает.",
+   "q": "Maman teases a son who hates being sent on errands. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "06/0291#10",
+   "where": "06/0291",
+   "text": "Он ворчит без всякой причины, хе, Амир-джан. Если не из-за этого, найдёт что-нибудь другое.",
+   "q": "Maman shrugs off her husband's grumbling. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "06/0296#11",
+   "where": "06/0296",
+   "text": "Надо же, Нини вдруг спать захотелось. Я с утра на ногах и не спала.",
+   "q": "Maman, whom the family calls Nini, dodges a topic by saying she is sleepy. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман крепко зажмуривает глаза и говорит:"
+   ]
+  },
+  {
+   "id": "01/0001#12",
+   "where": "01/0001",
+   "text": "С праздником Новруз, Нана-песар-джан. Дай бог, хорошего года тебе.",
+   "q": "Maman phones her son abroad on Norouz, the Persian spring holiday. Does her greeting sound warm and natural?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "03/0373#13",
+   "where": "03/0373",
+   "text": "Я говорю вот про это — что Амерока подтвердила, что Иран остановил ядерную программу. Это значит, война будет или нет?",
+   "q": "Maman, worried, asks her daughter about the news, saying 'Амерока' on purpose. Does her question sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Что?"
+   ]
+  },
+  {
+   "id": "04b/0744#14",
+   "where": "04b/0744",
+   "text": "Я дала обет: если ему станет лучше, пойду пешком в Мешхед.",
+   "q": "Maman makes a religious vow for a sick relative. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…видел, как Гасем сидит в зале перед телевизором и щёлкает семечки, а Маман сидит рядом с ним. В новостях говорили об ущербе от обширного наводнения в северных и западных провинциях страны. Со спины Маман показалась мне маленьким кружком, сидящим рядом с прямоугольником побольше. Маман говорила:"
+   ]
+  },
+  {
+   "id": "04a/0066#15",
+   "where": "04a/0066",
+   "text": "Молодец, мой смышлёный мальчик. Как только чего-нибудь испугаешься — схитри, чтобы не бояться.",
+   "q": "Maman praises her small son's trick for not being scared. Does she sound like a mother talking to a small child?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Левая сторона опасная. Дом с красной дверью — это дом очень злого старика. Ещё злее, чем Баба.",
+    "Я хитрил. Вместо красной двери смотрел на стену соседнего дома. Она была белая. Маман сказала:"
+   ]
+  },
+  {
+   "id": "04a/0004#16",
+   "where": "04a/0004",
+   "text": "Четыре раза нашла тебя. Ну иди сюда, мой хороший мальчик.",
+   "q": "Maman plays hide-and-seek with her four-year-old. Does she sound like a mother with a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Я отошёл от дырочки. Маман потемнела. Маман всегда четыре раза темнела и каждый раз снова светлела. Она говорила:"
+   ]
+  }
+ ]
+}

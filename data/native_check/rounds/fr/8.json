@@ -1,0 +1,184 @@
+{
+ "lang": "fr",
+ "slug": "fr",
+ "dir": "ltr",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "04b/1003#1",
+   "where": "04b/1003",
+   "text": "Regarde la belle bourde que tu as faite, cervelle de merde.",
+   "q": "Eskandar, furious, calls Amir an idiot. Does this sound rough and natural for a young man?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar se tourna vers moi et avança la tête et la poitrine dans ma direction. Il avait écarquillé les yeux et, d'un ton rude qui ne perdait rien de son côté Alain Delon, il dit :"
+   ]
+  },
+  {
+   "id": "04b/0186#2",
+   "where": "04b/0186",
+   "text": "J'aurais préféré partager une chambre avec eux plutôt qu'avec une tête de nœud comme toi.",
+   "q": "Hooman insults a roommate crudely. Does this sound like a real insult young men use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Le rôle pionnier de l'Université AmirKabir dans les mouvements étudiants est sans égal. Sharif a beau réunir de soi-disant élites, elles n'ont encore produit aucune théorie révolutionnaire."
+   ]
+  },
+  {
+   "id": "03/0418#3",
+   "where": "03/0418",
+   "text": "Si McCain arrive, il va foutre l'Iran en l'air, objectivement.",
+   "q": "Sajad, worried about the American election, swears in student slang. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Quelle différence ?"
+   ]
+  },
+  {
+   "id": "03/0490#4",
+   "where": "03/0490",
+   "text": "Fais attention à ne pas craquer, monsieur Bite.",
+   "q": "Hooman mocks a puffed-up roommate with a crude title. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "03/0077#5",
+   "where": "03/0077",
+   "text": "Maudit soit quiconque nie Œil d'Aigle News.",
+   "q": "Farid swears, half joking, by the room's gossip source. Does this mock curse sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid dit :"
+   ]
+  },
+  {
+   "id": "03/0268#6",
+   "where": "03/0268",
+   "text": "Aucun nom ne te va, bon sang.",
+   "q": "A roommate, angry, swears at another. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Sa voix monta et il dit :"
+   ]
+  },
+  {
+   "id": "04b/0520#7",
+   "where": "04b/0520",
+   "text": "Pas de débat dans la chambre aujourd'hui : j'ai eu douze en EPS, j'ai les nerfs en vrac, je vais vous insulter.",
+   "q": "Hooman got a bad grade, is in a foul mood and threatens to swear at everyone. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "04b/0893#8",
+   "where": "04b/0893",
+   "text": "Tu viens de bousiller l'émotion que la chanson me donnait, avec ta voix de merde.",
+   "q": "Hooman crudely complains that a friend's bad singing ruined the song's mood. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "04b/0997#9",
+   "where": "04b/0997",
+   "text": "Bon, peu importe, merde.",
+   "q": "Eskandar gives up an argument with a swear. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Et ils continuaient ainsi à se renvoyer la balle, et à chaque échange les répétitions s'accéléraient, jusqu'à ce qu'Eskandar dise :"
+   ]
+  },
+  {
+   "id": "03/0390#10",
+   "where": "03/0390",
+   "text": "Je te dis que je ne vois rien, espèce d'enfoiré.",
+   "q": "Short-sighted Sajad snaps at Farid, who keeps showing him his film. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– La fin. Regarde la fin. Vois comme il détale vite. Il a aussi mis en pièces la maison de l'araignée. Ce n'est pas pour rien que je l'ai appelé Le documentaire sur le cafard qui a détruit la maison de l'araignée."
+   ]
+  },
+  {
+   "id": "03/0415#11",
+   "where": "03/0415",
+   "text": "Charge donc, enfoiré.",
+   "q": "Sajad swears at the slow internet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "J'étais assis sur mon lit, pensant à la petite barrette jaune que j'avais vue pour la première fois dans les cheveux de Niloofar ce jour-là. Sajad pestait contre la vitesse d'internet."
+   ]
+  },
+  {
+   "id": "04b/0844#12",
+   "where": "04b/0844",
+   "text": "C'est quoi encore, cette merde qui te bouffe le cerveau ?",
+   "q": "Hooman asks crudely what odd thought Amir is chewing on now. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Hooman, ça t'est déjà arrivé, en rêve, de raconter quelque chose à quelqu'un, et de te demander ensuite si la première chose était un cauchemar ou un souvenir ?"
+   ]
+  },
+  {
+   "id": "03/0521#13",
+   "where": "03/0521",
+   "text": "Pff, c'est quoi encore cette pose de penseur à la con ?",
+   "q": "Hooman mocks a roommate striking a thinker's pose. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Un moment, aucune voix ne se fit entendre. Hooman dit :"
+   ]
+  },
+  {
+   "id": "04b/0818#14",
+   "where": "04b/0818",
+   "text": "Eldie, regarde un peu jusqu'où tu es allé : Farid, qui n'en a rien à foutre de nous, de la chambre, de personne, voilà qu'il se manifeste.",
+   "q": "Hooman marvels that even Farid, who cares about nothing, has spoken up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Ce fut la dernière fois que Farid réagit aux paroles et aux événements de la chambre sans qu'on se soit adressé à lui. Hooman dit :"
+   ]
+  },
+  {
+   "id": "03/0055#15",
+   "where": "03/0055",
+   "text": "C'est comme ça que je parle ; vous m'entendez parler, vous croyez que c'est de la poésie.",
+   "q": "Hamid says this in the rhythm of his poems, as a playful boast. Does it come across?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamid dit, avec le même rythme que lorsqu'il récitait ses poèmes :"
+   ]
+  },
+  {
+   "id": "03/0081#16",
+   "where": "03/0081",
+   "text": "Alors trinquons avec ce thé à la santé d'Œil d'Aigle News.",
+   "q": "Farid jokingly proposes a toast with tea to the room's gossip source. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid dit :"
+   ]
+  }
+ ]
+}

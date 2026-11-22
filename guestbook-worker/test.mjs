@@ -212,6 +212,17 @@ const one = await handle(postCheck(answers({name: '', items: [{id: 'x#1', verdic
 assert(one.status === 201 && createdIssue.title === 'Native check: Hungarian (1 answer)',
   'a single unnamed answer was refused');
 assert(createdIssue.body.includes('from an unnamed reader'), 'an unnamed reader was not stated');
+assert(createdIssue.body.includes('1 answer: 1 Correct, 0 Needs change.'),
+  'a page without Not sure answers changed its summary');
+
+// "Not sure" (2026-11-22): a third answer, counted and listed, never bold.
+const unsureItems = [{id: 'x#1', verdict: 'ok'}, {id: 'x#2', verdict: 'change', note: 'say y'},
+  {id: 'x#3', verdict: 'unsure', note: 'no idea'}];
+const unsure = await handle(postCheck(answers({items: unsureItems})), environment(), githubSuccess);
+assert(unsure.status === 201, 'a Not sure answer was refused');
+assert(createdIssue.body.includes('3 answers: 1 Correct, 1 Needs change, 1 Not sure.'),
+  'the Not sure count is missing');
+assert(createdIssue.body.includes('- `x#3` Not sure: ` no idea `'), 'a Not sure answer is missing');
 
 // A full page in a three-byte script: 40 answers, each with a 600-character note.
 const full = Array.from({length: 40}, (_, i) =>

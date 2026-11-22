@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/kk/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/kk/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,119 +72,176 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/kk/">&larr; <span class="native" lang="kk" dir="ltr">Қазақ</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="kk" dir="ltr">Қазақ</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
   <form class="nc-form" id="ncForm" data-lang="kk" data-language="Kazakh" data-version="2026-11-16" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>Осы жақтан мен сөздер жібін тарқатайын, ана жақтан сен оны жинайсың.</p>
+        <p class="nc-ctx">Кіріспе</p>
+        <p class="nc-ctx">…мұнда жазылып қалмаса, жер жүзі оқиғаларының ыстық ызыңында жоғалып кетер еді бұл сәттер мен бейнелер. Жазылып қалды — менің дүнием мен сенің дүниеңнің арасына көпір болсын деп. Менің дүниемнен — осы сөйлемдерді жазып отырған сәтімнен — сенің дүниеңе — оларды оқып отырған сәтіңе — дейінгі көпір.</p>
+        <p class="nc-line">Осы жақтан мен сөздер жібін тарқатайын, ана жақтан сен оны жинайсың.</p>
       </div>
       <p class="nc-q" id="q1">Is it clear that '<bdi lang="kk" dir="ltr">оны</bdi>' refers to the words being gathered?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="01/0116#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>Сыртқа да шық. Хуаит жерлерге бар.</p>
+        <p class="nc-ctx">– Жоқ, алаңдама. Мұнда тіпті тамақ-азықты тапсырыс беріп, есікке әкелдіруге болады.</p>
+        <p class="nc-ctx">– О, қандай жақсы. Мм-иә, тапсырыс берсең, әкеледі. Бірақ Әмір жан, әрқашан үйде отыра берме.</p>
+        <p class="nc-line">Сыртқа да шық. Хуаит жерлерге бар.</p>
       </div>
       <p class="nc-q" id="q2">Maman mispronounces the word for quiet on purpose. Does '<bdi lang="kk" dir="ltr">Хуаит</bdi>' read as her mispronounced 'quiet'?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0044#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.</p>
+        <p class="nc-ctx">– Бүгін «Менің Қалам – Менің Мәдениетім» көрмесі ашылады. Тұр, тұр. Маған ол ойын-нарды жасама, Мейхана. Кеше түнде де университет киімдеріңмен ұйықтадың, кешіріңді жоқ.</p>
+        <p class="nc-ctx">Оның тарқатып кетуін тіледім. Хуман деді:</p>
+        <p class="nc-line">– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.</p>
       </div>
       <p class="nc-q" id="q3">A friend warns of a deadly attack from Farid. Is '<bdi lang="kk" dir="ltr">өлімші қадам</bdi>' right for that?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0045#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>Мазандаран ятауы бүгін жасыл алхоры бере ді, оның үстіне бізбен атауын білмейтін шөппен деп айтқанда, «Менің Қалам – Менің Мәдениетім» көрмесінің баспалдақтарымен Фаридпен бірге төмен жүріп бара жатқанымды байқадым.</p>
+        <p class="nc-ctx">– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.</p>
+        <p class="nc-ctx">Фаридтің өлімші қадамы туралы ой мені сәл ерітті, бірақ ауаным да, күшім де жоқ еді. Тек белімді сәл қаттырақ ұстадым.</p>
+        <p class="nc-line">Мазандаран ятауы бүгін жасыл алхоры бере ді, оның үстіне бізбен атауын білмейтін шөппен деп айтқанда, «Менің Қалам – Менің Мәдениетім» көрмесінің баспалдақтарымен Фаридпен бірге төмен жүріп бара жатқанымды байқадым.</p>
       </div>
       <p class="nc-q" id="q4">Farid hears a stall gives out green plums with a herb. Is this clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0601#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>Ол дайындарымды «қандай ұятсыз адам қызыма жезөкше деп атауға батыл болды» деп жүз одан да жаман нәрселерімен бірге айтып, маңайды өрт алды.</p>
+        <p class="nc-ctx">– Негар бізден немере ағасын ұрыңдар деп сұраған ба еді, алданған сезімде болуымыз жөн бе?</p>
+        <p class="nc-ctx">…надарам, «жақсы көрмеймін», болып шығады. Түн соңында қағаздарды олардың есігінің астына тықтық. Іс жүзінде Тақи тықты, ал мен не істеп жатқанымыздан қорқып, тек Тақидің ашулануынан қорыққаным үшін ілестіп жүрдім. Келесі күні Тақи келіп, қағаздарды Негардың орнына шешесі алып оқығанын айтты.</p>
+        <p class="nc-line">Ол дайындарымды «қандай ұятсыз адам қызыма жезөкше деп атауға батыл болды» деп жүз одан да жаман нәрселерімен бірге айтып, маңайды өрт алды.</p>
       </div>
       <p class="nc-q" id="q5">Negar's mother rages at the whole street. Does this sentence read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/0204#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>– Сен бұндай нәрселер істемеуші едің ғой.</p>
+        <p class="nc-ctx">– Қой, мұның бәрін таста, кел, екі стақан набат шай алдым, соны ішейік.</p>
+        <p class="nc-ctx">Айтамын:</p>
+        <p class="nc-line">– Сен бұндай нәрселер істемеуші едің ғой.</p>
       </div>
       <p class="nc-q" id="q6">Someone asks this in surprise. Does it read as a question?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/0503#7">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p>Тек: «Шынымен осынша қарадүрсін өліп бара жатырмын ба?» деп ойлап тұрдым.</p>
+        <p class="nc-ctx">– Сандырақтама. Қалай?</p>
+        <p class="nc-ctx">– Өте қарапайым әрі қарадүрсін түрде. Орта буынның үшінші жылында, сурет сабағында досымның қарындаш қырғышын қарызға алмақ болдым, ол маған сыныптың ар жағынан лақтырды. Тура тамағыма кіріп кетіп, тұншыға жаздадым.</p>
+        <p class="nc-line">Тек: «Шынымен осынша қарадүрсін өліп бара жатырмын ба?» деп ойлап тұрдым.</p>
       </div>
       <p class="nc-q" id="q7">Is '<bdi lang="kk" dir="ltr">қарадүрсін</bdi>' right for dying just like that, for no reason?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n7">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
@@ -223,7 +288,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

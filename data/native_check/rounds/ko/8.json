@@ -1,0 +1,181 @@
+{
+ "lang": "ko",
+ "slug": "ko",
+ "dir": "ltr",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "01/0265#1",
+   "where": "01/0265",
+   "text": "아미르, 주연이 좋은 거야?",
+   "q": "Maman asks her son whether having the lead role is a good thing. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말했다."
+   ]
+  },
+  {
+   "id": "03/0531#2",
+   "where": "03/0531",
+   "text": "먼저 그 사람을 알고, 결혼하고, 그다음에 원하면 사랑에 빠지라고.",
+   "q": "Maman, a mother from a small town, lectures her son about love. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 그래, 사랑에 빠지지 말라는 게 아니야."
+   ]
+  },
+  {
+   "id": "03/0531#3",
+   "where": "03/0531",
+   "text": "작년에 왔을 때 처남들한테 얼마나 맞았는지 온몸이 시커멓게 됐더라고.",
+   "q": "Maman says her son was beaten until he was bruised all over. Does '온몸이 시커멓게 됐더라고' read naturally?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04b/0536#4",
+   "where": "04b/0536",
+   "text": "어머나아아. 그럼 나라들이 분명 서로 가까웠던 게로구나.",
+   "q": "Maman reacts to news of earthquakes abroad. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말했다:"
+   ]
+  },
+  {
+   "id": "04b/0538#5",
+   "where": "04b/0538",
+   "text": "말세가 왔어. 비비네 세대 사람들은 말세가 오면 땅이 줄곧 흔들린다고 하곤 했지.",
+   "q": "Maman recalls what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 거의 일 년 전요."
+   ]
+  },
+  {
+   "id": "06/0040#6",
+   "where": "06/0040",
+   "text": "음, 속상해할 것 같아서 그랬어, 나나페사르-잔.",
+   "q": "Maman explains why they kept bad news from her son. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말한다."
+   ]
+  },
+  {
+   "id": "06/0104#7",
+   "where": "06/0104",
+   "text": "뭐, 이 사람들은 살아 계실 때도 별로 해드린 게 없었잖아.",
+   "q": "Maman complains about her in-laws. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말한다."
+   ]
+  },
+  {
+   "id": "06/0253#8",
+   "where": "06/0253",
+   "text": "음, 관광하고 놀러 갔으니 즐거우셨겠지. 힘든 건 하나도 못 보셨잖아.",
+   "q": "Maman teases her husband about his trip abroad. Does the way she speaks to him sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말한다."
+   ]
+  },
+  {
+   "id": "06/0264#9",
+   "where": "06/0264",
+   "text": "에이, 뭔가 가져오라고 할 때마다 저렇게 전기 충격이라도 받은 것처럼 되는 거 있지.",
+   "q": "Maman complains that her husband jumps whenever he is asked to fetch something. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말한다."
+   ]
+  },
+  {
+   "id": "06/0291#10",
+   "where": "06/0291",
+   "text": "별것도 아닌 것에 핑계 찾는 거야, 헤, 아미르-잔.",
+   "q": "Maman shrugs off her husband's complaints. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말한다."
+   ]
+  },
+  {
+   "id": "06/0296#11",
+   "where": "06/0296",
+   "text": "어머, 니니가 갑자기 졸리네.",
+   "q": "Maman, calling herself by her pet name Nini, pretends to be sleepy. Does this sound playful and natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 눈을 꼭 감으며 말한다."
+   ]
+  },
+  {
+   "id": "06/0066#12",
+   "where": "06/0066",
+   "text": "그러다가 간호사가 직접 와서 “이분이 댁 일행이신 것 같은데요” 하고 말했어.",
+   "q": "Maman retells what a nurse said at the hospital. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 병원에서 “아드함 씨 보호자분!” 하고 계속 불렀어. 아무도 움직이지 않았어."
+   ]
+  },
+  {
+   "id": "04b/0744#13",
+   "where": "04b/0744",
+   "text": "쟤가 나으면 마슈하드까지 걸어가겠다고 서원했단다.",
+   "q": "Maman tells of a vow she made for her son. Does '서원했단다' sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "몇 달째 나는 매일 아침 덴마크가 아니라 이란에서 눈을 떴다. 마망은 마침내 박사 과정의 압박과 스트레스에 더해, 한 여자에 대한 사랑이 나를 붕괴의 벼랑 끝까지 몰고 갔다는 걸 알아차렸다. 나는 어두운 방 안에 누워, 문틈으로 가셈이 거실에서 텔레비전 앞에 앉아 해바라기씨를 까먹고 그 옆에 마망이 앉아 있는 걸 보고 있었다. 뉴스는 나라 북부와 서부 지방의 대규모 홍수로 인한 피해를 전하고 있었다. 뒤에서 보니 마망은 더 큰 직사각형 옆에 앉은 작은 동그라미처럼 보였다. 마망이 말하고 있었다:"
+   ]
+  },
+  {
+   "id": "01/0090#14",
+   "where": "01/0090",
+   "text": "그냥 보면서 슬픔을 먹을 뿐이야.",
+   "q": "Maman uses a Persian image, eating sorrow, for grieving in silence. Is the meaning clear?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 아니. 난 불쌍한 사람이야, 아무 말도 안 해, 항상 입 다물고 있지."
+   ]
+  },
+  {
+   "id": "04a/0008#15",
+   "where": "04a/0008",
+   "text": "이 실이 손에 있는 한 길 잃지 않아. 다른 쪽 끝은 내 손에 있어.",
+   "q": "Maman reassures her four-year-old son. Does it sound like a mother talking to a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 아니야."
+   ]
+  },
+  {
+   "id": "04a/0066#16",
+   "where": "04a/0066",
+   "text": "무서운 게 있으면 꾀를 써서 안 무서워지도록 해.",
+   "q": "Maman praises her small son's trick for not being scared. Does it sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 좋아, 우리 영리한 아들."
+   ]
+  }
+ ]
+}

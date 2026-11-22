@@ -1,0 +1,185 @@
+{
+ "lang": "pt",
+ "slug": "pt",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0132#1",
+   "where": "01/0132",
+   "text": "Havia o tifoid, por exemplo, ou a tuberculose, ou o sarampo.",
+   "q": "Maman says 'tifoid' for tifo on purpose, an old woman's slip. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "Ou a cholara, por exemplo. Essa também não matou tantos.",
+   "q": "Maman says 'cholara' for cólera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0380#3",
+   "where": "03/0380",
+   "text": "A pior doença é o Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Maman, há uma doença que vai paralisando os músculos aos poucos. É uma doença muito má.",
+    "A Maman disse:"
+   ]
+  },
+  {
+   "id": "06/0052#4",
+   "where": "06/0052",
+   "text": "No fim, a Mahboub ligou, vieram de amublância e levaram a Naney.",
+   "q": "Maman says 'amublância' for ambulância on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0362#5",
+   "where": "03/0362",
+   "text": "Mahboub, isso que está a dar nas notícias, a Améroca",
+   "q": "Maman says 'Améroca' for América on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…notas do Konkoor. Saí da casa no fundo do pátio e percorri o comprimento do pátio em nove passos, com a alegria da nova descoberta ainda acesa no coração. Quando entrei na sala vindo do pátio, a Maman estava deitada à frente da televisão. Tinha ambas as mãos sobre o estômago e dizia à Mahboubeh:"
+   ]
+  },
+  {
+   "id": "01/0182#6",
+   "where": "01/0182",
+   "text": "E não era o quê — engo?",
+   "q": "Maman, hard of hearing, catches only the end of 'mulherengo'. Does her question read as that half-heard echo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Também não era mulherengo.",
+    "A Maman diz:"
+   ]
+  },
+  {
+   "id": "01/0142#7",
+   "where": "01/0142",
+   "text": "O Baba o quê?",
+   "q": "Maman, hard of hearing, catches only part of her son's joke about Baba. Does her question sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Então imagina pelo que o nosso pobre Baba está a passar — sentado sem fazer nada em casa todos estes anos.",
+    "A Maman diz:"
+   ]
+  },
+  {
+   "id": "03/0628#8",
+   "where": "03/0628",
+   "text": "Haha, o Ancião da Taverna, o Eldie, perfeito.",
+   "q": "Hooman shortens Amir's nickname 'Ancião da Taverna' to 'Eldie', a pet form of English elder. Does this short form work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Hooman estava a escrever algo no livro com uma caneta e disse:"
+   ]
+  },
+  {
+   "id": "04b/0595#9",
+   "where": "04b/0595",
+   "text": "Mas cagou tudo. O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
+   "q": "Amir misheard 'peer' as pir, Persian for an old sage, hence his nickname 'Eldie'. Does Farid's punch line work?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– Pir a pir?",
+    "O Hooman disse:",
+    "– Mandem um salavat. O Ancião da Taverna por fim disse alguma coisa.",
+    "O Farid disse:"
+   ]
+  },
+  {
+   "id": "04b/0387#10",
+   "where": "04b/0387",
+   "text": "Esta noite ouvi-te a ruminar.",
+   "q": "Eskandar teases Hooman for munching sweets secretly at night, like a cow chewing cud. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Eskandar virou-se para o Hooman e disse:"
+   ]
+  },
+  {
+   "id": "04b/0460#11",
+   "where": "04b/0460",
+   "text": "Que raio te deu agora, a ficar teso para cima de nós, Alain Caralhon?",
+   "q": "Hooman crudely mocks a pompous roommate, using his rude nickname 'Alain Caralhon'. Does this sound like real dorm teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0432#12",
+   "where": "03/0432",
+   "text": "Refiro-me ao Alain Caralhon. Caraaalho. Ponto final.",
+   "q": "Hooman stretches out a rude nickname to mock a roommate, then closes the topic. Does this ending sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ...e fazes a boca como o cu de uma galinha e te matas para tentar falar como ele. Não é a esse que me refiro."
+   ]
+  },
+  {
+   "id": "03/0490#13",
+   "where": "03/0490",
+   "text": "Cuidado para não te partir, senhor Caralho.",
+   "q": "A roommate has just called himself an extremist nationalist anarchist. Does Hooman's mocking reply work?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "O Eskandar endireitou-se e empinou o peito. Disse:",
+    "– Sou um anarquista nacionalista extremista.",
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0616#14",
+   "where": "04b/0616",
+   "text": "Está bem, Olho de Águia, está bem. Agora não enfies os óculos no portátil.",
+   "q": "Hooman teases short-sighted Sajad, whose face is almost touching the laptop screen. Does it sound like natural teasing?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Entrecerrou os olhos por trás dos óculos e aproximou a cabeça do ecrã do portátil.",
+    "– Se não acreditas, vem ver com os teus próprios olhos, objetivamente.",
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "06/0186#15",
+   "where": "06/0186",
+   "text": "Dava tudo por ti, Nini-jan – essa cabeça funciona tão bem.",
+   "q": "Amir lovingly praises his mother's quick thinking with a Persian turn of phrase. Does it sound warm and natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Digo:"
+   ]
+  },
+  {
+   "id": "03/0189#16",
+   "where": "03/0189",
+   "text": "Pff, burro, quem é que sabe mais, o homem mais rico de Teerão, amigo do primo do mestre artesão do nosso cunhado, ou tu, bezerro?",
+   "q": "A boy angrily calls his friend a donkey and a calf, meaning stupid. Do these insults sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O sangue do Hamid ferveu e ele gritou:"
+   ]
+  }
+ ]
+}

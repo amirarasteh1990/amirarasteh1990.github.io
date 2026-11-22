@@ -1,0 +1,183 @@
+{
+ "lang": "ko",
+ "slug": "ko",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "06/0238#1",
+   "where": "06/0238",
+   "text": "그게 고마움을 표하는 방식이야?",
+   "q": "Maman, a mother from a small town, scolds her son through clenched teeth. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 이를 악물며 말한다."
+   ]
+  },
+  {
+   "id": "06/0156#2",
+   "where": "06/0156",
+   "text": "응. 몰랐어요?",
+   "q": "A family member confirms the sad news to Amir. Does this short reply sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– 뭐라고요? 타기가 죽었어요?"
+   ]
+  },
+  {
+   "id": "04b/0181#3",
+   "where": "04b/0181",
+   "text": "내 좆대가리나 먹어라.",
+   "q": "Hooman tells Eskandar off with a crude Persian insult. Does it sound like a real insult a young man would use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "후만이 다시 엄지손가락을 들어 올리며 말했다."
+   ]
+  },
+  {
+   "id": "03/0394#4",
+   "where": "03/0394",
+   "text": "아니, 원래도 좆대가리였는데 이제 더 좆대가리가 됐거나.",
+   "q": "Hooman mocks Eskandar as stupid with a crude word. Does '좆대가리' sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 갑자기 그 질문에 꽂혔네. 경우의 수는 몇 개야. 어디 머리를 부딪혔거나. 아니면 좆대가......"
+   ]
+  },
+  {
+   "id": "04b/0146#5",
+   "where": "04b/0146",
+   "text": "이 똥골통아. 내 입으로 말하게 만드네.",
+   "q": "Hooman calls Eskandar dim-witted. Does '똥골통' sound like a natural crude insult?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– 들었다고?",
+    "– 그래, 뭐, 대학에 소문이 돌았으니까."
+   ]
+  },
+  {
+   "id": "04b/0343#6",
+   "where": "04b/0343",
+   "text": "그럼 좆도 모르는 신입생이네.",
+   "q": "A senior student mocks a first-year crudely. Does this sound like natural crude talk?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– 너 1학년이야?",
+    "– 네."
+   ]
+  },
+  {
+   "id": "03/0268#7",
+   "where": "03/0268",
+   "text": "이 자식한테 어울리는 이름이 없어.",
+   "q": "A roommate insults another to his face, half joking. Does this line sound like he is speaking to him?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "목소리를 높여 말했다:"
+   ]
+  },
+  {
+   "id": "03/0638#8",
+   "where": "03/0638",
+   "text": "진짜 뭐라 해야 하나, 이 몸으로 백칠십 미터를 따라오게 만들었어.",
+   "q": "Hooman, a heavy man, swears at Amir for making him run so far. Does it sound as rude as he means?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 게다가 더 좁아지면서 발리아스르 문 가까이 이어지는 저 마지막 부분까지 계산하면 백칠십 미터가 돼."
+   ]
+  },
+  {
+   "id": "04b/0723#9",
+   "where": "04b/0723",
+   "text": "어차피 넌 지원해서 떠날 사람도 아닌데, 왜 엉덩이가 찢어져라 토플 시험을 봤대?",
+   "q": "Hooman asks why Amir slaved away for an English test. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "그러고는 웃었다. 나는 아무 말도 하지 않았다. 후만이 계속했다:"
+   ]
+  },
+  {
+   "id": "04b/0351#10",
+   "where": "04b/0351",
+   "text": "그 시절이랑 우리 사고방식에 똥이나 싸.",
+   "q": "Hooman, now grown up, scorns his student days crudely. Does '똥이나 싸' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 그 시절이 그립다니 무슨 소리야, 박사님?"
+   ]
+  },
+  {
+   "id": "04b/0162#11",
+   "where": "04b/0162",
+   "text": "그래, 우리를 보기만 하면 똥구멍을 오므리고 멀찍이 거리를 두니까, 두 발로 그 얼굴들에 뛰어들고 싶어진다니까.",
+   "q": "Farid says the stuck-up Tehran students make him want to kick them in the face. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "파리드가 말했다."
+   ]
+  },
+  {
+   "id": "04b/0899#12",
+   "where": "04b/0899",
+   "text": "이 좆대가리 먹는 놈아, 왜 헛소리를 지껄여?",
+   "q": "Hooman insults a friend with a crude Persian-style curse. Does it sound like a real insult in Korean?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "후만이 말했다."
+   ]
+  },
+  {
+   "id": "04b/0562#13",
+   "where": "04b/0562",
+   "text": "독수리눈, 하느님이 널 용서치 않으시길, 내 허리를 박살 냈잖아.",
+   "q": "Eskandar curses Sajad, half joking, after being bumped. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "에스칸다르는 숨이 겨우 넘어오는 게 드러나는 목소리로 말했다:"
+   ]
+  },
+  {
+   "id": "04b/0440#14",
+   "where": "04b/0440",
+   "text": "지역화 사태 이후로는 어떤 좆이 우리 머리 위로 떨어져도 놀라지 않을 거야.",
+   "q": "Hooman says that after the policy, no bad luck will surprise him. Does this crude image sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "바흐만은 괜찮다고 했다. 에스칸다르는 책을 꺼내려고 내 침대 밑으로 손을 뻗었고, 메이삼은 무릎을 꿇고 앉아 옷걸이 아래 자기 자리를 펴고 있었다. 후만은 그들을 바라보며 말했다."
+   ]
+  },
+  {
+   "id": "04b/0822#15",
+   "where": "04b/0822",
+   "text": "이렇게 좆을 손에 쥔 채 거리를 헤매고 다니진 않았을 거란 말이야.",
+   "q": "Hooman says Amir now drifts around lost and aimless, using a crude image. Does it sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0663#16",
+   "where": "03/0663",
+   "text": "아이들을 가족 곁에 두겠다는 명목으로 우리 지방 출신들 똥구멍에 몽둥이를 쑤셔 박았다고.",
+   "q": "Hooman crudely says the policy hurt every student from the provinces. Does this image sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 곱슬머리야, 꼭 콩쿠르도 안 보고 대학에 들어온 사람처럼 놀라네. 이 지역화 정책이 우릴 제대로 좆되게 했어."
+   ]
+  }
+ ]
+}

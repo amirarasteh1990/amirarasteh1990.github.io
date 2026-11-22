@@ -1,0 +1,173 @@
+{
+ "lang": "es",
+ "slug": "es",
+ "dir": "ltr",
+ "version": "2026-11-22.r6",
+ "items": [
+  {
+   "id": "03/0521#1",
+   "where": "03/0521",
+   "text": "Ugh, ¿otra vez con esa pose de pensador de mierda?",
+   "q": "Hooman mocks a roommate striking a thinker's pose. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Durante un rato no se escuchó la voz de nadie. Hooman dijo:"
+   ]
+  },
+  {
+   "id": "03/0638#2",
+   "where": "03/0638",
+   "text": "¿Has desviado nuestras llamadas a algún sitio que no deberías?",
+   "q": "Hooman teases Amir for never answering his calls, with a cheeky hint. Does the joke come across?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0600#3",
+   "where": "04b/0600",
+   "text": "Lo importante es que, cada vez que voy al supermercado, pago, compro mi leche y mi pastel y me los meto en el cuerpo.",
+   "q": "Hooman, a casual young man, says all he cares about is buying milk and cake to eat. Does this sound natural?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "01/0178#4",
+   "where": "01/0178",
+   "text": "Ojalá se hubiera hecho adicto y no hubiera sido así.",
+   "q": "Maman, a mother from a small town, says she wishes her husband had become an addict instead. Does it sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– No es adicto. Sinceramente, que no se hiciera adicto en el frente, bajo las bombas y los morteros, no es poca cosa.",
+    "Maman dice:"
+   ]
+  },
+  {
+   "id": "04b/0690#5",
+   "where": "04b/0690",
+   "text": "Habría bastado con que los profesores de Eléctrica y de Mecánica, hace un montón de años, no se hubieran empalmado con la idea de quitarle el edificio Abu-Reyhan a la Facultad de Ingeniería Naval, para que Farid no acabara así.",
+   "q": "Hooman crudely says the professors were greedy to grab a building. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0150#6",
+   "where": "04b/0150",
+   "text": "Si lo que cuenta es la edad, entonces deberías lamerle los huevos a Bahman.",
+   "q": "Hooman crudely mocks a roommate who demands respect for being older. Does this sound like young men teasing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman apuntó hacia Eskandar con su pulgar gordo y redondo y dijo:"
+   ]
+  },
+  {
+   "id": "04b/0353#7",
+   "where": "04b/0353",
+   "text": "Y en aquella situación de mierda, ¿qué antiguallas nos tocaron?",
+   "q": "Hooman, crude and bitter, recalls a messed-up time and the odd roommates they got. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Apura el té de un trago y se limpia la boca con el dorso de la mano."
+   ]
+  },
+  {
+   "id": "04b/0360#8",
+   "where": "04b/0360",
+   "text": "Estos golpes mortales no me extrañan de ti, pero lo que de verdad me pregunto es qué cabrón habría abierto su tienda a las seis de la mañana de un viernes para que tú fueras a comprarle una cámara.",
+   "q": "Hooman crudely wonders what maniac opened a shop at dawn on a Friday. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dijo, mientras examinaba la caja de la cámara:"
+   ]
+  },
+  {
+   "id": "04b/0421#9",
+   "where": "04b/0421",
+   "text": "Leopardo Farid, domina tus nervios y no nos salgas con uno de esos golpes mortales.",
+   "q": "Hooman teases hot-tempered Farid with their running joke about 'murderous moves'. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dijo:"
+   ]
+  },
+  {
+   "id": "03/0612#10",
+   "where": "03/0612",
+   "text": "Maldito imbécil... ufffff... con la cabeza tan agachada... uffff... adónde vas tan rápido...",
+   "q": "Hooman, out of breath, roughly greets an old friend with an insult. Does this sound natural between friends?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Una mano tira de mi hombro izquierdo hacia atrás. Es Hooman. Jadea."
+   ]
+  },
+  {
+   "id": "03/0640#11",
+   "where": "03/0640",
+   "text": "Ya vives en el extranjero y te importamos un bledo. Vendido, lamebotas de los extranjeros.",
+   "q": "Hooman, half joking, calls Amir a sellout for moving abroad. Does the insult sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pfff, maldito seas."
+   ]
+  },
+  {
+   "id": "04b/0164#12",
+   "where": "04b/0164",
+   "text": "Me cago en nuestra puta suerte.",
+   "q": "Hooman, in real pain, curses their bad luck. Does this sound like natural swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman suspiró y apartó la cara de Farid. Su mirada cayó sobre Eskandar y, con un tono dolorido, como una aguja hundiéndose en una herida vieja, gritó:"
+   ]
+  },
+  {
+   "id": "04b/0486#13",
+   "where": "04b/0486",
+   "text": "¿O sea que quieres decir que esta puta suerte nuestra, en la que el sorteo nos cayó encima y nos endosó una antigualla como tú, se repite una y otra vez?",
+   "q": "Hooman crudely curses their bad luck at being stuck with this roommate. Does this sound like how a young man would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…a Farid, que había saltado de su sitio como un muelle. El chasquido de los dedos de Hooman resonó en el cuarto. La almohada de Farid pasó junto a la cabeza de Eskandar y dio contra la pared. La almohada cayó detrás de Meysam, junto con una o dos de las prendas colgadas del perchero. Hooman dijo:"
+   ]
+  },
+  {
+   "id": "04b/0434#14",
+   "where": "04b/0434",
+   "text": "Si Kamyar no se hubiera hecho el señorito de mierda y se hubiera quedado en la residencia, no habría quedado una cama libre para que estas maravillas nos cayeran encima.",
+   "q": "Hooman grumbles crudely that a snobbish student moving out landed them with two odd roommates. Does this sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0186#15",
+   "where": "04b/0186",
+   "text": "Yo habría preferido compartir cuarto con ellos antes que con un cerebro de polla como tú.",
+   "q": "Hooman insults a roommate crudely. Does this sound like a real insult young men use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– El papel pionero de la Universidad AmirKabir en los movimientos estudiantiles no tiene parangón. Sharif podrá reunir a un grupo de supuestas élites, pero hasta ahora no han producido una sola teoría revolucionaria."
+   ]
+  },
+  {
+   "id": "04b/0351#16",
+   "where": "04b/0351",
+   "text": "¿Qué buenos tiempos ni qué niño muerto, doctor? Me cago en aquellos días y en nuestra forma de pensar.",
+   "q": "Hooman, bitter about his student years, brushes off any nostalgia with a swear. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Qué buenos tiempos."
+   ]
+  }
+ ]
+}

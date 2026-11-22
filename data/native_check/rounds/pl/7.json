@@ -1,0 +1,176 @@
+{
+ "lang": "pl",
+ "slug": "pl",
+ "dir": "ltr",
+ "version": "2026-11-22.r7",
+ "items": [
+  {
+   "id": "01/0001#1",
+   "where": "01/0001",
+   "text": "Jak się masz? Zdrów jesteś? Dobrze ci? Szczęśliwego Nouruzu, Nana-pesar-dżan.",
+   "q": "Maman greets her son abroad on the phone for Norouz. Does it sound like a warm small-town mother?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "01/0090#2",
+   "where": "01/0090",
+   "text": "– Nie. Ja biedna, nigdy nic nie mówię, siedzę cicho. Tylko patrzę i jem smutek.",
+   "q": "Maman complains, half joking, that she always keeps quiet and suffers. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Nic mu nie powiedziałaś."
+   ]
+  },
+  {
+   "id": "01/0162#3",
+   "where": "01/0162",
+   "text": "Wszyscy chcemy zadzwonić i powiedzieć, że dokucza nam od trzydziestu lat, niech przyjdą i go zabiorą. Jeśli ty też się zgadzasz, dzwonimy.",
+   "q": "Maman jokes about calling the authorities to take her husband away. Does it sound like her teasing?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Czy kłamię? Od roku, w którym się urodziłeś, siedzi w domu aż do teraz. A dzisiaj do telefonów Mahbub i innych przyszła wiadomość: jeśli wasi mężczyźni dokuczają wam w domu, dzwońcie, przyjdziemy i ich zabierzemy."
+   ]
+  },
+  {
+   "id": "01/0166#4",
+   "where": "01/0166",
+   "text": "Cokolwiek mówiłam: nie bij dzieci, mówił: nabawiłem się nerwicy frontowej na wojnie, nie mam na to wpływu. Zobaczyłam, że tak jest, i dałam sobie spokój.",
+   "q": "Maman recalls her husband's excuse for beating the children. Does it sound like her talking?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "01/0170#5",
+   "where": "01/0170",
+   "text": "– Obgadywanie? Obgadywanie jest wtedy, gdy ktoś ci nic złego nie zrobił.",
+   "q": "Maman, a little annoyed, defends her complaining about her husband. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman odwraca głowę ku głosowi Mahbube i mówi lekko poirytowanym tonem:"
+   ]
+  },
+  {
+   "id": "01/0174#6",
+   "where": "01/0174",
+   "text": "– Hmm, zobaczmy – czy ktoś z was może sobie przypomnieć jedną dobrą rzecz o waszym Babie? Powiedzcie, a będę milczeć.",
+   "q": "Maman challenges her children to name one good thing about their father. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "01/0184#7",
+   "where": "01/0184",
+   "text": "– Za kobietami? Chciałabym. Kto chce, niech go bierze dla siebie. Jeszcze coś damy w dodatku.",
+   "q": "Maman jokes that any woman can have her husband, with a bonus thrown in. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mówię, że nie gonił też za innymi kobietami."
+   ]
+  },
+  {
+   "id": "01/0077#8",
+   "where": "01/0077",
+   "text": "– Sawab? Sawab jest wtedy, gdy ludzie cieszą się, że się widzą. Nie wtedy, gdy tylko działają sobie nawzajem na nerwy.",
+   "q": "Maman answers her son's remark about a good deed. Does it sound like a mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman odwraca głowę ku głosowi Omida i mówi:"
+   ]
+  },
+  {
+   "id": "01/0158#9",
+   "where": "01/0158",
+   "text": "– Ten z głupim nauczycielem? Mm-hm, obejrzyjcie go. Jest zabawny. Pośmiejecie się trochę.",
+   "q": "Maman recommends a funny film to her children. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "01/0214#10",
+   "where": "01/0214",
+   "text": "– Nie pamiętacie? Kiedy wrócił z Karbali, włożył białą rękawiczkę.",
+   "q": "Maman mocks her husband's pious showing off after a pilgrimage. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "03/0531#11",
+   "where": "03/0531",
+   "text": "Najpierw poznajcie tę osobę, wyjdźcie za mąż czy żeńcie się, a potem, jeśli chcecie, zakochujcie się. Zobaczycie wtedy, czy słówko powiem.",
+   "q": "Maman gives her sons her view on love and marriage. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Hmm, nie mówię, żebyście się nie zakochiwali."
+   ]
+  },
+  {
+   "id": "03/0531#12",
+   "where": "03/0531",
+   "text": "Codziennie mówię: Boże, czy kiedykolwiek dożyję, by zobaczyć na własne oczy, jak zapłacą za swoje czyny?",
+   "q": "Maman prays to see her son's attackers punished. Does it sound like a mother talking?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "03/0070#13",
+   "where": "03/0070",
+   "text": "– Boję się, że stanie się jak ten jego przyjaciel, Hamid.",
+   "q": "Maman worries about her son. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Mahbube się roześmiała, a Maman powiedziała:"
+   ]
+  },
+  {
+   "id": "03/0373#14",
+   "where": "03/0373",
+   "text": "– Mówię o tym, że Ameroka potwierdziła, iż Iran przerwał program jądrowy. To znaczy, że będzie wojna, czy nie?",
+   "q": "Maman says 'Ameroka' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Mahbub, do ciebie mówię.",
+    "– Co?"
+   ]
+  },
+  {
+   "id": "04b/0536#15",
+   "where": "04b/0536",
+   "text": "– Oooho. No to te kraje na pewno leżały blisko siebie. Kiedy było trzęsienie ziemi w Bam?",
+   "q": "Maman, watching tsunami news, guesses how earthquakes spread. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman powiedziała:"
+   ]
+  },
+  {
+   "id": "04b/0538#16",
+   "where": "04b/0538",
+   "text": "– Nastał koniec świata. Pokolenie Bibi mawiało, że gdy nadejdzie koniec świata, ziemia będzie się ciągle trząść.",
+   "q": "Maman repeats what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Około roku temu."
+   ]
+  }
+ ]
+}

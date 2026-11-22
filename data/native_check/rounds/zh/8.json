@@ -1,0 +1,182 @@
+{
+ "lang": "zh",
+ "slug": "zh",
+ "dir": "ltr",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "04b/0536#1",
+   "where": "04b/0536",
+   "text": "哎——哟。那这些国家肯定挨得很近吧。",
+   "q": "Maman reacts to news of earthquakes abroad. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "04b/0538#2",
+   "where": "04b/0538",
+   "text": "这是到了末世啦。比比那一代人总说，到了末世，大地就会一直摇晃。",
+   "q": "Maman recalls what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "——差不多一年前。"
+   ]
+  },
+  {
+   "id": "06/0040#3",
+   "where": "06/0040",
+   "text": "嗯，我们怕你难过，娜娜·佩萨尔·江。你还有博士论文答辩。",
+   "q": "Maman explains why they kept bad news from her son. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0104#4",
+   "where": "06/0104",
+   "text": "嗯，这些人，她活着的时候也没给她做多少事。",
+   "q": "Maman complains about her in-laws. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0253#5",
+   "where": "06/0253",
+   "text": "嗯，你是去旅游散心的，当然好过了。辛苦的那面你没看见。",
+   "q": "Maman teases her husband about his trip abroad. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0264#6",
+   "where": "06/0264",
+   "text": "哎，每次说让他拿个东西，他就像触电一样。",
+   "q": "Maman complains that her husband jumps whenever he is asked to fetch something. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0291#7",
+   "where": "06/0291",
+   "text": "他就是找借口抱怨，呵，阿米尔·江。这个不行，就找别的。",
+   "q": "Maman shrugs off her husband's complaints. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "06/0296#8",
+   "where": "06/0296",
+   "text": "哎，妮妮一下子困了。我从早上起来就一直没睡。",
+   "q": "Maman, calling herself by her pet name Nini, pretends to be sleepy. Does this sound playful and natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼使劲闭上眼睛说："
+   ]
+  },
+  {
+   "id": "06/0066#9",
+   "where": "06/0066",
+   "text": "后来护士亲自过来说：“我看这位是跟你们一起来的吧。”",
+   "q": "Maman retells what a nurse said at the hospital. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 在医院，他们一直喊：“阿德罕女士的家属！”没有人动。"
+   ]
+  },
+  {
+   "id": "04b/0744#10",
+   "where": "04b/0744",
+   "text": "我许了个愿，要是他好起来，我就步行去马什哈德。",
+   "q": "Maman tells of a vow she made for her son. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "有几个月，我每天早晨睁开眼睛，看到的是伊朗，而不是丹麦。玛曼终于明白，除了博士的压力和焦虑，对一个姑娘的爱已经把我拖到了崩溃的悬崖边。我躺在房间的黑暗里，透过门缝看见卡塞姆坐在家里的客厅里、对着电视嗑瓜子，玛曼坐在他旁边。新闻在讲全国北部和西部各省大范围洪灾造成的损失。从背后看，玛曼在我眼里像一个小小的圆，挨着一个大些的长方形坐着。玛曼说："
+   ]
+  },
+  {
+   "id": "01/0090#11",
+   "where": "01/0090",
+   "text": "只是看在眼里，吃悲伤。",
+   "q": "Maman uses a Persian image, eating sorrow, for grieving in silence. Is the meaning clear?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 没有。我就是个苦命人，什么都不说，一直闭着嘴。"
+   ]
+  },
+  {
+   "id": "03/0297#12",
+   "where": "03/0297",
+   "text": "你做的事全是些糊弄了事的招。",
+   "q": "During a quarrel, one parent snaps at the other about sloppy fixes. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– 好了，这样不行——一会儿为了上学把出生证明里姓氏中的“阿”撕掉，一会儿为了别的单位又粘回去。",
+    "– 这跟你有什么关系？我知道我在做什么。"
+   ]
+  },
+  {
+   "id": "04a/0008#13",
+   "where": "04a/0008",
+   "text": "只要这根线在你手里，你就不会迷路。另一头在我手里。",
+   "q": "Maman reassures her four-year-old son. Does it sound like a mother talking to a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 不会。"
+   ]
+  },
+  {
+   "id": "04a/0066#14",
+   "where": "04a/0066",
+   "text": "什么东西让你害怕的时候，就用一个办法，这样你就不会害怕了。",
+   "q": "Maman praises her small son's trick for not being scared. Does it sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 做得好，我机灵的孩子。"
+   ]
+  },
+  {
+   "id": "04b/0526#15",
+   "where": "04b/0526",
+   "text": "这么大的浪是打哪儿来的？",
+   "q": "Maman reacts to a huge wave the family is watching. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "玛曼说："
+   ]
+  },
+  {
+   "id": "04a/0005#16",
+   "where": "04a/0005",
+   "text": "那为什么，现在我站在小巷门后面，她不来找我哪怕一次呢？",
+   "q": "A six-year-old tells this. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  }
+ ]
+}

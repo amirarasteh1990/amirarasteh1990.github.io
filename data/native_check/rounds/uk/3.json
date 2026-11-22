@@ -1,0 +1,182 @@
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "04a/0080#1",
+   "where": "04a/0080",
+   "text": "Чому ви не пішли до мармульного будинку?",
+   "q": "The older brother uses his made-up word 'мармульного' for marble again, on purpose. Does it read as a child's word, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…крутилось. Він був червоний. Як ті самі великі червоні двері. Я сів біля краю канави. Поставив ноги в канаву. Води не було. У серці було порожньо. Чоловік повернувся. Переднє колесо вже не крутилось. Він дав ляпаса Оміду. Ми обидва заплакали. Чоловік пішов. Гасем повернувся. Насварив нас. Сказав:"
+   ]
+  },
+  {
+   "id": "03/0189#2",
+   "where": "03/0189",
+   "text": "Пфф, осле, хто знає краще — друг двоюрідного брата майстра нашого швагра, найбагатша людина в Тегерані, чи ти, теля?",
+   "q": "An angry boy calls his friend 'осле' and 'теля'. Does his outburst sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хамід скипів і закричав:"
+   ]
+  },
+  {
+   "id": "03/0373#3",
+   "where": "03/0373",
+   "text": "Кажу, ось Амерока підтвердила, що Іран зупинив ядерну програму. То буде війна чи ні?",
+   "q": "Maman, worried, asks about the news, saying 'Амерока' on purpose. Does her question sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Що?"
+   ]
+  },
+  {
+   "id": "04b/0385#4",
+   "where": "04b/0385",
+   "text": "Не може із собою нічого вдіяти. Така вже система на його фабриці.",
+   "q": "Hooman jokes that Amir's odd habits are built in, like a factory setting. Does this sound natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Ельді — Тавернї."
+   ]
+  },
+  {
+   "id": "04b/0226#5",
+   "where": "04b/0226",
+   "text": "щоразу, коли я приходила на заняття й справи за тим довбаним другим фахом, я бачила, як вони сперечаються.",
+   "q": "A male friend, now older, grumbles about the second degree he took at university. Does this sound right for him?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0385#6",
+   "where": "04b/0385",
+   "text": "Завжди дуже вишукано й церемонно, він серить просто на історичному повороті.",
+   "q": "Hooman crudely says Amir always messes things up at the crucial moment. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ельді — Тавернї. Не може із собою нічого вдіяти. Така вже система на його фабриці."
+   ]
+  },
+  {
+   "id": "03/0638#7",
+   "where": "03/0638",
+   "text": "Це ладно; але хоч скільки разів я дзвонив, чому ти не брав слухавку?",
+   "q": "Hooman, out of breath, drops one complaint to ask why Amir never answers his calls. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Та ще якщо додати той останній відрізок, де звужується й іде майже до воріт Валіасра, — вийде сто сімдесят метрів. Щоб ти провалився, сто сімдесят метрів ти тягнув мене за собою з цим тілом."
+   ]
+  },
+  {
+   "id": "04b/0520#8",
+   "where": "04b/0520",
+   "text": "Сьогодні в кімнаті не сперечайтеся, я з фізкультури дістав дванадцять, нерви ні до біса, обматюкаю вас.",
+   "q": "Hooman warns his roommates he is in a foul mood. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "03/0523#9",
+   "where": "03/0523",
+   "text": "Революція, що починається з такою кров'ю й насильством, матиме жахливий кінець.",
+   "q": "Eskandar comments gravely on a violent news video. Does this sentence sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ескандар сказав:"
+   ]
+  },
+  {
+   "id": "03/0576#10",
+   "where": "03/0576",
+   "text": "Я б життя віддав за ці твої солов'їні очі, Орлине Око-джан, але проблема на стороні отримувача; передавач її не вирішить.",
+   "q": "Farid teases short-sighted Sajad, who grabbed the wrong toothbrush: the fault lies in his eyes. Does the joke come through?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Об'єктивно, наступного разу купи іншого кольору.",
+    "Фарід сказав:"
+   ]
+  },
+  {
+   "id": "03/0502#11",
+   "where": "03/0502",
+   "text": "Ааах. Аж шкіра здригнулася.",
+   "q": "Farid reacts with disgust to a gory video. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Фарід сказав:"
+   ]
+  },
+  {
+   "id": "03/0517#12",
+   "where": "03/0517",
+   "text": "Леопард Фарід сам не знає, де він стоїть. З одного боку викидає убивчі трюки, з другого каже: ой, кров, аж шкіра здригнулася.",
+   "q": "Hooman teases Farid for being both daring and squeamish. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "04b/0421#13",
+   "where": "04b/0421",
+   "text": "Леопарде Фаріде, тримай нерви в шорах і не утни якогось убивчого трюку.",
+   "q": "Hooman tells hot-headed Farid to calm down. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "03/0620#14",
+   "where": "03/0620",
+   "text": "Гей, Леопард Фарід, дай, я відкрию на фалі.",
+   "q": "Hooman wants to tell his fortune by opening the book of Hafez at random. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "04a/0026#15",
+   "where": "04a/0026",
+   "text": "Початок першого етапу місії. Батальйон, ліворуч кругом!",
+   "q": "A boy plays army commander and orders his little brothers to make a simple left turn. Does the command sound right?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ми йшли у провулок. Спочатку треба було дійти до початку провулку. Гасем казав:"
+   ]
+  },
+  {
+   "id": "04a/0062#16",
+   "where": "04a/0062",
+   "text": "Тут багато хто зазнає поразки. Повертають ліворуч.",
+   "q": "A boy of about ten warns his little brothers of a wrong turn in their game. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Цю частину я так і не вивчив. Він казав: найважливіше... щось... у місії. Потім казав:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-22.r14",
+ "items": [
+  {
+   "id": "04b/1395#1",
+   "where": "04b/1395",
+   "text": "прийди знову в мої сни",
+   "q": "In his poem, the narrator asks his lost love to come into his dreams once more. Does this line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "але якщо доля приведе тебе сюди"
+   ]
+  },
+  {
+   "id": "02/0002#2",
+   "where": "02/0002",
+   "text": "Мої сни були темні",
+   "q": "The first line of the narrator's love poem. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1267#3",
+   "where": "04b/1267",
+   "text": "На всьому можна писати",
+   "q": "The first line of a short poem written on a blackboard. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1276#4",
+   "where": "04b/1276",
+   "text": "пройшли цим шляхом.",
+   "q": "The last line of the blackboard poem: lovers, drunkards and the burned ones passed this way. Does it read as poetry?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "знав, що",
+    "закохані й",
+    "п'яниці й",
+    "спалені"
+   ]
+  },
+  {
+   "id": "02/0001#5",
+   "where": "02/0001",
+   "text": "Серце моє ясне: завтра, коли розплющу очі, все буде скінчено, і темрява повернеться до моїх снів.",
+   "q": "The narrator, awake at dawn, feels at peace. Does this sentence read naturally as literary prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "02/0001#6",
+   "where": "02/0001",
+   "text": "Знову я бранець власних фантазій. Це лише звук вітру, що б'ється об вікно.",
+   "q": "The narrator thought he heard birds, but it is only the wind. Does this read naturally as literary prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "03/0244#7",
+   "where": "03/0244",
+   "text": "я б не взяв за жодні скарби перстень Соломона, до якого часом торкається рука...",
+   "q": "A line of Hafez's poetry about King Solomon's ring. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1301#8",
+   "where": "04b/1301",
+   "text": "Прочитала «Давно вже коханий не присилав звістки; не писав вітання...», і мене розібрав сміх.",
+   "q": "Niloofar reads the opening of a Hafez poem about a silent beloved. Does the quoted line read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1099#9",
+   "where": "04b/1099",
+   "text": "З одного боку розколини тяжіла вага меж і святощів моїх багаторічних переконань, а з другого боку розколини стояла Нілуфар.",
+   "q": "The narrator feels torn between old beliefs and the girl he loves. Does this sentence read naturally?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "03/0458#10",
+   "where": "03/0458",
+   "text": "Наступного тижня, у четвер о третій, на тому самому місці, де ми бачилися минулого разу. Скажу також, що маю не більше півгодини.",
+   "q": "A busy student writes back to set up a short meeting. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Цього тижня в мене зовсім немає часу."
+   ]
+  },
+  {
+   "id": "03/0580#11",
+   "where": "03/0580",
+   "text": "Де на моїй шиї написано «опора для ніг»?",
+   "q": "A student, stepped on by a roommate climbing to his bunk, complains. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Ой, вибач. Об'єктивно, намагаюся дістатись до свого ліжка. Важко."
+   ]
+  },
+  {
+   "id": "04b/0270#12",
+   "where": "04b/0270",
+   "text": "Я знаю, я ж не дурненька. Але так не годиться.",
+   "q": "Niloofar, a student, answers Amir frankly. Does she sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…я дізнаюся щось нове й цікаве, я можу швидко прийти й сісти на цю лаву й розповісти про це тобі. Не треба чекати кілька місяців, чи побачу я тебе знов. Як би це сказати? Багато слів, якщо їх не сказати тут-таки, втрачають смак і черствіють. Вони втрачають усю свою витонченість, свіжість і живість."
+   ]
+  },
+  {
+   "id": "04b/0317#13",
+   "where": "04b/0317",
+   "text": "Так мене дратує, коли ти отак мовчки сидиш. Мені хочеться вдарити тебе кулаком.",
+   "q": "A young woman, exasperated, scolds a silent young man. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…побачив, що ангел нічого не тямить у коханні й любощах, спрямував Свої явлення краси до Адама. То як ти сподіваєшся, що Його творіння горітиме за кимось, хто не знає про кохання анічогісінько? Вона зітхнула, і пара її подиху, звиваючись і закручуючись, піднялася до неба, а я мовчки дивився на неї."
+   ]
+  },
+  {
+   "id": "04b/0370#14",
+   "where": "04b/0370",
+   "text": "Ні в кого в кімнаті немає килима, Баба-джан, тільки в нас є килим, і то тому, що ми кімната обраних.",
+   "q": "Eskandar shows off to his visiting father. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "І Нілуфар чула моє бубоніння. Коли я ввійшов до кімнати, хлопці з кімнати й літній чоловік, у якому я вгадав батька Ескандара, сиділи на килимі посеред кімнати. Уже минув полудень, і призахідне сонце осяяло середину килима. Ескандар казав:"
+   ]
+  },
+  {
+   "id": "06/0108#15",
+   "where": "06/0108",
+   "text": "Ааахххх. Це я їй підказав. Ніні побачила, що фраза гарна, й переказала її тобі.",
+   "q": "Ghassem playfully claims credit for a line his mother passed on. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Угу."
+   ]
+  }
+ ]
+}

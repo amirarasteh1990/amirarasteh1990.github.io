@@ -1,38 +1,58 @@
 {
-  "lang": "sw",
-  "slug": "sw",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Kutoka upande huu, ninafungua uzi wa maneno, na kutoka upande ule, unaukusanya.",
-      "q": "Is it clear the reader gathers the words themselves, not just the thread?"
-    },
-    {
-      "id": "03/0176#2",
-      "where": "03/0176",
-      "text": "Taghi alikuwa ameiba nyanya tano kutoka duka la matunda la Ami Badiollah.",
-      "q": "Badiollah is a neighborhood fruit seller, not family. Does 'Ami Badiollah' sound natural?"
-    },
-    {
-      "id": "03/0178#3",
-      "where": "03/0178",
-      "text": "Mimi, Yaser, Taghi na Hamid tulikuwa tumekaa kwenye kingo la barabara kuu, tukisubiri kuona nyanya ipi ingepigwa kwanza chini ya magurudumu ya magari yanayopita.",
-      "q": "Boys wait to see a tomato crushed by passing cars. Does this read naturally?"
-    },
-    {
-      "id": "04b/0285#4",
-      "where": "04b/0285",
-      "text": "Zana bora ya kulainisha pembe hizi kali ni tupa la metali: uhusiano, kuanzia mahusiano rahisi kabisa hadi yale ya karibu zaidi.",
-      "q": "Is it clear relationships work like a file, smoothing sharp edges?"
-    },
-    {
-      "id": "04b/1263#5",
-      "where": "04b/1263",
-      "text": "– Vwuuum, Baba Baba, utaninunulia mwanasesele huyu mkubwa?",
-      "q": "A toddler asks his dad for a doll. Does it sound like baby talk?"
-    }
-  ]
+ "lang": "sw",
+ "slug": "sw",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kutoka upande huu, ninafungua uzi wa maneno, na kutoka upande ule, unaukusanya.",
+   "q": "Is it clear the reader gathers the words themselves, not just the thread?",
+   "before": [
+    "Ufunguzi",
+    "…zimekwisha pita. Dakika na picha ambazo zingemezwa na msongo wa matukio ya ulimwengu kama hazingeandikwa hapa. Ziliandikwa ili ziwe daraja kati ya ulimwengu wangu na wako. Daraja kutoka ulimwengu wangu, katika dakika ninayoandika sentensi hizi, hadi ulimwengu wako, katika dakika unayokaa kukisoma."
+   ]
+  },
+  {
+   "id": "03/0176#2",
+   "where": "03/0176",
+   "text": "Taghi alikuwa ameiba nyanya tano kutoka duka la matunda la Ami Badiollah.",
+   "q": "Badiollah is a neighborhood fruit seller, not family. Does 'Ami Badiollah' sound natural?",
+   "before": [
+    "Ilitoroka kinywani mwangu:",
+    "– Yaani matajiri kuliko rafiki wa binamu wa ..."
+   ]
+  },
+  {
+   "id": "03/0178#3",
+   "where": "03/0178",
+   "text": "Mimi, Yaser, Taghi na Hamid tulikuwa tumekaa kwenye kingo la barabara kuu, tukisubiri kuona nyanya ipi ingepigwa kwanza chini ya magurudumu ya magari yanayopita.",
+   "q": "Boys wait to see a tomato crushed by passing cars. Does this read naturally?",
+   "before": [
+    "– Hii ni wizi. Ni haramu.",
+    "Walinifanya dhihaka. Baada ya hapo, nilikuwa nahesabu nyanya zangu, na Maman aniambie kununua nyanya, ningetoa idadi ile ile kutoka kwenye mfuko wa plastiki na, Ami Badiollah asipotazama, kuzitupa kwenye sanduku lake la nyanya."
+   ]
+  },
+  {
+   "id": "04b/0285#4",
+   "where": "04b/0285",
+   "text": "Zana bora ya kulainisha pembe hizi kali ni tupa la metali: uhusiano, kuanzia mahusiano rahisi kabisa hadi yale ya karibu zaidi.",
+   "q": "Is it clear relationships work like a file, smoothing sharp edges?",
+   "before": [
+    "Sikusema lolote. Akaendelea:",
+    "…na kurudi tena ndani ya ganda lako baya zaidi kuliko awali. Unajua, nasema nafsi yetu ni kama almasi. Almasi iliyojaa pembe kali. Maana yake, yenyewe ina thamani kubwa sana, lakini kama roho yangu inatakiwa kugusana na yako, lazima niweze kugusa roho yako; sasa kama pembe zako ni kali, zinaniumiza."
+   ]
+  },
+  {
+   "id": "04b/1263#5",
+   "where": "04b/1263",
+   "text": "– Vwuuum, Baba Baba, utaninunulia mwanasesele huyu mkubwa?",
+   "q": "A toddler asks his dad for a doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, mwanangu. Amka. Amka kwa ajili ya Maman. Ilikuwa ndoto tu. Usiogope, niko hapa hapa.",
+    "…haikutoa mwanga wa kutosha kuniongoza popote. Taa inayokonyeza mkononi mwa msichana ambaye sikujua kamwe rangi ya mlango wa nyumba yao ingewekwa wapi katika kisanduku cha penseli za rangi. Msichana mdogo anakuja akikimbia, akivuma, na kusimama kando yangu. Anatazama vitu vya kuchezea. Anasema:"
+   ]
+  }
+ ]
 }

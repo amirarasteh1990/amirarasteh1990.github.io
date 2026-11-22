@@ -1,0 +1,189 @@
+{
+ "lang": "de",
+ "slug": "de",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "04b/0616#1",
+   "where": "04b/0616",
+   "text": "– Okay, Adlerauge, okay. Steck jetzt nur nicht deine Brille in den Laptop.",
+   "q": "Hooman teases short-sighted Sajad, nicknamed 'Adlerauge', who peers very close to his laptop. Does the tease come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman sagte:"
+   ]
+  },
+  {
+   "id": "01/0142#2",
+   "where": "01/0142",
+   "text": "– Baba was?",
+   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Dann denk mal daran, was unser armer Baba durchmacht – all diese Jahre sitzt er untätig zuhause.",
+    "Maman sagt:"
+   ]
+  },
+  {
+   "id": "06/0023#3",
+   "where": "06/0023",
+   "text": "– Ich trag sie, kein Strees. Aber ich hasse sie wirklich.",
+   "q": "Maman, talking about her face mask, says 'kein Strees', mangling Stress on purpose. Does it sound like her, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Aber du behältst deine auf, Nini-jan."
+   ]
+  },
+  {
+   "id": "03/0189#4",
+   "where": "03/0189",
+   "text": "– Na, Grautier, wer weiß es besser, der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, oder du, du Kalb?",
+   "q": "Hamid, a boy, angrily calls his friend 'Grautier', a softer word for donkey. Does it sound like a child's angry insult?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid kochte über und schrie:"
+   ]
+  },
+  {
+   "id": "03/0309#5",
+   "where": "03/0309",
+   "text": "– So Gott will, mögest du immer araasteh sein.",
+   "q": "Smiling, the guard wishes him to always be 'araasteh', neat and well-kept, as his name says. Does this blessing read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Der Wächter lächelt und sagt:"
+   ]
+  },
+  {
+   "id": "06/0186#6",
+   "where": "06/0186",
+   "text": "– Ich würd alles für dich geben, Nini-jan – dein Kopf arbeitet so gut.",
+   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "…gestorben war, kam seine Mutter zur Tür und sagte zu Maman: Wir wissen nicht, was wir den Leuten sagen sollen. Wenn wir sagen, er hat starken selbst gebrannten Aragh getrunken und eine Synkope erlitten, ist das eine schreckliche Schande. Da sagte Maman zu ihr: Sagt einfach, er habe Covid bekommen.",
+    "Ich sage:"
+   ]
+  },
+  {
+   "id": "03/0624#7",
+   "where": "03/0624",
+   "text": "– Stark, Ältester der Schenke. Das ist perfekt für Arasteh.",
+   "q": "Farid gives Amir the mock-grand nickname 'Ältester der Schenke', from a Hafez poem. Does it sound funny and natural as a nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid sagte:"
+   ]
+  },
+  {
+   "id": "03/0628#8",
+   "where": "03/0628",
+   "text": "– Haha, Ältester der Schenke, Äldi, perfekt. Ins Schwarze getroffen, Leopard-Farid.",
+   "q": "Hooman shortens that nickname to 'Äldi'. Does this pet name sound natural and playful between friends?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman schrieb mit einem Stift etwas ins Buch und sagte:"
+   ]
+  },
+  {
+   "id": "03/0630#9",
+   "where": "03/0630",
+   "text": "– Wirklich und wahrhaftig Schenki.",
+   "q": "Farid shortens the same nickname to 'Schenki'. Does it sound like a playful nickname between friends?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Haha, Ältester der Schenke, Äldi, perfekt. Ins Schwarze getroffen, Leopard-Farid.",
+    "Farid sagte:"
+   ]
+  },
+  {
+   "id": "03/0388#10",
+   "where": "03/0388",
+   "text": "– Objektiv, ohne Brille sehe ich gar nichts.",
+   "q": "Sajad starts or ends almost every sentence with 'Objektiv', a habit his roommates mock. Does this habit read naturally in his speech?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad sagte:"
+   ]
+  },
+  {
+   "id": "03/0126#11",
+   "where": "03/0126",
+   "text": "– Ja. Der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, spricht genauso.",
+   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid sagte:"
+   ]
+  },
+  {
+   "id": "04b/1300#12",
+   "where": "04b/1300",
+   "text": "– Hast du mit diesem Satz gerade auf uns geschissen oder auf Mister lockenhaarigen Schrödinger?",
+   "q": "Farid crudely asks whom a friend's lofty remark insulted, mocking a roommate as 'Mister lockenhaarigen Schrödinger'. Does it sound natural?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– ... die Art, wie du redest – jemand muss entweder sehr tief sein, um dich nicht zu verstehen, oder sehr oberflächlich, um dir gern zuzuhören.",
+    "Farid sagte:"
+   ]
+  },
+  {
+   "id": "01/0132#13",
+   "where": "01/0132",
+   "text": "Steck deinen Kopf in jeden Winkel und jede Ecke. Die Alten sagten immer: schau in jeden letzten Winkel.",
+   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mm-hm, du machst das richtig. Solange du die Gelegenheit hast, geh und sieh dir alle Dörfer an."
+   ]
+  },
+  {
+   "id": "04a/0111#14",
+   "where": "04a/0111",
+   "text": "Ich stieß gegen eine Mauer. Sie war aus Marmel. Ich nahm einen Stock.",
+   "q": "A lost six-year-old tells this, using his brother's wrong word 'Marmel' for Marmor. Does it read as a child's word, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Der Faden war nicht mehr in meiner Hand. Er lief einem Fuß hinterher. Ich lief auch hinterher. Ein kleines Kind kam zwischen den Beinen hervor. Das kleine Kind packte meinen Fuß mit einer Hand. Ich fiel hin. Es wurden immer mehr Beine. Der Faden war weg. Ich ging zwischen den Beinen durch."
+   ]
+  },
+  {
+   "id": "03/0383#15",
+   "where": "03/0383",
+   "text": "– Nein, Ayzheimer ist sehr schlimm. Eine meiner Freundinnen hat Ayzheimer; sie erkennt ihre Kinder nicht mehr.",
+   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "Omid sagte:",
+    "– Nein, diese hier ist sehr schlimm. Es gibt auch kein Medikament dafür."
+   ]
+  },
+  {
+   "id": "06/0027#16",
+   "where": "06/0027",
+   "text": "– Nana-pesar-jan, kein Strees. Es waren nur zwanzig Leute da.",
+   "q": "Maman brushes off her son's worry after going to a wedding, with her slip 'Strees'. Does it sound like her?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Ach, warum bist du hingegangen? Was sollen wir machen, wenn du Covid kriegst?"
+   ]
+  }
+ ]
+}

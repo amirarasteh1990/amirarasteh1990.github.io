@@ -1,0 +1,230 @@
+{
+ "lang": "pt-BR",
+ "slug": "pt-br",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04a/0082#1",
+   "where": "04a/0082",
+   "text": "Você não falou.",
+   "q": "A crying small boy answers his big brother. Does it sound like a small child?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Por que vocês não foram pra casa de málmore?",
+    "O Omid estava chorando. Ele disse:"
+   ]
+  },
+  {
+   "id": "04a/0042#2",
+   "where": "04a/0042",
+   "text": "O nome é Bazar de Quchan, e a nossa casa fica no fim do Bazar de Quchan.",
+   "q": "Two brothers argue about what their street is called. Does it sound like children arguing?",
+   "ctx": 3,
+   "kind": "child",
+   "before": [
+    "Naquele dia o Hashem brigou com o Abolfazl. O Abolfazl disse:",
+    "– É a rua principal.",
+    "O Hashem disse:"
+   ]
+  },
+  {
+   "id": "04a/0049#3",
+   "where": "04a/0049",
+   "text": "Se ele não fosse velho, não tirava o grão-de-bico de volta. Se não tirasse, a Maman fazia mais ash.",
+   "q": "A six-year-old reasons about the old grocer. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0053#4",
+   "where": "04a/0053",
+   "text": "Era longe. Até o outro lado do mundo. Talvez não. Mas era longe.",
+   "q": "A six-year-old describes a long walk. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0005#5",
+   "where": "04a/0005",
+   "text": "Então por que agora, que eu estou parado atrás da porta da viela, ela não vem me achar nem uma vez?",
+   "q": "A six-year-old wonders why his mother no longer comes looking for him. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Naquela época eu tinha quatro anos. Ela sempre me achava quatro vezes. Agora eu tenho seis."
+   ]
+  },
+  {
+   "id": "02/0001#6",
+   "where": "02/0001",
+   "text": "Mais uma vez sou prisioneiro das minhas próprias fantasias. É só o som do vento se jogando contra a janela.",
+   "q": "A sleepless young poet at dawn mistakes the wind for birdsong. Does this read naturally?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Os pássaros voltaram e estão pousados na macieira atrás da janela. Eu os ouço. Com todo este frio de inverno, de onde vieram esses pássaros cantores?"
+   ]
+  },
+  {
+   "id": "04b/1394#7",
+   "where": "04b/1394",
+   "text": "mas se acaso você passar perto",
+   "q": "A line from a young man's love poem, hoping she might pass his way. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "A luz dos meus sonhos agora pisca",
+    "Não tenho esperança no seu regresso"
+   ]
+  },
+  {
+   "id": "04b/1392#8",
+   "where": "04b/1392",
+   "text": "A luz dos meus sonhos agora pisca",
+   "q": "A line from a young man's love poem: the light in his dreams now flickers. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "A luz dos meus sonhos acendeu-se",
+    "Agora você se foi"
+   ]
+  },
+  {
+   "id": "01/0042#9",
+   "where": "01/0042",
+   "text": "Vê? Assim, num piscar de olhos, todos os grãos de terra se transformaram em ouro.",
+   "q": "Niloofar playfully leads Amir through an imaginary world. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…Aqui o chão é feito de água e o céu é feito de terra. Quer dizer que em vez de chuva, cai terra do céu. Mas a água tem a cor da terra, e a terra é azul. Agora levanta as mãos para o céu. Sente as gotas de terra nas mãos? Se quiser, pode até imaginar que em vez de terra, a chuva é feita de ouro."
+   ]
+  },
+  {
+   "id": "03/0297#10",
+   "where": "03/0297",
+   "text": "Tudo o que você faz é um remendo.",
+   "q": "A wife snaps at her husband over his sloppy paperwork. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Hmm, não dá pra fazer desse jeito — tirar o «a» dos sobrenomes pro colégio e pôr de volta pra outros serviços.",
+    "– O que você tem a ver com isso? Eu sei o que estou fazendo."
+   ]
+  },
+  {
+   "id": "03/0345#11",
+   "where": "03/0345",
+   "text": "Você ainda não terminou o que veio fazer?",
+   "q": "A young woman, impatient, asks a student she barely knows this. Does it sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Os vinte minutos que você disse que tinha ainda não acabaram.",
+    "Ela disse:"
+   ]
+  },
+  {
+   "id": "03/0458#12",
+   "where": "03/0458",
+   "text": "Esta semana não tenho tempo nenhum. Na semana que vem, quinta-feira às três, no mesmo lugar onde a gente se viu da última vez.",
+   "q": "A young woman replies by message, coolly setting a short meeting. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…mesmo que se a Niloofar não me aceitou, não foi por causa das minhas palavras, mas principalmente porque eu insistia em manter tudo em segredo e porque nunca, nem antes de revelar meus sentimentos nem depois de expressá-los, fui direto em direção à Niloofar dentro da faculdade. Ela tinha escrito:"
+   ]
+  },
+  {
+   "id": "04b/0270#13",
+   "where": "04b/0270",
+   "text": "Você tem que sair desse seu abrigo e realmente fazer algo, não vir aqui se sentar e fantasiar.",
+   "q": "Niloofar loses patience with a shy admirer who only daydreams. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Eu sei. Não sou idiota. Mas isso não funciona."
+   ]
+  },
+  {
+   "id": "04b/0317#14",
+   "where": "04b/0317",
+   "text": "Fico tão furiosa quando você fica aí sentado em silêncio desse jeito. Dá vontade de te dar um soco.",
+   "q": "Niloofar, frustrated by Amir's silence, says this. Does it sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…amor, levou as Suas manifestações de beleza até Adão. Então como você espera que uma criatura Sua arda aos pés de alguém que não entende nada de amor? Ela suspirou, e o vapor da sua respiração subiu, retorcendo-se e enrolando-se em direção ao céu, enquanto eu a observava sem dizer uma palavra."
+   ]
+  },
+  {
+   "id": "04b/0370#15",
+   "where": "04b/0370",
+   "text": "Nenhum quarto tem tapete, Baba-jan. Só nós temos tapete, e é porque somos o quarto de elite.",
+   "q": "Eskandar boasts to his visiting father about the room. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "E a Niloofar ouviu os meus murmúrios. Quando entrei no quarto, os rapazes do quarto e um homem mais velho que eu imaginei ser o Baba do Eskandar estavam sentados no tapete no meio do quarto. Era passado do meio-dia e o sol em declínio iluminava o centro do tapete. O Eskandar estava dizendo:"
+   ]
+  },
+  {
+   "id": "04b/0442#16",
+   "where": "04b/0442",
+   "text": "eram completamente inúteis. Um pior do que o outro.",
+   "q": "Hooman sums up a pair of useless roommates from years ago. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Durante alguns dias, o Eskandar se deitava no tapete e segurava a Moral dos Escravos à sua frente. Depois, sem dizer nada, pôs o livro de volta no lugar, embaixo da minha cama, e pegou o próprio livro grosso com capa de jornal e ficou lendo."
+   ]
+  },
+  {
+   "id": "04b/1062#17",
+   "where": "04b/1062",
+   "text": "Assim que aprender os nossos nomes, ela vai gostar da gente.",
+   "q": "A boy spray-paints names on a wall, sure the girl will like them. Does it sound like a boy's naive logic?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "O Yaser, enquanto escrevia os nossos nomes na parede em frente da casa da Negar com um spray que tinha surrupiado do caminhão Khavar do pai dele, dizia:"
+   ]
+  },
+  {
+   "id": "04b/1119#18",
+   "where": "04b/1119",
+   "text": "Vocês são todos como os meus próprios filhos.",
+   "q": "An old woman warmly welcomes some students into her home. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…pra tomar chá e comer fruta até as coisas lá fora acalmarem um pouco. Duas vozes desconhecidas, falando por todos nós, disseram que não podíamos incomodar mais. A insistência da velhinha não deu em nada e ela subiu. Uns minutos depois voltou com uma travessa de fruta e um jarro de água. Dizia:"
+   ]
+  },
+  {
+   "id": "06/0050#19",
+   "where": "06/0050",
+   "text": "Amir, o Avô pegou Covid também, mas nem deu para perceber – para ele, foi como um simples resfriado.",
+   "q": "Amir's sister tells him lightly how Grandpa shook off Covid. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Mahboubeh diz:"
+   ]
+  },
+  {
+   "id": "06/0108#20",
+   "where": "06/0108",
+   "text": "Aaahhhh. Fui eu que disse isso pra ela. A Nini achou que era uma boa frase e repetiu pra você.",
+   "q": "Ghassem, teasing, claims a loving phrase Maman used was really his. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– A propósito, Amir – quando a Maman te ligou uns dias atrás, ela disse: “Se você soubesse quanto eu te amo, ficaria com vergonha”?",
+    "– Sim."
+   ]
+  }
+ ]
+}

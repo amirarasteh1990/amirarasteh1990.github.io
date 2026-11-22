@@ -1,15 +1,48 @@
-{"lang": "sl", "slug": "sl", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "sl",
+ "slug": "sl",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "S te strani odmotavam besede, ti pa jih z one strani zbiraš.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "03/0459#2", "where": "03/0459",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Uvod",
+    "…te knjige. Trenutki in podobe, ki bi se izgubili v vročičnem šumu svetovnih dogodkov, če ne bi bili zapisani tukaj. Zapisani so bili, da bi postali most med mojim svetom in tvojim. Most iz mojega sveta — v trenutku, ko pišem te stavke — do tvojega, v trenutku, ko se usedeš k njihovemu branju."
+   ]
+  },
+  {
+   "id": "03/0459#2",
+   "where": "03/0459",
    "text": "Sredi dvorišča sem stal obrnjen k prehodu Valiasr.",
-   "q": "He faces the university's Valiasr gate. Is 'prehodu' right for a gate?"},
-  {"id": "03/0459#3", "where": "03/0459",
+   "q": "He faces the university's Valiasr gate. Is 'prehodu' right for a gate?",
+   "before": [
+    "– Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
+    "…en teden, šest dni, pet dni, štiri dni, tri dni, dva dni, jutri – tu, poleg Niloofar, bom sedel. Ura je bila čez tri. Ni prišla. Čutil sem utrip svojega srca in nekaj mi je pritiskalo v grlu. Bil sem odločen, da bom, ne glede na vse, razrešil, kakšno vlogo ima Sina v njenem življenju. Šel sem ven."
+   ]
+  },
+  {
+   "id": "03/0459#3",
+   "where": "03/0459",
    "text": "Tolažil sem se, da je mehr najboljši mesec v letu za drugo romantično srečanje.",
-   "q": "Is it clear why Mehr is the best month for a romantic meeting?"},
-  {"id": "04b/1263#4", "where": "04b/1263",
+   "q": "Is it clear why Mehr is the best month for a romantic meeting?",
+   "before": [
+    "– Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
+    "…Maman rekel, da so nam uredili poletne inštrukcije. Nisem šel domov – v upanju, da bom videl Niloofar. Poletje je minilo in začele so se ure sedmega semestra. Govoril sem si, da če sem vse tisto poletje preživel z Niloofarinim «morda naslednji mesec», bo v zameno naše drugo srečanje padlo v Mehr."
+   ]
+  },
+  {
+   "id": "04b/1263#4",
+   "where": "04b/1263",
    "text": "– Vžžž, Baba, Baba, mi kupiš to veliko punčko?",
-   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?"}
- ]}
+   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, moj sin. Zbudi se. Zbudi se, mamin. Vse je bilo le sanje. Ne boj se, tu sem.",
+    "…prijetno, pomirjujočo temno temo, a ni dajala dovolj svetlobe, da bi me kam povedla. Svetilko, ki pomežikne v roki dekleta, čigar barve vrat nikoli nisem izvedel, čigar barve nikoli nisem uspel umestiti v škatlo lesenih barvic. Deklica pridrvi z »vžž vžž« in se ustavi ob meni. Gleda igrače. Reče:"
+   ]
+  }
+ ]
+}

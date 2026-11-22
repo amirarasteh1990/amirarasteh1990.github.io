@@ -1,0 +1,178 @@
+{
+ "lang": "lt",
+ "slug": "lt",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0422#1",
+   "where": "03/0422",
+   "text": "– Kas tau vėl negerai?",
+   "q": "Hooman, irritated, snaps at a roommate's odd question. Does it sound rude enough for him?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hūmanas suglamžė guminių saldainių pakuotę rankoje ir metė po lova. Iš po lovos paėmė Islamo minties vadovėlį ir padėjo ant čiužinio. Žiovavo ir tarė:"
+   ]
+  },
+  {
+   "id": "03/0390#2",
+   "where": "03/0390",
+   "text": "– Sakau, nematau, šikniau.",
+   "q": "Sajad crudely tells Farid he cannot see without glasses. Does 'šikniau' work as an insult between friends?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pabaiga. Žiūrėk pabaigą. Matai, kaip greitai sprunka. Ir voro namą sudraskė į šipulius. Ne veltui pavadinau jį Dokumentinis filmas apie tarakoną, sugriovusį voro namą."
+   ]
+  },
+  {
+   "id": "03/0394#3",
+   "where": "03/0394",
+   "text": "Arba esi bybiagal... tiesa, tu ir taip buvai bybiagalvis, o dabar tapai dar didesniu bybiagalviu.",
+   "q": "Hooman coins a crude insult, dick-brained, and corrects himself mid-word. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Staiga užsikirtai ties šiuo klausimu. Yra kelios galimybės. Arba kur nors susitrenkei galvą."
+   ]
+  },
+  {
+   "id": "04b/0784#4",
+   "where": "04b/0784",
+   "text": "– Labai tu paslaptingas.",
+   "q": "Niloofar teases Amir for secretly overhearing her talk. Does this sound like her playful teasing?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Va, vėl pasakė „žinau“. Iš kur, tiksliai?",
+    "– Šiandien fakulteto viduryje tu su keliomis kitomis merginomis kalbėjaisi. Aš girdėjau."
+   ]
+  },
+  {
+   "id": "04b/1314#5",
+   "where": "04b/1314",
+   "text": "– Trisdešimt du mėnesius jus myliu. Iš tolo. Jums nežinant.",
+   "q": "A shy student confesses his love to a classmate, addressing her politely. Does that sound right here?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Nuėjau ir po platanu kitoje Valiasro gatvės šaligatvio pusėje stovėjau laukdamas, kol Nilūfar atsiskirs nuo kitų, kad galėčiau žengti į priekį ir akis į akį pasakyti jai, kad ją myliu."
+   ]
+  },
+  {
+   "id": "03/0244#6",
+   "where": "03/0244",
+   "text": "– ... Solomono žiedo neimčiau už nieką, ant kurio kartais ranka ...",
+   "q": "Amir reads a line by the classical poet Hafez, cut off mid-sentence. Does it read as classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04a/0026#7",
+   "where": "04a/0026",
+   "text": "– Pirmojo misijos etapo pradžia. Batalionas, kairėn apsisukti!",
+   "q": "A boy playing soldier orders his little brothers to turn left. Does it sound like a child copying army commands?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Eidavome į gatvelę. Pirma reikėdavo nueiti iki gatvelės pradžios. Ghassemas visada sakydavo:"
+   ]
+  },
+  {
+   "id": "04a/0034#8",
+   "where": "04a/0034",
+   "text": "– Druska kenkia sveikatai.",
+   "q": "Maman tells her little son that salt is bad for him. Does it sound like a mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Tą kartą Maman pasakė:"
+   ]
+  },
+  {
+   "id": "04a/0062#9",
+   "where": "04a/0062",
+   "text": "– Daugelis čia pralaimia. Jie eina į kairę.",
+   "q": "A ten-year-old says many people go wrong here by turning left. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Šios dalies niekada neišmokau. Jis visada sakydavo svarbiausia... kažkas... misijoje. Tada visada sakydavo:"
+   ]
+  },
+  {
+   "id": "04a/0024#10",
+   "where": "04a/0024",
+   "text": "– Batalionas, pirmyn žygiuoti!",
+   "q": "A boy playing soldier gives orders to his little brothers. Does it sound like a child copying the army?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Pirma truputį pastovėdavome svetainėje. Ghassemas visada ką nors sakydavo. Tada visada sakydavo:"
+   ]
+  },
+  {
+   "id": "03/0055#11",
+   "where": "03/0055",
+   "text": "– Aš taip ir kalbu paprastai. Jūs manote, kad deklamuoju eilėraščius.",
+   "q": "Hamid answers in the rhythm he uses for his poems. Does it sound rhythmic, a bit like verse?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamidas tarė tuo pačiu ritmu, kuriuo deklamuodavo eilėraščius:"
+   ]
+  },
+  {
+   "id": "04b/0935#12",
+   "where": "04b/0935",
+   "text": "– „Saldžiau Atarui verkti iki aušros“ ar „dabar jis dar labiau nužudytas“?",
+   "q": "Someone asks which song he means, quoting two lines of a classical poem by Attar. Do they read naturally?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "– Mano telefone nėra vietos.",
+    "– Nori, kad atsiųsčiau vieną takelį?",
+    "– Taip, tą, kuris su Ataro eilėmis."
+   ]
+  },
+  {
+   "id": "02/0001#13",
+   "where": "02/0001",
+   "text": "Mano širdyje šviesu: rytoj, kai atidarysiu akis, viskas bus baigta ir tamsa vėl grįš į mano sapnus.",
+   "q": "The narrator feels sure of what tomorrow brings. Does 'Mano širdyje šviesu' read naturally here?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04a/0001#14",
+   "where": "04a/0001",
+   "text": "Pažiūrėjau pro skylę užuolaidos viduryje. Maman prisipildė šviesos.",
+   "q": "A small boy watches his mother through a hole in a curtain. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "01/0090#15",
+   "where": "01/0090",
+   "text": "– Ne. Aš vargšė – niekada nieko nesakau, visada tyliu. Tik žiūriu ir valgau sielvartą.",
+   "q": "Maman complains, half joking, that she always keeps quiet and suffers. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Tu jam nieko nesakei."
+   ]
+  },
+  {
+   "id": "04b/0562#16",
+   "where": "04b/0562",
+   "text": "– Erelio Aki, kad Dievas tau neatleistų, trenkei ir sutriuškinai man nugarą. Na kodėl tu nenešioji akinių?",
+   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandaras balsu, rodančiu, kad kvapas vos beateina, tarė:"
+   ]
+  }
+ ]
+}

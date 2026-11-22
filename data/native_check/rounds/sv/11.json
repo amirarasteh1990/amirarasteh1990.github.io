@@ -1,0 +1,190 @@
+{
+ "lang": "sv",
+ "slug": "sv",
+ "dir": "ltr",
+ "version": "2026-11-22.r11",
+ "items": [
+  {
+   "id": "02/0005#1",
+   "where": "02/0005",
+   "text": "Mina drömmars ljus ... mina drömmars ljus blev ... mina drömmars ljus tändes",
+   "q": "Amir, half asleep, rehearses his poem, stumbling and repeating himself. Does this halting line read naturally?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Mina drömmar var mörka",
+    "Jag kunde inget se",
+    "Du kom"
+   ]
+  },
+  {
+   "id": "04b/1267#2",
+   "where": "04b/1267",
+   "text": "Man kan skriva på allt",
+   "q": "First line of a short mystical poem written on a classroom board. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…brödbärande Baba styr jag kosan mot Enghelab-torget. Jag når Teherans universitets entréportal. Jag hade kommit för sent. Lokalen var full, och de sent anlända satt på golvet runt kanterna. Precis vid dörren hittade jag en ledig plats och satte mig. På tavlan, med vacker handstil, stod det skrivet:"
+   ]
+  },
+  {
+   "id": "04b/1270#3",
+   "where": "04b/1270",
+   "text": "skriv på vattnet med ditt eget blod",
+   "q": "From the mystical poem on the classroom board. Does this line read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Man kan skriva på allt",
+    "utom på vatten",
+    "och om du korsar havet"
+   ]
+  },
+  {
+   "id": "04b/1271#4",
+   "where": "04b/1271",
+   "text": "så att den som följer i ditt kölvatten",
+   "q": "Same poem: so that whoever comes after you will know. Does this line sound poetic, not stiff?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "utom på vatten",
+    "och om du korsar havet",
+    "skriv på vattnet med ditt eget blod"
+   ]
+  },
+  {
+   "id": "04b/1276#5",
+   "where": "04b/1276",
+   "text": "har vandrat här.",
+   "q": "The last line of the same poem. Does the ending read as poetry?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "ska veta att",
+    "älskande och",
+    "berusade och",
+    "brända"
+   ]
+  },
+  {
+   "id": "02/0001#6",
+   "where": "02/0001",
+   "text": "Fåglarna har återvänt och sitter i äppelträdet bakom fönstret. Jag kan höra dem. Mitt i denna vinterkyla, var har sångfåglarna kommit ifrån?",
+   "q": "The narrator lies awake before dawn, imagining birdsong. Does this passage read as lyrical prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "03/0244#7",
+   "where": "03/0244",
+   "text": "– ... Jag tar inte Salomos signetring till något pris, ty ibland vilar över den handen av ...",
+   "q": "Amir reads a line by the poet Hafez on a park bench. Does it sound like poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…åt. Tillsammans svängde de mot Valiasr-porten på universitetet och lämnade inramningen av de små öppningarna mellan grenar och löv, som förde ett kallt ljus från deras värld till min. Jag sprang till Keshavarz-boulevarden och satte mig på en bänk, och utan att vilja se Niloofar läste jag Hafez."
+   ]
+  },
+  {
+   "id": "03/0649#8",
+   "where": "03/0649",
+   "text": "– Ingenting. Jag tog bara en runda.",
+   "q": "Amir, asked what he was looking for, answers evasively. Does this reply sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Hon har varit borta från Iran i fyra år, Doktor-jan. Som Mahasti Khanom säger: Vad söker du? Hon har lämnat den här staden. Haha."
+   ]
+  },
+  {
+   "id": "03/0458#9",
+   "where": "03/0458",
+   "text": "– Den här veckan har jag ingen tid alls. Nästa vecka, torsdag klockan tre, samma ställe som vi träffades förra gången. Jag ska också säga att jag bara har en halvtimme.",
+   "q": "Niloofar answers Amir's message coolly. Does this message sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…föreställa mig vad jag sa till Niloofar — att om Niloofar inte tog emot mig, var det inte på grund av mina ord, utan snarare för att jag insisterade på att hålla allt hemligt och aldrig, varken innan jag visade mina känslor eller efteråt, gick rakt mot Niloofar inne på institutet. Hon hade skrivit:"
+   ]
+  },
+  {
+   "id": "04b/1062#10",
+   "where": "04b/1062",
+   "text": "– När hon lär sig våra namn kommer hon att tycka om oss.",
+   "q": "A boy spray-paints their names on a wall facing a girl's house. Does this sound like a boy talking?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Yaser, som höll på att spreja våra namn på muren mitt emot Negars hus med en burk han hade snott från sin fars Khavar-lastbil, sade:"
+   ]
+  },
+  {
+   "id": "01/0042#11",
+   "where": "01/0042",
+   "text": "Håll nu händerna upp mot himlen. Känner du jorddroppar mot händerna?",
+   "q": "A woman leads Amir through a playful game of imagination. Does this read naturally?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Föreställ dig nu att vi är på en planet mitt i en annan galax. Här är marken gjord av vatten och himlen gjord av jord. Det vill säga, i stället för regn faller jord från himlen. Men vattnet är jordfärgat, och jorden är blå."
+   ]
+  },
+  {
+   "id": "06/0050#12",
+   "where": "06/0050",
+   "text": "– Amir, Farfar fick också corona, men man skulle aldrig tro det – han skakade av sig det som en vanlig förkylning.",
+   "q": "Amir's sister tells him on the phone how their grandfather got through Covid. Does it sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Mahboubeh säger:"
+   ]
+  },
+  {
+   "id": "04b/0882#13",
+   "where": "04b/0882",
+   "text": "– Säg nu vad du vill, men ha det avslutande beitet i åtanke.",
+   "q": "Niloofar hands back the book after reading a poem aloud. Does her remark sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Jag gick med på det, och hon läste ghazalen till slutet. Hon upprepade det avslutande beitet – andra gången med mer tyngd. Hon stängde boken och höll fram den mot mig. Hon sade:"
+   ]
+  },
+  {
+   "id": "04b/1119#14",
+   "where": "04b/1119",
+   "text": "– Ni är allihop som mina egna barn.",
+   "q": "An old woman warmly insists the visiting students stay. Does it sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…dricka te och äta frukt medan det lugnade sig utanför. Två obekanta röster, som talade för oss alla, sa att vi inte kunde besvära henne ytterligare. Den gamla kvinnans envishet ledde ingenstans, och hon gick upp. Ett par minuter senare kom hon tillbaka med en skål frukt och en kanna vatten. Hon sa:"
+   ]
+  },
+  {
+   "id": "04b/1355#15",
+   "where": "04b/1355",
+   "text": "– Nåväl, låt mig då visa dig det – kanske kommer det tillbaka till dig.",
+   "q": "Someone offers to show Amir something he cannot remember. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Ärligt talt minns jag det inte."
+   ]
+  },
+  {
+   "id": "03/0390#16",
+   "where": "03/0390",
+   "text": "– Jag säger att jag inte kan se, din jävel.",
+   "q": "Short-sighted Sajad snaps at Farid, who keeps showing him a video. Does 'din jävel' sound natural between roommates?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Slutet. Titta på slutet. Se hur snabbt den sticker. Den rev ju sönder spindelns hus också. Det var inte för inte jag kallade den Dokumentären om kackerlackan som förstörde spindelns hus."
+   ]
+  }
+ ]
+}

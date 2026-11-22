@@ -1,56 +1,88 @@
 {
-  "lang": "yo",
-  "slug": "yo",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "01/0140#1",
-      "where": "01/0140",
-      "text": "– Lẹ́hìn náà fojú inú wo nǹkan tí Baba tó ṣàánú wa ń ti kọjá — ó jókòó lọ́fẹ́ sí ilé ní gbogbo àwọn ọdún wọ̀nyẹn.",
-      "q": "Does 'Baba tó ṣàánú wa' mean poor Baba, who is to be pitied?"
-    },
-    {
-      "id": "03/0119#2",
-      "where": "03/0119",
-      "text": "Nígbà tí ọmọbìnrin náà yípadà ní ìkóríta sí ṣọ́ọ̀bù Haaj Kazem, Taghi kò dúró rárá: ó fi àwọn àmọ̀-ọ̀jọ̀ abẹ̀lé díẹ̀ tó tàn kalẹ̀ sí igun òpópónà ṣe àwọn ẹnu gòòlù, láti ọjọ́ yẹn sì lọ, ní ojú wa, òpópónà asphalt yẹn dára ju ilẹ̀ ìmọ̀ẹrẹ̀ Stadio delle Alpi Quchan lọ.",
-      "q": "Taghi makes goals from half-bricks. Is 'àmọ̀-ọ̀jọ̀ abẹ̀lé' clear as half-bricks?"
-    },
-    {
-      "id": "03/0121#3",
-      "where": "03/0121",
-      "text": "Láìsí ẹnì tó sọ ọ́, gbogbo wa mọ̀ pé ìlà àárín ilẹ̀ gbọdọ̀ ṣubu dédé ní iwájú ẹnu ofeefee ilé tí ọmọbìnrin náà máa ń jáde.",
-      "q": "Is 'ẹnu ofeefee' clear as the yellow door of the house?"
-    },
-    {
-      "id": "03/0355#4",
-      "where": "03/0355",
-      "text": "Nínú ilé tó wà ní ìparí agbálá, lẹ́gbẹ̀ iná, mo dubulẹ̀ lórí inú mi, mo sì wà ní àárín ọ̀nà wiwa ọ̀nà kan láti yanjú àwọn ìdánwò mẹ́tẹ̀lẹ̀ Konkoor pẹ̀lú ìrọrùn nípa lílò àyíká ẹyọ.",
-      "q": "Amir lies beside a room heater. Is 'iná' the right word here?"
-    },
-    {
-      "id": "03/0583#5",
-      "where": "03/0583",
-      "text": "– Ojú Idì, gbogbo ènìyàn máa ń sá fún Farid Ìkookò. Wò ó, kí ni ìwọ jẹ́ tí o fi ń lé Farid Ìkookò sá.",
-      "q": "Farid's nickname means leopard. Is 'Ìkookò' the right word for a leopard?"
-    },
-    {
-      "id": "04b/0503#6",
-      "where": "04b/0503",
-      "text": "Ní ọdún kẹta ní ilé ẹ̀kọ́ àárín, nínú kíláàsì iṣẹ́ ọnà, mo fẹ́ ya sharpener ọ̀rẹ́ mi.",
-      "q": "Does the English word 'sharpener' read naturally in this Yoruba sentence?"
-    },
-    {
-      "id": "04b/1140#7",
-      "where": "04b/1140",
-      "text": "Mo tẹ́tí pé bí mo bá ṣiṣẹ́ díẹ̀ lórí rẹ̀, níwájú yín ni yóò fà sẹ́yìn, yóò sì sọ pé ẹ gba á.",
-      "q": "The speaker bets Amir would pull down his own trousers. Is that clear?"
-    },
-    {
-      "id": "04b/1263#8",
-      "where": "04b/1263",
-      "text": "– Viiizh, Baba Baba, ṣé ẹ máa rà ọmọlangidi ńlá yìí fún mi?",
-      "q": "A toddler asks his dad for a big doll. Does it sound like baby talk?"
-    }
-  ]
+ "lang": "yo",
+ "slug": "yo",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "01/0140#1",
+   "where": "01/0140",
+   "text": "– Lẹ́hìn náà fojú inú wo nǹkan tí Baba tó ṣàánú wa ń ti kọjá — ó jókòó lọ́fẹ́ sí ilé ní gbogbo àwọn ọdún wọ̀nyẹn.",
+   "q": "Does 'Baba tó ṣàánú wa' mean poor Baba, who is to be pitied?",
+   "before": [
+    "…bí a ṣe bẹ̀rẹ̀ sí í sá fún ara wa; a ti di aláàánú. Tálákà, gbogbo ohun tó ní ni láti jókòó ní òpin ọ̀nà kékeré. Ó ní: ọkàn mi ń rà. Ó kéré tán, bí àwọn ọmọ kò tilẹ̀ sí níbí, mo máa ń fi iṣẹ́ ìránṣọ́ mi dí ara mi lọ́wọ́ díẹ̀. Iṣẹ́ dára, Amir. Nígbà tí mo bá wà láìṣe nǹkan, mi ò lè fara dà á rárá.",
+    "Ghassem sọ, ó ń gbìyànjú díẹ̀ láti di ẹ̀rín rẹ̀:"
+   ]
+  },
+  {
+   "id": "03/0119#2",
+   "where": "03/0119",
+   "text": "Nígbà tí ọmọbìnrin náà yípadà ní ìkóríta sí ṣọ́ọ̀bù Haaj Kazem, Taghi kò dúró rárá: ó fi àwọn àmọ̀-ọ̀jọ̀ abẹ̀lé díẹ̀ tó tàn kalẹ̀ sí igun òpópónà ṣe àwọn ẹnu gòòlù, láti ọjọ́ yẹn sì lọ, ní ojú wa, òpópónà asphalt yẹn dára ju ilẹ̀ ìmọ̀ẹrẹ̀ Stadio delle Alpi Quchan lọ.",
+   "q": "Taghi makes goals from half-bricks. Is 'àmọ̀-ọ̀jọ̀ abẹ̀lé' clear as half-bricks?",
+   "before": [
+    "– Ohun ìfẹ́ bẹ́ẹ̀ ni.",
+    "Ṣùgbọ́n fún èmi, ẹwà rẹ̀ mú ìmọ̀lára ìfaramọ́ àìmọ̀ kan tó jìnnà wá; bí ẹni pé ní ọdún púpọ̀ sẹ́yìn, nínú òkùnkùn kan tó ti sọnù, mo ti rí àwọn ojú ńlá wọnyẹn tó fẹ́rẹ̀ dà bí álímọ́ndì."
+   ]
+  },
+  {
+   "id": "03/0121#3",
+   "where": "03/0121",
+   "text": "Láìsí ẹnì tó sọ ọ́, gbogbo wa mọ̀ pé ìlà àárín ilẹ̀ gbọdọ̀ ṣubu dédé ní iwájú ẹnu ofeefee ilé tí ọmọbìnrin náà máa ń jáde.",
+   "q": "Is 'ẹnu ofeefee' clear as the yellow door of the house?",
+   "before": [
+    "– Ibí dára ju Stadio delle Alpi lọ.",
+    "…olówó pọ́ọ́kú nira jú sísáré lórí ilẹ̀ ìmọ̀ẹrẹ̀ lọ. Gbogbo ọjọ́, a máa ń fi àmọ̀-ọ̀jọ̀ abẹ̀lé méjì ní ẹgbẹ̀ kan ti ilé àti méjì síi ní ẹgbẹ̀ kejì, ní àárín òpópónà, a sì máa ń ṣeré. A tilẹ̀ kà àwọn ìdúró nínú eré nípasẹ̀ àwọn ọkọ̀ àti alùpupu tó kọjá lọ̀ọ̀lọ̀ dáadáa àti pàtàkì – àǹfààní láti mí."
+   ]
+  },
+  {
+   "id": "03/0355#4",
+   "where": "03/0355",
+   "text": "Nínú ilé tó wà ní ìparí agbálá, lẹ́gbẹ̀ iná, mo dubulẹ̀ lórí inú mi, mo sì wà ní àárín ọ̀nà wiwa ọ̀nà kan láti yanjú àwọn ìdánwò mẹ́tẹ̀lẹ̀ Konkoor pẹ̀lú ìrọrùn nípa lílò àyíká ẹyọ.",
+   "q": "Amir lies beside a room heater. Is 'iná' the right word here?",
+   "before": [
+    "– Nítorí ìdúró mi nìkan, ẹ jókòó pẹ̀lú mi díẹ̀ sí i.",
+    "…Ó jẹ́ ọjọ́ ìgbà ẹ̀tútù tó gbóná. Afẹ́fẹ́ kò bu, ṣùgbọ́n ọkàn mi ń jo. Ó ń jó báyìí pẹ̀lú. Jíjó ìrántí ìṣẹ́jú odabo yẹn. Àti bóyá jíjó ìgbàgbé ohun kan tí mo mọ̀ pé n kò gbọ́dọ̀ gbàgbé. Nǹkan kan bí àìsinmi – àìsinmi tó dúró lẹ́yìn ikùukù. Àh, ìgbàgbé; àh, láti gbàgbé; àh, láti di ẹni tí a gbàgbé."
+   ]
+  },
+  {
+   "id": "03/0583#5",
+   "where": "03/0583",
+   "text": "– Ojú Idì, gbogbo ènìyàn máa ń sá fún Farid Ìkookò. Wò ó, kí ni ìwọ jẹ́ tí o fi ń lé Farid Ìkookò sá.",
+   "q": "Farid's nickname means leopard. Is 'Ìkookò' the right word for a leopard?",
+   "before": [
+    "– Lòtọ̀, mo lọ fọ eyín mi mo sì tún fọ ọwọ́ àti ojú mi, gílásì mi kò sí lójú mi, mi ò rí i.",
+    "Farid gbé ìrọ̀rí àti aṣọ-ìbora rẹ̀, ó sì wá sùn sí orí ibùsùn tó wà lókè tèmi. Ibùsùn tí Bahman ti sùn lé fún sáà-ẹ̀kọ́ méjì àkọ́kọ́ yunifásítì, tí ó sì jẹ́ pé ní alẹ́ yẹn, ó ti fẹ́rẹ̀ tó ọdún mẹ́ta tí ìgbóná ara Bahman ti kúrò nínú ìrántí ìtẹ́ orí ibùsùn náà. Hooman wí pé:"
+   ]
+  },
+  {
+   "id": "04b/0503#6",
+   "where": "04b/0503",
+   "text": "Ní ọdún kẹta ní ilé ẹ̀kọ́ àárín, nínú kíláàsì iṣẹ́ ọnà, mo fẹ́ ya sharpener ọ̀rẹ́ mi.",
+   "q": "Does the English word 'sharpener' read naturally in this Yoruba sentence?",
+   "before": [
+    "– Má ṣe sọ isọkusọ. Báwo?",
+    "– Ní ọ̀nà tó rọrùn gan-an, tó sì dà bí òmùgọ̀."
+   ]
+  },
+  {
+   "id": "04b/1140#7",
+   "where": "04b/1140",
+   "text": "Mo tẹ́tí pé bí mo bá ṣiṣẹ́ díẹ̀ lórí rẹ̀, níwájú yín ni yóò fà sẹ́yìn, yóò sì sọ pé ẹ gba á.",
+   "q": "The speaker bets Amir would pull down his own trousers. Is that clear?",
+   "before": [
+    "…fà sẹ́yìn sínú ara rẹ̀ díẹ̀díẹ̀, kò sì máa ń bá ẹnikẹ́ni sọ̀rọ̀ tó bẹ́ẹ̀ tí a fi lè mọ ohun tí ètò rẹ̀ jẹ́. Ọkàn àti ìrònú rẹ̀ ti há mọ́ ilẹ̀ àkọ́kọ́ ilé Abu-Reyhan, láàárín àwọn ọmọ ẹ̀ka-ẹ̀kọ́ iṣẹ́ ọkọ̀ ojú omi. Eskandar jókòó lórí kápẹ́ẹ̀tì ní àárín yàrá, ó dojú kọ Hooman àti Sajad, ó sì ń sọ pé:",
+    "– ... Ṣé ẹ fẹ́ tẹ́tí? Títí di báyìí, mo ti mọ ẹ̀mí ọkùnrin yìí bí mo ṣe mọ àtẹ́lẹwọ́ mi. Gbogbo ohun tí ó ń ṣe ni ó ń ṣe láì ronú. Ẹ wo ìfẹ́ tí ó ṣubú sínú rẹ̀ yìí. Ṣé ènìyàn máa ń ṣubú sínú ìfẹ́ báyìí ní oṣù díẹ̀? Paápàá jù lọ pẹ̀lú obìnrin tí ó ti ní ọkọ."
+   ]
+  },
+  {
+   "id": "04b/1263#8",
+   "where": "04b/1263",
+   "text": "– Viiizh, Baba Baba, ṣé ẹ máa rà ọmọlangidi ńlá yìí fún mi?",
+   "q": "A toddler asks his dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, ọmọkùnrin mi. Jí. Jí fún Maman. Àlá ni gbogbo rẹ̀. Má bẹ̀rù, mo wà níbí.",
+    "…ìdákẹ́jẹ́ẹ́ ìtura aláwọ̀ dúdú yẹn run, ṣùgbọ́n tí kò ní ìmọ́lẹ̀ tó láti tọ́ mi. Fitilà tó ń ṣẹ́jú ní ọwọ́ ọmọbìnrin kan tí mi ò mọ̀ láéláé ibi tí àwọ̀ ilẹ̀kùn ilé wọn wà nínú àpótí pẹ́ńsù aláwọ̀. Ọmọbìnrin kékeré kan wá, ó ń ṣe “viiizh viiizh,” ó sì dúró lẹ́gbẹ̀ẹ́ mi. Ó wo àwọn ohun ìṣeré. Ó sọ pé:"
+   ]
+  }
+ ]
 }

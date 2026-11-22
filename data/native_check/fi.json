@@ -1,22 +1,167 @@
-{"lang": "fi", "slug": "fi", "dir": "ltr", "version": "2026-11-18",
+{
+ "lang": "fi",
+ "slug": "fi",
+ "dir": "ltr",
+ "version": "2026-11-22",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Kuten lapsuudessa, kun Maman purki vanhojen vaatteiden langan, ja me otimme langan ja kävelimme sisällä talossa, jottei se kasaantuisi.", "q": "Does this sentence read naturally?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007", "text": "Nyt minä puran sanojen langan, ja sinä ota ne ja vie ne omaan maailmaasi, jotteivät ne kasaannu täällä, omassa maailmassani.", "q": "Does this sentence read naturally?"},
-  {"id": "04b/1263#3", "where": "04b/1263", "text": "– Viiii, Baba, Baba, otatko mulle ton ison nuken?", "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"},
-  {"id": "04b/1312#4", "where": "04b/1312", "text": "Siitä menee pää sekaisin. Mitä enemmän sitä miettii, sitä enemmän pää menee sekaisin.", "q": "A girl is meant to joke with a crude made-up word. Does it work?"},
-  {"id": "01/0116#5", "where": "01/0116", "text": "Mene hiljaasiin paikkoihin.", "q": "Maman mispronounces 'hiljaasiin' (quiet) on purpose. Is that clear?"},
-  {"id": "03/0090#6", "where": "03/0090", "text": "Abu-Reyhanin rakennuksen kahdeksatta kerrosta lukuun ottamatta — kuin mikään ei olisi muuttunut, vain niitä paikkoja jalankulun maksuna käyttäneiden ihmisten nimet ovat muuttuneet.", "q": "Nothing changed but the names of people who walked here. Does this make sense?"},
-  {"id": "03/0090#7", "where": "03/0090", "text": "Harvojen vastaistutettavien versottimien tuoreus oli elinvoimaisempi kuin tätä paikkaa nyt täyttävä narsissijoukko.", "q": "A few young stems caught his eye more than the narcissi. Does this make sense?"},
-  {"id": "03/0108#8", "where": "03/0108", "text": "Kermanväriseen manteauhun, tummaan maqnaehiin ja siniseen takkiin pukeutunut tyttö laskeutuu nopeasti portaita alas — Niloofar pukeutuneena kuin differentiaaliyhtälöiden tunnilla hänen ensimmäisenä hetkenään maailmassani.", "q": "A stranger is dressed exactly as Niloofar was on her first day. Is that clear?"},
-  {"id": "03/0160#9", "where": "03/0160", "text": "Se vilkuttaa sinulle hitaasti — kuin tähti tai hylätty majakka.", "q": "A far light seems to blink slowly at you. Does 'vilkuttaa' fit?"},
-  {"id": "03/0165#10", "where": "03/0165", "text": "Salin yhdellä puolella olin minä ja pyöreä gassmainen uninen poika; toisella puolella istui neljä viisi tyttöä.", "q": "A fat sleepy boy with a shaved head. Does 'gassmainen' make sense?"},
-  {"id": "03/0560#11", "where": "03/0560", "text": "– Kertokaa äidillenne kaikki.", "q": "Maman says this to one son, Omid. Does it sound right?"},
-  {"id": "04a/0076#12", "where": "04a/0076", "text": "– Se on marmoria. Marmori tarkoittaa todella kallista.", "q": "A child mangles the word marble, thinking it means expensive. Does that come through?"},
-  {"id": "04b/0271#13", "where": "04b/0271", "text": "Olimme opetelleet tarkat ajat, joina moskeijat tarjoilivat, ja laskeneet, että yhtenä iltana ehti syödä kolmessa moskeijassa, jos juoksimme nopeasti.", "q": "They ate fast at each mosque to reach three every night. Is that clear?"},
-  {"id": "04b/0595#14", "where": "04b/0595", "text": "– Mutta hän tyri sen. Kotkansilmä sanoo vertaisverkko, Taverny sanoo vanhukselta vanhukselle.", "q": "Amir misheard peer-to-peer as elder-to-elder; Farid mocks him. Does the joke work?"},
-  {"id": "04b/0598#15", "where": "04b/0598", "text": "Objektiivisesti, jos se lyö läpi, se kerää kortteensa koko pankkien sotkun ja kaiken sellaisen.", "q": "Meaning: if it catches on, it will end the whole banking mess. Is that clear?"},
-  {"id": "04b/0887#16", "where": "04b/0887", "text": "Oi aamutuuli, älä jätä kulkematta rakastetun asumuksen ohi; äläkä pidätä sanaakaan uutista sydämettömältä rakastajalta.", "q": "The lover has lost his heart to love; he isn't cruel. Does 'sydämettömältä' fit?"},
-  {"id": "04b/1321#17", "where": "04b/1321", "text": "«Se viini, joka siellä on, on totuus, ei vertaus.»", "q": "This Hafez line should read both as real wine and as metaphor. Does it?"},
-  {"id": "04b/1322#18", "where": "04b/1322", "text": "Varmana siitä, että hän vastaisi minulle, soitin Mamanille ja sanoin, että meille oli järjestetty tukiopetusta ja minun täytyi jäädä kauemmaksi aikaa.", "q": "His excuse is extra classes, nothing about weak grades. Does 'tukiopetusta' fit?"},
-  {"id": "06/0056#19", "where": "06/0056", "text": "He heittivät maan buldoosselilla. Maata ja kalkkia.", "q": "Maman says 'buldoosselilla' for bulldozer on purpose. Is that clear?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kuten lapsuudessa, kun Maman purki vanhojen vaatteiden langan, ja me otimme langan ja kävelimme sisällä talossa, jottei se kasaantuisi.",
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…tänne. Ne kirjattiin, jotta niistä tulisi silta maailmani ja sinun maailmasi välille. Silta maailmastani — siinä hetkessä kun kirjoitan näitä lauseita — sinun maailmaasi, siinä hetkessä kun istut niitä lukemaan. Tältä puolelta minä puran sanojen langan, ja toiselta puolelta sinä keräät sanat."
+   ]
+  },
+  {
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Mene hiljaasiin paikkoihin.",
+   "q": "Maman says 'hiljaasiin' for 'hiljaisiin' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ohhh, kuinka hyvää. Mm-hm, tilaat ja ne tuodaan sinulle. Mutta Amir-jan, älä istu kotona koko aikaa. Käy ulkonakin."
+   ]
+  },
+  {
+   "id": "03/0090#3",
+   "where": "03/0090",
+   "text": "Abu-Reyhanin rakennuksen kahdeksatta kerrosta lukuun ottamatta — kuin mikään ei olisi muuttunut, vain niitä paikkoja jalankulun maksuna käyttäneiden ihmisten nimet ovat muuttuneet.",
+   "q": "Nothing changed but the names of people who walked here. Does this make sense?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0090#4",
+   "where": "03/0090",
+   "text": "Harvojen vastaistutettavien versottimien tuoreus oli elinvoimaisempi kuin tätä paikkaa nyt täyttävä narsissijoukko.",
+   "q": "A few young stems caught his eye more than the narcissi. Does this make sense?",
+   "ctx": 1,
+   "before": [
+    "…reunalla Niloofar istui sinä iltana reisi Sinan reittä vasten; nyt se on täynnä narsisseja. Nämä narsissit ovat epäilemättä kasvaneet sieltä yhdestä kahdesta tuon aikakauden istuttamasta versosta. Tästä etäisyydestä katsottuna kukat näyttävät lehtivän tässä kylmässä ja katselevan minuun päin."
+   ]
+  },
+  {
+   "id": "03/0108#5",
+   "where": "03/0108",
+   "text": "Kermanväriseen manteauhun, tummaan maqnaehiin ja siniseen takkiin pukeutunut tyttö laskeutuu nopeasti portaita alas — Niloofar pukeutuneena kuin differentiaaliyhtälöiden tunnilla hänen ensimmäisenä hetkenään maailmassani.",
+   "q": "A stranger on the stairs is dressed exactly as Niloofar was the day he first saw her. Is that clear?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0160#6",
+   "where": "03/0160",
+   "text": "Se vilkuttaa sinulle hitaasti — kuin tähti tai hylätty majakka.",
+   "q": "A far light seems to blink slowly at you. Does 'vilkuttaa' fit?",
+   "ctx": 1,
+   "before": [
+    "…vieressä olevassa syvennyksessä. Kun hän tuli ja meni Khayyamiin, seurasin häntä. Menen rakennukseen. Pysähdyn ja odotan silmieni tottumista käytävän pimeyteen. Kaikki valot käytävässä ovat sammuneet, tai ehkä palaneet — paitsi yksi kaukana taustalla, jonka valo hitaasti himmenee ja kirkastuu."
+   ]
+  },
+  {
+   "id": "03/0165#7",
+   "where": "03/0165",
+   "text": "Salin yhdellä puolella olin minä ja pyöreä gassmainen uninen poika; toisella puolella istui neljä viisi tyttöä.",
+   "q": "A fat sleepy boy with a shaved head. Does 'gassmainen' make sense?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0430#8",
+   "where": "03/0430",
+   "text": "Sinullakin, tuolla mulkkumaisella puhetavallasi, nimesi olisi pitänyt olla Alain Kullon.",
+   "q": "'Alain Kullon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0560#9",
+   "where": "03/0560",
+   "text": "– Kertokaa äidillenne kaikki.",
+   "q": "Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?",
+   "ctx": 1,
+   "before": [
+    "…Istuimme noin tunnin viinitarhoissa vanhan hautausmaan vastaisen savisen jäävaraston takana. Mahboubeh ja Maryam solmivat sabzehin, ja kun hämärtyi, palasimme. Illalla Maman makasi lattialla maton päällä kodin keskellä ja katseli rannekorujaan. Ikään kuin puhuisi minulle, hän sanoi Omidille:"
+   ]
+  },
+  {
+   "id": "04a/0076#10",
+   "where": "04a/0076",
+   "text": "– Se on marmoria. Marmori tarkoittaa todella kallista.",
+   "q": "The little boy is meant to mangle the word marble and naively think it means expensive. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "Menimme taas. Puolimatkassa oli yksi talo. Sen seinä oli kaunis. Ghassem sanoi:"
+   ]
+  },
+  {
+   "id": "04b/0271#11",
+   "where": "04b/0271",
+   "text": "Olimme opetelleet tarkat ajat, joina moskeijat tarjoilivat, ja laskeneet, että yhtenä iltana ehti syödä kolmessa moskeijassa, jos juoksimme nopeasti.",
+   "q": "Boys race between mosques serving free dinners, eating fast at each to reach three a night. Is that clear?",
+   "ctx": 1,
+   "before": [
+    "…kaksi jyristivät meluten pitkin koko bulevardia toisiaan takaa ajaen. Taghi tempaisi lippalakkini päästäni ja odotti, että lähtisimme sillä verukkeella hänen peräänsä. Moharramin ensimmäiset kymmenen päivää olivat päättymässä, ja se oli viimeinen ilta, jona kaupungin moskeijat jakoivat illallista."
+   ]
+  },
+  {
+   "id": "04b/0598#12",
+   "where": "04b/0598",
+   "text": "Objektiivisesti, jos se lyö läpi, se kerää kortteensa koko pankkien sotkun ja kaiken sellaisen.",
+   "q": "Meaning: if it catches on, it will end the whole banking mess. Is that clear?",
+   "ctx": 1,
+   "before": [
+    "– Vertaisverkko tarkoittaa ilman välikättä. Suoraan myyjän ja ostajan välillä. Ilman mitään välittävää rahajärjestelmää."
+   ]
+  },
+  {
+   "id": "04b/0887#13",
+   "where": "04b/0887",
+   "text": "Oi aamutuuli, älä jätä kulkematta rakastetun asumuksen ohi; äläkä pidätä sanaakaan uutista sydämettömältä rakastajalta.",
+   "q": "In this Hafez verse the lover has lost his heart to love, not become cruel. Does 'sydämettömältä' say that?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1263#14",
+   "where": "04b/1263",
+   "text": "– Viiii, Baba, Baba, otatko mulle ton ison nuken?",
+   "q": "A small girl says this, pointing at a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…mutta jolla ei ollut riittävästi valoa opastamaan minua minnekään. Vilkkuvan lampun sellaisen tytön kädessä, jonka talon oven väriä en koskaan tiennyt, jonka väriä en koskaan osannut sijoittaa värikynälaatikkoon. Pieni tyttö tulee vingahdellen ja pysähtyy viereeni. Hän katselee leluja. Hän sanoo:"
+   ]
+  },
+  {
+   "id": "04b/1312#15",
+   "where": "04b/1312",
+   "text": "Siitä menee pää sekaisin. Mitä enemmän sitä miettii, sitä enemmän pää menee sekaisin.",
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– ...katsokaa, tämä on todella ajatuksia herättävä. Hän piirsi tämän ja kirjoitti sen alle: tämä ei ole piippu."
+   ]
+  },
+  {
+   "id": "04b/1321#16",
+   "where": "04b/1321",
+   "text": "«Se viini, joka siellä on, on totuus, ei vertaus.»",
+   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1322#17",
+   "where": "04b/1322",
+   "text": "Varmana siitä, että hän vastaisi minulle, soitin Mamanille ja sanoin, että meille oli järjestetty tukiopetusta ja minun täytyi jäädä kauemmaksi aikaa.",
+   "q": "His excuse is extra classes, nothing about weak grades. Does 'tukiopetusta' fit?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0056#18",
+   "where": "06/0056",
+   "text": "He heittivät maan buldoosselilla. Maata ja kalkkia.",
+   "q": "Maman says 'buldoosselilla' for 'bulldoserilla' (with a bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…koronakuolleet. Vain Jumala tietää, suorittivatko he hänelle rituaalipesun vai eivät. Katsoimme kaukaa. Kun hänet laskettiin hautaan, hetkeksi käärinliina löystyi — minusta näytti, että hänet oli kääritty käärinliinaan samoissa vaatteissa, joissa veimme hänet sairaalaan. Haudat olivat hyvin syviä."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "lang": "ar",
+ "slug": "ar",
+ "dir": "rtl",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "01/0162#1",
+   "where": "01/0162",
+   "text": "وعلاوة على ذلك وصلت اليوم رسالة إلى هواتف محبوب والآخرين تقول إن كان رجالكم يزعجونكم في البيت، اتصلوا بنا نأتي ونأخذهم.",
+   "q": "Maman, a small-town mother, jokes about a phone message. Does 'وعلاوة على ذلك' sound like how she talks?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "تقول مامان:",
+    "– هل أكذب؟ منذ العام الذي وُلدتَ فيه وهو جالس في البيت حتى الآن."
+   ]
+  },
+  {
+   "id": "04b/0351#2",
+   "where": "04b/0351",
+   "text": "خريتُ على تلك الأيام وعلى طريقة تفكيرنا.",
+   "q": "Hooman crudely dismisses the good old days. Does 'خريتُ على' sound like how an angry man would swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– أيّ رحم الله تلك الأيام يا دكتور؟"
+   ]
+  },
+  {
+   "id": "04b/0162#3",
+   "where": "04b/0162",
+   "text": "– نعم، ما إن يروننا حتى يشدّون فتحة مؤخراتهم ويبتعدون عنّا بحيث تتمنى نفسي أن أركلهم في وجوههم بكلتا قدميَّ.",
+   "q": "Farid crudely says snobbish Tehran students tense up and keep away from them. Does this sound like natural slang?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "قال فريد:"
+   ]
+  },
+  {
+   "id": "04a/0070#4",
+   "where": "04a/0070",
+   "text": "– على الجانب الآخر من المدرسة مقبرة. قديمة جداً. اختفت حجارة بعض القبور. ويمكن رؤية عظام الموتى.",
+   "q": "A young boy shows his little brothers around their neighborhood. Does this sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "هذه السنة سأذهب أنا أيضاً إلى هناك. إذا ضربني أستاذي بالمسطرة سأقول لمامان. كان قاسم يقول:"
+   ]
+  },
+  {
+   "id": "04b/0181#5",
+   "where": "04b/0181",
+   "text": "– كُلْ رأس زبّي يا أخي، فقد طفح الكيل بك. ماذا تعرف أنت عن معنى هندسة الكهرباء في شريف؟ ثم إن أحداً لم يسألك رأيك أصلاً.",
+   "q": "Hooman tells a roommate off with a crude sexual insult. Does it sound like how young men really swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "رفع هومن إبهامه مرة أخرى وقال:"
+   ]
+  },
+  {
+   "id": "06/0253#6",
+   "where": "06/0253",
+   "text": "والآن اذهب واشترِ بعض حبوب التسالي لقاسم والآخرين؛ يريدون مشاهدة فيلم.",
+   "q": "Maman sends her son to buy snack seeds for watching a film. Does 'حبوب التسالي' sound natural here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– همم، أنت ذهبت إلى هناك للسياحة والمرح، فاستمتعت. لم تر صعوباتها."
+   ]
+  },
+  {
+   "id": "04b/0935#7",
+   "where": "04b/0935",
+   "text": "– «أحلى أن يبكي عطّار حتى السحر»، أم «صار الآن أكثر قتلاً»؟",
+   "q": "Two quoted half-lines of a classical poem by Attar. Do they read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– نعم، تلك التي فيها شعر عطّار."
+   ]
+  },
+  {
+   "id": "04b/0822#8",
+   "where": "04b/0822",
+   "text": "يعني من الجذر كان كل شيء سيصير على نحوٍ آخر، ولما كنتَ تجوب الشوارع هكذا وزبّك في يدك.",
+   "q": "Hooman means Amir now wanders the streets aimless and empty-handed, said with a crude image. Does it come across?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ... وذهبتما معاً."
+   ]
+  },
+  {
+   "id": "03/0576#9",
+   "where": "03/0576",
+   "text": "– جُعلتُ فداءً لعينَيك البلبليتَين يا عين النسر-جان، لكن المشكلة في المستقبِل، المرسِل لا يستطيع حلها. وإلا، فرشاة أسناني ليست بنفس لون فرشاتك ولا بنفس شكلها.",
+   "q": "Farid jokingly flatters a short-sighted friend's eyes, then teases him. Does this playful line sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "قال فريد:"
+   ]
+  },
+  {
+   "id": "04b/0440#10",
+   "where": "04b/0440",
+   "text": "– بعد قضية التوطين، لن أتعجّب من أيّ زبٍّ يقع على رؤوسنا.",
+   "q": "Hooman means that after the quota mess, no bad luck can surprise him, said crudely. Does it come across?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "قال بهمن إنه لا بأس. كان إسكندر قد مدّ يده تحت سريري ليسحب الكتاب، وكان ميثم جالساً على ركبتيه يفرش مكانه تحت معلّق الثياب. نظر هومن إليهما وقال:"
+   ]
+  },
+  {
+   "id": "01/0166#11",
+   "where": "01/0166",
+   "text": "مهما قلت لا تضرب الأطفال، قال: أُصبت بصدمة القصف في الحرب، ليس بيدي.",
+   "q": "Maman repeats what her husband said: the war left him shell-shocked. Does this sound like a simple mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– نحن نمزح لنضحك يا نَنَه‌پسرجان. وهل سيذهب؟ لو ذهب لكانت أمنيتي. والله. أُقسم بحياتي. ما جرى لهاشم وأبي الفضل كان ذنبه هو أيضًا. كان يضربهم دائمًا."
+   ]
+  },
+  {
+   "id": "03/0244#12",
+   "where": "03/0244",
+   "text": "– ... لن آخذ خاتم سليمان بشيء، فبين الحين والحين عليه يدُ ...",
+   "q": "A line of classical poetry by Hafez, cut off at both ends. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…بعيني من خلال الشجيرات عند أصل الشجرة وخيوط النيلوفر المتشابكة. لم يفترقا. انعطفا معاً نحو بوابة ولي عصر وخرجا من إطار الفتحات الصغيرة بين الأغصان والأوراق، الفتحات التي كانت تُدخل نوراً بارداً من عالمهما إلى عالمي. ركضت حتى بوليفار كشاورز وجلست على مصطبة، وقرأت حافظ من دون أن أرغب في رؤية نيلوفر."
+   ]
+  },
+  {
+   "id": "04b/0690#13",
+   "where": "04b/0690",
+   "text": "كان يكفي ألا يُصَب أساتذة الكهرباء والميكانيك، قبل سنوات طويلة، بانتصابٍ من أجل انتزاع مبنى أبو ريحان من كلية بناء السفن؛ عندئذٍ لما انتهى فريد إلى تلك الحال.",
+   "q": "Hooman says the professors crudely lusted after taking a building from another department. Does this crude image sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– كل أفعاله كانت انتحارية، ذلك المخلوق. لا شيء فيه كان كبني آدم. هييي، ماذا أدري. حتى الآن كثيراً ما ينشغل ذهني به. أحياناً أفكّر: من بين ألف شيءٍ حدث، كان يكفي ألا يحدث واحدٌ منها فقط حتى لا يقع في النهاية ما وقع."
+   ]
+  },
+  {
+   "id": "04a/0052#14",
+   "where": "04a/0052",
+   "text": "– المرحلة الثالثة تقاطع. التقاطع يعني كثيراً. من هنا إلى هناك. من هذا الشارع إلى ذاك الشارع.",
+   "q": "A young boy explains to his little brothers that an intersection means something really big. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "كان يقول في الطريق:"
+   ]
+  },
+  {
+   "id": "04b/0723#15",
+   "where": "04b/0723",
+   "text": "– حسناً، أنت لستَ ممن يتقدّمون للقبول ويرحلون، فلماذا مزّقتَ مؤخرتك لتؤدّي امتحان الـتوفل؟",
+   "q": "Hooman asks why Amir worked his butt off for the TOEFL, said crudely. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "وضحك. لم أقل شيئاً. تابع هومن:"
+   ]
+  },
+  {
+   "id": "06/0291#16",
+   "where": "06/0291",
+   "text": "– يتذرع بلا سبب يا أمير-جان، هه. إن لم يجد هذا، وجد شيئاً آخر.",
+   "q": "Maman shrugs off her husband's grumbling. Does this sound like her, a warm small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تقول مامان:"
+   ]
+  }
+ ]
+}

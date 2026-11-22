@@ -1,8 +1,58 @@
-{"lang": "gl", "slug": "gl", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "gl",
+ "slug": "gl",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Coma na infancia, cando a Maman desfacía o fío de la das roupas vellas, e nós o colliamos e dabamos voltas pola casa para que a la non se amorease.", "q": "Is it clear the children walked around the house with the yarn?"},
-  {"id": "04b/0171#2", "where": "04b/0171", "text": "Que desperdicio de todos os días que pasamos sentados a estudar para conseguir boas notas.", "q": "Is it clear they studied to rank well in the university entrance exam?"},
-  {"id": "04b/1063#3", "where": "04b/1063", "text": "Os nosos tres nomes cabían entre os dentes da letra persa sin (س) do nome de Yasi.", "q": "Is it clear the three names fit between the teeth of that Persian letter?"},
-  {"id": "04b/1312#4", "where": "04b/1312", "text": "Un queda mareado de merda. Canto máis pensas nel, máis mareado de merda quedas.", "q": "Is it clear 'mareado de merda' is a crude way to say very confused?"},
-  {"id": "04b/1320#5", "where": "04b/1320", "text": "E con mans tremendo, pasaba as follas dos ghazals a présa, buscando o dístico de Hafez que, segundo dicía a outra rapaza, canto máis afondas nel, máis mareado de merda quedas, para ensinarllo a Niloofar.", "q": "Amir searches Hafez's poems with shaking hands. Does this sentence read naturally?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Coma na infancia, cando a Maman desfacía o fío de la das roupas vellas, e nós o colliamos e dabamos voltas pola casa para que a la non se amorease.",
+   "q": "Is it clear the children walked around the house with the yarn?",
+   "before": [
+    "Abertura",
+    "…aquí. Foron rexistrados para se converteren nunha ponte entre o meu mundo e o teu. Unha ponte desde o meu mundo, no instante en que escribo estas frases, ata o teu, no instante en que te sentas a lelas. Desde este lado, eu desfago o fío das palabras, e desde o outro, ti recolles as palabras."
+   ]
+  },
+  {
+   "id": "04b/0171#2",
+   "where": "04b/0171",
+   "text": "Que desperdicio de todos os días que pasamos sentados a estudar para conseguir boas notas.",
+   "q": "Is it clear they studied to rank well in the university entrance exam?",
+   "before": [
+    "Hooman dixo:",
+    "– Ho, non lle fales tan educadamente a este, que se lle sobe á cabeza. Fixemos tantos exames de proba e acabamos de compañeiros de cuarto con esta antigalla."
+   ]
+  },
+  {
+   "id": "04b/1063#3",
+   "where": "04b/1063",
+   "text": "Os nosos tres nomes cabían entre os dentes da letra persa sin (س) do nome de Yasi.",
+   "q": "Is it clear the three names fit between the teeth of that Persian letter?",
+   "before": [
+    "– En canto aprenda os nosos nomes, imos gustarlle.",
+    "Amir, Taghi, Hamid, e Yasi, este último escrito máis grande ca todos."
+   ]
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "Un queda mareado de merda. Canto máis pensas nel, máis mareado de merda quedas.",
+   "q": "Is it clear 'mareado de merda' is a crude way to say very confused?",
+   "before": [
+    "…arriba, a rapaza quedaba escondida detrás dun aviso sobre a pintura e as reparacións de verán do edificio de Abu-Reyhan. Co corazón batendo, avancei. Era Niloofar, a mesma Niloofar. Estaba de pé fronte á Universidade de Arte, ao carón doutras rapazas. Unha delas ensinaba un papel ás demais e dicía:",
+    "– ... mirade, é realmente inquietante. Debuxou isto e escribiu embaixo: isto non é unha pipa."
+   ]
+  },
+  {
+   "id": "04b/1320#5",
+   "where": "04b/1320",
+   "text": "E con mans tremendo, pasaba as follas dos ghazals a présa, buscando o dístico de Hafez que, segundo dicía a outra rapaza, canto máis afondas nel, máis mareado de merda quedas, para ensinarllo a Niloofar.",
+   "q": "Amir searches Hafez's poems with shaking hands. Does this sentence read naturally?",
+   "before": [
+    "– Si, pero de aí a aló hai un mundo de distancia.",
+    "– Hafez tamén é moi mode... quero dicir, aínda ten cousas que dicir, xúrocho por Deus."
+   ]
+  }
+ ]
+}

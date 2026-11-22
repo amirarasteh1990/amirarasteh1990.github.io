@@ -1,0 +1,174 @@
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-22.r12",
+ "items": [
+  {
+   "id": "06/0253#1",
+   "where": "06/0253",
+   "text": "Гм, ти ж їздив туди як турист, відпочити й добре провести час — і тобі сподобалося. Усіх труднощів ти не бачив.",
+   "q": "Maman gently corrects her son about a country he once visited. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман каже:"
+   ]
+  },
+  {
+   "id": "06/0264#2",
+   "where": "06/0264",
+   "text": "Ех, щоразу як кажеш йому принести щось — його б'є струм.",
+   "q": "Maman teases a son who hates being sent on errands. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман каже:"
+   ]
+  },
+  {
+   "id": "06/0291#3",
+   "where": "06/0291",
+   "text": "Він нарікає дарма, хе, Амір-джан. Якщо не це — знайде щось інше.",
+   "q": "Maman shrugs off her husband's grumbling. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман каже:"
+   ]
+  },
+  {
+   "id": "06/0296#4",
+   "where": "06/0296",
+   "text": "Ніні раптом захотілося спати. Я з ранку на ногах і не спала.",
+   "q": "Maman, whom the family calls Nini, dodges a topic by saying she is sleepy. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Маман стискає очі й каже:"
+   ]
+  },
+  {
+   "id": "01/0001#5",
+   "where": "01/0001",
+   "text": "З Новрузом, Нана-песар-джан. Хай дасть Бог, щоб рік був добрим для тебе.",
+   "q": "Maman phones her son abroad on Norouz, the Persian spring holiday. Does her greeting sound warm and natural?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04b/0744#6",
+   "where": "04b/0744",
+   "text": "Я дала обітницю: як йому полегшає, піду пішки до Мешхеда.",
+   "q": "Maman makes a religious vow for a sick relative. Does it sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…у дверях бачив, як Гасем сидить у залі перед телевізором, лускає насіння, а Маман сидить поруч із ним. У новинах говорили про збитки від широкої повені в північних і західних провінціях країни. Ззаду Маман видалася мені маленьким кружальцем, що сидить поряд із більшим прямокутником. Маман казала:"
+   ]
+  },
+  {
+   "id": "04a/0066#7",
+   "where": "04a/0066",
+   "text": "Молодець, мій кмітливий хлопчику. Коли чогось боїшся — використовуй хитрість, щоб не боятися.",
+   "q": "Maman praises her small son's trick for not being scared. Does she sound like a mother talking to a small child?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Ліва сторона небезпечна. Той будинок із червоними дверима — це будинок дуже злого старого чоловіка. Ще злішого, ніж Баба.",
+    "Я завжди використовував хитрість. Замість червоних дверей дивився на стіну сусіднього будинку. Вона була біла. Маман сказала:"
+   ]
+  },
+  {
+   "id": "04a/0004#8",
+   "where": "04a/0004",
+   "text": "Чотири рази знайшла тебе. Тепер іди сюди, мій хороший хлопчику.",
+   "q": "Maman plays hide-and-seek with her four-year-old. Does she sound like a mother with a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Я відійшов від дірки. Маман потемніла. Маман завжди чотири рази темніла й щоразу знову світліла. Вона казала:"
+   ]
+  },
+  {
+   "id": "06/0192#9",
+   "where": "06/0192",
+   "text": "О, Нана-песар-джан, ти вже переїхав до нового місця?",
+   "q": "Maman asks her son abroad whether he has moved house yet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Омід сміється, і я теж намагаюся сміятися. Маман каже:"
+   ]
+  },
+  {
+   "id": "04a/0001#10",
+   "where": "04a/0001",
+   "text": "Маман темніла. Як того дня, коли вимкнули світло.",
+   "q": "A four-year-old describes his mother passing in and out of the light. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0005#11",
+   "where": "04a/0005",
+   "text": "Може, я загубився? Нитки теж немає в моїй руці.",
+   "q": "A six-year-old boy, alone outside the gate, wonders if he is lost. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0047#12",
+   "where": "04a/0047",
+   "text": "А нут трясе швидко-швидко. Постійно насипає забагато нуту на ваги, а потім забирає назад.",
+   "q": "A small boy describes the old grocer weighing chickpeas. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0036#13",
+   "where": "04a/0036",
+   "text": "Гаразд, посип менше. Але не набагато менше. Трішки менше.",
+   "q": "A small boy bargains with his mother over salt on his plums. Does it sound like a small child?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Сіль шкідлива.",
+    "Я сказав:"
+   ]
+  },
+  {
+   "id": "04a/0018#14",
+   "where": "04a/0018",
+   "text": "Сьогодні вранці я ходив у двір. Маман сказала, що я розумний.",
+   "q": "A four-year-old boasts to his big brother. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Я сказав:"
+   ]
+  },
+  {
+   "id": "04a/0020#15",
+   "where": "04a/0020",
+   "text": "Добре, ти теж іди на місію, але треба бути дуже обережним. Там дуже складні етапи.",
+   "q": "An older brother, about ten, leads a pretend mission. Does he sound like a boy that age?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Гасем сказав:"
+   ]
+  },
+  {
+   "id": "04a/0038#16",
+   "where": "04a/0038",
+   "text": "На головну вулицю — ні-ні.",
+   "q": "The boy commander warns his little brothers away from the busy street. Does it sound like a child's game?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Я завжди слухаюся Маман. Послухався я й Гасема. Він казав:"
+   ]
+  }
+ ]
+}

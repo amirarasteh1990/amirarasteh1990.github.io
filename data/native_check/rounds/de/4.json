@@ -1,0 +1,187 @@
+{
+ "lang": "de",
+ "slug": "de",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "03/0263#1",
+   "where": "03/0263",
+   "text": "Dieser haarige Körper, dieses bis an die Zähne mit Bart und Haar bewaffnete Gesicht. Wenn du Hooman bist, dann bin ich Susan.",
+   "q": "Eskandar says the gentle name Hooman fits his hairy roommate as little as a girl's name fits Eskandar himself. Does the joke work?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Glaubst du wirklich, dass dieser Name zu dir passt?"
+   ]
+  },
+  {
+   "id": "03/0175#2",
+   "where": "03/0175",
+   "text": "– Also reicher als der Freund des Cousins ...",
+   "q": "Amir blurts out the start of Hamid's favourite long phrase, teasing him. Does this slip of the tongue read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Es rutschte mir heraus:"
+   ]
+  },
+  {
+   "id": "04b/1248#3",
+   "where": "04b/1248",
+   "text": "Der Freund des Cousins des Meisters unseres Schwagers – Teherans reichster Mann – hat gesagt, Schwarz sei die Farbe der Liebe.",
+   "q": "Hamid, a boy, cites his usual long chain of authorities about toy cars. Does it sound like a boy talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "…Hand. Yaser war nicht gekommen. Mein Auto und Hamids sahen ähnlich aus. Meins war blau und Hamids rot. Wir hatten sie für fünfundzwanzig Toman gekauft. Sie waren etwas größer als eine Streichholzschachtel. Wir sprachen darüber, wessen Auto die bessere Farbe hatte. Taghi sagte: gelb. Hamid sagte:",
+    "– Wenn es Schwarz gegeben hätte, hätte ich Schwarz genommen."
+   ]
+  },
+  {
+   "id": "04b/0738#4",
+   "where": "04b/0738",
+   "text": "– Ach, wenn ich doch eines Tages diese Ohren von dir mit meinen Nägeln durchstechen könnte, damit sie nicht mehr spitz werden.",
+   "q": "Niloofar plays on Amir saying his ears prick up whenever her name comes up. Does her playful threat come through?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Na ja, wenn ich so in der Fakultät sitze, suche ich in den Gesprächen der anderen nach deinem Namen. Sobald dein Name fällt, werden meine Ohren spitz.",
+    "Sie hob die Hand, presste ihre Nägel fest aufeinander und sagte:"
+   ]
+  },
+  {
+   "id": "04b/0164#5",
+   "where": "04b/0164",
+   "text": "– Scheiß auf dieses Glück von uns.",
+   "q": "Hooman, bitter about their bad luck, curses it. Does 'Scheiß auf dieses Glück von uns' sound like how a young man would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman seufzte und wandte das Gesicht von Farid ab. Sein Blick fiel auf Eskandar, und mit einem schmerzerfüllten Ton, wie eine Nadel, die in eine alte Wunde sinkt, rief er:"
+   ]
+  },
+  {
+   "id": "04b/0343#6",
+   "where": "04b/0343",
+   "text": "– Also bist du ein Erstsemester-Arschloch.",
+   "q": "Hooman, surprised, swears casually on learning a young man is in his first year. Does 'Erstsemester-Arschloch' fit that casual swearing?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Ist das dein erstes Jahr?",
+    "– Ja."
+   ]
+  },
+  {
+   "id": "04b/0997#7",
+   "where": "04b/0997",
+   "text": "– Na schön, was auch immer für ein Scheiß.",
+   "q": "Eskandar, fed up with a quickening argument, gives in with a curse. Does this sound like natural swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Und so gingen sie hin und her, und mit jedem Hin und Her beschleunigte sich das Tempo, bis Eskandar sagte:"
+   ]
+  },
+  {
+   "id": "03/0640#8",
+   "where": "03/0640",
+   "text": "– Pff, fick dich. Jetzt bist du Auswanderer und wir sind dir scheißegal. Du auslandsvergötternder Überläufer.",
+   "q": "Hooman jokingly scolds his old friend for moving abroad. Does 'auslandsvergötternder Überläufer' sound like something a friend would say?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Es tut mir leid, ehrlich."
+   ]
+  },
+  {
+   "id": "03/0638#9",
+   "where": "03/0638",
+   "text": "Fick dich, hundertsiebzig Meter hast du mich mit diesem Körper hinter dir hergezogen.",
+   "q": "Hooman, fat and panting, greets an old friend with mock anger. Does 'Fick dich' sound like friendly swearing here?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Und wenn wir noch den letzten Teil rechnen, wo es schmaler wird und fast bis zum Valiasr-Tor geht, werden es hundertsiebzig Meter."
+   ]
+  },
+  {
+   "id": "04b/0385#10",
+   "where": "04b/0385",
+   "text": "– Äldi ist Schenki. Er kann nicht anders. So ist sein System eben gebaut. Immer sehr elegant und feierlich – scheißt er genau an der historischen Biegung.",
+   "q": "Hooman mocks Amir for always ruining things at the crucial moment. Does 'scheißt er genau an der historischen Biegung' work as that joke?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman kniete auf seinem Bett und aß Kuchen mit Kakao. Er drückte die Kakaomilch-Tüte zusammen und schlürfte den letzten Schluck laut auf. Er sagte:"
+   ]
+  },
+  {
+   "id": "04b/0618#11",
+   "where": "04b/0618",
+   "text": "– Wenn Fliege hier wäre, würden seine Antennen scharf werden – was ist das, das so Gewinn macht.",
+   "q": "Farid jokes that a greedy roommate nicknamed 'Fliege' would instantly perk up at easy profit. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid sagte:"
+   ]
+  },
+  {
+   "id": "04b/0598#12",
+   "where": "04b/0598",
+   "text": "Objektiv, wenn es sich durchsetzt, räumt es das ganze Bankenunwesen auf.",
+   "q": "Sajad explains to his roommates what Bitcoin could do to banks. Does this sentence sound right?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Peer-to-Peer heißt ohne Vermittler. Direkt zwischen Verkäufer und Käufer. Ohne jegliches Geldvermittlungssystem."
+   ]
+  },
+  {
+   "id": "03/0394#13",
+   "where": "03/0394",
+   "text": "Oder du bist Hirnf... na ja, du warst schon immer ein Hirnf..., jetzt bist du noch mehr Hirnf... Oder du hast was genommen.",
+   "q": "Hooman starts a crude insult, breaks it off, then repeats it. Does 'Hirnf...' read clearly as a crude insult cut short?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Du hast dich plötzlich auf diese Frage festgebissen. Dafür gibt es mehrere Erklärungen. Entweder hast du dir den Kopf irgendwo angeschlagen."
+   ]
+  },
+  {
+   "id": "03/0398#14",
+   "where": "03/0398",
+   "text": "– Arschloch. Objektiv, der Dollar erreicht gerade 1500 Toman, und du hängst dich an diesem armen Kerl fest?",
+   "q": "Sajad snaps at a roommate who keeps pestering another. Does this sound like how a student would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Sajad schloss seinen Laptop und schrie:"
+   ]
+  },
+  {
+   "id": "04b/0182#15",
+   "where": "04b/0182",
+   "text": "– Du bist die größte Kuh von allen. Dein Körperbau passt auch dazu.",
+   "q": "Eskandar hits back at chubby Hooman by calling him a cow. Does this insult sound natural from one young man to another?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Friss den Kopf meines Schwanzes, Mann. Wir haben genug von dir. Was weißt du denn, was Elektrotechnik an der Sharif bedeutet? Und außerdem: Hat dich jemand nach deiner Meinung gefragt?"
+   ]
+  },
+  {
+   "id": "04b/0146#16",
+   "where": "04b/0146",
+   "text": "– Scheißkopf. Du bringst mich dazu, den Mund aufzumachen und es auszusprechen.",
+   "q": "Hooman snaps at a roommate who pretends he only heard rumours. Does 'Scheißkopf' sound like a natural insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ja, naja, das hat sich in der Uni herumgesprochen."
+   ]
+  }
+ ]
+}

@@ -261,7 +261,9 @@
   function dateLabel(value) {
     var date = new Date(value + 'T12:00:00Z');
     if (isNaN(date.getTime())) return value;
-    try { return new Intl.DateTimeFormat('en', {dateStyle:'medium', timeZone:'UTC'}).format(date); }
+    // the visitor's language when the site speaks it (i18n.js), else English
+    var ui = window.__ui && window.__ui !== 'x-extract' ? window.__ui : 'en';
+    try { return new Intl.DateTimeFormat(ui, {dateStyle:'medium', timeZone:'UTC'}).format(date); }
     catch (e) { return value; }
   }
 
@@ -277,12 +279,14 @@
     var message = document.createElement('blockquote');
     message.className = 'guestbook-message';
     message.textContent = entry.message;
+    message.setAttribute('data-i18n-skip', '');
     article.appendChild(message);
 
     var footer = document.createElement('footer');
     footer.className = 'guestbook-card-meta';
     var name = document.createElement('cite');
     name.textContent = entry.name;
+    name.setAttribute('data-i18n-skip', '');
     footer.appendChild(name);
     var details = document.createElement('span');
     details.className = 'guestbook-card-details';

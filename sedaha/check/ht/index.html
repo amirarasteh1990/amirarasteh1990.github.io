@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/ht/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/ht/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,104 +72,158 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/ht/">&larr; <span class="native" lang="ht" dir="ltr">Kreyòl ayisyen</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ht" dir="ltr">Kreyòl ayisyen</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
   <form class="nc-form" id="ncForm" data-lang="ht" data-language="Haitian Creole" data-version="2026-11-16" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>Tankou lè nou te timoun, lè Maman te konn demele fil lenn rad ansyen yo, epi nou te konn pran fil la pou nou mache nan tout kay la pou lenn nan pa fè pil.</p>
+        <p class="nc-ctx">Ouvèti</p>
+        <p class="nc-ctx">…monn nan, si yo pa t ekri yo isit la. Yo te ekri yo pou yo tounen yon pon ant monn pa m nan ak monn pa ou a. Yon pon ki soti nan monn pa m, nan moman m ap ekri fraz sa yo, rive nan monn pa ou, nan moman ou chita pou li yo. Bò isit la, mwen demele fil mo yo, epi bò lòt la, ou menm w ap ranmase yo.</p>
+        <p class="nc-line">Tankou lè nou te timoun, lè Maman te konn demele fil lenn rad ansyen yo, epi nou te konn pran fil la pou nou mache nan tout kay la pou lenn nan pa fè pil.</p>
       </div>
       <p class="nc-q" id="q1">Maman unravels old clothes; the children carry the yarn around. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0570#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>Mwen ale dirèk nan kabann mwen ak menm rad mwen te met deyò a epi mwen rale dra a sou tèt mwen.</p>
+        <p class="nc-ctx">– Karann-senk chèz. Si pa gen ase, nou ka pote chèz soti nan lòt klas epi mete yo devan.</p>
+        <p class="nc-ctx">…devwale. Men Niloofar pa t vini gade menm foli powetik sa a. Li pa t menm pase devan pòt klas la. Ak gwo pa vit, mwen tounen nan dòtwa a. Mwen te vle kouche pi vit posib. Gason yo te chita sou tapi a bò kabann Farid la. Yo te nan mitan yon diskisyon epi yo pa t menm remake m antre nan chanm nan.</p>
+        <p class="nc-line">Mwen ale dirèk nan kabann mwen ak menm rad mwen te met deyò a epi mwen rale dra a sou tèt mwen.</p>
       </div>
       <p class="nc-q" id="q2">He pulls his blanket over his head. Is 'dra' the right word?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/0510#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>– ... li te toujou gen menm delizyon vin Einstein sa a.</p>
+        <p class="nc-ctx">…te sezi m soti dèyè epi li peze anba kaj pwatrin mwen epi tay-kreyon an vole soti. Men bri sa a ki te rezone nan zòrèy mwen pa t janm soti nan tèt mwen ankò. Sa vle di gen yon jou m ap mouri san sans ankò tankou fwa sa a? Mouri epi separe m ak mond sa a? Mwen pè separasyon sa a, diskontinyite sa a.</p>
+        <p class="nc-ctx">Pandan l ap ri, Hooman frape do m byen fò ak men l epi mòso sik la vole nan gòj mwen.</p>
+        <p class="nc-line">– ... li te toujou gen menm delizyon vin Einstein sa a.</p>
       </div>
       <p class="nc-q" id="q3">He still fancied himself an Einstein. Does 'delizyon vin Einstein' read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1150#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>Li te chape ak vitès pi wo pase vitès limyè, sinon m ta bat li jistan dèyè l fann.</p>
+        <p class="nc-ctx">…ane pase, te tonbe pi fò jou sa a sou figi Eskandar. Pandan l ap kouri chape, pye Farid te desann sou liv Eskandar epi kouvèti jounal li a te chire. Yon bout gwo tit long liv la te vizib: "Dis mil ... mèvèy, konesans... afor... pou..." Farid pa t vin nan chanm nan pou de twa nwit. Eskandar t ap di:</p>
+        <p class="nc-ctx">– Ti zandolit sa a te vyole lwa fizik yo tou.</p>
+        <p class="nc-line">Li te chape ak vitès pi wo pase vitès limyè, sinon m ta bat li jistan dèyè l fann.</p>
       </div>
       <p class="nc-q" id="q4">Eskandar threatens Farid. Is it clear he'd have hung him up by the backside?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1263#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>– Vwiiiiij, Baba Baba, èske w ap achte m poupe gwo sa a?</p>
+        <p class="nc-ctx">– Amir, Amir-jan, pitit gason mwen. Leve. Leve pou Maman. Se te sèlman yon rèv. Pa pè, mwen isit la.</p>
+        <p class="nc-ctx">…silans apezan sa a ki gen koulè fènwa men li pa t bay ase limyè pou gide m. Yon lanp k ap klignen nan men yon tifi mwen pa t janm konnen ki koulè pòt lakay li te ye, mwen pa t janm ka mete l nan yon bwat kreyon koulè. Yon tifi piti vin kouri, vwiiv, epi li kanpe bò kote m. Li gade jwèt yo. Li di:</p>
+        <p class="nc-line">– Vwiiiiij, Baba Baba, èske w ap achte m poupe gwo sa a?</p>
       </div>
       <p class="nc-q" id="q5">A toddler asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1312#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ht" dir="ltr">
-        <p>Ou vin toudi. Plis ou panse sou li, plis ou vin toudi.</p>
+        <p class="nc-ctx">…fè. Soti nan jenou monte, tifi a te kache dèyè yon anons sou penti ak reparasyon ete bilding Abu-Reyhan an. Ak bat kè, mwen vanse. Se te Niloofar, Niloofar tout bon. Li te kanpe fasafas ak Inivèsite Atizay la, bò kote kèk lòt tifi. Youn nan tifi yo t ap montre yon papye bay rès yo epi li t ap di:</p>
+        <p class="nc-ctx">– ... gade vrèman konbyen sa fè w reflechi. Li desine sa a epi ekri anba l 'sa a se pa yon pip'.</p>
+        <p class="nc-line">Ou vin toudi. Plis ou panse sou li, plis ou vin toudi.</p>
       </div>
       <p class="nc-q" id="q6">A girl is meant to joke crudely about feeling dizzy. Does the joke work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
@@ -208,7 +270,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

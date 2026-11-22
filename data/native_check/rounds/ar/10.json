@@ -1,0 +1,187 @@
+{
+ "lang": "ar",
+ "slug": "ar",
+ "dir": "rtl",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "03/0531#1",
+   "where": "03/0531",
+   "text": "كل يوم أقول: يا إلهي، هل يأتي يوم أرى بعينيَّ هاتين أنهم نالوا جزاءهم؟",
+   "q": "Maman prays to see her son's attackers punished one day. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…لا تقعوا في الحب. أولاً تعرّفوا إلى الشخص، تزوّجوا، ثم إن أردتم وقعتم في الحب. انظر إن كنت أقول كلمة حينئذٍ. كان أبو الفضل يقول: إن لم تأتوا تطلبوا لي هذه الفتاة، فسأقتل نفسي. حسناً، رتّبنا زواجهما، وماذا حدث بعد ذلك؟ العام الماضي حين جاء، كان إخوة زوجته قد ضربوه ضرباً شديداً حتى اسودّ كل جسده."
+   ]
+  },
+  {
+   "id": "04b/1396#2",
+   "where": "04b/1396",
+   "text": "أظنّ أحلامي لم تُصدّق أنكِ رحلتِ",
+   "q": "The closing line of the narrator's short love poem: his dreams cannot believe she has left. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "لا أرجو عودتكِ",
+    "لكن إن مررتِ من هنا صدفةً",
+    "فتعالي إلى أحلامي من جديد"
+   ]
+  },
+  {
+   "id": "04b/0454#3",
+   "where": "04b/0454",
+   "text": "واشتكت عائلات الطلاب أيضاً، فطردوه من المدرسة بركلةٍ في مؤخرته.",
+   "q": "Hooman laughs that the school kicked a foolish teacher out on his backside. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…على فيسبوك وتذمّر من أنهم فصلوه. وكما فهمتُ من منشوره على فيسبوك، كان قد صار معلّم الفيزياء في إحدى ثانويات مدينته، والأحمق المتوهّم بدل المواضيع التي في الكتاب راح يُدرّس نظرياته الخاصة في الحصة. نظرياته الخاصة، هاها، فاحزر ماذا حدث؟ رسب الصف كله تقريباً في الامتحان النهائي الذي كان وطنياً."
+   ]
+  },
+  {
+   "id": "04a/0082#4",
+   "where": "04a/0082",
+   "text": "– لكنك لم تقل.",
+   "q": "A little boy, crying, answers his older brother's scolding. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "أميد كان يبكي. قال:"
+   ]
+  },
+  {
+   "id": "06/0238#5",
+   "where": "06/0238",
+   "text": "– أهكذا تقول شكراً؟",
+   "q": "Maman, through clenched teeth, scolds her son for his thank-you. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تقول مامان وهي تطبق أسنانها:"
+   ]
+  },
+  {
+   "id": "04b/0784#6",
+   "where": "04b/0784",
+   "text": "– أنت متلصّصٌ جداً.",
+   "q": "Niloofar teases Amir for overhearing her talk with friends. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– اليوم في وسط الكلية كنتِ تتحدّثين مع بضع فتياتٍ أخريات، سمعت."
+   ]
+  },
+  {
+   "id": "04b/0717#7",
+   "where": "04b/0717",
+   "text": "– أقول لك يا شيخو-جان، لكن بيننا وبين أنفسنا، انتهى بك الأمر في الخارج بمحض صدفةٍ خَرائية. لولا عين النسر نيوز لكنتَ الآن عندنا.",
+   "q": "Hooman tells Amir he ended up abroad by pure dumb luck. Does this sound like crude friendly talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "يقول هومن:"
+   ]
+  },
+  {
+   "id": "04b/1314#8",
+   "where": "04b/1314",
+   "text": "– أحبّكِ منذ اثنين وثلاثين شهراً. من بعيد. من دون أن تعلمي. في صمت. بلا كلمةٍ واحدة.",
+   "q": "A shy young man finally tells a woman he has loved her silently for years. Does this sound natural and heartfelt?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "04b/0744#9",
+   "where": "04b/0744",
+   "text": "– نذرتُ إن تحسّنت حاله أن أمشي إلى مشهد.",
+   "q": "Maman says she made a vow to walk to a holy city if someone recovers. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…الانهيار. كنتُ مستلقياً في ظلام الغرفة وأرى من شقّ الباب قاسم جالساً في صالة البيت أمام التلفاز يأكل البذور، ومامان جالسة بجانبه. كانت الأخبار تتحدّث عن أضرار السيل الواسع في المحافظات الشمالية والغربية من البلاد. بدت لي مامان من الخلف أشبه بدائرةٍ صغيرة جالسة بجانب مستطيلٍ أكبر. كانت مامان تقول:"
+   ]
+  },
+  {
+   "id": "04b/1270#10",
+   "where": "04b/1270",
+   "text": "فاكتُب على الماء بدمك أنت",
+   "q": "A line of modern poetry written on a lecture-hall board. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "على كل شيءٍ يمكن أن يُكتب",
+    "إلا على الماء",
+    "وإن عبرتَ البحر"
+   ]
+  },
+  {
+   "id": "04a/0006#11",
+   "where": "04a/0006",
+   "text": "– سأضيع يا مامان.",
+   "q": "A four-year-old says this to his mother during their game. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "كان عمري آنذاك أربع سنوات. كانت تجدني دائماً أربع مرات. والآن عمري ست سنوات. فلماذا، وأنا واقف الآن خلف باب الزقاق، لا تأتي لتجدني ولو مرة واحدة؟ الآن وعمري ست سنوات. حين كان عمري أربع سنوات كانت تجدني أربع مرات. لعلني ضعت؟ وليس في يدي خيط أيضاً. كنت أقول دائماً:"
+   ]
+  },
+  {
+   "id": "04b/0919#12",
+   "where": "04b/0919",
+   "text": "– لحس المؤخرات لا يليق بك.",
+   "q": "A roommate snaps back crudely at Eskandar's jab about the singer. Does this crude retort sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ولِمَ على عجلٍ مثلك أن يكون في هاتفه أغنية لـشجريان؟"
+   ]
+  },
+  {
+   "id": "04b/0538#13",
+   "where": "04b/0538",
+   "text": "– إنها نهاية الزمان. كان جيل بيبي يقول إن الأرض تظلّ ترتجّ حين تأتي نهاية الزمان.",
+   "q": "Maman explains the earthquakes with what her grandmother's generation used to say. Does this sound like a small-town mother?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– بههه. هممم، لا بد أن الدول كانت قريبة بعضها من بعض. متى كان زلزال بم؟",
+    "– قبل نحو سنة."
+   ]
+  },
+  {
+   "id": "03/0345#14",
+   "where": "03/0345",
+   "text": "– أولم ينتهِ ما أردتَ قوله؟",
+   "q": "Niloofar, impatient, asks Amir if he is done. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "قالت:"
+   ]
+  },
+  {
+   "id": "03/0415#15",
+   "where": "03/0415",
+   "text": "– هيا حمّل يا وغد.",
+   "q": "Sajad swears at the slow internet. Does this sound like a young man cursing at his laptop?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "كنت جالساً على سريري أفكر في مشبك الشعر الأصفر الصغير الذي رأيته في شعر نيلوفر لأول مرة ذلك اليوم. كان سجاد يلعن سرعة الإنترنت."
+   ]
+  },
+  {
+   "id": "04b/1271#16",
+   "where": "04b/1271",
+   "text": "كي يعلم من يأتي في إثرك",
+   "q": "A line of modern poetry written on a lecture-hall board. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "وإن عبرتَ البحر",
+    "فاكتُب على الماء بدمك أنت"
+   ]
+  }
+ ]
+}

@@ -1,18 +1,137 @@
-{"lang": "pl", "slug": "pl", "dir": "ltr", "version": "2026-11-18",
+{
+ "lang": "pl",
+ "slug": "pl",
+ "dir": "ltr",
+ "version": "2026-11-22",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.", "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?"},
-  {"id": "04b/1312#2", "where": "04b/1312", "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.", "q": "A student's crude made-up word for a muddled head. Is 'gównozamęt' understandable?"},
-  {"id": "04b/1320#3", "where": "04b/1320", "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.", "q": "Amir hunts for a Hafez verse with shaking hands. Does this read naturally?"},
-  {"id": "01/0116#4", "where": "01/0116", "text": "Wychodź też na zewnątrz. Idź w jakieś spokone miejsce.", "q": "Maman mispronounces 'spokone' (quiet) on purpose. Is that clear?"},
-  {"id": "01/0148#5", "where": "01/0148", "text": "– Co i Uśmiechy?", "q": "Asked about a film, Maman catches only the end of its title. Is that clear?"},
-  {"id": "03/0191#6", "where": "03/0191", "text": "– Oho. Hamidzie Kocie, jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?", "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it land?"},
-  {"id": "03/0290#7", "where": "03/0290", "text": "– Czy Arasteh to przycięte Araasteh?", "q": "A guard puns on Arasteh and Araasteh (Persian: neat). Is the joke clear?"},
-  {"id": "03/0430#8", "where": "03/0430", "text": "– A z tym twoim chujowym sposobem mówienia powinieneś się nazywać Alat Delon.", "q": "A rude pun on the actor Alain Delon. Does 'Alat Delon' work as an insult?"},
-  {"id": "04a/0076#9", "where": "04a/0076", "text": "– To kamień z marmulu. Marmul znaczy bardzo drogi.", "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"},
-  {"id": "04b/0595#10", "where": "04b/0595", "text": "Orle Oko mówi peer-to-peer, a Taverny mówi Eldie-do-Eldie.", "q": "Amir misheard 'peer' as pir, Persian for elder. Does this punch line work?"},
-  {"id": "04b/1263#11", "where": "04b/1263", "text": "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?", "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?"},
-  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Tak, kupię ci lalkę.", "q": "Dad playfully echoes his toddler's baby talk. Does it sound like that?"},
-  {"id": "04b/1321#13", "where": "04b/1321", "text": "„To wino, które tam jest, jest prawdziwe nie jest przenośnią”.", "q": "He says this quoted line can be read two opposite ways. Can it?"},
-  {"id": "04b/1321#14", "where": "04b/1321", "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.", "q": "He nearly repeats the crude word, then stops himself. Is that clear?"},
-  {"id": "06/0056#15", "where": "06/0056", "text": "Ziemię sypali na nią burdożerem.", "q": "Maman mispronounces 'burdożerem' (bulldozer) on purpose. Is that clear?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.",
+   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Wychodź też na zewnątrz. Idź w jakieś spokone miejsce.",
+   "q": "Maman says 'spokone' for 'spokojne' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ooo, jak dobrze. Mm-hm, zamawiasz i przynoszą. Ale Amir-dżan, nie siedź cały czas w domu."
+   ]
+  },
+  {
+   "id": "01/0132#3",
+   "where": "01/0132",
+   "text": "Albo cholara, na przykład. Ona też nie zabiła tylu.",
+   "q": "Maman says 'cholara' for 'cholera' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…kicha po jednej stronie ulicy, a człowiek po drugiej stronie łapie wirusa i umiera. Nigdy czegoś takiego nie widziałam ani nie słyszałam. Nawet pokolenie Bibi o niczym takim nie mówiło. Był tifus, na przykład, albo gruźlica, albo odra. Nazywano je śmiertelnymi. Hmm, nawet one nie zabiły tylu ludzi."
+   ]
+  },
+  {
+   "id": "01/0148#4",
+   "where": "01/0148",
+   "text": "– Co i Uśmiechy?",
+   "q": "Maman catches only the end of the film title 'Łzy i Uśmiechy'. Does her puzzled question sound natural?",
+   "ctx": 2,
+   "before": [
+    "– Dzieciaki, mam pobrać Łzy i Uśmiechy, żebyśmy mogli obejrzeć dziś wieczór?",
+    "Maman odwraca głowę i mówi:"
+   ]
+  },
+  {
+   "id": "03/0191#5",
+   "where": "03/0191",
+   "text": "– Oho. Hamidzie Kocie, jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?",
+   "q": "In Persian, 'char' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'osioł'. Does the jab work?",
+   "ctx": 2,
+   "before": [
+    "– Pff, ośle, kto wie lepiej: przyjaciel kuzyna mistrza rzemieślnika naszego szwagra — najbogatszy człowiek w Teheranie — czy ty, cielaku? No dobrze, idź, kup sobie jeden. Jeśli szkło pęknie, nie mów, że cię nie ostrzegałem.",
+    "Taghi powiedział:"
+   ]
+  },
+  {
+   "id": "03/0290#6",
+   "where": "03/0290",
+   "text": "– Czy Arasteh to przycięte Araasteh?",
+   "q": "The narrator's surname Arasteh was cut down from Persian 'Araasteh', meaning neat. Does the guard's quip work?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "A z tym twoim chujowym sposobem mówienia powinieneś się nazywać Alain Chujon.",
+   "q": "'Alain Chujon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "04a/0076#8",
+   "where": "04a/0076",
+   "text": "– To kamień z marmulu. Marmul znaczy bardzo drogi.",
+   "q": "A little boy says 'marmul' for 'marmur' (marble) and thinks it means expensive; both mistakes are deliberate. Does it sound childlike?",
+   "ctx": 1,
+   "before": [
+    "Szliśmy dalej. W połowie drogi był jeden dom. Jego mur był ładny. Ghassem zawsze mówił:"
+   ]
+  },
+  {
+   "id": "04b/1263#9",
+   "where": "04b/1263",
+   "text": "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?",
+   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?",
+   "ctx": 1,
+   "before": [
+    "…lampę, która zniszczyła tamtą kojącą, ciemną ciszę, a sama świeciła zbyt słabo, by mnie poprowadzić. Migającą lampę w ręce dziewczyny, której drzwi miały kolor, jakiego nie potrafiłem znaleźć w pudełku kredek. Nadbiega mała dziewczynka, bzycząc, i staje obok mnie. Patrzy na zabawki. Mówi:"
+   ]
+  },
+  {
+   "id": "04b/1265#10",
+   "where": "04b/1265",
+   "text": "– Tak, kupię ci lalkę.",
+   "q": "The father answers by playfully copying his little girl's baby talk. Does his reply sound like that?",
+   "ctx": 2,
+   "before": [
+    "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?",
+    "Głos zza moich pleców mówi:"
+   ]
+  },
+  {
+   "id": "04b/1312#11",
+   "where": "04b/1312",
+   "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
+   "q": "A student's crude made-up word for a muddled head. Is 'gównozamęt' understandable?",
+   "ctx": 1,
+   "before": [
+    "– ...zobaczcie, jak bardzo to skłania do myślenia. Narysował to i podpisał pod spodem: to nie jest fajka."
+   ]
+  },
+  {
+   "id": "04b/1321#12",
+   "where": "04b/1321",
+   "text": "„To wino, które tam jest, jest prawdziwe nie jest przenośnią”.",
+   "q": "The missing comma is deliberate: this quoted line should allow two opposite readings, real wine and metaphor. Does it?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.",
+   "q": "He nearly says the crude word 'gównozamęt' again, then stops himself. Is that clear?",
+   "ctx": 2,
+   "before": [
+    "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali. Chciałem pokazać go Nilufar.",
+    "– Jest. Posłuchaj tego. Na, na Boga, posłuchaj. „To wino, które tam jest, jest prawdziwe nie jest przenośnią”. To jest to samo. Tak jak ten obraz, który pokazywała twoja przyj-przyj-przyjaciółka."
+   ]
+  },
+  {
+   "id": "06/0056#14",
+   "where": "06/0056",
+   "text": "Ziemię sypali na nią burdożerem.",
+   "q": "Maman says 'burdożerem' for 'buldożerem' (bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
+  }
+ ]
+}

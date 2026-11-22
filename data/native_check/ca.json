@@ -2,97 +2,126 @@
  "lang": "ca",
  "slug": "ca",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Com en la infantesa, quan la Maman desfeia la llana dels vestits vells, i nosaltres agafàvem el fil i voltàvem per la casa perquè la llana no s'amuntegués.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
   },
   {
-   "id": "03/0384#2",
-   "where": "03/0384",
-   "text": "De vegades portava unes sabates verdes amb puntets blancs, que eren les que més m'agradaven de totes les que tenia. Em recordaven el moment de tastar prunes verdes al costat de la Niloofar.",
-   "q": "Do these two sentences read naturally?"
-  },
-  {
-   "id": "03/0384#3",
-   "where": "03/0384",
-   "text": "Les cames em formiguegen, com si alguna cosa palpitant i inquieta hi panteixés a dins.",
-   "q": "Does this sentence read naturally?"
-  },
-  {
-   "id": "03/0412#4",
-   "where": "03/0412",
-   "text": "Un noi està dret al costat del llarg camí d'asfalt que uneix la porta Hafez amb la porta Valiasr de la universitat i allarga uns papers petits cap als qui passen.",
-   "q": "Does this sentence read naturally?"
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "T'entra un merder al cap. Com més hi penses, més merder se't fa al cap.",
-   "q": "She says crudely that it makes your head spin. Does this sound natural?"
-  },
-  {
-   "id": "01/0116#6",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "Vés a llocs traniquils.",
-   "q": "Maman mispronounces 'traniquils' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'traniquils' for 'tranquils' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ai, quina meravella. Sí, fas la comanda i te la porten. Però Amir-jan, no estiguis sempre a casa. Surt també."
+   ]
   },
   {
-   "id": "01/0148#7",
+   "id": "01/0148#3",
    "where": "01/0148",
    "text": "El que-i-Somriures?",
-   "q": "Maman catches only the end of a TV series title. Is that clear?"
+   "q": "Maman catches only the end of the title 'Llàgrimes i Somriures'. Does her question sound natural?",
+   "ctx": 2,
+   "before": [
+    "– Nens, descarrego Llàgrimes i Somriures perquè ho vegem aquesta nit?",
+    "La Maman gira el cap i diu:"
+   ]
   },
   {
-   "id": "03/0191#8",
+   "id": "03/0191#4",
    "where": "03/0191",
    "text": "El Hamid Gat, fins ahir deies «ruc», i ara de sobte ets massa refinat i dius «ase»?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "Taghi teases Hamid for saying the politer word for donkey instead of his usual cruder one. Does the joke work?",
+   "ctx": 3,
+   "before": [
+    "– Pfff, ase, qui sap més — l'amic del cosí del mestre artesà del nostre cunyat, que és l'home més ric de Teheran, o tu, vedell? Au, ves-lo a comprar. Però quan el vidre es trenqui, no diguis que no t'ho vaig advertir.",
+    "El Taghi va dir:",
+    "– Oh-ho."
+   ]
   },
   {
-   "id": "03/0384#9",
+   "id": "03/0384#5",
    "where": "03/0384",
    "text": "Per la banda dreta del maqnaeh deixava escapar una part dels cabells i s'hi posava una petita pinça groga.",
-   "q": "A lock of hair escapes her headscarf, held by a clip. Does this read naturally?"
+   "q": "A lock of hair escapes her headscarf, held by a clip. Does this read naturally?",
+   "ctx": 0
   },
   {
-   "id": "03/0412#10",
+   "id": "03/0384#6",
+   "where": "03/0384",
+   "text": "De vegades portava unes sabates verdes amb puntets blancs, que eren les que més m'agradaven de totes les que tenia. Em recordaven el moment de tastar prunes verdes al costat de la Niloofar.",
+   "q": "Do these two sentences read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0384#7",
+   "where": "03/0384",
+   "text": "Les cames em formiguegen, com si alguna cosa palpitant i inquieta hi panteixés a dins.",
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0412#8",
+   "where": "03/0412",
+   "text": "Un noi està dret al costat del llarg camí d'asfalt que uneix la porta Hafez amb la porta Valiasr de la universitat i allarga uns papers petits cap als qui passen.",
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0412#9",
    "where": "03/0412",
    "text": "També me'n dóna un a mi. Li pregunto què són aquests papers.",
-   "q": "A student hands out leaflets; the narrator asks what they are. Does this read naturally?"
+   "q": "A student hands out leaflets; the narrator asks what they are. Does this read naturally?",
+   "ctx": 0
   },
   {
-   "id": "03/0430#11",
+   "id": "03/0430#10",
    "where": "03/0430",
-   "text": "I tu, amb aquesta manera tan gilipolles de parlar, et deurien haver posat Alat Delon.",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "I tu, amb aquesta manera de parlar de cap de titola, et deurien haver posat Alain Titolon.",
+   "q": "'Alain Titolon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#12",
+   "id": "04a/0076#11",
    "where": "04a/0076",
    "text": "És pedra de malble. Malble vol dir molt car.",
-   "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"
+   "q": "A small boy says 'malble' for marbre and wrongly thinks it means very expensive, both on purpose. Does it sound childlike?",
+   "ctx": 1,
+   "before": [
+    "Anàvem endavant. A mig camí hi havia una casa. La seva paret era bonica. El Ghassem sempre deia:"
+   ]
   },
   {
-   "id": "04b/0595#13",
-   "where": "04b/0595",
-   "text": "Ull d'Àguila diu peer to peer; Taverny diu Vell a Vell.",
-   "q": "Taverny (Tavern Elder) mishears peer to peer as 'Vell a Vell'. Does it work?"
-  },
-  {
-   "id": "04b/1263#14",
+   "id": "04b/1263#12",
    "where": "04b/1263",
    "text": "Vruuum, Baba, Baba, em comples aquella nina tan glan?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her father for a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…i reposant i que no tenia prou claror per guiar-me. Un llum parpellejant a la mà d'una noia de qui mai no vaig saber en quin punt de la capsa de llapis de colors col·locar el color de la porta de casa seva. Una nena petita ve fent «vrum vrum» i s'atura al meu costat. Mira les joguines. Diu:"
+   ]
   },
   {
-   "id": "04b/1321#15",
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "T'entra un merder al cap. Com més hi penses, més merder se't fa al cap.",
+   "q": "She says crudely that it makes your head spin. Does this sound natural?",
+   "ctx": 1,
+   "before": [
+    "– ... Mireu que n'és, de suggeridor, de debò. Va dibuixar això i a sota va escriure: això no és una pipa."
+   ]
+  },
+  {
+   "id": "04b/1321#14",
    "where": "04b/1321",
    "text": "«Aquell vi que hi ha allà és veritat, no metàfora.»",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it?",
+   "ctx": 0
   }
  ]
 }

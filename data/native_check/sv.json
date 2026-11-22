@@ -2,97 +2,132 @@
  "lang": "sv",
  "slug": "sv",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Detta är den lösa änden av en tråd av ord som en gång var ljud.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#2",
    "where": "Opening/0007",
    "text": "Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden.",
-   "q": "Does 'nystar jag upp' read naturally for unwinding a thread?"
+   "q": "Does 'nystar jag upp' read naturally for unwinding a thread?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#3",
    "where": "Opening/0007",
    "text": "Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig.",
-   "q": "Is it clear the children carried the yarn around the house?"
+   "q": "Is it clear the children carried the yarn around the house?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#4",
    "where": "Opening/0007",
    "text": "Kanske kom din generation några år efter garnets värld — men föreställ dig: en gång, någonstans i världen, lekte barn så.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…du sätter dig ned för att läsa dem. Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden. Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig."
+   ]
   },
   {
    "id": "01/0116#5",
    "where": "01/0116",
    "text": "Gå till luugna ställen.",
-   "q": "Maman mispronounces 'luugna' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'luugna' for 'lugna' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Åh, så bra. Mm-hm, beställ, så kommer de med det till dig. Men Amir-jan, sitt inte hemma hela tiden. Gå ut också."
+   ]
   },
   {
    "id": "01/0148#6",
    "where": "01/0148",
    "text": "Vad och Leenden?",
-   "q": "Maman catches only the end of a TV series title. Is that clear?"
+   "q": "Maman catches only the end of the title 'Tårar och Leenden'. Does her puzzled reply sound natural?",
+   "ctx": 2,
+   "before": [
+    "– Ungar, ska jag ladda ner Tårar och Leenden så vi kan titta i kväll?",
+    "Maman vänder huvudet och säger:"
+   ]
   },
   {
    "id": "03/0191#7",
    "where": "03/0191",
    "text": "Hamid Katt, i går sa du fortfarande \"khar\". Nu har du blivit så civiliserad att du säger \"åsna\"?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "Taghi teases Hamid for now saying 'åsna'; 'khar' is the blunt Persian word for donkey. Does the teasing land?",
+   "ctx": 3,
+   "before": [
+    "– Pff, åsna, vem vet mer, vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, eller du, kalv? Okej, gå och köp en. Om glaset går sönder, säg inte att jag inte varnade dig.",
+    "Taghi sa:",
+    "– Oh-ho."
+   ]
   },
   {
    "id": "03/0373#8",
    "where": "03/0373",
    "text": "Jag menar det där med att Ameroka bekräftar att Iran har stoppat kärnkraftsprogrammet.",
-   "q": "Maman mispronounces 'Ameroka' on purpose; she means America. Is that clear?"
+   "q": "Maman says 'Ameroka' for Amerika on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Vad?"
+   ]
   },
   {
    "id": "03/0430#9",
    "where": "03/0430",
-   "text": "Och du, med ditt kukiga sätt att prata, borde ha hetat Alat Delon.",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "Och du, med ditt kukiga sätt att prata, borde ha hetat Alain Kuklon.",
+   "q": "'Alain Kuklon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
    "id": "04a/0076#10",
    "where": "04a/0076",
    "text": "Det är marmelsten. Marmel betyder väldigt dyrt.",
-   "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"
+   "q": "Both mistakes are intended: little Ghassem says 'marmel' for marmor and thinks it means expensive. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Vi gick vidare. Halvvägs fanns ett hus. Muren var fin. Ghassem brukade säga:"
+   ]
   },
   {
-   "id": "04b/0595#11",
-   "where": "04b/0595",
-   "text": "Örnaöga säger peer-to-peer; Taverny säger Äldi-till-Äldi.",
-   "q": "Taverny (the Tavern Elder) mishears peer-to-peer as 'Äldi-till-Äldi'. Does the joke work?"
-  },
-  {
-   "id": "04b/1263#12",
+   "id": "04b/1263#11",
    "where": "04b/1263",
    "text": "Vrrrumm – Baba, Baba, viw du töpa den stoa dockan åt mej?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her father for a doll. Does it sound like a small child talking?",
+   "ctx": 1,
+   "before": [
+    "…mörkfärgade tystnaden men inte spred nog ljus för att leda mig någonstans. En blinkande lampa i handen på en flicka vars dörrfärg jag aldrig visste var den hörde hemma i färgpennlådan. En liten flicka kommer surrande springande och ställer sig bredvid mig. Hon tittar på leksakerna. Hon säger:"
+   ]
   },
   {
-   "id": "04b/1312#13",
+   "id": "04b/1312#12",
    "where": "04b/1312",
    "text": "Man blir skitförvirrad. Ju mer man tänker på det, desto mer skitförvirrad blir man.",
-   "q": "A girl uses a crude made-up word for mind-bending. Does 'skitförvirrad' work?"
+   "q": "A girl talks crudely about a baffling painting. Does 'skitförvirrad' sound natural here?",
+   "ctx": 1,
+   "before": [
+    "– ... Titta på det, det är verkligen tankeväckande. Han ritade det här och skrev under det: detta är inte en pipa."
+   ]
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1321#13",
    "where": "04b/1321",
    "text": "\"Verkligt är det vin som finns där inte en metafor.\"",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "A line by the poet Hafez, meant to read two ways: the wine is real, or only a metaphor. Do both readings come through?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#14",
    "where": "06/0056",
    "text": "Med en bullerdozer hällde de jord över henne. Jord och kalk.",
-   "q": "Maman mispronounces 'bullerdozer' on purpose. Is that clear?"
+   "q": "Maman says 'bullerdozer' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
   }
  ]
 }

@@ -1,0 +1,182 @@
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0182#1",
+   "where": "01/0182",
+   "text": "Hva-jeger var han ikke?",
+   "q": "Mahboubeh says he was no 'skjørtejeger' (womanizer); Maman jokes back about every other kind of '-jeger'. Does the joke work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Han var heller ikke en skjørtejeger.",
+    "Maman sier:"
+   ]
+  },
+  {
+   "id": "06/0052#2",
+   "where": "06/0052",
+   "text": "Til slutt ringte Mahboub, og de kom i en amublanse og hentet Naney.",
+   "q": "Maman says 'amublanse' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0380#3",
+   "where": "03/0380",
+   "text": "Den verste sykdommen er Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Maman sa:"
+   ]
+  },
+  {
+   "id": "01/0132#4",
+   "where": "01/0132",
+   "text": "Det fantes for eksempel tifoid, eller tuberkulose, eller meslinger.",
+   "q": "Maman, a mother from a small town, says 'tifoid' for typhoid on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#5",
+   "where": "01/0132",
+   "text": "Eller kolara, for eksempel. Den drepte heller ikke så mange.",
+   "q": "Maman says 'kolara' for cholera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "Hva og smil?",
+   "q": "Maman is hard of hearing and catches only the end of the series title 'Tårer og smil'. Does her question read naturally?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Unger, skal jeg laste ned Tårer og smil, så vi kan se den i kveld?",
+    "Maman dreier hodet og sier:"
+   ]
+  },
+  {
+   "id": "03/0362#7",
+   "where": "03/0362",
+   "text": "Mahboub, dette de sier på nyhetene, Ameroka ...",
+   "q": "Grandpa, an old man, says 'Ameroka' for America on purpose. Does it read as his slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…de andre Konkur-notatene. Jeg forlot huset bakerst i gårdsplassen og krysset gårdsplassens lengde på ni skritt, og gleden over den nye oppdagelsen lyste fremdeles i hjertet mitt. Da jeg kom inn i stua fra gårdsplassen, lå Maman foran fjernsynet. Hun hadde begge hender på magen og sa til Mahboubeh:"
+   ]
+  },
+  {
+   "id": "03/0290#8",
+   "where": "03/0290",
+   "text": "Er Arasteh en nedklippet Araasteh?",
+   "q": "A guard jokes that the surname Arasteh is a trimmed 'Araasteh', a Persian word for neat. Does the joke come across?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Jeg snur hodet i hans retning."
+   ]
+  },
+  {
+   "id": "03/0309#9",
+   "where": "03/0309",
+   "text": "Om Gud vil, måtte du alltid være araasteh.",
+   "q": "The guard plays on the name again: 'araasteh' means neat and well groomed. Does this friendly wish read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Vakten smiler og sier:"
+   ]
+  },
+  {
+   "id": "04b/0595#10",
+   "where": "04b/0595",
+   "text": "Men han dreit seg ut. Ørneøye sier peer-to-peer; Taverny sier Eldie-til-Eldie.",
+   "q": "Amir misheard 'peer-to-peer' as 'Pir-til-pir'; pir means elder, like his nickname Eldie. Does Farid's punch line land?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– Pir-til-pir?",
+    "Hooman sa:",
+    "– Send et salavat. Tavernens Eldste sa endelig noe.",
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "04b/0591#11",
+   "where": "04b/0591",
+   "text": "Pir-til-pir?",
+   "q": "Amir mishears the English term 'peer-to-peer' and repeats it wrongly. Does it read as his mishearing, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– En slags peer-to-peer-elektroniske penger.",
+    "Jeg sa:"
+   ]
+  },
+  {
+   "id": "04b/0460#12",
+   "where": "04b/0460",
+   "text": "Hva faen er det i veien med deg nå, siden du har fått den til å stå mot oss, du Alain Pikklon?",
+   "q": "Hooman mocks a roommate with the rude nickname 'Alain Pikklon' and a sexual taunt. Does this sound like young men teasing in a dorm?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman sa:"
+   ]
+  },
+  {
+   "id": "03/0432#13",
+   "where": "03/0432",
+   "text": "Det er Alain Pikklon. Piiikk.",
+   "q": "'Alain Pikklon' is a rude pun on the actor Alain Delon; Hooman stretches the crude part. Does the joke land?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ... og former munnen som en hønsebak og river deg selv i stykker for å snakke som ham. Det er ikke ham jeg mener."
+   ]
+  },
+  {
+   "id": "04a/0080#14",
+   "where": "04a/0080",
+   "text": "Hvorfor gikk dere ikke til marmelhuset?",
+   "q": "Ghassem, a young boy, again says 'marmel' for marble. Does it read as a child's slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…Som den samme store røde døren. Jeg satte meg ved rennesteinen. Jeg satte beina ned i rennesteinen. Det var ikke noe vann. Hjertet mitt var tomt. Mannen kom tilbake. Forhjulet snurret ikke lenger. Han ga Omid en ørefik. Vi gråt begge to. Mannen dro. Ghassem kom tilbake. Han skjente på oss. Han sa:"
+   ]
+  },
+  {
+   "id": "04b/0387#15",
+   "where": "04b/0387",
+   "text": "I natt kunne jeg høre deg tygge drøv.",
+   "q": "Eskandar teases Hooman, who secretly ate sweets at night, by likening him to a cow chewing cud. Does the joke come across?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Eskandar vendte seg mot Hooman og sa:"
+   ]
+  },
+  {
+   "id": "04b/1265#16",
+   "where": "04b/1265",
+   "text": "Ja, jeg viw kjøpe dukken til deg.",
+   "q": "The father lovingly copies his little girl's baby talk ('viw'). Does it read that way, not as a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Brrrumm – Baba, Baba, viw du kjøpe meg den stole dukken?",
+    "En stemme bak meg sier:"
+   ]
+  }
+ ]
+}

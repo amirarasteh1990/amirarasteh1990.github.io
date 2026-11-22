@@ -1,44 +1,68 @@
 {
-  "lang": "ht",
-  "slug": "ht",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Tankou lè nou te timoun, lè Maman te konn demele fil lenn rad ansyen yo, epi nou te konn pran fil la pou nou mache nan tout kay la pou lenn nan pa fè pil.",
-      "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?"
-    },
-    {
-      "id": "03/0570#2",
-      "where": "03/0570",
-      "text": "Mwen ale dirèk nan kabann mwen ak menm rad mwen te met deyò a epi mwen rale dra a sou tèt mwen.",
-      "q": "He pulls his blanket over his head. Is 'dra' the right word?"
-    },
-    {
-      "id": "04b/0510#3",
-      "where": "04b/0510",
-      "text": "– ... li te toujou gen menm delizyon vin Einstein sa a.",
-      "q": "He still fancied himself an Einstein. Does 'delizyon vin Einstein' read naturally?"
-    },
-    {
-      "id": "04b/1150#4",
-      "where": "04b/1150",
-      "text": "Li te chape ak vitès pi wo pase vitès limyè, sinon m ta bat li jistan dèyè l fann.",
-      "q": "Eskandar threatens Farid. Is it clear he'd have hung him up by the backside?"
-    },
-    {
-      "id": "04b/1263#5",
-      "where": "04b/1263",
-      "text": "– Vwiiiiij, Baba Baba, èske w ap achte m poupe gwo sa a?",
-      "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
-    },
-    {
-      "id": "04b/1312#6",
-      "where": "04b/1312",
-      "text": "Ou vin toudi. Plis ou panse sou li, plis ou vin toudi.",
-      "q": "A girl is meant to joke crudely about feeling dizzy. Does the joke work?"
-    }
-  ]
+ "lang": "ht",
+ "slug": "ht",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Tankou lè nou te timoun, lè Maman te konn demele fil lenn rad ansyen yo, epi nou te konn pran fil la pou nou mache nan tout kay la pou lenn nan pa fè pil.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
+   "before": [
+    "Ouvèti",
+    "…monn nan, si yo pa t ekri yo isit la. Yo te ekri yo pou yo tounen yon pon ant monn pa m nan ak monn pa ou a. Yon pon ki soti nan monn pa m, nan moman m ap ekri fraz sa yo, rive nan monn pa ou, nan moman ou chita pou li yo. Bò isit la, mwen demele fil mo yo, epi bò lòt la, ou menm w ap ranmase yo."
+   ]
+  },
+  {
+   "id": "03/0570#2",
+   "where": "03/0570",
+   "text": "Mwen ale dirèk nan kabann mwen ak menm rad mwen te met deyò a epi mwen rale dra a sou tèt mwen.",
+   "q": "He pulls his blanket over his head. Is 'dra' the right word?",
+   "before": [
+    "– Karann-senk chèz. Si pa gen ase, nou ka pote chèz soti nan lòt klas epi mete yo devan.",
+    "…devwale. Men Niloofar pa t vini gade menm foli powetik sa a. Li pa t menm pase devan pòt klas la. Ak gwo pa vit, mwen tounen nan dòtwa a. Mwen te vle kouche pi vit posib. Gason yo te chita sou tapi a bò kabann Farid la. Yo te nan mitan yon diskisyon epi yo pa t menm remake m antre nan chanm nan."
+   ]
+  },
+  {
+   "id": "04b/0510#3",
+   "where": "04b/0510",
+   "text": "– ... li te toujou gen menm delizyon vin Einstein sa a.",
+   "q": "He still fancied himself an Einstein. Does 'delizyon vin Einstein' read naturally?",
+   "before": [
+    "…te sezi m soti dèyè epi li peze anba kaj pwatrin mwen epi tay-kreyon an vole soti. Men bri sa a ki te rezone nan zòrèy mwen pa t janm soti nan tèt mwen ankò. Sa vle di gen yon jou m ap mouri san sans ankò tankou fwa sa a? Mouri epi separe m ak mond sa a? Mwen pè separasyon sa a, diskontinyite sa a.",
+    "Pandan l ap ri, Hooman frape do m byen fò ak men l epi mòso sik la vole nan gòj mwen."
+   ]
+  },
+  {
+   "id": "04b/1150#4",
+   "where": "04b/1150",
+   "text": "Li te chape ak vitès pi wo pase vitès limyè, sinon m ta bat li jistan dèyè l fann.",
+   "q": "Eskandar threatens Farid. Is it clear he'd have hung him up by the backside?",
+   "before": [
+    "…ane pase, te tonbe pi fò jou sa a sou figi Eskandar. Pandan l ap kouri chape, pye Farid te desann sou liv Eskandar epi kouvèti jounal li a te chire. Yon bout gwo tit long liv la te vizib: \"Dis mil ... mèvèy, konesans... afor... pou...\" Farid pa t vin nan chanm nan pou de twa nwit. Eskandar t ap di:",
+    "– Ti zandolit sa a te vyole lwa fizik yo tou."
+   ]
+  },
+  {
+   "id": "04b/1263#5",
+   "where": "04b/1263",
+   "text": "– Vwiiiiij, Baba Baba, èske w ap achte m poupe gwo sa a?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, pitit gason mwen. Leve. Leve pou Maman. Se te sèlman yon rèv. Pa pè, mwen isit la.",
+    "…silans apezan sa a ki gen koulè fènwa men li pa t bay ase limyè pou gide m. Yon lanp k ap klignen nan men yon tifi mwen pa t janm konnen ki koulè pòt lakay li te ye, mwen pa t janm ka mete l nan yon bwat kreyon koulè. Yon tifi piti vin kouri, vwiiv, epi li kanpe bò kote m. Li gade jwèt yo. Li di:"
+   ]
+  },
+  {
+   "id": "04b/1312#6",
+   "where": "04b/1312",
+   "text": "Ou vin toudi. Plis ou panse sou li, plis ou vin toudi.",
+   "q": "A girl is meant to joke crudely about feeling dizzy. Does the joke work?",
+   "before": [
+    "…fè. Soti nan jenou monte, tifi a te kache dèyè yon anons sou penti ak reparasyon ete bilding Abu-Reyhan an. Ak bat kè, mwen vanse. Se te Niloofar, Niloofar tout bon. Li te kanpe fasafas ak Inivèsite Atizay la, bò kote kèk lòt tifi. Youn nan tifi yo t ap montre yon papye bay rès yo epi li t ap di:",
+    "– ... gade vrèman konbyen sa fè w reflechi. Li desine sa a epi ekri anba l 'sa a se pa yon pip'."
+   ]
+  }
+ ]
 }

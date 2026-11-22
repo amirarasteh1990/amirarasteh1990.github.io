@@ -1,0 +1,181 @@
+{
+ "lang": "uk",
+ "slug": "uk",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0182#1",
+   "where": "01/0182",
+   "text": "Яким це «-ієм» він не був?",
+   "q": "Told her husband was never a womanizer, Maman mocks the word ending '-ієм'. Does her retort work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– І бабієм теж не був.",
+    "Маман каже:"
+   ]
+  },
+  {
+   "id": "03/0380#2",
+   "where": "03/0380",
+   "text": "Найгірша хвороба — це Айцгеймер.",
+   "q": "Maman says 'Айцгеймер' for Alzheimer's on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Маман сказала:"
+   ]
+  },
+  {
+   "id": "06/0052#3",
+   "where": "06/0052",
+   "text": "Зрештою Махбуб зателефонувала, приїхав анбулас і забрав Наней.",
+   "q": "Maman says 'анбулас' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0362#4",
+   "where": "03/0362",
+   "text": "Махбуб, ось що кажуть в новинах, Амерока...",
+   "q": "Maman says 'Амерока' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…до стіни поряд з рештою нотаток конкуру. Я вийшов із дому в кінці двору і перетнув подвір'я дев'ятьма кроками, і радість від нового відкриття ще світилася в моєму серці. Коли я зайшов із двору до великої вітальні, Маман лежала перед телевізором. Вона тримала обидві руки на животі й казала Махбубе:"
+   ]
+  },
+  {
+   "id": "03/0290#5",
+   "where": "03/0290",
+   "text": "Арасте — це вкорочене Араасте?",
+   "q": "A guard jokes that the surname Arasteh is 'Араасте' (Persian for neat) with one letter trimmed. Does the joke come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Пане Арасте.",
+    "Я повертаю голову до нього."
+   ]
+  },
+  {
+   "id": "03/0309#6",
+   "where": "03/0309",
+   "text": "Хай Бог дасть, щоб ти завжди був араасте.",
+   "q": "The guard wishes him a neat, orderly life; 'араасте' is Persian for neat. Does it read as a friendly play on his name?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Охоронець усміхається і каже:"
+   ]
+  },
+  {
+   "id": "03/0630#7",
+   "where": "03/0630",
+   "text": "Він — Тавернї, по правді й по совісті.",
+   "q": "Farid shortens Amir's nickname, Elder of the Tavern, to 'Тавернї'. Does the nickname look and sound right?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Хаха, Старійшина Таверни, Ельді — ідеально. Влучив у саму точку, Леопард Фарід.",
+    "Фарід сказав:"
+   ]
+  },
+  {
+   "id": "04b/0595#8",
+   "where": "04b/0595",
+   "text": "Але ж він усе просрав. Орлине Око каже «пір-ту-пір», а Тавернї каже Ельді-ту-Ельді.",
+   "q": "Amir misheard the computer term as Persian pir, meaning elder (his nickname is Elder of the Tavern). Does Farid's punch line work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Промовте салават. Старійшина Таверни нарешті щось сказав.",
+    "Фарід сказав:"
+   ]
+  },
+  {
+   "id": "04b/0591#9",
+   "where": "04b/0591",
+   "text": "Пір-ту-пір?",
+   "q": "Amir echoes the computer term, hearing it as Persian pir, meaning elder. Does his question read as a funny mishearing?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Така собі однорангова електронна валюта, пір-ту-пір.",
+    "Я сказав:"
+   ]
+  },
+  {
+   "id": "04b/0460#10",
+   "where": "04b/0460",
+   "text": "Та що тебе знов розібрало, що ти на нас встав, Алене Членон?",
+   "q": "Hooman again calls Eskandar 'Алене Членон', a rude pun on Alain Delon. Does the crude teasing work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "04b/1320#11",
+   "where": "04b/1320",
+   "text": "І тремтячими руками я хутко-хутко переглядав газелі, щоб знайти й показати Нілуфар той бейт Гафеза, від якого, як і від тієї картини, за словами тієї іншої дівчини, лайняне запаморочення стає тим дужчим, чим глибше в нього занурюєшся.",
+   "q": "The narrator echoes a girl's crude phrase 'лайняне запаморочення' (shit-dizziness). Does it still work in his own sentence?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0616#12",
+   "where": "04b/0616",
+   "text": "Орлине Око, та добре вже. Тільки не пхай свої окуляри в ноутбук.",
+   "q": "Farid teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хуман сказав:"
+   ]
+  },
+  {
+   "id": "03/0278#13",
+   "where": "03/0278",
+   "text": "Якось можна сказати, що вони захопили університет. Каррубі — це любов, чесна і щира.",
+   "q": "Farid gushes about a politician he admires, in student slang. Does this sound like natural youthful enthusiasm?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "06/0186#14",
+   "where": "06/0186",
+   "text": "Я б усе за тебе віддав, Ніні-джан — як добре в тебе голова працює.",
+   "q": "Amir praises his mother's quick thinking with a warm everyday endearment. Does this sound natural and affectionate?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Амір, коли Тагі помер, його мати прийшла до дверей і сказала Маман: «Ми не знаємо, що сказати людям. Якщо скажемо, що він пив міцний домашній арак і в нього сталася синкопа, це страшна ганьба». Тоді Маман їй сказала: «Просто скажіть, що він захворів на ковід».",
+    "Я кажу:"
+   ]
+  },
+  {
+   "id": "04b/0784#15",
+   "where": "04b/0784",
+   "text": "Ну й снікі ж ти.",
+   "q": "Niloofar playfully drops the English word 'sneaky' into her speech. Does 'снікі' read as a deliberate borrowed word?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Сьогодні посеред факультету ти розмовляла з кількома іншими дівчатами, я чув."
+   ]
+  },
+  {
+   "id": "03/0055#16",
+   "where": "03/0055",
+   "text": "Я так розмовляю; ви чуєте мене й думаєте, що це вірші.",
+   "q": "Hamid, a boy who writes poems, answers in his poems' rhythm. Does the line have a playful, verse-like ring?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хамід сказав тим самим ритмом, що й при читанні своїх віршів:"
+   ]
+  }
+ ]
+}

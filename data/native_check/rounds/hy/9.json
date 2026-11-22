@@ -1,0 +1,187 @@
+{
+ "lang": "hy",
+ "slug": "hy",
+ "dir": "ltr",
+ "version": "2026-11-22.r9",
+ "items": [
+  {
+   "id": "03/0531#1",
+   "where": "03/0531",
+   "text": "– Հը, ես էլ չեմ ասում՝ մի՛ սիրահարվեք։ Սկզբում մարդուն ճանաչեք, ամուսնացեք, հետո, թե ուզեք՝ սիրահարվեք։ Տես՝ էն ժամանակ թե մի խոսք ասեմ։",
+   "q": "Maman gives her son her views on love and marriage. Does this sound like a small-town mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Կեսօրից հետո Մամանն ու Օմիդը նստած էին բակի բաց թողած դռան առջև, որ, ինչպես Մամանը դեռ էլ ասում է՝ գարնան զեփյուռը տուն մտնի ու թարմություն բերի։ Թեյ էին խմում, Մամանը Օմիդին ասում էր."
+   ]
+  },
+  {
+   "id": "04b/1003#2",
+   "where": "04b/1003",
+   "text": "– Տես՝ ի՛նչ խառնաշփոթ սարքեցիր, քաք-ուղե՛ղ։",
+   "q": "Eskandar, putting on a film-star voice, blames Amir crudely. Does this sound like natural crude talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Էսքանդարը դարձավ ինձ ու գլուխն ու կուրծքը դեպի ինձ առաջ քաշեց։ Աչքերը կլորացրել էր ու կոպիտ երանգով, առանց իր Ալեն Դելոնի երանգը կորցնելու՝ ասաց."
+   ]
+  },
+  {
+   "id": "04b/0182#3",
+   "where": "04b/0182",
+   "text": "– Դու բոլորից շատ ես հորթ։ Կազմվածքդ էլ ա սազում։",
+   "q": "A roommate fires back at heavy-set Hooman, calling him a dumb calf. Does this sound like natural dorm insults?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Քութակիս գլուխը կե՛ր, ա՛յ մարդ, մեր ջղերը քեզ չեն դիմանում։ Դու ի՞նչ ես հասկանում, թե Շարիֆի էլեկտրաճարտարագիտությունն ինչ ա նշանակում։ Հետո էլ՝ քեզնից մեկը կարծիք հարցրե՞ց։"
+   ]
+  },
+  {
+   "id": "06/0033#4",
+   "where": "06/0033",
+   "text": "– Հը, ուրեմն ես էլ եմ ասում՝ սիրտս նեղվում է, թողե՛ք գնամ ընկերուհիներիս մոտ։",
+   "q": "Maman explains why she goes out to see her friends. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0462#5",
+   "where": "04b/0462",
+   "text": "– Քվանտային ֆիզիկայի մասին իմ սեփական տեսությունները գրեցի, ապուշ դասախոսս վերցրել՝ ինձ քսանհինգ հարյուրերորդ է տվել։",
+   "q": "Eskandar complains that his idiot professor gave him almost no marks. Does this sound like a student grumbling?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Էսքանդարը մի քիչ ախ ու վախը շարունակեց ու ասաց."
+   ]
+  },
+  {
+   "id": "04b/1393#6",
+   "where": "04b/1393",
+   "text": "Քո վերադարձի հույսը չունեմ",
+   "q": "From the narrator's short love poem: he no longer hopes she will come back. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Իմ երազների լույսը վառվեց",
+    "Հիմա հեռացել ես",
+    "Իմ երազների լույսը հիմա թարթում է"
+   ]
+  },
+  {
+   "id": "04a/0024#7",
+   "where": "04a/0024",
+   "text": "– Գումարտակ, առա՛ջ քայլ։",
+   "q": "A boy playing soldier marches his little brothers off. Does this command sound like a child playing at soldiers?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Սկզբում սրահում մի քիչ կանգնում էինք։ Ղասեմը ինչ-որ բաներ ասում էր։ Հետո ասում էր."
+   ]
+  },
+  {
+   "id": "04b/0434#8",
+   "where": "04b/0434",
+   "text": "– Թե Քամյարն իրեն լակոտի պես չպահեր ու հանրակացարանում մնար՝ մահճակալ դատարկ չէր լինի, որ այս հրաշալիքները մեզ բաժին հասնեին։",
+   "q": "Hooman grumbles that a spoiled roommate's moving out landed them with two oddballs. Does this grumble sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…դրեց իմ մահճակալի տակ։ Հետո ձեռքով Մեյսամին նշան արեց ու գնաց իր մահճակալին, իմ մահճակալի վերևում, պառկեց։ Էսքանդարը մի պահ ակնապիշ նայեց իմ մահճակալի տակից դուրս ցցված մի քանի գրքի անկյուններին, ապա չորեքթաթ սողաց դեպի Բահմանի գրքերը։ Գլուխը ցած տարավ ու Բահմանի գրքերը նայում էր։ Հումանն ասաց."
+   ]
+  },
+  {
+   "id": "06/0264#9",
+   "where": "06/0264",
+   "text": "– Ա՜խ, ամեն անգամ, որ ասում ես՝ մի բան բեր՝ էսպես հոսանք է խփում նրան։",
+   "q": "Maman teases her son, who jumps whenever he is asked to fetch something. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0600#10",
+   "where": "04b/0600",
+   "text": "– Ի՞նչ օգուտ ունի։ Կարևորն այն է, որ ամեն անգամ, որ սուպերմարկետ եմ գնում՝ փող եմ տալիս ու կաթս ու թխվածքս գնում, խփում մարմնիս։ Հիմա միջնորդով, թե առանց միջնորդի՝ ինձ համար տարբերություն չունի։",
+   "q": "Hooman, who loves food, says he only cares about buying milk and cake. Does this sound like his blunt, funny talk?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Հումանն ասաց."
+   ]
+  },
+  {
+   "id": "04b/0454#11",
+   "where": "04b/0454",
+   "text": "Աշակերտների ընտանիքներն էլ բողոքեցին ու հետույքին մի աքացի՝ դպրոցից դուրս նետեցին նրան։",
+   "q": "Hooman laughs that the school kicked a foolish teacher out on his backside. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…հասկացա՝ իրենց քաղաքի ավագ դպրոցներից մեկի ֆիզիկայի ուսուցիչ էր դարձել, ու զառանցող սրիկան՝ գրքի նյութի փոխարեն իր սեփական տեսությունները դասավանդում էր դասարանում։ Իր սեփական տեսությունները, հա-հա։ Ու հետո գուշակիր՝ ի՛նչ եղավ։ Գրեթե ողջ դասարանը կտրվեց եզրափակիչ՝ համապետական քննությունից։"
+   ]
+  },
+  {
+   "id": "04b/1394#12",
+   "where": "04b/1394",
+   "text": "Բայց եթե ճանապարհդ այս կողմ ընկնի",
+   "q": "From the narrator's short love poem: but if she should happen to pass this way. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Իմ երազների լույսը հիմա թարթում է",
+    "Քո վերադարձի հույսը չունեմ"
+   ]
+  },
+  {
+   "id": "06/0296#13",
+   "where": "06/0296",
+   "text": "– Վա՜յ, Նինիի քունը միանգամից եկավ։ Առավոտից արթուն եմ՝ չեմ քնել։",
+   "q": "Maman, tired, says she suddenly feels sleepy. Does this sound like a mother talking about herself?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանը սեղմում է աչքերն իրար ու ասում."
+   ]
+  },
+  {
+   "id": "04a/0038#14",
+   "where": "04a/0038",
+   "text": "– Գլխավոր փողոց մտնելը՝ նըչ-նըչ։",
+   "q": "A boy playing soldier warns his brothers about crossing the main street, with a clicking sound. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ես միշտ լսում եմ Մամանի ասածը։ Ղասեմի ասածն էլ լսեցի։ Ասում էր."
+   ]
+  },
+  {
+   "id": "04b/0186#15",
+   "where": "04b/0186",
+   "text": "– Ես կնախընտրեի նրանց հետ սենյակակից դառնալ, քան քեզ պես քութակ-ուղեղի հետ։",
+   "q": "Hooman tells Eskandar he would rather room with others than with an idiot like him. Does this crude insult sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ԱմիրՔաբիր համալսարանի առաջատարությունը ուսանողական շարժումներում ոչ մի բանի հետ համեմատելի չէ։ Թող Շարիֆում էլ այսպես կոչված վերնախավայինների մի խումբ լինի. նրանցից մինչ օրս ոչ մի հատ հեղափոխական տեսություն դուրս չի եկել։"
+   ]
+  },
+  {
+   "id": "04b/0370#16",
+   "where": "04b/0370",
+   "text": "– Ոչ մեկի սենյակը գորգ չունի, Բաբա-ջան, միայն մենք ենք, որ գորգ ունենք, այն էլ՝ որովհետև ընտրանու սենյակ ենք։",
+   "q": "Eskandar proudly tells his visiting father why their room has a carpet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Ու Նիլուֆարը լսում էր իմ մրմունջները։ Երբ սենյակ մտա՝ սենյակի տղաներն ու մի տարեց մարդ, որ ենթադրեցի Էսքանդարի հայրն է՝ սենյակի մեջտեղի գորգին նստած էին։ Կեսօրն անցել էր, ու ներքև իջնող արևը գորգի միջին մասը լուսավորել էր։ Էսքանդարն ասում էր."
+   ]
+  }
+ ]
+}

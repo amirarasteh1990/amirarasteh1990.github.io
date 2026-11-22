@@ -1,0 +1,188 @@
+{
+ "lang": "ar",
+ "slug": "ar",
+ "dir": "rtl",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "03/0521#1",
+   "where": "03/0521",
+   "text": "– أفّ، ما بالك أخذتَ تلك الهيئة المقرفة للمفكّر من جديد؟",
+   "q": "Hooman mocks a friend's 'shitty' thinker pose. Does this sound as crude as dorm teasing would be?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "لم يصدر صوت من أحد لبعض الوقت. قال هومن:"
+   ]
+  },
+  {
+   "id": "04b/1301#2",
+   "where": "04b/1301",
+   "text": "أنشدت: «طال الأمد ولم يُرسل الحبيب رسالة؛ ولم يكتب سلاماً...»",
+   "q": "Niloofar reads the opening of a love poem by Hafez. Does the quoted line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…الداخلي، أخذتُ ديوان حافظ وذهبتُ فجلستُ على مقعد بوليفار كشاورز. حتى تصل نيلوفر كنتُ قد اخترتُ غزلاً لأقول لـنيلوفر خبر تلك الليلة المُفرح بلسان حافظ. كان الفرح قد أنساني أن تلك الليلة دور نيلوفر. انتزعت الكتاب من يدي وقالت إنها تريد، خلافاً للمعتاد إذ تُنشد بيتاً أو بيتين، أن تُنشد غزلاً كاملاً."
+   ]
+  },
+  {
+   "id": "01/0178#3",
+   "where": "01/0178",
+   "text": "– يا ليته كان قد أدمن ولم يكن هكذا.",
+   "q": "Maman says she would rather her husband had become an addict. Does this sound like her bitter humor?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تقول مامان:"
+   ]
+  },
+  {
+   "id": "04b/0360#4",
+   "where": "04b/0360",
+   "text": "– حركات قاتلة كهذه هي تماماً ما أتوقّعه منك، لكن ما يحيّرني حقاً أيّ مجنونٍ لعين فتح متجره في السادسة صباح الجمعة كي تذهب وتشتري منه كاميرا.",
+   "q": "Hooman marvels, swearing, that a shop was open at six on a Friday morning. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "قال هومن وهو يتفحّص علبة الكاميرا:"
+   ]
+  },
+  {
+   "id": "03/0612#5",
+   "where": "03/0612",
+   "text": "– يا عديم النفع... هوووووه... تمشي ورأسك مطأطأ هكذا...",
+   "q": "Hooman, panting after a chase, calls his old friend a useless prick. Does this sound as crude and friendly as he means?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "يد تشدّ كتفي الأيسر إلى الخلف. إنه هومن. يلهث."
+   ]
+  },
+  {
+   "id": "01/0158#6",
+   "where": "01/0158",
+   "text": "– ذاك الذي فيه المعلم الأحمق؟ همم، شاهدوا ذاك. إنه مضحك. اضحكوا قليلًا.",
+   "q": "Maman tells her grown children to watch a funny show and laugh a little. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تقول مامان:"
+   ]
+  },
+  {
+   "id": "04b/1390#7",
+   "where": "04b/1390",
+   "text": "أضاء ضوءُ أحلامي",
+   "q": "From a short love poem the narrator wrote: her arrival lit up his dreams. Does this line read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "أحلامي كانت مظلمة",
+    "لم أكن أرى شيئاً",
+    "جِئتِ"
+   ]
+  },
+  {
+   "id": "03/0640#8",
+   "where": "03/0640",
+   "text": "– بوف، اللعنة عليك. صرت مغترباً، فلم نعد نعني لك شيئاً. يا بائع نفسه، يا عابد الأجانب.",
+   "q": "Hooman jokingly calls his friend a sellout for moving abroad. Does this rough teasing sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– أنا آسف، بالتأكيد."
+   ]
+  },
+  {
+   "id": "04a/0078#9",
+   "where": "04a/0078",
+   "text": "– هيه، لماذا رميت العصا؟ بماذا سنضغط على جرس الباب إذن؟",
+   "q": "An older boy scolds his little brother during their game. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "كنت آخذ دائماً عصاً من جانب الشجرة هناك. وأجرّها على الجدار. كانت تُصدر صوت دراجة نارية. كان قاسم وأميد يمشيان في الأمام. وكنت بعيداً خلفهما. لم يكن قاسم يوبّخني. قال مرة:"
+   ]
+  },
+  {
+   "id": "06/0044#10",
+   "where": "06/0044",
+   "text": "وفي اللباس، ما دمت لا تبدو أقل أناقة من الآخرين، فهذا يكفي.",
+   "q": "Maman tells her son his clothes only need to be as good as everyone else's. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– مم، كانت قد نحلت جداً. آخر مرة ذهبت فحمّمتها، لم يبق على جسدها لحم قط؛ جلد وعظام لا غير. أقول لو كانت تستطيع الأكل لما آل بها الحال إلى ذلك. نَنَه‌پسرجان، اعتنِ حقاً بطعامك. كُل أشياء تقوّيك. ما دمت تأكل كما ينبغي، فلن أقلق على شيء آخر."
+   ]
+  },
+  {
+   "id": "04b/0721#11",
+   "where": "04b/0721",
+   "text": "– يا شيخو، بدل أن تتمدّد على السرير هكذا وتلعب بخُصيتيك، انهض وأرسلها. الفرصة مغتنمة.",
+   "q": "Hooman crudely tells Amir to stop lazing on the bed and send off his application. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "قال هومن:"
+   ]
+  },
+  {
+   "id": "03/0126#12",
+   "where": "03/0126",
+   "text": "– هاه. صديق ابن عم معلّم صنعة صهرنا، أغنى رجل في طهران، يتكلم بالضبط هكذا.",
+   "q": "Hamid, a boy, always brags through a long, silly chain of people he claims to know. Does this boast sound funny?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "قال حميد:"
+   ]
+  },
+  {
+   "id": "06/0118#13",
+   "where": "06/0118",
+   "text": "– همم، قاسم يتكلم لمجرد الكلام. كان القدماء يقولون إن الكلام لا يكلف شيئاً؛ إنه مجرد هواء.",
+   "q": "Maman brushes off her son's teasing with an old saying. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تقول مامان:"
+   ]
+  },
+  {
+   "id": "04b/0520#14",
+   "where": "04b/0520",
+   "text": "– لا جدال في الغرفة اليوم. حصلتُ على اثني عشر في التربية البدنية؛ مزاجي خَرائي وسأبدأ بشتمكم.",
+   "q": "Hooman warns his roommates he is in a foul mood after a bad grade. Does this sound like how he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "قال هومن:"
+   ]
+  },
+  {
+   "id": "04b/1392#15",
+   "where": "04b/1392",
+   "text": "صار ضوءُ أحلامي يومض الآن",
+   "q": "From the narrator's short love poem: now that she is gone, the light in his dreams flickers. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "جِئتِ",
+    "أضاء ضوءُ أحلامي",
+    "الآن رحلتِ"
+   ]
+  },
+  {
+   "id": "04a/0074#16",
+   "where": "04a/0074",
+   "text": "– لا أسئلة. اسمع كلام القائد.",
+   "q": "A boy playing soldier gives orders to his little brothers. Does it sound like a child playing?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "اليسار واليمين كانا في كل مكان. قال قاسم:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "lang": "pt-BR",
+ "slug": "pt-br",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "03/0630#1",
+   "where": "03/0630",
+   "text": "É o Taverny, de verdade e com toda a justiça.",
+   "q": "Farid turns 'Ancião da Taverna' into the nickname 'Taverny' for Amir. Does this nickname sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Haha, Ancião da Taverna, Eldie, perfeito. Acertou em cheio, Farid Leopardo.",
+    "O Farid disse:"
+   ]
+  },
+  {
+   "id": "04b/0591#2",
+   "where": "04b/0591",
+   "text": "Pir a pir?",
+   "q": "Amir mishears the English 'peer to peer' as pir, Persian for an old sage. Does his puzzled question read that way?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Uma espécie de dinheiro eletrônico peer to peer.",
+    "Eu disse:"
+   ]
+  },
+  {
+   "id": "03/0126#3",
+   "where": "03/0126",
+   "text": "Pois é. O homem mais rico de Teerã, amigo do primo do mestre artesão do nosso cunhado, fala exatamente assim.",
+   "q": "Hamid always cites this absurdly long chain of people as his authority, a running joke. Is it funny and clear?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid disse:"
+   ]
+  },
+  {
+   "id": "03/0388#4",
+   "where": "03/0388",
+   "text": "Sem os óculos não consigo ver nada, objetivamente.",
+   "q": "Sajad says 'objetivamente' all the time, out of habit. Does it sound like a funny verbal tic here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Sajad disse:"
+   ]
+  },
+  {
+   "id": "03/0055#5",
+   "where": "03/0055",
+   "text": "É assim que eu falo; vocês me ouvem e acham que é poesia.",
+   "q": "Hamid, a boy poet, answers in a sing-song, poem-like rhythm. Does this line have some of that rhythm?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid disse, com o mesmo ritmo com que recitava seus poemas:"
+   ]
+  },
+  {
+   "id": "04b/1390#6",
+   "where": "04b/1390",
+   "text": "A luz dos meus sonhos acendeu-se",
+   "q": "A line from a young man's love poem: the light in his dreams came on. Does it read as natural Brazilian poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Meus sonhos eram escuros",
+    "Eu não conseguia ver nada",
+    "Você veio"
+   ]
+  },
+  {
+   "id": "04b/0182#7",
+   "where": "04b/0182",
+   "text": "Você é a maior vaca de todas. Tem mesmo o porte pra isso.",
+   "q": "A roommate hits back at chubby Hooman, calling him the biggest cow, meaning stupid. Does this insult work for a man?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Come a cabeça do meu pau, cara, a gente não tem saco pra você. O que é que você sabe do que significa engenharia elétrica em Sharif? E além disso, alguém pediu a sua opinião?"
+   ]
+  },
+  {
+   "id": "04b/0181#8",
+   "where": "04b/0181",
+   "text": "Come a cabeça do meu pau, cara, a gente não tem saco pra você.",
+   "q": "Hooman tells a know-it-all roommate to shut up, in the crudest way. Does this sound like a real Brazilian insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "O Hooman levantou o polegar de novo e disse:"
+   ]
+  },
+  {
+   "id": "04b/0899#9",
+   "where": "04b/0899",
+   "text": "Comedor de cabeças de pau, por que você fala bobagem?",
+   "q": "Hooman insults a roommate with a crude made-up phrase. Does it sound like something a young Brazilian would say?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0997#10",
+   "where": "04b/0997",
+   "text": "Bom, o que for, foda-se.",
+   "q": "After a silly back-and-forth over a name, Eskandar gives up with a crude shrug. Does this sound natural?",
+   "ctx": 4,
+   "kind": "crude",
+   "before": [
+    "– Hamoon, admite que ...",
+    "– Hooman.",
+    "– Hamoon.",
+    "E assim iam e voltavam, e a cada troca as repetições ganhavam velocidade. Até que o Eskandar disse:"
+   ]
+  },
+  {
+   "id": "04b/0351#11",
+   "where": "04b/0351",
+   "text": "Eu cago nesses dias e no jeito que a gente pensava.",
+   "q": "Hooman, now older, crudely dismisses his student days. Does this sound like natural Brazilian swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Que saudade o quê, Doutor?"
+   ]
+  },
+  {
+   "id": "04b/0385#12",
+   "where": "04b/0385",
+   "text": "Sempre muito elegante e formal, caga bem na curva histórica.",
+   "q": "Hooman jokes, crudely, that Amir always messes up at the decisive moment. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– O Eldie é Taverny. Ele não consegue evitar isso. É assim que o sistema da fábrica dele funciona."
+   ]
+  },
+  {
+   "id": "04b/0893#13",
+   "where": "04b/0893",
+   "text": "Você cagou na sensação que eu estava tirando da música com essa voz de merda que você tem.",
+   "q": "Hooman crudely complains that a roommate's singing ruined his mood. Does this sound like natural slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0378#14",
+   "where": "04b/0378",
+   "text": "Cabeça de merda, ninguém te chama de mudo só porque você não peida.",
+   "q": "Eskandar wakes Amir with a crude Persian saying, put word for word. Does it work in Portuguese?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…e eu tínhamos dito um ao outro. As luzes do corredor se apagaram, e o barulho dos outros quartos também adormeceu. No escuro e no silêncio da meia-noite, a sombra do Hooman entrou pela porta e foi direto à caixa de doces. Como se estivesse farejando ela. De manhã, o Eskandar me acordou e disse:"
+   ]
+  },
+  {
+   "id": "03/0640#15",
+   "where": "03/0640",
+   "text": "Seu vendido, puxa-saco de estrangeiro.",
+   "q": "Hooman jokingly insults his old friend who moved abroad. Does this insult sound like everyday speech?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pfff, vai se danar. Virou um expatriado e agora não tá nem aí pra gente."
+   ]
+  },
+  {
+   "id": "04b/0209#16",
+   "where": "04b/0209",
+   "text": "Pff, mas, seu desgraçado, você arrumou as malas e foi pra lá, e agora fica aí sentado rindo das nossas barbas e dos nossos paus.",
+   "q": "Hooman teases his friend who emigrated for laughing at them from abroad, in crude slang. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "E ri às gargalhadas."
+   ]
+  }
+ ]
+}

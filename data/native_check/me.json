@@ -1,21 +1,68 @@
-{"lang": "cnr", "slug": "me", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "cnr",
+ "slug": "me",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Sa ove strane, ja odmotavam nit riječi, a sa one strane ti skupljaš riječi.",
-   "q": "Does this sentence read naturally?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Otvaranje",
+    "…svi trenuci ove knjige su prošli. Trenuci i slike koje bi se izgubile u grozničavom šumu svjetskih zbivanja da nisu bile zapisane ovdje. Zapisane su da postanu most između mog svijeta i tvog. Most iz mog svijeta, u trenutku kad pišem ove rečenice, u tvoj svijet, u trenutku kad sjedneš da ih čitaš."
+   ]
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
    "text": "Možda je tvoja generacija došla koju godinu kasnije za taj svijet pređe — ali zamisli: nekad, negdje u svijetu, djeca su se tako igrala.",
-   "q": "Is it clear the reader's generation came after that world of yarn?"},
-  {"id": "03/0091#3", "where": "03/0091",
+   "q": "Is it clear the reader's generation came after that world of yarn?",
+   "before": [
+    "Otvaranje",
+    "…u trenutku kad pišem ove rečenice, u tvoj svijet, u trenutku kad sjedneš da ih čitaš. Sa ove strane, ja odmotavam nit riječi, a sa one strane ti skupljaš riječi. Kao u djetinjstvu, kad bi Maman odmotavala pređu iz stare odjeće, a mi bismo uzeli nit i išli po kući da se pređa ne bi gomilala."
+   ]
+  },
+  {
+   "id": "03/0091#3",
+   "where": "03/0091",
    "text": "Ulazna vrata su se otvorila i ušli su. Vrata se zatvoriše.",
-   "q": "Does the mix of past tenses here read naturally?"},
-  {"id": "03/0310#4", "where": "03/0310",
+   "q": "Does the mix of past tenses here read naturally?",
+   "before": [
+    "…tamne puti, pogrbljenih leđa, u sivom odijelu s mrkim kofercetom u ruci, izlazi iz staze između izložbene hale i Abu-Rejhana i ide prema ulaznim stepenicama Abu-Rejhana. Dečak i djevojka hodaju pored njega. Po pokretu dečakove glave i ruku, vidi se da pokušava nešto da objasni. Poznata je to slika.",
+    "…čiji su rezultati na Konkuru bili znatno iznad prosjeka, za nadoknadu dobijemo laptopove, a za našu sobu da se kupi tepih. Naš problem nije riješen, ali doktorova dobrota bila je poput hladne vode na žalost onih dana. Penjali su se uz stepenice zgrade Abu-Rejhan, stigli do vrha i skrenuli ulijevo."
+   ]
+  },
+  {
+   "id": "03/0310#4",
+   "where": "03/0310",
    "text": "Iz lifta dopiru glasovi jednog dečka i djevojke.",
-   "q": "Does 'dečka' (a young man) sound natural in Montenegrin?"},
-  {"id": "04b/1263#5", "where": "04b/1263",
+   "q": "Does 'dečka' (a young man) sound natural in Montenegrin?",
+   "before": [
+    "– Ako Bog da, neka ti je uvijek araasteh.",
+    "…momcima. Htio sam da ovaj naš posljednji susret bude samo ja i Nilufar, na najvećoj mogućoj udaljenosti od našeg fakulteta, na najvećoj udaljenosti od momaka u sobi i posebno od Sine. Pritiskam dugme lifta. Vrata lifta se otvaraju. Tog dana Nilufar se popela stepenicama. Idem prema stepeništu."
+   ]
+  },
+  {
+   "id": "04b/1263#5",
+   "where": "04b/1263",
    "text": "– Viiiž, Babo, Babo, hoćeš li da mi kupiš ovu veliku lutku?",
-   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?"},
-  {"id": "06/0298#6", "where": "06/0298",
+   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amire, Amire-džane, sine moj. Probudi se. Probudi se, mamin. Sve je to bio san. Ne boj se, tu sam ja.",
+    "…lampu koja je uništila onu umirujuću tamnu tišinu, a nije davala dovoljno svijetla da me negdje povede. Lampu koja namiguje u ruci djevojke za čiju boju kućnih vrata nikad nisam znao gdje pripada u kutiji drvenih bojica. Jedna djevojčica dolazi bučno i staje pored mene. Gleda igračke. Kaže:"
+   ]
+  },
+  {
+   "id": "06/0298#6",
+   "where": "06/0298",
    "text": "Pozdravljamo se i ponovo se zatvara mali otvor koji spaja naše svjetove.",
-   "q": "Does this sentence read naturally?"}
- ]}
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "– Gle, Nini se odjednom prispavalo. Od jutra sam budna, nisam spavala.",
+    "– Aha, idi da otspavaš, Nini-džan."
+   ]
+  }
+ ]
+}

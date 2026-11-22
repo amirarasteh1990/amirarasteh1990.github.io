@@ -1,0 +1,195 @@
+{
+ "lang": "pt-BR",
+ "slug": "pt-br",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0148#1",
+   "where": "01/0148",
+   "text": "O quê e Sorrisos?",
+   "q": "Maman, hard of hearing, catches only the end of the TV series title 'Lágrimas e Sorrisos'. Does her question read that way?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Meninos, baixo o Lágrimas e Sorrisos para a gente ver hoje à noite?",
+    "A Maman vira a cabeça e diz:"
+   ]
+  },
+  {
+   "id": "03/0380#2",
+   "where": "03/0380",
+   "text": "A pior doença é o Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Maman, tem uma doença que vai paralisando os músculos aos poucos. É uma doença muito ruim.",
+    "A Maman disse:"
+   ]
+  },
+  {
+   "id": "06/0052#3",
+   "where": "06/0052",
+   "text": "No fim, a Mahboub ligou, vieram de amublância e levaram a Naney.",
+   "q": "Maman says 'amublância' for ambulância on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0182#4",
+   "where": "01/0182",
+   "text": "Ele não era o quê — engo?",
+   "q": "Maman, hard of hearing, catches only the end of 'mulherengo'. Does her question read as that half-heard echo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Também não era mulherengo.",
+    "A Maman diz:"
+   ]
+  },
+  {
+   "id": "01/0142#5",
+   "where": "01/0142",
+   "text": "O Baba o quê?",
+   "q": "Maman, hard of hearing, catches only part of her son's joke about Baba. Does her question sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Então imagina pelo que o nosso pobre Baba está passando — sentado sem fazer nada em casa todos esses anos.",
+    "A Maman diz:"
+   ]
+  },
+  {
+   "id": "03/0628#6",
+   "where": "03/0628",
+   "text": "Haha, Ancião da Taverna, Eldie, perfeito.",
+   "q": "Hooman shortens Amir's nickname 'Ancião da Taverna' to 'Eldie', a pet form of English elder. Does this short form work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Hooman escrevia algo no livro com uma caneta e disse:"
+   ]
+  },
+  {
+   "id": "04b/0595#7",
+   "where": "04b/0595",
+   "text": "Mas cagou tudo. O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
+   "q": "Amir misheard 'peer' as pir, Persian for an old sage, hence his nickname 'Eldie'. Does Farid's punch line work?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– Pir a pir?",
+    "O Hooman disse:",
+    "– Mandem um salavat. O Ancião da Taverna por fim disse alguma coisa.",
+    "O Farid disse:"
+   ]
+  },
+  {
+   "id": "04b/0387#8",
+   "where": "04b/0387",
+   "text": "Essa noite te ouvi ruminando.",
+   "q": "Eskandar teases Hooman for munching sweets secretly at night, like a cow chewing cud. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Eskandar se virou pro Hooman e disse:"
+   ]
+  },
+  {
+   "id": "04b/0460#9",
+   "where": "04b/0460",
+   "text": "Que diabo te deu agora, ficar de pau duro pra cima da gente, Alain Pauzão?",
+   "q": "Hooman crudely mocks a pompous roommate, using his rude nickname 'Alain Pauzão'. Does this sound like real dorm teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0432#10",
+   "where": "03/0432",
+   "text": "Tô falando do Alain Pauzão. Paaau. Ponto final.",
+   "q": "Hooman stretches out a rude nickname to mock a roommate, then closes the topic. Does this ending sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ... e faz a boca igual ao cu de galinha e se mata pra falar como ele. Não é esse que eu tô falando."
+   ]
+  },
+  {
+   "id": "03/0490#11",
+   "where": "03/0490",
+   "text": "Cuidado pra não rachar, Sr. Pau.",
+   "q": "A roommate has just called himself an extremist nationalist anarchist. Does Hooman's mocking reply work?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "O Eskandar se endireitou e estufou o peito. Disse:",
+    "– Eu sou um anarquista nacionalista extremista.",
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0616#12",
+   "where": "04b/0616",
+   "text": "Está bem, Olho de Águia, está bem. Agora não enfia os óculos no notebook.",
+   "q": "Hooman teases short-sighted Sajad, whose face is almost touching the laptop screen. Does it sound like natural teasing?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Entrecerrou os olhos por trás dos óculos e aproximou a cabeça da tela do notebook.",
+    "– Se você não acredita, vem ver com os seus próprios olhos, objetivamente.",
+    "O Hooman disse:"
+   ]
+  },
+  {
+   "id": "06/0186#13",
+   "where": "06/0186",
+   "text": "Eu daria tudo por você, Nini-jan. Essa cabeça funciona muito bem.",
+   "q": "Amir lovingly praises his mother's quick thinking with a Persian turn of phrase. Does it sound warm and natural?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "Digo:"
+   ]
+  },
+  {
+   "id": "03/0189#14",
+   "where": "03/0189",
+   "text": "Pff, asno, quem sabe mais, o homem mais rico de Teerã, amigo do primo do mestre artesão do nosso cunhado, ou você, bezerro?",
+   "q": "A boy angrily calls his friend a donkey and a calf, meaning stupid. Do these insults sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "O sangue do Hamid ferveu, e ele gritou:"
+   ]
+  },
+  {
+   "id": "04b/0571#15",
+   "where": "04b/0571",
+   "text": "Primeiro venham documentar este polegar, e depois fazem um filme sobre o que vocês quiserem.",
+   "q": "In Iran a raised thumb is a rude gesture, like the middle finger. Does Hooman's crude joke work here?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "O Farid olhava pra alguma coisa no pequeno monitor da câmera que tinha comprado no mês anterior. Disse:",
+    "– Galera, vamos fazer um documentário sobre o nosso quarto.",
+    "O Hooman tirou a mão de baixo da manta e disse:"
+   ]
+  },
+  {
+   "id": "04b/0389#16",
+   "where": "04b/0389",
+   "text": "Nem a cabeça dele você conseguia comer.",
+   "q": "Hooman retorts crudely, meaning: you couldn't have done a thing about it. Does this comeback make sense?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Essa noite te ouvi ruminando. Pena que o meu Baba estava dormindo, senão eu tinha levantado e tirado cada doce da sua garganta um por um.",
+    "O Hooman disse:"
+   ]
+  }
+ ]
+}

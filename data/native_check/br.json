@@ -1,56 +1,88 @@
 {
-  "lang": "br",
-  "slug": "br",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Evel pa oamp bugale, pa zistague Maman ar gloan diwar an dilhad kozh, hag e kemeremp an neudenn hag e valeemp tro-dro d'an ti evit na vije ket berniet ar gloan.",
-      "q": "Is it clear the children walked around inside the house with the yarn?"
-    },
-    {
-      "id": "01/0132#2",
-      "where": "01/0132",
-      "text": "Unan bennak a dro tu all ar straed, ha neuze e tap unan bennak tu-mañ ar straed anezhañ, hag e varv.",
-      "q": "Someone sneezes across the street and another person catches it. Is that clear?"
-    },
-    {
-      "id": "03/0060#3",
-      "where": "03/0060",
-      "text": "Hamid a sachas gwerenn e roched-c'hoari ruz disliv hag, gant ur fiñv dorn a-dreñv, e daolas e c'hoazenn stag ouzh un toull rous eus e skoaz betek e gein.",
-      "q": "Is it clear Hamid flicks the knot of his torn vest strap onto his back?"
-    },
-    {
-      "id": "03/0528#4",
-      "where": "03/0528",
-      "text": "E taol Haft-Seen Norouz, pa lennis barzhoniezh ma mamm, e-lec'h bezañ laouen, Maman a zeuas da vezañ aroufennet.",
-      "q": "Amir reads his poem about his mother; Maman becomes anxious. Is that clear?"
-    },
-    {
-      "id": "03/0601#5",
-      "where": "03/0601",
-      "text": "Ur muntr bihan, e-kreiz frazenn pep follenn, em boa staget, o cheñch \"da garout a ran\" e \"ne'z garan ket\".",
-      "q": "Amir adds a faint Persian letter to each sheet. Is 'muntr bihan' clear?"
-    },
-    {
-      "id": "04b/0229#6",
-      "where": "04b/0229",
-      "text": "Unnek miz goude an deiz ma krogis da c'hoari kuit eus bed ar c'hoant hag da lakaat ger va c'halon war bed Niloofar, ez is hag e oan azezet en-dro, goude mizioù, war skabell gentañ Bulvar Keshavarz.",
-      "q": "Is it clear Amir had decided to leave his world of imagination?"
-    },
-    {
-      "id": "04b/0582#7",
-      "where": "04b/0582",
-      "text": "Ma ne vije ket krog e wac'h en e benn e vije ret dezhañ kaout un titl eus Skol-veur Sharif a-raok mont kuit eus Iran, e vije bet aet kuit eus Iran goude e c'houlenn kentañ.",
-      "q": "Is it clear he would have left Iran right after his bachelor's degree?"
-    },
-    {
-      "id": "06/0214#8",
-      "where": "06/0214",
-      "text": "War a seblant, aon he devoa e wreg diouzh e glañvidi, ha se eo perak, a-enep an holl diez, hon eus ar mogerioù koad du-mañ dirak an ti.",
-      "q": "Is 'mogerioù koad' right for a black wooden fence in front of the house?"
-    }
-  ]
+ "lang": "br",
+ "slug": "br",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Evel pa oamp bugale, pa zistague Maman ar gloan diwar an dilhad kozh, hag e kemeremp an neudenn hag e valeemp tro-dro d'an ti evit na vije ket berniet ar gloan.",
+   "q": "Is it clear the children walked around inside the house with the yarn?",
+   "before": [
+    "Digoradur",
+    "…ar bed ma ne vije ket bet skrivet amañ. Skrivet int bet evit dont da vezañ ur pont etre va bed ha hoc'h hini. Ur pont eus va bed, er mare ma skrivan ar frazennoù-mañ, d'ho hini, er mare ma azezit d'o lenn. A-berzh an tu-mañ, e tizolc'han neudenn ar gerioù, hag a-berzh an tu all e tastumit anezhi."
+   ]
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "Unan bennak a dro tu all ar straed, ha neuze e tap unan bennak tu-mañ ar straed anezhañ, hag e varv.",
+   "q": "Someone sneezes across the street and another person catches it. Is that clear?",
+   "before": [
+    "– Ya, ne fell ket biskoazh din taoler kuit traoù Nini-jan. Bremañ, pa'z an d'ar c'herioù bihan, e ran ur sandwich, e lakaan anezhañ ennañ, hag e kasan anezhañ ganin.",
+    "…e-unan ha ma vijec'h dapet gantañ diganeomp. War an tele o devoa graet ur bobiñ anezhañ, hag e lavare, n'ez in ket kuit ken buan-se, e vin hoc'h ostiz c'hoazh pell. Pa zeuas da gentañ, e lavare an tele daou zen war gant, bremañ e lavar dek dre gant. Mat, dre wir, n'eo ket reizh tamm ebet."
+   ]
+  },
+  {
+   "id": "03/0060#3",
+   "where": "03/0060",
+   "text": "Hamid a sachas gwerenn e roched-c'hoari ruz disliv hag, gant ur fiñv dorn a-dreñv, e daolas e c'hoazenn stag ouzh un toull rous eus e skoaz betek e gein.",
+   "q": "Is it clear Hamid flicks the knot of his torn vest strap onto his back?",
+   "before": [
+    "Ar memes mouezh en devoa goulennet ouzh Ghassem diwar-benn ma renk Konkoor a lavaras, gwan-gwan:",
+    "– He, Mestr Hamid, ar c'hazh sotet."
+   ]
+  },
+  {
+   "id": "03/0528#4",
+   "where": "03/0528",
+   "text": "E taol Haft-Seen Norouz, pa lennis barzhoniezh ma mamm, e-lec'h bezañ laouen, Maman a zeuas da vezañ aroufennet.",
+   "q": "Amir reads his poem about his mother; Maman becomes anxious. Is that clear?",
+   "before": [
+    "– Rak ma mignoned a damall ac'hanon da vezañ roet ma c'halon, hep anaoudegezh ebet, hep kaozeadenn ebet.",
+    "He fenn a fiñvas."
+   ]
+  },
+  {
+   "id": "03/0601#5",
+   "where": "03/0601",
+   "text": "Ur muntr bihan, e-kreiz frazenn pep follenn, em boa staget, o cheñch \"da garout a ran\" e \"ne'z garan ket\".",
+   "q": "Amir adds a faint Persian letter to each sheet. Is 'muntr bihan' clear?",
+   "before": [
+    "– Ha he devoa Negar goulennet ouzhomp skeiñ war he c'henderv, ma santimp bremañ touellet?",
+    "Met spontus e oa Taghi, ha ne gredis ket lavarout netra. Ne ouiin ket kalz a vallozhioù. Ar re a ouiin ivez, aon am boa d'o skrivañ. Ma vijemp tapet, petra? Leuniet em boa an holl re gant \"Da garout a ran, Negar.\" Neuze, aon am boa e sellje Taghi ouzh ma follennoù."
+   ]
+  },
+  {
+   "id": "04b/0229#6",
+   "where": "04b/0229",
+   "text": "Unnek miz goude an deiz ma krogis da c'hoari kuit eus bed ar c'hoant hag da lakaat ger va c'halon war bed Niloofar, ez is hag e oan azezet en-dro, goude mizioù, war skabell gentañ Bulvar Keshavarz.",
+   "q": "Is it clear Amir had decided to leave his world of imagination?",
+   "before": [
+    "– Ya.",
+    "– Ya, setu, evel-se e oa. Goude-se ez eas da Aostralia. Ur bloaz pe zaou zo, klevet 'meus gant Lagad Erer News ez eas ar spontailh-se ivez da Aostralia, o klask, dre un tu, ar plac'h a garec'h hoc'h-daou. Met n'eo ket erruet dezho, evel ma seblant."
+   ]
+  },
+  {
+   "id": "04b/0582#7",
+   "where": "04b/0582",
+   "text": "Ma ne vije ket krog e wac'h en e benn e vije ret dezhañ kaout un titl eus Skol-veur Sharif a-raok mont kuit eus Iran, e vije bet aet kuit eus Iran goude e c'houlenn kentañ.",
+   "q": "Is it clear he would have left Iran right after his bachelor's degree?",
+   "before": [
+    "– Lagad Erer, deus. Da lunedoù zo bet lezet ganit troad va gwele.",
+    "– ... gant e zaoulagad gwan, ez eas d'an Ameroka goude e vaster. Evel ma lâre e-unan, objektivel, haha, objektivel, ma vije bet unan bennak ac'hanomp da vont er-maez, e vije bet Lagad Erer."
+   ]
+  },
+  {
+   "id": "06/0214#8",
+   "where": "06/0214",
+   "text": "War a seblant, aon he devoa e wreg diouzh e glañvidi, ha se eo perak, a-enep an holl diez, hon eus ar mogerioù koad du-mañ dirak an ti.",
+   "q": "Is 'mogerioù koad' right for a black wooden fence in front of the house?",
+   "before": [
+    "Aet on er-maez dre an nor. Lavarout a reas:",
+    "– Ar medisin en devoa prenet an ti a oa un medisin klañvedoù spered ha youl."
+   ]
+  }
+ ]
 }

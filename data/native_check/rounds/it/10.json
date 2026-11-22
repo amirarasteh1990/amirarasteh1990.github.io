@@ -1,0 +1,188 @@
+{
+ "lang": "it",
+ "slug": "it",
+ "dir": "ltr",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "04b/0421#1",
+   "where": "04b/0421",
+   "text": "Farid Leopardo, tieni a freno i nervi e non fare mosse omicide.",
+   "q": "Hooman jokingly tells hot-headed Farid to calm down. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0462#2",
+   "where": "04b/0462",
+   "text": "Ho scritto le mie teorie sulla fisica quantistica, e il nostro idiota di professore va e mi dà un quarto di punto.",
+   "q": "Eskandar complains about a tiny grade for his own theories. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar continuò un po' con i suoi lamenti e disse:"
+   ]
+  },
+  {
+   "id": "04b/0562#3",
+   "where": "04b/0562",
+   "text": "Occhio d'Aquila, che Dio non ti perdoni, mi hai distrutto la schiena.",
+   "q": "Eskandar, trampled by short-sighted Sajad, curses him half jokingly. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar disse, con una voce che mostrava che riusciva appena a tirare fuori il fiato:"
+   ]
+  },
+  {
+   "id": "04b/0575#4",
+   "where": "04b/0575",
+   "text": "Per amor di tua madre, non andare in giro per la stanza senza occhiali.",
+   "q": "Eskandar pleads with short-sighted Sajad. Does 'Per amor di tua madre' sound natural here?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Occhio d'Aquila, Dio ha già colpito la Mosca; non colpirlo anche tu."
+   ]
+  },
+  {
+   "id": "04b/0598#5",
+   "where": "04b/0598",
+   "text": "Oggettivamente, se attecchisce, manda all'aria tutto il baraccone delle banche e compagnia bella.",
+   "q": "Sajad explains Bitcoin with student enthusiasm. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Peer to peer significa senza intermediario. Direttamente tra venditore e compratore. Senza nessun sistema monetario intermedio."
+   ]
+  },
+  {
+   "id": "04b/0600#6",
+   "where": "04b/0600",
+   "text": "L'importante è che ogni volta che vado al supermercato pago, mi compro il mio latte e la mia merendina e me li ficco in corpo.",
+   "q": "Hooman, who loves snacks, shrugs off talk of Bitcoin. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– E a che serve?"
+   ]
+  },
+  {
+   "id": "04b/0602#7",
+   "where": "04b/0602",
+   "text": "Neanch'io so esattamente cosa abbia di buono. Ma so che, invece di un sistema centrale che stampa il denaro, un codice cifrato stabilisce chi ha quanti soldi.",
+   "q": "Sajad tries to explain Bitcoin in plain words. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad disse:"
+   ]
+  },
+  {
+   "id": "04b/0586#8",
+   "where": "04b/0586",
+   "text": "Che coin?",
+   "q": "Hooman has never heard of Bitcoin and catches only part of the word. Does his question sound natural?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Eh, oggettivamente, il Bitcoin sta arrivando a un dollaro.",
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0436#9",
+   "where": "04b/0436",
+   "text": "È tutta filosofia e romanzi. Bello, c'è anche Nietzsche. Adoro Nietzsche.",
+   "q": "Eskandar, head under a bed, browses Amir's books. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar, ancora con la testa sotto il mio letto, disse:"
+   ]
+  },
+  {
+   "id": "04b/0432#10",
+   "where": "04b/0432",
+   "text": "Ma lì i tuoi piedi sbattono contro i libri di Bahman.",
+   "q": "Hooman points out a snag in where a roommate wants to sleep. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0427#11",
+   "where": "04b/0427",
+   "text": "È un mistero anche per noi.",
+   "q": "Hooman answers a question nobody in the room can answer. Does this sound natural?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Con tutte queste stanze con letti liberi, perché hanno mandato tutti e due nella nostra stanza?",
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0185#12",
+   "where": "03/0185",
+   "text": "Va bene, ma cosa fai se qualcuno lancia un sasso e si rompe?",
+   "q": "A boy argues with his friend about a car with a glass roof. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamid disse:"
+   ]
+  },
+  {
+   "id": "03/0143#13",
+   "where": "03/0143",
+   "text": "Hm. L'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, ha detto che non è un buon libro. Chi lo legge si suicida.",
+   "q": "Hamid, a boy, warns against a book, citing his usual absurd authority. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamid disse:"
+   ]
+  },
+  {
+   "id": "04b/0142#14",
+   "where": "04b/0142",
+   "text": "Sì, ho sentito qualcosa di questa faccenda della localizzazione.",
+   "q": "Eskandar casually mentions a rule that hit his roommates hard. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar disse:"
+   ]
+  },
+  {
+   "id": "04b/0144#15",
+   "where": "04b/0144",
+   "text": "Sentito?",
+   "q": "Hooman bitterly echoes one word of a roommate who only heard about their misfortune. Does this sound natural?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Sì, ho sentito qualcosa di questa faccenda della localizzazione.",
+    "Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0655#16",
+   "where": "03/0655",
+   "text": "Sì, abbiamo tutti una fabbrica.",
+   "q": "Called rich kids by a roommate, Hooman replies with sarcasm. Does this sound natural?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Però che tappeto. Morbido come un materasso. Siete proprio dei figli di papà.",
+    "Hooman disse:"
+   ]
+  }
+ ]
+}

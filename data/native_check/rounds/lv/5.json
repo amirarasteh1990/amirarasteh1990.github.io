@@ -1,0 +1,188 @@
+{
+ "lang": "lv",
+ "slug": "lv",
+ "dir": "ltr",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "04b/0575#1",
+   "where": "04b/0575",
+   "text": "– Ērgļacis, Mušu jau Dievs ir sodījis, nesodi tu viņu vēl. Tavas mātes dēļ, nestaigā pa istabu bez brillēm.",
+   "q": "Eskandar begs a short-sighted roommate to wear his glasses. Does this pleading sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar teica:"
+   ]
+  },
+  {
+   "id": "04b/0893#2",
+   "where": "04b/0893",
+   "text": "– Tu tikko sabojāji noskaņu, ko es uztvēru no dziesmas, ar to savu sūdīgo balsi.",
+   "q": "Hooman complains crudely that a roommate's singing ruined his mood. Does this sound like how he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "04b/0899#3",
+   "where": "04b/0899",
+   "text": "– Tu krānu galvu ēdāj, kāpēc tu runā niekus?",
+   "q": "Hooman crudely tells a roommate to stop talking nonsense. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "06/0165#4",
+   "where": "06/0165",
+   "text": "– Viņš bija pārāk daudz dzēris limonādi.",
+   "q": "Maman jokes that a man who died after heavy drinking had too much soda. Does her dry joke come across?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Nē. Viņam bija sinkope.",
+    "Maman saka:"
+   ]
+  },
+  {
+   "id": "04b/0162#5",
+   "where": "04b/0162",
+   "text": "– Jā, tiklīdz viņi mūs ierauga, viņi savelk dibenu un turas tik tālu, ka man gribas ar abām kājām ielēkt viņiem sejā.",
+   "q": "Farid crudely says the Tehran students tense up and avoid them. Does this sound like young men's slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid teica:"
+   ]
+  },
+  {
+   "id": "04b/0146#6",
+   "where": "04b/0146",
+   "text": "– Sūdsmadzene. Tu liec man atvērt muti un to pateikt.",
+   "q": "Hooman snaps at a slow roommate, calling him a shit-for-brains. Does this insult sound natural?",
+   "ctx": 3,
+   "kind": "crude",
+   "before": [
+    "Hooman teica:",
+    "– Dzirdējis?",
+    "– Nu jā, ziņa izplatījās pa universitāti."
+   ]
+  },
+  {
+   "id": "04b/0164#7",
+   "where": "04b/0164",
+   "text": "– Dirsā šo mūsu veiksmi.",
+   "q": "Hooman cries out bitterly about their bad luck. Does this sound like how he would swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman nopūtās un novērsa seju no Farid. Viņa skatiens krita uz Eskandar, un sāpīgā tonī, kā adatai iegrimstot vecā brūcē, viņš iekliedzās:"
+   ]
+  },
+  {
+   "id": "03/0118#8",
+   "where": "03/0118",
+   "text": "– Nu gan gabaliņš!",
+   "q": "A teenage boy reacts to a pretty girl. Does this sound like how he would say it?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Yaser teica:"
+   ]
+  },
+  {
+   "id": "04b/0389#9",
+   "where": "04b/0389",
+   "text": "– Tu pat tā galvu nebūtu varējis apēst. Bet sasodīts, cik tie saldumi bija labi. Ananasu.",
+   "q": "Hooman crudely brushes off Eskandar's threat, then praises the sweets. Does the crude jab come across?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Pagājušonakt es dzirdēju, kā tu atgremo. Žēl, ka mans Baba gulēja, citādi es būtu piecēlies un izvilcis tev no rīkles katru saldumu pa vienam.",
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "03/0640#10",
+   "where": "03/0640",
+   "text": "– Pfff, lai tevi. Tagad esi kļuvis par emigrantu, tāpēc tev uz mums nospļauties. Tu ārzemju pielūdzēj, sasodītais nodevēj.",
+   "q": "Hooman jokingly calls his friend who moved abroad a sellout. Does this teasing insult sound like spoken talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Man tiešām žēl."
+   ]
+  },
+  {
+   "id": "04b/0742#11",
+   "where": "04b/0742",
+   "text": "– Es zinu, ko tu gribi lasīt. Ka \"atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ...\"",
+   "q": "Niloofar quotes the start of a Hafez poem she expects him to read. Does the quoted line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Es atvēru Hafez Dīvānu, lai viņai nolasītu trīssimt trīsdesmit trešo gazalu. Viņa nedeva man izdevību. Viņa teica:"
+   ]
+  },
+  {
+   "id": "06/0118#12",
+   "where": "06/0118",
+   "text": "Vecie ļaudis vienmēr teica, ka vārdi neko nemaksā — tas ir tikai karsts gaiss. Bet es jūs tiešām tik ļoti mīlu.",
+   "q": "Maman quotes an old saying, then insists she truly loves them. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Hmm, Ghassem tikai runā, lai dzirdētu pats sevi."
+   ]
+  },
+  {
+   "id": "04b/0150#13",
+   "where": "04b/0150",
+   "text": "– Ja svarīgs ir vecums, tad tev vajadzētu laizīt Bahman pautus.",
+   "q": "Hooman crudely mocks a roommate who demands respect for being older. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman pavērsa savu resno, apaļo īkšķi pret Eskandar un teica:"
+   ]
+  },
+  {
+   "id": "04b/0158#14",
+   "where": "04b/0158",
+   "text": "– Tik daudz mācies, un galu galā ar mūsu sūdīgo veiksmi tik un tā sanāk šādi.",
+   "q": "Hooman grumbles about their bad luck after all that studying. Does this read naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "04b/0186#15",
+   "where": "04b/0186",
+   "text": "– Es būtu labāk dzīvojis vienā istabā ar viņiem nekā ar tādu pimpja smadzeni kā tu.",
+   "q": "Hooman calls a roommate a dick-brain. Does this crude insult sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– AmirKabir universitātes vadošā loma studentu kustībās nav ne ar ko salīdzināma. Pat ja Sharif ir savs tā saukto elites pārstāvju pulks, no kuriem līdz šim nav iznākusi ne viena revolucionāra teorija."
+   ]
+  },
+  {
+   "id": "04b/0209#16",
+   "where": "04b/0209",
+   "text": "– Pfff, bet lai tevi, tu sapakojies un aizbrauci turp, un tagad sēdi un smejies par mūsu bārdām un pimpjiem.",
+   "q": "Hooman teases his friend abroad for laughing at the people back home. Does this crude jab sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Un viņš gāž smieklus uz smiekliem."
+   ]
+  }
+ ]
+}

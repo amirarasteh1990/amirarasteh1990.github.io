@@ -1,0 +1,185 @@
+{
+ "lang": "pl",
+ "slug": "pl",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "03/0490#1",
+   "where": "03/0490",
+   "text": "– Uważaj, żebyś nie pękł, panie Chuju.",
+   "q": "Hooman mocks a roommate who just puffed out his chest, giving him a crude title. Does it sound like dorm banter?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Jestem ekstremalnym anarchistą nacjonalistycznym.",
+    "Human powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0385#2",
+   "where": "04b/0385",
+   "text": "Tak działa jego system fabryczny. Zawsze bardzo elegancko i uroczyście sra dokładnie na historycznym zakręcie.",
+   "q": "Hooman jokes that keeping quiet at key moments is just Amir's factory setting. Does this crude joke sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Eldie to Taverny. Nic na to nie poradzi."
+   ]
+  },
+  {
+   "id": "04b/0591#3",
+   "where": "04b/0591",
+   "text": "– Pir-to-pir?",
+   "q": "Amir mishears 'peer-to-peer' as 'Pir-to-pir'; pir is Persian for elder. Does his puzzled echo read as a mishearing?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Taki rodzaj elektronicznego pieniądza, peer-to-peer.",
+    "Ja powiedziałem:"
+   ]
+  },
+  {
+   "id": "04b/0571#4",
+   "where": "04b/0571",
+   "text": "– Najpierw chodźcie uwiecznić ten kciuk, a potem kręćcie film o czym tylko chcecie.",
+   "q": "Hooman sticks out his thumb as a rude gesture and tells them to film it first. Does the joke come across?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Human wysunął rękę spod koca i powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0351#5",
+   "where": "04b/0351",
+   "text": "Bo co mnie, akurat mnie, którego robota polega teraz na obchodzeniu stacji elektroenergetycznych, co mi to, że byłem prymusem i, nie wiem, drugi dyplom dodały do długości mojego kutasa?",
+   "q": "Hooman, now inspecting power substations, crudely mocks his old student ambitions. Does this sentence read smoothly?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0612#6",
+   "where": "03/0612",
+   "text": "– Ty bezużyteczny kutasie... huuuuu... idziesz tak ze spuszczoną głową... huuuu... dokąd tak pędzisz?... huuu... tchu mi brak. Przez ciebie goniłem cię aż tutaj... huu... z takim ciałem jak moje.",
+   "q": "Out of breath, heavy Hooman scolds his friend for making him chase him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Czyjaś ręka ciągnie moje lewe ramię do tyłu. To Human. Dyszy."
+   ]
+  },
+  {
+   "id": "04b/0893#7",
+   "where": "04b/0893",
+   "text": "– Zesrałeś nastrój, w jaki wprawiała mnie piosenka, tym swoim chujowym głosem.",
+   "q": "Hooman complains crudely that a roommate's singing ruined his mood. Does this sound like how he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0162#8",
+   "where": "04b/0162",
+   "text": "– No, jak tylko nas zobaczą, zaciskają dziury w dupach i tak się od nas odsuwają, że mam ochotę skoczyć im obiema nogami na twarz.",
+   "q": "Farid crudely says the Tehran students tense up and avoid them. Does this sound like young men's slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0146#9",
+   "where": "04b/0146",
+   "text": "– Móżdżku ty z gówna. Zmuszasz mnie, żebym otworzył gębę.",
+   "q": "Hooman snaps at a slow roommate, calling him a shit-for-brains. Does this insult sound natural?",
+   "ctx": 3,
+   "kind": "crude",
+   "before": [
+    "Human powiedział:",
+    "– Słyszałeś?",
+    "– No tak, plotka rozeszła się po całym uniwersytecie."
+   ]
+  },
+  {
+   "id": "04b/0181#10",
+   "where": "04b/0181",
+   "text": "– Zjedz główkę mojego kutasa, człowieku, nie mamy nerwów do ciebie.",
+   "q": "Hooman crudely tells an annoying roommate they have had enough of him. Does it sound like real dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human znów uniósł kciuk i powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0434#11",
+   "where": "04b/0434",
+   "text": "– Gdyby Kamjar nie był takim drogocennym gówniarzem i został w akademiku, nie zwolniłoby się łóżko i te dziwy by nam się nie trafiły.",
+   "q": "Hooman sneers at a spoiled former roommate who left the dorm. Does the insult sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…pod moje łóżko. Potem dał ręką znak Mejsamowi i poszedł położyć się na swoim łóżku, nad moim. Eskandar przez chwilę wpatrywał się w rogi kilku książek wystających spod mojego łóżka, a potem na czworakach podpełzł do książek Bahmana. Schylił głowę i przyglądał się książkom Bahmana. Human powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0723#12",
+   "where": "04b/0723",
+   "text": "– No dobra, skoro nie jesteś typem, co aplikuje i wyjeżdża, to po co rozwalałeś sobie tyłek, zdając TOEFL?",
+   "q": "Hooman crudely asks why Amir worked so hard for the TOEFL. Does the crude phrase sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "I roześmiał się. Nic nie powiedziałem. Human ciągnął dalej:"
+   ]
+  },
+  {
+   "id": "04b/0158#13",
+   "where": "04b/0158",
+   "text": "– Tyle się człowiek uczy, a na koniec, przez nasze zasrane szczęście, i tak wychodzi tak.",
+   "q": "Hooman grumbles about their bad luck after all that studying. Does this read naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human powiedział:"
+   ]
+  },
+  {
+   "id": "03/0640#14",
+   "where": "03/0640",
+   "text": "– Pfff, niech cię szlag. Teraz jesteś emigrantem, więc masz nas gdzieś. Ty zaprzedany czcicielu cudzoziemszczyzny.",
+   "q": "Hooman jokingly calls his friend who moved abroad a sellout. Does this teasing insult sound like spoken talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Naprawdę mi przykro."
+   ]
+  },
+  {
+   "id": "04b/0899#15",
+   "where": "04b/0899",
+   "text": "– Ty pożeraczu główek kutasów, czemu pleciesz banialuki?",
+   "q": "Hooman crudely tells a roommate to stop talking nonsense. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human powiedział:"
+   ]
+  },
+  {
+   "id": "04b/1314#16",
+   "where": "04b/1314",
+   "text": "– Kocham panią od trzydziestu dwóch miesięcy. Z daleka. Bez pani wiedzy.",
+   "q": "A shy student confesses his love to a classmate, addressing her politely as 'pani'. Does that sound right here?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Poszedłem i stanąłem pod platanem po drugiej stronie chodnika przy ulicy Valiasr, czekając, aż Nilufar oddzieli się od reszty, żebym mógł podejść i twarzą w twarz powiedzieć jej, że ją kocham."
+   ]
+  }
+ ]
+}

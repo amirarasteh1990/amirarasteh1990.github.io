@@ -2,121 +2,164 @@
  "lang": "hu",
  "slug": "hu",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Erről az oldalról kibontom a szavak fonalát, a másik oldalról te összeszeded azt.",
-   "q": "Is it clear that 'azt' refers to the words you gather up?"
+   "q": "The writer unravels a thread of words; the reader gathers it up. Is it clear what 'azt' refers to?",
+   "ctx": 0
   },
   {
-   "id": "03/0585#2",
-   "where": "03/0585",
-   "text": "Eszkandar és Mejszam elkezdtek elemezni, hogy ami a gépészmérnöki karon történt, az csupán egy csepp az egész tengerből.",
-   "q": "Is it clear the faculty's events are a small picture of the whole world?"
-  },
-  {
-   "id": "03/0664#3",
-   "where": "03/0664",
-   "text": "A tévéből azt mondták, csináltak egy bárányt, amely hasonlít a többi bárányhoz.",
-   "q": "TV news about Dolly, the cloned sheep. Does 'bárányt' sound right here?"
-  },
-  {
-   "id": "04b/0855#4",
-   "where": "04b/0855",
-   "text": "Addigra annak az embernek az ingéből kiinduló tűz, aki egy tunéziai utcán felgyújtotta magát, már több ország kiterjedésűvé nőtt, és lassan kihunyóban volt.",
-   "q": "About the Tunisian man who set himself on fire. Does this read naturally?"
-  },
-  {
-   "id": "04b/1227#5",
-   "where": "04b/1227",
-   "text": "Úgy tűnt, hallotta, hogy a sógoruk mestere unokatestvérének barátja Babylisst használt a hajához.",
-   "q": "Does 'mestere' clearly mean the master craftsman their brother-in-law works under?"
-  },
-  {
-   "id": "04b/1228#6",
-   "where": "04b/1228",
-   "text": "– Hamíd, az egész vagyonodat a sógorotok mestere unokatestvérének barátja, aki a leggazdagabb ember Teheránban, szavai miatt szórtad ki a szélbe.",
-   "q": "Is it clear Hamid wasted his fortune because of this rich friend's words?"
-  },
-  {
-   "id": "04b/1263#7",
-   "where": "04b/1263",
-   "text": "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
-  },
-  {
-   "id": "01/0116#8",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "Menj ki is. Menj csindez helyekre.",
-   "q": "Maman mispronounces 'csindez' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'csindez' for 'csendes' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ó, milyen jó. Mm-hm, megrendeled, és elhozzák. De Amir-jan, ne maradj mindig otthon."
+   ]
   },
   {
-   "id": "01/0166#9",
+   "id": "01/0166#3",
    "where": "01/0166",
    "text": "Hiába mondtam, ne üsd a gyerekeket, azt mondta, a háborúban lökötté váltam, nem tehetek róla.",
-   "q": "He means the war left him shell-shocked. Does 'lökötté váltam' say that?"
+   "q": "Maman quotes her husband: the war left him shell-shocked. Does 'lökötté váltam' say that?",
+   "ctx": 1,
+   "before": [
+    "– Csak viccből mondtuk, nevessünk, Nana-pesar-jan. Elmenne ő? Ha elmenne, a szívem vágya lenne. Az Istenre. A saját életemre esküszöm. Ami Hásemmel és Abolfazllal történt, az is az ő hibája volt. Mindig verte őket."
+   ]
   },
   {
-   "id": "01/0203#10",
+   "id": "01/0203#4",
    "where": "01/0203",
    "text": "Bah, legalább nem tépte volna szét a hadirokkantpapírjait, én még hagyján, de ezek a gyerekek mit vétkeztek, hogy elviselik a vitáidat, hallgatják a kokht-kokht köhögésedet éjjel-nappal, tönkremegy az idegzetük, és semmi hasznot sem húznak abból, hogy hadirokkant vagy, legalábbis?",
-   "q": "Maman is reproaching Baba, speaking to him directly. Does this sentence read naturally?"
+   "q": "Maman, talking to her son, suddenly speaks straight to the absent Baba. Does this sentence read naturally?",
+   "ctx": 2,
+   "before": [
+    "– Igazad van, Nini-jan, de mit mondjak? Mégiscsak a mi Babánk.",
+    "– Mm-hm, Nana-pesar-jan. Bibi, Isten nyugtassa, ilyenkor azt szokta mondani: ha mondom, a nyelvem ég; ha nem mondom, a csontjaim veleje ég."
+   ]
   },
   {
-   "id": "03/0191#11",
+   "id": "03/0191#5",
    "where": "03/0191",
    "text": "– Hamíd Macska, még tegnap khárt mondtál. Most már civilizált lettél, és olaghot mondasz?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "Taghi teases Hamid: 'khár' and 'olagh' are both Persian for donkey, 'khár' the cruder. Does the teasing come through?",
+   "ctx": 2,
+   "before": [
+    "– Pff, te olagh, ki tud erről többet, a sógorunk mesterének unokatestvérének barátja, aki Teherán leggazdagabb embere, vagy te, te borjú? Na jó, menj, vegyél egyet. Ha az üveg eltörik, ne mondd, hogy nem figyelmeztettelek.",
+    "Taghi azt mondta:"
+   ]
   },
   {
-   "id": "03/0430#12",
+   "id": "03/0430#6",
    "where": "03/0430",
-   "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alat Delon-nak kellett volna lennie. Ne hízelegj magadnak, nem Alain Delont értem, akiért összehúzod az orrodat...",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alain Faszlonnak kellett volna lennie.",
+   "q": "'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04b/0595#13",
-   "where": "04b/0595",
-   "text": "– De jól elszúrta. Sasszem azt mondja, peer-to-peer, Taverny meg azt mondja, pír-to-pír.",
-   "q": "Taverny (Amir) heard 'peer' as 'pír', Persian for elder. Does the joke work?"
+   "id": "03/0585#7",
+   "where": "03/0585",
+   "text": "Eszkandar és Mejszam elkezdtek elemezni, hogy ami a gépészmérnöki karon történt, az csupán egy csepp az egész tengerből.",
+   "q": "They mean what happened at the faculty is a small sample that shows the whole. Is the meaning clear?",
+   "ctx": 0
   },
   {
-   "id": "04b/1078#14",
+   "id": "03/0664#8",
+   "where": "03/0664",
+   "text": "A tévéből azt mondták, csináltak egy bárányt, amely hasonlít a többi bárányhoz.",
+   "q": "TV news about Dolly, the cloned sheep. Does 'bárányt' sound right here?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/0855#9",
+   "where": "04b/0855",
+   "text": "Addigra annak az embernek az ingéből kiinduló tűz, aki egy tunéziai utcán felgyújtotta magát, már több ország kiterjedésűvé nőtt, és lassan kihunyóban volt.",
+   "q": "The fire is the Arab Spring, started by a Tunisian man burning himself. Does this read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1078#10",
    "where": "04b/1078",
    "text": "– Áá, kösz...",
-   "q": "Nilufár's thanks breaks off in the middle of the word. Does that come through?"
+   "q": "She begins to thank him and stops mid-word. Does this read as a thank-you cut short?",
+   "ctx": 2,
+   "before": [
+    "– Nem akartam semmi rosszat, ennél az asztalnál rossz a forrasztóberendezés.",
+    "Azt mondta:"
+   ]
   },
   {
-   "id": "04b/1262#15",
+   "id": "04b/1228#11",
+   "where": "04b/1228",
+   "text": "– Hamíd, az egész vagyonodat a sógorotok mestere unokatestvérének barátja, aki a leggazdagabb ember Teheránban, szavai miatt szórtad ki a szélbe.",
+   "q": "Taghi mocks Hamid, who lost his prized hair over this rich man's advice. Does the sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…unokatestvérének barátja Babylisst használt a hajához. Hamíd is Babylisst akart a hajába. A negyed öreg borbélya, akinek egy ollón, néhány fésűn és egy kézi hajnyírón kívül semmije sem volt, a Babylisst ba bistnek, „hússzal”, hallotta, és Hamíd haját húszas nyíróval levágta. Taghi azt mondta:"
+   ]
+  },
+  {
+   "id": "04b/1262#12",
    "where": "04b/1262",
    "text": "Autózás, a hét kővel játszott haft-sang, szamár-rendőr, paradicsom az utca közepén, és mindenekfölött a foci Kúcsán város Stadio delle Alpijában.",
-   "q": "A list of street games. Is 'paradicsom az utca közepén' clearly a game?"
+   "q": "A list of street games. Is 'paradicsom az utca közepén' clearly a game?",
+   "ctx": 1,
+   "before": [
+    "…továbbra is afelé a sikátor felé vonzotta a gondolatainkat. Tavasz beállta előtt Negár családja a szemközti sikátor fiainak zaklatásai miatt elköltözött a környékünkről, és az a ház is olyan lett, mint a környék többi háza. Felszabadultunk, és hosszú idő után visszatértünk a régi játékainkhoz."
+   ]
   },
   {
-   "id": "04b/1265#16",
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
+   "q": "A small girl says this, pointing at a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:"
+   ]
+  },
+  {
+   "id": "04b/1265#14",
    "where": "04b/1265",
    "text": "– Igen, megveszem a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+   "q": "Her father answers, playfully imitating her baby talk. Does that come through?",
+   "ctx": 3,
+   "before": [
+    "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:",
+    "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
+    "Egy hang szól a hátam mögül:"
+   ]
   },
   {
-   "id": "04b/1312#17",
+   "id": "04b/1312#15",
    "where": "04b/1312",
    "text": "Az embernek belezavarodik a feje. Minél többet gondolkodsz rajta, annál jobban belezavarodik a fejed.",
-   "q": "A girl uses a crude, made-up phrase for mind-bending. Does that come through?"
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– ...Nézzétek, ez tényleg elgondolkodtató. Ezt rajzolta, és aláírta: ez nem pipa."
+   ]
   },
   {
-   "id": "04b/1321#18",
+   "id": "04b/1321#16",
    "where": "04b/1321",
    "text": "„Az a bor, amely amott van, igazság, nem képletes.”",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
-   "id": "06/0201#19",
+   "id": "06/0201#17",
    "where": "06/0201",
    "text": "törött perzsájával – a nagynéném tanult egy keveset – valahogy megértette vele, hogy mielőtt a külföldiek jöttek Aahankeshire, pontosan így mondta: Aahankeshi, és a nagynéném is az ő perzsa szavát ismételte: Aahankeshi, vagyis „vashúzás”; az Aahankeshi előtt két kockacukorral itta a teáját, most viszont kénytelen egy kockával elviselni a tea keserűségét.",
-   "q": "Aahankeshi is the old man's word for building the railway. Does this make sense?"
+   "q": "The old tea-maker calls the railway building 'Aahankeshi', iron-pulling. Does this sentence make sense?",
+   "ctx": 1,
+   "before": [
+    "…az ott dolgozó mérnököket és munkásokat, akik az ország déli és északi részét összekötő vasútvonalat építették. Haláláig minden alkalommal, ha Irán szóba jött, két dolgot ismételt. Az egyik az volt, hogy volt egy öregember, aki teát készített nekik, és mindig belemártotta a cukorkockáját a teájába;"
+   ]
   }
  ]
 }

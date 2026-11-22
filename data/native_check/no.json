@@ -2,97 +2,128 @@
  "lang": "no",
  "slug": "no",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Som i barndommen, da Maman pleide å trevle opp garnet fra gamle klær, og vi tok tråden og gikk rundt inne i huset slik at garnet ikke hopet seg opp.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
   },
   {
-   "id": "04b/1260#2",
-   "where": "04b/1260",
-   "text": "To sto på bakhjulets bolter, én på bagasjebæreren, én på styret, og én satt på framrøret. Med ham som trampet, ble det seks per sykkel.",
-   "q": "Six boys ride on each bicycle. Is the picture clear?"
-  },
-  {
-   "id": "04b/1260#3",
-   "where": "04b/1260",
-   "text": "Yaser rullet på sparkene deres, under latteren deres.",
-   "q": "Yaser is rolling on the ground under their kicks. Does this read naturally?"
-  },
-  {
-   "id": "04b/1260#4",
-   "where": "04b/1260",
-   "text": "Om natten drømte jeg om at jeg trampet sykkelen gjennom luften for å slippe unna Yasers skrik.",
-   "q": "Does this sentence read naturally?"
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
-   "q": "She uses a crude made-up word for dizzy. Does 'drittsvimmel' work here?"
-  },
-  {
-   "id": "01/0116#6",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "Gå til stiele steder.",
-   "q": "Maman mispronounces 'stiele' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'stiele' for 'stille' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Åh, så bra. Mm-hm, bestill, så bringer de det til deg. Men Amir-jan, ikke sitt hjemme hele tiden. Gå ut også."
+   ]
   },
   {
-   "id": "03/0191#7",
+   "id": "03/0191#3",
    "where": "03/0191",
    "text": "Hamid Katt, i går sa du fortsatt «asen». Nå har du blitt så sivilisert at du sier «esel»?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "Taghi teases Hamid: he used to say a crude word for donkey, now a polite one. Does it land?",
+   "ctx": 3,
+   "before": [
+    "– Pff, esel, hvem vet best: vennen til fetteren til håndverksmesteren til svogeren vår, som er den rikeste mannen i Teheran, eller du, din kalv? Greit, kjøp en da. Men når glasset knuser, ikke si at jeg ikke advarte deg.",
+    "Taghi sa:",
+    "– Ohoi."
+   ]
   },
   {
-   "id": "03/0430#8",
+   "id": "03/0430#4",
    "where": "03/0430",
-   "text": "Og du, med den pikk-aktige måten din å snakke på, burde ha hett Alat Delon.",
-   "q": "'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "Og du, med den pikk-aktige måten din å snakke på, burde ha hett Alain Pikklon.",
+   "q": "'Alain Pikklon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#9",
+   "id": "04a/0076#5",
    "where": "04a/0076",
    "text": "Det er marmelstein. Marmel betyr veldig dyrt.",
-   "q": "A child garbles the word for marble and thinks it means expensive. Is that clear?"
+   "q": "Both mistakes are intended: little Ghassem says 'marmel' for marmor and thinks it means expensive. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Vi gikk videre. Halvveis var det et hus. Veggen var fin. Ghassem pleide å si:"
+   ]
   },
   {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "Ørneøye sier peer-to-peer; Taverny sier Eldie-til-Eldie.",
-   "q": "Taverny (the Tavern Elder) mishears peer-to-peer as 'Eldie-til-Eldie'. Does the joke work?"
+   "id": "04b/1260#6",
+   "where": "04b/1260",
+   "text": "To sto på bakhjulets bolter, én på bagasjebæreren, én på styret, og én satt på framrøret. Med ham som trampet, ble det seks per sykkel.",
+   "q": "Six boys ride on each bicycle. Is the picture clear?",
+   "ctx": 1,
+   "before": [
+    "Under trykket av Negars blikk nikket vi ja. Taghi var en seriøs slåsskjempe, men ikke til å stå overfor tre på én gang. Syklene nådde oss, og guttene fra det motsatte stredet hoppet av én etter én. Taghi hadde regnet feil. Det var langt mer enn seks."
+   ]
   },
   {
-   "id": "04b/1260#11",
+   "id": "04b/1260#7",
    "where": "04b/1260",
    "text": "Han var gått tilbake for å hente sandalen min, og guttene fra det motsatte stredet lukket seg om ham som en ulveflokk.",
-   "q": "Yaser went back for the narrator's sandal and got surrounded. Does this read naturally?"
+   "q": "Yaser went back for the narrator's sandal and got surrounded. Does this read naturally?",
+   "ctx": 1,
+   "before": [
+    "…de kunne. Taghi, midt i slag og spark, ropte noe svært stygt, og de angrep alle ham. Yaser og jeg benyttet sjansen og stakk av. Jeg grep sykkelen, og Yaser løp bak meg. Jeg trykket ned på pedalene med alt jeg hadde. Foten min gled av, og en sandal fløy av foten min. Jeg snudde hodet og så Yaser."
+   ]
   },
   {
-   "id": "04b/1263#12",
+   "id": "04b/1260#8",
+   "where": "04b/1260",
+   "text": "Yaser rullet på sparkene deres, under latteren deres.",
+   "q": "Yaser is rolling on the ground under their kicks. Does this read naturally?",
+   "ctx": 1,
+   "before": [
+    "…fløy av foten min. Jeg snudde hodet og så Yaser. Han var gått tilbake for å hente sandalen min, og guttene fra det motsatte stredet lukket seg om ham som en ulveflokk. Jeg la alt i pedalene. Ropene skiftet til seirende latter. Ved krysset nær Haaj Kazems kolonialbutikk kikket jeg bakover igjen."
+   ]
+  },
+  {
+   "id": "04b/1263#9",
    "where": "04b/1263",
    "text": "Brrrumm – Baba, Baba, viw du kjøpe meg den stole dukken?",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her father for a doll. Does it sound like a small child talking?",
+   "ctx": 1,
+   "before": [
+    "…stillheten, men ikke kastet nok lys til å lede meg noe sted. En blunkende lampe i hånden på en jente – jeg visste aldri hvor fargen på døren hjemme hos henne hørte hjemme i fargeblyantboksen. En liten jente kommer brummende løpende og stiller seg ved siden av meg. Hun kikker på lekene. Hun sier:"
+   ]
   },
   {
-   "id": "04b/1321#13",
+   "id": "04b/1312#10",
+   "where": "04b/1312",
+   "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
+   "q": "A girl talks crudely about a baffling painting. Does 'drittsvimmel' sound natural here?",
+   "ctx": 1,
+   "before": [
+    "– ... Se på det, det er virkelig tankevekkende. Han tegnet dette og skrev under det: dette er ikke en pipe."
+   ]
+  },
+  {
+   "id": "04b/1321#11",
    "where": "04b/1321",
    "text": "«Ekte er den vinen som er der ikke en metafor.»",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "A line by the poet Hafez, meant to read two ways: the wine is real, or only a metaphor. Do both readings come through?",
+   "ctx": 0
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "Som det – jo mer du tenker over disse ti ordene, desto mer dri– altså, desto svimlere blir du.",
-   "q": "He starts the crude dizzy word, then corrects himself. Is that clear?"
+   "q": "He nearly repeats the crude word 'drittsvimle', then corrects himself to 'svimlere'. Is that clear?",
+   "ctx": 2,
+   "before": [
+    "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt – så jeg kunne vise det til Niloofar.",
+    "– Her. Hør på dette. For-for Guds skyld, hør etter. «Ekte er den vinen som er der ikke en metafor.» Det er det samme. Det er som det maleriet ve-ve-venninnen din viste deg."
+   ]
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#13",
    "where": "06/0056",
    "text": "Med en bulderdozer kastet de jord over henne. Jord og kalk.",
-   "q": "Maman mispronounces 'bulderdozer' on purpose. Is that clear?"
+   "q": "Maman says 'bulderdozer' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
   }
  ]
 }

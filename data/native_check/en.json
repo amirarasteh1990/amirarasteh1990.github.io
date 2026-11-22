@@ -2,127 +2,148 @@
  "lang": "en",
  "slug": "en",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "01/0004#1",
    "where": "01/0004",
    "text": "– You did the best thing, Nini-jan. They say newborns need a lot of sleep. Ten hours a day.",
-   "q": "Nini, the children's pet name for Maman, means newborn. Does the teasing land?"
+   "q": "Amir calls his mother 'Nini', a family pet name meaning baby, after her nap. Does his teasing land?",
+   "ctx": 1,
+   "before": [
+    "– Amir-jan, while you were all exchanging Norouz greetings with the children, I grabbed a little nap."
+   ]
   },
   {
    "id": "03/0026#2",
    "where": "03/0026",
    "text": "– Yeah, right.",
-   "q": "Asked if he was calling, Farid means of course I was. Is that clear?"
+   "q": "Farid has just called Amir twice. Does 'Yeah, right' clearly mean 'obviously I was calling you'?",
+   "ctx": 2,
+   "before": [
+    "…bunk above mine, the bed that for three years had been a reminder of Bahman's absence. Farid had put on his jeans, but he still had not put on his socks. He had a habit of putting on his trousers, then going over to sit on the bed and eat breakfast. With his mouth full, he called me again. I said:",
+    "– Farid, were you calling me?"
+   ]
   },
   {
    "id": "03/0191#3",
    "where": "03/0191",
    "text": "– Oh-ho. Hamid Cat, until yesterday you said \"ass.\" Now you've gone all civilized and say \"donkey\"?",
-   "q": "Taghi mocks Hamid for swapping a rude word for a polite one. Does it land?"
+   "q": "Taghi mocks Hamid for swapping a rude word for a polite one. Does it land?",
+   "ctx": 2,
+   "before": [
+    "– Pfff, donkey, who knows better, the friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran, or you, you calf? Go on then, buy it. But when its glass breaks, don't say I didn't warn you.",
+    "Taghi said:"
+   ]
   },
   {
    "id": "03/0278#4",
    "where": "03/0278",
    "text": "In a way, you could say they conquered the university. Karroubi is love, honestly and truly.",
-   "q": "Farid is excited. Does 'Karroubi is love' sound like natural student slang?"
+   "q": "Farid is excited. Does 'Karroubi is love' sound like natural student slang?",
+   "ctx": 1,
+   "before": [
+    "– Hey, Taverny, run! Come on, let's go. They say they didn't let Karroubi into the university. His supporters broke the Hafez gate and came in."
+   ]
   },
   {
-   "id": "03/0290#5",
-   "where": "03/0290",
-   "text": "– Is Arasteh a trimmed-down Araasteh?",
-   "q": "The family dropped one a from Araasteh (Persian: neat). Is the joke clear?"
-  },
-  {
-   "id": "03/0310#6",
+   "id": "03/0310#5",
    "where": "03/0310",
    "text": "I press the elevator button. The elevator door opens. That day, Niloofar had come up the stairs. I go toward the stairwell. The voices of a boy and a girl drift out of the elevator. They call me sick.",
-   "q": "The riders mock him for calling the elevator, then walking off. Does 'sick' land?"
+   "q": "The riders mock him for calling the elevator, then walking off. Does 'sick' land?",
+   "ctx": 0
   },
   {
-   "id": "03/0430#7",
+   "id": "03/0430#6",
    "where": "03/0430",
    "text": "– And with that dickish way you talk, your name should've been Alain Dickon. Don't flatter yourself. I don't mean Alain Delon, with the way you scrunch up your nose ...",
-   "q": "Hooman's insult puns on the actor Alain Delon. Does 'Alain Dickon' land?"
+   "q": "Hooman's insult puns on the actor Alain Delon. Does 'Alain Dickon' land?",
+   "ctx": 0
   },
   {
-   "id": "03/0588#8",
+   "id": "03/0588#7",
    "where": "03/0588",
    "text": "– In my opinion, life is like a thousand-toman banknote: whichever side you look at, it smells of lentil rice.",
-   "q": "Meysam ends a deep debate about life with a silly quip. Does the joke land?"
+   "q": "Meysam ends a deep debate about life with a silly quip. Does the joke land?",
+   "ctx": 1,
+   "before": [
+    "Meysam and Eskandar sat there in the dark, debating. The conversation had reached the meaning of life and was beginning to sound like an argument. Eskandar's voice kept rising until Meysam said:"
+   ]
   },
   {
-   "id": "03/0675#9",
+   "id": "03/0675#8",
    "where": "03/0675",
    "text": "After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.",
-   "q": "The memory came loose from that one place. Is the screw image clear?"
+   "q": "The memory came loose from that one place. Is the screw image clear?",
+   "ctx": 1,
+   "before": [
+    "…as memories passing through the mind, but as though I have been hurled back into that very moment, that very place. Several more times I found myself trapped behind the same door, within the same mingling of light and darkness. Each time, the same images passed before my eyes, damp and unsettling."
+   ]
   },
   {
-   "id": "04a/0076#10",
+   "id": "04a/0076#9",
    "where": "04a/0076",
    "text": "– It's marmal stone. Marmal means really expensive.",
-   "q": "A boy mispronounces marble and thinks the word means expensive. Is that clear?"
+   "q": "Both mistakes are intended: little Ghassem says 'marmal' for marble and thinks it means expensive. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "We went on again. There was a house halfway there. Its wall was pretty. Ghassem always said:"
+   ]
   },
   {
-   "id": "04b/0142#11",
+   "id": "04b/0142#10",
    "where": "04b/0142",
    "text": "– Yeah, I've heard a few things about this localization business.",
-   "q": "This means the regional quota for university places. Is 'localization' clear here?"
+   "q": "Eskandar means the regional quota system for university places. Is 'localization' clear for that?",
+   "ctx": 0
   },
   {
-   "id": "04b/0385#12",
+   "id": "04b/0385#11",
    "where": "04b/0385",
    "text": "He can't help it. That's just his factory setting. Always so elegant and formal, shitting right at the historic turning point.",
-   "q": "Hooman mocks Amir for messing up at a key moment. Does this read naturally?"
+   "q": "Hooman mocks Amir for messing up at a key moment. Does this read naturally?",
+   "ctx": 0
   },
   {
-   "id": "04b/0387#13",
-   "where": "04b/0387",
-   "text": "– Last night I could hear you ruminating. Too bad my Baba was asleep, otherwise I'd have gotten up and pulled every single sweet out of your throat.",
-   "q": "Eskandar teases Hooman for chewing sweets at night like a cow. Does 'ruminating' land?"
-  },
-  {
-   "id": "04b/0595#14",
-   "where": "04b/0595",
-   "text": "– But he fucked it up. Eagle Eye says peer-to-peer; Taverny says Eldie-to-Eldie.",
-   "q": "Amir (Taverny, Eldie) misheard peer as pir, Persian for elder. Does the joke land?"
-  },
-  {
-   "id": "04b/0953#15",
+   "id": "04b/0953#12",
    "where": "04b/0953",
    "text": "– Kids, we've been watching a movie at our relatives' house.",
-   "q": "A schoolboy addresses his friends. Does 'Kids' sound natural from him?"
+   "q": "A schoolboy addresses his friends. Does 'Kids' sound natural from him?",
+   "ctx": 0
   },
   {
-   "id": "04b/1125#16",
-   "where": "04b/1125",
-   "text": "They saw the red and all their body hair fell right out, objectively.",
-   "q": "This means they got a sudden fright. Is the meaning clear?"
-  },
-  {
-   "id": "04b/1247#17",
+   "id": "04b/1247#13",
    "where": "04b/1247",
    "text": "With that toy car he pulled along behind him, he would surely fall from Negar's eyes.",
-   "q": "This means Taghi would lose Negar's respect. Is the meaning clear?"
+   "q": "The boys all want to impress Negar. Is the meaning of the Persian idiom 'fall from Negar's eyes' clear?",
+   "ctx": 1,
+   "before": [
+    "…A few days later, Taghi came to our usual spot with his toy car. Since Negar had entered our childish world, we had forgotten playing with cars. Not only playing with cars; all games had gone into the house of forgetting. I was very happy. With his own hands, Taghi was pinning himself to the mat."
+   ]
   },
   {
-   "id": "04b/1293#18",
+   "id": "04b/1293#14",
    "where": "04b/1293",
    "text": "That Dr. Shafiʿi Kadkani had taken my poem and said he'd read it later? Just a harvest-time promise?",
-   "q": "A harvest-time promise means an empty, put-off promise. Is the meaning clear?"
+   "q": "This is a Persian saying kept literal. Is the meaning of 'a harvest-time promise' clear here?",
+   "ctx": 0
   },
   {
-   "id": "04b/1312#19",
+   "id": "04b/1312#15",
    "where": "04b/1312",
    "text": "It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.",
-   "q": "A student's crude made-up word for baffling. Does 'shit-dizzy' work as slang?"
+   "q": "A student's crude made-up word for baffling. Does 'shit-dizzy' work as slang?",
+   "ctx": 1,
+   "before": [
+    "– ... Look at it, it's genuinely mind-bending. He drew this and wrote underneath it: this is not a pipe."
+   ]
   },
   {
-   "id": "06/0056#20",
+   "id": "06/0056#16",
    "where": "06/0056",
    "text": "They dumped earth over her with a buldozel. Earth and lime.",
-   "q": "Maman mispronounces bulldozer on purpose. Is that clear?"
+   "q": "Maman says 'buldozel' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
   }
  ]
 }

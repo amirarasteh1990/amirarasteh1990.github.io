@@ -7,7 +7,7 @@ GitHub workflow then writes the permanent JSON entry and rebuilds GitHub Pages.
 
 It also serves the native-speaker check pages (`/sedaha/check/<slug>/`, written by
 `build_check_pages.py`). `POST /check` takes
-`{lang, page_version, name?, items: [{id, verdict: "ok"|"change", note?}]}`
+`{lang, page_version, name?, items: [{id, verdict: "ok"|"change"|"unsure", note?}]}`
 (1 to 40 answers, name up to 60 and notes up to 600 characters), with the same
 origin check, rate limiter and validation, and opens one issue titled
 `Native check: <Language> (<n> answers)`, labelled `native-check`, whose body

@@ -1,0 +1,182 @@
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-22.r6",
+ "items": [
+  {
+   "id": "04b/1314#1",
+   "where": "04b/1314",
+   "text": "Belki böyle olmaz, mümkün değil, hayalîdir ve gerçek değil dersiniz. Ama oldu ve sizi gerçekten seviyorum.",
+   "q": "Amir finally confesses his love to the girl he has admired from afar. Does it sound heartfelt and natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Otuz iki aydır sizi seviyorum. Uzaktan. Siz bilmeden. Sessizce. Tek söz etmeden."
+   ]
+  },
+  {
+   "id": "04b/1393#2",
+   "where": "04b/1393",
+   "text": "Dönüşünün umudunu taşımıyorum",
+   "q": "A line from the young narrator's simple love poem. Does it read as heartfelt poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Rüyalarımın lambası şimdi göz kırpıyor"
+   ]
+  },
+  {
+   "id": "04b/1396#3",
+   "where": "04b/1396",
+   "text": "Sanırım rüyalarım gittiğine inanmamışlar",
+   "q": "The last line of the narrator's love poem. Does it read as a moving close to the poem?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Ama yolun düşerse",
+    "yine rüyalarıma gel"
+   ]
+  },
+  {
+   "id": "04b/1268#4",
+   "where": "04b/1268",
+   "text": "suyun üstü hariç",
+   "q": "A short poem on a blackboard says one may write on anything except water. Does this line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Her şeyin üstüne yazılabilir"
+   ]
+  },
+  {
+   "id": "04b/1275#5",
+   "where": "04b/1275",
+   "text": "yananlar",
+   "q": "In this poem, 'the burned ones' means people consumed by love. Does 'yananlar' carry that here?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "âşıklar ve",
+    "sarhoşlar ve"
+   ]
+  },
+  {
+   "id": "04b/1271#6",
+   "where": "04b/1271",
+   "text": "ki senin ardından gelen",
+   "q": "A line from the poem on the blackboard: so that whoever follows in your wake. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "ve denizi geçersen",
+    "suyun üstüne kendi kanınla yaz"
+   ]
+  },
+  {
+   "id": "04b/0271#7",
+   "where": "04b/0271",
+   "text": "Kendi yüzünü alevlendiren herkes gönül çalmayı bilmez; her ayna yapan da İskender'in marifetini bilmez.",
+   "q": "Amir reads a Hafez verse about winning hearts and making mirrors. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "01/0216#8",
+   "where": "01/0216",
+   "text": "Evet, Baba-jan'ımız saygıya gerçekten aç.",
+   "q": "Ghassem jokes dryly that their father always craves respect. Does the sarcasm come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ghassem der ki:"
+   ]
+  },
+  {
+   "id": "03/0126#9",
+   "where": "03/0126",
+   "text": "Hı. Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı, tıpkı böyle konuşuyor.",
+   "q": "A boy keeps citing this absurdly long chain of acquaintances as his authority. Does it read as a funny running joke?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Vay. Duydunuz mu çocuklar? Aksanı tıpkı Tahranlılar gibiydi.",
+    "Hamid dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0181#10",
+   "where": "03/0181",
+   "text": "Eniştemiz en zengin adamın kendisinde en son model bir Benz olduğunu söylüyor.",
+   "q": "A boy boasts second-hand about a rich man's car. Does this sound like a boy talking?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "04b/1248#11",
+   "where": "04b/1248",
+   "text": "Siyah olsaydı siyah alırdım. Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı, siyah aşkın rengidir demiş.",
+   "q": "A boy cites his usual chain of acquaintances about the colors of toy cars. Does this sound like a boy talking?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "…elinde bir araba ipi vardı. Yaser gelmemişti. Benim ve Hamid'in arabası birbirine benziyordu. Benim arabam maviydi, Hamid'inki kırmızı. Yirmi beş tümene almıştık. Kibrit kutusundan biraz büyüktüler. Kimin arabasının renginin daha iyi olduğu konuşuluyordu. Taghi sarı diyordu. Hamid dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0143#12",
+   "where": "03/0143",
+   "text": "Hı. Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı, bunun iyi bir kitap olmadığını söyledi. Okuyan intihar eder.",
+   "q": "A boy repeats a silly rumor about a book. Does this sound like a boy talking?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamid dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0388#13",
+   "where": "03/0388",
+   "text": "Gözlüğüm olmadan hiçbir şey göremiyorum, objektif olarak.",
+   "q": "Sajad tags 'objektif olarak' onto almost everything he says, as a habit. Does it read as a funny verbal habit?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0160#14",
+   "where": "04b/0160",
+   "text": "Objektif olarak, sırf birkaç gün geç geldik diye, sadece yerelleştirme sayesinde AmirKabir'e girebilen bu Tahranlı çocuklar, sanki onlar değil de biz kontenjanla girmişiz gibi davranıyorlar, objektif olarak.",
+   "q": "Sajad complains that Tehran students look down on them. Does it sound like natural student talk?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0162#15",
+   "where": "04b/0162",
+   "text": "Evet, bizi gördükleri an götlerini sıkıp uzak duruyorlar, o kadar ki yüzlerine iki ayağımla birden dalmak istiyorum.",
+   "q": "Farid crudely describes snobbish students who avoid them. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0171#16",
+   "where": "04b/0171",
+   "text": "Be adam, bununla böyle kibar konuşma, şımarır. Bunca Konkur deneme testi çözdük, sonunda bu antikayla aynı odaya düştük.",
+   "q": "Hooman mocks an odd roommate in front of his friends. Does this sound like natural dorm teasing?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  }
+ ]
+}

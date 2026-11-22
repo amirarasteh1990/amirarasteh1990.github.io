@@ -1,0 +1,178 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r9",
+ "items": [
+  {
+   "id": "03/0504#1",
+   "where": "03/0504",
+   "text": "Эй, Леопард Фарид, принеси тот ноутбук, я тоже хочу посмотреть. Не хочется вставать.",
+   "q": "Lazy Hooman asks Farid to bring the laptop over. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "03/0628#2",
+   "where": "03/0628",
+   "text": "Хаха, Старец Таверны, Элди — отлично. Попал в точку, Леопард Фарид.",
+   "q": "Hooman approves the nickname Farid has just given Amir. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман писал что-то в книге ручкой и сказал:"
+   ]
+  },
+  {
+   "id": "03/0630#3",
+   "where": "03/0630",
+   "text": "Он и вправду Таверни — по чести и по совести.",
+   "q": "Farid shortens the nickname playfully. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Фарид сказал:"
+   ]
+  },
+  {
+   "id": "03/0620#4",
+   "where": "03/0620",
+   "text": "Эй, Леопард Фарид, дай-ка мне — я хочу погадать.",
+   "q": "Hooman wants to tell his fortune with the book of Hafez. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/0593#5",
+   "where": "04b/0593",
+   "text": "Прочтите-ка салават. Старец Таверны наконец-то что-то сказал.",
+   "q": "Hooman mock-celebrates that quiet Amir has finally said something. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/0600#6",
+   "where": "04b/0600",
+   "text": "И что в этом хорошего? Главное, что всякий раз, когда я иду в супермаркет, я плачу деньги, покупаю своё молоко и кекс и отправляю в организм.",
+   "q": "Hooman, a big eater, shrugs off Bitcoin. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/0598#7",
+   "where": "04b/0598",
+   "text": "Объективно, если приживётся, всю эту банковскую возню и прочее свернут.",
+   "q": "Sajad explains Bitcoin in his own words. Does this sound like natural talk?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "04b/0558#8",
+   "where": "04b/0558",
+   "text": "Скажи мне, чтобы я тебя излечил. Но знай: понимание — это и есть само недоразумение.",
+   "q": "Eskandar plays a mock guru to a struggling student. Does this sound playfully pompous?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "04b/0462#9",
+   "where": "04b/0462",
+   "text": "Я написал свои собственные теории о квантовой физике, а наш тупой профессор взял и поставил мне четверть балла.",
+   "q": "Eskandar complains about his exam mark. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Эскандар ещё немного поохал и постонал и сказал:"
+   ]
+  },
+  {
+   "id": "04b/0571#10",
+   "where": "04b/0571",
+   "text": "Сначала задокументируйте вот этот большой палец, а потом снимайте фильм про что хотите.",
+   "q": "Hooman sticks out his thumb, a rude gesture in Iran, to mock the film idea. Does the brush-off come through?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман высунул руку из-под одеяла и сказал:"
+   ]
+  },
+  {
+   "id": "04b/0554#11",
+   "where": "04b/0554",
+   "text": "Начало месяца эсфанда — это что за время для экзамена?",
+   "q": "Hooman grumbles about an exam date. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/0436#12",
+   "where": "04b/0436",
+   "text": "И всё это философия да романы. Класс, и Ницше тут есть. Я обожаю Ницше.",
+   "q": "Eskandar digs through a roommate's books under the bed. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Эскандар, всё ещё держа голову под моей кроватью, сказал:"
+   ]
+  },
+  {
+   "id": "03/0083#13",
+   "where": "03/0083",
+   "text": "До сих пор я думал, что они вдохновились Вавилонской башней.",
+   "q": "Eskandar makes a clever-sounding remark about a building. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Эскандар сказал:"
+   ]
+  },
+  {
+   "id": "03/0081#14",
+   "where": "03/0081",
+   "text": "Тогда выпьем этот чай за здоровье Орлиного Глаза Ньюс.",
+   "q": "Farid raises a mock toast with tea. Does it sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Фарид сказал:"
+   ]
+  },
+  {
+   "id": "03/0488#15",
+   "where": "03/0488",
+   "text": "Я — экстремистский националистический анархист.",
+   "q": "Eskandar puffs out his chest and declares his politics. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Эскандар выпрямился, выпятил грудь и сказал:"
+   ]
+  },
+  {
+   "id": "04b/0421#16",
+   "where": "04b/0421",
+   "text": "Леопард Фарид, держи себя в руках и не устраивай убийственных выходок.",
+   "q": "Hooman tells hot-headed Farid to calm down. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Хуман сказал:"
+   ]
+  }
+ ]
+}

@@ -1,18 +1,136 @@
-{"lang": "ru", "slug": "ru", "dir": "ltr", "version": "2026-11-18",
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007", "text": "Это свободный конец нити из слов, которые когда-то были звуками.", "q": "Does this sentence read naturally?"},
-  {"id": "Opening/0007#2", "where": "Opening/0007", "text": "С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их.", "q": "The reader gathers up the words. Does 'собираешь их' sound natural here?"},
-  {"id": "Opening/0007#3", "where": "Opening/0007", "text": "Как в детстве, когда Маман распускала старые вещи на пряжу, а мы брали нить и ходили по дому, чтобы пряжа не скапливалась в кучу.", "q": "Does this childhood memory read naturally?"},
-  {"id": "Opening/0007#4", "where": "Opening/0007", "text": "Может быть, твоё поколение появилось на несколько лет позже этого мира пряжи, но представь: когда-то в каком-то уголке мира дети вот так и играли.", "q": "Does 'этого мира пряжи' (that world of yarn) sound natural?"},
-  {"id": "01/0116#5", "where": "01/0116", "text": "Выходи тоже. Ходи туда, где украмно.", "q": "Maman mispronounces the word for quiet on purpose. Is that clear?"},
-  {"id": "03/0191#6", "where": "03/0191", "text": "– Ого-го. Хамид-Кот, ещё вчера ты говорил «ишак». Теперь ты у нас культурный и говоришь «осёл»?", "q": "Hamid switched from a rude word for donkey to a polite one. Is that clear?"},
-  {"id": "03/0430#7", "where": "03/0430", "text": "– А ты, со своей хуёвой манерой говорить, должен бы называться Ален Членон.", "q": "The nickname is meant as a rude pun on Alain Delon. Does it work?"},
-  {"id": "04a/0076#8", "where": "04a/0076", "text": "– Это мрамальный камень. Мрамал — значит очень дорого.", "q": "A child mispronounces marble and thinks the word means expensive. Is that clear?"},
-  {"id": "04b/0387#9", "where": "04b/0387", "text": "– Прошлой ночью было слышно, как ты пережёвывал жвачку.", "q": "Teasing a friend who secretly eats sweets at night, like a cow. Does it work?"},
-  {"id": "04b/0595#10", "where": "04b/0595", "text": "– Но он всё просрал. Орлиный Глаз говорит «пиэр-ту-пиэр», а Элди — «пир-ту-пир».", "q": "Amir misheard peer as pir, Persian for elder. Does the joke work?"},
-  {"id": "04b/1263#11", "where": "04b/1263", "text": "– Вжжжж, Баба, Баба, ты купис мне вот эту больсую куклу?", "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"},
-  {"id": "04b/1265#12", "where": "04b/1265", "text": "– Да, куплю тебе куклу. Будут деньги — куплю тебе ещё лучше, Бабина дочка.", "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"},
-  {"id": "04b/1312#13", "where": "04b/1312", "text": "У человека начинается говнокружение. Чем больше об этом думаешь, тем сильнее говнокружение.", "q": "A girl uses a crude, made-up word for mind-bending. Does that come through?"},
-  {"id": "04b/1321#14", "where": "04b/1321", "text": "«То вино, которое там, на самом деле настоящее не метафора».", "q": "This Hafez line should allow two readings: real wine, and only a metaphor. Does it?"},
-  {"id": "06/0056#15", "where": "06/0056", "text": "Бурдозером на неё насыпали землю. Землю и известь.", "q": "Maman mispronounces bulldozer on purpose. Is that clear?"}
- ]}
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Это свободный конец нити из слов, которые когда-то были звуками.",
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их.",
+   "q": "The reader gathers up the words. Does 'собираешь их' sound natural here?",
+   "ctx": 0
+  },
+  {
+   "id": "Opening/0007#3",
+   "where": "Opening/0007",
+   "text": "Как в детстве, когда Маман распускала старые вещи на пряжу, а мы брали нить и ходили по дому, чтобы пряжа не скапливалась в кучу.",
+   "q": "Does this childhood memory read naturally?",
+   "ctx": 1,
+   "before": [
+    "…мировых событий, если бы они не были записаны здесь. Их записали, чтобы они стали мостом между моим миром и твоим. Мостом из моего мира в тот миг, когда я пишу эти фразы, — в твой мир в тот миг, когда ты садишься их читать. С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их."
+   ]
+  },
+  {
+   "id": "Opening/0007#4",
+   "where": "Opening/0007",
+   "text": "Может быть, твоё поколение появилось на несколько лет позже этого мира пряжи, но представь: когда-то в каком-то уголке мира дети вот так и играли.",
+   "q": "Does 'этого мира пряжи' (that world of yarn) sound natural?",
+   "ctx": 1,
+   "before": [
+    "…мира в тот миг, когда я пишу эти фразы, — в твой мир в тот миг, когда ты садишься их читать. С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их. Как в детстве, когда Маман распускала старые вещи на пряжу, а мы брали нить и ходили по дому, чтобы пряжа не скапливалась в кучу."
+   ]
+  },
+  {
+   "id": "01/0116#5",
+   "where": "01/0116",
+   "text": "Выходи тоже. Ходи туда, где украмно.",
+   "q": "Maman, on the phone with her son, says 'украмно' for 'укромно' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– О, как хорошо. М-хм, закажешь — и тебе привезут. Но, Амир-джан, не сиди всё время дома."
+   ]
+  },
+  {
+   "id": "03/0191#6",
+   "where": "03/0191",
+   "text": "– Ого-го. Хамид-Кот, ещё вчера ты говорил «ишак». Теперь ты у нас культурный и говоришь «осёл»?",
+   "q": "Taghi mocks Hamid for switching from the cruder 'ишак' to the politer 'осёл'. Does the teasing come through?",
+   "ctx": 3,
+   "before": [
+    "Хамид вскипел и закричал:",
+    "– Пфф, осёл, кто лучше знает — друг двоюродного брата мастера-ремесленника нашего зятя, что самый богатый человек в Тегеране, или ты, телёнок? Ну ладно, иди и купи себе. Когда стекло разобьётся, не говори, что я тебя не предупреждал.",
+    "Таги сказал:"
+   ]
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "– А ты, со своей хуёвой манерой говорить, должен бы называться Ален Членон.",
+   "q": "The nickname is meant as a rude pun on Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "04a/0076#8",
+   "where": "04a/0076",
+   "text": "– Это мрамальный камень. Мрамал — значит очень дорого.",
+   "q": "A small boy says 'мрамал' for 'мрамор' and wrongly thinks it means expensive; both mistakes are intended. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Мы шли дальше. На полпути стоял один дом. Стена у него была красивая. Гасем говорил:"
+   ]
+  },
+  {
+   "id": "04b/0387#9",
+   "where": "04b/0387",
+   "text": "– Прошлой ночью было слышно, как ты пережёвывал жвачку.",
+   "q": "A young man teases a friend for secretly eating sweets at night, as if chewing cud like a cow. Does the teasing come through?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1263#10",
+   "where": "04b/1263",
+   "text": "– Вжжжж, Баба, Баба, ты купис мне вот эту больсую куклу?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "ctx": 1,
+   "before": [
+    "…что уничтожила ту безмятежную, успокаивающую, тёмную тишину и при этом светила недостаточно, чтобы вести меня. Мигающая лампа в руке девушки — для цвета двери её дома я так и не нашёл места в коробке цветных карандашей. Подбегает девочка, жужжа, и встаёт рядом со мной. Смотрит на игрушки. Говорит:"
+   ]
+  },
+  {
+   "id": "04b/1265#11",
+   "where": "04b/1265",
+   "text": "– Да, куплю тебе куклу. Будут деньги — куплю тебе ещё лучше, Бабина дочка.",
+   "q": "Her father answers the toddler. Does his reply sound like a fond dad talking to a small child?",
+   "ctx": 2,
+   "before": [
+    "– Вжжжж, Баба, Баба, ты купис мне вот эту больсую куклу?",
+    "Голос за моей спиной говорит:"
+   ]
+  },
+  {
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "У человека начинается говнокружение. Чем больше об этом думаешь, тем сильнее говнокружение.",
+   "q": "A student describes a Magritte painting; 'говнокружение' is her crude made-up blend of shit and dizziness. Does it work?",
+   "ctx": 1,
+   "before": [
+    "– ... вы посмотрите, до чего это и впрямь будоражит мысль. Он нарисовал это и подписал снизу: «Это не трубка»."
+   ]
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "«То вино, которое там, на самом деле настоящее не метафора».",
+   "q": "Quoted without commas, this poem line should allow two readings: real wine, and wine as only a metaphor. Does it?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0056#14",
+   "where": "06/0056",
+   "text": "Бурдозером на неё насыпали землю. Землю и известь.",
+   "q": "Maman says 'Бурдозером' for 'бульдозером' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…Бехешт. Туда везут казнённых, там же хоронят умерших от ковида. Один Бог знает, обмыли её по обряду или нет. Мы смотрели издали. Когда её клали в могилу, на миг саван разошёлся. Мне показалось, что её завернули в саван в той же одежде, в которой она была в больнице. Могилы копают очень глубоко."
+   ]
+  }
+ ]
+}

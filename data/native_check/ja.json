@@ -2,97 +2,133 @@
  "lang": "ja",
  "slug": "ja",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "こちら側で、私は言葉の糸をほどく。向こう側で、あなたがその言葉を集める。",
-   "q": "Do these two sentences read naturally?"
+   "q": "Do these two sentences read naturally?",
+   "ctx": 0
   },
   {
-   "id": "03/0049#2",
-   "where": "03/0049",
-   "text": "– うん、コンクールでの彼の順位は本当に良かった、二桁だった。",
-   "q": "Is it clear 'コンクール' means Iran's national university entrance exam?"
-  },
-  {
-   "id": "04b/1213#3",
-   "where": "04b/1213",
-   "text": "彼は私の謝罪に、肩に手を置くことで応えて去っていく。",
-   "q": "Does this sentence read naturally?"
-  },
-  {
-   "id": "04b/1213#4",
-   "where": "04b/1213",
-   "text": "私の肩のせいで扉が閉まらない。手が私を内側へ引き入れ、扉が閉まる。",
-   "q": "Amir squeezes onto a crowded bus. Do these sentences read naturally?"
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "クソほどくらくらする。考えれば考えるほど、クソほどくらくらするのよ。",
-   "q": "A girl crudely says the painting makes her dizzy. Is the meaning clear?"
-  },
-  {
-   "id": "01/0116#6",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "外にも出て。感静な場所に行って。",
-   "q": "Maman mispronounces '感静' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says '感静' for quiet (閑静) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– まあ、それはいいわね。うん、注文したら届けてくれるの。でもアミール・ジャン、ずっと家にいてはだめよ。"
+   ]
   },
   {
-   "id": "01/0132#7",
+   "id": "01/0132#3",
    "where": "01/0132",
    "text": "コリーラもそう。あれだって、こんなに多くは殺さなかった。",
-   "q": "Maman mispronounces 'コリーラ' on purpose; she means cholera. Is that clear?"
+   "q": "Maman says 'コリーラ' for cholera (コレラ) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…に厚かましくて、この電話を抜けてきて、私たちからあんたにうつるんじゃないかと怖いくらい。テレビではあれの人形まで作っていた。「私はそう簡単には帰らないよ。まだまだ、あなたたちの客でいるからね」って。来たばかりの頃、テレビは百人に二人と言っていたのに、今は十パーセントと言っている。神に誓って、本当に不公平だわ。道の向こう側で誰かがくしゃみをして、こちら側の人がうつされて死ぬの。こんなことは見たことも聞いたこともなかった。ビビたちの世代でさえ、そんな話はしなかった。たとえばテフスとか、結核とか、はしかとか。あれは人を死なせる病気だと言っていた。うーん、でも、あれらだってこんなに多くは殺さなかった。"
+   ]
   },
   {
-   "id": "03/0191#8",
+   "id": "03/0049#4",
+   "where": "03/0049",
+   "text": "– うん、コンクールでの彼の順位は本当に良かった、二桁だった。",
+   "q": "Here 'コンクール' is Iran's national university entrance exam. Will a Japanese reader understand that from this line?",
+   "ctx": 1,
+   "before": [
+    "– 弟のアミールの名前を町の広場じゅうに貼り出した。何のために？"
+   ]
+  },
+  {
+   "id": "03/0191#5",
    "where": "03/0191",
    "text": "– おいおい。ハミード・猫、昨日まで「ハル」って言ってたのに、今日は急に上品になって「ロバ」って言うのか？",
-   "q": "Taghi mocks Hamid's switch from a rude to a polite donkey word. Is that clear?"
+   "q": "'ハル' is the blunt Persian word for donkey. Does Taghi's teasing, that Hamid now politely says 'ロバ', work?",
+   "ctx": 2,
+   "before": [
+    "– このロバめ、俺たちの義兄の親方職人のいとこの友達で、テヘランで一番の金持ちのほうがよく知ってるか、お前みたいな子牛のほうがよく知ってるか、どっちだよ？行って買えばいい。でも割れても俺のせいじゃないからな。",
+    "タギーが言った："
+   ]
   },
   {
-   "id": "03/0373#9",
+   "id": "03/0373#6",
    "where": "03/0373",
    "text": "– アメロカが、イランが核計画を停止したと確認したっていうことよ。戦争になるの、それともならないの？",
-   "q": "Maman mispronounces 'アメロカ' on purpose; she means America. Is that clear?"
+   "q": "Maman says 'アメロカ' for America (アメリカ) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0
   },
   {
-   "id": "03/0430#10",
+   "id": "03/0430#7",
    "where": "03/0430",
-   "text": "– お前も、そのクソみたいな喋り方では、名前はアラット・ドロンになるべきだったな。勘違いするなよ、アラン・ドロンのことじゃない。",
-   "q": "'アラット・ドロン' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "お前も、そのチンポみたいな喋り方では、名前はアラン・チンポロンになるべきだったな。",
+   "q": "'アラン・チンポロン' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#11",
+   "id": "04a/0076#8",
    "where": "04a/0076",
    "text": "– だいりしの石だ。だいりしって、とても高いってことだ。",
-   "q": "A child mispronounces marble as 'だいりし' and thinks it means expensive. Is that clear?"
+   "q": "A child says 'だいりし' for marble (だいりせき) and wrongly thinks the word means expensive. Both mistakes are meant. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "またぼくたちは進んだ。途中に一軒家があった。壁がきれいだった。ガーセムはこう言っていた。"
+   ]
   },
   {
-   "id": "04b/0595#12",
-   "where": "04b/0595",
-   "text": "– でも、しくじったな。鷹の目はピア・トゥ・ピアって言うのに、酒場者は酒場じい・トゥ・酒場じいだとさ。",
-   "q": "Amir misheard 'ピア' as pir, Persian for elder, like his nickname. Does the joke work?"
+   "id": "04b/1213#9",
+   "where": "04b/1213",
+   "text": "彼は私の謝罪に、肩に手を置くことで応えて去っていく。",
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "私は振り返る。私より背の高い十代の少年が、手で鼻を覆っている。"
+   ]
   },
   {
-   "id": "04b/1263#13",
+   "id": "04b/1213#10",
+   "where": "04b/1213",
+   "text": "私の肩のせいで扉が閉まらない。手が私を内側へ引き入れ、扉が閉まる。",
+   "q": "Amir squeezes onto a crowded bus. Do these sentences read naturally?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1263#11",
    "where": "04b/1263",
    "text": "– ブーーン、バーバ、バーバ、このおっきなおにんぎょ、かってくれう？",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her dad to buy her a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…現を告げてくれたあの黄色いドアに。それからというもの、年を追うごとに、私はますます礼拝とモスクと祈りへと引き寄せられていった。ネガールを見たときに味わったあの感覚から一歩また一歩と離れていき、ニルーファルが私の世界に入ってきたとき、それはまるで、彼女が私の存在のその部分の暗室にランプを持ち込んだかのようだった。心安らぐ闇色の静けさを消し去り、しかも私を導くほどの明るさも持たない、不安をかき立てるランプ。家のドアの色が色鉛筆の箱のどこに当てはまるのか、ついぞ分からなかった一人の少女の手にある、明滅するランプ。一人の女の子がブーンブーンと言いながらやって来て、私の隣に立つ。玩具を眺める。こう言う。"
+   ]
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "クソほどくらくらする。考えれば考えるほど、クソほどくらくらするのよ。",
+   "q": "A student describes a puzzling painting. Does 'クソほどくらくらする' work as a crude, playful way to say mind-bending?",
+   "ctx": 1,
+   "before": [
+    "– ......見て、本当に考えさせられるでしょ。これを描いて、その下に「これはパイプではない」って書いたの。"
+   ]
+  },
+  {
+   "id": "04b/1321#13",
    "where": "04b/1321",
    "text": "「かしこにあるあの酒は本物いや比喩じゃない」。これも同じだ。",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This Hafez line should allow two opposite readings: the wine is real; the wine is only a metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#14",
    "where": "06/0056",
    "text": "ブルドゼルで土をかけたの。土と石灰を。",
-   "q": "Maman mispronounces 'ブルドゼル' on purpose; she means bulldozer. Is that clear?"
+   "q": "Maman says 'ブルドゼル' for bulldozer (ブルドーザー) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– ナナ・ペサルジャン、あなたのバーバの家族には本当にひどい目に遭わされたわ。最後の頃、ナネイを洗ってあげに行くたび、あの人の舌で傷つけられた。でも正直、埋葬されたときは、胸が焼けるほどかわいそうだった。バーゲ・ベヘシュト墓地のいちばん奥まで連れていかれたの。処刑された人たちを連れていく場所で、コロナで亡くなった人もそこに埋めるのよ。お清めしてもらったかどうかは神様だけがご存じよ。私たちは遠くから見てた。墓に入れられたとき、一瞬、体を包んでいた布がほどけたの。病院へ行ったときの服を着たまま、その布で包まれてるように見えた。墓はとても深く掘るのよ。"
+   ]
   }
  ]
 }

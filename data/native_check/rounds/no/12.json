@@ -1,0 +1,194 @@
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-22.r12",
+ "items": [
+  {
+   "id": "04a/0082#1",
+   "where": "04a/0082",
+   "text": "Det sa du ikke.",
+   "q": "Omid, a small boy, cries and answers his scolding brother. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Omid gråt. Han sa:"
+   ]
+  },
+  {
+   "id": "04a/0006#2",
+   "where": "04a/0006",
+   "text": "Jeg blir borte, Maman.",
+   "q": "A small boy tells his mother he is afraid of getting lost. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "…var jeg fire. Hun fant meg alltid fire ganger. Nå er jeg seks. Så hvorfor kommer hun ikke og finner meg én eneste gang nå, når jeg står bak porten til gaten? Nå som jeg er seks. Da jeg var fire, fant hun meg fire ganger. Kanskje er jeg borte? Jeg har heller ikke tråden i hånden. Jeg sa alltid:"
+   ]
+  },
+  {
+   "id": "04a/0048#3",
+   "where": "04a/0048",
+   "text": "Det er alderen, nabo.",
+   "q": "An old shopkeeper jokes to Maman about his shaking hands. Does it sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Vi pleide å stå foran Haaj Kazems matbutikk. Ghassem pleide å vinke til ham. Haaj Kazem rister alltid på hendene. Når vi går dit med Maman, rister han på dem også. Han rister kikertene fort-fort. Han heller alltid for mange opp på vekten og tar så noen tilbake. Den dagen sa han til Maman:"
+   ]
+  },
+  {
+   "id": "04a/0056#4",
+   "where": "04a/0056",
+   "text": "Hvis du blir trøtt, skal du ikke bli med på oppdraget mer.",
+   "q": "Ghassem, the older boy, warns his tired little brother. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem sa:"
+   ]
+  },
+  {
+   "id": "04b/1062#5",
+   "where": "04b/1062",
+   "text": "Når hun lærer navnene våre, kommer hun til å like oss.",
+   "q": "Yaser, a teenage boy, sprays their names on a wall near a girl's house. Does his hope sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Yaser, som holdt på å spraye navnene våre på muren overfor Negars hus med en boks han hadde stjålet fra farens Khavar-lastebil, sa:"
+   ]
+  },
+  {
+   "id": "04b/1248#6",
+   "where": "04b/1248",
+   "text": "Hadde det vært svart, hadde jeg tatt svart.",
+   "q": "Hamid, a boy, says which colour toy he would have picked. Does it sound like a boy?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "…dag satt vi på trappetrinnene, hver med en bilsnor i hånden. Yaser var ikke kommet. Bilen min og Hamids lignet hverandre. Min var blå, og Hamids var rød. Vi hadde kjøpt dem for tjuefem toman. Litt større enn en fyrstikkeske. Vi snakket om hvem som hadde den beste fargen. Taghi sa gul. Hamid sa:"
+   ]
+  },
+  {
+   "id": "04a/0004#7",
+   "where": "04a/0004",
+   "text": "Kom nå, gutten min. Kom og ta denne, og gå rundt inne i huset.",
+   "q": "Maman plays a game with her four-year-old. Does it sound like a mother talking to a little child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Jeg fant deg fire ganger."
+   ]
+  },
+  {
+   "id": "04a/0014#8",
+   "where": "04a/0014",
+   "text": "Bra, Amir-jan! Du er veldig smart.",
+   "q": "Maman praises her little son. Does it sound like a mother talking to a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Den gangen var tråden veldig lang. Jeg gikk ut i gårdsplassen også. Maman sa:"
+   ]
+  },
+  {
+   "id": "02/0005#9",
+   "where": "02/0005",
+   "text": "Lyset i drømmene mine ... lyset i drømmene mine ble ... lyset i drømmene mine ble tent",
+   "q": "Amir rehearses his short poem, stumbling and restarting on purpose. Does it still read as a poem?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Drømmene mine var mørke",
+    "Jeg kunne ingenting se",
+    "Du kom"
+   ]
+  },
+  {
+   "id": "04b/1396#10",
+   "where": "04b/1396",
+   "text": "Jeg tror ikke drømmene mine tror at du er borte",
+   "q": "The last line of Amir's love poem. Does it read as a moving ending?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Jeg nærer intet håp om din tilbakekomst",
+    "Men hvis veien din fører deg forbi",
+    "kom inn i drømmene mine igjen"
+   ]
+  },
+  {
+   "id": "04b/1392#11",
+   "where": "04b/1392",
+   "text": "Lyset i drømmene mine blinker nå",
+   "q": "In Amir's love poem, the light in his dreams now flickers. Does this line read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Du kom",
+    "Lyset i drømmene mine ble tent",
+    "Nå er du borte"
+   ]
+  },
+  {
+   "id": "04b/1395#12",
+   "where": "04b/1395",
+   "text": "kom inn i drømmene mine igjen",
+   "q": "Amir's poem asks her to come into his dreams once more. Do these lines read naturally as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Jeg nærer intet håp om din tilbakekomst",
+    "Men hvis veien din fører deg forbi"
+   ]
+  },
+  {
+   "id": "04b/1270#13",
+   "where": "04b/1270",
+   "text": "skriv på vannet med ditt eget blod",
+   "q": "A short poem written on a classroom board. Do these lines read as a poem?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "På alt kan en skrive",
+    "unntatt på vann",
+    "og hvis du krysser havet"
+   ]
+  },
+  {
+   "id": "04b/1276#14",
+   "where": "04b/1276",
+   "text": "har vandret her.",
+   "q": "The poem ends: lovers, drunkards and those burned by love have passed this way. Does the ending read as poetry?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "vil vite at",
+    "elskende og",
+    "berusede og",
+    "brente"
+   ]
+  },
+  {
+   "id": "04b/1271#15",
+   "where": "04b/1271",
+   "text": "så at den som følger i ditt kjølvann",
+   "q": "The poem says to write in blood so that whoever follows will know. Does this line read naturally?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "og hvis du krysser havet",
+    "skriv på vannet med ditt eget blod"
+   ]
+  },
+  {
+   "id": "02/0001#16",
+   "where": "02/0001",
+   "text": "Midt i all denne vinterkulden, hvor har sangfuglene kommet fra? Nok en gang er jeg mine egne forestillingers fange.",
+   "q": "The poetic opening of a chapter: Amir lies awake imagining birdsong. Does it read as lyrical and natural?",
+   "ctx": 0,
+   "kind": "poetry"
+  }
+ ]
+}

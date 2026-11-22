@@ -1,56 +1,88 @@
 {
-  "lang": "zu",
-  "slug": "zu",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Kwelami icala ngiqaqa umucu wamazwi; kwelakho uyawubutha.",
-      "q": "Is it clear that 'uyawubutha' means you gather up the words?"
-    },
-    {
-      "id": "01/0008#2",
-      "where": "01/0008",
-      "text": "Izihlahla ziqala ukukhanya kancane kancane futhi kuba yisikhathi esihle sokuvuselelwa. Izinto zihleleka kahle.",
-      "q": "In spring the trees turn green, as if everything is reborn. Is that clear?"
-    },
-    {
-      "id": "01/0206#3",
-      "where": "01/0206",
-      "text": "– Kodwa kudala, izandla zakhe zize zibuhlungu — lezo zinyanga ezintathu lapho wamthatha waya eDenmark, ngaba yisikhathi sini.",
-      "q": "Is it clear this is a warm thank-you for taking Baba to Denmark?"
-    },
-    {
-      "id": "03/0121#4",
-      "where": "03/0121",
-      "text": "Ngaphandle kokukhuluma, sonke sasazi ukuthi umugqa ophakathi wenkundla wawufanele ubemelene ngqo nomnyango wampofu wendlu intombazane eyaphuma kuyo.",
-      "q": "Is 'wampofu' right for the yellow door of the girl's house?"
-    },
-    {
-      "id": "03/0355#5",
-      "where": "03/0355",
-      "text": "Endlini ekugcineni kwegceke, eduze kwesitovisi, nganginele ngasesidlaleni sami futhi ngangisendleleni yokuthola indlela elula yokuxazulula imibuzwano eminingi yekongkuri yezibalo zezinsiza ngokusebenzisa indawojikeleza yesingite.",
-      "q": "He lies on his stomach solving exam trigonometry with the unit circle. Is that clear?"
-    },
-    {
-      "id": "03/0664#6",
-      "where": "03/0664",
-      "text": "Izinwele zayo ezixhafanisayo zifana nezinwele ezingaphakathi kwetashi lami.",
-      "q": "The sheep's curly wool looks like the wool in his mattress. Is that clear?"
-    },
-    {
-      "id": "04a/0047#7",
-      "where": "04a/0047",
-      "text": "Wayehambisa ama-chickpea ngokushesha. Wayethela amaningi esikalini, bese ebuyisela amanye.",
-      "q": "Is 'ama-chickpea' the usual Zulu word for chickpeas?"
-    },
-    {
-      "id": "04b/1263#8",
-      "where": "04b/1263",
-      "text": "– Vwoooo, Baba Baba, uzongithengela lo nodoli omkhulu?",
-      "q": "A toddler asks his dad for a doll. Does it sound like baby talk?"
-    }
-  ]
+ "lang": "zu",
+ "slug": "zu",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kwelami icala ngiqaqa umucu wamazwi; kwelakho uyawubutha.",
+   "q": "Is it clear that 'uyawubutha' means you gather up the words?",
+   "before": [
+    "Ukuvula",
+    "…yale ncwadi isidlulile. Imizuzwana nezithombe ezazingalahleka emsindweni wezinguquko zomhlaba ukube azibhalwanga lapha. Zabhalwa ukuze zibe yibhuloho phakathi komhlaba wami nowakho: lisuka emhlabeni wami ngesikhathi ngibhala le misho, liye emhlabeni wakho ngesikhathi uhlala phansi uyifunda."
+   ]
+  },
+  {
+   "id": "01/0008#2",
+   "where": "01/0008",
+   "text": "Izihlahla kancane kancane ziba luhlaza, nenhliziyo iyathokoza. Kungathi konke kuba kusha ngempela.",
+   "q": "In spring the trees turn green, as if everything is reborn. Is that clear?",
+   "before": [
+    "– Kancane kakhulu. Abanye bangase babe nomgubho omncane wosuku lokuqala lwentwasahlobo. Kodwa unyaka wabo omusha useduze nobusuku bethu beYalda.",
+    "– Mm-hm, ngikuzwile. Kodwa uma ungibuza mina, unyaka omusha ufanele ube sentwasahlobo."
+   ]
+  },
+  {
+   "id": "01/0206#3",
+   "where": "01/0206",
+   "text": "– Kodwa izandla zakho mazingabi buhlungu. Kulezo zinyanga ezintathu owamthatha ngazo waya naye eDenmark, ngajabula kangakanani!",
+   "q": "Is it clear this is a warm thank-you for taking Baba to Denmark?",
+   "before": [
+    "Ngithi:",
+    "– Yebo, uqinisile, Nini-jan. Kodwa njengoba uMahboub esho, noma yini esiyishoyo imane ihlikihle imizwa yethu kakhulu."
+   ]
+  },
+  {
+   "id": "03/0121#4",
+   "where": "03/0121",
+   "text": "Ngaphandle kokuthi kube khona okushoyo, sonke sasazi ukuthi umugqa ophakathi nenkundla kwakufanele uwele ngqo phambi komnyango ophuzi wendlu leyo ntombazane eyayiphuma kuyo.",
+   "q": "Is 'ophuzi' right for the yellow door of the girl's house?",
+   "before": [
+    "– Lapha kungcono ngisho ukwedlula iStadio delle Alpi.",
+    "…emhlabathini. Nsuku zonke sasibeka izigamu zezitini ezimbili ngapha kwendlu nezimbili ngaphesheya, phakathi nomgwaqo, sidlale. Ngisho nokuma komdlalo okwakubangelwa yimoto noma isithuthuthu esasidlula ngezikhathi ezithile, sasikubona kukuhle futhi kudingeka, kuyithuba lokuthi sithole umoya."
+   ]
+  },
+  {
+   "id": "03/0355#5",
+   "where": "03/0355",
+   "text": "Endlini esekugcineni kwegceke, eduze kwesifudumezi, ngangilele ngesisu, ngisebenzela ukuthola indlela elula yokuxazulula izinkinga eziningi zethrigonomethri ze-Konkoor ngokusebenzisa isiyingi seyunithi.",
+   "q": "He lies on his stomach solving exam trigonometry with the unit circle. Is that clear?",
+   "before": [
+    "– Pho ngenxa yakho konke lokho kulinda engakubekezelela, hlala eduze kwami isikhashana futhi.",
+    "…Nanamuhla iyasha. Ukusha kokukhumbula lowo mzuzu wokuvalelisa. Futhi mhlawumbe ukusha kokukhohlwa into engizwa sengathi bekungafanele ngabe ngiyikhohliwe. Into efana nokungaphumuli: ukungaphumuli okumi ngemuva kwenkungu. Maye, ukukhohlwa; maye, ukususa enkumbulweni; maye, ukuphuma enkumbulweni."
+   ]
+  },
+  {
+   "id": "03/0664#6",
+   "where": "03/0664",
+   "text": "Imiphotho yoboya bayo yayifana noboya obusematilasini wami.",
+   "q": "The sheep's curly wool looks like the wool in his mattress. Is that clear?",
+   "before": [
+    "– Wena onezinwele eziphothene, umangala ngendlela sengathi wangena enyuvesi ungayibhalanga i-Konkoor. Lo mthetho wokwabela ngokwendawo usibhebhile. Bathi kungukugcina izingane eduze kwemindeni yazo, kodwa bashove induku ezinqeni zethu sonke esivela ezifundazweni.",
+    "Ethelevishini kwakuthiwa benze imvu efana nezinye izimvu."
+   ]
+  },
+  {
+   "id": "04a/0047#7",
+   "where": "04a/0047",
+   "text": "Wayehambisa ama-chickpea ngokushesha. Wayethela amaningi esikalini, bese ebuyisela amanye.",
+   "q": "Is 'ama-chickpea' the usual Zulu word for chickpeas?",
+   "before": [
+    "– Ukuphela kwesigaba sesibili.",
+    "Sama eduze nesitolo sikaHaaj Kazem. UGhassem wayehlala eqhweba uHaaj Kazem. Izandla zikaHaaj Kazem zazihlale zidlidliza. Nalapho siya kuye noMaman, zazidlidliza."
+   ]
+  },
+  {
+   "id": "04b/1263#8",
+   "where": "04b/1263",
+   "text": "– Vwoooo, Baba Baba, uzongithengela lo nodoli omkhulu?",
+   "q": "A toddler asks his dad for a doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, ndodana yami. Vuka. Vukela uMaman. Bekuyiphupho nje. Ungesabi, ngilapha.",
+    "…obumnyama kodwa esingakhanyisi okwanele ukungihola noma kuphi. Isibani esicwayizayo esandleni sentombazane engazange ngazi umbala womnyango wendlu yayo, engangingakwazi ukuwubeka ebhokisini lamapensela ombala. Intombazanyana iyeza igijima, ikhalisa, ime eduze kwami. Ibuka amathoyizi. Ithi:"
+   ]
+  }
+ ]
 }

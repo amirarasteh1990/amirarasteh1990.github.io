@@ -1,0 +1,174 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0132#1",
+   "where": "01/0132",
+   "text": "Заглядывай во все уголки. Старики говорили: суй нос в каждую щель.",
+   "q": "Maman quotes an old saying to urge her son to explore every corner of the villages. Does it sound encouraging, as she means it?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– М-хм, хорошо делаешь. Пока есть возможность — езди, смотри все деревни."
+   ]
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "Или, например, холяра. И она столько не убила.",
+   "q": "Maman says 'холяра' for cholera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#3",
+   "where": "01/0132",
+   "text": "Вот, например, тифоид — или туберкулёз, или корь.",
+   "q": "Maman says 'тифоид' for typhoid on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0148#4",
+   "where": "01/0148",
+   "text": "Что и улыбки?",
+   "q": "Maman catches only the end of the TV series title. Does her puzzled question read as mishearing it?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Ребята, скачать «Слёзы и улыбки», посмотрим сегодня вечером?",
+    "Маман поворачивает голову и говорит:"
+   ]
+  },
+  {
+   "id": "01/0182#5",
+   "where": "01/0182",
+   "text": "Каким таким «-ником» не был?",
+   "q": "Told her husband was no womanizer, Maman mocks the word ending '-ником'. Does her retort work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Бабником тоже не был.",
+    "Маман говорит:"
+   ]
+  },
+  {
+   "id": "03/0380#6",
+   "where": "03/0380",
+   "text": "Самая плохая болезнь — это Айцгеймер.",
+   "q": "Maman says 'Айцгеймер' for Alzheimer's on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Маман сказала:"
+   ]
+  },
+  {
+   "id": "06/0052#7",
+   "where": "06/0052",
+   "text": "В конце концов Махбуб позвонила, приехали на амбуласе и увезли Наней.",
+   "q": "Maman says 'амбуласе' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0362#8",
+   "where": "03/0362",
+   "text": "Махбуб, вот что они говорят в новостях — Амерока...",
+   "q": "Maman says 'Амерока' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…и прикрепил листок на стену рядом с остальными конкурными записями. Вышел из домика в конце двора и прошёл двор в девять шагов — радость от новой находки всё ещё светилась в сердце. Когда я вошёл со двора в гостиную, Маман лежала перед телевизором. Обе руки она положила на живот и говорила Махбубе:"
+   ]
+  },
+  {
+   "id": "03/0290#9",
+   "where": "03/0290",
+   "text": "Арасте — это подрезанное Араасте?",
+   "q": "A guard jokes that the surname Arasteh is 'Араасте' (Persian for neat) with one letter trimmed. Does the joke come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Господин Арасте.",
+    "Я поворачиваю голову к нему."
+   ]
+  },
+  {
+   "id": "03/0309#10",
+   "where": "03/0309",
+   "text": "Дай Бог, чтобы жизнь твоя всегда была араасте.",
+   "q": "The guard wishes him a neat, orderly life; 'араасте' is Persian for neat. Does it read as a friendly play on his name?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Охранник улыбается и говорит:"
+   ]
+  },
+  {
+   "id": "04b/0595#11",
+   "where": "04b/0595",
+   "text": "Но он всё просрал. Орлиный Глаз говорит «пиэр-ту-пиэр», а Элди — «пир-ту-пир».",
+   "q": "Amir misheard the computer term as 'пир' (Persian for elder, as in his nickname). Does Farid's punch line work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Прочтите-ка салават. Старец Таверны наконец-то что-то сказал.",
+    "Фарид сказал:"
+   ]
+  },
+  {
+   "id": "04b/0591#12",
+   "where": "04b/0591",
+   "text": "Пир ту пир?",
+   "q": "Amir mishears 'пиэр ту пиэр' as the Persian word pir, meaning elder. Does his question read as a funny mishearing?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Что-то вроде электронных денег пиэр ту пиэр.",
+    "Я сказал:"
+   ]
+  },
+  {
+   "id": "04b/0460#13",
+   "where": "04b/0460",
+   "text": "Опять что за хворь на тебя напала, что ты на нас колом встал, Ален Членон?",
+   "q": "Hooman again calls Eskandar 'Ален Членон', a rude pun on Alain Delon. Does the crude teasing work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/1320#14",
+   "where": "04b/1320",
+   "text": "И дрожащими руками я торопливо листал газели, выискивая тот бейт Хафеза, в глубину которого — как и в ту картину, по словам той другой девушки, — чем дальше погружаешься, тем сильнее говнокружение, — чтобы показать его Нилуфар.",
+   "q": "The narrator echoes a girl's crude made-up word 'говнокружение' (shit plus dizziness). Does it still work in his own sentence?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0616#15",
+   "where": "04b/0616",
+   "text": "Ладно, Орлиный Глаз, ладно. Только не суй ты свои очки в ноутбук.",
+   "q": "Farid teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "03/0278#16",
+   "where": "03/0278",
+   "text": "Можно в каком-то смысле сказать, что они захватили университет. Карруби — это любовь, честно и по совести.",
+   "q": "Farid gushes about a politician he admires, in student slang. Does this sound like natural youthful enthusiasm?",
+   "ctx": 0,
+   "kind": "joke"
+  }
+ ]
+}

@@ -1,50 +1,78 @@
 {
-  "lang": "ga",
-  "slug": "ga",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Mise, ón taobh seo, ag roiseadh snáithe na bhfocal, agus tusa, ón taobh eile, ag cruinniú na bhfocal chugat.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "04b/0377#2",
-      "where": "04b/0377",
-      "text": "Ar dtús theastaigh uaidh é a chur ina chomhad. Níor luigh sé isteach.",
-      "q": "Eskandar tries to fit the box in his closet. Is 'chomhad' the right word?"
-    },
-    {
-      "id": "04b/0418#3",
-      "where": "04b/0418",
-      "text": "Chaith buille an dorais Meysam i dtreo mo leaba féin agus leaba Bahman.",
-      "q": "Is it clear Meysam is thrown toward the one bunk bed Amir and Bahman share?"
-    },
-    {
-      "id": "04b/0690#4",
-      "where": "04b/0690",
-      "text": "Uaireanta smaoiním liom féin, as na mílte tarlú, dá bhféadfadh ceann amháin acu, ceann amháin, gan tarlú, ionas nach dtarlódh an rud eile.",
-      "q": "Is it clear: if just one thing hadn't happened, the end would never have come?"
-    },
-    {
-      "id": "04b/0955#5",
-      "where": "04b/0955",
-      "text": "– Sea, an cara cholceathrar mháistircheardaí ár ndeartháir céile céanna sin, an fear is saibhre i Tehran, dúirt sé lenár ndeartháir céile nach scannán maith é sin, go bhfuil tionchar millte ann.",
-      "q": "Is it clear this is that same friend, the richest man in Tehran?"
-    },
-    {
-      "id": "04b/1263#6",
-      "where": "04b/1263",
-      "text": "– Vúiiízzz, a Bhaba, a Bhaba, an gceannóidh tú an bábóg mhór seo domhsa?",
-      "q": "A little girl asks her dad for a doll. Does it sound like baby talk?"
-    },
-    {
-      "id": "04b/1312#7",
-      "where": "04b/1312",
-      "text": "Cuireann sé meadhrán ort. Dá mhéad a smaoiníonn tú air, is amhlaidh is mó an meadhrán a chuireann sé ort.",
-      "q": "She is meant to use a crude made-up word for dizzy. Does it work?"
-    }
-  ]
+ "lang": "ga",
+ "slug": "ga",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Mise, ón taobh seo, ag roiseadh snáithe na bhfocal, agus tusa, ón taobh eile, ag cruinniú na bhfocal chugat.",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Oscailt",
+    "…fiabhrasach imeachtaí an domhain murach gur scríobhadh síos anseo iad. Scríobhadh síos iad le go mbeidís ina ndroichead idir mo dhomhansa agus do dhomhansa. Droichead ó mo dhomhansa, sa nóiméad a bhfuil na habairtí seo á scríobh agam, go dtí do dhomhansa, sa nóiméad a suíonn tú síos lena léamh."
+   ]
+  },
+  {
+   "id": "04b/0377#2",
+   "where": "04b/0377",
+   "text": "Ar dtús theastaigh uaidh é a chur ina chomhad. Níor luigh sé isteach.",
+   "q": "Eskandar tries to fit the box in his closet. Is 'chomhad' the right word?",
+   "before": [
+    "…air, ag rá, ní fheadar, gur fisiceoir é a nia beag. Sin mar a chuaigh sé isteach san aoibh sin, an fhisic agus a leithéid. Murach sin, dúirt mé leis míle uair, téigh isteach san oideachas, bí i do mhúinteoir, agus tiocfaidh sruth beag airgid chugat. Níor ghlac sé leis. Níor ghlac ar chor ar bith.",
+    "…i lár an tseomra ar an gcairpéad. Sula ndeachaigh an solas as, bhailigh Hooman a chuid earraí agus chuaigh sé go seomra urnaí an bhrú mac léinn le bheith níos ullmhaithe don triail sa lá arna mhárach ar chiorcaid leictreacha. Nuair a d'imigh Hooman, bhí bosca na milseán i lámh Eskandar."
+   ]
+  },
+  {
+   "id": "04b/0418#3",
+   "where": "04b/0418",
+   "text": "Chaith buille an dorais Meysam i dtreo mo leaba féin agus leaba Bahman.",
+   "q": "Is it clear Meysam is thrown toward the one bunk bed Amir and Bahman share?",
+   "before": [
+    "– Salaam. Meysam is ainm dom. Dúirt oifigeach an bhrú liom teacht go seomra 403.",
+    "…an dorais leathoscailte, gan focal a rá. Buachaill beag caol le gruaig fhada scuabtha, súile móra, craiceann an-dorcha, agus ceann an-bheag a d'fhéachfadh beag fiú ar a chorp beag féin murach a chuid gruaige scuabtha. D'oscail an doras leathoscailte go hiomlán le buille láidir de chos Fharid."
+   ]
+  },
+  {
+   "id": "04b/0690#4",
+   "where": "04b/0690",
+   "text": "Uaireanta smaoiním liom féin, as na mílte tarlú, dá bhféadfadh ceann amháin acu, ceann amháin, gan tarlú, ionas nach dtarlódh an rud eile.",
+   "q": "Is it clear: if just one thing hadn't happened, the end would never have come?",
+   "before": [
+    "Cruthaíonn miongháire deireanach Fharid é féin os comhair mo shúl, agus brúnn boladh na fola atá ag lúbadh trí m'inchinn an íomhá sin siar. Osclaíonn glór Hooman a bhealach idir an miongháire agus an fhuil, agus sroicheann sé mo chluas.",
+    "– Bhí gach a rinne sé sin bás-tapaithe, an fear sin. Ní raibh faic faoi cosúil le duine cearta. Hí, cad é sin a fhios agam. Fiú fós, is minic a bhíonn m'aigne gafa aige."
+   ]
+  },
+  {
+   "id": "04b/0955#5",
+   "where": "04b/0955",
+   "text": "– Sea, an cara cholceathrar mháistircheardaí ár ndeartháir céile céanna sin, an fear is saibhre i Tehran, dúirt sé lenár ndeartháir céile nach scannán maith é sin, go bhfuil tionchar millte ann.",
+   "q": "Is it clear this is that same friend, the richest man in Tehran?",
+   "before": [
+    "– A pháistí, le tamall anuas táimid ag féachaint ar scannán i dteach ár ngaolta. Tatanic an t-ainm atá air. Tá an bhanaisteoir an-fheolmhar. Feoil den chéad scoth. An-te ar fad. Tá radharc ann ina luíonn an cailín nocht ar chathaoir, agus tarraingíonn an fear pictiúr di.",
+    "Dúirt Hamid:"
+   ]
+  },
+  {
+   "id": "04b/1263#6",
+   "where": "04b/1263",
+   "text": "– Vúiiízzz, a Bhaba, a Bhaba, an gceannóidh tú an bábóg mhór seo domhsa?",
+   "q": "A little girl asks her dad for a doll. Does it sound like baby talk?",
+   "before": [
+    "– A Amir, a Amir-jan, a mhic. Múscail. Múscail do Mhaman. Ní raibh ann ach brionglóid. Ná bíodh eagla ort, tá mise anseo.",
+    "…suaimhneach dorcha, ach nach raibh solas dóthanach aige chun mé a threorú. Lampa ag caochadh i lámh cailín nár thuig mé riamh cén áit i mbosca na bpeann luaidhe daite a d'oirfeadh dath dhoras a dtí. Tagann cailín beag ag rásaíocht agus seasann sí in aice liom. Féachann sí ar na bréagáin. Deir sí:"
+   ]
+  },
+  {
+   "id": "04b/1312#7",
+   "where": "04b/1312",
+   "text": "Cuireann sé meadhrán ort. Dá mhéad a smaoiníonn tú air, is amhlaidh is mó an meadhrán a chuireann sé ort.",
+   "q": "She is meant to use a crude made-up word for dizzy. Does it work?",
+   "before": [
+    "…phéinteáil agus deisiúcháin an tsamhraidh d'fhoirgneamh Abu-Reyhan. Le buillí mo chroí, shiúil mé ar aghaidh. Niloofar a bhí ann – Niloofar féin. Bhí sí ina seasamh os comhair na hollscoile ealaíne, in aice le cúpla cailín eile. Bhí duine acu ag taispeáint páipéir do na daoine eile agus í ag rá:",
+    "– ... féachaigí air, tá sé i ndáiríre ag baint na céille as duine. Tharraing sé é seo agus scríobh sé faoi: ní píopa é seo."
+   ]
+  }
+ ]
 }

@@ -1,0 +1,185 @@
+{
+ "lang": "ar",
+ "slug": "ar",
+ "dir": "rtl",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "04b/0271#1",
+   "where": "04b/0271",
+   "text": "قالت: – حسناً حسناً، لا تنذر الصمت من جديد.",
+   "q": "Niloofar teases Amir, who has gone silent again. Does this teasing sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…الناس الطموحين. ثنت ساقاً على ساق. ضحكت وقالت: – وإن كان إسكندر هذا الذي عندكم شخصيةً مثيرةً للاهتمام هو الآخر. أرادت أن أحدّثها عن اكتشافات إسكندر الجديدة. حدّثتُها. قالت: – إنه مضحكٌ جداً. ضحكتُ حتى شعرتُ بتحسُّن. لكن قل لي — ألستَ واقعاً في حبّ أمثال الإسكندر المقدوني وما شابه؟ لم أقل شيئاً."
+   ]
+  },
+  {
+   "id": "04b/0997#2",
+   "where": "04b/0997",
+   "text": "– حسناً أيّ خراءٍ كان.",
+   "q": "Eskandar gives up an argument, as if saying 'whatever the fuck'. Does this sound like natural crude talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "وهكذا كانا يُكرّران ذهاباً وإياباً، وفي كل ذهابٍ وإياب كانت التكرارات تتسارع. حتى قال إسكندر:"
+   ]
+  },
+  {
+   "id": "04b/0536#3",
+   "where": "04b/0536",
+   "text": "– بههه. هممم، لا بد أن الدول كانت قريبة بعضها من بعض. متى كان زلزال بم؟",
+   "q": "Maman hears about a tsunami on the news and reacts. Does this sound like a simple mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "قالت مامان:"
+   ]
+  },
+  {
+   "id": "01/0140#4",
+   "where": "01/0140",
+   "text": "– إذن تخيّل ما الذي يعانيه بابا المسكين — جالسًا فارغًا في البيت طوال هذه السنوات.",
+   "q": "Ghassem jokes, holding back laughter, about their idle father. Does this sound like a grown son joking?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "يقول قاسم بلهجة يُحسّ فيها الضحك المكتوم:"
+   ]
+  },
+  {
+   "id": "04b/0146#5",
+   "where": "04b/0146",
+   "text": "– يا خَرائيّ الدماغ. تجعلني أُفصّل لك كل شيء. أقول لك: أسمعتَ بها فقط؟ ألم تتلقَّ ضربتها أنت أيضاً؟",
+   "q": "Hooman calls a roommate 'shit-for-brains' for missing his point. Does this sound like crude dorm talk?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– سمعتَ؟",
+    "– نعم حسناً، انتشر الخبر في الجامعة."
+   ]
+  },
+  {
+   "id": "04a/0064#6",
+   "where": "04a/0064",
+   "text": "– الجانب الأيسر خطر. البيت ذو الباب الأحمر لرجل عجوز شديد الغضب. أشد غضباً حتى من بابا.",
+   "q": "A young boy warns his little brothers about a scary house. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "ثم كان يُريني ذلك البيت الذي له باب أحمر كبير. كان يقول:"
+   ]
+  },
+  {
+   "id": "04b/0317#7",
+   "where": "04b/0317",
+   "text": "– كم يُثير غيظي أن تجلس صامتاً هكذا. تتمنّى نفسي أن ألكمك.",
+   "q": "Niloofar, a young woman, is annoyed that Amir just sits in silence. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…وقالت بهدوء شديد، كأنما تبوح بوجعها: – أعني أن الله، بكل ألوهيته، حين رأى أن الملاك لا يعرف شيئاً عن الحبّ وملاعبات العشق، حمل تجلّيات جماله إلى آدم. فكيف تتوقع من مخلوقه أن يحترق عشقاً بمن لا يعرف ألف باء الحب؟ تنهّدت، فتصاعد بخار نَفَسها نحو السماء ملتفاً متلوّياً، وأنا أنظر إليها بلا كلمة."
+   ]
+  },
+  {
+   "id": "03/0586#8",
+   "where": "03/0586",
+   "text": "– من يريد أن ينفث خراءً فلسفياً فليأخذه إلى المطبخ. المصباح هناك أشد سطوعاً أيضاً؛ لعل الضوء يدخل أدمغتكم.",
+   "q": "Hooman tells two friends to take their philosophical nonsense to the kitchen, where brighter light might help their brains. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "كان إسكندر وميثم قد شرعا في تحليل كون ما جرى في قسم الهندسة الميكانيكية نموذجاً دالاً على الكل. ربطاه بعالم اليوم التنافسي الاستهلاكي وبكلام من هذا القبيل. طال نقاشهما. أطفأ هومن الضوء وقال:"
+   ]
+  },
+  {
+   "id": "01/0216#9",
+   "where": "01/0216",
+   "text": "– أكيد، بابا-جاننا يتضوّر جوعًا إلى الاحترام.",
+   "q": "Ghassem mocks their father's craving for respect. Does this sarcastic line sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "يقول قاسم:"
+   ]
+  },
+  {
+   "id": "04b/0271#10",
+   "where": "04b/0271",
+   "text": "قرأتُ: – ليس كلُّ من يُحمِّر وجهَه يُحسن فنَّ سرقةِ القلوب؛ وليس كلُّ من يصنع مرآةً يُحسن صنعةَ الإسكندر.",
+   "q": "Amir reads a line by the classical poet Hafez. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…هذا نوع ما تقع في حبّه، فاذهب إلى أيّ فتاةٍ في الشارع — لن تعبس في وجهك فحسب، بل سترميك أيضاً بشتيمتين. فتحتُ الكتاب. أطلقت أنفاسها من صدرها وقالت: – ها هو يريد أن يقرأ شعراً من جديد. حقاً لا أصدّق — كتابٌ بهذا الصِّغَر، ومهما حدث تجد فيه شيئاً يناسبه. لم أقل شيئاً. – طيّب طيّب، لا تُغاضِب، اقرأ."
+   ]
+  },
+  {
+   "id": "04b/0899#11",
+   "where": "04b/0899",
+   "text": "– يا أكّال رؤوس الزبّ، لماذا تقول هُراءً وبلاءً؟",
+   "q": "Hooman crudely insults a friend for talking nonsense. Does this sound like how young men swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "قال هومن:"
+   ]
+  },
+  {
+   "id": "01/0077#12",
+   "where": "01/0077",
+   "text": "– الثواب؟ الثواب حين يفرح الناس برؤية بعضهم، لا حين يُغيظ بعضهم بعضًا.",
+   "q": "Maman, a small-town mother, answers her son sharply. Does this sound like her everyday speech?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "تدير مامان رأسها نحو صوت أميد وتقول:"
+   ]
+  },
+  {
+   "id": "03/0517#13",
+   "where": "03/0517",
+   "text": "– فريد الفهد لا يعرف موقفه مع نفسه.",
+   "q": "Hooman teases Farid for not knowing his own mind. Does this sound like natural dorm teasing?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "قال هومن:"
+   ]
+  },
+  {
+   "id": "04b/0209#14",
+   "where": "04b/0209",
+   "text": "– بوف، لكن تباً لك، جمعتَ أغراضك وذهبتَ إلى هناك، والآن تجلس لتضحك على لِحانا وزبوبنا. بينما تأكلون شريحة لحم وِل‌دان مع الشمبانيا، تضحكون علينا ونحن نأكل حساء إشكنه مع الـدوغ.",
+   "q": "Hooman, laughing, says Amir abroad now mocks his poor friends back home, with crude words. Does this crude teasing sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "ويصبّ الضحك فوق الضحك."
+   ]
+  },
+  {
+   "id": "04a/0036#15",
+   "where": "04a/0036",
+   "text": "– حسناً، ضعي أقل. لكن ليس أقل بكثير. أقل بقليل.",
+   "q": "A small boy bargains with his mother about salt on his plums. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "قلت أنا:"
+   ]
+  },
+  {
+   "id": "03/0514#16",
+   "where": "03/0514",
+   "text": "– قتلوا القذافي. موضوعياً، تعال شاهد الفيلم.",
+   "q": "Sajad calls his friends over to watch an online news clip. Does 'الفيلم' sound natural for that clip?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "قال سجاد:"
+   ]
+  }
+ ]
+}

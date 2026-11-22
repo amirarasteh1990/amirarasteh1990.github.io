@@ -1,0 +1,183 @@
+{
+ "lang": "lv",
+ "slug": "lv",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0360#1",
+   "where": "04b/0360",
+   "text": "– Šie nāvējoši bīstamie gājieni ir gluži tev raksturīgi, bet mani patiešām interesē, kurš nelietis bija atvēris savu veikalu piektdienas rītā sešos, lai tu varētu aiziet un nopirkt no viņa kameru.",
+   "q": "Hooman wonders crudely who opened a shop at dawn on a Friday. Does this sound like spoken talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman, apskatīdams kameras kasti, teica:"
+   ]
+  },
+  {
+   "id": "04b/0421#2",
+   "where": "04b/0421",
+   "text": "– Leopard Farid, savaldi nervus un neizdari nāvējoši bīstamu gājienu.",
+   "q": "Hooman jokingly tells Farid to keep calm and not do anything rash. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "03/0504#3",
+   "where": "03/0504",
+   "text": "– Ei, Leopard Farid, atnes to klēpjdatoru šurp, lai arī es redzu. Man negribas celties.",
+   "q": "Lazy Hooman calls his roommate by the nickname 'Leopard Farid'. Does that work as a nickname?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman teica:"
+   ]
+  },
+  {
+   "id": "03/0624#4",
+   "where": "03/0624",
+   "text": "– Lieliski, Kroga Vecākais. Tas ir tieši piemērots Arasteh.",
+   "q": "Friends nickname Amir 'Kroga Vecākais' (Elder of the Tavern), an image from Hafez. Does it work as a nickname?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Es esmu Kroga Vecākā kalps, kura žēlastība ...",
+    "Farid teica:"
+   ]
+  },
+  {
+   "id": "03/0630#5",
+   "where": "03/0630",
+   "text": "– Viņš ir Kroģis, patiesi un godīgi.",
+   "q": "Farid shortens the nickname to 'Kroģis' and approves it warmly. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid teica:"
+   ]
+  },
+  {
+   "id": "03/0628#6",
+   "where": "03/0628",
+   "text": "– Haha, Kroga Vecākais, Vecais, lieliski. Trāpīji desmitniekā, Leopard Farid.",
+   "q": "Hooman shortens the nickname Elder of the Tavern to 'Vecais'. Does that work as a joke?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman ar pildspalvu kaut ko rakstīja grāmatā un teica:"
+   ]
+  },
+  {
+   "id": "04b/1314#7",
+   "where": "04b/1314",
+   "text": "– Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot.",
+   "q": "A shy student confesses his love to a classmate, addressing her politely. Does that sound right here?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Es aizgāju līdz Valiasr ielas ietves tālākajai malai un nostājos gaidīt zem platāna, vērodams, kad Niloofar atdalīsies no pārējām, lai es varētu pieiet un viņai aci pret aci pateikt, ka es viņu mīlu."
+   ]
+  },
+  {
+   "id": "04b/0784#8",
+   "where": "04b/0784",
+   "text": "– Tu esi tāds sneaky.",
+   "q": "Niloofar, a Tehran student, teases him using the English word 'sneaky'. Does that sound natural from her?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Atkal saki \"es zinu\". Kā tieši?",
+    "– Šodien fakultātes vidū tu runāji ar dažām citām meitenēm. Es dzirdēju."
+   ]
+  },
+  {
+   "id": "03/0055#9",
+   "where": "03/0055",
+   "text": "– Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.",
+   "q": "Hamid answers in the rhythm he uses for his poems. Does it sound rhythmic, a bit like verse?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hamid teica, tajā pašā ritmā, kādā deklamēja savus dzejoļus:"
+   ]
+  },
+  {
+   "id": "04b/0935#10",
+   "where": "04b/0935",
+   "text": "– To ar \"Attar saldāk raudāt līdz rītausmai\" vai to ar \"tagad viņš ir vēl jo nokauts\"?",
+   "q": "Someone asks which song he means, quoting two lines of a classical poem by Attar. Do they read naturally?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "– Manam telefonam nav vietas.",
+    "– Vai gribi, lai es nosūtu vienu celiņu?",
+    "– Jā, to pašu, kas ar Attar pantu."
+   ]
+  },
+  {
+   "id": "04b/1392#11",
+   "where": "04b/1392",
+   "text": "Manu sapņu gaisma tagad mirkšķina",
+   "q": "In a love poem, the light of his dreams now flickers. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Manu sapņu gaisma ieslēdzās",
+    "Tagad tevis vairs nav"
+   ]
+  },
+  {
+   "id": "02/0001#12",
+   "where": "02/0001",
+   "text": "Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.",
+   "q": "The narrator feels sure of what tomorrow brings. Does 'Mana sirds ir gaiša' read naturally here?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04a/0001#13",
+   "where": "04a/0001",
+   "text": "Skatījos caur caurumu aizkara vidū. Maman piepildījās ar gaismu.",
+   "q": "A small boy watches his mother through a hole in a curtain. Does it sound like a small child telling it?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0062#14",
+   "where": "04a/0062",
+   "text": "– Daudzi šeit cieš neveiksmi. Viņi iet pa kreisi.",
+   "q": "A ten-year-old says many people go wrong here by turning left. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Šo daļu es nekad neapguvu. Viņš vienmēr teica vissvarīgākais... kaut kas... uzdevumā. Tad viņš vienmēr teica:"
+   ]
+  },
+  {
+   "id": "01/0178#15",
+   "where": "01/0178",
+   "text": "– Kaut viņš būtu kļuvis atkarīgs un nebūtu bijis tāds.",
+   "q": "Maman, a mother from a small town, says this about her husband. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman saka:"
+   ]
+  },
+  {
+   "id": "04b/0562#16",
+   "where": "04b/0562",
+   "text": "– Ērgļacis, lai Dievs tev nepiedod, tu man sadragāji muguru. Kāpēc tu nevalkā brilles?",
+   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar ar balsi, kas liecināja, ka viņš tik tikko spēj ievilkt elpu, teica:"
+   ]
+  }
+ ]
+}

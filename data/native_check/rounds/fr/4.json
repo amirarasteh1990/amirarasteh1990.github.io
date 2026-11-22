@@ -1,0 +1,168 @@
+{
+ "lang": "fr",
+ "slug": "fr",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0181#1",
+   "where": "04b/0181",
+   "text": "Bouffe la tête de ma bite, vieux, tu nous tapes sur les nerfs.",
+   "q": "Hooman tells off a roommate with a crude insult. Does this sound like something young men in a dorm would say?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman releva son pouce et dit :"
+   ]
+  },
+  {
+   "id": "04b/0899#2",
+   "where": "04b/0899",
+   "text": "Bouffeur de têtes de bite, pourquoi tu racontes n'importe quoi ?",
+   "q": "Hooman insults a friend with a crude made-up word. Does it sound like a real insult young men would use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "03/0373#3",
+   "where": "03/0373",
+   "text": "Je dis, cette chose que l'Améroque a confirmée, que l'Iran a arrêté le nucléaire.",
+   "q": "Grandpa, an old man, asks his son about the news. Does the way he opens his question sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Quoi ?"
+   ]
+  },
+  {
+   "id": "03/0189#4",
+   "where": "03/0189",
+   "text": "Pfff, âne bâté, qui s'y connaît mieux, l'ami du cousin du maître artisan de notre beau-frère, l'homme le plus riche de Téhéran, ou toi, veau ?",
+   "q": "Hamid, a boy, angrily calls his friend a donkey and a calf, meaning a fool. Do these insults work?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Le sang de Hamid se mit à bouillir et il cria :"
+   ]
+  },
+  {
+   "id": "03/0189#5",
+   "where": "03/0189",
+   "text": "Vas-y, vas t'en acheter une.",
+   "q": "Hamid, annoyed, tells his friend to go ahead and buy one. Does this read correctly?",
+   "ctx": 0,
+   "kind": "banter"
+  },
+  {
+   "id": "01/0178#6",
+   "where": "01/0178",
+   "text": "J'aurais préféré qu'il le soit, et qu'il ne soit pas comme ça.",
+   "q": "Omid says his father is no addict; Maman says she would rather he were. Does her bitter reply sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Il n'est pas toxicomane. Honnêtement, le fait qu'il ne soit pas devenu accro au front, sous les bombes et les obus, c'est pas rien.",
+    "Maman dit :"
+   ]
+  },
+  {
+   "id": "04b/0389#7",
+   "where": "04b/0389",
+   "text": "Tu n'aurais même pas pu bouffer la tête de ma bite. Mais quelles pâtisseries, quand même.",
+   "q": "Hooman brushes off Eskandar's threat crudely, then admits the stolen sweets were good. Does this sound natural?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Cette nuit, je t'entendais ruminer. Malheureusement, mon Baba dormait ; sinon je me serais levé pour t'arracher de la gorge chaque pâtisserie, une par une.",
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "04b/0440#8",
+   "where": "04b/0440",
+   "text": "Après cette histoire de localisation, n'importe quelle bite qui nous tombe dessus, ça ne m'étonnera plus.",
+   "q": "Hooman says, crudely, that no awful roommate could surprise him anymore. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bahman dit que ce n'était pas un problème. Eskandar avait passé la main sous mon lit pour en tirer le livre, tandis que Meysam, à genoux, installait son couchage sous le portemanteau. En les regardant, Hooman dit :"
+   ]
+  },
+  {
+   "id": "04b/0209#9",
+   "where": "04b/0209",
+   "text": "Pfff, mais toi, enfoiré, tu as plié bagage et tu es parti là-bas, et maintenant tu es là à rire de notre barbe et de notre bite.",
+   "q": "Hooman teases Amir, who moved abroad, for laughing at the friends left behind. Does this crude line sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Et il déverse rire sur rire."
+   ]
+  },
+  {
+   "id": "04b/0822#10",
+   "where": "04b/0822",
+   "text": "Je veux dire que tout aurait été radicalement différent, et tu ne traînerais pas dans les rues comme ça, la bite à la main.",
+   "q": "Hooman crudely says Amir now wanders the streets aimless and lost. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0351#11",
+   "where": "04b/0351",
+   "text": "Qu'est-ce que ça a ajouté à la longueur de ma bite, d'être major de promo et, je ne sais pas, d'avoir un deuxième diplôme, alors que maintenant mon boulot c'est d'aller inspecter des postes électriques ?",
+   "q": "Hooman, bitter, says being top of the class did him no good at all. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0351#12",
+   "where": "04b/0351",
+   "text": "Je chie sur ces jours-là et sur notre façon de penser.",
+   "q": "Hooman, bitter about his student years, swears he despises them now. Does this sound like natural swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Comment ça, le bon temps, docteur ?"
+   ]
+  },
+  {
+   "id": "04b/0146#13",
+   "where": "04b/0146",
+   "text": "Cervelle de merde. Tu me fais ouvrir la bouche et le dire.",
+   "q": "Hooman insults a roommate who forces him to spell out an embarrassing point. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ouais, enfin, la nouvelle a fait le tour de l'université."
+   ]
+  },
+  {
+   "id": "03/0663#14",
+   "where": "03/0663",
+   "text": "Sous prétexte de vouloir garder les enfants près de leur famille, ils nous ont foutu le bâton dans le cul, nous les gosses de province.",
+   "q": "Hooman says, crudely, that the admissions policy hurt every student from the provinces. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/1314#15",
+   "where": "04b/1314",
+   "text": "Cela fait trente-deux mois que je vous aime. De loin.",
+   "q": "Amir, shy and very formal, finally confesses his love to a fellow student. Does the way he addresses her suit the moment?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "04b/1314#16",
+   "where": "04b/1314",
+   "text": "Mais cela est, et je vous aime vraiment.",
+   "q": "Amir ends his shy, formal confession by insisting his love is real. Does this sound natural?",
+   "ctx": 0,
+   "kind": "dialogue"
+  }
+ ]
+}

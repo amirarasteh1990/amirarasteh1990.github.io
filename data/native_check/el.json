@@ -2,97 +2,140 @@
  "lang": "el",
  "slug": "el",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Αυτό είναι το ελεύθερο άκρο ενός νήματος λέξεων που κάποτε ήταν ήχοι.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#2",
    "where": "Opening/0007",
    "text": "Τώρα ξετυλίγω το νήμα των λέξεων, κι εσύ πάρε τες και φέρ' τες στον κόσμο σου, για να μη συσσωρευτούν εδώ, στον δικό μου κόσμο.",
-   "q": "The reader takes the words away. Does 'πάρε τες και φέρ' τες' sound natural?"
+   "q": "The reader takes the words away. Does 'πάρε τες και φέρ' τες' sound natural?",
+   "ctx": 1,
+   "before": [
+    "…το νήμα από τα παλιά ρούχα, κι εμείς παίρναμε την άκρη του και τριγυρνούσαμε μέσα στο σπίτι για να μη μαζευτεί το νήμα σωρός. Μπορεί η γενιά σου να ήρθε λίγα χρόνια μετά από εκείνον τον κόσμο του νήματος, αλλά φαντάσου ότι μια φορά κι έναν καιρό, σε κάποια γωνιά του κόσμου, έτσι έπαιζαν τα παιδιά."
+   ]
   },
   {
-   "id": "02/0005#3",
-   "where": "02/0005",
-   "text": "Το φως των ονείρων μου ... το φως των ονείρων μου άναβε ... το φως των ονείρων μου άναψε",
-   "q": "This line restarts twice. Does the middle attempt sound broken off, unfinished?"
-  },
-  {
-   "id": "04b/0391#4",
-   "where": "04b/0391",
-   "text": "– ... ο βλάκας αυτός υπέφερε από οξεία παραφροσύνη.",
-   "q": "Students mock a roommate's self-importance. Does 'οξεία παραφροσύνη' fit here?"
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "Σε ζαλίζει. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ ζαλίζεσαι.",
-   "q": "Is it clear this girl is swearing crudely about feeling dizzy?"
-  },
-  {
-   "id": "01/0203#6",
+   "id": "01/0203#3",
    "where": "01/0203",
    "text": "Τότε που ήταν η εποχή του κονκούρ, το κοχτ-κοχτ του δεν σας άφηνε να διαβάζετε ήσυχοι, μπα ...",
-   "q": "Maman runs out of breath and her words fade. Does 'μπα' fit here?"
+   "q": "Maman complains about Baba's cough, then runs out of breath. Does 'μπα' fit as her words fade?",
+   "ctx": 1,
+   "before": [
+    "…να μην είχε σκίσει τα χαρτιά του ανάπηρου βετεράνου; Εμένα άσε με· τι αμάρτια έκαναν αυτά τα παιδιά που πρέπει να ανέχονται τους καβγάδες σου, να ακούνε το κοχτ-κοχτ σου μέρα νύχτα, να χαλάνε τα νεύρα τους, και να μη βγάζουν καμία ωφέλεια από το ότι είσαι ανάπηρος βετεράνος, τουλάχιστον;"
+   ]
   },
   {
-   "id": "03/0191#7",
+   "id": "02/0005#4",
+   "where": "02/0005",
+   "text": "Το φως των ονείρων μου ... το φως των ονείρων μου άναβε ... το φως των ονείρων μου άναψε",
+   "q": "In this poem, the line restarts twice before it is complete. Does the middle attempt sound broken off?",
+   "ctx": 3,
+   "before": [
+    "Τα όνειρά μου ήταν σκοτεινά",
+    "Δεν έβλεπα τίποτα",
+    "Ήρθες"
+   ]
+  },
+  {
+   "id": "03/0191#5",
    "where": "03/0191",
    "text": "Χαμίντ Γάτα, χθες ακόμα έλεγες «χαρ». Τώρα είσαι πολιτισμένος και λες «γαϊδούρι»;",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "q": "'χαρ' is a crude Persian word for donkey. Does Taghi's teasing of Hamid come through?",
+   "ctx": 2,
+   "before": [
+    "– Πφφ, γαϊδούρι, ποιος ξέρει καλύτερα — ο φίλος του ξαδέλφου του μάστορα του γαμπρού μας, που είναι ο πλουσιότερος άνθρωπος στην Τεχεράνη, ή εσύ, μοσχαράκι; Εντάξει, πήγαινε και αγόρασε. Αν σπάσει το γυαλί του, μην πεις ότι δεν σε προειδοποίησα.",
+    "Ο Ταγκί είπε:"
+   ]
   },
   {
-   "id": "03/0290#8",
+   "id": "03/0290#6",
    "where": "03/0290",
    "text": "– Ο Αραστέ είναι απλώς araasteh, κομμένος;",
-   "q": "A guard puns on Arasteh and a Persian word for neat. Does it work?"
+   "q": "The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Is that clear?",
+   "ctx": 2,
+   "before": [
+    "– Κύριε Αραστέ.",
+    "Γυρίζω το κεφάλι προς αυτόν."
+   ]
   },
   {
-   "id": "03/0560#9",
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.",
+   "q": "'Αλέν Πουτσόν' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0560#8",
    "where": "03/0560",
    "text": "– Πείτε στη μάνα σας τα πάντα.",
-   "q": "Maman says this to one boy, Omid. Does this wording fit?"
+   "q": "Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?",
+   "ctx": 1,
+   "before": [
+    "…αμπελώνες πίσω από το πήλινο γιαχτσάλ απέναντι από το παλιό νεκροταφείο. Η Μαχμπουμπέ και η Μαριάμ έδεσαν κόμπους στα σαμπζέ, και μόλις σκοτείνιασε γυρίσαμε. Το βράδυ η Μαμάν ήταν ξαπλωμένη στη μέση του καθιστικού πάνω στο χαλί και κοιτούσε τα βραχιόλια της. Σαν να μιλούσε σε μένα, είπε στον Ομίντ:"
+   ]
   },
   {
-   "id": "04a/0076#10",
+   "id": "04a/0076#9",
    "where": "04a/0076",
    "text": "– Είναι μάρμαρο. Μάρμαρο σημαίνει πολύ ακριβό.",
-   "q": "A child mispronounces marble and thinks it means expensive. Does that come through?"
+   "q": "The little boy is meant to mangle the word marble and naively think it means expensive. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "Πηγαίναμε πάλι. Στα μισά του δρόμου ήταν ένα σπίτι. Ο τοίχος του ήταν όμορφος. Ο Γκάσεμ έλεγε:"
+   ]
+  },
+  {
+   "id": "04b/0391#10",
+   "where": "04b/0391",
+   "text": "– ... ο βλάκας αυτός υπέφερε από οξεία παραφροσύνη.",
+   "q": "Students mock a roommate's delusions of grandeur. Does 'οξεία παραφροσύνη' say that?",
+   "ctx": 0
   },
   {
    "id": "04b/0460#11",
    "where": "04b/0460",
-   "text": "– Τι σ' έπιασε πάλι και μας καβάλησες, Αλάτ Ντελόν;",
-   "q": "Alat Delon is a crude nickname. Does this line keep the crude joke going?"
+   "text": "– Τι σ' έπιασε πάλι και μας καβάλησες, Αλέν Πουτσόν;",
+   "q": "A roommate is mocked with a rude nickname built on Alain Delon. Does this retort sound crude and mocking?",
+   "ctx": 2,
+   "before": [
+    "– Καλό πράγμα η αντίληψη. Σας λέω πως είστε αγελάδες και πρόβατα, και θίγεστε.",
+    "Ο Χουμάν είπε:"
+   ]
   },
   {
-   "id": "04b/0595#12",
-   "where": "04b/0595",
-   "text": "Ο Αετομάτης λέει «ομότιμο προς ομότιμο»· ο Ταβερνί λέει «Γέρο προς Γέρο».",
-   "q": "Taverny misheard the technical term as old man to old man. Does the joke work?"
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "Σε ζαλίζει. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ ζαλίζεσαι.",
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα."
+   ]
   },
   {
-   "id": "04b/1320#13",
-   "where": "04b/1320",
-   "text": "Και με τρεμάμενα χέρια ξεφύλλιζα γρήγορα γρήγορα τα γαζέλ για να βρω ένα μπέιτ του Χαφέζ που, όπως είχε πει εκείνο το άλλο κορίτσι, όσο πιο βαθιά βυθιζόμασταν σ' αυτό τόσο πιο πολύ ζαλιζόμασταν, για να το δείξω στη Νιλούφαρ.",
-   "q": "He recalls a girl's crude phrase for mind-bending confusion. Does that come through?"
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.»",
+   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
    "id": "04b/1321#14",
    "where": "04b/1321",
-   "text": "Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.»",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
-  },
-  {
-   "id": "04b/1321#15",
-   "where": "04b/1321",
    "text": "Σαν εκείνο — όσο πιο πολύ σκέφτεσαι αυτές τις δέκα λέξεις, τόσο πιο πολύ ζα... τέλος πάντων, ζαλίζεσαι.",
-   "q": "He starts a crude word, stops, and says a polite one. Does that come through?"
+   "q": "He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– Αυτό είναι. Άκου αυτό. Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.» Αυτό είναι το ίδιο. Είναι σαν εκείνη τη ζωγραφιά που σου έδειχνε η φί-φίλη σου."
+   ]
   }
  ]
 }

@@ -1,0 +1,182 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r6",
+ "items": [
+  {
+   "id": "04b/0717#1",
+   "where": "04b/0717",
+   "text": "Я тебе говорю, Элди-джан, но между нами — ты по какой-то ебаной случайности оказался за границей.",
+   "q": "Hooman tells his friend he only got abroad by a crude stroke of luck. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман говорит:"
+   ]
+  },
+  {
+   "id": "04b/0360#2",
+   "where": "04b/0360",
+   "text": "Эти твои убийственные выходки — это вполне в твоём духе, но меня по-настоящему занимает, какой это мудак открыл свою лавку в шесть утра в пятницу, чтобы ты пошёл и купил у него камеру.",
+   "q": "Hooman teases Farid for buying a camera at dawn on a Friday. Does this sound like dorm banter?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман, разглядывая коробку от камеры, сказал:"
+   ]
+  },
+  {
+   "id": "04b/0353#3",
+   "where": "04b/0353",
+   "text": "А в том сраном положении какие ещё раритеты нам достались? Муха и тот, другой, жалкий фантазёр.",
+   "q": "Hooman crudely remembers two odd roommates they got stuck with. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Он залпом допивает свой чай и вытирает рот тыльной стороной ладони."
+   ]
+  },
+  {
+   "id": "03/0392#4",
+   "where": "03/0392",
+   "text": "Если тебе похуй на мир и на всё в нём, почему ты так помешан на тестах и экзаменах?",
+   "q": "Eskandar crudely needles a roommate. Does this sound like how young men in a dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Я лёг на бок на кровати; в поле зрения оказались Хуман и Эскандар, хотя я не собирался за ними наблюдать. Около часа Эскандар бормотал что-то себе под нос, а потом повернулся к Хуману и сказал:"
+   ]
+  },
+  {
+   "id": "03/0396#5",
+   "where": "03/0396",
+   "text": "Ответ такой: лизать жопу мастеру Хуману тебе не идёт.",
+   "q": "Hooman crudely tells Eskandar to stop sucking up to him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Эскандар не отступал. Он говорил, что надо докопаться до корня, и был уверен: если найти ответ на этот вопрос, это очень поможет Хуману и всему человечеству. Хуман сказал:"
+   ]
+  },
+  {
+   "id": "03/0418#6",
+   "where": "03/0418",
+   "text": "Какая разница? Если Маккейн придёт — Ирану пиздец, объективно.",
+   "q": "Sajad, who says 'объективно' all the time, swears about the US election. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Орлиный Глаз, не нервничай так, а то молоко пропадёт. Обама победит или другой — какая нам с тобой разница?"
+   ]
+  },
+  {
+   "id": "03/0398#7",
+   "where": "03/0398",
+   "text": "Мудак. Объективно, доллар вот-вот станет 1500 туманов, а ты прицепился к этому бедолаге?",
+   "q": "Sajad snaps at a roommate who keeps pestering someone. Does this sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Саджад закрыл ноутбук и закричал:"
+   ]
+  },
+  {
+   "id": "03/0390#8",
+   "where": "03/0390",
+   "text": "Говорю тебе, не вижу, мудак.",
+   "q": "Short-sighted Sajad swears at a friend who is showing him a video. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Конец. Посмотри на конец. Смотри, с какой скоростью убегает. Разнёс дом паука в клочья. Не зря я назвал его «Документальный фильм о таракане, разрушившем дом паука»."
+   ]
+  },
+  {
+   "id": "04b/0567#9",
+   "where": "04b/0567",
+   "text": "Я ходил умываться. Не могу же я умываться прямо в очках, мудак.",
+   "q": "Sajad, who keeps losing his glasses, snaps at a friend. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Орлиный Глаз, Орлиный Глаз, чтоб тебе не ..."
+   ]
+  },
+  {
+   "id": "04b/1017#10",
+   "where": "04b/1017",
+   "text": "Я очки свои ищу, мудак. Скажи тому Фариду, чтоб не оставлял свой стакан вечно у меня под ногами.",
+   "q": "Sajad gripes while hunting for his glasses. Does this sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Саджад сказал:"
+   ]
+  },
+  {
+   "id": "03/0586#11",
+   "where": "03/0586",
+   "text": "Кто хочет нести философскую херню — может идти на кухню. Там лампочка поярче, мозги просветлеют.",
+   "q": "Hooman turns off the light on two friends who are philosophizing. Does his crude joke sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Эскандар и Мейсам принялись анализировать случившееся на факультете машиностроения как горсть, по которой видна вся поклажа. Они связали это с конкурентным и потребительским миром нынешнего времени и тому подобным. Их разговор затянулся. Хуман выключил свет и сказал:"
+   ]
+  },
+  {
+   "id": "03/0657#12",
+   "where": "03/0657",
+   "text": "Завод по производству херни.",
+   "q": "Hooman sneers that their university is a factory turning out rubbish. Does this crude punch line sound natural?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– Да, у нас у всех свои заводы.",
+    "Эскандар поднял голову с ковра и уставился на Хумана с широко раскрытыми глазами. Хуман продолжил:"
+   ]
+  },
+  {
+   "id": "03/0521#13",
+   "where": "03/0521",
+   "text": "Тьфу, ну что опять за сраная поза мыслителя?",
+   "q": "Hooman mocks a roommate striking a thinker's pose. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Некоторое время никто не говорил. Затем Хуман сказал:"
+   ]
+  },
+  {
+   "id": "03/0612#14",
+   "where": "03/0612",
+   "text": "Ты, никчёмный козёл... ууууф... идёшь, голову повесив... уууф... куда несёшься так быстро...",
+   "q": "A heavy friend, out of breath, scolds Amir for rushing off. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Кто-то тянет меня назад за левое плечо. Это Хуман. Он тяжело дышит."
+   ]
+  },
+  {
+   "id": "03/0638#15",
+   "where": "03/0638",
+   "text": "Чёрт тебя возьми, сто семьдесят метров тащил меня с такой тушей за собой.",
+   "q": "Hooman, a heavy man, grumbles about chasing his friend down the street. Does this sound like friendly rough talk?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0150#16",
+   "where": "04b/0150",
+   "text": "Если дело в возрасте, то тебе следовало бы лизать яйца Бахману.",
+   "q": "Hooman crudely mocks Eskandar for insisting on respect for age. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман ткнул в Эскандара своим толстым круглым большим пальцем и сказал:"
+   ]
+  }
+ ]
+}

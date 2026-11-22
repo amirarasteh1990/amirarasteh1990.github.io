@@ -32,7 +32,7 @@
   var LANG = form.getAttribute('data-lang');
   var LANGUAGE = form.getAttribute('data-language');
   var VERSION = form.getAttribute('data-version');
-  var VERDICT = {ok: 'Correct', change: 'Needs change'};
+  var VERDICT = {ok: 'Correct', change: 'Needs change', unsure: 'Not sure'};
 
   function say(message, kind) {
     statusLine.textContent = message;
@@ -61,8 +61,8 @@
       var note = box ? box.value.trim() : '';
       if (!picked) {
         if (note) {
-          return {error: 'Line ' + (i + 1) + ' has a note: please choose Correct or ' +
-            'Needs change for it too.', focus: items[i].querySelector('input')};
+          return {error: 'Line ' + (i + 1) + ' has a note: please choose Correct, ' +
+            'Needs change or Not sure for it too.', focus: items[i].querySelector('input')};
         }
         continue;
       }
@@ -138,7 +138,7 @@
       return;
     }
     if (!got.items.length) {
-      say('Choose Correct or Needs change for at least one line.', 'error');
+      say('Choose Correct, Needs change or Not sure for at least one line.', 'error');
       return;
     }
     var payload = {lang: LANG, page_version: VERSION, items: got.items,

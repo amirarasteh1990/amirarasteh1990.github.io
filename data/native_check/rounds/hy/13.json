@@ -1,0 +1,209 @@
+{
+ "lang": "hy",
+ "slug": "hy",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04a/0020#1",
+   "where": "04a/0020",
+   "text": "– Լավ, դու էլ արի՛ առաքելության, բայց պիտի շատ զգույշ լինես։ Փուլերը շատ դժվար են։",
+   "q": "An older boy lets his little brother join the game, with a warning. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ղասեմն ասաց."
+   ]
+  },
+  {
+   "id": "06/0104#2",
+   "where": "06/0104",
+   "text": "– Հը, սրանք, քանի կենդանի էր՝ գրեթե ոչինչ չարեցին նրա համար։",
+   "q": "Maman complains about her in-laws. Does this sound like a small-town mother talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0575#3",
+   "where": "04b/0575",
+   "text": "– Արծվաչյա, Ճանճին Աստված է խփել, դու էլ մի՛ խփիր։ Մորդ ջանով, առանց ակնոցի մի՛ քայլիր սենյակում։",
+   "q": "Eskandar begs short-sighted Sajad to wear his glasses, half joking. Does this sound like natural dorm talk?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Էսքանդարն ասաց."
+   ]
+  },
+  {
+   "id": "01/0156#4",
+   "where": "01/0156",
+   "text": "– Փֆֆ։ Մարյամն այն ֆիլմը տասն անգամ տեսել է։ Ամեն անգամ նայում է՝ նորից ծիծաղում։",
+   "q": "Ghassem, a grown son, scoffs that someone has watched a comedy ten times. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ղասեմն ասում է."
+   ]
+  },
+  {
+   "id": "03/0070#5",
+   "where": "03/0070",
+   "text": "– Վախենում եմ՝ իր ընկեր Համիդի պես դառնա։",
+   "q": "Maman worries her son will turn out like his friend. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մահբուբեն ծիծաղեց, ու Մամանն ասաց."
+   ]
+  },
+  {
+   "id": "06/0050#6",
+   "where": "06/0050",
+   "text": "– Ամիր, Պապիկն էլ կորոնավիրուսով վարակվեց, բայց կարծես ոչինչ՝ մի հասարակ մրսածության պես անցկացրեց։ Հավանաբար, քանի որ ականջները չեն լսում ու չգիտի՝ ինչ է կատարվում՝ վախը նրան չպատեց։",
+   "q": "Amir's sister tells him how their grandfather shook off Covid. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Մահբուբեն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0160#7",
+   "where": "04b/0160",
+   "text": "– Օբյեկտիվ ասած, հենց էն մի քանի օր ուշ հասնելու պատճառով, էս թեհրանցի երեխեքը, որ տեղայնացման ողորմությամբ կարողացան ԱմիրՔաբիր մտնել, իրենց էնպես են պահում, կարծես մենք ենք քվոտայով համալսարան մտել, ոչ թե իրենք, օբյեկտիվ ասած։",
+   "q": "Sajad complains about snobbish Tehran students, using his habit word 'objectively'. Does this sound like a student grumbling?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Սաջադն ասաց."
+   ]
+  },
+  {
+   "id": "04b/1275#8",
+   "where": "04b/1275",
+   "text": "այրվածները",
+   "q": "A line of modern poetry listing those who passed this way: lovers, drunkards and the burned ones. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "իմանա, որ",
+    "սիրահարներն ու",
+    "հարբածներն ու"
+   ]
+  },
+  {
+   "id": "03/0398#9",
+   "where": "03/0398",
+   "text": "– Քաքակե՛ր։ Օբյեկտիվ ասած՝ դոլարը հասնում է հազար հինգ հարյուր թումանի, իսկ դու այդ խեղճին հանգիստ չե՞ս թողնում։",
+   "q": "Sajad, swearing, scolds a roommate for pestering another while the dollar soars. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Սաջադը նոթբուքի կափարիչը փակեց ու բղավեց."
+   ]
+  },
+  {
+   "id": "04a/0030#10",
+   "where": "04a/0030",
+   "text": "– Ձախ կողմում մրգախանութներն են։ Բադիոլլահ քեռու մրգախանութն էլ հենց այնտեղ է։",
+   "q": "A boy playing soldier points out shops to his little brothers. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Հետո մի քիչ նայ-նայ էր անում ու ինչ-որ բաներ ասում։ Ես մեքենաներն էի տեսնում։ Վժժ-վժժ էին գնում։ Հետո Ղասեմը ասում էր."
+   ]
+  },
+  {
+   "id": "06/0090#11",
+   "where": "06/0090",
+   "text": "– Էն ժամանակ Մահբուբը մի ամբողջ շաբաթ անդադար լաց էր լինում։",
+   "q": "Maman recalls how her daughter grieved. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0271#12",
+   "where": "04b/0271",
+   "text": "– Ես իսկապես չեմ հասկանում՝ ինչիս ես սիրահարվել։ Նրա՞ն, որ քեզ տեսնելուն պես հոնքերս կիտում եմ ու դեմքս կարմրում։ Տես, եթե սենց բաների ես սիրահարվում, ապա փողոցում որևէ աղջկա մոտեցիր — ոչ միայն հոնքերը կկիտի, այլև մի-երկու հայհոյանք էլ կնետի վրադ։",
+   "q": "Niloofar, flustered, asks what Amir could love in her. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Մի անգամ արդեն փորձեցի, ավելի վատացավ։ Հոնքերը կիտեց ու շունչը կրծքում պահեց, որ դեմքը բոցկլտա։ Ասաց."
+   ]
+  },
+  {
+   "id": "03/0624#13",
+   "where": "03/0624",
+   "text": "– Ապրե՛ս, Խրաբաթի ծերուկ։ Հենց սա հիանալի է Արասթեի համար։",
+   "q": "Farid cheers a fitting nickname for Amir, the old man of the tavern of ruins. Does this sound like natural dorm banter?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ֆարիդն ասաց."
+   ]
+  },
+  {
+   "id": "03/0297#14",
+   "where": "03/0297",
+   "text": "– Արածդ ամեն ինչ կոծկոց է։",
+   "q": "Maman snaps at her husband that everything he does is a patch job. Does this short retort sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Հը, այսպես չի լինի, է, որ մեկ դպրոցի համար ծննդականների «ա»-ն հանես, մեկ ուրիշ գրասենյակների համար ետ դնես։",
+    "– Քեզ ի՞նչ այս բաները։ Ինքս գիտեմ՝ ինչ եմ անում։"
+   ]
+  },
+  {
+   "id": "01/0158#15",
+   "where": "01/0158",
+   "text": "– Այն ֆիլմը հիմա՞ր ուսուցչով։ Մ-հմ, այն նայեք, ծիծաղելի է։ Մի քիչ ծիծաղեք։",
+   "q": "Maman tells her grown children to watch a funny show and laugh a little. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0562#16",
+   "where": "04b/0562",
+   "text": "– Արծվաչյա, Աստված քեզ չների, խփեցիր՝ մեջքս քանդեցիր։ Բա ինչո՞ւ ակնոց չես դնում։",
+   "q": "Eskandar, hit by a short-sighted friend, complains. Does this sound like natural, half-joking dorm talk?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Էսքանդարը մի ձայնով, որ ցույց էր տալիս՝ շունչը դժվար է վեր գալիս՝ ասաց."
+   ]
+  },
+  {
+   "id": "04a/0026#17",
+   "where": "04a/0026",
+   "text": "– Առաքելության առաջին փուլի սկիզբ։ Գումարտակ, ձա՛խ։",
+   "q": "A boy playing soldier gives his little brothers a marching order. Does it sound like a child playing at soldiers?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Գնում էինք նրբանցք։ Սկզբում պիտի գնայինք նրբանցքի գլուխը։ Ղասեմը ասում էր."
+   ]
+  },
+  {
+   "id": "01/0188#18",
+   "where": "01/0188",
+   "text": "Առաջ դուք այնտեղ կոնկուրի համար էիք պարապում, հիմա Բաբան միշտ այնտեղ է։ Աստված բարին տա Մահբուբին, այս բանը նա...",
+   "q": "Maman explains that her husband now studies all day in the backyard house. Does this sound like her talking?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Այն տանն է։ Բակի ծայրի տանը։ Անընդհատ կարդում է։"
+   ]
+  }
+ ]
+}

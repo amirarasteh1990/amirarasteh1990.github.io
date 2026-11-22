@@ -78,6 +78,17 @@
     return fold(L.en) === q || fold(L.native) === q || L.slug === q || L.first === q;
   }
 
+  /* The site's words in the visitor's language (i18n.js). A sentence carrying a
+     count or the visitor's own search is looked up whole, as a template; the
+     plain ones are translated where they land in the page. */
+  var T = window.__t || function (s, v) {
+    return s.replace(/\{(\w+)\}/g, function (m, k) { return v && k in v ? v[k] : m; });
+  };
+  var UI = window.__ui && window.__ui !== 'en' && window.__ui !== 'x-extract' ? window.__ui : null;
+  var NAMES = null;
+  try { if (UI && window.Intl && Intl.DisplayNames) NAMES = new Intl.DisplayNames([UI], {type: 'language'}); }
+  catch (e) { NAMES = null; }
+
   var STATE = {
     ready: 'The whole book is free to read.',
     review: 'The opening is here; the whole book is in final review.',
@@ -126,9 +137,15 @@
     n.setAttribute('lang', L.lang);
     if (L.rtl) n.setAttribute('dir', 'rtl');
     node.appendChild(n);
-    if (L.en !== L.native) {
+    // the second name is the visitor's: English by default, their own language when
+    // the site speaks it (the browser knows every language's name)
+    var second = L.en;
+    if (NAMES) { try { second = NAMES.of(L.lang) || L.en; } catch (e) { second = L.en; } }
+    if (second !== L.native) {
       node.appendChild(document.createTextNode(' '));
-      node.appendChild(el('span', 'en', L.en));
+      var s2 = el('span', 'en', second);
+      if (NAMES && second !== L.en) s2.setAttribute('lang', UI);
+      node.appendChild(s2);
     }
     return node;
   }
@@ -188,7 +205,7 @@
   function one(L) {
     result.textContent = '';
     say(L.native + (L.en !== L.native ? ', ' + L.en : '') + ': ' +
-      (STATE[L.state] || STATE.translated));
+      T(STATE[L.state] || STATE.translated));
     result.appendChild(nameInto(el('p', 'lr-name'), L));
     result.appendChild(el('p', 'lr-state',
       STATE[L.state] || STATE.translated));
@@ -249,8 +266,8 @@
 
   function several(list, q) {
     result.textContent = '';
-    say(list.length + ' languages match');
-    result.appendChild(el('p', 'lr-state', list.length + ' languages match “' + q + '”'));
+    say(T('{n} languages match', {n: list.length}));
+    result.appendChild(el('p', 'lr-state', T('{n} languages match “{q}”', {n: list.length, q: q})));
     var matches = el('div', 'lr-matches');
     matches.id = 'langMatches';
     result.appendChild(matches);
@@ -282,8 +299,8 @@
 
   function none(q) {
     result.textContent = '';
-    say('No language matches');
-    result.appendChild(el('p', 'lr-state', 'No language matches “' + q + '”.'));
+    say(T('No language matches'));
+    result.appendChild(el('p', 'lr-state', T('No language matches “{q}”.', {q: q})));
     var acts = el('p', 'lr-actions');
     var browse = toAllLangs(el('a', 'btn', 'Browse all languages'));
     var write = el('a', 'btn', 'Write to Amir');

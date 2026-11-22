@@ -1,32 +1,48 @@
 {
-  "lang": "af",
-  "slug": "af",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Soos in my kinderjare, toe Maman die gare van ou klere losgemaak het, en ons die draad sou vat en in die huis rondloop sodat die gare nie op mekaar sou ophoop nie.",
-      "q": "A childhood memory of playing with unravelled wool. Does this read naturally?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Oomblikke en beelde wat verlore sou gegaan het in die koorsagtige geraas van wêreldgebeure as hulle nie hier neergeskryf was nie.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "01/0014#3",
-      "where": "01/0014",
-      "text": "– Kyk, sit dit in die frieskas. As jy dit in die frieskas sit, gebeur daar niks mee nie, selfs nie in 'n jaar nie.",
-      "q": "Maman mispronounces the word for freezer on purpose. Is that clear in 'frieskas'?"
-    },
-    {
-      "id": "06/0298#4",
-      "where": "06/0298",
-      "text": "My hart is lig by die gedagte dat ons eendag oorkant mekaar in 'n kafee sal sit, by 'n tafel, langs 'n venster, en terwyl die reën saggies op die ruit neersit, sal ek die verhaal vir haar lees en sy sal met 'n glimlag van tevredenheid luister.",
-      "q": "He imagines meeting her one day. Does this sentence read naturally?"
-    }
-  ]
+ "lang": "af",
+ "slug": "af",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Soos in my kinderjare, toe Maman die gare van ou klere losgemaak het, en ons die draad sou vat en in die huis rondloop sodat die gare nie op mekaar sou ophoop nie.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
+   "before": [
+    "Opening",
+    "…neergeskryf was nie. Hulle is neergeskryf om 'n brug te word tussen my wêreld en joune. 'n Brug van my wêreld, in die oomblik wat ek hierdie sinne skryf, na joune, in die oomblik wat jy gaan sit om hulle te lees. Van hierdie kant ontrafel ek die draad van woorde, en van daardie kant tel jy dit op."
+   ]
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Oomblikke en beelde wat verlore sou gegaan het in die koorsagtige geraas van wêreldgebeure as hulle nie hier neergeskryf was nie.",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Opening",
+    "…en miskien ook daardie hele wêreld, saam met sy mense. Miskien het selfs die verstand wat hierdie klanke eens op papier neergeteken het, lankal nie meer asem gehaal nie. Net soos hierdie oomblik — die een waarin jy hierdie sin lees — reeds verby is, is al die oomblikke van hierdie boek verby."
+   ]
+  },
+  {
+   "id": "01/0014#3",
+   "where": "01/0014",
+   "text": "– Kyk, sit dit in die frieskas. As jy dit in die frieskas sit, gebeur daar niks mee nie, selfs nie in 'n jaar nie.",
+   "q": "Maman mispronounces the word for freezer on purpose. Is that clear in 'frieskas'?",
+   "before": [
+    "– Ja, ek weet. Ek sê net, as dit in my hande was. Jigaram, het jy al daardie goed klaar opgeëet wat ek vir jou ingepak het?",
+    "– Ja, ek het dit opgeëet, Nini-jan. Moenie worry nie. Net 'n bietjie van die lavashak wat Mahboub gemaak het, is oor."
+   ]
+  },
+  {
+   "id": "06/0298#4",
+   "where": "06/0298",
+   "text": "My hart is lig by die gedagte dat ons eendag oorkant mekaar in 'n kafee sal sit, by 'n tafel, langs 'n venster, en terwyl die reën saggies op die ruit neersit, sal ek die verhaal vir haar lees en sy sal met 'n glimlag van tevredenheid luister.",
+   "q": "He imagines meeting her one day. Does this sentence read naturally?",
+   "before": [
+    "– Ja, gaan rus nou, Nini-jan.",
+    "…dat ek dit geweet het? Ek vind toevlug in die herhaalde lees van my eie skryfwerk. Nou dat my doktorsgraad klaar is en ek 'n bietjie tot rus gekom het, kan ek vir Niloofar skryf sodat sy weet ek het vir haar 'n spaarpotjie vol woorde gebou. 'n Nuwe hoop dat ons saam kan wees, het wortel geskiet."
+   ]
+  }
+ ]
 }

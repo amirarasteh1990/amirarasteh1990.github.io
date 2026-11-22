@@ -1,0 +1,191 @@
+{
+ "lang": "pt",
+ "slug": "pt",
+ "dir": "ltr",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "04b/0558#1",
+   "where": "04b/0558",
+   "text": "Que procuras tu entender, Mosca? A derivada? O significado? Ou o significado da derivada? Ou a derivada do significado?",
+   "q": "Eskandar plays mock philosopher, juggling 'derivada' and 'significado'. Does the wordplay work?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "O Eskandar, sem mudar a sua pose de Buda, disse:"
+   ]
+  },
+  {
+   "id": "03/0576#2",
+   "where": "03/0576",
+   "text": "Eu morria por esses teus olhos de rouxinol, Olho de Águia-jan, mas o problema está no recetor; o emissor não pode resolver o problema.",
+   "q": "Farid teases short-sighted Sajad, who keeps taking the wrong toothbrush, with mock tenderness. Does it read as playful?",
+   "ctx": 3,
+   "kind": "banter",
+   "before": [
+    "– Olho de Águia, voltaste a pegar na minha escova de dentes.",
+    "– Objetivamente, da próxima vez compra uma de cor diferente.",
+    "O Farid disse:"
+   ]
+  },
+  {
+   "id": "03/0580#3",
+   "where": "03/0580",
+   "text": "Onde é que está escrito no meu pescoço «apoio para os pés»?",
+   "q": "Short-sighted Sajad has stepped on Farid's neck while climbing to his bunk. Does Farid's retort sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Ai, ai. Olho de Águia, tira o pé do meu pescoço.",
+    "– Ai, desculpa. Objetivamente, estou a tentar chegar à minha cama. É difícil."
+   ]
+  },
+  {
+   "id": "04b/1396#4",
+   "where": "04b/1396",
+   "text": "Creio que os meus sonhos não acreditaram que partiste",
+   "q": "The closing line of a young man's love poem: his dreams still refuse to believe she is gone. Does it read that way?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Não tenho esperança no teu regresso",
+    "mas se acaso passares perto",
+    "volta outra vez aos meus sonhos"
+   ]
+  },
+  {
+   "id": "04b/1390#5",
+   "where": "04b/1390",
+   "text": "A luz dos meus sonhos se acendeu",
+   "q": "A line from a young man's love poem: the light in his dreams came on. Does it read as natural poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Os meus sonhos eram escuros",
+    "Não conseguia ver nada",
+    "Tu vieste"
+   ]
+  },
+  {
+   "id": "04b/1275#6",
+   "where": "04b/1275",
+   "text": "os abrasados",
+   "q": "The end of a short poem written on a classroom board. Do these lines read as poetry?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "para que aquele que vier na tua esteira",
+    "saiba que",
+    "os amantes e",
+    "os ébrios e"
+   ]
+  },
+  {
+   "id": "03/0244#7",
+   "where": "03/0244",
+   "text": "Não aceitaria por preço nenhum esse anel de Salomão, sobre o qual às vezes a mão de",
+   "q": "A line from Hafez, the classical Persian poet. Does it read like a classic poem?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/0935#8",
+   "where": "04b/0935",
+   "text": "«Para Attar, chorar até à madrugada é mais doce» ou «agora ficou ainda mais morto»?",
+   "q": "A friend asks which of two lines by Attar, a classical Persian poet, Amir means. Do the lines read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Sim, aquela que tinha o verso de Attar."
+   ]
+  },
+  {
+   "id": "04b/1314#9",
+   "where": "04b/1314",
+   "text": "Há trinta e dois meses que gosto de si. De longe. Sem que saiba. Em silêncio.",
+   "q": "A shy student rehearses telling a classmate, to her face, that he loves her. Does it sound like a love confession?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Fui e fiquei à espera, debaixo do plátano do outro lado do passeio da rua Valiasr, de que a Niloofar se separasse das outras para me adiantar e dizer-lhe, cara a cara, que gostava dela."
+   ]
+  },
+  {
+   "id": "04b/0146#10",
+   "where": "04b/0146",
+   "text": "Cabeça de merda. Fazes-me abrir a boca e dizê-lo.",
+   "q": "Hooman crudely scolds a friend for making him spell out something painful. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pois, a notícia correu pela universidade."
+   ]
+  },
+  {
+   "id": "04b/0464#11",
+   "where": "04b/0464",
+   "text": "Se fosse por mim, zero qual quê; obrigava-te a comer a cabeça da minha pila e depois expulsava-te da universidade com um pontapé.",
+   "q": "Hooman crudely mocks a roommate's grand theories. Does this sound like natural Portuguese swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Então és o Heisenberg ou o Einstein, para esperares que te deem um vinte e te homenageiem pelas tuas teorias esclarecedoras?"
+   ]
+  },
+  {
+   "id": "03/0521#12",
+   "where": "03/0521",
+   "text": "Credo, que merda de pose de pensador é essa outra vez?",
+   "q": "Hooman crudely mocks a roommate striking a thinker's pose. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Por um momento, não se ouvia nenhuma voz. O Hooman disse:"
+   ]
+  },
+  {
+   "id": "04b/0351#13",
+   "where": "04b/0351",
+   "text": "O que é que ser o melhor da turma e, não sei, ter uma segunda licenciatura acrescentou ao comprimento do meu caralho, quando o meu trabalho agora é inspecionar subestações elétricas?",
+   "q": "Hooman crudely asks what good his top grades did him. Does this sound like natural slang?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Que saudades o quê, Doutor? Eu cago nesses dias e na forma como pensávamos. A sério que cago em todo esse perfeccionismo e o duplo curso e em sermos alunos de elite e mais mil pragas e venenos."
+   ]
+  },
+  {
+   "id": "04b/0440#14",
+   "where": "04b/0440",
+   "text": "Depois do caso da localização, qualquer caralho que nos caia na cabeça, não me espanto.",
+   "q": "Hooman crudely says nothing will surprise him anymore. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "O Bahman disse que não havia problema. O Eskandar tinha estendido a mão para debaixo da minha cama para puxar o livro, enquanto o Meysam, de joelhos, preparava a sua cama por baixo do cabide. A olhar para eles, o Hooman disse:"
+   ]
+  },
+  {
+   "id": "03/0418#15",
+   "where": "03/0418",
+   "text": "Que diferença faz? Se o McCain chegar ao poder, vai foder o Irão, objetivamente.",
+   "q": "Sajad fears a US election result will be very bad for Iran. Does this crude line sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Olho de Águia, não te exaltes tanto, o leite seca-te. Quer ganhe o Obama, quer ganhe o outro candidato, que diferença faz para ti e para mim?"
+   ]
+  },
+  {
+   "id": "04b/0162#16",
+   "where": "04b/0162",
+   "text": "É, assim que nos veem cerram o cu e mantêm tanta distância que me apetece ir-lhes à cara com os dois pés.",
+   "q": "Farid says snobbish students act stiff and aloof around them. Does this crude line say that naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "O Farid disse:"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "lang": "lt",
+ "slug": "lt",
+ "dir": "ltr",
+ "version": "2026-11-22.r9",
+ "items": [
+  {
+   "id": "03/0070#1",
+   "where": "03/0070",
+   "text": "– Bijau, kad jis taps toks kaip jo draugas Hamidas.",
+   "q": "Maman worries about her son. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Mahboubeh nusijuokė, ir Maman tarė:"
+   ]
+  },
+  {
+   "id": "03/0373#2",
+   "where": "03/0373",
+   "text": "– Sakau, Ameroka patvirtino, kad Iranas sustabdė branduolinę programą. Ar tai reiškia, bus karas ar ne?",
+   "q": "Maman says 'Ameroka' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Mahboub, kalbu su tavimi.",
+    "– Ką?"
+   ]
+  },
+  {
+   "id": "04b/0536#3",
+   "where": "04b/0536",
+   "text": "– Ohooo. Tada tos šalys tikriausiai buvo arti viena kitos. Kada buvo Bamo žemės drebėjimas?",
+   "q": "Maman, watching tsunami news, guesses how earthquakes spread. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman pasakė:"
+   ]
+  },
+  {
+   "id": "04b/0538#4",
+   "where": "04b/0538",
+   "text": "– Pasaulio pabaiga atėjo. Bibi karta sakydavo, kad atėjus pasaulio pabaigai žemė vis drebės.",
+   "q": "Maman repeats what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Maždaug prieš metus."
+   ]
+  },
+  {
+   "id": "04b/0744#5",
+   "where": "04b/0744",
+   "text": "– Įžadą daviau: jei jis pasveiks, pėsčia eisiu į Mašhadą.",
+   "q": "Maman says she vowed to walk to the holy city if he recovers. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…sėdintį namų svetainėje priešais televizorių ir gliaudantį saulėgrąžas, o šalia sėdinčią Maman. Žinios pasakojo apie nuostolius dėl plataus potvynio šiaurinėse ir vakarinėse šalies provincijose. Iš nugaros Maman man atrodė lyg mažas apskritimas, sėdintis šalia didesnio stačiakampio. Maman sakė:"
+   ]
+  },
+  {
+   "id": "06/0033#6",
+   "where": "06/0033",
+   "text": "– Hmm, tada ir aš sakau, kad man širdis pasidaro sunki. Leiskite man truputį nueiti pas savo drauges.",
+   "q": "Maman says she also feels low and wants to visit friends. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman sako:"
+   ]
+  },
+  {
+   "id": "06/0044#7",
+   "where": "06/0044",
+   "text": "Nana-pesar-džan, tu tikrai turi rūpintis tuo, ką valgai. Valgyk gerus dalykus. Tokius, kurie stiprina.",
+   "q": "Maman urges her son abroad to eat well. Does it sound like a caring mother?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "01/0261#8",
+   "where": "01/0261",
+   "text": "– Mm-hm, labai, labai pasikeitė. Taip sulyso ir patamsėjo.",
+   "q": "Maman says a man has grown thin and dark in the face. Does it sound like a mother talking?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– O, tikrai? Tai jis labai pasikeitė.",
+    "Maman sako:"
+   ]
+  },
+  {
+   "id": "04a/0005#9",
+   "where": "04a/0005",
+   "text": "Tuo metu man buvo ketveri. Ji visada rasdavo mane keturis kartus. Dabar man šešeri.",
+   "q": "A six-year-old tells this. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0049#10",
+   "where": "04a/0049",
+   "text": "Labai skanu. Hadž Kazemo parduotuvė irgi skani.",
+   "q": "A six-year-old says the corner shop itself tastes good. Does this sound like a small child's logic?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0053#11",
+   "where": "04a/0053",
+   "text": "Buvo labai toli. Iki pat kito pasaulio krašto. Gal ir ne. Bet buvo labai toli.",
+   "q": "A six-year-old describes a long walk. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0059#12",
+   "where": "04a/0059",
+   "text": "Maman pasakė, kad Dievas yra danguje. Dangus irgi mėlynas.",
+   "q": "A six-year-old explains why he loves blue. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0061#13",
+   "where": "04a/0061",
+   "text": "Šios dalies niekada neišmokau. Jis visada sakydavo svarbiausia... kažkas... misijoje.",
+   "q": "A six-year-old admits he never learned his big brother's words. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– Trečiojo misijos etapo pabaiga. Čia yra svarbiausia ..."
+   ]
+  },
+  {
+   "id": "04a/0018#14",
+   "where": "04a/0018",
+   "text": "– Šį rytą nuėjau į kiemą. Maman pasakė, kad esu protingas.",
+   "q": "A four-year-old proudly tells his brother this. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Aš pasakiau:"
+   ]
+  },
+  {
+   "id": "04a/0036#15",
+   "where": "04a/0036",
+   "text": "– Gerai, užberk mažiau. Bet ne per daug mažiau. Šiek tiek mažiau.",
+   "q": "A small boy bargains with his mother over salt on his plums. Does it sound like a small child?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Druska kenkia sveikatai.",
+    "Aš pasakiau:"
+   ]
+  },
+  {
+   "id": "04a/0038#16",
+   "where": "04a/0038",
+   "text": "– Eiti į pagrindinę gatvę: tsk-tsk.",
+   "q": "Ghassem, playing commander, warns with a click of the tongue. Does 'tsk-tsk' read as that sound?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Visada darau tai, ką sako Maman. Dariau ir tai, ką sakė Ghassemas. Jis visada sakydavo:"
+   ]
+  }
+ ]
+}

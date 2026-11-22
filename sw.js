@@ -89,22 +89,27 @@
    third quick start (Danish until known) instead of a separate button.
    style.css?v=32 (same day): the home page's whole book card is one link. A new
    script URL is enough -- assets are fetched by URL -- so VERSION stays. */
-var VERSION = 'arasteh-v36';
+/* v37 (2026-11-22): the site in the visitor's language -- the language switch in
+   every nav, assets/js/i18n.js and the dictionaries in assets/i18n/ (fetched by a
+   hashed URL); finder.js and guestbook.js speak through it; the skip link and the
+   guestbook honeypot no longer sit off the left edge (right-to-left pages);
+   stylesheet v33. */
+var VERSION = 'arasteh-v37';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=32',
+  '/assets/css/style.css?v=33',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
   '/assets/js/lang-mine.js?v=37',
-  '/assets/js/finder.js?v=36',
+  '/assets/js/finder.js?v=37',
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=36',
+  '/assets/js/guestbook.js?v=37',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

@@ -1,0 +1,167 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04a/0078#1",
+   "where": "04a/0078",
+   "text": "Эй, зачем ты бросил палку? Чем тогда звонить в дверь?",
+   "q": "A boy scolds his little brother for dropping a stick. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Я всегда подбирал палку у того дерева. Вёл ею по стене. Она делала звук мотоцикла. Гасем и Омид уходили вперёд. Я отставал. Гасем не ругал меня. Один раз сказал:"
+   ]
+  },
+  {
+   "id": "04a/0082#2",
+   "where": "04a/0082",
+   "text": "Ты же не сказал.",
+   "q": "A small boy, crying, answers his big brother's scolding. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Омид плакал. Сказал:"
+   ]
+  },
+  {
+   "id": "04a/0048#3",
+   "where": "04a/0048",
+   "text": "Это от старости, соседка.",
+   "q": "An old grocer explains his shaking hands to Maman. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Мы останавливались у бакалейной лавки Хадж-Казема. Гасем махал ему рукой. Хадж-Казем всегда трясёт руками. Когда мы ходим к нему с Маман, он тоже ими трясёт. Нут он трясёт быстро-быстро. Всё насыпает и насыпает на весы слишком много нута. Потом берёт обратно. В тот день он сказал Маман:"
+   ]
+  },
+  {
+   "id": "04b/1062#4",
+   "where": "04b/1062",
+   "text": "Как выучит наши имена, так мы ей и понравимся.",
+   "q": "A boy spray-paints their names on a wall to impress a girl. Does this sound like a boy talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ясер, выписывая наши имена на стене напротив дома Негар спреем, который стащил из отцовского грузовика «Хавар», говорил:"
+   ]
+  },
+  {
+   "id": "02/0005#5",
+   "where": "02/0005",
+   "text": "Свет моих снов ... свет моих снов зажигался ... свет моих снов зажёгся",
+   "q": "The narrator is searching for the words of his poem as he writes it. Does this line read that way?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Я ничего не видел",
+    "Ты пришла"
+   ]
+  },
+  {
+   "id": "02/0006#6",
+   "where": "02/0006",
+   "text": "Теперь ... теперь ... теперь тебя нет ...",
+   "q": "A line of the narrator's poem, written haltingly. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Свет моих снов ... свет моих снов зажигался ... свет моих снов зажёгся"
+   ]
+  },
+  {
+   "id": "04b/1392#7",
+   "where": "04b/1392",
+   "text": "Свет моих снов теперь мигает",
+   "q": "A line from the narrator's simple love poem. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Теперь тебя нет"
+   ]
+  },
+  {
+   "id": "04b/1395#8",
+   "where": "04b/1395",
+   "text": "снова приди в мои сны",
+   "q": "In his poem, the narrator asks his lost love to come into his dreams once more. Does this line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Но если путь твой пройдёт мимо"
+   ]
+  },
+  {
+   "id": "02/0002#9",
+   "where": "02/0002",
+   "text": "Мои сны были тёмными",
+   "q": "The first line of the narrator's love poem. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1267#10",
+   "where": "04b/1267",
+   "text": "На всём можно писать",
+   "q": "The first line of a short poem written on a blackboard. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1276#11",
+   "where": "04b/1276",
+   "text": "прошли здесь.",
+   "q": "The last line of the blackboard poem: lovers, drunkards and the burned ones passed this way. Does it read as poetry?",
+   "ctx": 4,
+   "kind": "poetry",
+   "before": [
+    "знал, что",
+    "влюблённые, и",
+    "пьяницы, и",
+    "сгоревшие"
+   ]
+  },
+  {
+   "id": "02/0001#12",
+   "where": "02/0001",
+   "text": "Сердце моё светло: завтра, когда я открою глаза, всё будет кончено, и тьма снова вернётся в мои сны.",
+   "q": "The narrator, awake at dawn, feels at peace. Does this sentence read naturally as literary prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "02/0001#13",
+   "where": "02/0001",
+   "text": "Я снова пленник собственных фантазий. Это только ветер бьётся о стекло.",
+   "q": "The narrator thought he heard birds, but it is only the wind. Does this read naturally as literary prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "03/0244#14",
+   "where": "03/0244",
+   "text": "я бы не взял ни за какие сокровища перстень Сулеймана, которого порой касается рука...",
+   "q": "A line of Hafez's poetry about King Solomon's ring. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1301#15",
+   "where": "04b/1301",
+   "text": "Она прочла: «Давно уж от любимого ни вести; ни строчки привета ...», и меня разобрал смех.",
+   "q": "Niloofar reads the opening of a Hafez poem about a silent beloved. Does the quoted line read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1099#16",
+   "where": "04b/1099",
+   "text": "На одной стороне трещины давил груз границ и святынь моих многолетних убеждений, а на другой стороне стояла Нилуфар.",
+   "q": "The narrator feels torn between old beliefs and the girl he loves. Does this sentence read naturally?",
+   "ctx": 0,
+   "kind": "narration"
+  }
+ ]
+}

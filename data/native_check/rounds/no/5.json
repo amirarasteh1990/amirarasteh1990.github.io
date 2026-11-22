@@ -1,0 +1,167 @@
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-22.r5",
+ "items": [
+  {
+   "id": "01/0216#1",
+   "where": "01/0216",
+   "text": "Ja, vår Baba-jan er virkelig sulten på respekt.",
+   "q": "Ghassem jokes that their father badly craves respect. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ghassem sier:"
+   ]
+  },
+  {
+   "id": "01/0178#2",
+   "where": "01/0178",
+   "text": "Jeg skulle ønske han hadde blitt rusmisbruker i stedet for å være slik.",
+   "q": "Maman, a mother from a small town, says she wishes her husband had become an addict instead. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman sier:"
+   ]
+  },
+  {
+   "id": "01/0166#3",
+   "where": "01/0166",
+   "text": "Uansett hvor mye jeg sa: ikke slå barna, sa han: jeg ble granatsjokkert i krigen, jeg kan ikke noe for det.",
+   "q": "Maman quotes her husband's excuse that the war left him shell-shocked. Does this sound like her?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "03/0531#4",
+   "where": "03/0531",
+   "text": "Lær personen å kjenne først, gift dere, og hvis dere vil, bli forelskede etterpå.",
+   "q": "Maman, a mother from a small town, lectures her son about love and marriage. Does it sound like her?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "06/0253#5",
+   "where": "06/0253",
+   "text": "Gå og hent litt frø til Ghassem og de andre, de vil se film.",
+   "q": "Maman sends Amir to fetch roasted seeds for the family to snack on during a film. Is that clear and natural?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04a/0066#6",
+   "where": "04a/0066",
+   "text": "Bra, den kloke gutten min. Når noe skremmer deg, bruk et triks så du ikke blir redd.",
+   "q": "Maman praises her small son for being brave. Does this sound like a mother talking to a little child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Jeg brukte alltid et triks. I stedet for den røde døren så jeg på veggen til huset ved siden av. Den var hvit. Maman sa:"
+   ]
+  },
+  {
+   "id": "04a/0064#7",
+   "where": "04a/0064",
+   "text": "Venstre side er farlig. Huset med den røde døren tilhører en veldig sint gammel mann.",
+   "q": "Ghassem, a young boy, warns his little brothers about a scary house. Does this sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Så viste han huset med den store røde døren. Han sa:"
+   ]
+  },
+  {
+   "id": "04a/0038#8",
+   "where": "04a/0038",
+   "text": "Inntreden på hovedgaten: tsk-tsk.",
+   "q": "A boy playing army commander announces they are entering the main street, with a clicking sound. Does it sound like a child's game?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Jeg gjør alltid som Maman sier. Jeg gjorde som Ghassem sa også. Han sa:"
+   ]
+  },
+  {
+   "id": "04b/0554#9",
+   "where": "04b/0554",
+   "text": "Hva slags tid er begynnelsen av måneden Esfand for en eksamen?",
+   "q": "Hooman is surprised an exam is held so early in the month of Esfand. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman sa:"
+   ]
+  },
+  {
+   "id": "04b/1393#10",
+   "where": "04b/1393",
+   "text": "Jeg nærer intet håp om din tilbakekomst",
+   "q": "A line of Amir's simple love poem. Does it read naturally as a line of a heartfelt poem?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Nå er du borte",
+    "Lyset i drømmene mine blinker nå"
+   ]
+  },
+  {
+   "id": "04b/0520#11",
+   "where": "04b/0520",
+   "text": "Jeg fikk tolv i kroppsøving; jeg er helt frynsete, og jeg kommer til å skjelle dere ut.",
+   "q": "Hooman got a bad grade, is in a foul mood and threatens to swear at everyone. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ingen diskusjoner på rommet i dag."
+   ]
+  },
+  {
+   "id": "04b/0385#12",
+   "where": "04b/0385",
+   "text": "Alltid veldig elegant og formell når han driter ved det historiske vendepunktet.",
+   "q": "Hooman mocks Amir for always messing up, very politely, at the crucial moment. Does this crude joke land?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0663#13",
+   "where": "03/0663",
+   "text": "Under påskudd av å ville holde barna nær familiene sine stakk de kjeppen opp i ræva på oss fra provinsene.",
+   "q": "Hooman says, crudely, that the policy hurt every student from the provinces. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0612#14",
+   "where": "03/0612",
+   "text": "Din ubrukelige pikk ... huuuuh ... med hodet nede slik ... huuuh ... hvor skal du så fort?",
+   "q": "Hooman, out of breath, roughly greets an old friend with a crude insult. Does this sound natural between friends?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "En hånd trekker venstre skulder min bakover. Det er Hooman. Han er forpustet."
+   ]
+  },
+  {
+   "id": "04b/0440#15",
+   "where": "04b/0440",
+   "text": "Etter den der lokaliseringssaken blir jeg ikke overrasket over noen pikk som lander på hodene våre.",
+   "q": "Hooman says, crudely, that no awful roommate could surprise him anymore. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Bahman sa at det var greit. Eskandar hadde rakt hånden under sengen min for å trekke boken frem, og Meysam satt på knærne sine og bredte ut plassen sin under knaggerekken. Hooman kikket på dem og sa:"
+   ]
+  },
+  {
+   "id": "04b/0822#16",
+   "where": "04b/0822",
+   "text": "Altså, helt fra grunnen ville alt ha utviklet seg annerledes, og du ville ikke gått rundt i gatene med pikken i hånden sånn.",
+   "q": "Hooman crudely says Amir now wanders the streets aimless and lost. Does this crude image sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  }
+ ]
+}

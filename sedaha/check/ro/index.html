@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/ro/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/ro/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,240 +72,286 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/ro/">&larr; <span class="native" lang="ro" dir="ltr">Română</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ro" dir="ltr">Română</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ro" data-language="Romanian" data-version="2026-11-18" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ro" data-language="Romanian" data-version="2026-11-22" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.</p>
+        <p class="nc-line">Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.</p>
       </div>
       <p class="nc-q" id="q1">Moments that would be lost in the world's feverish noise. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="Opening/0007#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>De pe această parte, desfac firul cuvintelor, iar de pe cealaltă parte, tu le aduni.</p>
+        <p class="nc-line">De pe această parte, desfac firul cuvintelor, iar de pe cealaltă parte, tu le aduni.</p>
       </div>
       <p class="nc-q" id="q2">Is it clear that 'le' refers to the words you gather up?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0661#3">
+    <fieldset class="nc-item" data-id="01/0116#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>– Notele de la Konkoor?</p>
+        <p class="nc-ctx">– Aaah, ce bine. Mm-hm, comănzi și ți le aduc. Dar Amir dragă, nu sta tot timpul acasă. Ieși și afară.</p>
+        <p class="nc-line">Du-te la locuri limiștite.</p>
       </div>
-      <p class="nc-q" id="q3">Konkoor is the university entrance exam. Is 'Notele' right for their exam ranks?</p>
+      <p class="nc-q" id="q3">Maman says '<bdi lang="ro" dir="ltr">limiștite</bdi>' for '<bdi lang="ro" dir="ltr">liniștite</bdi>' (quiet) on purpose. Does it read as her slip, not a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#4">
+    <fieldset class="nc-item" data-id="03/0191#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Te apucă amețeala. Cu cât te gândești mai mult la asta, cu atât amețești mai tare.</p>
+        <p class="nc-ctx">– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.</p>
+        <p class="nc-ctx">Taghi spuse:</p>
+        <p class="nc-line">Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici olāgh?</p>
       </div>
-      <p class="nc-q" id="q4">Thinking about the painting makes your head spin. Does this sound natural?</p>
+      <p class="nc-q" id="q4">Taghi teases Hamid: 'khar' and '<bdi lang="ro" dir="ltr">olāgh</bdi>' are both Persian for donkey, 'khar' the cruder. Does the teasing come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0116#5">
+    <fieldset class="nc-item" data-id="03/0430#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Du-te la locuri limiștite.</p>
+        <p class="nc-line">Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.</p>
       </div>
-      <p class="nc-q" id="q5">Maman mispronounces '<bdi lang="ro" dir="ltr">limiștite</bdi>' on purpose; she means quiet. Is that clear?</p>
+      <p class="nc-q" id="q5">'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0191#6">
+    <fieldset class="nc-item" data-id="03/0560#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici olāgh?</p>
+        <p class="nc-ctx">Am mers. Am stat vreo oră în viile de după clădirea ghetarului de lut din fața cimitirului vechi. Mahboubeh și Maryam legară sabzeh, și când se întunecase ne-am întors. Seara, Maman era întinsă pe covor în mijlocul casei și-și privea brățările. Ca și cum mi-ar fi vorbit mie, îi spuse lui Omid:</p>
+        <p class="nc-line">– Spuneți-i mamei voastre totul.</p>
       </div>
-      <p class="nc-q" id="q6">Hamid switched from a rude to a polite word for donkey. Is that clear?</p>
+      <p class="nc-q" id="q6">Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#7">
+    <fieldset class="nc-item" data-id="03/0661#7">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alat Delon.</p>
+        <p class="nc-ctx">– Din cauza notelor noastre la Konkoor.</p>
+        <p class="nc-line">– Notele de la Konkoor?</p>
       </div>
-      <p class="nc-q" id="q7">'Alat Delon' is meant as a rude pun on Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q7">Konkoor is Iran's university entrance exam, where students get a national rank. Is 'Notele' right for that rank?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n7">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0560#8">
+    <fieldset class="nc-item" data-id="04b/1262#8">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>– Spuneți-i mamei voastre totul.</p>
+        <p class="nc-ctx">…primăverii, familia lui Negar s-a mutat din cartierul nostru din pricina supărărilor pricinuite de băieții de pe ulița din față, iar casa aceea s-a făcut la fel cu toate celelalte case din cartier. Rămăseserăm de capul nostru și, după multă vreme, ne-am întors iarăși la jocurile de altădată.</p>
+        <p class="nc-line">Joaca cu mașini, haft-sang, polițist-și-măgar, aruncatul cu roșii în mijlocul străzii și, mai presus de toate, fotbalul pe Stadio delle Alpi din orașul Quchan.</p>
       </div>
-      <p class="nc-q" id="q8">Maman says this to one boy, Omid. Does this wording fit?</p>
+      <p class="nc-q" id="q8">A list of childhood street games. Does the list read clearly as games?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n8">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1262#9">
+    <fieldset class="nc-item" data-id="04b/1263#9">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Joaca cu mașini, haft-sang, polițist-și-măgar, aruncatul cu roșii în mijlocul străzii și, mai presus de toate, fotbalul pe Stadio delle Alpi din orașul Quchan.</p>
+        <p class="nc-ctx">…și liniștitoare și care n-avea destulă lumină ca să mă călăuzească. O lampă clipind în mâna unei fete despre care n-am știut niciodată în ce parte a cutiei de creioane colorate se așază culoarea ușii casei lor. O fetiță vine făcând „vrr-vrr” și se oprește lângă mine. Se uită la jucării. Spune:</p>
+        <p class="nc-line">Vrrr, Baba, Baba, îmi cumpeli papușica aia male?</p>
       </div>
-      <p class="nc-q" id="q9">A list of street games. Is it clear what 'haft-sang' is?</p>
+      <p class="nc-q" id="q9">A small girl says this, pointing at a big doll. Does it sound like a little child talking?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n9">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#10">
+    <fieldset class="nc-item" data-id="04b/1312#10">
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Vrrr, Baba, Baba, îmi cumpeli papușica aia male?</p>
+        <p class="nc-ctx">– ...Uitați-vă, e cu adevărat tulburător. A desenat asta și dedesubt a scris: aceasta nu este o pipă.</p>
+        <p class="nc-line">Te apucă amețeala. Cu cât te gândești mai mult la asta, cu atât amețești mai tare.</p>
       </div>
-      <p class="nc-q" id="q10">A toddler asks her dad for a doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q10">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n10">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1320#11">
+    <fieldset class="nc-item" data-id="04b/1321#11">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Și, cu mâini tremurânde, treceam în grabă peste gazeluri ca să găsesc un beit din Hafez care, cum spunea cealaltă fată, cu cât te scufunzi mai adânc în el, cu atât amețești mai tare, și să i-l arăt lui Niloofar.</p>
+        <p class="nc-line">Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”</p>
       </div>
-      <p class="nc-q" id="q11">He recalls a girl's crude phrase for mind-bending confusion. Does that come through?</p>
+      <p class="nc-q" id="q11">The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n11">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1321#12">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”</p>
+        <p class="nc-ctx">– Ăsta e. Ascultă-l pe ăsta. Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.” E același lucru. E ca pictura aia pe care ți-o arăta prie-, prietena ta.</p>
+        <p class="nc-line">Ca aia, cu cât te gândești mai mult la aceste zece cuvinte, cu atât te apucă mai tare ame..., chestie, mai tare amețeala.</p>
       </div>
-      <p class="nc-q" id="q12">This Hafez line should read both as real wine and as metaphor. Does it?</p>
+      <p class="nc-q" id="q12">He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n12">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#13">
+    <fieldset class="nc-item" data-id="06/0236#13">
       <legend>Line 13</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Ca aia, cu cât te gândești mai mult la aceste zece cuvinte, cu atât te apucă mai tare ame..., chestie, mai tare amețeala.</p>
+        <p class="nc-ctx">– ...cof. Da. Nu ne-ai dus niciodată în locuri de-astea.</p>
+        <p class="nc-line">Întotdeauna cimitirul și Dumnezeu știe ce – o biserică. Cof, cof. Ne-ai târât.</p>
       </div>
-      <p class="nc-q" id="q13">He starts a crude word, stops, and says a polite one. Does that come through?</p>
+      <p class="nc-q" id="q13">Baba teases his son about the places he showed them. Does the last sentence mean you wore us out?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n13">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0236#14">
+    <fieldset class="nc-item" data-id="06/0262#14">
       <legend>Line 14</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Întotdeauna cimitirul și Dumnezeu știe ce – o biserică. Cof, cof. Ne-ai târât.</p>
+        <p class="nc-ctx">Baba își ia rămas-bun și iese din cadru. Maman rămâne în tăcere. Se aude poarta ulicioarei deschizându-se și închizându-se, iar Baba iese cu tusea târându-se după el.</p>
+        <p class="nc-line">Tusea și sunetele cu care își drege glasul încă mi se strecoară în urechi.</p>
       </div>
-      <p class="nc-q" id="q14">Baba is joking. Does the last sentence mean you wore us out?</p>
+      <p class="nc-q" id="q14">Does this sentence let you hear Baba's coughs and throat-clearing sounds?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n14">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="06/0262#15">
-      <legend>Line 15</legend>
-      <div class="reader nc-text" lang="ro" dir="ltr">
-        <p>Tusea și sunetele cu care își drege glasul încă mi se strecoară în urechi.</p>
-      </div>
-      <p class="nc-q" id="q15">Does this sentence let you hear Baba's coughs and throat-clearing sounds?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
-        <label><input type="radio" name="v15" value="ok"> Correct</label>
-        <label><input type="radio" name="v15" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n15">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <p class="guestbook-field">
@@ -343,7 +397,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

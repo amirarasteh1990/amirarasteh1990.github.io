@@ -2,103 +2,156 @@
  "lang": "sk",
  "slug": "sk",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…z môjho sveta — v okamihu, keď píšem tieto vety — do tvojho sveta, v okamihu, keď si sadneš k ich čítaniu. Z tejto strany odvíjam niť slov a z druhej strany ich zbieraš. Ako v detstve, keď Maman párala priadzu zo starých šiat a my sme vzali niť a chodili s ňou po dome, aby sa priadza nehromadila."
+   ]
   },
   {
-   "id": "03/0119#2",
-   "where": "03/0119",
-   "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
-   "q": "Does 'pocit známosti' (a sense of having seen her before) sound natural?"
-  },
-  {
-   "id": "03/0590#3",
-   "where": "03/0590",
-   "text": "Keď plán večera poézie zlyhal, spomenul som si na Mamanin modlitebný chador.",
-   "q": "Is 'chador' (an Iranian prayer veil) spelled the usual Slovak way?"
-  },
-  {
-   "id": "04b/1263#4",
-   "where": "04b/1263",
-   "text": "– Vžžžum, Baba, Baba, kúpiš mi tú veľkú bábiku?",
-   "q": "A toddler asks her dad ('Baba') for a doll. Does it sound like baby talk?"
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "Z toho sa vám zatočí hlava. Čím viac o tom premýšľate, tým viac sa vám točí hlava.",
-   "q": "Is it clear this girl is swearing crudely about feeling dizzy?"
-  },
-  {
-   "id": "01/0116#6",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "Choď na tichée miesta.",
-   "q": "Maman mispronounces 'tichée' on purpose; she means quiet. Is that clear?"
+   "q": "Maman says 'tichée' for 'tiché' (quiet) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Och, aká dobrá vec. Mm-hm, objednáš a donesú ti to. Ale Amir-jan, nesedávaj doma celý čas. Choď aj von."
+   ]
   },
   {
-   "id": "03/0135#7",
+   "id": "03/0119#3",
+   "where": "03/0119",
+   "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
+   "q": "Does 'pocit známosti' (a sense of having seen her before) sound natural?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0135#4",
    "where": "03/0135",
-   "text": "Yaser povedal, lebo Babov nákladiak Khavar sa nezmestí do uličky.",
-   "q": "Yaser means his own father's truck. Is that clear here?"
+   "text": "Yaser povedal, lebo nákladiak Khavar jeho otca sa nezmestí do uličky.",
+   "q": "Children explain why a side street beats an alley. Is it clear Yaser means his own father's truck?",
+   "ctx": 1,
+   "before": [
+    "Všetci sme povedali: na križovatke, teda na vedľajšej ulici."
+   ]
   },
   {
-   "id": "03/0191#8",
+   "id": "03/0191#5",
    "where": "03/0191",
-   "text": "Hamíd Mačka, včera si hovoril khár. Teraz si sa stihol zdvoriliť a hovoríš somár?",
-   "q": "Hamid switched from a rude to a polite word for donkey. Is that clear?"
+   "text": "Hamid Mačka, ešte včera si hovoril khár. Teraz si sa poľudštil a hovoríš somár?",
+   "q": "In Persian, 'khár' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'somár'. Does the jab work?",
+   "ctx": 3,
+   "before": [
+    "– Pfff, somár, kto vie lepšie — priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne, alebo ty, ty teľa? No tak, kúp si ju. Keď sa sklenená strecha rozbije, nehovor, že som ťa nevaroval.",
+    "Taghi povedal:",
+    "– Oho."
+   ]
   },
   {
-   "id": "03/0462#9",
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "A ty by si sa s tým svojím kokotským spôsobom reči mal volať Alain Kokoton.",
+   "q": "'Alain Kokoton' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
+  },
+  {
+   "id": "03/0462#7",
    "where": "03/0462",
    "text": "– Máte sa dobre?",
-   "q": "She is silent, and he senses something is wrong. Does this question fit?"
+   "q": "She is silent, and he senses something is wrong. Does this question fit?",
+   "ctx": 1,
+   "before": [
+    "Prišiel som na druhú stranu nádvoria. Práve sem, kde teraz stojím. Niloofar prišla. Zaradoval som sa. Išiel som k nej. Odpovedala na môj pozdrav. Vstúpili sme do budovy. Bez slova zamierila k schodom. Aj ja som stúpal, o jeden schod pod ňou. Keď sme sa dostali na vrch schodov, povedal som:"
+   ]
   },
   {
-   "id": "03/0560#10",
+   "id": "03/0560#8",
    "where": "03/0560",
    "text": "– Povedzte svojej mame všetko.",
-   "q": "Maman says this to one boy, Omid. Does this wording fit?"
+   "q": "Maman says this to one boy, Omid. Does this wording fit?",
+   "ctx": 1,
+   "before": [
+    "Vyšli sme. Asi hodinu sme sedeli vo viniciach za budovou hlinenej ľadovne oproti starému cintorínu. Mahboubeh a Maryam uviazali na sabzeh uzly a keď sa zotmelo, vrátili sme sa. V noci Maman ležala uprostred obývacej izby na koberci a pozerala na svoje náramky. Akoby hovorila mne, povedala Omidovi:"
+   ]
   },
   {
-   "id": "04b/0460#11",
+   "id": "04b/0460#9",
    "where": "04b/0460",
-   "text": "– Čo ťa zase trápi, že sa na nás naparuješ, Alat Delon?",
-   "q": "Alat Delon is a crude nickname. Does this line keep the crude joke going?"
+   "text": "– Čo ťa zase trápi, že sa ti na nás postavil, Alain Kokoton?",
+   "q": "The speaker mocks a roommate for getting an erection at them, using his rude nickname. Is the crude joke clear?",
+   "ctx": 0
   },
   {
-   "id": "04b/0743#12",
+   "id": "04b/0743#10",
    "where": "04b/0743",
    "text": "Ležal som v tme izby a škárou vo dverách som videl Ghassema, ako sedí v hale pred televízorom a lúska semienka, a Maman sedela vedľa neho.",
-   "q": "They sit in the family's main living room. Does 'v hale' fit?"
+   "q": "They sit in the family's main living room. Does 'v hale' fit?",
+   "ctx": 0
   },
   {
-   "id": "04b/1265#13",
+   "id": "04b/1263#11",
+   "where": "04b/1263",
+   "text": "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "ctx": 1,
+   "before": [
+    "…príjemné, konejšivé tmavé ticho, ale nevrhala dosť svetla, aby ma niekam doviedla. Blikajúcu lampu v ruke dievčaťa, pri ktorého farbe domových dverí som nikdy nevedel, kam patrí v škatuľke pasteliek. Pribieha malé dievčatko, bzučí ako autíčko a zastaví sa vedľa mňa. Díva sa na hračky. Hovorí:"
+   ]
+  },
+  {
+   "id": "04b/1265#12",
    "where": "04b/1265",
-   "text": "– Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti ešte lepšiu, Babova dievčinka.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?"
+   "text": "– Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.",
+   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
+    "Zozadu sa ozýva hlas:"
+   ]
+  },
+  {
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "Človek z toho dostane posratý závrat. Čím viac o tom premýšľate, tým väčší je ten posratý závrat.",
+   "q": "A student describes a baffling painting with a crude made-up phrase. Does 'posratý závrat' work as that?",
+   "ctx": 1,
+   "before": [
+    "– ...Pozrite sa na to, je to naozaj zarážajúce. Toto nakreslil a pod to napísal: toto nie je fajka."
+   ]
   },
   {
    "id": "04b/1320#14",
    "where": "04b/1320",
-   "text": "A trasúcimi sa rukami som prekotne listoval ghazalmi, hľadajúc ten beit od Háfeza, o ktorom, ako povedala tá druhá dievčina, čím hlbšie sa doň norím, tým viac sa mi točí hlava – aby som ho mohol Niloofar ukázať.",
-   "q": "He recalls a girl's crude phrase for mind-bending confusion. Does that come through?"
+   "text": "hľadajúc ten beit od Háfeza, o ktorom, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
+   "q": "A girl had said a painting gives you a crude kind of dizziness. Is the verse compared to that painting here?",
+   "ctx": 1,
+   "before": [
+    "A trasúcimi sa rukami som prekotne listoval ghazalmi,"
+   ]
   },
   {
    "id": "04b/1321#15",
    "where": "04b/1321",
    "text": "Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This Hafez line should read both as real wine and as metaphor. Does it?",
+   "ctx": 0
   },
   {
    "id": "04b/1321#16",
    "where": "04b/1321",
-   "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým viac sa ti to... viac sa ti točí hlava.",
-   "q": "He starts a crude word, stops, and says a polite one. Does that come through?"
+   "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým väčší po... teda, tým väčší závrat dostaneš.",
+   "q": "He starts to repeat the crude 'posratý závrat', stops, and says a polite word. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "A trasúcimi sa rukami som prekotne listoval ghazalmi, hľadajúc ten beit od Háfeza, o ktorom, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
+    "– Tu. Vypočuj si toto. Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“ Toto je to isté. Je to ako tá maľba, ktorú ti ukazovala ka-kamarátka."
+   ]
   }
  ]
 }

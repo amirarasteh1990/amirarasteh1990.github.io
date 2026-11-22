@@ -1,0 +1,182 @@
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "01/0178#1",
+   "where": "01/0178",
+   "text": "こんなになるくらいなら、麻薬中毒になったほうがまだましだった。",
+   "q": "Maman says this bitterly about her husband. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンは言う。"
+   ]
+  },
+  {
+   "id": "01/0214#2",
+   "where": "01/0214",
+   "text": "ずっとその手を持ち上げて、まるで手そのものがありがたいものだから、みんながキスするはずだとでもいうみたいに。",
+   "q": "Maman mocks her husband's airs after a pilgrimage. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– カルバラーから帰ってきた時のことも覚えていない？ 白い手袋をして、大通りから家まで一緒に歩いてきた。"
+   ]
+  },
+  {
+   "id": "01/0222#3",
+   "where": "01/0222",
+   "text": "ふん、ガーセムは本当のことを言っているじゃない。",
+   "q": "Maman sides with her son's sarcastic joke about his father. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンは言う。"
+   ]
+  },
+  {
+   "id": "01/0184#4",
+   "where": "01/0184",
+   "text": "欲しい人がいれば勝手に連れていけばいい。何かおまけまでつける。",
+   "q": "Maman jokes bitterly that any woman can have her husband, and she would even pay extra. Does this sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– 他の女性を追いかけることもなかったってこと。",
+    "– 女？ そうしてくれればよかった。"
+   ]
+  },
+  {
+   "id": "01/0158#5",
+   "where": "01/0158",
+   "text": "あの馬鹿な先生が出てくる映画？ うん、あれを見なさい。",
+   "q": "Maman recommends a funny film to her family. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンは言う。"
+   ]
+  },
+  {
+   "id": "01/0265#6",
+   "where": "01/0265",
+   "text": "アミール、主役というのはいいことなの？",
+   "q": "Maman asks her son whether having the lead role is a good thing. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンは言う。"
+   ]
+  },
+  {
+   "id": "03/0531#7",
+   "where": "03/0531",
+   "text": "まず相手を知って、結婚して、それからもし望むなら恋をしなさい。",
+   "q": "Maman, a mother from a small town, lectures her son about love. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– まあ、恋をするなとは言っていない。"
+   ]
+  },
+  {
+   "id": "03/0531#8",
+   "where": "03/0531",
+   "text": "去年来たとき、奥さんの兄弟たちにひどく殴られて、体中が黒くなっていた。",
+   "q": "Maman says her son was beaten until he was bruised all over. Does '体中が黒くなっていた' read naturally?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04b/0536#9",
+   "where": "04b/0536",
+   "text": "おやまあああ。じゃあ、その国々はきっと近くにあったんだねえ。",
+   "q": "Maman reacts to news of earthquakes abroad. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが言った。"
+   ]
+  },
+  {
+   "id": "04b/0538#10",
+   "where": "04b/0538",
+   "text": "世も末になったもんだ。ビビの世代は言ってたよ、世の終わりが来たら、地面がしょっちゅう揺れるって。",
+   "q": "Maman recalls what the old folks said about the end of days. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 一年くらい前だよ。"
+   ]
+  },
+  {
+   "id": "06/0040#11",
+   "where": "06/0040",
+   "text": "落ち込むと思ってね、ナナ・ペサルジャン。博士論文の審査があったでしょ。",
+   "q": "Maman explains why they kept bad news from her son. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが言う。"
+   ]
+  },
+  {
+   "id": "06/0104#12",
+   "where": "06/0104",
+   "text": "うーん、この人たちは、ナネイが生きてるときでさえ、ほとんど何もしてやらなかったわね。",
+   "q": "Maman complains about her in-laws. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが言う。"
+   ]
+  },
+  {
+   "id": "06/0264#13",
+   "where": "06/0264",
+   "text": "もう、何か取ってきてって言うたびに、あんな感じで電気でも走ったみたいになるのよ。",
+   "q": "Maman complains that her husband jumps whenever he is asked to fetch something. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが言う。"
+   ]
+  },
+  {
+   "id": "06/0291#14",
+   "where": "06/0291",
+   "text": "何でもないことに文句をつけるのよ、ふふ、アミール・ジャン。",
+   "q": "Maman shrugs off her husband's complaints. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが言う。"
+   ]
+  },
+  {
+   "id": "06/0296#15",
+   "where": "06/0296",
+   "text": "あら、ニーニーは急に眠くなっちゃった。",
+   "q": "Maman, calling herself by her pet name Nini, pretends to be sleepy. Does this sound playful and natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンが目をぎゅっとつぶって言う。"
+   ]
+  },
+  {
+   "id": "06/0066#16",
+   "where": "06/0066",
+   "text": "そうしたら看護師がこっちへ来て、「この方、そちらのお連れの方じゃありませんか」って。",
+   "q": "Maman retells what a nurse said at the hospital. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 病院でずっと、「アドハムさんのご家族！」って呼んでたのよ。誰も動かなかった。"
+   ]
+  }
+ ]
+}

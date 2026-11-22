@@ -1,0 +1,174 @@
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0132#1",
+   "where": "01/0132",
+   "text": "Ya da kolara, mesela. O da bu kadar çok öldürmedi.",
+   "q": "Maman says 'kolara' for cholera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#2",
+   "where": "01/0132",
+   "text": "Mesela tiföid vardı, ya da verem, ya da kızamık.",
+   "q": "Maman says 'tiföid' for typhoid on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#3",
+   "where": "01/0132",
+   "text": "Girmedik delik bırakma. Eskiler derdi ki, her köşe bucağa göz at.",
+   "q": "Maman quotes an old saying to urge her son to explore every corner of the villages. Does it sound like her?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Mm-hm, iyi yapıyorsun. Fırsatın varken tüm köylere git."
+   ]
+  },
+  {
+   "id": "01/0182#4",
+   "where": "01/0182",
+   "text": "Ne “avcısı” değildi ki?",
+   "q": "Told her husband was never a womanizer, Maman picks up the word 'avcısı' mockingly. Does her retort work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Kadın avcısı da değildi.",
+    "Maman der ki:"
+   ]
+  },
+  {
+   "id": "03/0380#5",
+   "where": "03/0380",
+   "text": "En kötü hastalık Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer's on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Maman dedi ki:"
+   ]
+  },
+  {
+   "id": "06/0052#6",
+   "where": "06/0052",
+   "text": "Sonunda Mahboub aradı, amublansla gelip Naney'yi aldılar",
+   "q": "Maman says 'amublansla' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0362#7",
+   "where": "03/0362",
+   "text": "Mahboub, haberlerde söylüyorlar, Ameroka...",
+   "q": "Maman says 'Ameroka' for America on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…sayfayı duvara, diğer Konkur notlarının yanına yapıştırdım. Avlunun sonundaki evden çıktım ve dokuz adımda avlunun boyunu geçtim; yeni keşfin sevinci içimde hâlâ parlaktı. Avludan evin büyük salonuna girdiğimde Maman televizyonun önünde uzanmıştı. İki elini karnına koymuş, Mahboubeh'ye diyordu ki:"
+   ]
+  },
+  {
+   "id": "03/0309#8",
+   "where": "03/0309",
+   "text": "İnşallah hâlin hep araasteh olsun.",
+   "q": "The guard wishes him a neat, orderly life; 'araasteh' is Persian for neat. Does it read as a friendly play on his name?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Güvenlik görevlisi gülümsüyor ve diyor ki:"
+   ]
+  },
+  {
+   "id": "04b/0591#9",
+   "where": "04b/0591",
+   "text": "Pir tu Pir mi?",
+   "q": "Amir mishears 'peer-to-peer' as the Persian word pir, meaning elder. Does his question read as a funny mishearing?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Bir tür peer-to-peer elektronik para.",
+    "Ben dedim ki:"
+   ]
+  },
+  {
+   "id": "04b/0460#10",
+   "where": "04b/0460",
+   "text": "Yine ne bok oldu da Alain Siklon'u bize doğru kaldırdın?",
+   "q": "Hooman again uses 'Alain Siklon', a rude pun on Alain Delon, hinting at an erection. Does the crude joke work?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/1320#11",
+   "where": "04b/1320",
+   "text": "Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.",
+   "q": "The narrator echoes a girl's crude made-up phrase 'bok sersemi' (shit-dizzy). Does it still work in his own sentence?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0616#12",
+   "where": "04b/0616",
+   "text": "Tamam Kartal Göz, tamam be. Şimdi de gözlüğünü dizüstüne sokma.",
+   "q": "Farid teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does the teasing come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0278#13",
+   "where": "03/0278",
+   "text": "Bir bakıma üniversiteyi fethettiklerini söyleyebilirsin. Kerrubi aşktır, dürüstçe söylemek gerekirse.",
+   "q": "Farid gushes about a politician he admires, in student slang. Does this sound like natural youthful enthusiasm?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0630#14",
+   "where": "03/0630",
+   "text": "Taverny'dir, dürüstçe söylemek gerekirse.",
+   "q": "Farid declares with gusto that the nickname Taverny fits Amir perfectly. Does this sound like his excited slang?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Haha, Tavernanın Ulu Yaşlısı, Eldie; mükemmel. Tam isabet, Pars Farid.",
+    "Farid dedi ki:"
+   ]
+  },
+  {
+   "id": "06/0186#15",
+   "where": "06/0186",
+   "text": "Sana kurban olayım Nini-jan – o aklın ne güzel işliyor.",
+   "q": "Amir praises his mother's quick thinking with a warm everyday endearment. Does this sound natural and affectionate?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Amir, Taghi öldüğünde annesi kapıya geldi ve Maman'a dedi ki – insanlara ne söyleyeceğimizi bilmiyoruz. Yani ev yapımı sert arağ içip senkop geçirdi desek çok ayıp olur. Sonra Maman ona dedi: Covid kaptı deyin.",
+    "Derim ki:"
+   ]
+  },
+  {
+   "id": "06/0188#16",
+   "where": "06/0188",
+   "text": "Çocuk anneye kurban olmaz – anne çocuğuna kurban olur. Yağmur yerden göğe yağmaz.",
+   "q": "Maman turns down her son's endearment with two old sayings. Do they read as real sayings a mother would use?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Öhhhh, öh-öh.",
+    "– Allah etmesin, öyle deme."
+   ]
+  }
+ ]
+}

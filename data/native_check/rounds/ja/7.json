@@ -1,0 +1,182 @@
+{
+ "lang": "ja",
+ "slug": "ja",
+ "dir": "ltr",
+ "version": "2026-11-22.r7",
+ "items": [
+  {
+   "id": "04b/0997#1",
+   "where": "04b/0997",
+   "text": "もう、どうでもいいんだよ、クソが。",
+   "q": "Eskandar gives up an argument with a crude shrug. Does this sound like how a young man would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "そんなふうに二人は同じやり取りを繰り返し、繰り返すたびに速度を増していった。やがてエスカンダルが言った。"
+   ]
+  },
+  {
+   "id": "04b/1003#2",
+   "where": "04b/1003",
+   "text": "見ろ、お前がどんな大失態をしでかしたか、このクソ脳みそが。",
+   "q": "Eskandar scolds Amir crudely. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "エスカンダルは私のほうを向き、頭と胸を私のほうへ突き出した。目を丸くして、アラン・ドロン風の口調を崩さないまま、荒っぽい調子で言った。"
+   ]
+  },
+  {
+   "id": "03/0490#3",
+   "where": "03/0490",
+   "text": "割れないよう気をつけろよ、チンポさん。",
+   "q": "Hooman calls Eskandar by a rude nickname. Does 'チンポさん' sound like natural crude teasing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "フーマンが言った："
+   ]
+  },
+  {
+   "id": "04b/0512#4",
+   "where": "04b/0512",
+   "text": "それから完全に消えて、今はどんなクソみたいなことをやってるのか、もう知らない。",
+   "q": "Hooman laughs about a former roommate who vanished. Does this crude ending sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "03/0077#5",
+   "where": "03/0077",
+   "text": "鷹の目ニュースを否定する者に災いあれ。",
+   "q": "Farid swears, half joking, by Sajad's gossip. Does this sound like how a student would put it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "ファリードが言った："
+   ]
+  },
+  {
+   "id": "03/0638#6",
+   "where": "03/0638",
+   "text": "このやろう、この体で俺を百七十メートルも引っ張り回しやがって。",
+   "q": "Hooman, a heavy man, swears at Amir for making him run so far. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– それに、もし最後の細くなってヴァリーアスル門近くまで続く部分を加えたら百七十メートルになる。"
+   ]
+  },
+  {
+   "id": "04b/0818#7",
+   "where": "04b/0818",
+   "text": "俺たちも部屋もみんなも屁とも思っちゃいないファリードが、声をあげたんだぞ。",
+   "q": "Hooman remarks that even aloof Farid spoke up. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 酒場じい、見ろよ、お前、いくらなんでもやりすぎだ。"
+   ]
+  },
+  {
+   "id": "04b/0567#8",
+   "where": "04b/0567",
+   "text": "眼鏡の上から顔は洗えないだろ、このクソ野郎。",
+   "q": "Sajad snaps at a roommate who cursed him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– 顔を洗いに行ってたんだよ。"
+   ]
+  },
+  {
+   "id": "03/0189#9",
+   "where": "03/0189",
+   "text": "このロバめ、俺たちの義兄の親方職人のいとこの友達で、テヘランで一番の金持ちのほうがよく知ってるか、お前みたいな子牛のほうがよく知ってるか、どっちだよ？",
+   "q": "A boy loses his temper with a friend over a car roof. Does this sound like how boys quarrel?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "ハミードの血が煮えたぎり、彼は怒鳴った："
+   ]
+  },
+  {
+   "id": "06/0033#10",
+   "where": "06/0033",
+   "text": "そうよ、私だって気持ちが沈むのよ。友達に会いに行かせてよ。",
+   "q": "Maman answers her daughter: if her heart burns for patients, Maman's heart is heavy too. Does this sound like her?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– しょうがないのよ、アミール。病人がどれほど多いか、想像もつかないくらいなの。あの人たちを思うと胸が焼けるのよ。",
+    "ママンが言う。"
+   ]
+  },
+  {
+   "id": "06/0044#11",
+   "where": "06/0044",
+   "text": "体にいいものを食べること。力のつくものを。",
+   "q": "Maman, a mother from a small town, urges her son to eat well. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– うん、本当に骨と皮になっていたわ。最後にお風呂で体を洗ってあげたとき、もう肉なんてどこにも残っていなかった。食べられていたらあんなことにはならなかったと思う。ナナ・ペサルジャン、食べることにちゃんと気をつけてね。"
+   ]
+  },
+  {
+   "id": "06/0118#12",
+   "where": "06/0118",
+   "text": "昔の人は、言葉にはお金がかからない、ただの空気だって言ってた。",
+   "q": "Maman quotes an old saying that words cost nothing. Does it sound like a saying she would use?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– うん、ガーセムは自分の声を聞きたくてしゃべってるだけよ。"
+   ]
+  },
+  {
+   "id": "01/0162#13",
+   "where": "01/0162",
+   "text": "こちらではみんな、電話して「三十年も迷惑をかけられています。連れに来てください」って言おうと賛成している。",
+   "q": "Maman jokes about phoning to have her husband taken away. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– うん、私、嘘を言ってる？ あんたが生まれた年からずっと家にいて、今もそうよ。それに今日、マフブーブたちの携帯に、「家の男たちが迷惑をかけるなら、電話してください。迎えに行って連れていきます」っていうメッセージが来たの。"
+   ]
+  },
+  {
+   "id": "01/0166#14",
+   "where": "01/0166",
+   "text": "子どもたちを殴らないでと何度言っても、「戦争の砲撃で神経をやられた。自分ではどうにもならない」と言う。",
+   "q": "Maman, a mother from a small town, talks about her husband. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– 冗談を言って笑っているだけよ、ナナ・ペサルジャン。あの人が本当に行くと思う？ 行ってくれるなら、神様が願いを聞き届けてくださったってものよ。神に誓って。自分の命に誓って。ハーシェムとアボルファズルに起きたことも、あの人のせいよ。いつも殴っていた。"
+   ]
+  },
+  {
+   "id": "01/0170#15",
+   "where": "01/0170",
+   "text": "悪口？ 相手に悪いことをされてもいないのに言うなら、悪口よ。",
+   "q": "Maman snaps back at her daughter. Does this retort sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンはマフブーベの声のほうへ頭を向け、少し苛立った口調で言う。"
+   ]
+  },
+  {
+   "id": "01/0174#16",
+   "where": "01/0174",
+   "text": "ねえ、考えてみてよ——バーバのいいことが一つでも思い出せる？",
+   "q": "Maman challenges her children. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "ママンは言う。"
+   ]
+  }
+ ]
+}

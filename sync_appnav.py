@@ -28,6 +28,7 @@ import sys
 from pathlib import Path
 
 from sync_head import page_lang  # noqa: E402 - imports nothing back
+from i18n_langs import UI_LANGS, short  # noqa: E402 - a data table
 
 SITE = Path(__file__).resolve().parent
 IGNORED_DIRS = {".git", ".wrangler", "node_modules"}
@@ -118,9 +119,38 @@ def appnav_html(current: str = "", lang: str = "en") -> str:
             '    <ul class="appnav-tabs">\n'
         + "\n".join(lis) + "\n"
         '    </ul>\n'
+        + langsw_html() +
         '  </div>\n'
         '</nav>\n'
         + END
+    )
+
+
+# The language switch (author 2026-11-22: "we always must show the option to switch
+# between the languages"). It sits in the nav, so it is on every page: at the end of
+# the top bar on a laptop, as the last tab of the bottom bar on a phone. Every name
+# is written in its own language and marked translate="no", so i18n.js never turns
+# "Deutsch" into "German". The list is static HTML; i18n.js only opens it, marks
+# the current language and stores a choice. The table lives in i18n_langs.py.
+GLOBE = ('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>'
+         '<path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9'
+         'S9.5 5.7 12 3z"/>')
+
+
+def langsw_html() -> str:
+    items = "\n".join(
+        '        <li><a href="?ui=%s" data-ui="%s" data-short="%s" lang="%s" dir="%s">%s</a></li>'
+        % (code, code, short(code), "pt-BR" if code == "pt-br" else code, d, name)
+        for code, name, d in UI_LANGS)
+    return (
+        '    <div class="langsw" translate="no">\n'
+        '      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false"'
+        ' aria-label="Language: English" title="Language">'
+        '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">' + GLOBE + '</svg>'
+        '<span class="langsw-cur" lang="en">English</span>'
+        '<span class="langsw-code" aria-hidden="true">EN</span></button>\n'
+        '      <ul class="langsw-list" hidden>\n' + items + '\n      </ul>\n'
+        '    </div>\n'
     )
 
 

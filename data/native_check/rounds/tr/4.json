@@ -1,0 +1,181 @@
+{
+ "lang": "tr",
+ "slug": "tr",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0690#1",
+   "where": "04b/0690",
+   "text": "Şu kadarı yeterdi: elektrik ve makine hocaları nice yıl önce Ebu-Reyhan binasını gemi inşaatı fakültesinden almaya kafayı takmasalardı, Farid de o hale gelmezdi.",
+   "q": "Hooman crudely blames professors who lusted after a building for a friend's death. Does it sound as crude as he would say it?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04a/0062#2",
+   "where": "04a/0062",
+   "text": "Çoğu kişi burada yenilir. Sola giderler.",
+   "q": "A boy of about ten warns his little brothers of a wrong turn in their game. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Burasını öğrenemedim. Görevin en önemli... bir şeyi, derdi. Sonra derdi ki:"
+   ]
+  },
+  {
+   "id": "01/0090#3",
+   "where": "01/0090",
+   "text": "Zavallı olan benim; hiçbir şey söylemem, hep susarım. Yalnızca seyreder, keder yerim.",
+   "q": "Maman says she suffers in silence; 'keder yerim' is a Persian image for grieving. Does it work here?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Ona hiçbir şey söylemedin.",
+    "– Hayır."
+   ]
+  },
+  {
+   "id": "04b/0536#4",
+   "where": "04b/0536",
+   "text": "Vaaay. Hımm, ülkeler mutlaka birbirine yakınmış. Bam depremi ne zamandı?",
+   "q": "Maman, watching news of a huge wave abroad, tries to make sense of it. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman dedi ki:"
+   ]
+  },
+  {
+   "id": "01/0248#5",
+   "where": "01/0248",
+   "text": "Yeniden şiir mi yazıyorsun?",
+   "q": "Maman notices her son is writing poems again. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman der ki:"
+   ]
+  },
+  {
+   "id": "03/0297#6",
+   "where": "03/0297",
+   "text": "Yaptıklarının hepsi geçici çözüm.",
+   "q": "Maman tells her husband that all he ever does is patch things up. Does this sound natural?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Ama böyle olmaz; okul için nüfus cüzdanlarındaki soyadlarından “a”yı çıkarıp diğer daireler için tekrar takıp duruyorsun.",
+    "– Sana ne bunlardan. Ben ne yaptığımı bilirim."
+   ]
+  },
+  {
+   "id": "03/0079#7",
+   "where": "03/0079",
+   "text": "Daha da fazlası.",
+   "q": "Hooman answers a mock curse with a kind of amen, 'and then some'. Does his reply make sense here?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Kartal Göz News'i inkâr edene lanet olsun.",
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0624#8",
+   "where": "03/0624",
+   "text": "Süper, Tavernanın Ulu Yaşlısı. Arasteh için biçilmiş kaftan.",
+   "q": "Farid gives Amir the nickname Elder of the Tavern, from a line of Hafez. Does the nickname sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0392#9",
+   "where": "03/0392",
+   "text": "Dünya da içindeki her şey de sikinde değilken, neden quiz ve sınavlarla bu kadar uğraşıyorsun?",
+   "q": "Eskandar crudely needles a roommate. Does this sound like how young men in a dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Yatakta yan yatıyordum; Hooman ile Eskandar görüş alanımdaydı ama onları seyretmiyordum. Eskandar yaklaşık bir saat boyunca mırıldandıktan sonra Hooman'a dönerek dedi ki:"
+   ]
+  },
+  {
+   "id": "04b/0935#10",
+   "where": "04b/0935",
+   "text": "“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?",
+   "q": "Two lines of a poem by Attar are used as the names of songs. Do they read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Evet, şu Attar'ın şiiriyle olanı."
+   ]
+  },
+  {
+   "id": "06/0118#11",
+   "where": "06/0118",
+   "text": "Eskiler hep derdi, sözün masrafı yok — havadan ibaret.",
+   "q": "Maman quotes an old saying that talk costs nothing. Does it sound like a saying she would really use?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Hmm, Ghassem sırf konuşmuş olmak için konuşuyor."
+   ]
+  },
+  {
+   "id": "06/0033#12",
+   "where": "06/0033",
+   "text": "Hmm, o zaman ben de diyorum ki benim de içim daralıyor. Bırakın da arkadaşlarımı görmeye gideyim.",
+   "q": "Maman, a mother from a small town, says she feels low and wants to visit her friends. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman der ki:"
+   ]
+  },
+  {
+   "id": "06/0044#13",
+   "where": "06/0044",
+   "text": "Nana-pesar-jan, yediklerine gerçekten dikkat et. Sana kuvvet verecek şeyler ye.",
+   "q": "Maman urges her son abroad to eat well. Does it sound like a mother talking?",
+   "ctx": 0,
+   "kind": "maman"
+  },
+  {
+   "id": "04b/0164#14",
+   "where": "04b/0164",
+   "text": "Sıçayım bu şansımıza.",
+   "q": "A young man, in pain, curses their bad luck crudely. Does this sound like a natural curse?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman içini çekip yüzünü Farid'den çevirdi. Gözü Eskandar'a ilişti ve eski bir yaraya batan iğne gibi acı bir sesle bağırdı:"
+   ]
+  },
+  {
+   "id": "04b/0899#15",
+   "where": "04b/0899",
+   "text": "Be sik başı yiyen, niye saçma sapan konuşuyorsun?",
+   "q": "Hooman crudely insults a dorm-mate who is talking nonsense. Does this sound like how a young man would swear?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman dedi ki:"
+   ]
+  },
+  {
+   "id": "03/0394#16",
+   "where": "03/0394",
+   "text": "Ya sik kaf... tabii zaten sik kafalıydın, şimdi daha da sik kafalı oldun.",
+   "q": "Hooman coins a crude insult meaning dick-brained and stumbles over it for effect. Does the joke work?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Birden bu soruya takılıvermişsin. Birkaç ihtimal var. Ya başını bir yere çarptın."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "lang": "es",
+ "slug": "es",
+ "dir": "ltr",
+ "version": "2026-11-22.r2",
+ "items": [
+  {
+   "id": "01/0182#1",
+   "where": "01/0182",
+   "text": "¿Qué... iego dices que no fue?",
+   "q": "Mahboubeh says he was no 'mujeriego' (womanizer); Maman jokes back about every other kind of '-iego'. Does the joke work?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Tampoco fue mujeriego.",
+    "Maman dice:"
+   ]
+  },
+  {
+   "id": "06/0052#2",
+   "where": "06/0052",
+   "text": "Al final, Mahboub llamó, vinieron con una amublancia y se llevaron a Naney.",
+   "q": "Maman says 'amublancia' for ambulance on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0380#3",
+   "where": "03/0380",
+   "text": "La peor enfermedad es el Ayzheimer.",
+   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Maman dijo:"
+   ]
+  },
+  {
+   "id": "01/0132#4",
+   "where": "01/0132",
+   "text": "Estaba el tifoid, por ejemplo, o la tuberculosis, o el sarampión.",
+   "q": "Maman, a mother from a small town, says 'el tifoid' for typhoid on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0132#5",
+   "where": "01/0132",
+   "text": "O la cholara, por ejemplo. Esa tampoco mató a tantos.",
+   "q": "Maman says 'la cholara' for cholera on purpose. Does it read as her slip, not a typo?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "01/0148#6",
+   "where": "01/0148",
+   "text": "¿El qué y Sonrisas?",
+   "q": "Maman is hard of hearing and catches only the end of the series title 'Lágrimas y Sonrisas'. Does her question read naturally?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Niños, ¿descargo Lágrimas y Sonrisas para verla esta noche?",
+    "Maman gira la cabeza y dice:"
+   ]
+  },
+  {
+   "id": "03/0362#7",
+   "where": "03/0362",
+   "text": "Mahboub, esto que dicen en las noticias, Améroca...",
+   "q": "Grandpa, an old man, says 'Améroca' for America on purpose. Does it read as his slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…casa al fondo del patio y recorrí la longitud del patio en nueve pasos, y la alegría del nuevo descubrimiento seguía brillando en mi corazón. Cuando entré en el salón desde el patio, Maman estaba tumbada delante del televisor. Tenía las dos manos sobre el estómago y le estaba diciendo a Mahboubeh:"
+   ]
+  },
+  {
+   "id": "03/0290#8",
+   "where": "03/0290",
+   "text": "¿Arasteh no es más que araasteh recortado?",
+   "q": "A guard jokes that the surname Arasteh is a trimmed 'araasteh', a Persian word for neat. Does the joke come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Señor Arasteh.",
+    "Giro la cabeza hacia él."
+   ]
+  },
+  {
+   "id": "03/0309#9",
+   "where": "03/0309",
+   "text": "Si Dios quiere, que siempre seas araasteh.",
+   "q": "The guard plays on the name again: 'araasteh' means neat and well groomed. Does this friendly wish read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "El guardia sonríe y dice:"
+   ]
+  },
+  {
+   "id": "04b/0595#10",
+   "where": "04b/0595",
+   "text": "Pero la cagó. Ojo de Águila dice peer to peer; Taverny dice Eldie a Eldie.",
+   "q": "Amir misheard 'peer to peer' as 'Pir a pir'; pir means elder, like his nickname Eldie. Does Farid's punch line land?",
+   "ctx": 4,
+   "kind": "joke",
+   "before": [
+    "– ¿Pir a pir?",
+    "Hooman dijo:",
+    "– Mandad un salavat. El Anciano de la Taberna por fin ha dicho algo.",
+    "Farid dijo:"
+   ]
+  },
+  {
+   "id": "04b/0591#11",
+   "where": "04b/0591",
+   "text": "¿Pir a pir?",
+   "q": "Amir mishears the English term 'peer to peer' and repeats it wrongly. Does it read as his mishearing, not a typo?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Una especie de dinero electrónico peer to peer.",
+    "Yo dije:"
+   ]
+  },
+  {
+   "id": "04b/0460#12",
+   "where": "04b/0460",
+   "text": "¿Qué mosca te ha picado ahora para empalmarte con nosotros, Alain Pollón?",
+   "q": "Hooman mocks a roommate with the rude nickname 'Alain Pollón' and a sexual taunt. Does this sound like young men teasing in a dorm?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman dijo:"
+   ]
+  },
+  {
+   "id": "03/0432#13",
+   "where": "03/0432",
+   "text": "Me refiero a Alain Pollón. Pooolla.",
+   "q": "'Alain Pollón' is a rude pun on the actor Alain Delon; Hooman stretches the crude part. Does the joke land?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ...y pones la boca como el culo de una gallina y te matas por hablar como él. A ese no me refiero."
+   ]
+  },
+  {
+   "id": "04a/0080#14",
+   "where": "04a/0080",
+   "text": "¿Por qué no fuisteis a la casa de málmol?",
+   "q": "Ghassem, a young boy, again says 'málmol' for mármol (marble). Does it read as a child's slip, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…esa misma puerta roja grande. Me senté al lado de la acequia. Puse los pies dentro de la acequia. No tenía agua. Mi corazón estaba vacío por dentro. El hombre volvió. La rueda delantera ya no giraba. Le dio una bofetada a Omid. Los dos lloramos. El hombre se fue. Ghassem volvió. Nos regañó. Dijo:"
+   ]
+  },
+  {
+   "id": "04b/0387#15",
+   "where": "04b/0387",
+   "text": "Anoche oía cómo rumiabas.",
+   "q": "Eskandar teases Hooman, who secretly ate sweets at night, by likening him to a cow chewing cud. Does the joke come across?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Eskandar se volvió hacia Hooman y dijo:"
+   ]
+  },
+  {
+   "id": "04b/1320#16",
+   "where": "04b/1320",
+   "text": "Y con las manos temblorosas pasaba deprisa los gazales, buscando un beit de Hafez que, como la pintura de la que había hablado aquella otra chica, nos diera más mareo de mierda cuanto más nos hundiéramos en su hondura, para enseñárselo a Niloofar.",
+   "q": "The narrator echoes a girl's crude phrase for being dizzy with confusion, 'mareo de mierda'. Does it work here?",
+   "ctx": 0,
+   "kind": "joke"
+  }
+ ]
+}

@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/my/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/my/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,134 +72,194 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/my/">&larr; <span class="native" lang="my" dir="ltr">မြန်မာ</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="my" dir="ltr">မြန်မာ</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
   <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-16" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>ဤဘက်ခြမ်းမှ ငါသည် စကားလုံးများ၏ ချည်ကြိုးကို ဖြေလျှော့ပေးနေပြီး၊ အခြားဘက်ခြမ်းမှ သင်သည် ၎င်းကို စုသိမ်းနေ၏။</p>
+        <p class="nc-ctx">နိဒါန်း</p>
+        <p class="nc-ctx">…ပူပန်ရှုပ်ထွေးသော အသံဗလံထဲတွင် ပျောက်ဆုံးသွားလိမ့်မည့် ခဏများနှင့် ရုပ်ပုံများ။ ငါ၏ ကမ္ဘာနှင့် သင်၏ ကမ္ဘာကြားတွင် တံတားတစ်ခု ဖြစ်လာစေရန် မှတ်တမ်းတင်ခဲ့ကြခြင်း ဖြစ်၏။ ဤစာကြောင်းများကို ငါရေးနေသည့် ခဏတွင်ရှိသော ငါ့ကမ္ဘာမှ၊ သင်ထိုင်၍ ၎င်းတို့ကို ဖတ်နေသည့် ခဏတွင်ရှိသော သင့်ကမ္ဘာသို့ တံတားတစ်ခု။</p>
+        <p class="nc-line">ဤဘက်ခြမ်းမှ ငါသည် စကားလုံးများ၏ ချည်ကြိုးကို ဖြေလျှော့ပေးနေပြီး၊ အခြားဘက်ခြမ်းမှ သင်သည် ၎င်းကို စုသိမ်းနေ၏။</p>
       </div>
       <p class="nc-q" id="q1">Is it clear that '<bdi lang="my" dir="ltr">၎င်းကို</bdi>' refers to the words being gathered?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="01/0132#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>ဒါမှမဟုတ် ဝမ်းရောပေါ့။ အဲဒါလည်း ဒီလောက် သတ်မသွားဘူး။</p>
+        <p class="nc-ctx">– ရှိတယ်၊ နီနီ-ဂျန် ရဲ့ ပစ္စည်းတွေကို ပစ်ဖို့ ရင်မရပ်ရက်ဘူး။ ဒီရက်တွေမှာ ရွာတွေကို သွားရင် ဆန်းဒွစ်ချ် လုပ်ပြီး အဲဒီအိတ်ထဲ ထည့်ပြီး တစ်ပါတည်း ယူသွားတယ်။</p>
+        <p class="nc-ctx">…တစ်ယောက် နှာချေလိုက်တာ၊ ဟိုဘက်ခြမ်းက လူက ကူးပြီး သေရတယ်ဆိုတော့။ ဒီလိုမျိုး တစ်ခါမှ မမြင်ဖူး မကြားဖူးဘူး။ ဘီဘီ တို့တောင် ဒီလိုမျိုးအကြောင်း ဘယ်တုန်းကမှ မပြောဖူးဘူး။ ဥပမာ တိုက်ဖွစ်တွေ၊ တီဘီတွေ၊ ဝက်သက်တွေ ရှိခဲ့တယ်။ အဲဒါတွေကို သေစေတတ်တဲ့ရောဂါလို့ ခေါ်ခဲ့ကြတယ်။ ဟင်း၊ အဲဒါတွေတောင် ဒီလောက် သတ်မသွားဘူး။</p>
+        <p class="nc-line">ဒါမှမဟုတ် ဝမ်းရောပေါ့။ အဲဒါလည်း ဒီလောက် သတ်မသွားဘူး။</p>
       </div>
       <p class="nc-q" id="q2">Maman deliberately garbles the word cholera. Can readers still tell she means cholera?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0583#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>– လင်းယုန်မျက်စိ၊ လူတိုင်းက ကျားသစ် ဖရိဒ်ဆီကနေ ထွက်ပြေးကြတယ်၊ ကျားသစ် ဖရိဒ်ကိုတောင် ထွက်ပြေးစေတဲ့ နင်က ဘာအမျိုးအစားလဲ ကြည့်စမ်း။</p>
+        <p class="nc-ctx">– တကယ်ပြောရရင် သွားတိုက်ဖို့ သွားခဲ့တာ၊ လက်နဲ့ မျက်နှာလည်း ဆေးခဲ့တယ်၊ မျက်မှန်မပါလို့ မမြင်ခဲ့တာပါ။</p>
+        <p class="nc-ctx">ဖရိဒ်သည် သူ့ခေါင်းအုံးနှင့် စောင်ကို ကောက်ယူကာ ငါ့ခုတင်အပေါ်ထပ်တွင် လာအိပ်လိုက်သည် — တက္ကသိုလ် ပထမနှစ်ဝက်နှစ်ခုအတွင်း ဗာမန် အိပ်ခဲ့သောခုတင်ဖြစ်ပြီး၊ ထိုညတွင် ဗာမန်၏ ကိုယ်နွေးထွေးမှုသည် ခုတင်ပေါ်ရှိ အိပ်ရာခင်းမှ ပျောက်ကွယ်သွားခဲ့သည်မှာ သုံးနှစ်နီးပါးရှိပြီဖြစ်သည်။ ဟူမန် ပြောသည်−</p>
+        <p class="nc-line">– လင်းယုန်မျက်စိ၊ လူတိုင်းက ကျားသစ် ဖရိဒ်ဆီကနေ ထွက်ပြေးကြတယ်၊ ကျားသစ် ဖရိဒ်ကိုတောင် ထွက်ပြေးစေတဲ့ နင်က ဘာအမျိုးအစားလဲ ကြည့်စမ်း။</p>
       </div>
       <p class="nc-q" id="q3">A student teases a male friend. Does '<bdi lang="my" dir="ltr">နင်</bdi>' (you) sound natural between young men?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="03/0601#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>စက္ကူတိုင်း၏ ဝါကျအလယ်တွင် အထင်ရှားမကြီးသော "မ-" အက္ခရာတစ်လုံးကို ငါ ထပ်ထည့်ခဲ့သည် — "ချစ်တယ်" ကို "မချစ်ဘူး" အဖြစ် ပြောင်းစေသော စကားလုံး။</p>
+        <p class="nc-ctx">– နီဂါရ်က သူ့ဝမ်းကွဲညီအစ်ကိုကို ရိုက်ခိုင်းခဲ့တာလား၊ အခု လိမ်ညာခံလိုက်ရသလို ခံစားနေရတာလဲ?</p>
+        <p class="nc-ctx">…တစ်ခုခု ပြောရန် ငါ ကြောက်ခဲ့သည်။ ဆဲဆိုစကား ငါ များစွာ မသိခဲ့ချေ။ သိသည့် စကားများပင် ရေးရန် ငါ ကြောက်ခဲ့သည်။ ဖမ်းမိသွားရင် ဘယ်လိုလုပ်မလဲ? "ငါ နင့်ကို ချစ်တယ် နီဂါရ်" ဟူသော စကားလုံးများနှင့် အားလုံးကို ငါ ဖြည့်ခဲ့သည်။ ထို့နောက် တာဂီ ငါ့စက္ကူများကို ကြည့်မှာစိုးလို့ ငါ ကြောက်လာသည်။</p>
+        <p class="nc-line">စက္ကူတိုင်း၏ ဝါကျအလယ်တွင် အထင်ရှားမကြီးသော "မ-" အက္ခရာတစ်လုံးကို ငါ ထပ်ထည့်ခဲ့သည် — "ချစ်တယ်" ကို "မချစ်ဘူး" အဖြစ် ပြောင်းစေသော စကားလုံး။</p>
       </div>
       <p class="nc-q" id="q4">Is it believable that one added letter turns '<bdi lang="my" dir="ltr">ချစ်တယ်</bdi>' into '<bdi lang="my" dir="ltr">မချစ်ဘူး</bdi>'?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/0744#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>– သူ အခြေအနေကောင်းလာရင် မရှက်အထိ ခြေလျင်သွားမယ်လို့ ငါ ဆုကတိထားထားတယ်။</p>
+        <p class="nc-ctx">– မင်း ဘာဖတ်ချင်နေတယ်ဆိုတာ ငါ သိတယ်။ ချစ်သူနဲ့ ဇာတိမြေကို အောက်မေ့ပြီး ငါ ဒီလောက် နာကျင်စွာ ငိုကြွေးမယ်၊ ဒါကြောင့် ကမ္ဘာပေါ်မှ ခရီးသွားခြင်းရဲ့ လမ်းနဲ့ ဓလေ့အားလုံးကို ...</p>
+        <p class="nc-ctx">…သတင်းက နိုင်ငံမြောက်ပိုင်းနှင့် အနောက်ပိုင်း ပြည်နယ်များတွင် ကျယ်ပြန့်သော ရေလွှမ်းမိုးမှုကြောင့် ဖြစ်ပေါ်သော ပျက်စီးဆုံးရှုံးမှုများအကြောင်း ပြောနေသည်။ နောက်ကနေ ကြည့်တော့ မားမန်သည် ပိုကြီးသော စတုဂံတစ်ခုဘေးတွင် ထိုင်နေသော စက်ဝိုင်းလေးတစ်ခုလို ကျွန်တော့်မျက်လုံးထဲ ထင်လာသည်။ မားမန်က ပြောနေသည်—</p>
+        <p class="nc-line">– သူ အခြေအနေကောင်းလာရင် မရှက်အထိ ခြေလျင်သွားမယ်လို့ ငါ ဆုကတိထားထားတယ်။</p>
       </div>
       <p class="nc-q" id="q5">The speaker vows to walk to the holy city of Mashhad. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1227#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>သူတို့ယောက်ဖ၏ ဆရာသမား၏ ဝမ်းကွဲညီအစ်ကို၏ သူငယ်ချင်းက ဆံပင်ကို Babyliss သုံးကြောင်း ဟာမိဒ် ကြားခဲ့ပုံရသည်။</p>
+        <p class="nc-ctx">…သူငယ်ချင်းအပြင် ဟာမိဒ်အတွက် ဂုဏ်ယူစရာဆို၍ နောက်ဘက်မှာ အရှည်ထားသော ထိုဆံပင်သာ ရှိခဲ့သည်။ သူသည် ဆံပင်နောက်ဘက်အရှည်က နီဂါရ်၏ အိမ်ဘက်သို့ မျက်နှာမူစေရန် အမြဲ ထိုင်လေ့ရှိသည်။ ထိုဆံပင်အရှည်က ကောက်နေပြီး ဟာမိဒ်၏ လက်တစ်ဖက်ကလည်း အမြဲ ထိုဆံပင်ကောက်ပေါ်မှာ ရှိသည်။ တစ်ခါက ယာဆာရ်ကို သူ ပြောခဲ့သည်—</p>
+        <p class="nc-ctx">– မင်း ဘာဘာမှာ ပိုက်ဆံမရှိ၊ မင်းမှာ လက်တစ်ဖက်နဲ့ ခြေတစ်ဖက်လည်း မရှိဘဲ အဲဒီအစား ငါ့ဆံပင်နောက်အရှည်မျိုး ရမယ်ဆိုရင် လက်ခံမလား။</p>
+        <p class="nc-line">သူတို့ယောက်ဖ၏ ဆရာသမား၏ ဝမ်းကွဲညီအစ်ကို၏ သူငယ်ချင်းက ဆံပင်ကို Babyliss သုံးကြောင်း ဟာမိဒ် ကြားခဲ့ပုံရသည်။</p>
       </div>
       <p class="nc-q" id="q6">Is '<bdi lang="my" dir="ltr">ဆရာသမား</bdi>' right for the master craftsman their brother-in-law works under?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1248#7">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>တီဟီရန်က သူဌေးဆိုတဲ့ ငါတို့ယောက်ဖရဲ့ ဆရာသမားရဲ့ ဝမ်းကွဲညီအစ်ကိုရဲ့ သူငယ်ချင်းက အနက်ရောင်ဟာ အချစ်ရဲ့အရောင်လို့ ပြောတယ်။</p>
+        <p class="nc-ctx">…ကိုင်ထားကြသည်။ ယာဆာရ် မလာခဲ့။ ကျွန်တော့်ကားနှင့် ဟာမိဒ်၏ ကားက ပုံစံတူသည်။ ကျွန်တော့်ကားက အပြာရောင်၊ ဟာမိဒ်၏ ကားက အနီရောင်။ နှစ်ဆယ့်ငါး တိုမန်ဖြင့် ဝယ်ထားကြသည်။ မီးခြစ်ဘူးထက် နည်းနည်း ကြီးသည်။ ဘယ်သူ့ကားအရောင်က ပိုကောင်းသလဲဟု ပြောနေကြသည်။ တာဂီက အဝါဟု ပြောသည်။ ဟာမိဒ်က ပြောသည်—</p>
+        <p class="nc-ctx">– အနက်ရောင်သာ ရှိရင် ငါ အနက်ရောင်ကို ယူမှာ။</p>
+        <p class="nc-line">တီဟီရန်က သူဌေးဆိုတဲ့ ငါတို့ယောက်ဖရဲ့ ဆရာသမားရဲ့ ဝမ်းကွဲညီအစ်ကိုရဲ့ သူငယ်ချင်းက အနက်ရောင်ဟာ အချစ်ရဲ့အရောင်လို့ ပြောတယ်။</p>
       </div>
       <p class="nc-q" id="q7">Is it clear the friend at the end of the chain is Tehran's richest man?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n7">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="04b/1263#8">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p>– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီးကို သမီးအတွက် ဝယ်ပေးမလား။</p>
+        <p class="nc-ctx">– အမီရ်၊ အမီရ်-ဂျန်၊ ငါ့သား။ နိုးတော့။ နိုးတော့ မားမန်ရဲ့သား။ အားလုံး အိပ်မက်ပါ။ မကြောက်နဲ့၊ မားမန် ဒီမှာ ရှိတယ်။</p>
+        <p class="nc-ctx">…မလင်းသည့် စိုးရိမ်စရာ မီးအိမ်။ သူတို့အိမ်တံခါး၏ အရောင်က ရောင်စုံခဲတံဘူး၏ ဘယ်နေရာမှာ ရှိမည်ကို ကျွန်တော် ဘယ်တော့မှ မသိခဲ့ရသော မိန်းကလေးတစ်ယောက်၏ လက်ထဲမှ မှိတ်တုတ်မှိတ်တုတ် လင်းနေသည့် မီးအိမ်။ မိန်းကလေးငယ်တစ်ယောက်က ဝီးဝီးဟု အသံပေးကာ ကျွန်တော့်ဘေးမှာ လာရပ်သည်။ ကစားစရာများကို ကြည့်ပြီး ပြောသည်—</p>
+        <p class="nc-line">– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီးကို သမီးအတွက် ဝယ်ပေးမလား။</p>
       </div>
       <p class="nc-q" id="q8">A toddler asks Dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n8">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
@@ -238,7 +306,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

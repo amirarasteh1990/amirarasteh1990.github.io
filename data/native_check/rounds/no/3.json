@@ -1,0 +1,177 @@
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "04b/1320#1",
+   "where": "04b/1320",
+   "text": "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt – så jeg kunne vise det til Niloofar.",
+   "q": "The narrator echoes a girl's crude made-up word for being dizzy with confusion. Does 'drittsvimle' work here?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "03/0278#2",
+   "where": "03/0278",
+   "text": "På en måte kan man si at de erobret universitetet. Karroubi er kjærlighet, virkelig.",
+   "q": "Farid, an excited student, praises a reformist politician in slang. Does 'Karroubi er kjærlighet' sound like natural youthful slang?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "06/0186#3",
+   "where": "06/0186",
+   "text": "Jeg ville gjort alt for deg, Nini-jan. Hodet ditt fungerer så godt.",
+   "q": "Amir lovingly praises his mother, called Nini in the family, for her quick thinking. Does this sound warm and natural?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "– Amir, da Taghi døde, kom moren hans til døren og sa til Maman: Vi vet ikke hva vi skal si til folk. Jeg mener, om vi sier at han hadde drukket sterk, hjemmebrent aragh og fått synkope, blir det en fryktelig skam. Da sa Maman til henne: Si bare at han fikk korona.",
+    "Jeg sier:"
+   ]
+  },
+  {
+   "id": "04b/0616#4",
+   "where": "04b/0616",
+   "text": "Fint, Ørneøye, fint. Stikk nå ikke brillene inn i laptopen.",
+   "q": "Farid teases short-sighted Sajad, who peers at his laptop from very close. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman sa:"
+   ]
+  },
+  {
+   "id": "01/0132#5",
+   "where": "01/0132",
+   "text": "Stikk nesen inn i alle kriker og kroker. De gamle sa alltid: kikk inn i alle kroker og kott.",
+   "q": "Maman urges her son to see every village and quotes an old saying. Does the saying sound natural from her?",
+   "ctx": 0,
+   "kind": "known"
+  },
+  {
+   "id": "03/0394#6",
+   "where": "03/0394",
+   "text": "Eller så er du pikkhjer ... ja ja, pikkhjerne var du allerede, nå er du blitt enda mer pikkhjerne.",
+   "q": "Hooman starts a crude insult, breaks off, and makes it worse on purpose. Does the joke land for young men in a dorm?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Du har plutselig hengt deg opp i dette spørsmålet. Det finnes noen muligheter. Enten har du slått hodet i noe."
+   ]
+  },
+  {
+   "id": "04b/0378#7",
+   "where": "04b/0378",
+   "text": "Du har dritt til hjerne. Ingen sier du er stum bare fordi du ikke fjerter.",
+   "q": "Eskandar twists a saying, 'nobody calls you mute if you keep quiet', into a crude jibe. Does the joke come across?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0175#8",
+   "where": "04b/0175",
+   "text": "Ikke la deg lure av denne Arasteh; tåpelig som han ser ut, var Konkur-plasseringen hans fireoghalvfjerds.",
+   "q": "Hooman says Amir ranked seventy-fourth in the national entrance exam. Does the number sound natural here?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Ja."
+   ]
+  },
+  {
+   "id": "04b/0385#9",
+   "where": "04b/0385",
+   "text": "Han kan ikke noe for det. Sånn er fabrikksystemet hans.",
+   "q": "Hooman jokes that Amir behaves this way because of his factory settings, like a gadget. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Eldie er Taverny."
+   ]
+  },
+  {
+   "id": "04b/0571#10",
+   "where": "04b/0571",
+   "text": "Kom først og dokumentér denne tommelen, og lag så film om hva dere vil.",
+   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film plan. Does the joke come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Gutter, la oss lage en dokumentarfilm om rommet vårt.",
+    "Hooman tok hånden frem under teppet og sa:"
+   ]
+  },
+  {
+   "id": "03/0576#11",
+   "where": "03/0576",
+   "text": "Jeg ville dø for de nattergaløynene du har, Ørneøye-jan, men problemet ligger hos mottakeren; senderen kan ikke løse det.",
+   "q": "Short-sighted Sajad took Farid's toothbrush; Farid answers in mock-flowery words. Does the joke come across?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "– Ørneøye, du tok tannbørsten min igjen.",
+    "– Objektivt sett, kjøp en annen farge neste gang.",
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "01/0142#12",
+   "where": "01/0142",
+   "text": "Baba hva?",
+   "q": "Maman is hard of hearing and catches only one word of her son's joke. Does her short question read naturally?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Tenk da bare hva stakkars Baba må gå igjennom – han har sittet hjemme uten arbeid alle disse årene.",
+    "Maman sier:"
+   ]
+  },
+  {
+   "id": "03/0388#13",
+   "where": "03/0388",
+   "text": "Objektivt, jeg ser ingenting uten brillene mine.",
+   "q": "Sajad says 'objektivt' constantly out of habit, and his friends find it funny. Does it read as his verbal habit?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad sa:"
+   ]
+  },
+  {
+   "id": "03/0126#14",
+   "where": "03/0126",
+   "text": "Vennen til fetteren til håndverksmesteren til svogeren vår, som er den rikeste mannen i Teheran, snakker nøyaktig slik.",
+   "q": "Hamid's running joke: he always cites this long chain of people as his authority. Does it read smoothly and sound funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Hm."
+   ]
+  },
+  {
+   "id": "03/0624#15",
+   "where": "03/0624",
+   "text": "Supert, tavernens eldste. Det er perfekt for Arasteh.",
+   "q": "Friends give Amir a mock-grand nickname from a Hafez poem, 'tavernens eldste'. Does it work as a fun nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "03/0628#16",
+   "where": "03/0628",
+   "text": "Haha, tavernens eldste, Eldie — perfekt.",
+   "q": "Hooman shortens the nickname 'tavernens eldste' to 'Eldie'. Does that work as a teasing short form?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman skrev noe i boken med en penn og sa:"
+   ]
+  }
+ ]
+}

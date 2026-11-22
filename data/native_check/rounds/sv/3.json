@@ -1,0 +1,189 @@
+{
+ "lang": "sv",
+ "slug": "sv",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "03/0630#1",
+   "where": "03/0630",
+   "text": "– Han är Taverny, på heder och samvete.",
+   "q": "Farid shortens Amir's nickname 'Tavernens Äldste' to the pet name 'Taverny'. Does that pet name sound natural here?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Haha, Tavernens Äldste, Äldi — perfekt. Du träffade mitt i prick, Leopard-Farid.",
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "03/0278#2",
+   "where": "03/0278",
+   "text": "På ett sätt kan man säga att de erövrade universitetet. Karroubi är kärlek, på riktigt.",
+   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karroubi är kärlek, på riktigt' sound like a young man's slang?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Hej Taverny, spring. Spring, vi går. De säger att de inte lät Karroubi komma in på universitetet. Hans anhängare bröt upp Hafez-porten och gick in."
+   ]
+  },
+  {
+   "id": "04b/0616#3",
+   "where": "04b/0616",
+   "text": "– Okej, Örnaöga, okej. Stick nu inte in glasögonen i datorn.",
+   "q": "Hooman teases short-sighted Sajad, nicknamed 'Örnaöga', who peers very close to his laptop. Does the tease come through?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman sa:"
+   ]
+  },
+  {
+   "id": "01/0142#4",
+   "where": "01/0142",
+   "text": "– Baba vad?",
+   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Tänk då bara vad vår stackars Baba måste gå igenom – han har suttit overksam hemma alla dessa år.",
+    "Maman säger:"
+   ]
+  },
+  {
+   "id": "06/0023#5",
+   "where": "06/0023",
+   "text": "– Jag har det på, ingen strees. Men jag hatar det verkligen.",
+   "q": "Maman, talking about her face mask, says 'ingen strees', mangling stress on purpose. Does it sound like her, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Men du ska ha ditt på, Nini-jan."
+   ]
+  },
+  {
+   "id": "03/0189#6",
+   "where": "03/0189",
+   "text": "– Pff, åsna, vem vet mer, vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, eller du, kalv?",
+   "q": "Hamid, a boy, angrily calls his friend 'åsna', the polite word for donkey, and 'kalv'. Does it sound like a child's angry insult?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid kokade över och skrek:"
+   ]
+  },
+  {
+   "id": "03/0309#7",
+   "where": "03/0309",
+   "text": "– Om Gud vill, må du alltid vara araasteh.",
+   "q": "Smiling, the guard wishes him to always be 'araasteh', neat and well-kept, as his name says. Does this blessing read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Vakten ler och säger:"
+   ]
+  },
+  {
+   "id": "06/0186#8",
+   "where": "06/0186",
+   "text": "– Jag skulle ge allt för dig, Nini-jan. Ditt huvud fungerar så bra.",
+   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Amir, när Taghi dog kom hans mor till dörren och sa till Maman: vi vet inte vad vi ska säga till folk. Jag menar, om vi säger att han hade druckit stark, hembränd aragh och fått synkope blir det en fruktansvärd skandal. Då sa Maman till henne: säg bara att han fick corona.",
+    "Jag säger:"
+   ]
+  },
+  {
+   "id": "03/0624#9",
+   "where": "03/0624",
+   "text": "– Toppen, Tavernens Äldste. Det passar perfekt för Arasteh.",
+   "q": "Farid gives Amir the mock-grand nickname 'Tavernens Äldste', from a Hafez poem. Does it sound funny and natural as a nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "03/0628#10",
+   "where": "03/0628",
+   "text": "– Haha, Tavernens Äldste, Äldi — perfekt. Du träffade mitt i prick, Leopard-Farid.",
+   "q": "Hooman shortens that nickname to 'Äldi'. Does this pet name sound natural and playful between friends?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman skrev något i boken med en penna och sa:"
+   ]
+  },
+  {
+   "id": "03/0388#11",
+   "where": "03/0388",
+   "text": "– Jag kan inte se någonting utan glasögon, objektivt sett.",
+   "q": "Sajad starts or ends almost every sentence with 'objektivt sett', a habit his roommates mock. Does this habit read naturally?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad sa:"
+   ]
+  },
+  {
+   "id": "03/0126#12",
+   "where": "03/0126",
+   "text": "– Hm. Vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, pratar exakt så.",
+   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid sa:"
+   ]
+  },
+  {
+   "id": "04b/1300#13",
+   "where": "04b/1300",
+   "text": "– Så med den repliken, sket du just på oss eller på Mister Lockhårige Schrödinger?",
+   "q": "Farid crudely asks whom a lofty remark insulted, mocking a roommate as 'Mister Lockhårige Schrödinger'. Does it sound natural?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– ... som du talar måste den som inte förstår dig vara mycket djup, och den som tycker om att lyssna på dig mycket ytlig.",
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "01/0132#14",
+   "where": "01/0132",
+   "text": "Stick in näsan i varenda skrymsle och vrå. De gamla sade alltid: kika in i vartenda hörn.",
+   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mm-hm, du gör rätt. Medan du har chansen, gå och se alla byar."
+   ]
+  },
+  {
+   "id": "04a/0111#15",
+   "where": "04a/0111",
+   "text": "Jag stötte in i en mur. Den var av marmel. Jag plockade upp en pinne.",
+   "q": "A lost six-year-old tells this, using his brother's wrong word 'marmel' for marmor. Does it read as a child's word, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Tråden var inte i min hand mer. Den följde efter en fot. Jag följde efter den också. Ett litet barn kom fram mellan benen. Barnet tog tag i min fot med ena handen. Jag föll. Det blev fler och fler ben. Det fanns ingen tråd. Jag gick mellan benen."
+   ]
+  },
+  {
+   "id": "03/0383#16",
+   "where": "03/0383",
+   "text": "– Nej, Ayzheimer är mycket dålig. En av mina väninnor har fått Ayzheimer; hon känner inte igen sina barn.",
+   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "Omid sa:",
+    "– Nej, den här är mycket dålig. Det finns inte ens medicin mot den."
+   ]
+  }
+ ]
+}

@@ -1,32 +1,48 @@
 {
-  "lang": "eo",
-  "slug": "eo",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu.",
-      "q": "Is it clear the children walked around inside the house?"
-    },
-    {
-      "id": "Opening/0007#2",
-      "where": "Opening/0007",
-      "text": "Nun mi malvolvas la fadenon de vortoj, kaj vi prenu ilin kaj portu ilin en vian propran mondon, por ke ili ne amasiĝu ĉi tie, en mia mondo.",
-      "q": "Does this sentence read naturally?"
-    },
-    {
-      "id": "04b/1312#3",
-      "where": "04b/1312",
-      "text": "Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.",
-      "q": "Is it clear the caption under the drawing says: this is not a pipe?"
-    },
-    {
-      "id": "04b/1312#4",
-      "where": "04b/1312",
-      "text": "Oni kapturniĝas. Ju pli vi pensas pri ĝi, des pli vi kapturniĝas.",
-      "q": "A girl is meant to joke with a crude made-up word. Does it work?"
-    }
-  ]
+ "lang": "eo",
+ "slug": "eo",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu.",
+   "q": "Is it clear the children walked around inside the house?",
+   "before": [
+    "Enkonduko",
+    "…ĉi tie. Ili estis skribitaj por fariĝi ponto inter mia mondo kaj la via. Ponto el mia mondo, en la momento kiam mi skribas ĉi tiujn frazojn, al la via, en la momento kiam vi eksidas por legi ilin. De ĉi tiu flanko, mi malvolvas la fadenon de vortoj, kaj de la alia flanko, vi kolektas la vortojn."
+   ]
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Nun mi malvolvas la fadenon de vortoj, kaj vi prenu ilin kaj portu ilin en vian propran mondon, por ke ili ne amasiĝu ĉi tie, en mia mondo.",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Enkonduko",
+    "…vi kolektas la vortojn. Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu. Eble via generacio venis kelkajn jarojn post tiu mondo de lanfadeno — sed imagu: iam, ie en la mondo, infanoj ludis tiamaniere."
+   ]
+  },
+  {
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.",
+   "q": "Is it clear the caption under the drawing says: this is not a pipe?",
+   "before": [
+    "…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:",
+    "– ... rigardu, vere kiom pripensiga ĝi estas."
+   ]
+  },
+  {
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "Oni kapturniĝas. Ju pli vi pensas pri ĝi, des pli vi kapturniĝas.",
+   "q": "A girl is meant to joke with a crude made-up word. Does it work?",
+   "before": [
+    "…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:",
+    "– ... rigardu, vere kiom pripensiga ĝi estas. Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo."
+   ]
+  }
+ ]
 }

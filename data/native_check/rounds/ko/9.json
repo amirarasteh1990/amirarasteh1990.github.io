@@ -1,0 +1,172 @@
+{
+ "lang": "ko",
+ "slug": "ko",
+ "dir": "ltr",
+ "version": "2026-11-22.r9",
+ "items": [
+  {
+   "id": "04b/0526#1",
+   "where": "04b/0526",
+   "text": "이런 파도가 어디서 왔다니?",
+   "q": "Maman reacts to a huge wave the family is watching. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마망이 말했다:"
+   ]
+  },
+  {
+   "id": "03/0070#2",
+   "where": "03/0070",
+   "text": "걔가 자기 친구 하미드처럼 될까 봐 걱정이야.",
+   "q": "Maman worries about her son. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "마흐부베가 웃었고, 마망이 말했다:"
+   ]
+  },
+  {
+   "id": "04a/0059#3",
+   "where": "04a/0059",
+   "text": "마망이 신은 하늘에 있다고 했다.",
+   "q": "A six-year-old repeats what Maman told him about God. Does '신' sound like a small child's word?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0005#4",
+   "where": "04a/0005",
+   "text": "그런데 왜, 지금 내가 골목 문 뒤에 서 있는데, 마망은 한 번도 찾으러 오지 않는 걸까?",
+   "q": "A six-year-old tells this. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0049#5",
+   "where": "04a/0049",
+   "text": "하지 카젬 가게도 맛있다.",
+   "q": "A six-year-old says the shop 'tastes good' too, in child logic. Does it read as a small child's thought?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0001#6",
+   "where": "04a/0001",
+   "text": "마망이 어두워졌다. 전기가 나갔던 그날처럼.",
+   "q": "A small child peeks through a hole in a curtain and sees Maman go dark. Does it sound like a child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0071#7",
+   "where": "04a/0071",
+   "text": "마음이 텅 비곤 했다. 거기 가고 싶지 않았다.",
+   "q": "A six-year-old tells how the cemetery scares him. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– 학교 저쪽에 묘지가 있어. 아주 오래됐어. 어떤 무덤은 돌이 없어. 죽은 사람들 뼈가 보여."
+   ]
+  },
+  {
+   "id": "04a/0052#8",
+   "where": "04a/0052",
+   "text": "교차로는 엄청 크다는 뜻이야.",
+   "q": "An older boy explains an intersection to his little brothers. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– 3단계는 교차로야."
+   ]
+  },
+  {
+   "id": "04a/0036#9",
+   "where": "04a/0036",
+   "text": "그럼 덜 넣어. 근데 너무 덜 넣지는 말고. 조금만 덜.",
+   "q": "A small boy bargains with Maman about salt. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "내가 말했다:"
+   ]
+  },
+  {
+   "id": "04a/0064#10",
+   "where": "04a/0064",
+   "text": "왼쪽은 위험해. 저 빨간 문은 아주 화가 많은 할아버지 집이야. 바바보다도 더 화가 많아.",
+   "q": "An older boy warns his little brothers about a scary house. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "그다음 크고 빨간 문이 있는 그 집을 보여주곤 했다. 말하곤 했다:"
+   ]
+  },
+  {
+   "id": "04a/0062#11",
+   "where": "04a/0062",
+   "text": "많은 애들이 여기서 실패해. 걔네는 왼쪽으로 가버려.",
+   "q": "An older boy, playing commander, warns his brothers. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "이 부분은 끝내 몰랐다. 임무에서 제일 중요한... 뭔가라고 말하곤 했다. 그다음 말하곤 했다:"
+   ]
+  },
+  {
+   "id": "04a/0024#12",
+   "where": "04a/0024",
+   "text": "대대, 앞으로 가.",
+   "q": "A boy plays army commander with his little brothers. Does this sound like a boy playing soldiers?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "먼저 거실에 잠깐 서 있었다. 가셈이 뭔가 말하곤 했다. 그러고는 이렇게 말하곤 했다:"
+   ]
+  },
+  {
+   "id": "04a/0038#13",
+   "where": "04a/0038",
+   "text": "큰길 진입: 쯧쯧.",
+   "q": "The boy commander adds a sound effect as they reach the main street. Does '쯧쯧' work here?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "나는 항상 마망 말을 잘 듣는다. 가셈 말도 잘 들었다. 가셈이 말하곤 했다:"
+   ]
+  },
+  {
+   "id": "04a/0056#14",
+   "where": "04a/0056",
+   "text": "피곤하면 더는 임무에 오지 마.",
+   "q": "An older boy scolds his tired little brother. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "가셈이 말했다:"
+   ]
+  },
+  {
+   "id": "04a/0018#15",
+   "where": "04a/0018",
+   "text": "오늘 아침에 마당에 나갔어. 마망이 내가 똑똑하다고 했어.",
+   "q": "A small boy proudly tells his brother this. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "내가 말했다:"
+   ]
+  },
+  {
+   "id": "04a/0082#16",
+   "where": "04a/0082",
+   "text": "말 안 했잖아.",
+   "q": "A crying little boy answers his older brother. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "오미드는 울고 있었다. 말했다:"
+   ]
+  }
+ ]
+}

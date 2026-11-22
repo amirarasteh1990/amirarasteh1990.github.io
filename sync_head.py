@@ -45,7 +45,7 @@ END = "<!-- PWA:END -->"
 
 # Keep this in step with sw.js. Unlike the service-worker cache name alone, this
 # version reaches a returning reader before the newly deployed worker activates.
-STYLE_VERSION = "32"
+STYLE_VERSION = "33"
 STYLE_HREF = f"/assets/css/style.css?v={STYLE_VERSION}"
 
 # Pages whose <html lang> is written in the Arabic script. Their own text is set in
@@ -99,6 +99,46 @@ BOOKS_TAB_JS = (
 )
 
 
+# The site's own words in the visitor's language (author 2026-11-22; assets/js/i18n.js
+# explains the whole scheme). This decides the language before first paint: the
+# stored choice, else the browser's FIRST language if the site has it, else English
+# -- "if not sure we keep it as english". A non-English choice loads its dictionary
+# synchronously (document.write of a same-origin script) and hides the body until
+# i18n.js has translated it, with a CSS fallback that shows the page after 1.2 s
+# whatever happens (.i18n-wait in style.css). ?ui=<code> previews one page view.
+from i18n_langs import CODES as _UI_CODES, RTL as _UI_RTL  # noqa: E402
+
+
+def _i18n_version() -> str:
+    """Short hash of the runtime and every dictionary, so a changed one is refetched."""
+    import hashlib
+    h = hashlib.sha1()
+    for p in [SITE / "assets/js/i18n.js"] + sorted((SITE / "assets/i18n").glob("*.js")):
+        if p.exists():
+            h.update(p.read_bytes())
+    return h.hexdigest()[:8]
+
+
+def i18n_js() -> str:
+    v = _i18n_version()
+    codes = ",".join('"%s":1' % c for c in _UI_CODES)
+    rtl = ",".join('"%s":1' % c for c in sorted(_UI_RTL))
+    return (
+        '<script>/* the visitor\'s language: see assets/js/i18n.js */\n'
+        '(function(){var L={' + codes + '},R={' + rtl + '},K="arasteh-ui",s=null,u,'
+        'h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);\n'
+        'try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;\n'
+        'if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])'
+        '||navigator.language||"").toLowerCase(),c=b.split("-")[0];\n'
+        'if(c==="pt")c=/-br\\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";'
+        'else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}\n'
+        'window.__ui=u;window.__UI_RTL=R;\n'
+        'if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";'
+        'document.write(\'<script src="/assets/i18n/\'+u+\'.js?v=' + v + '"><\\/script>\')}})();</script>\n'
+        '<script src="/assets/js/i18n.js?v=' + v + '" defer></script>\n'
+    )
+
+
 def head_html(lang: str = "") -> str:
     """The managed head block, indented to sit at column 0 inside <head>.
 
@@ -109,7 +149,7 @@ def head_html(lang: str = "") -> str:
         '<link rel="preload" href="/assets/fonts/ebgaramond-regular.woff2" as="font" '
         'type="font/woff2" crossorigin>\n'
         + (VAZIRMATN_PRELOAD if lang in ARABIC_SCRIPT else "")
-        + THEME_JS + BOOKS_TAB_JS +
+        + THEME_JS + i18n_js() + BOOKS_TAB_JS +
         '<link rel="manifest" href="/manifest.webmanifest">\n'
         '<meta name="mobile-web-app-capable" content="yes">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n'

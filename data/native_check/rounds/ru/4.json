@@ -1,0 +1,184 @@
+{
+ "lang": "ru",
+ "slug": "ru",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0209#1",
+   "where": "04b/0209",
+   "text": "Пфф, но чтоб тебя, собрался и укатил туда, а теперь сидишь и смеёшься над нашими бородами и хуями.",
+   "q": "Hooman crudely complains that his friend abroad laughs at the men back home. Does this sound like natural rough talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "И сыплет смехом поверх смеха."
+   ]
+  },
+  {
+   "id": "04b/0822#2",
+   "where": "04b/0822",
+   "text": "То есть в корне всё сложилось бы иначе, и не бродил бы ты так по улицам с членом в руке.",
+   "q": "Hooman says, with a crude image, that his friend now wanders around aimless and lost. Does this sound natural?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0721#3",
+   "where": "04b/0721",
+   "text": "Элди, вместо того чтобы вот так разваливаться на кровати и играть со своими яйцами, поднимайся и отправляй. Случай выгодный.",
+   "q": "Hooman crudely urges his idle friend to mail off his papers because it is a bargain. Does this sound like him?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "04b/0723#4",
+   "where": "04b/0723",
+   "text": "Ну, раз ты не из тех, кто подаёт документы и уезжает, чего ж ты задницу рвал, сдавая ТОЙФЛ?",
+   "q": "Hooman teases his friend for slogging through the TOEFL English test. Does this sound natural, including the test's name?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Он засмеялся. Я ничего не сказал. Хуман продолжил:"
+   ]
+  },
+  {
+   "id": "03/0394#5",
+   "where": "03/0394",
+   "text": "Либо ты хуемоз... впрочем, ты и так был хуемозглый, а теперь стал ещё хуемозглее.",
+   "q": "Hooman coins a crude insult meaning dick-brained and stumbles over it for effect. Does the joke work?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ты вдруг зациклился на этом вопросе. Тут несколько вариантов. Либо ты ударился головой."
+   ]
+  },
+  {
+   "id": "04b/0186#6",
+   "where": "04b/0186",
+   "text": "Я бы предпочёл жить в одной комнате с ними, чем с таким членоголовым, как ты.",
+   "q": "A dorm student calls his roommate a crude name, dick-brain. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Первенство Университета АмирКабир в студенческих движениях не сравнимо ни с чем. Пусть даже в Шарифе и собрались так называемые элиты, из которых до сих пор не вышло ни единой революционной теории."
+   ]
+  },
+  {
+   "id": "04b/0378#7",
+   "where": "04b/0378",
+   "text": "Дерьмо вместо мозгов, не пукнешь — немым тебя не назовут.",
+   "q": "Eskandar uses a crude old saying to tell a friend nobody asked him to speak. Does it read as a real saying?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…и Саджада. Я лежал на своей кровати и думал о том, о чём мы с Нилуфар говорили. Свет в коридоре погас, и шум из других комнат тоже уснул. В темноте и тишине посреди ночи тень Хумана вошла в дверь и направилась прямиком к коробке сладостей. Будто вынюхивал. Утром Эскандар разбудил меня и сказал:"
+   ]
+  },
+  {
+   "id": "03/0422#8",
+   "where": "03/0422",
+   "text": "Что с тобой опять такое?",
+   "q": "Hooman, annoyed and yawning, snaps at a dorm-mate. Does this sound as rough as young men would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Хуман скомкал пакетик из-под мармелада в руке и бросил под кровать. Из-под кровати достал учебник «Исламская мысль» и положил на матрас. Зевнул и сказал:"
+   ]
+  },
+  {
+   "id": "04b/0562#9",
+   "where": "04b/0562",
+   "text": "Орлиный Глаз, не прости тебя Бог, ты мне всю спину разбил.",
+   "q": "Eskandar, knocked flat, curses a short-sighted friend who stumbled onto him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Эскандар сказал голосом, по которому было слышно, что он едва дышит:"
+   ]
+  },
+  {
+   "id": "04b/0575#10",
+   "where": "04b/0575",
+   "text": "Ради матери своей, не ходи по комнате без очков.",
+   "q": "Eskandar begs a short-sighted roommate to stop walking around without his glasses. Does this plea sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Орлиный Глаз, Муху уже Бог покарал — не бей хоть ты его."
+   ]
+  },
+  {
+   "id": "03/0576#11",
+   "where": "03/0576",
+   "text": "Я жизнь бы отдал за эти твои соловьиные глаза, Орлиный Глаз-джан, но дело в приёмнике, передатчик его не решит. Иначе моя зубная щётка ни цветом, ни формой не похожа на твою.",
+   "q": "Farid teases short-sighted Sajad, who grabbed the wrong toothbrush: the fault lies in his eyes. Does the joke come through?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Объективно, в следующий раз купи другого цвета.",
+    "Фарид сказал:"
+   ]
+  },
+  {
+   "id": "03/0079#12",
+   "where": "03/0079",
+   "text": "И ещё больше.",
+   "q": "Hooman answers a mock curse with a kind of amen, 'and then some'. Does his reply make sense here?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Проклят тот, кто отрицает Орлиный Глаз Ньюс.",
+    "Хуман сказал:"
+   ]
+  },
+  {
+   "id": "01/0090#13",
+   "where": "01/0090",
+   "text": "Я же несчастная — никогда ничего не говорю, всегда молчу. Только смотрю и ем горе.",
+   "q": "Maman says she suffers in silence; 'ем горе' is a Persian image for grieving. Does it work here?",
+   "ctx": 2,
+   "kind": "maman",
+   "before": [
+    "– Ты ему ничего не сказала.",
+    "– Нет."
+   ]
+  },
+  {
+   "id": "03/0531#14",
+   "where": "03/0531",
+   "text": "Сначала узнайте человека, поженитесь, а потом, если хотите, влюбляйтесь.",
+   "q": "Maman lectures her young son on love and marriage. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Ладно, я ведь не говорю, что не надо влюбляться."
+   ]
+  },
+  {
+   "id": "04b/1314#15",
+   "where": "04b/1314",
+   "text": "Может, вы скажете, что так не бывает, что это невозможно, что это лишь воображение, а не явь. Но это было, и я вправду вас люблю.",
+   "q": "Amir finally confesses his love to the girl he has admired from afar. Does it sound heartfelt and natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Тридцать два месяца я вас люблю. Издалека. Без вашего ведома. В молчании. Без единого слова."
+   ]
+  },
+  {
+   "id": "04b/0935#16",
+   "where": "04b/0935",
+   "text": "«Слаще Аттару рыдать до рассвета» или «теперь он стал ещё более убитым»?",
+   "q": "Two lines of a poem by Attar are used as the names of songs. Do they read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Да, тот, что со стихом Аттара."
+   ]
+  }
+ ]
+}

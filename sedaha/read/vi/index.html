@@ -163,7 +163,7 @@
 <link rel="alternate" hreflang="so" href="https://arasteh.art/sedaha/read/so/">
 <link rel="alternate" hreflang="yo" href="https://arasteh.art/sedaha/read/yo/">
 <link rel="alternate" hreflang="zu" href="https://arasteh.art/sedaha/read/zu/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
@@ -181,6 +181,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -205,6 +213,35 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
@@ -217,10 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <a href="/sedaha/read/fa/" lang="fa">فارسی</a> &middot;
     <a href="/sedaha/read/da/" lang="da">Dansk</a> &middot;
     <span class="cur" lang="vi" aria-current="page">Tiếng Việt</span>
-    &middot; <a href="/sedaha/#allLangs" aria-label="The whole book, in 106 languages">106 &rarr;</a>
+    &middot; <a href="/sedaha/#allLangs" aria-label="The whole book, in 113 languages">113 &rarr;</a>
   </nav>
   <div class="op-bar">
   <div class="op-actions" lang="en" dir="ltr">
+    <a class="op-act" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Vietnamese.epub" rel="nofollow" aria-label="Vietnamese: the complete book, EPUB">EPUB</a>
+    <a class="op-act" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Vietnamese.pdf" rel="nofollow" aria-label="Vietnamese: the complete book, PDF">PDF</a>
     <button type="button" class="op-act op-act-icon btn-share" aria-label="Share this opening" title="Share this opening" data-share-url="https://arasteh.art/sedaha/read/vi/" data-share-title="Sedaha (Sounds) &mdash; Book One" data-share-text="Sợi chỉ của những từ ngữ từng một thời là âm thanh…"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
   </div>
   <div class="reader-tools" role="group" lang="en" aria-label="Reading settings">
@@ -230,7 +269,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <button type="button" class="rt rt-theme" data-mode="auto" aria-label="Colours: following the system. Switch to light." title="Colours: following the system. Switch to light."><svg aria-hidden="true" viewBox="0 0 24 24"><g class="i-auto"><circle cx="12" cy="12" r="7.5"/><path d="M12 4.5a7.5 7.5 0 0 1 0 15z" fill="currentColor" stroke="none"/></g><g class="i-light"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></g><g class="i-dark"><path d="M20.5 14.8A8.6 8.6 0 0 1 9.2 3.5a8.6 8.6 0 1 0 11.3 11.3z"/></g></svg></button>
   </div>
   </div>
-  <article class="reader" lang="vi">
+  <article class="reader" lang="vi" data-i18n-skip>
     <h1>Mở đầu</h1>
     <figure class="opening-frontispiece">
       <picture>
@@ -255,12 +294,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </article>
 
   <div class="read-cta">
-    <p lang="vi">Cuốn sách bắt đầu từ đây. Ấn bản tiếng Việt đầy đủ đang trên đường đến; trong lúc chờ, có thể đọc trọn cuốn sách miễn phí: bằng tiếng Ba Tư, tiếng Anh và tiếng Đan Mạch.</p>
+    <p lang="vi">Cuốn sách bắt đầu từ đây.</p>
     <div class="btns">
-      <a class="btn" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Farsi.epub" rel="nofollow" aria-label="Persian: the complete book, EPUB"><span lang="fa">فارسی</span><span class="btn-fmt" lang="en">EPUB</span></a>
-      <a class="btn" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_English.epub" rel="nofollow" aria-label="English: the complete book, EPUB"><span lang="en">English</span><span class="btn-fmt" lang="en">EPUB</span></a>
-      <a class="btn" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Danish.epub" rel="nofollow" aria-label="Danish: the complete book, EPUB"><span lang="da">Dansk</span><span class="btn-fmt" lang="en">EPUB</span></a>
-      <a class="btn" href="/sedaha/#allLangs" lang="en" aria-label="All 106 complete editions">106 &rarr;</a>
+      <a class="btn" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Vietnamese.epub" rel="nofollow" aria-label="Vietnamese: the complete book, EPUB, 4.7 MB"><span lang="vi">Âm thanh</span><span class="btn-fmt" lang="en" dir="ltr">EPUB &middot; 4.7 MB</span></a>
+      <a class="btn" href="https://arasteh-guestbook.amir-arasteh.workers.dev/dl/books/Sedaha_Vietnamese.pdf" rel="nofollow" aria-label="Vietnamese: the complete book, PDF, 9.2 MB"><span lang="vi">Âm thanh</span><span class="btn-fmt" lang="en" dir="ltr">PDF &middot; 9.2 MB</span></a>
       <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="https://arasteh.art/sedaha/read/vi/" data-share-title="Sedaha (Sounds) &mdash; Book One" data-share-text="Sợi chỉ của những từ ngữ từng một thời là âm thanh…"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
     <p class="muted-note dl-terms" lang="vi">Ấn bản điện tử này được cung cấp miễn phí để đọc và chia sẻ, với điều kiện được giữ nguyên vẹn và không chỉnh sửa. Được phép trích dẫn ngắn, với điều kiện mỗi đoạn trích phải ghi rõ nguồn: tên sách, tên tác giả và arasteh.art.</p>

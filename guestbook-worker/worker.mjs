@@ -32,7 +32,7 @@ const CHECK_MARKER = '<!-- native-check:v1 -->';
 const CHECK_SLUG = /^[a-z]{2,3}(?:-[a-z]{2,4})?$/;
 const CHECK_VERSION = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,39}$/;
 const CHECK_ID = /^[A-Za-z0-9][A-Za-z0-9_./#-]{0,79}$/;
-const VERDICTS = {ok: 'Correct', change: 'Needs change'};
+const VERDICTS = {ok: 'Correct', change: 'Needs change', unsure: 'Not sure'};
 
 // Downloads: only these releases, only plain file names, so /dl/ can never be
 // turned into a redirect to somewhere else.
@@ -275,8 +275,8 @@ function checkSubmission(raw) {
       throw new PublicError('An answer was not recognized.');
     }
     seen.add(id);
-    if (item.verdict !== 'ok' && item.verdict !== 'change') {
-      throw new PublicError('Each answer must be Correct or Needs change.');
+    if (!Object.prototype.hasOwnProperty.call(VERDICTS, item.verdict)) {
+      throw new PublicError('Each answer must be Correct, Needs change or Not sure.');
     }
     const note = optional(item.note) ? '' : cleanText(item.note, 'Note', 1, 600);
     return {id, verdict: item.verdict, note};
@@ -309,10 +309,11 @@ function literal(text) {
 function checkIssue(answers) {
   const language = languageName(answers.lang);
   const n = answers.items.length;
-  const changes = answers.items.filter(item => item.verdict === 'change').length;
+  const count = verdict => answers.items.filter(item => item.verdict === verdict).length;
+  const unsure = count('unsure');
   const rows = answers.items.map(item =>
     '- `' + item.id + '` ' +
-    (item.verdict === 'change' ? '**' + VERDICTS.change + '**' : VERDICTS.ok) +
+    (item.verdict === 'change' ? '**' + VERDICTS.change + '**' : VERDICTS[item.verdict]) +
     (item.note ? ': ' + literal(item.note) : ''));
   return {
     title: 'Native check: ' + language + ' (' + n + (n === 1 ? ' answer)' : ' answers)'),
@@ -320,8 +321,9 @@ function checkIssue(answers) {
       '**' + language + '** (`' + answers.lang + '`), page version `' +
       answers.page_version + '`, from ' +
       (answers.name ? literal(answers.name) : 'an unnamed reader') + '.\n' +
-      n + (n === 1 ? ' answer' : ' answers') + ': ' + (n - changes) + ' Correct, ' +
-      changes + ' Needs change.\n\n' + rows.join('\n') + '\n\n' +
+      n + (n === 1 ? ' answer' : ' answers') + ': ' + count('ok') + ' Correct, ' +
+      count('change') + ' Needs change' + (unsure ? ', ' + unsure + ' Not sure' : '') +
+      '.\n\n' + rows.join('\n') + '\n\n' +
       '---\nSent from https://arasteh.art/sedaha/check/' + answers.lang + '/.',
     labels: ['native-check']
   };

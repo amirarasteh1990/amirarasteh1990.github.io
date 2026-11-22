@@ -535,8 +535,11 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .guestbook-field input:focus,.guestbook-field textarea:focus,.guestbook-field select:focus{
   border-color:var(--accent);outline:2px solid rgba(138,90,59,.16);outline-offset:1px}
 .guestbook-field-note{display:block;margin-top:5px;color:var(--muted);font-size:.78rem}
-.guestbook-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;
-  height:1px!important;overflow:hidden!important}
+/* clipped in place rather than parked off the left edge, which a right-to-left page
+   would scroll to (the same reason as .skip-link) */
+.guestbook-honeypot{position:absolute!important;width:1px!important;height:1px!important;
+  overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;
+  white-space:nowrap!important;margin:-1px!important;padding:0!important;border:0!important}
 .guestbook-submit-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .guestbook-submit-row .btn{min-width:148px}
 .guestbook-submit-row .btn:disabled{cursor:not-allowed;filter:saturate(.35);opacity:.58}
@@ -602,6 +605,17 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .nc-item legend{padding:0 6px;color:var(--muted);font-size:.78rem;letter-spacing:.04em}
 .nc-item .reader{max-width:none}
 .nc-item .reader p{margin:0 0 10px}
+/* 2026-11-22: the lines just before, in grey, so a reader who has not read the
+   book has the setup; the line being checked carries a mark at its start side */
+.nc-item .reader p.nc-ctx{margin:0 0 6px;color:var(--muted);font-size:calc(1.02rem * var(--read-scale,1));
+  line-height:1.65;text-align:start}
+.nc-item .reader p.nc-line{padding-inline-start:12px;border-inline-start:3px solid var(--accent)}
+.nc-guide{margin:var(--flow-related) 0 0;padding:12px 18px;border:1px solid var(--line);
+  border-radius:9px;background:var(--surface);font-size:.92rem}
+.nc-guide p{margin:0 0 6px}
+.nc-guide ul{margin:0;padding-inline-start:1.2em}
+.nc-guide li{margin:0 0 4px}
+.nc-round{margin:8px 0 0;color:var(--muted);font-size:.95rem}
 .nc-q{margin:0 0 4px;font-weight:600}
 .nc-q bdi{font-weight:400}
 .nc-verdict{display:flex;flex-wrap:wrap;gap:0 22px;margin:0 0 6px}
@@ -762,9 +776,12 @@ tr.deep-target>th,tr.deep-target>td{background:rgba(138,90,59,.08)}
 /* == accessibility helpers == */
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
   overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.skip-link{position:absolute;left:-999px;top:0;z-index:100;background:var(--accent);
-  color:var(--accent-ink);padding:10px 16px;border-radius:0 0 10px 0;font-size:.9rem;font-weight:600}
-.skip-link:focus{left:0;text-decoration:none}
+/* hidden above the page, not off to the left: a right-to-left page (the site in
+   Persian or Arabic, author 2026-11-22) scrolls into whatever sits off its left edge */
+.skip-link{position:absolute;inset-inline-start:0;top:0;z-index:100;background:var(--accent);
+  color:var(--accent-ink);padding:10px 16px;border-end-end-radius:10px;font-size:.9rem;font-weight:600;
+  transform:translateY(-110%)}
+.skip-link:focus{transform:none;text-decoration:none}
 a:focus-visible,.btn:focus-visible,summary:focus-visible,button:focus-visible,
 .card:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){
@@ -935,6 +952,67 @@ button.btn{font-family:inherit;line-height:1.6;cursor:pointer}
 @media (prefers-reduced-motion:reduce){
   .appnav-tabs a:active{transform:none}
 }
+
+/* == language switch (author 2026-11-22: always shown) =================
+   Markup: sync_appnav.py; behaviour: assets/js/i18n.js. The end of the top bar
+   on a laptop (globe + the language's own name), the last tab of the bottom bar
+   on a phone (globe + its code). The list opens below the bar on a laptop and
+   above it on a phone. */
+.langsw{position:relative;display:flex}
+.langsw-btn{display:flex;align-items:center;gap:7px;border:0;background:none;
+  font:inherit;font-weight:600;color:#5a5344;cursor:pointer;border-radius:10px;
+  -webkit-tap-highlight-color:transparent}
+.langsw-btn .ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;
+  stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.langsw-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.langsw-list{position:absolute;z-index:90;margin:0;padding:6px;list-style:none;
+  min-width:13rem;max-height:min(70vh,30rem);overflow:auto;
+  background:rgba(255,253,249,.98);border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 12px 32px rgba(0,0,0,.16);
+  display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.langsw-list[hidden]{display:none}
+.langsw-list a{display:block;padding:7px 10px;border-radius:8px;color:var(--ink);
+  text-decoration:none;font-size:.92rem;white-space:nowrap}
+.langsw-list a:hover,.langsw-list a:focus-visible{background:rgba(138,90,59,.10);
+  text-decoration:none;outline:none}
+.langsw-list a[aria-current]{color:var(--accent);font-weight:700;
+  background:rgba(138,90,59,.08)}
+@media (min-width:761px){
+  .langsw{margin-inline-start:auto}
+  .langsw-btn{padding:8px 12px}
+  .langsw-btn:hover{background:rgba(138,90,59,.08);color:var(--accent)}
+  .langsw-code{display:none}
+  .langsw-list{top:calc(100% + 6px);inset-inline-end:0}
+}
+@media (max-width:760px){
+  /* six tabs share the bar now: a long word in some language must shrink into its
+     tab (and end in an ellipsis) rather than push the last tab off the screen */
+  .appnav-tabs li,.appnav-tabs a{min-width:0}
+  .appnav-tabs a span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .langsw{flex:0 0 3.4rem;min-width:0}
+  .langsw-btn{flex:1;flex-direction:column;justify-content:center;gap:3px;
+    min-height:var(--appnav-h);padding:6px 2px;border-radius:0;
+    font-size:.66rem;letter-spacing:.01em}
+  .langsw-btn .ico{width:24px;height:24px}
+  .langsw-btn:active{transform:scale(.9);background:rgba(138,90,59,.09)}
+  .langsw-cur{display:none}
+  .langsw-list{position:fixed;inset-inline:10px;
+    bottom:calc(var(--appnav-h) + env(safe-area-inset-bottom) + 8px);
+    min-width:0;max-height:62vh}
+}
+@media (prefers-color-scheme:dark){
+  .langsw-btn{color:#b7ad9c}
+  .langsw-btn:hover{background:rgba(217,155,109,.12)}
+  .langsw-list{background:rgba(30,25,19,.98);border-color:rgba(255,255,255,.1)}
+  .langsw-list a{color:#e9e0cf}
+  .langsw-list a:hover,.langsw-list a:focus-visible{background:rgba(217,155,109,.14)}
+  .langsw-list a[aria-current]{color:#e0a679;background:rgba(217,155,109,.12)}
+}
+
+/* the page waits, briefly, for its translation (sync_head.py, i18n.js); if the
+   script never comes, the page shows itself after 1.2 s regardless */
+@keyframes i18n-show{to{opacity:1}}
+.i18n-wait body{opacity:0;animation:i18n-show 0s linear 1.2s forwards}
 
 /* On phones the Home tab is always one tap away, so the top-of-page link back
    to home is redundant; hide just those (hierarchical "up" links stay). */

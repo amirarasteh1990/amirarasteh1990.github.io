@@ -1,27 +1,88 @@
-{"lang": "fo", "slug": "fo", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "fo",
+ "slug": "fo",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "03/0517#1", "where": "03/0517",
+  {
+   "id": "03/0517#1",
+   "where": "03/0517",
    "text": "Á einum kanti gerst hann sjálvsmorðsligur, á øðrum sigur hann, ó blóð, magin mín vendi seg.",
-   "q": "Farid makes deadly moves against others. Is 'sjálvsmorðsligur' right for that?"},
-  {"id": "03/0664#2", "where": "03/0664",
+   "q": "Farid makes deadly moves against others. Is 'sjálvsmorðsligur' right for that?",
+   "before": [
+    "Hooman segði:",
+    "– Farid Leopardur veit ikki sjálvur, hvar hann stendur."
+   ]
+  },
+  {
+   "id": "03/0664#2",
+   "where": "03/0664",
    "text": "Krullurnar í ullini hansara líktust ullini í mottuni míni.",
-   "q": "Is 'mottuni' right for a wool-stuffed mattress?"},
-  {"id": "04b/0418#3", "where": "04b/0418",
+   "q": "Is 'mottuni' right for a wool-stuffed mattress?",
+   "before": [
+    "– Krullhár, tú undrast, sum um tú kom til háskúlan uttan Konkoor. Hendan lokaliseringarreglan riggaði okkum av. Í navni av, at tey vildu, at næmingar skuldu vera nær familju síni, stungu teir stavin upp í rassin á okkum burturfrá.",
+    "Í sjónvarpinum søgdu tey, at teir høvdu gjørt ein seyð, líkan hinum seyðunum."
+   ]
+  },
+  {
+   "id": "04b/0418#3",
+   "where": "04b/0418",
    "text": "Ein lítil drongur við longum, ópumpaðum hári, stórum eygum, sera myrkari húð, og eitt sera lítið høvur, ið, uttan tað ópumpaða hárið, hevði sæð lítið út enntá á sínum lítla likami.",
-   "q": "His hair is long and puffed up. Is 'ópumpaðum' right for that?"},
-  {"id": "04b/0690#4", "where": "04b/0690",
+   "q": "His hair is long and puffed up. Is 'ópumpaðum' right for that?",
+   "before": [
+    "– Salaam. Navn mítt er Meysam. Heimavistarleiðarin segði, eg skuldi koma til rúm 403.",
+    "Og hann stóð har frammanfyri hálvopnu dyrunum og segði einki."
+   ]
+  },
+  {
+   "id": "04b/0690#4",
+   "where": "04b/0690",
    "text": "Summar ferðir hugsi eg fyri meg sjálvan, at av túsund hendingum kundi tað verið nóg, at bert ein teirra ikki hendi, fyri at okkurt annað ikki komst av.",
-   "q": "Is it clear that one missing event would have prevented Farid's final fate?"},
-  {"id": "04b/0964#5", "where": "04b/0964",
+   "q": "Is it clear that one missing event would have prevented Farid's final fate?",
+   "before": [
+    "Tað síðsta smílið hjá Farid tekur skap framman fyri eygum mínum, og lukturin av blóði, sum svevjar seg um heilan á mær, skúgvar myndina burtur. Rødd Hooman brýtur sær leið millum smíl og blóð og kemur inn í oyrað á mær.",
+    "– Alt, sum hann gjørdi, var sjálvmorðarligt, tann maðurin. Einki av honum var sum eitt vanligt mannabarn. Æi, hvat veit eg. Enn í dag er hugurin á mær ofta uppi í honum."
+   ]
+  },
+  {
+   "id": "04b/0964#5",
+   "where": "04b/0964",
    "text": "Hon fór beinleiðis út av universitetinum, og í ímyndan míni, hvønn dag, tá Niloofar og Sina møttust, tóku tey hondina á hvørjum øðrum.",
-   "q": "Is it clear 'tóku tey hondina á hvørjum øðrum' means they shook hands?"},
-  {"id": "04b/1003#6", "where": "04b/1003",
+   "q": "Is it clear 'tóku tey hondina á hvørjum øðrum' means they shook hands?",
+   "before": [
+    "…og garnar av Walkmaninum á jørðini. Taghi hyggjaði illur at øllum. Frá tí kvøldið høvdu vit einki meira at lurta at. Aftur, sum í døgunum áðrenn Walkmanin, tá ljósið í húsinum hjá Negar doyði, fóru vit og settust har, á fortógskantinum við aðalbreytina, og hyggjaðu at bilunum, ið keyrdu framvið.",
+    "Aftaná tann dagin fór Niloofar ikki longur við hinum gentunum í flokkinum til Yaghoob-bóðina."
+   ]
+  },
+  {
+   "id": "04b/1003#6",
+   "where": "04b/1003",
    "text": "– Sí, hvat fyri eitt blómubindil tú hevur kastað í vatnið, tú skarn-heilaði.",
-   "q": "This is a Persian saying for making a mess. Is the meaning clear?"},
-  {"id": "04b/1070#7", "where": "04b/1070",
+   "q": "This is a Persian saying for making a mess. Is the meaning clear?",
+   "before": [
+    "– Og tú ert eisini ein Rashid.",
+    "Eskandar vendi seg móti mær og drógst høvur og bringu fram móti mær. Hann hevði gjørt eyguni breið, og í einum røðum tóni, uttan at missa sín Alain-Delon-ligan lit, segði hann:"
+   ]
+  },
+  {
+   "id": "04b/1070#7",
+   "where": "04b/1070",
    "text": "Eg lati høvdið síga, og handan fyri gangin á triðju hædd fellur eyga mítt á hurðina hjá Elektriskum Skipanum-lab-tíðini.",
-   "q": "He sees the door of the Electrical Circuits lab room. Is this clear?"},
-  {"id": "04b/1178#8", "where": "04b/1178",
+   "q": "He sees the door of the Electrical Circuits lab room. Is this clear?",
+   "before": [
+    "– Ó, harmiligt. Gud gevi mær deyðan. Umskylda, Agha, eg opnaði hurðina í skundi, og hetta hendi.",
+    "…at hon ikki hevur lokað hurðina á herberginum, hon hevði opnað. Eg hyggi inn í herbergið. Borð og stólar líta út at vera nýggj. Eg fari móti glugganum, ið vendir móti tí tóma rúminum millum hæddirnar, og hyggi upp móti fjórðu hædd frá hæddini niðanfyri. Bert efsta hornið av klassuhurðunum sæst."
+   ]
+  },
+  {
+   "id": "04b/1178#8",
+   "where": "04b/1178",
    "text": "Sami drongurin, ið rørir hendur, veiggjar hondina sum ein vagi og rópar:",
-   "q": "A boy waves his hand like a fan. Do 'veiggjar' and 'vagi' read naturally?"}
- ]}
+   "q": "A boy waves his hand like a fan. Do 'veiggjar' and 'vagi' read naturally?",
+   "before": [
+    "…upp við síðuna av dýnu síni og fór aftur út. Til morgunin eftir, tá eg kom higar og sá, at Niloofar ikki var her, hugsaði eg enn, at hon sat beint her. Haðani síggi eg inn í klasseherbergið hinumegin gangin. Yalda-náttar-hátíðin hjá fakultetinum tað árið var hildin beint í hesum klasseherbergi.",
+    "…til Keyvan, ein til pápa, og kanska ein til Niloofar. Tí eg kundi ikki, tí eg kundi ikki siga kensluna mína í orðum. Og um eg segði hana, var tað ikki á ein slíkan hátt, at tað kundi fáa spíruna av tí, sum hevði tikið skap millum okkum, at bera frukt. Trættan millum tríggjar drongar er vaksin."
+   ]
+  }
+ ]
+}

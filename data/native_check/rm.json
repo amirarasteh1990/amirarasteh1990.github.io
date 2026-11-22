@@ -1,11 +1,88 @@
-{"lang": "rm", "slug": "rm", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "rm",
+ "slug": "rm",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "01/0166#1", "where": "01/0166", "text": "Bler ch'jau al disess, na batta betg ils uffants, diseva el, sun daventà tramortì en la guerra, n'è betg en mia maun. Hai vis ch'era uschia, l'hai laschà.", "q": "Pleading failed to stop his beatings. Is it clear the speaker then gave up?"},
-  {"id": "03/0355#2", "where": "03/0355", "text": "En la chasa dal fund dal curtin, sper la stua, eral stendrà buca a terra, a mez chamin da chattar in modus da schliar da manera simpla bleras da las damondas tip test dal Konkoor cun la circonferenza trigonometrica.", "q": "Amir lies beside the room heater. Is 'stua' the right word for heater?"},
-  {"id": "03/0361#3", "where": "03/0361", "text": "Taneva las duas mans posadas sin il vaint e diseva a Mahboubeh:", "q": "Maman rests both hands on her belly. Is 'vaint' the right word?"},
-  {"id": "03/0479#4", "where": "03/0479", "text": "Ha dì che n'era betg bain, che havevel insatge da far e che stuevel partir en quel medem mument.", "q": "Is it clear that she, not the narrator, had to leave at once?"},
-  {"id": "03/0583#5", "where": "03/0583", "text": "– Ögl d'Eagla, tuts fugian da Farid Leopard. Guarda che vegns ti, che fas fugir a Farid Leopard.", "q": "Friends joke: everyone flees Leopard Farid, but he flees you. Does it sound natural?"},
-  {"id": "04b/0418#6", "where": "04b/0418", "text": "Il colp da la porta ha lantschà Meysam versa mia letg e quella da Bahman.", "q": "Is it clear Amir and Bahman share one bunk bed?"},
-  {"id": "04b/1003#7", "where": "04b/1003", "text": "– Guarda co la has legì, quaghia·t en il tschartschagl.", "q": "Someone scolds a friend for a blunder. Is the meaning clear?"},
-  {"id": "04b/1178#8", "where": "04b/1178", "text": "Il medem mat ch'mova las mans til agita sco in eventagl e crida:", "q": "Is it clear the boy waves his hand like a fan?"}
- ]}
+  {
+   "id": "01/0166#1",
+   "where": "01/0166",
+   "text": "Bler ch'jau al disess, na batta betg ils uffants, diseva el, sun daventà tramortì en la guerra, n'è betg en mia maun. Hai vis ch'era uschia, l'hai laschà.",
+   "q": "Pleading failed to stop his beatings. Is it clear the speaker then gave up?",
+   "before": [
+    "Maman di:",
+    "– Fain mo burlas, ridend, Nana-pesar-jan. Iss el propi? Sch'el fiss ì, avess quai stà mia giavischanza pli gronda. Tar Dieu. Sin mia atgna vita. Er quai ch'è capità a Hashem ed Abolfazl era sia culpa. Als bateva adina."
+   ]
+  },
+  {
+   "id": "03/0355#2",
+   "where": "03/0355",
+   "text": "En la chasa dal fund dal curtin, sper la stua, eral stendrà buca a terra, a mez chamin da chattar in modus da schliar da manera simpla bleras da las damondas tip test dal Konkoor cun la circonferenza trigonometrica.",
+   "q": "Amir lies beside the room heater. Is 'stua' the right word for heater?",
+   "before": [
+    "– Alura, mo per la spetga ch'hai suportà, restai sesida sper mai in pau dapli.",
+    "…m'ardeva. Ussa er m'ardescha. L'arder dad arecordar quel mument da la despedida. E forsa l'arder dad emblidar insatge ch'jau sent che na duevel betg emblidar. Insatge sumegliant ad in disassossegu, in disassossegu en pes davos la nebla. Ai da l'emblidament; ai dad emblidar; ai dad esser emblidà."
+   ]
+  },
+  {
+   "id": "03/0361#3",
+   "where": "03/0361",
+   "text": "Taneva las duas mans posadas sin il vaint e diseva a Mahboubeh:",
+   "q": "Maman rests both hands on her belly. Is 'vaint' the right word?",
+   "before": [
+    "– D'accord.",
+    "…a la paraid, sper il rest da mes appunts dal Konkoor. Sun sortì da la chasa dal fund dal curtin, hai percurrì la lungezza dal curtin cun nov pass, ed anc l'allegria dal nov chattament era alluta en mieu cor. Cur sun entrà en la halla da la chasa dal curtin, Maman era stendrà avant il televisur."
+   ]
+  },
+  {
+   "id": "03/0479#4",
+   "where": "03/0479",
+   "text": "Ha dì che n'era betg bain, che havevel insatge da far e che stuevel partir en quel medem mument.",
+   "q": "Is it clear that she, not the narrator, had to leave at once?",
+   "before": [
+    "Ha reunì las chombas sut la sedia. Hai auzà ils egls. Sia fatscha era daventada cotschna. Hai dì:",
+    "– Ses bain, vus?"
+   ]
+  },
+  {
+   "id": "03/0583#5",
+   "where": "03/0583",
+   "text": "– Ögl d'Eagla, tuts fugian da Farid Leopard. Guarda che vegns ti, che fas fugir a Farid Leopard.",
+   "q": "Friends joke: everyone flees Leopard Farid, but he flees you. Does it sound natural?",
+   "before": [
+    "– Objectivamain, sun ì lavar ils dents e m'sun lavà las mans e la fatscha er. Na hai betg las lentas messas; n'hai betg vis.",
+    "…e la cuverta ed è vegnì durmir en la litiera sur la mia, la letg nua havevel durmì Bahman durant ils dus emprims semesters da l'universitad e en la quala, quella notg, eran gia passads var trais onns dapi che la chalur dal corpus da Bahman era ida da l'arecordanza dal matalasch. Hooman ha dì:"
+   ]
+  },
+  {
+   "id": "04b/0418#6",
+   "where": "04b/0418",
+   "text": "Il colp da la porta ha lantschà Meysam versa mia letg e quella da Bahman.",
+   "q": "Is it clear Amir and Bahman share one bunk bed?",
+   "before": [
+    "– Salaam. M'clom Meysam. Il responsabel da la residenza m'ha dì da vegnir a la chombra 403.",
+    "…dir nagut: In mat pitschen e magher, cun chavels lungs e ritschads, egls grands, pel fitg stgira ed ina testa fitg pitschna che, sche n'füss betg per ils chavels ritschads, avess parì pitschna schizunt sur sieu corpuschin. La porta mez averta s'ha avert dal tuttafatg cun in colp fort da Farid."
+   ]
+  },
+  {
+   "id": "04b/1003#7",
+   "where": "04b/1003",
+   "text": "– Guarda co la has legì, quaghia·t en il tschartschagl.",
+   "q": "Someone scolds a friend for a blunder. Is the meaning clear?",
+   "before": [
+    "– E ti er es in Rashid.",
+    "Eskandar s'ha giravà versa mai ed ha avanzà la testa ed il piz en mia direcziun. Aveva ils egls fitg averts, e cun tun crud, senza perder per quai sieu aria dad Alain Delon, ha dì:"
+   ]
+  },
+  {
+   "id": "04b/1178#8",
+   "where": "04b/1178",
+   "text": "Il medem mat ch'mova las mans til agita sco in eventagl e crida:",
+   "q": "Is it clear the boy waves his hand like a fan?",
+   "before": [
+    "…fin ed è puspè sortida. Fin la damaun suandanta, cur sun vegnì qua ed hai vis che Niloofar n'era betg, imaginavel anc ch'era sesida gist qua. Dad qua vesa l'aula da l'autra vart dal currider. La celebraziun da la notg da Yalda da quel onn en la facultad era stada celebrada en quella medema aula.",
+    "…a Niloofar. Perquai che n'hai betg pudì, perquai che n'savevel betg co, metter mieu sentiment en paraulas. E sch'insaquanta giada til hai metì en paraulas, n'è mai stà d'ina moda ch'pudess fecundar il schöglier ch'piglia furma tranter nus. La dispita tranter ils trais mats è s'auzada da tun."
+   ]
+  }
+ ]
+}

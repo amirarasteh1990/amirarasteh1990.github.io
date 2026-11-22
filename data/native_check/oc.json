@@ -1,56 +1,88 @@
 {
-  "lang": "oc",
-  "slug": "oc",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "D'aqueste costat, ieu desfaci lo fial de las paraulas, e de l'autre, tu lo recuèlhes.",
-      "q": "Is it clear that the reader gathers up the words themselves?"
-    },
-    {
-      "id": "03/0528#2",
-      "where": "03/0528",
-      "text": "Bolegèt lo cap.",
-      "q": "She shakes her head to say no. Does 'Bolegèt lo cap' say that?"
-    },
-    {
-      "id": "03/0601#3",
-      "where": "03/0601",
-      "text": "Emplenèt lo quartièr de rumors sus qual èra estat lo desvergonhat qu'aviá ausat apelar sa filha çò pièger, e cent causas encara mai marridas.",
-      "q": "The mother says someone called her daughter a slut. Is that clear here?"
-    },
-    {
-      "id": "03/0613#4",
-      "where": "03/0613",
-      "text": "Tot lo camin, Hooman renèga per aver manlevat nòstra citacion.",
-      "q": "Is it clear Hooman grumbles because Amir broke their appointment?"
-    },
-    {
-      "id": "04b/0418#5",
-      "where": "04b/0418",
-      "text": "Un dròlle pichon e prim, de pèl long e crespat, uèlhs grands, pèl fòrça escura e un cap fòrça pichon que, se non foguèsse pel pèl crespat, auriá semblat pichon ni tan sus son còrsset.",
-      "q": "Is it clear his head would look small even on his slight body?"
-    },
-    {
-      "id": "04b/1003#6",
-      "where": "04b/1003",
-      "text": "– Espia coma la se cuèch, te cagas al cervèl.",
-      "q": "Is it clear this means: look what a mess you've made?"
-    },
-    {
-      "id": "04b/1263#7",
-      "where": "04b/1263",
-      "text": "– Viiiiish, Baba, Baba, crompa-me aquesta nina granda?",
-      "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
-    },
-    {
-      "id": "04b/1266#8",
-      "where": "04b/1266",
-      "text": "La filha de papà empencha son triciclet color de ròsa e s'alunha fasent lo son «viiiish».",
-      "q": "Is 'triciclet' the right word for a child's kick scooter?"
-    }
-  ]
+ "lang": "oc",
+ "slug": "oc",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "D'aqueste costat, ieu desfaci lo fial de las paraulas, e de l'autre, tu lo recuèlhes.",
+   "q": "Is it clear that the reader gathers up the words themselves?",
+   "before": [
+    "Dubertura",
+    "…que s'aurián perduts dins lo brut febril dels eveniments del monde se èran pas estats enregistrats aicí. Foguèron escriches per formar un pont entre mon monde e lo tieu. Un pont dempuèi mon monde, a l'instant que escrivi aquestas frasas, dusca al tieu, a l'instant que t'assietas per las legir."
+   ]
+  },
+  {
+   "id": "03/0528#2",
+   "where": "03/0528",
+   "text": "Bolegèt lo cap.",
+   "q": "She shakes her head to say no. Does 'Bolegèt lo cap' say that?",
+   "before": [
+    "Diguèri:",
+    "– Es qu'mos amics me van repotegar qu'ai balhat lo còr sens cap de coneissença, sens cap de conversacion."
+   ]
+  },
+  {
+   "id": "03/0601#3",
+   "where": "03/0601",
+   "text": "Emplenèt lo quartièr de rumors sus qual èra estat lo desvergonhat qu'aviá ausat apelar sa filha çò pièger, e cent causas encara mai marridas.",
+   "q": "The mother says someone called her daughter a slut. Is that clear here?",
+   "before": [
+    "– E doncas Negar nos aviá demandat de tustar son cosin, per qu'ara aguèssem sensacion qu'èrem estats enganats?",
+    "…nuèch, metèrem los papièrs per l'esclaus de la porta de son ostal. En realitat foguèt Taghi qui los metèt, e ieu, paorós de çò que fasiam, l'aviái sonque acompanhat per paur que s'enfadèsse. L'endeman, Taghi venguèt me dire que la maire de Negar aviá pres los papièrs en son luòc e los aviá legits."
+   ]
+  },
+  {
+   "id": "03/0613#4",
+   "where": "03/0613",
+   "text": "Tot lo camin, Hooman renèga per aver manlevat nòstra citacion.",
+   "q": "Is it clear Hooman grumbles because Amir broke their appointment?",
+   "before": [
+    "– Pèc miserable... uf... amb lo cap baish atal... uf... ont vas amb tanta prèssa... uf... demorèri sens alen. Me faguères percórrer, amb aqueste còs, tot aqueste camin... uf... darrièr tu.",
+    "A dos passes de la porta Valiasr, tornam arrièr e davalam aqueles gras. Passam davant l'intrada de la cantina a nòstra dreita e la pichona intrada a l'estatge bas de l'edifici Abu-Reyhan a nòstra esquèrra, e prenèm lo camin entre lo pavelhon d'exposicions e l'Abu-Reyhan."
+   ]
+  },
+  {
+   "id": "04b/0418#5",
+   "where": "04b/0418",
+   "text": "Un dròlle pichon e prim, de pèl long e crespat, uèlhs grands, pèl fòrça escura e un cap fòrça pichon que, se non foguèsse pel pèl crespat, auriá semblat pichon ni tan sus son còrsset.",
+   "q": "Is it clear his head would look small even on his slight body?",
+   "before": [
+    "– Salaam. M'apèli Meysam. L'encargat de la residéncia me diguèt de venir a la cambra 403.",
+    "E demorèt atal, de pè, davant la pòrta miègduberta de la cambra, sens dire res:"
+   ]
+  },
+  {
+   "id": "04b/1003#6",
+   "where": "04b/1003",
+   "text": "– Espia coma la se cuèch, te cagas al cervèl.",
+   "q": "Is it clear this means: look what a mess you've made?",
+   "before": [
+    "– E tu tanben siás un Rashid.",
+    "L'Eskandar se virèt cap a ieu e avancèt lo cap e lo pièch cap a ieu. Aviá los uèlhs fòrça dubèrts, e amb un ton rude, sens pèrdre per aquò son aire a l'Alain Delon, diguèt:"
+   ]
+  },
+  {
+   "id": "04b/1263#7",
+   "where": "04b/1263",
+   "text": "– Viiiiish, Baba, Baba, crompa-me aquesta nina granda?",
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– Amir, Amir-jan, mon filh. Desvelha-te. Desvelha-te per la Maman. Tot èra un sòmi. Aja pas paur, soi aicí.",
+    "…e escur, mas qu'aviá pas pro lutz per me guidar. Una lutz lugalhanta dins la man d'una dròlla de qué sabèri jamai en quala color de la boèsta de lapis de colors s'ajustava la pòrta de son ostal. Ven una dròlleta fasent lo son de son jòguet e s'arrèsta al mieu costat. Espia los jòguets. Ditz:"
+   ]
+  },
+  {
+   "id": "04b/1266#8",
+   "where": "04b/1266",
+   "text": "La filha de papà empencha son triciclet color de ròsa e s'alunha fasent lo son «viiiish».",
+   "q": "Is 'triciclet' the right word for a child's kick scooter?",
+   "before": [
+    "Una votz darrièr ieu ditz:",
+    "– Òc, te cromparai la nina. Quand aurai d'argent dins la man, te'n crompi una encara melhora, filha de Baba."
+   ]
+  }
+ ]
 }

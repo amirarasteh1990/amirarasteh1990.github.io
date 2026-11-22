@@ -2,97 +2,125 @@
  "lang": "uk",
  "slug": "uk",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "Тут нічого не відбувається. Тут нічого не буде виправлено і нічого не буде зруйновано.",
-   "q": "These are the book's first lines. Do they read naturally?"
+   "q": "These are the book's first lines. Do they read naturally?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#2",
    "where": "Opening/0007",
    "text": "З цього боку я розмотую нитку слів, а з іншого боку ти збираєш їх.",
-   "q": "The writer unwinds a thread of words and you gather them. Is that clear?"
+   "q": "The writer unwinds a thread of words and you gather them. Is that clear?",
+   "ctx": 0
   },
   {
    "id": "Opening/0007#3",
    "where": "Opening/0007",
    "text": "Як у дитинстві, коли Маман розпускала пряжу зі старого одягу, а ми брали нитку й кружляли з нею по хаті, щоб пряжа не збиралася в купу.",
-   "q": "Is it clear the children walked around the house with the yarn?"
+   "q": "Is it clear the children walked around the house with the yarn?",
+   "ctx": 0
   },
   {
    "id": "01/0116#4",
    "where": "01/0116",
    "text": "Виходь теж. Ходи в спокойні місця.",
-   "q": "Maman mispronounces 'спокойні' on purpose; she means quiet. Is that clear?"
+   "q": "Maman, on the phone with her son, says 'спокойні' for 'спокійні' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– Ой, як добре. Мм-гм, замовляй — і тобі привезуть. Але, Амір-джане, не сиди весь час вдома."
+   ]
   },
   {
    "id": "01/0132#5",
    "where": "01/0132",
    "text": "Або, наприклад, холяра. І вона стільки не вбивала.",
-   "q": "Maman says 'холяра' for cholera on purpose. Is that clear?"
+   "q": "Maman lists deadly diseases and says 'холяра' for 'холера' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…Хтось чхає на одному боці вулиці — і людина на іншому боці підхоплює вірус і вмирає. Я ніколи нічого подібного не бачила й не чула. Навіть покоління Бібі не розповідало про таке. Наприклад, був тифоїд, або туберкульоз, або кір. Їх називали смертельними. Гм, навіть вони стільки не вбивали."
+   ]
   },
   {
    "id": "01/0148#6",
    "where": "01/0148",
    "text": "– Що і усмішки?",
-   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+   "q": "Maman hears only the end of the title 'Сльози і усмішки' and asks back. Does her reply read naturally?",
+   "ctx": 2,
+   "before": [
+    "– Дітки, завантажити «Сльози і усмішки», щоб подивитися сьогодні ввечері?",
+    "Маман повертає голову і каже:"
+   ]
   },
   {
    "id": "03/0191#7",
    "where": "03/0191",
    "text": "– Хаміде Кішко, ще вчора ти казав «ішак». Тепер ти цивілізований і кажеш «осел»?",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+   "q": "Taghi mocks Hamid for switching from the cruder 'ішак' to the politer 'осел'. Does the teasing come through?",
+   "ctx": 3,
+   "before": [
+    "Хамід скипів і закричав:",
+    "– Пфф, осле, хто знає краще — друг двоюрідного брата майстра нашого швагра, найбагатша людина в Тегерані, чи ти, теля? Ну гаразд, іди і купи собі. Якщо скло розіб'ється, не кажи, що я тебе не попереджав.",
+    "Тагі сказав:"
+   ]
   },
   {
-   "id": "03/0290#8",
-   "where": "03/0290",
-   "text": "– Арасте — це вкорочене Араасте?",
-   "q": "The guard jokes Arasteh is a trimmed Araasteh (Persian for neat). Does it work?"
-  },
-  {
-   "id": "03/0430#9",
+   "id": "03/0430#8",
    "where": "03/0430",
    "text": "– А ти зі своїм паскудним способом говорити — тебе мали б звати Ален Членон.",
-   "q": "'Ален Членон' is a rude pun on the actor Alain Delon. Does it work?"
+   "q": "'Ален Членон' is a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#10",
+   "id": "04a/0076#9",
    "where": "04a/0076",
    "text": "– Це мармульний камінь. Мармул означає дуже дорого.",
-   "q": "A child says 'Мармул' for marble, thinking it means expensive. Is that clear?"
+   "q": "A small boy says 'мармул' for 'мармур' and wrongly thinks it means expensive; both mistakes are intended. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Ми йшли далі. На півдорозі стояв будинок. Стіна його була гарна. Гасем казав:"
+   ]
   },
   {
-   "id": "04b/0595#11",
-   "where": "04b/0595",
-   "text": "– Але ж він усе просрав. Орлине Око каже «пір-ту-пір», а Тавернї каже Ельді-ту-Ельді.",
-   "q": "Amir misheard peer as pir, Persian for elder; Farid mocks it. Does the joke work?"
-  },
-  {
-   "id": "04b/1263#12",
+   "id": "04b/1263#10",
    "where": "04b/1263",
    "text": "– Вжжж, Баба, Баба, ти купиш мені оцю велику ляльтю?",
-   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "ctx": 1,
+   "before": [
+    "…те заспокійливе темне затишшя, але не давала стільки світла, щоб мене вести. Лампу, що блимає, в руці дівчини, про яку я так і не дізнався, де колір дверей їхнього дому розташований у коробці кольорових олівців. Дівчинка з виском «вжж-вжж» підбігає й спиняється коло мене. Дивиться на іграшки. Каже:"
+   ]
   },
   {
-   "id": "04b/1312#13",
+   "id": "04b/1312#11",
    "where": "04b/1312",
    "text": "Починається якесь лайняне запаморочення. Що більше про це думаєш, то дужчим стає це лайняне запаморочення.",
-   "q": "A girl uses a crude made-up phrase for mind-bending. Does 'лайняне запаморочення' work?"
+   "q": "A student describes a Magritte painting; 'лайняне запаморочення' (shit-dizziness) is her crude made-up phrase. Does it work?",
+   "ctx": 1,
+   "before": [
+    "– ...та гляньте, як же це справді спонукає до роздумів. Він намалював оце й підписав знизу: це не люлька."
+   ]
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "«Те вино там цілком справжнє хіба воно просто собі метафора». Це те саме.",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "Quoted without commas, this poem line should allow two readings: real wine, and wine as only a metaphor. Does it?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#13",
    "where": "06/0056",
    "text": "Бурдозером на неї насипали землю. Землю й вапно.",
-   "q": "Maman says 'Бурдозером' for bulldozer on purpose. Is that clear?"
+   "q": "Maman says 'Бурдозером' for 'бульдозером' on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…Туди везуть страчених, там само ховають померлих від ковіду. Одному Богу відомо, чи обмили її за обрядом. Ми дивилися здалеку. Коли її клали в могилу, на мить саван розійшовся. Мені здалося, що її загорнули в саван у тому самому одязі, в якому вона була в лікарні. Могили копають дуже глибокі."
+   ]
   }
  ]
 }

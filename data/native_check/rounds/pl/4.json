@@ -1,0 +1,187 @@
+{
+ "lang": "pl",
+ "slug": "pl",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04b/0784#1",
+   "where": "04b/0784",
+   "text": "– Ale ty jesteś sneaky.",
+   "q": "Niloofar, a Tehran student, teases him using the English word 'sneaky'. Does that sound natural from her?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Znów mówisz „wiem”. Ale skąd wiesz?",
+    "– Dzisiaj na środku wydziału rozmawiałaś z kilkoma innymi dziewczynami. Słyszałem."
+   ]
+  },
+  {
+   "id": "06/0253#2",
+   "where": "06/0253",
+   "text": "– No, przyjechałeś tam pozwiedzać i dobrze się bawić, więc dobrze ci było.",
+   "q": "Maman tells her son he only went abroad to sightsee and have fun. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  },
+  {
+   "id": "03/0624#3",
+   "where": "03/0624",
+   "text": "– Ekstra, Starszy Tawerny. To idealne dla Arasteha.",
+   "q": "Friends nickname Amir 'Starszy Tawerny' (Elder of the Tavern), an image from Hafez. Does it work as a nickname?",
+   "ctx": 2,
+   "kind": "banter",
+   "before": [
+    "– Jestem sługą Starszego Tawerny, którego łaska...",
+    "Farid powiedział:"
+   ]
+  },
+  {
+   "id": "03/0630#4",
+   "where": "03/0630",
+   "text": "– To Tawerniak, naprawdę i szczerze.",
+   "q": "Farid shortens the nickname to 'Tawerniak' and approves it warmly. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid powiedział:"
+   ]
+  },
+  {
+   "id": "03/0628#5",
+   "where": "03/0628",
+   "text": "– Haha, Starszy Tawerny, Stary — idealne. Trafiłeś w dziesiątkę, Farid Lampart.",
+   "q": "Hooman shortens the nickname Elder of the Tavern to 'Stary'. Does that work as a joke?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Human pisał długopisem coś w książce i mówił:"
+   ]
+  },
+  {
+   "id": "03/0394#6",
+   "where": "03/0394",
+   "text": "Albo jesteś kutasogło... no, już wcześniej byłeś kutasogłowy, a teraz zrobiłeś się jeszcze bardziej kutasogłowy.",
+   "q": "Hooman coins a crude insult, dick-brained, and corrects himself mid-word. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Nagle uczepiłeś się tego pytania. Jest kilka możliwości. Albo walnąłeś gdzieś głową."
+   ]
+  },
+  {
+   "id": "04b/0186#7",
+   "where": "04b/0186",
+   "text": "– Wolałbym mieszkać w jednym pokoju z nimi niż z takim kutasomózgim jak ty.",
+   "q": "Hooman calls a roommate a dick-brain. Does this crude insult sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pionierska rola Politechniki AmirKabir w ruchach studenckich jest nieporównywalna z niczym. Nawet jeśli na Sharifie zebrali zbiór tak zwanych elit, z których do tej pory nie wyszła ani jedna rewolucyjna teoria."
+   ]
+  },
+  {
+   "id": "03/0264#8",
+   "where": "03/0264",
+   "text": "– Czego chcesz, Eskandar? Co ci jest?",
+   "q": "Hooman, fed up, snaps at a roommate who keeps mocking his name. Does this sound irritated and rude enough?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Naprawdę wierzysz, że to imię ci pasuje? To owłosione ciało, ta twarz uzbrojona po zęby w zarost i sierść. Jeśli ty jesteś Human, to ja jestem Susan."
+   ]
+  },
+  {
+   "id": "03/0268#9",
+   "where": "03/0268",
+   "text": "– Żadne imię ci nie pasuje, do licha.",
+   "q": "A young man shouts this at his roommate. Does 'do licha' sound like a dorm student's swearing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Podniósł głos i powiedział:"
+   ]
+  },
+  {
+   "id": "03/0422#10",
+   "where": "03/0422",
+   "text": "– Co ci znowu jest?",
+   "q": "Hooman, irritated, snaps at a roommate's odd question. Does it sound rude enough for him?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human zmął torebkę po żelkach w ręce i rzucił pod łóżko. Spod łóżka wziął podręcznik do Myśli Islamskiej i położył na materacu. Ziewnął i powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0520#11",
+   "where": "04b/0520",
+   "text": "– Nie dyskutujcie dziś w pokoju, dostałem dwanaście z wuefu, mam nerwy do dupy i was zwyzywam.",
+   "q": "Hooman warns his roommates he is in a foul mood after a bad grade. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Human powiedział:"
+   ]
+  },
+  {
+   "id": "04b/0562#12",
+   "where": "04b/0562",
+   "text": "– Orle Oko, niech ci Bóg nie wybaczy, rozwaliłeś mi kręgosłup. No czemu ty nie nosisz okularów?",
+   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar powiedział głosem, który wskazywał, że ledwie łapie oddech:"
+   ]
+  },
+  {
+   "id": "04b/0575#13",
+   "where": "04b/0575",
+   "text": "– Orle Oko, Muchę już Bóg pobił, to ty go nie bij.",
+   "q": "Eskandar begs a roommate not to add to Fly's bad luck. Does this saying sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Eskandar powiedział:"
+   ]
+  },
+  {
+   "id": "04a/0064#14",
+   "where": "04a/0064",
+   "text": "– Lewa strona jest niebezpieczna. Dom z czerwonymi drzwiami należy do bardzo gniewnego starca. Jeszcze bardziej gniewnego niż Baba.",
+   "q": "A ten-year-old boy warns his little brothers about a scary house. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Potem zawsze pokazywał ten dom z wielkimi czerwonymi drzwiami. Mówił:"
+   ]
+  },
+  {
+   "id": "04a/0042#15",
+   "where": "04a/0042",
+   "text": "– Nazywa się bazar w Ghuczan, a nasz dom jest na końcu bazaru w Ghuczan.",
+   "q": "A boy argues with his brother about the name of their street. Does this sound like a child talking?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– To jest główna ulica.",
+    "Haszem powiedział:"
+   ]
+  },
+  {
+   "id": "01/0178#16",
+   "where": "01/0178",
+   "text": "– Wolałabym, żeby był nałogowcem, niż żeby był taki, jaki jest.",
+   "q": "Maman, a mother from a small town, says this about her husband. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman mówi:"
+   ]
+  }
+ ]
+}

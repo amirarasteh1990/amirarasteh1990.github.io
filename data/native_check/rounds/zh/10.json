@@ -1,0 +1,184 @@
+{
+ "lang": "zh",
+ "slug": "zh",
+ "dir": "ltr",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "04a/0074#1",
+   "where": "04a/0074",
+   "text": "不许问问题。听指挥官的话。",
+   "q": "An older boy plays a strict commander. Does it sound like a child playing?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "到处都是左和右。卡塞姆说："
+   ]
+  },
+  {
+   "id": "03/0118#2",
+   "where": "03/0118",
+   "text": "真是个美妞。",
+   "q": "A boy of about twelve says this about a pretty girl. Does it sound like a boy his age?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "亚瑟尔说："
+   ]
+  },
+  {
+   "id": "04b/1062#3",
+   "where": "04b/1062",
+   "text": "等她记住了我们的名字，就会喜欢上我们。",
+   "q": "A boy of about twelve sprays the boys' names on a wall for a girl. Does this sound like him?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "亚瑟尔正用一罐从他父亲的哈瓦尔卡车上顺来的喷漆，往内格尔家对面的墙上喷我们的名字，他说着："
+   ]
+  },
+  {
+   "id": "04b/1248#4",
+   "where": "04b/1248",
+   "text": "我们姐夫的师傅的堂兄弟的朋友——也就是德黑兰首富——说过，黑色是爱情的颜色。",
+   "q": "Hamid, a boy, repeats his boast about the richest man in Tehran. Does it sound like a child showing off?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "——要是有黑色，我就挑黑的。"
+   ]
+  },
+  {
+   "id": "03/0120#5",
+   "where": "03/0120",
+   "text": "这里比“阿尔卑斯球场”好多了。",
+   "q": "A boy compares their street to a famous football stadium. Does it sound like a boy talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "对我而言，她的美却带来一种模糊而遥远的熟悉感——仿佛多年前，在某处迷失的黑暗里，我曾见过那双大而近似杏仁形的眼睛。女孩在十字路口转向哈吉·卡泽姆的店铺时，塔吉立刻用街边散落的几块半砖摆出了球门。从那天起，在我们眼里，那条柏油路胜过我们称作古昌“阿尔卑斯球场”的土球场。无论那天还是往后的日子，我们的脚步都没有越过那座房子刷白的墙壁和黄色大门。既不往那边，也不往这边。塔吉说："
+   ]
+  },
+  {
+   "id": "02/0005#6",
+   "where": "02/0005",
+   "text": "我梦的灯......我梦的灯亮......我梦的灯亮了",
+   "q": "In this poem the speaker stumbles, starting the line twice before finishing it. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "我的梦曾是黑暗的",
+    "我什么也看不见",
+    "你来了"
+   ]
+  },
+  {
+   "id": "04b/0271#7",
+   "where": "04b/0271",
+   "text": "并非每个使自己的脸涨红的人都懂得偷心之术；也并非每个铸镜的人都懂得亚历山大之艺。",
+   "q": "Amir reads a verse by Hafez, the classical poet. Does it read like a line of classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/0316#8",
+   "where": "04b/0316",
+   "text": "上帝在众天使面前揭开了祂壮美的容颜，见他们对爱一无所知；那显露的美出于护爱的妒忌，化作纯然烈焰，击中了亚当的泥土。",
+   "q": "Niloofar recites a Hafez verse about God's beauty and Adam. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1301#9",
+   "where": "04b/1301",
+   "text": "久矣，爱人不曾捎来音信；不曾写下问候",
+   "q": "Niloofar reads the opening of a Hafez poem. Does it read like classical poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1275#10",
+   "where": "04b/1275",
+   "text": "被焚者们",
+   "q": "A poem on a blackboard ends with lovers, drunkards and the burned ones. Does '被焚者们' read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "知道",
+    "恋人们与",
+    "醉者们与"
+   ]
+  },
+  {
+   "id": "04b/1270#11",
+   "where": "04b/1270",
+   "text": "就用你自己的血在水上书写",
+   "q": "This is a line from a poem written on a blackboard. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "万物之上皆可书写",
+    "唯独水上除外",
+    "而你若渡海"
+   ]
+  },
+  {
+   "id": "04b/1267#12",
+   "where": "04b/1267",
+   "text": "万物之上皆可书写",
+   "q": "A poem written on a blackboard begins this way. Does it read as poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "04b/1271#13",
+   "where": "04b/1271",
+   "text": "好让那循着你的航迹而来的人",
+   "q": "This line continues the blackboard poem. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "而你若渡海",
+    "就用你自己的血在水上书写"
+   ]
+  },
+  {
+   "id": "04b/1392#14",
+   "where": "04b/1392",
+   "text": "我梦的灯开始闪烁",
+   "q": "This is a line of Amir's closing poem to a lost love. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "你来了",
+    "我梦的灯亮了",
+    "如今你走了"
+   ]
+  },
+  {
+   "id": "04b/1393#15",
+   "where": "04b/1393",
+   "text": "我不抱你归来的希望",
+   "q": "Amir's poem to a lost love continues. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "如今你走了",
+    "我梦的灯开始闪烁"
+   ]
+  },
+  {
+   "id": "04b/1396#16",
+   "where": "04b/1396",
+   "text": "我想我的梦还没相信你已经走了",
+   "q": "This is a line from Amir's poem to a lost love. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "我不抱你归来的希望",
+    "可若你恰巧路过",
+    "请再到我的梦里来"
+   ]
+  }
+ ]
+}

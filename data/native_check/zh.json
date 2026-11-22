@@ -2,97 +2,141 @@
  "lang": "zh",
  "slug": "zh",
  "dir": "ltr",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…在宇宙间这儿那儿回响，在空间的某个角落，或许只在某个人想象的一角。如今，当这一行行文字从你眼前经过，声音的能量早已消散，纸页上只剩下它们幽灵般的痕迹。它们全都沉寂了。所有声音，也许连同那整个世界和其中的人。甚至那个曾把这些声音的痕迹描在纸上的心智，或许也已经很久没有呼吸。正如你读到这句话的这一刻过去了，书中所有的时刻也都过去了。若不是在这里被写下，这些时刻和画面本会消失在世界事件躁动的喧嚣中。它们被写下，为的是成为我的世界和你的世界之间的一座桥。一座从我的世界——我写下这些句子的这一刻——通向你的世界——你坐下来阅读它们的这一刻——的桥。在这一边，我解开词语之线；在另一边，你把这些词聚拢起来。"
+   ]
   },
   {
-   "id": "01/0206#2",
-   "where": "01/0206",
-   "text": "现在也还好，可我总有个压厉，怕他下一刻就过来了。",
-   "q": "Maman mangles the word for stress on purpose. Is that clear from '压厉'?"
-  },
-  {
-   "id": "03/0291#3",
-   "where": "03/0291",
-   "text": "《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。",
-   "q": "Is '加油！吉塔斯' the known Chinese title of the cartoon Ganbare Kickers?"
-  },
-  {
-   "id": "04b/1312#4",
-   "where": "04b/1312",
-   "text": "他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。",
-   "q": "A girl jokes crudely about a painting. Does '他妈的晕' sound natural?"
-  },
-  {
-   "id": "01/0116#5",
+   "id": "01/0116#2",
    "where": "01/0116",
    "text": "也出去走走。去安净的地方。",
-   "q": "Maman garbles the word for quiet on purpose: '安净'. Is that clear?"
+   "q": "Maman says '安净' for quiet (安静) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– 哎，真好。嗯，下单让人送来。不过阿米尔·江，也不要一直窝在家里。"
+   ]
   },
   {
-   "id": "01/0132#6",
+   "id": "01/0132#3",
    "where": "01/0132",
    "text": "以前有伤汗，比如说，还有结核病、麻疹。",
-   "q": "Maman garbles the word for typhoid on purpose: '伤汗'. Is that clear?"
+   "q": "Maman says '伤汗' for typhoid (伤寒) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– 嗯，做得对。趁还有机会，把所有村子都看看。每个犄角旮旯都探一探。老人们以前常说，每个角落都要伸头瞧瞧。不过千万小心。这个病毒真不要脸。太不要脸了——我怕它会从这部手机里钻出来，让你从我们这儿染上。电视上还给它做了个木偶。木偶说：我不会这么快走，还要在你们家做很久的客人呢。它刚来的时候，电视说每一百人里有两个，现在又说百分之十。真主在上，太不公平了。一个人在街那边打个喷嚏，街这边的人就染上，然后死了。我活到现在，从没见过，也没听过这种事。连比比她们那一代人都没说起过。"
+   ]
   },
   {
-   "id": "01/0148#7",
+   "id": "01/0148#4",
    "where": "01/0148",
    "text": "– 什么和微笑？",
-   "q": "Maman catches only the end of the series title Tears and Smiles. Is that clear?"
+   "q": "Maman half-hears the title '泪水与微笑'. Does her puzzled reply sound natural?",
+   "ctx": 2,
+   "before": [
+    "– 大家，要不要我下载《泪水与微笑》，今晚我们一起看？",
+    "玛曼转过头，说道："
+   ]
   },
   {
-   "id": "03/0191#8",
+   "id": "01/0206#5",
+   "where": "01/0206",
+   "text": "现在也还好，可我总有个压厉，怕他下一刻就过来了。",
+   "q": "Maman says '压厉' for stress (压力) on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– 不过，愿你的手不痛——那三个月你带他去丹麦，我过得多快活。我终于明白生活是什么滋味。"
+   ]
+  },
+  {
+   "id": "03/0191#6",
    "where": "03/0191",
    "text": "– 哦哟，哈米德·猫，你昨天还说“哈尔”，今天突然文明了，改说“驴”了？",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?"
+   "q": "'哈尔' renders the blunt Persian word for donkey. Does Taghi's teasing, that Hamid now politely says '驴', work?",
+   "ctx": 2,
+   "before": [
+    "– 呸，你这头蠢驴，到底谁更清楚——我们姐夫的师傅的堂兄弟的朋友，那个德黑兰最有钱的人，还是你这头小牛犊？行，你去买一个吧。等玻璃碎了，别说我没提醒过你。",
+    "塔吉说："
+   ]
   },
   {
-   "id": "03/0290#9",
-   "where": "03/0290",
-   "text": "– “阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？",
-   "q": "The guard jokes Arasteh is a trimmed Araasteh (Persian: neat). Does this make sense?"
+   "id": "03/0291#7",
+   "where": "03/0291",
+   "text": "《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。",
+   "q": "Is '加油！吉塔斯' the known Chinese title of the cartoon Ganbare Kickers?",
+   "ctx": 0
   },
   {
-   "id": "03/0430#10",
+   "id": "03/0430#8",
    "where": "03/0430",
-   "text": "– 你呢，说话这副屌样，你的名字应该叫“阿拉特·德龙”。别自作多情，我说的不是阿兰·德龙，瞧你皱起鼻子......",
-   "q": "'阿拉特·德龙' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "你呢，说话这副屌样，你的名字应该叫“阿兰·屌龙”。",
+   "q": "'阿兰·屌龙' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
-   "id": "04a/0076#11",
+   "id": "04a/0076#9",
    "where": "04a/0076",
    "text": "– 是大米石。大米石就是很贵很贵的意思。",
-   "q": "A child garbles marble as '大米石', thinking it means expensive. Is that clear?"
+   "q": "A child says '大米石' for marble (大理石) and wrongly thinks the word means expensive. Both mistakes are meant. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "我们继续走。路中间有一栋房子。它的墙很漂亮。卡塞姆会说："
+   ]
   },
   {
-   "id": "04b/0595#12",
+   "id": "04b/0595#10",
    "where": "04b/0595",
    "text": "——可他还是说砸了。鹰眼说的是皮尔对皮尔，酒馆客听成了长老对长老。",
-   "q": "Amir misheard peer as pir, Persian for elder. Does the joke work?"
+   "q": "Pir is Persian for elder. Farid mocks Amir, nicknamed '酒馆长老', for hearing peer-to-peer as elder-to-elder. Is the joke clear?",
+   "ctx": 2,
+   "before": [
+    "——念一句赞圣词吧。酒馆长老总算开口说话了。",
+    "法里德说："
+   ]
   },
   {
-   "id": "04b/1263#13",
+   "id": "04b/1263#11",
    "where": "04b/1263",
    "text": "——嗖——巴巴巴巴，你给我买介个大娃娃好不好？",
-   "q": "A toddler asks her dad for a doll. Does it sound like baby talk?"
+   "q": "A little girl asks her dad to buy her a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…游戏哈夫特桑格、警察抓驴、街中央扔番茄，最重要的是在古昌城的“阿尔卑斯球场”踢足球。那些美好甜蜜、无忧无虑的日子又回来了。我们的世界不再浓缩在那扇黄色门里了。那扇一打开就预示着内格尔将要现身的黄色门。从那以后，年复一年，我越来越被引向祈祷、清真寺和祷告。我一步一步远离了见到内格尔时体验过的那种感觉，而当尼鲁法尔进入我的世界时，仿佛她把一盏灯带进了我那部分心的暗室。一盏令人不安的灯，它毁掉了那片令人宽慰的、深色的寂静，却又没有足够的光来引我去往何处。一盏眨着眼的灯，握在一个姑娘手里——我始终不知道她家门的颜色该归到彩色铅笔盒的哪一格。一个小女孩“嗖嗖”地跑来，在我身边停下。她看着那些玩具。她说："
+   ]
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。",
+   "q": "A student describes a puzzling painting crudely. Does '让人他妈的晕' sound like natural, crude student talk?",
+   "ctx": 1,
+   "before": [
+    "——......你们看，真是发人深省。"
+   ]
+  },
+  {
+   "id": "04b/1321#13",
    "where": "04b/1321",
    "text": "“那处之酒是真不是譬喻。”",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This Hafez line should allow two opposite readings: the wine is real; the wine is only a metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#14",
    "where": "06/0056",
    "text": "他们用布尔多泽尔往她身上倒土。土和石灰。",
-   "q": "Maman garbles bulldozer on purpose as '布尔多泽尔'. Is that clear?"
+   "q": "Maman says '布尔多泽尔' for bulldozer (推土机), mangling the foreign word on purpose. Does it read as her slip?",
+   "ctx": 1,
+   "before": [
+    "– 娜娜·佩萨尔·江，你巴巴的家人待我太坏了。最后那段日子，每次去给娜内洗澡，她都拿舌头伤我。但说实话，下葬的时候，我的心还是为她烧了起来。他们把她送到巴格·贝赫什特公墓最深处——那是把被处决的人送去的地方，新冠死者也送去那里。真主才知道有没有按仪式给她净身。我们只能远远看着。把她放进墓穴的那一刻，裹尸布松开了一下，我看着像是她还穿着去医院时的那身衣服，就那样被裹进了裹尸布。坟挖得很深。"
+   ]
   }
  ]
 }

@@ -1,0 +1,1220 @@
+{
+ "strings": {
+  "Page not found · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "404.html"
+  },
+  "Skip to content": {
+   "where": "a.skip-link",
+   "pages": 232,
+   "example": "404.html"
+  },
+  "Primary": {
+   "where": "nav.appnav@aria-label",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Home": {
+   "where": "span",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Books": {
+   "where": "span",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Paintings": {
+   "where": "span",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Guestbook": {
+   "where": "span",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Support": {
+   "where": "span",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Arasteh, home": {
+   "where": "a.nf-logo@aria-label",
+   "pages": 232,
+   "example": "404.html"
+  },
+  "This page wandered off": {
+   "where": "h1",
+   "pages": 1,
+   "example": "404.html"
+  },
+  "The thread led nowhere here. Perhaps the link is old, or what you came for is still on its way: editions and paintings arrive a wave at a time. Follow <0>Telegram</0> to hear when it lands.": {
+   "where": "p",
+   "pages": 1,
+   "example": "404.html"
+  },
+  "The book": {
+   "where": "a",
+   "pages": 1,
+   "example": "404.html"
+  },
+  "Every language": {
+   "where": "a",
+   "pages": 1,
+   "example": "404.html"
+  },
+  "© {n} Amir Arasteh": {
+   "where": "div.container",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "License": {
+   "where": "a",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Telegram": {
+   "where": "a",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Contact:": {
+   "where": "div.container",
+   "pages": 233,
+   "example": "404.html"
+  },
+  "Language": {
+   "where": "button.langsw-btn@aria-label",
+   "pages": 234,
+   "example": "404.html"
+  },
+  "Guestbook · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Leave a note, in any language: where the book found you, or a line that stayed.": {
+   "where": "p.lead",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Add to the thread": {
+   "where": "p.guestbook-kicker",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Leave a reader note": {
+   "where": "h2#leave-note-heading",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "No account needed. Your name and note will be public, and Amir is notified.": {
+   "where": "p.muted-note",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Name or pen name": {
+   "where": "label",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Your end of the thread": {
+   "where": "label",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Plain text, up to {n} characters.": {
+   "where": "span.guestbook-field-note",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Website": {
+   "where": "label",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Post": {
+   "where": "button#guestbookSubmit",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "From readers": {
+   "where": "p.guestbook-kicker",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Notes kept near the front": {
+   "where": "h2#featured-notes-heading",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "The open pages": {
+   "where": "p.guestbook-kicker",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Reader notes": {
+   "where": "h2#reader-notes-heading",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Search the notes": {
+   "where": "label",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Order": {
+   "where": "label",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "The first reader note is still waiting. You can leave it above.": {
+   "where": "p#guestbookEmpty",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Read more notes": {
+   "where": "button#guestbookMore",
+   "pages": 1,
+   "example": "comments/index.html"
+  },
+  "Sounds — First edition ({n}) · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "English cover of Sounds, Book One": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Sounds — Book One": {
+   "where": "h1",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "by Amir Arasteh · <0/> · <1>Sedaha</1>": {
+   "where": "p.byline",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "First edition ({n})": {
+   "where": "strong",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Released by the author, <0>Amir Arasteh</0>, who holds all rights in the work and has made this electronic edition free to read and share, provided the file remains complete and unchanged.": {
+   "where": "p.notice",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "This page is the permanent home of the <0>first edition ({n})</0> of <1>Sounds, Book One</1>, deposited with the Royal Danish Library. Its files, ISBNs, and this address will remain available and unchanged as a fixed record. The text is still being refined; for the latest revised edition, see the <2>book page</2>.": {
+   "where": "p.archival",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "First edition — downloads & ISBNs": {
+   "where": "h2.section-title",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Persian<0/>": {
+   "where": "p.lang",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Print": {
+   "where": "span.fmt",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "English<0/>": {
+   "where": "p.lang",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Danish<0/>": {
+   "where": "p.lang",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Italian<0/>": {
+   "where": "p.lang",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Publisher: Arasteh · Roskilde, Denmark · {n} · Original language: Persian. ISBNs issued by Det Kgl. Bibliotek (Denmark).": {
+   "where": "p.imprint",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "This translation is for convenience; the English text is the binding version.": {
+   "where": "p.muted-note",
+   "pages": 2,
+   "example": "editions/first-edition/index.html"
+  },
+  "<0>The book.</0> The complete electronic edition (text, layout, and its illustrations together) may be read and shared free of charge, provided the file remains complete and unchanged. All other rights are reserved by the author; short excerpts may be quoted, provided each excerpt clearly names its source: the book's title, the author's name and arasteh.art. <1>Full terms</1>.": {
+   "where": "p",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "<0>The paintings.</0> All artwork, individually and as standalone images (including the images on this site and any high-resolution files), is © Amir Arasteh, <1>All Rights Reserved</1>, and may not be reproduced, extracted, printed, or sold apart from the complete book without written permission.": {
+   "where": "p",
+   "pages": 1,
+   "example": "editions/first-edition/index.html"
+  },
+  "Amir Arasteh — paintings and books": {
+   "where": "title",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Arasteh": {
+   "where": "div.brand-logo@aria-label",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Amir Arasteh": {
+   "where": "h1",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Paintings and books": {
+   "where": "p",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Explore the work": {
+   "where": "h2#explore-heading",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Sedaha <0>(Sounds)</0>": {
+   "where": "h3",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "A novel, with the author’s paintings.": {
+   "where": "p",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Read free in your language →": {
+   "where": "a#readMine",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "Original work, in galleries →": {
+   "where": "span.home-paintings-text",
+   "pages": 1,
+   "example": "index.html"
+  },
+  "License · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "license.html"
+  },
+  "<0>The book: <1>Sedaha (Sounds), Book One</1>.</0> The complete electronic edition (its text, layout, and its illustrations together) may be read and shared free of charge, provided the file remains complete and unchanged. All other rights are reserved by the author: no printed or commercial edition, and no altered, abridged, translated, or adapted version, may be produced or distributed without the author's prior written permission. Short excerpts may be quoted, provided each excerpt clearly names its source: the book's title, the author's name and arasteh.art.": {
+   "where": "p",
+   "pages": 1,
+   "example": "license.html"
+  },
+  "<0>The paintings.</0> All artwork, individually and as standalone images (including the images on this site and any high-resolution files), is © Amir Arasteh, <1>All Rights Reserved</1>. The artworks may be shared only as part of the complete, unchanged electronic edition; they may not be reproduced, extracted, printed, or sold separately without written permission.": {
+   "where": "p",
+   "pages": 1,
+   "example": "license.html"
+  },
+  "This free edition is released by the author, Amir Arasteh, who holds all rights in the work. Publishers, translators, or institutions interested in print, translation, or publication rights are welcome to get in touch.": {
+   "where": "p",
+   "pages": 1,
+   "example": "license.html"
+  },
+  "Paintings — The World Through Boteh-Jegheh · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "← Paintings": {
+   "where": "a.back",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "The World Through Boteh-Jegheh": {
+   "where": "h1",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Rooted in Persian art, the boteh-jegheh (known as paisley in English) becomes a way of looking at the world. Its familiar form takes on the colours and character of different places.": {
+   "where": "p.lead",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran I, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran I": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran II, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran II": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran III, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran III": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran IV, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Iran IV": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark I, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark I": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark II, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark II": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark III, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Denmark III": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "France I, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "France I": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "France II, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "France II": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy I, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy I": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy II, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy II": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy III, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Italy III": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Brazil, {n}, from The World Through Boteh-Jegheh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Brazil": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "All artwork © Amir Arasteh. All Rights Reserved.": {
+   "where": "p.muted-note",
+   "pages": 3,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Painting viewer": {
+   "where": "dialog#galleryLightbox@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Close painting viewer": {
+   "where": "button#lightboxClose@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Close": {
+   "where": "button#lightboxClose@title",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Previous painting": {
+   "where": "button#lightboxPrev@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Share this painting": {
+   "where": "button#lightboxShare@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Download this painting": {
+   "where": "a#lightboxDownload@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Next painting": {
+   "where": "button#lightboxNext@aria-label",
+   "pages": 2,
+   "example": "paintings/boteh-jegheh/index.html"
+  },
+  "Paintings · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "paintings/index.html"
+  },
+  "Sedaha (Sounds)": {
+   "where": "span.painting-collection__line",
+   "pages": 2,
+   "example": "paintings/index.html"
+  },
+  "Book One": {
+   "where": "span.painting-collection__line",
+   "pages": 1,
+   "example": "paintings/index.html"
+  },
+  "The World Through <0>Boteh-Jegheh</0>": {
+   "where": "h2.painting-collection__title",
+   "pages": 1,
+   "example": "paintings/index.html"
+  },
+  "A <0>Yarn-Laden</0> Truck": {
+   "where": "h2.painting-collection__title",
+   "pages": 1,
+   "example": "paintings/index.html"
+  },
+  "Coming soon": {
+   "where": "p.painting-collection__soon",
+   "pages": 1,
+   "example": "paintings/index.html"
+  },
+  "Paintings — Sedaha (Sounds), Book One · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Sedaha (Sounds) — Book One": {
+   "where": "h1",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "The paintings made for the book, in the order they appear.": {
+   "where": "p.lead",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Cover painting of Sedaha (Sounds), Book One": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Cover": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Opening, from Sedaha (Sounds), Book One": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Opening": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Book One, from Sedaha (Sounds)": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Book One": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n}, from Sedaha (Sounds), Book One": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n}": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · End of Book One, from Sedaha (Sounds)": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · End": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Back Cover, from Sedaha (Sounds), Book One": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Picture {n} · Back Cover": {
+   "where": "span.shot-label",
+   "pages": 1,
+   "example": "paintings/sounds/index.html"
+  },
+  "Back to top": {
+   "where": "button.to-top@aria-label",
+   "pages": 93,
+   "example": "paintings/sounds/index.html"
+  },
+  "Sedaha (Sounds) — Book One · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "English cover of Sounds, Book One, by Amir Arasteh": {
+   "where": "img@alt",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "A novel written in Persian, with the author’s paintings.": {
+   "where": "p.byline",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "… a thread of words that were once sounds…": {
+   "where": "p.excerpt",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Pick up the thread in": {
+   "where": "h2#quick-heading",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Find your language": {
+   "where": "h2#find-heading",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Type a language in any script, or in English": {
+   "where": "label.lang-search-label",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Clear the search": {
+   "where": "button#langClear@aria-label",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Language search result": {
+   "where": "div#langResult@aria-label",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "Browse all languages": {
+   "where": "summary",
+   "pages": 1,
+   "example": "sedaha/index.html"
+  },
+  "The whole book, in {n} languages": {
+   "where": "p.all-group-head",
+   "pages": 113,
+   "example": "sedaha/index.html"
+  },
+  "This opening in other languages": {
+   "where": "nav.op-langs@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Share this opening": {
+   "where": "button.op-act@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Reading settings": {
+   "where": "div.reader-tools@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Smaller text": {
+   "where": "button.rt@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Larger text": {
+   "where": "button.rt@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Wider lines": {
+   "where": "button.rt@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Colours: following the system. Switch to light.": {
+   "where": "button.rt@aria-label",
+   "pages": 112,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Colours: light. Switch to dark. (Following the system.)": {
+   "where": "button.rt@aria-label",
+   "pages": 103,
+   "example": "sedaha/read/af/index.html"
+  },
+  "Support · Amir Arasteh": {
+   "where": "title",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "If the book or the paintings found a place in you, you can help them continue.": {
+   "where": "p.lead",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "One-time support": {
+   "where": "h2.support-heading",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Buy Me a Coffee": {
+   "where": "span.name",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "PayPal": {
+   "where": "span.name",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Revolut": {
+   "where": "span.name",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Monthly support": {
+   "where": "h2.support-heading",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Patreon": {
+   "where": "span.name",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "For readers in Iran": {
+   "where": "h2.support-heading",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Hamibash": {
+   "where": "span.name",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "Contact": {
+   "where": "h2",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "To reach the author, or to commission artwork: <0>amirarasteh.art@gmail.com</0>": {
+   "where": "p",
+   "pages": 1,
+   "example": "support/index.html"
+  },
+  "The whole book is free to read.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The opening is here; the whole book is in final review.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The opening is here; the whole book is in preparation.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The opening is here; the whole book is being revised.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Read the opening": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "View all matches": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Write to Amir": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Download help": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Until it is ready, the whole book can be read in <0>{n} other languages</0>, among them": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The complete file may be shared freely, unchanged. Short excerpts may be quoted if each names its source: the book’s title, the author’s name and arasteh.art. <0>License</0>": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "EPUB adjusts to your screen. PDF keeps the printed page. The files are hosted on GitHub, so the download opens there. If that is blocked on your network, <0>write to Amir</0> and he will send them to you.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "{n} languages match": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "{n} languages match “{q}”": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "No language matches": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "No language matches “{q}”.": {
+   "where": "js:finder.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Posting was confirmed without a readable note.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The note box is not connected yet.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The note could not be posted.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Add your name and your note before posting.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Posting…": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Posting your note…": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The note could not be posted just now.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Posted. Amir has been notified.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Posting took too long. Please try again.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The guestbook could not be reached. Your note is still here; please try again.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Publishing": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "All languages": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Multilingual": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Other": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "One reader note": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "{n} reader notes": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The reader notes could not be opened.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "The reader notes could not be opened just now. Please try again later.": {
+   "where": "js:guestbook.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Link copied": {
+   "where": "js:share.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Copy this link:": {
+   "where": "js:share.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Colours: light. Switch to dark.": {
+   "where": "js:reader.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Colours: dark. Switch to light.": {
+   "where": "js:reader.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Colours: dark. Switch to light. (Following the system.)": {
+   "where": "js:reader.js",
+   "pages": 0,
+   "example": ""
+  },
+  "Hide this suggestion": {
+   "where": "js:lang-mine.js",
+   "pages": 0,
+   "example": ""
+  }
+ },
+ "pages": {
+  "404.html": "c0855cf6ee91",
+  "comments/index.html": "bebc3303feee",
+  "editions/first-edition/index.html": "9f2b38f1336e",
+  "index.html": "204273cf2498",
+  "license.html": "872753703027",
+  "paintings/boteh-jegheh/index.html": "0072184dacc8",
+  "paintings/index.html": "2d9b509a3fe7",
+  "paintings/sounds/index.html": "5db05f2ed378",
+  "sedaha/check/af/index.html": "ba022ec7fe02",
+  "sedaha/check/am/index.html": "2f757c176ebf",
+  "sedaha/check/ar/index.html": "b47d20fe1016",
+  "sedaha/check/as/index.html": "2149e70da72b",
+  "sedaha/check/az/index.html": "78eabfa8e06b",
+  "sedaha/check/bal/index.html": "ab78e5ef079d",
+  "sedaha/check/be/index.html": "37a5a9eb544f",
+  "sedaha/check/bg/index.html": "33492f622e56",
+  "sedaha/check/bn/index.html": "a63db84286ba",
+  "sedaha/check/br/index.html": "cf171992bd40",
+  "sedaha/check/bs/index.html": "ee66c1420bb6",
+  "sedaha/check/ca/index.html": "dc95410a46e4",
+  "sedaha/check/ceb/index.html": "d0c86b4fab43",
+  "sedaha/check/ckb/index.html": "980de3717548",
+  "sedaha/check/cs/index.html": "96c502f97d50",
+  "sedaha/check/cy/index.html": "7cd0b6bc0a99",
+  "sedaha/check/de/index.html": "2da1c3d567b8",
+  "sedaha/check/el/index.html": "f6367cad0329",
+  "sedaha/check/en/index.html": "c730937ef0f4",
+  "sedaha/check/eo/index.html": "adcf248d34c7",
+  "sedaha/check/es/index.html": "e0cdd512b176",
+  "sedaha/check/et/index.html": "2a2757c051e5",
+  "sedaha/check/eu/index.html": "c5a900aeb869",
+  "sedaha/check/fi/index.html": "85c99a2eadeb",
+  "sedaha/check/fo/index.html": "1244f10a52bd",
+  "sedaha/check/fr/index.html": "a3f41118ea31",
+  "sedaha/check/fy/index.html": "a9970ad73099",
+  "sedaha/check/ga/index.html": "9b2049c53cd4",
+  "sedaha/check/gd/index.html": "78f460ea6d98",
+  "sedaha/check/gl/index.html": "c003cff1c718",
+  "sedaha/check/glk/index.html": "16f3365283fb",
+  "sedaha/check/gu/index.html": "f8c24fdc414e",
+  "sedaha/check/ha/index.html": "8328d57fe7b6",
+  "sedaha/check/he/index.html": "be4b9f04c849",
+  "sedaha/check/hi/index.html": "52ea1fc5ac7c",
+  "sedaha/check/hr/index.html": "6b8356fa9eb4",
+  "sedaha/check/ht/index.html": "2062e779fabd",
+  "sedaha/check/hu/index.html": "e471c4de6e05",
+  "sedaha/check/hy/index.html": "e68c5a91393b",
+  "sedaha/check/id/index.html": "5fc92f5acaad",
+  "sedaha/check/ig/index.html": "d6c0d3116ba4",
+  "sedaha/check/is/index.html": "74ed0aeb5c7c",
+  "sedaha/check/it/index.html": "309c8b97b23d",
+  "sedaha/check/ja/index.html": "bc4df35a6427",
+  "sedaha/check/jv/index.html": "18c93c64cbe9",
+  "sedaha/check/ka/index.html": "754d0fb822e1",
+  "sedaha/check/kk/index.html": "046e512c9cc9",
+  "sedaha/check/km/index.html": "f7b2b98f83c9",
+  "sedaha/check/kn/index.html": "1fa23f351e4c",
+  "sedaha/check/ko/index.html": "8fe0f1dcff2c",
+  "sedaha/check/ku/index.html": "93a67727b1c4",
+  "sedaha/check/ky/index.html": "b7cc541e50b3",
+  "sedaha/check/lb/index.html": "3b77d2936da3",
+  "sedaha/check/lo/index.html": "cc1abdd5ee81",
+  "sedaha/check/lrc/index.html": "85c1dfaa1e3f",
+  "sedaha/check/lt/index.html": "0ba3a0e032e3",
+  "sedaha/check/lv/index.html": "8ac007ce436b",
+  "sedaha/check/me/index.html": "20bebd1f91c9",
+  "sedaha/check/mk/index.html": "0dccbec366fc",
+  "sedaha/check/ml/index.html": "c615b889cc7d",
+  "sedaha/check/mn/index.html": "fedbcfcc4536",
+  "sedaha/check/mr/index.html": "6482fa12f018",
+  "sedaha/check/ms/index.html": "4fccd592ccf0",
+  "sedaha/check/mt/index.html": "dfd8b2df6797",
+  "sedaha/check/my/index.html": "1e93b8fbda6d",
+  "sedaha/check/mzn/index.html": "f06bf26e9a27",
+  "sedaha/check/nds/index.html": "7c6a103aa709",
+  "sedaha/check/ne/index.html": "e64a9498eb06",
+  "sedaha/check/nl/index.html": "54102161a0bf",
+  "sedaha/check/no/index.html": "e56e705c7850",
+  "sedaha/check/oc/index.html": "8aa806eaa4e1",
+  "sedaha/check/om/index.html": "6fd0ffdeddca",
+  "sedaha/check/or/index.html": "3ba6b40d4ac3",
+  "sedaha/check/pa/index.html": "e26eca163ba9",
+  "sedaha/check/pl/index.html": "3e1a9e1f9512",
+  "sedaha/check/prs/index.html": "7b93eca5765a",
+  "sedaha/check/ps/index.html": "69699e3417bc",
+  "sedaha/check/pt/index.html": "5d61206ebb71",
+  "sedaha/check/pt-br/index.html": "756bbc33a09a",
+  "sedaha/check/rm/index.html": "ae4c6461cf11",
+  "sedaha/check/ro/index.html": "b76d96f70969",
+  "sedaha/check/ru/index.html": "79c3d2f56458",
+  "sedaha/check/sc/index.html": "2c5f679582e4",
+  "sedaha/check/sd/index.html": "b0125c21682d",
+  "sedaha/check/se/index.html": "c25f49b1154a",
+  "sedaha/check/si/index.html": "6216a1c88fad",
+  "sedaha/check/sk/index.html": "f19982c29691",
+  "sedaha/check/sl/index.html": "b06728b27c1d",
+  "sedaha/check/so/index.html": "d401dd9483fa",
+  "sedaha/check/sq/index.html": "be722e5de1fd",
+  "sedaha/check/sr/index.html": "65adaa7a736b",
+  "sedaha/check/su/index.html": "e4ae8036e89f",
+  "sedaha/check/sv/index.html": "17a3c9309e53",
+  "sedaha/check/sw/index.html": "a9df3efa9f0d",
+  "sedaha/check/ta/index.html": "ab879bfa9269",
+  "sedaha/check/te/index.html": "4ea7469ad29d",
+  "sedaha/check/tg/index.html": "444a276fd25a",
+  "sedaha/check/th/index.html": "63a477e4d674",
+  "sedaha/check/tk/index.html": "0832d62d0fd8",
+  "sedaha/check/tl/index.html": "6897ac42fc7d",
+  "sedaha/check/tr/index.html": "67a676442139",
+  "sedaha/check/tt/index.html": "9f0958dd8f58",
+  "sedaha/check/ug/index.html": "c541d34378e1",
+  "sedaha/check/uk/index.html": "188e1119b8a6",
+  "sedaha/check/ur/index.html": "5ada95158e6b",
+  "sedaha/check/uz/index.html": "933f1ddbaf52",
+  "sedaha/check/vi/index.html": "746557dc1d32",
+  "sedaha/check/yi/index.html": "1c6c0f4b0071",
+  "sedaha/check/yo/index.html": "d6e029ad5bbb",
+  "sedaha/check/zh/index.html": "f14261ab7c9a",
+  "sedaha/check/zu/index.html": "459979219408",
+  "sedaha/index.html": "3e45066a3ba0",
+  "sedaha/read/af/index.html": "83632b80c923",
+  "sedaha/read/am/index.html": "3ae2e2e19880",
+  "sedaha/read/ar/index.html": "7015d43ca1b8",
+  "sedaha/read/as/index.html": "9cf9b59c5dcc",
+  "sedaha/read/az/index.html": "fe5c8b60867c",
+  "sedaha/read/bal/index.html": "efb270ecda31",
+  "sedaha/read/be/index.html": "bb8621e601f2",
+  "sedaha/read/bg/index.html": "222771c3034e",
+  "sedaha/read/bn/index.html": "250abaad61a5",
+  "sedaha/read/br/index.html": "f9905e37b7e9",
+  "sedaha/read/bs/index.html": "c60da17878c6",
+  "sedaha/read/ca/index.html": "bdb0d4b8138a",
+  "sedaha/read/ceb/index.html": "da67eba89fb4",
+  "sedaha/read/ckb/index.html": "aec7793f51e2",
+  "sedaha/read/cs/index.html": "f0d023731a92",
+  "sedaha/read/cy/index.html": "c8c3362b16a6",
+  "sedaha/read/da/index.html": "6bd2bda9e555",
+  "sedaha/read/de/index.html": "9be7c34de46c",
+  "sedaha/read/el/index.html": "09e3d46421c5",
+  "sedaha/read/eo/index.html": "9004a9ced83b",
+  "sedaha/read/es/index.html": "92655c83bff5",
+  "sedaha/read/et/index.html": "282c02a070e5",
+  "sedaha/read/eu/index.html": "f749d692a70f",
+  "sedaha/read/fa/index.html": "6bba387e151f",
+  "sedaha/read/fi/index.html": "2e1de56bacc6",
+  "sedaha/read/fo/index.html": "17064b3e0407",
+  "sedaha/read/fr/index.html": "f038990894e9",
+  "sedaha/read/fy/index.html": "ca83f388136d",
+  "sedaha/read/ga/index.html": "da71e85280ad",
+  "sedaha/read/gd/index.html": "e8cbf3e9ce52",
+  "sedaha/read/gl/index.html": "234e263621b1",
+  "sedaha/read/glk/index.html": "81cfcd70b71c",
+  "sedaha/read/gu/index.html": "7a23ca6b0d48",
+  "sedaha/read/ha/index.html": "dc1f3b7d01c2",
+  "sedaha/read/he/index.html": "b7e19e8afc87",
+  "sedaha/read/hi/index.html": "cf63384a4413",
+  "sedaha/read/hr/index.html": "325bf424c8e3",
+  "sedaha/read/ht/index.html": "7f793ceddb57",
+  "sedaha/read/hu/index.html": "246e5286b0bd",
+  "sedaha/read/hy/index.html": "de7314c2ab25",
+  "sedaha/read/id/index.html": "29bfdcbf8f21",
+  "sedaha/read/ig/index.html": "64a9733351ba",
+  "sedaha/read/index.html": "6e0f858dda52",
+  "sedaha/read/is/index.html": "bce779c2ea16",
+  "sedaha/read/it/index.html": "9cb807387a3b",
+  "sedaha/read/ja/index.html": "45c45d2d43ed",
+  "sedaha/read/jv/index.html": "e21ecfa34712",
+  "sedaha/read/ka/index.html": "43ec19235d20",
+  "sedaha/read/kk/index.html": "b1791446ef8e",
+  "sedaha/read/km/index.html": "d08c4a52bcc1",
+  "sedaha/read/kn/index.html": "5104a4377486",
+  "sedaha/read/ko/index.html": "9c1c7de04a30",
+  "sedaha/read/ku/index.html": "fd6e2444eaae",
+  "sedaha/read/ky/index.html": "e39f35de8dbd",
+  "sedaha/read/lb/index.html": "e210471ea103",
+  "sedaha/read/lo/index.html": "d0f48c79b33b",
+  "sedaha/read/lrc/index.html": "7137470b4ced",
+  "sedaha/read/lt/index.html": "89aea2bad558",
+  "sedaha/read/lv/index.html": "c6374844fdd6",
+  "sedaha/read/me/index.html": "cd8ffb874840",
+  "sedaha/read/mk/index.html": "3d835f234471",
+  "sedaha/read/ml/index.html": "e57857bfb73e",
+  "sedaha/read/mn/index.html": "9713c44360c2",
+  "sedaha/read/mr/index.html": "80da4977c5fa",
+  "sedaha/read/ms/index.html": "288c2a1a2ef3",
+  "sedaha/read/mt/index.html": "281553db13b7",
+  "sedaha/read/my/index.html": "e58a8608ff8c",
+  "sedaha/read/mzn/index.html": "b23108b0eaf1",
+  "sedaha/read/nds/index.html": "a1b00e6ca388",
+  "sedaha/read/ne/index.html": "3ba03eee24ac",
+  "sedaha/read/nl/index.html": "771bcf0af38f",
+  "sedaha/read/no/index.html": "f7e5c01b4063",
+  "sedaha/read/oc/index.html": "57a1a612e151",
+  "sedaha/read/om/index.html": "ec9b1bcfd2a7",
+  "sedaha/read/or/index.html": "682760e01998",
+  "sedaha/read/pa/index.html": "a007aaf5956d",
+  "sedaha/read/pl/index.html": "7f74b60ef4aa",
+  "sedaha/read/prs/index.html": "02ae089ad755",
+  "sedaha/read/ps/index.html": "54242a4baf46",
+  "sedaha/read/pt/index.html": "7cd0ed3e5790",
+  "sedaha/read/pt-br/index.html": "a66f4c7434f7",
+  "sedaha/read/rm/index.html": "494082e593b0",
+  "sedaha/read/ro/index.html": "26419940471d",
+  "sedaha/read/ru/index.html": "676f78517f00",
+  "sedaha/read/sc/index.html": "5dbf34325226",
+  "sedaha/read/sd/index.html": "249fcc7bd25a",
+  "sedaha/read/se/index.html": "2ebfb74bdcaf",
+  "sedaha/read/si/index.html": "9db892454e23",
+  "sedaha/read/sk/index.html": "3f5bb30156c3",
+  "sedaha/read/sl/index.html": "310192a112e4",
+  "sedaha/read/so/index.html": "edf5bca535a2",
+  "sedaha/read/sq/index.html": "a3f7c56ff02f",
+  "sedaha/read/sr/index.html": "5b4b2afaae2f",
+  "sedaha/read/su/index.html": "5f982af600e2",
+  "sedaha/read/sv/index.html": "abb7abb0e72f",
+  "sedaha/read/sw/index.html": "3a24d769f9b1",
+  "sedaha/read/ta/index.html": "7a6032d389f3",
+  "sedaha/read/te/index.html": "e00bb9e8aeb4",
+  "sedaha/read/tg/index.html": "82a3bb604868",
+  "sedaha/read/th/index.html": "7959d0aa040c",
+  "sedaha/read/tk/index.html": "e684d57041cf",
+  "sedaha/read/tl/index.html": "2f01a68a5a7d",
+  "sedaha/read/tr/index.html": "9127d7ae3c90",
+  "sedaha/read/tt/index.html": "df52f8a24793",
+  "sedaha/read/ug/index.html": "2956cfb6cf72",
+  "sedaha/read/uk/index.html": "f944f920b40b",
+  "sedaha/read/ur/index.html": "1e2407a33938",
+  "sedaha/read/uz/index.html": "21e6737ae4f8",
+  "sedaha/read/vi/index.html": "e9da3158d163",
+  "sedaha/read/yi/index.html": "e6e55819988a",
+  "sedaha/read/yo/index.html": "f120dcf9f2c9",
+  "sedaha/read/zh/index.html": "340208bbf5ea",
+  "sedaha/read/zu/index.html": "03c5aec412d3",
+  "support/index.html": "91cdcb60dc1f"
+ }
+}

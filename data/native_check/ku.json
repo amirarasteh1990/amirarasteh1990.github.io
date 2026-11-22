@@ -1,50 +1,78 @@
 {
-  "lang": "ku",
-  "slug": "ku",
-  "dir": "ltr",
-  "version": "2026-11-16",
-  "items": [
-    {
-      "id": "Opening/0007#1",
-      "where": "Opening/0007",
-      "text": "Mîna zaroktiyê — dema Maman kemaxa cilên kevn vedikir û em rêzikê digirtin û dora malan digeryan da ku kemaxa li ser hev bihev nebûya.",
-      "q": "Is it clear the children walked around inside their own house?"
-    },
-    {
-      "id": "01/0196#2",
-      "where": "01/0196",
-      "text": "Bi Xwedê, gava li malê ye, mal ewqas biçûk dibe, hest dikim dixwazim xefik bibim.",
-      "q": "Maman means the house feels so small she could suffocate. Is that clear?"
-    },
-    {
-      "id": "03/0361#3",
-      "where": "03/0361",
-      "text": "Ji xaniyê dawiya hewşê derketim û bi neh gavên dirêjiya hewşê pêya bûm û kêfa dîtina nû hîn di dilê min de dibiriqî.",
-      "q": "Is it clear he crossed the whole courtyard in nine steps?"
-    },
-    {
-      "id": "03/0570#4",
-      "where": "03/0570",
-      "text": "Rasterast bi heman cilên derve ketim nivîna xwe û nixûm ser serê xwe kişandim.",
-      "q": "Is it clear he pulled the blanket over his head?"
-    },
-    {
-      "id": "04b/1003#5",
-      "where": "04b/1003",
-      "text": "– Binêre te çi destegulek avêt avê, mêjîrîtî.",
-      "q": "Is it clear this means: look what a mess you've made?"
-    },
-    {
-      "id": "04b/1256#6",
-      "where": "04b/1256",
-      "text": "– Eger tu difikirî kamyonê bi xwe re bibî, ha.",
-      "q": "Taghi accepts a fight on one condition. Does 'ha' read as yes?"
-    },
-    {
-      "id": "06/0298#7",
-      "where": "06/0298",
-      "text": "Tariya parmakên darî yên reş ên pêşiya malê di bin keska pelûşên ku li dora wan pêçiyane ve veşartiye.",
-      "q": "Is it clear this is a black wooden fence, covered in ivy?"
-    }
-  ]
+ "lang": "ku",
+ "slug": "ku",
+ "dir": "ltr",
+ "version": "2026-11-16",
+ "items": [
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Mîna zaroktiyê — dema Maman kemaxa cilên kevn vedikir û em rêzikê digirtin û dora malan digeryan da ku kemaxa li ser hev bihev nebûya.",
+   "q": "Is it clear the children walked around inside their own house?",
+   "before": [
+    "Vekirin",
+    "…dibûn, heke li vir nehatibûna nivîsandin. Hatin nivîsandin da ku bibin pireke di navbera cîhana min û cîhana te de. Pirek ji cîhana min, di gavê ku van hevokên dinivîsim de, bo cîhana te, di gavê ku rûdinêvî û dixwîniyan de. Ji vê alî ve, ez rêzika peyvan vedikim û ji wî alî ve, tu wan dicivînî."
+   ]
+  },
+  {
+   "id": "01/0196#2",
+   "where": "01/0196",
+   "text": "Bi Xwedê, gava li malê ye, mal ewqas biçûk dibe, hest dikim dixwazim xefik bibim.",
+   "q": "Maman means the house feels so small she could suffocate. Is that clear?",
+   "before": [
+    "– Wê demê baş e ku pir li ba te nîye.",
+    "– Mm-hm, niha bi kêmî ve hinekî nefes dikêşim."
+   ]
+  },
+  {
+   "id": "03/0361#3",
+   "where": "03/0361",
+   "text": "Ji xaniyê dawiya hewşê derketim û bi neh gavên dirêjiya hewşê pêya bûm û kêfa dîtina nû hîn di dilê min de dibiriqî.",
+   "q": "Is it clear he crossed the whole courtyard in nine steps?",
+   "before": [
+    "– Baş e.",
+    "…ku Mahboubeh perdeyê ber deriyê hewşê berda û derî girt. Rast bû. Êdî pêwîst nebû wê koma formulan û nîşanên konkûrê yên mijarê trigonometriyê ji ber bikim. Xweş ji rêbaza hêsan û bikêr ku min dîtibû, ji kêleka sobeyê rabûm û min kaxeza li ser dîwêr, li kêleka mayî yên nîşanên konkûrê, zeliq kir."
+   ]
+  },
+  {
+   "id": "03/0570#4",
+   "where": "03/0570",
+   "text": "Rasterast bi heman cilên derve ketim nivîna xwe û nixûm ser serê xwe kişandim.",
+   "q": "Is it clear he pulled the blanket over his head?",
+   "before": [
+    "– Çil û pênc kursî. Eger kêm bêne, ji sinifên din jî kursî dikarin bên anîn û li pêşiya sinifê bên rêzkirin.",
+    "…Lê Nîlûfer tewra ji bo temaşekirina vê dînîtiya helbestî jî nehatibû. Tewra ji ber deriyê sinifê jî derbas nebûbû. Bi gavên bilez û dirêj vegeriyam xewgehê. Dixwestim zû dirêj bikişim. Law li xaliyê kêlekî nivîna Ferîd rûniştibûn. Di nava nîqaşê de bûn û tewra hay ji ketina min nediatî odeyê."
+   ]
+  },
+  {
+   "id": "04b/1003#5",
+   "where": "04b/1003",
+   "text": "– Binêre te çi destegulek avêt avê, mêjîrîtî.",
+   "q": "Is it clear this means: look what a mess you've made?",
+   "before": [
+    "– Tu jî Reşîdek î.",
+    "Eskandar ber bi min zivirî û ser û sînga xwe ber bi min kişand. Çavên xwe gir kiribû û bi devhalekî dijwar, bê ku devhalê xwe yê Alain Delonî ji dest bide, got:"
+   ]
+  },
+  {
+   "id": "04b/1256#6",
+   "where": "04b/1256",
+   "text": "– Eger tu difikirî kamyonê bi xwe re bibî, ha.",
+   "q": "Taghi accepts a fight on one condition. Does 'ha' read as yes?",
+   "before": [
+    "– Hûn dixwazin şer bikin?",
+    "Kamyon di destê min de bû lê me nedikarîbû birevin. Negar rawestiyabû û li me dinihêrî. Taqî got:"
+   ]
+  },
+  {
+   "id": "06/0298#7",
+   "where": "06/0298",
+   "text": "Tariya parmakên darî yên reş ên pêşiya malê di bin keska pelûşên ku li dora wan pêçiyane ve veşartiye.",
+   "q": "Is it clear this is a black wooden fence, covered in ivy?",
+   "before": [
+    "– Erê, here razê, Nini-jan.",
+    "Em xatirxwestin dikin û carek din pencereya di navbera cîhanên me de tê girtin. Ji camê derve mêze dikim."
+   ]
+  }
+ ]
 }

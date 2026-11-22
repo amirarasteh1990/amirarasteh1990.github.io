@@ -2,97 +2,140 @@
  "lang": "ar",
  "slug": "ar",
  "dir": "rtl",
- "version": "2026-11-18",
+ "version": "2026-11-22",
  "items": [
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
    "text": "من هذه الجهة أفك خيط الكلمات، ومن الجهة الأخرى تجمعها يداك.",
-   "q": "Does this sentence read naturally?"
+   "q": "Does this sentence read naturally?",
+   "ctx": 0
   },
   {
    "id": "01/0014#2",
    "where": "01/0014",
    "text": "– انظر، ضعه في الفريزل. إن وضعته في الفريزل لا يصيبه شيء حتى لو مرّ عليه عام.",
-   "q": "Maman mispronounces freezer on purpose. Is that clear from 'الفريزل'?"
+   "q": "Maman says 'الفريزل' for freezer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "– نعم، أكلته يا نيني-جان. لا تقلقي. لم يبقَ إلا قليل من اللواشك، رقائق الفاكهة المجفّفة التي صنعتها محبوب."
+   ]
   },
   {
-   "id": "01/0132#3",
-   "where": "01/0132",
-   "text": "كان هناك تيفويد مثلًا، أو السل، أو الحصبة.",
-   "q": "Maman mispronounces typhoid on purpose. Does 'تيفويد' work as her mispronunciation?"
-  },
-  {
-   "id": "01/0206#4",
-   "where": "01/0206",
-   "text": "الآن أيضًا الأمر جيد، لكن الستريس يلازمني دائمًا: قد يأتي إلى هنا في أية لحظة.",
-   "q": "Maman mispronounces stress on purpose. Does 'الستريس' work as her mispronunciation?"
-  },
-  {
-   "id": "01/0116#5",
+   "id": "01/0116#3",
    "where": "01/0116",
    "text": "اخرج أيضًا. اذهب إلى أماكن خَلْبة.",
-   "q": "Maman mispronounces 'خَلْبة' on purpose; she means quiet. Is that clear?"
+   "q": "Maman garbles the word for quiet on purpose. Does 'خَلْبة' read as her slip, still meaning quiet places?",
+   "ctx": 1,
+   "before": [
+    "– أوه، ما أروع ذلك. همم، تطلب ويجلبونها. لكن يا أمير-جان لا تجلس في البيت طوال الوقت."
+   ]
   },
   {
-   "id": "01/0148#6",
+   "id": "01/0132#4",
+   "where": "01/0132",
+   "text": "كان هناك تيفويد مثلًا، أو السل، أو الحصبة.",
+   "q": "Maman says 'تيفويد' for typhoid, slightly wrong on purpose. Does it read as her slip, not a normal spelling?",
+   "ctx": 1,
+   "before": [
+    "…صنعوا له دمية. قالت: لن أرحل في القريب العاجل، سأكون ضيفكم مدة طويلة. حين جاء أول مرة، قال التلفزيون شخصان من كل مئة، والآن يقول عشرة بالمئة. والله، إنه ظلم شديد. شخص يعطس على جانب واحد من الشارع فيُصاب إنسان على الجانب الآخر ويموت. لم أرَ ولم أسمع شيئًا كهذا من قبل. حتى جيل بيبي لم يحدثنا بمثله."
+   ]
+  },
+  {
+   "id": "01/0148#5",
    "where": "01/0148",
    "text": "– ما وابتسامات؟",
-   "q": "Maman half-hears a TV series title, Tears and Smiles. Does this sound right?"
+   "q": "Maman half-hears the title 'دموع وابتسامات'. Does her puzzled reply sound natural?",
+   "ctx": 2,
+   "before": [
+    "– يا أولاد، هل أُحمّل فيلم دموع وابتسامات حتى نشاهده الليلة؟",
+    "تدير مامان رأسها وتقول:"
+   ]
+  },
+  {
+   "id": "01/0206#6",
+   "where": "01/0206",
+   "text": "الآن أيضًا الأمر جيد، لكن الستريس يلازمني دائمًا: قد يأتي إلى هنا في أية لحظة.",
+   "q": "Maman says 'الستريس' for stress, mispronounced on purpose. Does it read as her slip, not a normal word?",
+   "ctx": 1,
+   "before": [
+    "– لكن، الله يحفظ يديك — تلك الأشهر الثلاثة حين أخذته معك إلى الدنمارك، كم استمتعتُ فيها. فهمت أخيرًا ما معنى الحياة."
+   ]
   },
   {
    "id": "03/0191#7",
    "where": "03/0191",
    "text": "– أوهو. حميد القط، حتى الأمس كنت تقول «خر». الآن تحضّرت وتقول «حمار»؟",
-   "q": "Taghi mocks Hamid's switch from a rude to a polite donkey word. Is that clear?"
+   "q": "'خر' is the blunt Persian word for donkey. Hamid just said 'حمار'. Does Taghi's teasing about him turning polite work?",
+   "ctx": 2,
+   "before": [
+    "– حسناً يا حمار، من يعرف أكثر — صديق ابن عم معلّم صنعة صهرنا، أغنى رجل في طهران، أم أنت يا عجل؟ اذهب واشترِ إذن. وحين ينكسر زجاجه لا تقل إنني لم أحذّرك.",
+    "قال تقي:"
+   ]
   },
   {
    "id": "03/0278#8",
    "where": "03/0278",
    "text": "كروبي عشق، الحقّ والإنصاف.",
-   "q": "Farid gushes about a politician in student slang. Does this sound natural?"
+   "q": "A student gushes about the politician Karroubi. Does this sound like natural, excited student talk?",
+   "ctx": 1,
+   "before": [
+    "– هيه يا تافيرني، اركض! هيا بنا. يقولون إنهم لم يسمحوا لكروبي بدخول الجامعة. كسر أنصاره بوابة حافظ ودخلوا. يمكن القول، من وجه ما، إنهم فتحوا الجامعة."
+   ]
   },
   {
    "id": "03/0430#9",
    "where": "03/0430",
-   "text": "– وأنت، بطريقة كلامك القضيبية تلك، كان ينبغي أن يكون اسمك آلَت دولون.",
-   "q": "'آلَت دولون' is meant as a rude pun on Alain Delon. Does it work?"
+   "text": "وأنت، بطريقة كلامك القضيبية تلك، كان ينبغي أن يكون اسمك آلان زُبّيلون.",
+   "q": "'آلان زُبّيلون' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "ctx": 0
   },
   {
    "id": "04a/0076#10",
    "where": "04a/0076",
    "text": "– حجر مَلْمَل. مَلْمَل يعني غالي جداً.",
-   "q": "A child mispronounces marble as 'مَلْمَل' and thinks it means expensive. Is that clear?"
+   "q": "A child says 'مَلْمَل' for marble (مرمر) and wrongly thinks the word means expensive. Both mistakes are meant. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "كنا نمشي من جديد. كان هناك بيت في منتصف الطريق. كان جداره جميلاً. كان قاسم يقول:"
+   ]
   },
   {
-   "id": "04b/0595#11",
-   "where": "04b/0595",
-   "text": "عين النسر يقول پيير-تو-پيير، وخراباتي يقول پير-تو-پير.",
-   "q": "Amir misheard peer as 'پير', Persian for elder, like his nickname. Does the joke work?"
-  },
-  {
-   "id": "04b/1263#12",
+   "id": "04b/1263#11",
    "where": "04b/1263",
    "text": "– ويييژژژ، بابا بابا، أتشتلي لي هذه الدمية الكبيلة؟",
-   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?"
+   "q": "A little girl asks her dad to buy her a big doll. Does it sound like a little child talking?",
+   "ctx": 1,
+   "before": [
+    "…إلى الحجرة المظلمة في ذلك الجزء من كياني. مصباحٌ يبعث القلق أزال ذلك الصمتَ المريحَ الداكنَ اللون، ولم يكن فيه من الضوء ما يكفي ليهديني. مصباحٌ يومض في يد فتاةٍ لم أعرف قطّ أين يقع لون باب بيتهم في علبة أقلام التلوين. تأتي طفلةٌ صغيرة وهي تُطلق صوت «ويژ ويژ» وتقف بجانبي. تنظر إلى الألعاب. تقول:"
+   ]
   },
   {
-   "id": "04b/1312#13",
+   "id": "04b/1312#12",
    "where": "04b/1312",
    "text": "تُصيب المرءَ بدوخة خرائية. كلما فكّرتِ فيها أكثر، ازدادت دوختكِ الخرائية.",
-   "q": "A girl uses a crude made-up phrase for mind-bending confusion. Does it work?"
+   "q": "A student describes a puzzling painting. Does 'دوخة خرائية' work as a crude, playful phrase for mind-bending?",
+   "ctx": 1,
+   "before": [
+    "– ... انظرن، إنها حقاً مثيرة للتأمل. رسم هذا وكتب تحته: هذه ليست غليوناً."
+   ]
   },
   {
-   "id": "04b/1321#14",
+   "id": "04b/1321#13",
    "where": "04b/1321",
    "text": "«الخمرُ هناك حقيقةٌ لا مجاز».",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?"
+   "q": "This Hafez line should allow two opposite readings: the wine is real; the wine is only a metaphor. Does it allow both?",
+   "ctx": 0
   },
   {
-   "id": "06/0056#15",
+   "id": "06/0056#14",
    "where": "06/0056",
    "text": "صبوا فوقها التراب بالبولدوزل. تراباً وجيراً.",
-   "q": "Maman mispronounces 'بالبولدوزل' on purpose; she means bulldozer. Is that clear?"
+   "q": "Maman says 'البولدوزل' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "ctx": 1,
+   "before": [
+    "…أقصى مقبرة باغ بهشت، إلى الموضع الذي يأخذون إليه مَن أُعدموا ويدفنون فيه موتى كوفيد أيضاً. الله وحده يعلم هل غسّلوها غسل الميت أم لا. كنا نراقب من بعيد. حين وضعوها في القبر، ارتخى الكفن لحظة، فبدا لي أنهم لفّوها به وهي لا تزال ترتدي الثياب نفسها التي ذهبت بها إلى المستشفى. يحفرون القبور عميقة جداً."
+   ]
   }
  ]
 }

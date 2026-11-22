@@ -1,0 +1,184 @@
+{
+ "lang": "fr",
+ "slug": "fr",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "06/0186#1",
+   "where": "06/0186",
+   "text": "Je donnerais tout pour toi, Nini-jan. Ta tête fonctionne si bien.",
+   "q": "Amir lovingly praises his mother, called Nini in the family, for her quick thinking. Does this sound warm and natural?",
+   "ctx": 2,
+   "kind": "known",
+   "before": [
+    "…quand Taghi est mort, sa mère est venue à la porte et a dit à Maman : on ne sait pas quoi dire aux gens. Je veux dire, si on dit qu'il avait bu de l'aragh maison bien fort et qu'il avait fait une syncope, ce serait un terrible scandale. Alors Maman lui a dit : dites juste qu'il a attrapé le Covid.",
+    "Je dis :"
+   ]
+  },
+  {
+   "id": "04b/0616#2",
+   "where": "04b/0616",
+   "text": "D'accord, Œil d'Aigle, d'accord. Maintenant n'enfonce pas tes lunettes dans le portable.",
+   "q": "Farid teases short-sighted Sajad, who peers at his laptop from very close. Does this sound like natural teasing?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman dit :"
+   ]
+  },
+  {
+   "id": "01/0132#3",
+   "where": "01/0132",
+   "text": "Fiche ton nez dans chaque recoin. Les anciens disaient : glisse-toi dans le moindre recoin.",
+   "q": "Maman urges her son to see every village and quotes an old saying. Does the saying sound natural from her?",
+   "ctx": 0,
+   "kind": "known"
+  },
+  {
+   "id": "04b/0784#4",
+   "where": "04b/0784",
+   "text": "Tu es très sneaky.",
+   "q": "Niloofar teases Amir for secretly overhearing her talk with other girls. Does this sound like natural French from a young woman?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Et voilà que tu dis encore « je sais ». Mais comment le sais-tu ?",
+    "– Je t'ai entendue parler avec quelques autres filles dans la faculté aujourd'hui."
+   ]
+  },
+  {
+   "id": "03/0394#5",
+   "where": "03/0394",
+   "text": "Soit tu es cerveau-de-bi... enfin, tu étais déjà cerveau-de-bite, maintenant tu l'es encore plus.",
+   "q": "Hooman starts a crude insult, breaks off, and makes it worse on purpose. Does the joke land for young men in a dorm?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Tu t'es soudainement bloqué sur cette question. Il y a quelques possibilités. Soit tu t'es cogné la tête quelque part."
+   ]
+  },
+  {
+   "id": "04b/0378#6",
+   "where": "04b/0378",
+   "text": "Cervelle de merde, on ne te traitera pas de muet si tu ne pètes pas.",
+   "q": "Eskandar twists a saying, 'nobody calls you mute if you keep quiet', into a crude jibe. Does the joke come across?",
+   "ctx": 0,
+   "kind": "joke"
+  },
+  {
+   "id": "04b/0385#7",
+   "where": "04b/0385",
+   "text": "C'est comme ça qu'il est fabriqué. Toujours très chic et solennel, il chie pile au tournant historique.",
+   "q": "Hooman mocks Amir, who always messes up politely at the crucial moment, as if built that way. Does this crude joke land?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Eldie est Taverny. Il n'y peut rien."
+   ]
+  },
+  {
+   "id": "04b/0571#8",
+   "where": "04b/0571",
+   "text": "Commencez par faire un documentaire sur ce pouce ; ensuite, vous ferez un film sur ce que vous voulez.",
+   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film plan. Does the joke come across?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Les gars, venez, on va faire un documentaire sur notre chambre.",
+    "Hooman sortit la main de sous la couverture et dit :"
+   ]
+  },
+  {
+   "id": "03/0576#9",
+   "where": "03/0576",
+   "text": "Je donnerais ma vie pour tes yeux de rossignol, Œil d'Aigle-jan, mais le problème vient du récepteur ; l'émetteur ne peut pas le résoudre.",
+   "q": "Short-sighted Sajad took Farid's toothbrush; Farid answers in mock-flowery words. Does the joke come across?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "– Œil d'Aigle, tu as encore pris ma brosse à dents.",
+    "– Objectivement, la prochaine fois achète-en une d'une autre couleur.",
+    "Farid dit :"
+   ]
+  },
+  {
+   "id": "01/0142#10",
+   "where": "01/0142",
+   "text": "Baba quoi ?",
+   "q": "Maman is hard of hearing and catches only one word of her son's joke. Does her short question read naturally?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Alors imagine un peu ce que doit endurer notre pauvre Baba — assis à ne rien faire à la maison pendant toutes ces années.",
+    "Maman dit :"
+   ]
+  },
+  {
+   "id": "03/0388#11",
+   "where": "03/0388",
+   "text": "Je ne vois rien sans mes lunettes, objectivement.",
+   "q": "Sajad says 'objectivement' constantly out of habit, and his friends find it funny. Does it read as his verbal habit?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad dit :"
+   ]
+  },
+  {
+   "id": "03/0126#12",
+   "where": "03/0126",
+   "text": "L'ami du cousin du maître artisan de notre beau-frère, l'homme le plus riche de Téhéran, parle exactement comme ça.",
+   "q": "Hamid's running joke: he always cites this long chain of people as his authority. Does it read smoothly and sound funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Hm."
+   ]
+  },
+  {
+   "id": "03/0624#13",
+   "where": "03/0624",
+   "text": "Génial, l'Aîné de la Taverne. C'est parfait pour Arasteh.",
+   "q": "Friends give Amir a mock-grand nickname from a Hafez poem, 'Aîné de la Taverne'. Does it work as a fun nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid dit :"
+   ]
+  },
+  {
+   "id": "03/0628#14",
+   "where": "03/0628",
+   "text": "Haha, l'Aîné de la Taverne, Eldie, parfait.",
+   "q": "Hooman shortens 'Aîné de la Taverne' to 'Eldie', an English-style pet name. Does that work as a teasing nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman écrivait quelque chose dans le livre avec un stylo et dit :"
+   ]
+  },
+  {
+   "id": "03/0630#15",
+   "where": "03/0630",
+   "text": "Il est Taverny, en toute vérité et honnêteté.",
+   "q": "Farid coins another nickname for Amir, 'Taverny', from 'taverne'. Does it work as a playful nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid dit :"
+   ]
+  },
+  {
+   "id": "04b/0162#16",
+   "where": "04b/0162",
+   "text": "Ouais, à la seconde où ils nous voient, ils serrent les fesses et prennent tellement leurs distances que j'ai envie de leur sauter à la figure à pieds joints.",
+   "q": "Farid mocks snobbish Tehran students who act stuck-up and keep their distance. Does this crude line say that naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid dit :"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "lang": "lv",
+ "slug": "lv",
+ "dir": "ltr",
+ "version": "2026-11-22.r10",
+ "items": [
+  {
+   "id": "04a/0024#1",
+   "where": "04a/0024",
+   "text": "– Bataljons, uz priekšu marš!",
+   "q": "A boy playing soldier gives orders to his little brothers. Does it sound like a child copying the army?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Vispirms mēs mazliet stāvējām hallē. Ghassem vienmēr ko teica. Tad viņš vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0026#2",
+   "where": "04a/0026",
+   "text": "– Misijas pirmā posma sākums. Bataljons, pa kreisi!",
+   "q": "A boy leads his little brothers on a pretend secret mission. Does it sound like a child at play?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Mēs gājām uz ielas. Vispirms mums vajadzēja iet līdz ielas sākumam. Ghassem vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0052#3",
+   "where": "04a/0052",
+   "text": "– Trešais posms ir krustojums. Krustojums nozīmē, ka tas ir ļoti liels. No šā gala līdz tam galam. No šīs ielas līdz tai ielai.",
+   "q": "A boy explains a crossroads to his little brothers. Does this child logic sound natural?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ceļā viņš vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0020#4",
+   "where": "04a/0020",
+   "text": "– Labi, tu arī vari nākt uz uzdevumu, bet tev jābūt ļoti uzmanīgam. Posmi ir ļoti grūti.",
+   "q": "A ten-year-old lets his little brother join the game. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem teica:"
+   ]
+  },
+  {
+   "id": "04a/0056#5",
+   "where": "04a/0056",
+   "text": "– Ja tu nogursti, vairs nenāc uz uzdevumu.",
+   "q": "A boy scolds his tired little brother. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem teica:"
+   ]
+  },
+  {
+   "id": "04a/0064#6",
+   "where": "04a/0064",
+   "text": "– Kreisā puse ir bīstama. Mājā ar sarkanajām durvīm dzīvo ļoti dusmīgs vecs vīrs. Pat dusmīgāks nekā Baba.",
+   "q": "A ten-year-old boy warns his little brothers about a scary house. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Tad viņš vienmēr rādīja to māju ar lielajām sarkanajām durvīm. Viņš vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0068#7",
+   "where": "04a/0068",
+   "text": "– Mūsu skola ir galā. Pēdējā māja. Ja mēs trokšņosim, skolotājs sitīs mums pa rokām ar lineālu.",
+   "q": "A boy tells his little brothers about school. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem vienmēr teica vēl ko. Tad viņš vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0070#8",
+   "where": "04a/0070",
+   "text": "– Aiz skolas ir kapsēta. Tā ir ļoti veca. Dažiem kapiem nav akmens. Var redzēt mirušo kaulus.",
+   "q": "A boy tries to scare his little brothers about the cemetery. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Es arī tur iešu šogad. Ja skolotājs sitīs man ar lineālu, es pateikšu Maman. Ghassem vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0078#9",
+   "where": "04a/0078",
+   "text": "– Hei, kāpēc tu izmeti kociņu? Ar ko tad mēs zvanīsim pie durvīm?",
+   "q": "A boy scolds his little brother for throwing away their stick. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Es vienmēr paņēmu kociņu pie koka tur. Es vilku to gar sienu. Tas radīja motocikla skaņu. Ghassem un Omid gāja pa priekšu. Es biju tālu aiz muguras. Ghassem mani nerāja. Vienreiz viņš teica:"
+   ]
+  },
+  {
+   "id": "04a/0042#10",
+   "where": "04a/0042",
+   "text": "– Tās nosaukums ir Quchan tirgus, un mūsu māja ir Quchan tirgus galā.",
+   "q": "A boy argues with his brother about the name of their street. Does this sound like a child talking?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Tā ir galvenā iela.",
+    "Hashem teica:"
+   ]
+  },
+  {
+   "id": "04a/0004#11",
+   "where": "04a/0004",
+   "text": "– Es tevi atradu četras reizes. Nāc šurp, mans labais zēns.",
+   "q": "Maman plays peekaboo with her four-year-old. Does it sound like a mother with a small child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Es attālinājos no cauruma. Maman kļuva tumša. Maman vienmēr kļuva tumša un tad atkal gaiša, četras reizes. Viņa vienmēr teica:"
+   ]
+  },
+  {
+   "id": "04a/0066#12",
+   "where": "04a/0066",
+   "text": "– Labi, mans apķērīgais zēn. Kad kaut kas tevi biedē, izmanto triku, lai nebaidītos.",
+   "q": "Maman praises her little son's trick for not being scared. Does it sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Es vienmēr izmantoju triku. Sarkano durvju vietā es skatījos uz blakus mājas sienu. Tā bija balta. Maman teica:"
+   ]
+  },
+  {
+   "id": "02/0001#13",
+   "where": "02/0001",
+   "text": "Šajā ziemā un aukstumā, no kurienes ir nākuši dziedātājputni? Esmu atkal savas iztēles gūsteknis.",
+   "q": "This opens a dreamlike, poetic section. Does it read as lyrical prose?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "02/0005#14",
+   "where": "02/0005",
+   "text": "Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās",
+   "q": "A poem line builds up haltingly, as if remembered. Does it read as poetry, not as a mistake?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Mani sapņi bija tumši",
+    "Es neko neredzēju",
+    "Tu atnāci"
+   ]
+  },
+  {
+   "id": "04b/1396#15",
+   "where": "04b/1396",
+   "text": "Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi",
+   "q": "This is the closing line of a simple love poem. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Man nav cerības uz tavu atgriešanos",
+    "Bet, ja tavs ceļš tevi atvedīs tuvumā",
+    "nāc atkal manos sapņos"
+   ]
+  },
+  {
+   "id": "04b/1390#16",
+   "where": "04b/1390",
+   "text": "Manu sapņu gaisma ieslēdzās",
+   "q": "In a love poem, the light of his dreams comes on when she arrives. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Es neko neredzēju",
+    "Tu atnāci"
+   ]
+  }
+ ]
+}

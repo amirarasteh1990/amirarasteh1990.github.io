@@ -1,0 +1,178 @@
+{
+ "lang": "no",
+ "slug": "no",
+ "dir": "ltr",
+ "version": "2026-11-22.r4",
+ "items": [
+  {
+   "id": "04a/0022#1",
+   "where": "04a/0022",
+   "text": "Greit, gytjeleken er ferdig.",
+   "q": "Ghassem, a young boy, tells his little brothers that playing in the mud is over. Does this sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Omid og jeg gikk etter ham. Jeg likte det så godt. Enda mer enn gytjelek. Omid og jeg lekte med gytje i gårdsplassen. Ghassem ropte høyt:"
+   ]
+  },
+  {
+   "id": "04b/0486#2",
+   "where": "04b/0486",
+   "text": "Altså, du mener at den dritthellet vårt, der loddet falt på oss og ga oss et gammelt skrammel som deg, bare fortsetter å gjenta seg?",
+   "q": "Hooman crudely curses their bad luck at being stuck with this roommate. Does this sound like how a young man would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…oversenga Farid tilbake med hånden, da Farid spratt opp fra plassen sin som en fjær. Lyden av Hoomans fingerknips ekkoet gjennom rommet. Farids pute passerte ved siden av Eskandars hode og traff veggen. Puten falt bak Meysam, sammen med et par av klesplaggene som hang på knaggerekken. Hooman sa:"
+   ]
+  },
+  {
+   "id": "04a/0024#3",
+   "where": "04a/0024",
+   "text": "Bataljon, fremover marsj!",
+   "q": "Ghassem, a boy, plays army commander and gives his little brothers a marching order. Does it sound like a real command?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Først stod vi litt i stua. Ghassem pleide å si noen ting. Så pleide han å si:"
+   ]
+  },
+  {
+   "id": "04b/0162#4",
+   "where": "04b/0162",
+   "text": "Ja, i samme øyeblikk de ser oss, klemmer de igjen rasshølene og holder en sånn avstand at jeg får lyst til å fly dem i ansiktet med begge føttene.",
+   "q": "Farid crudely mocks snobbish Tehran students who keep their distance. Does this sound like how young men in a dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "03/0663#5",
+   "where": "03/0663",
+   "text": "Denne lokaliseringspolitikken knullet oss fullstendig.",
+   "q": "Hooman swears about an admissions policy that ruined their chances. Does this sound like natural student swearing?",
+   "ctx": 0,
+   "kind": "crude"
+  },
+  {
+   "id": "04b/0181#6",
+   "where": "04b/0181",
+   "text": "Spis hodet på pikken min, mann. Vi har fått nok av deg.",
+   "q": "Hooman tells off a roommate with a crude insult. Does this sound like something young men in a dorm would say?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman løftet tommelfingeren igjen og sa:"
+   ]
+  },
+  {
+   "id": "04b/0899#7",
+   "where": "04b/0899",
+   "text": "Din pikkhodeeter, hvorfor vrøvler du?",
+   "q": "Hooman insults a friend with a crude compound word. Does it sound like a real insult young men would use?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman sa:"
+   ]
+  },
+  {
+   "id": "04b/1003#8",
+   "where": "04b/1003",
+   "text": "Se hvilket flott rot du har stelt i stand, ditt klin tomme hode.",
+   "q": "Eskandar, furious, calls Amir an idiot. Does this sound rough and natural for a young man?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar vendte seg mot meg og lente hode og bryst frem i min retning. Han hadde sperret opp øynene, og med en grov tone som fortsatt bevarte sin Alain Delon-kvalitet, sa han:"
+   ]
+  },
+  {
+   "id": "03/0586#9",
+   "where": "03/0586",
+   "text": "Den som vil ha en drittfylt filosofisk diskusjon, kan gå ut på kjøkkenet.",
+   "q": "Hooman switches off the light and tells his roommates to take their philosophical rubbish elsewhere. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar og Meysam hadde begynt å analysere hvordan det som skjedde på maskiningeniørfakultetet var en håndfull som viste hele lasset. De knyttet det til verdens konkurranseorienterte og forbruksorienterte samtid og den slags ting. Diskusjonen trakk ut. Hooman slukket lyset og sa:"
+   ]
+  },
+  {
+   "id": "03/0502#10",
+   "where": "03/0502",
+   "text": "Æsj. Det fikk huden min til å krype.",
+   "q": "Farid shudders at a gory video. Does this sound like a natural reaction?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid sa:"
+   ]
+  },
+  {
+   "id": "04b/0723#11",
+   "where": "04b/0723",
+   "text": "Vel, hvis du ikke er typen som søker og drar, hvorfor sprengte du da ræva på TOEFL-eksamen?",
+   "q": "Hooman crudely asks why Amir worked so hard for the TOEFL exam. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Og han lo. Jeg sa ingenting. Hooman fortsatte:"
+   ]
+  },
+  {
+   "id": "04b/0353#12",
+   "where": "04b/0353",
+   "text": "Og i den rablende tilstanden, hva slags antikviteter ble kastet på oss?",
+   "q": "Hooman, crude and bitter, recalls a messed-up time and the odd roommates they got. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Han tømmer teen sin og tørker munnen med baksiden av hånden."
+   ]
+  },
+  {
+   "id": "04b/1314#13",
+   "where": "04b/1314",
+   "text": "I trettito måneder har jeg elsket Dem. Fra avstand.",
+   "q": "Amir, shy and very formal, finally confesses his love to a fellow student. Does the way he addresses her suit the moment?",
+   "ctx": 0,
+   "kind": "dialogue"
+  },
+  {
+   "id": "03/0345#14",
+   "where": "03/0345",
+   "text": "Er ikke Deres ærend avsluttet?",
+   "q": "A young woman coldly asks Amir whether he has finished what he came for. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "Hun sa:"
+   ]
+  },
+  {
+   "id": "03/0432#15",
+   "where": "03/0432",
+   "text": "og former munnen som en hønsebak og river deg selv i stykker for å snakke som ham.",
+   "q": "Hooman mocks Eskandar for pursing his lips and straining to talk like a film star. Does this crude image sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman rundet munnen og laget nesen sin så liten og rynket som han kunne — akkurat som Eskandars ansikt ble når han snakket."
+   ]
+  },
+  {
+   "id": "04a/0054#16",
+   "where": "04a/0054",
+   "text": "Æsj, jeg er trøtt.",
+   "q": "Omid, a small boy, complains that he is tired on a long walk. Does this sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Det var veldig langt. Helt til den andre enden av verden. Kanskje ikke. Men det var veldig langt. Jeg pleide å bli trøtt halvveis. Men jeg sa ingenting. En gang sa Omid:"
+   ]
+  }
+ ]
+}

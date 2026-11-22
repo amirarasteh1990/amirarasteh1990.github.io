@@ -1,0 +1,188 @@
+{
+ "lang": "hy",
+ "slug": "hy",
+ "dir": "ltr",
+ "version": "2026-11-22.r8",
+ "items": [
+  {
+   "id": "04b/1301#1",
+   "where": "04b/1301",
+   "text": "Կարդաց՝ «Վաղուց է, որ յարը մի լուր չուղարկեց, ոչ բարև գրեց ...», ու ինձ ծիծաղ բռնեց։",
+   "q": "Niloofar reads the opening of a love poem by Hafez. Does the quoted line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…նստարանին նստեցի։ Մինչ Նիլուֆարը հասներ՝ մի ղազալ էի ընտրել, որ այդ գիշերվա ուրախ լուրը Հաֆեզի լեզվով ասեմ Նիլուֆարին։ Ուրախությունն ինձ մոռացնել էր տվել, որ այդ գիշեր Նիլուֆարի հերթն է։ Գիրքը ձեռքիցս խլեց ու ասաց՝ ուզում է, ի տարբերություն միշտ մեկ-երկու բեյթ կարդալու՝ մի ամբողջ ղազալ կարդալ։"
+   ]
+  },
+  {
+   "id": "04b/0150#2",
+   "where": "04b/0150",
+   "text": "– Եթե տարիքով է լինելու, ապա պետք է Բահմանի ձվերը լիզես։ Նա մեզնից առնվազն հինգ տարով մեծ է։",
+   "q": "Hooman mocks Eskandar's claim that older students deserve respect, crudely. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Հումանը իր հաստ ու կլորիկ բթամատը ցույց տվեց Էսքանդարին ու ասաց."
+   ]
+  },
+  {
+   "id": "03/0118#3",
+   "where": "03/0118",
+   "text": "– Ի՜նչ ծիտ է։",
+   "q": "Young boys spot a pretty young woman, and one of them says this. Does it sound like how a boy would say it?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Յասերն ասաց."
+   ]
+  },
+  {
+   "id": "04b/0226#4",
+   "where": "04b/0226",
+   "text": "– ...ամեն անգամ, որ գալիս էի այն քաք բռնած երկրորդ մասնագիտության դասերի ու գործերի համար՝ տեսնում էի՝ վիճում են։ Էլ անպայման գիտես, որ երկուսն էլ մագիստրատուրան հենց այստեղ են արել, չէ՞։",
+   "q": "Hooman grumbles about his annoying second degree, crudely. Does this sound like casual student talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Խոսքս դեռ չէի ավարտել, երբ նա տեղից վեր կացավ ու վերցրեց ուսապարկը։ Հետը գնացի մինչև Աբու-Ռեյհանի շենքի առջև ու այնտեղ հրաժեշտ տվեցինք։"
+   ]
+  },
+  {
+   "id": "01/0178#5",
+   "where": "01/0178",
+   "text": "– Երանի թմրամոլ դառնար, բայց էսպես չլիներ։",
+   "q": "Maman says she would rather her husband had become an addict. Does this sound like her bitter humor?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0464#6",
+   "where": "04b/0464",
+   "text": "Ես լինեի՝ զրոն էլ չէ, քութակիս գլուխը կտայի՝ ուտեիր, հետո էլ հետույքին մի աքացի՝ համալսարանից կհեռացնեի քեզ։",
+   "q": "Hooman mocks Eskandar's theories, saying crudely what he would do as the professor. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Մի՞թե Հայզենբերգ կամ Այնշտայն ես, որ ակնկալում ես՝ քեզ քսան տան ու քո լուսավորող տեսությունները գնահատեն։"
+   ]
+  },
+  {
+   "id": "04b/1390#7",
+   "where": "04b/1390",
+   "text": "Իմ երազների լույսը վառվեց",
+   "q": "From a short love poem the narrator wrote: her arrival lit up his dreams. Does this line read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Իմ երազները խավար էին",
+    "Ես ոչինչ չէի տեսնում",
+    "Դու եկար"
+   ]
+  },
+  {
+   "id": "03/0640#8",
+   "where": "03/0640",
+   "text": "– Փո՜ւֆ, գրողը տանի քեզ։ Արտերկրաբնակ ես դարձել, էլ մեզ ձվիդ տեղ չես դնում։ Ա՛յ օտարապաշտ ծախված։",
+   "q": "Hooman jokingly calls his friend a sellout for moving abroad. Does this rough teasing sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Իսկապես ներեցեք։"
+   ]
+  },
+  {
+   "id": "04a/0078#9",
+   "where": "04a/0078",
+   "text": "– Հը՛մ, ինչո՞ւ փայտը գցեցիր, բա տան զանգն ինչո՞վ ենք զարկելու։",
+   "q": "An older boy scolds his little brother during their game. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ես միշտ այնտեղի ծառի կողքից փայտ էի վերցնում։ Քաշում էի պատի վրա։ Մոտոցիկլետի ձայն էր հանում։ Ղասեմն ու Օմիդը առաջ-առաջ էին գնում։ Ես հեռու էի մնում։ Ղասեմն ինձ չէր նախատում։ Մի անգամ ասաց."
+   ]
+  },
+  {
+   "id": "06/0044#10",
+   "where": "06/0044",
+   "text": "Շոր ու էդ բաները՝ ինչքան որ տեսքդ ու հագուստդ մնացածից ցածր չլինի՝ բավ է։",
+   "q": "Maman tells her son his clothes only need to be as good as everyone else's. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "…Վերջին անգամ, որ գնացի լոգարանում լողացրի նրան՝ մարմնին միս ընդհանրապես չէր մնացել, միայն մաշկ ու ոսկոր էր դարձել։ Ես ասում եմ՝ թե կարողանար ուտել՝ էսպես չէր լինի։ Նանա-փեսար-ջան, շա՛տ հոգ տար քո ուտելու մասին։ Ուժ տվող բաներ կեր։ Միայն քո ուտելո՛ւ մասին հոգ տար, ես մնացած բաների հետ գործ չունեմ։"
+   ]
+  },
+  {
+   "id": "04b/0721#11",
+   "where": "04b/0721",
+   "text": "– Ծերո՛ւկ, փոխանակ այսպես մահճակալին փռվես ու ձվերիդ հետ խաղաս՝ վե՛ր կաց ուղարկիր։ Առիթը հազարից մեկ է։",
+   "q": "Hooman crudely tells Amir to stop lazing on the bed and send off his application. Does it sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Հումանն ասաց."
+   ]
+  },
+  {
+   "id": "03/0126#12",
+   "where": "03/0126",
+   "text": "– Հա։ Մեր փեսայի վարպետի հորեղբորորդու ընկերը, որ Թեհրանի ամենահարուստ մարդն է, հենց այսպես է խոսում։",
+   "q": "Hamid, a boy, always brags through a long, silly chain of people he claims to know. Does this boast sound funny?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Համիդն ասաց."
+   ]
+  },
+  {
+   "id": "06/0118#13",
+   "where": "06/0118",
+   "text": "– Հը, Ղասեմը պարապ-սարապ խոսում է։ Հին մարդիկ ասում էին՝ խոսքը ծախս չունի, քամի է։",
+   "q": "Maman brushes off her son's teasing with an old saying. Does this sound like a small-town mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Մամանն ասում է."
+   ]
+  },
+  {
+   "id": "04b/0394#14",
+   "where": "04b/0394",
+   "text": "– ...մեզ քունեցին։",
+   "q": "Hooman complains about the quota law: they got screwed. Does this sound as crude as young men talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…մուկետը։ Բահմանը թիկնել էր սենյակի վեց նեղ ու երկար պահարաններից երրորդին ու չորրորդին, որ կանգնած էին Ֆարիդի ու Սաջադի մահճակալի դիմաց։ Իմ ու Բահմանի երկհարկանի մահճակալը սենյակի մնացած մասի երկայնքով շարունակում էր պահարանների շարքը։ Հումանը թեյ էր խմում չամիչով ու գանգատվում տեղայնացման օրենքից։"
+   ]
+  },
+  {
+   "id": "04b/1392#15",
+   "where": "04b/1392",
+   "text": "Իմ երազների լույսը հիմա թարթում է",
+   "q": "From the narrator's short love poem: now that she is gone, the light in his dreams flickers. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Դու եկար",
+    "Իմ երազների լույսը վառվեց",
+    "Հիմա հեռացել ես"
+   ]
+  },
+  {
+   "id": "04a/0068#16",
+   "where": "04a/0068",
+   "text": "– Մեր դպրոցն այն ծայրում է։ Վերջին տունը։ Աղմուկ անենք՝ պարոն ուսուցիչը քանոնով կխփի ձեռքներիս։",
+   "q": "A young boy tells his little brothers about their school. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ղասեմն ուրիշ բաներ էլ էր ասում։ Հետո ասում էր."
+   ]
+  }
+ ]
+}

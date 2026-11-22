@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/ko/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/ko/">
-<link rel="stylesheet" href="/assets/css/style.css?v=32">
+<link rel="stylesheet" href="/assets/css/style.css?v=33">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,6 +40,14 @@ if(M)M.content=t=="dark"?"#17130f":t=="light"?"#F5EFE3":B;
 var d=document.documentElement;d.setAttribute("data-theme",t);d.style.colorScheme=t=="auto"?"":t}
 window.__theme={get:get,usable:R.length>0,set:function(t){try{localStorage.setItem(K,t)}catch(e){}apply(t)}};
 apply(get())})();</script>
+<script>/* the visitor's language: see assets/js/i18n.js */
+(function(){var L={"en":1,"fa":1,"da":1,"de":1,"es":1,"fr":1,"it":1,"lv":1,"lt":1,"nl":1,"no":1,"pl":1,"pt":1,"pt-br":1,"sk":1,"sv":1,"tr":1,"ru":1,"uk":1,"hy":1,"ar":1,"zh":1,"ja":1,"ko":1},R={"ar":1,"fa":1},K="arasteh-ui",s=null,u,h=document.documentElement,q=/[?&]ui=([a-z-]+)/i.exec(location.search);
+try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
+if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
+if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
+window.__ui=u;window.__UI_RTL=R;
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -64,240 +72,271 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <li><a href="/comments/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12z"/></svg><span>Guestbook</span></a></li>
       <li><a href="/support/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C6.9 16.9 3.5 13.6 3.5 9.9 3.5 7.4 5.4 5.6 7.8 5.6c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.4 0 4.3 1.8 4.3 4.3 0 3.7-3.4 7-8.5 10.4z"/></svg><span>Support</span></a></li>
     </ul>
+    <div class="langsw" translate="no">
+      <button type="button" class="langsw-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English" title="Language"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span class="langsw-cur" lang="en">English</span><span class="langsw-code" aria-hidden="true">EN</span></button>
+      <ul class="langsw-list" hidden>
+        <li><a href="?ui=en" data-ui="en" data-short="EN" lang="en" dir="ltr">English</a></li>
+        <li><a href="?ui=fa" data-ui="fa" data-short="FA" lang="fa" dir="rtl">فارسی</a></li>
+        <li><a href="?ui=da" data-ui="da" data-short="DA" lang="da" dir="ltr">Dansk</a></li>
+        <li><a href="?ui=de" data-ui="de" data-short="DE" lang="de" dir="ltr">Deutsch</a></li>
+        <li><a href="?ui=es" data-ui="es" data-short="ES" lang="es" dir="ltr">Español</a></li>
+        <li><a href="?ui=fr" data-ui="fr" data-short="FR" lang="fr" dir="ltr">Français</a></li>
+        <li><a href="?ui=it" data-ui="it" data-short="IT" lang="it" dir="ltr">Italiano</a></li>
+        <li><a href="?ui=lv" data-ui="lv" data-short="LV" lang="lv" dir="ltr">Latviešu</a></li>
+        <li><a href="?ui=lt" data-ui="lt" data-short="LT" lang="lt" dir="ltr">Lietuvių</a></li>
+        <li><a href="?ui=nl" data-ui="nl" data-short="NL" lang="nl" dir="ltr">Nederlands</a></li>
+        <li><a href="?ui=no" data-ui="no" data-short="NO" lang="no" dir="ltr">Norsk</a></li>
+        <li><a href="?ui=pl" data-ui="pl" data-short="PL" lang="pl" dir="ltr">Polski</a></li>
+        <li><a href="?ui=pt" data-ui="pt" data-short="PT" lang="pt" dir="ltr">Português</a></li>
+        <li><a href="?ui=pt-br" data-ui="pt-br" data-short="PT-BR" lang="pt-BR" dir="ltr">Português (Brasil)</a></li>
+        <li><a href="?ui=sk" data-ui="sk" data-short="SK" lang="sk" dir="ltr">Slovenčina</a></li>
+        <li><a href="?ui=sv" data-ui="sv" data-short="SV" lang="sv" dir="ltr">Svenska</a></li>
+        <li><a href="?ui=tr" data-ui="tr" data-short="TR" lang="tr" dir="ltr">Türkçe</a></li>
+        <li><a href="?ui=ru" data-ui="ru" data-short="RU" lang="ru" dir="ltr">Русский</a></li>
+        <li><a href="?ui=uk" data-ui="uk" data-short="UK" lang="uk" dir="ltr">Українська</a></li>
+        <li><a href="?ui=hy" data-ui="hy" data-short="HY" lang="hy" dir="ltr">Հայերեն</a></li>
+        <li><a href="?ui=ar" data-ui="ar" data-short="AR" lang="ar" dir="rtl">العربية</a></li>
+        <li><a href="?ui=zh" data-ui="zh" data-short="ZH" lang="zh" dir="ltr">中文</a></li>
+        <li><a href="?ui=ja" data-ui="ja" data-short="JA" lang="ja" dir="ltr">日本語</a></li>
+        <li><a href="?ui=ko" data-ui="ko" data-short="KO" lang="ko" dir="ltr">한국어</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- APPNAV:END -->
-<main class="container" id="main">
+<main class="container" id="main" data-i18n-skip>
   <a class="back" href="/sedaha/read/ko/">&larr; <span class="native" lang="ko" dir="ltr">한국어</span></a>
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ko" dir="ltr">한국어</span></h1>
-    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then tap Correct if it is fine as it is, or Needs change and write what you would say instead. Answer as many lines as you like.</p>
+    <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
+    <p class="nc-round">Round 1 of 13. After you send, the next round has more lines.</p>
+    <div class="nc-guide">
+      <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
+      <ul>
+        <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+      </ul>
+    </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ko" data-language="Korean" data-version="2026-11-18" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ko" data-language="Korean" data-version="2026-11-22" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.</p>
+        <p class="nc-line">이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.</p>
       </div>
       <p class="nc-q" id="q1">The book describes itself as a loose thread end. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
+        <label><input type="radio" name="v1" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n1">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n1">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="Opening/0007#2">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>한때 이 소리들의 흔적을 종이 위에 그려 넣었던 마음이 오래전부터 더는 숨을 쉬지 않는지도 모른다.</p>
+        <p class="nc-line">한때 이 소리들의 흔적을 종이 위에 그려 넣었던 마음이 오래전부터 더는 숨을 쉬지 않는지도 모른다.</p>
       </div>
       <p class="nc-q" id="q2">The writer may have died long ago. Does this sentence read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
+        <label><input type="radio" name="v2" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n2">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n2">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <fieldset class="nc-item" data-id="Opening/0007#3">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>어린 시절, 마망이 낡은 옷에서 털실을 풀어내고 실이 쌓이지 않도록 우리가 실 끝을 들고 집 안을 돌아다니던 것처럼.</p>
+        <p class="nc-ctx">…흔적을 종이 위에 그려 넣었던 마음이 오래전부터 더는 숨을 쉬지 않는지도 모른다. 당신이 이 문장을 읽은 바로 이 순간이 지나갔듯, 이 책의 모든 순간은 지나갔다. 여기에 기록되지 않았더라면 세상에서 일어나는 사건들의 열병 같은 웅성거림 속에 묻혀버렸을 순간들과 장면들. 내 세계와 당신의 세계 사이에 다리가 되기 위해 기록되었다. 내가 이 문장들을 쓰고 있는 순간의 내 세계에서, 이 문장들을 읽으려고 자리에 앉는 순간의 당신의 세계로 이어지는 다리. 이쪽에서 나는 말들의 실을 풀어내고, 저쪽에서 당신은 그 말들을 거두어들인다.</p>
+        <p class="nc-line">어린 시절, 마망이 낡은 옷에서 털실을 풀어내고 실이 쌓이지 않도록 우리가 실 끝을 들고 집 안을 돌아다니던 것처럼.</p>
       </div>
       <p class="nc-q" id="q3">A childhood memory of playing with unravelled wool. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
+        <label><input type="radio" name="v3" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n3">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n3">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#4">
+    <fieldset class="nc-item" data-id="01/0116#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>개어지러워. 생각하면 할수록 더 개어지러워져.</p>
+        <p class="nc-ctx">– 어머, 정말 좋다. 그래, 주문하면 가져다주는 거지. 근데 아미르-잔, 집에만 있지는 마.</p>
+        <p class="nc-line">바깥도 나가. 한작한 데로 가.</p>
       </div>
-      <p class="nc-q" id="q4">A girl uses crude slang on purpose. Does '<bdi lang="ko" dir="ltr">개어지러워져</bdi>' sound natural here?</p>
+      <p class="nc-q" id="q4">Maman says '<bdi lang="ko" dir="ltr">한작한</bdi>' for quiet (한적한) on purpose. Does it read as her slip, not a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
+        <label><input type="radio" name="v4" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n4">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n4">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0116#5">
+    <fieldset class="nc-item" data-id="01/0132#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>바깥도 나가. 한작한 데로 가.</p>
+        <p class="nc-ctx">…이 전화기를 타고 우리한테서 네게 건너가면 어쩌나 무서워. 텔레비전에서 바이러스 인형을 만들었는데, “난 금방 안 떠나. 한동안 너희 손님으로 있을 거야”라고 했대. 처음 왔을 때는 텔레비전에서 백 명에 두 명이라고 했는데, 이제는 십 퍼센트래. 정말이지 너무 불공평하잖아. 길 저쪽에서 누가 재채기를 하면 이쪽 사람이 걸려서 죽는 거잖아. 이런 건 보도 듣도 못했어. 비비 세대조차 그런 얘기는 안 했어. 예를 들어 장티포스가 있었잖아, 아니면 결핵, 홍역. 그런 것들을 치명적이라고 했지. 흠, 그것들도 이만큼 죽이지는 않았어.</p>
+        <p class="nc-line">아니면 콜라라 같은 것도. 그것도 이만큼 죽이지는 않았어.</p>
       </div>
-      <p class="nc-q" id="q5">Maman garbles the word for quiet on purpose: '<bdi lang="ko" dir="ltr">한작한</bdi>'. Is that clear?</p>
+      <p class="nc-q" id="q5">Maman says '<bdi lang="ko" dir="ltr">콜라라</bdi>' for cholera (콜레라) on purpose. Does it read as her slip, not a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
+        <label><input type="radio" name="v5" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n5">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n5">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0132#6">
+    <fieldset class="nc-item" data-id="01/0148#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>아니면 콜라라 같은 것도. 그것도 이만큼 죽이지는 않았어.</p>
+        <p class="nc-ctx">– 얘들아, 오늘 밤 〈눈물과 미소〉 다운받아서 볼까?</p>
+        <p class="nc-ctx">마망이 고개를 돌리며 말했다.</p>
+        <p class="nc-line">– 뭐와 미소라고?</p>
       </div>
-      <p class="nc-q" id="q6">Maman garbles the word for cholera on purpose: '<bdi lang="ko" dir="ltr">콜라라</bdi>'. Is that clear?</p>
+      <p class="nc-q" id="q6">Maman half-hears the title '<bdi lang="ko" dir="ltr">눈물과 미소</bdi>'. Does her puzzled reply sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n6">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0148#7">
+    <fieldset class="nc-item" data-id="03/0191#7">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 뭐와 미소라고?</p>
+        <p class="nc-ctx">– 푸, 나귀야. 우리 매형네 장인 기술자의 사촌의 친구, 그 테헤란 최고 부자가 더 잘 알겠어, 아니면 너 같은 송아지가 더 잘 알겠어? 어디 한번 사 봐. 유리가 깨지면 내가 말 안 했다고 하지 마.</p>
+        <p class="nc-ctx">타기가 말했다:</p>
+        <p class="nc-line">– 오호. 고양이 하미드, 어제까지만 해도 당나귀라고 하더니, 이제 사람 됐다고 나귀라고 하냐?</p>
       </div>
-      <p class="nc-q" id="q7">Maman catches only the end of the series title Tears and Smiles. Is that clear?</p>
+      <p class="nc-q" id="q7">Taghi teases Hamid for switching from the everyday '<bdi lang="ko" dir="ltr">당나귀</bdi>' to the more refined '<bdi lang="ko" dir="ltr">나귀</bdi>'. Does the joke work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n7">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0191#8">
+    <fieldset class="nc-item" data-id="03/0430#8">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 오호. 고양이 하미드, 어제까지만 해도 당나귀라고 하더니, 이제 사람 됐다고 나귀라고 하냐?</p>
+        <p class="nc-line">그리고 넌, 그 자지같은 말투로 봐서는 이름이 알랭 자지롱이었어야 했어.</p>
       </div>
-      <p class="nc-q" id="q8">Taghi mocks Hamid for switching to a politer word for donkey. Does it work?</p>
+      <p class="nc-q" id="q8">'<bdi lang="ko" dir="ltr">알랭 자지롱</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n8">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0290#9">
+    <fieldset class="nc-item" data-id="04a/0076#9">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 아라스테는 아라아스테를 다듬은 건가요?</p>
+        <p class="nc-ctx">우리는 또 갔다. 가는 길 중간에 집이 하나 있었다. 담이 예뻤다. 가셈이 말하곤 했다:</p>
+        <p class="nc-line">– 대리설 돌이야. 대리설은 아주 비싸다는 뜻이야.</p>
       </div>
-      <p class="nc-q" id="q9">The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Is that clear?</p>
+      <p class="nc-q" id="q9">A child says '<bdi lang="ko" dir="ltr">대리설</bdi>' for marble (대리석) and wrongly thinks the word means expensive. Both mistakes are meant. Does it sound like a child?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n9">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#10">
+    <fieldset class="nc-item" data-id="04b/1263#10">
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 그리고 넌, 그 자지같은 말투로 봐서는 이름이 알라트 들롱이었어야 했어.</p>
+        <p class="nc-ctx">…나는 점점 더 기도와 모스크와 간구 쪽으로 이끌렸다. 한 걸음 한 걸음, 네가르를 봤을 때 느꼈던 그 감정에서 멀어졌고, 닐루파르가 내 세계에 들어왔을 때는 마치 그녀가 내 그 부분의 어두운 방에 등불 하나를 들고 들어온 것 같았다. 마음을 편안하게 하던 그 어두운 빛깔의 침묵을 부숴버렸지만, 나를 어딘가로 인도할 만큼은 환하지 않은 불안한 등불. 집 문의 색깔이 색연필 상자 어디쯤에 놓이는지 끝내 알지 못한 한 소녀의 손에 들린, 깜빡이는 등불. 한 여자아이가 웽웽거리며 달려와 내 곁에 멈춰 선다. 장난감들을 바라본다. 말한다.</p>
+        <p class="nc-line">– 위이이잉, 바바 바바, 이 큰 인형 사 둘 꺼야?</p>
       </div>
-      <p class="nc-q" id="q10">'<bdi lang="ko" dir="ltr">알라트 들롱</bdi>' is meant as a rude pun on Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q10">A little girl asks her dad to buy her a big doll. Does it sound like a little child talking?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n10">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04a/0076#11">
+    <fieldset class="nc-item" data-id="04b/1312#11">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 대리설 돌이야. 대리설은 아주 비싸다는 뜻이야.</p>
+        <p class="nc-ctx">– ... 봐, 진짜 곱씹게 만들어. 이걸 그려놓고 그 밑에 “이것은 파이프가 아니다”라고 썼어.</p>
+        <p class="nc-line">개어지러워. 생각하면 할수록 더 개어지러워져.</p>
       </div>
-      <p class="nc-q" id="q11">A child garbles marble as '<bdi lang="ko" dir="ltr">대리설</bdi>', thinking it means expensive. Is that clear?</p>
+      <p class="nc-q" id="q11">A student describes a puzzling painting in crude slang. Does '<bdi lang="ko" dir="ltr">개어지러워</bdi>' sound natural here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n11">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0595#12">
+    <fieldset class="nc-item" data-id="04b/1321#12">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 그런데 망쳤네. 독수리눈은 피어 투 피어라고 하는데, 태버니는 피르 투 피르라고 하네.</p>
+        <p class="nc-line">“그곳에 있는 바로 그 술은 진짜 술이 아니오 비유가 아니오”</p>
       </div>
-      <p class="nc-q" id="q12">Amir misheard peer as pir, Persian for elder. Does the joke work?</p>
+      <p class="nc-q" id="q12">This Hafez line should allow two opposite readings: the wine is real; the wine is only a metaphor. Does it allow both?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n12">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#13">
+    <fieldset class="nc-item" data-id="06/0056#13">
       <legend>Line 13</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>– 위이이잉, 바바 바바, 이 큰 인형 사 둘 꺼야?</p>
+        <p class="nc-ctx">– 나나페사르-잔, 네 바바의 가족은 나한테 너무 모질게 굴었어. 마지막 무렵 나네를 목욕시켜 드리러 갈 때마다 혀로 상처를 냈어. 그래도 솔직히 장례 때는 마음이 타들어 갔어. 바게 베헤슈트 묘지 맨 끝으로 데려갔어. 사형된 사람들을 데려가는 곳인데 코로나로 죽은 사람들도 거기 묻더라고. 장례 전에 정결 의식으로 씻겨 드렸는지조차 몰라. 우리는 멀리서 바라보기만 했어. 무덤에 모시는 순간 잠깐 수의가 풀렸는데, 병원에 가실 때 입고 있던 바로 그 옷을 입은 채 수의에 싸여 있는 것 같았어. 무덤을 아주 깊이 파.</p>
+        <p class="nc-line">불도젤로 그 위에 흙을 쏟았어. 흙과 석회를.</p>
       </div>
-      <p class="nc-q" id="q13">A toddler asks her dad for a doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q13">Maman says '<bdi lang="ko" dir="ltr">불도젤로</bdi>' for bulldozer (불도저) on purpose. Does it read as her slip, not a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
       </div>
       <p class="guestbook-field">
-        <label for="n13">Note <span class="nc-optional">(optional)</span></label>
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#14">
-      <legend>Line 14</legend>
-      <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>“그곳에 있는 바로 그 술은 진짜 술이 아니오 비유가 아니오”</p>
-      </div>
-      <p class="nc-q" id="q14">This Hafez line should read both as real wine and as metaphor. Does it?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
-        <label><input type="radio" name="v14" value="ok"> Correct</label>
-        <label><input type="radio" name="v14" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n14">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="06/0056#15">
-      <legend>Line 15</legend>
-      <div class="reader nc-text" lang="ko" dir="ltr">
-        <p>불도젤로 그 위에 흙을 쏟았어. 흙과 석회를.</p>
-      </div>
-      <p class="nc-q" id="q15">Maman says '<bdi lang="ko" dir="ltr">불도젤로</bdi>' for bulldozer on purpose. Is that clear?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
-        <label><input type="radio" name="v15" value="ok"> Correct</label>
-        <label><input type="radio" name="v15" value="change"> Needs change</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n15">Note <span class="nc-optional">(optional)</span></label>
-        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
     <p class="guestbook-field">
@@ -326,6 +365,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
+    <p><a class="btn btn-primary" href="/sedaha/check/ko/2/">More lines: round 2 of 13 &rarr;</a></p>
     <p><a href="/sedaha/read/ko/">&larr; <span class="native" lang="ko" dir="ltr">한국어</span></a></p>
   </section>
 </main>
@@ -343,7 +383,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=36" defer></script>
+<script src="/assets/js/native-check.js?v=37" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

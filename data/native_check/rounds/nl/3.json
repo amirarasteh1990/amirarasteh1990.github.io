@@ -1,0 +1,189 @@
+{
+ "lang": "nl",
+ "slug": "nl",
+ "dir": "ltr",
+ "version": "2026-11-22.r3",
+ "items": [
+  {
+   "id": "01/0142#1",
+   "where": "01/0142",
+   "text": "– Baba wat?",
+   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Denk dan eens wat onze arme Baba moet doorstaan – hij zit al die jaren thuis zonder werk.",
+    "Maman zegt:"
+   ]
+  },
+  {
+   "id": "06/0023#2",
+   "where": "06/0023",
+   "text": "– Ik draag hem, geen strees. Maar ik haat hem echt.",
+   "q": "Maman, talking about her face mask, says 'geen strees', mangling stress on purpose. Does it sound like her, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Maar jij houdt het jouwe op, Nini-jan."
+   ]
+  },
+  {
+   "id": "03/0189#3",
+   "where": "03/0189",
+   "text": "– Pff, ezel, wie weet er meer, de vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, of jij, kalf?",
+   "q": "Hamid, a boy, angrily calls his friend 'ezel', the polite word for donkey, and 'kalf'. Does it sound like a child's angry insult?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid kookte over en schreeuwde:"
+   ]
+  },
+  {
+   "id": "03/0309#4",
+   "where": "03/0309",
+   "text": "– Als God het wil, moge je altijd araasteh zijn.",
+   "q": "Smiling, the guard wishes him to always be 'araasteh', neat and well-kept, as his name says. Does this blessing read naturally?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "De bewaker glimlacht en zegt:"
+   ]
+  },
+  {
+   "id": "06/0186#5",
+   "where": "06/0186",
+   "text": "– Ik zou mezelf voor je opofferen, Nini-jan. Wat werkt dat hoofd van jou goed.",
+   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "…kwam zijn moeder naar de deur en zei tegen Maman: we weten niet wat we de mensen moeten vertellen. Ik bedoel, als we zeggen dat hij sterke zelfgestookte aragh had gedronken en een syncope had gehad, is dat een vreselijke schande. Toen zei Maman tegen haar: zeg gewoon dat hij corona had gekregen.",
+    "Ik zeg:"
+   ]
+  },
+  {
+   "id": "03/0624#6",
+   "where": "03/0624",
+   "text": "– Geweldig, de Ouderling van de Kroeg. Dat is perfect voor Arasteh.",
+   "q": "Farid gives Amir a mock-grand nickname from a Hafez poem. Does 'Geweldig, de Ouderling van de Kroeg' sound natural as a playful nickname?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Farid zei:"
+   ]
+  },
+  {
+   "id": "03/0628#7",
+   "where": "03/0628",
+   "text": "– Haha, de Ouderling van de Kroeg, Oudje — perfect. Raak geschoten, Farid de Panter.",
+   "q": "Hooman shortens that nickname to 'Oudje'. Does this pet name sound natural and playful between friends?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman schreef iets in het boek met een pen en zei:"
+   ]
+  },
+  {
+   "id": "03/0630#8",
+   "where": "03/0630",
+   "text": "– Hij is Oudje, waarlijk en eerlijk gezegd.",
+   "q": "Farid happily agrees with the nickname. Does 'waarlijk en eerlijk gezegd' sound like a young man joking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Haha, de Ouderling van de Kroeg, Oudje — perfect. Raak geschoten, Farid de Panter.",
+    "Farid zei:"
+   ]
+  },
+  {
+   "id": "03/0388#9",
+   "where": "03/0388",
+   "text": "– Zonder bril zie ik helemaal niets, objectief gezien.",
+   "q": "Sajad starts or ends almost every sentence with 'objectief gezien', a habit his roommates mock. Does this habit read naturally?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Sajad zei:"
+   ]
+  },
+  {
+   "id": "03/0126#10",
+   "where": "03/0126",
+   "text": "– Hm. De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, spreekt precies zo.",
+   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid zei:"
+   ]
+  },
+  {
+   "id": "04b/1300#11",
+   "where": "04b/1300",
+   "text": "– Heb je met die uitspraak nu op ons gescheten of op Mister de krulharige Schrödinger?",
+   "q": "Farid crudely asks whom a lofty remark insulted, mocking a roommate as 'Mister de krulharige Schrödinger'. Does it sound natural?",
+   "ctx": 2,
+   "kind": "crude",
+   "before": [
+    "– ... jij praat zo dat een mens of heel diep moet zijn om je niet te begrijpen, of heel oppervlakkig om graag naar je te luisteren.",
+    "Farid zei:"
+   ]
+  },
+  {
+   "id": "01/0132#12",
+   "where": "01/0132",
+   "text": "Steek je neus in elk hoekje en gaatje. De oude mensen zeiden altijd: kijk in elke uithoek.",
+   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mm-hm, goed zo. Ga, zolang je de kans hebt, alle dorpen bekijken."
+   ]
+  },
+  {
+   "id": "04a/0111#13",
+   "where": "04a/0111",
+   "text": "Ik botste tegen een muur. Het was malmer. Ik pakte een stok.",
+   "q": "A lost six-year-old tells this, using his brother's wrong word 'malmer' for marmer. Does it read as a child's word, not a typo?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "De draad was niet meer in mijn hand. Hij liep achter een voet aan. Ik ook. Een klein kind kwam tussen de benen vandaan. Het kleine kind greep mijn voet met één hand vast. Ik viel. Er waren steeds meer benen. Er was geen draad. Ik ging tussen de benen door."
+   ]
+  },
+  {
+   "id": "03/0383#14",
+   "where": "03/0383",
+   "text": "– Nee, Ayzheimer is heel erg. Een van mijn vriendinnen heeft Ayzheimer; ze herkent haar kinderen niet meer.",
+   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "Omid zei:",
+    "– Nee, die is heel erg. Er is ook geen medicijn voor."
+   ]
+  },
+  {
+   "id": "06/0027#15",
+   "where": "06/0027",
+   "text": "– Nana-pesar-jan, geen strees. Er waren maar twintig mensen.",
+   "q": "Maman brushes off her son's worry after going to a wedding, with her slip 'strees'. Does it sound like her?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Ah, waarom ben je gegaan? Wat moeten we doen als jij corona krijgt?"
+   ]
+  },
+  {
+   "id": "03/0362#16",
+   "where": "03/0362",
+   "text": "– Mahboub, dit wat ze op het nieuws zeggen, Ameroka ...",
+   "q": "Maman, lying in front of the TV, starts asking about the news, saying 'Ameroka' on purpose. Does her opening sound natural?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…achter aan de binnenplaats en stak de binnenplaats in negen stappen over, terwijl de blijdschap over de nieuwe ontdekking nog steeds in mijn hart brandde. Toen ik vanuit de binnenplaats de hal binnenstapte, lag Maman voor de televisie. Ze had beide handen op haar buik gelegd en zei tegen Mahboubeh:"
+   ]
+  }
+ ]
+}

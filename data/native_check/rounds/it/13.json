@@ -1,0 +1,183 @@
+{
+ "lang": "it",
+ "slug": "it",
+ "dir": "ltr",
+ "version": "2026-11-22.r13",
+ "items": [
+  {
+   "id": "04a/0078#1",
+   "where": "04a/0078",
+   "text": "Ehi, perché hai buttato via il bastone? Con cosa suoniamo il campanello, allora?",
+   "q": "A boy scolds his little brother during a game. Does it sound like a child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Raccoglievo sempre un bastone accanto all'albero di lì. Lo trascinavo sul muro. Faceva il rumore della moto. Ghassem e Omid andavano avanti avanti. Io ero lontano. Ghassem non mi sgridava. Una volta disse:"
+   ]
+  },
+  {
+   "id": "04a/0082#2",
+   "where": "04a/0082",
+   "text": "Non l'hai detto.",
+   "q": "A crying small boy answers his big brother. Does it sound like a small child?",
+   "ctx": 2,
+   "kind": "child",
+   "before": [
+    "– Perché non siete andati alla casa di malmo?",
+    "Omid piangeva. Disse:"
+   ]
+  },
+  {
+   "id": "04a/0042#3",
+   "where": "04a/0042",
+   "text": "Si chiama il bazar di Quchan, e la nostra casa è in fondo al bazar di Quchan.",
+   "q": "Two brothers argue about what their street is called. Does it sound like children arguing?",
+   "ctx": 3,
+   "kind": "child",
+   "before": [
+    "Quel giorno Hashem litigò con Abolfazl. Abolfazl disse:",
+    "– È la strada principale.",
+    "Hashem disse:"
+   ]
+  },
+  {
+   "id": "04a/0049#4",
+   "where": "04a/0049",
+   "text": "Se non fosse vecchio non toglierebbe i ceci. Se non li toglie, Maman fa più ash.",
+   "q": "A six-year-old reasons about the old grocer. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0053#5",
+   "where": "04a/0053",
+   "text": "Era tanto. Fino alla fine del mondo. Forse no. Ma era tanto.",
+   "q": "A six-year-old describes a long walk. Does it sound like a small child?",
+   "ctx": 0,
+   "kind": "child"
+  },
+  {
+   "id": "04a/0005#6",
+   "where": "04a/0005",
+   "text": "Quindi perché adesso che sono fermo dietro alla porta del vicolo non viene a trovarmi neanche una volta?",
+   "q": "A six-year-old wonders why his mother no longer comes looking for him. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Allora avevo quattro anni. Mi trovava sempre quattro volte. Adesso ne ho sei."
+   ]
+  },
+  {
+   "id": "02/0001#7",
+   "where": "02/0001",
+   "text": "Ancora una volta sono prigioniero delle mie stesse fantasie. È solo il suono del vento che si scaglia contro la finestra.",
+   "q": "A sleepless young poet at dawn mistakes the wind for birdsong. Does this read naturally?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Gli uccelli sono tornati e si sono posati sul melo dietro la finestra. Li sento. In pieno inverno, con questo freddo, da dove sono venuti gli uccelli canori?"
+   ]
+  },
+  {
+   "id": "04b/1270#8",
+   "where": "04b/1270",
+   "text": "scrivi sull'acqua con il tuo stesso sangue",
+   "q": "A line of a poem written on a classroom board. Does it read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Si può scrivere su ogni cosa",
+    "tranne che sull'acqua",
+    "e se attraversi il mare"
+   ]
+  },
+  {
+   "id": "04b/1394#9",
+   "where": "04b/1394",
+   "text": "ma se ti capiterà di passare",
+   "q": "A line from a young man's love poem, hoping she might pass his way. Does it read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "La luce dei miei sogni ora lampeggia",
+    "Non ho speranza del tuo ritorno"
+   ]
+  },
+  {
+   "id": "04b/0935#10",
+   "where": "04b/0935",
+   "text": "«Per Attar è più dolce piangere fino all'alba», oppure «ora giace ancor più ucciso»?",
+   "q": "A friend asks which of two lines by Attar, a classical Persian poet, Amir means. Do the lines read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Sì, quella col verso di Attar."
+   ]
+  },
+  {
+   "id": "04b/1301#11",
+   "where": "04b/1301",
+   "text": "«Da molto tempo l'amata non manda messaggi; non ha scritto un saluto",
+   "q": "Niloofar reads a line of Hafez aloud. Does the quoted line read like classic poetry?",
+   "ctx": 0,
+   "kind": "poetry"
+  },
+  {
+   "id": "01/0042#12",
+   "where": "01/0042",
+   "text": "Vedi? Con questa facilità: in un batter d'occhio, tutti quei pezzetti di terra si sono trasformati in oro.",
+   "q": "Niloofar playfully leads Amir through an imaginary world. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…il suolo è fatto d'acqua e il cielo è fatto di terra. Cioè, invece della pioggia, dal cielo cade terra. Ma l'acqua ha il colore della terra, e la terra è blu. Adesso tendi le mani verso il cielo. Senti le gocce di terra sulle mani? Se vuoi, puoi anche immaginare che a piovere non sia terra, ma oro."
+   ]
+  },
+  {
+   "id": "03/0297#13",
+   "where": "03/0297",
+   "text": "Tutto quello che fai è raffazzonato.",
+   "q": "A wife snaps at her husband over his sloppy paperwork. Does this sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– Guarda, non si può fare in questo modo — togliere la «a» dai cognomi per la scuola e poi rimetterla per altri uffici.",
+    "– E tu che c'entri con queste cose? So io cosa sto facendo."
+   ]
+  },
+  {
+   "id": "03/0345#14",
+   "where": "03/0345",
+   "text": "Non ha ancora finito quello per cui è venuto?",
+   "q": "A young woman, impatient, politely asks a student she barely knows this. Does it sound natural?",
+   "ctx": 2,
+   "kind": "dialogue",
+   "before": [
+    "– I venti minuti che aveva detto di avere non sono ancora finiti.",
+    "Disse:"
+   ]
+  },
+  {
+   "id": "03/0458#15",
+   "where": "03/0458",
+   "text": "Questa settimana non ho proprio tempo. La settimana prossima, giovedì alle tre, nello stesso posto dove ci siamo visti l'ultima volta.",
+   "q": "A young woman replies by message, coolly setting a short meeting. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "…che se Niloofar non mi ha accettato, non è stato a causa delle mie parole, ma più a causa della mia insistenza sul tenerlo segreto e del fatto che non mi sono mai avvicinato direttamente a Niloofar dentro la facoltà, né prima di rivelare i miei sentimenti né dopo averli espressi. Aveva scritto:"
+   ]
+  },
+  {
+   "id": "04b/0270#16",
+   "where": "04b/0270",
+   "text": "Devi uscire da questo tuo rifugio e fare davvero qualcosa, non venire qui a sederti a fantasticare.",
+   "q": "Niloofar loses patience with a shy admirer who only daydreams. Does this sound natural?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Lo so. Non sono stupida. Ma così non funziona."
+   ]
+  }
+ ]
+}

@@ -1,27 +1,88 @@
-{"lang": "mt", "slug": "mt", "dir": "ltr", "version": "2026-11-16",
+{
+ "lang": "mt",
+ "slug": "mt",
+ "dir": "ltr",
+ "version": "2026-11-16",
  "items": [
-  {"id": "Opening/0007#1", "where": "Opening/0007",
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
    "text": "Bħal fi tfulitna, meta Maman kienet tħoll il-ħajt tas-suf mill-ħwejjeġ il-qodma, u aħna konna nieħdu l-ħajta u nduru mad-dar biex il-ħajt tas-suf ma jinġemax fuq xulxin.",
-   "q": "Is it clear the children walk around inside the house, holding the yarn?"},
-  {"id": "01/0166#2", "where": "01/0166",
+   "q": "Is it clear the children walk around inside the house, holding the yarn?",
+   "before": [
+    "Ftuħ",
+    "…kieku ma tniżżlux hawnhekk. Tniżżlu biex isiru pont bejn id-dinja tiegħi u tiegħek. Pont mid-dinja tiegħi, fil-mument li qed nikteb dawn is-sentenzi, sad-dinja tiegħek, fil-mument li tpoġġi bilqiegħda biex taqrahom. Minn din in-naħa, jien inħoll il-ħajta tal-kliem, u min-naħa l-oħra, int tiġborha."
+   ]
+  },
+  {
+   "id": "01/0166#2",
+   "where": "01/0166",
    "text": "Kemm-il darba għidtlu, tolqotx it-tfal, qal, laqtitni l-mewġa tal-isplużjoni fil-gwerra, ma nistax nikkontrolla ruħi. Rajt li hekk kienet, u ħallejtu.",
-   "q": "Maman means she gave up arguing with him. Is that clear?"},
-  {"id": "03/0060#3", "where": "03/0060",
+   "q": "Maman means she gave up arguing with him. Is that clear?",
+   "before": [
+    "Maman tgħid:",
+    "– Qed niċċajtaw biss, Nana-pesar-jan. Jaqbdu jmur hu? Kieku mar, kienet tkun ix-xewqa ta' qalbi. Billi Alla. Naħlef fuq ħajti stess. Dak li ġara lil Hashem u Abolfazl kien ħtija tiegħu wkoll. Dejjem kien isawwathom."
+   ]
+  },
+  {
+   "id": "03/0060#3",
+   "where": "03/0060",
    "text": "Hamid ġibed 'il fuq iċ-ċintorin l-aħmar imċajpar tal-libsa tal-glieda tiegħu u, b'daqqa ta' dahar idu, tefa' l-għoqda tal-ħsara wara dahru minn fuq spallejh.",
-   "q": "Hamid pulls up the shoulder strap of his singlet. Is 'ċintorin' the right word?"},
-  {"id": "03/0528#4", "where": "03/0528",
+   "q": "Hamid pulls up the shoulder strap of his singlet. Is 'ċintorin' the right word?",
+   "before": [
+    "L-istess vuċi li kienet staqsiet lil Ghassem dwar ir-rank tal-Konkoor tiegħi, qalet bil-mod ħafna:",
+    "– Ħe, l-Ostad Hamid, il-qattus imħawwad."
+   ]
+  },
+  {
+   "id": "03/0528#4",
+   "where": "03/0528",
    "text": "Ċaqalqet rasha. Fuq il-mejda ta' Norouz, meta qrajt il-poeżija għal ommi, Maman, minflok ma ferħet, saret ansjuża.",
-   "q": "She shakes her head to say no. Does 'Ċaqalqet rasha' show that?"},
-  {"id": "04b/0216#5", "where": "04b/0216",
+   "q": "She shakes her head to say no. Does 'Ċaqalqet rasha' show that?",
+   "before": [
+    "Għidt:",
+    "– Għax il-ħbieb tiegħi jċanfruni talli tajt qalbi mingħajr l-ebda għarfien, mingħajr l-ebda konversazzjoni."
+   ]
+  },
+  {
+   "id": "04b/0216#5",
+   "where": "04b/0216",
    "text": "– Ej, tħawwadx rasek hekk, Duttur.",
-   "q": "Is it clear he means: don't shake your head like that?"},
-  {"id": "04b/1150#6", "where": "04b/1150",
+   "q": "Is it clear he means: don't shake your head like that?",
+   "before": [
+    "Jidħak aktar minn qabel.",
+    "Kieku żammejt għalija dawk iż-żewġ beits li Niloofar kienet talbitni ma naqrahomx lil ħadd, ma kontx ikolli bżonn dan kollu ħolm. Ċaqlaqt rasi biex il-ħsieb ta' dik il-mixja twila, u Esfandiar u Jesse, jaqgħu minn quddiem għajnejja. Hooman jgħid:"
+   ]
+  },
+  {
+   "id": "04b/1150#6",
+   "where": "04b/1150",
    "text": "Ħarab b'veloċità ogħla mid-dawl, jekk le kont neqirdu.",
-   "q": "The speaker means he'd have hung him up by the backside. Is that clear?"},
-  {"id": "04b/1236#7", "where": "04b/1236",
+   "q": "The speaker means he'd have hung him up by the backside. Is that clear?",
+   "before": [
+    "…Eskandar. Hu u jaħrab lejn il-bieb, sieq Farid laqtet il-ktieb ta' Eskandar u ċarrtet il-qoxra tal-gazzetta tiegħu. Parti mit-titlu twil u mħawwad tal-ktieb dehret: 'Għaxart Elef ... Għaġeb, Kunjizzjoni ... Afor... Għal ...' Farid ma ġiex lura l-kamra għal jumejn jew tlieta. Eskandar baqa' jgħid:",
+    "– Dak il-gremxul żgħir kiser il-liġijiet tal-fiżika wkoll."
+   ]
+  },
+  {
+   "id": "04b/1236#7",
+   "where": "04b/1236",
    "text": "Minn ġol-ħabta tal-bieb tal-kabina tad-doċċa, ħarist 'il barra.",
-   "q": "Amir peeks out through a gap in the shower door. Is 'ħabta' right?"},
-  {"id": "04b/1266#8", "where": "04b/1266",
+   "q": "Amir peeks out through a gap in the shower door. Is 'ħabta' right?",
+   "before": [
+    "– Mur neħħi l-berritta ta' Hamid u tih daqqa fuq wara ta' rasu l-qarquċa, jekk le llum meta Negar toħroġ nerfa' lil Yasi r-raqiq fuq rasi. Imbagħad ikun int u l-Qattus ta' Hamid biss.",
+    "…tad-demm ħakmet id-dinja kollha. Żewġ sulari taħt l-art. Kant kien ġej minn taħt bosta doċeċ. Ftit kienu żiedu l-ispeakers tal-mowbajls tagħhom mal-ġagħġigħ tas-sala tad-doċeċ. Fil-bidu ma stax tinfired l-għajta mill-kant u l-mużika. Ġiet ir-riħa tad-demm. Ir-riħa saret aktar b'saħħitha mill-ħoss."
+   ]
+  },
+  {
+   "id": "04b/1266#8",
+   "where": "04b/1266",
    "text": "It-tifla ta' Baba timbotta l-ġugarell żgħir roża tagħha u titbiegħed tagħmel viżż viżż.",
-   "q": "Is it clear the girl is pushing a small pink kick scooter?"}
- ]}
+   "q": "Is it clear the girl is pushing a small pink kick scooter?",
+   "before": [
+    "Vuċi tiġi minn warajja:",
+    "– Iva, nixtlilek pupa. Meta jkolli l-flus, nixtlilek waħda aħjar, tifla ta' Baba."
+   ]
+  }
+ ]
+}
