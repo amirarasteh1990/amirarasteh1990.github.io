@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/pl/5/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/pl/5/">
-<link rel="stylesheet" href="/assets/css/style.css?v=33">
+<link rel="stylesheet" href="/assets/css/style.css?v=34">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -229,9 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="pl" dir="ltr">
         <p class="nc-ctx">Wzięła go niechętnie. Jej ręka powędrowała ku plecakowi. Powiedziałem:</p>
-        <p class="nc-ctx">– Dwadzieścia minut, które Pani mówiła, że ma, jeszcze nie minęło.</p>
+        <p class="nc-ctx">– Dwadzieścia minut, które pani mówiła, że ma, jeszcze nie minęło.</p>
         <p class="nc-ctx">Powiedziała:</p>
-        <p class="nc-line">– Czy Pana sprawa nie jest już załatwiona?</p>
+        <p class="nc-line">– Czy pana sprawa nie jest już załatwiona?</p>
       </div>
       <p class="nc-q" id="q7">Niloofar coolly asks Amir, using polite address, whether he has finished. Does it sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
@@ -405,6 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
+    <p class="nc-consent">
+      <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
+    </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
@@ -441,11 +444,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <span class="foot-link is-tab"> &middot; <a href="/comments/">Guestbook</a></span>
     <span class="foot-link is-tab"> &middot; <a href="/support/">Support</a></span>
     <span class="foot-link"> &middot; <a href="/license.html">License</a></span>
+    <span class="foot-link"> &middot; <a href="/thanks/">Thanks</a></span>
     <span class="foot-link"> &middot; <a href="https://t.me/Sounds_AmirArasteh">Telegram</a></span>
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=37" defer></script>
+<script src="/assets/js/native-check.js?v=38" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

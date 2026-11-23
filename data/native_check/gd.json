@@ -2,7 +2,7 @@
  "lang": "gd",
  "slug": "gd",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "03/0582#1",
@@ -82,6 +82,16 @@
    "before": [
     "– Ceart, rach is gabh cadal, a Nini-jan.",
     "…dà itealan a chaidh seachad roimhe. Cia mheud naidheachd mì-thlachdmhor eile a tha air a bhith air an cumail bhuam? Cia mheud snàth caol eile a chaidh a tharraing a-mach à mo chridhe mìosan air ais gun fhios agam? Bidh mi a' gabhail fasgadh anns an aithris uair is uair de na tha mi air sgrìobhadh."
+   ]
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– Agus thusa, leis an dòigh bhoidich agad air bruidhinn, bu chòir gum biodh Alain Bodlon mar ainm ort.",
+   "q": "'Alain Bodlon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Tha, tha Hamoon na ainm math dhut. Coltach ri Hamoon san fhilm, tha thusa cuideachd làn cheistean. Làn iomagain, agus tha thu nad thùs do-fhoighidinn, chan ann dhut fhèin ach dhòmhsa.",
+    "Thuirt Hooman:"
    ]
   }
  ]

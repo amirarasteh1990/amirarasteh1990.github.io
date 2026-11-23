@@ -83,6 +83,7 @@
   function plainText(payload, size) {
     var lines = ['Native check: ' + LANGUAGE + ' (' + LANG + '), page version ' + VERSION];
     if (payload.name) lines.push('From: ' + payload.name);
+    if (payload.thanks) lines.push('May be listed on the Thanks page: yes');
     lines.push('');
     payload.items.forEach(function (a) {
       lines.push(a.id + ': ' + VERDICT[a.verdict]);
@@ -111,7 +112,8 @@
       var keep = payload.items.slice();
       while (keep.length > 1 && best.length > MAILTO_LIMIT) {
         keep.pop();
-        best = head + encodeURIComponent(plainText({name: payload.name, items: keep}, 0) +
+        best = head + encodeURIComponent(plainText({name: payload.name, thanks: payload.thanks,
+          items: keep}, 0) +
           '\r\n(more answers: see the full text on the page)');
       }
     }
@@ -145,6 +147,16 @@
                    website: form.elements.website.value};
     var name = form.elements.name.value.trim();
     if (name) payload.name = name;
+    // the Thanks-page tick needs a name to list
+    var listMe = form.elements.thanks;
+    if (listMe && listMe.checked) {
+      if (!name) {
+        say('Add the name you would like listed, or untick the Thanks-page box.', 'error');
+        form.elements.name.focus();
+        return;
+      }
+      payload.thanks = true;
+    }
     fallback.hidden = true;
     if (!validEndpoint(endpoint)) {
       offerEmail(payload, 'Sending is not connected yet.');

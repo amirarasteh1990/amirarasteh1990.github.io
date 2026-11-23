@@ -262,6 +262,8 @@ function checkSubmission(raw) {
     throw new PublicError('The page version could not be recognized.');
   }
   const name = optional(raw.name) ? '' : cleanLine(raw.name, 'Name', 1, 60);
+  // consent to be listed on arasteh.art/thanks/ (2026-11-23): only with a name, only if ticked
+  const thanks = raw.thanks === true && name !== '';
   if (!Array.isArray(raw.items) || raw.items.length < 1 || raw.items.length > 40) {
     throw new PublicError('Send between 1 and 40 answers.');
   }
@@ -284,7 +286,7 @@ function checkSubmission(raw) {
   if ([name].concat(items.map(item => item.note)).some(text => text.includes('<!--'))) {
     throw new PublicError('Notes cannot contain "<!--".');
   }
-  return {lang, page_version: pageVersion, name, items};
+  return {lang, page_version: pageVersion, name, thanks, items};
 }
 
 function languageName(lang) {
@@ -320,7 +322,9 @@ function checkIssue(answers) {
     body: CHECK_MARKER + '\n\n' +
       '**' + language + '** (`' + answers.lang + '`), page version `' +
       answers.page_version + '`, from ' +
-      (answers.name ? literal(answers.name) : 'an unnamed reader') + '.\n' +
+      (answers.name ? literal(answers.name) : 'an unnamed reader') + '.' +
+      (answers.name ? (answers.thanks ? ' **May be listed on the Thanks page.**'
+        : ' Not to be listed on the Thanks page.') : '') + '\n' +
       n + (n === 1 ? ' answer' : ' answers') + ': ' + count('ok') + ' Correct, ' +
       count('change') + ' Needs change' + (unsure ? ', ' + unsure + ' Not sure' : '') +
       '.\n\n' + rows.join('\n') + '\n\n' +

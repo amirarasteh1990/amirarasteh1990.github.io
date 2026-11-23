@@ -2,7 +2,7 @@
  "lang": "eu",
  "slug": "eu",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -42,6 +42,16 @@
    "before": [
     "Mahboubehk dio:",
     "– Oso barregarria izan zen."
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "Eta zuk, hitz egiteko duzun zakil-modu horrekin, zure izena Alain Zakilon izango zen.",
+   "q": "'Alain Zakilon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Bai, Hamoon izen ona da zuretzat. Filmeko Hamoun bezala, zu ere galderaz betea zaude. Antsietaz betea eta nahasmen-iturri zara, zure buruarentzat ez, nirentzat baizik.",
+    "Hoomanek esan zuen:"
    ]
   }
  ]

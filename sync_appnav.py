@@ -73,7 +73,7 @@ SHELL = {
                  "support": "حمایت"},
         # the footer (sync_footers.py)
         "copyright": "&copy; ۲۰۲۶ امیر آرسته",
-        "license": "حق نشر", "telegram": "تلگرام", "contact": "تماس:",
+        "license": "حق نشر", "thanks": "سپاس", "telegram": "تلگرام", "contact": "تماس:",
         "logo": "آرسته، خانه",
         # the page itself (build_read_pages.py; the skip link is written in the page)
         "skip": "رفتن به متن",

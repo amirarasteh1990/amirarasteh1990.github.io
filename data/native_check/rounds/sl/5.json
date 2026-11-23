@@ -7,7 +7,7 @@
   {
    "id": "04b/1301#1",
    "where": "04b/1301",
-   "text": "Da bi Niloofar prišla, sem izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera.",
+   "text": "Preden je Niloofar prišla, sem že izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera.",
    "q": "By the time she arrived, he had already chosen a poem to share his good news. Does this sentence say that?",
    "ctx": 1,
    "kind": "narration",
@@ -18,7 +18,7 @@
   {
    "id": "04b/0351#2",
    "where": "04b/0351",
-   "text": "Kaj je to, da sem bil prvak razreda in, ne vem, imel drugo diplomo, dodalo k dolžini mojega kurca – meni, čigar služba je zdaj obhajanje transformatorskih postaj?",
+   "text": "Kaj je to, da sem bil prvak razreda in, ne vem, imel drugo diplomo, dodalo k dolžini mojega kurca – meni, čigar služba je zdaj pregledovanje transformatorskih postaj?",
    "q": "Hooman, whose job is now inspecting power substations, asks crudely what top grades added to his dick. Does this read naturally?",
    "ctx": 1,
    "kind": "crude",
@@ -29,7 +29,7 @@
   {
    "id": "04b/0353#3",
    "where": "04b/0353",
-   "text": "Muho in tisto drugo bedno zabludelo nadlogo.",
+   "text": "Muho in tisto drugo bedno zablodelo nadlogo.",
    "q": "Hooman recalls the two odd roommates they got: Fly and another deluded pest. Does this read correctly and naturally?",
    "ctx": 1,
    "kind": "crude",
@@ -40,8 +40,8 @@
   {
    "id": "04b/0394#4",
    "where": "04b/0394",
-   "text": "... fuknjeni smo.",
-   "q": "Hooman complains that a university policy screwed them over. Does 'fuknjeni smo' say that here?",
+   "text": "... nategnili so nas.",
+   "q": "Hooman complains that a university policy screwed them over. Does 'nategnili so nas' say that, and is it crude enough?",
    "ctx": 1,
    "kind": "crude",
    "before": [
@@ -51,7 +51,7 @@
   {
    "id": "03/0580#5",
    "where": "03/0580",
-   "text": "Kje na mojem vratu piše stopalo?",
+   "text": "Kje na mojem vratu piše stopnica?",
    "q": "Farid complains that Sajad used his neck as a foothold to climb into the top bunk. Does this retort sound natural?",
    "ctx": 3,
    "kind": "banter",
@@ -64,7 +64,7 @@
   {
    "id": "03/0531#6",
    "where": "03/0531",
-   "text": "Abolfazl je govoril: če ne greste in mi ne prosita te deklice, se bom ubil.",
+   "text": "Abolfazl je govoril: če ne gresta in mi ne prosita te deklice, se bom ubil.",
    "q": "Maman recalls her son threatening to kill himself unless they asked for a girl's hand for him. Does this read correctly?",
    "ctx": 1,
    "kind": "maman",
@@ -75,7 +75,7 @@
   {
    "id": "01/0140#7",
    "where": "01/0140",
-   "text": "Potem samo pomisli, kaj mora naš ubogi Baba preživeti – vse te leta brez dela doma.",
+   "text": "Potem samo pomisli, kaj mora naš ubogi Baba preživeti – vsa ta leta brez dela doma.",
    "q": "Ghassem, holding back a laugh, mocks their idle father with fake pity. Does this sentence read correctly?",
    "ctx": 1,
    "kind": "banter",
@@ -97,8 +97,8 @@
   {
    "id": "04b/0181#9",
    "where": "04b/0181",
-   "text": "Pojej mu glavo, no, nimamo živcev zate.",
-   "q": "Hooman, sticking up his thumb, tells a know-it-all to eat the head of his dick. Does 'Pojej mu glavo' carry that insult?",
+   "text": "Pojej glavo mojega kurca, no, nimamo živcev zate.",
+   "q": "Hooman, thumb up, tells a know-it-all to eat the head of his dick. Does 'Pojej glavo mojega kurca' sound natural?",
    "ctx": 1,
    "kind": "crude",
    "before": [

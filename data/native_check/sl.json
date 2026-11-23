@@ -2,7 +2,7 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -42,6 +42,16 @@
    "before": [
     "– Amir, Amir-jan, moj sin. Zbudi se. Zbudi se, mamin. Vse je bilo le sanje. Ne boj se, tu sem.",
     "…prijetno, pomirjujočo temno temo, a ni dajala dovolj svetlobe, da bi me kam povedla. Svetilko, ki pomežikne v roki dekleta, čigar barve vrat nikoli nisem izvedel, čigar barve nikoli nisem uspel umestiti v škatlo lesenih barvic. Deklica pridrvi z »vžž vžž« in se ustavi ob meni. Gleda igrače. Reče:"
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "In ti, s tistim tvojim kurčevim načinom govorjenja, bi moral imeti ime Alain Kurčon.",
+   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Da, Hamoun je dobro ime zate. Kakor Hamoun v filmu, si tudi ti poln vprašanj. Poln si tesnobe in si vir nemira, ne zase, temveč zame.",
+    "Hooman je rekel:"
    ]
   }
  ]

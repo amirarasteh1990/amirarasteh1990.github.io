@@ -2,7 +2,7 @@
  "lang": "az",
  "slug": "az",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -52,6 +52,16 @@
    "before": [
     "– Dava etmək istəyirsiniz?",
     "Yük maşını mənim əlimdə idi, amma qaça bilmirdik. Negar dayanıb bizə baxırdı. Tağı dedi:"
+   ]
+  },
+  {
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "Sən də bu sik kimi danışıq tərzinlə gərək adın \"Alain Siklon\" olaydı.",
+   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Bəli, Hamun sənin üçün yaxşı addır. Filmdəki Hamun kimi, sən də suallarla dolusun. Narahatlıqla dolusun və iztiraba mənbəsən, özün üçün yox, mənim üçün.",
+    "Hooman dedi:"
    ]
   }
  ]

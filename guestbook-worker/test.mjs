@@ -186,6 +186,16 @@ assert(createdIssue.body.includes('- `Opening/0007#1` **Needs change**: `` Use "
   'a note was not kept literally in inline code');
 assert(createdIssue.body.includes('- `03/0585#3` Correct'), 'a Correct answer is missing');
 assert(createdIssue.body.includes('` A reader `'), 'the optional name is missing');
+assert(createdIssue.body.includes('Not to be listed on the Thanks page.'),
+  'a name without consent was not marked as unlisted');
+
+// Thanks-page consent (2026-11-23): stated only with a name and an explicit true.
+await handle(postCheck(answers({thanks: true})), environment(), githubSuccess);
+assert(createdIssue.body.includes('` A reader `. **May be listed on the Thanks page.**'),
+  'consent to be listed was not stated');
+await handle(postCheck(answers({thanks: 'yes'})), environment(), githubSuccess);
+assert(createdIssue.body.includes('Not to be listed on the Thanks page.'),
+  'a non-boolean consent was taken as consent');
 assert(!/guestbook/i.test(createdIssue.body + createdIssue.title),
   'a check issue mentions the guestbook');
 assert(!JSON.stringify(checkReceipt).includes('test-token'), 'credential leaked into the check receipt');
@@ -212,6 +222,10 @@ const one = await handle(postCheck(answers({name: '', items: [{id: 'x#1', verdic
 assert(one.status === 201 && createdIssue.title === 'Native check: Hungarian (1 answer)',
   'a single unnamed answer was refused');
 assert(createdIssue.body.includes('from an unnamed reader'), 'an unnamed reader was not stated');
+assert(!createdIssue.body.includes('Thanks page'), 'an unnamed answer mentions the Thanks page');
+await handle(postCheck(answers({name: '', thanks: true, items: [{id: 'x#1', verdict: 'ok'}]})),
+  environment(), githubSuccess);
+assert(!createdIssue.body.includes('Thanks page'), 'consent without a name was recorded');
 assert(createdIssue.body.includes('1 answer: 1 Correct, 0 Needs change.'),
   'a page without Not sure answers changed its summary');
 

@@ -2,7 +2,7 @@
  "lang": "bal",
  "slug": "bal",
  "dir": "rtl",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -41,6 +41,16 @@
    "q": "A student complains about an exam at the start of Esfand. Does this read naturally?",
    "before": [
     "– پدا هم فیزیک دو ءَ صفر بوتُن. من باز بدبخت آں.",
+    "هومن گوَشت:"
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "تو هم گوں اے وتی کیریں هبر جنَگءِ لحن ءَ، بائد تئی نام آلن کیرلون بوتیں.",
+   "q": "'آلن کیرلون' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– ها، هامون شرّیں نامے اِنت په تو. فیلمءِ هامونءِ وڑا، تو هم پُر چہ جُست ئے. پُر چہ اضطراب ءُ پریشانی‌ءِ منشأ ئے، نه په وت که په من.",
     "هومن گوَشت:"
    ]
   }

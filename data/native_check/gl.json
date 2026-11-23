@@ -2,7 +2,7 @@
  "lang": "gl",
  "slug": "gl",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -52,6 +52,16 @@
    "before": [
     "– Si, pero de aí a aló hai un mundo de distancia.",
     "– Hafez tamén é moi mode... quero dicir, aínda ten cousas que dicir, xúrocho por Deus."
+   ]
+  },
+  {
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "E ti, con ese teu xeito de falar de carallo, o teu nome debería ser Alain Carallón.",
+   "q": "'Alain Carallón' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Si, Hamoon é un bo nome para ti. Coma o Hamoon da película, ti tamén estás cheo de preguntas. Estás cheo de angustia e es fonte de desacougo, non para ti, senón para min.",
+    "Hooman dixo:"
    ]
   }
  ]

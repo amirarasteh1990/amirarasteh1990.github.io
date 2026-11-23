@@ -99,15 +99,15 @@
   {
    "id": "03/0385#9",
    "where": "03/0385",
-   "text": "Bilo je pozno, ko sem prišel v dijaški dom.",
-   "q": "Amir, a university student, comes back late to the dormitory where he lives. Does 'dijaški dom' fit here?",
+   "text": "Bilo je pozno, ko sem prišel v študentski dom.",
+   "q": "Amir, a university student, comes back late to the dormitory where he lives. Does 'študentski dom' fit here?",
    "ctx": 0,
    "kind": "narration"
   },
   {
    "id": "03/0491#10",
    "where": "03/0491",
-   "text": "V istem hipu je ščurek privleklo izpod Hoomanovei postelje in se vrnil pod njo.",
+   "text": "V istem hipu je ščurek pritekel izpod Hoomanove postelje in se vrnil pod njo.",
    "q": "A cockroach runs out from under Hooman's bed and back again. Does this sentence read correctly?",
    "ctx": 0,
    "kind": "narration"
@@ -115,7 +115,7 @@
   {
    "id": "04b/1062#11",
    "where": "04b/1062",
-   "text": "Ko se naša imena navad, ji bomo všeč.",
+   "text": "Ko se nauči naših imen, ji bomo všeč.",
    "q": "A boy spray-painting their names says the girl will like them once she learns the names. Does this line read correctly?",
    "ctx": 1,
    "kind": "child",
@@ -126,7 +126,7 @@
   {
    "id": "04b/0744#12",
    "where": "04b/0744",
-   "text": "Zaobljubla sem se, da bom, če mu bo bolje, peš romala v Mašhad.",
+   "text": "Zaobljubila sem se, da bom, če mu bo bolje, peš romala v Mašhad.",
    "q": "Maman made a religious vow to walk to the shrine city if her son recovers. Does this line read correctly?",
    "ctx": 1,
    "kind": "maman",
@@ -137,7 +137,7 @@
   {
    "id": "01/0042#13",
    "where": "01/0042",
-   "text": "Torej namesto dežja pada s neba prst.",
+   "text": "Torej namesto dežja pada z neba prst.",
    "q": "A girl leads a playful imagination game: earth falls from the sky instead of rain. Does this sentence read correctly?",
    "ctx": 1,
    "kind": "dialogue",
@@ -148,8 +148,8 @@
   {
    "id": "01/0170#14",
    "where": "01/0170",
-   "text": "Godrnjanje? Godrnjanje je, kadar ti niso storili nič slabega.",
-   "q": "Maman, irritated, says talking about someone only counts as gossip if they haven't wronged you. Does 'Godrnjanje' mean gossip here?",
+   "text": "Opravljanje? Opravljanje je, kadar ti niso storili nič slabega.",
+   "q": "Maman, irritated, says talking about someone only counts as gossip if they haven't wronged you. Does 'Opravljanje' mean gossip here?",
    "ctx": 1,
    "kind": "maman",
    "before": [
@@ -159,7 +159,7 @@
   {
    "id": "01/0174#15",
    "where": "01/0174",
-   "text": "Huh, poglejte – se kateremu od vas spomni ena dobra stvar pri vašem Babi?",
+   "text": "Huh, poglejte – se kdo od vas spomni ene dobre stvari pri vašem Babi?",
    "q": "Maman challenges her children to name one good thing about their father. Does this question read correctly?",
    "ctx": 1,
    "kind": "maman",
@@ -170,8 +170,8 @@
   {
    "id": "04b/0175#16",
    "where": "04b/0175",
-   "text": "Ja. Tega Arasteja ne glej; pa naj je še tako čvekast, rang na Konkoorju mu je bil štiriinsedemdeset.",
-   "q": "Hooman calls quiet, dreamy Amir goofy but brags about his top exam rank. Does 'čvekast' fit for goofy?",
+   "text": "Ja. Tega Arasteja ne glej; pa naj je še tako trapast, rang na Konkoorju mu je bil štiriinsedemdeset.",
+   "q": "Hooman calls quiet, dreamy Amir goofy but brags about his top exam rank. Does 'trapast' fit for goofy?",
    "ctx": 1,
    "kind": "banter",
    "before": [

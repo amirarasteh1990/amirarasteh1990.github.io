@@ -94,14 +94,16 @@
    hashed URL); finder.js and guestbook.js speak through it; the skip link and the
    guestbook honeypot no longer sit off the left edge (right-to-left pages);
    stylesheet v33. */
-var VERSION = 'arasteh-v37';
+/* v38 (2026-11-23): the Thanks page (/thanks/, linked from every footer) and the
+   check form's "you may list my name" tick (native-check.js?v=38); stylesheet v34. */
+var VERSION = 'arasteh-v38';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=33',
+  '/assets/css/style.css?v=34',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
   '/assets/js/lang-mine.js?v=37',
@@ -109,7 +111,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=37',
+  '/assets/js/guestbook.js?v=38',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

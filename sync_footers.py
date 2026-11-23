@@ -48,6 +48,8 @@ LINKS = [
     ("guestbook", "/comments/",    "Guestbook"),
     ("support",   "/support/",     "Support"),
     ("license",   "/license.html", "License"),
+    # everyone who helped (author 2026-11-23); the books point here instead of naming reviewers
+    ("thanks",    "/thanks/",      "Thanks"),
     ("telegram",  "https://t.me/Sounds_AmirArasteh", "Telegram"),
 ]
 
@@ -115,6 +117,7 @@ PAGES = [
     ("404.html",                          dict()),
     ("license.html",                      dict(omit="license")),
     ("support/index.html",                dict(omit="support")),
+    ("thanks/index.html",                 dict(omit="thanks")),
     ("comments/index.html",               dict(omit="guestbook")),
     # the footer's Paintings link points at the index again, so it is the INDEX
     # that omits it as a self-link; each gallery keeps it as the way back up

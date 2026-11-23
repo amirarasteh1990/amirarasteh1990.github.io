@@ -623,6 +623,15 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .nc-verdict input{width:20px;height:20px;margin:0;accent-color:var(--accent)}
 .nc-item .guestbook-field textarea{min-height:64px}
 .nc-optional{color:var(--muted);font-weight:400;font-size:.85em}
+/* consent to the Thanks page (2026-11-23), under the name field */
+.nc-consent{margin:-8px 0 17px}
+.nc-consent label{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.nc-consent input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
+/* /thanks/: two plain lists of names (the book, the website), no categories */
+.thanks-group{margin:26px 0 8px;font-size:1.15rem}
+.thanks-list{list-style:none;margin:6px 0 0;padding:0;columns:3 11rem;column-gap:24px}
+.thanks-list li{break-inside:avoid;padding:6px 0;font-weight:600}
+.thanks-empty{color:var(--muted);font-style:italic}
 .nc-copy{width:100%;min-height:140px;padding:10px 12px;border:1px solid var(--line);
   border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
 /* the one English line on an Opening page that has a check waiting */

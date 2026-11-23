@@ -2,7 +2,7 @@
  "lang": "oc",
  "slug": "oc",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -82,6 +82,16 @@
    "before": [
     "Una votz darrièr ieu ditz:",
     "– Òc, te cromparai la nina. Quand aurai d'argent dins la man, te'n crompi una encara melhora, filha de Baba."
+   ]
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "E tu, amb aqueste biais de parlar de cap de vit, ton nom deuriá èsser Alain Vitelon.",
+   "q": "'Alain Vitelon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Òc, Hamoon es un bon nom per tu. Coma lo Hamoon del filme, tu tanben ès plen de questions. Ès plen d'angoissa e ès font d'inquietud, non per tu, mas per ieu.",
+    "Hooman diguèt:"
    ]
   }
  ]

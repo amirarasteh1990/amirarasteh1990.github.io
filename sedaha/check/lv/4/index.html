@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/lv/4/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/lv/4/">
-<link rel="stylesheet" href="/assets/css/style.css?v=33">
+<link rel="stylesheet" href="/assets/css/style.css?v=34">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="lv" dir="ltr">
         <p class="nc-ctx">Hooman, apskatīdams kameras kasti, teica:</p>
-        <p class="nc-line">– Šie nāvējoši bīstamie gājieni ir gluži tev raksturīgi, bet mani patiešām interesē, kurš nelietis bija atvēris savu veikalu piektdienas rītā sešos, lai tu varētu aiziet un nopirkt no viņa kameru.</p>
+        <p class="nc-line">– Šie slepkavnieciskie gājieni ir gluži tev raksturīgi, bet mani patiešām interesē, kurš nelietis bija atvēris savu veikalu piektdienas rītā sešos, lai tu varētu aiziet un nopirkt no viņa kameru.</p>
       </div>
       <p class="nc-q" id="q1">Hooman wonders crudely who opened a shop at dawn on a Friday. Does this sound like spoken talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
@@ -141,9 +141,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="lv" dir="ltr">
         <p class="nc-ctx">Hooman teica:</p>
-        <p class="nc-line">– Leopard Farid, savaldi nervus un neizdari nāvējoši bīstamu gājienu.</p>
+        <p class="nc-line">– Leopard Farid, savaldi nervus un neizdari slepkavniecisku gājienu.</p>
       </div>
-      <p class="nc-q" id="q2">Hooman jokingly tells Farid to keep calm and not do anything rash. Does this sound natural?</p>
+      <p class="nc-q" id="q2">Hooman jokingly tells Farid to keep calm and not make a 'murderous move', a running joke among the friends. Does this sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– Manam telefonam nav vietas.</p>
         <p class="nc-ctx">– Vai gribi, lai es nosūtu vienu celiņu?</p>
         <p class="nc-ctx">– Jā, to pašu, kas ar Attar pantu.</p>
-        <p class="nc-line">– To ar "Attar saldāk raudāt līdz rītausmai" vai to ar "tagad viņš ir vēl jo nokauts"?</p>
+        <p class="nc-line">– To ar "Attar saldāk raudāt līdz rītausmai" vai to ar "tagad viņš ir vēl jo vairāk nokauts"?</p>
       </div>
       <p class="nc-q" id="q10">Someone asks which song he means, quoting two lines of a classical poem by Attar. Do they read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
@@ -399,6 +399,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
+    <p class="nc-consent">
+      <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
+    </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
@@ -435,11 +438,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <span class="foot-link is-tab"> &middot; <a href="/comments/">Guestbook</a></span>
     <span class="foot-link is-tab"> &middot; <a href="/support/">Support</a></span>
     <span class="foot-link"> &middot; <a href="/license.html">License</a></span>
+    <span class="foot-link"> &middot; <a href="/thanks/">Thanks</a></span>
     <span class="foot-link"> &middot; <a href="https://t.me/Sounds_AmirArasteh">Telegram</a></span>
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=37" defer></script>
+<script src="/assets/js/native-check.js?v=38" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

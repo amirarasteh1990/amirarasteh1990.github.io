@@ -20,7 +20,7 @@
 <meta property="og:url" content="https://arasteh.art/sedaha/check/ml/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://arasteh.art/sedaha/check/ml/">
-<link rel="stylesheet" href="/assets/css/style.css?v=33">
+<link rel="stylesheet" href="/assets/css/style.css?v=34">
 <!-- The answers go to the guestbook Worker's /check route; no credential is here. -->
 <meta name="native-check-endpoint" content="https://arasteh-guestbook.amir-arasteh.workers.dev/check">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=dd907c95"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=dd907c95" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ml" data-language="Malayalam" data-version="2026-11-16" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ml" data-language="Malayalam" data-version="2026-11-23" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ml" dir="ltr">
@@ -263,9 +263,30 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="03/0430#9">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="ml" dir="ltr">
+        <p class="nc-ctx">– അതേ, ഹാമൂൻ നിനക്ക് നല്ലൊരു പേരാണ്. സിനിമയിലെ ഹാമൂനെപ്പോലെ, നീയും ചോദ്യങ്ങൾ നിറഞ്ഞവനാണ്. ഉത്കണ്ഠ നിറഞ്ഞവനും അസ്വസ്ഥതയുടെ ഉറവിടവുമാണ് നീ — നിനക്കുവേണ്ടിയല്ല, എനിക്കുവേണ്ടി.</p>
+        <p class="nc-ctx">ഹൂമൻ പറഞ്ഞു:</p>
+        <p class="nc-line">നീയും, ആ കുണ്ണ സംസാരരീതി കാരണം, നിന്റെ പേര് അലൈൻ കുണ്ണലോൻ എന്നായിരിക്കണമായിരുന്നു.</p>
+      </div>
+      <p class="nc-q" id="q9">'<bdi lang="ml" dir="ltr">അലൈൻ കുണ്ണലോൻ</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
+    </p>
+    <p class="nc-consent">
+      <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
@@ -302,11 +323,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <span class="foot-link is-tab"> &middot; <a href="/comments/">Guestbook</a></span>
     <span class="foot-link is-tab"> &middot; <a href="/support/">Support</a></span>
     <span class="foot-link"> &middot; <a href="/license.html">License</a></span>
+    <span class="foot-link"> &middot; <a href="/thanks/">Thanks</a></span>
     <span class="foot-link"> &middot; <a href="https://t.me/Sounds_AmirArasteh">Telegram</a></span>
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=37" defer></script>
+<script src="/assets/js/native-check.js?v=38" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

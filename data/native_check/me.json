@@ -2,7 +2,7 @@
  "lang": "cnr",
  "slug": "me",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -62,6 +62,16 @@
    "before": [
     "– Gle, Nini se odjednom prispavalo. Od jutra sam budna, nisam spavala.",
     "– Aha, idi da otspavaš, Nini-džan."
+   ]
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "A ti, s tim svojim kurčevim načinom govora, trebalo je da ti je ime Alain Kurčon.",
+   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Da, Hamoun je dobro ime za tebe. Kao i Hamoun iz filma, i ti si pun pitanja. Pun si anksioznosti i izvor si nemira, ne za sebe, nego za mene.",
+    "Human je rekao:"
    ]
   }
  ]

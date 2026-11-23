@@ -2,7 +2,7 @@
  "lang": "br",
  "slug": "br",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -82,6 +82,16 @@
    "before": [
     "Aet on er-maez dre an nor. Lavarout a reas:",
     "– Ar medisin en devoa prenet an ti a oa un medisin klañvedoù spered ha youl."
+   ]
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– Te, gant an ton kalc'hek-se da gomz, e tlee da anv bezañ Alain Kalc'hon.",
+   "q": "'Alain Kalc'hon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Ya, Hamoon a zo un anv mat evidout. Evel Hamoon er film, te ivez ec'h out leun a c'houlennoù. Leun a aroufenn ha penn-abeg dic'hlander, ket evidout da-unan, met evidon-me.",
+    "Hooman a lavaras:"
    ]
   }
  ]

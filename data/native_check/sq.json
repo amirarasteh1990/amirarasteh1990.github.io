@@ -2,7 +2,7 @@
  "lang": "sq",
  "slug": "sq",
  "dir": "ltr",
- "version": "2026-11-16",
+ "version": "2026-11-23",
  "items": [
   {
    "id": "Opening/0007#1",
@@ -82,6 +82,16 @@
    "before": [
     "– Ahaa.",
     "Mahboubeh thotë:"
+   ]
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "Ti gjithashtu, me atë të folurit tënd prej kari, emri yt duhej të bëhej Alain Karlon.",
+   "q": "'Alain Karlon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "before": [
+    "– Po, Hamoon është emër i mirë për ty. Si Hamouni në film, edhe ti je plot pyetje. Je plot ankth dhe burim shqetësimi, jo për veten, por për mua.",
+    "Hoomani tha:"
    ]
   }
  ]
