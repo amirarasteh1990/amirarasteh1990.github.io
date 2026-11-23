@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Sai também. Vai a lugares quaietos.",
-   "q": "Maman says 'quaietos' for 'quietos' on purpose. Does it read as her slip, not a typo?",
+   "text": "Sai também. Vai a lugares quietos.",
+   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Oh, que bom. Mm-hm, você faz o pedido e eles entregam. Mas, Amir-jan, não fica em casa o tempo todo."
@@ -24,8 +24,8 @@
   {
    "id": "01/0132#3",
    "where": "01/0132",
-   "text": "Tinha o tifoid, por exemplo, ou a tuberculose, ou o sarampo.",
-   "q": "Maman says 'tifoid' for tifoide on purpose. Does it read as her slip, not a typo?",
+   "text": "Tinha o tifo, por exemplo, ou a tuberculose, ou o sarampo.",
+   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
    "ctx": 0
   },
   {
@@ -88,8 +88,8 @@
   {
    "id": "04b/1312#10",
    "where": "04b/1312",
-   "text": "Dá uma puta tontura. Quanto mais você pensa nisso, maior é a puta tontura.",
-   "q": "A student jokes crudely about a famous painting. Does 'puta tontura' sound natural?",
+   "text": "Dá uma tontura do caralho. Quanto mais você pensa nisso, maior é a tontura do caralho.",
+   "q": "A student jokes crudely about a famous painting. Does 'tontura do caralho' sound natural?",
    "ctx": 1,
    "before": [
     "– ... olha como é realmente sugestivo. Desenhou isso e por baixo escreveu: isto não é um cachimbo."
@@ -98,7 +98,7 @@
   {
    "id": "04b/1320#11",
    "where": "04b/1320",
-   "text": "Com as mãos tremendo, folheava às pressas os ghazals à procura de um beit de Hafez que, como aquela pintura, segundo aquela outra garota, dava uma puta tontura cada vez maior quanto mais a gente se afundava na profundidade dele.",
+   "text": "Com as mãos tremendo, folheava às pressas os ghazals à procura de um beit de Hafez que, como aquela pintura, segundo aquela outra garota, dava uma tontura do caralho cada vez maior quanto mais a gente se afundava na profundidade dele.",
    "q": "A nervous young man searches Hafez's poems, recalling what a girl said about a painting. Does this read naturally?",
    "ctx": 0
   },
@@ -112,7 +112,7 @@
   {
    "id": "04b/1321#13",
    "where": "04b/1321",
-   "text": "Igual: quanto mais você pensa nestas dez palavras, mais pu..., coisa, mais tonto você fica.",
+   "text": "Igual: quanto mais você pensa nestas dez palavras, mais ca..., quer dizer, mais tonto você fica.",
    "q": "A nervous young man nearly swears, then corrects himself. Does this sound natural?",
    "ctx": 0
   },

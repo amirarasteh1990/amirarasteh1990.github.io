@@ -629,8 +629,10 @@ body.home .site-footer{border-top:none;padding-top:0;margin:0 0 40px}
 .nc-consent input{flex:none;width:20px;height:20px;margin:0;accent-color:var(--accent)}
 /* /thanks/: two plain lists of names (the book, the website), no categories */
 .thanks-group{margin:26px 0 8px;font-size:1.15rem}
-.thanks-list{list-style:none;margin:6px 0 0;padding:0;columns:3 11rem;column-gap:24px}
-.thanks-list li{break-inside:avoid;padding:6px 0;font-weight:600}
+/* across rows, so reading left to right keeps the author's order (author 2026-11-23) */
+.thanks-list{list-style:none;margin:6px 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));column-gap:24px}
+.thanks-list li{padding:6px 0;font-weight:600}
 .thanks-empty{color:var(--muted);font-style:italic}
 .nc-copy{width:100%;min-height:140px;padding:10px 12px;border:1px solid var(--line);
   border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}

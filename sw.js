@@ -95,7 +95,9 @@
    guestbook honeypot no longer sit off the left edge (right-to-left pages);
    stylesheet v33. */
 /* v38 (2026-11-23): the Thanks page (/thanks/, linked from every footer) and the
-   check form's "you may list my name" tick (native-check.js?v=38); stylesheet v34. */
+   check form's "you may list my name" tick (native-check.js?v=38); stylesheet v34.
+   style.css?v=35 (same day): the Thanks lists fill across rows (grid), so reading
+   left to right keeps the author's order. A new URL is enough, so VERSION stays. */
 var VERSION = 'arasteh-v38';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
@@ -103,7 +105,7 @@ var SHELL = [
   '/',
   '/sedaha/',
   '/comments/',
-  '/assets/css/style.css?v=34',
+  '/assets/css/style.css?v=35',
   '/assets/js/reader.js',
   '/assets/js/editions.js',
   '/assets/js/lang-mine.js?v=37',
