@@ -43,8 +43,8 @@
   {
    "id": "01/0132#4",
    "where": "01/0132",
-   "text": "Bija, piemēram, tifoids vai tuberkuloze, vai masalas.",
-   "q": "Maman says 'tifoids' for typhoid on purpose. Does it read as her slip, not a typo?",
+   "text": "Bija, piemēram, tīfs vai tuberkuloze, vai masalas.",
+   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
    "ctx": 1,
    "kind": "joke",
    "before": [
@@ -54,8 +54,8 @@
   {
    "id": "01/0132#5",
    "where": "01/0132",
-   "text": "Vai holāra, piemēram. Arī tā nenogalināja tik daudzus.",
-   "q": "Maman says 'holāra' for cholera on purpose. Does it read as her slip, not a typo?",
+   "text": "Vai holēra, piemēram. Arī tā nenogalināja tik daudzus.",
+   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
    "ctx": 0,
    "kind": "joke"
   },
