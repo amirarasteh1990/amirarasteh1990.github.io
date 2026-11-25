@@ -17,8 +17,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Choď na tiché miesta.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Choď tam, kde nie je veľa ľudí.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Och, aká dobrá vec. Mm-hm, objednáš a donesú ti to. Ale Amir-jan, nesedávaj doma celý čas. Choď aj von."
@@ -57,7 +57,7 @@
    "id": "03/0430#6",
    "where": "03/0430",
    "text": "A ty by si sa s tým svojím kokotským spôsobom reči mal volať Alain Kokoton.",
-   "q": "'Alain Kokoton' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Kokoton' is meant as a rude pun on the actor Alain Delon. Would Slovak readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -98,7 +98,7 @@
    "id": "04b/1263#11",
    "where": "04b/1263",
    "text": "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
-   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…príjemné, konejšivé tmavé ticho, ale nevrhala dosť svetla, aby ma niekam doviedla. Blikajúcu lampu v ruke dievčaťa, pri ktorého farbe domových dverí som nikdy nevedel, kam patrí v škatuľke pasteliek. Pribieha malé dievčatko, bzučí ako autíčko a zastaví sa vedľa mňa. Díva sa na hračky. Hovorí:"
@@ -108,7 +108,7 @@
    "id": "04b/1265#12",
    "where": "04b/1265",
    "text": "– Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
     "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
@@ -139,7 +139,7 @@
    "id": "04b/1321#15",
    "where": "04b/1321",
    "text": "Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {

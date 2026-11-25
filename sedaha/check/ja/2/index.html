@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="ja" dir="ltr">日本語</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 14. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/ja/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/ja/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/ja/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/ja/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/ja/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/ja/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/ja/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/ja/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/ja/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/ja/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/ja/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/ja/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/ja/14/" data-round="14">14</a></p>
+    <div class="nc-guide" id="ncResume" data-total="14" data-base="/sedaha/check/ja/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="03/0278#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ja" dir="ltr">
@@ -161,7 +164,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">私は言った。</p>
         <p class="nc-line">ピール・トゥ・ピール？</p>
       </div>
-      <p class="nc-q" id="q3">Amir mishears 'peer' as the Persian pir, meaning elder, which is his own nickname. Does his reply show that mishearing?</p>
+      <p class="nc-q" id="q3">Amir mishears 'peer' as the Persian pir, meaning elder, which is his own nickname. Would Japanese readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– でも、しくじったな。</p>
         <p class="nc-line">鷹の目はピア・トゥ・ピアって言うのに、酒場者は酒場じい・トゥ・酒場じいだとさ。</p>
       </div>
-      <p class="nc-q" id="q4">Pir is Persian for elder. Farid mocks Amir, nicknamed '<bdi lang="ja" dir="ltr">酒場じい</bdi>', for hearing peer-to-peer as elder-to-elder. Is the joke clear?</p>
+      <p class="nc-q" id="q4">Pir is Persian for elder. Farid mocks Amir, nicknamed '<bdi lang="ja" dir="ltr">酒場じい</bdi>', for hearing peer-to-peer as elder-to-elder. Would Japanese readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,7 +198,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">ママンが言った：</p>
         <p class="nc-line">一番悪い病気は、アイズハイマーよ。</p>
       </div>
-      <p class="nc-q" id="q5">Maman says '<bdi lang="ja" dir="ltr">アイズハイマー</bdi>' for Alzheimer's (アルツハイマー) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q5">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say Alzheimer's (アルツハイマー) as '<bdi lang="ja" dir="ltr">アイズハイマー</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -212,7 +215,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– でも、気をつけてなかったのよ、それが問題なの。おじいちゃんは耳が聞こえなくて何もわからないから仕方ないけど、ナネイには何度も言ったの。ハージ・ハーヌム、お二人で路地に座ってたら、コロナにかかりますよ、神様、どうかそんなことになりませんようにって。そう言うほど、二人はかえって長く座るのよ。でもね、アミール、ナネイの胸がひどくゼーゼー鳴ってたの。マフブーブたちに、みんな、これはコロナよって言ったの。</p>
         <p class="nc-line">最後はマフブーブが電話して、アンブラスが来てナネイを連れていったら、やっぱりコロナだって。</p>
       </div>
-      <p class="nc-q" id="q6">Maman says '<bdi lang="ja" dir="ltr">アンブラス</bdi>' for ambulance (救急車), mangling the foreign word on purpose. Does it read as her slip?</p>
+      <p class="nc-q" id="q6">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say ambulance (救急車) as '<bdi lang="ja" dir="ltr">アンブラス</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -230,7 +233,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">ママンは言う。</p>
         <p class="nc-line">何が好きじゃなかったの？</p>
       </div>
-      <p class="nc-q" id="q7">Maman, hard of hearing, catches only the end of '<bdi lang="ja" dir="ltr">女好き</bdi>'. Does her puzzled question work as a half-heard echo?</p>
+      <p class="nc-q" id="q7">Maman, hard of hearing, catches only the end of '<bdi lang="ja" dir="ltr">女好き</bdi>'. Would Japanese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -266,7 +269,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">頭を彼の方へ向ける。</p>
         <p class="nc-line">アラステはアラアステを刈り込んだ形ですか？</p>
       </div>
-      <p class="nc-q" id="q9">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Is the joke understandable?</p>
+      <p class="nc-q" id="q9">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Would Japanese readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -283,7 +286,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">警備員が微笑んで言う：</p>
         <p class="nc-line">神の思し召しがあれば、いつもアラアステでありますように。</p>
       </div>
-      <p class="nc-q" id="q10">The guard blesses Amir with a pun on his surname; araasteh means neat. Does it read as a friendly joke?</p>
+      <p class="nc-q" id="q10">The guard blesses Amir with a pun on his surname; araasteh means neat. Would Japanese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -402,7 +405,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -427,7 +433,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/ja/3/">More lines: round 3 of 14 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ja/3/">More lines: round 3 of 14 &rarr;</a></p>
     <p><a href="/sedaha/read/ja/">&larr; <span class="native" lang="ja" dir="ltr">日本語</span></a></p>
   </section>
 </main>
@@ -446,7 +452,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

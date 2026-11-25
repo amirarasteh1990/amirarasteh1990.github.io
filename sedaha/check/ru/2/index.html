@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="ru" dir="ltr">Русский</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 15. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/ru/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/ru/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/ru/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/ru/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/ru/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/ru/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/ru/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/ru/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/ru/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/ru/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/ru/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/ru/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/ru/14/" data-round="14">14</a> &middot; <a href="/sedaha/check/ru/15/" data-round="15">15</a></p>
+    <div class="nc-guide" id="ncResume" data-total="15" data-base="/sedaha/check/ru/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ru" data-language="Russian" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ru" data-language="Russian" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="01/0132#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ru" dir="ltr">
@@ -142,7 +145,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ru" dir="ltr">
         <p class="nc-line">Или, например, холера. И она столько не убила.</p>
       </div>
-      <p class="nc-q" id="q2">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q2">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -158,7 +161,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ru" dir="ltr">
         <p class="nc-line">Вот, например, тиф — или туберкулёз, или корь.</p>
       </div>
-      <p class="nc-q" id="q3">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q3">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -194,7 +197,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Маман говорит:</p>
         <p class="nc-line">Каким таким «-ником» не был?</p>
       </div>
-      <p class="nc-q" id="q5">Told her husband was no womanizer, Maman mocks the word ending '<bdi lang="ru" dir="ltr">-ником</bdi>'. Does her retort work?</p>
+      <p class="nc-q" id="q5">Told her husband was no womanizer, Maman mocks the word ending '<bdi lang="ru" dir="ltr">-ником</bdi>'. Would Russian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -211,7 +214,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Маман сказала:</p>
         <p class="nc-line">Самая плохая болезнь — это Айцгеймер.</p>
       </div>
-      <p class="nc-q" id="q6">Maman says '<bdi lang="ru" dir="ltr">Айцгеймер</bdi>' for Alzheimer's on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q6">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say Alzheimer's as '<bdi lang="ru" dir="ltr">Айцгеймер</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -227,7 +230,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ru" dir="ltr">
         <p class="nc-line">В конце концов Махбуб позвонила, приехали на амбуласе и увезли Наней.</p>
       </div>
-      <p class="nc-q" id="q7">Maman says '<bdi lang="ru" dir="ltr">амбуласе</bdi>' for ambulance on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q7">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say ambulance as '<bdi lang="ru" dir="ltr">амбуласе</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -244,7 +247,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…и прикрепил листок на стену рядом с остальными конкурными записями. Вышел из домика в конце двора и прошёл двор в девять шагов — радость от новой находки всё ещё светилась в сердце. Когда я вошёл со двора в гостиную, Маман лежала перед телевизором. Обе руки она положила на живот и говорила Махбубе:</p>
         <p class="nc-line">Махбуб, вот что они говорят в новостях — Амерока...</p>
       </div>
-      <p class="nc-q" id="q8">Maman says '<bdi lang="ru" dir="ltr">Амерока</bdi>' for America on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q8">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say America as '<bdi lang="ru" dir="ltr">Амерока</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -262,7 +265,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Я поворачиваю голову к нему.</p>
         <p class="nc-line">Арасте — это подрезанное Араасте?</p>
       </div>
-      <p class="nc-q" id="q9">A guard jokes that the surname Arasteh is '<bdi lang="ru" dir="ltr">Араасте</bdi>' (Persian for neat) with one letter trimmed. Does the joke come across?</p>
+      <p class="nc-q" id="q9">The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Russian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -279,7 +282,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Охранник улыбается и говорит:</p>
         <p class="nc-line">Дай Бог, чтобы жизнь твоя всегда была араасте.</p>
       </div>
-      <p class="nc-q" id="q10">The guard wishes him a neat, orderly life; '<bdi lang="ru" dir="ltr">араасте</bdi>' is Persian for neat. Does it read as a friendly play on his name?</p>
+      <p class="nc-q" id="q10">The guard wishes him a neat, orderly life; '<bdi lang="ru" dir="ltr">араасте</bdi>' is Persian for neat. Would Russian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -297,7 +300,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Фарид сказал:</p>
         <p class="nc-line">Но он всё просрал. Орлиный Глаз говорит «пиэр-ту-пиэр», а Элди — «пир-ту-пир».</p>
       </div>
-      <p class="nc-q" id="q11">Amir misheard the computer term as '<bdi lang="ru" dir="ltr">пир</bdi>' (Persian for elder, as in his nickname). Does Farid's punch line work?</p>
+      <p class="nc-q" id="q11">Amir misheard the computer term as '<bdi lang="ru" dir="ltr">пир</bdi>' (Persian for elder, as in his nickname). Would Russian readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -315,7 +318,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Я сказал:</p>
         <p class="nc-line">Пир ту пир?</p>
       </div>
-      <p class="nc-q" id="q12">Amir mishears '<bdi lang="ru" dir="ltr">пиэр ту пиэр</bdi>' as the Persian word pir, meaning elder. Does his question read as a funny mishearing?</p>
+      <p class="nc-q" id="q12">Amir mishears '<bdi lang="ru" dir="ltr">пиэр ту пиэр</bdi>' as the Persian word pir, meaning elder. Would Russian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -396,7 +399,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -421,7 +427,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/ru/3/">More lines: round 3 of 15 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ru/3/">More lines: round 3 of 15 &rarr;</a></p>
     <p><a href="/sedaha/read/ru/">&larr; <span class="native" lang="ru" dir="ltr">Русский</span></a></p>
   </section>
 </main>
@@ -440,7 +446,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="sl" dir="ltr">Slovenščina</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 15. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/sl/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/sl/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/sl/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/sl/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/sl/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/sl/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/sl/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/sl/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/sl/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/sl/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/sl/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/sl/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/sl/14/" data-round="14">14</a> &middot; <a href="/sedaha/check/sl/15/" data-round="15">15</a></p>
+    <div class="nc-guide" id="ncResume" data-total="15" data-base="/sedaha/check/sl/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="sl" data-language="Slovenian" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="sl" data-language="Slovenian" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="03/0430#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
@@ -146,7 +149,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Farid je rekel:</p>
         <p class="nc-line">Ampak ga je zajebal. Orlov Pogled pravi pir tu pir, Krčmar pa Stari tu Stari.</p>
       </div>
-      <p class="nc-q" id="q2">Farid mocks Amir for hearing 'pir tu pir' as 'Stari tu Stari' (pir is Persian for elder, like his nickname). Does the punch line work?</p>
+      <p class="nc-q" id="q2">Farid mocks Amir for hearing 'peer-to-peer' as Persian pir, elder, his nickname. Would Slovenian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -161,7 +164,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
         <p class="nc-ctx">– ... poglejte, kako zares vzbuja premislek. To je narisal in pod to zapisal: to ni pipa.</p>
-        <p class="nc-line">Človeku se zmeša. Bolj ko razmišljaš o tem, bolj se ti zmeša.</p>
+        <p class="nc-line">Človek dobi usrano vrtoglavico. Bolj ko razmišljaš o tem, hujša je ta usrana vrtoglavica.</p>
       </div>
       <p class="nc-q" id="q3">A student uses a crude made-up phrase for how a baffling painting scrambles your head. Does this line sound crude like that?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
@@ -178,9 +181,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
         <p class="nc-ctx">In s tresočimi rokami sem naglo prelistaval gazele, da bi našel beit iz Hafeza, ob katerem se, kakor je rekla tisto drugo dekle,</p>
-        <p class="nc-line">bolj ko se potopiš v njegovo globino, bolj se ti zmeša</p>
+        <p class="nc-line">bolj ko se potopiš v njegovo globino, hujša je usrana vrtoglavica</p>
       </div>
-      <p class="nc-q" id="q4">He recalls the girl's crude phrase about the painting and applies it to a poem. Does '<bdi lang="sl" dir="ltr">bolj se ti zmeša</bdi>' read naturally here?</p>
+      <p class="nc-q" id="q4">He recalls the girl's crude phrase about the painting and applies it to a poem. Does '<bdi lang="sl" dir="ltr">hujša je usrana vrtoglavica</bdi>' read naturally here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -194,8 +197,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1321#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
-        <p class="nc-ctx">– To je. To poslušaj. Ti, za božjo voljo, poslušaj. »Tisto vino, ki je tam, je resnica, ne prispodoba.« Tudi to je isto. Kakor tista slika, ki jo je kazala tvoja pr-pr-prijateljica.</p>
-        <p class="nc-line">Kakor tisto: bolj ko razmišljaš o teh desetih besedah, bolj se ti zme-zmeša.</p>
+        <p class="nc-ctx">– To je. To poslušaj. Ti, za božjo voljo, poslušaj. »Tisto vino, ki je tam, je resnica ne prispodoba.« Tudi to je isto. Kakor tista slika, ki jo je kazala tvoja pr-pr-prijateljica.</p>
+        <p class="nc-line">Kakor tisto: bolj ko razmišljaš o teh desetih besedah, hujša je usra-, to, vrtoglavica.</p>
       </div>
       <p class="nc-q" id="q5">The stammering speaker nearly repeats the crude phrase, stops, and says a polite word instead. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
@@ -212,9 +215,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
         <p class="nc-ctx">– To je. To poslušaj. Ti, za božjo voljo, poslušaj.</p>
-        <p class="nc-line">»Tisto vino, ki je tam, je resnica, ne prispodoba.«</p>
+        <p class="nc-line">»Tisto vino, ki je tam, je resnica ne prispodoba.«</p>
       </div>
-      <p class="nc-q" id="q6">This Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it allow both?</p>
+      <p class="nc-q" id="q6">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -229,9 +232,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="sl" dir="ltr">
         <p class="nc-ctx">– Oh, kako lepo. Ja, naročiš in prinesejo ti. Ampak Amir-jan, ne sedi ves čas doma. Pojdi tudi ven.</p>
-        <p class="nc-line">Pojdi tja, kjer je tiho.</p>
+        <p class="nc-line">Pojdi tja, kjer ni veliko ljudi.</p>
       </div>
-      <p class="nc-q" id="q7">Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q7">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…za Konkoor. Zapustil sem hišo na koncu dvorišča in prehodil dolžino dvorišča v devetih korakih, z veseljem nad novim odkritjem, ki je v srcu še svetilo. Ko sem z dvorišča vstopil v dnevno sobo hiše, je Maman ležala pred televizorjem. Obe roki je imela položeni na trebuhu in govorila Mahboubeh:</p>
         <p class="nc-line">Mahboub, to, kar pravijo v novicah, Ameroka ...</p>
       </div>
-      <p class="nc-q" id="q8">Maman says 'Ameroka' for America on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q8">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say America as 'Ameroka'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -265,7 +268,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Maman je rekla:</p>
         <p class="nc-line">Ayzheimer je najslabša bolezen.</p>
       </div>
-      <p class="nc-q" id="q9">Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q9">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say Alzheimer as 'Ayzheimer'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -282,7 +285,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…bili previdni, v tem je stvar. Zdaj Dedek ne sliši in ne ve, kaj se dogaja, ampak Naney sem večkrat rekla: Haaj Khanom, sediš zunaj na ulici, dobila boš Covid, bog ne daj. Ona je le še bolj sedela zunaj. Ampak Amir, Naney je v prsih tako hropelo. Mahboub in drugim sem rekla — otroci, to je Covid.</p>
         <p class="nc-line">Na koncu je Mahboub poklicala in prišli so z anbulanco in odpeljali Naney</p>
       </div>
-      <p class="nc-q" id="q10">Maman says 'anbulanco' for ambulance on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q10">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say ambulance as 'anbulanco'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -299,7 +302,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…in tam pokopavajo tudi umrle za Covidom. Samo bog ve, ali so jo pravilno umili ali ne. Gledali smo od daleč. Ko so jo polagali v grob, se je za hip odprl mrtvaški prt — videla sem, da je zavita v oblačila, ki smo jih prinesli v bolnišnico, še vedno zavita v prt. Grobove so kopali zelo globoko.</p>
         <p class="nc-line">Zemljo so nasipali z burdožerjem. Zemljo in apno.</p>
       </div>
-      <p class="nc-q" id="q11">Maman says '<bdi lang="sl" dir="ltr">burdožerjem</bdi>' for bulldozer on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q11">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say bulldozer as '<bdi lang="sl" dir="ltr">burdožerjem</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -316,7 +319,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem. Bil je na primer tifoid, ali tuberkuloza, ali ošpice. Tistim so rekli smrtonosni. Hmm, niti tiste niso pobile toliko.</p>
         <p class="nc-line">Ali kolera, na primer. Tudi ta ni pobila toliko.</p>
       </div>
-      <p class="nc-q" id="q12">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q12">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -333,7 +336,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…je prvič prišel, je televizija rekla dva od sto, zdaj pravi deset odstotkov. Mislim, za boga, to je zelo nepošteno. Nekdo kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem.</p>
         <p class="nc-line">Bil je na primer tifus, ali tuberkuloza, ali ošpice.</p>
       </div>
-      <p class="nc-q" id="q13">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q13">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
@@ -351,7 +354,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Maman reče:</p>
         <p class="nc-line">Kakšen -ar pa ni bil?</p>
       </div>
-      <p class="nc-q" id="q14">Maman echoes the ending of '<bdi lang="sl" dir="ltr">Ženskar</bdi>', meaning their father was every other kind of rascal. Does her quip work?</p>
+      <p class="nc-q" id="q14">Maman echoes the ending of '<bdi lang="sl" dir="ltr">Ženskar</bdi>', meaning their father was every other kind of rascal. Would Slovenian readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
@@ -401,7 +404,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -426,7 +432,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/sl/3/">More lines: round 3 of 15 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/sl/3/">More lines: round 3 of 15 &rarr;</a></p>
     <p><a href="/sedaha/read/sl/">&larr; <span class="native" lang="sl" dir="ltr">Slovenščina</span></a></p>
   </section>
 </main>
@@ -445,7 +451,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

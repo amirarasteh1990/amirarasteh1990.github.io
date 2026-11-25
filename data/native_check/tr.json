@@ -24,8 +24,8 @@
   {
    "id": "01/0116#3",
    "where": "01/0116",
-   "text": "Dışarı da çık. Tenha yerlere git.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Dışarı da çık. Kalabalık olmayan yerlere git.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Vay be, ne güzel. Mm-hm, sipariş ver, getirsinler. Ama Amir-jan, hep evde oturma ha."
@@ -57,7 +57,7 @@
    "id": "03/0290#6",
    "where": "03/0290",
    "text": "– Arasteh, “Araasteh”in budanmış hâli mi?",
-   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Is that clear?",
+   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Would Turkish readers get it? If not, what word could carry it?",
    "ctx": 2,
    "before": [
     "– Bay Arasteh.",
@@ -68,7 +68,7 @@
    "id": "03/0430#7",
    "where": "03/0430",
    "text": "Senin de o sikik konuşma biçiminle adın Alain Siklon olmalıydı.",
-   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Would Turkish readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -92,7 +92,7 @@
    "id": "04b/0595#10",
    "where": "04b/0595",
    "text": "– Ama sıçtı. Kartal Göz “peer-to-peer” diyor, Taverny “Pir-to-Pir” diyor.",
-   "q": "Taverny, nickname of the Tavern's Elder just mentioned, misheard 'peer-to-peer' as 'Pir-to-Pir'. Does Farid's mockery work?",
+   "q": "Taverny, nickname of the Tavern's Elder just mentioned, misheard 'peer-to-peer' as 'Pir-to-Pir'. Would Turkish readers get it? If not, what word could carry it?",
    "ctx": 4,
    "before": [
     "– Pir tu Pir mi?",
@@ -104,8 +104,8 @@
   {
    "id": "04b/1263#11",
    "where": "04b/1263",
-   "text": "– Vınnn, baba baba, şu büyük belebeği bana alıl mısın?",
-   "q": "A small girl says this, pointing at a big doll. Does it sound like a little child talking?",
+   "text": "– Vınnn, Baba, Baba, şu büük bebeği bana alıl mısın?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…sessizliği ortadan kaldırmış ama bana yol gösterecek kadar da aydınlığı yoktu. Evlerinin kapısının renginin boya kalemleri kutusunda nereye düştüğünü hiç bilemediğim bir kızın elinde göz kırpan bir lamba. Küçük bir kız çocuğu vınvın ederek geliyor ve yanımda duruyor. Oyuncaklara bakıyor. Diyor ki:"
@@ -115,7 +115,7 @@
    "id": "04b/1265#12",
    "where": "04b/1265",
    "text": "– Evet, bebeği alılım. Param olunca onun daha iyisini alılım sana, Baba'nın kızı.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 3,
    "before": [
     "…sessizliği ortadan kaldırmış ama bana yol gösterecek kadar da aydınlığı yoktu. Evlerinin kapısının renginin boya kalemleri kutusunda nereye düştüğünü hiç bilemediğim bir kızın elinde göz kırpan bir lamba. Küçük bir kız çocuğu vınvın ederek geliyor ve yanımda duruyor. Oyuncaklara bakıyor. Diyor ki:",
@@ -137,14 +137,14 @@
    "id": "04b/1321#14",
    "where": "04b/1321",
    "text": "“Oradaki şarap gerçektir, mecazi değildir.”",
-   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "06/0056#15",
    "where": "06/0056",
    "text": "Burdozerle üstüne toprak döktüler. Toprak ve kireç.",
-   "q": "Maman says 'Burdozerle' for 'buldozerle' (with a bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Turkish speaker say 'buldozerle' (with a bulldozer) as 'Burdozerle'? If not, how?",
    "ctx": 1,
    "before": [
     "…edilenlerin götürüldüğü yer, Covid ölülerini de oraya gömüyorlar. Allah bilir usulüne uygun gasledip gasletmediklerini. Uzaktan izledik. Kabre koyduklarında bir an kefen açıldı – bana, hastaneye götürülürken üzerinde olan kıyafetlerle kefene sarılmış gibi göründü. Kabirleri çok derin kazıyorlar."

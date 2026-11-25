@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="de" dir="ltr">Deutsch</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 13. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/de/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/de/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/de/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/de/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/de/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/de/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/de/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/de/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/de/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/de/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/de/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/de/13/" data-round="13">13</a></p>
+    <div class="nc-guide" id="ncResume" data-total="13" data-base="/sedaha/check/de/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="de" data-language="German" data-version="2026-11-22" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="de" data-language="German" data-version="2026-11-22" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="de" dir="ltr">
@@ -210,7 +213,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="de" dir="ltr">
         <p class="nc-line">Und bei deiner pimmeligen Art zu reden hättest du Alain Pimmelon heißen müssen.</p>
       </div>
-      <p class="nc-q" id="q6">'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q6">'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Would German readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -242,9 +245,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="de" dir="ltr">
         <p class="nc-ctx">…hell genug war, um mir den Weg zu weisen. Eine blinkende Lampe in der Hand eines Mädchens, dessen Türfarbe ich nie kannte, die ich nie in einer Buntstift-Schachtel hätte finden können. Ein kleines Mädchen kommt sausend herangebraust und bleibt neben mir stehen. Es schaut die Spielzeuge an. Es sagt:</p>
-        <p class="nc-line">– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?</p>
+        <p class="nc-line">– Vroooom – Baba, Baba, mia die goße Puppe kaufen?</p>
       </div>
-      <p class="nc-q" id="q8">A little girl asks her father for a doll. Does it sound like a small child talking?</p>
+      <p class="nc-q" id="q8">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -258,11 +261,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1265#9">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="de" dir="ltr">
-        <p class="nc-ctx">– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?</p>
+        <p class="nc-ctx">– Vroooom – Baba, Baba, mia die goße Puppe kaufen?</p>
         <p class="nc-ctx">Eine Stimme kommt von hinter mir:</p>
-        <p class="nc-line">– Ja, ich kauf dia die Puppe. Wenn ich Geld habe, kauf ich dia eine noch bessere, Babas Mädchen.</p>
+        <p class="nc-line">– Ja, ich kauf dia die goße Puppe. Wenn ich Geld habe, kauf ich dia eine noch bessere, Babas Mädchen.</p>
       </div>
-      <p class="nc-q" id="q9">The father playfully answers in his little daughter's way of talking. Does that come through?</p>
+      <p class="nc-q" id="q9">A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -277,9 +280,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="de" dir="ltr">
         <p class="nc-ctx">– ... Schaut, wie wirklich zum Nachdenken anregend das ist. Er hat das gezeichnet und darunter geschrieben: Das ist keine Pfeife.</p>
-        <p class="nc-line">Davon wird man verdammt nochmal verwirrt. Je mehr man darüber nachdenkt, desto verwirrter wird man, verdammt nochmal.</p>
+        <p class="nc-line">Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.</p>
       </div>
-      <p class="nc-q" id="q10">A student swears about a baffling painting. Does 'verdammt nochmal verwirrt' sound natural?</p>
+      <p class="nc-q" id="q10">A student swears about a baffling painting. Does '<bdi lang="de" dir="ltr">scheißschwindlig</bdi>' sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -295,7 +298,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="de" dir="ltr">
         <p class="nc-line">„Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.“</p>
       </div>
-      <p class="nc-q" id="q11">A line by the poet Hafez, meant to read two ways: the wine is real, or only a metaphor. Do both readings come through?</p>
+      <p class="nc-q" id="q11">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -311,7 +314,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="de" dir="ltr">
         <p class="nc-line">Mit dem Bulldozel schütteten sie Erde über sie. Erde und Kalk.</p>
       </div>
-      <p class="nc-q" id="q12">Maman says 'Bulldozel' for Bulldozer on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q12">Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Bulldozer as 'Bulldozel'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -326,7 +329,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -351,7 +357,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/de/2/">More lines: round 2 of 13 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/de/2/">More lines: round 2 of 13 &rarr;</a></p>
     <p><a href="/sedaha/read/de/">&larr; <span class="native" lang="de" dir="ltr">Deutsch</span></a></p>
   </section>
 </main>
@@ -370,7 +376,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

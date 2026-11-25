@@ -110,22 +110,25 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="ja" dir="ltr">日本語</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 14 of 14, the last one.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/ja/" data-round="1">1</a> &middot; <a href="/sedaha/check/ja/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/ja/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/ja/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/ja/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/ja/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/ja/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/ja/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/ja/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/ja/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/ja/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/ja/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/ja/13/" data-round="13">13</a> &middot; <strong aria-current="page" data-round="14">14</strong></p>
+    <div class="nc-guide" id="ncResume" data-total="14" data-base="/sedaha/check/ja/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-23.sayings" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-23.sayings" data-round="14" novalidate>
     <fieldset class="nc-item" data-id="01/0138#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">「心が腐っていく」と言っていた。</p>
       </div>
-      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,7 +144,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">悲しみを食べないで、頭のいい子。</p>
       </div>
-      <p class="nc-q" id="q2">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q2">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -157,7 +160,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">フーマンは笑いながら手で私の背中を強く叩き、角砂糖が私の喉の中で跳ねた。</p>
       </div>
-      <p class="nc-q" id="q3">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: is it clear what happens?</p>
+      <p class="nc-q" id="q3">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -173,7 +176,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">亡きビビが、こんな時によく言っていたの。「言えば舌が焼ける。言わなければ骨の髄が焼ける」。</p>
       </div>
-      <p class="nc-q" id="q4">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q4">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -189,7 +192,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">地面から空へ雨が降ることなんてないでしょ。</p>
       </div>
-      <p class="nc-q" id="q5">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q5">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -205,7 +208,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">「良い年はその春からわかる」って言うのよ。</p>
       </div>
-      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -221,7 +224,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">こうやってただここに座って詩ばっかり読んでたって、あなたのために温まるパンはないって言ってるの。</p>
       </div>
-      <p class="nc-q" id="q7">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q7">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -237,7 +240,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">俺なんか、家族に無理やり鶏小屋に放り込まれて初めて、向こう側の世界がどれだけ別物か思い知ったんだ。</p>
       </div>
-      <p class="nc-q" id="q8">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q8">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -253,7 +256,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">ぼくの手は短く、きみと結ばれる日は遠い。</p>
       </div>
-      <p class="nc-q" id="q9">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q9">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -269,7 +272,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">あのろくでなしのエスカンダルには言うなよ、また一時間説教されて、せっかくの飯が蛇の毒になってしまう。</p>
       </div>
-      <p class="nc-q" id="q10">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q10">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -284,7 +287,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -328,7 +334,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

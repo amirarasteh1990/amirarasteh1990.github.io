@@ -8,7 +8,7 @@
    "id": "01/0014#1",
    "where": "01/0014",
    "text": "– Tu es in den Gefrierschrunk. Wenn du es in den Gefrierschrunk packst, passiert ihm nichts, nicht mal nach einem Jahr.",
-   "q": "Maman says 'Gefrierschrunk' for Gefrierschrank on purpose. Does it read as her endearing slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Gefrierschrank as 'Gefrierschrunk'? If not, how?",
    "ctx": 1,
    "kind": "joke",
    "before": [
@@ -19,7 +19,7 @@
    "id": "01/0132#2",
    "where": "01/0132",
    "text": "Es gab zum Beispiel Typhus, oder Tuberkulose, oder Masern. Die nannte man tödlich. Hmm, selbst die haben nicht so viele umgebracht. Oder Cholera, zum Beispiel.",
-   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 1,
    "kind": "joke",
    "before": [
@@ -30,7 +30,7 @@
    "id": "03/0373#3",
    "where": "03/0373",
    "text": "– Ich meine das da, dass Ameroka bestätigt hat, der Iran habe das Atomprogramm gestoppt. Bedeutet das, es wird Krieg geben oder nicht?",
-   "q": "Maman says 'Ameroka' for Amerika on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Amerika as 'Ameroka'? If not, how?",
    "ctx": 2,
    "kind": "joke",
    "before": [
@@ -42,7 +42,7 @@
    "id": "03/0380#4",
    "where": "03/0380",
    "text": "– Die schlimmste Krankheit ist Ayzheimer.",
-   "q": "Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Alzheimer as 'Ayzheimer'? If not, how?",
    "ctx": 2,
    "kind": "joke",
    "before": [
@@ -54,7 +54,7 @@
    "id": "06/0052#5",
    "where": "06/0052",
    "text": "Am Ende hat Mahboub angerufen, sie kamen mit der Ambulanze und haben Naney abgeholt – ja, das ist Corona, sagten sie.",
-   "q": "Maman says 'Ambulanze' for Ambulanz on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Ambulanz as 'Ambulanze'? If not, how?",
    "ctx": 1,
    "kind": "joke",
    "before": [
@@ -76,7 +76,7 @@
    "id": "01/0182#7",
    "where": "01/0182",
    "text": "– Was war er nicht — held?",
-   "q": "Maman, hard of hearing, catches only the end of 'Frauenheld'. Does her puzzled question read naturally?",
+   "q": "Maman, hard of hearing, catches only the end of 'Frauenheld'. Would German readers get it? If not, what word could carry it?",
    "ctx": 2,
    "kind": "joke",
    "before": [
@@ -99,7 +99,7 @@
    "id": "04b/0591#9",
    "where": "04b/0591",
    "text": "– Pir zu Pir?",
-   "q": "Amir mishears 'Peer-to-Peer' as 'Pir zu Pir'; pir is Persian for a wise old man, echoing his nickname. Does the mishearing come through?",
+   "q": "Amir mishears 'peer-to-peer' as Persian pir, elder, which fits his nickname. Would German readers get it? If not, what word could carry it?",
    "ctx": 2,
    "kind": "joke",
    "before": [
@@ -111,7 +111,7 @@
    "id": "04b/0595#10",
    "where": "04b/0595",
    "text": "– Aber er hat's verkackt. Adlerauge sagt Peer-to-Peer; Schenki sagt Äldi-zu-Äldi.",
-   "q": "Farid mocks Amir's mishearing by twisting it into Amir's nicknames 'Schenki' and 'Äldi'. Does this punch line work?",
+   "q": "Farid mocks Amir's mishearing by twisting it into Amir's nicknames 'Schenki' and 'Äldi'. Would German readers get it? If not, what word could carry it?",
    "ctx": 1,
    "kind": "joke",
    "before": [
@@ -155,7 +155,7 @@
    "id": "03/0290#14",
    "where": "03/0290",
    "text": "– Ist Arasteh ein gestutztes Araasteh?",
-   "q": "A guard jokes that the surname Arasteh is the Persian word 'Araasteh' (neat) with a letter trimmed off. Does the joke come through?",
+   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would German readers get it? If not, what word could carry it?",
    "ctx": 2,
    "kind": "joke",
    "before": [
@@ -166,8 +166,8 @@
   {
    "id": "04b/1320#15",
    "where": "04b/1320",
-   "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem man ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso verdammt verwirrter wird, je tiefer man darin versinkt – um es Niloofar zu zeigen.",
-   "q": "Amir echoes a girl's crude phrase about a mind-bending painting. Does 'umso verdammt verwirrter' read naturally here?",
+   "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem einem ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso scheißschwindliger wird, je tiefer man darin versinkt – um es Niloofar zu zeigen.",
+   "q": "Amir echoes a girl's crude phrase about a mind-bending painting. Does 'umso scheißschwindliger' read naturally here?",
    "ctx": 0,
    "kind": "joke"
   },

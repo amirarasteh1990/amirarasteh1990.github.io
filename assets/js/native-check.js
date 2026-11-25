@@ -33,6 +33,91 @@
   var LANGUAGE = form.getAttribute('data-language');
   var VERSION = form.getAttribute('data-version');
   var VERDICT = {ok: 'Correct', change: 'Needs change', unsure: 'Not sure'};
+  var ROUND = parseInt(form.getAttribute('data-round') || '1', 10) || 1;
+
+  // The Thanks-page tick is offered only once every line has an answer (author
+  // 2026-11-25): someone who looked at one line is not listed for it.
+  var consent = document.getElementById('ncConsent');
+  var consentHint = document.getElementById('ncConsentHint');
+
+  function allAnswered() {
+    var items = form.querySelectorAll('.nc-item');
+    for (var i = 0; i < items.length; i++) {
+      if (!items[i].querySelector('input[type="radio"]:checked')) return false;
+    }
+    return items.length > 0;
+  }
+
+  function updateConsent() {
+    if (!consent) return;
+    var all = allAnswered();
+    consent.hidden = !all;
+    if (consentHint) consentHint.hidden = all;
+    if (!all && form.elements.thanks) form.elements.thanks.checked = false;
+  }
+
+  // The rounds this browser has sent, per language: {"1": "<page version>", ...}.
+  // Only on this device; storage may be blocked, and then nothing is remembered.
+  var SENT_KEY = 'nc-sent:' + LANG;
+
+  function readSent() {
+    try {
+      var value = JSON.parse(localStorage.getItem(SENT_KEY) || '{}');
+      return value && typeof value === 'object' ? value : {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function markSent() {
+    var sent = readSent();
+    sent[ROUND] = VERSION;
+    try { localStorage.setItem(SENT_KEY, JSON.stringify(sent)); } catch (error) { /* not kept */ }
+  }
+
+  // the first round not yet sent from here, after this one if there is one
+  function nextUnsent(total) {
+    var sent = readSent();
+    for (var n = ROUND + 1; n <= total; n++) if (!sent[n]) return n;
+    for (var m = 1; m < ROUND; m++) if (!sent[m]) return m;
+    return 0;
+  }
+
+  function roundHref(base, n) {
+    return base + (n > 1 ? n + '/' : '');
+  }
+
+  // Tick the sent rounds in the strip; on a round already sent (this version),
+  // offer the next one instead of the same lines again. No automatic jump: a
+  // link someone shared still opens the round it names.
+  function showRounds() {
+    var sent = readSent();
+    var marks = document.querySelectorAll('#ncRounds [data-round]');
+    for (var i = 0; i < marks.length; i++) {
+      var n = marks[i].getAttribute('data-round');
+      if (sent[n] && !marks[i].hasAttribute('data-sent')) {
+        marks[i].setAttribute('data-sent', '');
+        marks[i].textContent = n + ' \u2713';
+        marks[i].title = 'Sent';
+      }
+    }
+    var box = document.getElementById('ncResume');
+    if (!box || sent[ROUND] !== VERSION) return;
+    var total = parseInt(box.getAttribute('data-total'), 10) || 1;
+    var next = nextUnsent(total);
+    var text = document.getElementById('ncResumeText');
+    var link = document.getElementById('ncResumeLink');
+    if (next) {
+      text.textContent = 'You have already sent this round from this device. Thank you!';
+      link.href = roundHref(box.getAttribute('data-base'), next);
+      link.textContent = 'Continue with round ' + next + ' \u2192';
+      link.hidden = false;
+    } else {
+      text.textContent = 'You have sent every round from this device. Thank you for all of them!';
+      link.hidden = true;
+    }
+    box.hidden = false;
+  }
 
   function say(message, kind) {
     statusLine.textContent = message;
@@ -149,7 +234,7 @@
     if (name) payload.name = name;
     // the Thanks-page tick needs a name to list
     var listMe = form.elements.thanks;
-    if (listMe && listMe.checked) {
+    if (listMe && listMe.checked && allAnswered()) {
       if (!name) {
         say('Add the name you would like listed, or untick the Thanks-page box.', 'error');
         form.elements.name.focus();
@@ -188,6 +273,20 @@
         return data;
       });
     }).then(function () {
+      markSent();
+      showRounds();
+      var nextLink = document.getElementById('ncNext');
+      var box = document.getElementById('ncResume');
+      if (nextLink && box) {
+        var next = nextUnsent(parseInt(box.getAttribute('data-total'), 10) || 1);
+        if (next) {
+          nextLink.href = roundHref(box.getAttribute('data-base'), next);
+          nextLink.textContent = 'More lines: round ' + next + ' \u2192';
+        } else {
+          nextLink.parentNode.textContent = 'You have sent every round. Thank you for all of them.';
+        }
+      }
+      if (box) box.hidden = true;
       form.hidden = true;
       say('', '');
       thanks.hidden = false;
@@ -202,6 +301,27 @@
       send.textContent = 'Send';
     });
   });
+
+  // "Needs change" asks for the reader's own wording (author 2026-11-25): the note box
+  // lights up and stops saying optional. Inline styles, so the stylesheet keeps its version.
+  function nudge(radio) {
+    var item = radio.closest('.nc-item');
+    var note = item && item.querySelector('textarea');
+    if (!note) return;
+    var on = radio.value === 'change' && radio.checked;
+    var optional = item.querySelector('.nc-optional');
+    note.style.borderColor = on ? 'var(--accent)' : '';
+    note.style.boxShadow = on ? '0 0 0 2px var(--accent)' : '';
+    note.placeholder = on ? 'How would you say it? Write it here.' : '';
+    if (optional) optional.hidden = on;
+  }
+  form.addEventListener('change', function (event) {
+    if (event.target.type === 'radio') nudge(event.target);
+    updateConsent();
+  });
+  Array.prototype.forEach.call(form.querySelectorAll('.nc-verdict input:checked'), nudge);
+  updateConsent();
+  showRounds();
 
   // As on the guestbook: on a phone the tab bar steps aside while a field is in use.
   var settle;

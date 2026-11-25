@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Choď i ven. Choď na tichá místa.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Choď i ven. Choď tam, kde není moc lidí.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Oho, jak dobré. Mm-hm, objednáš a přivezou ti to. Ale Amir-jan, nesedávej celou dobu doma."
@@ -43,7 +43,7 @@
    "id": "03/0430#5",
    "where": "03/0430",
    "text": "A ty, se svým tím čuráckým způsobem řeči, měl ses jmenovat Alain Čurákon.",
-   "q": "'Alain Čurákon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Čurákon' is meant as a rude pun on the actor Alain Delon. Would Czech readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -83,18 +83,18 @@
   {
    "id": "04b/1265#10",
    "where": "04b/1265",
-   "text": "– Ano, koupím ti panenku. Až budu mít nějaké peníze, koupím ti ještě lepší, Babova holčičko.",
-   "q": "The father answers by playfully copying his little girl's baby talk. Does his reply sound like that?",
+   "text": "– Ano, koupím ti vekou panenku. Až budu mít nějaké peníze, koupím ti ještě lepší, Babova holčičko.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
-    "– Vžžžum, Babo, Babo, koupíš mi tu vekou panenku?",
+    "– Vžžžum, Babo, Babo, koupís mi tu vekou panenku?",
     "Zezadu se ozývá hlas:"
    ]
   },
   {
    "id": "04b/1312#11",
    "where": "04b/1312",
-   "text": "Z toho se vám zatočí hlava. Čím víc o tom přemýšlíte, tím víc se vám točí hlava.",
+   "text": "Z toho dostanete posranou závrať. Čím víc o tom přemýšlíte, tím větší je ta posraná závrať.",
    "q": "An art student uses a crude made-up expression, roughly shit-dizzy, for a baffling painting. Does the line sound that crude?",
    "ctx": 1,
    "before": [
@@ -104,25 +104,25 @@
   {
    "id": "04b/1320#12",
    "where": "04b/1320",
-   "text": "A roztřesenýma rukama jsem překotně listoval ghazaly, hledaje ten beit od Hafeze, u něhož, stejně jako u té malby, jak řekla ta druhá dívka, čím hlouběji se do něj nořím, tím víc se mi točí hlava – abych ho mohl Niloofar ukázat.",
+   "text": "A roztřesenýma rukama jsem překotně listoval ghazaly, hledaje ten beit od Hafeze, u něhož, stejně jako u té malby, jak řekla ta druhá dívka, čím hlouběji se do něj nořím, tím větší posranou závrať dostávám – abych ho mohl Niloofar ukázat.",
    "q": "A girl had said a painting makes your head spin more the deeper you look. Is the verse compared to that painting here?",
    "ctx": 0
   },
   {
    "id": "04b/1321#13",
    "where": "04b/1321",
-   "text": "„To víno, které je tam, je pravda, ne metafora.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?",
+   "text": "„To víno, které je tam, je pravda ne metafora.“",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "04b/1321#14",
    "where": "04b/1321",
-   "text": "Jako to – čím víc přemýšlíš o těchhle deseti slovech, tím víc se ti to... víc se ti točí hlava.",
+   "text": "Jako to – čím víc přemýšlíš o těchhle deseti slovech, tím větší po... teda, tím větší závrať dostaneš.",
    "q": "The stammering student nearly blurts out something crude here, then softens it. Does that come through?",
    "ctx": 1,
    "before": [
-    "– Tady. Poslechni si tohle. Pro-proboha, poslouchej. „To víno, které je tam, je pravda, ne metafora.“ Tohle je totéž. Je to jako ta malba, kterou ti ukazovala ka-kamarádka."
+    "– Tady. Poslechni si tohle. Pro-proboha, poslouchej. „To víno, které je tam, je pravda ne metafora.“ Tohle je totéž. Je to jako ta malba, kterou ti ukazovala ka-kamarádka."
    ]
   },
   {
@@ -136,7 +136,7 @@
    "id": "06/0056#16",
    "where": "06/0056",
    "text": "Burdozerem na ni sypali hlínu.",
-   "q": "Maman says 'Burdozerem' for 'buldozerem' (bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Czech speaker say 'buldozerem' (bulldozer) as 'Burdozerem'? If not, how?",
    "ctx": 0
   },
   {

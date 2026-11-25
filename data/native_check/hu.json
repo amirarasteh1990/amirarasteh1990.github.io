@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Menj ki is. Menj csendes helyekre.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Menj ki is. Menj olyan helyekre, ahol nincsenek sokan.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Ó, milyen jó. Mm-hm, megrendeled, és elhozzák. De Amir-jan, ne maradj mindig otthon."
@@ -57,7 +57,7 @@
    "id": "03/0430#6",
    "where": "03/0430",
    "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alain Faszlonnak kellett volna lennie.",
-   "q": "'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Would Hungarian readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -115,8 +115,8 @@
   {
    "id": "04b/1263#13",
    "where": "04b/1263",
-   "text": "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
-   "q": "A small girl says this, pointing at a big doll. Does it sound like a little child talking?",
+   "text": "– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:"
@@ -125,19 +125,19 @@
   {
    "id": "04b/1265#14",
    "where": "04b/1265",
-   "text": "– Igen, megveszem a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.",
-   "q": "Her father answers, playfully imitating her baby talk. Does that come through?",
+   "text": "– Igen, megveszem neted a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 3,
    "before": [
     "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:",
-    "– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?",
+    "– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?",
     "Egy hang szól a hátam mögül:"
    ]
   },
   {
    "id": "04b/1312#15",
    "where": "04b/1312",
-   "text": "Az embernek belezavarodik a feje. Minél többet gondolkodsz rajta, annál jobban belezavarodik a fejed.",
+   "text": "Az ember szarrá szédül tőle. Minél többet gondolkodsz rajta, annál jobban szarrá szédülsz.",
    "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
    "ctx": 1,
    "before": [
@@ -147,8 +147,8 @@
   {
    "id": "04b/1321#16",
    "where": "04b/1321",
-   "text": "„Az a bor, amely amott van, igazság, nem képletes.”",
-   "q": "The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?",
+   "text": "„Az a bor, amely amott van, igazság nem képletes.”",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {

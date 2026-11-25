@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="ko" dir="ltr">한국어</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 14. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/ko/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/ko/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/ko/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/ko/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/ko/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/ko/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/ko/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/ko/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/ko/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/ko/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/ko/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/ko/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/ko/14/" data-round="14">14</a></p>
+    <div class="nc-guide" id="ncResume" data-total="14" data-base="/sedaha/check/ko/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ko" data-language="Korean" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ko" data-language="Korean" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="03/0278#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ko" dir="ltr">
@@ -160,7 +163,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– 그런데 망쳤네.</p>
         <p class="nc-line">독수리눈은 피어 투 피어라고 하는데, 태버니는 피르 투 피르라고 하네.</p>
       </div>
-      <p class="nc-q" id="q3">Pir is Persian for elder, and Amir's nickname means elder of the tavern. Farid mocks his mishearing. Is the joke clear?</p>
+      <p class="nc-q" id="q3">Farid mocks Amir for hearing 'peer-to-peer' as Persian pir, elder, his nickname. Would Korean readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">내가 말했다:</p>
         <p class="nc-line">피르 투 피르?</p>
       </div>
-      <p class="nc-q" id="q4">Amir mishears 'peer' as the Persian pir, meaning elder, which is his own nickname. Can a reader tell he misheard?</p>
+      <p class="nc-q" id="q4">Amir mishears 'peer' as the Persian pir, meaning elder, which is his own nickname. Would Korean readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,7 +198,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">마망이 말했다:</p>
         <p class="nc-line">가장 무서운 병은 알자이머야.</p>
       </div>
-      <p class="nc-q" id="q5">Maman says '<bdi lang="ko" dir="ltr">알자이머</bdi>' for Alzheimer's (알츠하이머) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q5">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Korean speaker say Alzheimer's (알츠하이머) as '<bdi lang="ko" dir="ltr">알자이머</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -212,7 +215,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– 근데 조심을 안 하셨어, 그게 문제지. 할아버지야 못 들으시니까 무슨 일인지 모르지만, 나네한테는 여러 번 말했어. 하지 하눔, 골목에 앉아 계시면 코로나에 걸려요, 하나님 맙소사, 하고. 말리면 말릴수록 두 분은 더 오래 앉아 계셨어. 근데 아미르, 나네의 가슴이 얼마나 쌕쌕거렸는지 몰라. 마흐부브와 다른 사람들에게 말했어. 얘들아, 이건 코로나야, 하고.</p>
         <p class="nc-line">결국 마흐부브가 연락해서 앰불런스가 와서 나네를 데려갔어.</p>
       </div>
-      <p class="nc-q" id="q6">Maman says '<bdi lang="ko" dir="ltr">앰불런스</bdi>' for ambulance (앰뷸런스), mangling the foreign word on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q6">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Korean speaker say ambulance (앰뷸런스) as '<bdi lang="ko" dir="ltr">앰불런스</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -230,7 +233,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">마망이 말했다.</p>
         <p class="nc-line">뭐가 둥이가 아니었어?</p>
       </div>
-      <p class="nc-q" id="q7">Maman, hard of hearing, catches only the end of '<bdi lang="ko" dir="ltr">바람둥이</bdi>'. Does her puzzled question work as a half-heard echo?</p>
+      <p class="nc-q" id="q7">Maman, hard of hearing, catches only the end of '<bdi lang="ko" dir="ltr">바람둥이</bdi>'. Would Korean readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– 뭐요?</p>
         <p class="nc-line">아메로카가 이란이 핵 프로그램을 중단했다고 확인했다는 그 말이야.</p>
       </div>
-      <p class="nc-q" id="q8">Maman says '<bdi lang="ko" dir="ltr">아메로카</bdi>' for America (아메리카) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q8">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Korean speaker say America (아메리카) as '<bdi lang="ko" dir="ltr">아메로카</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -266,7 +269,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">그쪽으로 고개를 돌린다.</p>
         <p class="nc-line">아라스테는 아라아스테를 다듬은 건가요?</p>
       </div>
-      <p class="nc-q" id="q9">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Is the joke understandable?</p>
+      <p class="nc-q" id="q9">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Would Korean readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -283,7 +286,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">경비원이 미소를 지으며 말한다:</p>
         <p class="nc-line">신의 뜻이라면, 언제나 아라아스테하시길.</p>
       </div>
-      <p class="nc-q" id="q10">The guard blesses Amir with a pun on his surname; araasteh means neat. Does it read as a friendly joke?</p>
+      <p class="nc-q" id="q10">The guard blesses Amir with a pun on his surname; araasteh means neat. Would Korean readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -399,7 +402,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -424,7 +430,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/ko/3/">More lines: round 3 of 14 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ko/3/">More lines: round 3 of 14 &rarr;</a></p>
     <p><a href="/sedaha/read/ko/">&larr; <span class="native" lang="ko" dir="ltr">한국어</span></a></p>
   </section>
 </main>
@@ -443,7 +449,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

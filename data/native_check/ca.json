@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Vés a llocs tranquils.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Vés a llocs on no hi hagi gaire gent.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Ai, quina meravella. Sí, fas la comanda i te la porten. Però Amir-jan, no estiguis sempre a casa. Surt també."
@@ -83,7 +83,7 @@
    "id": "03/0430#10",
    "where": "03/0430",
    "text": "I tu, amb aquesta manera de parlar de cap de titola, et deurien haver posat Alain Titolon.",
-   "q": "'Alain Titolon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Titolon' is meant as a rude pun on the actor Alain Delon. Would Catalan readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -100,7 +100,7 @@
    "id": "04b/1263#12",
    "where": "04b/1263",
    "text": "Vruuum, Baba, Baba, em comples aquella nina tan glan?",
-   "q": "A little girl asks her father for a big doll. Does it sound like a little child talking?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…i reposant i que no tenia prou claror per guiar-me. Un llum parpellejant a la mà d'una noia de qui mai no vaig saber en quin punt de la capsa de llapis de colors col·locar el color de la porta de casa seva. Una nena petita ve fent «vrum vrum» i s'atura al meu costat. Mira les joguines. Diu:"
@@ -119,8 +119,8 @@
   {
    "id": "04b/1321#14",
    "where": "04b/1321",
-   "text": "«Aquell vi que hi ha allà és veritat, no metàfora.»",
-   "q": "This Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it?",
+   "text": "«Aquell vi que hi ha allà és veritat no metàfora.»",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   }
  ]

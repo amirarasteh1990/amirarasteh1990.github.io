@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="bg" dir="ltr">Български</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/bg/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/bg/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="bg" data-language="Bulgarian" data-version="2026-11-22" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="bg" data-language="Bulgarian" data-version="2026-11-22" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
@@ -140,9 +143,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
         <p class="nc-ctx">– Ех, колко добре. Да, поръчваш и го донасят при теб. Ама Амир-джан, не стой вкъщи цяло време. Излизай навън също.</p>
-        <p class="nc-line">Ходи на тихи места.</p>
+        <p class="nc-line">Ходи там, където няма много хора.</p>
       </div>
-      <p class="nc-q" id="q2">Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q2">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -212,7 +215,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="bg" dir="ltr">
         <p class="nc-line">И ти, с тоя твой кур-начин на говорене, трябваше да те викат Ален Курлон.</p>
       </div>
-      <p class="nc-q" id="q6">'<bdi lang="bg" dir="ltr">Ален Курлон</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q6">'<bdi lang="bg" dir="ltr">Ален Курлон</bdi>' is meant as a rude pun on the actor Alain Delon. Would Bulgarian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -259,11 +262,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1265#9">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
-        <p class="nc-ctx">– Бръъъм, тате, тате, тая голяма колкла ще ми я колпиш ли?</p>
+        <p class="nc-ctx">– Бръъъм, тате, тате, купис ми тая голяма куклицка?</p>
         <p class="nc-ctx">Един глас зад мен казва:</p>
-        <p class="nc-line">– Да, ще ти я колпя. Като ми дойдат пари, ще ти колпя още по-хубава, момичето на татко.</p>
+        <p class="nc-line">– Да, ще ти купя куклицка. Като ми дойдат пари, ще ти купя още по-хубава, момичето на татко.</p>
       </div>
-      <p class="nc-q" id="q9">The dad playfully echoes his toddler's baby talk. Does that come through?</p>
+      <p class="nc-q" id="q9">A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -278,7 +281,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
         <p class="nc-ctx">– ... вижте колко наистина наводящо на размисъл е. Това нарисувал и отдолу написал: това не е лула.</p>
-        <p class="nc-line">На човек му се завива свят. Колкото повече мислиш за него, толкова повече ти се завива свят.</p>
+        <p class="nc-line">Човек го хваща лайнян световъртеж. Колкото повече мислиш за него, толкова по-силно те хваща лайнян световъртеж.</p>
       </div>
       <p class="nc-q" id="q10">A student describing a Magritte painting should sound crude here, like saying shit-dizzy. Does this line sound that crude?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
@@ -294,7 +297,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1320#11">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
-        <p class="nc-line">И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова повече ни се завива свят, и да го покажа на Нилуфар.</p>
+        <p class="nc-line">И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова по-силно ни хваща лайнян световъртеж, и да го покажа на Нилуфар.</p>
       </div>
       <p class="nc-q" id="q11">A nervous young man leafs through a book of poems. Does this long sentence read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
@@ -310,9 +313,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1321#12">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="bg" dir="ltr">
-        <p class="nc-line">„Онова вино, което е там, е истина, не метафора.“</p>
+        <p class="nc-line">„Онова вино, което е там, е истина не метафора.“</p>
       </div>
-      <p class="nc-q" id="q12">This poem line should allow two readings: real wine, and wine as only a metaphor. Does it?</p>
+      <p class="nc-q" id="q12">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -346,7 +349,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…водят екзекутираните, и там, където погребват и умрелите от Ковид. Само бог знае дали я измиха ритуално, или не. Гледахме отдалеч. Когато я слагаха в гроба, за миг саванът се отвори – стори ми се, че са я увили в савана с дрехите, с които я заведохме в болницата. Гробовете копаеха много дълбоко.</p>
         <p class="nc-line">Засипваха пръстта с бурдозер. Пръст и вар.</p>
       </div>
-      <p class="nc-q" id="q14">Maman says '<bdi lang="bg" dir="ltr">бурдозер</bdi>' for '<bdi lang="bg" dir="ltr">булдозер</bdi>' on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q14">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Bulgarian speaker say '<bdi lang="bg" dir="ltr">булдозер</bdi>' as '<bdi lang="bg" dir="ltr">бурдозер</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
@@ -395,7 +398,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -420,7 +426,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/bg/2/">More lines: round 2 of 2 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/bg/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/bg/">&larr; <span class="native" lang="bg" dir="ltr">Български</span></a></p>
   </section>
 </main>
@@ -439,7 +445,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

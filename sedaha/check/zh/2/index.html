@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="zh" dir="ltr">中文</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 13. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/zh/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/zh/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/zh/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/zh/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/zh/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/zh/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/zh/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/zh/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/zh/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/zh/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/zh/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/zh/13/" data-round="13">13</a></p>
+    <div class="nc-guide" id="ncResume" data-total="13" data-base="/sedaha/check/zh/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="zh" data-language="Chinese" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="zh" data-language="Chinese" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="03/0278#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="zh" dir="ltr">
@@ -160,7 +163,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">玛曼说：</p>
         <p class="nc-line">最可怕的病是艾兹海默症。</p>
       </div>
-      <p class="nc-q" id="q3">Maman says '<bdi lang="zh" dir="ltr">艾兹海默症</bdi>' for Alzheimer's (阿尔茨海默症) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q3">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say Alzheimer's (阿尔茨海默症) as '<bdi lang="zh" dir="ltr">艾兹海默症</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,7 +180,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– 但他们不注意，这才是问题。爷爷听不见，不知道是怎么回事，可我跟娜内说过好几次：哈吉·哈努姆，你们坐在胡同里，会感染新冠的，真主保佑，可千万别。他们不但不听，反而坐得更久了。但是阿米尔，娜内的胸口呼噜呼噜响得那么厉害。我跟玛赫布他们说：“孩子们，这是新冠。”</p>
         <p class="nc-line">最后玛赫布打了电话，安布拉斯来把娜内接走了。</p>
       </div>
-      <p class="nc-q" id="q4">Maman says '<bdi lang="zh" dir="ltr">安布拉斯</bdi>' for ambulance (救护车), mangling the foreign word on purpose. Does it read as her slip?</p>
+      <p class="nc-q" id="q4">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say ambulance (救护车) as '<bdi lang="zh" dir="ltr">安布拉斯</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,7 +198,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">玛曼说：</p>
         <p class="nc-line">他没什么草来着？</p>
       </div>
-      <p class="nc-q" id="q5">Maman, hard of hearing, catches only the end of '<bdi lang="zh" dir="ltr">拈花惹草</bdi>'. Does her puzzled question work as a half-heard echo?</p>
+      <p class="nc-q" id="q5">Maman, hard of hearing, catches only the end of '<bdi lang="zh" dir="ltr">拈花惹草</bdi>'. Would Chinese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,7 +216,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– 什么？</p>
         <p class="nc-line">我是说，阿梅罗卡的这份报告确认伊朗已经停止核计划。</p>
       </div>
-      <p class="nc-q" id="q6">Maman mispronounces America on purpose as '<bdi lang="zh" dir="ltr">阿梅罗卡</bdi>'. Can a reader tell she means America?</p>
+      <p class="nc-q" id="q6">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say America as '<bdi lang="zh" dir="ltr">阿梅罗卡</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,7 +234,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">我回过头看向他。</p>
         <p class="nc-line">“阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？</p>
       </div>
-      <p class="nc-q" id="q7">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Is the joke understandable?</p>
+      <p class="nc-q" id="q7">A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Would Chinese readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">门卫微笑着说：</p>
         <p class="nc-line">真主若愿，愿你永远都阿拉阿斯特。</p>
       </div>
-      <p class="nc-q" id="q8">The guard blesses Amir with a pun on his surname; araasteh means neat. Does it read as a friendly joke?</p>
+      <p class="nc-q" id="q8">The guard blesses Amir with a pun on his surname; araasteh means neat. Would Chinese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -387,7 +390,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">我身后传来一个声音：</p>
         <p class="nc-line">好，我给你买介个娃娃。</p>
       </div>
-      <p class="nc-q" id="q16">A father answers his toddler's baby talk, playfully copying it. Does his reply sound like that?</p>
+      <p class="nc-q" id="q16">A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q16">
         <label><input type="radio" name="v16" value="ok"> Correct</label>
         <label><input type="radio" name="v16" value="change"> Needs change</label>
@@ -402,7 +405,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -427,7 +433,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/zh/3/">More lines: round 3 of 13 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/zh/3/">More lines: round 3 of 13 &rarr;</a></p>
     <p><a href="/sedaha/read/zh/">&larr; <span class="native" lang="zh" dir="ltr">中文</span></a></p>
   </section>
 </main>
@@ -446,7 +452,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

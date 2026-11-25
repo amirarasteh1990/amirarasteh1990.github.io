@@ -28,8 +28,8 @@
   {
    "id": "01/0116#4",
    "where": "01/0116",
-   "text": "Va dans des endroits tranquilles.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Va dans des endroits où il y a pas beaucoup de monde.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Oh, comme c'est bien. Mm-hm, tu commandes et on te l'apporte. Mais Amir-jan, reste pas tout le temps à la maison. Sors aussi."
@@ -61,7 +61,7 @@
    "id": "03/0430#7",
    "where": "03/0430",
    "text": "Et toi, avec ta façon de parler de tête de bite, ton prénom aurait dû être Alain Bitelon.",
-   "q": "'Alain Bitelon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Bitelon' is meant as a rude pun on the actor Alain Delon. Would French readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -78,7 +78,7 @@
    "id": "04b/1263#9",
    "where": "04b/1263",
    "text": "Vrouuum, Baba, Baba, tu m'atètes cette gande poupée ?",
-   "q": "A little girl asks her father for a big doll. Does it sound like a little child talking?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…de lumière pour me guider. Une lampe clignotante dans la main d'une fille dont je n'ai jamais su à quel endroit de la boîte de crayons de couleur se rangeait la couleur de la porte de leur maison. Une petite fille arrive en vrombissant et s'arrête à côté de moi. Elle regarde les jouets. Elle dit :"
@@ -105,14 +105,14 @@
    "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "« Ce vin qui est là-bas est réel non une métaphore. »",
-   "q": "Without commas, this Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "06/0056#13",
    "where": "06/0056",
    "text": "Avec le bulldozel, ils ont déversé la terre sur elle. De la terre et de la chaux.",
-   "q": "Maman says 'bulldozel' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly French speaker say bulldozer as 'bulldozel'? If not, how?",
    "ctx": 0
   }
  ]

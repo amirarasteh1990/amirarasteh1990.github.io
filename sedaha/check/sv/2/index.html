@@ -110,23 +110,26 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="sv" dir="ltr">Svenska</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 2 of 13. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/sv/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/sv/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/sv/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/sv/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/sv/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/sv/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/sv/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/sv/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/sv/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/sv/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/sv/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/sv/13/" data-round="13">13</a></p>
+    <div class="nc-guide" id="ncResume" data-total="13" data-base="/sedaha/check/sv/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="sv" data-language="Swedish" data-version="2026-11-22.r2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="sv" data-language="Swedish" data-version="2026-11-22.r2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="01/0014#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="sv" dir="ltr">
         <p class="nc-ctx">– Ja, det gjorde jag, Nini-jan. Oroa dig inte. Bara lite av Mahboubs hemgjorda lavashak, torkad fruktpuré, är kvar.</p>
         <p class="nc-line">– Lägg det i fryseln. Lägger du det i fryseln händer det ingenting med det, inte ens på ett år.</p>
       </div>
-      <p class="nc-q" id="q1">Maman says 'fryseln' for frysen on purpose. Does it read as her endearing slip, not a typo?</p>
+      <p class="nc-q" id="q1">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say frysen as 'fryseln'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -143,7 +146,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…gäst länge. När det först kom sade TV:n två av hundra, och nu säger den tio procent. Det är mycket orättvist, vid Gud. En nyser på ena sidan av gatan, och någon på andra sidan får det och dör. Jag hade aldrig sett eller hört något liknande. Inte ens Bibis generation hade berättat om något sådant.</p>
         <p class="nc-line">Det fanns till exempel tyfus, eller tuberkulos, eller mässling. Dem kallade man dödliga. Hmm, inte ens de dödade så många. Eller kolera, till exempel.</p>
       </div>
-      <p class="nc-q" id="q2">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q2">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -161,7 +164,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Maman sa:</p>
         <p class="nc-line">– Den värsta sjukdomen är Ayzheimer.</p>
       </div>
-      <p class="nc-q" id="q3">Maman says 'Ayzheimer' for Alzheimer on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q3">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say Alzheimer as 'Ayzheimer'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…inte höra någonting och förstår inte vad som händer, men jag hade sagt till Naney flera gånger: Haaj Khanom, om ni sitter ute i gränden får ni corona, Gud förbjude det. Då satt de bara där ännu mer. Men Amir, Naneys bröst rosslade så illa. Jag sa till Mahboub och de andra – barn, det här är corona.</p>
         <p class="nc-line">Till slut ringde Mahboub, och de kom med en amublans och hämtade Naney – ja, det är corona, sa de.</p>
       </div>
-      <p class="nc-q" id="q4">Maman says 'amublans' for ambulans on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q4">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say ambulans as 'amublans'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -213,7 +216,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Maman säger:</p>
         <p class="nc-line">– Vad-karl var han inte?</p>
       </div>
-      <p class="nc-q" id="q6">Maman, hard of hearing, catches only the end of 'kvinnokarl'. Does her puzzled question read naturally?</p>
+      <p class="nc-q" id="q6">Maman, hard of hearing, catches only the end of 'kvinnokarl'. Would Swedish readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">En röst bakom mig säger:</p>
         <p class="nc-line">– Ja, jag töper den. När jag får pengar töper jag en ännu bättre åt dig, Babas flicka.</p>
       </div>
-      <p class="nc-q" id="q8">A father answers his toddler, playfully copying her baby talk ('<bdi lang="sv" dir="ltr">töper</bdi>'). Does that playful echo come through?</p>
+      <p class="nc-q" id="q8">A stranger on the street answers his little girl, copying her baby talk. Does '<bdi lang="sv" dir="ltr">töper</bdi>' read that way, not as a typo?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -266,7 +269,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Jag sa:</p>
         <p class="nc-line">– Pir-till-pir?</p>
       </div>
-      <p class="nc-q" id="q9">Amir mishears 'peer-to-peer' as 'Pir-till-pir'; pir is Persian for a wise old man, echoing his nickname. Does the mishearing come through?</p>
+      <p class="nc-q" id="q9">Amir mishears 'peer-to-peer' as Persian pir, elder, which fits his nickname. Would Swedish readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -283,7 +286,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Farid sa:</p>
         <p class="nc-line">– Men han sabbade det. Örnaöga säger peer-to-peer; Taverny säger Äldi-till-Äldi.</p>
       </div>
-      <p class="nc-q" id="q10">Farid mocks Amir's mishearing by twisting it into Amir's nicknames. Does this punch line work?</p>
+      <p class="nc-q" id="q10">Farid mocks Amir's mishearing by twisting it into Amir's nicknames. Would Swedish readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -370,7 +373,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Jag vänder huvudet i hans riktning.</p>
         <p class="nc-line">– Är Arasteh en nedklippt Araasteh?</p>
       </div>
-      <p class="nc-q" id="q15">A guard jokes that the surname Arasteh is the Persian word 'Araasteh' (neat) with a letter trimmed off. Does the joke come through?</p>
+      <p class="nc-q" id="q15">The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Swedish readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
         <label><input type="radio" name="v15" value="ok"> Correct</label>
         <label><input type="radio" name="v15" value="change"> Needs change</label>
@@ -401,7 +404,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -426,7 +432,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/sv/3/">More lines: round 3 of 13 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/sv/3/">More lines: round 3 of 13 &rarr;</a></p>
     <p><a href="/sedaha/read/sv/">&larr; <span class="native" lang="sv" dir="ltr">Svenska</span></a></p>
   </section>
 </main>
@@ -445,7 +451,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

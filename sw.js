@@ -98,7 +98,10 @@
    check form's "you may list my name" tick (native-check.js?v=38); stylesheet v34.
    style.css?v=35 (same day): the Thanks lists fill across rows (grid), so reading
    left to right keeps the author's order. A new URL is enough, so VERSION stays. */
-var VERSION = 'arasteh-v38';
+/* v39 (2026-11-25): check pages -- the Thanks-page tick only once every line is
+   answered; a strip linking every round, ticked for the rounds this browser has
+   sent, and on a round already sent a link to the next one (native-check.js?v=39). */
+var VERSION = 'arasteh-v39';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -113,7 +116,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=38',
+  '/assets/js/guestbook.js?v=39',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

@@ -54,7 +54,7 @@
    "id": "03/0430#6",
    "where": "03/0430",
    "text": "Und bei deiner pimmeligen Art zu reden hättest du Alain Pimmelon heißen müssen.",
-   "q": "'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Would German readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -70,8 +70,8 @@
   {
    "id": "04b/1263#8",
    "where": "04b/1263",
-   "text": "– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?",
-   "q": "A little girl asks her father for a doll. Does it sound like a small child talking?",
+   "text": "– Vroooom – Baba, Baba, mia die goße Puppe kaufen?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…hell genug war, um mir den Weg zu weisen. Eine blinkende Lampe in der Hand eines Mädchens, dessen Türfarbe ich nie kannte, die ich nie in einer Buntstift-Schachtel hätte finden können. Ein kleines Mädchen kommt sausend herangebraust und bleibt neben mir stehen. Es schaut die Spielzeuge an. Es sagt:"
@@ -80,19 +80,19 @@
   {
    "id": "04b/1265#9",
    "where": "04b/1265",
-   "text": "– Ja, ich kauf dia die Puppe. Wenn ich Geld habe, kauf ich dia eine noch bessere, Babas Mädchen.",
-   "q": "The father playfully answers in his little daughter's way of talking. Does that come through?",
+   "text": "– Ja, ich kauf dia die goße Puppe. Wenn ich Geld habe, kauf ich dia eine noch bessere, Babas Mädchen.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
-    "– Vroooom – Baba, Baba, kaufsu mia diese gosse Puppe?",
+    "– Vroooom – Baba, Baba, mia die goße Puppe kaufen?",
     "Eine Stimme kommt von hinter mir:"
    ]
   },
   {
    "id": "04b/1312#10",
    "where": "04b/1312",
-   "text": "Davon wird man verdammt nochmal verwirrt. Je mehr man darüber nachdenkt, desto verwirrter wird man, verdammt nochmal.",
-   "q": "A student swears about a baffling painting. Does 'verdammt nochmal verwirrt' sound natural?",
+   "text": "Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.",
+   "q": "A student swears about a baffling painting. Does 'scheißschwindlig' sound natural?",
    "ctx": 1,
    "before": [
     "– ... Schaut, wie wirklich zum Nachdenken anregend das ist. Er hat das gezeichnet und darunter geschrieben: Das ist keine Pfeife."
@@ -102,14 +102,14 @@
    "id": "04b/1321#11",
    "where": "04b/1321",
    "text": "„Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.“",
-   "q": "A line by the poet Hafez, meant to read two ways: the wine is real, or only a metaphor. Do both readings come through?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "06/0056#12",
    "where": "06/0056",
    "text": "Mit dem Bulldozel schütteten sie Erde über sie. Erde und Kalk.",
-   "q": "Maman says 'Bulldozel' for Bulldozer on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Bulldozer as 'Bulldozel'? If not, how?",
    "ctx": 0
   }
  ]

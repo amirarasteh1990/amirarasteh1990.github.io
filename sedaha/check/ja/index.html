@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="ja" dir="ltr">日本語</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 14. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/ja/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/ja/3/" data-round="3">3</a> &middot; <a href="/sedaha/check/ja/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/ja/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/ja/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/ja/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/ja/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/ja/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/ja/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/ja/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/ja/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/ja/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/ja/14/" data-round="14">14</a></p>
+    <div class="nc-guide" id="ncResume" data-total="14" data-base="/sedaha/check/ja/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-22" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="ja" data-language="Japanese" data-version="2026-11-22" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ja" dir="ltr">
@@ -140,9 +143,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-ctx">– まあ、それはいいわね。うん、注文したら届けてくれるの。でもアミール・ジャン、ずっと家にいてはだめよ。</p>
-        <p class="nc-line">外にも出て。閑静な場所に行って。</p>
+        <p class="nc-line">外にも出て。人の少ないところに行って。</p>
       </div>
-      <p class="nc-q" id="q2">Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q2">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,7 +162,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…に厚かましくて、この電話を抜けてきて、私たちからあんたにうつるんじゃないかと怖いくらい。テレビではあれの人形まで作っていた。「私はそう簡単には帰らないよ。まだまだ、あなたたちの客でいるからね」って。来たばかりの頃、テレビは百人に二人と言っていたのに、今は十パーセントと言っている。神に誓って、本当に不公平だわ。道の向こう側で誰かがくしゃみをして、こちら側の人がうつされて死ぬの。こんなことは見たことも聞いたこともなかった。ビビたちの世代でさえ、そんな話はしなかった。たとえばテフスとか、結核とか、はしかとか。あれは人を死なせる病気だと言っていた。うーん、でも、あれらだってこんなに多くは殺さなかった。</p>
         <p class="nc-line">コレラもそう。あれだって、こんなに多くは殺さなかった。</p>
       </div>
-      <p class="nc-q" id="q3">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q3">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -210,7 +213,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">– アメロカが、イランが核計画を停止したと確認したっていうことよ。戦争になるの、それともならないの？</p>
       </div>
-      <p class="nc-q" id="q6">Maman says '<bdi lang="ja" dir="ltr">アメロカ</bdi>' for America (アメリカ) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q6">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say America (アメリカ) as '<bdi lang="ja" dir="ltr">アメロカ</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -226,7 +229,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">お前も、そのチンポみたいな喋り方では、名前はアラン・チンポロンになるべきだったな。</p>
       </div>
-      <p class="nc-q" id="q7">'<bdi lang="ja" dir="ltr">アラン・チンポロン</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q7">'<bdi lang="ja" dir="ltr">アラン・チンポロン</bdi>' is meant as a rude pun on the actor Alain Delon. Would Japanese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -293,7 +296,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…現を告げてくれたあの黄色いドアに。それからというもの、年を追うごとに、私はますます礼拝とモスクと祈りへと引き寄せられていった。ネガールを見たときに味わったあの感覚から一歩また一歩と離れていき、ニルーファルが私の世界に入ってきたとき、それはまるで、彼女が私の存在のその部分の暗室にランプを持ち込んだかのようだった。心安らぐ闇色の静けさを消し去り、しかも私を導くほどの明るさも持たない、不安をかき立てるランプ。家のドアの色が色鉛筆の箱のどこに当てはまるのか、ついぞ分からなかった一人の少女の手にある、明滅するランプ。一人の女の子がブーンブーンと言いながらやって来て、私の隣に立つ。玩具を眺める。こう言う。</p>
         <p class="nc-line">– ブーーン、バーバ、バーバ、このおっきなおにんぎょ、かってくれう？</p>
       </div>
-      <p class="nc-q" id="q11">A little girl asks her dad to buy her a big doll. Does it sound like a little child talking?</p>
+      <p class="nc-q" id="q11">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -326,7 +329,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="ja" dir="ltr">
         <p class="nc-line">「かしこにあるあの酒は本物いや比喩じゃない」。これも同じだ。</p>
       </div>
-      <p class="nc-q" id="q13">This Hafez line should allow two opposite readings: the wine is real; the wine is only a metaphor. Does it allow both?</p>
+      <p class="nc-q" id="q13">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
@@ -343,7 +346,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– ナナ・ペサルジャン、あなたのバーバの家族には本当にひどい目に遭わされたわ。最後の頃、ナネイを洗ってあげに行くたび、あの人の舌で傷つけられた。でも正直、埋葬されたときは、胸が焼けるほどかわいそうだった。バーゲ・ベヘシュト墓地のいちばん奥まで連れていかれたの。処刑された人たちを連れていく場所で、コロナで亡くなった人もそこに埋めるのよ。お清めしてもらったかどうかは神様だけがご存じよ。私たちは遠くから見てた。墓に入れられたとき、一瞬、体を包んでいた布がほどけたの。病院へ行ったときの服を着たまま、その布で包まれてるように見えた。墓はとても深く掘るのよ。</p>
         <p class="nc-line">ブルドゼルで土をかけたの。土と石灰を。</p>
       </div>
-      <p class="nc-q" id="q14">Maman says '<bdi lang="ja" dir="ltr">ブルドゼル</bdi>' for bulldozer (ブルドーザー) on purpose. Does it read as her slip, not a typo?</p>
+      <p class="nc-q" id="q14">Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say bulldozer (ブルドーザー) as '<bdi lang="ja" dir="ltr">ブルドゼル</bdi>'? If not, how?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
@@ -358,7 +361,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -383,7 +389,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/ja/2/">More lines: round 2 of 14 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ja/2/">More lines: round 2 of 14 &rarr;</a></p>
     <p><a href="/sedaha/read/ja/">&larr; <span class="native" lang="ja" dir="ltr">日本語</span></a></p>
   </section>
 </main>
@@ -402,7 +408,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

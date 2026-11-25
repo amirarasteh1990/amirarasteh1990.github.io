@@ -28,8 +28,8 @@
   {
    "id": "01/0116#4",
    "where": "01/0116",
-   "text": "Виходь теж. Ходи в спокійні місця.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Виходь теж. Ходи туди, де мало людей.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Ой, як добре. Мм-гм, замовляй — і тобі привезуть. Але, Амір-джане, не сиди весь час вдома."
@@ -39,7 +39,7 @@
    "id": "01/0132#5",
    "where": "01/0132",
    "text": "Або, наприклад, холера. І вона стільки не вбивала.",
-   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 1,
    "before": [
     "…Хтось чхає на одному боці вулиці — і людина на іншому боці підхоплює вірус і вмирає. Я ніколи нічого подібного не бачила й не чула. Навіть покоління Бібі не розповідало про таке. Наприклад, був тифоїд, або туберкульоз, або кір. Їх називали смертельними. Гм, навіть вони стільки не вбивали."
@@ -72,7 +72,7 @@
    "id": "03/0430#8",
    "where": "03/0430",
    "text": "– А ти зі своїм паскудним способом говорити — тебе мали б звати Ален Членон.",
-   "q": "'Ален Членон' is a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Ален Членон' is a rude pun on the actor Alain Delon. Would Ukrainian readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -88,8 +88,8 @@
   {
    "id": "04b/1263#10",
    "where": "04b/1263",
-   "text": "– Вжжж, Баба, Баба, ти купиш мені оцю велику ляльтю?",
-   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "text": "– Вжжж, Баба, Баба, ти купис мені оцю велику ляльтю?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…те заспокійливе темне затишшя, але не давала стільки світла, щоб мене вести. Лампу, що блимає, в руці дівчини, про яку я так і не дізнався, де колір дверей їхнього дому розташований у коробці кольорових олівців. Дівчинка з виском «вжж-вжж» підбігає й спиняється коло мене. Дивиться на іграшки. Каже:"
@@ -108,15 +108,15 @@
   {
    "id": "04b/1321#12",
    "where": "04b/1321",
-   "text": "«Те вино там цілком справжнє хіба воно просто собі метафора». Це те саме.",
-   "q": "Quoted without commas, this poem line should allow two readings: real wine, and wine as only a metaphor. Does it?",
+   "text": "«Те вино там справжнє не є метафора». Це те саме.",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "06/0056#13",
    "where": "06/0056",
    "text": "Бурдозером на неї насипали землю. Землю й вапно.",
-   "q": "Maman says 'Бурдозером' for 'бульдозером' on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Ukrainian speaker say 'бульдозером' as 'Бурдозером'? If not, how?",
    "ctx": 1,
    "before": [
     "…Туди везуть страчених, там само ховають померлих від ковіду. Одному Богу відомо, чи обмили її за обрядом. Ми дивилися здалеку. Коли її клали в могилу, на мить саван розійшовся. Мені здалося, що її загорнули в саван у тому самому одязі, в якому вона була в лікарні. Могили копають дуже глибокі."

@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Wychodź też na zewnątrz. Idź w jakieś spokojne miejsce.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Wychodź też na zewnątrz. Idź tam, gdzie nie ma dużo ludzi.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Ooo, jak dobrze. Mm-hm, zamawiasz i przynoszą. Ale Amir-dżan, nie siedź cały czas w domu."
@@ -25,7 +25,7 @@
    "id": "01/0132#3",
    "where": "01/0132",
    "text": "Albo cholera, na przykład. Ona też nie zabiła tylu.",
-   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 1,
    "before": [
     "…kicha po jednej stronie ulicy, a człowiek po drugiej stronie łapie wirusa i umiera. Nigdy czegoś takiego nie widziałam ani nie słyszałam. Nawet pokolenie Bibi o niczym takim nie mówiło. Był tifus, na przykład, albo gruźlica, albo odra. Nazywano je śmiertelnymi. Hmm, nawet one nie zabiły tylu ludzi."
@@ -57,14 +57,14 @@
    "id": "03/0290#6",
    "where": "03/0290",
    "text": "– Czy Arasteh to przycięte Araasteh?",
-   "q": "The narrator's surname Arasteh was cut down from Persian 'Araasteh', meaning neat. Does the guard's quip work?",
+   "q": "The narrator's surname Arasteh was cut down from Persian 'Araasteh', meaning neat. Would Polish readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
    "id": "03/0430#7",
    "where": "03/0430",
    "text": "A z tym twoim chujowym sposobem mówienia powinieneś się nazywać Alain Chujon.",
-   "q": "'Alain Chujon' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Chujon' is meant as a rude pun on the actor Alain Delon. Would Polish readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -80,8 +80,8 @@
   {
    "id": "04b/1263#9",
    "where": "04b/1263",
-   "text": "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?",
-   "q": "A toddler asks Dad for a big doll. Does it sound like baby talk?",
+   "text": "– Wżżżżż, Baba, Baba, kupis mi tę duzą lalkę?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…lampę, która zniszczyła tamtą kojącą, ciemną ciszę, a sama świeciła zbyt słabo, by mnie poprowadzić. Migającą lampę w ręce dziewczyny, której drzwi miały kolor, jakiego nie potrafiłem znaleźć w pudełku kredek. Nadbiega mała dziewczynka, bzycząc, i staje obok mnie. Patrzy na zabawki. Mówi:"
@@ -90,8 +90,8 @@
   {
    "id": "04b/1265#10",
    "where": "04b/1265",
-   "text": "– Tak, kupię ci lalkę.",
-   "q": "The father answers by playfully copying his little girl's baby talk. Does his reply sound like that?",
+   "text": "– Tak, kupię ci duzą lalkę.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
     "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?",
@@ -112,7 +112,7 @@
    "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "„To wino, które tam jest, jest prawdziwe nie jest przenośnią”.",
-   "q": "The missing comma is deliberate: this quoted line should allow two opposite readings, real wine and metaphor. Does it?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
@@ -130,7 +130,7 @@
    "id": "06/0056#14",
    "where": "06/0056",
    "text": "Ziemię sypali na nią burdożerem.",
-   "q": "Maman says 'burdożerem' for 'buldożerem' (bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Polish speaker say 'buldożerem' (bulldozer) as 'burdożerem'? If not, how?",
    "ctx": 0
   }
  ]

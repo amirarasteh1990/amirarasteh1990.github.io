@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="el" dir="ltr">Ελληνικά</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/el/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/el/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="el" data-language="Greek" data-version="2026-11-22" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="el" data-language="Greek" data-version="2026-11-22" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
@@ -214,7 +217,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Γυρίζω το κεφάλι προς αυτόν.</p>
         <p class="nc-line">– Ο Αραστέ είναι απλώς araasteh, κομμένος;</p>
       </div>
-      <p class="nc-q" id="q6">The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Is that clear?</p>
+      <p class="nc-q" id="q6">The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Would Greek readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -230,7 +233,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="el" dir="ltr">
         <p class="nc-line">Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.</p>
       </div>
-      <p class="nc-q" id="q7">'<bdi lang="el" dir="ltr">Αλέν Πουτσόν</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q7">'<bdi lang="el" dir="ltr">Αλέν Πουτσόν</bdi>' is meant as a rude pun on the actor Alain Delon. Would Greek readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -313,7 +316,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
         <p class="nc-ctx">– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα.</p>
-        <p class="nc-line">Σε ζαλίζει. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ ζαλίζεσαι.</p>
+        <p class="nc-line">Σε πιάνει σκατοζάλη. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ σε πιάνει η σκατοζάλη.</p>
       </div>
       <p class="nc-q" id="q12">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
@@ -331,7 +334,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="el" dir="ltr">
         <p class="nc-line">Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.»</p>
       </div>
-      <p class="nc-q" id="q13">The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?</p>
+      <p class="nc-q" id="q13">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
@@ -346,7 +349,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 14</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
         <p class="nc-ctx">– Αυτό είναι. Άκου αυτό. Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.» Αυτό είναι το ίδιο. Είναι σαν εκείνη τη ζωγραφιά που σου έδειχνε η φί-φίλη σου.</p>
-        <p class="nc-line">Σαν εκείνο — όσο πιο πολύ σκέφτεσαι αυτές τις δέκα λέξεις, τόσο πιο πολύ ζα... τέλος πάντων, ζαλίζεσαι.</p>
+        <p class="nc-line">Σαν εκείνο — όσο πιο πολύ σκέφτεσαι αυτές τις δέκα λέξεις, τόσο πιο πολύ σκα... τέλος πάντων, ζαλίζεσαι.</p>
       </div>
       <p class="nc-q" id="q14">He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
@@ -363,7 +366,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -388,7 +394,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/el/2/">More lines: round 2 of 2 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/el/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/el/">&larr; <span class="native" lang="el" dir="ltr">Ελληνικά</span></a></p>
   </section>
 </main>
@@ -407,7 +413,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

@@ -14,8 +14,8 @@
   {
    "id": "01/0116#2",
    "where": "01/0116",
-   "text": "Sai também. Vai a lugares quietos.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Sai também. Vai a lugares onde não tem muita gente.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Oh, que bom. Mm-hm, você faz o pedido e eles entregam. Mas, Amir-jan, não fica em casa o tempo todo."
@@ -25,7 +25,7 @@
    "id": "01/0132#3",
    "where": "01/0132",
    "text": "Tinha o tifo, por exemplo, ou a tuberculose, ou o sarampo.",
-   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 0
   },
   {
@@ -44,14 +44,14 @@
    "id": "03/0373#5",
    "where": "03/0373",
    "text": "Estou dizendo essa coisa, que a Améroca confirmou que o Irã parou o programa nuclear.",
-   "q": "Maman says 'Améroca' for América on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Brazilian Portuguese speaker say América as 'Améroca'? If not, how?",
    "ctx": 0
   },
   {
    "id": "03/0430#6",
    "where": "03/0430",
    "text": "E você, com esse jeito escroto de falar, seu nome devia ser Alain Pauzão.",
-   "q": "'Alain Pauzão' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alain Pauzão' is meant as a rude pun on the actor Alain Delon. Would Brazilian Portuguese readers get it? If not, what word could?",
    "ctx": 0
   },
   {
@@ -67,8 +67,8 @@
   {
    "id": "04b/1263#8",
    "where": "04b/1263",
-   "text": "Vrrrum, Baba, Baba, me compla essa boneca tão glande?",
-   "q": "A little girl says 'glande' for grande, as toddlers do. Does it sound like cute baby talk here?",
+   "text": "Vrrrum, Baba, Baba, compa essa boneca gande pa mim?",
+   "q": "On the street, a stranger's little girl says 'gande' for grande, as toddlers do. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…reconfortante de tom escuro, mas dava pouca luz demais pra me guiar. Uma lâmpada piscando na mão de uma garota de quem eu nunca soube em que parte da caixa de lápis de cor cabe a cor da porta da casa dela. Uma menina pequena vem fazendo «vrrrum» e para do meu lado. Olha pros brinquedos. Diz:"
@@ -77,11 +77,11 @@
   {
    "id": "04b/1265#9",
    "where": "04b/1265",
-   "text": "Sim, eu complo a boneca pra você. Quando eu tiver dinheiro, complo uma ainda melhor, menina do Baba.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "text": "Sim, eu compro a boneca gande pa você. Quando eu tiver dinheiro, compro uma ainda melhor, menina do Baba.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
-    "– Vrrrum, Baba, Baba, me compla essa boneca tão glande?",
+    "– Vrrrum, Baba, Baba, compa essa boneca gande pa mim?",
     "Uma voz diz atrás de mim:"
    ]
   },
@@ -106,7 +106,7 @@
    "id": "04b/1321#12",
    "where": "04b/1321",
    "text": "«Aquele vinho que ali está é real não é metáfora.»",
-   "q": "Without commas, this Hafez line should allow two readings: the wine is real, and the wine is only a metaphor. Does it?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
@@ -120,7 +120,7 @@
    "id": "06/0056#14",
    "where": "06/0056",
    "text": "Jogaram terra por cima dela com um burdozer.",
-   "q": "Maman says 'burdozer' for bulldozer on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Brazilian Portuguese speaker say bulldozer as 'burdozer'? If not, how?",
    "ctx": 0
   }
  ]

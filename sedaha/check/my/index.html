@@ -109,17 +109,20 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="my" dir="ltr">မြန်မာ</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round">Round 1 of 3. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/my/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/my/3/" data-round="3">3</a></p>
+    <div class="nc-guide" id="ncResume" data-total="3" data-base="/sedaha/check/my/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-23" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-23" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
@@ -145,7 +148,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">…တစ်ယောက် နှာချေလိုက်တာ၊ ဟိုဘက်ခြမ်းက လူက ကူးပြီး သေရတယ်ဆိုတော့။ ဒီလိုမျိုး တစ်ခါမှ မမြင်ဖူး မကြားဖူးဘူး။ ဘီဘီ တို့တောင် ဒီလိုမျိုးအကြောင်း ဘယ်တုန်းကမှ မပြောဖူးဘူး။ ဥပမာ တိုက်ဖွိုက်တွေ၊ တီဘီတွေ၊ ဝက်သက်တွေ ရှိခဲ့တယ်။ အဲဒါတွေကို သေစေတတ်တဲ့ရောဂါလို့ ခေါ်ခဲ့ကြတယ်။ ဟင်း၊ အဲဒါတွေတောင် ဒီလောက် သတ်မသွားဘူး။</p>
         <p class="nc-line">ဒါမှမဟုတ် ကာလဝမ်းရောဂါပေါ့။ အဲဒါလည်း ဒီလောက် သတ်မသွားဘူး။</p>
       </div>
-      <p class="nc-q" id="q2">An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?</p>
+      <p class="nc-q" id="q2">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -251,9 +254,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-ctx">– အမီရ်၊ အမီရ်-ဂျန်၊ ငါ့သား။ နိုးတော့။ နိုးတော့ မားမန်ရဲ့သား။ အားလုံး အိပ်မက်ပါ။ မကြောက်နဲ့၊ မားမန် ဒီမှာ ရှိတယ်။</p>
         <p class="nc-ctx">…မလင်းသည့် စိုးရိမ်စရာ မီးအိမ်။ သူတို့အိမ်တံခါး၏ အရောင်က ရောင်စုံခဲတံဘူး၏ ဘယ်နေရာမှာ ရှိမည်ကို ကျွန်တော် ဘယ်တော့မှ မသိခဲ့ရသော မိန်းကလေးတစ်ယောက်၏ လက်ထဲမှ မှိတ်တုတ်မှိတ်တုတ် လင်းနေသည့် မီးအိမ်။ မိန်းကလေးငယ်တစ်ယောက်က ဝီးဝီးဟု အသံပေးကာ ကျွန်တော့်ဘေးမှာ လာရပ်သည်။ ကစားစရာများကို ကြည့်ပြီး ပြောသည်—</p>
-        <p class="nc-line">– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီးကို သမီးအတွက် ဝယ်ပေးမလား။</p>
+        <p class="nc-line">– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီး တမီးကို ဝယ်ပေးမလား။</p>
       </div>
-      <p class="nc-q" id="q8">A toddler asks Dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q8">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -271,7 +274,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">– နင်လည်း</p>
         <p class="nc-line">ဒီလိုလီးဆန်ဆန် စကားပြောပုံနဲ့ဆို "အလန် လီးလွန်" လို့ နာမည်ရှိသင့်တယ်။</p>
       </div>
-      <p class="nc-q" id="q9">'<bdi lang="my" dir="ltr">အလန် လီးလွန်</bdi>' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q9">'<bdi lang="my" dir="ltr">အလန် လီးလွန်</bdi>' is meant as a rude pun on the actor Alain Delon. Would Burmese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -286,7 +289,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -311,7 +317,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/my/2/">More lines: round 2 of 2 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/my/2/">More lines: round 2 of 3 &rarr;</a></p>
     <p><a href="/sedaha/read/my/">&larr; <span class="native" lang="my" dir="ltr">မြန်မာ</span></a></p>
   </section>
 </main>
@@ -330,7 +336,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

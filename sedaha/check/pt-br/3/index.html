@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="pt-BR" dir="ltr">Português (Brasil)</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 3 of 14. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/pt-br/" data-round="1">1</a> &middot; <a href="/sedaha/check/pt-br/2/" data-round="2">2</a> &middot; <strong aria-current="page" data-round="3">3</strong> &middot; <a href="/sedaha/check/pt-br/4/" data-round="4">4</a> &middot; <a href="/sedaha/check/pt-br/5/" data-round="5">5</a> &middot; <a href="/sedaha/check/pt-br/6/" data-round="6">6</a> &middot; <a href="/sedaha/check/pt-br/7/" data-round="7">7</a> &middot; <a href="/sedaha/check/pt-br/8/" data-round="8">8</a> &middot; <a href="/sedaha/check/pt-br/9/" data-round="9">9</a> &middot; <a href="/sedaha/check/pt-br/10/" data-round="10">10</a> &middot; <a href="/sedaha/check/pt-br/11/" data-round="11">11</a> &middot; <a href="/sedaha/check/pt-br/12/" data-round="12">12</a> &middot; <a href="/sedaha/check/pt-br/13/" data-round="13">13</a> &middot; <a href="/sedaha/check/pt-br/14/" data-round="14">14</a></p>
+    <div class="nc-guide" id="ncResume" data-total="14" data-base="/sedaha/check/pt-br/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="pt-br" data-language="Portuguese (Brazil)" data-version="2026-11-22.r3" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="pt-br" data-language="Portuguese (Brazil)" data-version="2026-11-22.r3" data-round="3" novalidate>
     <fieldset class="nc-item" data-id="03/0630#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="pt-BR" dir="ltr">
@@ -145,7 +148,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Eu disse:</p>
         <p class="nc-line">Pir a pir?</p>
       </div>
-      <p class="nc-q" id="q2">Amir mishears the English 'peer to peer' as pir, Persian for an old sage. Does his puzzled question read that way?</p>
+      <p class="nc-q" id="q2">Amir mishears the English 'peer to peer' as pir, Persian for an old sage. Would Brazilian Portuguese readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -403,7 +406,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -428,7 +434,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/pt-br/4/">More lines: round 4 of 14 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/pt-br/4/">More lines: round 4 of 14 &rarr;</a></p>
     <p><a href="/sedaha/read/pt-br/">&larr; <span class="native" lang="pt-BR" dir="ltr">Português (Brasil)</span></a></p>
   </section>
 </main>
@@ -447,7 +453,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

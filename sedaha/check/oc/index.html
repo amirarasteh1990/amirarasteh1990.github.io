@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="oc" dir="ltr">Occitan</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/oc/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/oc/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="oc" data-language="Occitan" data-version="2026-11-23" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="oc" data-language="Occitan" data-version="2026-11-23" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="oc" dir="ltr">
@@ -233,9 +236,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="oc" dir="ltr">
         <p class="nc-ctx">– Amir, Amir-jan, mon filh. Desvelha-te. Desvelha-te per la Maman. Tot èra un sòmi. Aja pas paur, soi aicí.</p>
         <p class="nc-ctx">…e escur, mas qu'aviá pas pro lutz per me guidar. Una lutz lugalhanta dins la man d'una dròlla de qué sabèri jamai en quala color de la boèsta de lapis de colors s'ajustava la pòrta de son ostal. Ven una dròlleta fasent lo son de son jòguet e s'arrèsta al mieu costat. Espia los jòguets. Ditz:</p>
-        <p class="nc-line">– Viiiiish, Baba, Baba, crompa-me aquesta nina granda?</p>
+        <p class="nc-line">– Viiiiish, Baba, Baba, compa-me aquesta nina ganda?</p>
       </div>
-      <p class="nc-q" id="q7">A toddler asks her dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q7">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -250,8 +253,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="oc" dir="ltr">
         <p class="nc-ctx">Una votz darrièr ieu ditz:</p>
-        <p class="nc-ctx">– Òc, te cromparai la nina. Quand aurai d'argent dins la man, te'n crompi una encara melhora, filha de Baba.</p>
-        <p class="nc-line">La filha de papà empencha son triciclet color de ròsa e s'alunha fasent lo son «viiiish».</p>
+        <p class="nc-ctx">– Òc, te compi la nina. Quand aurai d'argent dins la man, te'n crompi una encara melhora, filha de Baba.</p>
+        <p class="nc-line">La filha de Baba empencha son triciclet color de ròsa e s'alunha fasent lo son «viiiish».</p>
       </div>
       <p class="nc-q" id="q8">Is 'triciclet' the right word for a child's kick scooter?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
@@ -271,7 +274,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <p class="nc-ctx">Hooman diguèt:</p>
         <p class="nc-line">E tu, amb aqueste biais de parlar de cap de vit, ton nom deuriá èsser Alain Vitelon.</p>
       </div>
-      <p class="nc-q" id="q9">'Alain Vitelon' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q9">'Alain Vitelon' is meant as a rude pun on the actor Alain Delon. Would Occitan readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -286,7 +289,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -311,7 +317,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/oc/2/">More lines: round 2 of 2 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/oc/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/oc/">&larr; <span class="native" lang="oc" dir="ltr">Occitan</span></a></p>
   </section>
 </main>
@@ -330,7 +336,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

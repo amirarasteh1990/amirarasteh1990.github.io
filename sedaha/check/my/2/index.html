@@ -109,23 +109,26 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="my" dir="ltr">မြန်မာ</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 2 of 2, the last one.</p>
+    <p class="nc-round">Round 2 of 3. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/my/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/my/3/" data-round="3">3</a></p>
+    <div class="nc-guide" id="ncResume" data-total="3" data-base="/sedaha/check/my/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-23.sayings" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-23.sayings" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="01/0138#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">သူပြောတာ ငါ့နှလုံးသား ပုပ်နေပြီတဲ့။</p>
       </div>
-      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,7 +144,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">ဟူမန်က ရယ်နေရင်း လက်နဲ့ ကျွန်တော့်ကျောကို ပြင်းပြင်းရိုက်လိုက်ပြီး သကြားခဲက ကျွန်တော့်လည်ချောင်းထဲ ခုန်တက်သွားသည်။</p>
       </div>
-      <p class="nc-q" id="q2">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: is it clear what happens?</p>
+      <p class="nc-q" id="q2">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -157,7 +160,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">ဘီဘီ၊ ဘုရားသခင် သူမကို နားနေစေတော်မူပါစေ၊ ဒီလိုအချိန်မျိုးမှာ "ပြောရင်လည်း လျှာလောင်တယ်၊ မပြောရင်လည်း အရိုးတွင်းခြင်ဆီ လောင်တယ်" လို့ ပြောလေ့ရှိတယ်။</p>
       </div>
-      <p class="nc-q" id="q3">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q3">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -173,7 +176,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">မြေကြီးကနေ ကောင်းကင်ဘက်ကို မိုးရွာလို့မရဘူး။</p>
       </div>
-      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -189,7 +192,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">သူပြောတာက "ကောင်းသောနှစ်တစ်နှစ်ကို ၎င်း၏ နွေဦးရာသီမှ သိနိုင်သည်" တဲ့။</p>
       </div>
-      <p class="nc-q" id="q5">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q5">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -205,7 +208,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">ငါပြောနေတာက ဒီလို ဒီမှာချည်း ထိုင်ပြီး ကဗျာဖတ်နေရင် ပေါင်မုန့်ဘယ်ခုမှ နင့်အတွက် အပူမတက်လာဘူးလို့ပါ။</p>
       </div>
-      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -221,7 +224,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">မိသားစုက အတင်း ကြက်ခြံထဲ ပစ်ထည့်လိုက်ပြီးမှပဲ၊ ဇာတ်လမ်းရဲ့ ဟိုဘက်ခြမ်းက ဘယ်လောက် ကွဲပြားတဲ့ ကမ္ဘာဆိုတာ ငါ နားလည်လာခဲ့တာ။</p>
       </div>
-      <p class="nc-q" id="q7">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q7">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -237,7 +240,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">ငါ့လက်က တိုတယ်၊ မင်းနဲ့ ပေါင်းစည်းရေးက ဝေးလှတယ်။</p>
       </div>
-      <p class="nc-q" id="q8">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q8">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -253,7 +256,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="my" dir="ltr">
         <p class="nc-line">ဒီကံဆိုးတဲ့ အက်စကန်ဒါကို မပြောနဲ့၊ ထပ်ထိုင်ပြီး တစ်နာရီလောက် ဆုံးမစကားတွေ ပြောနေဦးမှာ၊ ဟင်းက ငါ့အတွက် မြွေဆိပ်လို ဖြစ်သွားမှာပါ။</p>
       </div>
-      <p class="nc-q" id="q9">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: is the meaning clear?</p>
+      <p class="nc-q" id="q9">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -268,7 +271,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -293,7 +299,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p>That was the last round. Thank you for all of them.</p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/my/3/">More lines: round 3 of 3 &rarr;</a></p>
     <p><a href="/sedaha/read/my/">&larr; <span class="native" lang="my" dir="ltr">မြန်မာ</span></a></p>
   </section>
 </main>
@@ -312,7 +318,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

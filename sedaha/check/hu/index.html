@@ -110,16 +110,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <h1>Native check: <span class="native" lang="hu" dir="ltr">Magyar</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
     <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/hu/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/hu/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
+        <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
         <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="hu" data-language="Hungarian" data-version="2026-11-22" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="hu" data-language="Hungarian" data-version="2026-11-22" data-round="1" novalidate>
     <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
@@ -140,9 +143,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
         <p class="nc-ctx">– Ó, milyen jó. Mm-hm, megrendeled, és elhozzák. De Amir-jan, ne maradj mindig otthon.</p>
-        <p class="nc-line">Menj ki is. Menj csendes helyekre.</p>
+        <p class="nc-line">Menj ki is. Menj olyan helyekre, ahol nincsenek sokan.</p>
       </div>
-      <p class="nc-q" id="q2">Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q2">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -211,7 +214,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <div class="reader nc-text" lang="hu" dir="ltr">
         <p class="nc-line">Te meg azzal a faszankodó beszédmodoroddal a nevednek Alain Faszlonnak kellett volna lennie.</p>
       </div>
-      <p class="nc-q" id="q6">'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Does it work?</p>
+      <p class="nc-q" id="q6">'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Would Hungarian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -326,9 +329,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 13</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
         <p class="nc-ctx">…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:</p>
-        <p class="nc-line">– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?</p>
+        <p class="nc-line">– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?</p>
       </div>
-      <p class="nc-q" id="q13">A small girl says this, pointing at a big doll. Does it sound like a little child talking?</p>
+      <p class="nc-q" id="q13">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
         <label><input type="radio" name="v13" value="ok"> Correct</label>
         <label><input type="radio" name="v13" value="change"> Needs change</label>
@@ -343,11 +346,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 14</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
         <p class="nc-ctx">…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:</p>
-        <p class="nc-ctx">– Vííííű, Baba, Baba, megveszed nekem ezt a nagy babát?</p>
+        <p class="nc-ctx">– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?</p>
         <p class="nc-ctx">Egy hang szól a hátam mögül:</p>
-        <p class="nc-line">– Igen, megveszem a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.</p>
+        <p class="nc-line">– Igen, megveszem neted a babát. Ha lesz pénzem, ennél is jobbat veszek neked, Baba kislánya.</p>
       </div>
-      <p class="nc-q" id="q14">Her father answers, playfully imitating her baby talk. Does that come through?</p>
+      <p class="nc-q" id="q14">A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
         <label><input type="radio" name="v14" value="ok"> Correct</label>
         <label><input type="radio" name="v14" value="change"> Needs change</label>
@@ -362,7 +365,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <legend>Line 15</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
         <p class="nc-ctx">– ...Nézzétek, ez tényleg elgondolkodtató. Ezt rajzolta, és aláírta: ez nem pipa.</p>
-        <p class="nc-line">Az embernek belezavarodik a feje. Minél többet gondolkodsz rajta, annál jobban belezavarodik a fejed.</p>
+        <p class="nc-line">Az ember szarrá szédül tőle. Minél többet gondolkodsz rajta, annál jobban szarrá szédülsz.</p>
       </div>
       <p class="nc-q" id="q15">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
@@ -378,9 +381,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <fieldset class="nc-item" data-id="04b/1321#16">
       <legend>Line 16</legend>
       <div class="reader nc-text" lang="hu" dir="ltr">
-        <p class="nc-line">„Az a bor, amely amott van, igazság, nem képletes.”</p>
+        <p class="nc-line">„Az a bor, amely amott van, igazság nem képletes.”</p>
       </div>
-      <p class="nc-q" id="q16">The speaker says this Hafez line reads two ways: wine as real wine, and wine as metaphor. Does it allow both?</p>
+      <p class="nc-q" id="q16">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q16">
         <label><input type="radio" name="v16" value="ok"> Correct</label>
         <label><input type="radio" name="v16" value="change"> Needs change</label>
@@ -412,7 +415,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <p class="nc-consent">
+    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
+         a reader who looked at one line is not listed; native-check.js shows it -->
+    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
+    <p class="nc-consent" id="ncConsent" hidden>
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
@@ -437,7 +443,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" href="/sedaha/check/hu/2/">More lines: round 2 of 2 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/hu/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/hu/">&larr; <span class="native" lang="hu" dir="ltr">Magyar</span></a></p>
   </section>
 </main>
@@ -456,7 +462,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=38" defer></script>
+<script src="/assets/js/native-check.js?v=39" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

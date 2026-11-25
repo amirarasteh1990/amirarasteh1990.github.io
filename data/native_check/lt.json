@@ -24,8 +24,8 @@
   {
    "id": "01/0116#3",
    "where": "01/0116",
-   "text": "Eik ir į lauką. Eik ten, kur tylu.",
-   "q": "Maman urges her grown son not to stay home all the time. Does this sound natural from a mother?",
+   "text": "Eik ir į lauką. Eik ten, kur mažai žmonių.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
    "ctx": 1,
    "before": [
     "– Oho, kaip gerai. Mm-hm, užsisakyk, ir tau atneš. Bet, Amir-džan, nesėdėk visą laiką namuose."
@@ -35,7 +35,7 @@
    "id": "01/0132#4",
    "where": "01/0132",
    "text": "Arba cholera, pavyzdžiui. Ir ji tiek daug nenužudė.",
-   "q": "An elderly mother lists old deadly diseases her family spoke of. Does this sound natural?",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 1,
    "before": [
     "…nusičiaudi vienoje gatvės pusėje, o žmogus kitoje pusėje užsikrečia ir miršta. Niekada nieko panašaus nebuvau nei mačiusi, nei girdėjusi. Net Bibi karta nepasakojo apie nieką panašaus. Buvo, pavyzdžiui, šiltenė arba tuberkuliozė, arba tymai. Juos vadino mirtinais. Hmm, net jie tiek daug nenužudė."
@@ -66,7 +66,7 @@
    "id": "03/0430#7",
    "where": "03/0430",
    "text": "O tau, su tuo bybišku kalbėjimu, reikėjo vadintis Alainas Bybonas.",
-   "q": "'Alainas Bybonas' is meant as a rude pun on the actor Alain Delon. Does it work?",
+   "q": "'Alainas Bybonas' is meant as a rude pun on the actor Alain Delon. Would Lithuanian readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
@@ -83,7 +83,7 @@
    "id": "04b/1263#9",
    "where": "04b/1263",
    "text": "– Vviii, Baba, Baba, nupilksi man šitą didelę lėlytę?",
-   "q": "A toddler asks her dad for a big doll. Does it sound like baby talk?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
     "…tylą, bet skleidė nepakankamai šviesos, kad kur nors mane nuvestų. Mirksinti lempa mergaitės, kurios namų durų spalvos niekada nesužinojau, kurios spalvos niekada negalėjau įdėti į spalvotų pieštukų dėžutę, rankoje. Maža mergaitė atlekia burzgėdama ir sustoja šalia manęs. Žiūri į žaislus. Sako:"
@@ -93,7 +93,7 @@
    "id": "04b/1265#10",
    "where": "04b/1265",
    "text": "– Taip, nupilksiu tau lėlytę. Kai gausiu pinigų, nupilksiu tau dar geresnę, Babos dukrele.",
-   "q": "The dad playfully echoes his toddler's baby talk. Does that come through?",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "before": [
     "– Vviii, Baba, Baba, nupilksi man šitą didelę lėlytę?",
@@ -121,14 +121,14 @@
    "id": "04b/1321#13",
    "where": "04b/1321",
    "text": "„Tas vynas ten yra tikras ne metafora.“",
-   "q": "This Hafez line should read both as real wine and as metaphor. Does it?",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
    "ctx": 0
   },
   {
    "id": "06/0056#14",
    "where": "06/0056",
    "text": "Burdozeriu užvertė ją žemėmis. Žemėmis ir kalkėmis.",
-   "q": "Maman says 'Burdozeriu' for 'buldozeriu' (bulldozer) on purpose. Does it read as her slip, not a typo?",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Lithuanian speaker say 'buldozeriu' (bulldozer) as 'Burdozeriu'? If not, how?",
    "ctx": 0
   }
  ]
