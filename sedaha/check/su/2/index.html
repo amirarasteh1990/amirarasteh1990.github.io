@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,13 +122,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="su" data-language="Sundanese" data-version="2026-11-23.sayings" data-round="2" novalidate>
-    <fieldset class="nc-item" data-id="01/0138#1">
+  <form class="nc-form" id="ncForm" data-lang="su" data-language="Sundanese" data-version="2026-11-25.o2" data-round="2" novalidate>
+    <fieldset class="nc-item" data-id="04b/0509#2">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Manéhna nyarita, haté kuring buruk.</p>
+        <p class="nc-line">Bari seuri, Hooman neunggeul tonggong kuring tarik pisan, sarta gula batu éta ngaluncat kana tikoro kuring.</p>
       </div>
-      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q1">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -139,12 +139,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0509#2">
+    <fieldset class="nc-item" data-id="03/0634#8">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Bari seuri, Hooman neunggeul tonggong kuring tarik pisan, sarta gula batu éta ngaluncat kana tikoro kuring.</p>
+        <p class="nc-line">Ulah dibéjakeun ka si Eskandar pikakeuheul éta, bisi manéhna diuk deui sajam méré naséhat ka urang, dahareun kuring jadi racun oray.</p>
       </div>
-      <p class="nc-q" id="q2">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <p class="nc-q" id="q2">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -155,12 +155,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0203#3">
+    <fieldset class="nc-item" data-id="04b/1256#7">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Bibi, mugia Alloh ngahampura dosana, sok nyarita dina waktu-waktu kieu: lamun kuring nyarita, létah kuring ngaduruk; lamun kuring teu nyarita, sungsum tulang kuring ngaduruk.</p>
+        <p class="nc-ctx">– Hayang gelut?</p>
+        <p class="nc-ctx">Treuk aya dina leungeun kuring tapi teu bisa lumpat kabur. Negar nangtung jeung keur neuteupan urang. Taghi nyarita:</p>
+        <p class="nc-line">– Mun maneh hayang mawa mobil-mobilan éta, sok atuh.</p>
       </div>
-      <p class="nc-q" id="q3">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q3">Taghi agrees to the fight, on one condition. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -171,12 +173,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0188#4">
+    <fieldset class="nc-item" data-id="04b/0824#6">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Hujan mah moal turun ti taneuh ka langit.</p>
+        <p class="nc-line">Kuring gé, sanggeus dipaksa kulawarga asup kana kandang hayam, kakara ngarti dunya béda kacida di sisi séjén carita.</p>
       </div>
-      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q4">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -187,12 +189,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0073#5">
+    <fieldset class="nc-item" data-id="04b/1266#8">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">– Ghasem sok kitu deui, nyarita taun nu alus dipikanyaho ti usum semina.</p>
+        <p class="nc-ctx">Aya sora ti tukangeun kuring nyarita:</p>
+        <p class="nc-ctx">– Enya, lék dipeselkeun. Mun aya duit engké, boneka nu leuwih alus lék dipeselkeun keur manéh, budak Baba.</p>
+        <p class="nc-line">Budak Baba ngadorong roda kai jambon leutikna jeung viizj-viizj ngajauhan.</p>
       </div>
-      <p class="nc-q" id="q5">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q5">Is 'roda kai' the right word for a child's kick scooter?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -203,12 +207,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0824#6">
+    <fieldset class="nc-item" data-id="04b/0418#5">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Kuring gé, sanggeus dipaksa kulawarga asup kana kandang hayam, kakara ngarti dunya béda kacida di sisi séjén carita.</p>
+        <p class="nc-ctx">– Salaam. Ngaran kuring Meysam. Petugas asrama nyuruh kuring datang ka kamar 403.</p>
+        <p class="nc-ctx">Manéhna tetep nangtung hareupeun panto satengah muka, teu ngomong nanaon.</p>
+        <p class="nc-line">Manéhna budak lalaki leutik, buukna panjang jeung meber, panonna gedé, kulitna hideung kaboseun, sarta sirahna leutik pisan nu upama teu aya buuk meberna gé bakal katempo leutik dina awakna nu leutik.</p>
       </div>
-      <p class="nc-q" id="q6">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q6">Is it clear his head would look tiny if he had no hair?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -219,12 +225,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0334#7">
+    <fieldset class="nc-item" data-id="03/0045#2">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Leungeun kuring pondok, tepung jeung manéh jauh.</p>
+        <p class="nc-ctx">– Sepuh, hudang indit saméméh Farid Maung Tutul nyieun gerakan maéhan ka anjeun.</p>
+        <p class="nc-ctx">Pikiran gerakan maéhan Farid ngageter kuring saeutik, tapi kuring teu boga sumanget atawa tanaga. Kuring ngan ngukuhkeun cangkéng kuring saeutik.</p>
+        <p class="nc-line">Waktu manéhna nyarita geus ngadéngé stan Mazandaran poé ieu méré kolang-kaling hejo jeung sayuran nu teu apal ngaranna, kuring nempo diri kuring leumpang gigireun Farid turun tangga paméran Kota Kuring-Budaya Kuring.</p>
       </div>
-      <p class="nc-q" id="q7">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q7">A fair stall hands out sour green plums. Is 'kolang-kaling' the right word?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -235,12 +243,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0634#8">
+    <fieldset class="nc-item" data-id="03/0459#3">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="su" dir="ltr">
-        <p class="nc-line">Ulah dibéjakeun ka si Eskandar pikakeuheul éta, bisi manéhna diuk deui sajam méré naséhat ka urang, dahareun kuring jadi racun oray.</p>
+        <p class="nc-ctx">– Minggu ieu abdi pisan teu gaduh waktos. Minggu payun, Kemis jam tilu, di tempat sarua jeung basa nu kamari urang patepung. Ieu ogé abdi bejakeun, abdi ngan gaduh waktos satengah jam.</p>
+        <p class="nc-ctx">…heula. Poé-poé saméméh patepung urang ogé kuring datang. Kuring leumpang di jero koridor-koridor fakultas bari ngabayangkeun yén saminggu deui, genep poé deui, lima poé deui, opat poé deui, tilu poé deui, dua poé deui, isukan, di dieu kénéh kuring bakal diuk gigireun Niloofar. Jam geus liwat tilu.</p>
+        <p class="nc-line">Manéhna teu datang. Kuring ngarasa deudeuh jajantung, aya nu meupeuskeun beuheung kuring.</p>
       </div>
-      <p class="nc-q" id="q8">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q8">Niloofar has not come. Is it clear Amir feels a choking in his throat?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -255,17 +265,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -302,7 +310,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

@@ -1,185 +1,337 @@
 {
+ "format": 2,
  "lang": "pl",
  "slug": "pl",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Okiem rodzimego użytkownika",
+  "lead": "Nie musisz znać książki. Odpowiedz na tyle pytań, na ile masz ochotę.",
+  "persian_words": "Maman (matka), Baba (ojciec) i -dżan (kochany) to perskie słowa, zachowane w książce.",
+  "page": "Strona",
+  "correct": "Dobrze",
+  "needs_change": "Do zmiany",
+  "not_sure": "Trudno powiedzieć",
+  "how_say": "Jak to ująć po Twojemu?",
+  "meaning": "Co Twoim zdaniem to znaczy?",
+  "optional": "(nieobowiązkowo)",
+  "your_name": "Twoje imię",
+  "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
+  "private": "Twoje odpowiedzi trafią tylko do autora.",
+  "send": "Wyślij",
+  "send_continue": "Wyślij i przejdź do strony {n}",
+  "sending": "Wysyłanie…",
+  "popup_title": "Dziękujemy!",
+  "popup_text": "Chcesz, żeby Twoje imię znalazło się na stronie z podziękowaniami w serwisie? Wypełnij wszystkie 4 strony, a chętnie je dodamy.",
+  "popup_button": "Przejdź do strony {n}",
+  "arrived": "Dziękujemy, Twoje odpowiedzi ze strony {n} dotarły.",
+  "thanks_last": "Dziękujemy! Twoje odpowiedzi dotarły.",
+  "all_done": "Wszystkie strony zostały wysłane. Dziękujemy za każdą z nich!",
+  "already_sent": "Ta strona została już wysłana z tego urządzenia. Dziękujemy!",
+  "continue_with": "Przejdź dalej do strony {n}",
+  "need_one": "Wybierz odpowiedź dla co najmniej jednego fragmentu.",
+  "note_no_answer": "Jeden z fragmentów ma uwagę: wybierz, proszę, odpowiedź także dla niego.",
+  "name_needed": "Wpisz imię, które mamy umieścić, albo odznacz pole.",
+  "not_connected": "Wysyłanie nie jest jeszcze podłączone.",
+  "too_long": "Wysyłanie trwało zbyt długo.",
+  "cannot_send": "Nie udało się stąd wysłać odpowiedzi.",
+  "use_email": "Skorzystaj, proszę, z przycisku e-mail poniżej.",
+  "fallback": "Nie udało się wysłać odpowiedzi z tej strony. Wyślij je, proszę, e-mailem; nic z tego, co wpisano, nie przepadło.",
+  "email_button": "Wyślij odpowiedzi e-mailem",
+  "shortened": "Niektóre uwagi były za długie na link e-mail i zostały w nim skrócone. Pełne odpowiedzi są poniżej; wklej je, proszę, do e-maila.",
+  "noscript": "Wysyłanie wymaga JavaScriptu. Możesz też wysłać odpowiedzi e-mailem na adres {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "03/0490#1",
-   "where": "03/0490",
-   "text": "– Uważaj, żebyś nie pękł, panie Chuju.",
-   "q": "Hooman mocks a roommate who just puffed out his chest, giving him a crude title. Does it sound like dorm banter?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Jestem ekstremalnym anarchistą nacjonalistycznym.",
-    "Human powiedział:"
+   "key": "maman",
+   "title": "Głos matki",
+   "q": "Matka mówi ciepło, czasem karcąco, jak zwykła kobieta z małego miasteczka. Czy każdy fragment brzmi tak, jak mówiłaby ona?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Jak się masz? Zdrów jesteś? Dobrze ci? Szczęśliwego Nouruzu, Nana-pesar-dżan.",
+     "note": null
+    },
+    {
+     "id": "01/0077#maman",
+     "text": "– Sawab? Sawab jest wtedy, gdy ludzie cieszą się, że się widzą. Nie wtedy, gdy tylko działają sobie nawzajem na nerwy.",
+     "note": null
+    },
+    {
+     "id": "01/0090#maman",
+     "text": "– Nie. Ja biedna, nigdy nic nie mówię, siedzę cicho. Tylko patrzę i jem smutek.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Wychodź też na zewnątrz. Idź tam, gdzie nie ma dużo ludzi.",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "– Ten z głupim nauczycielem? Mm-hm, obejrzyjcie go. Jest zabawny. Pośmiejecie się trochę.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Wszyscy chcemy zadzwonić i powiedzieć, że dokucza nam od trzydziestu lat, niech przyjdą i go zabiorą. Jeśli ty też się zgadzasz, dzwonimy.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Cokolwiek mówiłam: nie bij dzieci, mówił: nabawiłem się nerwicy frontowej na wojnie, nie mam na to wpływu. Zobaczyłam, że tak jest, i dałam sobie spokój.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Obgadywanie? Obgadywanie jest wtedy, gdy ktoś ci nic złego nie zrobił.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "– Hmm, zobaczmy – czy ktoś z was może sobie przypomnieć jedną dobrą rzecz o waszym Babie? Powiedzcie, a będę milczeć.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "– Wolałabym, żeby był nałogowcem, niż żeby był taki, jaki jest.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "– Za kobietami? Chciałabym. Kto chce, niech go bierze dla siebie. Jeszcze coś damy w dodatku.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "– Nie pamiętacie? Kiedy wrócił z Karbali, włożył białą rękawiczkę.",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "– Mm-hm, bardzo, bardzo się zmienił. Tak wychudł i pociemniał.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "– Amir, główna rola to coś dobrego?",
+     "note": null
+    },
+    {
+     "id": "03/0070#maman",
+     "text": "– Boję się, że stanie się jak ten jego przyjaciel, Hamid.",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "– Wszystko, co robisz, to łatanina.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Najpierw poznajcie tę osobę, wyjdźcie za mąż czy żeńcie się, a potem, jeśli chcecie, zakochujcie się. Zobaczycie wtedy, czy słówko powiem.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "– Znalazłam cię cztery razy. Teraz chodź tutaj, mój grzeczny chłopczyku.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Dobrze, mój sprytny chłopczyku. Kiedy coś cię straszy, użyj sztuczki, żeby się nie bać.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Oooho. No to te kraje na pewno leżały blisko siebie. Kiedy było trzęsienie ziemi w Bam?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Nastał koniec świata. Pokolenie Bibi mawiało, że gdy nadejdzie koniec świata, ziemia będzie się ciągle trząść.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Ślubowałam, że jak wyzdrowieje, to pójdę pieszo do Meszhedu.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– No to ja też mówię, że robi mi się ciężko na sercu. Pozwólcie mi pójść do przyjaciółek.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-dżan, naprawdę musisz dobrze się odżywiać. Jedz rzeczy, które cię wzmacniają.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– W szpitalu wciąż wołali: „Rodzina pani Adham!” Nikt się nie ruszył. Potem sama pielęgniarka podeszła i powiedziała: „Chyba ona jest z wami”.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "– Hmm, ci ludzie nawet za jej życia za wiele dla niej nie zrobili.",
+     "note": null
+    },
+    {
+     "id": "06/0165#maman",
+     "text": "– Za dużo pił oranżady.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "– I tak okazujesz wdzięczność?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "– No, pojechałeś tam pozwiedzać i dobrze się bawić, więc dobrze ci było.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "– Ugh, ilekroć prosisz go, żeby coś kupił, jakby go prąd poraził.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "– Narzeka bez powodu, he, Amir-dżan. Gdyby nie to, znalazłby coś innego.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– O rany, Nini nagle zrobiła się senna. Jestem na nogach od rana i wcale nie spałam.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0385#2",
-   "where": "04b/0385",
-   "text": "Tak działa jego system fabryczny. Zawsze bardzo elegancko i uroczyście sra dokładnie na historycznym zakręcie.",
-   "q": "Hooman jokes that keeping quiet at key moments is just Amir's factory setting. Does this crude joke sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Eldie to Taverny. Nic na to nie poradzi."
-   ]
-  },
-  {
-   "id": "04b/0591#3",
-   "where": "04b/0591",
-   "text": "– Pir-to-pir?",
-   "q": "Amir mishears 'peer-to-peer' as 'Pir-to-pir'; pir is Persian for elder. Would Polish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Taki rodzaj elektronicznego pieniądza, peer-to-peer.",
-    "Ja powiedziałem:"
-   ]
-  },
-  {
-   "id": "04b/0571#4",
-   "where": "04b/0571",
-   "text": "– Najpierw chodźcie uwiecznić ten kciuk, a potem kręćcie film o czym tylko chcecie.",
-   "q": "Hooman sticks out his thumb as a rude gesture and tells them to film it first. Does the joke come across?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Human wysunął rękę spod koca i powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0351#5",
-   "where": "04b/0351",
-   "text": "Bo mnie, akurat mnie, którego robota polega teraz na obchodzeniu stacji elektroenergetycznych, co mi to, że byłem prymusem i, nie wiem, drugi dyplom dodały do długości mojego kutasa?",
-   "q": "Hooman, now inspecting power substations, crudely mocks his old student ambitions. Does this sentence read smoothly?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "03/0612#6",
-   "where": "03/0612",
-   "text": "– Ty bezużyteczny kutasie... huuuuu... idziesz tak ze spuszczoną głową... huuuu... dokąd tak pędzisz?... huuu... tchu mi brak. Zmusiłeś mnie, żebym cię gonił aż tutaj... huu... z takim ciałem jak moje.",
-   "q": "Out of breath, heavy Hooman scolds his friend for making him chase him. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Czyjaś ręka ciągnie moje lewe ramię do tyłu. To Human. Dyszy."
-   ]
-  },
-  {
-   "id": "04b/0893#7",
-   "where": "04b/0893",
-   "text": "– Zasrałeś mi nastrój, w jaki wprawiała mnie piosenka, tym swoim chujowym głosem.",
-   "q": "Hooman complains crudely that a roommate's singing ruined his mood. Does this sound like how he would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0162#8",
-   "where": "04b/0162",
-   "text": "– No, jak tylko nas zobaczą, zaciskają dziury w dupach i tak się od nas odsuwają, że mam ochotę skoczyć im obiema nogami na twarz.",
-   "q": "Farid crudely says the Tehran students tense up and avoid them. Does this sound like young men's slang?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Farid powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0146#9",
-   "where": "04b/0146",
-   "text": "– Móżdżku ty z gówna. Zmuszasz mnie, żebym otworzył gębę.",
-   "q": "Hooman snaps at a slow roommate, calling him a shit-for-brains. Does this insult sound natural?",
-   "ctx": 3,
-   "kind": "crude",
-   "before": [
-    "Human powiedział:",
-    "– Słyszałeś?",
-    "– No tak, plotka rozeszła się po całym uniwersytecie."
-   ]
-  },
-  {
-   "id": "04b/0181#10",
-   "where": "04b/0181",
-   "text": "– Zjedz główkę mojego kutasa, człowieku, nie mamy nerwów do ciebie.",
-   "q": "Hooman crudely tells an annoying roommate they have had enough of him. Does it sound like real dorm talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human znów uniósł kciuk i powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0434#11",
-   "where": "04b/0434",
-   "text": "– Gdyby Kamjar nie był takim drogocennym gówniarzem i został w akademiku, nie zwolniłoby się łóżko i te dziwy by nam się nie trafiły.",
-   "q": "Hooman sneers at a spoiled former roommate who left the dorm. Does the insult sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…pod moje łóżko. Potem dał ręką znak Mejsamowi i poszedł położyć się na swoim łóżku, nad moim. Eskandar przez chwilę wpatrywał się w rogi kilku książek wystających spod mojego łóżka, a potem na czworakach podpełzł do książek Bahmana. Schylił głowę i przyglądał się książkom Bahmana. Human powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0723#12",
-   "where": "04b/0723",
-   "text": "– No dobra, skoro nie jesteś typem, co aplikuje i wyjeżdża, to po co rozwalałeś sobie tyłek, zdając TOEFL?",
-   "q": "Hooman crudely asks why Amir worked so hard for the TOEFL. Does the crude phrase sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "I roześmiał się. Nic nie powiedziałem. Human ciągnął dalej:"
-   ]
-  },
-  {
-   "id": "04b/0158#13",
-   "where": "04b/0158",
-   "text": "– Tyle się człowiek uczy, a na koniec, przez nasze zasrane szczęście, i tak wychodzi tak.",
-   "q": "Hooman grumbles about their bad luck after all that studying. Does this read naturally?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "03/0640#14",
-   "where": "03/0640",
-   "text": "– Pfff, niech cię szlag. Teraz jesteś emigrantem, więc masz nas gdzieś. Ty zaprzedany czcicielu cudzoziemszczyzny.",
-   "q": "Hooman jokingly calls his friend who moved abroad a sellout. Does this teasing insult sound like spoken talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Naprawdę mi przykro."
-   ]
-  },
-  {
-   "id": "04b/0899#15",
-   "where": "04b/0899",
-   "text": "– Ty pożeraczu główek kutasów, czemu pleciesz banialuki?",
-   "q": "Hooman crudely tells a roommate to stop talking nonsense. Does this sound like dorm talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "04b/1314#16",
-   "where": "04b/1314",
-   "text": "– Kocham panią od trzydziestu dwóch miesięcy. Z daleka. Bez pani wiedzy.",
-   "q": "A shy student confesses his love to a classmate, addressing her politely as 'pani'. Does that sound right here?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Poszedłem i stanąłem pod platanem po drugiej stronie chodnika przy ulicy Valiasr, czekając, aż Nilufar oddzieli się od reszty, żebym mógł podejść i twarzą w twarz powiedzieć jej, że ją kocham."
+   "key": "child_talk",
+   "title": "Mowa dzieci",
+   "q": "Te kwestie wypowiadają dzieci. Czy każda brzmi jak mowa dziecka?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "– Ale laska.",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "– Pff, ośle, kto wie lepiej: przyjaciel kuzyna mistrza rzemieślnika naszego szwagra — najbogatszy człowiek w Teheranie — czy ty, cielaku?",
+     "note": null
+    },
+    {
+     "id": "04a/0001#child",
+     "text": "Maman co chwilę ciemniała. Jak tamtego dnia, kiedy nie było prądu.",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "Wtedy miałem cztery lata. Zawsze znajdowała mnie cztery razy. Teraz mam sześć.",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "– Dziś rano poszedłem na podwórko. Maman powiedziała, że jestem mądry.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Dobra, ty też idziesz na misję, ale musisz bardzo uważać. Etapy są bardzo trudne.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– No dobra, wsyp mniej. Ale nie dużo mniej. Troszeczkę mniej.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "– Nazywa się bazar w Ghuczan, a nasz dom jest na końcu bazaru w Ghuczan.",
+     "note": null
+    },
+    {
+     "id": "04a/0049#child",
+     "text": "Jest takie dobre. Sklep Hadż Kazema też dobrze smakuje.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Trzeci etap to skrzyżowanie. Skrzyżowanie znaczy, że jest bardzo duże. Od tej strony aż do tamtej. Od tej ulicy do tamtej.",
+     "note": null
+    },
+    {
+     "id": "04a/0053#child",
+     "text": "To było bardzo daleko. Aż na drugi koniec świata. Może nie. Ale było daleko.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "– Jak się męczysz, to już nie przychodź na misję.",
+     "note": null
+    },
+    {
+     "id": "04a/0059#child",
+     "text": "Maman powiedziała, że Bóg jest w niebie. Niebo też jest niebieskie.",
+     "note": null
+    },
+    {
+     "id": "04a/0061#child",
+     "text": "Tej części nigdy się nie nauczyłem. Zawsze mówił: najważniejsze... coś... misji.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "– Wielu ludzi tu przegrywa. Idą w lewo.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– Lewa strona jest niebezpieczna. Dom z czerwonymi drzwiami należy do bardzo gniewnego starca. Jeszcze bardziej gniewnego niż Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "– Nasza szkoła jest na samym końcu. Ostatni dom. Jak będziemy hałasować, nauczyciel uderzy nas linijką po rękach.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– Za szkołą jest cmentarz. Bardzo stary. Niektóre groby nie mają kamieni. Widać kości umarłych.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Hej, po co wyrzuciłeś kij? Czym teraz zadzwonimy do drzwi?",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– Jak nauczy się naszych imion, to nas polubi.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 13
 }

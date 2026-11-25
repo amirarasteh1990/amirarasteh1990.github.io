@@ -2,147 +2,30 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r4",
+ "version": "2026-11-25.o4",
  "items": [
   {
-   "id": "03/0628#1",
-   "where": "03/0628",
-   "text": "Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
-   "q": "Hooman shortens the nickname 'Starešina Krčme' to a pet form. Does 'Stari' work as that short nickname?",
+   "id": "03/0490#4",
+   "where": "03/0490",
+   "text": "Pazi, da ne počiš, gospod Kurčon.",
+   "q": "Hooman shortens his rude nickname for Eskandar to 'gospod Kurčon' as Eskandar puffs himself up. Does this jab sound natural?",
    "ctx": 2,
    "kind": "joke",
    "before": [
-    "– Objektivno.",
-    "Hooman je s pisalom pisal kaj v knjigo in rekel:"
+    "– Sem ekstremistični nacionalistični anarhist.",
+    "Hooman je rekel:"
    ]
   },
   {
-   "id": "03/0630#2",
-   "where": "03/0630",
-   "text": "Krčmar je, po resnici in pravici povedano.",
-   "q": "Farid adds a third nickname for Amir, 'Krčmar', from the same tavern idea. Does it sound natural as a nickname?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Hooman je s pisalom pisal kaj v knjigo in rekel:",
-    "– Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
-    "Farid je rekel:"
-   ]
-  },
-  {
-   "id": "06/0188#3",
-   "where": "06/0188",
-   "text": "Dež ne pada navzgor iz zemlje. Tudi stari so imeli dobre reke.",
-   "q": "Maman quotes an old saying and says the old folks had good sayings. Does 'dobre reke' mean good sayings here?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Bog ne daj, ne govori tako. Ni otrok tisti, ki naj bo žrtev — ampak mati."
-   ]
-  },
-  {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Potakni nos v vsak košček. Stari so vedno govorili: pokukaj v vsak zadnji kotiček.",
-   "q": "Maman urges her son to explore and quotes an old saying. Does it sound like a folk saying she would use?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Mm-hm, prav delaš. Dokler imaš priložnost, pojdi in si oglej vse vasi."
-   ]
-  },
-  {
-   "id": "03/0055#5",
-   "where": "03/0055",
-   "text": "Tako pač govorim. Vi mislite, da recitujem pesmi.",
-   "q": "Hamid, a boy, answers in the rhythm and rhyme of his own poems. Does this line sound like a playful rhyme?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid je rekel v istem ritmu, s katerim je recitiral svoje pesmi:"
-   ]
-  },
-  {
-   "id": "03/0126#6",
-   "where": "03/0126",
-   "text": "Huh. Prijatelj bratranca mojstra našega svaka, ki je najbogatejši človek v Teheranu, govori natanko tako.",
-   "q": "Hamid, a boy, always boasts about a long chain of contacts ending in a rich man. Does this running joke sound natural and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid je rekel:"
-   ]
-  },
-  {
-   "id": "04b/0571#7",
-   "where": "04b/0571",
-   "text": "Najprej pridite in dokumentirajte ta palec, potem pa snemajte film o čemerkoli hočete.",
-   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film idea. Does this read as a rude joke?",
+   "id": "04b/1265#5",
+   "where": "04b/1265",
+   "text": "Ja, kupil ti bom puncko. Ko dobim denar, ti kupim še boljšo, Babova punčka.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
    "ctx": 2,
    "kind": "joke",
    "before": [
-    "– Fantje, dajmo posneti dokumentarni film o naši sobi.",
-    "Hooman je izvlekel roko izpod odeje in rekel:"
-   ]
-  },
-  {
-   "id": "01/0069#8",
-   "where": "01/0069",
-   "text": "Naj krožim okoli tebe, jigaram. Vedno se smej.",
-   "q": "Maman tells her son she would circle around him again and again, an old loving phrase. Does this line sound tender?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Nasmehnem se in poizkušam raztegniti kožo na čelu, kolikor le zmorem."
-   ]
-  },
-  {
-   "id": "03/0385#9",
-   "where": "03/0385",
-   "text": "Bilo je pozno, ko sem prišel v študentski dom.",
-   "q": "Amir, a university student, comes back late to the dormitory where he lives. Does 'študentski dom' fit here?",
-   "ctx": 0,
-   "kind": "narration"
-  },
-  {
-   "id": "03/0491#10",
-   "where": "03/0491",
-   "text": "V istem hipu je ščurek pritekel izpod Hoomanove postelje in se vrnil pod njo.",
-   "q": "A cockroach runs out from under Hooman's bed and back again. Does this sentence read correctly?",
-   "ctx": 0,
-   "kind": "narration"
-  },
-  {
-   "id": "04b/1062#11",
-   "where": "04b/1062",
-   "text": "Ko se nauči naših imen, ji bomo všeč.",
-   "q": "A boy spray-painting their names says the girl will like them once she learns the names. Does this line read correctly?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Yaser je s sprejem, ki ga je suknil iz očetovega tovornjaka, na zid nasproti Negarine hiše pisal naša imena in govoril:"
-   ]
-  },
-  {
-   "id": "04b/0744#12",
-   "where": "04b/0744",
-   "text": "Zaobljubila sem se, da bom, če mu bo bolje, peš romala v Mašhad.",
-   "q": "Maman made a religious vow to walk to the shrine city if her son recovers. Does this line read correctly?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "…ki je sedel v dnevni sobi pred televizorjem in luščil bučna semena, in Maman, ki je sedela ob njem. Poročila so govorila o škodi zaradi obsežnih poplav v severnih in zahodnih provincah dežele. Od zadaj se mi je Maman zazdela kakor majhen krog, ki sedi ob večjem pravokotniku. Maman je govorila:"
-   ]
-  },
-  {
-   "id": "01/0042#13",
-   "where": "01/0042",
-   "text": "Torej namesto dežja pada z neba prst.",
-   "q": "A girl leads a playful imagination game: earth falls from the sky instead of rain. Does this sentence read correctly?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "– Zdaj si zamišljaj, da sva na planetu sredi druge galaksije. Tu je zemlja iz vode in nebo iz prsti."
+    "– Vžžž, Baba, Baba, mi kupis to veliko puncko?",
+    "Neki glas za mano reče:"
    ]
   },
   {
@@ -157,10 +40,98 @@
    ]
   },
   {
-   "id": "01/0174#15",
-   "where": "01/0174",
-   "text": "Huh, poglejte – se kdo od vas spomni ene dobre stvari pri vašem Babi?",
-   "q": "Maman challenges her children to name one good thing about their father. Does this question read correctly?",
+   "id": "04b/0146#11",
+   "where": "04b/0146",
+   "text": "Možganadrek. Siliš me, da vse povem do konca.",
+   "q": "Hooman calls a roommate shit-for-brains. Does 'Možganadrek' work as a crude insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ja, no, glas se je razširil po fakulteti."
+   ]
+  },
+  {
+   "id": "04b/0162#3",
+   "where": "04b/0162",
+   "text": "Ja, brž ko nas zagledajo, stisnejo ritne razpoke in se tako oddaljijo od nas, da bi jim najraje z obema nogama skočil v obraz.",
+   "q": "Farid says the Tehran students clench their asses in disgust when they see them. Does 'stisnejo ritne razpoke' sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0721#5",
+   "where": "04b/0721",
+   "text": "Stari, namesto da se tako vlečeš po postelji in se igraš z jajci, vstani in jih pošlji.",
+   "q": "Hooman crudely tells lazy Amir to stop lolling on the bed and get on with it. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0150#11",
+   "where": "04b/0150",
+   "text": "Če gre za leta, bi moral Bahmanu lizati jajca.",
+   "q": "Hooman mocks a roommate who demands respect for his age. Does this crude retort sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je proti Eskandarju nameril svoj debeli, zaobljeni palec in rekel:"
+   ]
+  },
+  {
+   "id": "03/0396#16",
+   "where": "03/0396",
+   "text": "Odgovor je, da ti ne pristoji lizati riti mojstru Hoomanu.",
+   "q": "Hooman crudely tells a roommate that kissing his ass doesn't suit him. Does this sound like dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar ni hotel odnehati. Rekel je, da je treba to raziskati do korena, in bil je prepričan, da bi, če bi se našel odgovor na to vprašanje, to bila velika pomoč Hoomanu in vsemu človeštvu. Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0182#9",
+   "where": "04b/0182",
+   "text": "Ti si večji vol od vseh. In postavo imaš za to.",
+   "q": "A young man insults a heavy-set roommate as the biggest ox of all. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Pojej mu glavo, no, nimamo živcev zate. Kaj ti veš, kaj pomeni elektrotehnika na Sharifu? In sploh, te je kdo vprašal za mnenje?"
+   ]
+  },
+  {
+   "id": "04b/0421#12",
+   "where": "04b/0421",
+   "text": "Leopard Farid, obvladaj živce in ne naredi morilske poteze.",
+   "q": "Hooman jokingly warns hot-headed Farid not to pull one of his murderous stunts. Does 'morilske poteze' sound natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "03/0189#14",
+   "where": "03/0189",
+   "text": "No, pojdi in kupi. Ko se steklo razbije, ne reci, da te nisem opozoril.",
+   "q": "Hamid, a boy, loses his temper in an argument with a friend. Does it sound like a child arguing?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "– Pfff, osel, kdo ve bolje – prijatelj bratranca mojstra našega svaka, ki je najbogatejši človek v Teheranu, ali ti, tele?"
+   ]
+  },
+  {
+   "id": "01/0178#1",
+   "where": "01/0178",
+   "text": "Rada bi, da bi postal odvisnik in ne bil takšen.",
+   "q": "Maman says she would rather her husband were an addict than the way he is. Does it sound natural?",
    "ctx": 1,
    "kind": "maman",
    "before": [
@@ -168,14 +139,36 @@
    ]
   },
   {
-   "id": "04b/0175#16",
-   "where": "04b/0175",
-   "text": "Ja. Tega Arasteja ne glej; pa naj je še tako trapast, rang na Konkoorju mu je bil štiriinsedemdeset.",
-   "q": "Hooman calls quiet, dreamy Amir goofy but brags about his top exam rank. Does 'trapast' fit for goofy?",
+   "id": "04b/0317#5",
+   "where": "04b/0317",
+   "text": "Tako me razjeziš, kadar tako molče sediš. Najraje bi te udarila s pestjo.",
+   "q": "A girl, exasperated by his silence, says she wants to punch him. Does this sound natural?",
    "ctx": 1,
-   "kind": "banter",
+   "kind": "dialogue",
    "before": [
-    "Hooman je rekel:"
+    "…da angel ne ve ničesar o ljubezni in ljubljenju, zato je svoja razodetja lepote namenil Adamu. Kako potem pričakuješ, da bo Njegovo stvarjenje gorelo za nekoga, ki o ljubezni ne ve niti prve stvari? Vzdihnila je. Para njenega diha se je v zavojih dvigala proti nebu, jaz pa sem jo molče gledal."
+   ]
+  },
+  {
+   "id": "04b/1321#6",
+   "where": "04b/1321",
+   "text": "»Tisto vino, ki je tam, je resnica ne prispodoba.«",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj."
+   ]
+  },
+  {
+   "id": "04b/0271#4",
+   "where": "04b/0271",
+   "text": "Ne vsak, ki povzroči, da njegov lastni obraz zažari, obvlada umetnost kradenja src; ne vsak, ki izdela ogledalo, pozna Aleksandrovo veščino.",
+   "q": "He reads her a Hafez couplet about blushing and mirror-making. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…namrščila, vrgla bo za teboj še par kletvic. Odprl sem knjigo. Izdihnila je zadržani dih iz prsi in rekla: – Spet hoče brati pesem. Resnično ne morem doumeti – tako majhna knjiga, in karkoli se zgodi, vedno v njej najdeš nekaj za to. Nič nisem rekel. – Prav, prav, ne kujaj se, beri. Bral sem: –"
    ]
   }
  ]

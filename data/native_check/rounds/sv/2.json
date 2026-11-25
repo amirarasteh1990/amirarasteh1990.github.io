@@ -1,187 +1,337 @@
 {
+ "format": 2,
  "lang": "sv",
  "slug": "sv",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålskoll",
+  "lead": "Du behöver inte ha läst boken. Svara på så många du vill.",
+  "persian_words": "Maman (mor), Baba (far) och -jan (kära) är persiska ord som har behållits i boken.",
+  "page": "Sida",
+  "correct": "Rätt",
+  "needs_change": "Behöver ändras",
+  "not_sure": "Osäker",
+  "how_say": "Hur skulle du säga det?",
+  "meaning": "Vad tror du att det betyder?",
+  "optional": "(valfritt)",
+  "your_name": "Ditt namn",
+  "thanks_tick": "Visa mitt namn på tacksidan",
+  "private": "Dina svar går bara till författaren.",
+  "send": "Skicka",
+  "send_continue": "Skicka och fortsätt till sida {n}",
+  "sending": "Skickar…",
+  "popup_title": "Tack!",
+  "popup_text": "Vill du ha ditt namn på webbplatsens tacksida? Gör klart alla 4 sidorna, så lägger vi gärna till det.",
+  "popup_button": "Fortsätt till sida {n}",
+  "arrived": "Tack, dina svar från sida {n} har kommit fram.",
+  "thanks_last": "Tack! Dina svar har kommit fram.",
+  "all_done": "Du har skickat alla sidor. Tack för allihop!",
+  "already_sent": "Du har redan skickat den här sidan från den här enheten. Tack!",
+  "continue_with": "Fortsätt med sida {n}",
+  "need_one": "Välj ett svar för minst en rad.",
+  "note_no_answer": "En rad har en kommentar: välj ett svar för den också.",
+  "name_needed": "Skriv namnet du vill ska stå med, eller bocka ur rutan.",
+  "not_connected": "Skickfunktionen är inte ansluten än.",
+  "too_long": "Det tog för lång tid att skicka.",
+  "cannot_send": "Svaren kunde inte skickas härifrån.",
+  "use_email": "Använd e-postknappen nedan.",
+  "fallback": "Svaren kunde inte skickas från den här sidan. Mejla dem i stället; inget av det du skrivit går förlorat.",
+  "email_button": "Mejla svaren",
+  "shortened": "Några kommentarer var för långa för en e-postlänk och kortades där. Dina fullständiga svar finns nedan; klistra in dem i mejlet.",
+  "noscript": "Att skicka kräver JavaScript. Du kan också mejla dina svar till {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0014#1",
-   "where": "01/0014",
-   "text": "– Lägg det i fryseln. Lägger du det i fryseln händer det ingenting med det, inte ens på ett år.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say frysen as 'fryseln'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ja, det gjorde jag, Nini-jan. Oroa dig inte. Bara lite av Mahboubs hemgjorda lavashak, torkad fruktpuré, är kvar."
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "– I trettiotvå månader har jag älskat Er. På avstånd. Utan att Ni visste det. I tystnad, utan ett enda ord.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Det fanns till exempel tyfus, eller tuberkulos, eller mässling. Dem kallade man dödliga. Hmm, inte ens de dödade så många. Eller kolera, till exempel.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…gäst länge. När det först kom sade TV:n två av hundra, och nu säger den tio procent. Det är mycket orättvist, vid Gud. En nyser på ena sidan av gatan, och någon på andra sidan får det och dör. Jag hade aldrig sett eller hört något liknande. Inte ens Bibis generation hade berättat om något sådant."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Detta är den lösa änden av en tråd av ord som en gång var ljud.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "– Den värsta sjukdomen är Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, det finns en sjukdom som gradvis sätter musklerna ur funktion. Det är en mycket dålig sjukdom.",
-    "Maman sa:"
+   "key": "one",
+   "title": null,
+   "q": "Is it clear the children carry the yarn around the house?",
+   "q_lang": "en",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s19",
+     "text": "Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#4",
-   "where": "06/0052",
-   "text": "Till slut ringde Mahboub, och de kom med en amublans och hämtade Naney – ja, det är corona, sa de.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say ambulans as 'amublans'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…inte höra någonting och förstår inte vad som händer, men jag hade sagt till Naney flera gånger: Haaj Khanom, om ni sitter ute i gränden får ni corona, Gud förbjude det. Då satt de bara där ännu mer. Men Amir, Naneys bröst rosslade så illa. Jag sa till Mahboub och de andra – barn, det här är corona."
+   "key": "one",
+   "title": null,
+   "q": "Two lines of a sung poem name the song. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0935#s41",
+     "text": "– \"För Attar är det ljuvligare att gråta till gryningen\" eller \"nu är han mer slagen\"?",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0206#5",
-   "where": "01/0206",
-   "text": "Det är bra nu också, ja, men jag går fortfarande hela tiden med den här stressen över att han kan dyka upp när som helst.",
-   "q": "Maman admits she lives in constant worry that Baba may turn up at any moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Men må dina händer aldrig värka – de där tre månaderna när du tog med honom till Danmark, vilken tid jag hade. Jag förstod äntligen hur livet kan kännas."
+   "key": "one",
+   "title": null,
+   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0175#s44",
+     "text": "– Rikare än vännen till kusinen till...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#6",
-   "where": "01/0182",
-   "text": "– Vad-karl var han inte?",
-   "q": "Maman, hard of hearing, catches only the end of 'kvinnokarl'. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Han var ingen kvinnokarl heller.",
-    "Maman säger:"
+   "key": "poetry",
+   "title": "Poesi",
+   "q": "Det här är rader ur dikter. Låter var och en bra som poesi på svenska?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... Jag tar inte Salomos signetring till något pris, ty ibland vilar över den handen av ...",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "Man kan skriva på allt",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "skriv på vattnet med ditt eget blod",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "så att den som följer i ditt kölvatten",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "har vandrat här.",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "Mina drömmars ljus tändes",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Jag närer inget hopp om din återkomst",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Men om din väg för dig förbi",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "kom in i mina drömmar igen",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Jag tror att mina drömmar inte har trott att du är borta",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Mina drömmars ljus ... mina drömmars ljus blev ... mina drömmars ljus tändes",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0387#7",
-   "where": "04b/0387",
-   "text": "– I natt kunde jag höra dig idissla. Synd att min Baba sov, annars hade jag gått upp och dragit ut varenda sötsak ur din strupe.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Does 'idissla' land as that tease?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar vände sig mot Hooman och sa:"
+   "key": "word_choice",
+   "title": "Enstaka ord",
+   "q": "Är ordet i varje rad det rätta? Vad det ska betyda står under raden.",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#word_",
+     "text": "Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden.",
+     "note": "\"nystar jag upp\" = I unravel, unwind the thread"
+    },
+    {
+     "id": "01/0261#word_",
+     "text": "– Mm-hm, han har förändrats mycket, mycket. Han har blivit så mager och mörk.",
+     "note": "\"mager och mörk\" = thin and darker-skinned from the sun"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "På ett sätt kan man säga att de erövrade universitetet. Karroubi är kärlek, på riktigt.",
+     "note": "\"Karroubi är kärlek, på riktigt\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04a/0062#word_",
+     "text": "– Många misslyckas här. De går åt vänster.",
+     "note": "\"misslyckas\" = fail, go wrong (as a boy says it)"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "– Hjärndöd. Du tvingar mig att stava ut allt.",
+     "note": "\"stava ut allt\" = spell it all out, say it plainly"
+    },
+    {
+     "id": "04b/0171#word_",
+     "text": "Vi gjorde alla de där övningsproven och hamnade ändå som rumskamrater med den där antikviteten.",
+     "note": "\"den där antikviteten\" = odd, old-fashioned person (mocking)"
+    },
+    {
+     "id": "04b/0173#word_",
+     "text": "– Så ni är allihop väldigt smarta pojkar.",
+     "note": "\"väldigt smarta pojkar\" = very clever boys, said a bit patronizingly"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "– Jag skulle ha föredragit att dela rum med dem framför en kukhjärna som du.",
+     "note": "\"kukhjärna\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/0226#word_",
+     "text": "– ... varje gång jag kom till lektionerna och uppgifterna för min skitiga andra utbildning, såg jag dem gräla.",
+     "note": "\"min skitiga andra utbildning\" = my crappy second degree (crude grumble)"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "För ett par år sedan hörde jag från Örnaöga News att den där snobben hade rest till Australien också, på sätt och vis efter flickan som ni båda älskade.",
+     "note": "\"den där snobben\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0270#word_",
+     "text": "– Jag vet. Jag är inte dum. Men det här duger inte. Du måste komma ut ur din tillflyktsort och faktiskt göra något, inte komma hit och sitta och fantisera.",
+     "note": "\"ut ur din tillflyktsort\" = come out of your safe shell"
+    },
+    {
+     "id": "04b/0394#word_",
+     "text": "– ... vi blev knullade.",
+     "note": "\"vi blev knullade\" = we got screwed over, cheated"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "– Leopard-Farid, håll nerverna i schack och gör ingen mordisk manöver.",
+     "note": "\"mordisk manöver\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0721#word_",
+     "text": "– Äldi, i stället för att slänga dig på sängen så där och leka med dina pungkulor, res dig upp och skicka dem. Det är ett fynd.",
+     "note": "\"pungkulor\" = your balls (crude: idling, doing nothing)"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– Du är väldigt smygig.",
+     "note": "\"väldigt smygig\" = very sneaky (playful teasing)"
+    },
+    {
+     "id": "04b/1274#word_",
+     "text": "berusade och",
+     "note": "\"berusade\" = drunk with love, in the mystic sense"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "brända",
+     "note": "\"brända\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Man blir skitförvirrad. Ju mer man tänker på det, desto mer skitförvirrad blir man.",
+     "note": "\"skitförvirrad\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Och med skälvande händer bläddrade jag snabbt genom ghazalerna och letade efter det beit ur Hafez som, likt målningen, som den andra flickan hade sagt, skulle göra oss mer skitförvirrade ju djupare vi sjönk ner i det – för att kunna visa det för Niloofar.",
+     "note": "\"mer skitförvirrade\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "04b/1392#word_",
+     "text": "Mina drömmars ljus blinkar nu",
+     "note": "\"blinkar\" = now flickers, like a failing light"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Gå och hämta lite frön till Ghassem och de andra, de vill titta på film.",
+     "note": "\"lite frön\" = roasted seeds to snack on"
+    }
    ]
-  },
-  {
-   "id": "04b/1265#8",
-   "where": "04b/1265",
-   "text": "– Ja, jag töper den. När jag får pengar töper jag en ännu bättre åt dig, Babas flicka.",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does 'töper' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Vrrrumm – Baba, Baba, viw du töpa den stoa dockan åt mej?",
-    "En röst bakom mig säger:"
-   ]
-  },
-  {
-   "id": "04b/0591#9",
-   "where": "04b/0591",
-   "text": "– Pir-till-pir?",
-   "q": "Amir mishears 'peer-to-peer' as Persian pir, elder, which fits his nickname. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ett slags peer-to-peer-elektroniska pengar.",
-    "Jag sa:"
-   ]
-  },
-  {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "– Men han sabbade det. Örnaöga säger peer-to-peer; Taverny säger Äldi-till-Äldi.",
-   "q": "Farid mocks Amir's mishearing by twisting it into Amir's nicknames. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "04b/0935#11",
-   "where": "04b/0935",
-   "text": "– \"För Attar är det ljuvligare att gråta till gryningen\" eller \"nu är han mer slagen\"?",
-   "q": "Two lines of a sung poem are named here, the line about weeping till dawn and the line about being slain. Is that clear?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Vill du att jag skickar dig ett spår?",
-    "– Ja, det med Attar-versen."
-   ]
-  },
-  {
-   "id": "04a/0080#12",
-   "where": "04a/0080",
-   "text": "– Varför gick ni inte till marmelhuset?",
-   "q": "A boy scolds his little brothers, repeating his own mistake 'marmel' for marmor. Does 'marmelhuset' read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…röd. Som den stora röda dörren. Jag satte mig bredvid rännstenen. Jag lade fötterna i rännstenen. Det fanns inget vatten. Mitt hjärta var tomt. Mannen kom tillbaka. Framhjulet snurrade inte mer. Han gav Omid en örfil. Vi grät båda två. Mannen gick. Ghassem kom tillbaka. Han skällde ut oss. Han sa:"
-   ]
-  },
-  {
-   "id": "04b/0460#13",
-   "where": "04b/0460",
-   "text": "– Vad fan är det för fel på dig nu, som fått den att stå mot oss, Alain Kuklon?",
-   "q": "Hooman crudely mocks Eskandar for sitting up proudly, with a sexual double meaning. Does this crude joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sa:"
-   ]
-  },
-  {
-   "id": "03/0432#14",
-   "where": "03/0432",
-   "text": "– ... och formar munnen som en hönsrumpa och sliter dig itu för att tala som honom. Det är inte honom jag menar. Jag menar Alain Kuklon. Kuuuk. Punkt, slut.",
-   "q": "Hooman finishes his rude pun on the actor Alain Delon. Does this crude ending sound funny and natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman rundade munnen och gjorde sin näsa så liten och skrynklig som han kunde — precis som Eskandars ansikte blev när han talade."
-   ]
-  },
-  {
-   "id": "03/0290#15",
-   "where": "03/0290",
-   "text": "– Är Arasteh en nedklippt Araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Herr Arasteh.",
-    "Jag vänder huvudet i hans riktning."
-   ]
-  },
-  {
-   "id": "04b/1320#16",
-   "where": "04b/1320",
-   "text": "Och med skälvande händer bläddrade jag snabbt genom ghazalerna och letade efter det beit ur Hafez som, likt målningen, som den andra flickan hade sagt, skulle göra oss mer skitförvirrade ju djupare vi sjönk ner i det – för att kunna visa det för Niloofar.",
-   "q": "Amir echoes a girl's crude word about a mind-bending painting. Does 'mer skitförvirrade' read naturally here?",
-   "ctx": 0,
-   "kind": "joke"
   }
- ]
+ ],
+ "first": 7
 }

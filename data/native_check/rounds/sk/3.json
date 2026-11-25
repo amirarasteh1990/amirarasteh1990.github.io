@@ -1,189 +1,277 @@
 {
+ "format": 2,
  "lang": "sk",
  "slug": "sk",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Kontrola rodenými hovoriacimi",
+  "lead": "Knihu nemusíte mať prečítanú. Odpovedzte na toľko riadkov, na koľko chcete.",
+  "persian_words": "Maman (matka), Baba (otec) a -jan (drahý) sú perzské slová, ktoré kniha ponecháva.",
+  "page": "Strana",
+  "correct": "Správne",
+  "needs_change": "Treba zmeniť",
+  "not_sure": "Neviem isto",
+  "how_say": "Ako by ste to povedali?",
+  "meaning": "Čo podľa vás znamená?",
+  "optional": "(nepovinné)",
+  "your_name": "Vaše meno",
+  "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
+  "private": "Vaše odpovede dostane iba autor.",
+  "send": "Odoslať",
+  "send_continue": "Odoslať a pokračovať na stranu {n}",
+  "sending": "Odosiela sa…",
+  "popup_title": "Ďakujeme!",
+  "popup_text": "Chceli by ste mať svoje meno na stránke Poďakovanie na webe? Dokončite všetky 4 strany a radi ho tam pridáme.",
+  "popup_button": "Pokračovať na stranu {n}",
+  "arrived": "Ďakujeme, vaše odpovede zo strany {n} dorazili.",
+  "thanks_last": "Ďakujeme! Vaše odpovede dorazili.",
+  "all_done": "Odoslali ste všetky strany. Ďakujeme za každú z nich!",
+  "already_sent": "Túto stranu ste z tohto zariadenia už odoslali. Ďakujeme!",
+  "continue_with": "Pokračovať stranou {n}",
+  "need_one": "Vyberte odpoveď aspoň pri jednom riadku.",
+  "note_no_answer": "Pri jednom riadku je poznámka: vyberte, prosím, odpoveď aj preň.",
+  "name_needed": "Doplňte meno, ktoré chcete uviesť, alebo zrušte zaškrtnutie.",
+  "not_connected": "Odosielanie ešte nie je pripojené.",
+  "too_long": "Odosielanie trvalo príliš dlho.",
+  "cannot_send": "Odpovede sa odtiaľto nepodarilo odoslať.",
+  "use_email": "Použite, prosím, tlačidlo e-mailu nižšie.",
+  "fallback": "Odpovede sa z tejto stránky nepodarilo odoslať. Pošlite ich, prosím, e-mailom; nič z toho, čo ste napísali, sa nestratilo.",
+  "email_button": "Poslať odpovede e-mailom",
+  "shortened": "Niektoré poznámky boli pre e-mailový odkaz príliš dlhé, preto sa tam skrátili. Vaše úplné odpovede sú nižšie; vložte ich, prosím, do e-mailu.",
+  "noscript": "Odosielanie potrebuje JavaScript. Odpovede môžete poslať aj e-mailom na {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "03/0630#1",
-   "where": "03/0630",
-   "text": "Je Taverny, naozaj a úprimne.",
-   "q": "Farid adds a third nickname for Amir, 'Taverny', from the same tavern idea. Does this nickname sound natural to a Slovak reader?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Hooman písal niečo do knihy perom a hovoril:",
-    "– Haha, Starší z Krčmy, Krčmárik, výborne. Trafil si do čierneho, Leopard Farid.",
-    "Farid povedal:"
+   "key": "maman",
+   "title": "Hlas matky",
+   "q": "Matka hovorí vrúcne, niekedy karhavo, ako obyčajná žena z malého mesta. Znie každý riadok ako ona?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Salaam, jigaram. Ako sa máš? Si zdravý? Cítiš sa dobre?",
+     "note": null
+    },
+    {
+     "id": "01/0069#maman",
+     "text": "Nech krúžim okolo teba dookola, jigaram. Výborne. Vždy sa usmievaj.",
+     "note": null
+    },
+    {
+     "id": "01/0077#maman",
+     "text": "Sawaab je vtedy, keď sú ľudia radi, že sa vidia. Nie vtedy, keď sa len navzájom rozčuľujú.",
+     "note": null
+    },
+    {
+     "id": "01/0090#maman",
+     "text": "Nie. Ja som tá chudera, nikdy nič nehovorím, vždy mlčím.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Choď tam, kde nie je veľa ľudí.",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "Ten s tým hlúpym učiteľom? Mm-hm, pozrite si ten. Je vtipný, zasmejte sa.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Tu všetci chceme zavolať a povedať, že nás otravuje tridsať rokov, nech prídu a odvezú ho.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Nech som koľkokrát hovorila, nebi deti, hovoril: v bojoch som utrpel bojový šok, neviem si pomôcť.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "Ohováranie? Ohováranie je vtedy, keď ti neublížili.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "Hm, pozrite — spomenie si niekto z vás na jedinú dobrú vec o vašom Babovi? Povedzte, a budem mlčať.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "Kiežby sa stal závislým a nebol taký.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "Ženy? Kiežby za nimi behal. Ktorá ho chce, nech si ho vezme. Ešte niečo prihodíme.",
+     "note": null
+    },
+    {
+     "id": "01/0188#maman",
+     "text": "Je v tamtom dome. V dome na konci dvora. Stále sa učí.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Prešli sme celú cestu z bulváru domov pešo a on stále zdvíhal ruku — akoby ju ľudia mali bozkávať ako svätú vec.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Hmm, nehovorím, aby ste sa nezamilovali. Najprv spoznajte človeka, zosobášte sa, a potom, ak chcete, zaľúbte sa.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "Štyrikrát som ťa našla. Teraz poď, môj dobrý chlapec.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "Nie. Kým máš túto niť v ruke, nestratíš sa. Druhý koniec mám ja.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "Dobre, môj šikovný chlapec! Keď ťa niečo desí, použij trik, aby si sa nebál.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "Jaj. Tak tie krajiny museli byť blízko seba. Kedy bolo to zemetrasenie v Bame?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "Nastal koniec sveta. Bibina generácia hovorievala, že keď nastane koniec sveta, zem sa bude stále triasť.",
+     "note": null
+    },
+    {
+     "id": "06/0009#maman",
+     "text": "Myslím, prešiel si?",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "Hmm, tak ja zase hovorím, že aj mne je ťažko na srdci. Nechajte ma trochu ísť za kamarátkami.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Ty len dbaj na jedlo, na ostatné mi nezáleží.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "V nemocnici stále volali, rodina pani Adhamovej. Nikto sa nepohol.",
+     "note": null
+    },
+    {
+     "id": "06/0192#maman",
+     "text": "Mimochodom, Nana-pesar-jan, už si sa nasťahoval do nového bytu?",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "Takto sa poďakuješ?",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "Ach, zakaždým, keď mu povieš, nech niečo donesie, akoby ho takto trafil prúd.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "Joj, na Nini odrazu prišla ospalosť. Som hore od rána bez spánku.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0628#2",
-   "where": "03/0628",
-   "text": "Haha, Starší z Krčmy, Krčmárik, výborne. Trafil si do čierneho, Leopard Farid.",
-   "q": "Hooman shortens the nickname 'Starší z Krčmy' to a pet form. Does 'Krčmárik' work as that short nickname?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Objektívne.",
-    "Hooman písal niečo do knihy perom a hovoril:"
-   ]
-  },
-  {
-   "id": "06/0188#3",
-   "where": "06/0188",
-   "text": "Nedajbože, nehovor tak. Matka sa má obetovať za dieťa, nie dieťa za matku.",
-   "q": "Her son has just said he would give his life for her. Maman gently scolds him. Does this sound like her?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Dal by som za teba život, Nini-jan. Tá tvoja hlava tak dobre pracuje.",
-    "– Kheeeee, khe, khe."
-   ]
-  },
-  {
-   "id": "01/0069#4",
-   "where": "01/0069",
-   "text": "Nech krúžim okolo teba dookola, jigaram. Výborne. Vždy sa usmievaj.",
-   "q": "Maman tells her son she would circle around him again and again, an old loving phrase. Does this line sound tender?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Usmejem sa a snažím sa natiahnuť kožu na čele čo najviac."
-   ]
-  },
-  {
-   "id": "03/0528#5",
-   "where": "03/0528",
-   "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
-   "q": "He read his poem to his mother at the very moment the year turned at Norouz. Does this line make that moment clear?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "01/0152#6",
-   "where": "01/0152",
-   "text": "Jéééj. Kiežby som vedel, čo sa odohráva v Nini-janinej hlave.",
-   "q": "Ghassem lets out a long, fond sigh of delight at his mother's joke. Does 'Jéééj' sound like that here?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Nie, slzy nesťahujte. Stiahnite úsmevy.",
-    "Všetci sa smejú. Ghassem hovorí:"
-   ]
-  },
-  {
-   "id": "06/0186#7",
-   "where": "06/0186",
-   "text": "Dal by som za teba život, Nini-jan. Tá tvoja hlava tak dobre pracuje.",
-   "q": "Amir fondly praises his mother, whom the family lovingly call Nini, for her quick wit. Does this sound warm and natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Hovorím:"
-   ]
-  },
-  {
-   "id": "03/0278#8",
-   "where": "03/0278",
-   "text": "Karroubi je láska, úprimne.",
-   "q": "Farid gushes in student slang about a politician he adores. Does this sound like an excited young man?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hej, Taverny, bež. Bež, poďme. Hovoria, že Karroubiho nepustili na univerzitu. Jeho prívrženci vylomili bránu Háfez a vstúpili. Dá sa povedať, že dobyli univerzitu."
-   ]
-  },
-  {
-   "id": "04b/0616#9",
-   "where": "04b/0616",
-   "text": "Dobre, Orlie Oko, dobre. Len si nestrkaj okuliare do laptopu.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does this tease land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman povedal:"
-   ]
-  },
-  {
-   "id": "03/0490#10",
-   "where": "03/0490",
-   "text": "Daj pozor, aby si nepraskol, pán Kokot.",
-   "q": "Hooman shortens his rude nickname for Eskandar to 'pán Kokot' as Eskandar puffs himself up. Does this jab sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman povedal:"
-   ]
-  },
-  {
-   "id": "04b/0571#11",
-   "where": "04b/0571",
-   "text": "Najprv poďte zdokumentovať tento palec, a potom natočte film o čomkoľvek chcete.",
-   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film idea. Does this read as a rude joke?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ľudia, poďme natočiť dokumentárny film o našej izbe.",
-    "Hooman vytiahol ruku spod prikrývky a povedal:"
-   ]
-  },
-  {
-   "id": "03/0055#12",
-   "where": "03/0055",
-   "text": "Ja proste takto rozprávam, a vy myslíte, že verše skladám.",
-   "q": "Hamid, a boy, answers in the rhythm and rhyme of his own poems. Does this line sound like a playful rhyme?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid povedal rovnakým rytmom, akým prednášal svoje básne:"
-   ]
-  },
-  {
-   "id": "04a/0080#13",
-   "where": "04a/0080",
-   "text": "Prečo ste nešli do marmolového domu?",
-   "q": "Ghassem, a boy, repeats his made-up word for marble. Does 'marmolového' read as the same childish mistake, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Predné koleso sa točilo. Bol červený. Ako tie isté veľké červené dvere. Sadol som si vedľa žľabu. Nohy som dal do žľabu. Voda v ňom nebola. Srdce som mal prázdne. Muž sa vrátil. Predné koleso sa už netočilo. Dal Omidovi facku. Obaja sme plakali. Muž odišiel. Ghassem sa vrátil. Karhal nás. Povedal:"
-   ]
-  },
-  {
-   "id": "03/0373#14",
-   "where": "03/0373",
-   "text": "Hovorím to, čo Ameroka hovorí, že Irán zastavil jadrový program. Znamená to, že bude vojna alebo nie?",
-   "q": "Maman, worried about war, again says 'Ameroka' for America. Does the whole line sound like a mother from a small town?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Čo?"
-   ]
-  },
-  {
-   "id": "01/0132#15",
-   "where": "01/0132",
-   "text": "Strkaj nos do každého kúta. Starí ľudia hovorievali: nakukni do každého posledného rohu.",
-   "q": "Maman urges her son to explore and quotes an old saying. Does it sound like a folk saying she would use?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Mm-hm, dobre robíš. Kým máš príležitosť, choď pozrieť všetky dediny."
-   ]
-  },
-  {
-   "id": "04b/0591#16",
-   "where": "04b/0591",
-   "text": "Pír na pír?",
-   "q": "Amir mishears the computer term 'peer-to-peer' as 'Pír na pír'. Would Slovak readers get it? If not, what word could carry it?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "– A to je čo?",
-    "– Nejaké elektronické peniaze peer-to-peer.",
-    "Ja som povedal:"
+   "key": "child_talk",
+   "title": "Detská reč",
+   "q": "Tieto riadky hovoria deti. Znie každý ako dieťa?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "To je poriadny kus.",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "No tak, kúp si ju. Keď sa sklenená strecha rozbije, nehovor, že som ťa nevaroval.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "Dobre, nasol menej. Ale nie príliš málo. Len trochu menej.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "Volá sa Quchanský bazár a náš dom je na konci Quchanského bazára.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "Tretia časť je križovatka. Križovatka znamená, že je naozaj veľká.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "Mnoho ľudí tu zlyhá. Idú doľava.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "Ľavá strana je nebezpečná. Ten dom s červenými dverami patrí veľmi nahnevanému starému mužovi. Ešte nahnevanejšiemu ako Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "Naša škola je na konci. Posledný dom. Ak budeme hluční, učiteľ nás udrie pravítkom po rukách.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "Na druhej strane školy je cintorín. Je veľmi starý. Niektoré hroby nemajú kamene. Vidieť kosti mŕtvych.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "Žiadne otázky. Počúvaj veliteľa.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "Hej, prečo si odhodil palicu? Čím potom zazvoníme na zvonček?",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "Keď sa naučí naše mená, bude nás mať rada.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 18
 }

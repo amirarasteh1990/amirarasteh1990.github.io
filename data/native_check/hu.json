@@ -2,44 +2,16 @@
  "lang": "hu",
  "slug": "hu",
  "dir": "ltr",
- "version": "2026-11-22",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Erről az oldalról kibontom a szavak fonalát, a másik oldalról te összeszeded azt.",
-   "q": "The writer unravels a thread of words; the reader gathers it up. Is it clear what 'azt' refers to?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Menj ki is. Menj olyan helyekre, ahol nincsenek sokan.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "id": "04b/1263#13",
+   "where": "04b/1263",
+   "text": "– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
-    "– Ó, milyen jó. Mm-hm, megrendeled, és elhozzák. De Amir-jan, ne maradj mindig otthon."
-   ]
-  },
-  {
-   "id": "01/0166#3",
-   "where": "01/0166",
-   "text": "Hiába mondtam, ne üsd a gyerekeket, azt mondta, a háborúban lökötté váltam, nem tehetek róla.",
-   "q": "Maman quotes her husband: the war left him shell-shocked. Does 'lökötté váltam' say that?",
-   "ctx": 1,
-   "before": [
-    "– Csak viccből mondtuk, nevessünk, Nana-pesar-jan. Elmenne ő? Ha elmenne, a szívem vágya lenne. Az Istenre. A saját életemre esküszöm. Ami Hásemmel és Abolfazllal történt, az is az ő hibája volt. Mindig verte őket."
-   ]
-  },
-  {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bah, legalább nem tépted volna szét a hadirokkantpapírjaidat, én még hagyján, de ezek a gyerekek mit vétkeztek, hogy elviselik a vitáidat, hallgatják a kokht-kokht köhögésedet éjjel-nappal, tönkremegy az idegzetük, és semmi hasznot sem húznak abból, hogy hadirokkant vagy, legalábbis?",
-   "q": "Maman, talking to her son, suddenly speaks straight to the absent Baba. Does this sentence read naturally?",
-   "ctx": 2,
-   "before": [
-    "– Igazad van, Nini-jan, de mit mondjak? Mégiscsak a mi Babánk.",
-    "– Mm-hm, Nana-pesar-jan. Bibi, Isten nyugtassa, ilyenkor azt szokta mondani: ha mondom, a nyelvem ég; ha nem mondom, a csontjaim veleje ég."
+    "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:"
    ]
   },
   {
@@ -54,72 +26,13 @@
    ]
   },
   {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alain Faszlonnak kellett volna lennie.",
-   "q": "'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Would Hungarian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0585#7",
-   "where": "03/0585",
-   "text": "Eszkandar és Mejszam elkezdtek elemezni, hogy ami a gépészmérnöki karon történt, az egy marék, amely megmutatja az egész rakományt.",
-   "q": "They mean what happened at the faculty is a small sample that shows the whole. Is the meaning clear?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0664#8",
-   "where": "03/0664",
-   "text": "A tévéből azt mondták, csináltak egy bárányt, amely hasonlít a többi bárányhoz.",
-   "q": "TV news about Dolly, the cloned sheep. Does 'bárányt' sound right here?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/0855#9",
-   "where": "04b/0855",
-   "text": "Addigra annak az embernek az ingéből kiinduló tűz, aki egy tunéziai utcán felgyújtotta magát, már több ország kiterjedésűvé nőtt, és lassan kihunyóban volt.",
-   "q": "The fire is the Arab Spring, started by a Tunisian man burning himself. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1078#10",
-   "where": "04b/1078",
-   "text": "– Áá, kösz...",
-   "q": "She begins to thank him and stops mid-word. Does this read as a thank-you cut short?",
-   "ctx": 2,
-   "before": [
-    "– Nem akartam semmi rosszat, ennél az asztalnál rossz a forrasztóberendezés.",
-    "Azt mondta:"
-   ]
-  },
-  {
-   "id": "04b/1228#11",
-   "where": "04b/1228",
-   "text": "– Hamíd, az egész vagyonodat a sógorotok mestere unokatestvérének barátjának, aki a leggazdagabb ember Teheránban, a szavai miatt szórtad ki a szélbe.",
-   "q": "Taghi mocks Hamid, who lost his prized hair over this rich man's advice. Does the sentence read naturally?",
+   "id": "04b/1312#15",
+   "where": "04b/1312",
+   "text": "Az ember szarrá szédül tőle. Minél többet gondolkodsz rajta, annál jobban szarrá szédülsz.",
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
    "ctx": 1,
    "before": [
-    "…unokatestvérének barátja Babylisst használt a hajához. Hamíd is Babylisst akart a hajába. A negyed öreg borbélya, akinek egy ollón, néhány fésűn és egy kézi hajnyírón kívül semmije sem volt, a Babylisst ba bistnek, „hússzal”, hallotta, és Hamíd haját húszas nyíróval levágta. Taghi azt mondta:"
-   ]
-  },
-  {
-   "id": "04b/1262#12",
-   "where": "04b/1262",
-   "text": "Autózás, a hét kővel játszott haft-sang, szamár-rendőr, paradicsom az utca közepén, és mindenekfölött a foci Kúcsán város Stadio delle Alpijában.",
-   "q": "A list of street games. Is 'paradicsom az utca közepén' clearly a game?",
-   "ctx": 1,
-   "before": [
-    "…továbbra is afelé a sikátor felé vonzotta a gondolatainkat. Tavasz beállta előtt Negár családja a szemközti sikátor fiainak zaklatásai miatt elköltözött a környékünkről, és az a ház is olyan lett, mint a környék többi háza. Felszabadultunk, és hosszú idő után visszatértünk a régi játékainkhoz."
-   ]
-  },
-  {
-   "id": "04b/1263#13",
-   "where": "04b/1263",
-   "text": "– Vííííű, Baba, Baba, megveszed netem ezt a nagy babát?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…azt a megnyugtató, sötét csendet, de nem adott elég fényt ahhoz, hogy bárhová is vezessen. Egy villogó lámpát egy lány kezében, akiről sosem tudtam, hová helyezzem háza ajtajának színét egy színesceruza-dobozban. Egy kislány jön zúgva, és megáll mellettem. Nézi a játékokat. Azt mondja:"
+    "– ...Nézzétek, ez tényleg elgondolkodtató. Ezt rajzolta, és aláírta: ez nem pipa."
    ]
   },
   {
@@ -135,13 +48,63 @@
    ]
   },
   {
-   "id": "04b/1312#15",
-   "where": "04b/1312",
-   "text": "Az ember szarrá szédül tőle. Minél többet gondolkodsz rajta, annál jobban szarrá szédülsz.",
-   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
-   "ctx": 1,
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "Te meg azzal a faszankodó beszédmodoroddal a nevednek Alain Faszlonnak kellett volna lennie.",
+   "q": "'Alain Faszlon' is meant as a rude pun on the actor Alain Delon. Would Hungarian readers get it? If not, what word could carry it?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Nem esik az eső felfelé.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Rövid a kezem, és veled az egyesülés messze van.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Ne egyél bánatot, okos fiam.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Azt mondom, ha csak így folyton itt ülsz és verset olvasol, attól nem sül meg a kenyered.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Azt mondja: „Az évet jó tavasza árulja el.”",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Azt mondta, rohad a szívem.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bah, legalább nem tépted volna szét a hadirokkantpapírjaidat, én még hagyján, de ezek a gyerekek mit vétkeztek, hogy elviselik a vitáidat, hallgatják a kokht-kokht köhögésedet éjjel-nappal, tönkremegy az idegzetük, és semmi hasznot sem húznak abból, hogy hadirokkant vagy, legalábbis?",
+   "q": "Maman, talking to her son, suddenly speaks straight to the absent Baba. Does this sentence read naturally?",
+   "ctx": 2,
    "before": [
-    "– ...Nézzétek, ez tényleg elgondolkodtató. Ezt rajzolta, és aláírta: ez nem pipa."
+    "– Igazad van, Nini-jan, de mit mondjak? Mégiscsak a mi Babánk.",
+    "– Mm-hm, Nana-pesar-jan. Bibi, Isten nyugtassa, ilyenkor azt szokta mondani: ha mondom, a nyelvem ég; ha nem mondom, a csontjaim veleje ég."
    ]
   },
   {
@@ -152,14 +115,11 @@
    "ctx": 0
   },
   {
-   "id": "06/0201#17",
-   "where": "06/0201",
-   "text": "törött perzsájával – a nagynéném tanult egy keveset – valahogy megértette vele, hogy mielőtt a külföldiek jöttek Aahankeshire, pontosan így mondta: Aahankeshi, és a nagynéném is az ő perzsa szavát ismételte: Aahankeshi, vagyis „vashúzás”; az Aahankeshi előtt két kockacukorral itta a teáját, most viszont kénytelen egy kockával elviselni a tea keserűségét.",
-   "q": "The old tea-maker calls the railway building 'Aahankeshi', iron-pulling. Does this sentence make sense?",
-   "ctx": 1,
-   "before": [
-    "…az ott dolgozó mérnököket és munkásokat, akik az ország déli és északi részét összekötő vasútvonalat építették. Haláláig minden alkalommal, ha Irán szóba jött, két dolgot ismételt. Az egyik az volt, hogy volt egy öregember, aki teát készített nekik, és mindig belemártotta a cukorkockáját a teájába;"
-   ]
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Erről az oldalról kibontom a szavak fonalát, a másik oldalról te összeszeded azt.",
+   "q": "The writer unravels a thread of words; the reader gathers it up. Is it clear what 'azt' refers to?",
+   "ctx": 0
   }
  ]
 }

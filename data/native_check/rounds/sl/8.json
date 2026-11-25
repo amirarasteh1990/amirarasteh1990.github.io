@@ -2,8 +2,41 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r8",
+ "version": "2026-11-25.o8",
  "items": [
+  {
+   "id": "03/0390#12",
+   "where": "03/0390",
+   "text": "Pravim ti, ne vidim, jebenec.",
+   "q": "Short-sighted Sajad swears at his friend; he says 'jebenec' all the time. Does it sound natural as his rude catchphrase?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Konec. Poglej konec. Poglej, kako hitro pobegne. Pajkovo hišo je tudi razbil. Ni zaman, da sem ga poimenoval Dokumentarni film o ščurku, ki je uničil pajkovo hišo."
+   ]
+  },
+  {
+   "id": "04b/0343#12",
+   "where": "04b/0343",
+   "text": "Torej jeben zelenec.",
+   "q": "An older student teases a first-year casually, not as a real insult. Does 'jeben zelenec' sound like friendly crude teasing?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Ja."
+   ]
+  },
+  {
+   "id": "04b/1003#13",
+   "where": "04b/1003",
+   "text": "Glej, kakšno traparijo si zagrešil, posrani možgani.",
+   "q": "Eskandar snaps at Amir, calling him shit-for-brains. Does 'posrani možgani' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar se je obrnil k meni in glavo ter prsi pomaknil proti meni. Razširil je oči in z osornim tonom, ne da bi izgubil svoj prizvok Alaina Delona, rekel:"
+   ]
+  },
   {
    "id": "03/0118#1",
    "where": "03/0118",
@@ -17,145 +50,87 @@
    ]
   },
   {
-   "id": "04b/0935#2",
-   "where": "04b/0935",
-   "text": "»Je slajše, da Atar joka do zore« ali »je zdaj še bolj umorjen«?",
-   "q": "She names a song by quoting two lines of a poem by Attar. Do these read as lines of poetry?",
+   "id": "04b/0844#8",
+   "where": "04b/0844",
+   "text": "Kakšno sranje ti zdaj spet gloda po možganih?",
+   "q": "Hooman asks crudely what nonsense is going through Amir's head now. Does this sound natural?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "crude",
    "before": [
-    "– Ja, tisto z Atarjevim verzom."
+    "– Hooman, se ti je kdaj zgodilo, da si v sanjah nekomu nekaj pripovedoval, potem pa si podvomil, ali je bilo tisto prvo mora ali spomin?"
    ]
   },
   {
-   "id": "04b/1267#3",
-   "where": "04b/1267",
-   "text": "Na vse zapisuj",
-   "q": "The first line of a poem on a blackboard means one may write on anything. Does 'Na vse zapisuj' say that, as poetry?",
+   "id": "04b/0164#14",
+   "where": "04b/0164",
+   "text": "Eh, kurac na to našo srečo.",
+   "q": "Hooman curses their bad luck in ending up at this university. Does this clearly read as cursing bad luck?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "crude",
    "before": [
-    "…in njenim Babo, ki nosi kruh, koračim proti trgu Engelab. Pridem do vhodne portale Teheranske univerze. Prepozno sem prišel. Predavalnica je bila polna in zamudniki so sedeli na tleh okrog nje. Prav ob vratih sem našel prazno mesto in sedel. Na tabli predavalnice je bilo z lepo pisavo zapisano:"
+    "Hooman je vzdihnil in obrnil obraz stran od Farida. Pogled mu je padel na Eskandarja in z bolečim tonom, kakor igla, ki se zapiči v staro rano, je zavpil:"
    ]
   },
   {
-   "id": "04b/0271#4",
-   "where": "04b/0271",
-   "text": "Ne vsak, ki povzroči, da njegov lastni obraz zažari, obvlada umetnost kradenja src; ne vsak, ki izdela ogledalo, pozna Aleksandrovo veščino.",
-   "q": "He reads her a Hafez couplet about blushing and mirror-making. Does it read as poetry?",
+   "id": "01/0132#13",
+   "where": "01/0132",
+   "text": "Bil je na primer tifus, ali tuberkuloza, ali ošpice.",
+   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "joke",
    "before": [
-    "…namrščila, vrgla bo za teboj še par kletvic. Odprl sem knjigo. Izdihnila je zadržani dih iz prsi in rekla: – Spet hoče brati pesem. Resnično ne morem doumeti – tako majhna knjiga, in karkoli se zgodi, vedno v njej najdeš nekaj za to. Nič nisem rekel. – Prav, prav, ne kujaj se, beri. Bral sem: –"
+    "…je prvič prišel, je televizija rekla dva od sto, zdaj pravi deset odstotkov. Mislim, za boga, to je zelo nepošteno. Nekdo kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem."
    ]
   },
   {
-   "id": "03/0244#5",
-   "where": "03/0244",
-   "text": "Salomonovega pečatnega prstana ne bi vzel za nobeno ceno, saj nanj tu in tam roka ...",
-   "q": "Amir reads a line of the classic poet Hafez on a bench. Does it read like a line of old, classic poetry?",
+   "id": "04b/0690#5",
+   "where": "04b/0690",
+   "text": "Usrani mehanizmi sveta.",
+   "q": "Hooman, years later, curses the way the world works after a friend's death. Does 'Usrani mehanizmi sveta' sound natural?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "crude",
    "before": [
-    "…Nista se ločila. Skupaj sta zavila proti univerzitetnim vratom na ulici Valiasr in izginila iz okvirjev drobnih odprtin med vejami in listi, ki so iz njunega sveta v mojega prinašale hladno svetlobo. Stekel sem do bulvarja Keshavarz, sedel na klop in, ne da bi hotel videti Niloofar, bral Hafeza."
+    "…pri njem. Včasih si mislim, da bi se izmed tisočih dogodkov lahko samo eden ne zgodil, da se ne bi zgodilo nekaj drugega. Dovolj bi bilo, da se profesorjem elektrotehnike in strojništva pred toliko leti ne bi nasršilo vzeti stavbe Abu-Reyhan ladjedelniški fakulteti, in Farid ne bi končal tako."
    ]
   },
   {
-   "id": "04b/0742#6",
-   "where": "04b/0742",
-   "text": "spominjajoč se ljubljene in domovine, bom tako bridko jokal, da bom s sveta poti in šege popotovanja ...",
-   "q": "She quotes a famous Hafez line about weeping for one's beloved and homeland. Does it read as poetry?",
+   "id": "03/0309#8",
+   "where": "03/0309",
+   "text": "Če Bog da, naj bo vaš araasteh vedno urejen.",
+   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would Slovenian readers get it? If not, what word could carry it?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "joke",
    "before": [
-    "– Vem, kaj hočeš prebrati. Tisto: »"
+    "Stražar se nasmehne in reče:"
    ]
   },
   {
-   "id": "04b/1301#7",
-   "where": "04b/1301",
-   "text": "Brala je »Dolgo je, kar ljubljeni ni poslal sporočila, ni napisal pozdrava ...«, in mene je obšel smeh.",
-   "q": "She reads the opening of a Hafez love poem aloud. Does the quoted line read as poetry?",
+   "id": "03/0531#6",
+   "where": "03/0531",
+   "text": "Abolfazl je govoril: če ne gresta in mi ne prosita te deklice, se bom ubil.",
+   "q": "Maman recalls her son threatening to kill himself unless they asked for a girl's hand for him. Does this read correctly?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "maman",
    "before": [
-    "…bi Niloofar prišla, sem izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera. Veselje mi je iz spomina izbrisalo, da je tisto noč na vrsti Niloofar. Iztrgala mi je knjigo iz rok in rekla, da hoče v nasprotju z navado, ko prebere beit ali dve, prebrati celo gazelo."
+    "– Jaz ne pravim, da se ne smete zaljubiti. Najprej spoznajte osebo, se poročite, in potem, če hočete, se zaljubite. Poglejte, ali bom takrat rekla besedo."
    ]
   },
   {
-   "id": "03/0622#8",
-   "where": "03/0622",
-   "text": "Jaz sem služabnik Starešine Krčme, čigar milost ...",
-   "q": "Hooman opens Hafez at random for a fortune and reads this line. Does it read as classic poetry?",
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "Šele potem, ko me je družina na silo pahnila med kokoši, sem razumel, kakšen drugačen svet je na oni strani zgodbe.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0166#2",
+   "where": "01/0166",
+   "text": "Kolikorkoli sem rekla, ne bij otrok, je rekel: v vojni sem utrpel bojni šok, ne morem si pomagati.",
+   "q": "Maman quotes her husband's excuse that the war left him shell-shocked. Does it sound like plain everyday speech?",
    "ctx": 1,
-   "kind": "poetry",
+   "kind": "maman",
    "before": [
-    "Hooman je odprl knjigo in rekel:"
-   ]
-  },
-  {
-   "id": "04b/1390#9",
-   "where": "04b/1390",
-   "text": "luč mojih sanj se je prižgala",
-   "q": "His poem to the girl he lost: you came, and the light of my dreams turned on. Does this line read as poetry?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "Moje sanje so bile temne",
-    "Nič nisem videl",
-    "Prišla si"
-   ]
-  },
-  {
-   "id": "04b/1392#10",
-   "where": "04b/1392",
-   "text": "luč mojih sanj mežika",
-   "q": "His poem: now the light of his dreams only blinks. Does this line read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "svetilka mojih sanj se je prižgala",
-    "zdaj si odšla"
-   ]
-  },
-  {
-   "id": "04b/1274#11",
-   "where": "04b/1274",
-   "text": "pijani in",
-   "q": "In this poem on a blackboard, 'pijani' means those drunk with love, a mystic image. Does it read as poetry here?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "da bi tisti, ki pride za teboj",
-    "vedel, da",
-    "zaljubljenci in"
-   ]
-  },
-  {
-   "id": "04b/1275#12",
-   "where": "04b/1275",
-   "text": "zgoreli",
-   "q": "The poem lists lovers, drunkards and the burned ones, those consumed by love. Does 'zgoreli' carry that image?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "vedel, da",
-    "zaljubljenci in",
-    "pijani in"
-   ]
-  },
-  {
-   "id": "04b/1276#13",
-   "where": "04b/1276",
-   "text": "so šli to pot.",
-   "q": "The poem ends: lovers, drunkards and the burned ones have passed this way. Does this last line close it well as poetry?",
-   "ctx": 4,
-   "kind": "poetry",
-   "before": [
-    "vedel, da",
-    "zaljubljenci in",
-    "pijani in",
-    "zgoreli"
+    "– Samo šalimo se, da se smejemo, Nana-pesar-jan. Bi šel? Če bi šel, bi bila moja srčna želja. Za boga. Prisegam pri svojem življenju. Kar se je zgodilo s Hashemom in Abolfazlom, je bila tudi njegova krivda. Ves čas jih je tepel."
    ]
   },
   {
@@ -172,27 +147,28 @@
    ]
   },
   {
-   "id": "04b/1268#15",
-   "where": "04b/1268",
-   "text": "razen na vodo",
-   "q": "A poem written on a blackboard: one may write on everything except water. Does this line read naturally as poetry?",
+   "id": "04b/1267#3",
+   "where": "04b/1267",
+   "text": "Na vse zapisuj",
+   "q": "The first line of a poem on a blackboard means one may write on anything. Does 'Na vse zapisuj' say that, as poetry?",
    "ctx": 1,
    "kind": "poetry",
    "before": [
-    "Na vse zapisuj"
+    "…in njenim Babo, ki nosi kruh, koračim proti trgu Engelab. Pridem do vhodne portale Teheranske univerze. Prepozno sem prišel. Predavalnica je bila polna in zamudniki so sedeli na tleh okrog nje. Prav ob vratih sem našel prazno mesto in sedel. Na tabli predavalnice je bilo z lepo pisavo zapisano:"
    ]
   },
   {
-   "id": "04b/1271#16",
-   "where": "04b/1271",
-   "text": "da bi tisti, ki pride za teboj",
-   "q": "The poem on the blackboard continues: so that whoever follows in your wake. Does this line read as poetry?",
-   "ctx": 3,
+   "id": "04b/1276#13",
+   "where": "04b/1276",
+   "text": "so šli to pot.",
+   "q": "The poem ends: lovers, drunkards and the burned ones have passed this way. Does this last line close it well as poetry?",
+   "ctx": 4,
    "kind": "poetry",
    "before": [
-    "razen na vodo",
-    "in če prečkaš morje",
-    "zapisuj na vodo s svojo lastno krvjo"
+    "vedel, da",
+    "zaljubljenci in",
+    "pijani in",
+    "zgoreli"
    ]
   }
  ]

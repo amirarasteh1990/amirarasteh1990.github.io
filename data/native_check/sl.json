@@ -2,38 +2,8 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "S te strani odmotavam besede, ti pa jih z one strani zbiraš.",
-   "q": "Does this sentence read naturally?",
-   "before": [
-    "Uvod",
-    "…te knjige. Trenutki in podobe, ki bi se izgubili v vročičnem šumu svetovnih dogodkov, če ne bi bili zapisani tukaj. Zapisani so bili, da bi postali most med mojim svetom in tvojim. Most iz mojega sveta — v trenutku, ko pišem te stavke — do tvojega, v trenutku, ko se usedeš k njihovemu branju."
-   ]
-  },
-  {
-   "id": "03/0459#2",
-   "where": "03/0459",
-   "text": "Sredi dvorišča sem stal obrnjen k prehodu Valiasr.",
-   "q": "He faces the university's Valiasr gate. Is 'prehodu' right for a gate?",
-   "before": [
-    "– Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
-    "…en teden, šest dni, pet dni, štiri dni, tri dni, dva dni, jutri – tu, poleg Niloofar, bom sedel. Ura je bila čez tri. Ni prišla. Čutil sem utrip svojega srca in nekaj mi je pritiskalo v grlu. Bil sem odločen, da bom, ne glede na vse, razrešil, kakšno vlogo ima Sina v njenem življenju. Šel sem ven."
-   ]
-  },
-  {
-   "id": "03/0459#3",
-   "where": "03/0459",
-   "text": "Tolažil sem se, da je mehr najboljši mesec v letu za drugo romantično srečanje.",
-   "q": "Is it clear why Mehr is the best month for a romantic meeting?",
-   "before": [
-    "– Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
-    "…Maman rekel, da so nam uredili poletne inštrukcije. Nisem šel domov – v upanju, da bom videl Niloofar. Poletje je minilo in začele so se ure sedmega semestra. Govoril sem si, da če sem vse tisto poletje preživel z Niloofarinim «morda naslednji mesec», bo v zameno naše drugo srečanje padlo v Mehr."
-   ]
-  },
   {
    "id": "04b/1263#4",
    "where": "04b/1263",
@@ -45,6 +15,94 @@
    ]
   },
   {
+   "id": "03/0362#8",
+   "where": "03/0362",
+   "text": "Mahboub, to, kar pravijo v novicah, Ameroka ...",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say America as 'Ameroka'? If not, how?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "…za Konkoor. Zapustil sem hišo na koncu dvorišča in prehodil dolžino dvorišča v devetih korakih, z veseljem nad novim odkritjem, ki je v srcu še svetilo. Ko sem z dvorišča vstopil v dnevno sobo hiše, je Maman ležala pred televizorjem. Obe roki je imela položeni na trebuhu in govorila Mahboubeh:"
+   ]
+  },
+  {
+   "id": "03/0380#9",
+   "where": "03/0380",
+   "text": "Ayzheimer je najslabša bolezen.",
+   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say Alzheimer as 'Ayzheimer'? If not, how?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Maman je rekla:"
+   ]
+  },
+  {
+   "id": "04a/0076#16",
+   "where": "04a/0076",
+   "text": "Marmalni kamen je. Marmal pomeni zelo drago.",
+   "q": "Ghassem, a boy, says 'Marmal' for marble and thinks it means expensive. Does it read as his childish mistake?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Šli smo naprej. Na pol poti je bila hiša. Njena stena je bila lepa. Ghassem je vedno rekel:"
+   ]
+  },
+  {
+   "id": "06/0188#3",
+   "where": "06/0188",
+   "text": "Dež ne pada navzgor iz zemlje. Tudi stari so imeli dobre reke.",
+   "q": "Maman quotes an old saying and says the old folks had good sayings. Does 'dobre reke' mean good sayings here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Bog ne daj, ne govori tako. Ni otrok tisti, ki naj bo žrtev — ampak mati."
+   ]
+  },
+  {
+   "id": "04b/0181#9",
+   "where": "04b/0181",
+   "text": "Pojej glavo mojega kurca, no, nimamo živcev zate.",
+   "q": "Hooman, thumb up, tells a know-it-all to eat the head of his dick. Does 'Pojej glavo mojega kurca' sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je znova dvignil palec in rekel:"
+   ]
+  },
+  {
+   "id": "03/0394#10",
+   "where": "03/0394",
+   "text": "Ali si možgan-... no, možgan-kurac si bil že, zdaj si pa še bolj možgan-kurac.",
+   "q": "Hooman starts an insult, stops, then makes it worse: dick-brained. Does 'možgan-kurac' work as a crude insult?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Naenkrat si se zafiksiral na to vprašanje. Obstaja več možnosti. Ali si si udaril glavo nekam."
+   ]
+  },
+  {
+   "id": "03/0612#9",
+   "where": "03/0612",
+   "text": "Ti bedni ... huhhh ... glavo tako dol ... huhhh ... kam greš v takem tempu",
+   "q": "Hooman, out of breath after chasing Amir, calls him a useless prick between gasps. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Neka roka povleče moje levo ramo nazaj. Je Hooman. Sope."
+   ]
+  },
+  {
+   "id": "04b/0378#14",
+   "where": "04b/0378",
+   "text": "Možganadrek, nihče te ne bo imenoval nemega, če ne prdneš.",
+   "q": "Eskandar wakes Amir with a crude twist on an old saying about keeping quiet. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…na svoji postelji in razmišljal o tem, o čemer sva govorila z Niloofar. Luči na hodniku so ugasnile in hrup iz drugih sob je tudi zaspal. V temi in tišini polnoči je Hoomanova senca vstopila skozi vrata in šla naravnost k škatli sladkic. Kakor da je vohljala. Zjutraj me je Eskandar zbudil in rekel:"
+   ]
+  },
+  {
    "id": "03/0430#5",
    "where": "03/0430",
    "text": "In ti, s tistim tvojim kurčevim načinom govorjenja, bi moral imeti ime Alain Kurčon.",
@@ -53,6 +111,69 @@
     "– Da, Hamoun je dobro ime zate. Kakor Hamoun v filmu, si tudi ti poln vprašanj. Poln si tesnobe in si vir nemira, ne zase, temveč zame.",
     "Hooman je rekel:"
    ]
+  },
+  {
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Človek dobi usrano vrtoglavico. Bolj ko razmišljaš o tem, hujša je ta usrana vrtoglavica.",
+   "q": "A student uses a crude made-up phrase for how a baffling painting scrambles your head. Does this line sound crude like that?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ... poglejte, kako zares vzbuja premislek. To je narisal in pod to zapisal: to ni pipa."
+   ]
+  },
+  {
+   "id": "01/0182#14",
+   "where": "01/0182",
+   "text": "Kakšen -ar pa ni bil?",
+   "q": "Maman echoes the ending of 'Ženskar', meaning their father was every other kind of rascal. Would Slovenian readers get it? If not, what word could?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Ženskar pa tudi ni bil.",
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "03/0191#6",
+   "where": "03/0191",
+   "text": "Oh-ho. Hamid Mačka, včeraj si rekel khar. Zdaj si pa postal civilizirani in praviš osel?",
+   "q": "Taghi teases Hamid: yesterday he used a blunt word for donkey, now he's gone all polite and says 'osel'. Does the jab work?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Taghi je rekel:"
+   ]
+  },
+  {
+   "id": "03/0126#6",
+   "where": "03/0126",
+   "text": "Huh. Prijatelj bratranca mojstra našega svaka, ki je najbogatejši človek v Teheranu, govori natanko tako.",
+   "q": "Hamid, a boy, always boasts about a long chain of contacts ending in a rich man. Does this running joke sound natural and funny?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hamid je rekel:"
+   ]
+  },
+  {
+   "id": "03/0657#10",
+   "where": "03/0657",
+   "text": "Tovarno za prazne besede.",
+   "q": "Hooman says sarcastically that the only factory they own is a bullshit factory. Does this sound as crude as he would say it?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Eskandar je dvignil glavo s preproge in z velikimi očmi pogledal Hoomana. Hooman je nadaljeval:"
+   ]
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Roka mi je kratka, združitev s tabo pa daleč.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   }
  ]
 }

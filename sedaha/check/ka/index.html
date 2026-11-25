@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ka" dir="ltr">ქართული</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/ka/2/" data-round="2">2</a></p>
-    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/ka/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +119,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ka" data-language="Georgian" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="ka" data-language="Georgian" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04a/0036#4">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">გახსნა</p>
-        <p class="nc-ctx">…წამი გავიდა. წამები და სურათები, რომლებიც სამყაროს მოვლენების ცხელ ხმაურში დაიკარგებოდა, აქ რომ არ ჩაწერილიყო. ჩაიწერა, რომ ჩემს სამყაროსა და შენს სამყაროს შორის ხიდი გამხდარიყო. ხიდი ჩემი სამყაროდან — იმ წამიდან, როცა ამ წინადადებებს ვწერ — შენს სამყარომდე, იმ წამამდე, როცა მათ წასაკითხად ჯდები.</p>
-        <p class="nc-line">ამ მხრიდან მე სიტყვების ძაფს ვახსნი, და იმ მხრიდან შენ მას ამოკრებ.</p>
+        <p class="nc-ctx">– მარილი მავნეა.</p>
+        <p class="nc-ctx">მე ვთქვი:</p>
+        <p class="nc-line">– კარგი, ცოტა მოაყარე, მაგრამ ძალიან ცოტა არ იყოს. ცოტათი ნაკლები.</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear that you, the reader, gather the words, not the thread?</p>
+      <p class="nc-q" id="q1">The speaker asks for less, but not much less. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +138,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0116#2">
+    <fieldset class="nc-item" data-id="04b/1312#6">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">– არა, ნუ ინერვიულებ. აქ შეგვიძლია, სურსათიც ვუთხოვოთ, სახლის კარამდე მოგვიტანონ.</p>
-        <p class="nc-ctx">– ეჰ, რა კარგი. კი, შეუკვეთე და მოგიტანენ. მაგრამ, ამირ ჯან, ყოველ დღე სახლში ნუ ჩაიკეტები.</p>
-        <p class="nc-line">გარეთაც გადი. იქ წადი, სადაც ხალხი ცოტაა.</p>
+        <p class="nc-ctx">…ნილუფარი აკეთებდა. მუხლს ზემოთ გოგო აბუ-რეიჰანის შენობის საზაფხულო შეღებვისა და შეკეთების განცხადების უკან იმალებოდა. გულის ცემით წინ წავედი. ნილუფარი იყო, თვითონ ნილუფარი. ხელოვნების უნივერსიტეტისკენ პირით, კიდევ რამდენიმე გოგოს გვერდით იდგა. ერთ-ერთი გოგო ქაღალდს უჩვენებდა დანარჩენებს და ამბობდა:</p>
+        <p class="nc-ctx">– ... ნახეთ, მართლა რა დასაფიქრებელია. ეს დახატა და ქვემოთ მიაწერა — ეს ჩიბუხი არ არის.</p>
+        <p class="nc-line">ადამიანს თავბრუ ერევა. რაც უფრო მეტს ფიქრობ მასზე, მით უფრო გერევა თავბრუ.</p>
       </div>
-      <p class="nc-q" id="q2">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q2">A student is meant to sound vulgar about dizziness here. Does it work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +156,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0206#3">
+    <fieldset class="nc-item" data-id="03/0430#7">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">– კი, მართალი ხარ, ნინი-ჯან. მაგრამ, მაჰბუბის სიტყვებით, რაც უნდა ვუთხრათ, მხოლოდ ჩვენი ნერვები კიდევ მეტად ეგლეჯება.</p>
-        <p class="nc-ctx">– მაგრამ, ხელი შენ შეხებია — ის სამი თვე, დანიაში რომ გყავდა წაყვანილი, რა ბედნიერი ვიყავი. გავიგე, სიცოცხლე რას ნიშნავს.</p>
-        <p class="nc-line">ახლაც კარგია, ჰო, მაგრამ სულ იმის შიში მაქვს, რომ ნებისმიერ წამს შეიძლება აქ მოვიდეს.</p>
+        <p class="nc-ctx">– კი, ჰამუნი კარგი სახელია შენთვის. ფილმის ჰამუნის მსგავსად, შენც კითხვებით ხარ სავსე. შფოთვით ხარ სავსე და აშლილობის წყარო ხარ, არა შენთვის, არამედ ჩემთვის.</p>
+        <p class="nc-ctx">ჰუუმანმა თქვა:</p>
+        <p class="nc-line">შენ კი ამ შენი ყლეური ლაპარაკის მანერით, ალენ ყლელონი უნდა გრქმეოდა.</p>
       </div>
-      <p class="nc-q" id="q3">Maman admits she lives in constant worry that Baba may turn up at any moment. Does this sound natural?</p>
+      <p class="nc-q" id="q3">'<bdi lang="ka" dir="ltr">ალენ ყლელონი</bdi>' is meant as a rude pun on the actor Alain Delon. Would Georgian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +174,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04a/0036#4">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">– მარილი მავნეა.</p>
-        <p class="nc-ctx">მე ვთქვი:</p>
-        <p class="nc-line">– კარგი, ცოტა მოაყარე, მაგრამ ძალიან ცოტა არ იყოს. ცოტათი ნაკლები.</p>
+        <p class="nc-line">მიწიდან ცისკენ ხომ არ წვიმს.</p>
       </div>
-      <p class="nc-q" id="q4">The speaker asks for less, but not much less. Is that clear?</p>
+      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +190,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0654#5">
+    <fieldset class="nc-item" data-id="04b/0334#8">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">– აბა, არა, რა, შეყვარებულთან ერთად. სახლობის უხუცესი ღამის მარტოსული კაცია.</p>
-        <p class="nc-ctx">…მოხვევა, რომელიც პირდაპირ მოედანზე გადიოდა. მოედნის ირგვლივ სავსე იყო დიდი და პატარა ქაღალდის დროშებით, წვიმის ნესტს რომ მიწაზე მიეჯაჭვებინა. ვალიასრის ქუჩის ქვეითთა გადასასვლელიც გადავიარე და კეშავარზის ბულვარს მივადექი. ბულვარის დასაწყისის სკამზე დავჯექი. ჰაფეზის წიგნი გავხსენი და მუხლზე დავიდე.</p>
-        <p class="nc-line">სკამის გვერდით მდგარი ფარნის შუქზე, ფეხქვეშ ჩამოცვენილი ფოთლის ყვითელს, წითელსა და მწვანეს ვუცქერდი და იმ განსაკუთრებულ ბეიტს ჩურჩულით ვიმეორებდი და ველოდი, ნილუფარი მოვიდოდა.</p>
+        <p class="nc-line">ხელი მოკლე მაქვს და შენთან შეერთება — შორს.</p>
       </div>
-      <p class="nc-q" id="q5">Does '<bdi lang="ka" dir="ltr">ჩამოცვენილი ფოთლის</bdi>' read naturally for the fallen leaves underfoot?</p>
+      <p class="nc-q" id="q5">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +206,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#6">
+    <fieldset class="nc-item" data-id="04b/0274#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">…ნილუფარი აკეთებდა. მუხლს ზემოთ გოგო აბუ-რეიჰანის შენობის საზაფხულო შეღებვისა და შეკეთების განცხადების უკან იმალებოდა. გულის ცემით წინ წავედი. ნილუფარი იყო, თვითონ ნილუფარი. ხელოვნების უნივერსიტეტისკენ პირით, კიდევ რამდენიმე გოგოს გვერდით იდგა. ერთ-ერთი გოგო ქაღალდს უჩვენებდა დანარჩენებს და ამბობდა:</p>
-        <p class="nc-ctx">– ... ნახეთ, მართლა რა დასაფიქრებელია. ეს დახატა და ქვემოთ მიაწერა — ეს ჩიბუხი არ არის.</p>
-        <p class="nc-line">ადამიანს თავბრუ ერევა. რაც უფრო მეტს ფიქრობ მასზე, მით უფრო გერევა თავბრუ.</p>
+        <p class="nc-line">ვამბობ, ასე მხოლოდ აქ რომ იჯდე და ლექსებს კითხულობდე, პური არ გაგითბება.</p>
       </div>
-      <p class="nc-q" id="q6">A student is meant to sound vulgar about dizziness here. Does it work?</p>
+      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +222,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#7">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ka" dir="ltr">
-        <p class="nc-ctx">– კი, ჰამუნი კარგი სახელია შენთვის. ფილმის ჰამუნის მსგავსად, შენც კითხვებით ხარ სავსე. შფოთვით ხარ სავსე და აშლილობის წყარო ხარ, არა შენთვის, არამედ ჩემთვის.</p>
-        <p class="nc-ctx">ჰუუმანმა თქვა:</p>
-        <p class="nc-line">შენ კი ამ შენი ყლეური ლაპარაკის მანერით, ალენ ყლელონი უნდა გრქმეოდა.</p>
+        <p class="nc-line">ბებია, ღმერთმა შეიწყალოს, ასეთ დროს ამბობდა: ვთქვა, ენა მეწვის; არ ვთქვა, ძვლის ტვინი მეწვის.</p>
       </div>
-      <p class="nc-q" id="q7">'<bdi lang="ka" dir="ltr">ალენ ყლელონი</bdi>' is meant as a rude pun on the actor Alain Delon. Would Georgian readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q7">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,21 +238,171 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="01/0073#5">
+      <legend>Line 8</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-line">ამბობს: „კარგ წელს გაზაფხულიდანვე ეტყობა.“</p>
+      </div>
+      <p class="nc-q" id="q8">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
+        <label><input type="radio" name="v8" value="ok"> Correct</label>
+        <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0138#1">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-line">ამბობდა, გული მილპება.</p>
+      </div>
+      <p class="nc-q" id="q9">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0509#2">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-line">სიცილისას ჰუუმანი ხელით მაგრად მირტყამს ზურგზე და შაქარი ყელში ამიხტება.</p>
+      </div>
+      <p class="nc-q" id="q10">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="03/0634#9">
+      <legend>Line 11</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-line">იმ საცოდავ ესქანდარს ნუ ეტყვი, თორემ ისევ დაგვისვამს და ერთი საათი ჭკუას გვასწავლის, გველის შხამად მექცევა.</p>
+      </div>
+      <p class="nc-q" id="q11">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
+        <label><input type="radio" name="v11" value="ok"> Correct</label>
+        <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0116#2">
+      <legend>Line 12</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-ctx">– არა, ნუ ინერვიულებ. აქ შეგვიძლია, სურსათიც ვუთხოვოთ, სახლის კარამდე მოგვიტანონ.</p>
+        <p class="nc-ctx">– ეჰ, რა კარგი. კი, შეუკვეთე და მოგიტანენ. მაგრამ, ამირ ჯან, ყოველ დღე სახლში ნუ ჩაიკეტები.</p>
+        <p class="nc-line">გარეთაც გადი. იქ წადი, სადაც ხალხი ცოტაა.</p>
+      </div>
+      <p class="nc-q" id="q12">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
+        <label><input type="radio" name="v12" value="ok"> Correct</label>
+        <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0824#7">
+      <legend>Line 13</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-line">მე მხოლოდ მას შემდეგ, რაც ოჯახის ძალით ქათმებში ავერიე, მივხვდი, რა განსხვავებული სამყაროა ამბის ის მხარე.</p>
+      </div>
+      <p class="nc-q" id="q13">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
+        <label><input type="radio" name="v13" value="ok"> Correct</label>
+        <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0206#3">
+      <legend>Line 14</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-ctx">– კი, მართალი ხარ, ნინი-ჯან. მაგრამ, მაჰბუბის სიტყვებით, რაც უნდა ვუთხრათ, მხოლოდ ჩვენი ნერვები კიდევ მეტად ეგლეჯება.</p>
+        <p class="nc-ctx">– მაგრამ, ხელი შენ შეხებია — ის სამი თვე, დანიაში რომ გყავდა წაყვანილი, რა ბედნიერი ვიყავი. გავიგე, სიცოცხლე რას ნიშნავს.</p>
+        <p class="nc-line">ახლაც კარგია, ჰო, მაგრამ სულ იმის შიში მაქვს, რომ ნებისმიერ წამს შეიძლება აქ მოვიდეს.</p>
+      </div>
+      <p class="nc-q" id="q14">Maman admits she lives in constant worry that Baba may turn up at any moment. Does this sound natural?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
+        <label><input type="radio" name="v14" value="ok"> Correct</label>
+        <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 15</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-ctx">გახსნა</p>
+        <p class="nc-ctx">…წამი გავიდა. წამები და სურათები, რომლებიც სამყაროს მოვლენების ცხელ ხმაურში დაიკარგებოდა, აქ რომ არ ჩაწერილიყო. ჩაიწერა, რომ ჩემს სამყაროსა და შენს სამყაროს შორის ხიდი გამხდარიყო. ხიდი ჩემი სამყაროდან — იმ წამიდან, როცა ამ წინადადებებს ვწერ — შენს სამყარომდე, იმ წამამდე, როცა მათ წასაკითხად ჯდები.</p>
+        <p class="nc-line">ამ მხრიდან მე სიტყვების ძაფს ვახსნი, და იმ მხრიდან შენ მას ამოკრებ.</p>
+      </div>
+      <p class="nc-q" id="q15">Is it clear that you, the reader, gather the words, not the thread?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
+        <label><input type="radio" name="v15" value="ok"> Correct</label>
+        <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0654#5">
+      <legend>Line 16</legend>
+      <div class="reader nc-text" lang="ka" dir="ltr">
+        <p class="nc-ctx">– აბა, არა, რა, შეყვარებულთან ერთად. სახლობის უხუცესი ღამის მარტოსული კაცია.</p>
+        <p class="nc-ctx">…მოხვევა, რომელიც პირდაპირ მოედანზე გადიოდა. მოედნის ირგვლივ სავსე იყო დიდი და პატარა ქაღალდის დროშებით, წვიმის ნესტს რომ მიწაზე მიეჯაჭვებინა. ვალიასრის ქუჩის ქვეითთა გადასასვლელიც გადავიარე და კეშავარზის ბულვარს მივადექი. ბულვარის დასაწყისის სკამზე დავჯექი. ჰაფეზის წიგნი გავხსენი და მუხლზე დავიდე.</p>
+        <p class="nc-line">სკამის გვერდით მდგარი ფარნის შუქზე, ფეხქვეშ ჩამოცვენილი ფოთლის ყვითელს, წითელსა და მწვანეს ვუცქერდი და იმ განსაკუთრებულ ბეიტს ჩურჩულით ვიმეორებდი და ველოდი, ნილუფარი მოვიდოდა.</p>
+      </div>
+      <p class="nc-q" id="q16">Does '<bdi lang="ka" dir="ltr">ჩამოცვენილი ფოთლის</bdi>' read naturally for the fallen leaves underfoot?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q16">
+        <label><input type="radio" name="v16" value="ok"> Correct</label>
+        <label><input type="radio" name="v16" value="change"> Needs change</label>
+        <label><input type="radio" name="v16" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n16">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -281,7 +420,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ka/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/ka/">&larr; <span class="native" lang="ka" dir="ltr">ქართული</span></a></p>
   </section>
 </main>
@@ -300,7 +438,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

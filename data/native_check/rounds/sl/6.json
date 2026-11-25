@@ -2,39 +2,85 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r6",
+ "version": "2026-11-25.o6",
  "items": [
   {
-   "id": "04b/0736#1",
-   "where": "04b/0736",
-   "text": "Brž ko se pojavi tvoje ime, se mi naježijo ušesa.",
-   "q": "He tells the girl his ears prick up whenever her name comes up. Does 'se mi naježijo ušesa' sound natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "– No, ko tako sedim po fakulteti, med pogovori fantov iščem tvoje ime."
-   ]
-  },
-  {
-   "id": "04b/0690#2",
-   "where": "04b/0690",
-   "text": "Dovolj bi bilo, da se profesorjem elektrotehnike in strojništva pred toliko leti ne bi nasršilo vzeti stavbe Abu-Reyhan ladjedelniški fakulteti",
-   "q": "Hooman says crudely that the professors lusted after another department's building. Does 'ne bi nasršilo' read naturally?",
+   "id": "04b/0512#6",
+   "where": "04b/0512",
+   "text": "Potem je čisto izginil in zdaj ne vem, kakšno govno žre.",
+   "q": "Hooman says crudely he has no idea what that guy is up to now. Does this sound natural?",
    "ctx": 1,
    "kind": "crude",
    "before": [
-    "– Vse, kar je tisti človek počel, je bilo samomorilsko. Nič pri njem ni bilo kakor pri normalnem človeku. Eh, kaj pa vem. Še zdaj se mi misli pogosto zataknejo pri njem. Včasih si mislim, da bi se izmed tisočih dogodkov lahko samo eden ne zgodil, da se ne bi zgodilo nekaj drugega."
+    "…bi bil tako prijazen, da mu ne všečkam objav. Jaz pa sem mu odgovoril z velikanskim emotikonom palca gor, haha. Po nekaj časa je začel objavljati objave o propadanju sodobnega človeka zaradi družbenih omrežij, pa ni bilo nikogar, da bi mu rekel: starina, ti si sam kip neumnosti in propada, haha."
    ]
   },
   {
-   "id": "04b/0162#3",
-   "where": "04b/0162",
-   "text": "Ja, brž ko nas zagledajo, stisnejo ritne razpoke in se tako oddaljijo od nas, da bi jim najraje z obema nogama skočil v obraz.",
-   "q": "Farid says the Tehran students clench their asses in disgust when they see them. Does 'stisnejo ritne razpoke' sound natural?",
+   "id": "03/0576#13",
+   "where": "03/0576",
+   "text": "Umrl bi za tiste tvoje slavčje oči, Orlov Pogled-jan, ampak napaka je pri sprejemniku; oddajnik ne more rešiti problema.",
+   "q": "Farid jokes that the problem is Sajad's bad eyes, the receiver, not the transmitter. Does this sound natural?",
    "ctx": 1,
    "kind": "banter",
    "before": [
     "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04a/0004#16",
+   "where": "04a/0004",
+   "text": "Štirikrat sem te našla. No, pridi, moj dobri deček.",
+   "q": "Maman, playing with her four-year-old, calls him to her. Does this sound like a loving mother?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Odmaknil sem se od luknje. Maman je potemněla. Maman je vedno potemněla štirikrat in potem spet zasvetila. Vedno je rekla:"
+   ]
+  },
+  {
+   "id": "01/0090#2",
+   "where": "01/0090",
+   "text": "Ne. Jaz sem ta revica, nikoli nič ne rečem, vedno molčim.",
+   "q": "Maman says, half-joking, that poor her never says a word. Does this sound like a mother teasing herself?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Nič mu nisi rekla."
+   ]
+  },
+  {
+   "id": "03/0432#2",
+   "where": "03/0432",
+   "text": "Ne mislim tega. Mislim Alaina Kurčona. Kuuu-rac. Pika, konec.",
+   "q": "Hooman mocks Eskandar's pout and drags out the rude word in the nickname. Does 'Kuuu-rac' land as a crude punch line?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– ... in oblikuješ usta kakor piščančja rit in se raztrguješ pri poskusu govoriti kakor on."
+   ]
+  },
+  {
+   "id": "03/0624#16",
+   "where": "03/0624",
+   "text": "Super, Starešina Krčme. To je ravno prav za Arastehja.",
+   "q": "Friends nickname Amir after a Hafez line about the wise old man of the tavern. Does 'Starešina Krčme' work as a nickname?",
+   "ctx": 3,
+   "kind": "joke",
+   "before": [
+    "Hooman je odprl knjigo in rekel:",
+    "– Jaz sem služabnik Starešine Krčme, čigar milost ...",
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0351#2",
+   "where": "04b/0351",
+   "text": "Kaj je to, da sem bil prvak razreda in, ne vem, imel drugo diplomo, dodalo k dolžini mojega kurca – meni, čigar služba je zdaj pregledovanje transformatorskih postaj?",
+   "q": "Hooman, whose job is now inspecting power substations, asks crudely what top grades added to his dick. Does this read naturally?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Kakšni lepi dnevi, doktor? Serjem na tiste dni in na naš način razmišljanja. Resnično serjem na vse tisto perfekcionistično razmišljanje in dvopredmetnost in status elitnih študentov in tisoč drugih gnusob in strupov."
    ]
   },
   {
@@ -49,72 +95,6 @@
    ]
   },
   {
-   "id": "04b/0512#5",
-   "where": "04b/0512",
-   "text": "Po nekaj časa je začel objavljati objave o propadanju sodobnega človeka zaradi družbenih omrežij",
-   "q": "Hooman says that after a while the guy began posting about the decline of modern man. Does this read correctly?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– ... celo enkrat mi je poslal zasebno sporočilo in vprašal, ali bi bil tako prijazen, da mu ne všečkam objav. Jaz pa sem mu odgovoril z velikanskim emotikonom palca gor, haha."
-   ]
-  },
-  {
-   "id": "03/0264#6",
-   "where": "03/0264",
-   "text": "Kaj hočeš, Eskandar? Kaj te je?",
-   "q": "Hooman snaps at an annoying roommate: what the hell is wrong with you? Does this sound as rude as a young man would be?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Ali res misliš, da ti to ime pristoji? Temu dlakavemu telesu, temu obrazu, oboroženemu do zob z brado in dlako. Če si ti Hooman, sem jaz Suzana."
-   ]
-  },
-  {
-   "id": "03/0422#7",
-   "where": "03/0422",
-   "text": "Kaj je spet s teboj?",
-   "q": "Hooman yawns and snaps at a roommate: what the hell is wrong with you now? Does this sound natural and rude enough?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman je zmečkal vrečko od bonbonov v roki in jo vrgel pod posteljo. Izpod postelje je vzel učbenik Islamske misli in ga položil na blazino. Zazehal je in rekel:"
-   ]
-  },
-  {
-   "id": "03/0418#8",
-   "where": "03/0418",
-   "text": "Kakšna razlika? Če pride McCain, bo Iran spravil v ruševine, objektivno povedano.",
-   "q": "Sajad says crudely that McCain would fuck Iran up. Does this sound as crude as a young man would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Orlov Pogled, ne vznemirjaj se toliko, mleko ti bo presahnilo. Ali bo Obama ali oni drugi, kaj to vpliva na tebe in mene?"
-   ]
-  },
-  {
-   "id": "03/0612#9",
-   "where": "03/0612",
-   "text": "Ti bedni ... huhhh ... glavo tako dol ... huhhh ... kam greš v takem tempu",
-   "q": "Hooman, out of breath after chasing Amir, calls him a useless prick between gasps. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Neka roka povleče moje levo ramo nazaj. Je Hooman. Sope."
-   ]
-  },
-  {
-   "id": "03/0657#10",
-   "where": "03/0657",
-   "text": "Tovarno za prazne besede.",
-   "q": "Hooman says sarcastically that the only factory they own is a bullshit factory. Does this sound as crude as he would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar je dvignil glavo s preproge in z velikimi očmi pogledal Hoomana. Hooman je nadaljeval:"
-   ]
-  },
-  {
    "id": "03/0663#11",
    "where": "03/0663",
    "text": "Ta politika lokalizacije nas je zavozila. V imenu tega, da hočejo, da so otroci blizu svojih družin, so nas, podeželske, zabili.",
@@ -126,58 +106,63 @@
    ]
   },
   {
-   "id": "03/0663#12",
-   "where": "03/0663",
-   "text": "Kodrasti, zvenite tako presenečeni, kot da ste prišli na univerzo brez Konkoorja.",
-   "q": "Hooman mocks one curly-haired roommate for acting surprised. Does this sound like how a young man would talk to him?",
+   "id": "04a/0066#2",
+   "where": "04a/0066",
+   "text": "Bravo, moj bistri deček. Ko te je česa strah, se domisli zvijače, da te ne bo več strah.",
+   "q": "Maman praises her small son for a trick he uses against fear. Does this sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Vedno sem uporabil zvijačo. Namesto na rdeča vrata sem gledal na steno hiše poleg nje. Bila je bela. Maman je rekla:"
+   ]
+  },
+  {
+   "id": "01/0224#5",
+   "where": "01/0224",
+   "text": "Ampak pristal je med napačnimi ljudmi – razbili smo mu še zadnjo trohico spoštovanja.",
+   "q": "Ghassem jokes that their father landed among the wrong people, who smashed his last bit of respect. Does this sound natural?",
    "ctx": 1,
    "kind": "banter",
    "before": [
-    "Hooman je rekel:"
+    "– Hoče veliko spoštovanja."
    ]
   },
   {
-   "id": "01/0184#13",
-   "where": "01/0184",
-   "text": "Ženske? Rada bi. Kdor ga hoče, ga vzame zase. Damo še nekaj zraven.",
-   "q": "Maman says she wishes he had chased women: any woman can have him, with something extra thrown in. Does this read clearly?",
-   "ctx": 1,
-   "kind": "maman",
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Rekla je, srce mi gnije.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "Hooman me med smehom močno udari po hrbtu in kocka sladkorja mi skoči v grlo.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0630#2",
+   "where": "03/0630",
+   "text": "Krčmar je, po resnici in pravici povedano.",
+   "q": "Farid adds a third nickname for Amir, 'Krčmar', from the same tavern idea. Does it sound natural as a nickname?",
+   "ctx": 3,
+   "kind": "joke",
    "before": [
-    "– Mislim, da ni tekal za drugimi ženskami."
+    "Hooman je s pisalom pisal kaj v knjigo in rekel:",
+    "– Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
+    "Farid je rekel:"
    ]
   },
   {
-   "id": "01/0184#14",
-   "where": "01/0184",
-   "text": "To uho je postalo gluho tudi – udaril me je in ga pustil gluhega.",
-   "q": "Maman says he also hit her on this ear and left her deaf in it. Does this sound natural?",
+   "id": "03/0244#5",
+   "where": "03/0244",
+   "text": "Salomonovega pečatnega prstana ne bi vzel za nobeno ceno, saj nanj tu in tam roka ...",
+   "q": "Amir reads a line of the classic poet Hafez on a bench. Does it read like a line of old, classic poetry?",
    "ctx": 1,
-   "kind": "maman",
+   "kind": "poetry",
    "before": [
-    "– Ženske? Rada bi. Kdor ga hoče, ga vzame zase. Damo še nekaj zraven."
-   ]
-  },
-  {
-   "id": "01/0261#15",
-   "where": "01/0261",
-   "text": "Mm-hm, spremenil se je zelo, zelo. Postal je tako suh in temen.",
-   "q": "Maman says a relative has grown thin and his skin darker from the sun. Does 'temen' sound natural for a person?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman reče:"
-   ]
-  },
-  {
-   "id": "01/0077#16",
-   "where": "01/0077",
-   "text": "Sawaab je, kadar so si ljudje veseli drug drugega. Ne kadar si le kradejo živce.",
-   "q": "Maman says a good deed means people glad to see each other, not getting on each other's nerves. Does 'kradejo živce' sound natural?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Sawaab?"
+    "…Nista se ločila. Skupaj sta zavila proti univerzitetnim vratom na ulici Valiasr in izginila iz okvirjev drobnih odprtin med vejami in listi, ki so iz njunega sveta v mojega prinašale hladno svetlobo. Stekel sem do bulvarja Keshavarz, sedel na klop in, ne da bi hotel videti Niloofar, bral Hafeza."
    ]
   }
  ]

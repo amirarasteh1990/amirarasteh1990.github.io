@@ -2,47 +2,8 @@
  "lang": "el",
  "slug": "el",
  "dir": "ltr",
- "version": "2026-11-22",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Αυτό είναι το ελεύθερο άκρο ενός νήματος λέξεων που κάποτε ήταν ήχοι.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Τώρα ξετυλίγω το νήμα των λέξεων, κι εσύ πάρε τες και φέρ' τες στον κόσμο σου, για να μη συσσωρευτούν εδώ, στον δικό μου κόσμο.",
-   "q": "The reader takes the words away. Does 'πάρε τες και φέρ' τες' sound natural?",
-   "ctx": 1,
-   "before": [
-    "…το νήμα από τα παλιά ρούχα, κι εμείς παίρναμε την άκρη του και τριγυρνούσαμε μέσα στο σπίτι για να μη μαζευτεί το νήμα σωρός. Μπορεί η γενιά σου να ήρθε λίγα χρόνια μετά από εκείνον τον κόσμο του νήματος, αλλά φαντάσου ότι μια φορά κι έναν καιρό, σε κάποια γωνιά του κόσμου, έτσι έπαιζαν τα παιδιά."
-   ]
-  },
-  {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Τότε που ήταν η εποχή του κονκούρ, το κοχτ-κοχτ του δεν σας άφηνε να διαβάζετε ήσυχοι, μπα ...",
-   "q": "Maman complains about Baba's cough, then runs out of breath. Does 'μπα' fit as her words fade?",
-   "ctx": 1,
-   "before": [
-    "…να μην είχε σκίσει τα χαρτιά του ανάπηρου βετεράνου; Εμένα άσε με· τι αμάρτια έκαναν αυτά τα παιδιά που πρέπει να ανέχονται τους καβγάδες σου, να ακούνε το κοχτ-κοχτ σου μέρα νύχτα, να χαλάνε τα νεύρα τους, και να μη βγάζουν καμία ωφέλεια από το ότι είσαι ανάπηρος βετεράνος, τουλάχιστον;"
-   ]
-  },
-  {
-   "id": "02/0005#4",
-   "where": "02/0005",
-   "text": "Το φως των ονείρων μου ... το φως των ονείρων μου άναβε ... το φως των ονείρων μου άναψε",
-   "q": "In this poem, the line restarts twice before it is complete. Does the middle attempt sound broken off?",
-   "ctx": 3,
-   "before": [
-    "Τα όνειρά μου ήταν σκοτεινά",
-    "Δεν έβλεπα τίποτα",
-    "Ήρθες"
-   ]
-  },
   {
    "id": "03/0191#5",
    "where": "03/0191",
@@ -52,34 +13,6 @@
    "before": [
     "– Πφφ, γαϊδούρι, ποιος ξέρει καλύτερα — ο φίλος του ξαδέλφου του μάστορα του γαμπρού μας, που είναι ο πλουσιότερος άνθρωπος στην Τεχεράνη, ή εσύ, μοσχαράκι; Εντάξει, πήγαινε και αγόρασε. Αν σπάσει το γυαλί του, μην πεις ότι δεν σε προειδοποίησα.",
     "Ο Ταγκί είπε:"
-   ]
-  },
-  {
-   "id": "03/0290#6",
-   "where": "03/0290",
-   "text": "– Ο Αραστέ είναι απλώς araasteh, κομμένος;",
-   "q": "The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Would Greek readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "before": [
-    "– Κύριε Αραστέ.",
-    "Γυρίζω το κεφάλι προς αυτόν."
-   ]
-  },
-  {
-   "id": "03/0430#7",
-   "where": "03/0430",
-   "text": "Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.",
-   "q": "'Αλέν Πουτσόν' is meant as a rude pun on the actor Alain Delon. Would Greek readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0560#8",
-   "where": "03/0560",
-   "text": "– Πείτε στη μάνα σας τα πάντα.",
-   "q": "Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?",
-   "ctx": 1,
-   "before": [
-    "…αμπελώνες πίσω από το πήλινο γιαχτσάλ απέναντι από το παλιό νεκροταφείο. Η Μαχμπουμπέ και η Μαριάμ έδεσαν κόμπους στα σαμπζέ, και μόλις σκοτείνιασε γυρίσαμε. Το βράδυ η Μαμάν ήταν ξαπλωμένη στη μέση του καθιστικού πάνω στο χαλί και κοιτούσε τα βραχιόλια της. Σαν να μιλούσε σε μένα, είπε στον Ομίντ:"
    ]
   },
   {
@@ -93,11 +26,59 @@
    ]
   },
   {
-   "id": "04b/0391#10",
-   "where": "04b/0391",
-   "text": "– ... ο βλάκας αυτός υπέφερε από οξεία παραφροσύνη.",
-   "q": "Students mock a roommate's delusions of grandeur. Does 'οξεία παραφροσύνη' say that?",
+   "id": "04b/1312#12",
+   "where": "04b/1312",
+   "text": "Σε πιάνει σκατοζάλη. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ σε πιάνει η σκατοζάλη.",
+   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
+   "ctx": 1,
+   "before": [
+    "– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα."
+   ]
+  },
+  {
+   "id": "03/0430#7",
+   "where": "03/0430",
+   "text": "Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.",
+   "q": "'Αλέν Πουτσόν' is meant as a rude pun on the actor Alain Delon. Would Greek readers get it? If not, what word could carry it?",
    "ctx": 0
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Η βροχή δεν πέφτει από κάτω προς τα πάνω.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Το χέρι μου είναι κοντό κι η ένωση μαζί σου μακριά.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Μην τρως λύπη, έξυπνο παιδί μου.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Λέω ότι αν απλώς κάθεσαι εδώ και διαβάζεις ποίηση, δεν πρόκειται να ζεσταθεί ψωμί για σένα.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Τότε που ήταν η εποχή του κονκούρ, το κοχτ-κοχτ του δεν σας άφηνε να διαβάζετε ήσυχοι, μπα ...",
+   "q": "Maman complains about Baba's cough, then runs out of breath. Does 'μπα' fit as her words fade?",
+   "ctx": 1,
+   "before": [
+    "…να μην είχε σκίσει τα χαρτιά του ανάπηρου βετεράνου; Εμένα άσε με· τι αμάρτια έκαναν αυτά τα παιδιά που πρέπει να ανέχονται τους καβγάδες σου, να ακούνε το κοχτ-κοχτ σου μέρα νύχτα, να χαλάνε τα νεύρα τους, και να μη βγάζουν καμία ωφέλεια από το ότι είσαι ανάπηρος βετεράνος, τουλάχιστον;"
+   ]
   },
   {
    "id": "04b/0460#11",
@@ -111,30 +92,21 @@
    ]
   },
   {
-   "id": "04b/1312#12",
-   "where": "04b/1312",
-   "text": "Σε πιάνει σκατοζάλη. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ σε πιάνει η σκατοζάλη.",
-   "q": "A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?",
-   "ctx": 1,
-   "before": [
-    "– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα."
-   ]
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Λέει: «Μια καλή χρονιά φαίνεται από την άνοιξή της.»",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.»",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#14",
-   "where": "04b/1321",
-   "text": "Σαν εκείνο — όσο πιο πολύ σκέφτεσαι αυτές τις δέκα λέξεις, τόσο πιο πολύ σκα... τέλος πάντων, ζαλίζεσαι.",
-   "q": "He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?",
-   "ctx": 1,
+   "id": "03/0290#6",
+   "where": "03/0290",
+   "text": "– Ο Αραστέ είναι απλώς araasteh, κομμένος;",
+   "q": "The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Would Greek readers get it? If not, what word could carry it?",
+   "ctx": 2,
    "before": [
-    "– Αυτό είναι. Άκου αυτό. Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.» Αυτό είναι το ίδιο. Είναι σαν εκείνη τη ζωγραφιά που σου έδειχνε η φί-φίλη σου."
+    "– Κύριε Αραστέ.",
+    "Γυρίζω το κεφάλι προς αυτόν."
    ]
   }
  ]

@@ -2,80 +2,8 @@
  "lang": "ro",
  "slug": "ro",
  "dir": "ltr",
- "version": "2026-11-22",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.",
-   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "De pe această parte, desfac firul cuvintelor, iar de pe cealaltă parte, tu le aduni.",
-   "q": "Is it clear that 'le' refers to the words you gather up?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#3",
-   "where": "01/0116",
-   "text": "Du-te în locuri unde nu e multă lume.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Aaah, ce bine. Mm-hm, comănzi și ți le aduc. Dar Amir dragă, nu sta tot timpul acasă. Ieși și afară."
-   ]
-  },
-  {
-   "id": "03/0191#4",
-   "where": "03/0191",
-   "text": "Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici măgar?",
-   "q": "Taghi teases Hamid for using the Romanian word 'măgar' now instead of 'khar', the cruder Persian word for donkey. Does the teasing come through?",
-   "ctx": 2,
-   "before": [
-    "– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.",
-    "Taghi spuse:"
-   ]
-  },
-  {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.",
-   "q": "'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Would Romanian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0560#6",
-   "where": "03/0560",
-   "text": "– Spuneți-i mamei voastre totul.",
-   "q": "Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?",
-   "ctx": 1,
-   "before": [
-    "Am mers. Am stat vreo oră în viile de după clădirea ghetarului de lut din fața cimitirului vechi. Mahboubeh și Maryam legară sabzeh, și când se întunecase ne-am întors. Seara, Maman era întinsă pe covor în mijlocul casei și-și privea brățările. Ca și cum mi-ar fi vorbit mie, îi spuse lui Omid:"
-   ]
-  },
-  {
-   "id": "03/0661#7",
-   "where": "03/0661",
-   "text": "– Notele de la Konkoor?",
-   "q": "Konkoor is Iran's university entrance exam, where students get a national rank. Is 'Notele' right for that rank?",
-   "ctx": 1,
-   "before": [
-    "– Din cauza notelor noastre la Konkoor."
-   ]
-  },
-  {
-   "id": "04b/1262#8",
-   "where": "04b/1262",
-   "text": "Joaca cu mașini, haft-sang, polițist-și-măgar, aruncatul cu roșii în mijlocul străzii și, mai presus de toate, fotbalul pe Stadio delle Alpi din orașul Quchan.",
-   "q": "A list of childhood street games. Does the list read clearly as games?",
-   "ctx": 1,
-   "before": [
-    "…primăverii, familia lui Negar s-a mutat din cartierul nostru din pricina supărărilor pricinuite de băieții de pe ulița din față, iar casa aceea s-a făcut la fel cu toate celelalte case din cartier. Rămăseserăm de capul nostru și, după multă vreme, ne-am întors iarăși la jocurile de altădată."
-   ]
-  },
   {
    "id": "04b/1263#9",
    "where": "04b/1263",
@@ -97,11 +25,64 @@
    ]
   },
   {
-   "id": "04b/1321#11",
-   "where": "04b/1321",
-   "text": "Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
+   "id": "03/0191#4",
+   "where": "03/0191",
+   "text": "Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici măgar?",
+   "q": "Taghi teases Hamid for using the Romanian word 'măgar' now instead of 'khar', the cruder Persian word for donkey. Does the teasing come through?",
+   "ctx": 2,
+   "before": [
+    "– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.",
+    "Taghi spuse:"
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.",
+   "q": "'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Would Romanian readers get it? If not, what word could carry it?",
    "ctx": 0
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Ploaia nu cade de jos în sus.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Mâna mi-e prea scurtă și unirea cu tine, departe.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Nu mânca tristețe, băiatul meu deștept.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Zic că, dacă stai tot timpul aici doar așa și citești poezie, nu ți se încălzește nicio pâine.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Dumnezeu s-o ierte, spunea în astfel de momente: dacă o spun, mi se arde limba; dacă nu o spun, mi se arde măduva oaselor.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Spune: „Un an bun se cunoaște din primăvara lui.”",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/1321#12",
@@ -114,24 +95,11 @@
    ]
   },
   {
-   "id": "06/0236#13",
-   "where": "06/0236",
-   "text": "Întotdeauna cimitirul și Dumnezeu știe ce – o biserică. Cof, cof. Ne-ai târât.",
-   "q": "Baba teases his son about the places he showed them. Does the last sentence mean you wore us out?",
-   "ctx": 1,
-   "before": [
-    "– ...cof. Da. Nu ne-ai dus niciodată în locuri de-astea."
-   ]
-  },
-  {
-   "id": "06/0262#14",
-   "where": "06/0262",
-   "text": "Tusea și sunetele cu care își drege glasul încă mi se strecoară în urechi.",
-   "q": "Does this sentence let you hear Baba's coughs and throat-clearing sounds?",
-   "ctx": 1,
-   "before": [
-    "Baba își ia rămas-bun și iese din cadru. Maman rămâne în tăcere. Se aude poarta ulicioarei deschizându-se și închizându-se, iar Baba iese cu tusea târându-se după el."
-   ]
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.",
+   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?",
+   "ctx": 0
   }
  ]
 }

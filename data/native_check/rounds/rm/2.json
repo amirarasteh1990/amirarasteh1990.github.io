@@ -2,8 +2,15 @@
  "lang": "rm",
  "slug": "rm",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Tge che jau di è che, sche restas qua sesì a leger poesia, na til vegn a s'stgaudar il paun.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
@@ -19,34 +26,6 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Bibi, che Dieu al perdunia, diseva en talas occasiuns: sche di, brischa mia lingua; sche na di betg, brischa la maregl da mes ossa.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "La plievgia n'croda betg da la terra versa il tschiel.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "Di: «In bun onn sa recunuscha da sia primavaira.»",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Tge che jau di è che, sche restas qua sesì a leger poesia, na til vegn a s'stgaudar il paun.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
    "id": "04b/0824#7",
    "where": "04b/0824",
    "text": "Mo suenter che la famiglia m'aveva metì a forza en il pulaliu hai chapì tge mund tant different era quel da l'autra vart da l'istorgia.",
@@ -54,11 +33,54 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Mia maun è curta e tia uniun è luntsch.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0479#4",
+   "where": "03/0479",
+   "text": "Ha dì che n'era betg bain, che havevel insatge da far e che stuevel partir en quel medem mument.",
+   "q": "Is it clear that she, not the narrator, had to leave at once?",
+   "before": [
+    "Ha reunì las chombas sut la sedia. Hai auzà ils egls. Sia fatscha era daventada cotschna. Hai dì:",
+    "– Ses bain, vus?"
+   ]
+  },
+  {
+   "id": "03/0355#2",
+   "where": "03/0355",
+   "text": "En la chasa dal fund dal curtin, sper la stua, eral stendrà buca a terra, a mez chamin da chattar in modus da schliar da manera simpla bleras da las damondas tip test dal Konkoor cun la circonferenza trigonometrica.",
+   "q": "Amir lies beside the room heater. Is 'stua' the right word for heater?",
+   "before": [
+    "– Alura, mo per la spetga ch'hai suportà, restai sesida sper mai in pau dapli.",
+    "…m'ardeva. Ussa er m'ardescha. L'arder dad arecordar quel mument da la despedida. E forsa l'arder dad emblidar insatge ch'jau sent che na duevel betg emblidar. Insatge sumegliant ad in disassossegu, in disassossegu en pes davos la nebla. Ai da l'emblidament; ai dad emblidar; ai dad esser emblidà."
+   ]
+  },
+  {
+   "id": "04b/0418#6",
+   "where": "04b/0418",
+   "text": "Il colp da la porta ha lantschà Meysam versa mia letg e quella da Bahman.",
+   "q": "Is it clear Amir and Bahman share one bunk bed?",
+   "before": [
+    "– Salaam. M'clom Meysam. Il responsabel da la residenza m'ha dì da vegnir a la chombra 403.",
+    "…dir nagut: In mat pitschen e magher, cun chavels lungs e ritschads, egls grands, pel fitg stgira ed ina testa fitg pitschna che, sche n'füss betg per ils chavels ritschads, avess parì pitschna schizunt sur sieu corpuschin. La porta mez averta s'ha avert dal tuttafatg cun in colp fort da Farid."
+   ]
+  },
+  {
+   "id": "04b/1178#8",
+   "where": "04b/1178",
+   "text": "Il medem mat ch'mova las mans til agita sco in eventagl e crida:",
+   "q": "Is it clear the boy waves his hand like a fan?",
+   "before": [
+    "…fin ed è puspè sortida. Fin la damaun suandanta, cur sun vegnì qua ed hai vis che Niloofar n'era betg, imaginavel anc ch'era sesida gist qua. Dad qua vesa l'aula da l'autra vart dal currider. La celebraziun da la notg da Yalda da quel onn en la facultad era stada celebrada en quella medema aula.",
+    "…a Niloofar. Perquai che n'hai betg pudì, perquai che n'savevel betg co, metter mieu sentiment en paraulas. E sch'insaquanta giada til hai metì en paraulas, n'è mai stà d'ina moda ch'pudess fecundar il schöglier ch'piglia furma tranter nus. La dispita tranter ils trais mats è s'auzada da tun."
+   ]
+  },
+  {
+   "id": "03/0361#3",
+   "where": "03/0361",
+   "text": "Taneva las duas mans posadas sin il vaint e diseva a Mahboubeh:",
+   "q": "Maman rests both hands on her belly. Is 'vaint' the right word?",
+   "before": [
+    "– D'accord.",
+    "…a la paraid, sper il rest da mes appunts dal Konkoor. Sun sortì da la chasa dal fund dal curtin, hai percurrì la lungezza dal curtin cun nov pass, ed anc l'allegria dal nov chattament era alluta en mieu cor. Cur sun entrà en la halla da la chasa dal curtin, Maman era stendrà avant il televisur."
+   ]
   }
  ]
 }

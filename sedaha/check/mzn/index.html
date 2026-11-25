@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="mzn" dir="rtl">مازرونی</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/mzn/2/" data-round="2">2</a></p>
-    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/mzn/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +119,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="mzn" data-language="Mazanderani" data-version="2026-11-16" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="mzn" data-language="Mazanderani" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="mzn" dir="rtl">
-        <p class="nc-ctx">سرآغاز</p>
-        <p class="nc-ctx">اینجه هیچ خبری نی‌یه. قرار نی‌یه چیزی درست بَواشه، یا ویرون. تفسیر و نتیجه‌گیری راه دله نی‌یه.</p>
-        <p class="nc-line">اینتا اون کلمه‌هایِ رشته‌ی سر هسته که یک زمونی صدا بی‌نه.</p>
+        <p class="nc-line">جه زِمین به آسمون که نِمِبارَه.</p>
       </div>
-      <p class="nc-q" id="q1">Does this sentence read naturally?</p>
+      <p class="nc-q" id="q1">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +136,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#2">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="mzn" dir="rtl">
-        <p class="nc-ctx">سرآغاز</p>
-        <p class="nc-ctx">…همه‌ی لحظه‌ها بگذشتنه. اون لحظه‌ها و تصویرها که دنیایِ حادثه‌هایِ پرتب‌وتابِ همهمه‌ی دله گم بَیی‌بینه اگه اینجه ثبت نَیی‌بینه. ثبت بَیینه تا پِلی بَواشِن مه دنیا و ته دنیایِ میون. پِلی مه دنیا جه، اون لحظه که دارمه اینتا جمله‌ها ره نویسمبه، به ته دنیا، اون لحظه که وِشونِ بَخوندِستِن وسّه نیشِنی.</p>
-        <p class="nc-line">من این وَر جه، لغت‌هایِ رشته ره واز کِمبه و ته اون وَر جه وِشون ره جمع کِنی.</p>
+        <p class="nc-line">مه دست کوتاهه و وصالِ ته دور.</p>
       </div>
-      <p class="nc-q" id="q2">I unravel the thread; you gather up the words. Does this read naturally?</p>
+      <p class="nc-q" id="q2">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +152,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#3">
+    <fieldset class="nc-item" data-id="04a/0128#2">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="mzn" dir="rtl">
-        <p class="nc-ctx">سرآغاز</p>
-        <p class="nc-ctx">…همهمه‌ی دله گم بَیی‌بینه اگه اینجه ثبت نَیی‌بینه. ثبت بَیینه تا پِلی بَواشِن مه دنیا و ته دنیایِ میون. پِلی مه دنیا جه، اون لحظه که دارمه اینتا جمله‌ها ره نویسمبه، به ته دنیا، اون لحظه که وِشونِ بَخوندِستِن وسّه نیشِنی. من این وَر جه، لغت‌هایِ رشته ره واز کِمبه و ته اون وَر جه وِشون ره جمع کِنی.</p>
-        <p class="nc-line">بچگی‌ها واری که مامان کهنه‌لباس‌هایِ کاموا ره واز کِرده و اما وِنه رشته ره گیتمی و خِنه‌ی دور گردِستمی تا کامواها همدیگه‌ی سر جمع نَواشِن.</p>
+        <p class="nc-line">غُصَه نَخور پسرِ باهوشُم.</p>
       </div>
-      <p class="nc-q" id="q3">Is it clear the children walked around inside the house?</p>
+      <p class="nc-q" id="q3">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +168,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0690#4">
+    <fieldset class="nc-item" data-id="04b/0274#7">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="mzn" dir="rtl">
-        <p class="nc-ctx">آخرین لبخندِ فرید جلوی چشمانم شکل گیره و بوی خونی که دله مغزم دَپیچد تصویرش ره پس زنه. صدای هومن راهش ره جه میانه‌ی لبخند و خون باز هاکِنَه و واردِ گوشم وونه.</p>
-        <p class="nc-ctx">– همه‌ی کارهاش انتحاری بی‌یه، اونتا بشر. هیچیش مثلِ آدمیزاد نبی‌اتّا. هِییی چه دونمه. هنوز هم خله وقت‌ها ذهنم مشغولش وونه.</p>
-        <p class="nc-line">بعضی وقت‌ها با شه فکر هاکِنمه جه میونِ هزار تا اتفاق، دَتونست تنون یکیش اتفاق نیافته تا اتّا چیزی پیش نیاد.</p>
+        <p class="nc-line">گمبه اینجوری هی تنون بشینی اینجه و شعر بخونی، نونی برات داغ نوونه.</p>
       </div>
-      <p class="nc-q" id="q4">Hooman says one missing event would have prevented the tragedy. Is that clear?</p>
+      <p class="nc-q" id="q4">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +184,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0298#5">
+    <fieldset class="nc-item" data-id="01/0203#4">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="mzn" dir="rtl">
-        <p class="nc-ctx">– ها، بور بخُسب، نی‌نی‌جان.</p>
-        <p class="nc-ctx">…چندتا رشته‌ی باریکِ دیه ماه‌ها پیش جه مه قلب بیرون بکِشه بَییه بی‌آنکه بدانم؟ به مرورِ چندتا باره‌ی بنویشته‌هایم پناه دَبرم. اسا که دکترایم تمام بَییه و قدری آرام گبوردهه‌ام، تونمه وسّه نیلوفر بنویسم تا بداند برایش قُلّکی ساخته‌ام پربَییه جه واژه‌ها. امیدی تازه وسّه هم‌نشینی‌امای روییده هسته.</p>
-        <p class="nc-line">مه دل روشن هسته روزی روبرویش درونِ کافه‌ای، پشتِ میزی، کنارِ پنجره‌ای خواهیم بنیشت و در حالی که نم‌نمِ باران سر شیشه نیشنه، داستان ره برایش خواهم بخوند و وه با لبخندِ رضایت گوش خواهد هادا.</p>
+        <p class="nc-line">بی‌بی خدا بیامُرز ایجور موقِع‌ها مُگُفت گویَم زبون سوزَد، نگویَم مغزِ استخوان سوزَد.</p>
       </div>
-      <p class="nc-q" id="q5">Do future verbs like '<bdi lang="mzn" dir="rtl">خواهیم بنیشت</bdi>' sound natural in Mazanderani?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,21 +200,189 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="01/0073#6">
+      <legend>Line 6</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-line">– قاسم حُقَه بَزی مِنَه دَگَه سالی که نکوست جه بهارش پیداست.</p>
+      </div>
+      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
+        <label><input type="radio" name="v6" value="ok"> Correct</label>
+        <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0138#1">
+      <legend>Line 7</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-line">مُگُفت دَرَه دِلُم مُپوسَه.</p>
+      </div>
+      <p class="nc-q" id="q7">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
+        <label><input type="radio" name="v7" value="ok"> Correct</label>
+        <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0509#3">
+      <legend>Line 8</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-line">هومن حینِ خنبدیهن، با دست محکم سر پشتم زنَه و قند دله گلویم دَپرد.</p>
+      </div>
+      <p class="nc-q" id="q8">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
+        <label><input type="radio" name="v8" value="ok"> Correct</label>
+        <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="03/0634#10">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-line">به اونتا اسکندرِ نکبت نگی، دوباره دَشینَه اتّا ساعت برامون پند و اندرز دَده، زهرِ مارم وونه.</p>
+      </div>
+      <p class="nc-q" id="q9">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0690#4">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-ctx">آخرین لبخندِ فرید جلوی چشمانم شکل گیره و بوی خونی که دله مغزم دَپیچد تصویرش ره پس زنه. صدای هومن راهش ره جه میانه‌ی لبخند و خون باز هاکِنَه و واردِ گوشم وونه.</p>
+        <p class="nc-ctx">– همه‌ی کارهاش انتحاری بی‌یه، اونتا بشر. هیچیش مثلِ آدمیزاد نبی‌اتّا. هِییی چه دونمه. هنوز هم خله وقت‌ها ذهنم مشغولش وونه.</p>
+        <p class="nc-line">بعضی وقت‌ها با شه فکر هاکِنمه جه میونِ هزار تا اتفاق، دَتونست تنون یکیش اتفاق نیافته تا اتّا چیزی پیش نیاد.</p>
+      </div>
+      <p class="nc-q" id="q10">Hooman says one missing event would have prevented the tragedy. Is that clear?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0824#8">
+      <legend>Line 11</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-line">مِن تازه بعدِ اینکه با زور خونواده قاطیِ مرغ‌ها بَییهم، فهمیدم چه دنیای متفاوتیه اونتا سمتِ داستان.</p>
+      </div>
+      <p class="nc-q" id="q11">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
+        <label><input type="radio" name="v11" value="ok"> Correct</label>
+        <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 12</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-ctx">سرآغاز</p>
+        <p class="nc-ctx">اینجه هیچ خبری نی‌یه. قرار نی‌یه چیزی درست بَواشه، یا ویرون. تفسیر و نتیجه‌گیری راه دله نی‌یه.</p>
+        <p class="nc-line">اینتا اون کلمه‌هایِ رشته‌ی سر هسته که یک زمونی صدا بی‌نه.</p>
+      </div>
+      <p class="nc-q" id="q12">Does this sentence read naturally?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
+        <label><input type="radio" name="v12" value="ok"> Correct</label>
+        <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#2">
+      <legend>Line 13</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-ctx">سرآغاز</p>
+        <p class="nc-ctx">…همه‌ی لحظه‌ها بگذشتنه. اون لحظه‌ها و تصویرها که دنیایِ حادثه‌هایِ پرتب‌وتابِ همهمه‌ی دله گم بَیی‌بینه اگه اینجه ثبت نَیی‌بینه. ثبت بَیینه تا پِلی بَواشِن مه دنیا و ته دنیایِ میون. پِلی مه دنیا جه، اون لحظه که دارمه اینتا جمله‌ها ره نویسمبه، به ته دنیا، اون لحظه که وِشونِ بَخوندِستِن وسّه نیشِنی.</p>
+        <p class="nc-line">من این وَر جه، لغت‌هایِ رشته ره واز کِمبه و ته اون وَر جه وِشون ره جمع کِنی.</p>
+      </div>
+      <p class="nc-q" id="q13">I unravel the thread; you gather up the words. Does this read naturally?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
+        <label><input type="radio" name="v13" value="ok"> Correct</label>
+        <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#3">
+      <legend>Line 14</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-ctx">سرآغاز</p>
+        <p class="nc-ctx">…همهمه‌ی دله گم بَیی‌بینه اگه اینجه ثبت نَیی‌بینه. ثبت بَیینه تا پِلی بَواشِن مه دنیا و ته دنیایِ میون. پِلی مه دنیا جه، اون لحظه که دارمه اینتا جمله‌ها ره نویسمبه، به ته دنیا، اون لحظه که وِشونِ بَخوندِستِن وسّه نیشِنی. من این وَر جه، لغت‌هایِ رشته ره واز کِمبه و ته اون وَر جه وِشون ره جمع کِنی.</p>
+        <p class="nc-line">بچگی‌ها واری که مامان کهنه‌لباس‌هایِ کاموا ره واز کِرده و اما وِنه رشته ره گیتمی و خِنه‌ی دور گردِستمی تا کامواها همدیگه‌ی سر جمع نَواشِن.</p>
+      </div>
+      <p class="nc-q" id="q14">Is it clear the children walked around inside the house?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
+        <label><input type="radio" name="v14" value="ok"> Correct</label>
+        <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="06/0298#5">
+      <legend>Line 15</legend>
+      <div class="reader nc-text" lang="mzn" dir="rtl">
+        <p class="nc-ctx">– ها، بور بخُسب، نی‌نی‌جان.</p>
+        <p class="nc-ctx">…چندتا رشته‌ی باریکِ دیه ماه‌ها پیش جه مه قلب بیرون بکِشه بَییه بی‌آنکه بدانم؟ به مرورِ چندتا باره‌ی بنویشته‌هایم پناه دَبرم. اسا که دکترایم تمام بَییه و قدری آرام گبوردهه‌ام، تونمه وسّه نیلوفر بنویسم تا بداند برایش قُلّکی ساخته‌ام پربَییه جه واژه‌ها. امیدی تازه وسّه هم‌نشینی‌امای روییده هسته.</p>
+        <p class="nc-line">مه دل روشن هسته روزی روبرویش درونِ کافه‌ای، پشتِ میزی، کنارِ پنجره‌ای خواهیم بنیشت و در حالی که نم‌نمِ باران سر شیشه نیشنه، داستان ره برایش خواهم بخوند و وه با لبخندِ رضایت گوش خواهد هادا.</p>
+      </div>
+      <p class="nc-q" id="q15">Do future verbs like '<bdi lang="mzn" dir="rtl">خواهیم بنیشت</bdi>' sound natural in Mazanderani?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
+        <label><input type="radio" name="v15" value="ok"> Correct</label>
+        <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -245,7 +400,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/mzn/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/mzn/">&larr; <span class="native" lang="mzn" dir="rtl">مازرونی</span></a></p>
   </section>
 </main>
@@ -264,7 +418,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

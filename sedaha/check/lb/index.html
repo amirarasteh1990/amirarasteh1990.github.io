@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="lb" dir="ltr">Lëtzebuergesch</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/lb/2/" data-round="2">2</a></p>
-    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/lb/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +119,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="lb" data-language="Luxembourgish" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="lb" data-language="Luxembourgish" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="03/0430#8">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">Optakt</p>
-        <p class="nc-ctx">…de Weltevenementer verluer gaange wieren, wa se hei net opgeschriwe ginn wieren. Si goufen opgeschriwwen, fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen.</p>
-        <p class="nc-line">Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.</p>
+        <p class="nc-ctx">– Jo, Hamoon ass en gudden Numm fir dech. Wéi den Hamoon am Film, bass du och voller Froen. Voller Angscht a Grond fir Onrou, net fir dech selwer, mä fir mech.</p>
+        <p class="nc-ctx">Den Hooman sot:</p>
+        <p class="nc-line">– An du, mat dëser penisseger Aart ze schwätzen, sollts Alain Schwanzlon heeschen.</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear that 'en' refers to the words you gather up?</p>
+      <p class="nc-q" id="q1">'Alain Schwanzlon' is meant as a rude pun on the actor Alain Delon. Would Luxembourgish readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +138,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#2">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">Optakt</p>
-        <p class="nc-ctx">…fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen. Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.</p>
-        <p class="nc-line">Sou wéi fréier an der Kandheet, wann d'Maman d'Wolle vun ale Kleeder ofgewéckelt huet, a mir de Fuedem geholl hunn a ronderëm d'Haus gelaf sinn, fir dass d'Wolle sech net opgehäift huet.</p>
+        <p class="nc-line">Et reent net vun der Äerd an den Himmel.</p>
       </div>
-      <p class="nc-q" id="q2">Is it clear the children walked around inside the house, holding the thread?</p>
+      <p class="nc-q" id="q2">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +154,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0140#3">
+    <fieldset class="nc-item" data-id="04b/0334#8">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">…schued ginn. Déi aarm Séil hat just d'Sëtzen um Enn vun der Strooss als Zäitverdreiw. Si sot, mäi Häerz verfault. Op d'mannst ech, och wa meng Kanner net hei sinn, beschäftegen ech mech e bësse mat mengem Strécken. Schaffen ass gutt, Amir. Wann ech näischt ze dinn hunn, halen ech et guer net aus.</p>
-        <p class="nc-ctx">De Ghassem seet, an sengem Toun kann een d'Laachen spieren:</p>
-        <p class="nc-line">– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.</p>
+        <p class="nc-line">Meng Hand ass kuerz, an d'Vereenegung mat dir ass wäit.</p>
       </div>
-      <p class="nc-q" id="q3">Ghassem pities poor Baba, idle at home for years. Does this read naturally?</p>
+      <p class="nc-q" id="q3">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +170,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0060#4">
+    <fieldset class="nc-item" data-id="04b/0274#6">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">Déiselwecht Stëmm, déi de Ghassem no mengem Konkur-Rang gefrot hat, sot ganz leis:</p>
-        <p class="nc-ctx">– Heh, den Ostad Hamid, dee verduedelt Kaz.</p>
-        <p class="nc-line">Den Hamid huet den ausgebleechte roude Réim vu senger Ringer-Trikot eropgezunn an, mat enger Bewegung vum Réck vu senger Hand, de Knuet vum zerrëssene Punkt vun der Schëller op de Réck geworf.</p>
+        <p class="nc-line">Ech soen, wann s de esou ëmmer just hei sëtz a Gedichter liesst, gëtt kee Brout warm fir dech.</p>
       </div>
-      <p class="nc-q" id="q4">Hamid flicks the knot of his torn singlet strap onto his back. Is this clear?</p>
+      <p class="nc-q" id="q4">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +186,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0830#5">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">– Nee, hie huet och mir net geäntwert.</p>
-        <p class="nc-ctx">E puer Deeg méi spéit huet hien eis all zesumme geäntwert. Hie hätt geschriwwen, hie wier an d'Studentenheem fir bestuete Studente verluecht ginn an hätt eist Zëmmer verlooss. De Meysam sot, do um Buedem wier et méi gemittlech, an dem Bahman säi Bett ass eidel bliwwen.</p>
-        <p class="nc-line">De Farid, wann de Sajad heiansdo bei sengem Rout op säi Bett dem Farid säi Hals mat engem Trëttlach verwiesselt huet, koum a schlief op dem Bahman sengem Bett.</p>
+        <p class="nc-line">D'Bibi, Gott hätt Erbarmen mat hirer Séil, sot an esou Momenter: sot ech et, brennt mir d'Zong; sot ech et net, brennt mir d'Mark an de Schanken.</p>
       </div>
-      <p class="nc-q" id="q5">Sajad sometimes steps on Farid's neck climbing to his bunk. Is that clear?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +202,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0951#6">
+    <fieldset class="nc-item" data-id="01/0140#3">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">– Gëff mir en zréck. Als wéilt en och just wëssen, wéi déi mat Draht funktionéieren.</p>
-        <p class="nc-ctx">Den Taghi huet dem Hamid seng Hand an der Loft gepackt a de Walkman gerett. Awer de Yaser krut awer nach e puer Fauschten a Zerkéis. De Hamid sot:</p>
-        <p class="nc-line">– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.</p>
+        <p class="nc-ctx">…schued ginn. Déi aarm Séil hat just d'Sëtzen um Enn vun der Strooss als Zäitverdreiw. Si sot, mäi Häerz verfault. Op d'mannst ech, och wa meng Kanner net hei sinn, beschäftegen ech mech e bësse mat mengem Strécken. Schaffen ass gutt, Amir. Wann ech näischt ze dinn hunn, halen ech et guer net aus.</p>
+        <p class="nc-ctx">De Ghassem seet, an sengem Toun kann een d'Laachen spieren:</p>
+        <p class="nc-line">– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.</p>
       </div>
-      <p class="nc-q" id="q6">Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?</p>
+      <p class="nc-q" id="q6">Ghassem pities poor Baba, idle at home for years. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +220,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1063#7">
+    <fieldset class="nc-item" data-id="01/0073#5">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">De Yaser, wärend hie mat enger Spraydous, déi hie sengem Baba aus dem Khavar-Camion geklaut hat, eis Nimm op d'Mauer géintiwwer dem Haus vun der Negar geschriwwen huet, sot:</p>
-        <p class="nc-ctx">– Wa si eis Nimm léiert, gefält mir un eis.</p>
-        <p class="nc-line">Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.</p>
+        <p class="nc-line">Hie seet, e gutt Joer erkennt een um Fréijoer.</p>
       </div>
-      <p class="nc-q" id="q7">Is it clear that Yaser's name was the one written largest?</p>
+      <p class="nc-q" id="q7">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +236,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#8">
+    <fieldset class="nc-item" data-id="01/0138#1">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="lb" dir="ltr">
-        <p class="nc-ctx">– Jo, Hamoon ass en gudden Numm fir dech. Wéi den Hamoon am Film, bass du och voller Froen. Voller Angscht a Grond fir Onrou, net fir dech selwer, mä fir mech.</p>
-        <p class="nc-ctx">Den Hooman sot:</p>
-        <p class="nc-line">– An du, mat dëser penisseger Aart ze schwätzen, sollts Alain Schwanzlon heeschen.</p>
+        <p class="nc-line">Si sot, mäi Häerz verfault.</p>
       </div>
-      <p class="nc-q" id="q8">'Alain Schwanzlon' is meant as a rude pun on the actor Alain Delon. Would Luxembourgish readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q8">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,21 +252,159 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="04b/0509#2">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-line">Den Hooman klappt mir beim Laachen haart op de Réck, an den Zockerklomp spréngt mir an den Hals.</p>
+      </div>
+      <p class="nc-q" id="q9">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0951#6">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">– Gëff mir en zréck. Als wéilt en och just wëssen, wéi déi mat Draht funktionéieren.</p>
+        <p class="nc-ctx">Den Taghi huet dem Hamid seng Hand an der Loft gepackt a de Walkman gerett. Awer de Yaser krut awer nach e puer Fauschten a Zerkéis. De Hamid sot:</p>
+        <p class="nc-line">– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.</p>
+      </div>
+      <p class="nc-q" id="q10">Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0824#7">
+      <legend>Line 11</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-line">Ech hunn eréischt duerno, wéi meng Famill mech mat Gewalt tëscht d'Hénger gestouss huet, verstan, wat fir eng aner Welt dee Säit vun der Geschicht ass.</p>
+      </div>
+      <p class="nc-q" id="q11">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
+        <label><input type="radio" name="v11" value="ok"> Correct</label>
+        <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/1063#7">
+      <legend>Line 12</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">De Yaser, wärend hie mat enger Spraydous, déi hie sengem Baba aus dem Khavar-Camion geklaut hat, eis Nimm op d'Mauer géintiwwer dem Haus vun der Negar geschriwwen huet, sot:</p>
+        <p class="nc-ctx">– Wa si eis Nimm léiert, gefält mir un eis.</p>
+        <p class="nc-line">Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.</p>
+      </div>
+      <p class="nc-q" id="q12">Is it clear that Yaser's name was the one written largest?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
+        <label><input type="radio" name="v12" value="ok"> Correct</label>
+        <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 13</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">Optakt</p>
+        <p class="nc-ctx">…de Weltevenementer verluer gaange wieren, wa se hei net opgeschriwe ginn wieren. Si goufen opgeschriwwen, fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen.</p>
+        <p class="nc-line">Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.</p>
+      </div>
+      <p class="nc-q" id="q13">Is it clear that 'en' refers to the words you gather up?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
+        <label><input type="radio" name="v13" value="ok"> Correct</label>
+        <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#2">
+      <legend>Line 14</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">Optakt</p>
+        <p class="nc-ctx">…fir eng Bréck tëscht menger Welt an denger ze bauen. Eng Bréck vu menger Welt, an dem Moment, wou ech dës Sätz schreiwen, bis an deng Welt, an deem Moment, wou du dech hisetz fir se ze liesen. Vun dëser Säit aus wéckelen ech de Fuedem vu Wierder of, a vun der anerer Säit aus sammels du en op.</p>
+        <p class="nc-line">Sou wéi fréier an der Kandheet, wann d'Maman d'Wolle vun ale Kleeder ofgewéckelt huet, a mir de Fuedem geholl hunn a ronderëm d'Haus gelaf sinn, fir dass d'Wolle sech net opgehäift huet.</p>
+      </div>
+      <p class="nc-q" id="q14">Is it clear the children walked around inside the house, holding the thread?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
+        <label><input type="radio" name="v14" value="ok"> Correct</label>
+        <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="03/0060#4">
+      <legend>Line 15</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">Déiselwecht Stëmm, déi de Ghassem no mengem Konkur-Rang gefrot hat, sot ganz leis:</p>
+        <p class="nc-ctx">– Heh, den Ostad Hamid, dee verduedelt Kaz.</p>
+        <p class="nc-line">Den Hamid huet den ausgebleechte roude Réim vu senger Ringer-Trikot eropgezunn an, mat enger Bewegung vum Réck vu senger Hand, de Knuet vum zerrëssene Punkt vun der Schëller op de Réck geworf.</p>
+      </div>
+      <p class="nc-q" id="q15">Hamid flicks the knot of his torn singlet strap onto his back. Is this clear?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
+        <label><input type="radio" name="v15" value="ok"> Correct</label>
+        <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0830#5">
+      <legend>Line 16</legend>
+      <div class="reader nc-text" lang="lb" dir="ltr">
+        <p class="nc-ctx">– Nee, hie huet och mir net geäntwert.</p>
+        <p class="nc-ctx">E puer Deeg méi spéit huet hien eis all zesumme geäntwert. Hie hätt geschriwwen, hie wier an d'Studentenheem fir bestuete Studente verluecht ginn an hätt eist Zëmmer verlooss. De Meysam sot, do um Buedem wier et méi gemittlech, an dem Bahman säi Bett ass eidel bliwwen.</p>
+        <p class="nc-line">De Farid, wann de Sajad heiansdo bei sengem Rout op säi Bett dem Farid säi Hals mat engem Trëttlach verwiesselt huet, koum a schlief op dem Bahman sengem Bett.</p>
+      </div>
+      <p class="nc-q" id="q16">Sajad sometimes steps on Farid's neck climbing to his bunk. Is that clear?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q16">
+        <label><input type="radio" name="v16" value="ok"> Correct</label>
+        <label><input type="radio" name="v16" value="change"> Needs change</label>
+        <label><input type="radio" name="v16" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n16">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -299,7 +422,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/lb/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/lb/">&larr; <span class="native" lang="lb" dir="ltr">Lëtzebuergesch</span></a></p>
   </section>
 </main>
@@ -318,7 +440,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

@@ -1,137 +1,453 @@
 {
+ "format": 2,
  "lang": "pl",
  "slug": "pl",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Okiem rodzimego użytkownika",
+  "lead": "Nie musisz znać książki. Odpowiedz na tyle pytań, na ile masz ochotę.",
+  "persian_words": "Maman (matka), Baba (ojciec) i -dżan (kochany) to perskie słowa, zachowane w książce.",
+  "page": "Strona",
+  "correct": "Dobrze",
+  "needs_change": "Do zmiany",
+  "not_sure": "Trudno powiedzieć",
+  "how_say": "Jak to ująć po Twojemu?",
+  "meaning": "Co Twoim zdaniem to znaczy?",
+  "optional": "(nieobowiązkowo)",
+  "your_name": "Twoje imię",
+  "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
+  "private": "Twoje odpowiedzi trafią tylko do autora.",
+  "send": "Wyślij",
+  "send_continue": "Wyślij i przejdź do strony {n}",
+  "sending": "Wysyłanie…",
+  "popup_title": "Dziękujemy!",
+  "popup_text": "Chcesz, żeby Twoje imię znalazło się na stronie z podziękowaniami w serwisie? Wypełnij wszystkie 4 strony, a chętnie je dodamy.",
+  "popup_button": "Przejdź do strony {n}",
+  "arrived": "Dziękujemy, Twoje odpowiedzi ze strony {n} dotarły.",
+  "thanks_last": "Dziękujemy! Twoje odpowiedzi dotarły.",
+  "all_done": "Wszystkie strony zostały wysłane. Dziękujemy za każdą z nich!",
+  "already_sent": "Ta strona została już wysłana z tego urządzenia. Dziękujemy!",
+  "continue_with": "Przejdź dalej do strony {n}",
+  "need_one": "Wybierz odpowiedź dla co najmniej jednego fragmentu.",
+  "note_no_answer": "Jeden z fragmentów ma uwagę: wybierz, proszę, odpowiedź także dla niego.",
+  "name_needed": "Wpisz imię, które mamy umieścić, albo odznacz pole.",
+  "not_connected": "Wysyłanie nie jest jeszcze podłączone.",
+  "too_long": "Wysyłanie trwało zbyt długo.",
+  "cannot_send": "Nie udało się stąd wysłać odpowiedzi.",
+  "use_email": "Skorzystaj, proszę, z przycisku e-mail poniżej.",
+  "fallback": "Nie udało się wysłać odpowiedzi z tej strony. Wyślij je, proszę, e-mailem; nic z tego, co wpisano, nie przepadło.",
+  "email_button": "Wyślij odpowiedzi e-mailem",
+  "shortened": "Niektóre uwagi były za długie na link e-mail i zostały w nim skrócone. Pełne odpowiedzi są poniżej; wklej je, proszę, do e-maila.",
+  "noscript": "Wysyłanie wymaga JavaScriptu. Możesz też wysłać odpowiedzi e-mailem na adres {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.",
-   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Wychodź też na zewnątrz. Idź tam, gdzie nie ma dużo ludzi.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Ooo, jak dobrze. Mm-hm, zamawiasz i przynoszą. Ale Amir-dżan, nie siedź cały czas w domu."
+   "key": "slips",
+   "title": "Przekręcone słowa",
+   "q": "Matka w książce źle wymawia niektóre obce słowa. Czy te przekręcenia brzmią wiarygodnie?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "zamrażałki",
+     "note": "= zamrażarki"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroce",
+     "note": "= Ameryce"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublansem",
+     "note": "= ambulansem"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "burdożer",
+     "note": "= buldożer"
+    }
    ]
   },
   {
-   "id": "01/0132#3",
-   "where": "01/0132",
-   "text": "Albo cholera, na przykład. Ona też nie zabiła tylu.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "before": [
-    "…kicha po jednej stronie ulicy, a człowiek po drugiej stronie łapie wirusa i umiera. Nigdy czegoś takiego nie widziałam ani nie słyszałam. Nawet pokolenie Bibi o niczym takim nie mówiło. Był tifus, na przykład, albo gruźlica, albo odra. Nazywano je śmiertelnymi. Hmm, nawet one nie zabiły tylu ludzi."
+   "key": "images",
+   "title": "Perskie powiedzenia",
+   "q": "Niektóre perskie powiedzenia i obrazowe zwroty przetłumaczono dosłownie. Czy każde z nich daje Ci choć trochę wyczucia, co znaczy, czy nic Ci nie mówi?",
+   "labels": [
+    "Domyślam się",
+    "Nie mam pojęcia",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Co Twoim zdaniem to znaczy?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Deszcz nie pada z ziemi w niebo.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "dobry rok już po wiośnie widać",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Nie jedz smutku",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "serce mi gnije",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Ręka moja krótka, a połączenie z tobą dalekie.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "jeśli powiem, język mi się spali; jeśli nie powiem, szpik w kościach mi się spali",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "posiłek zamieni mi się w jad węża",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "żaden chleb ci się od tego nie zagrzeje",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "rodzina na siłę wepchnęła mnie między kury",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "kostka cukru wskakuje mi do gardła",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "zajrzyj we wszystkie zakątki",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "słowa nic nie kosztują — to tylko gorące powietrze",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "na pewno upadłby w oczach Negar",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Tylko obietnica na czas żniw?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "wyłożę ci flaki przyjaźni na tacy",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "aż wszystkie włosy na ciele im powypadały",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "nie gorączkuj się tak, wyschnie ci mleko",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "nikt cię nie nazwie niemową, jak nie pierdniesz",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Zjedz główkę mojego kutasa",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Ty pożeraczu główek kutasów",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "śmiejesz się z naszych bród i fiutów",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "nie włóczyłbyś się tak po ulicach z fiutem w garści",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "żaden chuj, który nam spadnie na głowę",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#4",
-   "where": "01/0148",
-   "text": "– Co i Uśmiechy?",
-   "q": "Maman catches only the end of the film title 'Łzy i Uśmiechy'. Does her puzzled question sound natural?",
-   "ctx": 2,
-   "before": [
-    "– Dzieciaki, mam pobrać Łzy i Uśmiechy, żebyśmy mogli obejrzeć dziś wieczór?",
-    "Maman odwraca głowę i mówi:"
+   "key": "children",
+   "title": "Słowa dzieci",
+   "q": "Niektóre dzieci w książce przekręcają słowa, jak to robią małe dzieci. Czy każde z nich brzmi jak dziecięcy błąd, a nie literówka?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "To kamień z marmulu. Marmul znaczy bardzo drogi.",
+     "note": "marmul = marmur"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Nazywa się Tatanik.",
+     "note": "Tatanik = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, kupis mi tę duzą lalkę?",
+     "note": "mała dziewczynka"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Tak, kupię ci duzą lalkę.",
+     "note": "ojciec ją naśladuje"
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "– Oho. Hamidzie Kocie, jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?",
-   "q": "In Persian, 'char' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'osioł'. Does the jab work?",
-   "ctx": 2,
-   "before": [
-    "– Pff, ośle, kto wie lepiej: przyjaciel kuzyna mistrza rzemieślnika naszego szwagra — najbogatszy człowiek w Teheranie — czy ty, cielaku? No dobrze, idź, kup sobie jeden. Jeśli szkło pęknie, nie mów, że cię nie ostrzegałem.",
-    "Taghi powiedział:"
+   "key": "nicknames",
+   "title": "Przezwiska",
+   "q": "Przyjaciele w książce nadają sobie żartobliwe przezwiska, często oparte na grze słów. Czy każde z nich sprawdza się jako przezwisko po polsku?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Chujon",
+     "note": "przezwisko jednego z przyjaciół: nazwisko aktora Alaina Delona, w którym część zamieniono na wulgarne słowo oznaczające penisa"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Starszy Tawerny",
+     "note": "żartobliwie dostojny tytuł, wzięty z poezji Hafeza"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Stary",
+     "note": "pieszczotliwa forma od „Starszy Tawerny”"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Tawerniak, mój Tawerniaczku",
+     "note": "pieszczotliwe formy od słowa „tawerna”"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Farid Lampart",
+     "note": "dla śmiałego, lekkomyślnego przyjaciela"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Czy Arasteh to przycięte Araasteh?",
+     "note": "araasteh = po persku „schludny”"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "jaśnie panią panną Armaaan",
+     "note": "nazwisko Arman, przeciągnięte dla kpiny"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister kędzierzawowłosy Schrödingerze",
+     "note": "kpiący tytuł dla kogoś, kto nie umie się zdecydować"
+    }
    ]
   },
   {
-   "id": "03/0290#6",
-   "where": "03/0290",
-   "text": "– Czy Arasteh to przycięte Araasteh?",
-   "q": "The narrator's surname Arasteh was cut down from Persian 'Araasteh', meaning neat. Would Polish readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0430#7",
-   "where": "03/0430",
-   "text": "A z tym twoim chujowym sposobem mówienia powinieneś się nazywać Alain Chujon.",
-   "q": "'Alain Chujon' is meant as a rude pun on the actor Alain Delon. Would Polish readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#8",
-   "where": "04a/0076",
-   "text": "– To kamień z marmulu. Marmul znaczy bardzo drogi.",
-   "q": "A little boy says 'marmul' for 'marmur' (marble) and thinks it means expensive; both mistakes are deliberate. Does it sound childlike?",
-   "ctx": 1,
-   "before": [
-    "Szliśmy dalej. W połowie drogi był jeden dom. Jego mur był ładny. Ghassem zawsze mówił:"
+   "key": "jokes",
+   "title": "Żarty i gra słów",
+   "q": "W tych fragmentach jest żart albo gra słów. Czy każdy z nich działa po polsku?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Tak działa jego system fabryczny.",
+     "note": "psucie wszystkiego to po prostu jego natura"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Wybaczam. Cały ten bulwar jest twój.",
+     "note": "po persku „wybaczyć” znaczy też „podarować”"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?",
+     "note": "dokuczanie chłopakowi, że przeszedł na grzeczniejsze słowo"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir-to-pir? … Orle Oko mówi peer-to-peer, a Tawerniak mówi Stary-do-Starego.",
+     "note": "słyszy „peer” jako perskie pir („starszy”), od którego pochodzi jego przezwisko"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "W nocy słyszałem, jak przeżuwasz.",
+     "note": "przeżuwanie nocą, jak krowa, która przeżuwa pokarm"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Co ci znowu odbiło, że wymierzasz w nas swojego stojącego fiuta, Alain Chujon?",
+     "note": "podwójne znaczenie: dumne wyprostowanie się i erekcja"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Jakim -arzem nie był?",
+     "note": "matka słyszy tylko końcówkę słowa „kobieciarzem”"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Przyjaciel kuzyna mistrza rzemieślnika naszego szwagra — najbogatszy człowiek w Teheranie",
+     "note": "stała przechwałka jednego z chłopaków"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Albo jesteś kutasogło... no, już wcześniej byłeś kutasogłowy, a teraz zrobiłeś się jeszcze bardziej kutasogłowy.",
+     "note": "obelga urwana w pół słowa, a potem jeszcze gorsza"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "No tak, wszyscy mamy fabryki. … Fabrykę pierdolenia.",
+     "note": "produkują tylko pierdolenie, czyli gadają bzdury"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ty skamielino, sam jesteś pomnikiem głupoty i upadku",
+     "note": "kpiąca obelga"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "życie jest jak banknot tysiąctomanowy: z której strony nie spojrzysz, pachnie ryżem z soczewicą.",
+     "note": "absurdalny dowcip"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Ja tak mówię; słyszycie, jak mówię, i myślicie, że to poezja.",
+     "note": "chłopak odpowiada śpiewnym rytmem"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Uważaj, żebyś nie pękł, panie Chuju.",
+     "note": "właśnie wypiął pierś"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Ty jesteś największą krową z nich wszystkich.",
+     "note": "„krowa” = tępy głupiec, powiedziane do mężczyzny"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "I zawsze ogromną przyjemność sprawiało mu wciśnięcie słowa „świadom” dwa razy w to zdanie.",
+     "note": "„świadom” użyte dwa razy, dla zabawy"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "problem leży po stronie odbiorcy; nadajnik nie rozwiąże sprawy.",
+     "note": "„odbiorca” to słaby wzrok przyjaciela"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Mam na myśli Alaina Chujona. Chuuuj.",
+     "note": "wulgarna część kalamburu, przeciągnięta"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Jeśli ty jesteś Human, to ja jestem Susan.",
+     "note": "łagodne imię Human nie pasuje do tak owłosionego mężczyzny"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Pochodnej? Sensu? Czy sensu pochodnej? Czy pochodnej sensu?",
+     "note": "pozornie głęboka gra słów"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Daj Boże, żebyś zawsze był araasteh.",
+     "note": "błogosławieństwo z grą słów na nazwisku Arasteh; araasteh = „schludny”"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Bez okularów nic nie widzę, obiektywnie.",
+     "note": "ulubione słówko tej postaci, wtrącane wszędzie"
+    }
    ]
   },
   {
-   "id": "04b/1263#9",
-   "where": "04b/1263",
-   "text": "– Wżżżżż, Baba, Baba, kupis mi tę duzą lalkę?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…lampę, która zniszczyła tamtą kojącą, ciemną ciszę, a sama świeciła zbyt słabo, by mnie poprowadzić. Migającą lampę w ręce dziewczyny, której drzwi miały kolor, jakiego nie potrafiłem znaleźć w pudełku kredek. Nadbiega mała dziewczynka, bzycząc, i staje obok mnie. Patrzy na zabawki. Mówi:"
-   ]
-  },
-  {
-   "id": "04b/1265#10",
-   "where": "04b/1265",
-   "text": "– Tak, kupię ci duzą lalkę.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Wżżżżż, Baba, Baba, kupis mi tę dużom lalkę?",
-    "Głos zza moich pleców mówi:"
-   ]
-  },
-  {
-   "id": "04b/1312#11",
-   "where": "04b/1312",
-   "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
-   "q": "A student's crude made-up word for a muddled head. Is 'gównozamęt' understandable?",
-   "ctx": 1,
-   "before": [
-    "– ...zobaczcie, jak bardzo to skłania do myślenia. Narysował to i podpisał pod spodem: to nie jest fajka."
-   ]
-  },
-  {
-   "id": "04b/1321#12",
-   "where": "04b/1321",
-   "text": "„To wino, które tam jest, jest prawdziwe nie jest przenośnią”.",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.",
-   "q": "He nearly says the crude word 'gównozamęt' again, then stops himself. Is that clear?",
-   "ctx": 2,
-   "before": [
-    "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali. Chciałem pokazać go Nilufar.",
-    "– Jest. Posłuchaj tego. Na, na Boga, posłuchaj. „To wino, które tam jest, jest prawdziwe nie jest przenośnią”. To jest to samo. Tak jak ten obraz, który pokazywała twoja przyj-przyj-przyjaciółka."
-   ]
-  },
-  {
-   "id": "06/0056#14",
-   "where": "06/0056",
-   "text": "Ziemię sypali na nią burdożerem.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Polish speaker say 'buldożerem' (bulldozer) as 'burdożerem'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Wers Hafeza",
+   "q": "Ten wers poety Hafeza jest zapisany bez przecinka, więc można go odczytać na dwa przeciwne sposoby:",
+   "labels": [
+    "Tak, na oba",
+    "Tylko na jeden",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "To wino, które tam jest, jest prawdziwe nie jest przenośnią",
+     "note": null
+    }
+   ],
+   "after": [
+    "Jeden sposób: wino jest prawdziwe, nie jest przenośnią.",
+    "Drugi sposób: wino nie jest prawdziwe, jest tylko przenośnią."
+   ],
+   "after_q": "Czy polską wersję można odczytać na oba sposoby?"
   }
- ]
+ ],
+ "first": 1
 }

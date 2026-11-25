@@ -2,8 +2,108 @@
  "lang": "he",
  "slug": "he",
  "dir": "rtl",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
+  {
+   "id": "04b/1263#5",
+   "where": "04b/1263",
+   "text": "– וְוווז'ז'ז', באבא באבא, תִתְנֶה לי את הבּוּבּה הדְדולה הדֹאת?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
+   "before": [
+    "– אמיר, אמיר-ג'אן, בני. תתעורר. תתעורר בשביל מאמאן. זה היה רק חלום. אל תפחד, אני כאן.",
+    "…זה כאילו היא הביאה מנורה אל החדר האפל של אותו חלק בי. מנורה מטרידה שהרסה את הדממה המרגיעה וכהת-הגוון אך לא הפיצה די אור כדי להוליך אותי לאנשהו. מנורה מהבהבת בידה של נערה שמעולם לא ידעתי היכן בקופסת עפרונות הצבע יימצא צבע דלת ביתה. ילדה קטנה באה, מזמזמת, ועוצרת לידי. היא מביטה בצעצועים. היא אומרת:"
+   ]
+  },
+  {
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "וגם אתה, עם צורת הדיבור המזוינת שלך, שמך היה צריך להיות \"אלן זינון\".",
+   "q": "'אלן זינון' is meant as a rude pun on the actor Alain Delon. Would Hebrew readers get it? If not, what word could carry it?",
+   "before": [
+    "– כן, המון הוא שם טוב לך. כמו המון בסרט, גם אתה מלא שאלות. אתה מלא חרדה ומקור של מבוכה — לא לעצמך אלא לי.",
+    "הומן אמר:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "הגשם לא עולה מהאדמה לשמים.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "ידי קצרה והאיחוד איתך רחוק.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "אל תאכל צער, בני החכם.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "אני אומרת שאם תמשיך רק לשבת כאן ולקרוא שירה, שום לחם לא יתחמם לך.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "ביבי, שתנוח נשמתה, הייתה אומרת בזמנים כאלה: אם אומר, לשוני שורפת; אם לא אומר, מוח עצמותיי שורף.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "הוא אומר, \"שנה טובה ניכרת מאביבה.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "היא אמרה, הלב שלי נרקב.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "תוך כדי צחוק, הומן מכה בחוזקה על גבי בידו, וגוש הסוכר קופץ בגרוני.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "אל תאמר לאסכנדר המסכן, אחרת ישב שוב שעה ויטיף לנו והארוחה תהפוך לי לארס נחשים.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0645#4",
+   "where": "04b/0645",
+   "text": "– הוא עוקב אחרי המצב בארבע עיניים ...",
+   "q": "Is it clear he is watching the situation very closely?",
+   "before": [
+    "– יש לנו את חדשות עין הנשר, שום חדשה לא חומקת מאיתנו.",
+    "הומן אמר:"
+   ]
+  },
+  {
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "רק אחרי שהמשפחה דחפה אותי בכוח לתוך הלול הבנתי איזה עולם שונה זה, הצד ההוא של הסיפור.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
@@ -32,36 +132,6 @@
    "before": [
     "…חוצה את הדרך בין בניין אבו ריחאן לאולם לעבר שער ולי-עסר של האוניברסיטה. יוצא מהדרך שבין בניין אבו ריחאן לאולם הולך זקן גוץ לבן שיער, כהה פנים ועקום גב, בחליפה אפורה ותיק חום, לעבר מדרגות כניסת בניין אבו ריחאן. לצידו הולכים בחור ובחורה. מתנועת ראשו וידיו של הבחור נראה שהוא מסביר משהו. מראה מוכר.",
     "בהמן אמר שדיבר עם אחד הפרופסורים במחלקה, ששמע שהוא מסור מאוד לאוניברסיטת אמיר כביר, והוחלט שכפיצוי ייתנו לכל אחד מששתנו, שדירוגינו בקונקור היו טובים בהרבה מהממוצע, מחשב נייד ויקנו שטיח לחדרנו."
-   ]
-  },
-  {
-   "id": "04b/0645#4",
-   "where": "04b/0645",
-   "text": "– הוא עוקב אחרי המצב בארבע עיניים ...",
-   "q": "Is it clear he is watching the situation very closely?",
-   "before": [
-    "– יש לנו את חדשות עין הנשר, שום חדשה לא חומקת מאיתנו.",
-    "הומן אמר:"
-   ]
-  },
-  {
-   "id": "04b/1263#5",
-   "where": "04b/1263",
-   "text": "– וְוווז'ז'ז', באבא באבא, תִתְנֶה לי את הבּוּבּה הדְדולה הדֹאת?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "before": [
-    "– אמיר, אמיר-ג'אן, בני. תתעורר. תתעורר בשביל מאמאן. זה היה רק חלום. אל תפחד, אני כאן.",
-    "…זה כאילו היא הביאה מנורה אל החדר האפל של אותו חלק בי. מנורה מטרידה שהרסה את הדממה המרגיעה וכהת-הגוון אך לא הפיצה די אור כדי להוליך אותי לאנשהו. מנורה מהבהבת בידה של נערה שמעולם לא ידעתי היכן בקופסת עפרונות הצבע יימצא צבע דלת ביתה. ילדה קטנה באה, מזמזמת, ועוצרת לידי. היא מביטה בצעצועים. היא אומרת:"
-   ]
-  },
-  {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "וגם אתה, עם צורת הדיבור המזוינת שלך, שמך היה צריך להיות \"אלן זינון\".",
-   "q": "'אלן זינון' is meant as a rude pun on the actor Alain Delon. Would Hebrew readers get it? If not, what word could carry it?",
-   "before": [
-    "– כן, המון הוא שם טוב לך. כמו המון בסרט, גם אתה מלא שאלות. אתה מלא חרדה ומקור של מבוכה — לא לעצמך אלא לי.",
-    "הומן אמר:"
    ]
   }
  ]

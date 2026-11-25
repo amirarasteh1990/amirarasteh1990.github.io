@@ -1,192 +1,517 @@
 {
+ "format": 2,
  "lang": "sk",
  "slug": "sk",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Kontrola rodenými hovoriacimi",
+  "lead": "Knihu nemusíte mať prečítanú. Odpovedzte na toľko riadkov, na koľko chcete.",
+  "persian_words": "Maman (matka), Baba (otec) a -jan (drahý) sú perzské slová, ktoré kniha ponecháva.",
+  "page": "Strana",
+  "correct": "Správne",
+  "needs_change": "Treba zmeniť",
+  "not_sure": "Neviem isto",
+  "how_say": "Ako by ste to povedali?",
+  "meaning": "Čo podľa vás znamená?",
+  "optional": "(nepovinné)",
+  "your_name": "Vaše meno",
+  "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
+  "private": "Vaše odpovede dostane iba autor.",
+  "send": "Odoslať",
+  "send_continue": "Odoslať a pokračovať na stranu {n}",
+  "sending": "Odosiela sa…",
+  "popup_title": "Ďakujeme!",
+  "popup_text": "Chceli by ste mať svoje meno na stránke Poďakovanie na webe? Dokončite všetky 4 strany a radi ho tam pridáme.",
+  "popup_button": "Pokračovať na stranu {n}",
+  "arrived": "Ďakujeme, vaše odpovede zo strany {n} dorazili.",
+  "thanks_last": "Ďakujeme! Vaše odpovede dorazili.",
+  "all_done": "Odoslali ste všetky strany. Ďakujeme za každú z nich!",
+  "already_sent": "Túto stranu ste z tohto zariadenia už odoslali. Ďakujeme!",
+  "continue_with": "Pokračovať stranou {n}",
+  "need_one": "Vyberte odpoveď aspoň pri jednom riadku.",
+  "note_no_answer": "Pri jednom riadku je poznámka: vyberte, prosím, odpoveď aj preň.",
+  "name_needed": "Doplňte meno, ktoré chcete uviesť, alebo zrušte zaškrtnutie.",
+  "not_connected": "Odosielanie ešte nie je pripojené.",
+  "too_long": "Odosielanie trvalo príliš dlho.",
+  "cannot_send": "Odpovede sa odtiaľto nepodarilo odoslať.",
+  "use_email": "Použite, prosím, tlačidlo e-mailu nižšie.",
+  "fallback": "Odpovede sa z tejto stránky nepodarilo odoslať. Pošlite ich, prosím, e-mailom; nič z toho, čo ste napísali, sa nestratilo.",
+  "email_button": "Poslať odpovede e-mailom",
+  "shortened": "Niektoré poznámky boli pre e-mailový odkaz príliš dlhé, preto sa tam skrátili. Vaše úplné odpovede sú nižšie; vložte ich, prosím, do e-mailu.",
+  "noscript": "Odosielanie potrebuje JavaScript. Odpovede môžete poslať aj e-mailom na {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "04b/0595#1",
-   "where": "04b/0595",
-   "text": "Ale posral to. Orlie Oko hovorí peer-to-peer, Taverny hovorí pír na pír.",
-   "q": "Farid mocks Amir for hearing 'peer-to-peer' as Persian pir, elder, his nickname. Would Slovak readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pír na pír?",
-    "Hooman povedal:",
-    "– Pošlite salavát. Starší z Krčmy konečne niečo povedal.",
-    "Farid povedal:"
+   "key": "one",
+   "title": null,
+   "q": "He almost repeats the crude word, then stops. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#s12",
+     "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým väčší po... teda, tým väčší závrat dostaneš.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0432#2",
-   "where": "03/0432",
-   "text": "Nemyslím toho. Myslím Alain Kokoton. Kooo-kot. Bodka, koniec.",
-   "q": "Hooman mocks Eskandar's pout and drags out the rude half of his nickname 'Alain Kokoton'. Does 'Kooo-kot' land as the crude punch line?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ... a špúliš ústa ako slepačí zadok a ideš sa roztrhnúť, aby si hovoril ako on."
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "Tridsaťdva mesiacov vás milujem. Z diaľky. Bez toho, aby ste vedeli.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0624#3",
-   "where": "03/0624",
-   "text": "Výborne, Starší z Krčmy. To je pre Arasteha ideálne.",
-   "q": "Friends nickname Amir after a Hafez line about the wise old man of the tavern. Does 'Starší z Krčmy' work as a nickname?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Hooman otvoril knihu a prečítal:",
-    "– Som sluhom Staršieho z Krčmy, ktorého milosť ...",
-    "Farid povedal:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#4",
-   "where": "01/0182",
-   "text": "Akým -károm teda nebol?",
-   "q": "Maman echoes the ending of 'sukničkár', meaning their father was every other kind of rascal. Would Slovak readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ani sukničkár nebol.",
-    "Maman hovorí:"
+   "key": "one",
+   "title": null,
+   "q": "Is it clear the Hafez verse is compared to the painting?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1320#s21",
+     "text": "hľadajúc ten beit od Háfeza, pri ktorom, rovnako ako pri tej maľbe, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#5",
-   "where": "03/0362",
-   "text": "Mahboub, to, čo hovoria v správach, Ameroka...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovak speaker say America as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…som list na stenu vedľa ostatných rád. Vyšiel som z domu na konci dvora a prešiel som dĺžku dvora v deviatich krokoch, pričom radosť z nového objavu stále svietila v mojom srdci. Keď som z dvora vstúpil do obývacej izby, Maman ležala pred televízorom. Obe ruky mala na bruchu a hovorila Mahboubeh:"
+   "key": "one",
+   "title": null,
+   "q": "Is it clear he read the poem as the year turned?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0528#s26",
+     "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#6",
-   "where": "03/0380",
-   "text": "Najhoršia choroba je Ayzhajmer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovak speaker say Alzheimer as 'Ayzhajmer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman povedala:"
+   "key": "one",
+   "title": null,
+   "q": "A doting Persian endearment. Does it sound affectionate?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0751#s38",
+     "text": "Jéééj. Nech krúžim okolo hlavičky Nini-jan, ako jej to dobre myslí.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#7",
-   "where": "06/0052",
-   "text": "Nakoniec Mahboub zavolala a prišli s anbulanciou a odviezli Naney",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovak speaker say ambulance as 'anbulanciou'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…oni neboli opatrní, v tom je to. Teraz Dedko nepočuje a nevie, čo sa deje, ale Naney som niekoľkokrát povedala: Haaj Khanom, sedíte vonku v uličke, chytíte Covid, nedajbože. Oni len ešte viac sedeli vonku. Ale Amir, Naney v hrudi tak chrčalo. Povedala som Mahboub a ostatným — deti, toto je Covid."
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Prápor, vpred pochod!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Začiatok prvej časti misie. Prápor, vľavo vbok!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0056#8",
-   "where": "06/0056",
-   "text": "Zem nasypávali burdozérom. Zem a vápno.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovak speaker say bulldozer as 'burdozérom'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…pochovávajú aj tých, čo zomreli na Covid. Vôbec nie je jasné, či ju obradne umyli alebo nie. Pozerali sme z diaľky. Keď ju ukladali do hrobu, na chvíľu sa otvoril rubáš — zdalo sa mi, že ju do rubáša zavinuli v tých istých šatách, v ktorých sme ju odviezli do nemocnice. Hroby kopali veľmi hlboko."
+   "key": "one",
+   "title": null,
+   "q": "The mother says this to one son. Does the wording fit?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0560#s49",
+     "text": "– Povedz svojej mame všetko.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#9",
-   "where": "01/0132",
-   "text": "Alebo cholera, napríklad. Ani tá nezabíjala toľko.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Niekto kýchne na jednej strane ulice a človek na druhej strane to chytí a zomrie. Nikdy som nič také nevidela ani nepočula. Ani Bibina generácia nám o ničom takom nehovorila. Bol napríklad tifoid, alebo tuberkulóza, alebo osýpky. O tých vraveli, že sú smrteľné. Hmm, ani tie nezabíjali toľko."
+   "key": "one",
+   "title": null,
+   "q": "Is it clear the boy means his own father's truck?",
+   "q_lang": "en",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0135#s53",
+     "text": "Yaser povedal, lebo nákladiak Khavar jeho otca sa nezmestí do uličky.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#10",
-   "where": "01/0132",
-   "text": "Bol napríklad týfus, alebo tuberkulóza, alebo osýpky.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Keď prišiel prvýkrát, televízia hovorila dva z každých sto, teraz hovorí desať percent. Pri Bohu, je to veľmi nespravodlivé. Niekto kýchne na jednej strane ulice a človek na druhej strane to chytí a zomrie. Nikdy som nič také nevidela ani nepočula. Ani Bibina generácia nám o ničom takom nehovorila."
+   "key": "poetry",
+   "title": "Poézia",
+   "q": "Toto sú verše. Znie každý v slovenčine dobre ako poézia?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Ten Šalamúnov pečatný prsteň by som za nijakú cenu neprijal, keďže naň občas siaha ruka...",
+     "note": null
+    },
+    {
+     "id": "03/0622#poetr",
+     "text": "Som sluhom Staršieho z Krčmy, ktorého milosť ...",
+     "note": null
+    },
+    {
+     "id": "04b/0742#poetr",
+     "text": "pri spomienke na milú a domovinu budem tak horko plakať, že zo sveta cestu a obyčaj putovania ...",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "Na všetko možno písať",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "len na vodu nie",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "píš na vodu vlastnou krvou",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "aby ten, kto pôjde v tvojich stopách",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "tadiaľto prešli.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Čítala: „Dávno je, čo milovaný neposlal žiadny odkaz, nenapísal ani pozdrav ...“ a ja som sa zasmial.",
+     "note": null
+    },
+    {
+     "id": "04b/1391#poetr",
+     "text": "teraz si preč",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "svetlo mojich snov bliká",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "nemám nádej, že sa vrátiš",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "ale keby ťa cesta zaviedla bližšie",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "príď zase do mojich snov",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "myslím, že moje sny neuverili, že si odišla",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Svetlo mojich snov ... svetlo mojich snov sa ... svetlo mojich snov sa rozsvietilo",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Teraz ... teraz ... teraz ťa niet ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#11",
-   "where": "01/0148",
-   "text": "Čo a Úsmevy?",
-   "q": "Maman, a little hard of hearing, catches only the end of the show title 'Slzy a úsmevy'. Does her question come across?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Decká, mám stiahnuť Slzy a úsmevy, aby sme to dnes večer pozreli?",
-    "Maman otočí hlavu a hovorí:"
-   ]
-  },
-  {
-   "id": "04a/0076#12",
-   "where": "04a/0076",
-   "text": "Je to kameň z marmolu. Marmol znamená veľmi drahý.",
-   "q": "Ghassem, a boy, says 'marmol' for marble and thinks it means expensive. Does it read as his childish mistake?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Šli sme ďalej. V polovici cesty bol dom. Jeho múr bol pekný. Ghassem vždy hovoril:"
-   ]
-  },
-  {
-   "id": "04b/0784#13",
-   "where": "04b/0784",
-   "text": "Ty si ale sníki.",
-   "q": "She teases him with the English slang word sneaky, spelled the Slovak way. Does 'sníki' read as that playful borrowing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Dnes si uprostred fakulty hovorila s niekoľkými inými dievčatami. Počul som to."
-   ]
-  },
-  {
-   "id": "03/0290#14",
-   "where": "03/0290",
-   "text": "Je Arasteh len zostrihnuté Araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Slovak readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Pán Arasteh.",
-    "Otočím k nemu hlavu."
-   ]
-  },
-  {
-   "id": "03/0309#15",
-   "where": "03/0309",
-   "text": "Dajbože, nech si vždy araasteh.",
-   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would Slovak readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Stráž sa usmieva a hovorí:"
-   ]
-  },
-  {
-   "id": "04b/0387#16",
-   "where": "04b/0387",
-   "text": "Včera v noci som počul, ako prežúvaš.",
-   "q": "Eskandar mocks Hooman for secretly eating sweets at night, chewing like a cow chews cud. Does 'prežúvaš' carry that jab?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar sa otočil k Hoomanovi a povedal:"
+   "key": "word_choice",
+   "title": "Jednotlivé slová",
+   "q": "Je slovo v každom riadku to správne? Čo má znamenať, je uvedené pod ním.",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0152#word_",
+     "text": "Jéééj. Kiežby som vedel, čo sa odohráva v Nini-janinej hlave.",
+     "note": "\"Jéééj\" = a long, fond sigh of delight"
+    },
+    {
+     "id": "01/0166#word_",
+     "text": "Len sa smejeme, Nana-pesar-jan.",
+     "note": "\"Len sa smejeme\" = we're only joking"
+    },
+    {
+     "id": "01/0216#word_",
+     "text": "Áno, náš Baba-jan je veľmi hladný po úcte.",
+     "note": "\"hladný po úcte\" = badly craves respect (said sarcastically)"
+    },
+    {
+     "id": "01/0261#word_",
+     "text": "Mm-hm, zmenil sa veľmi, veľmi. Tak schudol a stmavol.",
+     "note": "\"stmavol\" = skin grown darker from the sun"
+    },
+    {
+     "id": "03/0119#word_",
+     "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
+     "note": "\"pocit známosti\" = a sense of having seen her before"
+    },
+    {
+     "id": "04a/0002#word_",
+     "text": "Ehe, Amir, našla som ťa.",
+     "note": "\"Ehe\" = happy 'oh!' on finding the child"
+    },
+    {
+     "id": "04a/0020#word_",
+     "text": "Dobre, aj ty poď na misiu, ale musíš byť veľmi opatrný. Časti sú naozaj ťažké.",
+     "note": "\"Časti\" = stages of a pretend mission"
+    },
+    {
+     "id": "04a/0054#word_",
+     "text": "Fuj, unavil som sa.",
+     "note": "\"Fuj\" = Ugh, a tired groan"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "Hovno v hlave. Nútiš ma otvoriť ústa.",
+     "note": "\"Hovno v hlave\" = shit-for-brains, crude insult for a dimwit"
+    },
+    {
+     "id": "04b/0162#word_",
+     "text": "Hej, ako nás uvidia, stiahnu zadok a držia si od nás taký odstup, že mám chuť im skočiť oboma nohami do tváre.",
+     "note": "\"stiahnu zadok\" = tense up and act snooty (crude image)"
+    },
+    {
+     "id": "04b/0175#word_",
+     "text": "Hej. Nedaj sa zmiasť týmto Arastehom; hoci je trúba, v Konkoore mal umiestnenie sedemdesiatštyri.",
+     "note": "\"trúba\" = goofy, silly, said fondly"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "Pred rokom dvoma som od Orlie Oko News počul, že ten frajerko odišiel do Austrálie tiež, tak akosi za dievčaťom, ktoré ste obaja milovali.",
+     "note": "\"ten frajerko\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0270#word_",
+     "text": "Viem, nie som žiadna hlupaňa, ale takto to nejde.",
+     "note": "\"hlupaňa\" = a fool, a dummy (said of herself)"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "Tak to si zasraný prvák.",
+     "note": "\"zasraný prvák\" = fucking freshman, casual friendly swearing"
+    },
+    {
+     "id": "04b/0353#word_",
+     "text": "A v tej zasranej situácii, aké vykopávky nám pridelili?",
+     "note": "\"vykopávky\" = odd, weird people (mocking slang)"
+    },
+    {
+     "id": "04b/0370#word_",
+     "text": "Nikto nemá v izbe koberec, Baba-jan, len my máme koberec, a to preto, že sme izba elity.",
+     "note": "\"izba elity\" = the elite room, the best room"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "Leopard Farid, ovládni si nervy a nerob vražedný kúsok.",
+     "note": "\"vražedný kúsok\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "Orlie Oko, nech ti to Boh nedaruje, zničil si mi chrbát.",
+     "note": "\"nech ti to Boh nedaruje\" = half-joking curse: may God not forgive you"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "Pre lásku tvojej matky nechoď po izbe bez okuliarov.",
+     "note": "\"Pre lásku tvojej matky\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0690#word_",
+     "text": "Posratý chod sveta.",
+     "note": "\"Posratý chod sveta\" = the shitty way the world works"
+    },
+    {
+     "id": "04b/0690#word_2",
+     "text": "Stačilo by, keby profesori z elektrotechniky a strojárstva pred množstvom rokov nedostali chuť odobrať budovu Abu-Reyhan fakulte lodného staviteľstva",
+     "note": "\"nedostali chuť\" = crude: lusted after, were dying to grab"
+    },
+    {
+     "id": "04b/0743#word_",
+     "text": "Ležal som v tme izby a škárou vo dverách som videl Ghassema, ako sedí v hale pred televízorom a lúska semienka, a Maman sedela vedľa neho.",
+     "note": "\"v hale\" = in the hall (main living room)"
+    },
+    {
+     "id": "04b/0744#word_",
+     "text": "Sľúbila som, že keď sa uzdraví, pôjdem pešo do Mašhadu.",
+     "note": "\"Sľúbila som\" = I vowed (a religious vow)"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "Ty si ale sníki.",
+     "note": "\"sníki\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/0935#word_",
+     "text": "„Pre Atára je lepšie plakať až do svitania“ alebo „teraz je viac zabitý“?",
+     "note": "\"teraz je viac zabitý\" = now he lies more deeply slain (by love)"
+    },
+    {
+     "id": "04b/1003#word_",
+     "text": "Pozri, čo si to vyviedol, ty mozog na hovno.",
+     "note": "\"ty mozog na hovno\" = shit-for-brains (a crude insult)"
+    },
+    {
+     "id": "04b/1274#word_",
+     "text": "opití a",
+     "note": "\"opití\" = drunk with love, in the mystic sense"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "spálení",
+     "note": "\"spálení\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Človek z toho dostane posratý závrat. Čím viac o tom premýšľate, tým väčší je ten posratý závrat.",
+     "note": "\"posratý závrat\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1314#word_",
+     "text": "Možno poviete, že to nejde, že to nie je možné, že je to len predstava a nie je to skutočné. Ale stalo sa to a naozaj vás milujem.",
+     "note": "\"Ale stalo sa to\" = but it is real, not fantasy"
+    },
+    {
+     "id": "06/0090#word_",
+     "text": "Medzitým Mahboub plakala celý týždeň v jednom kuse.",
+     "note": "\"Medzitým\" = back then, at that time"
+    },
+    {
+     "id": "06/0165#word_",
+     "text": "Vypil priveľa limonády.",
+     "note": "\"limonády\" = soda, fizzy soft drinks"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Hmm, ty si šiel na výlet, zabaviť sa, padlo ti to dobre. Tie ťažké stránky si nevidel.",
+     "note": "\"padlo ti to dobre\" = you enjoyed yourself there"
+    },
+    {
+     "id": "06/0291#word_",
+     "text": "Hľadá si výhovorky, aby reptal pre nič za nič, che, Amir-jan.",
+     "note": "\"che\" = a short, soft laugh"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

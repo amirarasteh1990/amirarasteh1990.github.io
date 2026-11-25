@@ -2,20 +2,13 @@
  "lang": "ckb",
  "slug": "ckb",
  "dir": "rtl",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "گوتی: دڵم دەلەزێت.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "خەمت مەخۆ کوڕی زیرەکم.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +19,21 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "بیبی، خودا لێی خۆش بێت، لەم جۆرە کاتانەدا دەیگوت: ئەگەر بیڵێم، زمانم دەسووتێت؛ ئەگەر نەیڵێم، مۆخی ئێسکم دەسووتێت.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "بەو ئەسکەندەرە پیسە مەڵێ، دووبارە یەک کاتژمێر دادەنیشێت و پەند و ئامۆژگاریمان دەکات، دەبێتە ژەهری مار بۆم.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "باران لە زەوییەوە بەرەو ئاسمان نابارێت.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "– قاسم دەستی هەڵمەتیدا، دەڵێت: ساڵی باش لە بەهاریدا دیار دەبێت.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "دەڵێم بەم شێوەیە هەر تەنها لێرە دانیشیت و شیعر بخوێنیتەوە، نانێکت بۆ گەرم نابێتەوە.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0004#1",
+   "where": "01/0004",
+   "text": "– زۆر باشت کرد، نینیجان. دەڵێن نووبەرەکان دەبێت زۆر بخەون.",
+   "q": "They say babies need lots of sleep. Is 'نووبەرەکان' the right word for newborns?",
+   "before": [
+    "بە یەکدی سەلام دەکەین و پیرۆزباشیی نەورۆز بە یەکدی دەڵێین. مەحبووبە تەلەفۆنەکە دەداتە دەستی مامان کە ئەوکات لە هۆڵی ماڵەکەدا لە پاڵ خواردووە و سەری لەسەر بالیشتەکەیە.",
+    "– ئەمیرجان، ئەوکاتەی هەمووتان پیرۆزباشی نەورۆزتان لە منداڵەکان دەکرد، فرسەتەکەم بەکارهێنا و کەمێک چەرتم پێکرا."
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +43,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "دەستم کورتە و وەسڵی تۆ دوور.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04a/0027#8",
+   "where": "04a/0027",
+   "text": "قۆناغی یەکەم ئاسان بوو. خانووی ئێمە لە دەستپێکی کوێچەکەدایە.",
+   "q": "Kids play a soldier game. Is 'قۆناغی یەکەم' clear as its first stage?",
+   "before": [
+    "دەچووینە ناو کوێچەکە. یەکەم دەبوو بمانچووایە سەر کوێچەکە. قاسم دەیگوت:",
+    "– دەستپێکی قۆناغی یەکەمی مەشق. گوردان، بەرەو چەپ ڕۆ."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "بەو ئەسکەندەرە پیسە مەڵێ، دووبارە یەک کاتژمێر دادەنیشێت و پەند و ئامۆژگاریمان دەکات، دەبێتە ژەهری مار بۆم.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0045#3",
+   "where": "03/0045",
+   "text": "بیروکەی دەستی کوژەرانەی فەرید کەمێکم جووڵاند، بەڵام نە تاقەتم هەبوو نە توانام. تەنها کەمێکم دانیشت.",
+   "q": "Is it clear the narrator only tensed his lower back a little?",
+   "before": [
+    "لەگەڵ داواکاریەکەدا هومەن گوتی:",
+    "– ئێلدی، هەڵبگەڕێوە و بڕۆ پێش لەوەی فەریدی پلنگ دەستی کوژەرانەی بۆ بداتت."
+   ]
+  },
+  {
+   "id": "03/0121#4",
+   "where": "03/0121",
+   "text": "هەر رۆژ دوو نیو خشتەی لە لایەکی شەقامدا و دوو لە لایەکی تردا دەدانین و لەنێوانیاندا دەلێزین.",
+   "q": "Boys mark goals with half-bricks. Is it clear that 'دەلێزین' means they played?",
+   "before": [
+    "– لێرە لە ئیستادی دێللا ئەلپیی باشترە.",
+    "هەموومان بەبێ کۆچەک قبوولمان کرد. کەس نەیگوت کە ڕاکردن لەسەر ئاسفەڵتی شەقام بە پێلاوی میخی هەرزان، لە ڕاکردن لەسەر زەویی خۆڵاوی زۆر دژوارترە."
+   ]
+  },
+  {
+   "id": "03/0361#5",
+   "where": "03/0361",
+   "text": "بەبێ ئەوەی بیبینم، بەبەرچاومدا تێپەڕی کە مەحبووبە پەردەی بەردەم دەرگای حەوشەکەی بەردایەوە و دەرگاکەی داخست.",
+   "q": "Mahboubeh lets go of the door curtain. Is 'بەردایەوە' the right verb?",
+   "before": [
+    "وەڵامی مەحبووبە زۆر لاوازانە هات:",
+    "– باشە."
+   ]
   }
  ]
 }

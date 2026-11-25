@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ne" dir="ltr">नेपाली</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/ne/2/" data-round="2">2</a></p>
-    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/ne/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +119,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ne" data-language="Nepali" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="ne" data-language="Nepali" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1312#5">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">सुरुवात</p>
-        <p class="nc-ctx">…जसरी बाल्यकालमा Maman ले पुराना लुगाहरूबाट धागो उधिन्नुहुन्थ्यो, र हामी त्यसको धागो समातेर घरभरि घुम्थ्यौं ताकि धागो थुप्रिन नपाओस्। सायद तपाईंको पुस्ता त्यो धागोको संसारभन्दा केही वर्ष पछि आयो होला — तर कल्पना गर्नुहोस्: एक समय थियो, संसारको कुनै कुनामा, जब बालबालिकाहरू यसरी नै खेल्थे।</p>
-        <p class="nc-line">अहिले म शब्दहरूको धागो फुकाउँछु — तपाईंले त्यसलाई समातेर आफ्नो संसारमा लैजानुहोस्, ताकि यहाँ, मेरो संसारमा, त्यो थुप्रिन नपाओस्।</p>
+        <p class="nc-ctx">…ठ्याक्कै निलूफ़रले गर्ने गरेजस्तै। घुँडामाथिको भाग अबू-रेयहान भवनको गर्मी महिनाको रङरोगन र मर्मतको सूचनापछाडि लुकेको थियो। मुटु ढुक्ढुक्याउँदै म अगाडि बढें। निलूफ़र नै थिइन्, स्वयं निलूफ़र। कला विश्वविद्यालयतिर फर्केर, अरू केही केटीहरूसँग उभिएकी थिइन्। एउटी केटीले कागज अरूलाई देखाउँदै भन्दै थिइन्:</p>
+        <p class="nc-ctx">– ... हेर त कति सोचनीय छ। यो कोरेर मुनि लेखेको छ: यो पाइप होइन।</p>
+        <p class="nc-line">मान्छेलाई गु-रिँगटा लाग्छ। जति यसबारे बढी सोच्यो, उति बढी गु-रिँगटा लाग्छ।</p>
       </div>
-      <p class="nc-q" id="q1">The reader takes the words into their world. Do '<bdi lang="ne" dir="ltr">त्यसलाई</bdi>' and '<bdi lang="ne" dir="ltr">त्यो</bdi>' fit?</p>
+      <p class="nc-q" id="q1">She is meant to use a crude made-up word for dizzy. Does it work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +138,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0655#2">
+    <fieldset class="nc-item" data-id="04b/1150#4">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">– अँहँ, त्यसै हो र, आफ्नी गर्लफ्रेन्डसँगै। Kharabatका बूढा त रातको एक्लो मान्छे हो नि।</p>
-        <p class="nc-ctx">…गरेँ र कशावर्ज़ बुलेवारमा पुगेँ। बुलेवारको सुरुवातको बेन्चमा बसेँ। हाफ़िज़को किताब खोलेँ र आफ्नो घुँडामाथि राखेँ। बेन्चछेउको बत्तीको उज्यालोमुनि, आफ्नो खुट्टामुनि झरेको पातको पहेंलो, रातो र हरियो रङ हेर्दै, त्यही खास बैत गुनगुनाउँदै, निलूफ़र आउने पर्खाइमा बसेँ। निलूफ़रको आवाज मेरो कानमा गुन्जियो:</p>
-        <p class="nc-line">– यो कुरा सुन, कि आफूलाई गमबाट मुक्त गर्न चाहन्छौ भने; नलेखिएको भाग्य खोज्यौ भने रगत खानुपर्नेछ।</p>
+        <p class="nc-ctx">…पछाडि धकेलिएको त्यो हिर्काइ, त्यस दिन झन् जोडले एस्कंदरको अनुहारमा खस्यो। भाग्दै गर्दा फ़रीदको खुट्टा एस्कंदरको किताबमा पर्यो र त्यसको अखबारी जिल्द च्यातियो। किताबको लामो शीर्षकको एउटा कुना देखियोः "दस हजार ... अचम्महरू, ज्ञान... सूक्त... का लागि ..."। दुई-तीन रात फ़रीद कोठामा आएन। एस्कंदर भन्थ्योः</p>
+        <p class="nc-ctx">– यो सानो छेपारोले भौतिकीको नियम पनि तोड्यो।</p>
+        <p class="nc-line">उज्यालोको गतिभन्दा तेज गतिमा भाग्यो, नत्र म उसको ऐसीतैसी लगाइदिन्थें।</p>
       </div>
-      <p class="nc-q" id="q2">A line of verse: listen, so that you free yourself from sorrow. Is that clear?</p>
+      <p class="nc-q" id="q2">The speaker means he'd have hung him up by the backside. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +156,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0951#3">
+    <fieldset class="nc-item" data-id="03/0430#7">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">– मलाई फिर्ता देऊ। मानौं यसलाई थाहा छ ती तारवालाहरू कसरी चल्छन् भनेर।</p>
-        <p class="nc-ctx">तक़ीले हमीदको हात हावामै समात्यो र वाकमेन बचायो। तर यासरले केही मुक्का र लात भने पायो। हमीदले भन्यो:</p>
-        <p class="nc-line">– हाम्रो ज्वाइँको उस्तादको फुपुको छोराको साथी, जो तेहरानको सबैभन्दा धनी मान्छे हो, त्यसले भनेको थियो।</p>
+        <p class="nc-ctx">– हो, हामून तिम्रो लागि राम्रो नाम हो। फिल्मको हामूनजस्तै, तिमी पनि प्रश्नैप्रश्नले भरिएका छौ। तिमी चिन्ता र बेचैनीको स्रोत हौ — आफ्नो लागि होइन, मेरो लागि।</p>
+        <p class="nc-ctx">हूमनले भने:</p>
+        <p class="nc-line">अनि तिमी, यस्तो लाँडोजस्तो बोलीको लवजले त तिम्रो नाम आलाँ लाँडोन हुनुपर्थ्यो।</p>
       </div>
-      <p class="nc-q" id="q3">'<bdi lang="ne" dir="ltr">उस्तादको</bdi>' means the master craftsman their in-law works for. Is that clear?</p>
+      <p class="nc-q" id="q3">'<bdi lang="ne" dir="ltr">आलाँ लाँडोन</bdi>' is meant as a rude pun on the actor Alain Delon. Would Nepali readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +174,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1150#4">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">…पछाडि धकेलिएको त्यो हिर्काइ, त्यस दिन झन् जोडले एस्कंदरको अनुहारमा खस्यो। भाग्दै गर्दा फ़रीदको खुट्टा एस्कंदरको किताबमा पर्यो र त्यसको अखबारी जिल्द च्यातियो। किताबको लामो शीर्षकको एउटा कुना देखियोः "दस हजार ... अचम्महरू, ज्ञान... सूक्त... का लागि ..."। दुई-तीन रात फ़रीद कोठामा आएन। एस्कंदर भन्थ्योः</p>
-        <p class="nc-ctx">– यो सानो छेपारोले भौतिकीको नियम पनि तोड्यो।</p>
-        <p class="nc-line">उज्यालोको गतिभन्दा तेज गतिमा भाग्यो, नत्र म उसको ऐसीतैसी लगाइदिन्थें।</p>
+        <p class="nc-line">जमीनबाट आकाशतिर पानी पर्दैन।</p>
       </div>
-      <p class="nc-q" id="q4">The speaker means he'd have hung him up by the backside. Is that clear?</p>
+      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +190,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#5">
+    <fieldset class="nc-item" data-id="04b/0334#7">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">…ठ्याक्कै निलूफ़रले गर्ने गरेजस्तै। घुँडामाथिको भाग अबू-रेयहान भवनको गर्मी महिनाको रङरोगन र मर्मतको सूचनापछाडि लुकेको थियो। मुटु ढुक्ढुक्याउँदै म अगाडि बढें। निलूफ़र नै थिइन्, स्वयं निलूफ़र। कला विश्वविद्यालयतिर फर्केर, अरू केही केटीहरूसँग उभिएकी थिइन्। एउटी केटीले कागज अरूलाई देखाउँदै भन्दै थिइन्:</p>
-        <p class="nc-ctx">– ... हेर त कति सोचनीय छ। यो कोरेर मुनि लेखेको छ: यो पाइप होइन।</p>
-        <p class="nc-line">मान्छेलाई गु-रिँगटा लाग्छ। जति यसबारे बढी सोच्यो, उति बढी गु-रिँगटा लाग्छ।</p>
+        <p class="nc-line">मेरो हात छोटो छ र तिम्रो मिलन टाढा।</p>
       </div>
-      <p class="nc-q" id="q5">She is meant to use a crude made-up word for dizzy. Does it work?</p>
+      <p class="nc-q" id="q5">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +206,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0298#6">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">– त जा, आराम गर, Nini-jan।</p>
-        <p class="nc-ctx">…ढिलो साँझको नीलो-बैजनी उज्यालोलाई चिर्दै, अघि गइसकेका दुई हवाईजहाजका आपसमा काटिएका, हल्का, टुक्रिएका धुवाँका डोबहरूतिर बढ्छ। अर्थात् अरू कति अप्रिय खबर मबाट लुकाइराखेका छन्? अझ कति साना धागाहरू महिनौं अगाडि मेरो मुटुबाट तानिइसकेका छन्, मलाई थाहै नदिई? म आफ्नै लेखाइलाई पटक-पटक पढ्नमा शरण खोज्छु।</p>
-        <p class="nc-line">अब मेरो डाक्टरेट सकिइसकेको छ र म अलिकति शान्त भइसकेको छु, म निलूफ़रको लागि लेख्न सक्छु ताकि उसलाई थाहा होस् मैले उसको लागि शब्दहरूले भरिएको एउटा खुत्रुके बनाएको छु।</p>
+        <p class="nc-line">Bibi, ईश्वरले उनको आत्मालाई शान्ति देऊन्, यस्तो बेला भन्नुहुन्थ्यो — भनूँ भने जिब्रो पोल्छ, नभनूँ भने हड्डीको मासु पोल्छ।</p>
       </div>
-      <p class="nc-q" id="q6">Amir means a piggy bank full of words. Does '<bdi lang="ne" dir="ltr">खुत्रुके</bdi>' read naturally?</p>
+      <p class="nc-q" id="q6">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +222,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#7">
+    <fieldset class="nc-item" data-id="01/0073#5">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ne" dir="ltr">
-        <p class="nc-ctx">– हो, हामून तिम्रो लागि राम्रो नाम हो। फिल्मको हामूनजस्तै, तिमी पनि प्रश्नैप्रश्नले भरिएका छौ। तिमी चिन्ता र बेचैनीको स्रोत हौ — आफ्नो लागि होइन, मेरो लागि।</p>
-        <p class="nc-ctx">हूमनले भने:</p>
-        <p class="nc-line">अनि तिमी, यस्तो लाँडोजस्तो बोलीको लवजले त तिम्रो नाम आलाँ लाँडोन हुनुपर्थ्यो।</p>
+        <p class="nc-line">भन्छ, "राम्रो वर्ष त वसन्तैबाट थाहा हुन्छ।"</p>
       </div>
-      <p class="nc-q" id="q7">'<bdi lang="ne" dir="ltr">आलाँ लाँडोन</bdi>' is meant as a rude pun on the actor Alain Delon. Would Nepali readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q7">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,21 +238,155 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="01/0138#1">
+      <legend>Line 8</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-line">भनिन्, मेरो मन सडिरहेको छ।</p>
+      </div>
+      <p class="nc-q" id="q8">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
+        <label><input type="radio" name="v8" value="ok"> Correct</label>
+        <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0509#2">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-line">हाँस्दै हूमनले मेरो ढाडमा जोडले हिर्काउँछ र मिसरीको टुक्रा मेरो घाँटीभित्र उफ्रिन्छ।</p>
+      </div>
+      <p class="nc-q" id="q9">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="03/0634#8">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-line">त्यो अभागी एस्कंदरलाई नभन्नू, नत्र फेरि एक घण्टा बसेर हामीलाई उपदेश दिन थाल्छ, र खाना मेरो लागि सर्पको विष जस्तो बन्छ।</p>
+      </div>
+      <p class="nc-q" id="q10">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0951#3">
+      <legend>Line 11</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-ctx">– मलाई फिर्ता देऊ। मानौं यसलाई थाहा छ ती तारवालाहरू कसरी चल्छन् भनेर।</p>
+        <p class="nc-ctx">तक़ीले हमीदको हात हावामै समात्यो र वाकमेन बचायो। तर यासरले केही मुक्का र लात भने पायो। हमीदले भन्यो:</p>
+        <p class="nc-line">– हाम्रो ज्वाइँको उस्तादको फुपुको छोराको साथी, जो तेहरानको सबैभन्दा धनी मान्छे हो, त्यसले भनेको थियो।</p>
+      </div>
+      <p class="nc-q" id="q11">'<bdi lang="ne" dir="ltr">उस्तादको</bdi>' means the master craftsman their in-law works for. Is that clear?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
+        <label><input type="radio" name="v11" value="ok"> Correct</label>
+        <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0824#6">
+      <legend>Line 12</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-line">मलाई त परिवारले जबर्जस्ती कुखुराहरूसँग मिसाइदिएपछि मात्र थाहा भयो, त्यो पट्टिको संसार कति फरक रहेछ।</p>
+      </div>
+      <p class="nc-q" id="q12">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
+        <label><input type="radio" name="v12" value="ok"> Correct</label>
+        <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 13</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-ctx">सुरुवात</p>
+        <p class="nc-ctx">…जसरी बाल्यकालमा Maman ले पुराना लुगाहरूबाट धागो उधिन्नुहुन्थ्यो, र हामी त्यसको धागो समातेर घरभरि घुम्थ्यौं ताकि धागो थुप्रिन नपाओस्। सायद तपाईंको पुस्ता त्यो धागोको संसारभन्दा केही वर्ष पछि आयो होला — तर कल्पना गर्नुहोस्: एक समय थियो, संसारको कुनै कुनामा, जब बालबालिकाहरू यसरी नै खेल्थे।</p>
+        <p class="nc-line">अहिले म शब्दहरूको धागो फुकाउँछु — तपाईंले त्यसलाई समातेर आफ्नो संसारमा लैजानुहोस्, ताकि यहाँ, मेरो संसारमा, त्यो थुप्रिन नपाओस्।</p>
+      </div>
+      <p class="nc-q" id="q13">The reader takes the words into their world. Do '<bdi lang="ne" dir="ltr">त्यसलाई</bdi>' and '<bdi lang="ne" dir="ltr">त्यो</bdi>' fit?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
+        <label><input type="radio" name="v13" value="ok"> Correct</label>
+        <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0655#2">
+      <legend>Line 14</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-ctx">– अँहँ, त्यसै हो र, आफ्नी गर्लफ्रेन्डसँगै। Kharabatका बूढा त रातको एक्लो मान्छे हो नि।</p>
+        <p class="nc-ctx">…गरेँ र कशावर्ज़ बुलेवारमा पुगेँ। बुलेवारको सुरुवातको बेन्चमा बसेँ। हाफ़िज़को किताब खोलेँ र आफ्नो घुँडामाथि राखेँ। बेन्चछेउको बत्तीको उज्यालोमुनि, आफ्नो खुट्टामुनि झरेको पातको पहेंलो, रातो र हरियो रङ हेर्दै, त्यही खास बैत गुनगुनाउँदै, निलूफ़र आउने पर्खाइमा बसेँ। निलूफ़रको आवाज मेरो कानमा गुन्जियो:</p>
+        <p class="nc-line">– यो कुरा सुन, कि आफूलाई गमबाट मुक्त गर्न चाहन्छौ भने; नलेखिएको भाग्य खोज्यौ भने रगत खानुपर्नेछ।</p>
+      </div>
+      <p class="nc-q" id="q14">A line of verse: listen, so that you free yourself from sorrow. Is that clear?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
+        <label><input type="radio" name="v14" value="ok"> Correct</label>
+        <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="06/0298#6">
+      <legend>Line 15</legend>
+      <div class="reader nc-text" lang="ne" dir="ltr">
+        <p class="nc-ctx">– त जा, आराम गर, Nini-jan।</p>
+        <p class="nc-ctx">…ढिलो साँझको नीलो-बैजनी उज्यालोलाई चिर्दै, अघि गइसकेका दुई हवाईजहाजका आपसमा काटिएका, हल्का, टुक्रिएका धुवाँका डोबहरूतिर बढ्छ। अर्थात् अरू कति अप्रिय खबर मबाट लुकाइराखेका छन्? अझ कति साना धागाहरू महिनौं अगाडि मेरो मुटुबाट तानिइसकेका छन्, मलाई थाहै नदिई? म आफ्नै लेखाइलाई पटक-पटक पढ्नमा शरण खोज्छु।</p>
+        <p class="nc-line">अब मेरो डाक्टरेट सकिइसकेको छ र म अलिकति शान्त भइसकेको छु, म निलूफ़रको लागि लेख्न सक्छु ताकि उसलाई थाहा होस् मैले उसको लागि शब्दहरूले भरिएको एउटा खुत्रुके बनाएको छु।</p>
+      </div>
+      <p class="nc-q" id="q15">Amir means a piggy bank full of words. Does '<bdi lang="ne" dir="ltr">खुत्रुके</bdi>' read naturally?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
+        <label><input type="radio" name="v15" value="ok"> Correct</label>
+        <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -281,7 +404,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ne/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/ne/">&larr; <span class="native" lang="ne" dir="ltr">नेपाली</span></a></p>
   </section>
 </main>
@@ -300,7 +422,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

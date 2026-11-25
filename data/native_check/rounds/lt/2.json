@@ -1,192 +1,257 @@
 {
+ "format": 2,
  "lang": "lt",
  "slug": "lt",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Gimtosios kalbos patikra",
+  "lead": "Knygos skaityti nebūtina. Atsakykite į tiek klausimų, kiek norite.",
+  "persian_words": "Maman (motina), Baba (tėvas) ir -džan (brangusis) – persiški žodžiai, palikti knygoje.",
+  "page": "Puslapis",
+  "correct": "Teisinga",
+  "needs_change": "Reikia pakeisti",
+  "not_sure": "Sunku pasakyti",
+  "how_say": "Kaip jūs tai pasakytumėte?",
+  "meaning": "Ką, jūsų manymu, tai reiškia?",
+  "optional": "(nebūtina)",
+  "your_name": "Jūsų vardas",
+  "thanks_tick": "Įrašyti mano vardą į padėkų puslapį",
+  "private": "Jūsų atsakymus gauna tik autorius.",
+  "send": "Siųsti",
+  "send_continue": "Siųsti ir pereiti prie {n} puslapio",
+  "sending": "Siunčiama…",
+  "popup_title": "Ačiū!",
+  "popup_text": "Ar norėtumėte, kad jūsų vardas būtų svetainės padėkų puslapyje? Užpildykite visus 4 puslapius, ir mes jį mielai įrašysime.",
+  "popup_button": "Pereiti prie {n} puslapio",
+  "arrived": "Ačiū, jūsų atsakymai iš {n} puslapio gauti.",
+  "thanks_last": "Ačiū! Jūsų atsakymai gauti.",
+  "all_done": "Išsiuntėte visus puslapius. Ačiū už juos visus!",
+  "already_sent": "Šį puslapį iš šio įrenginio jau išsiuntėte. Ačiū!",
+  "continue_with": "Tęsti nuo {n} puslapio",
+  "need_one": "Pasirinkite atsakymą bent vienai eilutei.",
+  "note_no_answer": "Prie vienos eilutės yra pastaba: prašom pasirinkti atsakymą ir jai.",
+  "name_needed": "Įrašykite vardą, kurį norite matyti sąraše, arba nuimkite varnelę.",
+  "not_connected": "Siuntimas dar neprijungtas.",
+  "too_long": "Siuntimas užtruko per ilgai.",
+  "cannot_send": "Iš čia atsakymų išsiųsti nepavyko.",
+  "use_email": "Prašom pasinaudoti el. pašto mygtuku žemiau.",
+  "fallback": "Iš šio puslapio atsakymų išsiųsti nepavyko. Prašom juos atsiųsti el. paštu; niekas, ką įvedėte, neprarasta.",
+  "email_button": "Siųsti atsakymus el. paštu",
+  "shortened": "Kai kurios pastabos el. pašto nuorodai buvo per ilgos, todėl ten buvo sutrumpintos. Visi jūsų atsakymai pateikti žemiau; prašom juos įklijuoti į laišką.",
+  "noscript": "Siuntimui reikia JavaScript. Atsakymus taip pat galite atsiųsti adresu {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "04b/0595#1",
-   "where": "04b/0595",
-   "text": "– Bet jis viską suvarė. Erelio Akis sako „peer-to-peer“, o Smuklinis sako „Seni-su-Seniu“.",
-   "q": "Farid mocks Amir for mishearing 'peer-to-peer' as 'Pyr-tu-pyr' (pir means elder, his nickname). Would Lithuanian readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pyr-tu-pyr?",
-    "Hūmanas pasakė:",
-    "– Sukalbėkit palaiminimą. Smuklės Seniūnas pagaliau prabilo.",
-    "Faridas pasakė:"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "– Trisdešimt du mėnesius jus myliu. Iš tolo. Jums nežinant.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#2",
-   "where": "03/0380",
-   "text": "– Blogiausia liga — Ayzheimeris.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Lithuanian speaker say Alzheimer as 'Ayzheimeris'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman tarė:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#3",
-   "where": "06/0052",
-   "text": "Galiausiai Mahboub paskambino, atvažiavo su grietąja ir išvežė Nanei.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Lithuanian speaker say the ambulance as 'grietąja'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…juk visai nesisaugojo. Senelis negirdi ir nesupranta, kas vyksta, bet Nanei aš kelis kartus sakiau: „Hadž Khanom, jūs sėdite ten, gatvelėje, užsikrėsite Covid, neduok Dieve.“ O jie tik dar ilgiau ten sėdėdavo. Bet, Amirai, Nanei krūtinė taip švokštė. Sakiau Mahboub ir kitiems: „Vaikai, tai Covid.“"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "– Batalionas, pirmyn žygiuoti!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "– Pirmojo misijos etapo pradžia. Batalionas, kairėn pasisukti!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#4",
-   "where": "03/0362",
-   "text": "– Mahboub, tas dalykas, kurį sako per naujienas, Ameroka...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Lithuanian speaker say America as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…ir priklijavau lapą prie sienos, šalia kitų Konkuro užrašų. Išėjau iš namo kitame kiemo gale ir devyniais žingsniais perėjau kiemą; naujo atradimo džiaugsmas vis dar švietė širdyje. Kai iš kiemo įėjau į svetainę, Maman gulėjo priešais televizorių. Abi rankas ji laikė ant pilvo ir kalbėjo Mahboubeh:"
+   "key": "poetry",
+   "title": "Poezija",
+   "q": "Tai poezijos eilutės. Ar lietuviškai kiekviena iš jų gerai skamba kaip poezija?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... Solomono žiedo neimčiau už nieką, ant kurio kartais ranka ...",
+     "note": null
+    },
+    {
+     "id": "04b/0742#poetr",
+     "text": "– Žinau, ką nori skaityti. „Prisimindamas mylimąjį ir tėvynę, verksiu taip graudžiai, kad iš pasaulio kelią ir kelionės paprotį ...“",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "– „Saldžiau Atarui verkti iki aušros“ ar „dabar jis dar labiau nužudytas“?",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "išskyrus ant vandens",
+     "note": null
+    },
+    {
+     "id": "04b/1269#poetr",
+     "text": "o jei kirsi jūrą",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "rašyk ant vandens savo paties krauju",
+     "note": null
+    },
+    {
+     "id": "04b/1272#poetr",
+     "text": "žinotų, kad",
+     "note": null
+    },
+    {
+     "id": "04b/1274#poetr",
+     "text": "girtuokliai ir",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "praėjo šiuo keliu.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Ji skaitė: „Seniai jau mylimasis nesiuntė žinios, neparašė pasveikinimo ...“, ir aš nusijuokiau.",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "Mano sapnų lempa užsidegė",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Mano sapnų lempa dabar mirksi",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Neturiu vilties, kad sugrįši",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Bet jei tavo kelias atvestų tave netoli",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "vėl ateik į mano sapnus",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Man rodos, mano sapnai nepatikėjo, kad išėjai",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Mano sapnų lempa ... mano sapnų lempa užsidega ... mano sapnų lempa užsidegė",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Dabar ... dabar ... dabar tu išėjai ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0432#5",
-   "where": "03/0432",
-   "text": "Ne jį turiu omenyje. Turiu omenyje Alainą Byboną. Byyy-bys. Taškas. Baigta.",
-   "q": "Hooman twists the actor Alain Delon's name into a rude nickname and drags it out. Does the insult land as a joke?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Hūmanas suapvalino burną ir kiek įmanydamas suraukė nosį — lygiai kaip Eskandaro veidas atrodydavo kalbant.",
-    "– ... ir sučiaupi burną kaip vištos užpakalį, per jėgą stengdamasis kalbėti kaip jis."
-   ]
-  },
-  {
-   "id": "04b/0460#6",
-   "where": "04b/0460",
-   "text": "– Kas tau vėl šovė į galvą, kad ant mūsų pasistatei, Alainai Bybonai?",
-   "q": "Hooman again calls Eskandar 'Alainai Bybonai', a rude pun on Alain Delon. Does this crude jab sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hūmanas pasakė:"
-   ]
-  },
-  {
-   "id": "04a/0080#7",
-   "where": "04a/0080",
-   "text": "– Kodėl nenuėjote į marmalo namą?",
-   "q": "Ghassem, a boy, says 'marmalo' for marble, a word he gets wrong on purpose. Does it read as his childish mistake?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Priekinis ratas sukosi. Jis buvo raudonas. Kaip tos pačios didelės raudonos durys. Atsisėdau prie griovio. Įdėjau kojas į griovį. Vandens nebuvo. Širdyje buvo tuščia. Vyras grįžo. Priekinis ratas nebesisuko. Jis trenkė Omidui per veidą. Abu verkėme. Vyras išėjo. Ghassemas grįžo. Išbarė mus. Pasakė:"
-   ]
-  },
-  {
-   "id": "03/0309#8",
-   "where": "03/0309",
-   "text": "– Duok Dieve, kad visada būtum araasteh.",
-   "q": "A guard jokes on the surname Arasteh; Persian 'araasteh' means neat. Would Lithuanian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Sargas šypsosi ir sako:"
-   ]
-  },
-  {
-   "id": "01/0182#9",
-   "where": "01/0182",
-   "text": "– Kokiu -ininku nebuvo?",
-   "q": "Maman takes the ending of 'moterininku' to say he was every other kind of bad. Would Lithuanian readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ir moterininku nebuvo.",
-    "Maman sako:"
-   ]
-  },
-  {
-   "id": "04b/0387#10",
-   "where": "04b/0387",
-   "text": "– Naktį girdėjau, kaip tu atrajoji.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, chewing like a cow. Does this tease land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandaras pasisuko į Hūmaną ir tarė:"
-   ]
-  },
-  {
-   "id": "04b/0616#11",
-   "where": "04b/0616",
-   "text": "– Gerai, Erelio Aki, gerai. Tik nekišk savo akinių į nešiojamąjį.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering into his laptop. Does the tease sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hūmanas pasakė:"
-   ]
-  },
-  {
-   "id": "06/0186#12",
-   "where": "06/0186",
-   "text": "– Atiduočiau už tave viską, Nini-džan — kaip gerai tavo galva veikia.",
-   "q": "Amir lovingly teases his mother, praising her clever advice. Does it sound warm and natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Amirai, kai Tagis mirė, jo motina atėjo prie durų ir tarė Maman: nežinome, ką žmonėms sakyti. Juk jei sakysime, kad jis buvo išgėręs stipraus naminio aragh ir patyrė sinkopę, tai bus baisi gėda. Tada Maman jai pasakė: tiesiog sakykite, kad jis užsikrėtė Covid.",
-    "Sakau:"
-   ]
-  },
-  {
-   "id": "04b/0558#13",
-   "where": "04b/0558",
-   "text": "Išvestinės? Prasmės? Ar išvestinės prasmės? O gal prasmės išvestinės?",
-   "q": "Eskandar pompously plays with the words derivative and meaning. Does the wordplay work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ko sieki suprasti, Muse?"
-   ]
-  },
-  {
-   "id": "03/0490#14",
-   "where": "03/0490",
-   "text": "– Saugokis, kad nesuskiltum, pone Bybonai.",
-   "q": "Hooman mocks a roommate who just puffed out his chest, using the rude nickname again. Does it sound like dorm banter?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Aš esu ekstremalus nacionalistinis anarchistas.",
-    "Hūmanas tarė:"
-   ]
-  },
-  {
-   "id": "04b/0385#15",
-   "where": "04b/0385",
-   "text": "Tokia jau jo gamyklos sistema. Visada labai elegantiškai ir iškilmingai prisidirba kaip tik istoriniame posūkyje.",
-   "q": "Hooman jokes that keeping quiet at key moments is just Amir's factory setting. Does this crude joke sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Seni juk Taverny. Nieko jis negali padaryti."
-   ]
-  },
-  {
-   "id": "04b/0591#16",
-   "where": "04b/0591",
-   "text": "– Pyr-tu-pyr?",
-   "q": "Amir mishears 'peer-to-peer' as 'Pyr-tu-pyr'; pir is Persian for elder. Would Lithuanian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Tokie elektroniniai lygiarangiai pinigai, „peer-to-peer“.",
-    "Aš pasakiau:"
+   "key": "word_choice",
+   "title": "Atskiri žodžiai",
+   "q": "Ar žodis kiekvienoje eilutėje yra tinkamas? Ką jis turėtų reikšti, nurodyta po eilute.",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0268#word_",
+     "text": "– Joks vardas tau netinka, velnias.",
+     "note": "\"velnias\" = damn you (angry swearing)"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "– Eiti į pagrindinę gatvę: tsk-tsk.",
+     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "sudegusieji",
+     "note": "\"sudegusieji\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Žmogui šūdinai susisuka galva. Kuo daugiau apie tai galvoji, tuo šūdiniau ji sukasi.",
+     "note": "\"šūdinai susisuka galva\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "02/0001#word_",
+     "text": "Mano širdyje šviesu: rytoj, kai atidarysiu akis, viskas bus baigta ir tamsa vėl grįš į mano sapnus.",
+     "note": "\"Mano širdyje šviesu\" = I feel hopeful, sure of tomorrow"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

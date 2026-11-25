@@ -1,11 +1,19 @@
 /* Native-speaker check pages (/sedaha/check/<slug>/, build_check_pages.py).
 
    One Send button posts the answered lines to the guestbook Worker's /check
-   route, which files them as one GitHub issue for Amir. No credential is in the
-   browser. If sending fails for any reason (no connection, a refusal, a timeout,
-   a Worker not yet redeployed), the page offers the same answers as a prefilled
-   email instead, so an answer is never lost. Visitor text is never rendered as
-   HTML. */
+   route, which files them for Amir in a private repository. No credential is in
+   the browser. If sending fails for any reason (no connection, a refusal, a
+   timeout, a Worker not yet redeployed), the page offers the same answers as a
+   prefilled email instead, so an answer is never lost. Visitor text is never
+   rendered as HTML.
+
+   Two page formats (2026-11-25):
+   - format 2 (data-format="2"): the simplified pages, all in the reader's language
+     (the strings come from #ncStrings). Rows are grouped under numbered
+     questions; a row's note box opens only on the answer that asks for it
+     (data-note-on). After page 1 a pop-up invites the reader on; pages 2..n-1
+     go straight to the next page, which says the answers arrived (?sent=N).
+   - format 1: the older English pages, in rounds. */
 (function () {
   'use strict';
 
@@ -18,6 +26,18 @@
   var mail = document.getElementById('ncMail');
   var shortened = document.getElementById('ncShort');
   var copy = document.getElementById('ncCopy');
+
+  var V2 = form.getAttribute('data-format') === '2';
+  var S = {};
+  try {
+    var blob = document.getElementById('ncStrings');
+    if (blob) S = JSON.parse(blob.textContent) || {};
+  } catch (error) { S = {}; }
+  // the page's own text, or the English of the older pages
+  function t(key, english, n) {
+    var value = S[key] || english;
+    return n === undefined ? value : value.replace('{n}', n);
+  }
 
   var meta = document.querySelector('meta[name="native-check-endpoint"]');
   var endpoint = meta ? meta.content.trim() : '';
@@ -32,33 +52,17 @@
   var LANG = form.getAttribute('data-lang');
   var LANGUAGE = form.getAttribute('data-language');
   var VERSION = form.getAttribute('data-version');
-  var VERDICT = {ok: 'Correct', change: 'Needs change', unsure: 'Not sure'};
+  var VERDICT = {ok: t('correct', 'Correct'), change: t('needs_change', 'Needs change'),
+                 unsure: t('not_sure', 'Not sure')};
   var ROUND = parseInt(form.getAttribute('data-round') || '1', 10) || 1;
+  var PAGES = parseInt(form.getAttribute('data-pages') || '1', 10) || 1;
+  var BASE = form.getAttribute('data-base') || '';
+  var SEND_LABEL = send.textContent;
 
-  // The Thanks-page tick is offered only once every line has an answer (author
-  // 2026-11-25): someone who looked at one line is not listed for it.
-  var consent = document.getElementById('ncConsent');
-  var consentHint = document.getElementById('ncConsentHint');
-
-  function allAnswered() {
-    var items = form.querySelectorAll('.nc-item');
-    for (var i = 0; i < items.length; i++) {
-      if (!items[i].querySelector('input[type="radio"]:checked')) return false;
-    }
-    return items.length > 0;
-  }
-
-  function updateConsent() {
-    if (!consent) return;
-    var all = allAnswered();
-    consent.hidden = !all;
-    if (consentHint) consentHint.hidden = all;
-    if (!all && form.elements.thanks) form.elements.thanks.checked = false;
-  }
-
-  // The rounds this browser has sent, per language: {"1": "<page version>", ...}.
+  // The rounds (pages) this browser has sent, per language: {"1": "<page version>", ...}.
   // Only on this device; storage may be blocked, and then nothing is remembered.
-  var SENT_KEY = 'nc-sent:' + LANG;
+  // The simplified pages keep their own list, so an old round never ticks a new page.
+  var SENT_KEY = (V2 ? 'nc-sent2:' : 'nc-sent:') + LANG;
 
   function readSent() {
     try {
@@ -97,8 +101,7 @@
       var n = marks[i].getAttribute('data-round');
       if (sent[n] && !marks[i].hasAttribute('data-sent')) {
         marks[i].setAttribute('data-sent', '');
-        marks[i].textContent = n + ' \u2713';
-        marks[i].title = 'Sent';
+        marks[i].textContent = n + ' ✓';
       }
     }
     var box = document.getElementById('ncResume');
@@ -108,12 +111,12 @@
     var text = document.getElementById('ncResumeText');
     var link = document.getElementById('ncResumeLink');
     if (next) {
-      text.textContent = 'You have already sent this round from this device. Thank you!';
+      text.textContent = t('already_sent', 'You have already sent this round from this device. Thank you!');
       link.href = roundHref(box.getAttribute('data-base'), next);
-      link.textContent = 'Continue with round ' + next + ' \u2192';
+      link.textContent = (V2 ? t('continue_with', '', next) : 'Continue with round ' + next) + ' →';
       link.hidden = false;
     } else {
-      text.textContent = 'You have sent every round from this device. Thank you for all of them!';
+      text.textContent = t('all_done', 'You have sent every round from this device. Thank you for all of them!');
       link.hidden = true;
     }
     box.hidden = false;
@@ -135,6 +138,16 @@
     }
   }
 
+  // A row's note counts only while its box is open (format 2 closes it when the
+  // reader changes their answer).
+  function noteOf(item) {
+    var box = item.querySelector('textarea');
+    if (!box) return '';
+    var holder = item.querySelector('.nc-notebox');
+    if (holder && holder.hidden) return '';
+    return box.value.trim();
+  }
+
   // The answered lines, in page order. A note on a line with no answer is not
   // dropped silently: the reader is asked to choose for it.
   function collect() {
@@ -142,12 +155,11 @@
     var out = [];
     for (var i = 0; i < items.length; i++) {
       var picked = items[i].querySelector('input[type="radio"]:checked');
-      var box = items[i].querySelector('textarea');
-      var note = box ? box.value.trim() : '';
+      var note = noteOf(items[i]);
       if (!picked) {
         if (note) {
-          return {error: 'Line ' + (i + 1) + ' has a note: please choose Correct, ' +
-            'Needs change or Not sure for it too.', focus: items[i].querySelector('input')};
+          return {error: V2 ? t('note_no_answer', '') : 'Line ' + (i + 1) + ' has a note: please ' +
+            'choose Correct, Needs change or Not sure for it too.', focus: items[i].querySelector('input')};
         }
         continue;
       }
@@ -171,7 +183,7 @@
     if (payload.thanks) lines.push('May be listed on the Thanks page: yes');
     lines.push('');
     payload.items.forEach(function (a) {
-      lines.push(a.id + ': ' + VERDICT[a.verdict]);
+      lines.push(a.id + ': ' + a.verdict);
       if (a.note) lines.push('  Note: ' + clip(a.note, size).replace(/\s*\n\s*/g, ' / '));
     });
     return lines.join('\r\n');
@@ -212,7 +224,100 @@
     copy.hidden = !link.cut;
     copy.value = link.cut ? plainText(payload, Infinity) : '';
     fallback.hidden = false;
-    say(message + ' Please use the email button below.', 'error');
+    say(message + ' ' + t('use_email', 'Please use the email button below.'), 'error');
+  }
+
+  // ---- format 2: after a page is sent ----------------------------------------------------
+  var pop = document.getElementById('ncPop');
+  var popGo = document.getElementById('ncPopGo');
+
+  function closePop() {
+    if (!pop || pop.hidden) return;
+    pop.hidden = true;
+    thanks.focus();
+  }
+
+  if (pop) {
+    pop.addEventListener('click', function (event) { if (event.target === pop) closePop(); });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closePop();
+    });
+  }
+
+  function afterSendV2() {
+    markSent();
+    showRounds();
+    var box = document.getElementById('ncResume');
+    if (box) box.hidden = true;
+    if (ROUND > 1 && ROUND < PAGES) {
+      // straight on; the next page says the answers arrived
+      location.href = roundHref(BASE, ROUND + 1) + '?sent=' + ROUND;
+      return;
+    }
+    form.hidden = true;
+    say('', '');
+    var more = document.getElementById('ncThanksMore');
+    var nextLink = document.getElementById('ncNext');
+    var next = nextUnsent(PAGES);
+    if (nextLink) {
+      if (next) {
+        nextLink.href = roundHref(BASE, next) + '?sent=' + ROUND;
+        nextLink.textContent = t('continue_with', '', next) + ' →';
+      } else {
+        nextLink.parentNode.hidden = true;
+      }
+    } else if (next && more) {
+      // the last page, with an earlier page not yet sent from here
+      var a = document.createElement('a');
+      a.href = roundHref(BASE, next);
+      a.className = 'btn btn-primary';
+      a.textContent = t('continue_with', '', next) + ' →';
+      more.textContent = '';
+      more.appendChild(a);
+      more.hidden = false;
+    }
+    if (!next && more && PAGES > 1) {
+      more.textContent = t('all_done', '');
+      more.hidden = false;
+    }
+    thanks.hidden = false;
+    if (ROUND === 1 && pop && next === 2) {
+      pop.hidden = false;
+      if (popGo) popGo.focus();
+    } else {
+      thanks.focus();
+    }
+  }
+
+  // "Thank you, your answers from page N arrived." on the page that follows
+  function showArrived() {
+    var line = document.getElementById('ncArrived');
+    var match = /[?&]sent=(\d+)/.exec(location.search);
+    if (!line || !match) return;
+    line.textContent = t('arrived', '', match[1]);
+    line.hidden = false;
+    try { history.replaceState(null, '', location.pathname + location.hash); } catch (error) { /* stays */ }
+  }
+
+  function afterSendV1() {
+    markSent();
+    showRounds();
+    var nextLink = document.getElementById('ncNext');
+    var box = document.getElementById('ncResume');
+    if (nextLink && box) {
+      var next = nextUnsent(parseInt(box.getAttribute('data-total'), 10) || 1);
+      if (next) {
+        nextLink.href = roundHref(box.getAttribute('data-base'), next);
+        nextLink.textContent = 'More lines: round ' + next + ' →';
+      } else {
+        nextLink.parentNode.textContent = 'You have sent every round. Thank you for all of them.';
+      }
+    }
+    if (box) box.hidden = true;
+    form.hidden = true;
+    say('', '');
+    thanks.hidden = false;
+    thanks.focus();
   }
 
   form.addEventListener('submit', function (event) {
@@ -225,32 +330,33 @@
       return;
     }
     if (!got.items.length) {
-      say('Choose Correct, Needs change or Not sure for at least one line.', 'error');
+      say(t('need_one', 'Choose Correct, Needs change or Not sure for at least one line.'), 'error');
       return;
     }
     var payload = {lang: LANG, page_version: VERSION, items: got.items,
                    website: form.elements.website.value};
-    var name = form.elements.name.value.trim();
+    var nameField = form.elements.name;
+    var name = nameField ? nameField.value.trim() : '';
     if (name) payload.name = name;
     // the Thanks-page tick needs a name to list
     var listMe = form.elements.thanks;
-    if (listMe && listMe.checked && allAnswered()) {
+    if (listMe && listMe.checked) {
       if (!name) {
-        say('Add the name you would like listed, or untick the Thanks-page box.', 'error');
-        form.elements.name.focus();
+        say(t('name_needed', 'Add the name you would like listed, or untick the Thanks-page box.'), 'error');
+        nameField.focus();
         return;
       }
       payload.thanks = true;
     }
     fallback.hidden = true;
     if (!validEndpoint(endpoint)) {
-      offerEmail(payload, 'Sending is not connected yet.');
+      offerEmail(payload, t('not_connected', 'Sending is not connected yet.'));
       return;
     }
 
     send.disabled = true;
-    send.textContent = 'Sending…';
-    say('Sending your answers…', 'quiet');
+    send.textContent = t('sending', 'Sending…');
+    say(t('sending', 'Sending your answers…'), 'quiet');
     var controller = typeof AbortController === 'function' ? new AbortController() : null;
     var timedOut = false;
     var timer = controller ? setTimeout(function () {
@@ -268,45 +374,35 @@
     }).then(function (response) {
       return response.json().catch(function () { return {}; }).then(function (data) {
         if (!response.ok || data.ok !== true || data.posted !== true) {
-          throw new Error(data.error || 'The answers could not be sent just now.');
+          throw new Error(data.error || t('cannot_send', 'The answers could not be sent just now.'));
         }
         return data;
       });
     }).then(function () {
-      markSent();
-      showRounds();
-      var nextLink = document.getElementById('ncNext');
-      var box = document.getElementById('ncResume');
-      if (nextLink && box) {
-        var next = nextUnsent(parseInt(box.getAttribute('data-total'), 10) || 1);
-        if (next) {
-          nextLink.href = roundHref(box.getAttribute('data-base'), next);
-          nextLink.textContent = 'More lines: round ' + next + ' \u2192';
-        } else {
-          nextLink.parentNode.textContent = 'You have sent every round. Thank you for all of them.';
-        }
-      }
-      if (box) box.hidden = true;
-      form.hidden = true;
-      say('', '');
-      thanks.hidden = false;
-      thanks.focus();
+      if (V2) afterSendV2(); else afterSendV1();
     }).catch(function (error) {
-      offerEmail(payload, timedOut ? 'Sending took too long.' :
-        error instanceof TypeError ? 'The answers could not be sent from here.' :
-        (error.message || 'The answers could not be sent just now.'));
+      offerEmail(payload, timedOut ? t('too_long', 'Sending took too long.') :
+        error instanceof TypeError ? t('cannot_send', 'The answers could not be sent from here.') :
+        (error.message || t('cannot_send', 'The answers could not be sent just now.')));
     }).finally(function () {
       if (timer) clearTimeout(timer);
       send.disabled = false;
-      send.textContent = 'Send';
+      send.textContent = SEND_LABEL;
     });
   });
 
-  // "Needs change" asks for the reader's own wording (author 2026-11-25): the note box
-  // lights up and stops saying optional. Inline styles, so the stylesheet keeps its version.
-  function nudge(radio) {
+  // Format 2: the note box opens on the answer that asks for the reader's words
+  // (data-note-on: "change" for most rows, "ok" for the sayings: "I can guess it"
+  // asks what it means). Format 1: "Needs change" lights the note box up.
+  function onAnswer(radio) {
     var item = radio.closest('.nc-item');
-    var note = item && item.querySelector('textarea');
+    if (!item) return;
+    if (V2) {
+      var holder = item.querySelector('.nc-notebox');
+      if (holder) holder.hidden = !(radio.checked && radio.value === item.getAttribute('data-note-on'));
+      return;
+    }
+    var note = item.querySelector('textarea');
     if (!note) return;
     var on = radio.value === 'change' && radio.checked;
     var optional = item.querySelector('.nc-optional');
@@ -316,12 +412,11 @@
     if (optional) optional.hidden = on;
   }
   form.addEventListener('change', function (event) {
-    if (event.target.type === 'radio') nudge(event.target);
-    updateConsent();
+    if (event.target.type === 'radio') onAnswer(event.target);
   });
-  Array.prototype.forEach.call(form.querySelectorAll('.nc-verdict input:checked'), nudge);
-  updateConsent();
+  Array.prototype.forEach.call(form.querySelectorAll('.nc-verdict input:checked'), onAnswer);
   showRounds();
+  if (V2) showArrived();
 
   // As on the guestbook: on a phone the tab bar steps aside while a field is in use.
   var settle;

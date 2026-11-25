@@ -1,189 +1,327 @@
 {
+ "format": 2,
  "lang": "nl",
  "slug": "nl",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Moedertaalcheck",
+  "lead": "Je hoeft het boek niet gelezen te hebben. Beantwoord er zoveel als je wilt.",
+  "persian_words": "Maman (moeder), Baba (vader) en -jan (lieve) zijn Perzische woorden die het boek onvertaald laat.",
+  "page": "Pagina",
+  "correct": "Klopt",
+  "needs_change": "Moet anders",
+  "not_sure": "Niet zeker",
+  "how_say": "Hoe zou jij het zeggen?",
+  "meaning": "Wat denk je dat het betekent?",
+  "optional": "(optioneel)",
+  "your_name": "Je naam",
+  "thanks_tick": "Zet mijn naam op de bedankpagina",
+  "private": "Je antwoorden gaan alleen naar de auteur.",
+  "send": "Versturen",
+  "send_continue": "Versturen en door naar pagina {n}",
+  "sending": "Bezig met versturen…",
+  "popup_title": "Dank je wel!",
+  "popup_text": "Wil je je naam op de bedankpagina van de website? Maak alle 4 pagina's af, dan zetten we hem er graag op.",
+  "popup_button": "Door naar pagina {n}",
+  "arrived": "Dank je wel, je antwoorden van pagina {n} zijn aangekomen.",
+  "thanks_last": "Dank je wel! Je antwoorden zijn aangekomen.",
+  "all_done": "Je hebt alle pagina's verstuurd. Dank je wel voor elke pagina!",
+  "already_sent": "Je hebt deze pagina al vanaf dit apparaat verstuurd. Dank je wel!",
+  "continue_with": "Verder met pagina {n}",
+  "need_one": "Kies bij minstens één regel een antwoord.",
+  "note_no_answer": "Bij een regel staat een opmerking: kies daar ook een antwoord bij.",
+  "name_needed": "Vul de naam in die je vermeld wilt zien, of haal het vinkje weg.",
+  "not_connected": "Versturen is nog niet gekoppeld.",
+  "too_long": "Het versturen duurde te lang.",
+  "cannot_send": "De antwoorden konden hier niet worden verstuurd.",
+  "use_email": "Gebruik de e-mailknop hieronder.",
+  "fallback": "De antwoorden konden niet vanaf deze pagina worden verstuurd. Stuur ze in plaats daarvan per e-mail; niets van wat je hebt ingevuld is verloren.",
+  "email_button": "Antwoorden e-mailen",
+  "shortened": "Sommige opmerkingen waren te lang voor een e-maillink en zijn daar ingekort. Je volledige antwoorden staan hieronder; plak ze in de e-mail.",
+  "noscript": "Voor het versturen is JavaScript nodig. Je kunt je antwoorden ook mailen naar {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "01/0142#1",
-   "where": "01/0142",
-   "text": "– Baba wat?",
-   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Denk dan eens wat onze arme Baba moet doorstaan – hij zit al die jaren thuis zonder werk.",
-    "Maman zegt:"
+   "key": "maman",
+   "title": "De stem van de moeder",
+   "q": "De moeder praat hartelijk, soms mopperend, als een gewone vrouw uit een klein stadje. Klinkt elke regel als zij?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "– Salaam, jigaram. Hoe gaat het? Gaat het goed? Ben je gezond? Gelukkig Norouz, Nana-pesar-jan. Als God het wil, wordt het een goed jaar voor jou. Voor iedereen.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Ga ook naar buiten. Ga naar plekken waar niet veel mensen zijn.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "– Baba wat?",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "– Die met de domme leraar? Mm-hm, kijk die maar. Die is grappig. Lach eens een beetje.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "We willen allemaal bellen en zeggen: hij valt ons al dertig jaar lastig, kom hem halen. Als jij het er ook mee eens bent, bellen we.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "– We maken maar grappen om te lachen, Nana-pesar-jan. Alsof hij weg zou gaan. Als hij ging, zouden mijn gebeden verhoord zijn.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Roddelen? Het is pas roddelen als ze je geen kwaad hebben gedaan.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "– Hmm, eens kijken – kan iemand van jullie zich één goed ding over jullie Baba herinneren? Zeg het maar, dan houd ik mijn mond.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "– Was hij maar verslaafd geraakt, in plaats van zo te zijn.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "– Vrouwen? Had hij dat maar gedaan. Wie hem wil, mag hem hebben. We geven er wat extra bij.",
+     "note": null
+    },
+    {
+     "id": "01/0206#maman",
+     "text": "Nu gaat het ook goed, maar ik leef met de stress dat hij elk moment kan komen.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Toen hij terugkwam uit Karbala, had hij een witte handschoen aan. We liepen de hele weg van de boulevard naar huis, en hij bleef zijn hand ophouden – alsof zijn hand iets heiligs was dat de mensen moesten kussen.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "– Amir, is het goed om de hoofdrol te hebben?",
+     "note": null
+    },
+    {
+     "id": "03/0383#maman",
+     "text": "– Nee, Ayzheimer is heel erg. Een van mijn vriendinnen heeft Ayzheimer; ze herkent haar kinderen niet meer.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "– Oké, ik zeg niet dat jullie niet verliefd mogen worden. Leer de persoon eerst kennen, trouw, en als je daarna wilt, word dan verliefd. Kijk of ik er dan een woord over zeg.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "– Ik heb je vier keer gevonden. Kom dan, mijn brave jongen. Kom, pak dit aan en loop een rondje door het huis.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "– Nee. Zolang deze draad in je hand is, verdwaal je niet. Het andere einde is in mijn hand. Zo verdwaal je niet.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Goed zo, mijn snuggere jongen. Als iets je bang maakt, gebruik dan een truc zodat je niet bang wordt.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Tjonge. Hmm, de landen lagen vast dicht bij elkaar. Wanneer was de aardbeving van Bam?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Het is het einde der tijden geworden. Bibi's generatie zei altijd dat als het einde der tijden komt, de aarde maar blijft beven.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Ik heb de gelofte gedaan dat als hij beter wordt, ik te voet naar Mashhad zal gaan.",
+     "note": null
+    },
+    {
+     "id": "06/0023#maman",
+     "text": "– Ik draag hem, geen stress. Maar ik haat hem echt.",
+     "note": null
+    },
+    {
+     "id": "06/0027#maman",
+     "text": "– Nana-pesar-jan, geen stress. Er waren maar twintig mensen.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– Hmm, dan zeg ik ook dat mijn hart zwaar wordt – laat me naar mijn vriendinnen gaan.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "– Hmm, we dachten dat je van streek zou raken, Nana-pesar-jan. Je moest je proefschrift verdedigen.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, je moet echt goed op je eten letten. Eet goede dingen. Dingen die je sterk maken. Let gewoon op je eten, de rest interesseert me niet.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– In het ziekenhuis riepen ze steeds: ‘Familie van mevrouw Adham!’ Niemand bewoog. Toen kwam de verpleegster zelf naar ons toe en zei: ‘Volgens mij hoort zij bij u.’",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "– Hmm, deze mensen hebben nauwelijks iets voor haar gedaan, zelfs toen ze nog leefde.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "– Is dit hoe je bedankt?",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "– Ach, elke keer als je zegt ‘haal iets’, krijgt hij zo'n elektrische schok.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "– Hij klaagt zonder reden, hehe, Amir-jan. Als het dit niet is, vindt hij wel iets anders.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– Jeetje, Nini wordt ineens slaperig. Ik ben al de hele ochtend op en heb niet geslapen.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0023#2",
-   "where": "06/0023",
-   "text": "– Ik draag hem, geen stress. Maar ik haat hem echt.",
-   "q": "Maman tells her son not to worry: she does wear her mask. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Maar jij houdt het jouwe op, Nini-jan."
-   ]
-  },
-  {
-   "id": "03/0189#3",
-   "where": "03/0189",
-   "text": "– Pff, ezel, wie weet er meer, de vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, of jij, kalf?",
-   "q": "Hamid, a boy, angrily calls his friend 'ezel', the polite word for donkey, and 'kalf'. Does it sound like a child's angry insult?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid kookte over en schreeuwde:"
-   ]
-  },
-  {
-   "id": "03/0309#4",
-   "where": "03/0309",
-   "text": "– Als God het wil, moge je altijd araasteh zijn.",
-   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would Dutch readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "De bewaker glimlacht en zegt:"
-   ]
-  },
-  {
-   "id": "06/0186#5",
-   "where": "06/0186",
-   "text": "– Ik zou mezelf voor je opofferen, Nini-jan. Wat werkt dat hoofd van jou goed.",
-   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "…kwam zijn moeder naar de deur en zei tegen Maman: we weten niet wat we de mensen moeten vertellen. Ik bedoel, als we zeggen dat hij sterke zelfgestookte aragh had gedronken en een syncope had gehad, is dat een vreselijke schande. Toen zei Maman tegen haar: zeg gewoon dat hij corona had gekregen.",
-    "Ik zeg:"
-   ]
-  },
-  {
-   "id": "03/0624#6",
-   "where": "03/0624",
-   "text": "– Geweldig, de Ouderling van de Kroeg. Dat is perfect voor Arasteh.",
-   "q": "Farid gives Amir a mock-grand nickname from a Hafez poem. Does 'Geweldig, de Ouderling van de Kroeg' sound natural as a playful nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid zei:"
-   ]
-  },
-  {
-   "id": "03/0628#7",
-   "where": "03/0628",
-   "text": "– Haha, de Ouderling van de Kroeg, Oudje — perfect. Raak geschoten, Farid de Panter.",
-   "q": "Hooman shortens that nickname to 'Oudje'. Does this pet name sound natural and playful between friends?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman schreef iets in het boek met een pen en zei:"
-   ]
-  },
-  {
-   "id": "03/0630#8",
-   "where": "03/0630",
-   "text": "– Hij is Oudje, waarlijk en eerlijk gezegd.",
-   "q": "Farid happily agrees with the nickname. Does 'waarlijk en eerlijk gezegd' sound like a young man joking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, de Ouderling van de Kroeg, Oudje — perfect. Raak geschoten, Farid de Panter.",
-    "Farid zei:"
-   ]
-  },
-  {
-   "id": "03/0388#9",
-   "where": "03/0388",
-   "text": "– Zonder bril zie ik helemaal niets, objectief gezien.",
-   "q": "Sajad starts or ends almost every sentence with 'objectief gezien', a habit his roommates mock. Does this habit read naturally?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Sajad zei:"
-   ]
-  },
-  {
-   "id": "03/0126#10",
-   "where": "03/0126",
-   "text": "– Hm. De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, spreekt precies zo.",
-   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid zei:"
-   ]
-  },
-  {
-   "id": "04b/1300#11",
-   "where": "04b/1300",
-   "text": "– Heb je met die uitspraak nu op ons gescheten of op Mister de krulharige Schrödinger?",
-   "q": "Farid crudely asks whom a lofty remark insulted, mocking a roommate as 'Mister de krulharige Schrödinger'. Does it sound natural?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– ... jij praat zo dat een mens of heel diep moet zijn om je niet te begrijpen, of heel oppervlakkig om graag naar je te luisteren.",
-    "Farid zei:"
-   ]
-  },
-  {
-   "id": "01/0132#12",
-   "where": "01/0132",
-   "text": "Steek je neus in elk hoekje en gaatje. De oude mensen zeiden altijd: kijk in elke uithoek.",
-   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Mm-hm, goed zo. Ga, zolang je de kans hebt, alle dorpen bekijken."
-   ]
-  },
-  {
-   "id": "04a/0111#13",
-   "where": "04a/0111",
-   "text": "Ik botste tegen een muur. Het was malmer. Ik pakte een stok.",
-   "q": "A lost six-year-old tells this, using his brother's wrong word 'malmer' for marmer. Does it read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "De draad was niet meer in mijn hand. Hij liep achter een voet aan. Ik ook. Een klein kind kwam tussen de benen vandaan. Het kleine kind greep mijn voet met één hand vast. Ik viel. Er waren steeds meer benen. Er was geen draad. Ik ging tussen de benen door."
-   ]
-  },
-  {
-   "id": "03/0383#14",
-   "where": "03/0383",
-   "text": "– Nee, Ayzheimer is heel erg. Een van mijn vriendinnen heeft Ayzheimer; ze herkent haar kinderen niet meer.",
-   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Omid zei:",
-    "– Nee, die is heel erg. Er is ook geen medicijn voor."
-   ]
-  },
-  {
-   "id": "06/0027#15",
-   "where": "06/0027",
-   "text": "– Nana-pesar-jan, geen stress. Er waren maar twintig mensen.",
-   "q": "Maman reassures her son that the gathering was small and safe. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ah, waarom ben je gegaan? Wat moeten we doen als jij corona krijgt?"
-   ]
-  },
-  {
-   "id": "03/0362#16",
-   "where": "03/0362",
-   "text": "– Mahboub, dit wat ze op het nieuws zeggen, Ameroka ...",
-   "q": "Maman, lying in front of the TV, starts asking about the news, saying 'Ameroka' on purpose. Does her opening sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…achter aan de binnenplaats en stak de binnenplaats in negen stappen over, terwijl de blijdschap over de nieuwe ontdekking nog steeds in mijn hart brandde. Toen ik vanuit de binnenplaats de hal binnenstapte, lag Maman voor de televisie. Ze had beide handen op haar buik gelegd en zei tegen Mahboubeh:"
+   "key": "child_talk",
+   "title": "Kindertaal",
+   "q": "Deze regels worden door kinderen gezegd. Klinkt elk ervan als een kind?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0189#child",
+     "text": "– Pff, ezel, wie weet er meer, de vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, of jij, kalf?",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "– Vanochtend ging ik de binnenplaats op. Maman zei dat ik slim was.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Oké, jij gaat ook mee op de missie, maar je moet heel goed opletten. De etappes zijn heel moeilijk.",
+     "note": null
+    },
+    {
+     "id": "04a/0022#child",
+     "text": "– Oké, met modder spelen is voorbij. Maak je klaar voor de geheime missie.",
+     "note": null
+    },
+    {
+     "id": "04a/0032#child",
+     "text": "– Doe er veel zout op.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– Oké, doe er dan minder op. Maar niet heel veel minder. Een beetje minder.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "– De hoofdstraat opgaan: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "– Het heet de bazaar van Quchan, en ons huis is aan het einde van de bazaar van Quchan.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Etappe drie is een kruispunt. Een kruispunt betekent dat het heel groot is. Van de ene kant helemaal naar de andere kant. Van deze straat naar die straat.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "– Als je moe wordt, moet je niet meer meekomen op de missie.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– De linkerkant is gevaarlijk. In het huis met de rode deur woont een heel boze oude man. Nog bozer dan Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "– Onze school is helemaal achteraan. Het laatste huis. Als we herrie maken slaat de meester ons op onze handen met een liniaal.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– Aan de andere kant van de school is het kerkhof. Het is heel oud. Sommige graven hebben geen steen. Je kunt de botten van de doden zien.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "– Geen vragen. Luister naar de commandant.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Hé, waarom heb je de stok weggegooid? Waar moeten we dan mee op de deurbel drukken?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "– Dat heb je niet gezegd.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– Als ze onze namen leert kennen, vindt ze ons aardig.",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, heeft gezegd dat zwart de kleur van de liefde is.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 12
 }

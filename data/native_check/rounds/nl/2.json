@@ -1,186 +1,317 @@
 {
+ "format": 2,
  "lang": "nl",
  "slug": "nl",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Moedertaalcheck",
+  "lead": "Je hoeft het boek niet gelezen te hebben. Beantwoord er zoveel als je wilt.",
+  "persian_words": "Maman (moeder), Baba (vader) en -jan (lieve) zijn Perzische woorden die het boek onvertaald laat.",
+  "page": "Pagina",
+  "correct": "Klopt",
+  "needs_change": "Moet anders",
+  "not_sure": "Niet zeker",
+  "how_say": "Hoe zou jij het zeggen?",
+  "meaning": "Wat denk je dat het betekent?",
+  "optional": "(optioneel)",
+  "your_name": "Je naam",
+  "thanks_tick": "Zet mijn naam op de bedankpagina",
+  "private": "Je antwoorden gaan alleen naar de auteur.",
+  "send": "Versturen",
+  "send_continue": "Versturen en door naar pagina {n}",
+  "sending": "Bezig met versturen…",
+  "popup_title": "Dank je wel!",
+  "popup_text": "Wil je je naam op de bedankpagina van de website? Maak alle 4 pagina's af, dan zetten we hem er graag op.",
+  "popup_button": "Door naar pagina {n}",
+  "arrived": "Dank je wel, je antwoorden van pagina {n} zijn aangekomen.",
+  "thanks_last": "Dank je wel! Je antwoorden zijn aangekomen.",
+  "all_done": "Je hebt alle pagina's verstuurd. Dank je wel voor elke pagina!",
+  "already_sent": "Je hebt deze pagina al vanaf dit apparaat verstuurd. Dank je wel!",
+  "continue_with": "Verder met pagina {n}",
+  "need_one": "Kies bij minstens één regel een antwoord.",
+  "note_no_answer": "Bij een regel staat een opmerking: kies daar ook een antwoord bij.",
+  "name_needed": "Vul de naam in die je vermeld wilt zien, of haal het vinkje weg.",
+  "not_connected": "Versturen is nog niet gekoppeld.",
+  "too_long": "Het versturen duurde te lang.",
+  "cannot_send": "De antwoorden konden hier niet worden verstuurd.",
+  "use_email": "Gebruik de e-mailknop hieronder.",
+  "fallback": "De antwoorden konden niet vanaf deze pagina worden verstuurd. Stuur ze in plaats daarvan per e-mail; niets van wat je hebt ingevuld is verloren.",
+  "email_button": "Antwoorden e-mailen",
+  "shortened": "Sommige opmerkingen waren te lang voor een e-maillink en zijn daar ingekort. Je volledige antwoorden staan hieronder; plak ze in de e-mail.",
+  "noscript": "Voor het versturen is JavaScript nodig. Je kunt je antwoorden ook mailen naar {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0014#1",
-   "where": "01/0014",
-   "text": "– Kijk, doe het in de vriezel. Als je het in de vriezel legt, kan er zelfs na een jaar niets mee gebeuren.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Dutch speaker say vriezer as 'vriezel'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ja, Nini-jan, ik heb het opgegeten. Maak je geen zorgen. Er is alleen nog wat over van de zelfgemaakte lavashak van Mahboub, gedroogd vruchtenleer."
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "– Tweeëndertig maanden hou ik al van u. Van een afstand. Zonder dat u het wist. In stilte. Zonder één woord.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Er was bijvoorbeeld tyfus, of tuberculose, of mazelen. Die noemden ze dodelijk. Hmm, zelfs die doodden er niet zoveel. Of cholera, bijvoorbeeld.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…de televisie twee op de honderd, en nu zegt die tien procent. Bij God, dit is wel erg onrechtvaardig. Iemand niest aan de ene kant van de straat, en een persoon aan de andere kant krijgt het en sterft. Ik had zoiets nooit gezien of gehoord. Zelfs Bibi's generatie had ons er nooit iets over verteld."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#3",
-   "where": "01/0148",
-   "text": "– De wat en Glimlachen?",
-   "q": "Amir offered to download the series 'Tranen en Glimlachen'; Maman, hard of hearing, catches only the end. Does her reply sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Jongens, zal ik Tranen en Glimlachen downloaden zodat we hem vanavond kunnen kijken?",
-    "Maman draait haar hoofd en zegt:"
+   "key": "one",
+   "title": null,
+   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0175#s44",
+     "text": "– Rijker dan de vriend van de neef...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#4",
-   "where": "03/0380",
-   "text": "– De ergste ziekte is Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Dutch speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, er is een ziekte die de spieren langzaam uitschakelt. Het is een heel erge ziekte.",
-    "Maman zei:"
+   "key": "poetry",
+   "title": "Poëzie",
+   "q": "Dit zijn dichtregels. Leest elk ervan goed als poëzie in jouw taal?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... Ik zou die zegelring van Salomo voor geen prijs aannemen, waarop soms de hand van ...",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "Op alle dingen kan men schrijven",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "schrijf dan op het water met je eigen bloed",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "zodat wie na jou komt",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "voorbij zijn gegaan.",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "Het licht van mijn dromen ging aan",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Ik koester geen hoop op je terugkeer",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Maar als je weg je langs me voert",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "kom dan opnieuw in mijn dromen",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Ik denk dat mijn dromen niet hebben geloofd dat je weg bent",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Het licht van mijn dromen ... het licht van mijn dromen ging ... het licht van mijn dromen ging aan",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#5",
-   "where": "06/0052",
-   "text": "Uiteindelijk belde Mahboub en ze kwamen met een amublance om Naney op te halen.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Dutch speaker say ambulance as 'amublance'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…gaande is, maar ik had al meerdere keren tegen Naney gezegd: ‘Haaj Khanom, als jullie buiten in de steeg zitten, krijgen jullie corona, God verhoede het.’ Ze gingen er alleen maar langer zitten. Maar Amir, Naney's borst reutelde zo erg. Ik zei tegen Mahboub en de anderen: ‘Kinderen, dit is corona.’"
-   ]
-  },
-  {
-   "id": "01/0206#6",
-   "where": "01/0206",
-   "text": "Nu gaat het ook goed, maar ik leef met de stress dat hij elk moment kan komen.",
-   "q": "Maman admits she lives in constant worry that Baba may turn up at any moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Maar gezegend zijn je handen. Die drie maanden dat je hem naar Denemarken had meegenomen, wat heb ik genoten. Ik begreep eindelijk wat het leven kan zijn."
-   ]
-  },
-  {
-   "id": "01/0182#7",
-   "where": "01/0182",
-   "text": "– Wat-jager was hij niet?",
-   "q": "Maman, hard of hearing, catches only the end of 'rokkenjager'. Would Dutch readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Hij was ook geen rokkenjager.",
-    "Maman zegt:"
-   ]
-  },
-  {
-   "id": "04b/0591#8",
-   "where": "04b/0591",
-   "text": "– Peer-tot-peer?",
-   "q": "Amir reads 'peer-to-peer' the Dutch way: 'peer' as in pear. Does the joke come through?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Een soort peer-to-peer elektronisch geld.",
-    "Ik zei:"
-   ]
-  },
-  {
-   "id": "04b/0595#9",
-   "where": "04b/0595",
-   "text": "– Maar hij heeft het verkloot. Arendsoog zegt peer-to-peer; het Oudje zegt peer-tot-peer.",
-   "q": "Farid mocks Amir's mishearing, setting it against Sajad's technical word. Would Dutch readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid zei:"
-   ]
-  },
-  {
-   "id": "04a/0080#10",
-   "where": "04a/0080",
-   "text": "– Waarom gingen jullie niet naar het malmeren huis?",
-   "q": "A boy scolds his little brothers, repeating his own mistake 'malmer' for marmer. Does 'malmeren huis' read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…rode deur. Ik ging naast de goot zitten. Ik zette mijn voeten in de goot. Er was geen water. Het was leeg in mijn hart. De man kwam terug. Het voorwiel draaide niet meer. Hij gaf Omid een klap in zijn gezicht. We huilden allebei. De man vertrok. Ghassem kwam terug. Hij schold ons uit. Hij zei:"
-   ]
-  },
-  {
-   "id": "04b/0460#11",
-   "where": "04b/0460",
-   "text": "– Wat heb je nou weer, dat je hem tegen ons overeind hebt gezet, Alain Lullon?",
-   "q": "Hooman crudely mocks Eskandar for sitting up proudly, with a sexual double meaning. Does this crude joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman zei:"
-   ]
-  },
-  {
-   "id": "03/0432#12",
-   "where": "03/0432",
-   "text": "– ... en je mond tuit als een kippenkont, terwijl je je uitslooft om als hem te praten. Nee, die bedoel ik niet. Ik bedoel Alain Lullon. Luuul. Punt, einde verhaal.",
-   "q": "Hooman finishes his rude pun on the actor Alain Delon. Does this crude ending sound funny and natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman maakte zijn mond rond en trok zijn neus zo klein en gerimpeld als hij kon — precies zoals Eskandars gezicht werd als hij praatte."
-   ]
-  },
-  {
-   "id": "03/0290#13",
-   "where": "03/0290",
-   "text": "– Is Arasteh een gesnoeide araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Dutch readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Meneer Arasteh.",
-    "Ik draai mijn hoofd in zijn richting."
-   ]
-  },
-  {
-   "id": "04b/1320#14",
-   "where": "04b/1320",
-   "text": "En met trillende handen bekeek ik haastig de ghazals om dat beit van Hafez te vinden waar je, net als van dat schilderij, zoals dat andere meisje had gezegd, steeds schijttureluurser van wordt naarmate je dieper in zijn diepte verzinkt, en hem aan Niloofar te laten zien.",
-   "q": "Amir echoes a girl's crude made-up word about a mind-bending painting. Does 'steeds schijttureluurser' read naturally here?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0278#15",
-   "where": "03/0278",
-   "text": "Op een bepaalde manier kan men zeggen dat ze de universiteit hebben ingenomen. Karroubi is liefde, echt.",
-   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karroubi is liefde, echt' sound like a young man's slang?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hé, Oudje, schiet op. Schiet op, laten we gaan. Ze zeggen dat ze Karroubi niet de universiteit hebben laten binnenkomen. Zijn aanhangers hebben de Hafez-poort opengebroken en zijn naar binnen gegaan."
-   ]
-  },
-  {
-   "id": "04b/0616#16",
-   "where": "04b/0616",
-   "text": "– Goed, Arendsoog, goed. Plak je bril nou niet tegen de laptop.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed 'Arendsoog', who peers very close to his laptop. Does the tease come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman zei:"
+   "key": "word_choice",
+   "title": "Losse woorden",
+   "q": "Is het woord in elke regel het juiste? Wat het zou moeten betekenen, staat eronder.",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0166#word_",
+     "text": "Hoe vaak ik ook zei: sla de kinderen niet, hij zei: ik heb shellshock opgelopen in de oorlog, ik kan er niets aan doen.",
+     "note": "\"shellshock\" = war nerve damage, in plain words"
+    },
+    {
+     "id": "01/0261#word_",
+     "text": "– Mm-hm, hij is heel, heel erg veranderd. Hij is zo mager en donker geworden.",
+     "note": "\"donker geworden\" = skin grown darker from the sun"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "Op een bepaalde manier kan men zeggen dat ze de universiteit hebben ingenomen. Karroubi is liefde, echt.",
+     "note": "\"Karroubi is liefde, echt\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "03/0502#word_",
+     "text": "– Ahhh. Daar krijg ik de kriebels van.",
+     "note": "\"de kriebels\" = skin crawling with disgust"
+    },
+    {
+     "id": "04a/0062#word_",
+     "text": "– Heel veel mensen falen hier. Ze gaan naar links.",
+     "note": "\"falen\" = fail, go wrong (as a boy says it)"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "– Strontkop. Je laat me mijn mond opendoen en het zeggen.",
+     "note": "\"Strontkop\" = shit-for-brains, crude insult for a dimwit"
+    },
+    {
+     "id": "04b/0171#word_",
+     "text": "We hebben al die proeftoetsen gemaakt en zijn nu kamergenoten met dit antiek.",
+     "note": "\"dit antiek\" = odd, old-fashioned person (mocking)"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "– Ik had nog liever een kamer gedeeld met hen dan met een lulbrein als jij.",
+     "note": "\"lulbrein\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "Een jaar of twee geleden hoorde ik van Arendsoog News dat die fat ook naar Australië was gegaan, een beetje achter het meisje aan van wie jullie allebei hielden.",
+     "note": "\"die fat\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "– Dus je bent een klote-eerstejaars.",
+     "note": "\"klote-eerstejaars\" = fucking freshman, casual friendly swearing"
+    },
+    {
+     "id": "04b/0353#word_",
+     "text": "– En in die verklote situatie, welke antieke stukken vielen ons ten deel? De Vlieg en die andere ellendige waanzinnige.",
+     "note": "\"vielen ons ten deel\" = we got stuck with (casual)"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "– Farid de Panter, beheers je zenuwen en haal geen moorddadige actie uit.",
+     "note": "\"moorddadige actie\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0717#word_",
+     "text": "– Ik zeg je, Oudje-jan, maar onder ons gezegd, je bent door stomme kutmazzel in het buitenland beland.",
+     "note": "\"stomme kutmazzel\" = a fucking fluke, sheer dumb luck"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "– Nou, als jij niet het type bent dat toelating aanvraagt en vertrekt, waarom heb je dan je kont kapotgewerkt om het TOEFL-examen af te leggen?",
+     "note": "\"je kont kapotgewerkt\" = crude: slaved away, worked very hard"
+    },
+    {
+     "id": "04b/0736#word_",
+     "text": "Zodra je naam valt, spitsen mijn oren zich.",
+     "note": "\"spitsen mijn oren zich\" = my ears prick up: I listen eagerly"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– Wat ben je toch sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/0818#word_",
+     "text": "– Oudje, kijk eens hoe ver je het hebt gedreven: Farid, die geen reet geeft om ons of de kamer of wie dan ook, heeft zich laten horen.",
+     "note": "\"die geen reet geeft om ons\" = who doesn't give a damn about us"
+    },
+    {
+     "id": "04b/0935#word_",
+     "text": "– \"Voor Attar is wenen tot de dageraad zoeter\" of \"nu is hij nog meer gedood\"?",
+     "note": "\"nu is hij nog meer gedood\" = now he lies more deeply slain (by love)"
+    },
+    {
+     "id": "04b/1003#word_",
+     "text": "– Kijk wat een puinhoop je hebt aangericht, hersenschijter.",
+     "note": "\"hersenschijter\" = shit-for-brains (a crude insult)"
+    },
+    {
+     "id": "04b/1274#word_",
+     "text": "de dronkenen en",
+     "note": "\"de dronkenen\" = drunk with love, in the mystic sense"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "de verbranden",
+     "note": "\"de verbranden\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Je wordt er schijttureluurs van. Hoe meer je erover nadenkt, hoe schijttureluurser je wordt.",
+     "note": "\"schijttureluurs\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "En met trillende handen bekeek ik haastig de ghazals om dat beit van Hafez te vinden waar je, net als van dat schilderij, zoals dat andere meisje had gezegd, steeds schijttureluurser van wordt naarmate je dieper in zijn diepte verzinkt, en hem aan Niloofar te laten zien.",
+     "note": "\"steeds schijttureluurser\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "04b/1392#word_",
+     "text": "Het licht van mijn dromen knippert nu",
+     "note": "\"knippert\" = now flickers, like a failing light"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Ga nu wat pitten halen voor Ghassem en de anderen, ze willen een film kijken.",
+     "note": "\"wat pitten halen\" = roasted seeds to snack on"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

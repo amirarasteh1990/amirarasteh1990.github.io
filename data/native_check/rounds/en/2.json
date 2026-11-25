@@ -1,195 +1,557 @@
 {
+ "format": 2,
  "lang": "en",
  "slug": "en",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Native check",
+  "lead": "You don't need to have read the book. Answer as many as you like.",
+  "persian_words": "Maman (mother), Baba (father) and -jan (dear) are Persian words, kept in the book.",
+  "page": "Page",
+  "correct": "Correct",
+  "needs_change": "Needs change",
+  "not_sure": "Not sure",
+  "how_say": "How would you say it?",
+  "meaning": "What do you think it means?",
+  "optional": "(optional)",
+  "your_name": "Your name",
+  "thanks_tick": "List my name on the Thanks page",
+  "private": "Your answers go only to the author.",
+  "send": "Send",
+  "send_continue": "Send and continue to page {n}",
+  "sending": "Sending…",
+  "popup_title": "Thank you!",
+  "popup_text": "Would you like your name on the website's Thanks page? Finish all 4 pages and we'll gladly add it.",
+  "popup_button": "Continue to page {n}",
+  "arrived": "Thank you, your answers from page {n} arrived.",
+  "thanks_last": "Thank you! Your answers arrived.",
+  "all_done": "You have sent every page. Thank you for all of them!",
+  "already_sent": "You have already sent this page from this device. Thank you!",
+  "continue_with": "Continue with page {n}",
+  "need_one": "Choose an answer for at least one line.",
+  "note_no_answer": "A line has a note: please choose an answer for it too.",
+  "name_needed": "Add the name you would like listed, or untick the box.",
+  "not_connected": "Sending is not connected yet.",
+  "too_long": "Sending took too long.",
+  "cannot_send": "The answers could not be sent from here.",
+  "use_email": "Please use the email button below.",
+  "fallback": "The answers could not be sent from this page. Please email them instead; nothing you entered is lost.",
+  "email_button": "Email the answers",
+  "shortened": "Some notes were too long for an email link and were shortened there. Your full answers are below; please paste them into the email.",
+  "noscript": "Sending needs JavaScript. You can also email your answers to {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0116#1",
-   "where": "01/0116",
-   "text": "Go outside too. Go where it's quiet.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Oh, that's good. Mm-hm, you order and they bring it to you. But Amir-jan, don't stay home all the time."
+   "key": "one",
+   "title": null,
+   "q": "The pole image means they were all screwed over. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0663#s30",
+     "text": "They say it's to keep kids near their families, but they've rammed a pole up the ass of every one of us from the provinces.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "There was typhoid, for example, or tuberculosis, or measles. They called those deadly. Hmm, even those didn't kill this many. Or cholera, for example.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…came, television said two people out of every hundred, and now it says ten percent. By God, it's so unfair. Someone sneezes on one side of the street, and a person on the other side catches it and dies. I'd never seen or heard of such a thing. Even Bibi's generation never spoke of anything like it."
+   "key": "one",
+   "title": null,
+   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0389#s32",
+     "text": "– You couldn't even eat its head. But damn, those sweets were good. Pineapple.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#3",
-   "where": "03/0362",
-   "text": "– Mahboub, this thing they're saying on the news, Ameroca ...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly English speaker say America as 'Ameroca'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…left the house at the far end of the courtyard and crossed the courtyard in nine steps, the happiness of the new discovery still bright in my heart. When I entered the hall from the courtyard, Maman was lying in front of the television. She had both hands on her stomach and was saying to Mahboubeh:"
+   "key": "one",
+   "title": null,
+   "q": "A boy's running joke: an absurd chain of authorities. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1248#s34",
+     "text": "– If there'd been black, I'd have picked black. The friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran says black is the color of love.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#4",
-   "where": "03/0380",
-   "text": "– The worst sickness is Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly English speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, there is a disease that slowly shuts down the muscles. It's a very bad disease.",
-    "Maman said:"
+   "key": "one",
+   "title": null,
+   "q": "A memory comes loose like a stripped screw. Is the image clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0675#s35",
+     "text": "After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#5",
-   "where": "06/0052",
-   "text": "In the end Mahboub called, and they came in an amublace and took Naney away.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly English speaker say ambulance as 'amublace'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…can't hear and has no idea what's going on, but I'd told Naney several times: Haaj Khanom, you sit out in the alley, you'll catch Covid, God forbid. That only made them sit out there even more. But Amir, Naney's chest was rattling so badly. I told Mahboub and the others: \"Kids, this is Covid.\""
+   "key": "one",
+   "title": null,
+   "q": "Iranian grades go up to twenty. Is the line clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0464#s36",
+     "text": "– Are you Heisenberg or Einstein, so that you expect them to give you a twenty and honor your enlightening theories?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#s36",
+     "text": "– No arguing in the room today. I got a twelve in PE; I'm in a fucking bad mood, and I'll start swearing at you.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#6",
-   "where": "01/0182",
-   "text": "– What izer wasn't he?",
-   "q": "Maman, hard of hearing, catches only the end of 'womanizer'. Would English readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– He wasn't a womanizer either.",
-    "Maman says:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0026#s40",
+     "text": "– Beginning of stage one of the mission. Battalion, left turn.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#7",
-   "where": "01/0148",
-   "text": "– The what and Smiles?",
-   "q": "Maman, hard of hearing, catches only the end of the series title 'Tears and Smiles'. Does her question read naturally?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Kids, should I download Tears and Smiles so we can watch it tonight?",
-    "Maman turns her head and says:"
+   "key": "one",
+   "title": null,
+   "q": "Two lines of a sung poem name the song. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0935#s41",
+     "text": "– \"For Attar, weeping till dawn is sweeter,\" or \"now he lies more deeply slain\"?",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0595#8",
-   "where": "04b/0595",
-   "text": "– But he fucked it up. Eagle Eye says peer-to-peer; Taverny says Eldie-to-Eldie.",
-   "q": "Amir misheard 'peer-to-peer' as 'Pir-to-pir'; pir is Persian for elder, hence his nicknames. Would English readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir-to-pir?",
-    "Hooman said:",
-    "– Send a salavat. Elder of the Tavern finally said something.",
-    "Farid said:"
+   "key": "one",
+   "title": null,
+   "q": "The friend's habit word 'objectively': does it work as a verbal tic?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0398#s43",
+     "text": "– Asshole. Objectively, the dollar's about to hit fifteen hundred tomans, and here you are hounding that poor wretch?",
+     "note": null
+    },
+    {
+     "id": "03/0514#s43",
+     "text": "– They killed Gaddafi. Objectively, come watch the video.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0387#9",
-   "where": "04b/0387",
-   "text": "– Last night I could hear you ruminating. Too bad my Baba was asleep, otherwise I'd have gotten up and pulled every single sweet out of your throat.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Does 'ruminating' make the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar turned toward Hooman and said:"
+   "key": "one",
+   "title": null,
+   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0175#s44",
+     "text": "– You mean richer than the friend of the cousin of ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/1321#10",
-   "where": "04b/1321",
-   "text": "– Here. Listen to this. For-for God's sake, listen. \"The wine there is real no metaphor.\" This is the same thing.",
-   "q": "This Hafez line has no comma on purpose, so it can be read two opposite ways. Does that double meaning come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "With trembling hands I flipped frantically through the ghazals, searching for the Hafez beit that, like the painting, as that other girl had said, would make us more shit-dizzy the deeper we sank into it. I wanted to show it to Niloofar."
+   "key": "one",
+   "title": null,
+   "q": "Is it clear he rubs the spot just below his knee?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0090#s51",
+     "text": "The boy has bent down and rubs just below his knee with his hand.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0290#11",
-   "where": "03/0290",
-   "text": "– Is Arasteh a trimmed-down Araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would English readers get it? If not, what word could carry it?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "I enter the university again. I have gone only a few steps when I hear the guard's voice behind me.",
-    "– Mr. Arasteh.",
-    "I turn my head toward him."
+   "key": "poetry",
+   "title": "Poetry",
+   "q": "These are lines of poetry. Does each one read well as poetry in your language?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... I would not take that signet ring of Solomon at any price, for now and then upon it the hand of ...",
+     "note": null
+    },
+    {
+     "id": "04b/0251#poetr",
+     "text": "– The hope of union with you keeps me alive; or else my every breath, parted from you, would be the dread of death.",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "One may write upon all things",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "write upon the water with your own blood",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "have passed this way.",
+     "note": null
+    },
+    {
+     "id": "04b/1387#poetr",
+     "text": "My dreams were dark",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "I hold no hope of your return",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "But if your path should bring you near",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "I don't think my dreams believe you're gone",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Now ... now ... now you are gone ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0863#12",
-   "where": "04b/0863",
-   "text": "– Forgiven. The whole boulevard is yours.",
-   "q": "Niloofar forgives him, then playfully grants him the whole boulevard too (in Persian, forgive and give are one word). Does it read naturally?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Come on. No cheating. Last time you chose. Tonight it's my turn.",
-    "– Sorry, I wasn't thinking."
-   ]
-  },
-  {
-   "id": "04b/0460#13",
-   "where": "04b/0460",
-   "text": "– What the hell's wrong with you this time, getting it up at us, Alain Dickon?",
-   "q": "Eskandar has called them all cows; Hooman's comeback carries a crude sexual double meaning. Does it land naturally?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Understanding is a good thing. I say you're cows and sheep, and you get upset.",
-    "Hooman said:"
-   ]
-  },
-  {
-   "id": "04b/1263#14",
-   "where": "04b/1263",
-   "text": "– Vwoooom! Baba, Baba, wiw you buy me dis big dolly?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…lamp that destroyed that soothing, dark-hued silence, yet shed too little light to guide me. A blinking lamp in the hand of a girl whose front door was a color I could never place in the box of colored pencils. A little girl comes vrooming over and stops beside me. She looks at the toys. She says:"
-   ]
-  },
-  {
-   "id": "04b/1125#15",
-   "where": "04b/1125",
-   "text": "– Ohhh, objectively, nice work. They saw the red and all their body hair fell right out, objectively.",
-   "q": "This Persian image means they got a sudden fright. Would a reader guess that from 'all their body hair fell right out'?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Again came the sound of three receding footsteps. Sajad's voice came:"
-   ]
-  },
-  {
-   "id": "06/0186#16",
-   "where": "06/0186",
-   "text": "– I'd give anything for you, Nini-jan. Your mind works so well.",
-   "q": "Amir praises his mother, whom the family affectionately calls Nini, with a Persian endearment. Does 'I'd give anything for you' sound warm?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Amir, when Taghi died, his mother came to the door and said to Maman: we don't know what to tell people. I mean, if we say he'd been drinking strong homemade aragh and had syncope, it would be a terrible disgrace. Then Maman told her: just say he caught Covid.",
-    "I say:"
+   "key": "word_choice",
+   "title": "Single words",
+   "q": "Is the word in each line the right one? What it should mean is shown below it.",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0004#word_",
+     "text": "– You did the best thing, Nini-jan. They say newborns need a lot of sleep. Ten hours a day.",
+     "note": "\"Nini\" = loving family pet name for Mother"
+    },
+    {
+     "id": "01/0040#word_",
+     "text": "– No peeking. If you peek, I'll sew you up.",
+     "note": "\"I'll sew you up\" = joking threat: I'll sew your eyes shut"
+    },
+    {
+     "id": "01/0087#word_",
+     "text": "– He had become so thin and dark, that brainless ape.",
+     "note": "\"that brainless ape\" = insult: a stupid, foolish man"
+    },
+    {
+     "id": "01/0184#word_",
+     "text": "– Women? I wish he had. Whoever wants him can take him for herself. We'll throw something in on top.",
+     "note": "\"We'll throw something in on top\" = we'd even add something extra as a bonus"
+    },
+    {
+     "id": "01/0216#word_",
+     "text": "– Sure, our Baba-jan really hungers for respect.",
+     "note": "\"really hungers for respect\" = badly craves respect (said sarcastically)"
+    },
+    {
+     "id": "03/0026#word_",
+     "text": "– Yeah, right.",
+     "note": "\"Yeah, right\" = obviously yes, I was calling you"
+    },
+    {
+     "id": "03/0079#word_",
+     "text": "– And then some.",
+     "note": "\"And then some\" = I fully agree, and even more"
+    },
+    {
+     "id": "03/0118#word_",
+     "text": "– What a babe.",
+     "note": "\"What a babe\" = what a pretty girl (boy's slang)"
+    },
+    {
+     "id": "03/0227#word_",
+     "text": "– No problem. I'll fight both of you at once, since you guys are both like little finches to me.",
+     "note": "\"like little finches to me\" = tiny and weak, easy to beat"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "In a way, you could say they conquered the university. Karroubi is love, honestly and truly.",
+     "note": "\"Karroubi is love\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "03/0297#word_",
+     "text": "– Everything you do is a patch job.",
+     "note": "\"a patch job\" = sloppy makeshift fixes"
+    },
+    {
+     "id": "03/0310#word_",
+     "text": "I press the elevator button. The elevator door opens. That day, Niloofar had come up the stairs. I go toward the stairwell. The voices of a boy and a girl drift out of the elevator. They call me sick.",
+     "note": "\"sick\" = nuts, a weirdo (said mockingly)"
+    },
+    {
+     "id": "03/0476#word_",
+     "text": "– Can you explain what your relationship with your male relatives is like? Because I've heard that in Tehran ...",
+     "note": "\"male relatives\" = her boy cousins and young male kin"
+    },
+    {
+     "id": "03/0531#word_",
+     "text": "Last year when he came, his wife's brothers had beaten him so badly, he was black all over.",
+     "note": "\"black all over\" = covered in bruises"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "– Going into the main street: tsk-tsk.",
+     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0142#word_",
+     "text": "– Yeah, I've heard a few things about this localization business.",
+     "note": "\"localization\" = regional quota system for university places"
+    },
+    {
+     "id": "04b/0162#word_",
+     "text": "– Yeah, the minute they see us, they clench their assholes and keep so much distance I want to plant both feet in their faces.",
+     "note": "\"clench their assholes\" = tense up and act snooty (crude image)"
+    },
+    {
+     "id": "04b/0175#word_",
+     "text": "– Yeah. Don't let this Arasteh fool you; goofy as he is, his Konkoor rank was seventy-four.",
+     "note": "\"goofy as he is\" = goofy, silly, said fondly"
+    },
+    {
+     "id": "04b/0226#word_",
+     "text": "– ... whenever I came over for classes or other stuff for my shitty second major, I'd see them arguing.",
+     "note": "\"my shitty second major\" = my crappy second degree (crude grumble)"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "A year or two ago I heard from Eagle Eye News that that dandy had gone to Australia too, sort of chasing the girl you both loved.",
+     "note": "\"that dandy\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0270#word_",
+     "text": "– I know. I'm no dummy. But this won't work.",
+     "note": "\"I'm no dummy\" = I'm not stupid (said half annoyed)"
+    },
+    {
+     "id": "04b/0351#word_",
+     "text": "What did being top of the class and, I don't know, getting a second degree add to the length of my dick, when now my job is inspecting electrical substations?",
+     "note": "\"add to the length of my dick\" = do me any good (crude)"
+    },
+    {
+     "id": "04b/0353#word_",
+     "text": "– And in that fucked-up situation, what antiques did we get stuck with?",
+     "note": "\"antiques\" = odd, weird people (mocking slang)"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "– Leopard Farid, control your nerves and don't make a murderous move.",
+     "note": "\"murderous move\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0454#word_",
+     "text": "From what I gathered from the post, he'd become a physics teacher at one of the high schools in his town, and that deluded dipshit had been teaching his own theories instead of the material in the book.",
+     "note": "\"deluded dipshit\" = crude: a deluded idiot"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "– Eagle Eye, may God not forgive you, you destroyed my back. Why don't you wear your glasses?",
+     "note": "\"may God not forgive you\" = half-joking curse: may God not forgive you"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "– Eagle Eye, God has already struck Fly; don't you strike him too. For your mother's sake, don't walk around the room without your glasses.",
+     "note": "\"For your mother's sake\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0600#word_",
+     "text": "The important thing is that whenever I go to the supermarket, I pay money, buy my milk and cake, and put them in my body.",
+     "note": "\"put them in my body\" = eat them (blunt and funny)"
+    },
+    {
+     "id": "04b/0690#word_",
+     "text": "It would have been enough if, years earlier, the Electrical and Mechanical professors hadn't gotten a hard-on for taking the Abu-Reyhan building from the Shipbuilding Department; then Farid wouldn't have ended up that way.",
+     "note": "\"gotten a hard-on for\" = crude: lusted after, were dying to grab"
+    },
+    {
+     "id": "04b/0721#word_",
+     "text": "– Eldie, instead of sprawling on the bed like this and playing with your balls, get up and send them. It's a bargain.",
+     "note": "\"It's a bargain\" = a good deal; worth it"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "– But you're not the kind of person who wants to apply abroad and leave, so why did you bust your ass taking the TOEFL?",
+     "note": "\"bust your ass\" = crude: slaved away, worked very hard"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– You're very sneaky.",
+     "note": "\"You're very sneaky\" = very sneaky (playful teasing)"
+    },
+    {
+     "id": "04b/0818#word_",
+     "text": "– Eldie, see how far you've taken it: Farid, who doesn't give a damn about us or the room or anyone, has spoken up.",
+     "note": "\"doesn't give a damn\" = coarse: doesn't care at all"
+    },
+    {
+     "id": "04b/0897#word_",
+     "text": "– You lot go stick to your jigily-jigily pop and Soosan Khanom. What business do you have listening to Moein?",
+     "note": "\"jigily-jigily pop\" = cheap bouncy pop (said with a sneer)"
+    },
+    {
+     "id": "04b/0919#word_",
+     "text": "– Kissing his ass doesn't suit you.",
+     "note": "\"doesn't suit you\" = sucking up isn't like you"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "the burned ones",
+     "note": "\"the burned ones\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.",
+     "note": "\"shit-dizzy\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "With trembling hands I flipped frantically through the ghazals, searching for the Hafez beit that, like the painting, as that other girl had said, would make us more shit-dizzy the deeper we sank into it.",
+     "note": "\"shit-dizzy\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "04b/1392#word_",
+     "text": "The light of my dreams now blinks",
+     "note": "\"now blinks\" = now flickers, like a failing light"
+    },
+    {
+     "id": "06/0108#word_",
+     "text": "– Aaawwww. I was the one who told her that. Nini saw it was a good line and passed it on to you.",
+     "note": "\"Aaawwww\" = long, teasing, mock-tender 'aww'"
+    },
+    {
+     "id": "06/0186#word_",
+     "text": "– I'd give anything for you, Nini-jan. Your mind works so well.",
+     "note": "\"I'd give anything for you\" = loving endearment: I'd give my life for you"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Now go get some seeds for Ghassem and the others. They want to watch a film.",
+     "note": "\"seeds\" = roasted seeds to snack on"
+    },
+    {
+     "id": "06/0291#word_",
+     "text": "– He complains for no reason, heh, Amir-jan. If it isn't this, he'll find something else.",
+     "note": "\"heh\" = a short, soft laugh"
+    },
+    {
+     "id": "02/0005#word_",
+     "text": "The light of my dreams ... the light of my dreams turned ... the light of my dreams turned on",
+     "note": "\"turned on\" = came on, as a lamp does"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

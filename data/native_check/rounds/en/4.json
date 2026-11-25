@@ -1,189 +1,332 @@
 {
+ "format": 2,
  "lang": "en",
  "slug": "en",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Native check",
+  "lead": "You don't need to have read the book. Answer as many as you like.",
+  "persian_words": "Maman (mother), Baba (father) and -jan (dear) are Persian words, kept in the book.",
+  "page": "Page",
+  "correct": "Correct",
+  "needs_change": "Needs change",
+  "not_sure": "Not sure",
+  "how_say": "How would you say it?",
+  "meaning": "What do you think it means?",
+  "optional": "(optional)",
+  "your_name": "Your name",
+  "thanks_tick": "List my name on the Thanks page",
+  "private": "Your answers go only to the author.",
+  "send": "Send",
+  "send_continue": "Send and continue to page {n}",
+  "sending": "Sending…",
+  "popup_title": "Thank you!",
+  "popup_text": "Would you like your name on the website's Thanks page? Finish all 4 pages and we'll gladly add it.",
+  "popup_button": "Continue to page {n}",
+  "arrived": "Thank you, your answers from page {n} arrived.",
+  "thanks_last": "Thank you! Your answers arrived.",
+  "all_done": "You have sent every page. Thank you for all of them!",
+  "already_sent": "You have already sent this page from this device. Thank you!",
+  "continue_with": "Continue with page {n}",
+  "need_one": "Choose an answer for at least one line.",
+  "note_no_answer": "A line has a note: please choose an answer for it too.",
+  "name_needed": "Add the name you would like listed, or untick the box.",
+  "not_connected": "Sending is not connected yet.",
+  "too_long": "Sending took too long.",
+  "cannot_send": "The answers could not be sent from here.",
+  "use_email": "Please use the email button below.",
+  "fallback": "The answers could not be sent from this page. Please email them instead; nothing you entered is lost.",
+  "email_button": "Email the answers",
+  "shortened": "Some notes were too long for an email link and were shortened there. Your full answers are below; please paste them into the email.",
+  "noscript": "Sending needs JavaScript. You can also email your answers to {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0663#1",
-   "where": "03/0663",
-   "text": "They say it's to keep kids near their families, but they've rammed a pole up the ass of every one of us from the provinces.",
-   "q": "Hooman rants about the regional university quota. Does 'rammed a pole up the ass' clearly mean they were all screwed over?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Curly, you sound so surprised, as if you got into university without taking the Konkoor. This localization policy fucked us over."
+   "key": "crude",
+   "title": "Crude speech",
+   "q": "Here the characters swear or speak crudely. Does each line sound natural?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– May whoever denies Eagle Eye News be damned.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "– Ugh, what do you want, Eskandar? What the hell is wrong with you?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "– No name suits you, damn you.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– I'm telling you I can't see, asshole.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– If you don't give a fuck about the world or anything in it, why are you so obsessed with quizzes and exams?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– The answer is that kissing Master Hooman's ass doesn't suit you.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– What difference? If McCain gets in, he'll fuck Iran up, objectively.",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Ugh, what's with that shitty thinker pose again?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Anyone who wants to spout philosophical bullshit can take it to the kitchen. The bulb's brighter in there too; it'll light up your brains.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– You useless prick ... hoooooh ... head down like that ... hooooh ... where are you going so fast?",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, damn you. You've become an expatriate now, so you don't give a damn about us. You foreigner-worshiping sellout.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "– Shit-for-brains. You make me open my mouth and say it. I mean, did you only hear about it? Weren't you hit by it yourself?",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– If age is what counts, then you should be licking Bahman's balls. He's at least five years older than us.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Fuck this luck of ours.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "– I would have preferred rooming with them instead of a dick-brain like you.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "– So you're a fucking freshman.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Murderous moves like this are just what I'd expect from you, but what I really want to know is what fucking maniac had his shop open at six on a Friday morning so you could go and buy a camera from him.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "– If Kamyar hadn't been such a precious little shit and had stayed in the dorm, no bed would have opened up and landed us with these two marvels.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– So you mean our shitty luck in drawing an antique like you just keeps repeating?",
+     "note": null
+    },
+    {
+     "id": "04b/0494#crude",
+     "text": "– Again we reach that same damned discontinuity.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "– I'm telling you, Eldie-jan, between us, you ended up abroad on a fucking fluke. If it weren't for Eagle Eye News, you'd still be here with us.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– What kind of shit is going on in that brain of yours now?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– You shat all over the mood that song had put me in with that fucking voice of yours.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Fine, whatever the fuck.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "– See what a fine mess you've made, you shit-for-brains.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– I'm looking for my glasses, asshole. Tell Farid to stop leaving his cup right in my way.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0181#2",
-   "where": "04b/0181",
-   "text": "– Eat the head of my dick, man. We've had enough of you.",
-   "q": "Hooman, raising his thumb rudely, uses a crude Persian insult kept close to literal. Does it sound like a real insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman raised his thumb again and said:"
-   ]
-  },
-  {
-   "id": "04b/0899#3",
-   "where": "04b/0899",
-   "text": "– You dick-head eater, why are you talking nonsense?",
-   "q": "Hooman swears at Eskandar with a crude Persian insult kept close to literal. Does 'dick-head eater' work as a real insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman said:"
-   ]
-  },
-  {
-   "id": "04b/0378#4",
-   "where": "04b/0378",
-   "text": "– Shit-for-brains, no one will call you mute if you don't fart.",
-   "q": "Eskandar twists a Persian saying, no one calls you mute if you stay silent, into a crude jab. Does it land?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…said to each other. The hallway lights went out, and the noise from the other rooms also fell asleep. In the darkness and silence of midnight, Hooman's shadow entered through the door and went straight to the box of sweets. As if he were sniffing it out. In the morning, Eskandar woke me and said:"
-   ]
-  },
-  {
-   "id": "04b/0440#5",
-   "where": "04b/0440",
-   "text": "– After the localization business, no matter what dick lands on our heads, I won't be surprised.",
-   "q": "Hooman uses a crude Persian image for any bad luck that falls on them. Would a reader guess that from context?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Bahman said it was fine. Eskandar had reached under my bed to pull out the book, while Meysam knelt and laid out his bedding beneath the coat rack. Watching them, Hooman said:"
-   ]
-  },
-  {
-   "id": "04b/0822#6",
-   "where": "04b/0822",
-   "text": "I mean, everything would have been different from the ground up, and you wouldn't be wandering the streets like this with your dick in your hand.",
-   "q": "Hooman uses a crude Persian image, 'with your dick in your hand', for aimless and empty-handed. Would a reader guess that from context?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– ... and the two of you could have left together."
-   ]
-  },
-  {
-   "id": "04b/0209#7",
-   "where": "04b/0209",
-   "text": "– Pfff, but damn you, you packed up and went over there, and now you sit there laughing at our beards and dicks.",
-   "q": "Hooman teases a friend abroad. 'laughing at our beards and dicks' is a crude Persian image for mocking us. Would a reader guess that?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "He piles laughter on laughter."
-   ]
-  },
-  {
-   "id": "04b/0389#8",
-   "where": "04b/0389",
-   "text": "– You couldn't even eat its head. But damn, those sweets were good. Pineapple.",
-   "q": "Hooman retorts with a crude Persian put-down meaning you couldn't do a thing. Is 'You couldn't even eat its head' clear?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Last night I could hear you ruminating. Too bad my Baba was asleep, otherwise I'd have gotten up and pulled every single sweet out of your throat.",
-    "Hooman said:"
-   ]
-  },
-  {
-   "id": "04b/0571#9",
-   "where": "04b/0571",
-   "text": "– First come document this thumb, then make a film about whatever you want.",
-   "q": "In Iran a raised thumb is a rude gesture, like the middle finger. Is Hooman's taunt clear?",
-   "ctx": 2,
-   "kind": "banter",
-   "before": [
-    "– Guys, let's make a documentary film about our room.",
-    "Hooman brought his hand out from under the blanket and said:"
-   ]
-  },
-  {
-   "id": "01/0090#10",
-   "where": "01/0090",
-   "text": "– No. I'm the poor one, I never say anything, I always keep quiet. I just watch and eat sorrow.",
-   "q": "Maman says this; 'eat sorrow' is a Persian image for grieving in silence. Would a reader guess that from context?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "I say:",
-    "– You didn't say anything to him."
-   ]
-  },
-  {
-   "id": "03/0531#11",
-   "where": "03/0531",
-   "text": "Last year when he came, his wife's brothers had beaten him so badly, he was black all over.",
-   "q": "Maman means he was covered in bruises. Is 'black all over' clear for that?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Ok, I'm not saying don't fall in love. First get to know the person, get married, and then if you want, fall in love. Then see if I say a word. Abolfazl used to say, if you don't go and ask for that girl's hand for me, I'll kill myself. Ok, we arranged the marriage, and what came of it?"
-   ]
-  },
-  {
-   "id": "03/0396#12",
-   "where": "03/0396",
-   "text": "– The answer is that kissing Master Hooman's ass doesn't suit you.",
-   "q": "Hooman brushes off Eskandar's prying questions. Does 'doesn't suit you' sound natural in this crude put-down?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar would not let it go. He said they had to get to the root of it and was certain that finding the answer would be a great help to Hooman and all humanity. Hooman said:"
-   ]
-  },
-  {
-   "id": "04b/0150#13",
-   "where": "04b/0150",
-   "text": "– If age is what counts, then you should be licking Bahman's balls. He's at least five years older than us.",
-   "q": "Hooman mocks Eskandar for claiming respect because he is older. Does this crude put-down sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman aimed his fat, round thumb at Eskandar and said:"
-   ]
-  },
-  {
-   "id": "03/0394#14",
-   "where": "03/0394",
-   "text": "Either you hit your head somewhere. Or you're dick-brai... well, you already were dick-brained, now you've become even more dick-brained.",
-   "q": "Hooman mocks Eskandar's sudden question. Does 'dick-brained' work as a young man's insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– You've suddenly latched onto this question. There are a few possibilities."
-   ]
-  },
-  {
-   "id": "04b/0353#15",
-   "where": "04b/0353",
-   "text": "– And in that fucked-up situation, what antiques did we get stuck with?",
-   "q": "Hooman calls two odd roommates 'antiques', Persian slang for weird people. Is the meaning clear?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "He drains his tea and wipes his mouth with the back of his hand."
-   ]
-  },
-  {
-   "id": "03/0576#16",
-   "where": "03/0576",
-   "text": "– I'd die for those nightingale eyes of yours, Eagle Eye-jan, but the problem is with the receiver; the transmitter can't fix it. Otherwise, my toothbrush is neither the same color as yours nor the same shape.",
-   "q": "Short-sighted Sajad keeps grabbing the wrong toothbrush; Farid teases that the fault is in his eyes. Does the joke come through?",
-   "ctx": 3,
-   "kind": "banter",
-   "before": [
-    "– Eagle Eye, you took my toothbrush again.",
-    "– Objectively, next time buy a different color.",
-    "Farid said:"
+   "key": "natural",
+   "title": "Does it sound natural?",
+   "q": "Does each line sound natural and clear?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0140#natur",
+     "text": "– Then just think what our poor Baba must be going through: sitting idle at home all these years.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "– Sure, Baba really hungers for respect. But he ended up with the wrong people; we've smashed every last bit of it.",
+     "note": null
+    },
+    {
+     "id": "03/0212#natur",
+     "text": "– Whose cousin?",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Haven't you finished what you came for?",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "– I have no time at all this week. Next week, Thursday at three, the same place we met last time. I should also say I only have half an hour to spare.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Aghhh. That made my skin crawl.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "– Leopard Farid can't even make up his own mind. One minute he's pulling murderous moves; the next he's saying, \"Oh, blood. That made my skin crawl.\"",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Where on my neck does it say foothold?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Never mind that. Why don't you pick up, no matter how many times I call? Did you divert my calls somewhere you shouldn't have?",
+     "note": null
+    },
+    {
+     "id": "04a/0048#natur",
+     "text": "– It's old age, neighbor.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objectively, just because we arrived a few days late, these Tehran kids, who only got into AmirKabir thanks to localization, act like we're the ones who came in through a quota, not them. Objectively.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "– Man, don't talk to this one so politely; it'll go to his head. We took all those practice tests and ended up roommates with this antique.",
+     "note": null
+    },
+    {
+     "id": "04b/0173#natur",
+     "text": "– So you're all very clever boys.",
+     "note": null
+    },
+    {
+     "id": "04b/0193#natur",
+     "text": "At best, the dorm monitors got blue wall-to-wall carpeting instead of the dust-colored kind.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– It makes me so mad when you just sit there in silence like this. I want to punch you.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– No one's room has a carpet, Baba-jan. Only we have a carpet, and that's because we're the elite room.",
+     "note": null
+    },
+    {
+     "id": "04b/0427#natur",
+     "text": "– That's our question too.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Fine, Eagle Eye, fine. Now don't stick your glasses into the laptop.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– If Fly were here, his antennae would prick up at once: What is this that pays off like that?",
+     "note": null
+    },
+    {
+     "id": "04b/0736#natur",
+     "text": "As soon as your name comes up, my ears prick up.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ah, if only one day I could pierce those ears of yours with my nails so they wouldn't prick up anymore.",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "– Now say whatever you want, but keep the final beit in mind.",
+     "note": null
+    },
+    {
+     "id": "04b/1119#natur",
+     "text": "– You're all like my own children.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "– I've loved you for thirty-two months. From a distance. Without your knowing. In silence, without a single word.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, Grandpa caught Covid too, but you'd never know it; he shook it off like a simple cold. Probably because he can't hear and has no idea what's going on, and he never got scared.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 21
 }

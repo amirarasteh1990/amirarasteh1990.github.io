@@ -2,8 +2,104 @@
  "lang": "lb",
  "slug": "lb",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
+  {
+   "id": "03/0430#8",
+   "where": "03/0430",
+   "text": "– An du, mat dëser penisseger Aart ze schwätzen, sollts Alain Schwanzlon heeschen.",
+   "q": "'Alain Schwanzlon' is meant as a rude pun on the actor Alain Delon. Would Luxembourgish readers get it? If not, what word could carry it?",
+   "before": [
+    "– Jo, Hamoon ass en gudden Numm fir dech. Wéi den Hamoon am Film, bass du och voller Froen. Voller Angscht a Grond fir Onrou, net fir dech selwer, mä fir mech.",
+    "Den Hooman sot:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Et reent net vun der Äerd an den Himmel.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Meng Hand ass kuerz, an d'Vereenegung mat dir ass wäit.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Ech soen, wann s de esou ëmmer just hei sëtz a Gedichter liesst, gëtt kee Brout warm fir dech.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "D'Bibi, Gott hätt Erbarmen mat hirer Séil, sot an esou Momenter: sot ech et, brennt mir d'Zong; sot ech et net, brennt mir d'Mark an de Schanken.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0140#3",
+   "where": "01/0140",
+   "text": "– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.",
+   "q": "Ghassem pities poor Baba, idle at home for years. Does this read naturally?",
+   "before": [
+    "…schued ginn. Déi aarm Séil hat just d'Sëtzen um Enn vun der Strooss als Zäitverdreiw. Si sot, mäi Häerz verfault. Op d'mannst ech, och wa meng Kanner net hei sinn, beschäftegen ech mech e bësse mat mengem Strécken. Schaffen ass gutt, Amir. Wann ech näischt ze dinn hunn, halen ech et guer net aus.",
+    "De Ghassem seet, an sengem Toun kann een d'Laachen spieren:"
+   ]
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Hie seet, e gutt Joer erkennt een um Fréijoer.",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Si sot, mäi Häerz verfault.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Den Hooman klappt mir beim Laachen haart op de Réck, an den Zockerklomp spréngt mir an den Hals.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0951#6",
+   "where": "04b/0951",
+   "text": "– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.",
+   "q": "Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?",
+   "before": [
+    "– Gëff mir en zréck. Als wéilt en och just wëssen, wéi déi mat Draht funktionéieren.",
+    "Den Taghi huet dem Hamid seng Hand an der Loft gepackt a de Walkman gerett. Awer de Yaser krut awer nach e puer Fauschten a Zerkéis. De Hamid sot:"
+   ]
+  },
+  {
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Ech hunn eréischt duerno, wéi meng Famill mech mat Gewalt tëscht d'Hénger gestouss huet, verstan, wat fir eng aner Welt dee Säit vun der Geschicht ass.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1063#7",
+   "where": "04b/1063",
+   "text": "Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.",
+   "q": "Is it clear that Yaser's name was the one written largest?",
+   "before": [
+    "De Yaser, wärend hie mat enger Spraydous, déi hie sengem Baba aus dem Khavar-Camion geklaut hat, eis Nimm op d'Mauer géintiwwer dem Haus vun der Negar geschriwwen huet, sot:",
+    "– Wa si eis Nimm léiert, gefält mir un eis."
+   ]
+  },
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
@@ -25,16 +121,6 @@
    ]
   },
   {
-   "id": "01/0140#3",
-   "where": "01/0140",
-   "text": "– Da kuck emol, wat de Baba jiddereen aushale muss, esou vill Joren aarbechtslos doheem sëtzen.",
-   "q": "Ghassem pities poor Baba, idle at home for years. Does this read naturally?",
-   "before": [
-    "…schued ginn. Déi aarm Séil hat just d'Sëtzen um Enn vun der Strooss als Zäitverdreiw. Si sot, mäi Häerz verfault. Op d'mannst ech, och wa meng Kanner net hei sinn, beschäftegen ech mech e bësse mat mengem Strécken. Schaffen ass gutt, Amir. Wann ech näischt ze dinn hunn, halen ech et guer net aus.",
-    "De Ghassem seet, an sengem Toun kann een d'Laachen spieren:"
-   ]
-  },
-  {
    "id": "03/0060#4",
    "where": "03/0060",
    "text": "Den Hamid huet den ausgebleechte roude Réim vu senger Ringer-Trikot eropgezunn an, mat enger Bewegung vum Réck vu senger Hand, de Knuet vum zerrëssene Punkt vun der Schëller op de Réck geworf.",
@@ -52,36 +138,6 @@
    "before": [
     "– Nee, hie huet och mir net geäntwert.",
     "E puer Deeg méi spéit huet hien eis all zesumme geäntwert. Hie hätt geschriwwen, hie wier an d'Studentenheem fir bestuete Studente verluecht ginn an hätt eist Zëmmer verlooss. De Meysam sot, do um Buedem wier et méi gemittlech, an dem Bahman säi Bett ass eidel bliwwen."
-   ]
-  },
-  {
-   "id": "04b/0951#6",
-   "where": "04b/0951",
-   "text": "– De Frënd vum Koseng vum Meeschter vun eisem Schwoer, deen de räichste Mann vun Teheran ass, hätt et him gesot.",
-   "q": "Does 'Meeschter' clearly mean a master craftsman, the brother-in-law's boss at work?",
-   "before": [
-    "– Gëff mir en zréck. Als wéilt en och just wëssen, wéi déi mat Draht funktionéieren.",
-    "Den Taghi huet dem Hamid seng Hand an der Loft gepackt a de Walkman gerett. Awer de Yaser krut awer nach e puer Fauschten a Zerkéis. De Hamid sot:"
-   ]
-  },
-  {
-   "id": "04b/1063#7",
-   "where": "04b/1063",
-   "text": "Amir, Taghi, Hamid, an de Yaser, deen ëm gréissten geschriwwen hat.",
-   "q": "Is it clear that Yaser's name was the one written largest?",
-   "before": [
-    "De Yaser, wärend hie mat enger Spraydous, déi hie sengem Baba aus dem Khavar-Camion geklaut hat, eis Nimm op d'Mauer géintiwwer dem Haus vun der Negar geschriwwen huet, sot:",
-    "– Wa si eis Nimm léiert, gefält mir un eis."
-   ]
-  },
-  {
-   "id": "03/0430#8",
-   "where": "03/0430",
-   "text": "– An du, mat dëser penisseger Aart ze schwätzen, sollts Alain Schwanzlon heeschen.",
-   "q": "'Alain Schwanzlon' is meant as a rude pun on the actor Alain Delon. Would Luxembourgish readers get it? If not, what word could carry it?",
-   "before": [
-    "– Jo, Hamoon ass en gudden Numm fir dech. Wéi den Hamoon am Film, bass du och voller Froen. Voller Angscht a Grond fir Onrou, net fir dech selwer, mä fir mech.",
-    "Den Hooman sot:"
    ]
   }
  ]

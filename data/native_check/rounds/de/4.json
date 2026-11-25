@@ -1,187 +1,342 @@
 {
+ "format": 2,
  "lang": "de",
  "slug": "de",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Muttersprachen-Check",
+  "lead": "Du musst das Buch nicht gelesen haben. Beantworte so viele, wie du magst.",
+  "persian_words": "Maman (Mutter), Baba (Vater) und -jan (lieb) sind persische Wörter, die das Buch beibehält.",
+  "page": "Seite",
+  "correct": "Stimmt",
+  "needs_change": "Änderung nötig",
+  "not_sure": "Nicht sicher",
+  "how_say": "Wie würdest du es sagen?",
+  "meaning": "Was glaubst du, was es bedeutet?",
+  "optional": "(optional)",
+  "your_name": "Dein Name",
+  "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
+  "private": "Deine Antworten gehen nur an den Autor.",
+  "send": "Senden",
+  "send_continue": "Senden und weiter zu Seite {n}",
+  "sending": "Wird gesendet…",
+  "popup_title": "Danke!",
+  "popup_text": "Möchtest du deinen Namen auf der Danke-Seite der Website? Mach alle 4 Seiten fertig, dann tragen wir ihn gern ein.",
+  "popup_button": "Weiter zu Seite {n}",
+  "arrived": "Danke, deine Antworten von Seite {n} sind angekommen.",
+  "thanks_last": "Danke! Deine Antworten sind angekommen.",
+  "all_done": "Du hast alle Seiten gesendet. Danke für jede einzelne!",
+  "already_sent": "Du hast diese Seite von diesem Gerät aus schon gesendet. Danke!",
+  "continue_with": "Weiter mit Seite {n}",
+  "need_one": "Wähle bei mindestens einer Zeile eine Antwort.",
+  "note_no_answer": "Bei einer Zeile steht eine Anmerkung: Bitte wähle dafür auch eine Antwort.",
+  "name_needed": "Gib den Namen ein, der genannt werden soll, oder nimm das Häkchen weg.",
+  "not_connected": "Das Senden ist noch nicht eingerichtet.",
+  "too_long": "Das Senden hat zu lange gedauert.",
+  "cannot_send": "Die Antworten konnten von hier aus nicht gesendet werden.",
+  "use_email": "Bitte nutze den E-Mail-Button unten.",
+  "fallback": "Die Antworten konnten von dieser Seite aus nicht gesendet werden. Bitte schick sie stattdessen per E-Mail; nichts von dem, was du eingegeben hast, geht verloren.",
+  "email_button": "Antworten per E-Mail senden",
+  "shortened": "Einige Anmerkungen waren für einen E-Mail-Link zu lang und wurden dort gekürzt. Deine vollständigen Antworten stehen unten; bitte füge sie in die E-Mail ein.",
+  "noscript": "Zum Senden wird JavaScript benötigt. Du kannst deine Antworten auch per E-Mail an {email} schicken."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0263#1",
-   "where": "03/0263",
-   "text": "Dieser haarige Körper, dieses bis an die Zähne mit Bart und Haar bewaffnete Gesicht. Wenn du Hooman bist, dann bin ich Susan.",
-   "q": "Eskandar says the gentle name Hooman fits his hairy roommate as little as a girl's name fits Eskandar himself. Does the joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Glaubst du wirklich, dass dieser Name zu dir passt?"
+   "key": "crude",
+   "title": "Derbe Sprache",
+   "q": "Hier fluchen die Figuren oder reden derb. Klingt jede Zeile natürlich?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Verflucht sei, wer Adlerauge News leugnet.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Mensch, ich sag doch, ich sehe nichts, du Arschloch.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Wenn dir die Welt und alles daran scheißegal ist, warum machst du dir dann so einen Kopf um Tests und Prüfungen?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Die Antwort ist, dass dir das Arschkriechen bei Meister Hooman nicht steht.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "– Arschloch. Objektiv, der Dollar erreicht gerade 1500 Toman, und du hängst dich an diesem armen Kerl fest?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "– Mensch, lad endlich, du Arschloch.",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Ach, was soll diese beschissene Denkerpose schon wieder?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Wer philosophischen Scheiß von sich geben will, kann damit in die Küche gehen. Die Birne ist dort auch heller; dann erleuchtet sie eure Hirne.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Du nutzloser Arsch ... huuuuuh ... den Kopf so gesenkt ... huuuuh ... wohin gehst du so schnell? ... huuuh ... mir geht die Luft aus.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pff, fick dich. Jetzt bist du Auswanderer und wir sind dir scheißegal. Du auslandsvergötternder Überläufer.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Diese Lokalisierungspolitik hat uns richtig gefickt. Sie sagen, sie soll die Kinder in der Nähe ihrer Familien halten, aber uns allen aus der Provinz haben sie einen Stock in den Arsch geschoben.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Wenn das Alter zählt, solltest du Bahmans Eier lecken. Der ist mindestens fünf Jahre älter als wir.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– Ja, sowie die uns sehen, ziehen die sich den Arsch zusammen und halten so viel Abstand, dass ich am liebsten mit beiden Füßen in ihre Gesichter springen würde.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Scheiß auf dieses Glück von uns.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Was hat mir der erste Platz in der Klasse und ein, ich weiß nicht, zweiter Abschluss zur Länge meines Schwanzes hinzugefügt, wenn mein Job jetzt ist, Umspannwerke zu inspizieren?",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Solche mörderischen Aktionen traue ich dir durchaus zu, aber ich frage mich wirklich, welcher verdammte Irre um sechs Uhr an einem Freitagmorgen seinen Laden aufgemacht hat, damit du dort eine Kamera kaufen kannst.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Nicht einmal den Kopf davon hättest du fressen können. Aber verdammt, waren diese Süßigkeiten gut. Ananas.",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Streitet heute nicht im Zimmer. Ich habe eine Zwölf im Sport bekommen, ich bin verdammt schlecht drauf, und ich beschimpfe euch.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "– Ich war mir das Gesicht waschen. Ich kann mir doch nicht mit aufgesetzter Brille das Gesicht waschen, du Arschloch.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "– Wenn du sowieso kein Mensch bist, der sich bewirbt und geht, warum hast du dann deinen Hintern für den TOEFL-Test aufgerissen?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "– Äldi, sieh mal, wie weit du es getrieben hast: Farid, dem wir und das Zimmer und alle am Arsch vorbeigehen, hat sich gemeldet.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Was für ein Mist frisst jetzt wieder dein Gehirn?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Du hast mir das Gefühl ruiniert, das ich von dem Lied bekam, mit dieser Scheißstimme von dir.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Na schön, was auch immer für ein Scheiß.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– Ich suche meine Brille, du Arschloch. Sag diesem Farid, er soll sein Glas nicht ständig direkt vor meine Füße stellen.",
+     "note": null
+    },
+    {
+     "id": "04b/1300#crude",
+     "text": "– Hast du mit diesem Satz gerade auf uns geschissen oder auf Mister lockenhaarigen Schrödinger?",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0175#2",
-   "where": "03/0175",
-   "text": "– Also reicher als der Freund des Cousins ...",
-   "q": "Amir blurts out the start of Hamid's favourite long phrase, teasing him. Does this slip of the tongue read naturally?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Es rutschte mir heraus:"
-   ]
-  },
-  {
-   "id": "04b/1248#3",
-   "where": "04b/1248",
-   "text": "Der Freund des Cousins des Meisters unseres Schwagers – Teherans reichster Mann – hat gesagt, Schwarz sei die Farbe der Liebe.",
-   "q": "Hamid, a boy, cites his usual long chain of authorities about toy cars. Does it sound like a boy talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "…Hand. Yaser war nicht gekommen. Mein Auto und Hamids sahen ähnlich aus. Meins war blau und Hamids rot. Wir hatten sie für fünfundzwanzig Toman gekauft. Sie waren etwas größer als eine Streichholzschachtel. Wir sprachen darüber, wessen Auto die bessere Farbe hatte. Taghi sagte: gelb. Hamid sagte:",
-    "– Wenn es Schwarz gegeben hätte, hätte ich Schwarz genommen."
-   ]
-  },
-  {
-   "id": "04b/0738#4",
-   "where": "04b/0738",
-   "text": "– Ach, wenn ich doch eines Tages diese Ohren von dir mit meinen Nägeln durchstechen könnte, damit sie nicht mehr spitz werden.",
-   "q": "Niloofar plays on Amir saying his ears prick up whenever her name comes up. Does her playful threat come through?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Na ja, wenn ich so in der Fakultät sitze, suche ich in den Gesprächen der anderen nach deinem Namen. Sobald dein Name fällt, werden meine Ohren spitz.",
-    "Sie hob die Hand, presste ihre Nägel fest aufeinander und sagte:"
-   ]
-  },
-  {
-   "id": "04b/0164#5",
-   "where": "04b/0164",
-   "text": "– Scheiß auf dieses Glück von uns.",
-   "q": "Hooman, bitter about their bad luck, curses it. Does 'Scheiß auf dieses Glück von uns' sound like how a young man would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman seufzte und wandte das Gesicht von Farid ab. Sein Blick fiel auf Eskandar, und mit einem schmerzerfüllten Ton, wie eine Nadel, die in eine alte Wunde sinkt, rief er:"
-   ]
-  },
-  {
-   "id": "04b/0343#6",
-   "where": "04b/0343",
-   "text": "– Also bist du ein Scheiß-Erstie.",
-   "q": "Hooman, surprised, swears casually on learning a young man is in his first year. Does 'Scheiß-Erstie' fit that casual swearing?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Ist das dein erstes Jahr?",
-    "– Ja."
-   ]
-  },
-  {
-   "id": "04b/0997#7",
-   "where": "04b/0997",
-   "text": "– Na schön, was auch immer für ein Scheiß.",
-   "q": "Eskandar, fed up with a quickening argument, gives in with a curse. Does this sound like natural swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Und so gingen sie hin und her, und mit jedem Hin und Her beschleunigte sich das Tempo, bis Eskandar sagte:"
-   ]
-  },
-  {
-   "id": "03/0640#8",
-   "where": "03/0640",
-   "text": "– Pff, fick dich. Jetzt bist du Auswanderer und wir sind dir scheißegal. Du auslandsvergötternder Überläufer.",
-   "q": "Hooman jokingly scolds his old friend for moving abroad. Does 'auslandsvergötternder Überläufer' sound like something a friend would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Es tut mir leid, ehrlich."
-   ]
-  },
-  {
-   "id": "03/0638#9",
-   "where": "03/0638",
-   "text": "Fick dich, hundertsiebzig Meter hast du mich mit diesem Körper hinter dir hergezogen.",
-   "q": "Hooman, fat and panting, greets an old friend with mock anger. Does 'Fick dich' sound like friendly swearing here?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Und wenn wir noch den letzten Teil rechnen, wo es schmaler wird und fast bis zum Valiasr-Tor geht, werden es hundertsiebzig Meter."
-   ]
-  },
-  {
-   "id": "04b/0385#10",
-   "where": "04b/0385",
-   "text": "– Äldi ist Schenki. Er kann nicht anders. So ist sein System eben gebaut. Immer sehr elegant und feierlich – scheißt er genau an der historischen Biegung.",
-   "q": "Hooman mocks Amir for always ruining things at the crucial moment. Does 'scheißt er genau an der historischen Biegung' work as that joke?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman kniete auf seinem Bett und aß Kuchen mit Kakao. Er drückte die Kakaomilch-Tüte zusammen und schlürfte den letzten Schluck laut auf. Er sagte:"
-   ]
-  },
-  {
-   "id": "04b/0618#11",
-   "where": "04b/0618",
-   "text": "– Wenn Fliege hier wäre, würden seine Antennen scharf werden – was ist das, das so Gewinn macht.",
-   "q": "Farid jokes that a greedy roommate nicknamed 'Fliege' would instantly perk up at easy profit. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid sagte:"
-   ]
-  },
-  {
-   "id": "04b/0598#12",
-   "where": "04b/0598",
-   "text": "Objektiv, wenn es sich durchsetzt, räumt es mit dem ganzen Bankenunwesen auf.",
-   "q": "Sajad explains to his roommates what Bitcoin could do to banks. Does this sentence sound right?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Peer-to-Peer heißt ohne Vermittler. Direkt zwischen Verkäufer und Käufer. Ohne jegliches Geldvermittlungssystem."
-   ]
-  },
-  {
-   "id": "03/0394#13",
-   "where": "03/0394",
-   "text": "Oder du bist Hirnf... na ja, du warst schon immer ein Hirnf..., jetzt bist du noch mehr Hirnf... Oder du hast was genommen.",
-   "q": "Hooman starts a crude insult, breaks it off, then repeats it. Does 'Hirnf...' read clearly as a crude insult cut short?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Du hast dich plötzlich auf diese Frage festgebissen. Dafür gibt es mehrere Erklärungen. Entweder hast du dir den Kopf irgendwo angeschlagen."
-   ]
-  },
-  {
-   "id": "03/0398#14",
-   "where": "03/0398",
-   "text": "– Arschloch. Objektiv, der Dollar erreicht gerade 1500 Toman, und du hängst dich an diesem armen Kerl fest?",
-   "q": "Sajad snaps at a roommate who keeps pestering another. Does this sound like how a student would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Sajad schloss seinen Laptop und schrie:"
-   ]
-  },
-  {
-   "id": "04b/0182#15",
-   "where": "04b/0182",
-   "text": "– Du bist die größte Kuh von allen. Dein Körperbau passt auch dazu.",
-   "q": "Eskandar hits back at chubby Hooman by calling him a cow. Does this insult sound natural from one young man to another?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Friss den Kopf meines Schwanzes, Mann. Wir haben genug von dir. Was weißt du denn, was Elektrotechnik an der Sharif bedeutet? Und außerdem: Hat dich jemand nach deiner Meinung gefragt?"
-   ]
-  },
-  {
-   "id": "04b/0146#16",
-   "where": "04b/0146",
-   "text": "– Scheißkopf. Du bringst mich dazu, den Mund aufzumachen und es auszusprechen.",
-   "q": "Hooman snaps at a roommate who pretends he only heard rumours. Does 'Scheißkopf' sound like a natural insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Ja, naja, das hat sich in der Uni herumgesprochen."
+   "key": "natural",
+   "title": "Klingt es natürlich?",
+   "q": "Klingt jede Zeile natürlich und klar?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Jetzt halt deine Hände zum Himmel. Kannst du die Erdtropfen auf deinen Händen fühlen?",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– Und mehr noch.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Sind Sie noch nicht fertig mit dem, wofür Sie gekommen sind?",
+     "note": null
+    },
+    {
+     "id": "03/0389#natur",
+     "text": "Ich habe ihn nicht umsonst „Der Dokumentarfilm von der Kakerlake, die das Haus der Spinne zerstörte“ genannt.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "– Diese Woche habe ich überhaupt keine Zeit. Nächsten Donnerstag um drei, am selben Ort wie beim letzten Mal. Nur damit es gesagt ist: Ich habe nur eine halbe Stunde.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Ahhhh. Mir graust es.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "Im einen Augenblick zieht er einen mörderischen Stunt ab, im nächsten sagt er: „Oh, Blut. Mir graust es.“",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Wo steht denn auf meinem Hals „Trittfläche“?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Fick dich, hundertsiebzig Meter hast du mich mit diesem Körper hinter dir hergezogen.",
+     "note": null
+    },
+    {
+     "id": "03/0649#natur",
+     "text": "– Nichts. Ich bin einfach so spaziert.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objektiv, nur weil wir ein paar Tage zu spät ankamen, benehmen sich diese Teheraner Kinder, die nur dank der Lokalisierung ans AmirKabir gekommen sind, als wären wir diejenigen, die mit einer Quote aufgenommen wurden, und nicht sie. Objektiv.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– Ja. Lass dich von dem Arasteh hier nicht täuschen – so bescheuert er auch ist, sein Konkur-Rang war vierundsiebzig.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Kein anderes Zimmer hat einen Teppich, Baba-jan. Nur wir haben einen Teppich, und das, weil wir das Elite-Zimmer sind.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Adlerauge, möge Gott dir nicht vergeben, du hast meinen Rücken zerstört. Warum trägst du keine Brille?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "Wenn du ohne Brille läufst, fühle ich mich mitten auf einem Schlachtfeld, so oft hast du diese Dinge in meinen Kopf und mein Gesicht geschossen.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektiv, wenn es sich durchsetzt, räumt es mit dem ganzen Bankenunwesen auf.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "– Was ist der Vorteil davon? Wichtig ist, dass ich, wenn ich zum Supermarkt gehe, Geld bezahle, meine Milch und meinen Kuchen kaufe und in meinen Körper stecke.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Okay, Adlerauge, okay. Steck jetzt nur nicht deine Brille in den Laptop.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Wenn Fliege hier wäre, würden seine Antennen scharf werden – was ist das, das so Gewinn macht.",
+     "note": null
+    },
+    {
+     "id": "04b/0634#natur",
+     "text": "– Komm schon, Adlerauge-jan, sag es auf Hauptschulniveau, damit wir es auch verstehen. Schließlich ist unser Verstand und Geist sehr beschränkt, besonders dieser lockenhaarige Mister Schrödinger.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ach, wenn ich doch eines Tages diese Ohren von dir mit meinen Nägeln durchstechen könnte, damit sie nicht mehr spitz werden.",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "– Jetzt sag, was du willst, aber behalte das letzte Beit im Sinn.",
+     "note": null
+    },
+    {
+     "id": "04b/1119#natur",
+     "text": "– Ihr seid alle wie meine eigenen Kinder.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "– Ich liebe dich seit zweiunddreißig Monaten. Von weitem. Ohne dass du es weißt. Im Stillen, ohne ein einziges Wort.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, der Opa hat sich auch mit Covid angesteckt, aber man hätte es ihm nie angesehen – er hat es wie eine einfache Erkältung abgeschüttelt.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Ich würd alles für dich geben, Nini-jan – dein Kopf arbeitet so gut.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Die Vögel sind zurückgekehrt und sitzen im Apfelbaum hinter dem Fenster. Ich höre sie. Mitten in diesem Winter und dieser Kälte, wo kommen diese Singvögel her?",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 13
 }

@@ -2,46 +2,16 @@
  "lang": "sc",
  "slug": "sc",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Immoi deo isolvo su filu de is fueddos e tue leadilu, giughe·lu in su mundu tuo, po chi no si ammuntonent inoghe, in su mundu meu.",
-   "q": "You take the words with you. Does this sentence read naturally?",
+   "id": "04b/1263#8",
+   "where": "04b/1263",
+   "text": "– Viiiiish, Baba, Baba, clòmpami custa pupixedda manna manna?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "before": [
-    "Abertura",
-    "…betzos, e nois pigaìamus su filu e giraìamus intro de sa domo po chi su filu de lana non s'ammuntonesset. Forsis sa generatzione tua est arribada unos cantos annos troppu tardu pro connòschere custu mundu de filos, ma imàgina: unu die, in un'incàntu de su mundu, is pipios si trastulaiant gasi."
-   ]
-  },
-  {
-   "id": "03/0413#2",
-   "where": "03/0413",
-   "text": "Oe a sero, in s'auditòriu.",
-   "q": "A film is shown this afternoon. Is 'Oe a sero' right for this afternoon?",
-   "before": [
-    "Bessio dae sa tenda pesada. Unu giovanu est in pès accanta de su caminu longu de asfaltu chi acòzat sa janna Hafez cun sa janna Valiasr de s'universidade, tendende papeleddos a chie passat. A mie puru mi ndi dat unu. Domando ite sunt is papeleddos. Cun meda entusiasmu, narat:",
-    "– Est note de cinema. Sa peliculedda Hamoun."
-   ]
-  },
-  {
-   "id": "04b/0508#3",
-   "where": "04b/0508",
-   "text": "Cheret nàrrere chi calicuna die ando a mòrrere ancora aici, de una pegariàs?",
-   "q": "He fears dying again for no reason. Is 'de una pegariàs' clear?",
-   "before": [
-    "Unos cantos istantes de silèntziu. Forsis pro sa prima e ultima borta, totu is giovanos de sa cambera isetaìant chi su Meysam fueddaret.",
-    "– Feti m'ammento chi su professore m'at leadu a palas e m'at pretzidu sutas de is còstulas, e su temperalapis est bessidu lantzadu. Ma cuddu sonu chi at resonadu in is origas mias no m'est mai bessidu dae conca."
-   ]
-  },
-  {
-   "id": "04b/0556#4",
-   "where": "04b/0556",
-   "text": "– Aiat domandadu chi li facessent s'esàmene foras de turnu, pro su casu chi capitaret de aprobare.",
-   "q": "He asked for a special exam outside the normal schedule. Is 'foras de turnu' clear?",
-   "before": [
-    "– Ite ora est custa pro un'esàmene, a su cumintzu de su mese de Esfand?",
-    "E li sunt bènnidos is nervios de punta, pensende chi forsis fiat de veras s'època de esàmenes e issu s'immentigaret. Su Bahman s'est abbistadu de su nervosismu de su Hooman. At naradu:"
+    "– Amir, Amir-jan, fizu meu. Isveglia·ti. Isveglia·ti pro sa Maman. Totu fiat unu sonnu. Non tènnere timoria, seo inoghe.",
+    "…pro mi guidare. Una lugore chi lampizat in sa manu de una fizeddu de qui no apo mai ischidu in cale colore de sa boèsta de lapis de colores s'ajustaiat sa janna de domo sua. Benit currende una pitzinna faghende su sonu de su giogatolu sou e s'arrestat acanta mia. Càstiat is giogatolos. Narat:"
    ]
   },
   {
@@ -55,36 +25,6 @@
    ]
   },
   {
-   "id": "04b/1150#6",
-   "where": "04b/1150",
-   "text": "At fuidu a prus velotzidade de sa lugore, si nono ja li petariat su culu.",
-   "q": "Eskandar threatens Farid. Is it clear he'd have hung him up by the backside?",
-   "before": [
-    "…su pè sou at intrapadu su libru de s'Eskandar e at rutu sa cobertura sua de giornale. Si biiat unu tretu de su longu e intrevaradu títulu de su libru: «Dèighi mizi... meravìglias, ischire... afor... pro...». Su Farid non est torradu a sa cambera in duas o tres notes. S'Eskandar sighiat a nàrrere:",
-    "– Custu ludrò tambene at violadu is leis de sa fisica."
-   ]
-  },
-  {
-   "id": "04b/1232#7",
-   "where": "04b/1232",
-   "text": "At naradu chi non la dessenhaiat pro chi restaret.",
-   "q": "Farid writes Mozhgan's name in the dust. Is 'dessenhaiat' right for writing?",
-   "before": [
-    "Seo andadu cara a su Farid. Cheria li domandare proite aiat rasadu su pilu. Fricaiat su didu contra su sòlu de sa terratza. No apo naradu nudda. Mi seo sètzidu acanta sua. Intre sa posca de su formigone asfaltadu de sa terratza, aiat dessenhada sa Mozhgan. Apo naradu:",
-    "– Cras sa posca l'at a torrare a cobèrrere."
-   ]
-  },
-  {
-   "id": "04b/1263#8",
-   "where": "04b/1263",
-   "text": "– Viiiiish, Baba, Baba, clòmpami custa pupixedda manna manna?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "before": [
-    "– Amir, Amir-jan, fizu meu. Isveglia·ti. Isveglia·ti pro sa Maman. Totu fiat unu sonnu. Non tènnere timoria, seo inoghe.",
-    "…pro mi guidare. Una lugore chi lampizat in sa manu de una fizeddu de qui no apo mai ischidu in cale colore de sa boèsta de lapis de colores s'ajustaiat sa janna de domo sua. Benit currende una pitzinna faghende su sonu de su giogatolu sou e s'arrestat acanta mia. Càstiat is giogatolos. Narat:"
-   ]
-  },
-  {
    "id": "03/0430#9",
    "where": "03/0430",
    "text": "E tue, cun cussu modu tuo de fueddare de cazu, su nùmene tuo diat dèpere èssere Alain Cazon.",
@@ -92,6 +32,51 @@
    "before": [
     "– Eja, Hamoun est unu bonu nùmene pro tie. Comente su Hamoun de sa peliculedda, tue puru ses prenu de preguntas. Ses prenu de angustia e ses fonte de disassossegu, no pro tie, ma pro mie.",
     "Su Hooman naràt:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Sa proida non falat dae terra a chelu.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Sa manu mia est curtza e s'unione tua est attesu.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Su chi naro est chi, si restas inoghe sètzidu leghende poesia, no ti si at a callentare su pane.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibi, chi Deus dda tèngiat in gròria, naraiat in custos momentos: si ddu naro, sa limba mia s'abbrusat; si no ddu naro, sa medudda de is ossos mios s'abbrusat.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "– Ghassem torra a fàghere is fainas suas, narat «un'annu bonu si connoschet dae su beranu suo».",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Immoi deo isolvo su filu de is fueddos e tue leadilu, giughe·lu in su mundu tuo, po chi no si ammuntonent inoghe, in su mundu meu.",
+   "q": "You take the words with you. Does this sentence read naturally?",
+   "before": [
+    "Abertura",
+    "…betzos, e nois pigaìamus su filu e giraìamus intro de sa domo po chi su filu de lana non s'ammuntonesset. Forsis sa generatzione tua est arribada unos cantos annos troppu tardu pro connòschere custu mundu de filos, ma imàgina: unu die, in un'incàntu de su mundu, is pipios si trastulaiant gasi."
    ]
   }
  ]

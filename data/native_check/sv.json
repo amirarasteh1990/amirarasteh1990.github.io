@@ -1,133 +1,453 @@
 {
+ "format": 2,
  "lang": "sv",
  "slug": "sv",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålskoll",
+  "lead": "Du behöver inte ha läst boken. Svara på så många du vill.",
+  "persian_words": "Maman (mor), Baba (far) och -jan (kära) är persiska ord som har behållits i boken.",
+  "page": "Sida",
+  "correct": "Rätt",
+  "needs_change": "Behöver ändras",
+  "not_sure": "Osäker",
+  "how_say": "Hur skulle du säga det?",
+  "meaning": "Vad tror du att det betyder?",
+  "optional": "(valfritt)",
+  "your_name": "Ditt namn",
+  "thanks_tick": "Visa mitt namn på tacksidan",
+  "private": "Dina svar går bara till författaren.",
+  "send": "Skicka",
+  "send_continue": "Skicka och fortsätt till sida {n}",
+  "sending": "Skickar…",
+  "popup_title": "Tack!",
+  "popup_text": "Vill du ha ditt namn på webbplatsens tacksida? Gör klart alla 4 sidorna, så lägger vi gärna till det.",
+  "popup_button": "Fortsätt till sida {n}",
+  "arrived": "Tack, dina svar från sida {n} har kommit fram.",
+  "thanks_last": "Tack! Dina svar har kommit fram.",
+  "all_done": "Du har skickat alla sidor. Tack för allihop!",
+  "already_sent": "Du har redan skickat den här sidan från den här enheten. Tack!",
+  "continue_with": "Fortsätt med sida {n}",
+  "need_one": "Välj ett svar för minst en rad.",
+  "note_no_answer": "En rad har en kommentar: välj ett svar för den också.",
+  "name_needed": "Skriv namnet du vill ska stå med, eller bocka ur rutan.",
+  "not_connected": "Skickfunktionen är inte ansluten än.",
+  "too_long": "Det tog för lång tid att skicka.",
+  "cannot_send": "Svaren kunde inte skickas härifrån.",
+  "use_email": "Använd e-postknappen nedan.",
+  "fallback": "Svaren kunde inte skickas från den här sidan. Mejla dem i stället; inget av det du skrivit går förlorat.",
+  "email_button": "Mejla svaren",
+  "shortened": "Några kommentarer var för långa för en e-postlänk och kortades där. Dina fullständiga svar finns nedan; klistra in dem i mejlet.",
+  "noscript": "Att skicka kräver JavaScript. Du kan också mejla dina svar till {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Detta är den lösa änden av en tråd av ord som en gång var ljud.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden.",
-   "q": "Does 'nystar jag upp' read naturally for unwinding a thread?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#3",
-   "where": "Opening/0007",
-   "text": "Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig.",
-   "q": "Is it clear the children carried the yarn around the house?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#4",
-   "where": "Opening/0007",
-   "text": "Kanske kom din generation några år efter garnets värld — men föreställ dig: en gång, någonstans i världen, lekte barn så.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 1,
-   "before": [
-    "…du sätter dig ned för att läsa dem. Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden. Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig."
+   "key": "slips",
+   "title": "Feluttalade ord",
+   "q": "Modern i boken uttalar vissa utländska ord fel. Låter de här som trovärdiga feluttal?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "fryseln",
+     "note": "= frysen"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublans",
+     "note": "= ambulans"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "bullerdozer",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "01/0116#5",
-   "where": "01/0116",
-   "text": "Gå till ställen där det inte är så mycket folk.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Åh, så bra. Mm-hm, beställ, så kommer de med det till dig. Men Amir-jan, sitt inte hemma hela tiden. Gå ut också."
+   "key": "images",
+   "title": "Persiska ordspråk",
+   "q": "Några persiska ordspråk och bilder är översatta ord för ord. Ger vart och ett dig någon känsla för vad det betyder, eller säger det dig ingenting?",
+   "labels": [
+    "Jag kan gissa",
+    "Jag kan inte",
+    "Osäker"
+   ],
+   "note_label": "Vad tror du att det betyder?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Regn faller inte uppåt från marken.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Ett gott år märks redan på våren.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Ät inte sorg",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mitt hjärta ruttnar",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Min hand är kort och föreningen med dig är fjärran.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "Säger jag det, bränns min tunga; säger jag det inte, bränns märgen i mina ben",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "maten blir till ormgift för mig",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "kommer inget bröd att värmas åt dig",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "min familj med våld och tvång stoppade in mig i hönsgården",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "sockerbiten hoppar ner i halsen på mig",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "kika in i vartenda hörn",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "ord kostar ingenting – det är bara varm luft",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "skulle han säkert sjunka i Negars ögon",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Bara ett skördetidslöfte?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "låt mig servera vänskapens innanmäte på ett fat åt dig",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "allt deras kroppshår föll av",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "hetsa inte upp dig så, då sinar mjölken",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "ingen kallar dig stum bara för att du inte pruttar.",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Ät huvudet på min kuk",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Din kukhuvudätare",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "skrattar åt våra skägg och kukar",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "gå omkring på gatorna med kuken i handen så här",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "blir jag inte förvånad över vilken kuk som än landar på våra huvuden",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#6",
-   "where": "01/0148",
-   "text": "Vad och Leenden?",
-   "q": "Maman catches only the end of the title 'Tårar och Leenden'. Does her puzzled reply sound natural?",
-   "ctx": 2,
-   "before": [
-    "– Ungar, ska jag ladda ner Tårar och Leenden så vi kan titta i kväll?",
-    "Maman vänder huvudet och säger:"
+   "key": "children",
+   "title": "Barnens ord",
+   "q": "Några barn i boken säger ord fel, så som små barn gör. Låter vart och ett som ett barns misstag, inte ett stavfel?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Det är marmelsten. Marmel betyder väldigt dyrt.",
+     "note": "marmel = marmor"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Den heter Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, viw du töpa den stoa dockan åt mej?",
+     "note": "en liten flicka"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Ja, jag töper den.",
+     "note": "hennes pappa härmar henne"
+    }
    ]
   },
   {
-   "id": "03/0191#7",
-   "where": "03/0191",
-   "text": "Hamid Katt, i går sa du fortfarande \"khar\". Nu har du blivit så civiliserad att du säger \"åsna\"?",
-   "q": "Taghi teases Hamid for now saying 'åsna'; 'khar' is the blunt Persian word for donkey. Does the teasing land?",
-   "ctx": 3,
-   "before": [
-    "– Pff, åsna, vem vet mer, vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, eller du, kalv? Okej, gå och köp en. Om glaset går sönder, säg inte att jag inte varnade dig.",
-    "Taghi sa:",
-    "– Oh-ho."
+   "key": "nicknames",
+   "title": "Öknamn",
+   "q": "Vännerna i boken ger varandra lekfulla öknamn, ofta som ordlekar. Fungerar vart och ett som öknamn på svenska?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Kuklon",
+     "note": "ett öknamn på en av vännerna: skådespelaren Alain Delons namn, där en del gjorts om till ett grovt ord för penis"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Tavernens Äldste",
+     "note": "en skämtsamt storslagen titel, hämtad från Hafez diktning"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Äldi",
+     "note": "en smeknamnsform av \"Tavernens Äldste\""
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, min Tave",
+     "note": "smeknamn bildade av \"taverna\""
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard-Farid",
+     "note": "om en djärv, vårdslös vän"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Är Arasteh en nedklippt Araasteh?",
+     "note": "araasteh = persiska för \"prydlig\""
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "fröken Armaaaan",
+     "note": "efternamnet Arman, utdraget för att håna"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Lockhårige Schrödinger",
+     "note": "en skämtsam titel för någon som inte kan bestämma sig"
+    }
    ]
   },
   {
-   "id": "03/0373#8",
-   "where": "03/0373",
-   "text": "Jag menar det där med att Ameroka bekräftar att Iran har stoppat kärnkraftsprogrammet.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say Amerika as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "before": [
-    "– Vad?"
+   "key": "jokes",
+   "title": "Skämt och ordlekar",
+   "q": "De här raderna innehåller ett skämt eller en ordlek. Fungerar var och en på svenska?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Det är hans fabriksinställning.",
+     "note": "att trassla till saker är helt enkelt hans natur"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Förlåtet. Hela boulevarden är din.",
+     "note": "på persiska betyder \"förlåta\" också \"ge bort\""
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "i går sa du fortfarande \"khar\". Nu har du blivit så civiliserad att du säger \"åsna\"?",
+     "note": "retar en pojke för att han bytt till ett artigare ord"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir-till-pir? … Örnaöga säger peer-to-peer; Taverny säger Äldi-till-Äldi.",
+     "note": "han hör \"peer\" som persiska pir, \"äldste\", roten till hans öknamn"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "I natt kunde jag höra dig idissla.",
+     "note": "tuggar på natten, som en ko som idisslar"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Vad fan är det för fel på dig nu, som fått den att stå mot oss, Alain Kuklon?",
+     "note": "dubbel betydelse: att sitta stolt upprätt, och en erektion"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Vad-karl var han inte?",
+     "note": "modern uppfattar bara slutet av \"kvinnokarl\""
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran",
+     "note": "en pojkes ständiga skryt"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Eller så är du kukhjär ... nå ja, kukhjärna var du redan, nu har du blivit ännu mer kukhjärna.",
+     "note": "förolämpningen avbryts och görs sedan värre"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Ja, vi äger alla fabriker. … En fabrik för skitsnack.",
+     "note": "det enda de producerar är skitsnack: de pratar bara strunt"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ditt fossil, du är själv monumentet över dumhet och förfall",
+     "note": "en hånfull förolämpning"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "livet som en tusentomanssedel: vilken sida man än tittar på luktar den linsris.",
+     "note": "en absurd kvickhet"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Det är så här jag pratar; ni hör mig tala och tror att det är poesi.",
+     "note": "en pojke svarar i en sjungande rytm"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Akta dig så du inte spricker, herr Kuk.",
+     "note": "han har just putat ut med bröstet"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Du är den största kon av dem alla.",
+     "note": "\"ko\" = en trög dumbom, sagt till en man"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "han njöt alltid oerhört av att få med ordet \"medveten\" två gånger i den meningen.",
+     "note": "\"medveten\" använt två gånger, lekfullt"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "felet ligger hos mottagaren; sändaren kan inte lösa det.",
+     "note": "vännens dåliga syn är \"mottagaren\""
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Jag menar Alain Kuklon. Kuuuk.",
+     "note": "den grova delen av ordleken, utdragen"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Om du är Hooman, då är jag Soosan.",
+     "note": "det milda namnet Hooman passar inte en så hårig man"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Derivatan? Meningen? Eller meningen med derivatan? Eller derivatan av meningen?",
+     "note": "ordlek som låtsas vara djupsinnig"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Om Gud vill, må du alltid vara araasteh.",
+     "note": "en välsignelse som leker med efternamnet Arasteh; araasteh = \"prydlig\""
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Jag kan inte se någonting utan glasögon, objektivt sett.",
+     "note": "figurens favoritord, använt överallt"
+    }
    ]
   },
   {
-   "id": "03/0430#9",
-   "where": "03/0430",
-   "text": "Och du, med ditt kukiga sätt att prata, borde ha hetat Alain Kuklon.",
-   "q": "'Alain Kuklon' is meant as a rude pun on the actor Alain Delon. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#10",
-   "where": "04a/0076",
-   "text": "Det är marmelsten. Marmel betyder väldigt dyrt.",
-   "q": "Both mistakes are intended: little Ghassem says 'marmel' for marmor and thinks it means expensive. Does it sound like a child?",
-   "ctx": 1,
-   "before": [
-    "Vi gick vidare. Halvvägs fanns ett hus. Muren var fin. Ghassem brukade säga:"
-   ]
-  },
-  {
-   "id": "04b/1263#11",
-   "where": "04b/1263",
-   "text": "Vrrrumm – Baba, Baba, viw du töpa den stoa dockan åt mej?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…mörkfärgade tystnaden men inte spred nog ljus för att leda mig någonstans. En blinkande lampa i handen på en flicka vars dörrfärg jag aldrig visste var den hörde hemma i färgpennlådan. En liten flicka kommer surrande springande och ställer sig bredvid mig. Hon tittar på leksakerna. Hon säger:"
-   ]
-  },
-  {
-   "id": "04b/1312#12",
-   "where": "04b/1312",
-   "text": "Man blir skitförvirrad. Ju mer man tänker på det, desto mer skitförvirrad blir man.",
-   "q": "A girl talks crudely about a baffling painting. Does 'skitförvirrad' sound natural here?",
-   "ctx": 1,
-   "before": [
-    "– ... Titta på det, det är verkligen tankeväckande. Han ritade det här och skrev under det: detta är inte en pipa."
-   ]
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "\"Verkligt är det vin som finns där inte en metafor.\"",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#14",
-   "where": "06/0056",
-   "text": "Med en bullerdozer hällde de jord över henne. Jord och kalk.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Swedish speaker say bulldozer as 'bullerdozer'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "En rad av Hafez",
+   "q": "Den här raden av poeten Hafez är skriven utan kommatecken, så den kan läsas på två motsatta sätt:",
+   "labels": [
+    "Ja, båda sätten",
+    "Bara ett sätt",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Verkligt är det vin som finns där inte en metafor.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Ena sättet: vinet är verkligt, inte en metafor.",
+    "Andra sättet: vinet är inte verkligt, bara en metafor."
+   ],
+   "after_q": "Kan din version läsas på båda sätten?"
   }
- ]
+ ],
+ "first": 1
 }

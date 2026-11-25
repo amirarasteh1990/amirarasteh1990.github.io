@@ -2,7 +2,7 @@
  "lang": "br",
  "slug": "br",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
@@ -19,34 +19,6 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Bibi, ra vo pardonet ganti, a lavare, e mareoù evel-se: ma lavaran, va zeod a zev; ma na lavaran ket, mel va eskern a zev.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "An dour ne gouezh ket eus an douar davet an oabl.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "– Ghassem a lavar en-dro: \"Ur bloavezh mat a anavezer diouzh e nevez-amzer.\"",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Lâret 'ran, mard chomez amañ o lenn barzhoniezh hepken, bara ebet ne domo evidout.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
    "id": "04b/0824#7",
    "where": "04b/0824",
    "text": "Me, goude bezañ bet lakaet dre nerzh va zud e-touez ar yer, em eus komprenet peseurt bed disheñvel eo an tu-se d'ar gontadenn.",
@@ -54,11 +26,54 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Va dorn a zo berr hag ar berzh ganit a zo pell.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "06/0214#8",
+   "where": "06/0214",
+   "text": "War a seblant, aon he devoa e wreg diouzh e glañvidi, ha se eo perak, a-enep an holl diez, hon eus ar mogerioù koad du-mañ dirak an ti.",
+   "q": "Is 'mogerioù koad' right for a black wooden fence in front of the house?",
+   "before": [
+    "Aet on er-maez dre an nor. Lavarout a reas:",
+    "– Ar medisin en devoa prenet an ti a oa un medisin klañvedoù spered ha youl."
+   ]
+  },
+  {
+   "id": "03/0060#3",
+   "where": "03/0060",
+   "text": "Hamid a sachas gwerenn e roched-c'hoari ruz disliv hag, gant ur fiñv dorn a-dreñv, e daolas e c'hoazenn stag ouzh un toull rous eus e skoaz betek e gein.",
+   "q": "Is it clear Hamid flicks the knot of his torn vest strap onto his back?",
+   "before": [
+    "Ar memes mouezh en devoa goulennet ouzh Ghassem diwar-benn ma renk Konkoor a lavaras, gwan-gwan:",
+    "– He, Mestr Hamid, ar c'hazh sotet."
+   ]
+  },
+  {
+   "id": "03/0601#5",
+   "where": "03/0601",
+   "text": "Ur muntr bihan, e-kreiz frazenn pep follenn, em boa staget, o cheñch \"da garout a ran\" e \"ne'z garan ket\".",
+   "q": "Amir adds a faint Persian letter to each sheet. Is 'muntr bihan' clear?",
+   "before": [
+    "– Ha he devoa Negar goulennet ouzhomp skeiñ war he c'henderv, ma santimp bremañ touellet?",
+    "Met spontus e oa Taghi, ha ne gredis ket lavarout netra. Ne ouiin ket kalz a vallozhioù. Ar re a ouiin ivez, aon am boa d'o skrivañ. Ma vijemp tapet, petra? Leuniet em boa an holl re gant \"Da garout a ran, Negar.\" Neuze, aon am boa e sellje Taghi ouzh ma follennoù."
+   ]
+  },
+  {
+   "id": "04b/0582#7",
+   "where": "04b/0582",
+   "text": "Ma ne vije ket krog e wac'h en e benn e vije ret dezhañ kaout un titl eus Skol-veur Sharif a-raok mont kuit eus Iran, e vije bet aet kuit eus Iran goude e c'houlenn kentañ.",
+   "q": "Is it clear he would have left Iran right after his bachelor's degree?",
+   "before": [
+    "– Lagad Erer, deus. Da lunedoù zo bet lezet ganit troad va gwele.",
+    "– ... gant e zaoulagad gwan, ez eas d'an Ameroka goude e vaster. Evel ma lâre e-unan, objektivel, haha, objektivel, ma vije bet unan bennak ac'hanomp da vont er-maez, e vije bet Lagad Erer."
+   ]
+  },
+  {
+   "id": "04b/0229#6",
+   "where": "04b/0229",
+   "text": "Unnek miz goude an deiz ma krogis da c'hoari kuit eus bed ar c'hoant hag da lakaat ger va c'halon war bed Niloofar, ez is hag e oan azezet en-dro, goude mizioù, war skabell gentañ Bulvar Keshavarz.",
+   "q": "Is it clear Amir had decided to leave his world of imagination?",
+   "before": [
+    "– Ya.",
+    "– Ya, setu, evel-se e oa. Goude-se ez eas da Aostralia. Ur bloaz pe zaou zo, klevet 'meus gant Lagad Erer News ez eas ar spontailh-se ivez da Aostralia, o klask, dre un tu, ar plac'h a garec'h hoc'h-daou. Met n'eo ket erruet dezho, evel ma seblant."
+   ]
   }
  ]
 }

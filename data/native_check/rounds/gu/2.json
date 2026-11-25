@@ -2,20 +2,23 @@
  "lang": "gu",
  "slug": "gu",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0784#6",
+   "where": "04b/0784",
+   "text": "– તું બહુ છૂપો રુસ્તમ છે.",
+   "q": "Niloofar teases Amir for secretly overhearing her. Does 'છૂપો રુસ્તમ' fit?",
+   "before": [
+    "– લો, ફરી \"જાણું છું\" કહી દીધું. પણ તને ક્યાંથી ખબર?",
+    "– આજે તું વિદ્યાશાખામાં બીજી બે-ત્રણ છોકરીઓ સાથે વાત કરતી હતી, ત્યારે મેં સાંભળ્યું."
+   ]
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "કહેતી હતી, મારું દિલ કોહવાઈ રહ્યું છે.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "દુઃખ ન ખા, મારા હોશિયાર દીકરા.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,31 +29,10 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "બીબી, ખુદા એમના આત્માને શાંતિ આપે, આવા વખતે કહેતાં, કહું તો જીભ બળે, ન કહું તો હાડકાંની મજ્જા બળે.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "વરસાદ ધરતીથી આસમાન તરફ નથી પડતો.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "– ઘાસેમ મશ્કરી કરે છે, કહે છે, ‘સારું વર્ષ એની વસંતથી ઓળખાય છે.’",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "હું કહું છું, જો તું ફક્ત અહીં બેસીને કવિતા વાંચતો રહેશે તો તારા માટે કોઈ રોટલી ગરમ થવાની નથી.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "પેલા કમબખ્ત એસ્કંદરને કહેતો નહીં, નહીં તો ફરી એક કલાક આપણને ઉપદેશ આપવા બેસી જશે ને આ ભોજન મારા માટે સાપનું ઝેર થઈ જશે.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -61,18 +43,43 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "મારો હાથ ટૂંકો છે ને તારી સાથેનું મિલન દૂર.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0075#2",
+   "where": "03/0075",
+   "text": "પછી, નિષ્પક્ષ રીતે કહું તો, જે જોર-જુલમ ને તિકડમ ચાલે એ બધાં ચલાવીને આખી ઇમારત એમણે લઈ લીધી અને ફક્ત પહેલો માળ જહાજ-બાંધણી વિભાગ માટે રહેવા દીધો.",
+   "q": "Does 'તિકડમ' (tricks, scheming) sound natural in Gujarati here?",
+   "before": [
+    "અને એણે પોતાનું લૅપટૉપ, ચાના ગ્લાસો વચ્ચે, ગાલીચા પર મૂક્યું.",
+    "…રીતે કહું તો, વાંચો તો. નક્કી એવું હતું કે આખી ઇમારત જહાજ-બાંધણી વિભાગની હોય, ખર્ચ પણ જહાજરાની કંપનીએ આપ્યો હતો. અહીં એ નથી લખ્યું, પણ મેં જાતે આખી વાતનો તાગ કાઢ્યો છે, નિષ્પક્ષ રીતે કહું તો. ઇમારત પૂરી થઈ ત્યારે વિદ્યુત ને યાંત્રિક ઇજનેરીના અધ્યાપકોએ જોઈ, અને ઇમારત ને એનો રુઆબ એમને બહુ ગમી ગયાં."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "પેલા કમબખ્ત એસ્કંદરને કહેતો નહીં, નહીં તો ફરી એક કલાક આપણને ઉપદેશ આપવા બેસી જશે ને આ ભોજન મારા માટે સાપનું ઝેર થઈ જશે.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0326#3",
+   "where": "03/0326",
+   "text": "મીણબત્તી એકલી બળતી રહેતી અને પતંગ બીજા અજવાળા તરફ ઊડી જતો.",
+   "q": "Here 'પતંગ' is the moth drawn to a candle. Is that clear?",
+   "before": [
+    "– મેં તમારા માટે કવિતા લખી છે.",
+    "…પ્રત્યેની મારી લાગણી કાવ્યમાં વ્યક્ત કરી શકાય એવી કવિતા જોઈતી હતી. મનમાં વિચાર આવ્યો, ભેટમાં મળેલા ઘોડાના ... આ પણ કવિતામાં લખી નાખ્યું. મારી કવિતા ફૂલો અને બુલબુલોથી ભરાઈ ગઈ હતી. ઘોડો પણ હતો. હું ઇચ્છતો હતો કે મીણબત્તી અને પતંગ પણ હોય. ગમે તે કરું, થતું નહોતું. મીણબત્તી આવતી, પણ પતંગ ભાગી જતો."
+   ]
+  },
+  {
+   "id": "04b/1251#7",
+   "where": "04b/1251",
+   "text": "યુસુફ ટ્રકના ઠાઠામાંથી આનંદથી ચીસો પાડતો હતો, અને યાસેર પહેલો અને છેલ્લો હતો જેને નેગાર સાથે થોડાં શબ્દો બોલવાની તક મળી.",
+   "q": "Yaser got to speak a few words with Negar. Is 'થોડાં શબ્દો' grammatically right?",
+   "before": [
+    "– ... મારા મતે ગાડીઓથી રમવું બધી રમતો કરતાં સારું.",
+    "…પડ્યો. યુસુફ કઈ દોરી લેવી તે અંગે મૂંઝાયેલો લાગતો હતો - જો તેને ખબર હોત કે મારી તો હવે ફક્ત દોરી જ રહી છે, તો કદાચ ઓછો મૂંઝાયો હોત. યાસેર મોટી લાલ-નારંગી ટ્રક લઈને આવ્યો. તેણે યુસુફને જમીન પરથી ઉઠાવ્યો અને ટ્રકના ઠાઠામાં મૂકી દીધો. પછી યાસેર યુસુફ અને ટ્રકને પોતાની પાછળ ખેંચતો નેગારની પાછળ ચાલ્યો."
+   ]
+  },
+  {
+   "id": "05/0001#8",
+   "where": "05/0001",
+   "text": "મેં મારો હાથ ફેરવ્યા કર્યો છે, જેથી હું મારી જાતને અને મારા જગતને જગતના તાવભર્યા કોલાહલમાં ડૂબી જવાથી બચાવી લઉં.",
+   "q": "Is it clear the writer's hand kept moving in circles here?",
+   "before": [
+    "…એક પાતળો પડદો ખેંચ્યો છે. એક તરફ મારા જગતે ક્યાંક પ્રકાશ તરફ ડોક ઊંચી કરી છે, અને બીજી તરફ હું મારાં કેટલાંક સ્વપ્નોના સાચા રંગ જોઈ શકું છું. પણ બીજે ક્યાંક, મેં છબીઓ અને અવાજોને વેરવિખેર કરીને તેમના ઉપરછલ્લા અસ્તવ્યસ્તપણામાંથી એક પરિચિત ભાત ઉપસાવી છે – મામાને ભરેલી બોતે-જેઘે ભાતો જેવી એક ભાત."
+   ]
   }
  ]
 }

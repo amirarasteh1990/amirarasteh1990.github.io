@@ -2,58 +2,8 @@
  "lang": "tk",
  "slug": "tk",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Edil çagalygymyzda Maman köne eşikleriň ýüplügini söküp açanda, biziň ýüplügi alyp, ol bir ýerde üýşmez ýaly öýüň içinde aýlanyşymyz ýaly.",
-   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
-   "before": [
-    "Açylyş",
-    "…gyzgyn şowhunynda ýitip giderdi. Meniň dünýäm bilen seniň dünýäňiň arasynda bir köpri bolmagy üçin ýazylyp galdyryldy. Bu jümleleri ýazýan pursadymdaky dünýämden, olary okamaga oturan pursadyňdaky dünýäňe uzaýan bir köpri. Bu tarapdan men sözleriň ýüplügini açýaryn, ol tarapdan sen ony ýygnaýarsyň."
-   ]
-  },
-  {
-   "id": "03/0590#2",
-   "where": "03/0590",
-   "text": "Goşgy agşamynyň meýilnamasy şowsuz bolanda, Mamanyň namaz çadyry ýadyma düşdi.",
-   "q": "Is it clear that 'namaz çadyry' is Maman's long prayer veil?",
-   "before": [
-    "– Meniň pikirimçe, ömür müň tumanlyk banknota meňzeýär: haýsy tarapyndan seretseň-de, merjimek palawyň ysy gelýär.",
-    "…Eskandaryň kölegesini garaňkylykda gördüm. Meysamyň pöwhe saçlarynyň aşagyndaky kiçijik, inçe göwresi, elini maňlaýyna goýan, edil birnäçe pursat öň ýeňişden bir ädim daşlykda bolup, indi ýeňlişi kabul eden ýaly duran Eskandaryň uly göwresiniň garşysynda, otagyň garaňkylygyny has-da artdyrypdy."
-   ]
-  },
-  {
-   "id": "04b/0353#3",
-   "where": "04b/0353",
-   "text": "– Ýeri, şol gaýgyly ýagdaýda bize näme galdy paý? Sinek bilen ol biderek hyýalparaz.",
-   "q": "An angry student curses his roommates. Does this sound natural?",
-   "before": [
-    "…Doktor? Sikeýin şol günleri-de, pikirlenişimizi-de. Hakykatdan-da sikeýin şol kemalistlik, iki hünär okamak, elitlik we müň dürli bela-beteri. Indi meniň işim elektrik desgalaryna baryp-gaýtmak bolan wagty, näme peýda etdi maňa şol synp birinjiligi, ikinji diplom, sikimiň uzynlygyna näme goşdy?",
-    "Çaýyny sowuk-sowuk süýzüp içýär-de, agzyny eliniň arkasy bilen süpürýär."
-   ]
-  },
-  {
-   "id": "04b/0369#4",
-   "where": "04b/0369",
-   "text": "Öýlän geçipdi, aşak gaçýan gün halyň orta bölegini ýagtylandyrýardy.",
-   "q": "Is it clear that it was early afternoon, just past noon?",
-   "before": [
-    "– Ony arassa göz bilen görüp bolar, edil hilal ýaly, her göz şol aý-bölejiginiň öwüşginine ýer däldir.",
-    "We Niloofar pyşyrdylarymy eşidýärdi. Otaga giren wagtym, otagdaky oglanlar we Eskenderiň kakasy bolsa gerek diýip çak eden ýaşuly adam, otagyň ortasyndaky halynyň üstünde oturypdylar."
-   ]
-  },
-  {
-   "id": "04b/0486#5",
-   "where": "04b/0486",
-   "text": "– Ýagny aýtjak bolýaň, seniň ýaly antikwar bize bije bilen düşen bu bok bagtymyz, hemişe gaýtalanarmy diýjek bolýaň?",
-   "q": "He insults a roommate as an old antique. Does 'antikwar' mean that?",
-   "before": [
-    "– Kelläňe ýüz sag bolsun. Indi dünýä şeýle bir açylyp-ýapylýar welin, ahyrynda bir gezek dälde, müňlerçe gezek ýene şu dünýä geleris-de, edil şu sygyr-göleler bilen otagdaş bolarys.",
-    "Bahman ýokarky krowatdan, duýdansyz bökjek bolan Faridi eli bilen saklady. Hoomanyň barmak şakyrdysy otagda ýaňlandy. Faridiň ýassygy Eskenderiň kellesiniň gapdalyndan geçip, diwara degdi. Ýassyk, eşik ilgiçiniň üstündäki bir-iki egin-eşik bilen bile Meýsamyň arkasyna gaçdy. Hooman diýdi:"
-   ]
-  },
   {
    "id": "04b/1263#6",
    "where": "04b/1263",
@@ -65,6 +15,13 @@
    ]
   },
   {
+   "id": "04b/1312#1",
+   "where": "04b/1312",
+   "text": "Adamyň kellesi aýlanýar. Näçe köp pikir etseň, şonça-da kelläň has aýlanýar.",
+   "q": "A student's crude slang for 'it makes your head spin' (like 'shit-dizzy'). Is there a crude word here? Which would a young person use?",
+   "kind": "textlook"
+  },
+  {
    "id": "03/0430#7",
    "where": "03/0430",
    "text": "Sen-de şu sik ýaly gepleýşiň bilen, adyň Alain Siklon bolmalydy.",
@@ -72,6 +29,51 @@
    "before": [
     "– Hawa, Hamoon saňa gowy at. Filmdäki Hamoon ýaly, sen-de sowallardan doly. Sowallardan doly, howsaladan doly; biynjalyklygyň çeşmesi-de özüň üçin däl, meniň üçin.",
     "Hooman diýdi:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Ýerden asmana ýagmyr ýagmaýar ahyryn.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Elim gysga, saňa gowuşmak bolsa uzak.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Alla ruhuny şat etsin, şeýle pursatlarda \"Aýtsam dilim ýanar, aýtmasam süňňümiň ýiligi ýanar\" diýerdi.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Ghassem ýene degişip, \"gowy ýyl bahardan belli bolar\" diýýär.",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1321#2",
+   "where": "04b/1321",
+   "text": "\"Ol ýerdäki şerap hakykatdyr, mejaz däl\"",
+   "q": "Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?",
+   "kind": "textlook"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Edil çagalygymyzda Maman köne eşikleriň ýüplügini söküp açanda, biziň ýüplügi alyp, ol bir ýerde üýşmez ýaly öýüň içinde aýlanyşymyz ýaly.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
+   "before": [
+    "Açylyş",
+    "…gyzgyn şowhunynda ýitip giderdi. Meniň dünýäm bilen seniň dünýäňiň arasynda bir köpri bolmagy üçin ýazylyp galdyryldy. Bu jümleleri ýazýan pursadymdaky dünýämden, olary okamaga oturan pursadyňdaky dünýäňe uzaýan bir köpri. Bu tarapdan men sözleriň ýüplügini açýaryn, ol tarapdan sen ony ýygnaýarsyň."
    ]
   }
  ]

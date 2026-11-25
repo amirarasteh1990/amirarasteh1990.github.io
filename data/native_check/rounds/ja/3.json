@@ -1,179 +1,332 @@
 {
+ "format": 2,
  "lang": "ja",
  "slug": "ja",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "ネイティブチェック",
+  "lead": "本を読んでいなくても大丈夫です。答えたいだけ答えてください。",
+  "persian_words": "ママン（お母さん）、バーバ（お父さん）、〜ジャン（いとしい）はペルシア語の言葉で、本の中でもそのまま使っています。",
+  "page": "ページ",
+  "correct": "正しい",
+  "needs_change": "要修正",
+  "not_sure": "よくわからない",
+  "how_say": "あなたならどう言いますか？",
+  "meaning": "どういう意味だと思いますか？",
+  "optional": "（任意）",
+  "your_name": "お名前",
+  "thanks_tick": "感謝ページに名前を載せる",
+  "private": "回答は著者にだけ届きます。",
+  "send": "送信",
+  "send_continue": "送信して {n} ページへ進む",
+  "sending": "送信中…",
+  "popup_title": "ありがとうございます！",
+  "popup_text": "ウェブサイトの感謝ページにお名前を載せませんか？ 全4ページを終えていただければ、喜んで載せます。",
+  "popup_button": "{n} ページへ進む",
+  "arrived": "ありがとうございます。{n} ページの回答が届きました。",
+  "thanks_last": "ありがとうございます！ 回答が届きました。",
+  "all_done": "すべてのページを送っていただきました。どのページも本当にありがとうございます！",
+  "already_sent": "このページは、この端末からすでに送信されています。ありがとうございます！",
+  "continue_with": "続けて {n} ページへ",
+  "need_one": "少なくとも1行、答えを選んでください。",
+  "note_no_answer": "メモが書かれた行があります。その行の答えも選んでください。",
+  "name_needed": "載せたいお名前を入力するか、チェックを外してください。",
+  "not_connected": "送信機能はまだつながっていません。",
+  "too_long": "送信に時間がかかりすぎました。",
+  "cannot_send": "ここからは回答を送信できませんでした。",
+  "use_email": "下のメールボタンをお使いください。",
+  "fallback": "このページから回答を送信できませんでした。代わりにメールで送ってください。入力した内容は消えていません。",
+  "email_button": "回答をメールで送る",
+  "shortened": "メモの一部がメールのリンクには長すぎたため、そちらでは短くしてあります。回答の全文は下にありますので、メールに貼り付けてください。",
+  "noscript": "送信には JavaScript が必要です。回答を {email} にメールで送ることもできます。"
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/0616#1",
-   "where": "04b/0616",
-   "text": "わかった、鷹の目、わかったよ。だから眼鏡をラップトップに突っ込むな。",
-   "q": "Farid teases short-sighted Sajad, who peers very closely at his laptop. Does this sound like natural teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "フーマンが言った。"
+   "key": "maman",
+   "title": "母親の声",
+   "q": "母親は温かく、ときには叱りながら、小さな町のふつうの女性のように話します。それぞれ、彼女らしく聞こえますか？",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0116#maman",
+     "text": "外にも出て。人の少ないところに行って。",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "あの馬鹿な先生が出てくる映画？ うん、あれを見なさい。",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "こちらではみんな、電話して「三十年も迷惑をかけられています。連れに来てください」って言おうと賛成している。",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "子どもたちを殴らないでと何度言っても、「戦争の砲撃で神経をやられた。自分ではどうにもならない」と言う。",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "悪口？ 相手に悪いことをされてもいないのに言うなら、悪口よ。",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "ねえ、考えてみてよ——バーバのいいことが一つでも思い出せる？",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "こんなになるくらいなら、麻薬中毒になったほうがまだましだった。",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "欲しい人がいれば勝手に連れていけばいい。何かおまけまでつける。",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "ずっとその手を持ち上げて、まるで手そのものがありがたいものだから、みんながキスするはずだとでもいうみたいに。",
+     "note": null
+    },
+    {
+     "id": "01/0222#maman",
+     "text": "ふん、ガーセムは本当のことを言っているじゃない。",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "アミール、主役というのはいいことなの？",
+     "note": null
+    },
+    {
+     "id": "03/0070#maman",
+     "text": "あの子の友達のハミードみたいになるんじゃないかと心配だわ。",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "あなたのやることはいつも場当たりばかりだ。",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "まず相手を知って、結婚して、それからもし望むなら恋をしなさい。",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "この糸が手にある間は迷子にならない。もう片方の端はママンが持ってる。",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "何かが怖いとき、怖くならないように工夫するんだよ。",
+     "note": null
+    },
+    {
+     "id": "04b/0526#maman",
+     "text": "こんな波、どこから来たんだか?",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "おやまあああ。じゃあ、その国々はきっと近くにあったんだねえ。",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "世も末になったもんだ。ビビの世代は言ってたよ、世の終わりが来たら、地面がしょっちゅう揺れるって。",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "あの子がよくなったら、マシュハドまで歩いて行くって願をかけたんだよ。",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "そうよ、私だって気持ちが沈むのよ。友達に会いに行かせてよ。",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "落ち込むと思ってね、ナナ・ペサルジャン。博士論文の審査があったでしょ。",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "体にいいものを食べること。力のつくものを。",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "そうしたら看護師がこっちへ来て、「この方、そちらのお連れの方じゃありませんか」って。",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "うーん、この人たちは、ナネイが生きてるときでさえ、ほとんど何もしてやらなかったわね。",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "これがお礼の言い方なの？",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "もう、何か取ってきてって言うたびに、あんな感じで電気でも走ったみたいになるのよ。",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "何でもないことに文句をつけるのよ、ふふ、アミール・ジャン。",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "あら、ニーニーは急に眠くなっちゃった。",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/1265#2",
-   "where": "04b/1265",
-   "text": "ああ、お人形を買ってあげうよ。",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does '買ってあげうよ' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– ブーーン、バーバ、バーバ、このおっきなおにんぎょ、かってくれう？",
-    "背後から声がする。"
-   ]
-  },
-  {
-   "id": "04b/1320#3",
-   "where": "04b/1320",
-   "text": "深く沈み込めば沈み込むほどクソほどくらくらするというハーフェズのベイトを見つけて",
-   "q": "The narrator borrows a girl's crude phrase about a baffling painting. Does 'クソほどくらくらする' read as a deliberate echo?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "04a/0080#4",
-   "where": "04a/0080",
-   "text": "なんでだいりしの家に行かなかったんだ？",
-   "q": "The older boy again uses his made-up word 'だいりし' for marble. Does it read as his childish word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…。片目が開いた。男の人が見えた。帽子をかぶっていた。足の間からぼくを見ていた。とても怖かった。オミドがぼくのそばに来て立った。ぼくはこっそり這い出た。ガーセムが叫んだ。石を投げた。何か言った。男の人も何か言った。追いかけていった。ガーセムが逃げた。自転車が通りの真ん中にあった。斜めになっていた。前の車輪が回っていた。赤かった。あの大きな赤い扉と同じだ。ぼくは溝のそばに座った。足を溝の中に入れた。水がなかった。胸の中がからっぽだった。男の人が戻ってきた。前の車輪はもう回っていなかった。オミドの頬を平手でたたいた。ぼくたちは二人とも泣いた。男の人が行った。ガーセムが戻ってきた。怒った。こう言った。"
-   ]
-  },
-  {
-   "id": "04b/0460#5",
-   "where": "04b/0460",
-   "text": "また何の病気だ、俺たちに向かって勃起してんのか、アラン・チンポロン？",
-   "q": "Hooman crudely mocks Eskandar for getting worked up at them, using his rude nickname. Does this sound like how young men talk?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "フーマンが言った。"
-   ]
-  },
-  {
-   "id": "03/0432#6",
-   "where": "03/0432",
-   "text": "アラン・チンポロンのことだよ。チーーンポ。以上。",
-   "q": "Hooman drags out the rude part of Eskandar's nickname for effect. Does it land as a crude joke?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ......そして口をニワトリの尻みたいにして、あいつみたいに喋ろうと必死になっている。私が言っているのはそいつのことじゃない。"
-   ]
-  },
-  {
-   "id": "03/0432#7",
-   "where": "03/0432",
-   "text": "私が言っているのはそいつのことじゃない。",
-   "q": "Hooman, a crude young man, mocks Eskandar here. Does '私' sound right in his mouth?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– ......そして口をニワトリの尻みたいにして、あいつみたいに喋ろうと必死になっている。"
-   ]
-  },
-  {
-   "id": "04b/0385#8",
-   "where": "04b/0385",
-   "text": "酒場じいは酒場者だからな。本人のせいじゃない。",
-   "q": "Hooman uses two nicknames for Amir, both taken from Elder of the Tavern. Do '酒場じい' and '酒場者' read as nicknames?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "フーマンはベッドの上に膝立ちになって、ココア牛乳とケーキを食べていた。ココア牛乳のパックを押しつぶし、最後のひと口をひどく音を立ててすすり上げた。彼は言った。"
-   ]
-  },
-  {
-   "id": "04b/0385#9",
-   "where": "04b/0385",
-   "text": "そういう工場仕様なんだ。",
-   "q": "Hooman jokes that Amir cannot help it, as if he came from the factory set that way. Does this phrase get that across?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0278#10",
-   "where": "03/0278",
-   "text": "キャッルービーは愛だ、正直なところ。",
-   "q": "Farid gushes about a politician in exuberant student slang. Does this sound like natural slang?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "06/0186#11",
-   "where": "06/0186",
-   "text": "そんなに頭が働くなんて、ニーニージャンのためなら死んでもいい。",
-   "q": "Amir lovingly praises his mother's quick thinking with a Persian-style endearment. Does it sound warm and natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– アミール、タギーが死んだとき、あいつのお母さんが玄関まで来て、ママンに言ったんだ。みんなに何て言えばいいかわからない、強い自家製のアラグを飲んで失神したなんて言ったら、とんでもない恥さらしだって。そしたらママンが、コロナにかかったって言えばいいって教えたんだ。",
-    "私は言う。"
-   ]
-  },
-  {
-   "id": "06/0108#12",
-   "where": "06/0108",
-   "text": "あああぁぁぁぁ。",
-   "q": "Ghassem lets out a long, mock-tender 'aww' to tease. Does 'あああぁぁぁぁ' sound like that?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– そういえばアミール、数日前にママンから電話がかかってきたとき、「私がどれほどあなたを愛してるか知ったら、恥ずかしくなるわよ」って言ったの？",
-    "– ああ。"
-   ]
-  },
-  {
-   "id": "03/0388#13",
-   "where": "03/0388",
-   "text": "眼鏡なしでは何も見えないよ、客観的に言えば。",
-   "q": "Sajad says 'objectively' all the time, as a funny verbal habit. Does '客観的に言えば' work as that habit?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "サジャードが言った："
-   ]
-  },
-  {
-   "id": "04b/0378#14",
-   "where": "04b/0378",
-   "text": "クソ脳みそ、屁をひらなきゃ唖だなんて誰も言わないぞ。",
-   "q": "Eskandar twists a saying, no one calls you mute if you keep quiet, into a crude jab. Does it work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…の絨毯の上に寝そべった。電気を消す前、フーマンは荷物をまとめ、翌日の電気回路の小テストに備えるべく寮の礼拝室へ行った。フーマンが行ったとき、エスカンダルは菓子の箱を手に持っていた。最初は自分のロッカーに入れようとした。入らなかった。それから部屋の中をぐるりと見回し、ファリードとサジャードのベッドの向かいのロッカーの上に箱を置いた。私はベッドに寝そべって、ニルーファルと交わした言葉を考えていた。廊下の電気が消え、ほかの部屋の物音も寝静まった。真夜中の暗闇と静寂の中、フーマンの影が扉から入ってきて、まっすぐ菓子の箱へ向かった。まるで匂いを嗅ぎつけたかのように。朝、エスカンダルが私を起こして言った。"
-   ]
-  },
-  {
-   "id": "04b/0571#15",
-   "where": "04b/0571",
-   "text": "まずこの親指をドキュメントしろ、それから好きなものを何でも撮れ。",
-   "q": "Hooman sticks up his thumb as a rude gesture to mock the film idea. Is the rude joke clear?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– みんな、俺たちの部屋のドキュメンタリー映画を作ろうぜ。",
-    "フーマンは毛布の下から手を出して言った。"
-   ]
-  },
-  {
-   "id": "06/0253#16",
-   "where": "06/0253",
-   "text": "さあ、ガーセムたちのおやつに種を取ってきて。",
-   "q": "Maman sends her husband for roasted seeds, a snack, to eat during the film. Does 'おやつに種を取ってきて' read clearly as fetching a snack?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– うーん、観光して遊びに行ったんだから、楽しかったのよ。大変なところは見てないもの。"
+   "key": "child_talk",
+   "title": "子どもの話し方",
+   "q": "これらは子どもが話す行です。それぞれ、子どもらしく聞こえますか？",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "いい女だな。",
+     "note": null
+    },
+    {
+     "id": "03/0120#child",
+     "text": "スタディオ・デッレ・アルピよりここの方がいい。",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "このロバめ、俺たちの義兄の親方職人のいとこの友達で、テヘランで一番の金持ちのほうがよく知ってるか、お前みたいな子牛のほうがよく知ってるか、どっちだよ？",
+     "note": null
+    },
+    {
+     "id": "04a/0001#child",
+     "text": "ママンが暗くなった。あの日、電気が消えた日みたいに。",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "なのに今、路地の扉の裏に立っているのに、なんで一回も見つけに来ないの？",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "今朝、庭に行ったよ。ママンがぼくは頭がいいって言った。",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "よし、お前も任務に来い。でもとても気をつけなきゃだめだ。",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "じゃあ少しだけ。でもすごく少なくはだめ。ちょっと、少しだけ。",
+     "note": null
+    },
+    {
+     "id": "04a/0049#child",
+     "text": "ハージ・カーゼムのお店もおいしい。",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "交差点って、すごく大きいってことだ。",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "疲れるなら、もう任務に来るな。",
+     "note": null
+    },
+    {
+     "id": "04a/0059#child",
+     "text": "ママンは神様は空にいると言った。空も青いんだ。",
+     "note": null
+    },
+    {
+     "id": "04a/0061#child",
+     "text": "ここはぼく覚えられなかった。",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "ここで失敗する人がたくさんいる。左に行ってしまうんだ。",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "左は危ない。あの赤い扉はとても怒ったおじいさんの家だ。バーバよりも怒っている。",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "石のない墓もある。死んだ人の骨が見える。",
+     "note": null
+    },
+    {
+     "id": "04a/0071#child",
+     "text": "ぼくはいつも胸がからっぽになっていた。そこに行きたくなかった。",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "質問なし。司令官の言うことを聞け。",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "ちょっと、なんで棒を捨てたんだ？じゃあ何を使ってドアベルを鳴らすんだよ？",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "言わなかったじゃないか。",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "俺たちの名前を覚えたら、俺たちを好きになるんだ。",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "義兄の親方職人の従兄弟の友人で、テヘランいちの金持ちだっていう男が、黒は愛の色だって言ってたんだ。",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 12
 }

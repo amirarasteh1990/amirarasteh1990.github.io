@@ -2,7 +2,7 @@
  "lang": "nds",
  "slug": "nds",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
@@ -19,32 +19,14 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Bibi, Gott heff ehr seelig, sä bi so wat jümmers: Segg ik dat, brennt mien Tung; segg ik dat nich, brennt dat Mark in mien Knaken.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "Regen fallt nich rop vun de Eer.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "He seggt: 'En goot Johr weet man al an sien Fröhjohr.'",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Ik segg, wenn du eenfach hier sittst un Gedichten lest, warrt keen Brood för di warm.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0583#3",
+   "where": "03/0583",
+   "text": "Kiek, wat du wesen muttst, dat du Leopard-Farid weglopen deist.",
+   "q": "The joke: you make Leopard Farid run away. Does 'weglopen deist' say that?",
+   "before": [
+    "Farid nehm sien Küssen un Deek un keem, op dat Bett baven miene to slapen, dat Bett, wo Bahman de eersten twee Semester vun de Universität op slapen harr, un an düssen Avend weer dat bina dree Johr her, siet de Matratz de Wärm vun Bahman sien Liev vergeten harr. Hooman sä:",
+    "– Aadleroog, all lööpt vun Leopard-Farid weg."
+   ]
   },
   {
    "id": "04b/0824#7",
@@ -54,11 +36,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Mien Hand is kort, un de Vereenigung mit di is wiet weg.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1227#7",
+   "where": "04b/1227",
+   "text": "As harr he hört, de Fründ vun den Vedder vun ehr Swager sien Meester leet sien Hoor mit Babyliss maken.",
+   "q": "Is it clear 'Meester' is the master craftsman their in-law works under?",
+   "before": [
+    "…schoren Hoor to verdecken. Buten den Fründ vun den Vedder vun ehr Swager sien Meester weer bloots disse Nackenhoor sien Stolt. He sett sik jümmer so, dat sien Nackenhoor na Negar ehr Huus wies. Sien Nackenhoor weer krullig, un Hamid harr jümmer en Hand an disse Krull. Eenmal harr he Yaser seggt:",
+    "– Weerst du parat, dien Vadder harr keen Geld un di fehlen een Hand un een Foot, un dorför harrst du mien Nackenhoor?"
+   ]
+  },
+  {
+   "id": "04b/0554#4",
+   "where": "04b/0554",
+   "text": "– Anfang Esfand, wat is dat för'n Tiet för Klausuren?",
+   "q": "Is it clear that 'Esfand' is the name of a month?",
+   "before": [
+    "– Ik heff wedder Null in Physik Twee kregen. Ik bün bannig arm dran.",
+    "Hooman sä:"
+   ]
+  },
+  {
+   "id": "03/0060#2",
+   "where": "03/0060",
+   "text": "Hamid treck sien verblichen root Träger hooch, un mit en Beweeg vun de Rüchsiet vun sien Hand smeet he den Knütt an de reten Steed vun sien Träger vun de Schuller na de Rüch.",
+   "q": "Is it clear Hamid is wearing a faded red singlet with a torn strap?",
+   "before": [
+    "De sülve Stimm, de na Ghassem över mien Konkur-Platz fraagt harr, sä heel liesen:",
+    "– Heh, Ostad Hamid, de dwaas Katt."
+   ]
+  },
+  {
+   "id": "04b/0830#5",
+   "where": "04b/0830",
+   "text": "Mennigmaal, wenn Sajad Farids Nack mit en Foothold verwessel op sien Weg na sien egen Bett, keem Farid un sleep op Bahmans Bett.",
+   "q": "Sajad mistakes Farid's neck for a step. Is 'Foothold' natural here?",
+   "before": [
+    "– Nee, he hett mi ok nich antwoort.",
+    "En poor Daag later antwoort he uns all mit een Maal. He harr schreven, he weer na dat Wohnheim för Verheirat verleggt un ut uns Zimmer utteen. Meysam sä, he weer dor op den Boden bequemer, un Bahmans Bett bleev leddig."
+   ]
   }
  ]
 }

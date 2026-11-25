@@ -1,187 +1,453 @@
 {
+ "format": 2,
  "lang": "da",
  "slug": "da",
  "dir": "ltr",
- "version": "2026-11-22.r1",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålstjek",
+  "lead": "Du behøver ikke at have læst bogen. Svar på så mange, du har lyst til.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kære) er persiske ord, som er bevaret i bogen.",
+  "page": "Side",
+  "correct": "Rigtigt",
+  "needs_change": "Bør ændres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sige det?",
+  "meaning": "Hvad tror du, det betyder?",
+  "optional": "(valgfrit)",
+  "your_name": "Dit navn",
+  "thanks_tick": "Skriv mit navn på takkesiden",
+  "private": "Dine svar går kun til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og fortsæt til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tak!",
+  "popup_text": "Vil du have dit navn på hjemmesidens takkeside? Gør alle 4 sider færdige, så tilføjer vi det med glæde.",
+  "popup_button": "Fortsæt til side {n}",
+  "arrived": "Tak, dine svar fra side {n} er kommet frem.",
+  "thanks_last": "Tak! Dine svar er kommet frem.",
+  "all_done": "Du har sendt alle siderne. Tak for dem alle!",
+  "already_sent": "Du har allerede sendt denne side fra denne enhed. Tak!",
+  "continue_with": "Fortsæt med side {n}",
+  "need_one": "Vælg et svar til mindst én linje.",
+  "note_no_answer": "En linje har en kommentar: vælg venligst også et svar til den.",
+  "name_needed": "Skriv det navn, du gerne vil stå med, eller fjern fluebenet.",
+  "not_connected": "Afsendelse er ikke sat op endnu.",
+  "too_long": "Afsendelsen tog for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Brug venligst e-mail-knappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne side. Send dem i stedet på e-mail; intet af det, du har skrevet, er gået tabt.",
+  "email_button": "Send svarene på e-mail",
+  "shortened": "Nogle kommentarer var for lange til et e-mail-link og blev forkortet der. Dine fulde svar står nedenfor; sæt dem venligst ind i e-mailen.",
+  "noscript": "Afsendelse kræver JavaScript. Du kan også sende dine svar på e-mail til {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "06/0056#1",
-   "where": "06/0056",
-   "text": "De hældte jord over hende med en bulderdozer. Jord og kalk.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Danish speaker say bulldozer as 'bulderdozer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…også. Gud alene ved, om de gav hende den rituelle vask eller ej. Vi stod og så på afstand. Da de lagde hende i graven, gik ligklædet et øjeblik op – for mig så det ud, som om de havde svøbt hende i ligklædet i det samme tøj, som hun havde haft på til hospitalet. De graver også gravene meget dybt."
+   "key": "slips",
+   "title": "Forkert udtalte ord",
+   "q": "Moren i bogen udtaler nogle udenlandske ord forkert. Lyder de som troværdige fejludtaler?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "fryselen",
+     "note": "= fryseren"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Aeyzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "ammelance",
+     "note": "= ambulance"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "bulderdozer",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "03/0191#2",
-   "where": "03/0191",
-   "text": "– Åhå. Hamid Kat, indtil i går sagde du \"asen\". Nu er du blevet helt dannet og siger \"æsel\"?",
-   "q": "Taghi mocks Hamid for swapping a blunt word for donkey for a polite one. Do 'asen' and 'æsel' make the joke work?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Pfff, æsel, hvem ved bedre – vennen til fætteren til vores svogers mesterhåndværker, der er den rigeste i Teheran, eller dig, din kalv? Godt, gå og køb en. Når glasset går i stykker, så sig ikke, at jeg ikke sagde det.",
-    "Taghi sagde:"
+   "key": "images",
+   "title": "Persiske ordsprog",
+   "q": "Nogle persiske ordsprog og billeder er oversat ord for ord. Giver hvert af dem dig en fornemmelse af, hvad det betyder, eller siger det dig ingenting?",
+   "labels": [
+    "Jeg kan gætte det",
+    "Det kan jeg ikke",
+    "Usikker"
+   ],
+   "note_label": "Hvad tror du, det betyder?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Det regner ikke opad fra jorden.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Et godt år kendes på dets forår.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Du skal ikke spise sorg",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mit hjerte rådner",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Min hånd er kort, og foreningen med dig er fjern.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "Siger jeg det, brænder min tunge; siger jeg det ikke, brænder marven i mine knogler",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "bliver maden til slangegift for mig",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "så bliver der ikke varmet noget brød til dig",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "min familie med vold og magt puttede mig ind i hønsegården",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "sukkerknalden springer ned i halsen på mig",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "kig ind i hver eneste krog",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "ord koster ingenting – det er bare varm luft",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "ville han helt sikkert synke i Negars øjne",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Bare et høsttidsløfte?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "lad mig servere dig venskabets indvolde på et fad",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "alt deres kropshår faldt af",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "hids dig ikke sådan op, ellers tørrer din mælk ud",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "ingen kalder dig stum, bare fordi du lader være med at prutte",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Æd hovedet på min pik",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Din pikhovedæder",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "griner af vores skæg og pik",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "du ville ikke gå rundt i gaderne med pik i hånden sådan",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "hvad der end lander af pik på hovedet af os",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/1247#3",
-   "where": "04b/1247",
-   "text": "Med den legebil, han trak efter sig, ville han helt sikkert synke i Negars øjne.",
-   "q": "The boys hope Taghi's babyish toy car will make Negar think less of him. Does 'synke i Negars øjne' say that clearly?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "…Et par dage senere kom Taghi til vores sædvanlige sted med sin legebil. Siden Negar var trådt ind i vores barnlige verden, havde vi glemt at lege med biler. Ikke kun billeg; alle lege var gået i glemmehuset. Jeg var meget glad. Med sine egne hænder var Taghi ved at besejre sig selv på brydemåtten."
+   "key": "children",
+   "title": "Børns ord",
+   "q": "Nogle børn i bogen siger ord forkert, sådan som små børn gør. Lyder hvert af dem som et barns fejl og ikke som en tastefejl?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Det er marmelsten. Marmel betyder, at det er rigtig dyrt.",
+     "note": "marmel = marmor"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Den hedder Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, viw du købe mig den stole dukke?",
+     "note": "en lille pige"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Ja, det viw jeg.",
+     "note": "hendes far efterligner hende"
+    }
    ]
   },
   {
-   "id": "01/0182#4",
-   "where": "01/0182",
-   "text": "– Hvad glad var han ikke?",
-   "q": "Maman, hard of hearing, catches only the end of 'dameglad'. Would Danish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Han var heller ikke dameglad.",
-    "Maman siger:"
+   "key": "nicknames",
+   "title": "Øgenavne",
+   "q": "Vennerne i bogen giver hinanden drilske øgenavne, ofte som ordspil. Fungerer hvert af dem som øgenavn på dansk?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Piklon",
+     "note": "øgenavn til en af vennerne: skuespilleren Alain Delons navn, hvor en del er lavet om til det grove ord »pik«"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Tavernens Ældste",
+     "note": "en spøgefuldt fornem titel fra Hafez' digtning"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Ældi",
+     "note": "kælenavn for »Tavernens Ældste«"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverni, min Tavvi",
+     "note": "kælenavne lavet af »taverne«"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard-Farid",
+     "note": "om en modig, dumdristig ven"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Er Arasteh en trimmet udgave af Araasteh?",
+     "note": "araasteh = persisk for »ordentlig«"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "frøken Armaaaan",
+     "note": "efternavnet Arman, hånligt trukket ud"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister krølhårede Schrödinger",
+     "note": "en spøgefuld titel til en, der ikke kan bestemme sig"
+    }
    ]
   },
   {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "– Og med den pikagtige måde, du taler på, burde du have heddet Alain Piklon. Lad være med at bilde dig noget ind. Jeg mener ikke Alain Delon, sådan som du trækker næsen sammen ...",
-   "q": "Hooman's insult puns on the actor Alain Delon. Does 'Alain Piklon' land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sagde:"
+   "key": "jokes",
+   "title": "Vittigheder og ordspil",
+   "q": "Disse linjer indeholder en vittighed eller et ordspil. Fungerer hver af dem på dansk?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Det er bare hans fabriksindstilling.",
+     "note": "at ødelægge ting ligger simpelthen i hans natur"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Tilgivet. Hele boulevarden er din.",
+     "note": "på persisk betyder »tilgive« også »forære væk«"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "indtil i går sagde du \"asen\". Nu er du blevet helt dannet og siger \"æsel\"?",
+     "note": "driller en dreng, fordi han er gået over til et pænere ord"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir-til-pir? … Ørneøje siger peer-to-peer; Taverni siger Ældi-til-Ældi.",
+     "note": "han hører »peer« som det persiske pir, »ældste«, roden til hans øgenavn"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "I nat kunne jeg høre dig tygge drøv.",
+     "note": "tygger om natten, som en ko, der tygger drøv"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Hvad fanden er der nu galt med dig, siden du har fået den op at stå mod os, Alain Piklon?",
+     "note": "dobbeltbetydning: at rette sig stolt op, og en erektion"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Hvad glad var han ikke?",
+     "note": "moren fanger kun slutningen af »dameglad«"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Vennen til fætteren til vores svogers mesterhåndværker, der er den rigeste i Teheran",
+     "note": "en drengs evige pral"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Eller du er hjernepi... nå ja, du var allerede hjernepik, nu er du bare endnu mere hjernepik.",
+     "note": "fornærmelsen bliver afbrudt og så gjort værre"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Ja da, vi har alle sammen fabrikker. … Vi har en fabrik for lortesnak.",
+     "note": "det eneste, de producerer, er lortesnak: de snakker bare vrøvl"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "Din antikvitet, du er selv et monument over dumhed og forfald",
+     "note": "en hånlig fornærmelse"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "Efter min mening er livet som en tusindtoman-seddel: uanset hvilken side man kigger på, lugter den af linseris.",
+     "note": "en absurd spøg"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Det er bare sådan, jeg taler; I hører mig tale, I tror, det er poesi.",
+     "note": "en dreng svarer i en syngende rytme"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Pas på, du ikke revner, hr. Pik.",
+     "note": "han har lige skudt brystet frem"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Du er den største ko af dem alle.",
+     "note": "»ko« = et dumt fjols, sagt til en mand"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "han nød altid umådeligt at få ordet \"bevidst\" med to gange i den sætning.",
+     "note": "»bevidst« brugt to gange, for sjov"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "problemet ligger hos modtageren; senderen kan ikke løse det.",
+     "note": "vennens dårlige syn er »modtageren«"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Jeg mener Alain Piklon. Piiik.",
+     "note": "den grove del af ordspillet, trukket ud"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Hvis du er Hooman, er jeg Susan.",
+     "note": "det blide navn Hooman passer ikke til en så behåret mand"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Differentialkvotienten? Meningen? Eller meningen med differentialkvotienten? Eller differentialkvotienten af meningen?",
+     "note": "ordspil med påtaget dybsindighed"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Om Gud vil, må du altid være araasteh.",
+     "note": "en velsignelse, der spiller på efternavnet Arasteh; araasteh = »ordentlig«"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Objektivt set kan jeg ikke se noget uden mine briller.",
+     "note": "personens faste ord, som han bruger overalt"
+    }
    ]
   },
   {
-   "id": "04b/0595#6",
-   "where": "04b/0595",
-   "text": "– Men han fucked det op. Ørneøje siger peer-to-peer; Taverni siger Ældi-til-Ældi.",
-   "q": "Amir misheard 'peer-to-peer' as 'Pir-til-pir'; pir is Persian for elder, hence his nicknames. Would Danish readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir-til-pir?",
-    "Hooman sagde:",
-    "– Send et salavat. Tavernens Ældste sagde endelig noget.",
-    "Farid sagde:"
-   ]
-  },
-  {
-   "id": "04b/0387#7",
-   "where": "04b/0387",
-   "text": "– I nat kunne jeg høre dig tygge drøv. Ærgerligt min Baba sov, ellers var jeg stået op og havde trukket hvert eneste stykke slik ud af din strube.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Does 'tygge drøv' make the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar vendte sig mod Hooman og sagde:"
-   ]
-  },
-  {
-   "id": "01/0014#8",
-   "where": "01/0014",
-   "text": "– Læg det i fryselen. Putter du det i fryselen, sker der ikke noget med det, ikke engang efter et år.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Danish speaker say fryseren (the freezer) as 'fryselen'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ja, det gjorde jeg, Nini-jan. Bare rolig. Kun lidt af Mahboubs hjemmelavede lavashak, en tørret frugtpuré, er tilbage."
-   ]
-  },
-  {
-   "id": "03/0278#9",
-   "where": "03/0278",
-   "text": "Man kan på en måde sige, de erobrede universitetet. Karroubi er kærlighed, ærligt talt.",
-   "q": "Farid is excited about a politician. Does 'Karroubi er kærlighed, ærligt talt' sound like natural student slang?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hey, Taverni, løb. Løb, kom med. De siger, de ikke lod Karroubi komme ind på universitetet. Hans tilhængere brød Hafez-porten op og kom ind."
-   ]
-  },
-  {
-   "id": "04b/1312#10",
-   "where": "04b/1312",
-   "text": "Man bliver helt skideforvirret. Jo mere man tænker over det, desto mere skideforvirret bliver man.",
-   "q": "A student's crude made-up word for baffling. Does 'skideforvirret' work as slang?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ... Se på det, det er virkelig tankevækkende. Han tegnede det her og skrev under det: dette er ikke en pibe."
-   ]
-  },
-  {
-   "id": "01/0004#11",
-   "where": "01/0004",
-   "text": "– Du gjorde det helt rigtige, Nini-jan. De siger, at babyer har brug for meget søvn. Ti timer om dagen.",
-   "q": "Amir lovingly calls his mother 'Nini', an endearment used in the family. Does it sound warm and natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Amir-jan, mens I alle var ved at udveksle Norouz-hilsner med børnene, snuppede jeg en lille lur."
-   ]
-  },
-  {
-   "id": "03/0588#12",
-   "where": "03/0588",
-   "text": "– Efter min mening er livet som en tusindtoman-seddel: uanset hvilken side man kigger på, lugter den af linseris.",
-   "q": "Meysam ends a deep debate about life with a silly quip. Does the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Meysam og Eskandar sad der i mørket og diskuterede. Samtalen var nået til livets mening. Tonen lød som et skænderi. Eskandars stemme blev højere og højere, indtil Meysam sagde:"
-   ]
-  },
-  {
-   "id": "04a/0076#13",
-   "where": "04a/0076",
-   "text": "– Det er marmelsten. Marmel betyder, at det er rigtig dyrt.",
-   "q": "Both mistakes are intended: a boy says 'marmel' for marmor (marble) and thinks it means expensive. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Vi gik videre. Halvvejs var der et hus. Muren var flot. Ghassem sagde altid:"
-   ]
-  },
-  {
-   "id": "04b/1263#14",
-   "where": "04b/1263",
-   "text": "– Viiizj, Baba, Baba, viw du købe mig den stole dukke?",
-   "q": "On the street, a stranger's little girl asks her father for a doll. Do 'viw' and 'stole' read as baby talk, not typos?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…mørktonede stilhed, men heller ikke havde lys nok til at vise mig vej. En blinkende lampe i hånden på en pige, hvis hoveddør havde en farve, jeg aldrig fandt plads til i farveblyantæsken. En lille pige kommer viizj-viizjende og stiller sig ved siden af mig. Hun kigger på legetøjet. Hun siger:"
-   ]
-  },
-  {
-   "id": "04b/1293#15",
-   "where": "04b/1293",
-   "text": "At dr. Shafiʿi Kadkani havde taget mit digt og sagt, han ville læse det senere? Bare et høsttidsløfte?",
-   "q": "'Høsttidsløfte' is a Persian saying kept literal, for an empty, put-off promise. Would a reader guess that from context?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "03/0026#16",
-   "where": "03/0026",
-   "text": "– Ja ja, klart.",
-   "q": "Farid has just called Amir twice. Does 'Ja ja, klart' clearly mean 'obviously I was calling you'?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "…over min egen – den køje, der i tre år havde mindet om Bahmans fravær. Farid havde taget sine jeans på, men havde endnu ikke taget sokker på. Han havde for vane at tage bukserne på og derefter gå over og sætte sig på sengen og spise morgenmad. Med munden fuld kaldte han på mig igen. Jeg sagde:",
-    "– Farid, var det dig, der kaldte på mig?"
-   ]
+   "key": "hafez",
+   "title": "En linje af Hafez",
+   "q": "Denne linje af digteren Hafez er skrevet uden komma, så den kan læses på to modsatte måder:",
+   "labels": [
+    "Ja, på begge måder",
+    "Kun på én måde",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Vinen dér er virkelighed ikke en metafor.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Den ene måde: vinen er virkelighed, ikke en metafor.",
+    "Den anden måde: vinen er ikke virkelighed, kun en metafor."
+   ],
+   "after_q": "Kan den danske version læses på begge måder?"
   }
- ]
+ ],
+ "first": 1
 }

@@ -1,174 +1,242 @@
 {
+ "format": 2,
  "lang": "tr",
  "slug": "tr",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Ana dil kontrolü",
+  "lead": "Kitabı okumuş olmanız gerekmiyor. İstediğiniz kadarını yanıtlayın.",
+  "persian_words": "Maman (anne), Baba (baba) ve -jan (canım), kitapta korunan Farsça kelimelerdir.",
+  "page": "Sayfa",
+  "correct": "Doğru",
+  "needs_change": "Değişmeli",
+  "not_sure": "Emin değilim",
+  "how_say": "Siz nasıl söylerdiniz?",
+  "meaning": "Sizce ne anlama geliyor?",
+  "optional": "(isteğe bağlı)",
+  "your_name": "Adınız",
+  "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
+  "private": "Yanıtlarınız yalnızca yazara gider.",
+  "send": "Gönder",
+  "send_continue": "Gönder ve {n}. sayfaya geç",
+  "sending": "Gönderiliyor…",
+  "popup_title": "Teşekkürler!",
+  "popup_text": "Adınızın web sitesindeki Teşekkürler sayfasında yer almasını ister misiniz? 4 sayfanın hepsini bitirin, memnuniyetle ekleriz.",
+  "popup_button": "{n}. sayfaya geç",
+  "arrived": "Teşekkürler, {n}. sayfadaki yanıtlarınız ulaştı.",
+  "thanks_last": "Teşekkürler! Yanıtlarınız ulaştı.",
+  "all_done": "Bütün sayfaları gönderdiniz. Hepsi için teşekkürler!",
+  "already_sent": "Bu sayfayı bu cihazdan zaten gönderdiniz. Teşekkürler!",
+  "continue_with": "{n}. sayfayla devam et",
+  "need_one": "En az bir satır için bir yanıt seçin.",
+  "note_no_answer": "Bir satırda not var: lütfen o satır için de bir yanıt seçin.",
+  "name_needed": "Listelenmesini istediğiniz adı yazın ya da kutudaki işareti kaldırın.",
+  "not_connected": "Gönderme henüz bağlı değil.",
+  "too_long": "Gönderme çok uzun sürdü.",
+  "cannot_send": "Yanıtlar buradan gönderilemedi.",
+  "use_email": "Lütfen aşağıdaki e-posta düğmesini kullanın.",
+  "fallback": "Yanıtlar bu sayfadan gönderilemedi. Lütfen onları e-postayla gönderin; girdiğiniz hiçbir şey kaybolmadı.",
+  "email_button": "Yanıtları e-postayla gönder",
+  "shortened": "Bazı notlar e-posta bağlantısı için çok uzundu ve orada kısaltıldı. Yanıtlarınızın tamamı aşağıda; lütfen onları e-postaya yapıştırın.",
+  "noscript": "Göndermek için JavaScript gerekiyor. Yanıtlarınızı {email} adresine e-postayla da gönderebilirsiniz."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0132#1",
-   "where": "01/0132",
-   "text": "Ya da kolera, mesela. O da bu kadar çok öldürmedi.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Mesela tifo vardı, ya da verem, ya da kızamık.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#3",
-   "where": "01/0132",
-   "text": "Girmedik delik bırakma. Eskiler derdi ki, her köşe bucağa göz at.",
-   "q": "Maman quotes an old saying to urge her son to explore every corner of the villages. Does it sound like her?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Mm-hm, iyi yapıyorsun. Fırsatın varken tüm köylere git."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#4",
-   "where": "01/0182",
-   "text": "Ne “avcısı” değildi ki?",
-   "q": "Told her husband was never a womanizer, Maman picks up the word 'avcısı' mockingly. Would Turkish readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Kadın avcısı da değildi.",
-    "Maman der ki:"
+   "key": "one",
+   "title": null,
+   "q": "Is it clear the children carry the yarn around the house?",
+   "q_lang": "en",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s19",
+     "text": "Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#5",
-   "where": "03/0380",
-   "text": "En kötü hastalık Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Turkish speaker say Alzheimer's as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman dedi ki:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0026#s40",
+     "text": "Görevin birinci aşaması başlıyor. Tabur, sola dön!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#6",
-   "where": "06/0052",
-   "text": "Sonunda Mahboub aradı, amublansla gelip Naney'yi aldılar",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Turkish speaker say ambulance as 'amublansla'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#7",
-   "where": "03/0362",
-   "text": "Mahboub, haberlerde söylüyorlar, Ameroka...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Turkish speaker say America as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…sayfayı duvara, diğer Konkur notlarının yanına yapıştırdım. Avlunun sonundaki evden çıktım ve dokuz adımda avlunun boyunu geçtim; yeni keşfin sevinci içimde hâlâ parlaktı. Avludan evin büyük salonuna girdiğimde Maman televizyonun önünde uzanmıştı. İki elini karnına koymuş, Mahboubeh'ye diyordu ki:"
+   "key": "poetry",
+   "title": "Şiir",
+   "q": "Bunlar şiir dizeleri. Her biri Türkçede şiir olarak iyi okunuyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Süleyman'ın o mührünü hiçbir bedel karşılığında almam; çünkü zaman zaman üzerinde bir el...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "Her şeyin üstüne yazılabilir",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "suyun üstü hariç",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "ki senin ardından gelen",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "bu yoldan geçmiş.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Okudu: “Çoktandır yâr bir haber göndermedi, ne bir selam yazdı...” ve gülmem geldi.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Rüyalarımın lambası şimdi göz kırpıyor",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Dönüşünün umudunu taşımıyorum",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Ama yolun düşerse",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "yine rüyalarıma gel",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Sanırım rüyalarım gittiğine inanmamışlar",
+     "note": null
+    },
+    {
+     "id": "02/0002#poetr",
+     "text": "Rüyalarım karanlıktı",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Rüyalarımın lambası ... rüyalarımın lambası yan... rüyalarımın lambası yandı",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Şimdi ... şimdi ... şimdi gittin ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0309#8",
-   "where": "03/0309",
-   "text": "İnşallah hâlin hep araasteh olsun.",
-   "q": "The guard wishes him a neat, orderly life; 'araasteh' is Persian for neat. Would Turkish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Güvenlik görevlisi gülümsüyor ve diyor ki:"
-   ]
-  },
-  {
-   "id": "04b/0591#9",
-   "where": "04b/0591",
-   "text": "Pir tu Pir mi?",
-   "q": "Amir mishears 'peer-to-peer' as the Persian word pir, meaning elder. Would Turkish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Bir tür peer-to-peer elektronik para.",
-    "Ben dedim ki:"
-   ]
-  },
-  {
-   "id": "04b/0460#10",
-   "where": "04b/0460",
-   "text": "Yine ne bok oldu da Alain Siklon'u bize doğru kaldırdın?",
-   "q": "Hooman again uses 'Alain Siklon', a rude pun on Alain Delon, hinting at an erection. Does the crude joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/1320#11",
-   "where": "04b/1320",
-   "text": "Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.",
-   "q": "The narrator echoes a girl's crude made-up phrase 'bok sersemi' (shit-dizzy). Does it still work in his own sentence?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "04b/0616#12",
-   "where": "04b/0616",
-   "text": "Tamam Kartal Göz, tamam be. Şimdi de gözlüğünü dizüstüne sokma.",
-   "q": "Farid teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does the teasing come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0278#13",
-   "where": "03/0278",
-   "text": "Bir bakıma üniversiteyi fethettiklerini söyleyebilirsin. Kerrubi aşktır, dürüstçe söylemek gerekirse.",
-   "q": "Farid gushes about a politician he admires, in student slang. Does this sound like natural youthful enthusiasm?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0630#14",
-   "where": "03/0630",
-   "text": "Taverny'dir, dürüstçe söylemek gerekirse.",
-   "q": "Farid declares with gusto that the nickname Taverny fits Amir perfectly. Does this sound like his excited slang?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, Tavernanın Ulu Yaşlısı, Eldie; mükemmel. Tam isabet, Pars Farid.",
-    "Farid dedi ki:"
-   ]
-  },
-  {
-   "id": "06/0186#15",
-   "where": "06/0186",
-   "text": "Sana kurban olayım Nini-jan – o aklın ne güzel işliyor.",
-   "q": "Amir praises his mother's quick thinking with a warm everyday endearment. Does this sound natural and affectionate?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Amir, Taghi öldüğünde annesi kapıya geldi ve Maman'a dedi ki – insanlara ne söyleyeceğimizi bilmiyoruz. Yani ev yapımı sert arağ içip senkop geçirdi desek çok ayıp olur. Sonra Maman ona dedi: Covid kaptı deyin.",
-    "Derim ki:"
-   ]
-  },
-  {
-   "id": "06/0188#16",
-   "where": "06/0188",
-   "text": "Çocuk anneye kurban olmaz – anne çocuğuna kurban olur. Yağmur yerden göğe yağmaz.",
-   "q": "Maman turns down her son's endearment with two old sayings. Do they read as real sayings a mother would use?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "– Öhhhh, öh-öh.",
-    "– Allah etmesin, öyle deme."
+   "key": "word_choice",
+   "title": "Tek kelimeler",
+   "q": "Her satırdaki kelime doğru kelime mi? Ne anlama gelmesi gerektiği altında yazıyor.",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0590#word_",
+     "text": "Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.",
+     "note": "\"namaz çarşafı\" = Maman's full-length prayer chador"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "Ana caddeye girmek: cık cık.",
+     "note": "\"cık cık\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "Çok sneaky'sin.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "yananlar",
+     "note": "\"yananlar\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.",
+     "note": "\"bok sersemi\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.",
+     "note": "\"bok sersemi\" = more baffled; echoes her crude coinage"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

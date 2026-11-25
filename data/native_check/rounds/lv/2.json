@@ -1,184 +1,292 @@
 {
+ "format": 2,
  "lang": "lv",
  "slug": "lv",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Dzimtās valodas pārbaude",
+  "lead": "Grāmatai nav jābūt izlasītai. Atbildiet uz tik daudz jautājumu, cik vēlaties.",
+  "persian_words": "Maman (māte), Baba (tēvs) un -jan (mīļais) ir persiešu vārdi, kas grāmatā saglabāti.",
+  "page": "Lappuse",
+  "correct": "Pareizi",
+  "needs_change": "Jāmaina",
+  "not_sure": "Grūti pateikt",
+  "how_say": "Kā jūs to teiktu?",
+  "meaning": "Ko, jūsuprāt, tas nozīmē?",
+  "optional": "(nav obligāti)",
+  "your_name": "Jūsu vārds",
+  "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
+  "private": "Jūsu atbildes saņem tikai autors.",
+  "send": "Sūtīt",
+  "send_continue": "Sūtīt un pāriet uz {n}. lappusi",
+  "sending": "Sūta…",
+  "popup_title": "Paldies!",
+  "popup_text": "Vai vēlaties, lai jūsu vārds būtu vietnes pateicību lapā? Pabeidziet visas 4 lappuses, un mēs to labprāt pievienosim.",
+  "popup_button": "Pāriet uz {n}. lappusi",
+  "arrived": "Paldies, jūsu atbildes no {n}. lappuses ir saņemtas.",
+  "thanks_last": "Paldies! Jūsu atbildes ir saņemtas.",
+  "all_done": "Visas lappuses ir nosūtītas. Paldies par tām visām!",
+  "already_sent": "Šī lappuse no šīs ierīces jau ir nosūtīta. Paldies!",
+  "continue_with": "Turpināt ar {n}. lappusi",
+  "need_one": "Izvēlieties atbildi vismaz vienai rindai.",
+  "note_no_answer": "Pie kādas rindas ir piezīme: lūdzu, izvēlieties atbildi arī tai.",
+  "name_needed": "Ierakstiet vārdu, ko vēlaties redzēt sarakstā, vai noņemiet atzīmi.",
+  "not_connected": "Sūtīšana vēl nav pieslēgta.",
+  "too_long": "Sūtīšana aizņēma pārāk ilgu laiku.",
+  "cannot_send": "Atbildes no šejienes neizdevās nosūtīt.",
+  "use_email": "Lūdzu, izmantojiet e-pasta pogu zemāk.",
+  "fallback": "Atbildes no šīs lappuses neizdevās nosūtīt. Lūdzu, nosūtiet tās pa e-pastu; nekas no ievadītā nav zudis.",
+  "email_button": "Sūtīt atbildes pa e-pastu",
+  "shortened": "Dažas piezīmes bija pārāk garas e-pasta saitei, tāpēc tur tās tika saīsinātas. Jūsu pilnās atbildes ir zemāk; lūdzu, ielīmējiet tās e-pastā.",
+  "noscript": "Sūtīšanai nepieciešams JavaScript. Atbildes varat nosūtīt arī uz {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "04b/0595#1",
-   "where": "04b/0595",
-   "text": "– Bet viņš to sačakarēja. Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.",
-   "q": "Farid mocks Amir for mishearing 'peer-to-peer' as 'Pīr-tu-pīr' (pir means elder, his nickname). Would Latvian readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pīr-tu-pīr?",
-    "Hooman teica:",
-    "– Nosūtiet salavat. Kroga Vecākais beidzot kaut ko pateica.",
-    "Farid teica:"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "– Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#2",
-   "where": "03/0380",
-   "text": "– Vissliktākā slimība ir Aicheimers.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Latvian speaker say Alzheimer as 'Aicheimers'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman teica:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#3",
-   "where": "06/0052",
-   "text": "Beigās Mahboub piezvanīja, atbrauca ar anbulas un aizveda Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Latvian speaker say ambulance as 'anbulas'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…tāda lieta. Vectēvs nedzird un nezina, kas notiek, bet Naney es vairākas reizes teicu: «Haaj Khanom, jūs sēžat tur ieliņā, jūs saķersiet Covid, lai Dievs pasargā.» Bet viņi it kā par spīti tur sēdēja vēl vairāk. Bet, Amir, Naney krūtīs tā sēca. Es teicu Mahboub un pārējiem: «Bērni, tas ir Covid.»"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "– Bataljons, uz priekšu marš!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "– Misijas pirmā posma sākums. Bataljons, pa kreisi!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Bija, piemēram, tīfs vai tuberkuloze, vai masalas.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…tas pirmoreiz atnāca, televīzijā teica – divi no simts, tagad saka – desmit procenti. Dievs ir liecinieks, tas ir tik netaisnīgi. Kāds nošķaudās vienā ielas pusē, un cilvēks otrā pusē to saķer un nomirst. Es nekad nebiju redzējusi vai dzirdējusi neko tādu. Pat Bibi paaudze nestāstīja par ko tādu."
+   "key": "one",
+   "title": null,
+   "q": "Is the image clear: choking like a vine coiling around him?",
+   "q_lang": "en",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1178#s52",
+     "text": "Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#5",
-   "where": "01/0132",
-   "text": "Vai holēra, piemēram. Arī tā nenogalināja tik daudzus.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#6",
-   "where": "03/0362",
-   "text": "– Mahboub, tas, ko ziņās stāsta, ka Ameroka ...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Latvian speaker say America as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…lapu pie sienas, blakus pārējiem Konkoor pierakstiem. Es izgāju no mājas pagalma galā un deviņos soļos šķērsoju pagalmu, un jaunā atklājuma prieks joprojām dega manā sirdī. Kad no pagalma iegāju viesistabā, Maman gulēja televizora priekšā. Abas rokas viņa bija nolikusi uz vēdera un teica Mahboubeh:"
+   "key": "poetry",
+   "title": "Dzeja",
+   "q": "Šīs ir dzejas rindas. Vai latviski katra no tām labi skan kā dzeja?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... Es nepaņemtu to Zālamana gredzenu ne par ko, uz kura reizēm rokas ...",
+     "note": null
+    },
+    {
+     "id": "04b/0742#poetr",
+     "text": "– Es zinu, ko tu gribi lasīt. Ka \"atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ...\"",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "– To ar \"Attar saldāk raudāt līdz rītausmai\" vai to ar \"tagad viņš ir vēl jo vairāk nokauts\"?",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "izņemot uz ūdens",
+     "note": null
+    },
+    {
+     "id": "04b/1269#poetr",
+     "text": "un, ja tu šķērso jūru",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "raksti uz ūdens ar savām asinīm",
+     "note": null
+    },
+    {
+     "id": "04b/1272#poetr",
+     "text": "zinātu, ka",
+     "note": null
+    },
+    {
+     "id": "04b/1274#poetr",
+     "text": "piedzērušies un",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "ir gājuši šo ceļu.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Viņa lasīja: \"Sen jau mīļotā nav sūtījusi ne ziņas; ne sveicienu rakstījusi ...\" — un man uznāca smiekli.",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "Manu sapņu gaisma ieslēdzās",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Manu sapņu gaisma tagad mirkšķina",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Man nav cerības uz tavu atgriešanos",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Bet, ja tavs ceļš tevi atvedīs tuvumā",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "nāc atkal manos sapņos",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Tagad ... tagad ... tagad tevis vairs nav ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0432#7",
-   "where": "03/0432",
-   "text": "Es nedomāju viņu. Es domāju Alain Pimplon. Piiim-pis. Punkts, un cauri.",
-   "q": "Hooman twists the actor Alain Delon's name into a rude nickname and drags it out. Does the insult land as a joke?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Hooman noapaļoja muti un sarauca degunu tik mazu un grumbainu, cik vien spēja, — tieši tāpat kā Eskandar seja kļuva, kad viņš runāja.",
-    "– ... un savelc muti kā vistas pakaļu, nopūlēdamies runāt kā viņš."
-   ]
-  },
-  {
-   "id": "04b/0460#8",
-   "where": "04b/0460",
-   "text": "– Kas tev atkal par mēri, uztaisījis pret mums stāvu, Alain Pimplon?",
-   "q": "Hooman again calls Eskandar 'Alain Pimplon', a rude pun on Alain Delon. Does this crude jab sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman teica:"
-   ]
-  },
-  {
-   "id": "04a/0080#9",
-   "where": "04a/0080",
-   "text": "– Kāpēc jūs negājāt uz marmala māju?",
-   "q": "Ghassem, a boy, says 'marmala' for marble, a word he gets wrong on purpose. Does it read as his childish mistake?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…bija sarkans. Kā tās pašas lielās sarkanās durvis. Es apsēdos pie grāvja. Es ieliku kājas grāvī. Ūdens nebija. Man sirdī bija tukši. Vīrietis atgriezās. Priekšējais ritenis vairs negriezās. Viņš iesita Omid pļauku. Mēs abi raudājām. Vīrietis aizgāja. Ghassem atgriezās. Viņš mūs norāja. Viņš teica:"
-   ]
-  },
-  {
-   "id": "04b/1320#10",
-   "where": "04b/1320",
-   "text": "Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis, un parādītu to Niloofar.",
-   "q": "Amir echoes a girl's crude made-up phrase 'sūdu juceklis' for a muddled head. Does it work here?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0309#11",
-   "where": "03/0309",
-   "text": "– Ja Dievs dos, lai tu vienmēr būtu araasteh.",
-   "q": "A guard jokes on the surname Arasteh; Persian 'araasteh' means neat. Would Latvian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Sargs smaida un saka:"
-   ]
-  },
-  {
-   "id": "01/0182#12",
-   "where": "01/0182",
-   "text": "– Kāds -nieks viņš nebija?",
-   "q": "Maman takes the ending of 'mednieks' to say he was every other kind of bad. Would Latvian readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Viņš arī nebija sieviešu mednieks.",
-    "Maman saka:"
-   ]
-  },
-  {
-   "id": "04b/0387#13",
-   "where": "04b/0387",
-   "text": "– Pagājušonakt es dzirdēju, kā tu atgremo.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, chewing like a cow. Does this tease land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar pagriezās pret Hooman un teica:"
-   ]
-  },
-  {
-   "id": "04b/0616#14",
-   "where": "04b/0616",
-   "text": "– Labi, Ērgļacis, labi. Tikai nebāz savas brilles klēpjdatorā.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering into his laptop. Does the tease sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman teica:"
-   ]
-  },
-  {
-   "id": "03/0278#15",
-   "where": "03/0278",
-   "text": "Kādā ziņā var teikt, viņi ieņēma universitāti. Karroubi ir mīlestība, taisnīgi sakot.",
-   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karroubi ir mīlestība, taisnīgi sakot' sound like him?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hei, Kroģi, skrien. Skrien, ejam. Saka, Karroubi neielaida universitātē. Viņa atbalstītāji salauza Hafez vārtus un iegāja."
-   ]
-  },
-  {
-   "id": "06/0186#16",
-   "where": "06/0186",
-   "text": "– Es upurētos par tevi, Nini-jan — cik labi tev galva strādā.",
-   "q": "Amir lovingly teases his mother, praising her clever advice. Does it sound warm and natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Amir, kad Taghi nomira, viņa māte atnāca pie durvīm un teica Maman: mēs nezinām, ko cilvēkiem stāstīt. Proti, ja teiksim, ka viņš bija dzēris stipru pašdarinātu aragh un viņam bija sinkope, tas būs briesmīgs kauns. Tad Maman viņai teica: vienkārši sakiet, ka viņš saķēra Covid.",
-    "Es saku:"
+   "key": "word_choice",
+   "title": "Atsevišķi vārdi",
+   "q": "Vai vārds katrā rindā ir īstais? Zem rindas norādīts, kas tam būtu jānozīmē.",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0268#word_",
+     "text": "– Neviens vārds tev neder, veln.",
+     "note": "\"veln\" = damn you (angry swearing)"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "Kādā ziņā var teikt, viņi ieņēma universitāti. Karroubi ir mīlestība, taisnīgi sakot.",
+     "note": "\"Karroubi ir mīlestība, taisnīgi sakot\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "– Iet uz galveno ielu: tsk-tsk.",
+     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– Tu esi tāds sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "sadegušie",
+     "note": "\"sadegušie\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.",
+     "note": "\"sūdu juceklis\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis, un parādītu to Niloofar.",
+     "note": "\"sūdu juceklis\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "02/0001#word_",
+     "text": "Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.",
+     "note": "\"Mana sirds ir gaiša\" = I feel hopeful, sure of tomorrow"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

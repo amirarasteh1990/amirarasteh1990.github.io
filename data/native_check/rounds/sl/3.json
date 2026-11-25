@@ -2,74 +2,96 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r3",
+ "version": "2026-11-25.o3",
  "items": [
   {
-   "id": "04a/0080#1",
-   "where": "04a/0080",
-   "text": "Zakaj nista šla k marmalni hiši?",
-   "q": "Ghassem, a boy, reuses the mispronounced word for marble that Maman used earlier. Does 'marmalni hiši' read as that same slip?",
+   "id": "03/0640#8",
+   "where": "03/0640",
+   "text": "Pfff, kur te. Postal si izseljeni, zdaj se ti za nas ne mudi. Ti s tujci zazrt samozaničevalec.",
+   "q": "An old friend teases Amir for moving abroad, calling him a foreigner-worshiping sellout. Does this sound like real teasing slang?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "crude",
    "before": [
-    "…kolo se je vrtelo. Bilo je rdeče. Kot tista velika rdeča vrata. Sedel sem ob jarku. Noge sem položil v jarek. Vode ni bilo. Srce sem imel prazno. Moški se je vrnil. Sprednje kolo se ni več vrtelo. Omidu je dal klofuto. Oba sva jokala. Moški je odšel. Ghassem se je vrnil. Grajal nas je. Rekel je:"
+    "– Oprosti mi, pri Bogu."
    ]
   },
   {
-   "id": "03/0432#2",
-   "where": "03/0432",
-   "text": "Ne mislim tega. Mislim Alaina Kurčona. Kuuu-rac. Pika, konec.",
-   "q": "Hooman mocks Eskandar's pout and drags out the rude word in the nickname. Does 'Kuuu-rac' land as a crude punch line?",
+   "id": "04a/0064#4",
+   "where": "04a/0064",
+   "text": "Leva stran je nevarna. Tista rdeča vrata so hiša enega zelo jeznega starca. Še bolj jezen kot Baba.",
+   "q": "A boy warns his little brothers about a scary neighbor. Does it sound like a child talking?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "child",
    "before": [
-    "– ... in oblikuješ usta kakor piščančja rit in se raztrguješ pri poskusu govoriti kakor on."
+    "Potem je vedno pokazal tisto hišo z velikimi rdečimi vrati. Govoril je:"
    ]
   },
   {
-   "id": "04b/0460#3",
-   "where": "04b/0460",
-   "text": "Kaj ti je spet, da si se nam nasršil, Alain Kurčon?",
-   "q": "Hooman mocks a roommate for getting an erection at them, using his rude nickname. Is the crude joke clear?",
+   "id": "04a/0070#6",
+   "where": "04a/0070",
+   "text": "Na drugi strani šole je pokopališče. Zelo staro je. Nekaterim grobovom manjkajo kamni. Vidijo se kosti mrtvih.",
+   "q": "A boy tries to scare his little brothers about an old graveyard. Does it sound like a child?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "child",
    "before": [
-    "Hooman je rekel:"
+    "Letos grem tja tudi jaz. Če me učitelj udari z ravnilom, bom povedal Maman. Ghassem je vedno rekel:"
    ]
   },
   {
-   "id": "03/0490#4",
-   "where": "03/0490",
-   "text": "Pazi, da ne počiš, gospod Kurčon.",
-   "q": "Hooman shortens his rude nickname for Eskandar to 'gospod Kurčon' as Eskandar puffs himself up. Does this jab sound natural?",
+   "id": "04a/0036#7",
+   "where": "04a/0036",
+   "text": "Dobro, daj malo. Ampak ne premalo. Malo, samo malo manj.",
+   "q": "A four-year-old bargains with his mother over salt on his green plums. Does it sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Rekel sem:"
+   ]
+  },
+  {
+   "id": "04a/0052#8",
+   "where": "04a/0052",
+   "text": "Tretja faza je križišče. Križišče pomeni res veliko.",
+   "q": "A boy explains a big word with a child's logic. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Po poti je rekel:"
+   ]
+  },
+  {
+   "id": "01/0148#15",
+   "where": "01/0148",
+   "text": "Kaj in nasmehi?",
+   "q": "Maman, a little hard of hearing, catches only the end of the film title 'Solze in nasmehi'. Does her question come across?",
    "ctx": 2,
    "kind": "joke",
    "before": [
-    "– Sem ekstremistični nacionalistični anarhist.",
-    "Hooman je rekel:"
+    "– Otroci, naj prenesem film Solze in nasmehi, da ga gledamo nocoj?",
+    "Maman obrne glavo in reče:"
    ]
   },
   {
-   "id": "04b/1265#5",
-   "where": "04b/1265",
-   "text": "Ja, kupil ti bom puncko. Ko dobim denar, ti kupim še boljšo, Babova punčka.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
+   "id": "04b/0571#7",
+   "where": "04b/0571",
+   "text": "Najprej pridite in dokumentirajte ta palec, potem pa snemajte film o čemerkoli hočete.",
+   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film idea. Does this read as a rude joke?",
    "ctx": 2,
    "kind": "joke",
    "before": [
-    "– Vžžž, Baba, Baba, mi kupis to veliko puncko?",
-    "Neki glas za mano reče:"
+    "– Fantje, dajmo posneti dokumentarni film o naši sobi.",
+    "Hooman je izvlekel roko izpod odeje in rekel:"
    ]
   },
   {
-   "id": "03/0191#6",
-   "where": "03/0191",
-   "text": "Oh-ho. Hamid Mačka, včeraj si rekel khar. Zdaj si pa postal civilizirani in praviš osel?",
-   "q": "Taghi teases Hamid: yesterday he used a blunt word for donkey, now he's gone all polite and says 'osel'. Does the jab work?",
+   "id": "04b/1314#16",
+   "where": "04b/1314",
+   "text": "Dvaintrideset mesecev je, kar vas ljubim. Od daleč. Ne da bi vedeli.",
+   "q": "He finally declares his love to a girl he has always addressed politely. Does the polite 'vas' feel right here?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "dialogue",
    "before": [
-    "Taghi je rekel:"
+    "Šel sem in se ustavil pod platano na drugi strani pločnika ulice Valiasr ter čakal, da se Niloofar loči od drugih, da bi stopil naprej in ji iz obraza v obraz povedal, da jo ljubim."
    ]
   },
   {
@@ -82,28 +104,6 @@
    "before": [
     "– Gospod Arasteh.",
     "Obrnem glavo k njemu."
-   ]
-  },
-  {
-   "id": "03/0309#8",
-   "where": "03/0309",
-   "text": "Če Bog da, naj bo vaš araasteh vedno urejen.",
-   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would Slovenian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Stražar se nasmehne in reče:"
-   ]
-  },
-  {
-   "id": "03/0373#9",
-   "where": "03/0373",
-   "text": "Pravim tisto, da Ameroka pravi, da je Iran ustavil jedrski program. Pomeni to, da bo vojna ali ne?",
-   "q": "Maman, worried about war, again says 'Ameroka' for America. Does the whole line sound like a mother from a small town?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Kaj?"
    ]
   },
   {
@@ -120,50 +120,6 @@
    ]
   },
   {
-   "id": "04b/0387#11",
-   "where": "04b/0387",
-   "text": "Sinoči se je slišalo, kako prežvekuješ.",
-   "q": "Eskandar mocks Hooman for secretly eating sweets at night, chewing like a cow chews cud. Does 'prežvekuješ' carry that jab?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar se je obrnil proti Hoomanu in rekel:"
-   ]
-  },
-  {
-   "id": "04b/0616#12",
-   "where": "04b/0616",
-   "text": "Prav, Orlov Pogled, prav. Zdaj pa ne tišči očal v prenosnik.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does this tease land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman je rekel:"
-   ]
-  },
-  {
-   "id": "04b/0784#13",
-   "where": "04b/0784",
-   "text": "Prav zares si sneaky.",
-   "q": "She teases him by dropping in the English slang word 'sneaky'. Does it sound natural for a young woman to say this?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Danes ste se sredi fakultete pogovarjale še z nekaj drugimi dekleti, slišal sem."
-   ]
-  },
-  {
-   "id": "03/0278#14",
-   "where": "03/0278",
-   "text": "Karroubi je ljubezen, po resnici in pravici povedano.",
-   "q": "Farid gushes about a politician he adores, adding his pet phrase 'in all truth and fairness'. Does this sound like an excited young man?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hej, Krčmar, teci. Teci, greva. Pravijo, da Karroubiija niso pustili na univerzo. Njegovi privrženci so zlomili vrata Hafez in vstopili. Na nek način bi lahko rekli, da so univerzo zavzeli."
-   ]
-  },
-  {
    "id": "06/0186#15",
    "where": "06/0186",
    "text": "Dal bi vse zate, Nini-jan. Tvoja glava tako dobro dela.",
@@ -175,16 +131,47 @@
    ]
   },
   {
-   "id": "03/0624#16",
-   "where": "03/0624",
-   "text": "Super, Starešina Krčme. To je ravno prav za Arastehja.",
-   "q": "Friends nickname Amir after a Hafez line about the wise old man of the tavern. Does 'Starešina Krčme' work as a nickname?",
-   "ctx": 3,
+   "id": "01/0184#13",
+   "where": "01/0184",
+   "text": "Ženske? Rada bi. Kdor ga hoče, ga vzame zase. Damo še nekaj zraven.",
+   "q": "Maman says she wishes he had chased women: any woman can have him, with something extra thrown in. Does this read clearly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Mislim, da ni tekal za drugimi ženskami."
+   ]
+  },
+  {
+   "id": "04a/0008#3",
+   "where": "04a/0008",
+   "text": "Ne. Dokler je ta nit v tvoji roki, se ne boš izgubil. Drugi konec je v moji roki.",
+   "q": "Maman reassures her small son, who is afraid of getting lost. Does this sound like a mother talking to a child?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman je vedno rekla:"
+   ]
+  },
+  {
+   "id": "04b/1321#5",
+   "where": "04b/1321",
+   "text": "Kakor tisto: bolj ko razmišljaš o teh desetih besedah, hujša je usra-, to, vrtoglavica.",
+   "q": "The stammering speaker nearly repeats the crude phrase, stops, and says a polite word instead. Does that come through?",
+   "ctx": 1,
    "kind": "joke",
    "before": [
-    "Hooman je odprl knjigo in rekel:",
-    "– Jaz sem služabnik Starešine Krčme, čigar milost ...",
-    "Farid je rekel:"
+    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj. »Tisto vino, ki je tam, je resnica ne prispodoba.« Tudi to je isto. Kakor tista slika, ki jo je kazala tvoja pr-pr-prijateljica."
+   ]
+  },
+  {
+   "id": "01/0132#4",
+   "where": "01/0132",
+   "text": "Potakni nos v vsak košček. Stari so vedno govorili: pokukaj v vsak zadnji kotiček.",
+   "q": "Maman urges her son to explore and quotes an old saying. Does it sound like a folk saying she would use?",
+   "ctx": 1,
+   "kind": "known",
+   "before": [
+    "– Mm-hm, prav delaš. Dokler imaš priložnost, pojdi in si oglej vse vasi."
    ]
   }
  ]

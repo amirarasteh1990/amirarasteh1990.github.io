@@ -22,9 +22,10 @@
    to 160 characters) only so robots can be told from readers. */
 
 const MAX_BODY_BYTES = 8192;
-// A full check: up to 40 answers with 600-character notes, which in a three-byte
-// script (Devanagari, Bengali, Thai...) is about 72 KB of UTF-8.
-const MAX_CHECK_BYTES = 98304;
+// A full check page: up to 150 answers (2026-11-25: grouped pages hold ~60-100 rows)
+// with 600-character notes, which in a three-byte script is about 270 KB of UTF-8.
+const MAX_CHECK_ANSWERS = 150;
+const MAX_CHECK_BYTES = 327680;
 const GITHUB_API_VERSION = '2026-03-10';
 const CONTROL_CHARACTERS = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/;
 const LANGUAGE = /^(?:[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*|mul|und)$/;
@@ -264,8 +265,9 @@ function checkSubmission(raw) {
   const name = optional(raw.name) ? '' : cleanLine(raw.name, 'Name', 1, 60);
   // consent to be listed on arasteh.art/thanks/ (2026-11-23): only with a name, only if ticked
   const thanks = raw.thanks === true && name !== '';
-  if (!Array.isArray(raw.items) || raw.items.length < 1 || raw.items.length > 40) {
-    throw new PublicError('Send between 1 and 40 answers.');
+  if (!Array.isArray(raw.items) || raw.items.length < 1 ||
+      raw.items.length > MAX_CHECK_ANSWERS) {
+    throw new PublicError('Send between 1 and ' + MAX_CHECK_ANSWERS + ' answers.');
   }
   const seen = new Set();
   const items = raw.items.map(item => {
@@ -424,11 +426,13 @@ export async function handle(request, env, githubFetch = fetch, ctx = null) {
       await rateLimit(request, env);
     }
 
+    // Check answers go to a private repo (CHECK_REPO); guestbook notes stay public.
+    const repo = check ? (env.CHECK_REPO || env.GITHUB_REPO) : env.GITHUB_REPO;
     let response;
     try {
       response = await githubFetch(
         'https://api.github.com/repos/' + encodeURIComponent(env.GITHUB_OWNER) + '/' +
-        encodeURIComponent(env.GITHUB_REPO) + '/issues',
+        encodeURIComponent(repo) + '/issues',
         {
           method: 'POST',
           headers: {

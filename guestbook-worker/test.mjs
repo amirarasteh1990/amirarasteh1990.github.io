@@ -17,6 +17,7 @@ function environment(limit = true) {
     GITHUB_TOKEN: 'test-token',
     GITHUB_OWNER: 'owner',
     GITHUB_REPO: 'site',
+    CHECK_REPO: 'answers',
     RATE_LIMIT_SALT: 'test-salt',
     SUBMIT_RATE_LIMITER: {
       async limit({key}) {
@@ -55,7 +56,10 @@ let outgoingHeaders;
 let githubCalls = 0;
 async function githubSuccess(url, options) {
   githubCalls += 1;
-  assert(url === 'https://api.github.com/repos/owner/site/issues', 'wrong GitHub endpoint');
+  // Guestbook notes go to the public site repo; check answers to the private CHECK_REPO.
+  const isCheck = JSON.parse(options.body).labels.includes('native-check');
+  assert(url === 'https://api.github.com/repos/owner/' + (isCheck ? 'answers' : 'site') + '/issues',
+    'wrong GitHub endpoint: ' + url);
   createdIssue = JSON.parse(options.body);
   outgoingHeaders = options.headers;
   return new Response(JSON.stringify({
@@ -238,12 +242,12 @@ assert(createdIssue.body.includes('3 answers: 1 Correct, 1 Needs change, 1 Not s
   'the Not sure count is missing');
 assert(createdIssue.body.includes('- `x#3` Not sure: ` no idea `'), 'a Not sure answer is missing');
 
-// A full page in a three-byte script: 40 answers, each with a 600-character note.
-const full = Array.from({length: 40}, (_, i) =>
+// A full page in a three-byte script: 150 answers, each with a 600-character note.
+const full = Array.from({length: 150}, (_, i) =>
   ({id: '04b/' + (1000 + i) + '#' + (i + 1), verdict: 'change', note: 'क'.repeat(600)}));
 const big = await handle(postCheck(answers({lang: 'hi', items: full})), environment(), githubSuccess);
 assert(big.status === 201, 'a full page of long Devanagari notes was refused');
-assert(createdIssue.title === 'Native check: Hindi (40 answers)', 'Hindi title changed');
+assert(createdIssue.title === 'Native check: Hindi (150 answers)', 'Hindi title changed');
 
 const callsBeforeRefusals = githubCalls;
 async function refused(body, status, message) {
@@ -252,8 +256,8 @@ async function refused(body, status, message) {
   assert(githubCalls === callsBeforeRefusals, message + ' reached GitHub');
 }
 await refused(answers({items: []}), 400, 'an empty check was accepted');
-await refused(answers({items: full.concat([{id: 'extra#41', verdict: 'ok'}])}), 400,
-  '41 answers were accepted');
+await refused(answers({items: full.concat([{id: 'extra#151', verdict: 'ok'}])}), 400,
+  '151 answers were accepted');
 await refused(answers({items: [{id: 'a#1', verdict: 'maybe'}]}), 400, 'an unknown verdict was accepted');
 await refused(answers({items: [{id: 'a#1', verdict: 'ok'}, {id: 'a#1', verdict: 'ok'}]}), 400,
   'a duplicate answer was accepted');

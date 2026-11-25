@@ -2,7 +2,7 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r2",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "03/0430#1",
@@ -16,6 +16,42 @@
    ]
   },
   {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Dež ne pada navzgor iz zemlje.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0460#3",
+   "where": "04b/0460",
+   "text": "Kaj ti je spet, da si se nam nasršil, Alain Kurčon?",
+   "q": "Hooman mocks a roommate for getting an erection at them, using his rude nickname. Is the crude joke clear?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0387#11",
+   "where": "04b/0387",
+   "text": "Sinoči se je slišalo, kako prežvekuješ.",
+   "q": "Eskandar mocks Hooman for secretly eating sweets at night, chewing like a cow chews cud. Does 'prežvekuješ' carry that jab?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "Eskandar se je obrnil proti Hoomanu in rekel:"
+   ]
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, pokoj njeni duši, je v takih trenutkih govorila: če rečem, mi zgori jezik; če ne rečem, mi zgori kostni mozeg.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
    "id": "04b/0595#2",
    "where": "04b/0595",
    "text": "Ampak ga je zajebal. Orlov Pogled pravi pir tu pir, Krčmar pa Stari tu Stari.",
@@ -27,83 +63,6 @@
     "Hooman je rekel:",
     "– Pošljite salavat. Starešina Krčme je končno nekaj rekel.",
     "Farid je rekel:"
-   ]
-  },
-  {
-   "id": "04b/1312#3",
-   "where": "04b/1312",
-   "text": "Človek dobi usrano vrtoglavico. Bolj ko razmišljaš o tem, hujša je ta usrana vrtoglavica.",
-   "q": "A student uses a crude made-up phrase for how a baffling painting scrambles your head. Does this line sound crude like that?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ... poglejte, kako zares vzbuja premislek. To je narisal in pod to zapisal: to ni pipa."
-   ]
-  },
-  {
-   "id": "04b/1320#4",
-   "where": "04b/1320",
-   "text": "bolj ko se potopiš v njegovo globino, hujša je usrana vrtoglavica",
-   "q": "He recalls the girl's crude phrase about the painting and applies it to a poem. Does 'hujša je usrana vrtoglavica' read naturally here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "In s tresočimi rokami sem naglo prelistaval gazele, da bi našel beit iz Hafeza, ob katerem se, kakor je rekla tisto drugo dekle,"
-   ]
-  },
-  {
-   "id": "04b/1321#5",
-   "where": "04b/1321",
-   "text": "Kakor tisto: bolj ko razmišljaš o teh desetih besedah, hujša je usra-, to, vrtoglavica.",
-   "q": "The stammering speaker nearly repeats the crude phrase, stops, and says a polite word instead. Does that come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj. »Tisto vino, ki je tam, je resnica ne prispodoba.« Tudi to je isto. Kakor tista slika, ki jo je kazala tvoja pr-pr-prijateljica."
-   ]
-  },
-  {
-   "id": "04b/1321#6",
-   "where": "04b/1321",
-   "text": "»Tisto vino, ki je tam, je resnica ne prispodoba.«",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– To je. To poslušaj. Ti, za božjo voljo, poslušaj."
-   ]
-  },
-  {
-   "id": "01/0116#7",
-   "where": "01/0116",
-   "text": "Pojdi tja, kjer ni veliko ljudi.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Oh, kako lepo. Ja, naročiš in prinesejo ti. Ampak Amir-jan, ne sedi ves čas doma. Pojdi tudi ven."
-   ]
-  },
-  {
-   "id": "03/0362#8",
-   "where": "03/0362",
-   "text": "Mahboub, to, kar pravijo v novicah, Ameroka ...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say America as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…za Konkoor. Zapustil sem hišo na koncu dvorišča in prehodil dolžino dvorišča v devetih korakih, z veseljem nad novim odkritjem, ki je v srcu še svetilo. Ko sem z dvorišča vstopil v dnevno sobo hiše, je Maman ležala pred televizorjem. Obe roki je imela položeni na trebuhu in govorila Mahboubeh:"
-   ]
-  },
-  {
-   "id": "03/0380#9",
-   "where": "03/0380",
-   "text": "Ayzheimer je najslabša bolezen.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Slovenian speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman je rekla:"
    ]
   },
   {
@@ -129,60 +88,76 @@
    ]
   },
   {
-   "id": "01/0132#12",
-   "where": "01/0132",
-   "text": "Ali kolera, na primer. Tudi ta ni pobila toliko.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
+   "id": "01/0069#8",
+   "where": "01/0069",
+   "text": "Naj krožim okoli tebe, jigaram. Vedno se smej.",
+   "q": "Maman tells her son she would circle around him again and again, an old loving phrase. Does this line sound tender?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "known",
    "before": [
-    "…kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem. Bil je na primer tifoid, ali tuberkuloza, ali ošpice. Tistim so rekli smrtonosni. Hmm, niti tiste niso pobile toliko."
+    "Nasmehnem se in poizkušam raztegniti kožo na čelu, kolikor le zmorem."
    ]
   },
   {
-   "id": "01/0132#13",
-   "where": "01/0132",
-   "text": "Bil je na primer tifus, ali tuberkuloza, ali ošpice.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Pravi: »Dobro leto se pozna po svoji pomladi.«",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0184#14",
+   "where": "01/0184",
+   "text": "To uho je postalo gluho tudi – udaril me je in ga pustil gluhega.",
+   "q": "Maman says he also hit her on this ear and left her deaf in it. Does this sound natural?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "maman",
    "before": [
-    "…je prvič prišel, je televizija rekla dva od sto, zdaj pravi deset odstotkov. Mislim, za boga, to je zelo nepošteno. Nekdo kihne na eni strani ulice in človek na drugi strani se okuži in umre. Tega nisem nikoli videla ali slišala. Niti ljudje iz Bibine generacije nam niso pripovedovali o čem takem."
+    "– Ženske? Rada bi. Kdor ga hoče, ga vzame zase. Damo še nekaj zraven."
    ]
   },
   {
-   "id": "01/0182#14",
-   "where": "01/0182",
-   "text": "Kakšen -ar pa ni bil?",
-   "q": "Maman echoes the ending of 'Ženskar', meaning their father was every other kind of rascal. Would Slovenian readers get it? If not, what word could?",
+   "id": "04b/1396#2",
+   "where": "04b/1396",
+   "text": "zdi se mi, da moje sanje niso verjele, da si odšla",
+   "q": "The last line of his poem to the girl he lost. Does it read as poetry?",
    "ctx": 2,
-   "kind": "joke",
+   "kind": "poetry",
    "before": [
-    "– Ženskar pa tudi ni bil.",
-    "Maman reče:"
+    "a če te pot zanese mimo",
+    "pridi spet v moje sanje"
    ]
   },
   {
-   "id": "01/0148#15",
-   "where": "01/0148",
-   "text": "Kaj in nasmehi?",
-   "q": "Maman, a little hard of hearing, catches only the end of the film title 'Solze in nasmehi'. Does her question come across?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Otroci, naj prenesem film Solze in nasmehi, da ga gledamo nocoj?",
-    "Maman obrne glavo in reče:"
-   ]
-  },
-  {
-   "id": "04a/0076#16",
-   "where": "04a/0076",
-   "text": "Marmalni kamen je. Marmal pomeni zelo drago.",
-   "q": "Ghassem, a boy, says 'Marmal' for marble and thinks it means expensive. Does it read as his childish mistake?",
+   "id": "04b/0385#12",
+   "where": "04b/0385",
+   "text": "Vedno zelo eleganten in slovesen, se posere prav na zgodovinskem ovinku.",
+   "q": "Hooman says crudely that Amir, always so proper, messes up right at the crucial moment. Does this sound natural?",
    "ctx": 1,
-   "kind": "joke",
+   "kind": "crude",
    "before": [
-    "Šli smo naprej. Na pol poti je bila hiša. Njena stena je bila lepa. Ghassem je vedno rekel:"
+    "– Stari je Krčmar. Ne more si pomagati. Tako mu je tovarna nastavljena."
+   ]
+  },
+  {
+   "id": "04b/1314#15",
+   "where": "04b/1314",
+   "text": "Morda boste rekli, da tako ne gre, da ni mogoče, da je domišljija in ni resnično. A je in vas resnično ljubim.",
+   "q": "He insists his love is real, not a fantasy. Does 'A je' say clearly that it is real?",
+   "ctx": 1,
+   "kind": "dialogue",
+   "before": [
+    "– Dvaintrideset mesecev je, kar vas ljubim. Od daleč. Ne da bi vedeli. V tišini. Brez ene besede."
+   ]
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "S te strani odmotavam besede, ti pa jih z one strani zbiraš.",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Uvod",
+    "…te knjige. Trenutki in podobe, ki bi se izgubili v vročičnem šumu svetovnih dogodkov, če ne bi bili zapisani tukaj. Zapisani so bili, da bi postali most med mojim svetom in tvojim. Most iz mojega sveta — v trenutku, ko pišem te stavke — do tvojega, v trenutku, ko se usedeš k njihovemu branju."
    ]
   }
  ]

@@ -2,20 +2,13 @@
  "lang": "ps",
  "slug": "ps",
  "dir": "rtl",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "ویل یې: زړه مې وروستېږي.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "غم مه خوره، زما هوښیاره زویه.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,31 +19,10 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "بی‌بی، خدای ورته رحمت کړي، دا ډول وختونو کې به ویل: که ووایم ژبه سوزي، که ونه وایم د هډوکو مغز سوزي.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "له ځمکې آسمان ته خو نه اوري.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "وایي: ښه کال د پسرلي له ورځې پیژندل کیږي.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "وایم په دې ډول هسې یوازې دلته کېنې او شعر لولې، تا ته ډوډۍ توده نه کېږي.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "هغه نحس اسکندر ته یې مه وایه، که نه بیا به کېني او یو ساعت به موږ ته پند او نصیحت کوي، او خواړه به راته د مار زهر شي.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -61,18 +33,54 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "لاس مې لنډ دی او ستا وصال لرې.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0166#2",
+   "where": "01/0166",
+   "text": "هر وخت به مې ویل ماشومان مه وهه، ویل به یې: جنګ کې موجي شوم، واک مې نلري. ولیدم چې داسې ده، نو پریږده مې کړ.",
+   "q": "She gave up trying to stop him. Does 'پریږده مې کړ' sound natural here?",
+   "before": [
+    "مامان وايي:",
+    "– شوخي کوو چې وخاندو، نانه‌پسرجانه. هغه به ولاړ شي؟ که لاړ شوی وای، د زړه مې آرزو وه. بخدا. د ژوند قسم خورم. هغه پیښه چې هاشم او ابوالفضل سره شوه، هغه هم د هغه ګناه وه. تل به یې وهل."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "هغه نحس اسکندر ته یې مه وایه، که نه بیا به کېني او یو ساعت به موږ ته پند او نصیحت کوي، او خواړه به راته د مار زهر شي.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0274#3",
+   "where": "01/0274",
+   "text": "او زه به د قلک دننه زېرمه توری په توری او کلمه په کلمه راوباسم او کله چې ټول یې ولیدل او واوریدل، موسکا به وکوي او خپل لاس به زما پر لاس کیږدي، چې د لومړي ځل لپاره، د هغې د پوست ګرموالی او حضور، پرته له هر پرده یې، د زما د وجود پوست باندې او درون کې جاري شي.",
+   "q": "Amir imagines Niloofar's hand on his for the first time. Does this sentence read naturally?",
+   "before": [
+    "– دومره بیا خوب راځي ما ته، نانه‌پسرجانه.",
+    "…او بل چا ته نه. د هغې خپل، خپل، خپل ځان لپاره. او که ژبه په ګیله پرانیزي او ووايي چې د شعر هغه بند — هماغه چې غوښتلی یې و چا ته یې ونه لولم — مې اوبو ته ورکړی، کولی شم ورته ووایم چې پر ځای یې ګنجینه مې راټوله کړه ډکه له کلمو، او ټوله یوازې د هغې ده. هغه وخت نیلوفر رضا کیږي چې راشي او مخامخ مې کیني."
+   ]
+  },
+  {
+   "id": "04b/0827#7",
+   "where": "04b/0827",
+   "text": "اسکندر د کوټې په منځ کې ناست و، ښي لاس یې پر زنګون تکیه کړی و او د همغه لاس ورغوی یې پر تندي ایښی و.",
+   "q": "Is it clear that Eskandar rests his right elbow on his knee?",
+   "before": [
+    "– بهمن هم له هغه وخت چې له کوټې لاړ، له تا سره یې تر نورو هلکانو زیاته اړیکه ساتله.",
+    "د درېیمې ترمې څو ورځې تېرې وې خو بهمن نه و راغلی. لکه هره ورځ تر ناوخته مې په پوهنځي کې ځان ساتلی و تر څو نیلوفر ووینم. هغه ورځ نیلوفر نه وه راغلې. کوټې ته راستون شوم."
+   ]
+  },
+  {
+   "id": "03/0310#5",
+   "where": "03/0310",
+   "text": "یقیناً پر همدغه زینو خپلې خبرې مرور کړي وې ترڅو یې یاد وي چې نرمه نشي، ټینګه ودرېږي او ما ته باور راکړي چې باید هغه هیر کړم.",
+   "q": "Niloofar had rehearsed her words on these stairs. Does 'مرور کړي وې' sound natural?",
+   "before": [
+    "– ان‌شاءالله، تل دې حال و روز آراسته وي.",
+    "…لیدنه یوازې زه او نیلوفر وو، د خپل پوهنځي له ډیرې فاصلې سره، د اتاق هلکانو له ډیرې فاصلې سره، او په تېره بیا له سینا څخه. د لفټ تڼۍ وهم. د لفټ دروازه خلاصیږي. هغه ورځ نیلوفر له زینو پورته راغلې وه. د زینو لوري ته ورځم. د یوه هلک او نجلۍ غږونه له لفټ څخه راوځي. ناروغ مې بولي. له زینو پورته ځم."
+   ]
+  },
+  {
+   "id": "03/0071#4",
+   "where": "03/0071",
+   "text": "باد وزیدل پیل کړل او د مشتو پاڼو سره د غولو د پوستکي له نمایشګاه تش چاپیریال کې ورکوي.",
+   "q": "Is 'د غولو د پوستکي' clear as a puffed-snack wrapper blown by the wind?",
+   "before": [
+    "محبوبه وخندله او مامان وویل:",
+    "– ویریږم چې د هغه د ملګري حمید غوندې به شي."
+   ]
   }
  ]
 }

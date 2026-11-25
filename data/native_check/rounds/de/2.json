@@ -1,186 +1,302 @@
 {
+ "format": 2,
  "lang": "de",
  "slug": "de",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Muttersprachen-Check",
+  "lead": "Du musst das Buch nicht gelesen haben. Beantworte so viele, wie du magst.",
+  "persian_words": "Maman (Mutter), Baba (Vater) und -jan (lieb) sind persische Wörter, die das Buch beibehält.",
+  "page": "Seite",
+  "correct": "Stimmt",
+  "needs_change": "Änderung nötig",
+  "not_sure": "Nicht sicher",
+  "how_say": "Wie würdest du es sagen?",
+  "meaning": "Was glaubst du, was es bedeutet?",
+  "optional": "(optional)",
+  "your_name": "Dein Name",
+  "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
+  "private": "Deine Antworten gehen nur an den Autor.",
+  "send": "Senden",
+  "send_continue": "Senden und weiter zu Seite {n}",
+  "sending": "Wird gesendet…",
+  "popup_title": "Danke!",
+  "popup_text": "Möchtest du deinen Namen auf der Danke-Seite der Website? Mach alle 4 Seiten fertig, dann tragen wir ihn gern ein.",
+  "popup_button": "Weiter zu Seite {n}",
+  "arrived": "Danke, deine Antworten von Seite {n} sind angekommen.",
+  "thanks_last": "Danke! Deine Antworten sind angekommen.",
+  "all_done": "Du hast alle Seiten gesendet. Danke für jede einzelne!",
+  "already_sent": "Du hast diese Seite von diesem Gerät aus schon gesendet. Danke!",
+  "continue_with": "Weiter mit Seite {n}",
+  "need_one": "Wähle bei mindestens einer Zeile eine Antwort.",
+  "note_no_answer": "Bei einer Zeile steht eine Anmerkung: Bitte wähle dafür auch eine Antwort.",
+  "name_needed": "Gib den Namen ein, der genannt werden soll, oder nimm das Häkchen weg.",
+  "not_connected": "Das Senden ist noch nicht eingerichtet.",
+  "too_long": "Das Senden hat zu lange gedauert.",
+  "cannot_send": "Die Antworten konnten von hier aus nicht gesendet werden.",
+  "use_email": "Bitte nutze den E-Mail-Button unten.",
+  "fallback": "Die Antworten konnten von dieser Seite aus nicht gesendet werden. Bitte schick sie stattdessen per E-Mail; nichts von dem, was du eingegeben hast, geht verloren.",
+  "email_button": "Antworten per E-Mail senden",
+  "shortened": "Einige Anmerkungen waren für einen E-Mail-Link zu lang und wurden dort gekürzt. Deine vollständigen Antworten stehen unten; bitte füge sie in die E-Mail ein.",
+  "noscript": "Zum Senden wird JavaScript benötigt. Du kannst deine Antworten auch per E-Mail an {email} schicken."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0014#1",
-   "where": "01/0014",
-   "text": "– Tu es in den Gefrierschrunk. Wenn du es in den Gefrierschrunk packst, passiert ihm nichts, nicht mal nach einem Jahr.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Gefrierschrank as 'Gefrierschrunk'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ja, hab ich, Nini-jan. Mach dir keine Sorgen. Nur ein bisschen von dem Lavashak, das Mahboub gemacht hat, ist noch übrig."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Es gab zum Beispiel Typhus, oder Tuberkulose, oder Masern. Die nannte man tödlich. Hmm, selbst die haben nicht so viele umgebracht. Oder Cholera, zum Beispiel.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Menschen, und jetzt sagt es zehn Prozent. Bei Gott, das ist wirklich ungerecht. Jemand niest auf der einen Straßenseite, und dann bekommt es jemand auf der anderen Straßenseite und stirbt. So etwas hatte ich noch nie gesehen oder gehört. Nicht einmal Bibis Generation hatte uns von so etwas erzählt."
+   "key": "one",
+   "title": null,
+   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0175#s44",
+     "text": "– Also reicher als der Freund des Cousins ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0373#3",
-   "where": "03/0373",
-   "text": "– Ich meine das da, dass Ameroka bestätigt hat, der Iran habe das Atomprogramm gestoppt. Bedeutet das, es wird Krieg geben oder nicht?",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Amerika as 'Ameroka'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Mahboub, ich rede mit dir.",
-    "– Was?"
+   "key": "poetry",
+   "title": "Dichtung",
+   "q": "Das sind Verszeilen. Liest sich jede davon in deiner Sprache gut als Gedicht?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... ich würde jenen Siegelring Salomos für nichts in der Welt nehmen, über den sich bisweilen die Hand des ...",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "Auf alle Dinge darf man schreiben",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "schreib mit deinem eigenen Blut auf das Wasser",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "damit derjenige, der dir folgt",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "hier vorbeigegangen sind.",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "Das Licht meiner Träume ging an",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Ich hege keine Hoffnung auf deine Rückkehr",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Doch wenn dein Weg dich in die Nähe führt",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "komm wieder in meine Träume",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Ich glaube, meine Träume haben nicht geglaubt, dass du gegangen bist",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Das Licht meiner Träume ... das Licht meiner Träume ging ... das Licht meiner Träume ging an",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#4",
-   "where": "03/0380",
-   "text": "– Die schlimmste Krankheit ist Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, es gibt eine Krankheit, die die Muskeln nach und nach lahmlegt. Es ist eine sehr schlimme Krankheit.",
-    "Maman sagte:"
-   ]
-  },
-  {
-   "id": "06/0052#5",
-   "where": "06/0052",
-   "text": "Am Ende hat Mahboub angerufen, sie kamen mit der Ambulanze und haben Naney abgeholt – ja, das ist Corona, sagten sie.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Ambulanz as 'Ambulanze'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…– aber der Naney hab ich mehrmals gesagt: Haaj Khanom, wenn ihr draußen in der Gasse sitzt, kriegt ihr Corona, Gott bewahre. Sie haben einfach weiter dort gesessen, noch mehr als vorher. Aber Amir, wie Naneys Brust gerasselt hat. Ich hab Mahboub und den anderen gesagt – Kinder, das ist Corona."
-   ]
-  },
-  {
-   "id": "01/0206#6",
-   "where": "01/0206",
-   "text": "Es ist jetzt auch gut, ja, aber ich lebe ständig mit dem Stress, dass er jeden Augenblick hier auftauchen könnte.",
-   "q": "Maman admits she lives in constant worry that Baba may turn up at any moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Möge deine Hand nie wehtun – diese drei Monate, als du ihn mit nach Dänemark genommen hast, was für eine schöne Zeit ich da hatte. Ich hab endlich verstanden, wie sich das Leben anfühlen kann."
-   ]
-  },
-  {
-   "id": "01/0182#7",
-   "where": "01/0182",
-   "text": "– Was war er nicht — held?",
-   "q": "Maman, hard of hearing, catches only the end of 'Frauenheld'. Would German readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Er war auch kein Frauenheld.",
-    "Maman sagt:"
-   ]
-  },
-  {
-   "id": "04a/0080#8",
-   "where": "04a/0080",
-   "text": "– Warum seid ihr nicht zum Marmelhaus gegangen?",
-   "q": "A boy scolds his little brothers, repeating his own mistake 'Marmel' for Marmor. Does 'Marmelhaus' read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…mich an den Rand der Rinne. Ich steckte meine Füße in die Rinne. Es war kein Wasser drin. In meinem Herzen war es leer. Der Mann kam zurück. Das Vorderrad drehte sich nicht mehr. Er gab Omid eine Ohrfeige. Wir weinten beide. Der Mann ging weg. Ghassem kam zurück. Er schimpfte mit uns. Er sagte:"
-   ]
-  },
-  {
-   "id": "04b/0591#9",
-   "where": "04b/0591",
-   "text": "– Pir zu Pir?",
-   "q": "Amir mishears 'peer-to-peer' as Persian pir, elder, which fits his nickname. Would German readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Eine Art Peer-to-Peer-Digitalwährung.",
-    "Ich sagte:"
-   ]
-  },
-  {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "– Aber er hat's verkackt. Adlerauge sagt Peer-to-Peer; Schenki sagt Äldi-zu-Äldi.",
-   "q": "Farid mocks Amir's mishearing by twisting it into Amir's nicknames 'Schenki' and 'Äldi'. Would German readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid sagte:"
-   ]
-  },
-  {
-   "id": "04b/0387#11",
-   "where": "04b/0387",
-   "text": "– Gestern Nacht konnte ich dich kauen hören. Schade, dass mein Baba schlief, sonst wäre ich aufgestanden und hätte dir jede einzelne Süßigkeit aus dem Hals gezogen.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Does that teasing image come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar drehte sich zu Hooman und sagte:"
-   ]
-  },
-  {
-   "id": "04b/0460#12",
-   "where": "04b/0460",
-   "text": "– Was ist schon wieder mit dir los, dass du dich vor uns aufrichtest, Alain Pimmelon?",
-   "q": "Hooman crudely mocks Eskandar for sitting up proudly, with a sexual double meaning. Does 'aufrichtest' carry that crude joke?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sagte:"
-   ]
-  },
-  {
-   "id": "03/0432#13",
-   "where": "03/0432",
-   "text": "– ... und den Mund wie einen Hühnerarsch spitzt, während du dich abmühst, wie er zu reden. Den meine ich nicht. Ich meine Alain Pimmelon. Piiimmel. Punkt. Schluss.",
-   "q": "Hooman finishes his rude pun on the actor Alain Delon. Does this crude ending sound funny and natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman machte seinen Mund rund und zog die Nase so klein und gerunzelt wie möglich, genauso wie Eskandars Gesicht beim Sprechen wurde."
-   ]
-  },
-  {
-   "id": "03/0290#14",
-   "where": "03/0290",
-   "text": "– Ist Arasteh ein gestutztes Araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would German readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Herr Arasteh.",
-    "Ich drehe den Kopf zu ihm."
-   ]
-  },
-  {
-   "id": "04b/1320#15",
-   "where": "04b/1320",
-   "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem einem ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso scheißschwindliger wird, je tiefer man darin versinkt – um es Niloofar zu zeigen.",
-   "q": "Amir echoes a girl's crude phrase about a mind-bending painting. Does 'umso scheißschwindliger' read naturally here?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0278#16",
-   "where": "03/0278",
-   "text": "Irgendwie könnte man sagen, sie haben die Universität erobert. Karroubi ist Liebe, wirklich und wahrhaftig.",
-   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karroubi ist Liebe' sound like a young man's slang?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hey, Schenki, lauf! Lauf, gehen wir. Man sagt, sie haben Karroubi nicht in die Universität gelassen. Seine Anhänger haben das Hafez-Tor aufgebrochen und sind hereingekommen."
+   "key": "word_choice",
+   "title": "Einzelne Wörter",
+   "q": "Ist das Wort in jeder Zeile das richtige? Was es bedeuten soll, steht darunter.",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0261#word_",
+     "text": "– Mm-hm, er hat sich sehr, sehr verändert. Er ist so dünn und dunkel geworden.",
+     "note": "\"dunkel geworden\" = skin grown darker from the sun"
+    },
+    {
+     "id": "03/0118#word_",
+     "text": "– Was für ein Knaller.",
+     "note": "\"Knaller\" = what a pretty girl (boy's slang)"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "Irgendwie könnte man sagen, sie haben die Universität erobert. Karroubi ist Liebe, wirklich und wahrhaftig.",
+     "note": "\"Karroubi ist Liebe\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04a/0062#word_",
+     "text": "– Viele scheitern hier. Sie gehen nach links.",
+     "note": "\"scheitern\" = fail, go wrong (as a boy says it)"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "– Scheißkopf. Du bringst mich dazu, den Mund aufzumachen und es auszusprechen.",
+     "note": "\"Scheißkopf\" = shit-for-brains, crude insult for a dimwit"
+    },
+    {
+     "id": "04b/0171#word_",
+     "text": "Wir haben all diese Übungstests gemacht und sind mit diesem Altertum als Zimmerkollegen gelandet.",
+     "note": "\"Zimmerkollegen\" = roommates (casual student word)"
+    },
+    {
+     "id": "04b/0173#word_",
+     "text": "– Ihr seid also alle sehr schlaue Burschen.",
+     "note": "\"schlaue Burschen\" = very clever boys, said a bit patronizingly"
+    },
+    {
+     "id": "04b/0226#word_",
+     "text": "– ... immer wenn ich für die Kurse und Arbeiten des zweiten Scheißstudiengangs kam, sah ich sie streiten.",
+     "note": "\"des zweiten Scheißstudiengangs\" = my crappy second degree (crude grumble)"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "Vor einem oder zwei Jahren hörte ich von Adlerauge News, dass der Geck auch nach Australien gegangen ist, irgendwie hinter dem Mädchen her, das ihr beide geliebt habt.",
+     "note": "\"der Geck\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0270#word_",
+     "text": "– Ich weiß. Ich bin nicht blöd. Aber so geht das nicht. Du musst aus diesem Schutzraum heraustreten und wirklich etwas tun, anstatt hier zu sitzen und zu fantasieren.",
+     "note": "\"aus diesem Schutzraum heraustreten\" = come out of your safe shell"
+    },
+    {
+     "id": "04b/0317#word_",
+     "text": "– Es ärgert mich so sehr, wenn du so still dasitzt. Ich will dir eine in die Fresse hauen.",
+     "note": "\"eine in die Fresse hauen\" = punch you (playful, annoyed young woman)"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "– Also bist du ein Scheiß-Erstie.",
+     "note": "\"Scheiß-Erstie\" = fucking freshman, casual friendly swearing"
+    },
+    {
+     "id": "04b/0353#word_",
+     "text": "– Und in diesem beschissenen Zustand, was für Altertümer haben wir dann abgekriegt? Fliege und dieser andere elende Verblendete.",
+     "note": "\"elende Verblendete\" = deluded pest, a self-deceived nuisance"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "– Leopard-Farid, beherrsch deine Nerven und mach keine mörderische Aktion.",
+     "note": "\"mörderische Aktion\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0486#word_",
+     "text": "– Du meinst also, dieses Scheißglück, bei der Auslosung ein Altertum wie dich abzubekommen, wiederholt sich immer wieder?",
+     "note": "\"Altertum\" = an antique: odd, old-fashioned person"
+    },
+    {
+     "id": "04b/0717#word_",
+     "text": "– Ich sag dir, Äldi-jan, aber mal unter uns: Du bist durch einen verfickten Zufall ins Ausland gelangt.",
+     "note": "\"verfickten Zufall\" = a fucking fluke, sheer dumb luck"
+    },
+    {
+     "id": "04b/0736#word_",
+     "text": "Sobald dein Name fällt, werden meine Ohren spitz.",
+     "note": "\"werden meine Ohren spitz\" = my ears prick up: I listen eagerly"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– Du bist ganz schön sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/0935#word_",
+     "text": "– „Für Attar ist Weinen bis zur Morgenröte süßer“ oder „jetzt ist er noch mehr erschlagen“?",
+     "note": "\"noch mehr erschlagen\" = now he lies more deeply slain (by love)"
+    },
+    {
+     "id": "04b/1003#word_",
+     "text": "– Schau mal, was für ein Schlamassel du angerichtet hast, Kackhirn.",
+     "note": "\"Kackhirn\" = shit-for-brains (a crude insult)"
+    },
+    {
+     "id": "04b/1274#word_",
+     "text": "Betrunkene und",
+     "note": "\"Betrunkene\" = drunk with love, in the mystic sense"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "Verbrannte",
+     "note": "\"Verbrannte\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.",
+     "note": "\"scheißschwindlig\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem einem ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso scheißschwindliger wird, je tiefer man darin versinkt – um es Niloofar zu zeigen.",
+     "note": "\"umso scheißschwindliger\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "04b/1392#word_",
+     "text": "Das Licht meiner Träume blinkt jetzt",
+     "note": "\"blinkt\" = now flickers, like a failing light"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Geh jetzt und hol Kerne für Ghassem und die anderen, sie wollen einen Film schauen.",
+     "note": "\"hol Kerne\" = roasted seeds to snack on"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

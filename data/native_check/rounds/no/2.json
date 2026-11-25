@@ -1,182 +1,272 @@
 {
+ "format": 2,
  "lang": "no",
  "slug": "no",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Morsmålssjekk",
+  "lead": "Du trenger ikke å ha lest boken. Svar på så mange du vil.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kjære) er persiske ord som er beholdt i boken.",
+  "page": "Side",
+  "correct": "Riktig",
+  "needs_change": "Bør endres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sagt det?",
+  "meaning": "Hva tror du det betyr?",
+  "optional": "(valgfritt)",
+  "your_name": "Navnet ditt",
+  "thanks_tick": "Før opp navnet mitt på takkesiden",
+  "private": "Svarene dine går bare til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og gå videre til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tusen takk!",
+  "popup_text": "Vil du ha navnet ditt på takkesiden på nettstedet? Fullfør alle de 4 sidene, så legger vi det gjerne til.",
+  "popup_button": "Gå videre til side {n}",
+  "arrived": "Takk, svarene dine fra side {n} har kommet fram.",
+  "thanks_last": "Tusen takk! Svarene dine har kommet fram.",
+  "all_done": "Du har sendt alle sidene. Takk for alle sammen!",
+  "already_sent": "Du har allerede sendt denne siden fra denne enheten. Takk!",
+  "continue_with": "Fortsett med side {n}",
+  "need_one": "Velg et svar for minst én linje.",
+  "note_no_answer": "En linje har en merknad: velg et svar for den også.",
+  "name_needed": "Skriv inn navnet du vil ha oppført, eller fjern haken.",
+  "not_connected": "Innsending er ikke koblet til ennå.",
+  "too_long": "Innsendingen tok for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Bruk e-postknappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne siden. Send dem heller på e-post; ingenting du har skrevet, går tapt.",
+  "email_button": "Send svarene på e-post",
+  "shortened": "Noen merknader var for lange for en e-postlenke og ble forkortet der. De fullstendige svarene dine står nedenfor; lim dem inn i e-posten.",
+  "noscript": "Innsending krever JavaScript. Du kan også sende svarene dine på e-post til {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0182#1",
-   "where": "01/0182",
-   "text": "Hva-jeger var han ikke?",
-   "q": "Told her husband was no womanizer, Maman echoes the end of the word. Would Norwegian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Han var heller ikke en skjørtejeger.",
-    "Maman sier:"
+   "key": "one",
+   "title": null,
+   "q": "He almost repeats the crude word, then stops. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#s12",
+     "text": "Som det – jo mer du tenker over disse ti ordene, desto mer dri– altså, desto svimlere blir du.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#2",
-   "where": "06/0052",
-   "text": "Til slutt ringte Mahboub, og de kom i en amublanse og hentet Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Norwegian speaker say ambulance as 'amublanse'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "Den verste sykdommen er Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Norwegian speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman sa:"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "I trettito måneder har jeg elsket Dem. Fra avstand.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Det fantes for eksempel tyfus, eller tuberkulose, eller meslinger.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#5",
-   "where": "01/0132",
-   "text": "Eller kolera, for eksempel. Den drepte heller ikke så mange.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0148#6",
-   "where": "01/0148",
-   "text": "Hva og smil?",
-   "q": "Maman is hard of hearing and catches only the end of the series title 'Tårer og smil'. Does her question read naturally?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Unger, skal jeg laste ned Tårer og smil, så vi kan se den i kveld?",
-    "Maman dreier hodet og sier:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Som i barndommen, da Maman pleide å trevle opp garnet fra gamle klær, og vi tok tråden og gikk rundt inne i huset slik at garnet ikke hopet seg opp.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#7",
-   "where": "03/0362",
-   "text": "Mahboub, dette de sier på nyhetene, Ameroka ...",
-   "q": "Grandpa, an old man, says 'Ameroka' for America on purpose. Does it read as his slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…de andre Konkur-notatene. Jeg forlot huset bakerst i gårdsplassen og krysset gårdsplassens lengde på ni skritt, og gleden over den nye oppdagelsen lyste fremdeles i hjertet mitt. Da jeg kom inn i stua fra gårdsplassen, lå Maman foran fjernsynet. Hun hadde begge hender på magen og sa til Mahboubeh:"
+   "key": "one",
+   "title": null,
+   "q": "The pole image means they were all screwed over. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0663#s30",
+     "text": "Under påskudd av å ville holde barna nær familiene sine stakk de kjeppen opp i ræva på oss fra provinsene.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0290#8",
-   "where": "03/0290",
-   "text": "Er Arasteh en nedklippet Araasteh?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Norwegian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Jeg snur hodet i hans retning."
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Bataljon, fremad marsj!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Oppdragets første etappe begynner. Bataljon, venstre om!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0309#9",
-   "where": "03/0309",
-   "text": "Om Gud vil, måtte du alltid være araasteh.",
-   "q": "The guard plays on the name again: 'araasteh' means neat and well groomed. Would Norwegian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Vakten smiler og sier:"
+   "key": "one",
+   "title": null,
+   "q": "Is it clear that six boys ride on each bicycle?",
+   "q_lang": "en",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1260#s50",
+     "text": "To sto på bakhjulets bolter, én på bagasjebæreren, én på styret, og én satt på framrøret. Med ham som trampet, ble det seks per sykkel.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "Men han dreit seg ut. Ørneøye sier peer-to-peer; Taverny sier Eldie-til-Eldie.",
-   "q": "Amir misheard 'peer-to-peer' as 'Pir-til-pir'; pir means elder, like his nickname Eldie. Would Norwegian readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir-til-pir?",
-    "Hooman sa:",
-    "– Send et salavat. Tavernens Eldste sa endelig noe.",
-    "Farid sa:"
+   "key": "poetry",
+   "title": "Poesi",
+   "q": "Dette er verselinjer. Leses hver av dem godt som poesi på norsk?",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Jeg ville ikke byttet den ringen av Salomo mot noe i verden, på hvilken noen ganger hånden av ...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "«For Attar er det søtere å gråte til daggry» eller «nå er han enda mer slagen»?",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "skriv på vannet med ditt eget blod",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "så at den som følger i ditt kjølvann",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "har vandret her.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Lyset i drømmene mine blinker nå",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Jeg nærer intet håp om din tilbakekomst",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "kom inn i drømmene mine igjen",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Jeg tror ikke drømmene mine tror at du er borte",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Lyset i drømmene mine ... lyset i drømmene mine ble ... lyset i drømmene mine ble tent",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0591#11",
-   "where": "04b/0591",
-   "text": "Pir-til-pir?",
-   "q": "Amir mishears the English term 'peer-to-peer' and repeats it wrongly. Would Norwegian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– En slags peer-to-peer-elektroniske penger.",
-    "Jeg sa:"
-   ]
-  },
-  {
-   "id": "04b/0460#12",
-   "where": "04b/0460",
-   "text": "Hva faen er det i veien med deg nå, siden du har fått den til å stå mot oss, du Alain Pikklon?",
-   "q": "Hooman mocks a roommate with the rude nickname 'Alain Pikklon' and a sexual taunt. Does this sound like young men teasing in a dorm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sa:"
-   ]
-  },
-  {
-   "id": "03/0432#13",
-   "where": "03/0432",
-   "text": "Det er Alain Pikklon. Piiikk.",
-   "q": "'Alain Pikklon' is a rude pun on the actor Alain Delon; Hooman stretches the crude part. Does the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ... og former munnen som en hønsebak og river deg selv i stykker for å snakke som ham. Det er ikke ham jeg mener."
-   ]
-  },
-  {
-   "id": "04a/0080#14",
-   "where": "04a/0080",
-   "text": "Hvorfor gikk dere ikke til marmelhuset?",
-   "q": "Ghassem, a young boy, again says 'marmel' for marble. Does it read as a child's slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Som den samme store røde døren. Jeg satte meg ved rennesteinen. Jeg satte beina ned i rennesteinen. Det var ikke noe vann. Hjertet mitt var tomt. Mannen kom tilbake. Forhjulet snurret ikke lenger. Han ga Omid en ørefik. Vi gråt begge to. Mannen dro. Ghassem kom tilbake. Han skjente på oss. Han sa:"
-   ]
-  },
-  {
-   "id": "04b/0387#15",
-   "where": "04b/0387",
-   "text": "I natt kunne jeg høre deg tygge drøv.",
-   "q": "Eskandar teases Hooman, who secretly ate sweets at night, by likening him to a cow chewing cud. Does the joke come across?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar vendte seg mot Hooman og sa:"
-   ]
-  },
-  {
-   "id": "04b/1265#16",
-   "where": "04b/1265",
-   "text": "Ja, jeg viw kjøpe dukken til deg.",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does 'viw' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Brrrumm – Baba, Baba, viw du kjøpe meg den stole dukken?",
-    "En stemme bak meg sier:"
+   "key": "word_choice",
+   "title": "Enkeltord",
+   "q": "Er ordet i hver linje det riktige? Hva det skal bety, står under linjen.",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0278#word_",
+     "text": "På en måte kan man si at de erobret universitetet. Karroubi er kjærlighet, virkelig.",
+     "note": "\"Karroubi er kjærlighet\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "Jeg ville heller ha delt rom med dem enn med en pikkhjerne som deg.",
+     "note": "\"pikkhjerne\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
+     "note": "\"drittsvimmel\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt – så jeg kunne vise det til Niloofar.",
+     "note": "\"drittsvimle\" = more baffled; echoes her crude coinage"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

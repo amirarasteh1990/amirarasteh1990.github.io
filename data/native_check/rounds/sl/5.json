@@ -2,151 +2,39 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r5",
+ "version": "2026-11-25.o5",
  "items": [
   {
-   "id": "04b/1301#1",
-   "where": "04b/1301",
-   "text": "Preden je Niloofar prišla, sem že izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera.",
-   "q": "By the time she arrived, he had already chosen a poem to share his good news. Does this sentence say that?",
+   "id": "04a/0080#1",
+   "where": "04a/0080",
+   "text": "Zakaj nista šla k marmalni hiši?",
+   "q": "Ghassem, a boy, reuses the mispronounced word for marble that Maman used earlier. Does 'marmalni hiši' read as that same slip?",
    "ctx": 1,
-   "kind": "narration",
+   "kind": "joke",
    "before": [
-    "Vsi so se vključili v razpravo. Izkoristil sem priložnost in, ne da bi kdo opazil mene in mojo notranjo radost, vzel Hafeza ter odšel sesti na klop na Keshavarzovem bulvarju."
+    "…kolo se je vrtelo. Bilo je rdeče. Kot tista velika rdeča vrata. Sedel sem ob jarku. Noge sem položil v jarek. Vode ni bilo. Srce sem imel prazno. Moški se je vrnil. Sprednje kolo se ni več vrtelo. Omidu je dal klofuto. Oba sva jokala. Moški je odšel. Ghassem se je vrnil. Grajal nas je. Rekel je:"
    ]
   },
   {
-   "id": "04b/0351#2",
-   "where": "04b/0351",
-   "text": "Kaj je to, da sem bil prvak razreda in, ne vem, imel drugo diplomo, dodalo k dolžini mojega kurca – meni, čigar služba je zdaj pregledovanje transformatorskih postaj?",
-   "q": "Hooman, whose job is now inspecting power substations, asks crudely what top grades added to his dick. Does this read naturally?",
+   "id": "03/0373#9",
+   "where": "03/0373",
+   "text": "Pravim tisto, da Ameroka pravi, da je Iran ustavil jedrski program. Pomeni to, da bo vojna ali ne?",
+   "q": "Maman, worried about war, again says 'Ameroka' for America. Does the whole line sound like a mother from a small town?",
    "ctx": 1,
-   "kind": "crude",
+   "kind": "joke",
    "before": [
-    "– Kakšni lepi dnevi, doktor? Serjem na tiste dni in na naš način razmišljanja. Resnično serjem na vse tisto perfekcionistično razmišljanje in dvopredmetnost in status elitnih študentov in tisoč drugih gnusob in strupov."
+    "– Kaj?"
    ]
   },
   {
-   "id": "04b/0353#3",
-   "where": "04b/0353",
-   "text": "Muho in tisto drugo bedno zablodelo nadlogo.",
-   "q": "Hooman recalls the two odd roommates they got: Fly and another deluded pest. Does this read correctly and naturally?",
+   "id": "03/0055#5",
+   "where": "03/0055",
+   "text": "Tako pač govorim. Vi mislite, da recitujem pesmi.",
+   "q": "Hamid, a boy, answers in the rhythm and rhyme of his own poems. Does this line sound like a playful rhyme?",
    "ctx": 1,
-   "kind": "crude",
+   "kind": "joke",
    "before": [
-    "– In v tisti zasrani situaciji, kakšne starine so nam pripadle?"
-   ]
-  },
-  {
-   "id": "04b/0394#4",
-   "where": "04b/0394",
-   "text": "... nategnili so nas.",
-   "q": "Hooman complains that a university policy screwed them over. Does 'nategnili so nas' say that, and is it crude enough?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…le prašni tekstilni tepih. Bahman se je naslonil na tretjo in četrto od šestih ozkih in dolgih omar v sobi, ki so stale nasproti Faridove in Sajadove postelje. Pograd, moj in Bahmanov, je preostanek sobe držal poravnan z omarami. Hooman je jedel rozine s čajem in tarnal nad pravilom o lokalizaciji."
-   ]
-  },
-  {
-   "id": "03/0580#5",
-   "where": "03/0580",
-   "text": "Kje na mojem vratu piše stopnica?",
-   "q": "Farid complains that Sajad used his neck as a foothold to climb into the top bunk. Does this retort sound natural?",
-   "ctx": 3,
-   "kind": "banter",
-   "before": [
-    "Trije so se smejali in Sajad je zapustil sobo. Nekaj časa je bilo slišati samo glasova Eskandarja in Meysama, vse dokler Faridov glas ni vzplaval, kot da se duši.",
-    "– Av, av. Orlov Pogled, vzemi nogo z mojega vratu.",
-    "– Oh, oprosti. Objektivno, skušam priti v svojo posteljo. Težko je."
-   ]
-  },
-  {
-   "id": "03/0531#6",
-   "where": "03/0531",
-   "text": "Abolfazl je govoril: če ne gresta in mi ne prosita te deklice, se bom ubil.",
-   "q": "Maman recalls her son threatening to kill himself unless they asked for a girl's hand for him. Does this read correctly?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Jaz ne pravim, da se ne smete zaljubiti. Najprej spoznajte osebo, se poročite, in potem, če hočete, se zaljubite. Poglejte, ali bom takrat rekla besedo."
-   ]
-  },
-  {
-   "id": "01/0140#7",
-   "where": "01/0140",
-   "text": "Potem samo pomisli, kaj mora naš ubogi Baba preživeti – vsa ta leta brez dela doma.",
-   "q": "Ghassem, holding back a laugh, mocks their idle father with fake pity. Does this sentence read correctly?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Ghassem reče z glasom, iz katerega čutiš pridržan smeh:"
-   ]
-  },
-  {
-   "id": "03/0640#8",
-   "where": "03/0640",
-   "text": "Pfff, kur te. Postal si izseljeni, zdaj se ti za nas ne mudi. Ti s tujci zazrt samozaničevalec.",
-   "q": "An old friend teases Amir for moving abroad, calling him a foreigner-worshiping sellout. Does this sound like real teasing slang?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Oprosti mi, pri Bogu."
-   ]
-  },
-  {
-   "id": "04b/0181#9",
-   "where": "04b/0181",
-   "text": "Pojej glavo mojega kurca, no, nimamo živcev zate.",
-   "q": "Hooman, thumb up, tells a know-it-all to eat the head of his dick. Does 'Pojej glavo mojega kurca' sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman je znova dvignil palec in rekel:"
-   ]
-  },
-  {
-   "id": "03/0394#10",
-   "where": "03/0394",
-   "text": "Ali si možgan-... no, možgan-kurac si bil že, zdaj si pa še bolj možgan-kurac.",
-   "q": "Hooman starts an insult, stops, then makes it worse: dick-brained. Does 'možgan-kurac' work as a crude insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Naenkrat si se zafiksiral na to vprašanje. Obstaja več možnosti. Ali si si udaril glavo nekam."
-   ]
-  },
-  {
-   "id": "04b/0146#11",
-   "where": "04b/0146",
-   "text": "Možganadrek. Siliš me, da vse povem do konca.",
-   "q": "Hooman calls a roommate shit-for-brains. Does 'Možganadrek' work as a crude insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Ja, no, glas se je razširil po fakulteti."
-   ]
-  },
-  {
-   "id": "03/0390#12",
-   "where": "03/0390",
-   "text": "Pravim ti, ne vidim, jebenec.",
-   "q": "Short-sighted Sajad swears at his friend; he says 'jebenec' all the time. Does it sound natural as his rude catchphrase?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Konec. Poglej konec. Poglej, kako hitro pobegne. Pajkovo hišo je tudi razbil. Ni zaman, da sem ga poimenoval Dokumentarni film o ščurku, ki je uničil pajkovo hišo."
-   ]
-  },
-  {
-   "id": "03/0638#13",
-   "where": "03/0638",
-   "text": "Kur te, sto sedemdeset metrov si me s to postavo vlekel za seboj.",
-   "q": "Hooman, panting, curses Amir for making him chase him so far. Does 'Kur te' sound natural as a curse?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Še če upoštevamo tisti zadnji del, ki postane ožji in gre skoraj do vrat Valiasr, postane sto sedemdeset metrov."
+    "Hamid je rekel v istem ritmu, s katerim je recitiral svoje pesmi:"
    ]
   },
   {
@@ -172,14 +60,106 @@
    ]
   },
   {
-   "id": "04b/0717#16",
-   "where": "04b/0717",
-   "text": "Poslušaj, Stari-jan, med nama povedano: v tujino si odšel na tako usran način.",
-   "q": "Hooman tells Amir, between friends, that he got abroad by sheer dumb luck. Does this line say that?",
+   "id": "04b/0899#11",
+   "where": "04b/0899",
+   "text": "Požiralec tičjih glav, zakaj kvasiš neumnosti?",
+   "q": "Hooman hurls a crude insult at a roommate who is talking nonsense. Does 'Požiralec tičjih glav' sound like a real insult?",
    "ctx": 1,
    "kind": "crude",
    "before": [
-    "Hooman reče:"
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Ne jej žalosti, moj pametni deček.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Pravim, da če samo sediš tu in bereš poezijo, se ti noben kruh ne bo segrel.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0628#1",
+   "where": "03/0628",
+   "text": "Haha, Starešina Krčme, Stari – odlično. Zadel si, Leopard Farid.",
+   "q": "Hooman shortens the nickname 'Starešina Krčme' to a pet form. Does 'Stari' work as that short nickname?",
+   "ctx": 2,
+   "kind": "joke",
+   "before": [
+    "– Objektivno.",
+    "Hooman je s pisalom pisal kaj v knjigo in rekel:"
+   ]
+  },
+  {
+   "id": "01/0140#7",
+   "where": "01/0140",
+   "text": "Potem samo pomisli, kaj mora naš ubogi Baba preživeti – vsa ta leta brez dela doma.",
+   "q": "Ghassem, holding back a laugh, mocks their idle father with fake pity. Does this sentence read correctly?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Ghassem reče z glasom, iz katerega čutiš pridržan smeh:"
+   ]
+  },
+  {
+   "id": "03/0638#13",
+   "where": "03/0638",
+   "text": "Kur te, sto sedemdeset metrov si me s to postavo vlekel za seboj.",
+   "q": "Hooman, panting, curses Amir for making him chase him so far. Does 'Kur te' sound natural as a curse?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– Še če upoštevamo tisti zadnji del, ki postane ožji in gre skoraj do vrat Valiasr, postane sto sedemdeset metrov."
+   ]
+  },
+  {
+   "id": "04b/0512#5",
+   "where": "04b/0512",
+   "text": "Po nekaj časa je začel objavljati objave o propadanju sodobnega človeka zaradi družbenih omrežij",
+   "q": "Hooman says that after a while the guy began posting about the decline of modern man. Does this read correctly?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "– ... celo enkrat mi je poslal zasebno sporočilo in vprašal, ali bi bil tako prijazen, da mu ne všečkam objav. Jaz pa sem mu odgovoril z velikanskim emotikonom palca gor, haha."
+   ]
+  },
+  {
+   "id": "03/0663#12",
+   "where": "03/0663",
+   "text": "Kodrasti, zvenite tako presenečeni, kot da ste prišli na univerzo brez Konkoorja.",
+   "q": "Hooman mocks one curly-haired roommate for acting surprised. Does this sound like how a young man would talk to him?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "03/0077#11",
+   "where": "03/0077",
+   "text": "Preklet bodi, kdor zanika Orlov Pogled News.",
+   "q": "Farid mock-solemnly curses anyone who doubts Sajad, the room's gossip source, nicknamed Eagle Eye News. Does this sound playful?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "Farid je rekel:"
+   ]
+  },
+  {
+   "id": "04b/0209#13",
+   "where": "04b/0209",
+   "text": "Puf, ampak prekleto, spakiral si se in odšel tja, zdaj pa sediš in se smejiš naši bradi in našemu kurcu.",
+   "q": "Hooman teases Amir crudely for leaving Iran and laughing at the friends left behind. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "In zliva smeh na smeh."
    ]
   }
  ]

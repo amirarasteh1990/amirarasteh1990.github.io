@@ -1,183 +1,467 @@
 {
+ "format": 2,
  "lang": "lv",
  "slug": "lv",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Dzimtās valodas pārbaude",
+  "lead": "Grāmatai nav jābūt izlasītai. Atbildiet uz tik daudz jautājumu, cik vēlaties.",
+  "persian_words": "Maman (māte), Baba (tēvs) un -jan (mīļais) ir persiešu vārdi, kas grāmatā saglabāti.",
+  "page": "Lappuse",
+  "correct": "Pareizi",
+  "needs_change": "Jāmaina",
+  "not_sure": "Grūti pateikt",
+  "how_say": "Kā jūs to teiktu?",
+  "meaning": "Ko, jūsuprāt, tas nozīmē?",
+  "optional": "(nav obligāti)",
+  "your_name": "Jūsu vārds",
+  "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
+  "private": "Jūsu atbildes saņem tikai autors.",
+  "send": "Sūtīt",
+  "send_continue": "Sūtīt un pāriet uz {n}. lappusi",
+  "sending": "Sūta…",
+  "popup_title": "Paldies!",
+  "popup_text": "Vai vēlaties, lai jūsu vārds būtu vietnes pateicību lapā? Pabeidziet visas 4 lappuses, un mēs to labprāt pievienosim.",
+  "popup_button": "Pāriet uz {n}. lappusi",
+  "arrived": "Paldies, jūsu atbildes no {n}. lappuses ir saņemtas.",
+  "thanks_last": "Paldies! Jūsu atbildes ir saņemtas.",
+  "all_done": "Visas lappuses ir nosūtītas. Paldies par tām visām!",
+  "already_sent": "Šī lappuse no šīs ierīces jau ir nosūtīta. Paldies!",
+  "continue_with": "Turpināt ar {n}. lappusi",
+  "need_one": "Izvēlieties atbildi vismaz vienai rindai.",
+  "note_no_answer": "Pie kādas rindas ir piezīme: lūdzu, izvēlieties atbildi arī tai.",
+  "name_needed": "Ierakstiet vārdu, ko vēlaties redzēt sarakstā, vai noņemiet atzīmi.",
+  "not_connected": "Sūtīšana vēl nav pieslēgta.",
+  "too_long": "Sūtīšana aizņēma pārāk ilgu laiku.",
+  "cannot_send": "Atbildes no šejienes neizdevās nosūtīt.",
+  "use_email": "Lūdzu, izmantojiet e-pasta pogu zemāk.",
+  "fallback": "Atbildes no šīs lappuses neizdevās nosūtīt. Lūdzu, nosūtiet tās pa e-pastu; nekas no ievadītā nav zudis.",
+  "email_button": "Sūtīt atbildes pa e-pastu",
+  "shortened": "Dažas piezīmes bija pārāk garas e-pasta saitei, tāpēc tur tās tika saīsinātas. Jūsu pilnās atbildes ir zemāk; lūdzu, ielīmējiet tās e-pastā.",
+  "noscript": "Sūtīšanai nepieciešams JavaScript. Atbildes varat nosūtīt arī uz {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "04b/0360#1",
-   "where": "04b/0360",
-   "text": "– Šie slepkavnieciskie gājieni ir gluži tev raksturīgi, bet mani patiešām interesē, kurš nelietis bija atvēris savu veikalu piektdienas rītā sešos, lai tu varētu aiziet un nopirkt no viņa kameru.",
-   "q": "Hooman wonders crudely who opened a shop at dawn on a Friday. Does this sound like spoken talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman, apskatīdams kameras kasti, teica:"
+   "key": "crude",
+   "title": "Rupja runa",
+   "q": "Šeit tēli lamājas vai runā rupji. Vai katra rinda izklausās dabiski?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Lai nolādēts tas, kurš noliedz Ērgļacis News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "– Ak, ko tu gribi, Eskandar? Kas, pie velna, ar tevi notiek?",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Es tev saku, ka neredzu, dirsa.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Ja tev nospļauties par pasauli un visu tajā, kāpēc tu esi tik apsēsts ar pārbaudījumiem un eksāmeniem?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Atbilde ir tāda, ka laizīt pakaļu meistaram Hooman tev nepiestāv.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "– Dirsa. Objektīvi, dolārs tūlīt sasniegs 1500 tomanu, bet tu moki to nabadziņu?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "– Ielādējies jau, dirsa.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– Kāda starpība? Ja nāks McCain, viņš sačakarēs Irānu, objektīvi.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "– Kas tev atkal par mēri?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Ah, kas atkal par to sūdīgo domātāja pozu, ko tu ieņem?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Kurš grib risināt sūdīgas filozofiskas sarunas, var iet uz virtuvi. Tur lampa ir arī spožāka; varbūt jūsu smadzenes iedegsies.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Tu nejēga ... hoooooh ... tā nodūris galvu ... hooooh ... kur tu tik ātri ej? ... hoooh ... man trūkst elpas.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, lai tevi. Tagad esi kļuvis par emigrantu, tāpēc tev uz mums nospļauties. Tu ārzemju pielūdzēj, sasodītais nodevēj.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Šī lokalizācijas politika mūs pamatīgi izčakarēja. Viņi saka, ka tā domāta, lai bērni paliktu ģimenes tuvumā, bet ikvienam no mums, kas nāk no provinces, viņi ir iebāzuši mietu pakaļā.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "– Sūdsmadzene. Tu liec man atvērt muti un to pateikt.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Ja svarīgs ir vecums, tad tev vajadzētu laizīt Bahman pautus.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "– Tik daudz mācies, un galu galā ar mūsu sūdīgo veiksmi tik un tā sanāk šādi.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– Jā, tiklīdz viņi mūs ierauga, viņi savelk dibenu un turas tik tālu, ka man gribas ar abām kājām ielēkt viņiem sejā.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Dirsā šo mūsu veiksmi.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "– Es būtu labāk dzīvojis vienā istabā ar viņiem nekā ar tādu pimpja smadzeni kā tu.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "– ... ikreiz, kad nācu uz nodarbībām un darbiem tajā sūdīgajā otrajā specialitātē, es redzēju, ka viņi strīdas.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "– Tātad tu esi sūdīgs pirmkursnieks.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Ko gan tas, ka biju labākais students kursā un, nezinu, dabūju otru diplomu, pievienoja mana pimpja garumam, ja tagad mans darbs ir apskatīt elektriskās apakšstacijas?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "– Un tajā izčakarētajā situācijā — kādi īpatņi mums pielipa? Muša un tas otrs maldu apsēstais nelietis.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Šie slepkavnieciskie gājieni ir gluži tev raksturīgi, bet mani patiešām interesē, kurš nelietis bija atvēris savu veikalu piektdienas rītā sešos, lai tu varētu aiziet un nopirkt no viņa kameru.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Tu pat tā galvu nebūtu varējis apēst. Bet sasodīts, cik tie saldumi bija labi. Ananasu.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "– ... mūs izčakarēja.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "– Ja Kamyar nebūtu uzvedies kā iedomīgs mazs sūda gabals un būtu palicis dienesta viesnīcā, gulta nebūtu atbrīvojusies, lai šie brīnumi mums pieliptu.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "Skolēnu ģimenes arī sūdzējās, un viņu ar spērienu pa dibenu izmeta no skolas.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– Tātad tu gribi teikt, ka šī mūsu sūdīgā veiksme, kad loze mums iemeta tādu aizvēsturisku eksemplāru kā tevi, arvien atkārtojas?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Šodien istabā nestrīdieties — sportā es dabūju divpadsmit, man ir sasodīti slikts garastāvoklis, es jūs nolamāšu.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "– Es biju aizgājis nomazgāt seju. Es taču nevaru mazgāt seju ar brillēm uz acīm, dirsa.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Pietiktu, ja elektrotehnikas un mehānikas profesori daudzus gadus iepriekš nebūtu sakāruši uz to, lai atņemtu Abu-Reyhan ēku Kuģubūves fakultātei, — tad Farid nebūtu nonācis tādā stāvoklī.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "– Es tev saku, Vecais-jan, starp mums runājot, tu nokļuvi ārzemēs pilnīgas sūda nejaušības dēļ.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "– Vecais, tā vietā, lai tā izpleties gulētu gultā un spēlētos ar saviem pautiem, celies un nosūti tos. Tā ir izdevība.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "– Nu, ja tu neesi tāds, kas piesakās un aizbrauc, kāpēc tu plēsi dibenu, kārtodams TOEFL eksāmenu?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "– Vecais, paskaties, cik tālu tu esi to aizvedis: Farid, kuram nospļauties par mums un istabu un visiem, ir ierunājies.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Kāds sūds tev atkal grauž smadzenes?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Tu tikko sabojāji noskaņu, ko es uztvēru no dziesmas, ar to savu sūdīgo balsi.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "– Pakaļlaizīšana tev nepiestāv.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Nu, lai vai kāds sūds.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "– Paskaties, kādu jezgu tu esi sastrādājis, sūdsmadzene.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– Es meklēju savas brilles, dirsa. Pasaki tam Farid, lai pārstāj likt savu glāzi man tieši zem kājām.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0421#2",
-   "where": "04b/0421",
-   "text": "– Leopard Farid, savaldi nervus un neizdari slepkavniecisku gājienu.",
-   "q": "Hooman jokingly tells Farid to keep calm and not make a 'murderous move', a running joke among the friends. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hooman teica:"
-   ]
-  },
-  {
-   "id": "03/0504#3",
-   "where": "03/0504",
-   "text": "– Ei, Leopard Farid, atnes to klēpjdatoru šurp, lai arī es redzu. Man negribas celties.",
-   "q": "Lazy Hooman calls his roommate by the nickname 'Leopard Farid'. Does that work as a nickname?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hooman teica:"
-   ]
-  },
-  {
-   "id": "03/0624#4",
-   "where": "03/0624",
-   "text": "– Lieliski, Kroga Vecākais. Tas ir tieši piemērots Arasteh.",
-   "q": "Friends nickname Amir 'Kroga Vecākais' (Elder of the Tavern), an image from Hafez. Does it work as a nickname?",
-   "ctx": 2,
-   "kind": "banter",
-   "before": [
-    "– Es esmu Kroga Vecākā kalps, kura žēlastība ...",
-    "Farid teica:"
-   ]
-  },
-  {
-   "id": "03/0630#5",
-   "where": "03/0630",
-   "text": "– Viņš ir Kroģis, patiesi un godīgi.",
-   "q": "Farid shortens the nickname to 'Kroģis' and approves it warmly. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid teica:"
-   ]
-  },
-  {
-   "id": "03/0628#6",
-   "where": "03/0628",
-   "text": "– Haha, Kroga Vecākais, Vecais, lieliski. Trāpīji desmitniekā, Leopard Farid.",
-   "q": "Hooman shortens the nickname Elder of the Tavern to 'Vecais'. Does that work as a joke?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hooman ar pildspalvu kaut ko rakstīja grāmatā un teica:"
-   ]
-  },
-  {
-   "id": "04b/1314#7",
-   "where": "04b/1314",
-   "text": "– Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot.",
-   "q": "A shy student confesses his love to a classmate, addressing her politely. Does that sound right here?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Es aizgāju līdz Valiasr ielas ietves tālākajai malai un nostājos gaidīt zem platāna, vērodams, kad Niloofar atdalīsies no pārējām, lai es varētu pieiet un viņai aci pret aci pateikt, ka es viņu mīlu."
-   ]
-  },
-  {
-   "id": "04b/0784#8",
-   "where": "04b/0784",
-   "text": "– Tu esi tāds sneaky.",
-   "q": "Niloofar, a Tehran student, teases him using the English word 'sneaky'. Does that sound natural from her?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– Atkal saki \"es zinu\". Kā tieši?",
-    "– Šodien fakultātes vidū tu runāji ar dažām citām meitenēm. Es dzirdēju."
-   ]
-  },
-  {
-   "id": "03/0055#9",
-   "where": "03/0055",
-   "text": "– Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.",
-   "q": "Hamid answers in the rhythm he uses for his poems. Does it sound rhythmic, a bit like verse?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hamid teica, tajā pašā ritmā, kādā deklamēja savus dzejoļus:"
-   ]
-  },
-  {
-   "id": "04b/0935#10",
-   "where": "04b/0935",
-   "text": "– To ar \"Attar saldāk raudāt līdz rītausmai\" vai to ar \"tagad viņš ir vēl jo vairāk nokauts\"?",
-   "q": "Someone asks which song he means, quoting two lines of a classical poem by Attar. Do they read naturally?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "– Manam telefonam nav vietas.",
-    "– Vai gribi, lai es nosūtu vienu celiņu?",
-    "– Jā, to pašu, kas ar Attar pantu."
-   ]
-  },
-  {
-   "id": "04b/1392#11",
-   "where": "04b/1392",
-   "text": "Manu sapņu gaisma tagad mirkšķina",
-   "q": "In a love poem, the light of his dreams now flickers. Does this line read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "Manu sapņu gaisma ieslēdzās",
-    "Tagad tevis vairs nav"
-   ]
-  },
-  {
-   "id": "02/0001#12",
-   "where": "02/0001",
-   "text": "Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.",
-   "q": "The narrator feels sure of what tomorrow brings. Does 'Mana sirds ir gaiša' read naturally here?",
-   "ctx": 0,
-   "kind": "poetry"
-  },
-  {
-   "id": "04a/0001#13",
-   "where": "04a/0001",
-   "text": "Skatījos caur caurumu aizkara vidū. Maman piepildījās ar gaismu.",
-   "q": "A small boy watches his mother through a hole in a curtain. Does it sound like a small child telling it?",
-   "ctx": 0,
-   "kind": "child"
-  },
-  {
-   "id": "04a/0062#14",
-   "where": "04a/0062",
-   "text": "– Daudzi šeit cieš neveiksmi. Viņi iet pa kreisi.",
-   "q": "A ten-year-old says many people go wrong here by turning left. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Šo daļu es nekad neapguvu. Viņš vienmēr teica vissvarīgākais... kaut kas... uzdevumā. Tad viņš vienmēr teica:"
-   ]
-  },
-  {
-   "id": "01/0178#15",
-   "where": "01/0178",
-   "text": "– Kaut viņš būtu kļuvis atkarīgs un nebūtu bijis tāds.",
-   "q": "Maman, a mother from a small town, says this about her husband. Does it sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman saka:"
-   ]
-  },
-  {
-   "id": "04b/0562#16",
-   "where": "04b/0562",
-   "text": "– Ērgļacis, lai Dievs tev nepiedod, tu man sadragāji muguru. Kāpēc tu nevalkā brilles?",
-   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Eskandar ar balsi, kas liecināja, ka viņš tik tikko spēj ievilkt elpu, teica:"
+   "key": "natural",
+   "title": "Vai tas skan dabiski?",
+   "q": "Vai katra rinda skan dabiski un skaidri?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Šeit zeme ir veidota no ūdens un debesis – no zemes. Tas nozīmē, ka lietus vietā no debesīm birst zeme.",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "– Tad tikai iedomājies, ko mūsu nabagais Baba piedzīvo – visus šos gadus sēdot dīkā mājās.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "– Jā, mūsu Baba-jan ļoti slāpst pēc cieņas.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Bet viņam gadījies nonākt pie nepareizajiem cilvēkiem – mēs esam sadragājuši cieņu līdz pēdējai kripatai.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– Un vēl jo vairāk.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "– Tad iedzersim šo tēju par Ērgļacis News veselību.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Vai jūs vēl neesat izdarījis to, kādēļ atnācāt?",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "– Es esmu galēji nacionālistisks anarhists.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Ahh. Man zosāda uzmetās.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "– Leopard Farid pat nezina, ko pats grib. Vienu brīdi viņš izstrādā slepkavnieciskus trikus; nākamajā saka: \"Ak, asinis. Man zosāda uzmetās.\"",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Kur uz mana kakla rakstīts \"kāju balsts\"?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Lai tevi, simt septiņdesmit metru tu mani ar šo augumu aiz sevis vazāji.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objektīvi, tikai tāpēc, ka mēs ieradāmies pāris dienas vēlāk, šie Teherānas bērni, kas iekļuva AmirKabir tikai lokalizācijas dēļ, uzvedas tā, it kā tieši mēs būtu iekļuvuši pa kvotu, nevis viņi, objektīvi.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "– Cilvēk, nerunā ar šo tik pieklājīgi, viņam tas sakāps galvā.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– Jā. Neļauj šim Arasteh sevi apmuļķot; lai cik liels āksts viņš būtu, Konkoor viņš ierindojās septiņdesmit ceturtajā vietā.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "Pirms gada vai diviem es no Ērgļacis News dzirdēju, ka arī tas dendijs aizbraucis uz Austrāliju — savā ziņā pakaļ meitenei, kuru jūs abi mīlējāt.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "– Es zinu. Es neesmu muļķe. Bet tā nekas nesanāks. Tev jāiznāk no šī sava patvēruma un patiešām kaut kas jādara, nevis jānāk šeit, jāsēž un jāfantazē.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– Mani tā kaitina, kad tu tā klusi sēdi. Man gribas tev iebelzt ar dūri.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Nevienā citā istabā nav paklāja, Baba-jan. Tikai mums ir paklājs, un tas tāpēc, ka mēs esam elites istaba.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "– Leopard Farid, savaldi nervus un neizdari slepkavniecisku gājienu.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "– Tas viss ir filozofija un romāni. Lieliski, te ir arī Nietzsche. Es dievinu Nietzsche.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "– Es uzrakstīju savas teorijas par kvantu fiziku, un mūsu idiotiskais profesors paņēma un iedeva man ceturtdaļpunktu.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Ērgļacis, lai Dievs tev nepiedod, tu man sadragāji muguru. Kāpēc tu nevalkā brilles?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "– Ērgļacis, Mušu jau Dievs ir sodījis, nesodi tu viņu vēl. Tavas mātes dēļ, nestaigā pa istabu bez brillēm.",
+     "note": null
+    },
+    {
+     "id": "04b/0586#natur",
+     "text": "– Kāds koins?",
+     "note": null
+    },
+    {
+     "id": "04b/0593#natur",
+     "text": "– Nosūtiet salavat. Kroga Vecākais beidzot kaut ko pateica.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Svarīgi ir tas, ka, kad eju uz lielveikalu, es samaksāju, nopērku savu pienu un kūku un iekrauju vēderā.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Labi, Ērgļacis, labi. Tikai nebāz savas brilles klēpjdatorā.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Ja Muša būtu šeit, viņa taustekļi tagad saslietos par to, kas tā par lietu, kas dod tādu peļņu.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ak, ja tikai es kādu dienu varētu ar nagiem izurbt tavas ausis, lai tās vairs nesaslietos.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, arī Vectēvs saķēra Covid, bet it kā nemaz — viņš to izturēja kā parastu saaukstēšanos.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "– Āāāā. Es biju tas, kas viņai to pateica. Nini redzēja, ka tā ir laba rindiņa, un nodeva to tev tālāk.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Es upurētos par tevi, Nini-jan — cik labi tev galva strādā.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Šajā ziemā un aukstumā, no kurienes ir nākuši dziedātājputni? Esmu atkal savas iztēles gūsteknis.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 15
 }

@@ -2,8 +2,88 @@
  "lang": "ur",
  "slug": "ur",
  "dir": "rtl",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "اور اس لنڈ جیسے انداز میں بولنے کی وجہ سے تیرا نام آلن لنڈیلون ہونا چاہیے تھا۔",
+   "q": "'آلن لنڈیلون' is meant as a rude pun on the actor Alain Delon. Would Urdu readers get it? If not, what word could carry it?",
+   "before": [
+    "– ہاں، ہامون تیرے لیے اچھا نام ہے۔ فلم کے ہامون کی طرح تو بھی سوالوں سے بھرا ہوا ہے۔ اضطراب سے لبریز اور پریشانی کا سبب ہے، اپنے لیے نہیں بلکہ میرے لیے۔",
+    "ہومن نے کہا:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "بارش زمین سے آسمان کی طرف نہیں برستی۔",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "میرا ہاتھ چھوٹا ہے اور تیرا وصال دور۔",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "غم مت کھاؤ، میرے ہوشیار بیٹے۔",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "میں کہہ رہی ہوں کہ یوں صرف یہاں بیٹھ کر شعر پڑھتے رہنے سے تمہاری روٹی گرم نہیں ہوگی۔",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "بی بی خدا رحمت کرے ایسے موقعوں پر کہتی تھیں: کہوں تو زبان جلتی ہے، نہ کہوں تو ہڈی کا گودا جلتا ہے۔",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "کہتا ہے، اچھا سال بہار سے پہچانا جاتا ہے۔",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "کہنے لگی، میرا دل سڑ رہا ہے۔",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "ہنستے ہوئے، ہومن ہاتھ سے زور سے میری پیٹھ پر مارتا ہے اور مصری کا ٹکڑا میرے حلق میں اچھل جاتا ہے۔",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "اس منحوس اسکندر کو مت بتانا ورنہ ایک گھنٹہ بیٹھ کر نصیحت کرے گا اور کھانا میرے لیے سانپ کا زہر بن جائے گا۔",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "میں تو خاندان کے زبردستی مرغیوں میں ڈالنے کے بعد ہی سمجھا کہ کہانی کا وہ رخ کتنی مختلف دنیا ہے۔",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
@@ -25,16 +105,6 @@
    ]
   },
   {
-   "id": "04b/1023#3",
-   "where": "04b/1023",
-   "text": "میں منزلوں کے بیچ کی چار خالی جگہوں کے ایک دوسرے پر چڑھے دریچوں کے بیچ سے برآمدے کا دوسرا سرا دیکھنے کی کوشش کرتا ہوں۔",
-   "q": "Is 'دریچوں' the right word for the stacked openings between floors?",
-   "before": [
-    "…میں نیلوفر میرے سامنے نمودار ہوئی۔ بے اختیار، میرے منہ سے ایک سلام نکل گیا اور جواب میں ایک سلام آیا۔ اُس دن سے اُس دن تک جب میں نے نیلوفر کی ہنسی کی آواز سنی، بس وہی سلام تھا جو دہرایا جاتا رہا۔ میں دوسری منزل پر پہنچتا ہوں۔ جب میں تیسری منزل کے بارے میں سوچتا ہوں، تو سانس لینا مشکل ہو جاتا ہے۔",
-    "…اور ایک بائیں طرف۔ ہر شاخ منزلوں کے بیچ کی خالی جگہ کو ایک طرف سے گھیر لیتی ہے اور میں جانتا ہوں کہ پہلی خالی جگہ کے اُس پار، وہ پھر ایک دوسرے سے ملتی ہیں اور پیچ و خم کھاتی ہیں۔ میں چار گملے دیکھتا ہوں۔ اُن سالوں کی طرح، وہیں، اُس دریچے کے پاس جو خالی جگہ کی روشنی برآمدے کے اندر لاتا ہے، رکھے ہیں۔"
-   ]
-  },
-  {
    "id": "04b/1385#4",
    "where": "04b/1385",
    "text": "میں اس کی یاد اور اس کی یادوں میں ڈوب جاتا ہوں، اس کی یاد اور یادوں میں، اس کی یادوں میں، یادوں، یادوں، یادوں۔",
@@ -45,13 +115,13 @@
    ]
   },
   {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "اور اس لنڈ جیسے انداز میں بولنے کی وجہ سے تیرا نام آلن لنڈیلون ہونا چاہیے تھا۔",
-   "q": "'آلن لنڈیلون' is meant as a rude pun on the actor Alain Delon. Would Urdu readers get it? If not, what word could carry it?",
+   "id": "04b/1023#3",
+   "where": "04b/1023",
+   "text": "میں منزلوں کے بیچ کی چار خالی جگہوں کے ایک دوسرے پر چڑھے دریچوں کے بیچ سے برآمدے کا دوسرا سرا دیکھنے کی کوشش کرتا ہوں۔",
+   "q": "Is 'دریچوں' the right word for the stacked openings between floors?",
    "before": [
-    "– ہاں، ہامون تیرے لیے اچھا نام ہے۔ فلم کے ہامون کی طرح تو بھی سوالوں سے بھرا ہوا ہے۔ اضطراب سے لبریز اور پریشانی کا سبب ہے، اپنے لیے نہیں بلکہ میرے لیے۔",
-    "ہومن نے کہا:"
+    "…میں نیلوفر میرے سامنے نمودار ہوئی۔ بے اختیار، میرے منہ سے ایک سلام نکل گیا اور جواب میں ایک سلام آیا۔ اُس دن سے اُس دن تک جب میں نے نیلوفر کی ہنسی کی آواز سنی، بس وہی سلام تھا جو دہرایا جاتا رہا۔ میں دوسری منزل پر پہنچتا ہوں۔ جب میں تیسری منزل کے بارے میں سوچتا ہوں، تو سانس لینا مشکل ہو جاتا ہے۔",
+    "…اور ایک بائیں طرف۔ ہر شاخ منزلوں کے بیچ کی خالی جگہ کو ایک طرف سے گھیر لیتی ہے اور میں جانتا ہوں کہ پہلی خالی جگہ کے اُس پار، وہ پھر ایک دوسرے سے ملتی ہیں اور پیچ و خم کھاتی ہیں۔ میں چار گملے دیکھتا ہوں۔ اُن سالوں کی طرح، وہیں، اُس دریچے کے پاس جو خالی جگہ کی روشنی برآمدے کے اندر لاتا ہے، رکھے ہیں۔"
    ]
   }
  ]

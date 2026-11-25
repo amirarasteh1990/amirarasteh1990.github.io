@@ -1,135 +1,453 @@
 {
+ "format": 2,
  "lang": "nl",
  "slug": "nl",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Moedertaalcheck",
+  "lead": "Je hoeft het boek niet gelezen te hebben. Beantwoord er zoveel als je wilt.",
+  "persian_words": "Maman (moeder), Baba (vader) en -jan (lieve) zijn Perzische woorden die het boek onvertaald laat.",
+  "page": "Pagina",
+  "correct": "Klopt",
+  "needs_change": "Moet anders",
+  "not_sure": "Niet zeker",
+  "how_say": "Hoe zou jij het zeggen?",
+  "meaning": "Wat denk je dat het betekent?",
+  "optional": "(optioneel)",
+  "your_name": "Je naam",
+  "thanks_tick": "Zet mijn naam op de bedankpagina",
+  "private": "Je antwoorden gaan alleen naar de auteur.",
+  "send": "Versturen",
+  "send_continue": "Versturen en door naar pagina {n}",
+  "sending": "Bezig met versturen…",
+  "popup_title": "Dank je wel!",
+  "popup_text": "Wil je je naam op de bedankpagina van de website? Maak alle 4 pagina's af, dan zetten we hem er graag op.",
+  "popup_button": "Door naar pagina {n}",
+  "arrived": "Dank je wel, je antwoorden van pagina {n} zijn aangekomen.",
+  "thanks_last": "Dank je wel! Je antwoorden zijn aangekomen.",
+  "all_done": "Je hebt alle pagina's verstuurd. Dank je wel voor elke pagina!",
+  "already_sent": "Je hebt deze pagina al vanaf dit apparaat verstuurd. Dank je wel!",
+  "continue_with": "Verder met pagina {n}",
+  "need_one": "Kies bij minstens één regel een antwoord.",
+  "note_no_answer": "Bij een regel staat een opmerking: kies daar ook een antwoord bij.",
+  "name_needed": "Vul de naam in die je vermeld wilt zien, of haal het vinkje weg.",
+  "not_connected": "Versturen is nog niet gekoppeld.",
+  "too_long": "Het versturen duurde te lang.",
+  "cannot_send": "De antwoorden konden hier niet worden verstuurd.",
+  "use_email": "Gebruik de e-mailknop hieronder.",
+  "fallback": "De antwoorden konden niet vanaf deze pagina worden verstuurd. Stuur ze in plaats daarvan per e-mail; niets van wat je hebt ingevuld is verloren.",
+  "email_button": "Antwoorden e-mailen",
+  "shortened": "Sommige opmerkingen waren te lang voor een e-maillink en zijn daar ingekort. Je volledige antwoorden staan hieronder; plak ze in de e-mail.",
+  "noscript": "Voor het versturen is JavaScript nodig. Je kunt je antwoorden ook mailen naar {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt.",
-   "q": "The writer may have died long ago. Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Momenten en beelden die verloren zouden zijn gegaan in het koortsachtige gemurmel van de gebeurtenissen in de wereld als ze hier niet waren opgeschreven.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 1,
-   "before": [
-    "…verstomd. Alle geluiden, en misschien ook die hele wereld en haar mensen. Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt. Net zoals dit moment — het moment waarop je deze zin las — al voorbij is, zijn alle momenten van dit boek voorbij."
+   "key": "slips",
+   "title": "Verkeerd uitgesproken woorden",
+   "q": "De moeder in het boek spreekt sommige buitenlandse woorden verkeerd uit. Klinken dit als geloofwaardige uitspraakfouten?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "vriezel",
+     "note": "= vriezer"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublance",
+     "note": "= ambulance"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "bulderdozer",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "Opening/0007#3",
-   "where": "Opening/0007",
-   "text": "Zoals in onze kindertijd, toen Maman het garen uit oude kleren losmaakte, en wij de draad namen en er rondjes mee door het huis liepen zodat het garen zich niet zou ophopen.",
-   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#4",
-   "where": "01/0116",
-   "text": "Ga ook naar buiten. Ga naar plekken waar niet veel mensen zijn.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Oh, wat fijn. Mm-hm, bestellen en ze brengen het bij je. Maar Amir-jan, zit niet de hele tijd thuis."
+   "key": "images",
+   "title": "Perzische gezegden",
+   "q": "Sommige Perzische gezegden en beelden zijn woord voor woord vertaald. Geeft elk ervan je enig idee van wat het betekent, of zegt het je niets?",
+   "labels": [
+    "Ik kan het raden",
+    "Lukt me niet",
+    "Niet zeker"
+   ],
+   "note_label": "Wat denk je dat het betekent?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Regen valt niet omhoog van de aarde.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Een goed jaar is te zien aan zijn lente.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Eet geen verdriet",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mijn hart verrot",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Mijn hand is te kort en de vereniging met jou is ver.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "zeg ik het, dan brandt mijn tong; zeg ik het niet, dan brandt het merg van mijn botten",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "wordt het eten voor mij slangengif",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "geen brood voor je warm wordt",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "mijn familie me met dwang tussen de kippen had gestopt",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "het suikerklontje springt mijn keel in",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "kijk in elke uithoek",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "woorden kosten niets – het is gewoon hete lucht",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "zou hij vast en zeker uit Negars ogen vallen",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Alleen maar een belofte voor de oogsttijd?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "laat me je de ingewanden van de vriendschap op een dienblad voorzetten",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "al hun lichaamshaar viel er ter plekke van uit",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "maak je niet zo druk, je melk droogt op",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "niemand noemt je stom als je geen scheet laat",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Vreet de kop van mijn pik op",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Pikkoppenvreter",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "lachen om onze baarden en pikken",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "zo met je lul in je hand door de straten zwerven",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "geen enkele lul die ons overkomt",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "Oho, Hamid Kat, tot gisteren zei je nog \"langoor\". Nu ben je ineens zo beschaafd dat je \"ezel\" zegt?",
-   "q": "Taghi teases Hamid: he used to say a crude word for donkey, now a polite one. Does 'langoor' work as the crude word?",
-   "ctx": 2,
-   "before": [
-    "– Pff, ezel, wie weet er meer, de vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, of jij, kalf? Goed dan, ga er een kopen. Als het glas breekt, zeg dan niet dat ik je niet gewaarschuwd heb.",
-    "Taghi zei:"
+   "key": "children",
+   "title": "Kinderwoorden",
+   "q": "Sommige kinderen in het boek zeggen woorden verkeerd, zoals kleine kinderen dat doen. Klinkt elk ervan als een kinderfout, niet als een tikfout?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Het is malmersteen. Malmer betekent heel duur.",
+     "note": "malmer = marmer"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Hij heet Tataniek.",
+     "note": "Tataniek = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, die gote pop voo mij kopen?",
+     "note": "een klein meisje"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Ja, die koop ik. Als ik geld heb, koop ik een nog mooiere voo je",
+     "note": "haar vader doet haar na"
+    }
    ]
   },
   {
-   "id": "03/0373#6",
-   "where": "03/0373",
-   "text": "Ik zeg, dat Ameroka heeft bevestigd dat Iran het nucleaire programma heeft stopgezet.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Dutch speaker say Amerika as 'Ameroka'? If not, how?",
-   "ctx": 1,
-   "before": [
-    "– Wat?"
+   "key": "nicknames",
+   "title": "Bijnamen",
+   "q": "De vrienden in het boek geven elkaar speelse bijnamen, vaak als woordgrap. Werkt elk ervan als bijnaam in jouw taal?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Lullon",
+     "note": "een bijnaam voor een van de vrienden: de naam van acteur Alain Delon, met een deel veranderd in het grove woord \"lul\""
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Ouderling van de Kroeg",
+     "note": "een spottend-plechtige titel uit de poëzie van Hafez"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Oudje",
+     "note": "koosnaam voor \"Ouderling van de Kroeg\""
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Oudje, mijn Oudje",
+     "note": "koosnamen, gemaakt van \"Ouderling\""
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Farid de Panter",
+     "note": "voor een stoutmoedige, roekeloze vriend"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Is Arasteh een gesnoeide araasteh?",
+     "note": "araasteh = Perzisch voor \"netjes\""
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "mevrouw Armaaan",
+     "note": "de achternaam Arman, spottend uitgerekt"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister de krulharige Schrödinger",
+     "note": "spottende titel voor iemand die maar geen keuze kan maken"
+    }
    ]
   },
   {
-   "id": "03/0430#7",
-   "where": "03/0430",
-   "text": "En jij, met die lullige manier van praten van je, had Alain Lullon moeten heten.",
-   "q": "'Alain Lullon' is meant as a rude pun on the actor Alain Delon. Would Dutch readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#8",
-   "where": "04a/0076",
-   "text": "Het is malmersteen. Malmer betekent heel duur.",
-   "q": "Both mistakes are intended: little Ghassem says 'malmer' for marmer and thinks it means expensive. Does it sound like a child?",
-   "ctx": 1,
-   "before": [
-    "We liepen verder. Halverwege stond een huis. De muur was mooi. Ghassem zei dan:"
+   "key": "jokes",
+   "title": "Grappen en woordspelingen",
+   "q": "In deze regels zit een grap of een woordspeling. Werkt elk ervan in jouw taal?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Dat is zijn fabrieksinstelling.",
+     "note": "dingen verknoeien zit gewoon in zijn aard"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Vergeven. De hele boulevard is voor jou.",
+     "note": "in het Perzisch betekent \"vergeven\" ook \"weggeven\""
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "tot gisteren zei je nog \"langoor\". Nu ben je ineens zo beschaafd dat je \"ezel\" zegt?",
+     "note": "een jongen wordt geplaagd omdat hij op een netter woord is overgestapt"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Peer-tot-peer? … Arendsoog zegt peer-to-peer; het Oudje zegt peer-tot-peer.",
+     "note": "hij hoort \"peer\" als het Perzische pir, \"ouderling\", de wortel van zijn bijnaam"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Gisteravond hoorde ik je herkauwen.",
+     "note": "'s nachts kauwen, zoals een koe die herkauwt"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Wat heb je nou weer, dat je hem tegen ons overeind hebt gezet, Alain Lullon?",
+     "note": "dubbele betekenis: trots rechtop zitten, en een erectie"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Wat-jager was hij niet?",
+     "note": "de moeder vangt alleen het eind van \"rokkenjager\" op"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is",
+     "note": "het vaste opschepzinnetje van een jongen"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Ofwel ben je hersenpi... nou ja, je was al hersenpik, nu ben je nog meer hersenpik geworden.",
+     "note": "de belediging wordt afgebroken en daarna nog erger gemaakt"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Ja hoor, we bezitten allemaal fabrieken. … We hebben een lulkoekfabriek.",
+     "note": "ze maken alleen lulkoek: ze kletsen maar wat"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "fossiel dat je bent, je bent zelf het standbeeld van domheid en verval",
+     "note": "een spottende belediging"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "lijkt het leven op een biljet van duizend toman: hoe je het ook bekijkt, het ruikt naar linzenrijst.",
+     "note": "een absurde kwinkslag"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Dit is gewoon hoe ik praat. Jullie horen me en denken dat ik gedichten reciteer.",
+     "note": "een jongen antwoordt op een zangerig ritme"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Pas op dat je niet barst, meneer Lul.",
+     "note": "hij heeft net een hoge borst opgezet"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Jij bent de grootste koe van allemaal.",
+     "note": "\"koe\" = een domme sukkel, gezegd tegen een man"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "het deed hem altijd veel plezier om het woord \"bewust\" twee keer in die zin te verwerken.",
+     "note": "\"bewust\" twee keer gebruikt, voor de grap"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "het probleem ligt bij de ontvanger; de zender kan het niet oplossen.",
+     "note": "het slechte zicht van de vriend is de \"ontvanger\""
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Ik bedoel Alain Lullon. Luuul.",
+     "note": "het grove deel van de woordgrap, uitgerekt"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Als jij Hooman bent, dan ben ik Soesan.",
+     "note": "de zachte naam Hooman past niet bij zo'n behaarde man"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "De afgeleide? De betekenis? Of de betekenis van de afgeleide? Of de afgeleide van de betekenis?",
+     "note": "quasi-diepzinnige woordspeling"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Als God het wil, moge je altijd araasteh zijn.",
+     "note": "een zegen met een woordspeling op de achternaam Arasteh; araasteh = \"netjes\""
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Zonder bril zie ik helemaal niets, objectief gezien.",
+     "note": "het stopwoord van het personage, overal gebruikt"
+    }
    ]
   },
   {
-   "id": "04b/0387#9",
-   "where": "04b/0387",
-   "text": "Gisteravond hoorde ik je herkauwen.",
-   "q": "Eskandar teases Hooman for munching sweets in bed at night, like a cow chewing cud. Does 'herkauwen' land?",
-   "ctx": 1,
-   "before": [
-    "Eskandar draaide zich naar Hooman en zei:"
-   ]
-  },
-  {
-   "id": "04b/1263#10",
-   "where": "04b/1263",
-   "text": "Vroeoem, Baba, Baba, die gote pop voo mij kopen?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…niet genoeg licht gaf om me te leiden. Een knipperende lamp in de hand van een meisje van wie ik nooit wist waar de kleur van de deur van hun huis in de doos kleurpotloden thuishoorde. Een klein meisje komt vroem-vroem-roepend aanlopen en gaat naast me staan. Ze kijkt naar het speelgoed. Ze zegt:"
-   ]
-  },
-  {
-   "id": "04b/1265#11",
-   "where": "04b/1265",
-   "text": "Ja, die koop ik. Als ik geld heb, koop ik een nog mooiere voo je, Baba's meisje.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vroeoem, Baba, Baba, die gote pop voo mij kopen?",
-    "Een stem achter me zegt:"
-   ]
-  },
-  {
-   "id": "04b/1312#12",
-   "where": "04b/1312",
-   "text": "Je wordt er schijttureluurs van. Hoe meer je erover nadenkt, hoe schijttureluurser je wordt.",
-   "q": "A girl jokes with a crude made-up word for mind-bending. Does 'schijttureluurs' work?",
-   "ctx": 1,
-   "before": [
-    "– ... kijk eens hoe werkelijk tot nadenken stemmend het is. Hij heeft dit getekend en eronder geschreven: dit is geen pijp."
-   ]
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "\"Die wijn daar is de echte wijn niet een metafoor.\"",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#14",
-   "where": "06/0056",
-   "text": "Met een bulderdozer gooiden ze aarde over haar heen.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Dutch speaker say bulldozer as 'bulderdozer'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Een regel van Hafez",
+   "q": "Deze regel van de dichter Hafez staat er zonder komma, dus je kunt hem op twee tegengestelde manieren lezen:",
+   "labels": [
+    "Ja, allebei",
+    "Maar op één manier",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Die wijn daar is de echte wijn niet een metafoor.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Zo gelezen: de wijn is echt, geen metafoor.",
+    "Anders gelezen: de wijn is niet echt, alleen een metafoor."
+   ],
+   "after_q": "Kan de versie in jouw taal op beide manieren worden gelezen?"
   }
- ]
+ ],
+ "first": 1
 }

@@ -1,191 +1,367 @@
 {
+ "format": 2,
  "lang": "pt-BR",
  "slug": "pt-br",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisão por falantes nativos",
+  "lead": "Você não precisa ter lido o livro. Responda quantos trechos quiser.",
+  "persian_words": "Maman (mãe), Baba (pai) e -jan (querido) são palavras persas, mantidas no livro.",
+  "page": "Página",
+  "correct": "Correto",
+  "needs_change": "Precisa mudar",
+  "not_sure": "Não tenho certeza",
+  "how_say": "Como você diria?",
+  "meaning": "O que você acha que significa?",
+  "optional": "(opcional)",
+  "your_name": "Seu nome",
+  "thanks_tick": "Incluir meu nome na página de Agradecimentos",
+  "private": "Suas respostas vão só para o autor.",
+  "send": "Enviar",
+  "send_continue": "Enviar e ir para a página {n}",
+  "sending": "Enviando…",
+  "popup_title": "Obrigado!",
+  "popup_text": "Quer seu nome na página de Agradecimentos do site? Termine as 4 páginas e vamos incluí-lo com prazer.",
+  "popup_button": "Ir para a página {n}",
+  "arrived": "Obrigado, suas respostas da página {n} chegaram.",
+  "thanks_last": "Obrigado! Suas respostas chegaram.",
+  "all_done": "Você enviou todas as páginas. Obrigado por cada uma delas!",
+  "already_sent": "Você já enviou esta página deste aparelho. Obrigado!",
+  "continue_with": "Continuar com a página {n}",
+  "need_one": "Escolha uma resposta para pelo menos um trecho.",
+  "note_no_answer": "Um trecho tem uma observação: escolha uma resposta para ele também.",
+  "name_needed": "Escreva o nome que você quer ver na lista ou desmarque a caixa.",
+  "not_connected": "O envio ainda não está conectado.",
+  "too_long": "O envio demorou demais.",
+  "cannot_send": "Não foi possível enviar as respostas daqui.",
+  "use_email": "Use o botão de e-mail abaixo.",
+  "fallback": "Não foi possível enviar as respostas por esta página. Mande-as por e-mail; nada do que você escreveu se perdeu.",
+  "email_button": "Enviar respostas por e-mail",
+  "shortened": "Algumas observações eram longas demais para um link de e-mail e foram encurtadas lá. Suas respostas completas estão abaixo; cole-as no e-mail.",
+  "noscript": "O envio precisa de JavaScript. Você também pode mandar suas respostas por e-mail para {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "03/0630#1",
-   "where": "03/0630",
-   "text": "É o Taverny, de verdade e com toda a justiça.",
-   "q": "Farid turns 'Ancião da Taverna' into the nickname 'Taverny' for Amir. Does this nickname sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, Ancião da Taverna, Eldie, perfeito. Acertou em cheio, Farid Leopardo.",
-    "O Farid disse:"
+   "key": "maman",
+   "title": "A voz da mãe",
+   "q": "A mãe fala com carinho, às vezes dando bronca, como uma mulher comum de cidade pequena. Cada trecho soa como ela?",
+   "labels": [
+    "Correto",
+    "Precisa mudar",
+    "Não tenho certeza"
+   ],
+   "note_label": "Como você diria?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0090#maman",
+     "text": "Fico só olhando e comendo tristeza.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Sai também. Vai a lugares onde não tem muita gente.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "O Baba o quê?",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "O do professor bobo? Mm-hm, vejam esse. Esse tem graça. Riam um pouco.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Estou mentindo? Desde o ano em que você nasceu, ele está sentado em casa.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "A gente só está brincando, Nana-pesar-jan. Como se ele fosse embora.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "Falar mal? Falar mal é quando a pessoa não fez mal nenhum a você.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "Hmm, olhem — algum de vocês se lembra de uma coisa boa do Baba de vocês? Digam, e fico calada.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "Quem dera tivesse ficado viciado e não fosse assim.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "Quem quiser pode ficar com ele. A gente ainda dá alguma coisa por cima.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Fomos a pé do bulevar até em casa, e ele ficava levantando a mão — como se a mão dele fosse uma coisa sagrada para as pessoas beijarem.",
+     "note": null
+    },
+    {
+     "id": "01/0222#maman",
+     "text": "Hmph! Claro que o Ghassem está dizendo a verdade.",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "Mm-hm, mudou muito, muito. Ficou muito magro e com a pele muito escura.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "Amir, é bom ter o papel principal?",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "Tudo o que você faz é um remendo.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Hmm, não estou dizendo que não se apaixonem. Primeiro conheçam a pessoa, casem, e aí, se quiserem, se apaixonem.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "Eu te achei quatro vezes. Agora vem cá, meu menino bom.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "Não. Enquanto esse fio estiver na sua mão, você não se perde. A outra ponta está na minha mão.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "Muito bem, meu menino esperto. Quando você tiver medo de alguma coisa, usa um truque pra não ficar com medo.",
+     "note": null
+    },
+    {
+     "id": "04b/0526#maman",
+     "text": "De onde veio uma onda dessas?",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "Nooossa. Então os países deviam estar perto uns dos outros.",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "Chegou o fim dos tempos. A geração da Bibi dizia que, quando chega o fim dos tempos, a terra não para de tremer.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "Fiz a promessa de que, se ele melhorar, vou a pé até Mashhad.",
+     "note": null
+    },
+    {
+     "id": "06/0009#maman",
+     "text": "Quero dizer, você passou?",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "Hmm, então eu também digo que meu coração fica pesado. Me deixem ir ver minhas amigas.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "Hmm, a gente achou que você ia ficar triste, Nana-pesar-jan. Era a sua defesa de doutorado.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, você precisa mesmo cuidar do que come. Come coisas boas. Coisas que te deem força.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "No hospital ficavam chamando: “Família da senhora Adham!” Ninguém se mexeu.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "Hmm, essas pessoas quase não fizeram nada por ela, mesmo quando era viva.",
+     "note": null
+    },
+    {
+     "id": "06/0165#maman",
+     "text": "Ele tinha bebido refrigerante demais.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "É assim que você diz obrigado?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "Hmm, você tinha ido passear e se divertir – e gostou. Não passou por todas as dificuldades.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "Ah, toda vez que você fala pra ele buscar alguma coisa, parece que ele leva um choque elétrico.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "Ele reclama à toa, hehe, Amir-jan. Se não for isso, ele vai encontrar outra coisa.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "Nossa, a Nini ficou com sono de repente. Levantei de manhã e não dormi mais.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0591#2",
-   "where": "04b/0591",
-   "text": "Pir a pir?",
-   "q": "Amir mishears the English 'peer to peer' as pir, Persian for an old sage. Would Brazilian Portuguese readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Uma espécie de dinheiro eletrônico peer to peer.",
-    "Eu disse:"
-   ]
-  },
-  {
-   "id": "03/0126#3",
-   "where": "03/0126",
-   "text": "Pois é. O homem mais rico de Teerã, amigo do primo do mestre artesão do nosso cunhado, fala exatamente assim.",
-   "q": "Hamid always cites this absurdly long chain of people as his authority, a running joke. Is it funny and clear?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid disse:"
-   ]
-  },
-  {
-   "id": "03/0388#4",
-   "where": "03/0388",
-   "text": "Sem os óculos não consigo ver nada, objetivamente.",
-   "q": "Sajad says 'objetivamente' all the time, out of habit. Does it sound like a funny verbal tic here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "O Sajad disse:"
-   ]
-  },
-  {
-   "id": "03/0055#5",
-   "where": "03/0055",
-   "text": "É assim que eu falo; vocês me ouvem e acham que é poesia.",
-   "q": "Hamid, a boy poet, answers in a sing-song, poem-like rhythm. Does this line have some of that rhythm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid disse, com o mesmo ritmo com que recitava seus poemas:"
-   ]
-  },
-  {
-   "id": "04b/1390#6",
-   "where": "04b/1390",
-   "text": "A luz dos meus sonhos se acendeu",
-   "q": "A line from a young man's love poem: the light in his dreams came on. Does it read as natural Brazilian poetry?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "Meus sonhos eram escuros",
-    "Eu não conseguia ver nada",
-    "Você veio"
-   ]
-  },
-  {
-   "id": "04b/0182#7",
-   "where": "04b/0182",
-   "text": "Você é a maior vaca de todas. Tem mesmo o porte pra isso.",
-   "q": "A roommate hits back at chubby Hooman, calling him the biggest cow, meaning stupid. Does this insult work for a man?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Come a cabeça do meu pau, cara, a gente não tem saco pra você. O que é que você sabe do que significa engenharia elétrica em Sharif? E além disso, alguém pediu a sua opinião?"
-   ]
-  },
-  {
-   "id": "04b/0181#8",
-   "where": "04b/0181",
-   "text": "Come a cabeça do meu pau, cara, a gente não tem saco pra você.",
-   "q": "Hooman tells a know-it-all roommate to shut up, in the crudest way. Does this sound like a real Brazilian insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "O Hooman levantou o polegar de novo e disse:"
-   ]
-  },
-  {
-   "id": "04b/0899#9",
-   "where": "04b/0899",
-   "text": "Comedor de cabeças de pau, por que você fala bobagem?",
-   "q": "Hooman insults a roommate with a crude made-up phrase. Does it sound like something a young Brazilian would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "O Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0997#10",
-   "where": "04b/0997",
-   "text": "Bom, o que for, foda-se.",
-   "q": "After a silly back-and-forth over a name, Eskandar gives up with a crude shrug. Does this sound natural?",
-   "ctx": 4,
-   "kind": "crude",
-   "before": [
-    "– Hamoon, admite que ...",
-    "– Hooman.",
-    "– Hamoon.",
-    "E assim iam e voltavam, e a cada troca as repetições ganhavam velocidade. Até que o Eskandar disse:"
-   ]
-  },
-  {
-   "id": "04b/0351#11",
-   "where": "04b/0351",
-   "text": "Eu cago nesses dias e no jeito que a gente pensava.",
-   "q": "Hooman, now older, crudely dismisses his student days. Does this sound like natural Brazilian swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Que saudade o quê, Doutor?"
-   ]
-  },
-  {
-   "id": "04b/0385#12",
-   "where": "04b/0385",
-   "text": "Sempre muito elegante e formal, caga bem na curva histórica.",
-   "q": "Hooman jokes, crudely, that Amir always messes up at the decisive moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– O Eldie é Taverny. Ele não consegue evitar isso. É assim que o sistema da fábrica dele funciona."
-   ]
-  },
-  {
-   "id": "04b/0893#13",
-   "where": "04b/0893",
-   "text": "Você cagou na sensação que eu estava tirando da música com essa voz de merda que você tem.",
-   "q": "Hooman crudely complains that a roommate's singing ruined his mood. Does this sound like natural slang?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "O Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0378#14",
-   "where": "04b/0378",
-   "text": "Cabeça de merda, ninguém te chama de mudo só porque você não peida.",
-   "q": "Eskandar wakes Amir with a crude Persian saying, put word for word. Does it work in Portuguese?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…e eu tínhamos dito um ao outro. As luzes do corredor se apagaram, e o barulho dos outros quartos também adormeceu. No escuro e no silêncio da meia-noite, a sombra do Hooman entrou pela porta e foi direto à caixa de doces. Como se estivesse farejando ela. De manhã, o Eskandar me acordou e disse:"
-   ]
-  },
-  {
-   "id": "03/0640#15",
-   "where": "03/0640",
-   "text": "Seu vendido, puxa-saco de estrangeiro.",
-   "q": "Hooman jokingly insults his old friend who moved abroad. Does this insult sound like everyday speech?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Pfff, vai se danar. Virou um expatriado e agora não tá nem aí pra gente."
-   ]
-  },
-  {
-   "id": "04b/0209#16",
-   "where": "04b/0209",
-   "text": "Pff, mas, seu desgraçado, você arrumou as malas e foi pra lá, e agora fica aí sentado rindo das nossas barbas e dos nossos paus.",
-   "q": "Hooman teases his friend who emigrated for laughing at them from abroad, in crude slang. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "E ri às gargalhadas."
+   "key": "child_talk",
+   "title": "Fala de criança",
+   "q": "Estes trechos são falados por crianças. Cada um soa como uma criança?",
+   "labels": [
+    "Correto",
+    "Precisa mudar",
+    "Não tenho certeza"
+   ],
+   "note_label": "Como você diria?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "Que gata.",
+     "note": null
+    },
+    {
+     "id": "03/0185#child",
+     "text": "Então e se alguém jogar uma pedra e quebrar do mesmo jeito?",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "Pff, asno, quem sabe mais, o homem mais rico de Teerã, amigo do primo do mestre artesão do nosso cunhado, ou você, bezerro?",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "Então por que agora, que eu estou parado atrás da porta da viela, ela não vem me achar nem uma vez?",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "Hoje de manhã eu fui ao pátio. A Maman disse que eu era inteligente.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "Tá bom, você vem na missão também, mas tem que ter muito cuidado. As etapas são muito difíceis.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "Tá bom, bota menos. Mas não menos demais. Um pouco menos.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "Entrada na rua principal: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "O nome é Bazar de Quchan, e a nossa casa fica no fim do Bazar de Quchan.",
+     "note": null
+    },
+    {
+     "id": "04a/0049#child",
+     "text": "Se ele não fosse velho, não tirava o grão-de-bico de volta. Se não tirasse, a Maman fazia mais ash.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "A terceira etapa é um cruzamento. Um cruzamento quer dizer que é muito grande.",
+     "note": null
+    },
+    {
+     "id": "04a/0053#child",
+     "text": "Era longe. Até o outro lado do mundo. Talvez não. Mas era longe.",
+     "note": null
+    },
+    {
+     "id": "04a/0054#child",
+     "text": "Aff, eu tô cansado.",
+     "note": null
+    },
+    {
+     "id": "04a/0059#child",
+     "text": "A Maman disse que Deus fica no céu. O céu também é azul.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "Muita gente fracassa aqui. Eles vão pra esquerda.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "O lado esquerdo é perigoso. A casa com a porta vermelha é de um velho muito bravo. Até mais bravo do que o Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "Se a gente fizer bagunça, o professor bate nas nossas mãos com uma régua.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "Do outro lado da escola tem um cemitério. É muito antigo. Alguns túmulos não têm pedra. Dá pra ver os ossos dos mortos.",
+     "note": null
+    },
+    {
+     "id": "04a/0071#child",
+     "text": "Meu coração ficava vazio. Eu não queria ir lá.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "Sem perguntas. Escuta o comandante.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "Ei, por que você jogou o pau fora? Com o que a gente vai tocar a campainha então?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "Você não falou.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "Assim que aprender os nossos nomes, ela vai gostar da gente.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 13
 }

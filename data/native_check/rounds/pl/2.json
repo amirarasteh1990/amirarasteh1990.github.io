@@ -1,188 +1,272 @@
 {
+ "format": 2,
  "lang": "pl",
  "slug": "pl",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Okiem rodzimego użytkownika",
+  "lead": "Nie musisz znać książki. Odpowiedz na tyle pytań, na ile masz ochotę.",
+  "persian_words": "Maman (matka), Baba (ojciec) i -dżan (kochany) to perskie słowa, zachowane w książce.",
+  "page": "Strona",
+  "correct": "Dobrze",
+  "needs_change": "Do zmiany",
+  "not_sure": "Trudno powiedzieć",
+  "how_say": "Jak to ująć po Twojemu?",
+  "meaning": "Co Twoim zdaniem to znaczy?",
+  "optional": "(nieobowiązkowo)",
+  "your_name": "Twoje imię",
+  "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
+  "private": "Twoje odpowiedzi trafią tylko do autora.",
+  "send": "Wyślij",
+  "send_continue": "Wyślij i przejdź do strony {n}",
+  "sending": "Wysyłanie…",
+  "popup_title": "Dziękujemy!",
+  "popup_text": "Chcesz, żeby Twoje imię znalazło się na stronie z podziękowaniami w serwisie? Wypełnij wszystkie 4 strony, a chętnie je dodamy.",
+  "popup_button": "Przejdź do strony {n}",
+  "arrived": "Dziękujemy, Twoje odpowiedzi ze strony {n} dotarły.",
+  "thanks_last": "Dziękujemy! Twoje odpowiedzi dotarły.",
+  "all_done": "Wszystkie strony zostały wysłane. Dziękujemy za każdą z nich!",
+  "already_sent": "Ta strona została już wysłana z tego urządzenia. Dziękujemy!",
+  "continue_with": "Przejdź dalej do strony {n}",
+  "need_one": "Wybierz odpowiedź dla co najmniej jednego fragmentu.",
+  "note_no_answer": "Jeden z fragmentów ma uwagę: wybierz, proszę, odpowiedź także dla niego.",
+  "name_needed": "Wpisz imię, które mamy umieścić, albo odznacz pole.",
+  "not_connected": "Wysyłanie nie jest jeszcze podłączone.",
+  "too_long": "Wysyłanie trwało zbyt długo.",
+  "cannot_send": "Nie udało się stąd wysłać odpowiedzi.",
+  "use_email": "Skorzystaj, proszę, z przycisku e-mail poniżej.",
+  "fallback": "Nie udało się wysłać odpowiedzi z tej strony. Wyślij je, proszę, e-mailem; nic z tego, co wpisano, nie przepadło.",
+  "email_button": "Wyślij odpowiedzi e-mailem",
+  "shortened": "Niektóre uwagi były za długie na link e-mail i zostały w nim skrócone. Pełne odpowiedzi są poniżej; wklej je, proszę, do e-maila.",
+  "noscript": "Wysyłanie wymaga JavaScriptu. Możesz też wysłać odpowiedzi e-mailem na adres {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "04b/0595#1",
-   "where": "04b/0595",
-   "text": "– Ale to spierdolił. Orle Oko mówi peer-to-peer, a Tawerniak mówi Stary-do-Starego.",
-   "q": "Farid mocks Amir for mishearing 'peer-to-peer' as 'Pir-to-pir' (pir means elder, his nickname). Would Polish readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir-to-pir?",
-    "Human powiedział:",
-    "– Odmówcie salawat. Starszy Tawerny w końcu też się odezwał.",
-    "Farid powiedział:"
+   "key": "one",
+   "title": null,
+   "q": "He almost repeats the crude word, then stops. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#s12",
+     "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#2",
-   "where": "03/0380",
-   "text": "– Najgorsza choroba to Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Polish speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman powiedziała:"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "– Kocham panią od trzydziestu dwóch miesięcy. Z daleka. Bez pani wiedzy.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#3",
-   "where": "06/0052",
-   "text": "W końcu Mahbub zadzwoniła, przyjechali amublansem i zabrali Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Polish speaker say ambulance as 'amublansem'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…nie słyszy i nie wie, co się dzieje, ale Naney mówiłam kilka razy: „Hadż Chanom, siedzicie w zaułku, jeszcze zarazicie się covidem, nie daj Boże”. Jakby na złość, przesiadywali tam jeszcze więcej. Ale Amir, w piersi Naney tak strasznie rzęziło. Powiedziałam Mahbub i reszcie: „Dzieci, to covid”."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#4",
-   "where": "03/0362",
-   "text": "– Mahbub, chodzi mi o to, co mówią w wiadomościach, o tej Ameroce...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Polish speaker say America as 'Ameroce'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…obok pozostałych notatek z Konkur. Wyszedłem z domku na końcu podwórza i przemierzyłem jego długość w dziewięciu krokach, a radość z nowego odkrycia wciąż świeciła w moim sercu. Gdy z podwórza wszedłem do salonu, Maman leżała przed telewizorem. Obie ręce złożyła na brzuchu i mówiła do Mahbube:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "– Batalion, naprzód marsz.",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "– Początek pierwszego etapu misji. Batalion, w lewo zwrot.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0432#5",
-   "where": "03/0432",
-   "text": "Nie o niego mi chodzi. Mam na myśli Alaina Chujona. Chuuuj. Kropka. Koniec.",
-   "q": "Hooman twists the actor Alain Delon's name into a rude nickname and drags it out. Does the insult land as a joke?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Human zaokrąglił usta i zmarszczył nos tak bardzo, jak tylko potrafił — dokładnie tak, jak twarz Eskandara wyglądała, gdy ten mówił.",
-    "– ...i robisz usta jak kurzy tyłek, zdychając z wysiłku, żeby mówić jak on."
+   "key": "poetry",
+   "title": "Poezja",
+   "q": "To są wersy poezji. Czy każdy z nich dobrze brzmi jako poezja po polsku?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... Za żadną cenę nie wziąłbym sygnetu Salomona, bo czasem na nim ręka...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "– „Słodziej Attarowi płakać aż do świtu” czy „teraz bardziej zabity”?",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "prócz wody",
+     "note": null
+    },
+    {
+     "id": "04b/1269#poetr",
+     "text": "a jeśli przeprawisz się przez morze",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "pisz na wodzie własną krwią",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "przeszli tędy.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Czytała: „Dawno już luby nie przysłał wieści; nie skreślił pozdrowienia...”, a mnie zebrało się na śmiech.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Światło moich snów teraz miga",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Nie mam nadziei, że wrócisz",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "Lecz jeśli droga przywiedzie cię blisko",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "przyjdź znów do moich snów",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Zdaje mi się, że moje sny nie uwierzyły, że odeszłaś",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Światło moich snów ... światło moich snów zapaliło ... światło moich snów zapaliło się",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Teraz ... teraz ... teraz cię nie ma ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0460#6",
-   "where": "04b/0460",
-   "text": "– Co ci znowu odbiło, że wymierzasz w nas swojego stojącego fiuta, Alain Chujon?",
-   "q": "Hooman again calls Eskandar 'Alain Chujon', a rude pun on Alain Delon. Does this crude jab sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "04a/0080#7",
-   "where": "04a/0080",
-   "text": "– Czemu nie poszliście do marmulowego domu?",
-   "q": "Ghassem, a boy, says 'marmulowego' for marble, a word he gets wrong on purpose. Does it read as his childish mistake?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Był czerwony. Jak tamte wielkie czerwone drzwi. Usiadłem przy rynsztoku. Włożyłem do niego stopy. Nie było w nim wody. Robiło mi się pusto w sercu. Mężczyzna wrócił. Przednie koło już się nie kręciło. Spoliczkował Omida. Obaj płakaliśmy. Mężczyzna odszedł. Ghassem wrócił. Zbeształ nas. Powiedział:"
-   ]
-  },
-  {
-   "id": "04b/1320#8",
-   "where": "04b/1320",
-   "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.",
-   "q": "Amir echoes a girl's crude made-up word 'gównozamęt' for a muddled head. Does it work here?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0309#9",
-   "where": "03/0309",
-   "text": "– Daj Boże, żebyś zawsze był araasteh.",
-   "q": "A guard jokes on the surname Arasteh; Persian 'araasteh' means neat. Would Polish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Strażnik się uśmiecha i mówi:"
-   ]
-  },
-  {
-   "id": "01/0182#10",
-   "where": "01/0182",
-   "text": "– Jakim -arzem nie był?",
-   "q": "Maman takes the ending of 'Kobieciarzem' to say he was every other kind of bad. Would Polish readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Kobieciarzem też nie był.",
-    "Maman mówi:"
-   ]
-  },
-  {
-   "id": "04b/0387#11",
-   "where": "04b/0387",
-   "text": "– W nocy słyszałem, jak przeżuwasz.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, chewing like a cow. Does this tease land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar odwrócił się w stronę Humana i powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0616#12",
-   "where": "04b/0616",
-   "text": "– Dobra, Orle Oko, dobra. Tylko nie wciskaj okularów w laptopa.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, for peering into his laptop. Does the tease sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "03/0278#13",
-   "where": "03/0278",
-   "text": "Można powiedzieć, że zdobyli uczelnię. Karrubi to miłość, naprawdę.",
-   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karrubi to miłość' sound like how he would talk?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hej, Tawerniak, biegnij! Chodź, idziemy. Mówią, że nie pozwolili Karrubiemu wejść na uczelnię. Jego zwolennicy wyłamali bramę Hafez i wtargnęli do środka."
-   ]
-  },
-  {
-   "id": "06/0186#14",
-   "where": "06/0186",
-   "text": "– Oddałbym za ciebie wszystko, Nini-dżan. Ależ dobrze pracuje ci głowa.",
-   "q": "Amir lovingly teases his mother, praising her clever advice. Does it sound warm and natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Amir, kiedy Taghi umarł, jego matka przyszła pod drzwi i powiedziała Maman: „Nie wiemy, co powiedzieć ludziom. Jeśli powiemy, że pił mocny domowy aragh i miał synkopę, będzie z tego straszny wstyd”. Wtedy Maman poradziła jej: „Powiedzcie po prostu, że zachorował na covid”.",
-    "Mówię:"
-   ]
-  },
-  {
-   "id": "04b/0586#15",
-   "where": "04b/0586",
-   "text": "– Co-coin?",
-   "q": "Hooman hears the word bitcoin for the first time and turns it into a playful question. Does it read as a joke?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ej, obiektywnie, bitcoin dochodzi do jednego dolara.",
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0558#16",
-   "where": "04b/0558",
-   "text": "Pochodnej? Sensu? Czy sensu pochodnej? Czy pochodnej sensu?",
-   "q": "Eskandar pompously plays with the words derivative and meaning. Does the wordplay work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Czego ty szukasz, żeby zrozumieć, Mucho?"
+   "key": "word_choice",
+   "title": "Pojedyncze słowa",
+   "q": "Czy słowo w każdym fragmencie jest właściwe? Pod spodem podano, co ma znaczyć.",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0268#word_",
+     "text": "– Żadne imię ci nie pasuje, do licha.",
+     "note": "\"do licha\" = damn you (angry swearing)"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "Można powiedzieć, że zdobyli uczelnię. Karrubi to miłość, naprawdę.",
+     "note": "\"Karrubi to miłość\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "– Wejście na główną ulicę: tsk-tsk.",
+     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "– Ale ty jesteś sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "spaleni",
+     "note": "\"spaleni\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
+     "note": "\"gównozamęt\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.",
+     "note": "\"gównozamęt\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "02/0001#word_",
+     "text": "Mam światło w sercu: jutro, gdy otworzę oczy, wszystko będzie skończone i ciemność powróci do moich snów.",
+     "note": "\"Mam światło w sercu\" = I feel hopeful, sure of tomorrow"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

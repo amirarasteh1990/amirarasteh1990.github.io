@@ -1,126 +1,453 @@
 {
+ "format": 2,
  "lang": "lv",
  "slug": "lv",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Dzimtās valodas pārbaude",
+  "lead": "Grāmatai nav jābūt izlasītai. Atbildiet uz tik daudz jautājumu, cik vēlaties.",
+  "persian_words": "Maman (māte), Baba (tēvs) un -jan (mīļais) ir persiešu vārdi, kas grāmatā saglabāti.",
+  "page": "Lappuse",
+  "correct": "Pareizi",
+  "needs_change": "Jāmaina",
+  "not_sure": "Grūti pateikt",
+  "how_say": "Kā jūs to teiktu?",
+  "meaning": "Ko, jūsuprāt, tas nozīmē?",
+  "optional": "(nav obligāti)",
+  "your_name": "Jūsu vārds",
+  "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
+  "private": "Jūsu atbildes saņem tikai autors.",
+  "send": "Sūtīt",
+  "send_continue": "Sūtīt un pāriet uz {n}. lappusi",
+  "sending": "Sūta…",
+  "popup_title": "Paldies!",
+  "popup_text": "Vai vēlaties, lai jūsu vārds būtu vietnes pateicību lapā? Pabeidziet visas 4 lappuses, un mēs to labprāt pievienosim.",
+  "popup_button": "Pāriet uz {n}. lappusi",
+  "arrived": "Paldies, jūsu atbildes no {n}. lappuses ir saņemtas.",
+  "thanks_last": "Paldies! Jūsu atbildes ir saņemtas.",
+  "all_done": "Visas lappuses ir nosūtītas. Paldies par tām visām!",
+  "already_sent": "Šī lappuse no šīs ierīces jau ir nosūtīta. Paldies!",
+  "continue_with": "Turpināt ar {n}. lappusi",
+  "need_one": "Izvēlieties atbildi vismaz vienai rindai.",
+  "note_no_answer": "Pie kādas rindas ir piezīme: lūdzu, izvēlieties atbildi arī tai.",
+  "name_needed": "Ierakstiet vārdu, ko vēlaties redzēt sarakstā, vai noņemiet atzīmi.",
+  "not_connected": "Sūtīšana vēl nav pieslēgta.",
+  "too_long": "Sūtīšana aizņēma pārāk ilgu laiku.",
+  "cannot_send": "Atbildes no šejienes neizdevās nosūtīt.",
+  "use_email": "Lūdzu, izmantojiet e-pasta pogu zemāk.",
+  "fallback": "Atbildes no šīs lappuses neizdevās nosūtīt. Lūdzu, nosūtiet tās pa e-pastu; nekas no ievadītā nav zudis.",
+  "email_button": "Sūtīt atbildes pa e-pastu",
+  "shortened": "Dažas piezīmes bija pārāk garas e-pasta saitei, tāpēc tur tās tika saīsinātas. Jūsu pilnās atbildes ir zemāk; lūdzu, ielīmējiet tās e-pastā.",
+  "noscript": "Sūtīšanai nepieciešams JavaScript. Atbildes varat nosūtīt arī uz {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.",
-   "q": "The book's first lines. Is it clear nothing will be fixed, and nothing torn down?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Ej arī ārā. Ej tur, kur nav daudz cilvēku.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Ak, cik labi. Mm-hm, pasūti, lai tev atved. Bet Amir-jan, nesēdi mājās visu laiku."
+   "key": "slips",
+   "title": "Nepareizi izrunāti vārdi",
+   "q": "Māte grāmatā dažus svešvārdus izrunā nepareizi. Vai tie izklausās pēc ticamām izrunas kļūdām?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "saldētelī",
+     "note": "= saldētava"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Aicheimers",
+     "note": "= Alcheimers"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "anbulas",
+     "note": "= ambulance (ātrā palīdzība)"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "burdozers",
+     "note": "= buldozers"
+    }
    ]
   },
   {
-   "id": "01/0148#3",
-   "where": "01/0148",
-   "text": "– Kas un smaidi?",
-   "q": "Maman catches only the end of the film title 'Asaras un smaidi'. Does her puzzled question sound natural?",
-   "ctx": 2,
-   "before": [
-    "– Bērni, vai man lejupielādēt filmu Asaras un smaidi, lai mēs to šovakar skatītos?",
-    "Maman pagriež galvu un saka:"
+   "key": "images",
+   "title": "Persiešu teicieni",
+   "q": "Daži persiešu teicieni un tēli ir tulkoti vārds vārdā. Vai katrs no tiem ļauj jums kaut nedaudz nojaust nozīmi, vai arī tas jums neko neizsaka?",
+   "labels": [
+    "Varu uzminēt",
+    "Nevaru",
+    "Grūti pateikt"
+   ],
+   "note_label": "Ko, jūsuprāt, tas nozīmē?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Lietus no zemes uz augšu nekrīt.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Labu gadu pazīst pēc tā pavasara.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Neēd bēdas",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mana sirds pūst",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Mana roka ir īsa, un savienošanās ar tevi ir tālu.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "ja to saku, mana mēle deg; ja to nesaku, manu kaulu smadzenes deg",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "ēdiens man pārvērtīsies čūsku indē",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "neviena maize tev nesasils",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "ģimenes spiediena dēļ nokļuvu starp vistām",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "cukurgabaliņš ielec man rīklē",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "ielūkojies visos nostūros un kaktiņos",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "vārdi neko nemaksā — tas ir tikai karsts gaiss",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "viņš noteikti kristu Negar acīs",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Tikai ražas laika solījumu?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "ļauj man tev pasniegt draudzības iekšas uz paplātes",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "viņiem visas spalvas uzreiz izbira",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "tik ļoti neuztraucies, tev piens izsīks",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "ja tu nepērd, neviens tevi par mēmu nesauks",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Apēd mana krāna galvu",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Tu krānu galvu ēdāj",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "smejies par mūsu bārdām un pimpjiem",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "tu tā nestaigātu pa ielām ar pimpi rokā",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "kāds pimpis vēl uzkritīs mums uz galvas",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0191#4",
-   "where": "03/0191",
-   "text": "– Oh-ho. Hamid Kaķis, līdz vakardienai tu teici \"khar\". Tagad pēkšņi esi tik smalks un saki \"ēzelis\"?",
-   "q": "In Persian, 'khar' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'ēzelis'. Does the jab work?",
-   "ctx": 2,
-   "before": [
-    "– Pfff, ēzelis, kurš labāk zina — mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks, vai tu, teļš? Ej un pērc. Kad stikls salūst, nesaki, ka es neteicu.",
-    "Taghi teica:"
+   "key": "children",
+   "title": "Bērnu vārdi",
+   "q": "Daži bērni grāmatā pasaka vārdus nepareizi, kā to dara mazi bērni. Vai katrs izklausās pēc bērna kļūdas, nevis drukas kļūdas?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Tas ir marmala akmens. Marmals nozīmē ļoti dārgi.",
+     "note": "marmals = marmors"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "To sauc Tatanic.",
+     "note": "Tatanic = Titāniks"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, nopilksi man sito lielo lellīti?",
+     "note": "maza meitene"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Jā, nopilkšu tev lellīti.",
+     "note": "tēvs viņu atdarina"
+    }
    ]
   },
   {
-   "id": "03/0290#5",
-   "where": "03/0290",
-   "text": "– Vai Arasteh ir apcirpts Araasteh?",
-   "q": "The narrator's surname Arasteh was cut down from Persian 'Araasteh', meaning neat. Would Latvian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "Un tev, ar to tavu pimpaino runas manieri, vajadzētu saukties Alain Pimplon.",
-   "q": "'Alain Pimplon' is meant as a rude pun on the actor Alain Delon. Would Latvian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#7",
-   "where": "04a/0076",
-   "text": "– Tas ir marmala akmens. Marmals nozīmē ļoti dārgi.",
-   "q": "A little boy says 'Marmals' for 'marmors' (marble) and thinks it means expensive; both mistakes are deliberate. Does it sound childlike?",
-   "ctx": 1,
-   "before": [
-    "Mēs gājām tālāk. Pusceļā bija māja. Tās siena bija skaista. Ghassem vienmēr teica:"
+   "key": "nicknames",
+   "title": "Iesaukas",
+   "q": "Draugi grāmatā cits citam dod rotaļīgas iesaukas, bieži kā vārdu spēli. Vai latviski katra no tām der kā iesauka?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Pimplon",
+     "note": "iesauka vienam no draugiem: aktiera Alain Delon vārds, kura daļa pārvērsta par rupju vārdu dzimumloceklim"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Kroga Vecākais",
+     "note": "zobgalīgi cildens tituls no Hafez dzejas"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Vecais",
+     "note": "mīlināmā forma no «Kroga Vecākais»"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Kroģis, mans Kroģīti",
+     "note": "mīlināmās formas no vārda «krogs»"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard Farid",
+     "note": "drosmīgam, pārgalvīgam draugam"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Vai Arasteh ir apcirpts Araasteh?",
+     "note": "araasteh = persiski «kārtīgs»"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "viņas augstību kundzi Armāāān",
+     "note": "uzvārds Arman, izstiepts izsmieklam"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "cirtainmatainais misters Schrödinger",
+     "note": "zobgalīgs tituls tam, kurš nespēj izšķirties"
+    }
    ]
   },
   {
-   "id": "04b/0181#8",
-   "where": "04b/0181",
-   "text": "– Apēd mana krāna galvu, cilvēk. Mums tevis ir gana.",
-   "q": "A crude insult between students. Does 'krāna galvu' read as slang for penis?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/0464#9",
-   "where": "04b/0464",
-   "text": "Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes.",
-   "q": "A student mocks a classmate: a zero is too mild. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1178#10",
-   "where": "04b/1178",
-   "text": "Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.",
-   "q": "Is it clear the choking feels like a climbing plant coiling around a person?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1263#11",
-   "where": "04b/1263",
-   "text": "– Vrūūūm, Baba, Baba, nopilksi man sito lielo lellīti?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…tumši iekrāsoto klusumu, bet nedeva tik daudz gaismas, lai kaut kur mani vadītu. Mirkšķinošu lampu meitenes rokā, kuras mājas durvju krāsu es nekad nezināju, kur novietot krāsaino zīmuļu kastītē. Kāda meitenīte atskrien, dūkdama, un nostājas man blakus. Viņa skatās uz rotaļlietām. Viņa saka:"
+   "key": "jokes",
+   "title": "Joki un vārdu spēles",
+   "q": "Šajās rindās ir joks vai vārdu spēle. Vai latviski katrs no tiem izdodas?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Tādi ir viņa rūpnīcas iestatījumi.",
+     "note": "visu sabojāt — tāda vienkārši ir viņa daba"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Piedots. Viss šis bulvāris ir tavs.",
+     "note": "persiski «piedot» nozīmē arī «atdot»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "līdz vakardienai tu teici \"khar\". Tagad pēkšņi esi tik smalks un saki \"ēzelis\"?",
+     "note": "zobojas par zēnu, kas pārgājis uz pieklājīgāku vārdu"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pīr-tu-pīr? … Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.",
+     "note": "viņš «peer» dzird kā persiešu pir, «vecākais», no kā cēlusies viņa iesauka"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Pagājušonakt es dzirdēju, kā tu atgremo.",
+     "note": "naktī košļā kā govs, kas atgremo"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Kas tev atkal par mēri, uztaisījis pret mums stāvu, Alain Pimplon?",
+     "note": "divdomība: lepni izslējies un erekcija"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Kāds -nieks viņš nebija?",
+     "note": "māte saklausa tikai vārda «sieviešu mednieks» beigas"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks",
+     "note": "zēna pastāvīgā lielīšanās"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Vai arī tev pimpis sma... nu, tev jau bija pimpis smadzeņu vietā, tagad tev tāds kļuvis vēl vairāk.",
+     "note": "apvainojums tiek aprauts un tad padarīts vēl ļaunāks"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Jā, mums visiem pieder fabrikas. … Mums ir diršanas fabrika.",
+     "note": "viss, ko viņi ražo, ir sūdi: viņi tikai runā niekus"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "tu, fosilija, tu pats esi muļķības un degradācijas iemiesojums",
+     "note": "izsmejošs apvainojums"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "dzīve ir kā tūkstoš tomanu naudaszīme: lai no kuras puses uz to skatās, tā smaržo pēc lēcu rīsiem.",
+     "note": "absurds joks"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.",
+     "note": "zēns atbild dziedošā ritmā"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Uzmanies, lai neieplaisā, Pimpja kungs.",
+     "note": "viņš tikko izriezis krūtis"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Tu esi vislielākais vērsis no visiem.",
+     "note": "«vērsis» = truls muļķis, saka par vīrieti"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "viņam vienmēr sagādāja milzu prieku šajā teikumā divreiz lietot vārdu \"apzināties\".",
+     "note": "«apzināties» lietots divreiz, rotaļīgi"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "vaina ir uztvērējā; raidītājs to neatrisinās.",
+     "note": "drauga vājā redze ir «uztvērējs»"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Es domāju Alain Pimplon. Piiim-pis.",
+     "note": "joka rupjā daļa, izstiepta"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Ja tu esi Hooman, tad es esmu Zuzanna.",
+     "note": "maigais vārds Hooman neder tik spalvainam vīrietim"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Atvasinājumu? Jēgu? Vai atvasinājuma jēgu? Vai jēgas atvasinājumu?",
+     "note": "šķietami dziļdomīga vārdu spēle"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Ja Dievs dos, lai tu vienmēr būtu araasteh.",
+     "note": "svētības vēlējums ar vārdu spēli uz uzvārdu Arasteh; araasteh = «kārtīgs»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Bez brillēm es neko neredzu, objektīvi.",
+     "note": "tēla iemīļotais vārds, ko viņš lieto visur"
+    }
    ]
   },
   {
-   "id": "04b/1312#12",
-   "where": "04b/1312",
-   "text": "Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.",
-   "q": "A girl coins a crude phrase for mind-bending confusion. Does 'sūdu juceklis' work?",
-   "ctx": 1,
-   "before": [
-    "– ... paskatieties, cik tas patiešām liek aizdomāties. Viņš to uzzīmēja un apakšā uzrakstīja: šī nav pīpe."
-   ]
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "\"Tas vīns, kas tur atrodas, ir patiešām īsts nav metafora.\"",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#14",
-   "where": "06/0056",
-   "text": "Ar burdozeru viņai virsū uzgāza zemi. Zemi un kaļķi.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Latvian speaker say 'buldozeru' (bulldozer) as 'burdozeru'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Hafez rinda",
+   "q": "Šī dzejnieka Hafez rinda ir uzrakstīta bez komata, tāpēc to var lasīt divos pretējos veidos:",
+   "labels": [
+    "Jā, abos veidos",
+    "Tikai vienā veidā",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Tas vīns, kas tur atrodas, ir patiešām īsts nav metafora.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Viens veids: vīns ir īsts, nevis metafora.",
+    "Otrs veids: vīns nav īsts, tikai metafora."
+   ],
+   "after_q": "Vai jūsu versiju var lasīt abos veidos?"
   }
- ]
+ ],
+ "first": 1
 }

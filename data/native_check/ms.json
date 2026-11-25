@@ -2,16 +2,99 @@
  "lang": "ms",
  "slug": "ms",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Dari sisi ini, aku mengurai benang kata-kata, dan dari sisi sana, kamu mengumpulkannya.",
-   "q": "The writer unravels a thread of words; you gather them. Does this read naturally?",
+   "id": "04b/1312#3",
+   "where": "04b/1312",
+   "text": "Ini dia lukis dan di bawahnya dia tulis: ini bukan paip. Kepalamu jadi pening tahi.",
+   "q": "A student puzzles over a pipe painting. Does 'pening tahi' work as crude slang?",
    "before": [
-    "Pembukaan",
-    "…Saat-saat dan gambaran-gambaran yang akan hilang ditelan gegak gempita dunia jika tidak dirakamkan di sini. Ia dirakamkan untuk menjadi jambatan antara duniaku dan duniamu. Sebuah jambatan dari duniaku, pada saat aku menulis ayat-ayat ini, menuju duniamu, pada saat kamu duduk untuk membacanya."
+    "…pengumuman tentang pengecatan dan pembaikan musim panas bangunan Abu-Reyhan. Dengan jantung berdebar aku maju. Itu Niloofar, Niloofar sendiri. Dia berdiri menghadap Universiti Seni, di sebelah beberapa gadis lain. Salah seorang gadis itu menunjukkan sehelai kertas kepada yang lain dan berkata:",
+    "– ... Lihat, ini benar-benar membuat termenung."
+   ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "dengan cara bercakap macam butuh tu, nama kau sepatutnya Alain Butuhlon.",
+   "q": "'Alain Butuhlon' is meant as a rude pun on the actor Alain Delon. Would Malay readers get it? If not, what word could carry it?",
+   "before": [
+    "Hooman berkata:",
+    "– Kau pula,"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Hujan tak turun ke atas dari bumi.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Tanganku pendek dan penyatuan denganmu jauh.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Jangan makan kesedihan, anak pandaiku.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Maksudku, kalau kau cuma terus duduk di sini dan membaca puisi, tiada roti yang akan dipanaskan untukmu.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, semoga rohnya dicucuri rahmat, biasa kata pada ketika seperti ini: kalau aku kata, lidahku terbakar; kalau aku tak kata, sum-sum tulangku terbakar.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Dia kata, \"Tahun yang baik dapat dikenal dari musim bunganya.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Dia kata, hatiku reput.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "Sambil ketawa, Hooman menepuk belakangku dengan kuat dan gula batu itu melompat ke kerongkongku.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Jangan beritahu Eskandar celaka tu, kalau tidak dia akan dudukkan kita untuk lagi satu jam nasihat dan makanan ini akan menjadi bisa ular bagi aku.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1320#4",
+   "where": "04b/1320",
+   "text": "Dan dengan tangan menggeletar aku cepat-cepat membelek-belek ghazal untuk mencari beit Hafez yang, seperti kata gadis yang seorang lagi, makin dalam kita menyelaminya makin kita pening tahi, agar boleh kutunjukkan kepada Niloofar.",
+   "q": "Is it clear Amir seeks a Hafez verse about growing dizzier the deeper one goes?",
+   "before": [
+    "– Ya, tapi dari yang ini ke yang itu terbentang satu dunia jaraknya.",
+    "– Hafez juga sangat mode... apa itu, dia masih ada hal untuk dikatakan, demi Tuhan."
    ]
   },
   {
@@ -25,33 +108,20 @@
    ]
   },
   {
-   "id": "04b/1312#3",
-   "where": "04b/1312",
-   "text": "Ini dia lukis dan di bawahnya dia tulis: ini bukan paip. Kepalamu jadi pening tahi.",
-   "q": "A student puzzles over a pipe painting. Does 'pening tahi' work as crude slang?",
-   "before": [
-    "…pengumuman tentang pengecatan dan pembaikan musim panas bangunan Abu-Reyhan. Dengan jantung berdebar aku maju. Itu Niloofar, Niloofar sendiri. Dia berdiri menghadap Universiti Seni, di sebelah beberapa gadis lain. Salah seorang gadis itu menunjukkan sehelai kertas kepada yang lain dan berkata:",
-    "– ... Lihat, ini benar-benar membuat termenung."
-   ]
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "Aku baru faham, selepas dipaksa keluarga masuk ke reban ayam, betapa berbezanya dunia di sisi cerita yang sebelah sana.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "04b/1320#4",
-   "where": "04b/1320",
-   "text": "Dan dengan tangan menggeletar aku cepat-cepat membelek-belek ghazal untuk mencari beit Hafez yang, seperti kata gadis yang seorang lagi, makin dalam kita menyelaminya makin kita pening tahi, agar boleh kutunjukkan kepada Niloofar.",
-   "q": "Is it clear Amir seeks a Hafez verse about growing dizzier the deeper one goes?",
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Dari sisi ini, aku mengurai benang kata-kata, dan dari sisi sana, kamu mengumpulkannya.",
+   "q": "The writer unravels a thread of words; you gather them. Does this read naturally?",
    "before": [
-    "– Ya, tapi dari yang ini ke yang itu terbentang satu dunia jaraknya.",
-    "– Hafez juga sangat mode... apa itu, dia masih ada hal untuk dikatakan, demi Tuhan."
-   ]
-  },
-  {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "dengan cara bercakap macam butuh tu, nama kau sepatutnya Alain Butuhlon.",
-   "q": "'Alain Butuhlon' is meant as a rude pun on the actor Alain Delon. Would Malay readers get it? If not, what word could carry it?",
-   "before": [
-    "Hooman berkata:",
-    "– Kau pula,"
+    "Pembukaan",
+    "…Saat-saat dan gambaran-gambaran yang akan hilang ditelan gegak gempita dunia jika tidak dirakamkan di sini. Ia dirakamkan untuk menjadi jambatan antara duniaku dan duniamu. Sebuah jambatan dari duniaku, pada saat aku menulis ayat-ayat ini, menuju duniamu, pada saat kamu duduk untuk membacanya."
    ]
   }
  ]

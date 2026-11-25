@@ -2,8 +2,98 @@
  "lang": "bal",
  "slug": "bal",
  "dir": "rtl",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "تو هم گوں اے وتی کیریں هبر جنَگءِ لحن ءَ، بائد تئی نام آلن کیرلون بوتیں.",
+   "q": "'آلن کیرلون' is meant as a rude pun on the actor Alain Delon. Would Balochi readers get it? If not, what word could carry it?",
+   "before": [
+    "– ها، هامون شرّیں نامے اِنت په تو. فیلمءِ هامونءِ وڑا، تو هم پُر چہ جُست ئے. پُر چہ اضطراب ءُ پریشانی‌ءِ منشأ ئے، نه په وت که په من.",
+    "هومن گوَشت:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "هَور چہ زمین ءَ آسمان ءَ که نه‌گواریت.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "منی دست کوتاه اِنت ءُ تئی وصال دور.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "غم مه‌وار منی هوشیاریں پسر.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "گوَشاں اے وڑ، فقط اِدا بنندئے ءُ شعر بوانئے، په تو نان گرم نه‌بیت.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "بی‌بی، خدا بیامرزیت، اے وڑیں وهداں گوَشت: بگوَشاں زبان سوچیت، مه‌گوَشاں هڈءِ مغز سوچیت.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "– قاسم حُقّه‌بازی کنت، گوَشیت «سالے که نیک اِنت، چہ بهارِش پدّر اِنت».",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "گوَشت: منی دل پوسَگ ءَ اِنت.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "هومن کندگءِ نیام ءَ سک منی پُشت ءَ جنت ءُ قند منی گُٹءِ تها جست جنت.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "آ نکبتیں اسکندر ءَ مه‌گوَش، پدا نندیت یک ساعت په ما پند ءُ نصیحت دنت، منی مارءِ زهر بیت.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "من تازه هما وهد که گوں کهولءِ زور ءَ مُرگانی نیام ءَ هوار بوتُن، سرپد بوتُن که داستانءِ آ دگه نیمگ چه دگه پیمیں دنیایے اِنت.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0554#4",
+   "where": "04b/0554",
+   "text": "– اسفندءِ اول ءَ کئے امتحان گِریت؟",
+   "q": "A student complains about an exam at the start of Esfand. Does this read naturally?",
+   "before": [
+    "– پدا هم فیزیک دو ءَ صفر بوتُن. من باز بدبخت آں.",
+    "هومن گوَشت:"
+   ]
+  },
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
@@ -32,26 +122,6 @@
    "before": [
     "وتی سر ءَ آئی ءِ نیمگ ءَ چرّیناں.",
     "– آرسته، پیراسته‌بوتگیں آراسته اِنت؟"
-   ]
-  },
-  {
-   "id": "04b/0554#4",
-   "where": "04b/0554",
-   "text": "– اسفندءِ اول ءَ کئے امتحان گِریت؟",
-   "q": "A student complains about an exam at the start of Esfand. Does this read naturally?",
-   "before": [
-    "– پدا هم فیزیک دو ءَ صفر بوتُن. من باز بدبخت آں.",
-    "هومن گوَشت:"
-   ]
-  },
-  {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "تو هم گوں اے وتی کیریں هبر جنَگءِ لحن ءَ، بائد تئی نام آلن کیرلون بوتیں.",
-   "q": "'آلن کیرلون' is meant as a rude pun on the actor Alain Delon. Would Balochi readers get it? If not, what word could carry it?",
-   "before": [
-    "– ها، هامون شرّیں نامے اِنت په تو. فیلمءِ هامونءِ وڑا، تو هم پُر چہ جُست ئے. پُر چہ اضطراب ءُ پریشانی‌ءِ منشأ ئے، نه په وت که په من.",
-    "هومن گوَشت:"
    ]
   }
  ]

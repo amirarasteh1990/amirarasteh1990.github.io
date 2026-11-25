@@ -2,20 +2,24 @@
  "lang": "cs",
  "slug": "cs",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/1265#10",
+   "where": "04b/1265",
+   "text": "– Ano, koupím ti vekou panenku. Až budu mít nějaké peníze, koupím ti ještě lepší, Babova holčičko.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "– Vžžžum, Babo, Babo, koupís mi tu vekou panenku?",
+    "Zezadu se ozývá hlas:"
+   ]
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Řekla, srdce mi hnije.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Nejez žal, můj chytrý chlapče.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +30,62 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, Bůh jí odpočinutí, říkávala při takových chvílích: řeknu-li to, shoří mi jazyk; neřeknu-li to, shoří mi morek v kostech.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Neříkej tomu ubohému Eskandarovi, nebo nás zase na hodinu posadí s radami a jídlo se mi změní v hadí jed.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Déšť nespadá zdola nahoru.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0353#8",
+   "where": "04b/0353",
+   "text": "– A v té podělané situaci, jaké antiky nám přidělili?",
+   "q": "Is it clear 'antiky' mocks the odd roommates they were given?",
+   "ctx": 0
   },
   {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Říká: „Dobrý rok se pozná po svém jaru.“",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1320#12",
+   "where": "04b/1320",
+   "text": "A roztřesenýma rukama jsem překotně listoval ghazaly, hledaje ten beit od Hafeze, u něhož, stejně jako u té malby, jak řekla ta druhá dívka, čím hlouběji se do něj nořím, tím větší posranou závrať dostávám – abych ho mohl Niloofar ukázat.",
+   "q": "A girl had said a painting makes your head spin more the deeper you look. Is the verse compared to that painting here?",
+   "ctx": 0
   },
   {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Říkám, že když takhle jen pořád sedíš tady a recituješ verše, žádný chleba se ti neupeče.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Choď i ven. Choď tam, kde není moc lidí.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "ctx": 1,
+   "before": [
+    "– Oho, jak dobré. Mm-hm, objednáš a přivezou ti to. Ale Amir-jan, nesedávej celou dobu doma."
+   ]
+  },
+  {
+   "id": "04b/0171#7",
+   "where": "04b/0171",
+   "text": "Tolik testů jsme nadělali a skončili na pokoji s tímhle antikem.",
+   "q": "Students mock a roommate as an old relic. Does 'antikem' work as that insult?",
+   "ctx": 1,
+   "before": [
+    "– Ale člověče, nemluv s ním takhle zdvořile, stoupne mu to do hlavy."
+   ]
+  },
+  {
+   "id": "06/0236#17",
+   "where": "06/0236",
+   "text": "Kašel, kašel. Vláčels nás.",
+   "q": "Baba complains that his son only took them to cemeteries and churches. Does 'Vláčels nás' mean you wore us out?",
+   "ctx": 1,
+   "before": [
+    "– ...kašel. Jo. Nikdy jsi nás nevzal na taková místa. Pořád hřbitov a Bůh ví co – kostel."
+   ]
+  },
+  {
+   "id": "04b/1321#13",
+   "where": "04b/1321",
+   "text": "„To víno, které je tam, je pravda ne metafora.“",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
+   "ctx": 0
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +95,18 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Má ruka je krátká a spojení s tebou daleké.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0166#3",
+   "where": "01/0166",
+   "text": "Ať jsem říkala sebevíc, ať děti nebije, odpovídal: válka mě poznamenala, nemohu si pomoct.",
+   "q": "Maman's husband excused beating the children by saying he was shell-shocked in the war. Does 'válka mě poznamenala' convey that?",
+   "ctx": 0
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Neříkej tomu ubohému Eskandarovi, nebo nás zase na hodinu posadí s radami a jídlo se mi změní v hadí jed.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1386#15",
+   "where": "04b/1386",
+   "text": "Pokaždé dojdu až k prahu čtení té básně a pokaždé průchod mezi mými rty a Niloofařinýma ušima zabliká a vyklouzne.",
+   "q": "The passage to her ears blinks and backs away. Does 'zabliká a vyklouzne' say that?",
+   "ctx": 0
   }
  ]
 }

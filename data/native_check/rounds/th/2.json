@@ -2,20 +2,20 @@
  "lang": "th",
  "slug": "th",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "ฉันบอกว่าถ้านายเอาแต่นั่งอ่านบทกวีอยู่ที่นี่ ขนมปังมันก็ไม่อุ่นขึ้นมาให้นายหรอก",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "เธอบอกว่า หัวใจฉันกำลังเน่าเปื่อย",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "อย่ากินความเศร้าเลยลูกฉลาดของมามัน",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +26,21 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "ยาย บีบี ขอพระเจ้าเมตตาท่าน สมัยนั้นพูดในช่วงเวลาแบบนี้ว่า ถ้าพูดออกมา ลิ้นก็จะไหม้ ถ้าไม่พูด ไขกระดูกก็จะไหม้",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "อย่าบอกไอ้เอสกันดาร์เฮงซวยนะ ไม่งั้นเขาจะนั่งบรรยายให้เราฟังอีกชั่วโมง จนมื้อนี้กลายเป็นพิษงูสำหรับฉัน",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "ฝนไม่ตกขึ้นจากดินสู่ฟ้าหรอก",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "เขาบอกว่า \"ปีที่ดีจะรู้ได้จากฤดูใบไม้ผลิ\"",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "ฉันบอกว่าถ้านายเอาแต่นั่งอ่านบทกวีอยู่ที่นี่ ขนมปังมันก็ไม่อุ่นขึ้นมาให้นายหรอก",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04a/0060#4",
+   "where": "04a/0060",
+   "text": "– จบขั้นตอนสามของภารกิจ ที่นี่คือส่วนที่สำคัญที่สุด ...",
+   "q": "The speaker breaks off mid-sentence. Does the cut-off sound natural?",
+   "before": [
+    "– นั่นบ้านของดาวูด",
+    "ดาวูดเป็นเพื่อนของเขา พวกเขามักไปด้วยกันเสมอ ฉันชอบสีฟ้ามาก ในภาพวาดของฉัน ฉันมักวาดบ้านเราเป็นสีฟ้าเสมอ ฟ้าอ่อน มามันบอกว่าพระเจ้าอยู่บนท้องฟ้า ท้องฟ้าก็สีฟ้านี่ ประตูบ้านดาวูดฟ้าเข้มมาก กอเซมมักพูดอะไรเพิ่มอีก จากนั้นเราก็เดินต่อไปอีกนิด กอเซมมักพูดว่า:"
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +50,34 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "มือฉันสั้นและการได้พบเธอก็ไกลเกินเอื้อม",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1260#6",
+   "where": "04b/1260",
+   "text": "สองคนยืนบนน็อตล้อหลัง คนหนึ่งบนแร็ค คนหนึ่งบนแฮนด์ และอีกคนเกาะอยู่บนคานหน้า รวมคนที่ปั่นด้วยก็เป็นหกคนต่อจักรยานหนึ่งคัน",
+   "q": "Six boys ride on each bicycle. Does this read naturally?",
+   "before": [
+    "– มากสุดก็หกคน กูจัดการได้สามคน พวกมึงเอาคนละคน ตกลงไหม?",
+    "ภายใต้แรงกดของสายตาเนการ์ เราพยักหน้าตกลง ตากีเป็นนักสู้ตัวฉกาจ แต่ไม่ถึงขั้นรับมือสามคนพร้อมกัน จักรยานมาถึงเราและเด็กจากซอยฝั่งตรงข้ามก็กระโดดลงทีละคน ตากีนับผิด มีมากกว่าหกคนมาก"
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "อย่าบอกไอ้เอสกันดาร์เฮงซวยนะ ไม่งั้นเขาจะนั่งบรรยายให้เราฟังอีกชั่วโมง จนมื้อนี้กลายเป็นพิษงูสำหรับฉัน",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0355#3",
+   "where": "03/0355",
+   "text": "ในบ้านปลายลานบ้าน ข้างเตาผิง ฉันนอนคว่ำหน้าอยู่",
+   "q": "Amir lies beside a room heater (a small stove). Is 'เตาผิง' right for it?",
+   "before": [
+    "– งั้นก็เพื่อการรอคอยเพียงอย่างเดียว นั่งอยู่กับฉันอีกสักครู่",
+    "…อากาศไม่มีความเย็นกัด แต่หัวใจของฉันเผาไหม้ ตอนนี้ก็ยังเผาไหม้อยู่ การเผาไหม้จากการระลึกถึงช่วงเวลาแห่งการลาจากนั้น และบางทีการเผาไหม้จากการลืมสิ่งที่ฉันรู้สึกว่าไม่ควรลืม บางอย่างที่คล้ายกับความกระวนกระวาย ความกระวนกระวายที่ยืนอยู่หลังหมอก อนิจจา การลืม อนิจจา การที่จะลืม อนิจจา การถูกลืม"
+   ]
+  },
+  {
+   "id": "04b/0964#5",
+   "where": "04b/0964",
+   "text": "และในจินตนาการของฉัน ทุกวัน เวลาที่นิลูฟาร์กับซีนาเจอกัน พวกเขาจะจับมือกัน",
+   "q": "Is it clear that 'จับมือกัน' means a greeting handshake when they meet?",
+   "before": [
+    "…ฉันลืมตาขึ้นและเห็นไส้พุงของวอล์กแมนกระจัดกระจายอยู่บนพื้น ตากีมองทุกคนด้วยความโกรธ ตั้งแต่คืนนั้น เราก็ไม่มีอะไรให้ฟังอีก อีกครั้ง เหมือนกับช่วงก่อนที่จะมีวอล์กแมน หลังไฟในบ้านเนการ์ดับลง เราก็จะไปนั่งตรงนั้น บนขอบฟุตบาทริมถนนสายหลัก และเฝ้ามองรถยนต์ที่แล่นผ่าน",
+    "หลังจากวันนั้น นิลูฟาร์ก็ไม่ไปทางแผงของยาคูบกับสาวๆ คนอื่นในคลาสอีก เธอตรงดิ่งออกจากมหาวิทยาลัยเลย"
+   ]
   }
  ]
 }

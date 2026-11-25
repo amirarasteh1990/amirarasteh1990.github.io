@@ -1,178 +1,482 @@
 {
+ "format": 2,
  "lang": "lt",
  "slug": "lt",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Gimtosios kalbos patikra",
+  "lead": "Knygos skaityti nebūtina. Atsakykite į tiek klausimų, kiek norite.",
+  "persian_words": "Maman (motina), Baba (tėvas) ir -džan (brangusis) – persiški žodžiai, palikti knygoje.",
+  "page": "Puslapis",
+  "correct": "Teisinga",
+  "needs_change": "Reikia pakeisti",
+  "not_sure": "Sunku pasakyti",
+  "how_say": "Kaip jūs tai pasakytumėte?",
+  "meaning": "Ką, jūsų manymu, tai reiškia?",
+  "optional": "(nebūtina)",
+  "your_name": "Jūsų vardas",
+  "thanks_tick": "Įrašyti mano vardą į padėkų puslapį",
+  "private": "Jūsų atsakymus gauna tik autorius.",
+  "send": "Siųsti",
+  "send_continue": "Siųsti ir pereiti prie {n} puslapio",
+  "sending": "Siunčiama…",
+  "popup_title": "Ačiū!",
+  "popup_text": "Ar norėtumėte, kad jūsų vardas būtų svetainės padėkų puslapyje? Užpildykite visus 4 puslapius, ir mes jį mielai įrašysime.",
+  "popup_button": "Pereiti prie {n} puslapio",
+  "arrived": "Ačiū, jūsų atsakymai iš {n} puslapio gauti.",
+  "thanks_last": "Ačiū! Jūsų atsakymai gauti.",
+  "all_done": "Išsiuntėte visus puslapius. Ačiū už juos visus!",
+  "already_sent": "Šį puslapį iš šio įrenginio jau išsiuntėte. Ačiū!",
+  "continue_with": "Tęsti nuo {n} puslapio",
+  "need_one": "Pasirinkite atsakymą bent vienai eilutei.",
+  "note_no_answer": "Prie vienos eilutės yra pastaba: prašom pasirinkti atsakymą ir jai.",
+  "name_needed": "Įrašykite vardą, kurį norite matyti sąraše, arba nuimkite varnelę.",
+  "not_connected": "Siuntimas dar neprijungtas.",
+  "too_long": "Siuntimas užtruko per ilgai.",
+  "cannot_send": "Iš čia atsakymų išsiųsti nepavyko.",
+  "use_email": "Prašom pasinaudoti el. pašto mygtuku žemiau.",
+  "fallback": "Iš šio puslapio atsakymų išsiųsti nepavyko. Prašom juos atsiųsti el. paštu; niekas, ką įvedėte, neprarasta.",
+  "email_button": "Siųsti atsakymus el. paštu",
+  "shortened": "Kai kurios pastabos el. pašto nuorodai buvo per ilgos, todėl ten buvo sutrumpintos. Visi jūsų atsakymai pateikti žemiau; prašom juos įklijuoti į laišką.",
+  "noscript": "Siuntimui reikia JavaScript. Atsakymus taip pat galite atsiųsti adresu {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0422#1",
-   "where": "03/0422",
-   "text": "– Kas tau vėl negerai?",
-   "q": "Hooman, irritated, snaps at a roommate's odd question. Does it sound rude enough for him?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hūmanas suglamžė guminių saldainių pakuotę rankoje ir metė po lova. Iš po lovos paėmė Islamo minties vadovėlį ir padėjo ant čiužinio. Žiovavo ir tarė:"
+   "key": "crude",
+   "title": "Grubi kalba",
+   "q": "Čia veikėjai keikiasi arba kalba grubiai. Ar kiekviena eilutė skamba natūraliai?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Prakeiktas bus tas, kuris neigs Erelio Akis News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "– Ak, ko nori, Eskandarai? Kas, po velnių, tau negerai?",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Sakau, nematau, šikniau.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Jei tau nuspjaut į pasaulį ir viską jame — kodėl tiek apsėstas kontrolinių darbų ir egzaminų?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Atsakymas toks: laižyti subinę meistrui Hūmanui tau netinka.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "– Šikniau. Objektyviai, doleris tuoj pasieks penkiolika šimtų tomanų, o tu kabinėjiesi prie to vargšo?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "– Užsikrauk jau, šikniau.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– Ką keičia? Jei ateis McCainas, jis supis Iraną, objektyviai.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "– Kas tau vėl negerai?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Ugh, kas čia vėl per šūdina mąstytojo poza?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Kas nori vesti šūdų filosofinę diskusiją, gali eiti į virtuvę. Ten šviesa ir ryškesnė — galbūt jūsų smegenys įsižiebs.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Tu, nenaudėli ... hūūūūū ... taip nuleidęs galvą ... hūūūū ... kur taip greitai eini? ... hūūū ... man trūksta oro.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pff, kad tave kur. Dabar, kai tapai emigrantu, tau į mus nusispjaut. Tu užsienio garbintojau, parsidavėli.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Šita lokalizacijos politika mus išpiso. Sako, tai tam, kad vaikai liktų arčiau šeimų, bet kiekvienam iš mūsų, atvykusių iš provincijos, įkišo lazdą į užpakalį.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "– Šūdgalvi. Verti mane pražioti burną ir tai pasakyti.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Jei amžius tai, kas svarbu, tai turėtum laižyti Bahmanui kiaušus.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "– Tiek mokaisi, o galų gale, su mūsų šūdina sėkme, vis tiek taip nutinka.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– Aha, vos mus pamatę suveržia subines ir tiek nuo mūsų atsitraukia, kad norisi abiem kojom šokti jiems į veidus.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Eina šikt ta mūsų laimė.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "– Aš būčiau verčiau gyvenęs viename kambaryje su jais nei su tokiu bybiagalviu kaip tu.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "– ...kada tik ateidavau į paskaitas ar tos šūdinos antros specialybės reikalais, matydavau juos besiginčijant.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "– Tai tu dar ir sušiktas pirmakursis.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Juk štai aš, kurio darbas tapo lakstyti po elektros pastotes, – ką gi geriausio studento vardas ir, nežinau, antras diplomas pridėjo prie mano bybio ilgio?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "– O toj išknistoj padėtyje kokie senagaliai mums teko? Musė ir tas kitas fantazijų prisikūręs kvailys.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Tokie žudikiški manevrai kaip tik tavo stiliaus, bet man tikrai įdomu, kuris šūdžius buvo atidaręs parduotuvę šeštą valandą penktadienio rytą, kad galėtum nueiti ir nusipirkti iš jo fotoaparatą.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Net jo galvos nebūtum įstengęs suvalgyti. Bet, po velnių, kokie geri buvo tie saldumynai. Ananasiniai.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "– ...mus išpisė.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "– Jei Kamjaras nebūtų elgęsis kaip pasipūtęs mažas šūdžius ir būtų likęs bendrabuty, lova nebūtų atsilaisvinusi, kad šitie stebuklai mums atitektų.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "Mokinių šeimos taip pat pasiskundė, ir jį spyriu į užpakalį išmetė iš mokyklos.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Aš jų vietoje – nulis tai dar nieko, priversčiau tave suvalgyti mano bybio galvą, o paskui spyriu išmesčiau iš universiteto.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– Tai nori pasakyti, kad ši šūdina mūsų laimė, kai burtai krito mums ir davė tokią senieną kaip tu, vis kartojasi?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Šiandien kambaryje nesiginčykite, kūno kultūros gavau dvyliktuką, nervai man šūdini, išplūsiu jus.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "– Buvau nuėjęs nusiprausti veido. Negi galiu prausti veidą su akiniais, šikniau.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Būtų pakakę, kad elektros ir mechanikos dėstytojai prieš daugelį metų nebūtų užsigeidę iš Laivų statybos fakulteto atimti Abu-Rejhano pastato – ir Faridui nebūtų taip nutikę.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "– Sakau tau, Seni-džan, bet tarp mūsų kalbant, į užsienį patekai per suknistą atsitiktinumą.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "– Seni, užuot taip drybsojęs ant lovos ir žaidęs su savo kiaušais, kelkis ir siųsk. Proga aukso vertės.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "– Na, jeigu tu ne tas žmogus, kuris kreiptųsi ir išvažiuotų, kam tada plėšei sau šikną laikydamas TOEFL egzaminą?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "– Seni, pažiūrėk, kiek toli nuėjai: Faridas, kuriam nusispjaut į mus, į kambarį, į visus, ir tas prabilo.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Koks šūdas dabar darosi tavo smegenyse?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Sušikai visą nuotaiką, kurią gavau iš dainos, su tuo savo šūdinu balsu.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "– Subinlaižiavimas tau nepritinka.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Na ir kad ir kaip, po velnių.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "– Žiūrėk, kokios košės privirei, kvaišagalvi.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– Ieškau savo akinių, šikniau. O tam Faridui pasakyk, kad nustotų vis statyti stiklinę man po kojomis.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0390#2",
-   "where": "03/0390",
-   "text": "– Sakau, nematau, šikniau.",
-   "q": "Sajad crudely tells Farid he cannot see without glasses. Does 'šikniau' work as an insult between friends?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Pabaiga. Žiūrėk pabaigą. Matai, kaip greitai sprunka. Ir voro namą sudraskė į šipulius. Ne veltui pavadinau jį Dokumentinis filmas apie tarakoną, sugriovusį voro namą."
-   ]
-  },
-  {
-   "id": "03/0394#3",
-   "where": "03/0394",
-   "text": "Arba esi bybiagal... tiesa, tu ir taip buvai bybiagalvis, o dabar tapai dar didesniu bybiagalviu.",
-   "q": "Hooman coins a crude insult, dick-brained, and corrects himself mid-word. Does it sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Staiga užsikirtai ties šiuo klausimu. Yra kelios galimybės. Arba kur nors susitrenkei galvą."
-   ]
-  },
-  {
-   "id": "04b/0784#4",
-   "where": "04b/0784",
-   "text": "– Labai tu paslaptingas.",
-   "q": "Niloofar teases Amir for secretly overhearing her talk. Does this sound like her playful teasing?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– Va, vėl pasakė „žinau“. Iš kur, tiksliai?",
-    "– Šiandien fakulteto viduryje tu su keliomis kitomis merginomis kalbėjaisi. Aš girdėjau."
-   ]
-  },
-  {
-   "id": "04b/1314#5",
-   "where": "04b/1314",
-   "text": "– Trisdešimt du mėnesius jus myliu. Iš tolo. Jums nežinant.",
-   "q": "A shy student confesses his love to a classmate, addressing her politely. Does that sound right here?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Nuėjau ir po platanu kitoje Valiasro gatvės šaligatvio pusėje stovėjau laukdamas, kol Nilūfar atsiskirs nuo kitų, kad galėčiau žengti į priekį ir akis į akį pasakyti jai, kad ją myliu."
-   ]
-  },
-  {
-   "id": "03/0244#6",
-   "where": "03/0244",
-   "text": "– ... Solomono žiedo neimčiau už nieką, ant kurio kartais ranka ...",
-   "q": "Amir reads a line by the classical poet Hafez, cut off mid-sentence. Does it read as classical poetry?",
-   "ctx": 0,
-   "kind": "poetry"
-  },
-  {
-   "id": "04a/0026#7",
-   "where": "04a/0026",
-   "text": "– Pirmojo misijos etapo pradžia. Batalionas, kairėn pasisukti!",
-   "q": "A boy playing soldier orders his little brothers to turn left. Does it sound like a child copying army commands?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Eidavome į gatvelę. Pirma reikėdavo nueiti iki gatvelės pradžios. Ghassemas visada sakydavo:"
-   ]
-  },
-  {
-   "id": "04a/0034#8",
-   "where": "04a/0034",
-   "text": "– Druska kenkia sveikatai.",
-   "q": "Maman tells her little son that salt is bad for him. Does it sound like a mother talking?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Tą kartą Maman pasakė:"
-   ]
-  },
-  {
-   "id": "04a/0062#9",
-   "where": "04a/0062",
-   "text": "– Daugelis čia pralaimia. Jie eina į kairę.",
-   "q": "A ten-year-old says many people go wrong here by turning left. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Šios dalies niekada neišmokau. Jis visada sakydavo svarbiausia... kažkas... misijoje. Tada visada sakydavo:"
-   ]
-  },
-  {
-   "id": "04a/0024#10",
-   "where": "04a/0024",
-   "text": "– Batalionas, pirmyn žygiuoti!",
-   "q": "A boy playing soldier gives orders to his little brothers. Does it sound like a child copying the army?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Pirma truputį pastovėdavome svetainėje. Ghassemas visada ką nors sakydavo. Tada visada sakydavo:"
-   ]
-  },
-  {
-   "id": "03/0055#11",
-   "where": "03/0055",
-   "text": "– Aš taip ir kalbu paprastai. Jūs manote, kad deklamuoju eilėraščius.",
-   "q": "Hamid answers in the rhythm he uses for his poems. Does it sound rhythmic, a bit like verse?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hamidas tarė tuo pačiu ritmu, kuriuo deklamuodavo eilėraščius:"
-   ]
-  },
-  {
-   "id": "04b/0935#12",
-   "where": "04b/0935",
-   "text": "– „Saldžiau Atarui verkti iki aušros“ ar „dabar jis dar labiau nužudytas“?",
-   "q": "Someone asks which song he means, quoting two lines of a classical poem by Attar. Do they read naturally?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "– Mano telefone nėra vietos.",
-    "– Nori, kad atsiųsčiau vieną takelį?",
-    "– Taip, tą, kuris su Ataro eilėmis."
-   ]
-  },
-  {
-   "id": "02/0001#13",
-   "where": "02/0001",
-   "text": "Mano širdyje šviesu: rytoj, kai atidarysiu akis, viskas bus baigta ir tamsa vėl grįš į mano sapnus.",
-   "q": "The narrator feels sure of what tomorrow brings. Does 'Mano širdyje šviesu' read naturally here?",
-   "ctx": 0,
-   "kind": "poetry"
-  },
-  {
-   "id": "04a/0001#14",
-   "where": "04a/0001",
-   "text": "Pažiūrėjau pro skylę užuolaidos viduryje. Maman prisipildė šviesos.",
-   "q": "A small boy watches his mother through a hole in a curtain. Does it sound like a small child telling it?",
-   "ctx": 0,
-   "kind": "child"
-  },
-  {
-   "id": "01/0090#15",
-   "where": "01/0090",
-   "text": "– Ne. Aš vargšė – niekada nieko nesakau, visada tyliu. Tik žiūriu ir valgau sielvartą.",
-   "q": "Maman complains, half joking, that she always keeps quiet and suffers. Does it sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Tu jam nieko nesakei."
-   ]
-  },
-  {
-   "id": "04b/0562#16",
-   "where": "04b/0562",
-   "text": "– Erelio Aki, kad Dievas tau neatleistų, trenkei ir sutriuškinai man nugarą. Na kodėl tu nenešioji akinių?",
-   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Eskandaras balsu, rodančiu, kad kvapas vos beateina, tarė:"
+   "key": "natural",
+   "title": "Ar skamba natūraliai?",
+   "q": "Ar kiekviena eilutė skamba natūraliai ir aiškiai?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Čia žemė padaryta iš vandens, o dangus – iš žemės. Tai reiškia, kad vietoj lietaus iš dangaus krenta žemė.",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "– Tai pagalvok, ką mūsų vargšas Baba turi iškęsti – sėdi be darbo namuose visus šiuos metus.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "– Taip, mūsų Baba-džan tikrai alksta pagarbos.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Bet pateko pas ne tuos žmones – mes sudaužėme visą tą pagarbą.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– Ir dar labiau.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "– Tai išgerkime šią arbatą Erelio Akis News sveikatai.",
+     "note": null
+    },
+    {
+     "id": "03/0278#natur",
+     "text": "Karubis — tai meilė, tikra tiesa.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Ar dar nebaigėte to, dėl ko atėjote?",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "– Aš esu ekstremalus nacionalistinis anarchistas.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Aaach. Net šiurpas nukrėtė.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "– Leopardas Faridas net pats nežino, ko nori. Vieną akimirką išdarinėja žudikiškus triukus; kitą jau sako: „Oi, kraujas. Net šiurpas nukrėtė.“",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Kur ant mano kaklo parašyta „atrama kojai“?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Kad tave kur, šimtą septyniasdešimt metrų vilkai mane su šiuo kūnu paskui save.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objektyviai, vien dėl to, kad atvykom keliomis dienomis vėliau, tie Teherano vaikai, kurie patys į Amirkabirą įstojo tik lokalizacijos dėka, elgiasi taip, lyg per kvotą įstojom mes, o ne jie, objektyviai.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "– Žmogau, su šituo taip mandagiai nekalbėk, dar į galvą jam kils.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– Aha. Nesileisk šito Arastės apgaunamas; koks jis kvanktelėjęs, o Konkure užėmė septyniasdešimt ketvirtą vietą.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "Prieš metus ar du iš „Erelio Akis News“ girdėjau, kad tas pižonas irgi išvažiavo į Australiją, lyg ir paskui merginą, kurią abu mylėjote.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "– Žinau, kvaiša juk nesu, bet taip negali būti. Turi išeiti iš to savo prieglobsčio ir iš tikrųjų kažką padaryti, o ne ateiti čia, sėdėti ir svajoti.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– Mane taip erzina, kai šitaip tyliai sėdi. Norisi tave kumščiu trinktelėti.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Niekieno kambary kilimo nėra, Baba-džan, tik mes turim kilimą, ir tai todėl, kad esam elito kambarys.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "– Leoparde Faridai, suvaldyk nervus ir nedaryk žudikiško manevro.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "– Parašiau savo paties teorijas apie kvantinę fiziką, o mūsų kvailas dėstytojas paėmė ir davė man ketvirtį balo.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Erelio Aki, kad Dievas tau neatleistų, trenkei ir sutriuškinai man nugarą. Na kodėl tu nenešioji akinių?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "– Erelio Aki, Musę jau Dievas primušė, tai bent tu jo nemušk. Dėl savo motinos, nevaikščiok po kambarį be akinių.",
+     "note": null
+    },
+    {
+     "id": "04b/0593#natur",
+     "text": "– Sukalbėkit palaiminimą. Smuklės Seniūnas pagaliau prabilo.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektyviai, jeigu prigis, susivynios visa ta bankų ir panašaus brudo virtuvė.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Svarbu, kad kaskart, kai nueinu į prekybos centrą, sumoku pinigus, nusiperku pieną ir pyragą ir sukišu į pilvą.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Gerai, Erelio Aki, gerai. Tik nekišk savo akinių į nešiojamąjį.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Jei Musė būtų čia, jam dabar pasišiauštų ūseliai dėl to, kas čia per daiktas, duodantis tokį pelną.",
+     "note": null
+    },
+    {
+     "id": "04b/0736#natur",
+     "text": "– Na, kai sėdžiu fakultete, kitų studentų pokalbiuose ieškau tavo vardo. Vos nuskamba tavo vardas, man pasiaštrina ausys.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ai, kad galėčiau vieną dieną tas tavo ausis nagais pradurti, kad nebepasiaštrintų.",
+     "note": null
+    },
+    {
+     "id": "04b/0784#natur",
+     "text": "– Labai tu paslaptingas.",
+     "note": null
+    },
+    {
+     "id": "04b/1320#natur",
+     "text": "Ir drebančiomis rankomis greitai greitai varčiau gazeles, ieškodamas Hafezo beito, nuo kurio – kaip, anot tos kitos merginos, nuo to paveikslo – kuo giliau į jį panyrame, tuo šūdiniau mums sukasi galva, kad galėčiau parodyti jį Nilūfar.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amirai, ir Senelis užsikrėtė Covid, bet lyg niekur nieko — jis tai išgyveno kaip paprastą peršalimą.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "– Ooohhhh. Aš buvau tas, kuris jai tai pasakė. Nini pamatė, kad tai gera frazė, ir perdavė ją tau.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Atiduočiau už tave viską, Nini-džan — kaip gerai tavo galva veikia.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Šiame žiemos šaltyje, iš kur atskrido dainuojantys paukščiai? Vėl esu savo paties vaizduotės belaisvis.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

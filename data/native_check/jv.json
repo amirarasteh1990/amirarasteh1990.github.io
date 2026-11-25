@@ -2,16 +2,16 @@
  "lang": "jv",
  "slug": "jv",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Aku saka sisih iki, mbukak lawe tembung, lan kowe saka sisih kana, ngumpulaké.",
-   "q": "The writer unravels a thread of words; you gather them. Does this read naturally?",
+   "id": "04b/1003#4",
+   "where": "04b/1003",
+   "text": "– Deloken kembang apik sing kok buwang ing banyu, utek taik.",
+   "q": "Someone scolds a friend for a blunder. Is the meaning clear?",
    "before": [
-    "Pambuka",
-    "…wektu ing buku iki wis kliwat. Wektu lan gambar-gambar sing bakal ilang ing gumrengé jagad sing ribut yen ora dicathet ing kene. Dicathet supaya dadi kreteg antarane jagadku lan jagadmu. Kreteg saka jagadku, ing wektu aku nulis ukara-ukara iki, tumuju jagadmu, ing wektu kowe njagong kanggo macané."
+    "– Kowe uga Rashid.",
+    "Eskandar madhep aku, sirah lan dhadhané dicedhakaké marang aku. Mripaté digawe amba, lan karo swara kasar, tanpa ilang nada Alain Delon-é, kandha:"
    ]
   },
   {
@@ -25,56 +25,6 @@
    ]
   },
   {
-   "id": "03/0176#3",
-   "where": "03/0176",
-   "text": "Taghi wis nyolong lima tomat saka toko woh-wohane Amu Badiollah. Siji wis dipangan, lan sisané dibuwang ing tengah dalan.",
-   "q": "Is it clear Taghi ate one tomato and the boys threw the rest?",
-   "before": [
-    "Kelepasan saka cangkemku:",
-    "– Tegesé luwih sugih tinimbang kancané sedulur misané ..."
-   ]
-  },
-  {
-   "id": "04b/1003#4",
-   "where": "04b/1003",
-   "text": "– Deloken kembang apik sing kok buwang ing banyu, utek taik.",
-   "q": "Someone scolds a friend for a blunder. Is the meaning clear?",
-   "before": [
-    "– Kowe uga Rashid.",
-    "Eskandar madhep aku, sirah lan dhadhané dicedhakaké marang aku. Mripaté digawe amba, lan karo swara kasar, tanpa ilang nada Alain Delon-é, kandha:"
-   ]
-  },
-  {
-   "id": "04b/1150#5",
-   "where": "04b/1150",
-   "text": "Deloken, karpèt sing ayu ngene dikencingi taik.",
-   "q": "Is 'dikencingi taik' a natural way to say he defecated on the carpet?",
-   "before": [
-    "…nahan luwih saka telung taun, dina kuwi tiba luwih kenceng ing rainé Eskandar. Nalika mlayu, sikilé Farid ngidak bukuné Eskandar, sampul korané suwèk. Pojok judhul dawa bukuné katon: \"Sepuluh Èwu ... Kaéraman, Ngerti ... Af... Kanggo ...\". Rong telung bengi Farid ora bali kamar. Eskandar kandha:",
-    "– Kadal cilik kuwi nglanggar hukum fisika uga. Mlayu luwih cepet saka cahya, yèn ora, tak gantung saka bokongé. Ya wis, kandhaa, bajingan bodho, nèk kowe ora mikir irungku, paling ora mikir karpèt sing ayu ngene."
-   ]
-  },
-  {
-   "id": "06/0201#6",
-   "where": "06/0201",
-   "text": "Pratingkah nasibipun jaman kados mekaten menika ingkang taksih ndamel kula gadhah pangajeng-ajeng dhateng masa depan.",
-   "q": "Is it clear the speaker means the games fate plays?",
-   "before": [
-    "Dhèwèké ngguyu lan ngendika:",
-    "– Menarik, menarik sanget. Wonten tiyang Iran ingkang mriki nyambut damel ing papan ingkang rumiyin nate dados pusat panaliten nuklir."
-   ]
-  },
-  {
-   "id": "06/0294#7",
-   "where": "06/0294",
-   "text": "Maman, isih separo ngantuk, kandha marang kita, kandhaa waé marang dhèwèké: waca waé meteranmu terus lungaa, apa urusanmu nganggo pira dhuwité kita?",
-   "q": "Is it clear Maman means how much electricity they used?",
-   "before": [
-    "Mahboubeh kandha:",
-    "– Lucu banget. Oh iya, rong telung minggu kepungkur, wektu petugas listrik teka arep maca meteran, Baba mangkat mbukak lawang, swarané petugas kuwi keprungu, kandha: penggunaanipun kathah, Haaj Agha."
-   ]
-  },
-  {
    "id": "03/0430#8",
    "where": "03/0430",
    "text": "karo cara ngomongmu sing kaya kontol kuwi, jenengmu kudune Alain Kontolon.",
@@ -82,6 +32,51 @@
    "before": [
     "Hooman kandha:",
     "– Kowe,"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Udan ora tiba munggah saka lemah menyang langit.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Tanganku cendhak lan ketemumu adoh.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Maksudku, yèn kowe mung lungguh ing kéné waca puisi terus, ora ana roti sing bakal dadi anget kanggo kowe.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibi, muga Gusti ngapura dosané, biyèn ngomong ing wektu kaya ngéné: yèn tak omong, ilatku kobong; yèn ora tak omong, sungsumé balungku kobong.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Kandhané, \"Taun sing apik ketara wiwit mangsa semi-é.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Aku saka sisih iki, mbukak lawe tembung, lan kowe saka sisih kana, ngumpulaké.",
+   "q": "The writer unravels a thread of words; you gather them. Does this read naturally?",
+   "before": [
+    "Pambuka",
+    "…wektu ing buku iki wis kliwat. Wektu lan gambar-gambar sing bakal ilang ing gumrengé jagad sing ribut yen ora dicathet ing kene. Dicathet supaya dadi kreteg antarane jagadku lan jagadmu. Kreteg saka jagadku, ing wektu aku nulis ukara-ukara iki, tumuju jagadmu, ing wektu kowe njagong kanggo macané."
    ]
   }
  ]

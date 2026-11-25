@@ -2,38 +2,8 @@
  "lang": "hi",
  "slug": "hi",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "ऐसे क्षण और चित्र जो संसार की घटनाओं के ज्वरग्रस्त कोलाहल में खो जाते, यदि यहाँ लिख न लिए जाते। लिख लिए गए, ताकि मेरे संसार और तुम्हारे संसार के बीच एक सेतु बन सकें।",
-   "q": "Do these two sentences read naturally?",
-   "before": [
-    "प्रारंभ",
-    "…छायाप्रतिमा शेष है। सब चुप हो गए हैं। सारी ध्वनियाँ, और शायद वह सारा संसार भी, और उसके सारे लोग। हो सकता है कि जिस मन ने इन ध्वनियों को कागज़ पर उतारा था, वह बहुत समय से साँस नहीं ले रहा। जैसे यह क्षण — जो इस वाक्य को पढ़ते हुए बीत गया — गुज़र चुका है, वैसे ही इस पुस्तक के सभी क्षण बीत चुके हैं।"
-   ]
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "अब मैं शब्दों का धागा खोलता हूँ — तुम उसे थाम लो और अपने संसार में ले जाओ, ताकि यहाँ, मेरे संसार में, वह इकट्ठा न हो जाए।",
-   "q": "The reader takes the words into their world. Do 'उसे' and 'वह' fit?",
-   "before": [
-    "प्रारंभ",
-    "…हूँ, और उस ओर से तुम उसे समेटते जाओ। जैसे बचपन में मामान पुराने कपड़ों की ऊन उधेड़ती थीं, और हम उसका धागा पकड़कर घर भर में घूमते थे ताकि ऊन इकट्ठी न हो जाए। शायद तुम्हारी पीढ़ी उस ऊन की दुनिया से कुछ साल देर से आई हो — लेकिन कल्पना करो: एक समय था, संसार के किसी कोने में, जब बच्चे ऐसे ही खेलते थे।"
-   ]
-  },
-  {
-   "id": "04b/0951#3",
-   "where": "04b/0951",
-   "text": "– हमारे बहनोई के उस्ताद कारीगर के चचाज़ाद के दोस्त ने, जो तेहरान का सबसे अमीर आदमी है, बताया था।",
-   "q": "Is 'उस्ताद कारीगर' clear as the master craftsman their brother-in-law works for?",
-   "before": [
-    "– मुझे वापस दे दो। जैसे इसे पता है कि वो तार वाले कैसे काम करते हैं।",
-    "तक़ी ने हमीद का हाथ हवा में पकड़ लिया और वॉकमैन बचा लिया। मगर यासर को फिर भी कुछ मुक्के और लातें नसीब हुईं। हमीद ने कहा:"
-   ]
-  },
   {
    "id": "04b/1312#4",
    "where": "04b/1312",
@@ -52,6 +22,106 @@
    "before": [
     "– हाँ, हामून तुम्हारे लिए अच्छा नाम है। फ़िल्म के हामून की तरह, तुम भी सवालों से भरे हो। बेचैनी और परेशानी के मंबा हो — मेरे लिए, ख़ुद के लिए नहीं।",
     "हूमन ने कहा:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "ज़मीन से आसमान की ओर बारिश नहीं होती।",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "मेरा हाथ छोटा है और तेरा विसाल दूर।",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "ग़म मत खाओ, मेरे होशियार बेटे।",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "मैं कह रही हूँ कि यूँ सिर्फ़ यहाँ बैठकर शेर पढ़ते रहने से तुम्हारी रोटी गरम नहीं होगी।",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "बीबी, खुदा उन्हें माफ़ करे, ऐसे वक्त पर कहती थीं: कहूँ तो ज़बान जले; न कहूँ तो हड्डी का मग़ज़ जले।",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "कहता है, \"साल का हाल बसंत से पता चल जाता है।\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "बोली, मेरा दिल सड़ रहा है।",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "हँसते हुए हूमन मेरी पीठ पर ज़ोर से हाथ मारता है और मिश्री का टुकड़ा मेरे गले में उछल जाता है।",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "उस नामुराद इस्कंदर को मत बताना, वरना फिर एक घंटा बैठकर नसीहत देगा और खाना मेरे लिए साँप का ज़हर हो जाएगा।",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0951#3",
+   "where": "04b/0951",
+   "text": "– हमारे बहनोई के उस्ताद कारीगर के चचाज़ाद के दोस्त ने, जो तेहरान का सबसे अमीर आदमी है, बताया था।",
+   "q": "Is 'उस्ताद कारीगर' clear as the master craftsman their brother-in-law works for?",
+   "before": [
+    "– मुझे वापस दे दो। जैसे इसे पता है कि वो तार वाले कैसे काम करते हैं।",
+    "तक़ी ने हमीद का हाथ हवा में पकड़ लिया और वॉकमैन बचा लिया। मगर यासर को फिर भी कुछ मुक्के और लातें नसीब हुईं। हमीद ने कहा:"
+   ]
+  },
+  {
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "मैं तो ख़ानदान के ज़बरदस्ती मुर्ग़ियों में डालने के बाद ही समझा कि कहानी का वो रुख़ कितनी मुख़्तलिफ़ दुनिया है।",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "ऐसे क्षण और चित्र जो संसार की घटनाओं के ज्वरग्रस्त कोलाहल में खो जाते, यदि यहाँ लिख न लिए जाते। लिख लिए गए, ताकि मेरे संसार और तुम्हारे संसार के बीच एक सेतु बन सकें।",
+   "q": "Do these two sentences read naturally?",
+   "before": [
+    "प्रारंभ",
+    "…छायाप्रतिमा शेष है। सब चुप हो गए हैं। सारी ध्वनियाँ, और शायद वह सारा संसार भी, और उसके सारे लोग। हो सकता है कि जिस मन ने इन ध्वनियों को कागज़ पर उतारा था, वह बहुत समय से साँस नहीं ले रहा। जैसे यह क्षण — जो इस वाक्य को पढ़ते हुए बीत गया — गुज़र चुका है, वैसे ही इस पुस्तक के सभी क्षण बीत चुके हैं।"
+   ]
+  },
+  {
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "अब मैं शब्दों का धागा खोलता हूँ — तुम उसे थाम लो और अपने संसार में ले जाओ, ताकि यहाँ, मेरे संसार में, वह इकट्ठा न हो जाए।",
+   "q": "The reader takes the words into their world. Do 'उसे' and 'वह' fit?",
+   "before": [
+    "प्रारंभ",
+    "…हूँ, और उस ओर से तुम उसे समेटते जाओ। जैसे बचपन में मामान पुराने कपड़ों की ऊन उधेड़ती थीं, और हम उसका धागा पकड़कर घर भर में घूमते थे ताकि ऊन इकट्ठी न हो जाए। शायद तुम्हारी पीढ़ी उस ऊन की दुनिया से कुछ साल देर से आई हो — लेकिन कल्पना करो: एक समय था, संसार के किसी कोने में, जब बच्चे ऐसे ही खेलते थे।"
    ]
   }
  ]

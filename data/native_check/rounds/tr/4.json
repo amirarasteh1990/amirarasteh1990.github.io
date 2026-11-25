@@ -1,181 +1,502 @@
 {
+ "format": 2,
  "lang": "tr",
  "slug": "tr",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Ana dil kontrolü",
+  "lead": "Kitabı okumuş olmanız gerekmiyor. İstediğiniz kadarını yanıtlayın.",
+  "persian_words": "Maman (anne), Baba (baba) ve -jan (canım), kitapta korunan Farsça kelimelerdir.",
+  "page": "Sayfa",
+  "correct": "Doğru",
+  "needs_change": "Değişmeli",
+  "not_sure": "Emin değilim",
+  "how_say": "Siz nasıl söylerdiniz?",
+  "meaning": "Sizce ne anlama geliyor?",
+  "optional": "(isteğe bağlı)",
+  "your_name": "Adınız",
+  "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
+  "private": "Yanıtlarınız yalnızca yazara gider.",
+  "send": "Gönder",
+  "send_continue": "Gönder ve {n}. sayfaya geç",
+  "sending": "Gönderiliyor…",
+  "popup_title": "Teşekkürler!",
+  "popup_text": "Adınızın web sitesindeki Teşekkürler sayfasında yer almasını ister misiniz? 4 sayfanın hepsini bitirin, memnuniyetle ekleriz.",
+  "popup_button": "{n}. sayfaya geç",
+  "arrived": "Teşekkürler, {n}. sayfadaki yanıtlarınız ulaştı.",
+  "thanks_last": "Teşekkürler! Yanıtlarınız ulaştı.",
+  "all_done": "Bütün sayfaları gönderdiniz. Hepsi için teşekkürler!",
+  "already_sent": "Bu sayfayı bu cihazdan zaten gönderdiniz. Teşekkürler!",
+  "continue_with": "{n}. sayfayla devam et",
+  "need_one": "En az bir satır için bir yanıt seçin.",
+  "note_no_answer": "Bir satırda not var: lütfen o satır için de bir yanıt seçin.",
+  "name_needed": "Listelenmesini istediğiniz adı yazın ya da kutudaki işareti kaldırın.",
+  "not_connected": "Gönderme henüz bağlı değil.",
+  "too_long": "Gönderme çok uzun sürdü.",
+  "cannot_send": "Yanıtlar buradan gönderilemedi.",
+  "use_email": "Lütfen aşağıdaki e-posta düğmesini kullanın.",
+  "fallback": "Yanıtlar bu sayfadan gönderilemedi. Lütfen onları e-postayla gönderin; girdiğiniz hiçbir şey kaybolmadı.",
+  "email_button": "Yanıtları e-postayla gönder",
+  "shortened": "Bazı notlar e-posta bağlantısı için çok uzundu ve orada kısaltıldı. Yanıtlarınızın tamamı aşağıda; lütfen onları e-postaya yapıştırın.",
+  "noscript": "Göndermek için JavaScript gerekiyor. Yanıtlarınızı {email} adresine e-postayla da gönderebilirsiniz."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "04b/0690#1",
-   "where": "04b/0690",
-   "text": "Şu kadarı yeterdi: elektrik ve makine hocaları nice yıl önce Ebu-Reyhan binasını gemi inşaatı fakültesinden almaya kafayı takmasalardı, Farid de o hale gelmezdi.",
-   "q": "Hooman crudely blames professors who lusted after a building for a friend's death. Does it sound as crude as he would say it?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04a/0062#2",
-   "where": "04a/0062",
-   "text": "Çoğu kişi burada yenilir. Sola giderler.",
-   "q": "A boy of about ten warns his little brothers of a wrong turn in their game. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Burasını öğrenemedim. Görevin en önemli... bir şeyi, derdi. Sonra derdi ki:"
+   "key": "crude",
+   "title": "Kaba konuşma",
+   "q": "Burada karakterler küfrediyor ya da kaba konuşuyor. Her satır doğal geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "Kartal Göz News'i inkâr edene lanet olsun.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "Off, ne istiyorsun Eskandar? Ne haltın var senin?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "Hiçbir isim sana yakışmıyor, lanet olası.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "Sana diyorum göremiyorum, göt herif.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "Dünya da içindeki her şey de sikinde değilken, neden quiz ve sınavlarla bu kadar uğraşıyorsun?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "Yanıt şu: Usta Hooman'ın götünü yalamak sana yakışmıyor.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "Göt herif. Objektif olarak, dolar 1500 tümene gidiyor; sen hâlâ o zavallıya takılıp kaldın mı?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "Yüklen artık, göt herif.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "Ne farkı olurmuş? McCain gelirse İran'ın ağzına sıçar, objektif olarak.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "Yine ne haltın var senin?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "Üf, yine ne diye o boktan düşünür pozuna girdin?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "Felsefi bok muhabbeti yapmak isteyen mutfağa gidebilir. Oradaki ampul daha parlak; beyinleriniz de aydınlanır.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "Seni pofyoz herif... huuuuu... başını öne eğmiş öyle... huuuu... bu hızla nereye gidiyorsun...",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "Pfff, ağzına sıçayım. Yurt dışına yerleştin, artık bizi sikine takmıyorsun. Yabancı hayranı satılmış.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Bu yerelleştirme politikası bizi sikti. Çocuklar ailelerinin yanında kalsın diye, taşralı olan hepimizin götüne sopayı soktular.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "Bok beyinli. Ağzımı açtırıyorsun.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "Yaşa bakacak olursak Bahman'ın toplarını yalamalısın.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "Bunca ders çalışıyorsun, sonunda da o boktan şansımızla yine böyle oluyor.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "Evet, bizi gördükleri an götlerini sıkıp uzak duruyorlar, o kadar ki yüzlerine iki ayağımla birden dalmak istiyorum.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "Sıçayım bu şansımıza.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "Ben, senin gibi sik beyinli biriyle kalacağıma onlarla aynı odada kalmayı tercih ederdim.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "O boktan ikinci bölümün dersleri ve işleri için her geldiğimde, hep tartışıyorlardı.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "Demek birinci sınıf sümüklüsüsün.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Hangi eski günler, Doktor? Sikeyim o günleri ve o düşünce biçimimizi.",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "Hem o berbat günlerde bize ne antikalar düştü? Sinek ve hayal dünyasında yaşayan o öteki sefil herifçioğlu.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "Bu ölümcül hareketler tam senlik, ama gerçekten şunu merak ediyorum: hangi piç cuma sabahı saat altıda dükkânını açmış da sen gidip ondan kamera almışsın?",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "Başını bile yiyemezdin. Ama ne tatlılardı ya.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "sikildik.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "Kamyar kendini bir bok sanmasaydı da yurtta kalsaydı, yatak boşalmaz, bu acayip mahluklar da bize düşmezdi.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "Facebook paylaşımından anladığım kadarıyla kendi şehirlerindeki liselerden birinde fizik öğretmeni olmuş, o hayal dünyasında yaşayan herif de kitaptaki konular yerine kendi teorilerini ders olarak anlatıyormuş.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Ben olsam sıfır vermek ne kelime, sikimin başını yedirir, sonra da bir tekmeyle üniversiteden atardım seni.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "Yani bizim, kurada senin gibi bir antika çıkan şu boktan şansımızın hep tekrarlanacağını mı söylüyorsun?",
+     "note": null
+    },
+    {
+     "id": "04b/0494#crude",
+     "text": "Yine o lanet süreksizliğe varıyoruz.",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "Bugün odada tartışmayın, beden eğitiminden on iki aldım, sinirlerim bok gibi, küfrederim size.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "Yüzümü yıkamaya gitmiştim. Gözlüğün üstünden yıkayamam ki yüzümü, göt herif.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Şu kadarı yeterdi: elektrik ve makine hocaları nice yıl önce Ebu-Reyhan binasını gemi inşaatı fakültesinden almaya kafayı takmasalardı, Farid de o hale gelmezdi.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "Diyorum sana Eldie-jan, ama aramızda kalsın, tam bir göt şansıyla gittin yurt dışına ha.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "Eldie, böyle yatağa serilip taşaklarınla oynayacağına, kalk gönder. Fırsat bu fırsat.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "E sen başvurup gidecek adam değilsin, niye kıçını yırtıp TOEFL sınavına girdin ki?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "Eldie, bak işi nereye vardırdın: bizi, odayı, herkesi sikine takmayan Farid bile konuştu.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "Yine kafanda ne haltlar dönüyor?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "O boktan sesinle, şarkıdan aldığım hissi sıçıp batırdın.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "Göt yalamak sana yakışmıyor.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "Her ne haltsa artık.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "Bak ne biçim bir çuval inciri berbat ettin, beyni sıçmış.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "Gözlüğümü arıyorum, göt herif. Şu Farid'e söyle, bardağını sürekli ayaklarımın önüne koymasın.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0090#3",
-   "where": "01/0090",
-   "text": "Zavallı olan benim; hiçbir şey söylemem, hep susarım. Yalnızca seyreder, keder yerim.",
-   "q": "Maman says she suffers in silence; 'keder yerim' is a Persian image for grieving. Does it work here?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "– Ona hiçbir şey söylemedin.",
-    "– Hayır."
-   ]
-  },
-  {
-   "id": "04b/0536#4",
-   "where": "04b/0536",
-   "text": "Vaaay. Hımm, ülkeler mutlaka birbirine yakınmış. Bam depremi ne zamandı?",
-   "q": "Maman, watching news of a huge wave abroad, tries to make sense of it. Does this sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman dedi ki:"
-   ]
-  },
-  {
-   "id": "01/0248#5",
-   "where": "01/0248",
-   "text": "Yeniden şiir mi yazıyorsun?",
-   "q": "Maman notices her son is writing poems again. Does this sound natural?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman der ki:"
-   ]
-  },
-  {
-   "id": "03/0297#6",
-   "where": "03/0297",
-   "text": "Yaptıklarının hepsi geçici çözüm.",
-   "q": "Maman tells her husband that all he ever does is patch things up. Does this sound natural?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "– Ama böyle olmaz; okul için nüfus cüzdanlarındaki soyadlarından “a”yı çıkarıp diğer daireler için tekrar takıp duruyorsun.",
-    "– Sana ne bunlardan. Ben ne yaptığımı bilirim."
-   ]
-  },
-  {
-   "id": "03/0079#7",
-   "where": "03/0079",
-   "text": "Daha da fazlası.",
-   "q": "Hooman answers a mock curse with a kind of amen, 'and then some'. Does his reply make sense here?",
-   "ctx": 2,
-   "kind": "banter",
-   "before": [
-    "– Kartal Göz News'i inkâr edene lanet olsun.",
-    "Hooman dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0624#8",
-   "where": "03/0624",
-   "text": "Süper, Tavernanın Ulu Yaşlısı. Arasteh için biçilmiş kaftan.",
-   "q": "Farid gives Amir the nickname Elder of the Tavern, from a line of Hafez. Does the nickname sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0392#9",
-   "where": "03/0392",
-   "text": "Dünya da içindeki her şey de sikinde değilken, neden quiz ve sınavlarla bu kadar uğraşıyorsun?",
-   "q": "Eskandar crudely needles a roommate. Does this sound like how young men in a dorm talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Yatakta yan yatıyordum; Hooman ile Eskandar görüş alanımdaydı ama onları seyretmiyordum. Eskandar yaklaşık bir saat boyunca mırıldandıktan sonra Hooman'a dönerek dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/0935#10",
-   "where": "04b/0935",
-   "text": "“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?",
-   "q": "Two lines of a poem by Attar are used as the names of songs. Do they read as poetry?",
-   "ctx": 1,
-   "kind": "poetry",
-   "before": [
-    "– Evet, şu Attar'ın şiiriyle olanı."
-   ]
-  },
-  {
-   "id": "06/0118#11",
-   "where": "06/0118",
-   "text": "Eskiler hep derdi, sözün masrafı yok — havadan ibaret.",
-   "q": "Maman quotes an old saying that talk costs nothing. Does it sound like a saying she would really use?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Hmm, Ghassem sırf konuşmuş olmak için konuşuyor."
-   ]
-  },
-  {
-   "id": "06/0033#12",
-   "where": "06/0033",
-   "text": "Hmm, o zaman ben de diyorum ki benim de içim daralıyor. Bırakın da arkadaşlarımı görmeye gideyim.",
-   "q": "Maman, a mother from a small town, says she feels low and wants to visit her friends. Does it sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman der ki:"
-   ]
-  },
-  {
-   "id": "06/0044#13",
-   "where": "06/0044",
-   "text": "Nana-pesar-jan, yediklerine gerçekten dikkat et. Sana kuvvet verecek şeyler ye.",
-   "q": "Maman urges her son abroad to eat well. Does it sound like a mother talking?",
-   "ctx": 0,
-   "kind": "maman"
-  },
-  {
-   "id": "04b/0164#14",
-   "where": "04b/0164",
-   "text": "Sıçayım bu şansımıza.",
-   "q": "A young man, in pain, curses their bad luck crudely. Does this sound like a natural curse?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman içini çekip yüzünü Farid'den çevirdi. Gözü Eskandar'a ilişti ve eski bir yaraya batan iğne gibi acı bir sesle bağırdı:"
-   ]
-  },
-  {
-   "id": "04b/0899#15",
-   "where": "04b/0899",
-   "text": "Be sik başı yiyen, niye saçma sapan konuşuyorsun?",
-   "q": "Hooman crudely insults a dorm-mate who is talking nonsense. Does this sound like how a young man would swear?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0394#16",
-   "where": "03/0394",
-   "text": "Ya sik kaf... tabii zaten sik kafalıydın, şimdi daha da sik kafalı oldun.",
-   "q": "Hooman coins a crude insult meaning dick-brained and stumbles over it for effect. Does the joke work?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Birden bu soruya takılıvermişsin. Birkaç ihtimal var. Ya başını bir yere çarptın."
+   "key": "natural",
+   "title": "Doğal geliyor mu?",
+   "q": "Her satır doğal ve anlaşılır geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0140#natur",
+     "text": "O zaman düşün, sevgili Baba'mız bütün bu yıllarda evde aylak oturarak neler çekiyordur.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "Evet, Baba-jan'ımız saygıya gerçekten aç.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Evet, Baba saygıya gerçekten aç. Ama yanlış insanların eline düştü — saygı adına ne varsa paramparça ettik.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "Daha da fazlası.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "O zaman bu çayı Kartal Göz News'in sağlığına içelim.",
+     "note": null
+    },
+    {
+     "id": "03/0083#natur",
+     "text": "Şimdiye kadar Babil Kulesi'nden ilham aldıklarını sanıyordum.",
+     "note": null
+    },
+    {
+     "id": "03/0278#natur",
+     "text": "Bir bakıma üniversiteyi fethettiklerini söyleyebilirsin. Kerrubi aşktır, dürüstçe söylemek gerekirse.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "Bu hafta hiç vaktim yok. Gelecek hafta Perşembe saat üçte, geçen görüştüğümüz yerde.",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "Ben aşırılıkçı, milliyetçi bir anarşistim.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "Ahhh. İçim ürperdi.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "Pars Farid kendisiyle bile kaç kaç olduğunu bilmiyor.",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "Boynumun neresinde “ayak yeri” yazıyor?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Ağzına sıçayım, bu cüsseyle beni yüz yetmiş metre peşinden sürükledin.",
+     "note": null
+    },
+    {
+     "id": "04a/0048#natur",
+     "text": "Yaşlılıktan, komşu.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "Objektif olarak, sırf birkaç gün geç geldik diye, sadece yerelleştirme sayesinde AmirKabir'e girebilen bu Tahranlı çocuklar, sanki onlar değil de biz kontenjanla girmişiz gibi davranıyorlar, objektif olarak.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "Be adam, bununla böyle kibar konuşma, şımarır. Bunca Konkur deneme testi çözdük, sonunda bu antikayla aynı odaya düştük.",
+     "note": null
+    },
+    {
+     "id": "04b/0173#natur",
+     "text": "O zaman çok zeki çocuklarsınız demek.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "Evet. Şu Arasteh'e bakma, bütün saçmalığına rağmen Konkur sıralaması yetmiş dörttü.",
+     "note": null
+    },
+    {
+     "id": "04b/0193#natur",
+     "text": "Demek ondan. Daha önce halılı bir oda görmemiştim.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "Biliyorum, aptal değilim. Ama böyle olmaz.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "Böyle sessizce oturduğunda o kadar sinirleniyor ki içim... Yumruklamak istiyorum seni.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "Hiçbir odanın halısı yok, Baba-jan. Halısı olan tek biziz, o da seçkin oda olduğumuz için.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "Pars Farid, sinirlerine hâkim ol ve ölümcül bir hareket yapma.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "Hepsi de felsefe ve roman. Süper, Nietzsche de var. Ben Nietzsche'ye bayılırım.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "Kuantum fiziği üzerine kendi teorilerimi yazdım, o salak hocamız da kalkmış bana çeyrek puan vermiş.",
+     "note": null
+    },
+    {
+     "id": "04b/0554#natur",
+     "text": "İsfend ayının başı ne biçim sınav zamanı?",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "Kartal Göz, Allah seni affetmesin, belimi paramparça ettin. Niye gözlük takmıyorsun yahu?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "Annenin canı için, gözlüksüz dolaşma odada.",
+     "note": null
+    },
+    {
+     "id": "04b/0593#natur",
+     "text": "Bir salavat getirin. Tavernanın Ulu Yaşlısı sonunda bir laf etti.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektif olarak, eğer tutarsa bankaların ve bütün o işlerin tası tarağı toplanır.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Bunun nesi iyi? Mühim olan şu: ne zaman süpermarkete gitsem, para verir, sütümü ve kekimi alır, bedenime indiririm.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "Tamam Kartal Göz, tamam be. Şimdi de gözlüğünü dizüstüne sokma.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "Sinek burada olsaydı, böyle kâr veren bu şeyin ne olduğuna antenleri sivrilirdi şimdi.",
+     "note": null
+    },
+    {
+     "id": "04b/1099#natur",
+     "text": "Yarığın bir yanında yıllardır taşıdığım inançlarımın sınırlarının ve kutsallığının ağırlığı çöküyor, öbür yanında ise Niloofar duruyordu.",
+     "note": null
+    },
+    {
+     "id": "04b/1119#natur",
+     "text": "Siz de benim kendi çocuklarım gibisiniz.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "Belki böyle olmaz, mümkün değil, hayalîdir ve gerçek değil dersiniz. Ama oldu ve sizi gerçekten seviyorum.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "Aaayyyy. Onu ona ben söylemiştim. Nini iyi bir söz olduğunu görüp sana aktarmış.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "Sana kurban olayım Nini-jan – o aklın ne güzel işliyor.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Yüreğim aydın: yarın gözlerimi açtığımda her şey bitmiş olacak ve karanlık rüyalarıma geri dönecek.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

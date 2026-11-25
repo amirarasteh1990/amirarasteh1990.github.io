@@ -1,123 +1,453 @@
 {
+ "format": 2,
  "lang": "it",
  "slug": "it",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisione madrelingua",
+  "lead": "Non serve aver letto il libro. Rispondi a quante domande vuoi.",
+  "persian_words": "Maman (madre), Baba (padre) e -jan (caro) sono parole persiane, mantenute nel libro.",
+  "page": "Pagina",
+  "correct": "Corretto",
+  "needs_change": "Da cambiare",
+  "not_sure": "Non so",
+  "how_say": "Come lo diresti?",
+  "meaning": "Secondo te, che cosa significa?",
+  "optional": "(facoltativo)",
+  "your_name": "Il tuo nome",
+  "thanks_tick": "Inserisci il mio nome nella pagina dei ringraziamenti",
+  "private": "Le tue risposte arrivano solo all'autore.",
+  "send": "Invia",
+  "send_continue": "Invia e vai alla pagina {n}",
+  "sending": "Invio in corso…",
+  "popup_title": "Grazie!",
+  "popup_text": "Vuoi il tuo nome nella pagina dei ringraziamenti del sito? Completa tutte e 4 le pagine e lo aggiungeremo volentieri.",
+  "popup_button": "Vai alla pagina {n}",
+  "arrived": "Grazie, le tue risposte della pagina {n} sono arrivate.",
+  "thanks_last": "Grazie! Le tue risposte sono arrivate.",
+  "all_done": "Hai inviato tutte le pagine. Grazie per ognuna!",
+  "already_sent": "Hai già inviato questa pagina da questo dispositivo. Grazie!",
+  "continue_with": "Continua con la pagina {n}",
+  "need_one": "Scegli una risposta per almeno una riga.",
+  "note_no_answer": "Una riga ha una nota: scegli, per favore, una risposta anche per quella.",
+  "name_needed": "Aggiungi il nome che vuoi vedere nell'elenco, oppure togli la spunta.",
+  "not_connected": "L'invio non è ancora attivo.",
+  "too_long": "L'invio ha richiesto troppo tempo.",
+  "cannot_send": "Non è stato possibile inviare le risposte da qui.",
+  "use_email": "Usa, per favore, il pulsante email qui sotto.",
+  "fallback": "Non è stato possibile inviare le risposte da questa pagina. Inviale per email; niente di ciò che hai scritto è andato perso.",
+  "email_button": "Invia le risposte per email",
+  "shortened": "Alcune note erano troppo lunghe per un link email e lì sono state accorciate. Le tue risposte complete sono qui sotto: incollale nell'email, per favore.",
+  "noscript": "Per inviare serve JavaScript. Puoi anche mandare le tue risposte via email a {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Come da bambini, quando Maman disfaceva i vecchi vestiti di lana e noi prendevamo il filo e giravamo per casa perché la lana non si ammucchiasse.",
-   "q": "Children walk around the house holding yarn as Maman unravels old woollens. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Vai anche fuori. Vai dove non c'è gente.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Oh, che bello. Mm-hm, ordini e te la portano. Ma Amir-jan, non stare sempre a casa."
+   "key": "slips",
+   "title": "Parole pronunciate male",
+   "q": "Nel libro la madre pronuncia male alcune parole straniere. Ti sembrano errori di pronuncia credibili?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "congelatole",
+     "note": "= congelatore"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroca",
+     "note": "= America"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublanza",
+     "note": "= ambulanza"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "buldòzel",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "03/0191#3",
-   "where": "03/0191",
-   "text": "Hamid Gatto, fino a ieri dicevi ciuco. Adesso sei civilizzato e dici asino?",
-   "q": "Taghi teases Hamid for using the polite word for donkey instead of his usual crude one. Does the joke work?",
-   "ctx": 3,
-   "before": [
-    "– Pfff, asino, chi lo sa meglio, l'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, o tu, vitello? Va bene, vai a comprartene una. Quando il vetro si rompe, non dire che non te l'avevo detto.",
-    "Taghi disse:",
-    "– Oh-ho."
+   "key": "images",
+   "title": "Modi di dire persiani",
+   "q": "Alcuni modi di dire e immagini persiane sono tradotti alla lettera. Ognuno ti dà un'idea del suo significato, o non ti dice niente?",
+   "labels": [
+    "Lo intuisco",
+    "Non ci arrivo",
+    "Non so"
+   ],
+   "note_label": "Secondo te, che cosa significa?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "La pioggia non cade dalla terra verso il cielo.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Un buon anno si riconosce dalla sua primavera.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Non mangiare il dolore",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "Il mio cuore sta marcendo.",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "La mia mano è corta e l'unione con te è lontana.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "se lo dico, mi brucia la lingua; se non lo dico, mi brucia il midollo delle ossa",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "il pasto mi diventa veleno di serpente",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "non si scalderà nessun pane per te",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "la mia famiglia mi ha cacciato a forza in mezzo alle galline",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "la zolletta di zucchero mi salta in gola",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "sbircia in ogni cantuccio",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "le parole non costano niente — sono vento",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "di sicuro sarebbe caduto dagli occhi di Negar",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Solo una promessa per il tempo del raccolto?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "lascia che ti stenda le interiora dell'amicizia su un vassoio",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "gli sono caduti tutti i peli del corpo",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "non scaldarti così, il latte ti si secca",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "nessuno ti chiama muto se non scoreggi",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Mangia la testa del mio cazzo",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Mangiateste di cazzo",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "ridere delle nostre barbe e dei nostri cazzi",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "non te ne saresti andato in giro per le strade così, con l'uccello in mano",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "qualsiasi cazzo ci cada in testa",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0278#4",
-   "where": "03/0278",
-   "text": "Karroubi è amore, a onor del vero.",
-   "q": "Farid gushes about a politician in slang. Does 'a onor del vero' sound natural here?",
-   "ctx": 1,
-   "before": [
-    "– Ehi, Taverny, corri. Corri, andiamo. Dicono che non hanno lasciato entrare Karroubi all'università. I suoi sostenitori hanno sfondato il cancello Hafez e sono entrati. In un certo senso si potrebbe dire che hanno conquistato l'università."
+   "key": "children",
+   "title": "Parole dei bambini",
+   "q": "Nel libro alcuni bambini sbagliano le parole, come fanno i bambini piccoli. Ognuna suona come un errore da bambino, non come un refuso?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "È pietra di malmo. Malmo vuol dire molto costoso.",
+     "note": "malmo = marmo"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Si chiama Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, me la compli quella bambola così glande?",
+     "note": "una bambina"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Sì, te la complo.",
+     "note": "suo padre la imita"
+    }
    ]
   },
   {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "– E tu, con quel tuo modo di parlare del cazzo, avresti dovuto chiamarti Alain Cazzon.",
-   "q": "'Alain Cazzon' is meant as a rude pun on the actor Alain Delon. Would Italian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#6",
-   "where": "04a/0076",
-   "text": "– È pietra di malmo. Malmo vuol dire molto costoso.",
-   "q": "A small boy says 'malmo' for marmo and wrongly thinks it means very expensive, both on purpose. Does it sound childlike?",
-   "ctx": 1,
-   "before": [
-    "Andavamo avanti di nuovo. A metà strada c'era una casa. Il muro era bello. Ghassem diceva:"
+   "key": "nicknames",
+   "title": "Soprannomi",
+   "q": "Nel libro gli amici si danno soprannomi scherzosi, spesso giocando con le parole. Ognuno funziona come soprannome in italiano?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Cazzon",
+     "note": "soprannome di uno degli amici: il nome dell'attore Alain Delon, con una parte trasformata in una parola volgare per il pene"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Anziano della Taverna",
+     "note": "titolo solenne per scherzo, preso dalla poesia di Hafez"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Eldie",
+     "note": "vezzeggiativo di «Anziano della Taverna»"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, Tavino mio",
+     "note": "vezzeggiativi formati da «taverna»"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Farid Leopardo",
+     "note": "per un amico audace e spericolato"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Arasteh è un Araasteh sfrondato?",
+     "note": "araasteh = «ordinato» in persiano"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "Sua Signoria la signorina Armaaan",
+     "note": "il cognome Arman, allungato per scherno"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Schrödinger dai capelli ricci",
+     "note": "titolo scherzoso per chi non riesce a decidersi"
+    }
    ]
   },
   {
-   "id": "04b/1263#7",
-   "where": "04b/1263",
-   "text": "– Vruuum, Baba, Baba, me la compli quella bambola così glande?",
-   "q": "On the street, a stranger's little girl says 'glande' for grande, as toddlers do. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…ma non faceva abbastanza luce per guidarmi. Una lampada lampeggiante in mano a una ragazza di cui non seppi mai in quale punto della scatola delle matite colorate collocare il colore della porta di casa loro. Una bambina arriva facendo «vrum vrum» e si ferma accanto a me. Guarda i giocattoli. Dice:"
+   "key": "jokes",
+   "title": "Battute e giochi di parole",
+   "q": "Queste righe contengono una battuta o un gioco di parole. Ognuna funziona in italiano?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "È la sua impostazione di fabbrica.",
+     "note": "combinare guai è semplicemente nella sua natura"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Sei perdonato. Tutto questo viale è tuo.",
+     "note": "in persiano «perdonare» significa anche «regalare»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "fino a ieri dicevi ciuco. Adesso sei civilizzato e dici asino?",
+     "note": "si prende in giro un ragazzo passato a una parola più educata"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir a pir? … Occhio d'Aquila dice peer to peer; Taverny dice Eldie a Eldie.",
+     "note": "sente «peer» come il persiano pir, «anziano», la radice del suo soprannome"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Stanotte sentivo il rumore della tua ruminazione.",
+     "note": "masticare di notte, come una mucca che rumina"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Che diavolo ti ha preso adesso, a rizzartelo contro di noi, Alain Cazzon?",
+     "note": "doppio senso: rizzarsi con fierezza, e l'erezione"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Che — aiolo non era?",
+     "note": "la madre coglie solo la fine di «donnaiolo»"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "L'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran",
+     "note": "la solita vanteria di un ragazzo"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "O sei una testa di ca... be', una testa di cazzo lo eri già, adesso lo sei ancora di più.",
+     "note": "l'insulto viene troncato, poi peggiorato"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Sì, abbiamo tutti una fabbrica. … Abbiamo una fabbrica di stronzate.",
+     "note": "producono solo stronzate: dicono solo sciocchezze"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "fossile, sei tu stesso la statua della stupidità e della decadenza",
+     "note": "un insulto beffardo"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "la vita assomiglia a una banconota da mille toman: da qualunque lato la guardi, odora di riso alle lenticchie.",
+     "note": "una battuta assurda"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Io parlo così e basta; voi mi sentite e pensate che io stia recitando poesie.",
+     "note": "un ragazzo risponde con un ritmo cantilenante"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Attento a non incrinarti, signor Cazzon.",
+     "note": "ha appena gonfiato il petto"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Sei il più bue di tutti.",
+     "note": "«bue» = uno sciocco ottuso, detto a un uomo"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "si divertiva sempre un mondo a infilare due volte la parola «consapevole» in quella frase.",
+     "note": "«consapevole» usato due volte, per gioco"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "il difetto è nel ricevitore; il trasmettitore non può risolverlo.",
+     "note": "la vista debole dell'amico è il «ricevitore»"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Intendo Alain Cazzon. Caaazzon.",
+     "note": "la parte volgare del gioco di parole, allungata"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Se tu sei Hooman, allora io sono Susan.",
+     "note": "il nome gentile Hooman non si addice a un uomo così peloso"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "La derivata? Il significato? O il significato della derivata? O la derivata del significato?",
+     "note": "gioco di parole falsamente profondo"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Se Dio vuole, che tu possa essere sempre araasteh.",
+     "note": "una benedizione che gioca sul cognome Arasteh; araasteh = «ordinato»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Senza occhiali non vedo niente, oggettivamente.",
+     "note": "l'intercalare del personaggio, usato ovunque"
+    }
    ]
   },
   {
-   "id": "04b/1265#8",
-   "where": "04b/1265",
-   "text": "– Sì, te la complo.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vruuum, Baba, Baba, me la compli quella bambola così glande?",
-    "Una voce dietro di me dice:"
-   ]
-  },
-  {
-   "id": "04b/1312#9",
-   "where": "04b/1312",
-   "text": "Ti viene un capogiro del cazzo. Più ci pensi, più ti viene un capogiro del cazzo.",
-   "q": "A student jokes crudely about a famous painting. Does 'capogiro del cazzo' sound natural?",
-   "ctx": 1,
-   "before": [
-    "– ... Guardate quant'è davvero stimolante. Lui ha disegnato questo e sotto ci ha scritto: questa non è una pipa."
-   ]
-  },
-  {
-   "id": "04b/1320#10",
-   "where": "04b/1320",
-   "text": "E con le mani tremanti sfogliavo in fretta i ghazal per trovare un beit di Hafez che, come il dipinto di cui parlava quell'altra ragazza, ci facesse venire un capogiro del cazzo sempre più forte quanto più vi sprofondavamo. Volevo mostrarlo a Niloofar.",
-   "q": "A nervous young man searches Hafez's poems, recalling what a girl said about a painting. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#11",
-   "where": "04b/1321",
-   "text": "«Quel vino là è proprio reale niente affatto una metafora.»",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#12",
-   "where": "04b/1321",
-   "text": "Come quello: più pensi a queste dieci parole, più ti viene un capogiro del ca... cioè, più ti gira la testa.",
-   "q": "A nervous young man nearly swears, then corrects himself. Does this sound natural?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#13",
-   "where": "06/0056",
-   "text": "Con il buldòzel hanno rovesciato la terra su di lei.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Italian speaker say bulldozer as 'buldòzel'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Un verso di Hafez",
+   "q": "Questo verso del poeta Hafez è scritto senza virgola, quindi si può leggere in due modi opposti:",
+   "labels": [
+    "Sì, in entrambi",
+    "In un modo solo",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Quel vino là è proprio reale niente affatto una metafora.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Un modo: il vino è reale, non una metafora.",
+    "L'altro modo: il vino non è reale, è solo una metafora."
+   ],
+   "after_q": "La versione italiana si può leggere in entrambi i modi?"
   }
- ]
+ ],
+ "first": 1
 }

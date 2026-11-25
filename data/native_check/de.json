@@ -1,116 +1,453 @@
 {
+ "format": 2,
  "lang": "de",
  "slug": "de",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Muttersprachen-Check",
+  "lead": "Du musst das Buch nicht gelesen haben. Beantworte so viele, wie du magst.",
+  "persian_words": "Maman (Mutter), Baba (Vater) und -jan (lieb) sind persische Wörter, die das Buch beibehält.",
+  "page": "Seite",
+  "correct": "Stimmt",
+  "needs_change": "Änderung nötig",
+  "not_sure": "Nicht sicher",
+  "how_say": "Wie würdest du es sagen?",
+  "meaning": "Was glaubst du, was es bedeutet?",
+  "optional": "(optional)",
+  "your_name": "Dein Name",
+  "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
+  "private": "Deine Antworten gehen nur an den Autor.",
+  "send": "Senden",
+  "send_continue": "Senden und weiter zu Seite {n}",
+  "sending": "Wird gesendet…",
+  "popup_title": "Danke!",
+  "popup_text": "Möchtest du deinen Namen auf der Danke-Seite der Website? Mach alle 4 Seiten fertig, dann tragen wir ihn gern ein.",
+  "popup_button": "Weiter zu Seite {n}",
+  "arrived": "Danke, deine Antworten von Seite {n} sind angekommen.",
+  "thanks_last": "Danke! Deine Antworten sind angekommen.",
+  "all_done": "Du hast alle Seiten gesendet. Danke für jede einzelne!",
+  "already_sent": "Du hast diese Seite von diesem Gerät aus schon gesendet. Danke!",
+  "continue_with": "Weiter mit Seite {n}",
+  "need_one": "Wähle bei mindestens einer Zeile eine Antwort.",
+  "note_no_answer": "Bei einer Zeile steht eine Anmerkung: Bitte wähle dafür auch eine Antwort.",
+  "name_needed": "Gib den Namen ein, der genannt werden soll, oder nimm das Häkchen weg.",
+  "not_connected": "Das Senden ist noch nicht eingerichtet.",
+  "too_long": "Das Senden hat zu lange gedauert.",
+  "cannot_send": "Die Antworten konnten von hier aus nicht gesendet werden.",
+  "use_email": "Bitte nutze den E-Mail-Button unten.",
+  "fallback": "Die Antworten konnten von dieser Seite aus nicht gesendet werden. Bitte schick sie stattdessen per E-Mail; nichts von dem, was du eingegeben hast, geht verloren.",
+  "email_button": "Antworten per E-Mail senden",
+  "shortened": "Einige Anmerkungen waren für einen E-Mail-Link zu lang und wurden dort gekürzt. Deine vollständigen Antworten stehen unten; bitte füge sie in die E-Mail ein.",
+  "noscript": "Zum Senden wird JavaScript benötigt. Du kannst deine Antworten auch per E-Mail an {email} schicken."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
-   "q": "From the opening page. Do these lines read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Wie damals in der Kindheit, wenn Maman das Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte.",
-   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#3",
-   "where": "Opening/0007",
-   "text": "Jetzt wickle ich den Faden der Wörter ab, und du hebst sie auf und trägst sie in deine eigene Welt, damit sie sich hier, in meiner Welt, nicht aufhäufen.",
-   "q": "You take the words with you. Does this sentence read naturally?",
-   "ctx": 1,
-   "before": [
-    "…Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte. Vielleicht kam deine Generation ein paar Jahre nach jener Welt aus Garn, aber stell dir vor: Einst, irgendwo auf der Welt, spielten Kinder auf diese Weise."
+   "key": "slips",
+   "title": "Falsch ausgesprochene Wörter",
+   "q": "Die Mutter im Buch spricht einige Fremdwörter falsch aus. Klingen diese wie glaubhafte Aussprachefehler?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "Gefrierschrunk",
+     "note": "= Gefrierschrank"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "Ambulanze",
+     "note": "= Ambulanz"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "Bulldozel",
+     "note": "= Bulldozer"
+    }
    ]
   },
   {
-   "id": "01/0148#4",
-   "where": "01/0148",
-   "text": "– Die was und Lächeln?",
-   "q": "Maman catches only the end of the title 'Tränen und Lächeln'. Does her puzzled reply sound natural?",
-   "ctx": 2,
-   "before": [
-    "– Kinder, soll ich Tränen und Lächeln herunterladen, damit wir es heute Abend anschauen?",
-    "Maman dreht den Kopf und sagt:"
+   "key": "images",
+   "title": "Persische Redensarten",
+   "q": "Einige persische Redensarten und Bilder sind Wort für Wort übersetzt. Gibt dir jede davon eine Ahnung ihrer Bedeutung, oder sagt sie dir gar nichts?",
+   "labels": [
+    "Kann ich erraten",
+    "Kann ich nicht",
+    "Nicht sicher"
+   ],
+   "note_label": "Was glaubst du, was es bedeutet?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Der Regen fällt nicht von der Erde zum Himmel.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "An seinem Frühling erkennt man ein gutes Jahr.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Iss keinen Kummer",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mein Herz fault",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Meine Hand ist kurz und die Vereinigung mit dir ist fern.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "Sage ich es, verbrennt mir die Zunge; sage ich es nicht, verbrennt mir das Mark in den Knochen",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "wird mir das Essen zu Schlangengift",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "wird dir kein Brot warm",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "meine Familie mich mit Gewalt unter die Hühner gesteckt hatte",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "der Zuckerwürfel springt mir in den Hals",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "schau in jeden letzten Winkel",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "Worte kosten nichts – das ist nur heiße Luft",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "würde er sicher aus Negars Augen fallen",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Nur ein Erntezeitversprechen?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "will ich dir die Eingeweide der Freundschaft auf einem Tablett servieren",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "denen sind glatt sämtliche Körperhaare ausgefallen",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "reg dich nicht so auf, deine Milch versiegt noch",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "niemand nennt dich stumm, wenn du nicht furzt",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Friss den Kopf meines Schwanzes",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Du Schwanzkopffresser",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "lachst über unsere Bärte und Schwänze",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "so mit dem Schwanz in der Hand durch die Straßen schlendern",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "welcher Schwanz uns auch auf den Kopf fällt",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "– Oho, Hamid Katze, bis gestern hast du noch „Esel“ gesagt. Jetzt bist du plötzlich so fein und sagst „Grautier“?",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?",
-   "ctx": 2,
-   "before": [
-    "– Na, Grautier, wer weiß es besser, der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, oder du, du Kalb? Na gut, geh und kauf dir eins. Wenn sein Glas bricht, sag nicht, ich hätte es dir nicht gesagt.",
-    "Taghi sagte:"
+   "key": "children",
+   "title": "Kinderwörter",
+   "q": "Einige Kinder im Buch sagen Wörter falsch, so wie kleine Kinder das tun. Klingt jedes davon nach einem Kinderfehler und nicht nach einem Tippfehler?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Das ist Marmelstein. Marmel bedeutet richtig teuer.",
+     "note": "Marmel = Marmor"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Er heißt Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, mia die goße Puppe kaufen?",
+     "note": "ein kleines Mädchen"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Ja, ich kauf dia die goße Puppe.",
+     "note": "ihr Vater macht sie nach"
+    }
    ]
   },
   {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "Und bei deiner pimmeligen Art zu reden hättest du Alain Pimmelon heißen müssen.",
-   "q": "'Alain Pimmelon' is meant as a rude pun on the actor Alain Delon. Would German readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#7",
-   "where": "04a/0076",
-   "text": "– Das ist Marmelstein. Marmel bedeutet richtig teuer.",
-   "q": "Both mistakes are intended: little Ghassem says 'Marmel' for Marmor and thinks it means expensive. Does it sound like a child?",
-   "ctx": 1,
-   "before": [
-    "Wir gingen wieder weiter. Auf halbem Weg war ein Haus. Die Mauer war hübsch. Ghassem sagte immer:"
+   "key": "nicknames",
+   "title": "Spitznamen",
+   "q": "Die Freunde im Buch geben einander verspielte Spitznamen, oft als Wortspiel. Funktioniert jeder davon als Spitzname in deiner Sprache?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Pimmelon",
+     "note": "ein Spitzname für einen der Freunde: der Name des Schauspielers Alain Delon, ein Teil davon verdreht zu „Pimmel“"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Ältester der Schenke",
+     "note": "ein spöttisch-feierlicher Titel aus der Dichtung von Hafez"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Äldi",
+     "note": "Koseform von „Ältester der Schenke“"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Schenki, mein Schenkchen",
+     "note": "Koseformen von „Schenke“"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard-Farid",
+     "note": "für einen draufgängerischen, leichtsinnigen Freund"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Ist Arasteh ein gestutztes Araasteh?",
+     "note": "araasteh = persisch für „ordentlich“"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "der gnädigen Frau Armaaan",
+     "note": "der Nachname Arman, spöttisch in die Länge gezogen"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Schrödinger unserer Zeit mit dem Lockenkopf",
+     "note": "ein spöttischer Titel für jemanden, der sich nicht entscheiden kann"
+    }
    ]
   },
   {
-   "id": "04b/1263#8",
-   "where": "04b/1263",
-   "text": "– Vroooom – Baba, Baba, mia die goße Puppe kaufen?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…hell genug war, um mir den Weg zu weisen. Eine blinkende Lampe in der Hand eines Mädchens, dessen Türfarbe ich nie kannte, die ich nie in einer Buntstift-Schachtel hätte finden können. Ein kleines Mädchen kommt sausend herangebraust und bleibt neben mir stehen. Es schaut die Spielzeuge an. Es sagt:"
+   "key": "jokes",
+   "title": "Witze und Wortspiele",
+   "q": "In diesen Zeilen steckt ein Witz oder ein Wortspiel. Funktioniert jede davon in deiner Sprache?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "So ist sein System eben gebaut.",
+     "note": "Dinge zu vermasseln liegt einfach in seiner Natur"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Vergeben. Der ganze Boulevard gehört dir.",
+     "note": "im Persischen heißt „vergeben“ auch „weggeben“"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "bis gestern hast du noch „Esel“ gesagt. Jetzt bist du plötzlich so fein und sagst „Grautier“?",
+     "note": "ein Junge wird aufgezogen, weil er zu einem feineren Wort gewechselt hat"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir zu Pir? … Adlerauge sagt Peer-to-Peer; Schenki sagt Äldi-zu-Äldi.",
+     "note": "er hört „Peer“ als das persische Pir, „Ältester“, die Wurzel seines Spitznamens"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Gestern Nacht konnte ich dich kauen hören.",
+     "note": "nachts kauen, wie eine Kuh, die wiederkäut"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Was ist schon wieder mit dir los, dass du dich vor uns aufrichtest, Alain Pimmelon?",
+     "note": "Doppelsinn: sich stolz aufrichten, und eine Erektion"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Was war er nicht — held?",
+     "note": "die Mutter versteht nur das Ende von „Frauenheld“"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist",
+     "note": "die ständige Angeberei eines Jungen"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Oder du bist Hirnf... na ja, du warst schon immer ein Hirnf..., jetzt bist du noch mehr Hirnf...",
+     "note": "die Beleidigung wird abgebrochen und dann noch gesteigert"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Ja, Mensch, wir alle haben Fabriken. … Wir haben eine Fabrik für Scheißgelaber.",
+     "note": "sie produzieren nur Scheißgelaber: sie reden bloß Unsinn"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "Du Fossil, du selbst bist die Statue von Dummheit und Verfall",
+     "note": "eine spöttische Beleidigung"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "Das Leben ist meiner Meinung nach wie ein Tausend-Toman-Schein: Von welcher Seite man ihn auch betrachtet, er riecht nach Linsenreis.",
+     "note": "ein absurder Spruch"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "So rede ich eben; ihr hört mich reden und denkt, es sei ein Gedicht.",
+     "note": "ein Junge antwortet in einem Singsang-Rhythmus"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Pass auf, dass du nicht brichst, Herr Pimmel.",
+     "note": "er hat sich gerade in die Brust geworfen"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Du bist die größte Kuh von allen.",
+     "note": "„Kuh“ = ein dummer Trottel, zu einem Mann gesagt"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "es bereitete ihm immer großes Vergnügen, das Wort „gewahr“ in diesem Satz zweimal unterzubringen.",
+     "note": "„gewahr“ zweimal, aus Spaß"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "das Problem liegt am Empfänger; der Sender kann es nicht lösen.",
+     "note": "die schlechten Augen des Freundes sind der „Empfänger“"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Ich meine Alain Pimmelon. Piiimmel.",
+     "note": "der derbe Teil des Wortspiels, in die Länge gezogen"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Wenn du Hooman bist, dann bin ich Susan.",
+     "note": "der sanfte Name Hooman passt nicht zu einem so behaarten Mann"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Die Ableitung? Den Sinn? Oder den Sinn der Ableitung? Oder die Ableitung des Sinns?",
+     "note": "pseudotiefsinniges Wortspiel"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "So Gott will, mögest du immer araasteh sein.",
+     "note": "ein Segenswunsch mit Wortspiel auf den Nachnamen Arasteh; araasteh = „ordentlich“"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Objektiv, ohne Brille sehe ich gar nichts.",
+     "note": "das Lieblingswort der Figur, überall eingestreut"
+    }
    ]
   },
   {
-   "id": "04b/1265#9",
-   "where": "04b/1265",
-   "text": "– Ja, ich kauf dia die goße Puppe. Wenn ich Geld habe, kauf ich dia eine noch bessere, Babas Mädchen.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vroooom – Baba, Baba, mia die goße Puppe kaufen?",
-    "Eine Stimme kommt von hinter mir:"
-   ]
-  },
-  {
-   "id": "04b/1312#10",
-   "where": "04b/1312",
-   "text": "Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.",
-   "q": "A student swears about a baffling painting. Does 'scheißschwindlig' sound natural?",
-   "ctx": 1,
-   "before": [
-    "– ... Schaut, wie wirklich zum Nachdenken anregend das ist. Er hat das gezeichnet und darunter geschrieben: Das ist keine Pfeife."
-   ]
-  },
-  {
-   "id": "04b/1321#11",
-   "where": "04b/1321",
-   "text": "„Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.“",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#12",
-   "where": "06/0056",
-   "text": "Mit dem Bulldozel schütteten sie Erde über sie. Erde und Kalk.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly German speaker say Bulldozer as 'Bulldozel'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Eine Zeile von Hafez",
+   "q": "Diese Zeile des Dichters Hafez steht ohne Komma da und lässt sich deshalb auf zwei gegensätzliche Arten lesen:",
+   "labels": [
+    "Ja, auf beide",
+    "Nur auf eine",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Nur eine Metapher ist jener Wein dort nicht reine Wirklichkeit.",
+     "note": null
+    }
+   ],
+   "after": [
+    "So gelesen: Der Wein ist Wirklichkeit, keine Metapher.",
+    "Anders gelesen: Der Wein ist keine Wirklichkeit, nur eine Metapher."
+   ],
+   "after_q": "Lässt sich die Fassung in deiner Sprache auf beide Arten lesen?"
   }
- ]
+ ],
+ "first": 1
 }

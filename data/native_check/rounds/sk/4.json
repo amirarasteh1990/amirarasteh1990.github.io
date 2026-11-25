@@ -1,185 +1,362 @@
 {
+ "format": 2,
  "lang": "sk",
  "slug": "sk",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Kontrola rodenými hovoriacimi",
+  "lead": "Knihu nemusíte mať prečítanú. Odpovedzte na toľko riadkov, na koľko chcete.",
+  "persian_words": "Maman (matka), Baba (otec) a -jan (drahý) sú perzské slová, ktoré kniha ponecháva.",
+  "page": "Strana",
+  "correct": "Správne",
+  "needs_change": "Treba zmeniť",
+  "not_sure": "Neviem isto",
+  "how_say": "Ako by ste to povedali?",
+  "meaning": "Čo podľa vás znamená?",
+  "optional": "(nepovinné)",
+  "your_name": "Vaše meno",
+  "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
+  "private": "Vaše odpovede dostane iba autor.",
+  "send": "Odoslať",
+  "send_continue": "Odoslať a pokračovať na stranu {n}",
+  "sending": "Odosiela sa…",
+  "popup_title": "Ďakujeme!",
+  "popup_text": "Chceli by ste mať svoje meno na stránke Poďakovanie na webe? Dokončite všetky 4 strany a radi ho tam pridáme.",
+  "popup_button": "Pokračovať na stranu {n}",
+  "arrived": "Ďakujeme, vaše odpovede zo strany {n} dorazili.",
+  "thanks_last": "Ďakujeme! Vaše odpovede dorazili.",
+  "all_done": "Odoslali ste všetky strany. Ďakujeme za každú z nich!",
+  "already_sent": "Túto stranu ste z tohto zariadenia už odoslali. Ďakujeme!",
+  "continue_with": "Pokračovať stranou {n}",
+  "need_one": "Vyberte odpoveď aspoň pri jednom riadku.",
+  "note_no_answer": "Pri jednom riadku je poznámka: vyberte, prosím, odpoveď aj preň.",
+  "name_needed": "Doplňte meno, ktoré chcete uviesť, alebo zrušte zaškrtnutie.",
+  "not_connected": "Odosielanie ešte nie je pripojené.",
+  "too_long": "Odosielanie trvalo príliš dlho.",
+  "cannot_send": "Odpovede sa odtiaľto nepodarilo odoslať.",
+  "use_email": "Použite, prosím, tlačidlo e-mailu nižšie.",
+  "fallback": "Odpovede sa z tejto stránky nepodarilo odoslať. Pošlite ich, prosím, e-mailom; nič z toho, čo ste napísali, sa nestratilo.",
+  "email_button": "Poslať odpovede e-mailom",
+  "shortened": "Niektoré poznámky boli pre e-mailový odkaz príliš dlhé, preto sa tam skrátili. Vaše úplné odpovede sú nižšie; vložte ich, prosím, do e-mailu.",
+  "noscript": "Odosielanie potrebuje JavaScript. Odpovede môžete poslať aj e-mailom na {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0126#1",
-   "where": "03/0126",
-   "text": "Huh. Priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne, hovorí presne takto.",
-   "q": "Hamid, a boy, always boasts about a long chain of contacts ending in a rich man. Does this running joke sound natural and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid povedal:"
+   "key": "crude",
+   "title": "Hrubá reč",
+   "q": "Tu postavy nadávajú alebo hovoria hrubo. Znie každý riadok prirodzene?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "Nech je zlorečený každý, kto popiera Orlie Oko News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "Čo chceš, Eskandar? Čo sa s tebou deje?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "Žiadne meno ti nepasuje, do riti.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "Hovorím ti, nevidím, ty hajzel.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "Keď ti je svet aj všetko ostatné u riti, prečo si taký posadnutý testami a skúškami?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "Odpoveď je, že podlizovanie sa majstrovi Hoomanovi ti nesvedčí.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "Ty hajzel. Objektívne, dolár ide na pätnásťsto tomanov, a ty tu stále ryješ do toho úbožiaka?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "Načítaj sa už, ty hajzel.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "Čo zmení? Ak vyhrá McCain, poriadne dojebá Irán, objektívne.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "Čo ťa zas popadlo?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "Fuj, čo má zase znamenať tá zasraná póza mysliteľa?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "Ktokoľvek chce viesť sračkovú filozofickú diskusiu, môže ísť do kuchyne.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "Ty zasraný idiot ... huuu ... hlava dolu ... huuu ... kam ideš tak rýchlo ... huuu ... som bez dychu.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "Pfff, do riti. Teraz si expatriant, takže ti na nás nezáleží. Ty zapredaný uctievač cudzincov.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "To pravidlo lokalizácie s nami poriadne vyjebalo. Vraj aby deti zostali blízko rodiny, no palicu vrazili do zadku nám, deckám z provincií.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "Ak ide o vek, tak by si mal lízať gule Bahmanovi.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "Toľko sa učíš, a nakoniec to s našou zasranou smolou aj tak dopadne takto.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "Do riti s tým naším šťastím.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "To by som radšej býval s nimi než s takým kokotohlavcom, ako si ty.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "kedykoľvek som prišiel na hodiny a prácu pre ten zasraný druhý odbor, videl som, ako sa hádajú.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Seriem na tie časy a na to, ako sme uvažovali.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "fakt by ma zaujímalo, ktorý parchant mal v piatok o šiestej ráno otvorený krám",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "Keby sa Kamyar nesprával ako sráč a zostal na internáte, neuvoľnila by sa posteľ, aby nám pripadli tieto zázraky.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "a ten pomätený parchant namiesto látky z učebnice učil v triede svoje vlastné teórie",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Keby to bolo na mne, nula by bola málo; dal by som ti zožrať hlavičku môjho kokota a potom by som ťa kopancom vyhodil z univerzity.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "Takže chceš povedať, že sa tá naša prekliata smola, keď nám los pridelil takú vykopávku, ako si ty, stále opakuje?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "Dnes sa v izbe nehádajte, dostal som z telesnej dvanástku, mám nervy v hajzli a vynadám vám.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "Šiel som si umyť tvár. Cez okuliare si predsa tvár umyť nemôžem, ty hajzel.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "Hovorím ti, Krčmárik-jan, ale medzi nami, dostal si sa do zahraničia čistou posratou náhodou.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "Krčmárik, namiesto aby si sa takto váľal na posteli a hral sa s guľami, vstaň a pošli to.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "No, keď nie si ten typ, čo podáva prihlášky a odchádza, prečo si si trhal zadok skladaním skúšky TOEFL?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "Krčmárik, pozri, ako ďaleko si to dotiahol: Farid, ktorý kašle na nás aj na izbu aj na všetkých, sa ozval.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "Aká sračka ti zase hlodá v mozgu?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "Tým svojím skurveným hlasom si mi zničil náladu, ktorú som z tej pesničky mal.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "Lízanie riti ti nesvedčí.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "No čokoľvek, do hajzla.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0182#2",
-   "where": "04b/0182",
-   "text": "Ty si zo všetkých najväčšia krava. A máš na to aj postavu.",
-   "q": "A young man insults a heavy-set roommate as the biggest cow of all. Does 'krava' work as an insult between men?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Zožer hlavičku môjho kokota, človeče, na teba nemáme nervy. Čo ty vieš, čo znamená elektrotechnika na Sharife? A vôbec, pýtal sa ťa niekto na názor?"
-   ]
-  },
-  {
-   "id": "04b/0935#3",
-   "where": "04b/0935",
-   "text": "„Pre Atára je lepšie plakať až do svitania“ alebo „teraz je viac zabitý“?",
-   "q": "She names a song by two lines of a poem by Attar. Does 'teraz je viac zabitý' read as a line of poetry?",
-   "ctx": 1,
-   "kind": "poetry",
-   "before": [
-    "– Hej, tú s Atárovým veršom."
-   ]
-  },
-  {
-   "id": "03/0345#4",
-   "where": "03/0345",
-   "text": "Nie je Vaša záležitosť vybavená?",
-   "q": "A girl coolly asks a boy who keeps her talking whether he has finished what he came for. Does this sound natural?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– Tých dvadsať minút, čo ste hovorili, ešte neuplynulo.",
-    "Povedala:"
-   ]
-  },
-  {
-   "id": "04b/0440#5",
-   "where": "04b/0440",
-   "text": "Po tej lokalizácii ma už neprekvapí, nech nám na hlavu spadne akýkoľvek vták.",
-   "q": "Hooman means that after that policy, no matter what prick lands on them, he won't be surprised. Does 'vták' read as crude here?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Bahman povedal, že to nevadí. Eskandar zašiel rukou pod moju posteľ, aby knihu vytiahol, a Meysam kľačal na kolenách a rozprestieral si miesto pod vešiakom. Hooman sa na nich díval a povedal:"
-   ]
-  },
-  {
-   "id": "03/0586#6",
-   "where": "03/0586",
-   "text": "Ktokoľvek chce viesť sračkovú filozofickú diskusiu, môže ísť do kuchyne.",
-   "q": "Hooman crudely tells his roommates to take their philosophical bullshit to the kitchen. Does this sound like how a young man would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar a Meysam začali analyzovať, ako to, čo sa stalo na Strojníckej fakulte, je hrsť, podľa ktorej sa pozná celá kopa. Spojili to s konkurenčným a konzumným svetom dnešnej doby a podobnými vecami. Ich diskusia sa predĺžila. Hooman vypol svetlo a povedal:"
-   ]
-  },
-  {
-   "id": "03/0640#7",
-   "where": "03/0640",
-   "text": "Pfff, do riti. Teraz si expatriant, takže ti na nás nezáleží. Ty zapredaný uctievač cudzincov.",
-   "q": "An old friend teases Amir for moving abroad, calling him a sellout who worships foreigners. Does this sound like real teasing slang?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Prepáč, úprimne."
-   ]
-  },
-  {
-   "id": "03/0392#8",
-   "where": "03/0392",
-   "text": "Keď ti je svet aj všetko ostatné u riti, prečo si taký posadnutý testami a skúškami?",
-   "q": "A roommate asks crudely why someone who doesn't give a damn about anything obsesses over exams. Does 'u riti' sound natural here?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Ľahol som si na bok na posteľ a oči mi videli Hoomana a Eskandara, hoci som ich sledovať nechcel. Potom, čo si Eskandar asi hodinu mrmlal niečo pod nos, obrátil sa k Hoomanovi a povedal:"
-   ]
-  },
-  {
-   "id": "01/0166#9",
-   "where": "01/0166",
-   "text": "Išiel by niekedy? Keby išiel, bolo by to mojím srdcovým prianím.",
-   "q": "Maman jokes that if her husband ever left, it would answer her prayers. Does this sound like how she would say it?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Len sa smejeme, Nana-pesar-jan."
-   ]
-  },
-  {
-   "id": "01/0261#10",
-   "where": "01/0261",
-   "text": "Mm-hm, zmenil sa veľmi, veľmi. Tak schudol a stmavol.",
-   "q": "Maman says a relative has grown thin and his skin darker from the sun. Does 'stmavol' sound natural for a person?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman hovorí:"
-   ]
-  },
-  {
-   "id": "04a/0054#11",
-   "where": "04a/0054",
-   "text": "Fuj, unavil som sa.",
-   "q": "A small boy groans on a long walk that he is tired. Does 'Fuj' fit a tired groan?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Bolo toho veľa. Až na koniec sveta. Možno nie. Ale bolo toho veľa. Vždy som sa unavil v strede. Ale nič som nehovoril. Raz Omid povedal:"
-   ]
-  },
-  {
-   "id": "06/0291#12",
-   "where": "06/0291",
-   "text": "Hľadá si výhovorky, aby reptal pre nič za nič, che, Amir-jan.",
-   "q": "Maman gives a short laugh while complaining about her husband. Does 'che' read as that little laugh?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman hovorí:"
-   ]
-  },
-  {
-   "id": "04b/0562#13",
-   "where": "04b/0562",
-   "text": "Orlie Oko, nech ti to Boh nedaruje, zničil si mi chrbát.",
-   "q": "Eskandar half-jokingly curses Sajad for stepping on his back. Does 'nech ti to Boh nedaruje' sound like a natural curse?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Eskandar povedal hlasom, ktorý naznačoval, že len ťažko dýcha:"
-   ]
-  },
-  {
-   "id": "03/0264#14",
-   "where": "03/0264",
-   "text": "Čo chceš, Eskandar? Čo sa s tebou deje?",
-   "q": "Hooman snaps at an annoying roommate: what the hell is wrong with you? Does this sound as rude as a young man would be?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Naozaj si myslíš, že ti to meno pristáva? Tomuto chlpatému telu, tejto tvári ozbrojenej až po zuby bradou a vlasmi. Ak si ty Hooman, tak ja som Zuzana."
-   ]
-  },
-  {
-   "id": "04b/0751#15",
-   "where": "04b/0751",
-   "text": "Jéééj. Nech krúžim okolo hlavičky Nini-jan, ako jej to dobre myslí.",
-   "q": "Ghassem fondly teases his mother, whom the family call Nini, for her clever question. Does this sound affectionate and natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Ghassem, hovorím, tí ľudia, o ktorých Amir hovorí, že v zahraničí veľmi neveria v Boha, tých tiež stvoril Boh?"
-   ]
-  },
-  {
-   "id": "04b/0385#16",
-   "where": "04b/0385",
-   "text": "Vždy veľmi elegantne a obradne sa vysere presne na historickej zákrute.",
-   "q": "Hooman says crudely that Amir, always so proper, messes up right at the crucial moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Krčmárik je Taverny. Nemôže za to. Má to tak nastavené od výroby."
+   "key": "natural",
+   "title": "Znie to prirodzene?",
+   "q": "Znie každý riadok prirodzene a jasne?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Teraz zdvihni ruky smerom k nebu. Cítiš kvapky hliny na rukách?",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "Len si pomysli, čím musí náš úbohý Baba prechádzať — sedí nečinne doma toľko rokov.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Ale skončil medzi nesprávnymi ľuďmi — rozbili sme mu aj posledný zvyšok úcty.",
+     "note": null
+    },
+    {
+     "id": "03/0278#natur",
+     "text": "Karroubi je láska, úprimne.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "Nie je Vaša záležitosť vybavená?",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "Tento týždeň nemám vôbec čas. Budúci týždeň vo štvrtok o tretej, na tom istom mieste, kde sme sa stretli minule. Poviem ešte, že mám len pol hodiny.",
+     "note": null
+    },
+    {
+     "id": "03/0462#natur",
+     "text": "– Máte sa dobre?",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "Argh. Až mi z toho naskočila husia koža.",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "Kde mám na krku napísané „stupienok“?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "To nechajme; ale prečo mi nezdvihneš, nech ti volám akokoľvek často? Presmeroval si nás tam, kam sa nepatrí?",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "Ale človeče, nehovor s ním takto zdvorilo, stúpne mu to do hlavy.",
+     "note": null
+    },
+    {
+     "id": "04b/0193#natur",
+     "text": "Nanajvýš dali správcom internátu namiesto celoplošného koberca farby prachu modrý.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "Tak ma to vytočí, keď takto mlčky sedíš. Mám chuť ti dať päsťou.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "Napísal som svoje vlastné teórie o kvantovej fyzike a náš sprostý profesor mi z toho dal štvrť bodu.",
+     "note": null
+    },
+    {
+     "id": "04b/0593#natur",
+     "text": "Pošlite salavát. Starší z Krčmy konečne niečo povedal.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektívne, ak sa to ujme, zbalí to celý ten bordel bánk a všetko to ostatné.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "S prostredníkom alebo bez prostredníka, mne je to fuk.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "Dobre, Orlie Oko, dobre. Len si nestrkaj okuliare do laptopu.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "Ach, kiežby som ti jedného dňa mohla nechtami prepichnúť tie tvoje uši, aby sa už nezbystrievali.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "Amir, aj Dedko chytil Covid, ale ako keby nič — striasol to zo seba ako obyčajnú nádchu.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "Dal by som za teba život, Nini-jan. Tá tvoja hlava tak dobre pracuje.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 20
 }

@@ -2,16 +2,92 @@
  "lang": "gl",
  "slug": "gl",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Coma na infancia, cando a Maman desfacía o fío de la das roupas vellas, e nós o colliamos e dabamos voltas pola casa para que a la non se amorease.",
-   "q": "Is it clear the children walked around the house with the yarn?",
+   "id": "04b/1312#4",
+   "where": "04b/1312",
+   "text": "Un queda mareado de merda. Canto máis pensas nel, máis mareado de merda quedas.",
+   "q": "Is it clear 'mareado de merda' is a crude way to say very confused?",
    "before": [
-    "Abertura",
-    "…aquí. Foron rexistrados para se converteren nunha ponte entre o meu mundo e o teu. Unha ponte desde o meu mundo, no instante en que escribo estas frases, ata o teu, no instante en que te sentas a lelas. Desde este lado, eu desfago o fío das palabras, e desde o outro, ti recolles as palabras."
+    "…arriba, a rapaza quedaba escondida detrás dun aviso sobre a pintura e as reparacións de verán do edificio de Abu-Reyhan. Co corazón batendo, avancei. Era Niloofar, a mesma Niloofar. Estaba de pé fronte á Universidade de Arte, ao carón doutras rapazas. Unha delas ensinaba un papel ás demais e dicía:",
+    "– ... mirade, é realmente inquietante. Debuxou isto e escribiu embaixo: isto non é unha pipa."
+   ]
+  },
+  {
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "E ti, con ese teu xeito de falar de carallo, o teu nome debería ser Alain Carallón.",
+   "q": "'Alain Carallón' is meant as a rude pun on the actor Alain Delon. Would Galician readers get it? If not, what word could carry it?",
+   "before": [
+    "– Si, Hamoon é un bo nome para ti. Coma o Hamoon da película, ti tamén estás cheo de preguntas. Estás cheo de angustia e es fonte de desacougo, non para ti, senón para min.",
+    "Hooman dixo:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "A choiva non cae da terra cara ao ceo.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "A miña man é curta e a túa unión está lonxe.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "O que digo é que, se te quedas aquí sentado a ler poesía, non se che vai quentar o pan.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "A Bibi, que na gloria estea, dicía nestes casos: se o digo, árdeme a lingua; se o calo, árdeme o miolo do óso.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Di: «O bo ano vese xa na súa primavera.»",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Dixo: apodréceme o corazón dentro.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Mentres ri, Hooman dáme unha palmada forte nas costas e o terrón de azucre sáltame na gorxa.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#9",
+   "where": "03/0634",
+   "text": "Non llo digas a ese desgraciado de Eskandar, que senón vaise sentar unha hora a botarnos sermóns e convérteme a comida en veleno de serpe.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1320#5",
+   "where": "04b/1320",
+   "text": "E con mans tremendo, pasaba as follas dos ghazals a présa, buscando o dístico de Hafez que, segundo dicía a outra rapaza, canto máis afondas nel, máis mareado de merda quedas, para ensinarllo a Niloofar.",
+   "q": "Amir searches Hafez's poems with shaking hands. Does this sentence read naturally?",
+   "before": [
+    "– Si, pero de aí a aló hai un mundo de distancia.",
+    "– Hafez tamén é moi mode... quero dicir, aínda ten cousas que dicir, xúrocho por Deus."
    ]
   },
   {
@@ -25,6 +101,13 @@
    ]
   },
   {
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Só despois de que a familia me metese a forza no galiñeiro entendín que mundo tan distinto era o daquel outro lado da historia.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
    "id": "04b/1063#3",
    "where": "04b/1063",
    "text": "Os nosos tres nomes cabían entre os dentes da letra persa sin (س) do nome de Yasi.",
@@ -35,33 +118,13 @@
    ]
   },
   {
-   "id": "04b/1312#4",
-   "where": "04b/1312",
-   "text": "Un queda mareado de merda. Canto máis pensas nel, máis mareado de merda quedas.",
-   "q": "Is it clear 'mareado de merda' is a crude way to say very confused?",
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Coma na infancia, cando a Maman desfacía o fío de la das roupas vellas, e nós o colliamos e dabamos voltas pola casa para que a la non se amorease.",
+   "q": "Is it clear the children walked around the house with the yarn?",
    "before": [
-    "…arriba, a rapaza quedaba escondida detrás dun aviso sobre a pintura e as reparacións de verán do edificio de Abu-Reyhan. Co corazón batendo, avancei. Era Niloofar, a mesma Niloofar. Estaba de pé fronte á Universidade de Arte, ao carón doutras rapazas. Unha delas ensinaba un papel ás demais e dicía:",
-    "– ... mirade, é realmente inquietante. Debuxou isto e escribiu embaixo: isto non é unha pipa."
-   ]
-  },
-  {
-   "id": "04b/1320#5",
-   "where": "04b/1320",
-   "text": "E con mans tremendo, pasaba as follas dos ghazals a présa, buscando o dístico de Hafez que, segundo dicía a outra rapaza, canto máis afondas nel, máis mareado de merda quedas, para ensinarllo a Niloofar.",
-   "q": "Amir searches Hafez's poems with shaking hands. Does this sentence read naturally?",
-   "before": [
-    "– Si, pero de aí a aló hai un mundo de distancia.",
-    "– Hafez tamén é moi mode... quero dicir, aínda ten cousas que dicir, xúrocho por Deus."
-   ]
-  },
-  {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "E ti, con ese teu xeito de falar de carallo, o teu nome debería ser Alain Carallón.",
-   "q": "'Alain Carallón' is meant as a rude pun on the actor Alain Delon. Would Galician readers get it? If not, what word could carry it?",
-   "before": [
-    "– Si, Hamoon é un bo nome para ti. Coma o Hamoon da película, ti tamén estás cheo de preguntas. Estás cheo de angustia e es fonte de desacougo, non para ti, senón para min.",
-    "Hooman dixo:"
+    "Abertura",
+    "…aquí. Foron rexistrados para se converteren nunha ponte entre o meu mundo e o teu. Unha ponte desde o meu mundo, no instante en que escribo estas frases, ata o teu, no instante en que te sentas a lelas. Desde este lado, eu desfago o fío das palabras, e desde o outro, ti recolles as palabras."
    ]
   }
  ]

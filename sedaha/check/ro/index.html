@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,13 +122,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ro" data-language="Romanian" data-version="2026-11-22" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="ro" data-language="Romanian" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1263#9">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-line">Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.</p>
+        <p class="nc-ctx">…și liniștitoare și care n-avea destulă lumină ca să mă călăuzească. O lampă clipind în mâna unei fete despre care n-am știut niciodată în ce parte a cutiei de creioane colorate se așază culoarea ușii casei lor. O fetiță vine făcând „vrr-vrr” și se oprește lângă mine. Se uită la jucării. Spune:</p>
+        <p class="nc-line">Vrrr, Baba, Baba, îmi cumpeli păpușica aia male?</p>
       </div>
-      <p class="nc-q" id="q1">Moments that would be lost in the world's feverish noise. Does this read naturally?</p>
+      <p class="nc-q" id="q1">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -139,12 +140,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#2">
+    <fieldset class="nc-item" data-id="04b/1312#10">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-line">De pe această parte, desfac firul cuvintelor, iar de pe cealaltă parte, tu le aduni.</p>
+        <p class="nc-ctx">– ...Uitați-vă, e cu adevărat tulburător. A desenat asta și dedesubt a scris: aceasta nu este o pipă.</p>
+        <p class="nc-line">Te apucă o amețeală de căcat. Cu cât te gândești mai mult la asta, cu atât mai tare te apucă amețeala de căcat.</p>
       </div>
-      <p class="nc-q" id="q2">Is it clear that 'le' refers to the words you gather up?</p>
+      <p class="nc-q" id="q2">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -155,13 +157,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0116#3">
+    <fieldset class="nc-item" data-id="03/0191#4">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– Aaah, ce bine. Mm-hm, comănzi și ți le aduc. Dar Amir dragă, nu sta tot timpul acasă. Ieși și afară.</p>
-        <p class="nc-line">Du-te în locuri unde nu e multă lume.</p>
+        <p class="nc-ctx">– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.</p>
+        <p class="nc-ctx">Taghi spuse:</p>
+        <p class="nc-line">Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici măgar?</p>
       </div>
-      <p class="nc-q" id="q3">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
+      <p class="nc-q" id="q3">Taghi teases Hamid for using the Romanian word '<bdi lang="ro" dir="ltr">măgar</bdi>' now instead of 'khar', the cruder Persian word for donkey. Does the teasing come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -172,14 +175,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0191#4">
+    <fieldset class="nc-item" data-id="03/0430#5">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– Pff, măgarule, cine știe mai mult, prietenul vărului meșterului cumnatului nostru, care e cel mai bogat om din Teheran, sau tu, vițelule? Bine, du-te și cumpără una. Dacă sticla se sparge, să nu spui că nu te-am avertizat.</p>
-        <p class="nc-ctx">Taghi spuse:</p>
-        <p class="nc-line">Hamid Pisică, până ieri ziceai khar. Acum te-ai civilizat și zici măgar?</p>
+        <p class="nc-line">Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.</p>
       </div>
-      <p class="nc-q" id="q4">Taghi teases Hamid for using the Romanian word '<bdi lang="ro" dir="ltr">măgar</bdi>' now instead of 'khar', the cruder Persian word for donkey. Does the teasing come through?</p>
+      <p class="nc-q" id="q4">'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Would Romanian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -190,12 +191,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#5">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-line">Și tu, cu tonul ăsta de pulă cu care vorbești, ar fi trebuit să te cheme Alain Pulon.</p>
+        <p class="nc-line">Ploaia nu cade de jos în sus.</p>
       </div>
-      <p class="nc-q" id="q5">'Alain Pulon' is meant as a rude pun on the actor Alain Delon. Would Romanian readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q5">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -206,13 +207,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0560#6">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">Am mers. Am stat vreo oră în viile de după clădirea ghetarului de lut din fața cimitirului vechi. Mahboubeh și Maryam legară sabzeh, și când se întunecase ne-am întors. Seara, Maman era întinsă pe covor în mijlocul casei și-și privea brățările. Ca și cum mi-ar fi vorbit mie, îi spuse lui Omid:</p>
-        <p class="nc-line">– Spuneți-i mamei voastre totul.</p>
+        <p class="nc-line">Mâna mi-e prea scurtă și unirea cu tine, departe.</p>
       </div>
-      <p class="nc-q" id="q6">Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?</p>
+      <p class="nc-q" id="q6">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -223,13 +223,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0661#7">
+    <fieldset class="nc-item" data-id="04a/0128#2">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– Din cauza notelor noastre la Konkoor.</p>
-        <p class="nc-line">– Notele de la Konkoor?</p>
+        <p class="nc-line">Nu mânca tristețe, băiatul meu deștept.</p>
       </div>
-      <p class="nc-q" id="q7">Konkoor is Iran's university entrance exam, where students get a national rank. Is 'Notele' right for that rank?</p>
+      <p class="nc-q" id="q7">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -240,13 +239,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1262#8">
+    <fieldset class="nc-item" data-id="04b/0274#7">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">…primăverii, familia lui Negar s-a mutat din cartierul nostru din pricina supărărilor pricinuite de băieții de pe ulița din față, iar casa aceea s-a făcut la fel cu toate celelalte case din cartier. Rămăseserăm de capul nostru și, după multă vreme, ne-am întors iarăși la jocurile de altădată.</p>
-        <p class="nc-line">Joaca cu mașini, haft-sang, polițist-și-măgar, aruncatul cu roșii în mijlocul străzii și, mai presus de toate, fotbalul pe Stadio delle Alpi din orașul Quchan.</p>
+        <p class="nc-line">Zic că, dacă stai tot timpul aici doar așa și citești poezie, nu ți se încălzește nicio pâine.</p>
       </div>
-      <p class="nc-q" id="q8">A list of childhood street games. Does the list read clearly as games?</p>
+      <p class="nc-q" id="q8">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -257,13 +255,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#9">
+    <fieldset class="nc-item" data-id="01/0203#4">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">…și liniștitoare și care n-avea destulă lumină ca să mă călăuzească. O lampă clipind în mâna unei fete despre care n-am știut niciodată în ce parte a cutiei de creioane colorate se așază culoarea ușii casei lor. O fetiță vine făcând „vrr-vrr” și se oprește lângă mine. Se uită la jucării. Spune:</p>
-        <p class="nc-line">Vrrr, Baba, Baba, îmi cumpeli păpușica aia male?</p>
+        <p class="nc-line">Bibi, Dumnezeu s-o ierte, spunea în astfel de momente: dacă o spun, mi se arde limba; dacă nu o spun, mi se arde măduva oaselor.</p>
       </div>
-      <p class="nc-q" id="q9">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q9">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -274,13 +271,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#10">
+    <fieldset class="nc-item" data-id="01/0073#6">
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– ...Uitați-vă, e cu adevărat tulburător. A desenat asta și dedesubt a scris: aceasta nu este o pipă.</p>
-        <p class="nc-line">Te apucă o amețeală de căcat. Cu cât te gândești mai mult la asta, cu atât mai tare te apucă amețeala de căcat.</p>
+        <p class="nc-line">Spune: „Un an bun se cunoaște din primăvara lui.”</p>
       </div>
-      <p class="nc-q" id="q10">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
+      <p class="nc-q" id="q10">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -291,12 +287,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#11">
+    <fieldset class="nc-item" data-id="04b/1321#12">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-line">Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.”</p>
+        <p class="nc-ctx">– Ăsta e. Ascultă-l pe ăsta. Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.” E același lucru. E ca pictura aia pe care ți-o arăta prie-, prietena ta.</p>
+        <p class="nc-line">Ca aia, cu cât te gândești mai mult la aceste zece cuvinte, cu atât te apucă mai tare amețeala de căc..., chestie, mai tare amețeala.</p>
       </div>
-      <p class="nc-q" id="q11">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
+      <p class="nc-q" id="q11">He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -307,13 +304,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#12">
+    <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– Ăsta e. Ascultă-l pe ăsta. Pen-, pentru Dumnezeu, ascultă. „Vinul de-acolo e adevăr nu metaforă.” E același lucru. E ca pictura aia pe care ți-o arăta prie-, prietena ta.</p>
-        <p class="nc-line">Ca aia, cu cât te gândești mai mult la aceste zece cuvinte, cu atât te apucă mai tare amețeala de căc..., chestie, mai tare amețeala.</p>
+        <p class="nc-line">Clipe și imagini care s-ar fi pierdut în murmurele febrile ale evenimentelor lumii dacă nu ar fi fost consemnate aici.</p>
       </div>
-      <p class="nc-q" id="q12">He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?</p>
+      <p class="nc-q" id="q12">Moments that would be lost in the world's feverish noise. Does this read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -324,55 +320,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0236#13">
-      <legend>Line 13</legend>
-      <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">– ...cof. Da. Nu ne-ai dus niciodată în locuri de-astea.</p>
-        <p class="nc-line">Întotdeauna cimitirul și Dumnezeu știe ce – o biserică. Cof, cof. Ne-ai târât.</p>
-      </div>
-      <p class="nc-q" id="q13">Baba teases his son about the places he showed them. Does the last sentence mean you wore us out?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
-        <label><input type="radio" name="v13" value="ok"> Correct</label>
-        <label><input type="radio" name="v13" value="change"> Needs change</label>
-        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
-        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="06/0262#14">
-      <legend>Line 14</legend>
-      <div class="reader nc-text" lang="ro" dir="ltr">
-        <p class="nc-ctx">Baba își ia rămas-bun și iese din cadru. Maman rămâne în tăcere. Se aude poarta ulicioarei deschizându-se și închizându-se, iar Baba iese cu tusea târându-se după el.</p>
-        <p class="nc-line">Tusea și sunetele cu care își drege glasul încă mi se strecoară în urechi.</p>
-      </div>
-      <p class="nc-q" id="q14">Does this sentence let you hear Baba's coughs and throat-clearing sounds?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
-        <label><input type="radio" name="v14" value="ok"> Correct</label>
-        <label><input type="radio" name="v14" value="change"> Needs change</label>
-        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
-        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -409,7 +369,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="br" data-language="Breton" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="br" data-language="Breton" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="03/0430#9">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">Digoradur</p>
-        <p class="nc-ctx">…ar bed ma ne vije ket bet skrivet amañ. Skrivet int bet evit dont da vezañ ur pont etre va bed ha hoc'h hini. Ur pont eus va bed, er mare ma skrivan ar frazennoù-mañ, d'ho hini, er mare ma azezit d'o lenn. A-berzh an tu-mañ, e tizolc'han neudenn ar gerioù, hag a-berzh an tu all e tastumit anezhi.</p>
-        <p class="nc-line">Evel pa oamp bugale, pa zistague Maman ar gloan diwar an dilhad kozh, hag e kemeremp an neudenn hag e valeemp tro-dro d'an ti evit na vije ket berniet ar gloan.</p>
+        <p class="nc-ctx">– Ya, Hamoon a zo un anv mat evidout. Evel Hamoon er film, te ivez ec'h out leun a c'houlennoù. Leun a aroufenn ha penn-abeg dic'hlander, ket evidout da-unan, met evidon-me.</p>
+        <p class="nc-ctx">Hooman a lavaras:</p>
+        <p class="nc-line">– Te, gant an ton kalc'hek-se da gomz, e tlee da anv bezañ Alain Kalc'hon.</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear the children walked around inside the house with the yarn?</p>
+      <p class="nc-q" id="q1">'Alain Kalc'hon' is meant as a rude pun on the actor Alain Delon. Would Breton readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0132#2">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Ya, ne fell ket biskoazh din taoler kuit traoù Nini-jan. Bremañ, pa'z an d'ar c'herioù bihan, e ran ur sandwich, e lakaan anezhañ ennañ, hag e kasan anezhañ ganin.</p>
-        <p class="nc-ctx">…e-unan ha ma vijec'h dapet gantañ diganeomp. War an tele o devoa graet ur bobiñ anezhañ, hag e lavare, n'ez in ket kuit ken buan-se, e vin hoc'h ostiz c'hoazh pell. Pa zeuas da gentañ, e lavare an tele daou zen war gant, bremañ e lavar dek dre gant. Mat, dre wir, n'eo ket reizh tamm ebet.</p>
-        <p class="nc-line">Unan bennak a dro tu all ar straed, ha neuze e tap unan bennak tu-mañ ar straed anezhañ, hag e varv.</p>
+        <p class="nc-line">An dour ne gouezh ket eus an douar davet an oabl.</p>
       </div>
-      <p class="nc-q" id="q2">During Covid: someone sneezes across the street, and a person on the other side catches it. Is that clear?</p>
+      <p class="nc-q" id="q2">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +157,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0060#3">
+    <fieldset class="nc-item" data-id="04b/0334#8">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">Ar memes mouezh en devoa goulennet ouzh Ghassem diwar-benn ma renk Konkoor a lavaras, gwan-gwan:</p>
-        <p class="nc-ctx">– He, Mestr Hamid, ar c'hazh sotet.</p>
-        <p class="nc-line">Hamid a sachas gwerenn e roched-c'hoari ruz disliv hag, gant ur fiñv dorn a-dreñv, e daolas e c'hoazenn stag ouzh un toull rous eus e skoaz betek e gein.</p>
+        <p class="nc-line">Va dorn a zo berr hag ar berzh ganit a zo pell.</p>
       </div>
-      <p class="nc-q" id="q3">Is it clear Hamid flicks the knot of his torn vest strap onto his back?</p>
+      <p class="nc-q" id="q3">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +173,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0528#4">
+    <fieldset class="nc-item" data-id="04b/0274#6">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Rak ma mignoned a damall ac'hanon da vezañ roet ma c'halon, hep anaoudegezh ebet, hep kaozeadenn ebet.</p>
-        <p class="nc-ctx">He fenn a fiñvas.</p>
-        <p class="nc-line">E taol Haft-Seen Norouz, pa lennis barzhoniezh ma mamm, e-lec'h bezañ laouen, Maman a zeuas da vezañ aroufennet.</p>
+        <p class="nc-line">Lâret 'ran, mard chomez amañ o lenn barzhoniezh hepken, bara ebet ne domo evidout.</p>
       </div>
-      <p class="nc-q" id="q4">Amir reads his poem about his mother; Maman becomes anxious. Is that clear?</p>
+      <p class="nc-q" id="q4">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +189,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0601#5">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Ha he devoa Negar goulennet ouzhomp skeiñ war he c'henderv, ma santimp bremañ touellet?</p>
-        <p class="nc-ctx">Met spontus e oa Taghi, ha ne gredis ket lavarout netra. Ne ouiin ket kalz a vallozhioù. Ar re a ouiin ivez, aon am boa d'o skrivañ. Ma vijemp tapet, petra? Leuniet em boa an holl re gant "Da garout a ran, Negar." Neuze, aon am boa e sellje Taghi ouzh ma follennoù.</p>
-        <p class="nc-line">Ur muntr bihan, e-kreiz frazenn pep follenn, em boa staget, o cheñch "da garout a ran" e "ne'z garan ket".</p>
+        <p class="nc-line">Bibi, ra vo pardonet ganti, a lavare, e mareoù evel-se: ma lavaran, va zeod a zev; ma na lavaran ket, mel va eskern a zev.</p>
       </div>
-      <p class="nc-q" id="q5">Amir adds a faint Persian letter to each sheet. Is 'muntr bihan' clear?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +205,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0229#6">
+    <fieldset class="nc-item" data-id="01/0073#5">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Ya.</p>
-        <p class="nc-ctx">– Ya, setu, evel-se e oa. Goude-se ez eas da Aostralia. Ur bloaz pe zaou zo, klevet 'meus gant Lagad Erer News ez eas ar spontailh-se ivez da Aostralia, o klask, dre un tu, ar plac'h a garec'h hoc'h-daou. Met n'eo ket erruet dezho, evel ma seblant.</p>
-        <p class="nc-line">Unnek miz goude an deiz ma krogis da c'hoari kuit eus bed ar c'hoant hag da lakaat ger va c'halon war bed Niloofar, ez is hag e oan azezet en-dro, goude mizioù, war skabell gentañ Bulvar Keshavarz.</p>
+        <p class="nc-line">– Ghassem a lavar en-dro: "Ur bloavezh mat a anavezer diouzh e nevez-amzer."</p>
       </div>
-      <p class="nc-q" id="q6">Is it clear Amir had decided to leave his world of imagination?</p>
+      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +221,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0582#7">
+    <fieldset class="nc-item" data-id="01/0132#2">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Lagad Erer, deus. Da lunedoù zo bet lezet ganit troad va gwele.</p>
-        <p class="nc-ctx">– ... gant e zaoulagad gwan, ez eas d'an Ameroka goude e vaster. Evel ma lâre e-unan, objektivel, haha, objektivel, ma vije bet unan bennak ac'hanomp da vont er-maez, e vije bet Lagad Erer.</p>
-        <p class="nc-line">Ma ne vije ket krog e wac'h en e benn e vije ret dezhañ kaout un titl eus Skol-veur Sharif a-raok mont kuit eus Iran, e vije bet aet kuit eus Iran goude e c'houlenn kentañ.</p>
+        <p class="nc-ctx">– Ya, ne fell ket biskoazh din taoler kuit traoù Nini-jan. Bremañ, pa'z an d'ar c'herioù bihan, e ran ur sandwich, e lakaan anezhañ ennañ, hag e kasan anezhañ ganin.</p>
+        <p class="nc-ctx">…e-unan ha ma vijec'h dapet gantañ diganeomp. War an tele o devoa graet ur bobiñ anezhañ, hag e lavare, n'ez in ket kuit ken buan-se, e vin hoc'h ostiz c'hoazh pell. Pa zeuas da gentañ, e lavare an tele daou zen war gant, bremañ e lavar dek dre gant. Mat, dre wir, n'eo ket reizh tamm ebet.</p>
+        <p class="nc-line">Unan bennak a dro tu all ar straed, ha neuze e tap unan bennak tu-mañ ar straed anezhañ, hag e varv.</p>
       </div>
-      <p class="nc-q" id="q7">Is it clear he would have left Iran right after his bachelor's degree?</p>
+      <p class="nc-q" id="q7">During Covid: someone sneezes across the street, and a person on the other side catches it. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +239,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0214#8">
+    <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">Aet on er-maez dre an nor. Lavarout a reas:</p>
-        <p class="nc-ctx">– Ar medisin en devoa prenet an ti a oa un medisin klañvedoù spered ha youl.</p>
-        <p class="nc-line">War a seblant, aon he devoa e wreg diouzh e glañvidi, ha se eo perak, a-enep an holl diez, hon eus ar mogerioù koad du-mañ dirak an ti.</p>
+        <p class="nc-ctx">Digoradur</p>
+        <p class="nc-ctx">…ar bed ma ne vije ket bet skrivet amañ. Skrivet int bet evit dont da vezañ ur pont etre va bed ha hoc'h hini. Ur pont eus va bed, er mare ma skrivan ar frazennoù-mañ, d'ho hini, er mare ma azezit d'o lenn. A-berzh an tu-mañ, e tizolc'han neudenn ar gerioù, hag a-berzh an tu all e tastumit anezhi.</p>
+        <p class="nc-line">Evel pa oamp bugale, pa zistague Maman ar gloan diwar an dilhad kozh, hag e kemeremp an neudenn hag e valeemp tro-dro d'an ti evit na vije ket berniet ar gloan.</p>
       </div>
-      <p class="nc-q" id="q8">Is '<bdi lang="br" dir="ltr">mogerioù koad</bdi>' right for a black wooden fence in front of the house?</p>
+      <p class="nc-q" id="q8">Is it clear the children walked around inside the house with the yarn?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,14 +257,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#9">
+    <fieldset class="nc-item" data-id="03/0528#4">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="br" dir="ltr">
-        <p class="nc-ctx">– Ya, Hamoon a zo un anv mat evidout. Evel Hamoon er film, te ivez ec'h out leun a c'houlennoù. Leun a aroufenn ha penn-abeg dic'hlander, ket evidout da-unan, met evidon-me.</p>
-        <p class="nc-ctx">Hooman a lavaras:</p>
-        <p class="nc-line">– Te, gant an ton kalc'hek-se da gomz, e tlee da anv bezañ Alain Kalc'hon.</p>
+        <p class="nc-ctx">– Rak ma mignoned a damall ac'hanon da vezañ roet ma c'halon, hep anaoudegezh ebet, hep kaozeadenn ebet.</p>
+        <p class="nc-ctx">He fenn a fiñvas.</p>
+        <p class="nc-line">E taol Haft-Seen Norouz, pa lennis barzhoniezh ma mamm, e-lec'h bezañ laouen, Maman a zeuas da vezañ aroufennet.</p>
       </div>
-      <p class="nc-q" id="q9">'Alain Kalc'hon' is meant as a rude pun on the actor Alain Delon. Would Breton readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q9">Amir reads his poem about his mother; Maman becomes anxious. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -289,17 +279,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -336,7 +324,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

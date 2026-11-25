@@ -2,182 +2,177 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r12",
+ "version": "2026-11-25.o12",
  "items": [
   {
-   "id": "04a/0038#1",
-   "where": "04a/0038",
-   "text": "Vstop na glavno ulico: cik-cak.",
-   "q": "A boy leading a pretend mission announces the step onto the main street with a little sound. Does 'cik-cak' sound natural here?",
+   "id": "04b/0360#15",
+   "where": "04b/0360",
+   "text": "a res me zanima, kateri prasec je odprl trgovino ob šestih zjutraj v petek, da si šel in od njega kupil fotoaparat.",
+   "q": "Hooman wonders crudely what maniac had a shop open at six on a Friday morning. Does this sound natural?",
    "ctx": 1,
-   "kind": "child",
+   "kind": "crude",
    "before": [
-    "Vedno sem ubogal Maman. Ubogal sem tudi Ghassema. Govoril je:"
+    "– Takšne morilske poteze so ti čisto podobne,"
    ]
   },
   {
-   "id": "04a/0020#2",
-   "where": "04a/0020",
-   "text": "Dobro, tudi ti pojdi na misijo, ampak moraš biti zelo previden. Etape so zelo težke.",
-   "q": "Ghassem, a boy, leads a pretend mission in stages. Does this sound like a child playing?",
+   "id": "04b/0434#2",
+   "where": "04b/0434",
+   "text": "Če se Kamyar ne bi delal važnega in bi ostal v domu, se ne bi sprostila postelja, da bi nam ti čudaki pripadli.",
+   "q": "Hooman blames a former roommate, a precious little shit, for moving out. Does this sound as crude as dorm talk?",
    "ctx": 1,
-   "kind": "child",
+   "kind": "crude",
    "before": [
-    "Ghassem je rekel:"
+    "…mojo posteljo. Nato je z roko pomignil Meysamu in odšel leč na svojo posteljo, nad mojo. Eskandar je za hip strmel v vogale nekaj knjig, ki so štrlele izpod moje postelje, in se nato po vseh štirih splazil proti Bahmanovim knjigam. Sklonil je glavo in si ogledoval Bahmanove knjige. Hooman je rekel:"
    ]
   },
   {
-   "id": "04a/0062#3",
-   "where": "04a/0062",
-   "text": "Veliko ljudi tukaj pade. Gredo levo.",
-   "q": "A boy playing a mission game warns that many people fail at this point. Does it sound like a child talking?",
+   "id": "04b/0353#13",
+   "where": "04b/0353",
+   "text": "In v tisti zasrani situaciji, kakšne starine so nam pripadle?",
+   "q": "Hooman, years later, recalls the odd roommates they got stuck with. Does 'starine' work as a mocking word for them?",
    "ctx": 1,
-   "kind": "child",
+   "kind": "crude",
    "before": [
-    "Tega dela se nikoli nisem naučil. Vedno je rekel najpomembnejše ... nekaj ... misije. Potem je rekel:"
+    "Spije čaj do dna in si z robom dlani obriše usta."
    ]
   },
   {
-   "id": "04a/0064#4",
-   "where": "04a/0064",
-   "text": "Leva stran je nevarna. Tista rdeča vrata so hiša enega zelo jeznega starca. Še bolj jezen kot Baba.",
-   "q": "A boy warns his little brothers about a scary neighbor. Does it sound like a child talking?",
+   "id": "04b/0575#11",
+   "where": "04b/0575",
+   "text": "Pri materini duši, ne hodi po sobi brez očal.",
+   "q": "Eskandar begs Sajad, swearing by his mother's soul, to wear his glasses. Does this sound natural?",
    "ctx": 1,
-   "kind": "child",
+   "kind": "banter",
    "before": [
-    "Potem je vedno pokazal tisto hišo z velikimi rdečimi vrati. Govoril je:"
+    "– Orlov Pogled, Muho je že bog udaril, ne udari ga še ti."
    ]
   },
   {
-   "id": "04a/0068#5",
-   "where": "04a/0068",
-   "text": "Naša šola je na koncu. Zadnja hiša. Če delamo hrup, nas bo učitelj udaril po rokah z ravnilom.",
-   "q": "A boy warns the little ones about the strict teacher. Does this sound like a child talking?",
+   "id": "04b/0751#7",
+   "where": "04b/0751",
+   "text": "Ooooo. Naj krožim okoli glavice Nini-jan, kako dobro dela.",
+   "q": "Ghassem fondly teases his mother, whom the family call Nini, for her clever question. Does this sound affectionate and natural?",
    "ctx": 1,
-   "kind": "child",
+   "kind": "dialogue",
    "before": [
-    "Ghassem je spet rekel kaj. Potem je rekel:"
+    "– Ghassem, pravim, ti ljudje, za katere Amir pravi, da tam v tujini ne verujejo dosti v boga, je tudi nje bog ustvaril?"
    ]
   },
   {
-   "id": "04a/0070#6",
-   "where": "04a/0070",
-   "text": "Na drugi strani šole je pokopališče. Zelo staro je. Nekaterim grobovom manjkajo kamni. Vidijo se kosti mrtvih.",
-   "q": "A boy tries to scare his little brothers about an old graveyard. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Letos grem tja tudi jaz. Če me učitelj udari z ravnilom, bom povedal Maman. Ghassem je vedno rekel:"
-   ]
-  },
-  {
-   "id": "04a/0036#7",
-   "where": "04a/0036",
-   "text": "Dobro, daj malo. Ampak ne premalo. Malo, samo malo manj.",
-   "q": "A four-year-old bargains with his mother over salt on his green plums. Does it sound like a small child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Rekel sem:"
-   ]
-  },
-  {
-   "id": "04a/0052#8",
-   "where": "04a/0052",
-   "text": "Tretja faza je križišče. Križišče pomeni res veliko.",
-   "q": "A boy explains a big word with a child's logic. Does it sound like a child talking?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Po poti je rekel:"
-   ]
-  },
-  {
-   "id": "04a/0054#9",
-   "where": "04a/0054",
-   "text": "Ah, utrujen sem.",
-   "q": "A small boy groans on a long walk that he is tired. Does this sound like a small child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Bilo je veliko. Kot konec sveta. Morda ne. Ampak bilo je veliko. Vedno sem se utrudil na sredini. Ampak nisem rekel nič. Enkrat je Omid rekel:"
-   ]
-  },
-  {
-   "id": "04a/0024#10",
-   "where": "04a/0024",
-   "text": "Bataljon, naprej marš!",
-   "q": "A boy plays soldier and gives his little brothers a marching order. Does it sound like a command a child would copy?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Najprej smo malo stali v dnevni sobi. Ghassem je vedno kaj rekel. Potem je rekel:"
-   ]
-  },
-  {
-   "id": "04a/0074#11",
-   "where": "04a/0074",
-   "text": "Brez vprašanj. Poslušajte poveljnika.",
-   "q": "A boy playing commander silences his little brothers. Does it sound like a child at play?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Levo in desno je bilo povsod. Ghassem je rekel:"
-   ]
-  },
-  {
-   "id": "04a/0078#12",
-   "where": "04a/0078",
-   "text": "Hej, zakaj si vrgel palico stran? S čim bomo potem pozvonili?",
-   "q": "A boy scolds his little brother for throwing away the stick they use to ring doorbells. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Vedno sem pobral palico od drevesa tam. Vlekel sem jo po steni. Dajala je zvok motorja. Ghassem in Omid sta šla naprej. Jaz sem bil daleč zadaj. Ghassem me ni karal. Enkrat je rekel:"
-   ]
-  },
-  {
-   "id": "04a/0022#13",
-   "where": "04a/0022",
-   "text": "Dobro, igra z blatom je končana. Pripravljeni na tajno misijo.",
-   "q": "A boy calls his little brothers from mud play to his pretend mission. Does this sound like a child playing?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Omid in jaz sva hodila za njim. Zelo mi je bilo všeč. Še bolj kot igra z blatom. Omid in jaz sva se igrala z blatom na dvorišču. Ghassem je vedno glasno zaklical:"
-   ]
-  },
-  {
-   "id": "03/0189#14",
-   "where": "03/0189",
-   "text": "No, pojdi in kupi. Ko se steklo razbije, ne reci, da te nisem opozoril.",
-   "q": "Hamid, a boy, loses his temper in an argument with a friend. Does it sound like a child arguing?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "– Pfff, osel, kdo ve bolje – prijatelj bratranca mojstra našega svaka, ki je najbogatejši človek v Teheranu, ali ti, tele?"
-   ]
-  },
-  {
-   "id": "03/0120#15",
-   "where": "03/0120",
-   "text": "Tukaj je bolje kot v Stadio delle Alpi.",
-   "q": "A boy says their street makes a better football pitch than a famous stadium. Does this sound like a boy?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "…Od tistega dne je bila ta asfaltna ulica v naših očeh boljša od peščenega igrišča, ki smo mu rekli Stadio delle Alpi v Quchanu. Ne tisti dan ne v naslednjih dneh naši koraki niso šli dlje od belih s cementom premazanih sten tiste hiše in njenih rumenih vrat. Ne onstran, ne tostran. Taghi je rekel:"
-   ]
-  },
-  {
-   "id": "04a/0004#16",
-   "where": "04a/0004",
-   "text": "Štirikrat sem te našla. No, pridi, moj dobri deček.",
-   "q": "Maman, playing with her four-year-old, calls him to her. Does this sound like a loving mother?",
+   "id": "06/0291#13",
+   "where": "06/0291",
+   "text": "Išče si izgovore, da godrnja za prazen nič, hi-hi, Amir-jan.",
+   "q": "Maman gives a short laugh while complaining about her husband. Does this sound like her?",
    "ctx": 1,
    "kind": "maman",
    "before": [
-    "Odmaknil sem se od luknje. Maman je potemněla. Maman je vedno potemněla štirikrat in potem spet zasvetila. Vedno je rekla:"
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "01/0116#7",
+   "where": "01/0116",
+   "text": "Pojdi tja, kjer ni veliko ljudi.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Oh, kako lepo. Ja, naročiš in prinesejo ti. Ampak Amir-jan, ne sedi ves čas doma. Pojdi tudi ven."
+   ]
+  },
+  {
+   "id": "03/0278#14",
+   "where": "03/0278",
+   "text": "Karroubi je ljubezen, po resnici in pravici povedano.",
+   "q": "Farid gushes about a politician he adores, adding his pet phrase 'in all truth and fairness'. Does this sound like an excited young man?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Hej, Krčmar, teci. Teci, greva. Pravijo, da Karroubiija niso pustili na univerzo. Njegovi privrženci so zlomili vrata Hafez in vstopili. Na nek način bi lahko rekli, da so univerzo zavzeli."
+   ]
+  },
+  {
+   "id": "04b/1395#1",
+   "where": "04b/1395",
+   "text": "pridi spet v moje sanje",
+   "q": "His closing poem asks her to come into his dreams one more time. Does this line say that, as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "upanja na tvojo vrnitev nimam",
+    "a če te pot zanese mimo"
+   ]
+  },
+  {
+   "id": "04b/1394#3",
+   "where": "04b/1394",
+   "text": "a če te pot zanese mimo",
+   "q": "His poem: but if your path should bring you near. Does this line say that, as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "luč mojih sanj mežika",
+    "upanja na tvojo vrnitev nimam"
+   ]
+  },
+  {
+   "id": "04b/1393#4",
+   "where": "04b/1393",
+   "text": "upanja na tvojo vrnitev nimam",
+   "q": "His poem to the girl he lost: he holds no hope of her return. Does this line read as poetry?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "zdaj si odšla",
+    "luč mojih sanj mežika"
+   ]
+  },
+  {
+   "id": "02/0006#6",
+   "where": "02/0006",
+   "text": "Zdaj ... zdaj ... zdaj tebe ni več ...",
+   "q": "He falters as he tries out the end of his poem. Does this halting line sound natural?",
+   "ctx": 2,
+   "kind": "poetry",
+   "before": [
+    "Prišla si",
+    "Svetloba mojih sanj ... svetloba mojih sanj se je ... svetloba mojih sanj se je prižgala"
+   ]
+  },
+  {
+   "id": "04b/0454#3",
+   "where": "04b/0454",
+   "text": "in zablodeli bedak je namesto snovi iz knjige pri pouku razlagal lastne teorije",
+   "q": "Hooman mocks a former roommate who became a teacher and taught his own theories. Does this sound natural?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "…drugi zablodeli bedak, ki mu na koncu nikoli nismo izvedeli imena, po diplomi dve leti nisem imel novic o njem. Potem je nenadoma nekaj objavil na Facebooku in se pritožil, da so ga odpustili. Iz njegove objave na Facebooku sem razbral, da je postal učitelj fizike na neki gimnaziji v svojem mestu,"
+   ]
+  },
+  {
+   "id": "01/0077#16",
+   "where": "01/0077",
+   "text": "Sawaab je, kadar so si ljudje veseli drug drugega. Ne kadar si le kradejo živce.",
+   "q": "Maman says a good deed means people glad to see each other, not getting on each other's nerves. Does 'kradejo živce' sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "– Sawaab?"
+   ]
+  },
+  {
+   "id": "04b/1390#9",
+   "where": "04b/1390",
+   "text": "luč mojih sanj se je prižgala",
+   "q": "His poem to the girl he lost: you came, and the light of my dreams turned on. Does this line read as poetry?",
+   "ctx": 3,
+   "kind": "poetry",
+   "before": [
+    "Moje sanje so bile temne",
+    "Nič nisem videl",
+    "Prišla si"
    ]
   }
  ]

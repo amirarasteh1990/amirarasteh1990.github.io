@@ -1,189 +1,317 @@
 {
+ "format": 2,
  "lang": "de",
  "slug": "de",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Muttersprachen-Check",
+  "lead": "Du musst das Buch nicht gelesen haben. Beantworte so viele, wie du magst.",
+  "persian_words": "Maman (Mutter), Baba (Vater) und -jan (lieb) sind persische Wörter, die das Buch beibehält.",
+  "page": "Seite",
+  "correct": "Stimmt",
+  "needs_change": "Änderung nötig",
+  "not_sure": "Nicht sicher",
+  "how_say": "Wie würdest du es sagen?",
+  "meaning": "Was glaubst du, was es bedeutet?",
+  "optional": "(optional)",
+  "your_name": "Dein Name",
+  "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
+  "private": "Deine Antworten gehen nur an den Autor.",
+  "send": "Senden",
+  "send_continue": "Senden und weiter zu Seite {n}",
+  "sending": "Wird gesendet…",
+  "popup_title": "Danke!",
+  "popup_text": "Möchtest du deinen Namen auf der Danke-Seite der Website? Mach alle 4 Seiten fertig, dann tragen wir ihn gern ein.",
+  "popup_button": "Weiter zu Seite {n}",
+  "arrived": "Danke, deine Antworten von Seite {n} sind angekommen.",
+  "thanks_last": "Danke! Deine Antworten sind angekommen.",
+  "all_done": "Du hast alle Seiten gesendet. Danke für jede einzelne!",
+  "already_sent": "Du hast diese Seite von diesem Gerät aus schon gesendet. Danke!",
+  "continue_with": "Weiter mit Seite {n}",
+  "need_one": "Wähle bei mindestens einer Zeile eine Antwort.",
+  "note_no_answer": "Bei einer Zeile steht eine Anmerkung: Bitte wähle dafür auch eine Antwort.",
+  "name_needed": "Gib den Namen ein, der genannt werden soll, oder nimm das Häkchen weg.",
+  "not_connected": "Das Senden ist noch nicht eingerichtet.",
+  "too_long": "Das Senden hat zu lange gedauert.",
+  "cannot_send": "Die Antworten konnten von hier aus nicht gesendet werden.",
+  "use_email": "Bitte nutze den E-Mail-Button unten.",
+  "fallback": "Die Antworten konnten von dieser Seite aus nicht gesendet werden. Bitte schick sie stattdessen per E-Mail; nichts von dem, was du eingegeben hast, geht verloren.",
+  "email_button": "Antworten per E-Mail senden",
+  "shortened": "Einige Anmerkungen waren für einen E-Mail-Link zu lang und wurden dort gekürzt. Deine vollständigen Antworten stehen unten; bitte füge sie in die E-Mail ein.",
+  "noscript": "Zum Senden wird JavaScript benötigt. Du kannst deine Antworten auch per E-Mail an {email} schicken."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/0616#1",
-   "where": "04b/0616",
-   "text": "– Okay, Adlerauge, okay. Steck jetzt nur nicht deine Brille in den Laptop.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed 'Adlerauge', who peers very close to his laptop. Does the tease come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sagte:"
+   "key": "maman",
+   "title": "Die Stimme der Mutter",
+   "q": "Die Mutter spricht warmherzig, manchmal schimpfend, wie eine ganz normale Frau aus einer Kleinstadt. Klingt jede Zeile nach ihr?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "– Salaam, jigaram. Wie geht's dir? Bist du gesund? Alles gut? Frohes Norouz, Nana-pesar-jan. Möge es ein gutes Jahr für dich werden. Für alle.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "– Baba was?",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "– Der Film mit dem trotteligen Lehrer? Mm-hm, schaut den an. Der ist lustig. Lacht ein bisschen.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Wir wollen alle anrufen und sagen: Er stört uns seit dreißig Jahren, kommt und holt ihn. Wenn du auch zustimmst, rufen wir an.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "So sehr ich auch sagte, schlag die Kinder nicht, sagte er, ich hab im Krieg einen Granatschock bekommen, ich kann nichts dafür. Ich sah, dass es nun einmal so war, und gab auf.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Tratsch? Tratsch ist es, wenn sie dir nichts getan haben.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "– Hmm, mal sehen – fällt euch auch nur eine gute Sache über euren Baba ein? Sagt es, und ich halte den Mund.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "– Ich wünschte, er wäre süchtig geworden und nicht so, wie er ist.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "– Frauen? Das hätte ich mir gewünscht. Wer immer ihn will, soll ihn für sich nehmen. Wir geben noch etwas drauf.",
+     "note": null
+    },
+    {
+     "id": "01/0206#maman",
+     "text": "Es ist jetzt auch gut, ja, aber ich lebe ständig mit dem Stress, dass er jeden Augenblick hier auftauchen könnte.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Als er aus Karbala zurückkam, hatte er einen weißen Handschuh an. Wir sind vom Boulevard bis nach Hause zu Fuß gegangen, und er hob immerzu die Hand hoch – als ob die Leute sie wie etwas Heiliges küssen sollten.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "– Amir, heißt Hauptrolle was Gutes?",
+     "note": null
+    },
+    {
+     "id": "03/0383#maman",
+     "text": "– Nein, Ayzheimer ist sehr schlimm. Eine meiner Freundinnen hat Ayzheimer; sie erkennt ihre Kinder nicht mehr.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "– Na, ich sage doch nicht, ihr sollt euch nicht verlieben. Lernt die Person erst kennen, heiratet, und wenn ihr dann wollt, verliebt euch. Dann seht, ob ich auch nur ein Wort sage.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "– Viermal hab ich dich gefunden. Jetzt komm her, mein guter Junge. Komm, nimm das hier und geh im Haus herum.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "– Nein. Solange dieser Faden in deiner Hand ist, verläufst du dich nicht. Das andere Ende ist in meiner Hand. So verläufst du dich nicht.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Brav, mein schlauer Junge. Immer wenn du vor etwas Angst hast, benutz einen Trick, damit du keine Angst bekommst.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Ohhh je. Na ja, die Länder müssen nahe beieinander gewesen sein. Wann war das Erdbeben in Bam?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Die Endzeit ist gekommen. Bibis Generation pflegte zu sagen, wenn die Endzeit kommt, bebt die Erde immer wieder.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Ich habe ein Gelübde abgelegt, dass ich, wenn es ihm besser geht, zu Fuß nach Mashhad pilgere.",
+     "note": null
+    },
+    {
+     "id": "06/0023#maman",
+     "text": "– Ich trag sie, kein Stress. Aber ich hasse sie wirklich.",
+     "note": null
+    },
+    {
+     "id": "06/0027#maman",
+     "text": "– Nana-pesar-jan, kein Stress. Es waren nur zwanzig Leute da.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– Hmm, dann sag ich, mir wird auch schwer ums Herz – lasst mich meine Freundinnen besuchen.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "– Hmm, wir dachten, du wirst traurig, Nana-pesar-jan. Du hattest ja deine Doktorverteidigung.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, du musst wirklich auf dein Essen achten. Iss Sachen, die dich stärken. Kümmere dich nur ums Essen, der Rest ist mir egal.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– Im Krankenhaus riefen sie immer wieder: „Angehörige von Frau Adham!“ Niemand rührte sich. Dann kam die Krankenschwester selbst und sagte: „Ich glaube, sie gehört zu Ihnen.“",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "– Hmm, diese Leute haben ja auch, als sie noch lebte, kaum etwas für sie getan.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "– Ist das dein Dankeschön?",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "– Ach, jedes Mal, wenn man sagt: Hol etwas, kriegt er so einen elektrischen Schlag.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "– Er meckert ohne Grund, hihi, Amir-jan. Wenn es nicht das ist, findet er etwas anderes.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– Ach, Nini wird auf einmal schläfrig. Ich bin seit dem Morgen auf und hab nicht geschlafen.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0142#2",
-   "where": "01/0142",
-   "text": "– Baba was?",
-   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Dann denk mal daran, was unser armer Baba durchmacht – all diese Jahre sitzt er untätig zuhause.",
-    "Maman sagt:"
-   ]
-  },
-  {
-   "id": "06/0023#3",
-   "where": "06/0023",
-   "text": "– Ich trag sie, kein Stress. Aber ich hasse sie wirklich.",
-   "q": "Maman tells her son not to worry: she does wear her mask. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Aber du behältst deine auf, Nini-jan."
-   ]
-  },
-  {
-   "id": "03/0189#4",
-   "where": "03/0189",
-   "text": "– Na, Grautier, wer weiß es besser, der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, oder du, du Kalb?",
-   "q": "Hamid, a boy, angrily calls his friend 'Grautier', a softer word for donkey. Does it sound like a child's angry insult?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid kochte über und schrie:"
-   ]
-  },
-  {
-   "id": "03/0309#5",
-   "where": "03/0309",
-   "text": "– So Gott will, mögest du immer araasteh sein.",
-   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would German readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Der Wächter lächelt und sagt:"
-   ]
-  },
-  {
-   "id": "06/0186#6",
-   "where": "06/0186",
-   "text": "– Ich würd alles für dich geben, Nini-jan – dein Kopf arbeitet so gut.",
-   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "…gestorben war, kam seine Mutter zur Tür und sagte zu Maman: Wir wissen nicht, was wir den Leuten sagen sollen. Wenn wir sagen, er hat starken selbst gebrannten Aragh getrunken und eine Synkope erlitten, ist das eine schreckliche Schande. Da sagte Maman zu ihr: Sagt einfach, er habe Covid bekommen.",
-    "Ich sage:"
-   ]
-  },
-  {
-   "id": "03/0624#7",
-   "where": "03/0624",
-   "text": "– Stark, Ältester der Schenke. Das ist perfekt für Arasteh.",
-   "q": "Farid gives Amir the mock-grand nickname 'Ältester der Schenke', from a Hafez poem. Does it sound funny and natural as a nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid sagte:"
-   ]
-  },
-  {
-   "id": "03/0628#8",
-   "where": "03/0628",
-   "text": "– Haha, Ältester der Schenke, Äldi, perfekt. Ins Schwarze getroffen, Leopard-Farid.",
-   "q": "Hooman shortens that nickname to 'Äldi'. Does this pet name sound natural and playful between friends?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman schrieb mit einem Stift etwas ins Buch und sagte:"
-   ]
-  },
-  {
-   "id": "03/0630#9",
-   "where": "03/0630",
-   "text": "– Wirklich und wahrhaftig Schenki.",
-   "q": "Farid shortens the same nickname to 'Schenki'. Does it sound like a playful nickname between friends?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, Ältester der Schenke, Äldi, perfekt. Ins Schwarze getroffen, Leopard-Farid.",
-    "Farid sagte:"
-   ]
-  },
-  {
-   "id": "03/0388#10",
-   "where": "03/0388",
-   "text": "– Objektiv, ohne Brille sehe ich gar nichts.",
-   "q": "Sajad starts or ends almost every sentence with 'Objektiv', a habit his roommates mock. Does this habit read naturally in his speech?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Sajad sagte:"
-   ]
-  },
-  {
-   "id": "03/0126#11",
-   "where": "03/0126",
-   "text": "– Ja. Der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, spricht genauso.",
-   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid sagte:"
-   ]
-  },
-  {
-   "id": "04b/1300#12",
-   "where": "04b/1300",
-   "text": "– Hast du mit diesem Satz gerade auf uns geschissen oder auf Mister lockenhaarigen Schrödinger?",
-   "q": "Farid crudely asks whom a friend's lofty remark insulted, mocking a roommate as 'Mister lockenhaarigen Schrödinger'. Does it sound natural?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– ... die Art, wie du redest – jemand muss entweder sehr tief sein, um dich nicht zu verstehen, oder sehr oberflächlich, um dir gern zuzuhören.",
-    "Farid sagte:"
-   ]
-  },
-  {
-   "id": "01/0132#13",
-   "where": "01/0132",
-   "text": "Steck deinen Kopf in jeden Winkel und jede Ecke. Die Alten sagten immer: schau in jeden letzten Winkel.",
-   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Mm-hm, du machst das richtig. Solange du die Gelegenheit hast, geh und sieh dir alle Dörfer an."
-   ]
-  },
-  {
-   "id": "04a/0111#14",
-   "where": "04a/0111",
-   "text": "Ich stieß gegen eine Mauer. Sie war aus Marmel. Ich nahm einen Stock.",
-   "q": "A lost six-year-old tells this, using his brother's wrong word 'Marmel' for Marmor. Does it read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Der Faden war nicht mehr in meiner Hand. Er lief einem Fuß hinterher. Ich lief auch hinterher. Ein kleines Kind kam zwischen den Beinen hervor. Das kleine Kind packte meinen Fuß mit einer Hand. Ich fiel hin. Es wurden immer mehr Beine. Der Faden war weg. Ich ging zwischen den Beinen durch."
-   ]
-  },
-  {
-   "id": "03/0383#15",
-   "where": "03/0383",
-   "text": "– Nein, Ayzheimer ist sehr schlimm. Eine meiner Freundinnen hat Ayzheimer; sie erkennt ihre Kinder nicht mehr.",
-   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Omid sagte:",
-    "– Nein, diese hier ist sehr schlimm. Es gibt auch kein Medikament dafür."
-   ]
-  },
-  {
-   "id": "06/0027#16",
-   "where": "06/0027",
-   "text": "– Nana-pesar-jan, kein Stress. Es waren nur zwanzig Leute da.",
-   "q": "Maman reassures her son that the gathering was small and safe. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ach, warum bist du hingegangen? Was sollen wir machen, wenn du Covid kriegst?"
+   "key": "child_talk",
+   "title": "Kindersprache",
+   "q": "Diese Zeilen sprechen Kinder. Klingt jede davon nach einem Kind?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0189#child",
+     "text": "– Na, Grautier, wer weiß es besser, der Freund des Cousins des Meisters unseres Schwagers, der der reichste Mann in Teheran ist, oder du, du Kalb?",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "– Heute Morgen bin ich in den Hof gegangen. Maman hat gesagt, ich bin klug.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Na klar, komm auch mit auf die Mission, aber du musst sehr vorsichtig sein. Die Etappen sind sehr schwer.",
+     "note": null
+    },
+    {
+     "id": "04a/0022#child",
+     "text": "– Okay, Matschspielen vorbei. Mach dich bereit für die Geheimmission.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– Na gut, mach weniger drauf. Aber nicht viel weniger. Ein bisschen weniger.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "– Betreten der Hauptstraße: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "– Sie heißt Quchan-Basar, und unser Haus ist am Ende vom Quchan-Basar.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Die dritte Etappe ist eine Kreuzung. Eine Kreuzung bedeutet richtig groß. Von dieser Seite bis zu der Seite da. Von dieser Straße bis zu der Straße da.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "– Wenn du müde wirst, dann komm nicht mehr mit auf die Mission.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– Die linke Seite ist gefährlich. Die rote Tür da ist das Haus von einem sehr wütenden alten Mann. Sogar wütender als Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "– Unsere Schule ist da ganz hinten. Das letzte Haus. Wenn wir laut sind, haut uns der Lehrer mit dem Lineal auf die Hände.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– Auf der anderen Seite der Schule ist der Friedhof. Er ist sehr alt. Bei manchen Gräbern fehlen die Steine. Man kann die Knochen der Toten sehen.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "– Keine Fragen! Hört auf den Kommandanten.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Mensch, warum hast du den Stock weggeworfen? Womit sollen wir denn dann an der Tür klingeln?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "– Das hast du doch gar nicht gesagt.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– Wenn sie unsere Namen lernt, wird sie uns mögen.",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "Der Freund des Cousins des Meisters unseres Schwagers – Teherans reichster Mann – hat gesagt, Schwarz sei die Farbe der Liebe.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 11
 }

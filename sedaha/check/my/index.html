@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="my" dir="ltr">မြန်မာ</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 3. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/my/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/my/3/" data-round="3">3</a></p>
-    <div class="nc-guide" id="ncResume" data-total="3" data-base="/sedaha/check/my/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
+    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/my/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/my/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="my" data-language="Burmese" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1263#8">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">နိဒါန်း</p>
-        <p class="nc-ctx">…ပူပန်ရှုပ်ထွေးသော အသံဗလံထဲတွင် ပျောက်ဆုံးသွားလိမ့်မည့် ခဏများနှင့် ရုပ်ပုံများ။ ငါ၏ ကမ္ဘာနှင့် သင်၏ ကမ္ဘာကြားတွင် တံတားတစ်ခု ဖြစ်လာစေရန် မှတ်တမ်းတင်ခဲ့ကြခြင်း ဖြစ်၏။ ဤစာကြောင်းများကို ငါရေးနေသည့် ခဏတွင်ရှိသော ငါ့ကမ္ဘာမှ၊ သင်ထိုင်၍ ၎င်းတို့ကို ဖတ်နေသည့် ခဏတွင်ရှိသော သင့်ကမ္ဘာသို့ တံတားတစ်ခု။</p>
-        <p class="nc-line">ဤဘက်ခြမ်းမှ ငါသည် စကားလုံးများ၏ ချည်ကြိုးကို ဖြေလျှော့ပေးနေပြီး၊ အခြားဘက်ခြမ်းမှ သင်သည် ၎င်းကို စုသိမ်းနေ၏။</p>
+        <p class="nc-ctx">– အမီရ်၊ အမီရ်-ဂျန်၊ ငါ့သား။ နိုးတော့။ နိုးတော့ မားမန်ရဲ့သား။ အားလုံး အိပ်မက်ပါ။ မကြောက်နဲ့၊ မားမန် ဒီမှာ ရှိတယ်။</p>
+        <p class="nc-ctx">…မလင်းသည့် စိုးရိမ်စရာ မီးအိမ်။ သူတို့အိမ်တံခါး၏ အရောင်က ရောင်စုံခဲတံဘူး၏ ဘယ်နေရာမှာ ရှိမည်ကို ကျွန်တော် ဘယ်တော့မှ မသိခဲ့ရသော မိန်းကလေးတစ်ယောက်၏ လက်ထဲမှ မှိတ်တုတ်မှိတ်တုတ် လင်းနေသည့် မီးအိမ်။ မိန်းကလေးငယ်တစ်ယောက်က ဝီးဝီးဟု အသံပေးကာ ကျွန်တော့်ဘေးမှာ လာရပ်သည်။ ကစားစရာများကို ကြည့်ပြီး ပြောသည်—</p>
+        <p class="nc-line">– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီး တမီးကို ဝယ်ပေးမလား။</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear that '<bdi lang="my" dir="ltr">၎င်းကို</bdi>' refers to the words being gathered?</p>
+      <p class="nc-q" id="q1">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0132#2">
+    <fieldset class="nc-item" data-id="03/0430#9">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">– ရှိတယ်၊ နီနီ-ဂျန် ရဲ့ ပစ္စည်းတွေကို ပစ်ဖို့ ရင်မရပ်ရက်ဘူး။ ဒီရက်တွေမှာ ရွာတွေကို သွားရင် ဆန်းဒွစ်ချ် လုပ်ပြီး အဲဒီအိတ်ထဲ ထည့်ပြီး တစ်ပါတည်း ယူသွားတယ်။</p>
-        <p class="nc-ctx">…တစ်ယောက် နှာချေလိုက်တာ၊ ဟိုဘက်ခြမ်းက လူက ကူးပြီး သေရတယ်ဆိုတော့။ ဒီလိုမျိုး တစ်ခါမှ မမြင်ဖူး မကြားဖူးဘူး။ ဘီဘီ တို့တောင် ဒီလိုမျိုးအကြောင်း ဘယ်တုန်းကမှ မပြောဖူးဘူး။ ဥပမာ တိုက်ဖွိုက်တွေ၊ တီဘီတွေ၊ ဝက်သက်တွေ ရှိခဲ့တယ်။ အဲဒါတွေကို သေစေတတ်တဲ့ရောဂါလို့ ခေါ်ခဲ့ကြတယ်။ ဟင်း၊ အဲဒါတွေတောင် ဒီလောက် သတ်မသွားဘူး။</p>
-        <p class="nc-line">ဒါမှမဟုတ် ကာလဝမ်းရောဂါပေါ့။ အဲဒါလည်း ဒီလောက် သတ်မသွားဘူး။</p>
+        <p class="nc-ctx">ဟူမန် ပြောသည်−</p>
+        <p class="nc-ctx">– နင်လည်း</p>
+        <p class="nc-line">ဒီလိုလီးဆန်ဆန် စကားပြောပုံနဲ့ဆို "အလန် လီးလွန်" လို့ နာမည်ရှိသင့်တယ်။</p>
       </div>
-      <p class="nc-q" id="q2">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
+      <p class="nc-q" id="q2">'<bdi lang="my" dir="ltr">အလန် လီးလွန်</bdi>' is meant as a rude pun on the actor Alain Delon. Would Burmese readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +159,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0583#3">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">– တကယ်ပြောရရင် သွားတိုက်ဖို့ သွားခဲ့တာ၊ လက်နဲ့ မျက်နှာလည်း ဆေးခဲ့တယ်၊ မျက်မှန်မပါလို့ မမြင်ခဲ့တာပါ။</p>
-        <p class="nc-ctx">ဖရိဒ်သည် သူ့ခေါင်းအုံးနှင့် စောင်ကို ကောက်ယူကာ ငါ့ခုတင်အပေါ်ထပ်တွင် လာအိပ်လိုက်သည် — တက္ကသိုလ် ပထမနှစ်ဝက်နှစ်ခုအတွင်း ဗာမန် အိပ်ခဲ့သောခုတင်ဖြစ်ပြီး၊ ထိုညတွင် ဗာမန်၏ ကိုယ်နွေးထွေးမှုသည် ခုတင်ပေါ်ရှိ အိပ်ရာခင်းမှ ပျောက်ကွယ်သွားခဲ့သည်မှာ သုံးနှစ်နီးပါးရှိပြီဖြစ်သည်။ ဟူမန် ပြောသည်−</p>
-        <p class="nc-line">– လင်းယုန်မျက်စိ၊ လူတိုင်းက ကျားသစ် ဖရိဒ်ဆီကနေ ထွက်ပြေးကြတယ်၊ ကျားသစ် ဖရိဒ်ကိုတောင် ထွက်ပြေးစေတဲ့ နင်က ဘာအမျိုးအစားလဲ ကြည့်စမ်း။</p>
+        <p class="nc-line">မြေကြီးကနေ ကောင်းကင်ဘက်ကို မိုးရွာလို့မရဘူး။</p>
       </div>
-      <p class="nc-q" id="q3">A student teases a male friend. Does '<bdi lang="my" dir="ltr">နင်</bdi>' (you) sound natural between young men?</p>
+      <p class="nc-q" id="q3">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +175,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0601#4">
+    <fieldset class="nc-item" data-id="04b/0334#8">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">– နီဂါရ်က သူ့ဝမ်းကွဲညီအစ်ကိုကို ရိုက်ခိုင်းခဲ့တာလား၊ အခု လိမ်ညာခံလိုက်ရသလို ခံစားနေရတာလဲ?</p>
-        <p class="nc-ctx">…တစ်ခုခု ပြောရန် ငါ ကြောက်ခဲ့သည်။ ဆဲဆိုစကား ငါ များစွာ မသိခဲ့ချေ။ သိသည့် စကားများပင် ရေးရန် ငါ ကြောက်ခဲ့သည်။ ဖမ်းမိသွားရင် ဘယ်လိုလုပ်မလဲ? "ငါ နင့်ကို ချစ်တယ် နီဂါရ်" ဟူသော စကားလုံးများနှင့် အားလုံးကို ငါ ဖြည့်ခဲ့သည်။ ထို့နောက် တာဂီ ငါ့စက္ကူများကို ကြည့်မှာစိုးလို့ ငါ ကြောက်လာသည်။</p>
-        <p class="nc-line">စက္ကူတိုင်း၏ ဝါကျအလယ်တွင် အထင်ရှားမကြီးသော "မ-" အက္ခရာတစ်လုံးကို ငါ ထပ်ထည့်ခဲ့သည် — "ချစ်တယ်" ကို "မချစ်ဘူး" အဖြစ် ပြောင်းစေသော စကားလုံး။</p>
+        <p class="nc-line">ငါ့လက်က တိုတယ်၊ မင်းနဲ့ ပေါင်းစည်းရေးက ဝေးလှတယ်။</p>
       </div>
-      <p class="nc-q" id="q4">Is it believable that one added letter turns '<bdi lang="my" dir="ltr">ချစ်တယ်</bdi>' into '<bdi lang="my" dir="ltr">မချစ်ဘူး</bdi>'?</p>
+      <p class="nc-q" id="q4">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +191,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0744#5">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">– မင်း ဘာဖတ်ချင်နေတယ်ဆိုတာ ငါ သိတယ်။ ချစ်သူနဲ့ ဇာတိမြေကို အောက်မေ့ပြီး ငါ ဒီလောက် နာကျင်စွာ ငိုကြွေးမယ်၊ ဒါကြောင့် ကမ္ဘာပေါ်မှ ခရီးသွားခြင်းရဲ့ လမ်းနဲ့ ဓလေ့အားလုံးကို ...</p>
-        <p class="nc-ctx">…သတင်းက နိုင်ငံမြောက်ပိုင်းနှင့် အနောက်ပိုင်း ပြည်နယ်များတွင် ကျယ်ပြန့်သော ရေလွှမ်းမိုးမှုကြောင့် ဖြစ်ပေါ်သော ပျက်စီးဆုံးရှုံးမှုများအကြောင်း ပြောနေသည်။ နောက်ကနေ ကြည့်တော့ မားမန်သည် ပိုကြီးသော စတုဂံတစ်ခုဘေးတွင် ထိုင်နေသော စက်ဝိုင်းလေးတစ်ခုလို ကျွန်တော့်မျက်လုံးထဲ ထင်လာသည်။ မားမန်က ပြောနေသည်—</p>
-        <p class="nc-line">– သူ အခြေအနေကောင်းလာရင် မရှက်အထိ ခြေလျင်သွားမယ်လို့ ငါ ဆုကတိထားထားတယ်။</p>
+        <p class="nc-line">ဘီဘီ၊ ဘုရားသခင် သူမကို နားနေစေတော်မူပါစေ၊ ဒီလိုအချိန်မျိုးမှာ "ပြောရင်လည်း လျှာလောင်တယ်၊ မပြောရင်လည်း အရိုးတွင်းခြင်ဆီ လောင်တယ်" လို့ ပြောလေ့ရှိတယ်။</p>
       </div>
-      <p class="nc-q" id="q5">The speaker vows to walk to the holy city of Mashhad. Is that clear?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +207,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1227#6">
+    <fieldset class="nc-item" data-id="04b/1248#7">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">…သူငယ်ချင်းအပြင် ဟာမိဒ်အတွက် ဂုဏ်ယူစရာဆို၍ နောက်ဘက်မှာ အရှည်ထားသော ထိုဆံပင်သာ ရှိခဲ့သည်။ သူသည် ဆံပင်နောက်ဘက်အရှည်က နီဂါရ်၏ အိမ်ဘက်သို့ မျက်နှာမူစေရန် အမြဲ ထိုင်လေ့ရှိသည်။ ထိုဆံပင်အရှည်က ကောက်နေပြီး ဟာမိဒ်၏ လက်တစ်ဖက်ကလည်း အမြဲ ထိုဆံပင်ကောက်ပေါ်မှာ ရှိသည်။ တစ်ခါက ယာဆာရ်ကို သူ ပြောခဲ့သည်—</p>
-        <p class="nc-ctx">– မင်း ဘာဘာမှာ ပိုက်ဆံမရှိ၊ မင်းမှာ လက်တစ်ဖက်နဲ့ ခြေတစ်ဖက်လည်း မရှိဘဲ အဲဒီအစား ငါ့ဆံပင်နောက်အရှည်မျိုး ရမယ်ဆိုရင် လက်ခံမလား။</p>
-        <p class="nc-line">သူတို့ယောက်ဖ၏ ဆရာသမား၏ ဝမ်းကွဲညီအစ်ကို၏ သူငယ်ချင်းက ဆံပင်ကို Babyliss သုံးကြောင်း ဟာမိဒ် ကြားခဲ့ပုံရသည်။</p>
+        <p class="nc-ctx">…ကိုင်ထားကြသည်။ ယာဆာရ် မလာခဲ့။ ကျွန်တော့်ကားနှင့် ဟာမိဒ်၏ ကားက ပုံစံတူသည်။ ကျွန်တော့်ကားက အပြာရောင်၊ ဟာမိဒ်၏ ကားက အနီရောင်။ နှစ်ဆယ့်ငါး တိုမန်ဖြင့် ဝယ်ထားကြသည်။ မီးခြစ်ဘူးထက် နည်းနည်း ကြီးသည်။ ဘယ်သူ့ကားအရောင်က ပိုကောင်းသလဲဟု ပြောနေကြသည်။ တာဂီက အဝါဟု ပြောသည်။ ဟာမိဒ်က ပြောသည်—</p>
+        <p class="nc-ctx">– အနက်ရောင်သာ ရှိရင် ငါ အနက်ရောင်ကို ယူမှာ။</p>
+        <p class="nc-line">တီဟီရန်က သူဌေးဆိုတဲ့ ငါတို့ယောက်ဖရဲ့ ဆရာသမားရဲ့ ဝမ်းကွဲညီအစ်ကိုရဲ့ သူငယ်ချင်းက အနက်ရောင်ဟာ အချစ်ရဲ့အရောင်လို့ ပြောတယ်။</p>
       </div>
-      <p class="nc-q" id="q6">Is '<bdi lang="my" dir="ltr">ဆရာသမား</bdi>' right for the master craftsman their brother-in-law works under?</p>
+      <p class="nc-q" id="q6">Is it clear the friend at the end of the chain is Tehran's richest man?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +225,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1248#7">
+    <fieldset class="nc-item" data-id="01/0073#5">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">…ကိုင်ထားကြသည်။ ယာဆာရ် မလာခဲ့။ ကျွန်တော့်ကားနှင့် ဟာမိဒ်၏ ကားက ပုံစံတူသည်။ ကျွန်တော့်ကားက အပြာရောင်၊ ဟာမိဒ်၏ ကားက အနီရောင်။ နှစ်ဆယ့်ငါး တိုမန်ဖြင့် ဝယ်ထားကြသည်။ မီးခြစ်ဘူးထက် နည်းနည်း ကြီးသည်။ ဘယ်သူ့ကားအရောင်က ပိုကောင်းသလဲဟု ပြောနေကြသည်။ တာဂီက အဝါဟု ပြောသည်။ ဟာမိဒ်က ပြောသည်—</p>
-        <p class="nc-ctx">– အနက်ရောင်သာ ရှိရင် ငါ အနက်ရောင်ကို ယူမှာ။</p>
-        <p class="nc-line">တီဟီရန်က သူဌေးဆိုတဲ့ ငါတို့ယောက်ဖရဲ့ ဆရာသမားရဲ့ ဝမ်းကွဲညီအစ်ကိုရဲ့ သူငယ်ချင်းက အနက်ရောင်ဟာ အချစ်ရဲ့အရောင်လို့ ပြောတယ်။</p>
+        <p class="nc-line">သူပြောတာက "ကောင်းသောနှစ်တစ်နှစ်ကို ၎င်း၏ နွေဦးရာသီမှ သိနိုင်သည်" တဲ့။</p>
       </div>
-      <p class="nc-q" id="q7">Is it clear the friend at the end of the chain is Tehran's richest man?</p>
+      <p class="nc-q" id="q7">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +241,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#8">
+    <fieldset class="nc-item" data-id="01/0132#2">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">– အမီရ်၊ အမီရ်-ဂျန်၊ ငါ့သား။ နိုးတော့။ နိုးတော့ မားမန်ရဲ့သား။ အားလုံး အိပ်မက်ပါ။ မကြောက်နဲ့၊ မားမန် ဒီမှာ ရှိတယ်။</p>
-        <p class="nc-ctx">…မလင်းသည့် စိုးရိမ်စရာ မီးအိမ်။ သူတို့အိမ်တံခါး၏ အရောင်က ရောင်စုံခဲတံဘူး၏ ဘယ်နေရာမှာ ရှိမည်ကို ကျွန်တော် ဘယ်တော့မှ မသိခဲ့ရသော မိန်းကလေးတစ်ယောက်၏ လက်ထဲမှ မှိတ်တုတ်မှိတ်တုတ် လင်းနေသည့် မီးအိမ်။ မိန်းကလေးငယ်တစ်ယောက်က ဝီးဝီးဟု အသံပေးကာ ကျွန်တော့်ဘေးမှာ လာရပ်သည်။ ကစားစရာများကို ကြည့်ပြီး ပြောသည်—</p>
-        <p class="nc-line">– ဝီးးး၊ ဘာဘာ၊ ဘာဘာ၊ ဒီအရုပ်ကြီး တမီးကို ဝယ်ပေးမလား။</p>
+        <p class="nc-ctx">– ရှိတယ်၊ နီနီ-ဂျန် ရဲ့ ပစ္စည်းတွေကို ပစ်ဖို့ ရင်မရပ်ရက်ဘူး။ ဒီရက်တွေမှာ ရွာတွေကို သွားရင် ဆန်းဒွစ်ချ် လုပ်ပြီး အဲဒီအိတ်ထဲ ထည့်ပြီး တစ်ပါတည်း ယူသွားတယ်။</p>
+        <p class="nc-ctx">…တစ်ယောက် နှာချေလိုက်တာ၊ ဟိုဘက်ခြမ်းက လူက ကူးပြီး သေရတယ်ဆိုတော့။ ဒီလိုမျိုး တစ်ခါမှ မမြင်ဖူး မကြားဖူးဘူး။ ဘီဘီ တို့တောင် ဒီလိုမျိုးအကြောင်း ဘယ်တုန်းကမှ မပြောဖူးဘူး။ ဥပမာ တိုက်ဖွိုက်တွေ၊ တီဘီတွေ၊ ဝက်သက်တွေ ရှိခဲ့တယ်။ အဲဒါတွေကို သေစေတတ်တဲ့ရောဂါလို့ ခေါ်ခဲ့ကြတယ်။ ဟင်း၊ အဲဒါတွေတောင် ဒီလောက် သတ်မသွားဘူး။</p>
+        <p class="nc-line">ဒါမှမဟုတ် ကာလဝမ်းရောဂါပေါ့။ အဲဒါလည်း ဒီလောက် သတ်မသွားဘူး။</p>
       </div>
-      <p class="nc-q" id="q8">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q8">During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,14 +259,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#9">
+    <fieldset class="nc-item" data-id="04b/1321#1">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="my" dir="ltr">
-        <p class="nc-ctx">ဟူမန် ပြောသည်−</p>
-        <p class="nc-ctx">– နင်လည်း</p>
-        <p class="nc-line">ဒီလိုလီးဆန်ဆန် စကားပြောပုံနဲ့ဆို "အလန် လီးလွန်" လို့ နာမည်ရှိသင့်တယ်။</p>
+        <p class="nc-line">"ဟိုအရပ်မှာရှိသော စပျစ်ရည်သည် အမှန်တရားဖြစ်ပြီး ဥပစာမဟုတ်။"</p>
       </div>
-      <p class="nc-q" id="q9">'<bdi lang="my" dir="ltr">အလန် လီးလွန်</bdi>' is meant as a rude pun on the actor Alain Delon. Would Burmese readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q9">Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -285,21 +275,37 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="my" dir="ltr">
+        <p class="nc-ctx">နိဒါန်း</p>
+        <p class="nc-ctx">…ပူပန်ရှုပ်ထွေးသော အသံဗလံထဲတွင် ပျောက်ဆုံးသွားလိမ့်မည့် ခဏများနှင့် ရုပ်ပုံများ။ ငါ၏ ကမ္ဘာနှင့် သင်၏ ကမ္ဘာကြားတွင် တံတားတစ်ခု ဖြစ်လာစေရန် မှတ်တမ်းတင်ခဲ့ကြခြင်း ဖြစ်၏။ ဤစာကြောင်းများကို ငါရေးနေသည့် ခဏတွင်ရှိသော ငါ့ကမ္ဘာမှ၊ သင်ထိုင်၍ ၎င်းတို့ကို ဖတ်နေသည့် ခဏတွင်ရှိသော သင့်ကမ္ဘာသို့ တံတားတစ်ခု။</p>
+        <p class="nc-line">ဤဘက်ခြမ်းမှ ငါသည် စကားလုံးများ၏ ချည်ကြိုးကို ဖြေလျှော့ပေးနေပြီး၊ အခြားဘက်ခြမ်းမှ သင်သည် ၎င်းကို စုသိမ်းနေ၏။</p>
+      </div>
+      <p class="nc-q" id="q10">Is it clear that '<bdi lang="my" dir="ltr">၎င်းကို</bdi>' refers to the words being gathered?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -317,7 +323,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/my/2/">More lines: round 2 of 3 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/my/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/my/">&larr; <span class="native" lang="my" dir="ltr">မြန်မာ</span></a></p>
   </section>
 </main>
@@ -336,7 +342,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

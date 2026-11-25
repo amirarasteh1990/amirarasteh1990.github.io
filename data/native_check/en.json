@@ -1,149 +1,453 @@
 {
+ "format": 2,
  "lang": "en",
  "slug": "en",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Native check",
+  "lead": "You don't need to have read the book. Answer as many as you like.",
+  "persian_words": "Maman (mother), Baba (father) and -jan (dear) are Persian words, kept in the book.",
+  "page": "Page",
+  "correct": "Correct",
+  "needs_change": "Needs change",
+  "not_sure": "Not sure",
+  "how_say": "How would you say it?",
+  "meaning": "What do you think it means?",
+  "optional": "(optional)",
+  "your_name": "Your name",
+  "thanks_tick": "List my name on the Thanks page",
+  "private": "Your answers go only to the author.",
+  "send": "Send",
+  "send_continue": "Send and continue to page {n}",
+  "sending": "Sending…",
+  "popup_title": "Thank you!",
+  "popup_text": "Would you like your name on the website's Thanks page? Finish all 4 pages and we'll gladly add it.",
+  "popup_button": "Continue to page {n}",
+  "arrived": "Thank you, your answers from page {n} arrived.",
+  "thanks_last": "Thank you! Your answers arrived.",
+  "all_done": "You have sent every page. Thank you for all of them!",
+  "already_sent": "You have already sent this page from this device. Thank you!",
+  "continue_with": "Continue with page {n}",
+  "need_one": "Choose an answer for at least one line.",
+  "note_no_answer": "A line has a note: please choose an answer for it too.",
+  "name_needed": "Add the name you would like listed, or untick the box.",
+  "not_connected": "Sending is not connected yet.",
+  "too_long": "Sending took too long.",
+  "cannot_send": "The answers could not be sent from here.",
+  "use_email": "Please use the email button below.",
+  "fallback": "The answers could not be sent from this page. Please email them instead; nothing you entered is lost.",
+  "email_button": "Email the answers",
+  "shortened": "Some notes were too long for an email link and were shortened there. Your full answers are below; please paste them into the email.",
+  "noscript": "Sending needs JavaScript. You can also email your answers to {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "01/0004#1",
-   "where": "01/0004",
-   "text": "– You did the best thing, Nini-jan. They say newborns need a lot of sleep. Ten hours a day.",
-   "q": "Amir lovingly calls his mother 'Nini', an endearment used in the family. Does it sound warm and natural?",
-   "ctx": 1,
-   "before": [
-    "– Amir-jan, while you were all exchanging Norouz greetings with the children, I grabbed a little nap."
+   "key": "slips",
+   "title": "Mispronounced words",
+   "q": "The mother in the book mispronounces some foreign words. Do these sound like believable mispronunciations?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "freezel",
+     "note": "= freezer"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroca",
+     "note": "= America"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer's"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublace",
+     "note": "= ambulance"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "buldozel",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "03/0026#2",
-   "where": "03/0026",
-   "text": "– Yeah, right.",
-   "q": "Farid has just called Amir twice. Does 'Yeah, right' clearly mean 'obviously I was calling you'?",
-   "ctx": 2,
-   "before": [
-    "…bunk above mine, the bed that for three years had been a reminder of Bahman's absence. Farid had put on his jeans, but he still had not put on his socks. He had a habit of putting on his trousers, then going over to sit on the bed and eat breakfast. With his mouth full, he called me again. I said:",
-    "– Farid, were you calling me?"
+   "key": "images",
+   "title": "Persian sayings",
+   "q": "Some Persian sayings and images are translated word for word. Does each one give you some sense of its meaning, or does it mean nothing to you?",
+   "labels": [
+    "I can guess it",
+    "I can't",
+    "Not sure"
+   ],
+   "note_label": "What do you think it means?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Rain doesn't fall upward from the earth.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "A good year is known from its spring.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Don't eat sorrow",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "my heart is rotting",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "My hand is short and union with you is far.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "if I say it, my tongue burns; if I don't say it, the marrow of my bones burns",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "the meal will turn to snake venom for me",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "no bread is going to warm up for you",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "my family shoved me into the henhouse",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "the sugar cube jumps in my throat",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "peek into every last corner",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "words cost nothing; it's just hot air",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "he would surely fall from Negar's eyes",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Just a harvest-time promise?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "let me serve you the guts of friendship on a tray",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "all their body hair fell right out",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "don't get so worked up, or your milk will dry up",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "no one will call you mute if you don't fart",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Eat the head of my dick",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "You dick-head eater",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "laughing at our beards and dicks",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "wandering the streets like this with your dick in your hand",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "no matter what dick lands on our heads",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0191#3",
-   "where": "03/0191",
-   "text": "– Oh-ho. Hamid Cat, until yesterday you said \"ass.\" Now you've gone all civilized and say \"donkey\"?",
-   "q": "Taghi mocks Hamid for swapping a rude word for a polite one. Does it land?",
-   "ctx": 2,
-   "before": [
-    "– Pfff, donkey, who knows better, the friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran, or you, you calf? Go on then, buy it. But when its glass breaks, don't say I didn't warn you.",
-    "Taghi said:"
+   "key": "children",
+   "title": "Children's words",
+   "q": "Some children in the book get words wrong, the way small children do. Does each one sound like a child's mistake, not a typo?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "It's marmal stone. Marmal means really expensive.",
+     "note": "marmal = marble"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "It's called Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, wiw you buy me dis big dolly?",
+     "note": "a little girl"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Yes, I wiw buy you a dolly.",
+     "note": "her father copies her"
+    }
    ]
   },
   {
-   "id": "03/0278#4",
-   "where": "03/0278",
-   "text": "In a way, you could say they conquered the university. Karroubi is love, honestly and truly.",
-   "q": "Farid is excited. Does 'Karroubi is love' sound like natural student slang?",
-   "ctx": 1,
-   "before": [
-    "– Hey, Taverny, run! Come on, let's go. They say they didn't let Karroubi into the university. His supporters broke the Hafez gate and came in."
+   "key": "nicknames",
+   "title": "Nicknames",
+   "q": "The friends in the book give each other playful nicknames, often as wordplay. Does each one work as a nickname in your language?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Dickon",
+     "note": "a nickname for one of the friends: the actor Alain Delon's name, with part of it turned into a rude word for penis"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Elder of the Tavern",
+     "note": "a mock-grand title, taken from Hafez's poetry"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Eldie",
+     "note": "a pet form of \"Elder of the Tavern\""
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, my Tavvy",
+     "note": "pet forms made from \"tavern\""
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard Farid",
+     "note": "for a daring, reckless friend"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Is Arasteh a trimmed-down Araasteh?",
+     "note": "araasteh = Persian for \"neat\""
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "Her Ladyship Ms. Armaaan",
+     "note": "the surname Arman, drawn out to mock"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Curly-haired Schrödinger",
+     "note": "a mock title for someone who can't make up his mind"
+    }
    ]
   },
   {
-   "id": "03/0310#5",
-   "where": "03/0310",
-   "text": "I press the elevator button. The elevator door opens. That day, Niloofar had come up the stairs. I go toward the stairwell. The voices of a boy and a girl drift out of the elevator. They call me sick.",
-   "q": "The riders mock him for calling the elevator, then walking off. Does 'sick' land?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "– And with that dickish way you talk, your name should've been Alain Dickon. Don't flatter yourself. I don't mean Alain Delon, with the way you scrunch up your nose ...",
-   "q": "Hooman's insult puns on the actor Alain Delon. Does 'Alain Dickon' land?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0588#7",
-   "where": "03/0588",
-   "text": "– In my opinion, life is like a thousand-toman banknote: whichever side you look at, it smells of lentil rice.",
-   "q": "Meysam ends a deep debate about life with a silly quip. Does the joke land?",
-   "ctx": 1,
-   "before": [
-    "Meysam and Eskandar sat there in the dark, debating. The conversation had reached the meaning of life and was beginning to sound like an argument. Eskandar's voice kept rising until Meysam said:"
+   "key": "jokes",
+   "title": "Jokes and wordplay",
+   "q": "These lines contain a joke or a play on words. Does each one work in your language?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "That's just his factory setting.",
+     "note": "messing things up is simply his nature"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Forgiven. The whole boulevard is yours.",
+     "note": "in Persian, \"forgive\" also means \"give away\""
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "until yesterday you said \"ass.\" Now you've gone all civilized and say \"donkey\"?",
+     "note": "teasing a boy for switching to a politer word"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir-to-pir? … Eagle Eye says peer-to-peer; Taverny says Eldie-to-Eldie.",
+     "note": "he hears \"peer\" as Persian pir, \"elder\", the root of his nickname"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Last night I could hear you ruminating.",
+     "note": "chewing at night, like a cow chewing cud"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "What the hell's wrong with you this time, getting it up at us, Alain Dickon?",
+     "note": "double meaning: sitting up proudly, and an erection"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "What izer wasn't he?",
+     "note": "the mother catches only the end of \"womanizer\""
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "The friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran",
+     "note": "a boy's running boast"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Or you're dick-brai... well, you already were dick-brained, now you've become even more dick-brained.",
+     "note": "the insult is cut off, then made worse"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Yeah, all of us own factories. … We've got a bullshit factory.",
+     "note": "all they produce is bullshit: they just talk nonsense"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "You fossil, you're a monument to stupidity and decline",
+     "note": "a mocking insult"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "life is like a thousand-toman banknote: whichever side you look at, it smells of lentil rice.",
+     "note": "an absurd quip"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "This is how I talk; you hear me speak, you think it's poetry.",
+     "note": "a boy answers in a sing-song rhythm"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Careful you don't crack, Mr. Dick.",
+     "note": "he has just puffed out his chest"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "You're the biggest cow of all.",
+     "note": "\"cow\" = a dull fool, said to a man"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "he always got such a kick out of working the word \"aware\" into that sentence twice.",
+     "note": "\"aware\" used twice, playfully"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "the problem is with the receiver; the transmitter can't fix it.",
+     "note": "the friend's poor eyesight is the \"receiver\""
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "I mean Alain Dickon. Diiick.",
+     "note": "the rude part of the pun, drawn out"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "If you're Hooman, then I'm Susan.",
+     "note": "the gentle name Hooman doesn't suit such a hairy man"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "The derivative? Meaning? Or the meaning of the derivative? Or the derivative of meaning?",
+     "note": "mock-profound wordplay"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "God willing, may you always be araasteh.",
+     "note": "a blessing that puns on the surname Arasteh; araasteh = \"neat\""
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "I can't see anything without my glasses, objectively.",
+     "note": "the character's habit word, used everywhere"
+    }
    ]
   },
   {
-   "id": "03/0675#8",
-   "where": "03/0675",
-   "text": "After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.",
-   "q": "The memory came loose from that one place. Is the screw image clear?",
-   "ctx": 1,
-   "before": [
-    "…as memories passing through the mind, but as though I have been hurled back into that very moment, that very place. Several more times I found myself trapped behind the same door, within the same mingling of light and darkness. Each time, the same images passed before my eyes, damp and unsettling."
-   ]
-  },
-  {
-   "id": "04a/0076#9",
-   "where": "04a/0076",
-   "text": "– It's marmal stone. Marmal means really expensive.",
-   "q": "Both mistakes are intended: little Ghassem says 'marmal' for marble and thinks it means expensive. Does it sound like a child?",
-   "ctx": 1,
-   "before": [
-    "We went on again. There was a house halfway there. Its wall was pretty. Ghassem always said:"
-   ]
-  },
-  {
-   "id": "04b/0142#10",
-   "where": "04b/0142",
-   "text": "– Yeah, I've heard a few things about this localization business.",
-   "q": "Eskandar means the regional quota system for university places. Is 'localization' clear for that?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/0385#11",
-   "where": "04b/0385",
-   "text": "He can't help it. That's just his factory setting. Always so elegant and formal, shitting right at the historic turning point.",
-   "q": "Hooman mocks Amir for messing up at a key moment. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/0953#12",
-   "where": "04b/0953",
-   "text": "– Kids, we've been watching a movie at our relatives' house.",
-   "q": "A schoolboy addresses his friends. Does 'Kids' sound natural from him?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1247#13",
-   "where": "04b/1247",
-   "text": "With that toy car he pulled along behind him, he would surely fall from Negar's eyes.",
-   "q": "The boys want to impress Negar. 'Fall from Negar's eyes' is a kept Persian idiom: lose her respect. Would a reader guess that?",
-   "ctx": 1,
-   "before": [
-    "…A few days later, Taghi came to our usual spot with his toy car. Since Negar had entered our childish world, we had forgotten playing with cars. Not only playing with cars; all games had gone into the house of forgetting. I was very happy. With his own hands, Taghi was pinning himself to the mat."
-   ]
-  },
-  {
-   "id": "04b/1293#14",
-   "where": "04b/1293",
-   "text": "That Dr. Shafiʿi Kadkani had taken my poem and said he'd read it later? Just a harvest-time promise?",
-   "q": "'A harvest-time promise' is a Persian saying kept literal, for an empty, put-off promise. Would a reader guess that from context?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1312#15",
-   "where": "04b/1312",
-   "text": "It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.",
-   "q": "A student's crude made-up word for baffling. Does 'shit-dizzy' work as slang?",
-   "ctx": 1,
-   "before": [
-    "– ... Look at it, it's genuinely mind-bending. He drew this and wrote underneath it: this is not a pipe."
-   ]
-  },
-  {
-   "id": "06/0056#16",
-   "where": "06/0056",
-   "text": "They dumped earth over her with a buldozel. Earth and lime.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly English speaker say bulldozer as 'buldozel'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "A line by Hafez",
+   "q": "This line by the poet Hafez is written without a comma, so it can be read in two opposite ways:",
+   "labels": [
+    "Yes, both ways",
+    "Only one way",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "The wine there is real no metaphor.",
+     "note": null
+    }
+   ],
+   "after": [
+    "One way: the wine is real, not a metaphor.",
+    "The other way: the wine is not real, only a metaphor."
+   ],
+   "after_q": "Can your version be read both ways?"
   }
- ]
+ ],
+ "first": 1
 }

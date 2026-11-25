@@ -2,13 +2,24 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r14",
+ "version": "2026-11-25.o14",
  "items": [
   {
-   "id": "01/0178#1",
-   "where": "01/0178",
-   "text": "Rada bi, da bi postal odvisnik in ne bil takšen.",
-   "q": "Maman says she would rather her husband were an addict than the way he is. Does it sound natural?",
+   "id": "04a/0054#9",
+   "where": "04a/0054",
+   "text": "Ah, utrujen sem.",
+   "q": "A small boy groans on a long walk that he is tired. Does this sound like a small child?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Bilo je veliko. Kot konec sveta. Morda ne. Ampak bilo je veliko. Vedno sem se utrudil na sredini. Ampak nisem rekel nič. Enkrat je Omid rekel:"
+   ]
+  },
+  {
+   "id": "01/0158#16",
+   "where": "01/0158",
+   "text": "Tisti film z neumnim učiteljem? Mm-hm, glejte tega. Ta film je smešen, nasmeje te.",
+   "q": "Maman tells the family which film to watch tonight. Does this sound like her everyday speech?",
    "ctx": 1,
    "kind": "maman",
    "before": [
@@ -16,21 +27,21 @@
    ]
   },
   {
-   "id": "01/0090#2",
-   "where": "01/0090",
-   "text": "Ne. Jaz sem ta revica, nikoli nič ne rečem, vedno molčim.",
-   "q": "Maman says, half-joking, that poor her never says a word. Does this sound like a mother teasing herself?",
+   "id": "03/0422#7",
+   "where": "03/0422",
+   "text": "Kaj je spet s teboj?",
+   "q": "Hooman yawns and snaps at a roommate: what the hell is wrong with you now? Does this sound natural and rude enough?",
    "ctx": 1,
-   "kind": "maman",
+   "kind": "crude",
    "before": [
-    "– Nič mu nisi rekla."
+    "Hooman je zmečkal vrečko od bonbonov v roki in jo vrgel pod posteljo. Izpod postelje je vzel učbenik Islamske misli in ga položil na blazino. Zazehal je in rekel:"
    ]
   },
   {
-   "id": "06/0264#3",
-   "where": "06/0264",
-   "text": "Uh, vsakič, ko mu rečeš, naj nekaj prinese, ga tako strese, kot da ga je udaril tok.",
-   "q": "Maman complains that her son jolts as if shocked whenever he is asked to fetch something. Does this sound natural?",
+   "id": "01/0261#15",
+   "where": "01/0261",
+   "text": "Mm-hm, spremenil se je zelo, zelo. Postal je tako suh in temen.",
+   "q": "Maman says a relative has grown thin and his skin darker from the sun. Does 'temen' sound natural for a person?",
    "ctx": 1,
    "kind": "maman",
    "before": [
@@ -38,25 +49,118 @@
    ]
   },
   {
-   "id": "03/0458#4",
-   "where": "03/0458",
-   "text": "Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
-   "q": "She writes him a short, cool message setting a time to meet. Does this message sound natural?",
+   "id": "04b/0226#3",
+   "where": "04b/0226",
+   "text": "vsakič, ko sem prišel na predavanja in obveznosti za tisto zasrano drugo smer, sem videl, kako se prepirata.",
+   "q": "A friend grumbles crudely about his second degree course. Does this sound natural?",
    "ctx": 1,
-   "kind": "dialogue",
+   "kind": "crude",
    "before": [
-    "…muke pri zamišljanju besed, ki sem jih rekel Niloofar, pravim, da Niloofar me ni sprejela ne zaradi mojih besed, temveč bolj zato, ker sem vztrajal pri skrivnostnosti in ker nikoli, ne pred razkritjem svojih čustev ne po njem, nisem šel naravnost k Niloofar v notranjosti fakultete. Napisala je:"
+    "Še preden sem dokončal stavek, je vstala in vzela svoj nahrbtnik. Pospremil sem jo do pred stavbo Abu-Reyhan in tam sva se poslovila."
    ]
   },
   {
-   "id": "04b/0317#5",
-   "where": "04b/0317",
-   "text": "Tako me razjeziš, kadar tako molče sediš. Najraje bi te udarila s pestjo.",
-   "q": "A girl, exasperated by his silence, says she wants to punch him. Does this sound natural?",
-   "ctx": 1,
+   "id": "01/0152#6",
+   "where": "01/0152",
+   "text": "Oooo. Ko bi le vedel, kaj se dogaja v glavi Nini-jan.",
+   "q": "Ghassem lets out a long, fond sigh of delight at his mother's joke. Does 'Oooo' sound like that here?",
+   "ctx": 2,
    "kind": "dialogue",
    "before": [
-    "…da angel ne ve ničesar o ljubezni in ljubljenju, zato je svoja razodetja lepote namenil Adamu. Kako potem pričakuješ, da bo Njegovo stvarjenje gorelo za nekoga, ki o ljubezni ne ve niti prve stvari? Vzdihnila je. Para njenega diha se je v zavojih dvigala proti nebu, jaz pa sem jo molče gledal."
+    "– Ne, ne jemljite solz. Vzemite nasmehe.",
+    "Vsi se zasmejejo. Ghassem reče:"
+   ]
+  },
+  {
+   "id": "06/0090#11",
+   "where": "06/0090",
+   "text": "Medtem je Mahboub jokala cel teden brez prestanka.",
+   "q": "Maman recalls that back then her daughter cried for a whole week. Does 'Medtem' fit here?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "03/0491#10",
+   "where": "03/0491",
+   "text": "V istem hipu je ščurek pritekel izpod Hoomanove postelje in se vrnil pod njo.",
+   "q": "A cockroach runs out from under Hooman's bed and back again. Does this sentence read correctly?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "03/0385#9",
+   "where": "03/0385",
+   "text": "Bilo je pozno, ko sem prišel v študentski dom.",
+   "q": "Amir, a university student, comes back late to the dormitory where he lives. Does 'študentski dom' fit here?",
+   "ctx": 0,
+   "kind": "narration"
+  },
+  {
+   "id": "04b/0935#2",
+   "where": "04b/0935",
+   "text": "»Je slajše, da Atar joka do zore« ali »je zdaj še bolj umorjen«?",
+   "q": "She names a song by quoting two lines of a poem by Attar. Do these read as lines of poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Ja, tisto z Atarjevim verzom."
+   ]
+  },
+  {
+   "id": "04b/0742#6",
+   "where": "04b/0742",
+   "text": "spominjajoč se ljubljene in domovine, bom tako bridko jokal, da bom s sveta poti in šege popotovanja ...",
+   "q": "She quotes a famous Hafez line about weeping for one's beloved and homeland. Does it read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "– Vem, kaj hočeš prebrati. Tisto: »"
+   ]
+  },
+  {
+   "id": "04b/0193#8",
+   "where": "04b/0193",
+   "text": "Kvečjemu so nadzornikom doma namesto prašnega tekstilnega tepiha dali tepih v modri barvi.",
+   "q": "Eskandar says at best the dorm monitors got blue carpeting instead of the dust-colored kind. Is this clear and natural?",
+   "ctx": 1,
+   "kind": "banter",
+   "before": [
+    "– Pa to je to. Doslej še nisem videl sobe s preprogo."
+   ]
+  },
+  {
+   "id": "04b/1301#7",
+   "where": "04b/1301",
+   "text": "Brala je »Dolgo je, kar ljubljeni ni poslal sporočila, ni napisal pozdrava ...«, in mene je obšel smeh.",
+   "q": "She reads the opening of a Hafez love poem aloud. Does the quoted line read as poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "…bi Niloofar prišla, sem izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera. Veselje mi je iz spomina izbrisalo, da je tisto noč na vrsti Niloofar. Iztrgala mi je knjigo iz rok in rekla, da hoče v nasprotju z navado, ko prebere beit ali dve, prebrati celo gazelo."
+   ]
+  },
+  {
+   "id": "04b/1301#1",
+   "where": "04b/1301",
+   "text": "Preden je Niloofar prišla, sem že izbral gazelo, da bi po Hafezovih besedah Niloofar povedal veselo novico tistega večera.",
+   "q": "By the time she arrived, he had already chosen a poem to share his good news. Does this sentence say that?",
+   "ctx": 1,
+   "kind": "narration",
+   "before": [
+    "Vsi so se vključili v razpravo. Izkoristil sem priložnost in, ne da bi kdo opazil mene in mojo notranjo radost, vzel Hafeza ter odšel sesti na klop na Keshavarzovem bulvarju."
+   ]
+  },
+  {
+   "id": "03/0459#3",
+   "where": "03/0459",
+   "text": "Tolažil sem se, da je mehr najboljši mesec v letu za drugo romantično srečanje.",
+   "q": "Is it clear why Mehr is the best month for a romantic meeting?",
+   "before": [
+    "– Ta teden sploh nimam časa. Naslednji teden, v četrtek ob treh, na istem mestu kot zadnjič. Povem naj še, da imam samo pol ure.",
+    "…Maman rekel, da so nam uredili poletne inštrukcije. Nisem šel domov – v upanju, da bom videl Niloofar. Poletje je minilo in začele so se ure sedmega semestra. Govoril sem si, da če sem vse tisto poletje preživel z Niloofarinim «morda naslednji mesec», bo v zameno naše drugo srečanje padlo v Mehr."
    ]
   }
  ]

@@ -2,17 +2,55 @@
  "lang": "so",
  "slug": "so",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "01/0008#1",
-   "where": "01/0008",
-   "text": "Geedaha si tartiib tartiib ah u cagaaraan oo farxadaa ku keena. Wax kastaa si run ah u cusbonaanayaa.",
-   "q": "Someone praises spring. Is it clear everything only seems to become fresh again?",
+   "id": "04b/0274#4",
+   "where": "04b/0274",
+   "text": "– Nin yahow, aad baad u caajis tahay. Goormaan waxan oo kale idhi?",
+   "q": "Someone teases him for acting like a baby. Is 'caajis' the right word?",
    "before": [
-    "– Aad u yar. Qaar waxay xafladayn karaan xafladii yar ee maalinta ugu horreysa ee gu'ga. Laakiin sanadoodu cusub wuxuu ku yimaadaa dhinac Yaldaa habeenkeenna.",
-    "– Mm-hm, garatay. Laakiin haddaad waydiiso, sanadka cusub waa inuu gu'ga yimaadaa."
+    "…waday: – Runtii ma fahmi karo waxa aad iga jeclaatay. Isku-soo-ururinta sunaha indhahayga? Dirirtayda? Mise sida aan ula sheekaysto qof kasta adiga mooyaane? Ma jirtaa wax ka murugo badan inaad fadhiisato oo aad i daawato anigoo dadka kale oo dhan, gaar ahaan qofkaas gaarka ah, la sheekaysanaya?",
+    "– Aad bay ii murugaysaa, laakiin habeen iyo maalin lama qaylin karo dadka Ilaah. Ma tago oo Siinaa la diriraa?"
    ]
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "Adiguna, habkaas gus-ka ah ee aad u hadasho awgiis, magacaagu wuxuu ahaan lahaa Alain Guslon.",
+   "q": "'Alain Guslon' is meant as a rude pun on the actor Alain Delon. Would Somali readers get it? If not, what word could carry it?",
+   "before": [
+    "– Haa, Haamuun magac fiican baa kuu ah. Sida Haamuun-ka filimka, adiguna su'aalo baad ka buuxdaa. Walaac baad ka buuxdaa, waxaadna tahay il welwel, ma aha naftaada, laakiin aniga.",
+    "Huuman wuxuu yidhi:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Roobku kor ugama da'o dhulka.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Gacantaydu way gaaban tahay, midowgaaguna wuu fog yahay.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Murug ha cunin, wiilkayga caqliga badan.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Ilaahay ha u naxariisto, xiliyada sidaas ah waxay dhihi jirtay: haddaan dhaho, carrabkaygu ayaa guban; haddaan dhihin, laf-gashkaygaa guban.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "01/0140#2",
@@ -25,6 +63,13 @@
    ]
   },
   {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Waxay tidhi: qalbigaygu wuu qudhmayaa.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
    "id": "04a/0109#3",
    "where": "04a/0109",
    "text": "Guriga Daawuud ayaan arkay. Duntu gacantayda bay ku jirtay.",
@@ -32,66 +77,6 @@
    "before": [
     "– Maama. Nini.",
     "…oo wixii cadaa madaxayga ka jiiday, banaankana igu riixay. Haddana waan sii socday. Meeshii aan hore ugu dhacay, gacantayda ayaan ishayda saaray. Si qarsoodi ah ayaan farahayga dhexdooda uga eegay. Hadda haddii aan tago, gacantayda indhahayga ma saarayo. Baaskiil ma jirin. Haddana waan sii socday."
-   ]
-  },
-  {
-   "id": "04b/0274#4",
-   "where": "04b/0274",
-   "text": "– Nin yahow, aad baad u caajis tahay. Goormaan waxan oo kale idhi?",
-   "q": "Someone teases him for acting like a baby. Is 'caajis' the right word?",
-   "before": [
-    "…waday: – Runtii ma fahmi karo waxa aad iga jeclaatay. Isku-soo-ururinta sunaha indhahayga? Dirirtayda? Mise sida aan ula sheekaysto qof kasta adiga mooyaane? Ma jirtaa wax ka murugo badan inaad fadhiisato oo aad i daawato anigoo dadka kale oo dhan, gaar ahaan qofkaas gaarka ah, la sheekaysanaya?",
-    "– Aad bay ii murugaysaa, laakiin habeen iyo maalin lama qaylin karo dadka Ilaah. Ma tago oo Siinaa la diriraa?"
-   ]
-  },
-  {
-   "id": "04b/0554#5",
-   "where": "04b/0554",
-   "text": "– Bilowga bisha Esfand waa nooc ka mid ah wakhtigee imtixaan?",
-   "q": "Is it clear the speaker asks since when exams are held in early Esfand?",
-   "before": [
-    "– Mar kale Fiisigis Labaad eber baan ka dhacay. Aad baan u dhibban ahay.",
-    "Huuman wuxuu yidhi:"
-   ]
-  },
-  {
-   "id": "04b/0964#6",
-   "where": "04b/0964",
-   "text": "Mala-awaalkaygana, maalin kasta, marka Niluufar iyo Siinaa ay is arkaan, way is gacan qaadaan.",
-   "q": "Is it clear Niloofar and Sina shake hands when they meet?",
-   "before": [
-    "…qof walba ku eegayey. Habeenkaas ka dib, wax aan dhageysanno ma haynnin. Mar kale, sidii maalmihii ka horreeyey Walkman-ka, ka dib markii iftiinka guriga Negaar uu damo, waxaan tagi jirnay oo halkaas, daboolka xafadda jidka weyn, aan ku fadhiisan jirnay oo aan daawan jirnay gawaarida ag maraya.",
-    "Maalintaas ka dib, Niluufar mar dambe lama socon gabdhaha kale ee fasalka xagga kushkii Yacquub fasalka ka dib. Si toos ah ayay jaamacadda uga bixi jirtay."
-   ]
-  },
-  {
-   "id": "04b/1195#7",
-   "where": "04b/1195",
-   "text": "– Khamri-haan bay ka eg tahay weel.",
-   "q": "Is it clear it looks more like a big clay jar than a vase?",
-   "before": [
-    "– Hamoon, ma leedahay waxa loo yaqaan jidh qaab weel ubax lagu rido leh?",
-    "Huuman wuxuu yidhi:"
-   ]
-  },
-  {
-   "id": "04b/1236#8",
-   "where": "04b/1236",
-   "text": "Ka hor inta aan helo fursad aan ku idhaahdo waxa ahaa kaftan, feedhka Xamiid si toos ah ayuu u dhacay bartamaha sankayga.",
-   "q": "Hamid punches him on the nose. Is 'feedhka' the right word for fist?",
-   "before": [
-    "– Tag oo Xamiid koofiyaddiisa ka qaad oo madaxa bidaarta leh gadaashiisa ka dhar, haddii kale maanta marka Negaar soo baxdo waxaan kor u qaadayaa Yaasi-caatada ee madaxayga, markaas waxaa hadhaya adiga iyo Xamiid Bisad.",
-    "…shabeelka ayaa sii xoogaystay. Anigoo cabsi la gariiraya ayaan koofiyadda Xamiid ka qaaday oo si aad u tartiib ah ayaan madaxiisa gadaashiisa uga dharay, si aan Taqii raalli ugu hayo, oo aan xanaaqa Xamiid ka nabad gelo sidoo kale. Markaas si taxaddar leh ayaan koofiyadda meesheeda dib u dhigay."
-   ]
-  },
-  {
-   "id": "03/0430#9",
-   "where": "03/0430",
-   "text": "Adiguna, habkaas gus-ka ah ee aad u hadasho awgiis, magacaagu wuxuu ahaan lahaa Alain Guslon.",
-   "q": "'Alain Guslon' is meant as a rude pun on the actor Alain Delon. Would Somali readers get it? If not, what word could carry it?",
-   "before": [
-    "– Haa, Haamuun magac fiican baa kuu ah. Sida Haamuun-ka filimka, adiguna su'aalo baad ka buuxdaa. Walaac baad ka buuxdaa, waxaadna tahay il welwel, ma aha naftaada, laakiin aniga.",
-    "Huuman wuxuu yidhi:"
    ]
   }
  ]

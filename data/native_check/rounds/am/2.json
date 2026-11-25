@@ -2,20 +2,20 @@
  "lang": "am",
  "slug": "am",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "እያልኩ ያለሁት፣ እዚህ ተቀምጠህ ግጥም ብቻ የምታነብ ከሆነ ምንም ዳቦ አይሞቅልህም።",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "ልቤ እየበሰበሰ ነው አለች።",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "ሐዘን አትብላ፣ ብልህ ልጄ።",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +26,21 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "ቢቢ፣ ነፍሷን በገነት ያኑራት፣ እንዲህ ባለ ጊዜ እንዲህ ትል ነበር፦ ብናገረው ምላሴ ይቃጠላል፤ ባልናገረው የአጥንቴ መቅኒ ይቃጠላል።",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "ለዚያ ቀፋፊ ኤስካንዳር እንዳትነግረው፤ አለዚያ እንደገና ቁጭ ብሎ ለአንድ ሰዓት ምክርና ተግሣጽ ያዘንብብናል፤ ምግቡም የእባብ መርዝ ይሆንብኛል።",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "ዝናብ ከምድር ወደ ሰማይ አይዘንብም።",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "«ጥሩ ዓመት ከፀደዩ ይታወቃል» ይላል።",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "እያልኩ ያለሁት፣ እዚህ ተቀምጠህ ግጥም ብቻ የምታነብ ከሆነ ምንም ዳቦ አይሞቅልህም።",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0050#1",
+   "where": "01/0050",
+   "text": "እንዳትነግረኝ። ከነገርከኝ አኮርፍሃለሁ።",
+   "q": "Niloofar playfully threatens to sulk if Amir tells her. Does 'አኮርፍሃለሁ' sound natural?",
+   "before": [
+    "ገጾቹን በዓይኖቿና በሽፋሽፍቶቿ እየጠረገች ገለበጠቻቸው፤ እንዲህም አለች፦",
+    "– ቆይ ልይ።"
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +50,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "እጄ አጭር ነው፤ ካንቺ ጋር መገናኘትም ሩቅ ነው።",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0274#3",
+   "where": "01/0274",
+   "text": "ለኒሉፋር በሠራሁት ሙዳይ ውስጥ ጥቂት ተጨማሪ ቃላት እጥላለሁ፤ በተስፋም አሰላለሁ፦ እንዲህ ከቀጠልኩ፣ በጋ ሳይደርስ የምናብ ሙዳይ በቃላት ይሞላል።",
+   "q": "Amir drops words into it, like coins. Is 'ሙዳይ' clear for a piggy bank?",
+   "before": [
+    "– ምንኛ እንቅልፍ እንቅልፍ አለኝ እንደገና፣ ናና-ፐሰር-ጃን።",
+    "በደንብ እንድበላና ሐዘን እንዳልበላ የምትሰጠኝን ምክር ደጋግማ ከነገረችኝ በኋላ እንሰነባበታለን። በእኔ ዓለምና በምስሉ ማዶ ባለው ዓለም መካከል ያለችው ትንሽ መስኮት ትዘጋለች፤ ዓለሞቻችንን የሚያገናኘው ክርም በቅጽበት ይጠፋል። ከመተኛቴ በፊት ጥቂት ተጨማሪ መስመሮች እጽፋለሁ።"
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "ለዚያ ቀፋፊ ኤስካንዳር እንዳትነግረው፤ አለዚያ እንደገና ቁጭ ብሎ ለአንድ ሰዓት ምክርና ተግሣጽ ያዘንብብናል፤ ምግቡም የእባብ መርዝ ይሆንብኛል።",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0114#2",
+   "where": "01/0114",
+   "text": "ትንሽ ተረብሸህ ነበር፣ እኔም ሐዘን እበላ ነበር፣ ቢሆንም ጥሩ ነበር።",
+   "q": "Maman says 'ሐዘን እበላ' (I was eating sorrow, i.e. grieving). Is the meaning clear?",
+   "before": [
+    "– ነበር እንጂ፣ ኒኒ-ጃን። በትክክል ልቁጠረው። በ1397 አዛር መጀመሪያ ላይ ወደ ቤት መጥቼ እስካለፈው ደይ አጋማሽ ቆየሁ። ወደ አንድ ዓመት ከሁለት ወር ገደማ ይሆናል።",
+    "– ውይ፣ እንዴት ቶሎ አለፈ። ያን ያህል አጭር የሚመስለኝ ጥሩ ጊዜ ስላሳለፍንና ሐሳብ ስላልነበረብኝ ይመስለኛል።"
+   ]
+  },
+  {
+   "id": "03/0091#4",
+   "where": "03/0091",
+   "text": "ቤህማን ከፋኩልቲው ፕሮፌሰሮች አንዱን፣ ለአሚርካቢር ዩኒቨርሲቲ ጥልቅ ታማኝነት እንዳላቸው የሰማላቸውን ሰው እንዳነጋገረና፣ በምትኩ የኮንኩር ደረጃችን ከአማካዩ እጅግ የተሻለ ለሆነው ለስድስታችንም ላፕቶፕ እንዲሰጠንና ለክፍላችን ምንጣፍ እንዲገዛልን እንደተወሰነ ነግሮን ነበር።",
+   "q": "Is it clear each of the six students gets his own laptop?",
+   "before": [
+    "– ወይም ምናልባት ነበራቸው፣ ግን የራሳቸው ኪስ ይበልጥ ይገባዋል ብለው ወሰኑ።",
+    "…ይይዝና ወደ ዩኒቨርሲቲው የቫሊ-ዓስር ጎዳና ደጃፍ ያመራል። ነጭ ጸጉር፣ ጠይም ቆዳና የጎበጠ ጀርባ ያለው፣ ግራጫ ሱፍ የለበሰና ቡናማ ቦርሳ በእጁ የያዘ አንድ አጭር አዛውንት በዐውደ ርዕዩ አዳራሽና በአቡ-ሬይሃን መካከል ካለው መንገድ ብቅ ብሎ ወደ አቡ-ሬይሃን የመግቢያ ደረጃዎች እያመራ ነው። አንድ ወንድ ልጅና አንዲት ልጃገረድ ከጎኑ ይራመዳሉ። ከልጁ የራስና የእጅ እንቅስቃሴ አንድ ነገር ለማስረዳት እየሞከረ እንደሆነ መረዳት ይቻላል። ቀድሞ የማውቀው ምስል ነው።"
+   ]
+  },
+  {
+   "id": "03/0165#5",
+   "where": "03/0165",
+   "text": "ያ ደካማ፣ ብልጭ ድርግም የሚል ብርሃን ምናብና ሕልመ-ውኃ ብቻ ይሆናል የሚለው ጭንቀት ቀን በቀን ይበልጥ ወደ ራሱ ሳበኝ፤",
+   "q": "Is 'ሕልመ-ውኃ' clear for a mirage (water seen in the desert)?",
+   "before": [
+    "– ፕሮፌሰር፣ ለእግዚአብሔር ብለው።",
+    "…የኒሉፋር ፍቅር በውስጤ ሥር ከመስደዱ በፊት የሌላ ልጃገረድ ፍቅር ልቤን ይሞላው ነበር፣ ዓለሜና ትዝታዎቼም በእነዚህ ሁሉ ዓመታት ሌላ ቀለምና መዓዛ ይኖራቸው ነበር። ያ ባልተጠበቀ ሰዓት በእኩልታዎቹ ክፍል በር መቃን ውስጥ ብቅ ማለቷ ልብ የሚያሞቅና የማውቀው ምስል ሆኖ በዓይኔ ታየ፣ ያረጀና የተረሳ ስሜትንም በውስጤ አደሰ። ለዓመታት በጨለማ ልብ ውስጥ ከኖርኩ በኋላ፣ ደካማና ብልጭ ድርግም የሚል ብርሃን ወደ ዓለሜ ገብቶ የሚያጽናናኝን ጨለማ የሰነጠቀው ያህል ነበር።"
+   ]
   }
  ]
 }

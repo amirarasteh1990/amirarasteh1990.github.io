@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ceb" data-language="Cebuano" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="03/0355#1">
+  <form class="nc-form" id="ncForm" data-lang="ceb" data-language="Cebuano" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1263#8">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Nan, tungod lang sa paghulat nga akong nasinati, lingkod kamo og gamay pa tapad nako.</p>
-        <p class="nc-ctx">…Ang kasakit sa paghinumdom niadtong gutlo sa panamilit. Ug tingali ang kasakit sa paglimot sa usa ka butang nga akong gibati nga dili unta nako kalimtan. Usa ka butang nga sama sa kabalaka, usa ka kabalaka nga nagtindog luyo sa gabon. Ah sa paglimot, ah sa pagkalimot, ah sa pagkahikalimtan.</p>
-        <p class="nc-line">Sa balay sa tumoy sa hardin, tapad sa heater, naghigda ko nga nag-atubang sa tiyan, tunga-tunga na sa pagpangita og paagi sa pagsulbad sa daghang Konkoor trigonometry nga pangutana gamit lang ang unit circle.</p>
+        <p class="nc-ctx">– Amir, Amir-jan, akong anak. Bangon. Bangon para kang Maman. Damgo ra na tanan. Ayaw kahadlok, ania ko.</p>
+        <p class="nc-ctx">…Usa ka nagpilok-pilok nga suga sa kamot sa usa ka babaye nga wala gyud nako mahibaw-i kon asa ang kolor sa ilang pultahan mahimutang sa kahon sa mga krayola. Usa ka gamay nga babaye midagan nga naghimo og ingon-og-makina ug mihunong sa akong tapad. Gitan-aw niya ang mga dulaan. Miingon siya:</p>
+        <p class="nc-line">– Wiiiiing, Baba, Baba, pawiti ko ani dako nga munyika?</p>
       </div>
-      <p class="nc-q" id="q1">Is 'hardin' right for a house's inner courtyard?</p>
+      <p class="nc-q" id="q1">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0517#2">
+    <fieldset class="nc-item" data-id="03/0430#9">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
         <p class="nc-ctx">Miingon si Hooman:</p>
-        <p class="nc-ctx">– Wala gani kabalo si Leopardo Farid unsa siya sa iyang kaugalingon.</p>
-        <p class="nc-line">Sa usa ka bahin naay malaglag nga buhat, sa laing bahin moingon og «uy dugo, nasuko akong tiyan.»</p>
+        <p class="nc-ctx">– Ikaw usab,</p>
+        <p class="nc-line">sa imong morag buto nga tono sa pagsulti, angay unta ang imong ngalan Alain Butolon.</p>
       </div>
-      <p class="nc-q" id="q2">Farid feels sick at the sight of blood. Is 'nasuko akong tiyan' clear?</p>
+      <p class="nc-q" id="q2">'Alain Butolon' is meant as a rude pun on the actor Alain Delon. Would Cebuano readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +159,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0577#3">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Andam ko mamatay para sa imong mga mata nga sama sa nightingale, Mata sa Agila-jan, apan ang problema naa sa dawat, dili masulbad sa magpadala ang problema. Kondili, ang akong toothbrush dili parehas ang kolor o hitsura sa imoha.</p>
-        <p class="nc-ctx">Nagkatawa ang tulo ug migawas si Sajad sa kwarto.</p>
-        <p class="nc-line">Sa makadiyot, ang tingog ra ni Eskandar ug Meysam ang nadungog hangtod nga mikusog ang tingog ni Farid nga morag nalumsan.</p>
+        <p class="nc-line">Dili mo-ulan gikan sa yuta paingon sa langit.</p>
       </div>
-      <p class="nc-q" id="q3">Farid's voice rises as if he were choking. Is 'nalumsan' right?</p>
+      <p class="nc-q" id="q3">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +175,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0951#4">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Iuli nako. Morag nasayod pa siya giunsa paglihok ang mga naa'y wire.</p>
-        <p class="nc-ctx">Gikuha ni Taghi ang kamot ni Hamid sa hangin ug giluwas ang Walkman. Apan naigo gihapon si Yaser og pipila ka suntok ug sipa. Miingon si Hamid:</p>
-        <p class="nc-line">– Ang higala sa ig-agaw sa ostad sa among bayaw nga pinakadato sa Tehran, iyang gisulti.</p>
+        <p class="nc-line">Mubo ang akong kamot ug layo ang paghiusa kanimo.</p>
       </div>
-      <p class="nc-q" id="q4">Is it clear 'ostad' here means a master craftsman, not a teacher?</p>
+      <p class="nc-q" id="q4">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +191,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1063#5">
+    <fieldset class="nc-item" data-id="04a/0128#2">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">Si Yaser, nagsulat sa among mga ngalan sa paril atbang sa balay ni Negar gamit ang espray nga iyang gikawat gikan sa trak nga Khavar sa iyang Baba, miingon:</p>
-        <p class="nc-ctx">– Kon matun-an niya ang among mga ngalan, magustohan ta niya.</p>
-        <p class="nc-line">Sila Amir, Taghi, Hamid, ug Yaser nga gisulat ang labing dako sa tanan.</p>
+        <p class="nc-line">Ayaw pagkaon og kasubo, akong utok nga anak.</p>
       </div>
-      <p class="nc-q" id="q5">Four names are written. Is it clear Yaser's name was written largest?</p>
+      <p class="nc-q" id="q5">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +207,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1135#6">
+    <fieldset class="nc-item" data-id="04b/0274#7">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Sa naandan nga kahimtang, sa usa ka patas ug normal nga kalibotan, oo. Apan dili kon nakig-uban ka sa lawak sa usa ka nating-baka sama nimo. Sa gamay ra nga hulga, ibaligya nimo ang tanan.</p>
-        <p class="nc-ctx">…ko sa bahin tunga sa duha ka walay-sulod nga luna nga nagdugtong sa duha ka bahin sa agianan sama sa taytayan. Sa mubo nga pahulay tunga sa mga klase, kanunay kami molingkod sa mga lingkoranan dinhi. Molingkod ko. May sultihanay nga naduol gikan sa tumoy sa agianan. Naduol ug naduol pa ang tingog.</p>
-        <p class="nc-line">Naghisgot sila bahin sa importansya sa katungod sa mga bayot ug sa laing gutlo, sama sa pagduol niini, naghilayo na usab ang ilang mga tingog.</p>
+        <p class="nc-line">Nag-ingon ko nga kon molingkod ka lang dinhi ug mobasa og balak, walay tinapay nga mo-init para nimo.</p>
       </div>
-      <p class="nc-q" id="q6">Students discuss gay rights. Does 'bayot' sound neutral here, not insulting?</p>
+      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +223,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1195#7">
+    <fieldset class="nc-item" data-id="01/0203#4">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Hamoon, kumusta man ning lawas nga morag baso-sa-bulak?</p>
-        <p class="nc-ctx">Miingon si Hooman:</p>
-        <p class="nc-line">– Sama pa ni tadyaw kaysa baso.</p>
+        <p class="nc-line">Si Bibi, kaloy-i unta siya sa Diyos, moingon niini nga panahona, kon isulti nako, mangasunog ang akong dila; kon dili nako isulti, mangasunog ang unod sa akong bukog.</p>
       </div>
-      <p class="nc-q" id="q7">Something looks more like a clay jar than a vase. Is 'baso' right for vase?</p>
+      <p class="nc-q" id="q7">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +239,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#8">
+    <fieldset class="nc-item" data-id="01/0073#6">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
-        <p class="nc-ctx">– Amir, Amir-jan, akong anak. Bangon. Bangon para kang Maman. Damgo ra na tanan. Ayaw kahadlok, ania ko.</p>
-        <p class="nc-ctx">…Usa ka nagpilok-pilok nga suga sa kamot sa usa ka babaye nga wala gyud nako mahibaw-i kon asa ang kolor sa ilang pultahan mahimutang sa kahon sa mga krayola. Usa ka gamay nga babaye midagan nga naghimo og ingon-og-makina ug mihunong sa akong tapad. Gitan-aw niya ang mga dulaan. Miingon siya:</p>
-        <p class="nc-line">– Wiiiiing, Baba, Baba, pawiti ko ani dako nga munyika?</p>
+        <p class="nc-line">– Nagbugalbugal si Ghassem, moingon siya, 'Ang maayong tuig ilhan gikan sa tingpamulak niini.'</p>
       </div>
-      <p class="nc-q" id="q8">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q8">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,14 +255,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#9">
+    <fieldset class="nc-item" data-id="03/0517#2">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="ceb" dir="ltr">
         <p class="nc-ctx">Miingon si Hooman:</p>
-        <p class="nc-ctx">– Ikaw usab,</p>
-        <p class="nc-line">sa imong morag buto nga tono sa pagsulti, angay unta ang imong ngalan Alain Butolon.</p>
+        <p class="nc-ctx">– Wala gani kabalo si Leopardo Farid unsa siya sa iyang kaugalingon.</p>
+        <p class="nc-line">Sa usa ka bahin naay malaglag nga buhat, sa laing bahin moingon og «uy dugo, nasuko akong tiyan.»</p>
       </div>
-      <p class="nc-q" id="q9">'Alain Butolon' is meant as a rude pun on the actor Alain Delon. Would Cebuano readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q9">Farid feels sick at the sight of blood. Is 'nasuko akong tiyan' clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -285,21 +273,37 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="04b/0951#4">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="ceb" dir="ltr">
+        <p class="nc-ctx">– Iuli nako. Morag nasayod pa siya giunsa paglihok ang mga naa'y wire.</p>
+        <p class="nc-ctx">Gikuha ni Taghi ang kamot ni Hamid sa hangin ug giluwas ang Walkman. Apan naigo gihapon si Yaser og pipila ka suntok ug sipa. Miingon si Hamid:</p>
+        <p class="nc-line">– Ang higala sa ig-agaw sa ostad sa among bayaw nga pinakadato sa Tehran, iyang gisulti.</p>
+      </div>
+      <p class="nc-q" id="q10">Is it clear 'ostad' here means a master craftsman, not a teacher?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -336,7 +340,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

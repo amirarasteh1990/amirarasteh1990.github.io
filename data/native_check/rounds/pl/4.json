@@ -1,187 +1,472 @@
 {
+ "format": 2,
  "lang": "pl",
  "slug": "pl",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Okiem rodzimego użytkownika",
+  "lead": "Nie musisz znać książki. Odpowiedz na tyle pytań, na ile masz ochotę.",
+  "persian_words": "Maman (matka), Baba (ojciec) i -dżan (kochany) to perskie słowa, zachowane w książce.",
+  "page": "Strona",
+  "correct": "Dobrze",
+  "needs_change": "Do zmiany",
+  "not_sure": "Trudno powiedzieć",
+  "how_say": "Jak to ująć po Twojemu?",
+  "meaning": "Co Twoim zdaniem to znaczy?",
+  "optional": "(nieobowiązkowo)",
+  "your_name": "Twoje imię",
+  "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
+  "private": "Twoje odpowiedzi trafią tylko do autora.",
+  "send": "Wyślij",
+  "send_continue": "Wyślij i przejdź do strony {n}",
+  "sending": "Wysyłanie…",
+  "popup_title": "Dziękujemy!",
+  "popup_text": "Chcesz, żeby Twoje imię znalazło się na stronie z podziękowaniami w serwisie? Wypełnij wszystkie 4 strony, a chętnie je dodamy.",
+  "popup_button": "Przejdź do strony {n}",
+  "arrived": "Dziękujemy, Twoje odpowiedzi ze strony {n} dotarły.",
+  "thanks_last": "Dziękujemy! Twoje odpowiedzi dotarły.",
+  "all_done": "Wszystkie strony zostały wysłane. Dziękujemy za każdą z nich!",
+  "already_sent": "Ta strona została już wysłana z tego urządzenia. Dziękujemy!",
+  "continue_with": "Przejdź dalej do strony {n}",
+  "need_one": "Wybierz odpowiedź dla co najmniej jednego fragmentu.",
+  "note_no_answer": "Jeden z fragmentów ma uwagę: wybierz, proszę, odpowiedź także dla niego.",
+  "name_needed": "Wpisz imię, które mamy umieścić, albo odznacz pole.",
+  "not_connected": "Wysyłanie nie jest jeszcze podłączone.",
+  "too_long": "Wysyłanie trwało zbyt długo.",
+  "cannot_send": "Nie udało się stąd wysłać odpowiedzi.",
+  "use_email": "Skorzystaj, proszę, z przycisku e-mail poniżej.",
+  "fallback": "Nie udało się wysłać odpowiedzi z tej strony. Wyślij je, proszę, e-mailem; nic z tego, co wpisano, nie przepadło.",
+  "email_button": "Wyślij odpowiedzi e-mailem",
+  "shortened": "Niektóre uwagi były za długie na link e-mail i zostały w nim skrócone. Pełne odpowiedzi są poniżej; wklej je, proszę, do e-maila.",
+  "noscript": "Wysyłanie wymaga JavaScriptu. Możesz też wysłać odpowiedzi e-mailem na adres {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "04b/0784#1",
-   "where": "04b/0784",
-   "text": "– Ale ty jesteś sneaky.",
-   "q": "Niloofar, a Tehran student, teases him using the English word 'sneaky'. Does that sound natural from her?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– Znów mówisz „wiem”. Ale skąd wiesz?",
-    "– Dzisiaj na środku wydziału rozmawiałaś z kilkoma innymi dziewczynami. Słyszałem."
+   "key": "crude",
+   "title": "Wulgarna mowa",
+   "q": "Tu postacie przeklinają albo mówią wulgarnie. Czy każda kwestia brzmi naturalnie?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Niech będzie przeklęty ten, kto nie wierzy Orlemu Oku News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "– Czego chcesz, Eskandar? Co ci jest?",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Mówię ci, że nie widzę, chuju.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Skoro masz świat i wszystko inne w dupie, to czemu tak siedzisz nad quizami i egzaminami?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Odpowiedź brzmi: lizanie dupy mistrzowi Humanowi do ciebie nie pasuje.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "– Chuju. Obiektywnie dolar idzie na 1500 tomanów, a ty czepiasz się tego biedaka?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "– No ładuj się wreszcie, chuju.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– Jak to co? Jak przyjdzie McCain, rozpierdoli Iran, obiektywnie.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "– Co ci znowu jest?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Co znowu z tą twoją gównianą pozą myśliciela?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Kto chce pieprzyć filozoficzne bzdury, niech idzie do kuchni. Żarówka jest tam jaśniejsza; może rozświetli wam mózgi.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Ty bezużyteczny kutasie... huuuuu... idziesz tak ze spuszczoną głową... huuuu... dokąd tak pędzisz?... huuu... tchu mi brak. Zmusiłeś mnie, żebym cię gonił aż tutaj... huu... z takim ciałem jak moje.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, niech cię szlag. Teraz jesteś emigrantem, więc masz nas gdzieś. Ty zaprzedany czcicielu cudzoziemszczyzny.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Ta polityka regionalizacji nas wyruchała. Mówią, że chodzi o trzymanie dzieci blisko rodzin, a wszystkim nam z prowincji wsadzili kij w dupę.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "– Móżdżku ty z gówna. Zmuszasz mnie, żebym otworzył gębę.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Jeśli liczy się wiek, to powinieneś lizać jaja Bahmana.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "– Tyle się człowiek uczy, a na koniec, przez nasze zasrane szczęście, i tak wychodzi tak.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– No, jak tylko nas zobaczą, zaciskają dziury w dupach i tak się od nas odsuwają, że mam ochotę skoczyć im obiema nogami na twarz.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Ej, chuj w to nasze szczęście.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "– Wolałbym mieszkać w jednym pokoju z nimi niż z takim kutasomózgim jak ty.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "– ...zawsze gdy przychodziłem na zajęcia i sprawy tego zasranego drugiego kierunku, widziałem, jak się kłócą.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "– Czyli zasrany pierwszak.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Bo mnie, akurat mnie, którego robota polega teraz na obchodzeniu stacji elektroenergetycznych, co mi to, że byłem prymusem i, nie wiem, drugi dyplom dodały do długości mojego kutasa?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "– A w tej całej zjebanej sytuacji, jakie zabytki nam się trafiły? Mucha i ten drugi szkodnik z urojeniami.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Takie mordercze posunięcia są dokładnie w twoim stylu, ale naprawdę zastanawia mnie, który pojeb otworzył sklep o szóstej rano w piątek, żebyś mógł kupić od niego aparat.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Nawet jego główki nie zdołałeś zjeść. Ale co to były za słodycze. Ananasowe.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "– ... wyruchali nas.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "– Gdyby Kamjar nie był takim drogocennym gówniarzem i został w akademiku, nie zwolniłoby się łóżko i te dziwy by nam się nie trafiły.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "i ten dureń z urojeniami zamiast materiału z podręcznika uczył na lekcjach swoich własnych teorii.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Gdyby to zależało ode mnie, zero to za mało: kazałbym ci zjeść główkę mojego kutasa, a potem wykopał cię z uniwersytetu kopniakiem.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– Czyli nasze zasrane szczęście w losowaniu takich antyków jak ty wciąż się powtarza?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Nie dyskutujcie dziś w pokoju, dostałem dwanaście z wuefu, mam nerwy do dupy i was zwyzywam.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "– Poszedłem umyć twarz. Nie mogę myć twarzy w okularach, chuju.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Wystarczyłoby tylko, żeby profesorowie elektryki i mechaniki tyle lat wcześniej nie napalili się na odebranie budynku Abu-Reyhan wydziałowi budowy okrętów, a Farid nie skończyłby w ten sposób.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "– Mówię ci, Stary-dżan, ale tak między nami, to ty wyjechałeś za granicę tylko jakimś pojebanym fartem.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "– Stary, zamiast tak rozwalać się na łóżku i bawić się jajami, wstań i wyślij. Okazja.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "– No dobra, skoro nie jesteś typem, co aplikuje i wyjeżdża, to po co rozwalałeś sobie tyłek, zdając TOEFL?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "– Stary, no zobacz, jak daleko to zaszło: Farid, który nas, pokój i wszystkich ma w dupie, się odezwał.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Co za gówno znów ci się lęgnie w mózgu?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Zasrałeś mi nastrój, w jaki wprawiała mnie piosenka, tym swoim chujowym głosem.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "– Lizanie dupy ci nie przystoi.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Niech będzie, jak ci, kurwa, pasuje.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "– Patrz, jak ślicznie nawywijałeś, móżdżku zasrany.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– Szukam okularów, chuju. Powiedz temu Faridowi, żeby przestał stawiać swój kubek tuż przed moimi stopami.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0253#2",
-   "where": "06/0253",
-   "text": "– No, pojechałeś tam pozwiedzać i dobrze się bawić, więc dobrze ci było.",
-   "q": "Maman tells her son he only went abroad to sightsee and have fun. Does this sound natural?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman mówi:"
-   ]
-  },
-  {
-   "id": "03/0624#3",
-   "where": "03/0624",
-   "text": "– Ekstra, Starszy Tawerny. To idealne dla Arasteha.",
-   "q": "Friends nickname Amir 'Starszy Tawerny' (Elder of the Tavern), an image from Hafez. Does it work as a nickname?",
-   "ctx": 2,
-   "kind": "banter",
-   "before": [
-    "– Jestem sługą Starszego Tawerny, którego łaska...",
-    "Farid powiedział:"
-   ]
-  },
-  {
-   "id": "03/0630#4",
-   "where": "03/0630",
-   "text": "– To Tawerniak, naprawdę i szczerze.",
-   "q": "Farid shortens the nickname to 'Tawerniak' and approves it warmly. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid powiedział:"
-   ]
-  },
-  {
-   "id": "03/0628#5",
-   "where": "03/0628",
-   "text": "– Haha, Starszy Tawerny, Stary — idealne. Trafiłeś w dziesiątkę, Farid Lampart.",
-   "q": "Hooman shortens the nickname Elder of the Tavern to 'Stary'. Does that work as a joke?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Human pisał długopisem coś w książce i mówił:"
-   ]
-  },
-  {
-   "id": "03/0394#6",
-   "where": "03/0394",
-   "text": "Albo jesteś kutasogło... no, już wcześniej byłeś kutasogłowy, a teraz zrobiłeś się jeszcze bardziej kutasogłowy.",
-   "q": "Hooman coins a crude insult, dick-brained, and corrects himself mid-word. Does it sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Nagle uczepiłeś się tego pytania. Jest kilka możliwości. Albo walnąłeś gdzieś głową."
-   ]
-  },
-  {
-   "id": "04b/0186#7",
-   "where": "04b/0186",
-   "text": "– Wolałbym mieszkać w jednym pokoju z nimi niż z takim kutasomózgim jak ty.",
-   "q": "Hooman calls a roommate a dick-brain. Does this crude insult sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Pionierska rola Politechniki AmirKabir w ruchach studenckich jest nieporównywalna z niczym. Nawet jeśli na Sharifie zebrali zbiór tak zwanych elit, z których do tej pory nie wyszła ani jedna rewolucyjna teoria."
-   ]
-  },
-  {
-   "id": "03/0264#8",
-   "where": "03/0264",
-   "text": "– Czego chcesz, Eskandar? Co ci jest?",
-   "q": "Hooman, fed up, snaps at a roommate who keeps mocking his name. Does this sound irritated and rude enough?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Naprawdę wierzysz, że to imię ci pasuje? To owłosione ciało, ta twarz uzbrojona po zęby w zarost i sierść. Jeśli ty jesteś Human, to ja jestem Susan."
-   ]
-  },
-  {
-   "id": "03/0268#9",
-   "where": "03/0268",
-   "text": "– Żadne imię ci nie pasuje, do licha.",
-   "q": "A young man shouts this at his roommate. Does 'do licha' sound like a dorm student's swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Podniósł głos i powiedział:"
-   ]
-  },
-  {
-   "id": "03/0422#10",
-   "where": "03/0422",
-   "text": "– Co ci znowu jest?",
-   "q": "Hooman, irritated, snaps at a roommate's odd question. Does it sound rude enough for him?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human zmął torebkę po żelkach w ręce i rzucił pod łóżko. Spod łóżka wziął podręcznik do Myśli Islamskiej i położył na materacu. Ziewnął i powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0520#11",
-   "where": "04b/0520",
-   "text": "– Nie dyskutujcie dziś w pokoju, dostałem dwanaście z wuefu, mam nerwy do dupy i was zwyzywam.",
-   "q": "Hooman warns his roommates he is in a foul mood after a bad grade. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Human powiedział:"
-   ]
-  },
-  {
-   "id": "04b/0562#12",
-   "where": "04b/0562",
-   "text": "– Orle Oko, niech ci Bóg nie wybaczy, rozwaliłeś mi kręgosłup. No czemu ty nie nosisz okularów?",
-   "q": "Eskandar, trodden on by a short-sighted roommate, curses him. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Eskandar powiedział głosem, który wskazywał, że ledwie łapie oddech:"
-   ]
-  },
-  {
-   "id": "04b/0575#13",
-   "where": "04b/0575",
-   "text": "– Orle Oko, Muchę już Bóg pobił, to ty go nie bij.",
-   "q": "Eskandar begs a roommate not to add to Fly's bad luck. Does this saying sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Eskandar powiedział:"
-   ]
-  },
-  {
-   "id": "04a/0064#14",
-   "where": "04a/0064",
-   "text": "– Lewa strona jest niebezpieczna. Dom z czerwonymi drzwiami należy do bardzo gniewnego starca. Jeszcze bardziej gniewnego niż Baba.",
-   "q": "A ten-year-old boy warns his little brothers about a scary house. Does it sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Potem zawsze pokazywał ten dom z wielkimi czerwonymi drzwiami. Mówił:"
-   ]
-  },
-  {
-   "id": "04a/0042#15",
-   "where": "04a/0042",
-   "text": "– Nazywa się bazar w Ghuczan, a nasz dom jest na końcu bazaru w Ghuczan.",
-   "q": "A boy argues with his brother about the name of their street. Does this sound like a child talking?",
-   "ctx": 2,
-   "kind": "child",
-   "before": [
-    "– To jest główna ulica.",
-    "Haszem powiedział:"
-   ]
-  },
-  {
-   "id": "01/0178#16",
-   "where": "01/0178",
-   "text": "– Wolałabym, żeby był nałogowcem, niż żeby był taki, jaki jest.",
-   "q": "Maman, a mother from a small town, says this about her husband. Does it sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "Maman mówi:"
+   "key": "natural",
+   "title": "Czy brzmi naturalnie?",
+   "q": "Czy każdy fragment brzmi naturalnie i jasno?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Tu grunt jest z wody, a niebo z ziemi. To znaczy: zamiast deszczu pada z nieba ziemia.",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "– To pomyśl tylko, co musi przeżywać nasz biedny Baba – siedzi bezczynnie w domu przez tyle lat.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "– No, nasz Baba-dżan jest bardzo głodny szacunku.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Ale trafił między niewłaściwych ludzi; roztrzaskaliśmy ten szacunek do ostatniej odrobiny.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– I jeszcze bardziej.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "– W takim razie wznieśmy tą herbatą toast za Orle Oko News.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Czy pana sprawa nie jest już załatwiona?",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "– Jestem ekstremalnym anarchistą nacjonalistycznym.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Ahhh. Aż mnie ciarki przeszły.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "– Farid Lampart sam nie wie, czego chce. Z jednej strony wykonuje mordercze zagrania, a z drugiej, na widok krwi, aż przechodzą go ciarki.",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Gdzie na mojej szyi jest napisane „punkt podparcia”?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Niech cię szlag, z takim ciałem jak moje ciągnąłeś mnie za sobą przez sto siedemdziesiąt metrów.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Obiektywnie, tylko dlatego że przyjechaliśmy parę dni później, te dzieciaki z Teheranu, które dostały się na AmirKabir wyłącznie dzięki regionalizacji, zachowują się, jakby to nas przyjęto z puli specjalnej, a nie ich. Obiektywnie.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "– Człowieku, nie rozmawiaj z nim tak grzecznie, woda mu sodowa uderzy do głowy.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– No. Nie daj się zwieść temu Arasteh; może i wygląda na ćwoka, ale jego lokata na Konkurze była siedemdziesiąta czwarta.",
+     "note": null
+    },
+    {
+     "id": "04b/0193#natur",
+     "text": "W najlepszym razie zamiast wykładziny w kolorze kurzu studenci-opiekunowie pięter akademika dostawali niebieską wykładzinę.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "Rok czy dwa temu słyszałem od Orle Oko News, że ten lalusiowaty też wyjechał do Australii, w pewnym sensie za dziewczyną, którą obaj kochaliście.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "– Wiem, głupia nie jestem, ale tak nie może być. Musisz wyjść z tego swojego schronienia i naprawdę coś zrobić, a nie przychodzić tu, siedzieć i fantazjować.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– Tak mnie szlag trafia, kiedy siedzisz tak cicho. Mam ochotę przywalić ci pięścią.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Niczyj pokój nie ma dywanu, Baba-dżan, tylko my mamy dywan, a to dlatego, że nasz pokój jest dla elity.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "– Faridzie Lamparcie, panuj nad nerwami i nie rób morderczego posunięcia.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "– A to wszystko filozofia i powieści. Ekstra, jest i Nietzsche. Uwielbiam Nietzschego.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "– Napisałem swoje własne teorie o fizyce kwantowej, a nasz idiotyczny profesor wziął i dał mi ćwierć punktu.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Orle Oko, niech ci Bóg nie wybaczy, rozwaliłeś mi kręgosłup. No czemu ty nie nosisz okularów?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "– Orle Oko, Muchę już Bóg pobił, to ty go nie bij.",
+     "note": null
+    },
+    {
+     "id": "04b/0586#natur",
+     "text": "– Co-coin?",
+     "note": null
+    },
+    {
+     "id": "04b/0593#natur",
+     "text": "– Odmówcie salawat. Starszy Tawerny w końcu też się odezwał.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Ważne jest to, że ilekroć idę do supermarketu, płacę pieniędzmi, kupuję sobie mleko i ciasto, i wpycham w siebie.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Dobra, Orle Oko, dobra. Tylko nie wciskaj okularów w laptopa.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Gdyby Mucha tu był, czułki od razu stanęłyby mu na sztorc: co to takiego, że daje taki zysk?",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ach, gdybym tak mogła kiedyś przedziurawić ci te uszy paznokciami, żeby już więcej się nie nastawiały.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, Dziadek też zaraził się covidem, ale w ogóle nie było po nim znać. Przeszedł go jak zwykłe przeziębienie.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "– Ooooooo! To ja jej powiedziałem. Nini uznała, że to dobry tekst, i powtórzyła go tobie.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Oddałbym za ciebie wszystko, Nini-dżan. Ależ dobrze pracuje ci głowa.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "W tej zimie i w tym mrozie, skąd wzięły się ptaki śpiewające? Znowu jestem więźniem własnej wyobraźni.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 15
 }

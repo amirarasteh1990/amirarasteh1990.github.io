@@ -1,190 +1,282 @@
 {
+ "format": 2,
  "lang": "zh",
  "slug": "zh",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "母语读者核对",
+  "lead": "您不需要读过这本书。想答多少就答多少。",
+  "persian_words": "玛曼（母亲）、巴巴（父亲）和后缀“江”（亲爱的）都是波斯语词，书中保留了原样。",
+  "page": "页",
+  "correct": "正确",
+  "needs_change": "需要修改",
+  "not_sure": "不确定",
+  "how_say": "您会怎么说？",
+  "meaning": "您觉得它是什么意思？",
+  "optional": "（选填）",
+  "your_name": "您的名字",
+  "thanks_tick": "把我的名字列在致谢页上",
+  "private": "您的回答只会发给作者。",
+  "send": "发送",
+  "send_continue": "发送并继续第 {n} 页",
+  "sending": "正在发送…",
+  "popup_title": "谢谢您！",
+  "popup_text": "您希望把名字列在网站的致谢页上吗？完成全部 4 页，我们很乐意加上。",
+  "popup_button": "继续第 {n} 页",
+  "arrived": "谢谢您，第 {n} 页的回答已经收到。",
+  "thanks_last": "谢谢您！回答已经收到。",
+  "all_done": "您已发送了所有页面。每一页都谢谢您！",
+  "already_sent": "您已在这台设备上发送过本页。谢谢您！",
+  "continue_with": "继续第 {n} 页",
+  "need_one": "请至少为一行选择答案。",
+  "note_no_answer": "有一行写了备注：也请为这一行选择答案。",
+  "name_needed": "请填写您希望列出的名字，或取消勾选。",
+  "not_connected": "发送功能还没有接通。",
+  "too_long": "发送用时过长。",
+  "cannot_send": "回答无法从这里发送。",
+  "use_email": "请使用下面的电子邮件按钮。",
+  "fallback": "回答无法从本页发送。请改用电子邮件发送；您填写的内容都不会丢失。",
+  "email_button": "用电子邮件发送回答",
+  "shortened": "有些备注太长，放不进邮件链接，所以在那里被缩短了。您的完整回答在下面；请把它们粘贴到邮件里。",
+  "noscript": "发送需要 JavaScript。您也可以用电子邮件把回答发到 {email}。"
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "03/0278#1",
-   "where": "03/0278",
-   "text": "嘿，酒馆客，快跑。",
-   "q": "Farid calls Amir by his nickname, which means tavern-goer. Does '酒馆客' read as that nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "我心想，也许在一个平行世界里，我根本就不会见到尼鲁法尔。但在我们所生活的这个版本的世界里，我脑子里关于尼鲁法尔的念头每天比前一天更多。甚至我的夜晚都伴着她的幻影一直到天亮。不到一个月，我的整个世界便缩减成了周日的上午和周二的下午。我走到大学的哈菲兹门。穿过两个从地下探出头来的大齿轮之间。那些年，这些齿轮还没有从地底冒出来、向彼此俯身弯合。阿米尔卡比尔理工大学是一所没有门楼的大学，只有一扇绿色栅栏门把大学与哈菲兹街的人行道隔开。法里德在学院里喊住我，说："
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "正确",
+    "需要修改",
+    "不确定"
+   ],
+   "note_label": "您会怎么说？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0628#2",
-   "where": "03/0628",
-   "text": "哈哈，酒馆长老，馆老，太棒了。",
-   "q": "Hooman turns Amir's nickname, Elder of the Tavern, into a short pet name. Does '馆老' read as that short form?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "胡曼拿着笔在书上写着什么，说："
+   "key": "one",
+   "title": null,
+   "q": "The pole image means they were all screwed over. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "正确",
+    "需要修改",
+    "不确定"
+   ],
+   "note_label": "您会怎么说？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0663#s30",
+     "text": "打着让孩子留在家人身边的旗号，往我们这些外地人每个人的屁股里都捅了一根棍子。",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "最可怕的病是艾兹海默症。",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say Alzheimer's (阿尔茨海默症) as '艾兹海默症'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "玛曼说："
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "正确",
+    "需要修改",
+    "不确定"
+   ],
+   "note_label": "您会怎么说？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "全营，向前进！",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#4",
-   "where": "06/0052",
-   "text": "最后玛赫布打了电话，安布拉斯来把娜内接走了。",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say ambulance (救护车) as '安布拉斯'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– 但他们不注意，这才是问题。爷爷听不见，不知道是怎么回事，可我跟娜内说过好几次：哈吉·哈努姆，你们坐在胡同里，会感染新冠的，真主保佑，可千万别。他们不但不听，反而坐得更久了。但是阿米尔，娜内的胸口呼噜呼噜响得那么厉害。我跟玛赫布他们说：“孩子们，这是新冠。”"
+   "key": "poetry",
+   "title": "诗",
+   "q": "这些是诗句。每一句作为中文诗读起来好吗？",
+   "labels": [
+    "正确",
+    "需要修改",
+    "不确定"
+   ],
+   "note_label": "您会怎么说？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "我绝不会以任何代价接受所罗门的那枚印戒",
+     "note": null
+    },
+    {
+     "id": "04b/0316#poetr",
+     "text": "上帝在众天使面前揭开了祂壮美的容颜，见他们对爱一无所知；那显露的美出于护爱的妒忌，化作纯然烈焰，击中了亚当的泥土。",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "是“阿塔尔哭到天明更觉甜美”那句，还是“如今他被杀得更彻底了”那句？",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "万物之上皆可书写",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "就用你自己的血在水上书写",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "好让那循着你的航迹而来的人",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "久矣，爱人不曾捎来音信；不曾写下问候",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "我梦的灯开始闪烁",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "我不抱你归来的希望",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "可若你恰巧路过",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "我想我的梦还没相信你已经走了",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "我梦的灯......我梦的灯亮......我梦的灯亮了",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#5",
-   "where": "01/0182",
-   "text": "他没什么草来着？",
-   "q": "Maman, hard of hearing, catches only the end of '拈花惹草'. Would Chinese readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– 他也没有拈花惹草。",
-    "玛曼说："
-   ]
-  },
-  {
-   "id": "03/0373#6",
-   "where": "03/0373",
-   "text": "我是说，阿梅罗卡的这份报告确认伊朗已经停止核计划。",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Chinese speaker say America as '阿梅罗卡'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– 玛赫布，我在跟你说话呢。",
-    "– 什么？"
-   ]
-  },
-  {
-   "id": "03/0290#7",
-   "where": "03/0290",
-   "text": "“阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？",
-   "q": "A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Would Chinese readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– 阿拉斯特先生。",
-    "我回过头看向他。"
-   ]
-  },
-  {
-   "id": "03/0309#8",
-   "where": "03/0309",
-   "text": "真主若愿，愿你永远都阿拉阿斯特。",
-   "q": "The guard blesses Amir with a pun on his surname; araasteh means neat. Would Chinese readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "门卫微笑着说："
-   ]
-  },
-  {
-   "id": "04b/0182#9",
-   "where": "04b/0182",
-   "text": "你才是这里头最大的一头牛。瞧你这身板就配。",
-   "q": "A student calls his heavy-set roommate a cow, meaning a big fool. Does '一头牛' read as an insult here?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "——把我鸡巴的头吃了得了，伙计，我们没那闲心理你。沙里夫的电气工程是什么意思，你懂个屁？再说了，有谁征求你的意见了？"
-   ]
-  },
-  {
-   "id": "04b/0575#10",
-   "where": "04b/0575",
-   "text": "看在你妈的份上，别不戴眼镜在房间里走。",
-   "q": "Eskandar pleads with Sajad here; he is not swearing. Does '看在你妈的份上' read as a plea, not an insult?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "——鹰眼，苍蝇已经被真主收拾过了，你就别再收拾他了。"
-   ]
-  },
-  {
-   "id": "03/0055#11",
-   "where": "03/0055",
-   "text": "我说话就是这样；你们一听我开口，就以为我在念诗。",
-   "q": "Hamid, who fancies himself a poet, says this in the rhythm of his poems. Does it sound rhythmic and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "哈米德用朗诵诗歌时的那种节奏说："
-   ]
-  },
-  {
-   "id": "03/0126#12",
-   "where": "03/0126",
-   "text": "我们姐夫的师傅的堂兄弟的朋友，就是德黑兰最有钱的那个人，说话就是这样。",
-   "q": "Hamid's running boast quotes a far-off acquaintance, the richest man in Tehran. Does this long chain sound funny and natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– 嗯。"
-   ]
-  },
-  {
-   "id": "04b/0387#13",
-   "where": "04b/0387",
-   "text": "昨晚我都听见你反刍的声音了。",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Is the joke clear?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "埃斯坎达尔转向胡曼，说："
-   ]
-  },
-  {
-   "id": "03/0576#14",
-   "where": "03/0576",
-   "text": "我愿为你那双夜莺般的眼睛去死，鹰眼·江，可问题出在接收端，发送端解决不了。",
-   "q": "Farid teases short-sighted Sajad: the toothbrushes look different, so the fault is Sajad's eyes. Is the joke clear?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "– 鹰眼，你又拿了我的牙刷。",
-    "– 客观地说，下次买个别的颜色的。",
-    "法里德说："
-   ]
-  },
-  {
-   "id": "04b/0616#15",
-   "where": "04b/0616",
-   "text": "你可别把眼镜怼进笔记本电脑里去。",
-   "q": "Farid teases short-sighted Sajad, who peers very closely at his laptop. Does this sound like natural teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "——好啦好啦，鹰眼。"
-   ]
-  },
-  {
-   "id": "04b/1265#16",
-   "where": "04b/1265",
-   "text": "好，我给你买介个娃娃。",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "——嗖——巴巴巴巴，你给我买介个大娃娃好不好？",
-    "我身后传来一个声音："
+   "key": "word_choice",
+   "title": "单个词语",
+   "q": "每一行里的这个词用得对吗？它应有的意思写在下面。",
+   "labels": [
+    "正确",
+    "需要修改",
+    "不确定"
+   ],
+   "note_label": "您会怎么说？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0268#word_",
+     "text": "没有任何名字适合你，该死的。",
+     "note": "\"该死的\" = damn you (angry swearing)"
+    },
+    {
+     "id": "03/0291#word_",
+     "text": "《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。",
+     "note": "\"加油！吉塔斯\" = Chinese title of the cartoon Ganbare, Kickers!"
+    },
+    {
+     "id": "03/0620#word_",
+     "text": "嘿，豹子法里德，给我，我占一卦。",
+     "note": "\"占一卦\" = take a fortune from Hafez's book"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "进入大街：啧啧。",
+     "note": "\"啧啧\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "屁脑子。什么都得我一句句给你掰开了说。",
+     "note": "\"屁脑子\" = shit-for-brains, crude insult for a dimwit"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "我宁愿跟他们当室友，也不愿跟你这种屌脑子住一块儿。",
+     "note": "\"屌脑子\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "那你是个屌新生。",
+     "note": "\"屌新生\" = fucking freshman, casual friendly swearing"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "豹子法里德，控制好你的脾气，别使出什么要命的招数。",
+     "note": "\"要命的招数\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0434#word_",
+     "text": "要是卡米亚尔当初别耍那小子气、留在宿舍，就不会空出床来，叫这两个活宝落到咱们头上了。",
+     "note": "\"耍那小子气\" = acting like a spoiled little shit"
+    },
+    {
+     "id": "04b/0494#word_",
+     "text": "我们又会回到那该死的不连续上。",
+     "note": "\"该死的\" = damned (a mild swear)"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "看在你妈的份上，别不戴眼镜在房间里走。",
+     "note": "\"看在你妈的份上\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0589#word_",
+     "text": "一种叫皮尔对皮尔的电子货币，也就是点对点。",
+     "note": "\"皮尔对皮尔\" = peer-to-peer, as the English term"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "那当初干嘛把屁股都拼烂了去考托福？",
+     "note": "\"把屁股都拼烂了\" = crude: slaved away, worked very hard"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "被焚者们",
+     "note": "\"被焚者们\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。",
+     "note": "\"让人他妈的晕\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "就像那另一个女孩说那幅画的那样，越往它的深处沉下去，就越他妈的晕",
+     "note": "\"越他妈的晕\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "06/0108#word_",
+     "text": "哎哎哎呀呀呀呀。",
+     "note": "\"哎哎哎呀呀呀呀\" = long, teasing, mock-tender 'aww'"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

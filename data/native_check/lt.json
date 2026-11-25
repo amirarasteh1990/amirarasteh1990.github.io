@@ -1,135 +1,453 @@
 {
+ "format": 2,
  "lang": "lt",
  "slug": "lt",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Gimtosios kalbos patikra",
+  "lead": "Knygos skaityti nebūtina. Atsakykite į tiek klausimų, kiek norite.",
+  "persian_words": "Maman (motina), Baba (tėvas) ir -džan (brangusis) – persiški žodžiai, palikti knygoje.",
+  "page": "Puslapis",
+  "correct": "Teisinga",
+  "needs_change": "Reikia pakeisti",
+  "not_sure": "Sunku pasakyti",
+  "how_say": "Kaip jūs tai pasakytumėte?",
+  "meaning": "Ką, jūsų manymu, tai reiškia?",
+  "optional": "(nebūtina)",
+  "your_name": "Jūsų vardas",
+  "thanks_tick": "Įrašyti mano vardą į padėkų puslapį",
+  "private": "Jūsų atsakymus gauna tik autorius.",
+  "send": "Siųsti",
+  "send_continue": "Siųsti ir pereiti prie {n} puslapio",
+  "sending": "Siunčiama…",
+  "popup_title": "Ačiū!",
+  "popup_text": "Ar norėtumėte, kad jūsų vardas būtų svetainės padėkų puslapyje? Užpildykite visus 4 puslapius, ir mes jį mielai įrašysime.",
+  "popup_button": "Pereiti prie {n} puslapio",
+  "arrived": "Ačiū, jūsų atsakymai iš {n} puslapio gauti.",
+  "thanks_last": "Ačiū! Jūsų atsakymai gauti.",
+  "all_done": "Išsiuntėte visus puslapius. Ačiū už juos visus!",
+  "already_sent": "Šį puslapį iš šio įrenginio jau išsiuntėte. Ačiū!",
+  "continue_with": "Tęsti nuo {n} puslapio",
+  "need_one": "Pasirinkite atsakymą bent vienai eilutei.",
+  "note_no_answer": "Prie vienos eilutės yra pastaba: prašom pasirinkti atsakymą ir jai.",
+  "name_needed": "Įrašykite vardą, kurį norite matyti sąraše, arba nuimkite varnelę.",
+  "not_connected": "Siuntimas dar neprijungtas.",
+  "too_long": "Siuntimas užtruko per ilgai.",
+  "cannot_send": "Iš čia atsakymų išsiųsti nepavyko.",
+  "use_email": "Prašom pasinaudoti el. pašto mygtuku žemiau.",
+  "fallback": "Iš šio puslapio atsakymų išsiųsti nepavyko. Prašom juos atsiųsti el. paštu; niekas, ką įvedėte, neprarasta.",
+  "email_button": "Siųsti atsakymus el. paštu",
+  "shortened": "Kai kurios pastabos el. pašto nuorodai buvo per ilgos, todėl ten buvo sutrumpintos. Visi jūsų atsakymai pateikti žemiau; prašom juos įklijuoti į laišką.",
+  "noscript": "Siuntimui reikia JavaScript. Atsakymus taip pat galite atsiųsti adresu {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta.",
-   "q": "From the opening page. Do these lines read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Kaip vaikystėje, kai Maman narstydavo siūlus iš senų drabužių, o mes imdavome siūlą ir sukdavome ratus po namus, kad siūlai nesikauptų į krūvą.",
-   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
-   "ctx": 1,
-   "before": [
-    "…įvykių šurmulyje, jei nebūtų buvę čia užrašyti. Jie buvo užrašyti, kad taptų tiltu tarp mano pasaulio ir tavo. Tiltu iš mano pasaulio — tą akimirką, kai rašau šiuos sakinius — į tavąjį, tą akimirką, kai atsisėdi juos skaityti. Iš šios pusės aš išvynioju žodžių siūlą, o kitoje tu renki žodžius."
+   "key": "slips",
+   "title": "Klaidingai ištarti žodžiai",
+   "q": "Motina knygoje kai kuriuos svetimus žodžius ištaria klaidingai. Ar tai skamba kaip įtikimos tarimo klaidos?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "šaldikląs",
+     "note": "= šaldiklis"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimeris",
+     "note": "= Alzheimeris"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "grietąja",
+     "note": "= greitoji"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "burdozeris",
+     "note": "= buldozeris"
+    }
    ]
   },
   {
-   "id": "01/0116#3",
-   "where": "01/0116",
-   "text": "Eik ir į lauką. Eik ten, kur mažai žmonių.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Oho, kaip gerai. Mm-hm, užsisakyk, ir tau atneš. Bet, Amir-džan, nesėdėk visą laiką namuose."
+   "key": "images",
+   "title": "Persiški posakiai",
+   "q": "Kai kurie persiški posakiai ir vaizdiniai išversti pažodžiui. Ar kiekvienas iš jų leidžia bent kiek nujausti prasmę, ar jums jis nieko nesako?",
+   "labels": [
+    "Galiu nuspėti",
+    "Negaliu",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Ką, jūsų manymu, tai reiškia?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Lietus iš žemės aukštyn nekrinta.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Geri metai pažįstami iš pavasario.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Nevalgyk liūdesio",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "mano širdis pūva",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Ranka per trumpa, o susijungimas su tavimi toli.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "jei sakau – liežuvis dega; jei nesakau – kaulų čiulpai dega",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "maistas man pavirs gyvačių nuodais",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "jokia duona tau neiškeps",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "šeima per prievartą mane įgrūdo į vištidę",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "cukraus gabalėlis šoka man į gerklę",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "žvilgtelėk į kiekvieną atokiausią kampą",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "žodžiai nieko nekainuoja — tai tik karštas oras",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "jis tikrai kristų Negar akyse",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Tik derliaus meto pažadas?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "išklosiu tau draugystės vidurius ant padėklo",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "jiems iš baimės visi kūno plaukai nuslinko",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "nesijaudink taip, pienas išdžius",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "niekas tavęs neapšauks nebyliu, jei nepersi",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Suvalgyk mano bybio galvą",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Bybių galvų ėdike",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "juokiesi iš mūsų barzdų ir bybių",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "tu šitaip nevaikščiotum gatvėmis su pimpalu rankoje",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "koks bybis benukristų mums ant galvos",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Arba cholera, pavyzdžiui. Ir ji tiek daug nenužudė.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 1,
-   "before": [
-    "…nusičiaudi vienoje gatvės pusėje, o žmogus kitoje pusėje užsikrečia ir miršta. Niekada nieko panašaus nebuvau nei mačiusi, nei girdėjusi. Net Bibi karta nepasakojo apie nieką panašaus. Buvo, pavyzdžiui, šiltenė arba tuberkuliozė, arba tymai. Juos vadino mirtinais. Hmm, net jie tiek daug nenužudė."
+   "key": "children",
+   "title": "Vaikų žodžiai",
+   "q": "Kai kurie vaikai knygoje taria žodžius neteisingai, kaip daro maži vaikai. Ar kiekvienas skamba kaip vaiko klaida, o ne spaudos klaida?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Tai marmalo akmuo. Marmalas reiškia, kad labai brangu.",
+     "note": "marmalas = marmuras"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Vadinasi „Tatanikas“.",
+     "note": "Tatanikas = Titanikas"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, nupilksi man šitą didelę lėlytę?",
+     "note": "maža mergaitė"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Taip, nupilksiu tau lėlytę.",
+     "note": "tėvas ją pamėgdžioja"
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "– Oh-ho. Hamidai Kate, iki vakar dar sakei „khar“. Dabar staiga tapai toks mandagus ir sakai „asilas“?",
-   "q": "In Persian, 'khar' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'asilas'. Does the jab work?",
-   "ctx": 2,
-   "before": [
-    "– Pfff, asile, kas geriau žino — mūsų svainio meistro pusbrolio draugas, kuris yra turtingiausias Teherano žmogus, ar tu, veršeli? Na, eik ir nupirk. Bet kai stiklas suduš, nesakyk, kad neįspėjau.",
-    "Tagis tarė:"
+   "key": "nicknames",
+   "title": "Pravardės",
+   "q": "Draugai knygoje vieni kitiems duoda žaismingas pravardes, dažnai kaip žodžių žaismą. Ar lietuviškai kiekviena iš jų tinka kaip pravardė?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alainas Bybonas",
+     "note": "pravardė vienam iš draugų: aktoriaus Alaino Delono vardas, kurio dalis paversta grubiu žodžiu, reiškiančiu penį"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Smuklės Seniūnas",
+     "note": "pašaipiai iškilmingas titulas iš Hafezo poezijos"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Senis",
+     "note": "meili „Smuklės Seniūno“ forma"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Smuklinis, mano Smukliniuk",
+     "note": "meilios formos iš žodžio „smuklė“"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leoparde Faridai",
+     "note": "drąsiam, nutrūktgalviui draugui"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Ar Arastė yra apkarpytas araasteh?",
+     "note": "araasteh persiškai reiškia „tvarkingas“"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "ponia Armaaan",
+     "note": "pavardė Arman, pašaipiai ištęsta"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister garbaniau mūsų laikų Šrėdingeri",
+     "note": "pašaipus titulas tam, kas negali apsispręsti"
+    }
    ]
   },
   {
-   "id": "03/0278#6",
-   "where": "03/0278",
-   "text": "Karubis — tai meilė, tikra tiesa.",
-   "q": "Farid gushes about a politician in student slang. Does this sound natural?",
-   "ctx": 1,
-   "before": [
-    "– Ei, Smuklini, bėk. Bėk, einam. Sako, Karubio neįleido į universitetą. Jo šalininkai išlaužė Hafezo vartus ir įėjo. Galima sakyti — universitetas buvo užkariautas."
+   "key": "jokes",
+   "title": "Juokai ir žodžių žaismas",
+   "q": "Šiose eilutėse yra juokas arba žodžių žaismas. Ar lietuviškai kiekvienas iš jų pavyksta?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Tokia jau jo gamyklos sistema.",
+     "note": "viską sugadinti – tiesiog jo prigimtis"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Atleidžiu. Visas šitas bulvaras tavo.",
+     "note": "persiškai „atleisti“ taip pat reiškia „atiduoti“"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "iki vakar dar sakei „khar“. Dabar staiga tapai toks mandagus ir sakai „asilas“?",
+     "note": "erzina berniuką, kad perėjo prie mandagesnio žodžio"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pyr-tu-pyr? … Erelio Akis sako „peer-to-peer“, o Smuklinis sako „Seni-su-Seniu“.",
+     "note": "„peer“ jam skamba kaip persiškas pir, „vyresnysis“, iš kurio kilusi jo pravardė"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Naktį girdėjau, kaip tu atrajoji.",
+     "note": "naktį kramto kaip atrajojanti karvė"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Kas tau vėl šovė į galvą, kad ant mūsų pasistatei, Alainai Bybonai?",
+     "note": "dviprasmybė: išdidžiai išsitiesti ir erekcija"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Kokiu -ininku nebuvo?",
+     "note": "motina nugirsta tik žodžio „moterininkas“ pabaigą"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Mūsų svainio meistro pusbrolio draugas, kuris yra turtingiausias Teherano žmogus",
+     "note": "nuolatinis berniuko gyrimasis"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Arba esi bybiagal... tiesa, tu ir taip buvai bybiagalvis, o dabar tapai dar didesniu bybiagalviu.",
+     "note": "įžeidimas nutraukiamas, o paskui dar sustiprinamas"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Taip, visi turime fabrikus. … Šūdų fabriką.",
+     "note": "jie gamina tik šūdus: tiesiog šneka niekus"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "tu, fosilija, tu pats esi kvailumo ir nuosmukio statula",
+     "note": "pašaipus įžeidimas"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "gyvenimas panašus į tūkstančio tomanų banknotą: iš kurios pusės bežiūrėtum, kvepia lęšių ryžiais.",
+     "note": "absurdiškas sąmojis"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Aš taip ir kalbu paprastai. Jūs manote, kad deklamuoju eilėraščius.",
+     "note": "berniukas atsako dainingu ritmu"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Saugokis, kad nesuskiltum, pone Bybonai.",
+     "note": "jis ką tik išpūtė krūtinę"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Tu iš visų pats didžiausias jautis.",
+     "note": "„jautis“ – bukas kvailys, sakoma vyrui"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "visada nepaprastai mėgaudavosi, kad žodį „suvokti“ į tą sakinį įterpdavo du kartus.",
+     "note": "„suvokti“ pavartotas du kartus, žaismingai"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "problema kyla iš gavėjo; siuntėjas problemos neišspręs.",
+     "note": "silpnas draugo regėjimas – tai „gavėjas“"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Turiu omenyje Alainą Byboną. Byyy-bys.",
+     "note": "grubioji kalambūro dalis, ištęsta"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Jei tu esi Hūmanas, tai aš esu Suzan.",
+     "note": "švelnus vardas Hūmanas netinka tokiam gauruotam vyrui"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Išvestinės? Prasmės? Ar išvestinės prasmės? O gal prasmės išvestinės?",
+     "note": "tariamai gilus žodžių žaismas"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Duok Dieve, kad visada būtum araasteh.",
+     "note": "palinkėjimas, žaidžiantis pavarde Arastė; araasteh = „tvarkingas“"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Objektyviai, be akinių nieko nematau.",
+     "note": "veikėjo pamėgtas žodis, vartojamas visur"
+    }
    ]
   },
   {
-   "id": "03/0430#7",
-   "where": "03/0430",
-   "text": "O tau, su tuo bybišku kalbėjimu, reikėjo vadintis Alainas Bybonas.",
-   "q": "'Alainas Bybonas' is meant as a rude pun on the actor Alain Delon. Would Lithuanian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#8",
-   "where": "04a/0076",
-   "text": "– Tai marmalo akmuo. Marmalas reiškia, kad labai brangu.",
-   "q": "A little boy says 'marmalo' for 'marmuro' (marble) and thinks it means expensive; both mistakes are deliberate. Does it sound childlike?",
-   "ctx": 1,
-   "before": [
-    "Ėjome toliau. Pusiaukelėje buvo namas. Jo siena buvo graži. Ghassemas visada sakydavo:"
-   ]
-  },
-  {
-   "id": "04b/1263#9",
-   "where": "04b/1263",
-   "text": "– Vviii, Baba, Baba, nupilksi man šitą didelę lėlytę?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…tylą, bet skleidė nepakankamai šviesos, kad kur nors mane nuvestų. Mirksinti lempa mergaitės, kurios namų durų spalvos niekada nesužinojau, kurios spalvos niekada negalėjau įdėti į spalvotų pieštukų dėžutę, rankoje. Maža mergaitė atlekia burzgėdama ir sustoja šalia manęs. Žiūri į žaislus. Sako:"
-   ]
-  },
-  {
-   "id": "04b/1265#10",
-   "where": "04b/1265",
-   "text": "– Taip, nupilksiu tau lėlytę. Kai gausiu pinigų, nupilksiu tau dar geresnę, Babos dukrele.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vviii, Baba, Baba, nupilksi man šitą didelę lėlytę?",
-    "Balsas iš už nugaros sako:"
-   ]
-  },
-  {
-   "id": "04b/1312#11",
-   "where": "04b/1312",
-   "text": "Žmogui šūdinai susisuka galva. Kuo daugiau apie tai galvoji, tuo šūdiniau ji sukasi.",
-   "q": "A girl jokes crudely: the painting makes you dizzy. Is 'šūdinai susisuka galva' clear?",
-   "ctx": 1,
-   "before": [
-    "– ...Žiūrėkite, tai tikrai galvosūkis. Jis tai nupiešė ir apačioje užrašė: tai ne pypkė."
-   ]
-  },
-  {
-   "id": "04b/1320#12",
-   "where": "04b/1320",
-   "text": "Ir drebančiomis rankomis greitai greitai varčiau gazeles, ieškodamas Hafezo beito, nuo kurio – kaip, anot tos kitos merginos, nuo to paveikslo – kuo giliau į jį panyrame, tuo šūdiniau mums sukasi galva, kad galėčiau parodyti jį Nilūfar.",
-   "q": "He recalls a girl's crude remark that a painting makes your head spin. Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#13",
-   "where": "04b/1321",
-   "text": "„Tas vynas ten yra tikras ne metafora.“",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#14",
-   "where": "06/0056",
-   "text": "Burdozeriu užvertė ją žemėmis. Žemėmis ir kalkėmis.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Lithuanian speaker say 'buldozeriu' (bulldozer) as 'Burdozeriu'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Hafezo eilutė",
+   "q": "Ši poeto Hafezo eilutė parašyta be kablelio, todėl ją galima perskaityti dviem priešingais būdais:",
+   "labels": [
+    "Taip, abiem būdais",
+    "Tik vienu būdu",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Tas vynas ten yra tikras ne metafora.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Vienaip: vynas tikras, ne metafora.",
+    "Kitaip: vynas netikras, tik metafora."
+   ],
+   "after_q": "Ar jūsų versiją galima perskaityti abiem būdais?"
   }
- ]
+ ],
+ "first": 1
 }

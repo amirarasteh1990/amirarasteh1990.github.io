@@ -2,194 +2,171 @@
  "lang": "sl",
  "slug": "sl",
  "dir": "ltr",
- "version": "2026-11-22.r9",
+ "version": "2026-11-25.o9",
  "items": [
   {
-   "id": "04b/1395#1",
-   "where": "04b/1395",
-   "text": "pridi spet v moje sanje",
-   "q": "His closing poem asks her to come into his dreams one more time. Does this line say that, as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "upanja na tvojo vrnitev nimam",
-    "a če te pot zanese mimo"
-   ]
-  },
-  {
-   "id": "04b/1396#2",
-   "where": "04b/1396",
-   "text": "zdi se mi, da moje sanje niso verjele, da si odšla",
-   "q": "The last line of his poem to the girl he lost. Does it read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "a če te pot zanese mimo",
-    "pridi spet v moje sanje"
-   ]
-  },
-  {
-   "id": "04b/1394#3",
-   "where": "04b/1394",
-   "text": "a če te pot zanese mimo",
-   "q": "His poem: but if your path should bring you near. Does this line say that, as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "luč mojih sanj mežika",
-    "upanja na tvojo vrnitev nimam"
-   ]
-  },
-  {
-   "id": "04b/1393#4",
-   "where": "04b/1393",
-   "text": "upanja na tvojo vrnitev nimam",
-   "q": "His poem to the girl he lost: he holds no hope of her return. Does this line read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "zdaj si odšla",
-    "luč mojih sanj mežika"
-   ]
-  },
-  {
-   "id": "02/0005#5",
-   "where": "02/0005",
-   "text": "Luč mojih sanj ... luč mojih sanj se je ... luč mojih sanj se je prižgala",
-   "q": "He tries out his poem, stumbling and restarting a line. Does the halting repetition read naturally?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "Moje sanje so bile temne",
-    "Nič nisem videl",
-    "Prišla si"
-   ]
-  },
-  {
-   "id": "02/0006#6",
-   "where": "02/0006",
-   "text": "Zdaj ... zdaj ... zdaj tebe ni več ...",
-   "q": "He falters as he tries out the end of his poem. Does this halting line sound natural?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "Prišla si",
-    "Svetloba mojih sanj ... svetloba mojih sanj se je ... svetloba mojih sanj se je prižgala"
-   ]
-  },
-  {
-   "id": "04b/1391#7",
-   "where": "04b/1391",
-   "text": "zdaj si odšla",
-   "q": "His poem: you came, the light of my dreams turned on, now you are gone. Does this line read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "Prišla si",
-    "svetilka mojih sanj se je prižgala"
-   ]
-  },
-  {
-   "id": "04b/1269#8",
-   "where": "04b/1269",
-   "text": "in če prečkaš morje",
-   "q": "The poem on the blackboard: and if you cross the sea. Does this line read as poetry?",
-   "ctx": 2,
-   "kind": "poetry",
-   "before": [
-    "Na vse zapisuj",
-    "razen na vodo"
-   ]
-  },
-  {
-   "id": "03/0398#9",
-   "where": "03/0398",
-   "text": "Jebenec. Objektivno, dolar bo kmalu 1500 tomanov, ti pa se ubaduješ s tistim nesrečnežem?",
-   "q": "Sajad, who says 'Objektivno' all the time, scolds a roommate for pestering someone. Does this sound natural?",
+   "id": "03/0521#1",
+   "where": "03/0521",
+   "text": "Fuj, kaj je spet s to usrano pozo misleca?",
+   "q": "Hooman mocks a roommate sitting in a thinker's pose. Does this sound like crude dorm talk?",
    "ctx": 1,
    "kind": "crude",
    "before": [
-    "Sajad je zaprl prenosnik in zakričal:"
+    "Nekaj časa ni prišel glas nikogar. Hooman je rekel:"
    ]
   },
   {
-   "id": "03/0415#10",
-   "where": "03/0415",
-   "text": "Naloži že, jebenec.",
-   "q": "Sajad swears at the slow internet while he waits. Does this sound natural?",
+   "id": "01/0174#15",
+   "where": "01/0174",
+   "text": "Huh, poglejte – se kdo od vas spomni ene dobre stvari pri vašem Babi?",
+   "q": "Maman challenges her children to name one good thing about their father. Does this question read correctly?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "04b/0919#10",
+   "where": "04b/0919",
+   "text": "Lizanje riti ti ne pristaja.",
+   "q": "A roommate snaps back at Eskandar with a crude retort about sucking up. Does this sound natural?",
    "ctx": 1,
    "kind": "crude",
    "before": [
-    "Sedel sem na postelji in razmišljal o majhni rumeni sponki za lase, ki sem jo tisti dan prvič videl v Niloofarnih laseh. Sajad je preklinjal hitrost interneta."
+    "– Le zakaj bi tele, kakršno si ti, sploh imelo Šajarianovo pesem na telefonu?"
    ]
   },
   {
-   "id": "03/0077#11",
-   "where": "03/0077",
-   "text": "Preklet bodi, kdor zanika Orlov Pogled News.",
-   "q": "Farid mock-solemnly curses anyone who doubts Sajad, the room's gossip source, nicknamed Eagle Eye News. Does this sound playful?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid je rekel:"
-   ]
-  },
-  {
-   "id": "03/0502#12",
-   "where": "03/0502",
-   "text": "Ahhh. Meso mi je opadlo.",
-   "q": "Farid, squeamish at a violent video, says it made his skin crawl. Does this read as being squeamish?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid je rekel:"
-   ]
-  },
-  {
-   "id": "04b/0209#13",
-   "where": "04b/0209",
-   "text": "Puf, ampak prekleto, spakiral si se in odšel tja, zdaj pa sediš in se smejiš naši bradi in našemu kurcu.",
-   "q": "Hooman teases Amir crudely for leaving Iran and laughing at the friends left behind. Does this sound natural?",
+   "id": "03/0268#2",
+   "where": "03/0268",
+   "text": "Nobeno ime ti ne pristoji, prekleto.",
+   "q": "Eskandar gives up hunting for a nickname for Hooman and raises his voice. Does this sound natural?",
    "ctx": 1,
    "kind": "crude",
    "before": [
-    "In zliva smeh na smeh."
+    "Glas mu je narastel in rekel je:"
    ]
   },
   {
-   "id": "04b/0593#14",
-   "where": "04b/0593",
-   "text": "Pošljite salavat. Starešina Krčme je končno nekaj rekel.",
-   "q": "Hooman mocks quiet Amir as if a miracle happened: the Elder finally spoke. Does this tease sound natural?",
+   "id": "04a/0068#5",
+   "where": "04a/0068",
+   "text": "Naša šola je na koncu. Zadnja hiša. Če delamo hrup, nas bo učitelj udaril po rokah z ravnilom.",
+   "q": "A boy warns the little ones about the strict teacher. Does this sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Ghassem je spet rekel kaj. Potem je rekel:"
+   ]
+  },
+  {
+   "id": "04a/0022#13",
+   "where": "04a/0022",
+   "text": "Dobro, igra z blatom je končana. Pripravljeni na tajno misijo.",
+   "q": "A boy calls his little brothers from mud play to his pretend mission. Does this sound like a child playing?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Omid in jaz sva hodila za njim. Zelo mi je bilo všeč. Še bolj kot igra z blatom. Omid in jaz sva se igrala z blatom na dvorišču. Ghassem je vedno glasno zaklical:"
+   ]
+  },
+  {
+   "id": "06/0264#3",
+   "where": "06/0264",
+   "text": "Uh, vsakič, ko mu rečeš, naj nekaj prinese, ga tako strese, kot da ga je udaril tok.",
+   "q": "Maman complains that her son jolts as if shocked whenever he is asked to fetch something. Does this sound natural?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "04b/0784#13",
+   "where": "04b/0784",
+   "text": "Prav zares si sneaky.",
+   "q": "She teases him by dropping in the English slang word 'sneaky'. Does it sound natural for a young woman to say this?",
+   "ctx": 1,
+   "kind": "joke",
+   "before": [
+    "– Danes ste se sredi fakultete pogovarjale še z nekaj drugimi dekleti, slišal sem."
+   ]
+  },
+  {
+   "id": "03/0580#5",
+   "where": "03/0580",
+   "text": "Kje na mojem vratu piše stopnica?",
+   "q": "Farid complains that Sajad used his neck as a foothold to climb into the top bunk. Does this retort sound natural?",
    "ctx": 3,
    "kind": "banter",
    "before": [
-    "Rekel sem:",
-    "– Stari tu Stari?",
-    "Hooman je rekel:"
+    "Trije so se smejali in Sajad je zapustil sobo. Nekaj časa je bilo slišati samo glasova Eskandarja in Meysama, vse dokler Faridov glas ni vzplaval, kot da se duši.",
+    "– Av, av. Orlov Pogled, vzemi nogo z mojega vratu.",
+    "– Oh, oprosti. Objektivno, skušam priti v svojo posteljo. Težko je."
    ]
   },
   {
-   "id": "04b/0360#15",
-   "where": "04b/0360",
-   "text": "a res me zanima, kateri prasec je odprl trgovino ob šestih zjutraj v petek, da si šel in od njega kupil fotoaparat.",
-   "q": "Hooman wonders crudely what maniac had a shop open at six on a Friday morning. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Takšne morilske poteze so ti čisto podobne,"
-   ]
-  },
-  {
-   "id": "04b/0158#16",
-   "where": "04b/0158",
-   "text": "Toliko se učiš, pa se na koncu z najino zasrano srečo vseeno izteče takole.",
-   "q": "Hooman complains crudely about their rotten luck despite all their studying. Does this sound natural?",
+   "id": "04b/0520#16",
+   "where": "04b/0520",
+   "text": "Danes ne razpravljajte v sobi, iz športne vzgoje sem dobil dvanajst, živci so mi v kurcu, pa vas bom opsoval.",
+   "q": "Hooman, in a foul mood after a bad grade, warns his roommates. Does this sound like how he would say it?",
    "ctx": 1,
    "kind": "crude",
    "before": [
     "Hooman je rekel:"
    ]
+  },
+  {
+   "id": "04b/0893#9",
+   "where": "04b/0893",
+   "text": "Posral si tisti občutek, ki sem ga lovil iz pesmi, s tistim svojim zajebanim glasom.",
+   "q": "Hooman swears at a roommate for ruining a song's mood with his awful singing. Does this sound like crude dorm talk?",
+   "ctx": 1,
+   "kind": "crude",
+   "before": [
+    "Hooman je rekel:"
+   ]
+  },
+  {
+   "id": "04a/0062#3",
+   "where": "04a/0062",
+   "text": "Veliko ljudi tukaj pade. Gredo levo.",
+   "q": "A boy playing a mission game warns that many people fail at this point. Does it sound like a child talking?",
+   "ctx": 1,
+   "kind": "child",
+   "before": [
+    "Tega dela se nikoli nisem naučil. Vedno je rekel najpomembnejše ... nekaj ... misije. Potem je rekel:"
+   ]
+  },
+  {
+   "id": "01/0166#1",
+   "where": "01/0166",
+   "text": "Samo šalimo se, da se smejemo, Nana-pesar-jan. Bi šel? Če bi šel, bi bila moja srčna želja.",
+   "q": "Maman says they are only joking, and if her husband ever left, it would answer her prayers. Does this sound like her?",
+   "ctx": 1,
+   "kind": "maman",
+   "before": [
+    "Maman reče:"
+   ]
+  },
+  {
+   "id": "03/0622#8",
+   "where": "03/0622",
+   "text": "Jaz sem služabnik Starešine Krčme, čigar milost ...",
+   "q": "Hooman opens Hafez at random for a fortune and reads this line. Does it read as classic poetry?",
+   "ctx": 1,
+   "kind": "poetry",
+   "before": [
+    "Hooman je odprl knjigo in rekel:"
+   ]
+  },
+  {
+   "id": "03/0528#8",
+   "where": "03/0528",
+   "text": "Pri novoletni sofri, ko sem bral pesem za mamo, je Maman namesto da bi bila vesela postala zaskrbljena.",
+   "q": "He read his poem to his mother at the very moment the year turned at Norouz. Does this line make that moment clear?",
+   "ctx": 0,
+   "kind": "narration"
   }
  ]
 }

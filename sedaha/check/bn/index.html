@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="bn" data-language="Bengali" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="bn" data-language="Bengali" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="03/0430#9">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">শুরু</p>
-        <p class="nc-ctx">এখানে কিছু ঘটে না। কিছু ঠিক হবে না, কিছু ভাঙবেও না। কোনো ব্যাখ্যা আসছে না। কোনো সিদ্ধান্ত নেই।</p>
-        <p class="nc-line">এ হলো সেই সুতোর খোলা মাথা — এমন শব্দের সুতো যা একদিন ধ্বনি ছিল।</p>
+        <p class="nc-ctx">– হ্যাঁ, হামুন ভালো নাম তোমার জন্য। সিনেমার হামুনের মতো তুমিও প্রশ্নে ভরা। উদ্বেগে ভরা আর বিশৃঙ্খলার উৎস, নিজের জন্য নয়, আমার জন্য।</p>
+        <p class="nc-ctx">হুমান বলল:</p>
+        <p class="nc-line">আর তোমার ওই ধোনমার্কা ঢঙে কথা বলার জন্য তোমার নাম হওয়া উচিত ছিল আলাঁ ধোনলোঁ।</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear the words, not the thread, were once sounds?</p>
+      <p class="nc-q" id="q1">'<bdi lang="bn" dir="ltr">আলাঁ ধোনলোঁ</bdi>' is meant as a rude pun on the actor Alain Delon. Would Bengali readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0095#2">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">– কিন্তু বললেই কি কিছু ঠিক হবে?</p>
-        <p class="nc-ctx">– মনটা একটু হালকা হয়। তোমরা যদি নিজে মা হতে — বুঝতে পারতে। মা একটা বেচারা মানুষ, আল্লাহর কসম। আর তারপর সেই আরেকজন, আবোলফাজল, নিখোঁজ। তিন বছর হল, একটা খবর নেই। নিখোঁজ।</p>
-        <p class="nc-line">মাঝে মাঝে নিজে ভাবি, নিশ্চয়ই আমি নির্লজ্জ হয়ে গেছি, এখনও শ্বাস নিচ্ছি।</p>
+        <p class="nc-line">বৃষ্টি মাটি থেকে ওপরে পড়ে না।</p>
       </div>
-      <p class="nc-q" id="q2">A grieving mother feels ashamed to be still alive. Does this read naturally?</p>
+      <p class="nc-q" id="q2">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +157,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0794#3">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">তাকালাম। একজন বুড়ো লোক লাঠিটা বেঞ্চে ঠেস দিয়ে খবরের কাগজ পড়ায় মগ্ন ছিল।</p>
-        <p class="nc-ctx">– ঘরের ছেলেরা তোমার নামটা খুব ভালো রেখেছে।</p>
-        <p class="nc-line">সত্যিই কখনো কখনো খুব মধুর করে গোল পাকাও আর ফসকা শট মারো। স্পষ্টই তো, তোমাকেই বলছি, আমার মধু।</p>
+        <p class="nc-line">আমার হাত খাটো আর তোর মিলন দূরে।</p>
       </div>
-      <p class="nc-q" id="q3">Niloofar teases Amir with his nickname '<bdi lang="bn" dir="ltr">মধু</bdi>'. Does the play on words work?</p>
+      <p class="nc-q" id="q3">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +173,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0951#4">
+    <fieldset class="nc-item" data-id="04a/0128#2">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">– আমাকে দে। যেন এ-ই জানে ওই তারওয়ালাগুলো কী করে কাজ করে।</p>
-        <p class="nc-ctx">তাঘি শূন্যেই হামিদের হাত চেপে ধরে ওয়াকম্যানটা বাঁচাল; কিন্তু ইয়াসারের কপালে তবু কয়েকটা ঘুসি-লাথি জুটেই গেল। হামিদ বলল:</p>
-        <p class="nc-line">– আমাদের দুলাভাইয়ের ওস্তাদের চাচাতো ভাইয়ের বন্ধু, যে তেহরানের বড়লোক, সে বলেছিল।</p>
+        <p class="nc-line">দুঃখ খেয়ো না, আমার চালাক ছেলে।</p>
       </div>
-      <p class="nc-q" id="q4">Is it clear '<bdi lang="bn" dir="ltr">ওস্তাদের</bdi>' means the master craftsman the brother-in-law works under?</p>
+      <p class="nc-q" id="q4">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +189,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1023#5">
+    <fieldset class="nc-item" data-id="01/0203#4">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">…ছুটে উঠতাম আর সিঁড়ির আবছা-আলোয় নিলুফার আমার সামনে উদয় হল। নিজের অজান্তেই আমার মুখ থেকে একটা সালাম বেরিয়ে এল আর জবাবে একটা সালাম এল। সেই দিন থেকে নিলুফারের হাসির শব্দ শোনার দিন পর্যন্ত সবই ছিল সেই একই সালাম যা বারবার ফিরে আসত। দোতলায় পৌঁছাই। তিনতলার কথা ভাবলেই আমার নিঃশ্বাস নিতে কষ্ট হয়।</p>
-        <p class="nc-ctx">…শাখা বেরিয়ে আসে। একটা ডানে আর একটা বাঁয়ে। প্রতিটি শাখা তলাগুলোর মাঝের ফাঁকা জায়গাকে একদিক থেকে ঘুরে যায় আর আমি জানি প্রথম ফাঁকা জায়গার ওপাশে আবার এসে মেলে আর প্যাঁচ খায়। চারটে ফুলের টব দেখি। সেই বছরগুলোর মতোই, সেখানেই, যে ঝরোকা ফাঁকা জায়গার আলো করিডোরের ভেতরে আনে, তার পায়ের কাছে বসে আছে।</p>
-        <p class="nc-line">তলাগুলোর মাঝের চারটে ফাঁকা জায়গার একটার উপর আরেকটা পড়া ঝরোকার ফাঁক দিয়ে করিডোরের আরেক প্রান্ত দেখার চেষ্টা করি।</p>
+        <p class="nc-line">বিবি — আল্লাহ তাঁকে মাফ করুন — এই সময়গুলোয় বলতেন: বললে জিভ পোড়ে, না বললে হাড়ের মজ্জা পোড়ে।</p>
       </div>
-      <p class="nc-q" id="q5">Is it clear he peers through four stacked open wells between the floors?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +205,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1197#6">
+    <fieldset class="nc-item" data-id="01/0073#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">– ফুলদানির চেয়ে বরং কলসির মতো।</p>
-        <p class="nc-ctx">ইসকান্দার একটা শ্বাস ছাড়ল আর তার ভঙ্গিটা ভেঙে পড়ল। হুমান আর ফরিদের খাটের মাঝের টেবিল থেকে কড়াই আর চামচটা তুলে রান্নাঘরে ফিরলাম। দুপুরের খাবারের আসরে সাজাদ বলল:</p>
-        <p class="nc-line">– ওহ্, অবজেক্টিভলি, একটা নতুন জিনিস এসেছে। অবজেক্টিভলি খুব মজার জিনিস।</p>
+        <p class="nc-line">– ঘাসেম আবার চালাকি করছে, বলছে "ভালো বছর তার বসন্ত দেখেই বোঝা যায়।"</p>
       </div>
-      <p class="nc-q" id="q6">A student uses this English word as his pet phrase. Does '<bdi lang="bn" dir="ltr">অবজেক্টিভলি</bdi>' sound natural here?</p>
+      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +221,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1280#7">
+    <fieldset class="nc-item" data-id="04b/1316#8">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">…কয়েকবার তিনি হেসেছিলেন। কখনো তিক্তভাবে, কখনো কোমলভাবে। তাঁর শেষ হাসিতে গোটা ক্লাস যোগ দিল। নিজের কথার সাক্ষী হিসেবে খোদাকে ডাকলেন। ক্লাসের পর সবাই তাঁকে ঘিরে ধরে প্রশ্ন করছিল। কেউ একটা কিছু জিজ্ঞেস করল আর ওস্তাদ কদকনি তার জবাব দিলেন আর তারপর শ্বাস যতটা অনুমতি দিল ততটা গলা চড়িয়ে দরদভরে বললেন:</p>
-        <p class="nc-ctx">…হাল-হকিকত নিয়ে কিছু একটা করো। যে যুগে নেজামি আর আত্তার আর রুমি আর সাদি আর হাফেজ আর আরও কত নাম আমাদের সাহিত্যে দীপ্তি ছড়াচ্ছিল, তখন অনেক ভাষা সবে সাহিত্যের প্রথম ধাপে পা রেখেছিল। হাফেজ যখন সব সীমানা ভেঙে কবিতাকে তার পূর্ণতায় পৌঁছে দিয়েছিলেন, তখন দস্তয়েভস্কি-রা তখনো জন্মায়নি। কিন্তু এখন?</p>
-        <p class="nc-line">বিশ্বসাহিত্যে আমাদের কোনো স্থান নেই, দুনিয়ার কেউ আমাদের জন্য একটা লিকও কুচোয় না।</p>
+        <p class="nc-ctx">– বত্রিশ মাস ধরে আপনাকে ভালোবাসি। দূর থেকে। আপনি না জেনেই। নীরবে। একটাও কথা না বলে। হয়তো বলবেন এমন হয় না, সম্ভব নয়, এটা কল্পনা আর বাস্তব নয়। কিন্তু হয়েছে আর সত্যিই আপনাকে ভালোবাসি।</p>
+        <p class="nc-ctx">…গেলাম আর বুলেভার্ডের মাঝের বেঞ্চটায় পৌঁছাতে চাইলাম। আমার পায়ে জোর ছিল না আর বুলেভার্ডের প্রথম বেঞ্চটায় এলিয়ে পড়লাম। সেই বেঞ্চটাই যার ওপর দু-দিন আগে বসেছিলাম আর নিলুফার সত্যিই এসে হাজির হয়ে আমার সব কল্পনার ওপর হেগে দিয়েছিল। আমার চোখে সাদা-কালো ঝিলিক হচ্ছিল। বেঞ্চের ওপার থেকে নিলুফারের গলা এল।</p>
+        <p class="nc-line">– আচ্ছা দেখ, তুমি খুবই ভালো ছেলে। কিন্তু আমরা একে অপরের থেকে অনেক আলাদা।</p>
       </div>
-      <p class="nc-q" id="q7">A professor uses a Persian saying meaning nobody cares about us. Would a reader guess that from context?</p>
+      <p class="nc-q" id="q7">Niloofar gently turns Amir down. Does '<bdi lang="bn" dir="ltr">দেখ</bdi>' fit with '<bdi lang="bn" dir="ltr">তুমি</bdi>' here?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +239,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1316#8">
+    <fieldset class="nc-item" data-id="04b/0794#3">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">– বত্রিশ মাস ধরে আপনাকে ভালোবাসি। দূর থেকে। আপনি না জেনেই। নীরবে। একটাও কথা না বলে। হয়তো বলবেন এমন হয় না, সম্ভব নয়, এটা কল্পনা আর বাস্তব নয়। কিন্তু হয়েছে আর সত্যিই আপনাকে ভালোবাসি।</p>
-        <p class="nc-ctx">…গেলাম আর বুলেভার্ডের মাঝের বেঞ্চটায় পৌঁছাতে চাইলাম। আমার পায়ে জোর ছিল না আর বুলেভার্ডের প্রথম বেঞ্চটায় এলিয়ে পড়লাম। সেই বেঞ্চটাই যার ওপর দু-দিন আগে বসেছিলাম আর নিলুফার সত্যিই এসে হাজির হয়ে আমার সব কল্পনার ওপর হেগে দিয়েছিল। আমার চোখে সাদা-কালো ঝিলিক হচ্ছিল। বেঞ্চের ওপার থেকে নিলুফারের গলা এল।</p>
-        <p class="nc-line">– আচ্ছা দেখ, তুমি খুবই ভালো ছেলে। কিন্তু আমরা একে অপরের থেকে অনেক আলাদা।</p>
+        <p class="nc-ctx">তাকালাম। একজন বুড়ো লোক লাঠিটা বেঞ্চে ঠেস দিয়ে খবরের কাগজ পড়ায় মগ্ন ছিল।</p>
+        <p class="nc-ctx">– ঘরের ছেলেরা তোমার নামটা খুব ভালো রেখেছে।</p>
+        <p class="nc-line">সত্যিই কখনো কখনো খুব মধুর করে গোল পাকাও আর ফসকা শট মারো। স্পষ্টই তো, তোমাকেই বলছি, আমার মধু।</p>
       </div>
-      <p class="nc-q" id="q8">Niloofar gently turns Amir down. Does '<bdi lang="bn" dir="ltr">দেখ</bdi>' fit with '<bdi lang="bn" dir="ltr">তুমি</bdi>' here?</p>
+      <p class="nc-q" id="q8">Niloofar teases Amir with his nickname '<bdi lang="bn" dir="ltr">মধু</bdi>'. Does the play on words work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,14 +257,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#9">
+    <fieldset class="nc-item" data-id="04b/0951#4">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="bn" dir="ltr">
-        <p class="nc-ctx">– হ্যাঁ, হামুন ভালো নাম তোমার জন্য। সিনেমার হামুনের মতো তুমিও প্রশ্নে ভরা। উদ্বেগে ভরা আর বিশৃঙ্খলার উৎস, নিজের জন্য নয়, আমার জন্য।</p>
-        <p class="nc-ctx">হুমান বলল:</p>
-        <p class="nc-line">আর তোমার ওই ধোনমার্কা ঢঙে কথা বলার জন্য তোমার নাম হওয়া উচিত ছিল আলাঁ ধোনলোঁ।</p>
+        <p class="nc-ctx">– আমাকে দে। যেন এ-ই জানে ওই তারওয়ালাগুলো কী করে কাজ করে।</p>
+        <p class="nc-ctx">তাঘি শূন্যেই হামিদের হাত চেপে ধরে ওয়াকম্যানটা বাঁচাল; কিন্তু ইয়াসারের কপালে তবু কয়েকটা ঘুসি-লাথি জুটেই গেল। হামিদ বলল:</p>
+        <p class="nc-line">– আমাদের দুলাভাইয়ের ওস্তাদের চাচাতো ভাইয়ের বন্ধু, যে তেহরানের বড়লোক, সে বলেছিল।</p>
       </div>
-      <p class="nc-q" id="q9">'<bdi lang="bn" dir="ltr">আলাঁ ধোনলোঁ</bdi>' is meant as a rude pun on the actor Alain Delon. Would Bengali readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q9">Is it clear '<bdi lang="bn" dir="ltr">ওস্তাদের</bdi>' means the master craftsman the brother-in-law works under?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -285,21 +275,37 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="bn" dir="ltr">
+        <p class="nc-ctx">শুরু</p>
+        <p class="nc-ctx">এখানে কিছু ঘটে না। কিছু ঠিক হবে না, কিছু ভাঙবেও না। কোনো ব্যাখ্যা আসছে না। কোনো সিদ্ধান্ত নেই।</p>
+        <p class="nc-line">এ হলো সেই সুতোর খোলা মাথা — এমন শব্দের সুতো যা একদিন ধ্বনি ছিল।</p>
+      </div>
+      <p class="nc-q" id="q10">Is it clear the words, not the thread, were once sounds?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -336,7 +342,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

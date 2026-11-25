@@ -8,7 +8,8 @@
 	"vars": {
 		"ALLOWED_ORIGINS": "https://arasteh.art",
 		"GITHUB_OWNER": "amirarasteh1990",
-		"GITHUB_REPO": "amirarasteh1990.github.io"
+		"GITHUB_REPO": "amirarasteh1990.github.io",
+		"CHECK_REPO": "sedaha-answers"
 	},
 	"secrets": {
 		"required": [

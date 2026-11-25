@@ -2,7 +2,7 @@
  "lang": "oc",
  "slug": "oc",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
@@ -19,34 +19,6 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Bibi, que siá en glòria, disiá dins aqueles cases: se o disi, m'arde la lenga; se o calli, m'arde lo mesolh de l'òs.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "La pluèja tomba pas de la tèrra cap al cèl.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "Ditz: « Una bona annada se coneis dempuèi sa prima. »",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Çò que disi es que, se demòras aicí assetat a legir poesia, se te va pas caufar lo pan.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
    "id": "04b/0824#7",
    "where": "04b/0824",
    "text": "Sonque aprèp que la familha me botèt per fòrça dins lo galinièr comprenguèri quin mond tan distint èra aquel de l'autre costat de l'istòria.",
@@ -54,11 +26,54 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Ma man es corta e ta union es luènh.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1266#8",
+   "where": "04b/1266",
+   "text": "La filha de Baba empencha son triciclet color de ròsa e s'alunha fasent lo son «viiiish».",
+   "q": "Is 'triciclet' the right word for a child's kick scooter?",
+   "before": [
+    "Una votz darrièr ieu ditz:",
+    "– Òc, te compi la nina. Quand aurai d'argent dins la man, te'n crompi una encara melhora, filha de Baba."
+   ]
+  },
+  {
+   "id": "03/0528#2",
+   "where": "03/0528",
+   "text": "Bolegèt lo cap.",
+   "q": "She shakes her head to say no. Does 'Bolegèt lo cap' say that?",
+   "before": [
+    "Diguèri:",
+    "– Es qu'mos amics me van repotegar qu'ai balhat lo còr sens cap de coneissença, sens cap de conversacion."
+   ]
+  },
+  {
+   "id": "03/0601#3",
+   "where": "03/0601",
+   "text": "Emplenèt lo quartièr de rumors sus qual èra estat lo desvergonhat qu'aviá ausat apelar sa filha çò pièger, e cent causas encara mai marridas.",
+   "q": "The mother says someone called her daughter a slut. Is that clear here?",
+   "before": [
+    "– E doncas Negar nos aviá demandat de tustar son cosin, per qu'ara aguèssem sensacion qu'èrem estats enganats?",
+    "…nuèch, metèrem los papièrs per l'esclaus de la porta de son ostal. En realitat foguèt Taghi qui los metèt, e ieu, paorós de çò que fasiam, l'aviái sonque acompanhat per paur que s'enfadèsse. L'endeman, Taghi venguèt me dire que la maire de Negar aviá pres los papièrs en son luòc e los aviá legits."
+   ]
+  },
+  {
+   "id": "04b/0418#5",
+   "where": "04b/0418",
+   "text": "Un dròlle pichon e prim, de pèl long e crespat, uèlhs grands, pèl fòrça escura e un cap fòrça pichon que, se non foguèsse pel pèl crespat, auriá semblat pichon ni tan sus son còrsset.",
+   "q": "Is it clear his head would look small even on his slight body?",
+   "before": [
+    "– Salaam. M'apèli Meysam. L'encargat de la residéncia me diguèt de venir a la cambra 403.",
+    "E demorèt atal, de pè, davant la pòrta miègduberta de la cambra, sens dire res:"
+   ]
+  },
+  {
+   "id": "03/0613#4",
+   "where": "03/0613",
+   "text": "Tot lo camin, Hooman renèga per aver manlevat nòstra citacion.",
+   "q": "Is it clear Hooman grumbles because Amir broke their appointment?",
+   "before": [
+    "– Pèc miserable... uf... amb lo cap baish atal... uf... ont vas amb tanta prèssa... uf... demorèri sens alen. Me faguères percórrer, amb aqueste còs, tot aqueste camin... uf... darrièr tu.",
+    "A dos passes de la porta Valiasr, tornam arrièr e davalam aqueles gras. Passam davant l'intrada de la cantina a nòstra dreita e la pichona intrada a l'estatge bas de l'edifici Abu-Reyhan a nòstra esquèrra, e prenèm lo camin entre lo pavelhon d'exposicions e l'Abu-Reyhan."
+   ]
   }
  ]
 }

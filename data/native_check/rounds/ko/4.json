@@ -1,183 +1,427 @@
 {
+ "format": 2,
  "lang": "ko",
  "slug": "ko",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "원어민 확인",
+  "lead": "책을 읽지 않으셨어도 괜찮아요. 원하시는 만큼만 답해 주세요.",
+  "persian_words": "마망(어머니), 바바(아버지), -잔(사랑하는)은 책에 그대로 둔 페르시아어 단어예요.",
+  "page": "페이지",
+  "correct": "맞아요",
+  "needs_change": "고쳐야 해요",
+  "not_sure": "잘 모르겠어요",
+  "how_say": "어떻게 말하시겠어요?",
+  "meaning": "무슨 뜻이라고 생각하세요?",
+  "optional": "(선택)",
+  "your_name": "이름",
+  "thanks_tick": "감사 페이지에 제 이름을 올려 주세요",
+  "private": "답변은 저자에게만 전달돼요.",
+  "send": "보내기",
+  "send_continue": "보내고 {n}페이지로 넘어가기",
+  "sending": "보내는 중…",
+  "popup_title": "감사합니다!",
+  "popup_text": "웹사이트 감사 페이지에 이름을 올리고 싶으신가요? 4페이지를 모두 마치시면 기꺼이 올려 드릴게요.",
+  "popup_button": "{n}페이지로 넘어가기",
+  "arrived": "감사합니다. {n}페이지 답변이 잘 도착했어요.",
+  "thanks_last": "감사합니다! 답변이 잘 도착했어요.",
+  "all_done": "모든 페이지를 보내 주셨어요. 하나하나 정말 감사합니다!",
+  "already_sent": "이 기기에서 이미 이 페이지를 보내셨어요. 감사합니다!",
+  "continue_with": "{n}페이지 계속하기",
+  "need_one": "적어도 한 줄에는 답을 골라 주세요.",
+  "note_no_answer": "메모를 남긴 줄이 있어요. 그 줄에도 답을 골라 주세요.",
+  "name_needed": "올리고 싶은 이름을 적거나, 체크를 해제해 주세요.",
+  "not_connected": "보내기 기능이 아직 연결되지 않았어요.",
+  "too_long": "보내는 데 시간이 너무 오래 걸렸어요.",
+  "cannot_send": "여기서는 답변을 보낼 수 없었어요.",
+  "use_email": "아래 이메일 버튼을 이용해 주세요.",
+  "fallback": "이 페이지에서 답변을 보낼 수 없었어요. 대신 이메일로 보내 주세요. 입력하신 내용은 사라지지 않았어요.",
+  "email_button": "이메일로 답변 보내기",
+  "shortened": "일부 메모가 이메일 링크에 넣기에는 너무 길어서 거기서는 줄여졌어요. 전체 답변은 아래에 있으니 이메일에 붙여 넣어 주세요.",
+  "noscript": "보내려면 JavaScript가 필요해요. 답변을 {email}로 이메일로 보내 주셔도 돼요."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "06/0238#1",
-   "where": "06/0238",
-   "text": "그게 고마움을 표하는 방식이야?",
-   "q": "Maman, a mother from a small town, scolds her son through clenched teeth. Does this sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "마망이 이를 악물며 말한다."
+   "key": "crude",
+   "title": "거친 말",
+   "q": "여기서는 인물들이 욕을 하거나 거칠게 말해요. 각 줄이 자연스럽게 들리나요?",
+   "labels": [
+    "맞아요",
+    "고쳐야 해요",
+    "잘 모르겠어요"
+   ],
+   "note_label": "어떻게 말하시겠어요?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "독수리눈 뉴스를 부정하는 자에게 저주가 있을진저.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "야, 뭘 원하는 거야, 에스칸다르? 왜 이러는 거야?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "너한테 어울리는 이름이 없어, 이 자식아.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "안 보인다고 했잖아, 이 좆같은 새끼야.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "세상이고 뭐고 다 좆도 신경 안 쓰는 네가 왜 이렇게 퀴즈랑 시험에 매달리냐?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "답은 후만 사부 똥꼬를 빠는 게 너한테는 안 어울린다는 거야.",
+     "note": null
+    },
+    {
+     "id": "03/0398#crude",
+     "text": "좆같은 새끼. 객관적으로, 달러가 1500토만이 되어가는 판국에, 그 불쌍한 놈을 못살게 굴고 있냐?",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "어서 좀 떠라, 이 좆같은 새끼야.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "맥케인이 오면 이란이 박살나는 건데, 객관적으로.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "너 또 왜 이 지랄이야?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "아, 또 그 빌어먹을 사색가 포즈는 뭐야?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "개소리 철학 토론 하고 싶은 사람은 부엌에 가도 돼.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "이 한심한 놈아",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "줏대도 없이 외국 숭배나 하는 놈아.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "나이로 따지자면 너는 바흐만의 불알이나 핥아야지.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "이렇게 열심히 공부해도, 결국엔 우리의 그 빌어먹을 운 때문에 이렇게 되고 마는 거지.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "그래, 우리를 보기만 하면 똥구멍을 오므리고 멀찍이 거리를 두니까, 두 발로 그 얼굴들에 뛰어들고 싶어진다니까.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "에이, 우리 이 운 좆같네.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "나는 너 같은 좆대가리랑 같은 방을 쓰느니 차라리 걔네랑 방을 쓰는 게 나았을 거야.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "그럼 좆도 모르는 신입생이네.",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "그리고 그 좆같은 상황에서, 우리한테 떨어진 그 골동품들은 또 뭐였냐?",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "정말 궁금한 건 어느 개자식이 금요일 새벽 여섯 시에 가게를 열어놨길래 네가 가서 카메라를 샀냐는 거야.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "캄야르가 잘난 척하지 않고 기숙사에 남았더라면, 빈 침대가 안 생겨서 이 별난 것들이 우리한테 떨어질 일도 없었을 텐데.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "나 같으면 0점은커녕, 내 좆대가리를 씹어 먹게 하고는 엉덩이를 걷어차서 대학에서 쫓아냈을 거다.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "그러니까 제비뽑기에서 너 같은 골동품이 우리한테 걸린 이 좆같은 운이 계속 반복된다는 말이냐?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "신경이 곤두서 있으니 욕 나간다.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "세상 돌아가는 이 좆같은 꼴.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "그러니까 엘디-잔, 우리끼리 얘긴데, 너 완전히 좆같은 우연으로 외국에 가게 됐어.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "엘디, 이렇게 침대에 널브러져 불알이나 만지작거리지 말고, 일어나서 부쳐.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "어차피 넌 지원해서 떠날 사람도 아닌데, 왜 엉덩이가 찢어져라 토플 시험을 봤대?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "우리든 방이든 누구든 다 좆도 신경 안 쓰던 파리드까지 입을 열었잖아.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "또 무슨 거지 같은 생각이 네 머릿속을 갉아먹고 있는 거야?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "그 좆같은 목소리로 노래에서 느끼던 분위기 다 망쳐 놨잖아.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "그래, 뭐 됐고 씨발.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "봐, 네가 얼마나 큰일을 저질렀는지, 이 골 빈 자식아.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0156#2",
-   "where": "06/0156",
-   "text": "네. 몰랐어요?",
-   "q": "A family member confirms the sad news to Amir. Does this short reply sound natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "– 뭐라고요? 타기가 죽었어요?"
-   ]
-  },
-  {
-   "id": "04b/0181#3",
-   "where": "04b/0181",
-   "text": "내 좆대가리나 먹어라.",
-   "q": "Hooman tells Eskandar off with a crude Persian insult. Does it sound like a real insult a young man would use?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "후만이 다시 엄지손가락을 들어 올리며 말했다."
-   ]
-  },
-  {
-   "id": "03/0394#4",
-   "where": "03/0394",
-   "text": "아니, 원래도 좆대가리였는데 이제 더 좆대가리가 됐거나.",
-   "q": "Hooman mocks Eskandar as stupid with a crude word. Does '좆대가리' sound like natural dorm talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– 갑자기 그 질문에 꽂혔네. 경우의 수는 몇 개야. 어디 머리를 부딪혔거나. 아니면 좆대가......"
-   ]
-  },
-  {
-   "id": "04b/0146#5",
-   "where": "04b/0146",
-   "text": "이 똥골통아. 내 입으로 말하게 만드네.",
-   "q": "Hooman calls Eskandar dim-witted. Does '똥골통' sound like a natural crude insult?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– 들었다고?",
-    "– 그래, 뭐, 대학에 소문이 돌았으니까."
-   ]
-  },
-  {
-   "id": "04b/0343#6",
-   "where": "04b/0343",
-   "text": "그럼 좆도 모르는 신입생이네.",
-   "q": "A senior student mocks a first-year crudely. Does this sound like natural crude talk?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– 너 1학년이야?",
-    "– 네."
-   ]
-  },
-  {
-   "id": "03/0268#7",
-   "where": "03/0268",
-   "text": "너한테 어울리는 이름이 없어, 이 자식아.",
-   "q": "A roommate insults another to his face, half joking. Does this line sound like he is speaking to him?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "목소리를 높여 말했다:"
-   ]
-  },
-  {
-   "id": "03/0638#8",
-   "where": "03/0638",
-   "text": "진짜 뭐라 해야 하나, 이 몸으로 백칠십 미터를 따라오게 만들었어.",
-   "q": "Hooman, a heavy man, swears at Amir for making him run so far. Does it sound as rude as he means?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– 게다가 더 좁아지면서 발리아스르 문 가까이 이어지는 저 마지막 부분까지 계산하면 백칠십 미터가 돼."
-   ]
-  },
-  {
-   "id": "04b/0723#9",
-   "where": "04b/0723",
-   "text": "어차피 넌 지원해서 떠날 사람도 아닌데, 왜 엉덩이가 찢어져라 토플 시험을 봤대?",
-   "q": "Hooman asks why Amir slaved away for an English test. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "그러고는 웃었다. 나는 아무 말도 하지 않았다. 후만이 계속했다:"
-   ]
-  },
-  {
-   "id": "04b/0351#10",
-   "where": "04b/0351",
-   "text": "그 시절이랑 우리 사고방식에 똥이나 싸.",
-   "q": "Hooman, now grown up, scorns his student days crudely. Does '똥이나 싸' sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– 그 시절이 그립다니 무슨 소리야, 박사님?"
-   ]
-  },
-  {
-   "id": "04b/0162#11",
-   "where": "04b/0162",
-   "text": "그래, 우리를 보기만 하면 똥구멍을 오므리고 멀찍이 거리를 두니까, 두 발로 그 얼굴들에 뛰어들고 싶어진다니까.",
-   "q": "Farid says the stuck-up Tehran students make him want to kick them in the face. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "파리드가 말했다."
-   ]
-  },
-  {
-   "id": "04b/0899#12",
-   "where": "04b/0899",
-   "text": "이 좆대가리 먹는 놈아, 왜 헛소리를 지껄여?",
-   "q": "Hooman insults a friend with a crude Persian-style curse. Does it sound like a real insult in Korean?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "후만이 말했다."
-   ]
-  },
-  {
-   "id": "04b/0562#13",
-   "where": "04b/0562",
-   "text": "독수리눈, 하느님이 널 용서치 않으시길, 내 허리를 박살 냈잖아.",
-   "q": "Eskandar curses Sajad, half joking, after being bumped. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "에스칸다르는 숨이 겨우 넘어오는 게 드러나는 목소리로 말했다:"
-   ]
-  },
-  {
-   "id": "04b/0440#14",
-   "where": "04b/0440",
-   "text": "지역화 사태 이후로는 어떤 좆이 우리 머리 위로 떨어져도 놀라지 않을 거야.",
-   "q": "Hooman says that after the policy, no bad luck will surprise him. Does this crude image sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "바흐만은 괜찮다고 했다. 에스칸다르는 책을 꺼내려고 내 침대 밑으로 손을 뻗었고, 메이삼은 무릎을 꿇고 앉아 옷걸이 아래 자기 자리를 펴고 있었다. 후만은 그들을 바라보며 말했다."
-   ]
-  },
-  {
-   "id": "04b/0822#15",
-   "where": "04b/0822",
-   "text": "이렇게 좆을 손에 쥔 채 거리를 헤매고 다니진 않았을 거란 말이야.",
-   "q": "Hooman says Amir now drifts around lost and aimless, using a crude image. Does it sound natural?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "03/0663#16",
-   "where": "03/0663",
-   "text": "아이들을 가족 곁에 두겠다는 명목으로 우리 지방 출신들 똥구멍에 몽둥이를 쑤셔 박았다고.",
-   "q": "Hooman crudely says the policy hurt every student from the provinces. Does this image sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– 곱슬머리야, 꼭 콩쿠르도 안 보고 대학에 들어온 사람처럼 놀라네. 이 지역화 정책이 우릴 제대로 좆되게 했어."
+   "key": "natural",
+   "title": "자연스럽게 들리나요?",
+   "q": "각 줄이 자연스럽고 분명하게 들리나요?",
+   "labels": [
+    "맞아요",
+    "고쳐야 해요",
+    "잘 모르겠어요"
+   ],
+   "note_label": "어떻게 말하시겠어요?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0140#natur",
+     "text": "그러면 우리 불쌍한 바바가 얼마나 고생하는지 봐봐 — 이 여러 해 동안 집에서 빈둥거리며 앉아 계셨으니까.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "응, 우리 바바-잔은 존경에 정말 굶주렸지.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "그런데 하필 잘못된 사람들 틈에 떨어졌지. 우리가 그 존경을 남김없이 산산조각 냈으니까.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "그럼 이 차로 독수리눈 뉴스를 위해 건배하자.",
+     "note": null
+    },
+    {
+     "id": "03/0278#natur",
+     "text": "카루비는 사랑이야, 솔직히 말해서.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "그리고 삼십 분밖에 없다는 것도 말씀드릴게요.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "으아아. 소름이 돋았어.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "표범 파리드는 자기가 뭘 원하는지도 모르잖아.",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "내 목에 발판이라고 써놨어?",
+     "note": null
+    },
+    {
+     "id": "03/0620#natur",
+     "text": "야, 표범 파리드. 줘 봐, 나도 하페즈 점을 한 번 볼게.",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "진짜 뭐라 해야 하나, 이 몸으로 백칠십 미터를 따라오게 만들었어.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "지역화 덕분에야 아미르카비르에 들어온 그 테헤란 애들이, 마치 쿼터로 들어온 게 그쪽이 아니라 우리인 것처럼 굴어, 객관적으로.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "야, 얘한테 그렇게 정중하게 말하지 마, 우쭐해진다고.",
+     "note": null
+    },
+    {
+     "id": "04b/0173#natur",
+     "text": "그럼 너희들 다 아주 똑똑한 애들이로구나.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "그래, 이 아라스테를 우습게 보지 마, 저렇게 맹해 보여도 콩쿠르 등수가 74등이었어.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "한두 해 전에 독수리눈 뉴스한테서 들었는데 그 멋쟁이 녀석도 호주로 갔대, 어쩌면 너희 둘이 사랑했던 그 여자애를 쫓아서.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "너는 이 은신처에서 나와서 정말로 뭔가를 해야 해, 여기 와서 앉아 공상이나 하는 게 아니라.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "네가 이렇게 말없이 앉아 있으면 어찌나 약이 오르는지. 주먹으로 너를 때리고 싶어.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "누구 방에도 카펫이 없어요, 바바-잔, 우리만 카펫이 있죠, 그것도 우리가 영재방이라서예요.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "전부 철학이랑 소설이네. 좋았어, 니체도 있네. 난 니체를 정말 좋아해.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "양자물리학에 대한 내 이론을 썼더니, 우리 멍청한 교수가 나한테 0.25점을 줬어.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "독수리눈, 하느님이 널 용서치 않으시길, 내 허리를 박살 냈잖아.",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "네 엄마를 봐서라도 방에서 안경 없이 돌아다니지 마.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "객관적으로 이게 자리 잡으면 은행이니 뭐니 하는 거 전부 보따리 싸게 돼.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "중요한 건 내가 슈퍼마켓에 갈 때마다 돈 내고 우유랑 케이크 사서 몸에 집어넣는 거지.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "알았어 독수리눈, 알았다고. 자, 안경을 노트북에 처박지나 마.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "파리가 여기 있었으면, 이게 무슨 이런 수익을 내는 물건인가 하고 지금쯤 더듬이가 곤두섰을 텐데.",
+     "note": null
+    },
+    {
+     "id": "04b/0784#natur",
+     "text": "너 진짜 엉큼하다.",
+     "note": null
+    },
+    {
+     "id": "04b/1099#natur",
+     "text": "그 틈의 한쪽에는 내가 여러 해 간직해 온 신념의 경계와 신성함의 무게가 무겁게 내리눌렀고, 다른 한쪽에는 닐루파르가 서 있었다.",
+     "note": null
+    },
+    {
+     "id": "04b/1119#natur",
+     "text": "너희 모두 내 자식 같구나.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "하지만 그렇게 되었고 나는 정말로 당신을 사랑해요.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "아마 귀가 안 들려서 무슨 일인지 모르시니까, 두려움이 안 생겼던 것 같아.",
+     "note": null
+    },
+    {
+     "id": "06/0156#natur",
+     "text": "네. 몰랐어요?",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "니니-잔을 위해서라면 뭐든 할 수 있어요. 머리가 어쩜 그렇게 잘 돌아가요.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "마음은 환하다. 내일 눈을 뜨면 모든 것이 끝나 있고, 어둠이 다시 내 꿈으로 돌아와 있을 것이다.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

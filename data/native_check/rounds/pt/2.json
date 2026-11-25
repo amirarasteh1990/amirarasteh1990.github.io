@@ -1,185 +1,227 @@
 {
+ "format": 2,
  "lang": "pt",
  "slug": "pt",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisão por falantes nativos",
+  "lead": "Não precisa de ter lido o livro. Responda a quantas quiser.",
+  "persian_words": "Maman (mãe), Baba (pai) e -jan (querido) são palavras persas mantidas no livro.",
+  "page": "Página",
+  "correct": "Correto",
+  "needs_change": "Precisa de alteração",
+  "not_sure": "Não tenho a certeza",
+  "how_say": "Como diria isto?",
+  "meaning": "O que acha que significa?",
+  "optional": "(opcional)",
+  "your_name": "O seu nome",
+  "thanks_tick": "Incluir o meu nome na página de Agradecimentos",
+  "private": "As suas respostas chegam apenas ao autor.",
+  "send": "Enviar",
+  "send_continue": "Enviar e continuar para a página {n}",
+  "sending": "A enviar…",
+  "popup_title": "Obrigado!",
+  "popup_text": "Gostaria de ver o seu nome na página de Agradecimentos do site? Termine as 4 páginas e teremos todo o gosto em acrescentá-lo.",
+  "popup_button": "Continuar para a página {n}",
+  "arrived": "Obrigado, as suas respostas da página {n} chegaram.",
+  "thanks_last": "Obrigado! As suas respostas chegaram.",
+  "all_done": "Enviou todas as páginas. Obrigado por todas elas!",
+  "already_sent": "Já enviou esta página a partir deste dispositivo. Obrigado!",
+  "continue_with": "Continuar com a página {n}",
+  "need_one": "Escolha uma resposta para pelo menos uma frase.",
+  "note_no_answer": "Uma frase tem uma nota: escolha também uma resposta para ela.",
+  "name_needed": "Escreva o nome que gostaria de ver na lista, ou desmarque a caixa.",
+  "not_connected": "O envio ainda não está ligado.",
+  "too_long": "O envio demorou demasiado.",
+  "cannot_send": "Não foi possível enviar as respostas a partir daqui.",
+  "use_email": "Use o botão de e-mail abaixo.",
+  "fallback": "Não foi possível enviar as respostas a partir desta página. Envie-as por e-mail; nada do que escreveu se perdeu.",
+  "email_button": "Enviar as respostas por e-mail",
+  "shortened": "Algumas notas eram demasiado longas para uma ligação de e-mail e foram aí encurtadas. As suas respostas completas estão abaixo; cole-as no e-mail, por favor.",
+  "noscript": "O envio precisa de JavaScript. Também pode enviar as suas respostas por e-mail para {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0132#1",
-   "where": "01/0132",
-   "text": "Havia o tifo, por exemplo, ou a tuberculose, ou o sarampo.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Ou a cólera, por exemplo. Essa também não matou tantos.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "A pior doença é o Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Portuguese speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, há uma doença que vai paralisando os músculos aos poucos. É uma doença muito má.",
-    "A Maman disse:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Aqui, nada acontece. Nada aqui vai ser corrigido, nem destruído.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#4",
-   "where": "06/0052",
-   "text": "No fim, a Mahboub ligou, vieram de amublância e levaram a Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Portuguese speaker say ambulância as 'amublância'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#5",
-   "where": "03/0362",
-   "text": "Mahboub, isso que está a dar nas notícias, a Améroca",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Portuguese speaker say América as 'Améroca'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…notas do Konkoor. Saí da casa no fundo do pátio e percorri o comprimento do pátio em nove passos, com a alegria da nova descoberta ainda acesa no coração. Quando entrei na sala vindo do pátio, a Maman estava deitada à frente da televisão. Tinha ambas as mãos sobre o estômago e dizia à Mahboubeh:"
+   "key": "one",
+   "title": null,
+   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0389#s32",
+     "text": "Nem a cabeça dela conseguias comer.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#6",
-   "where": "01/0182",
-   "text": "E não era o quê — engo?",
-   "q": "Maman, hard of hearing, catches only the end of 'mulherengo'. Would Portuguese readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Também não era mulherengo.",
-    "A Maman diz:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Batalhão, em frente, marche!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Batalhão, à esquerda, volver!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0142#7",
-   "where": "01/0142",
-   "text": "O Baba o quê?",
-   "q": "Maman, hard of hearing, catches only part of her son's joke about Baba. Does her question sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Então imagina pelo que o nosso pobre Baba está a passar — sentado sem fazer nada em casa todos estes anos.",
-    "A Maman diz:"
+   "key": "poetry",
+   "title": "Poesia",
+   "q": "Estes são versos de poesia. Cada um lê-se bem como poesia em português?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Não aceitaria por preço nenhum esse anel de Salomão, sobre o qual às vezes a mão de",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "«Para Attar, chorar até à madrugada é mais doce» ou «agora ficou ainda mais morto»?",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "escreve sobre a água com o teu próprio sangue",
+     "note": null
+    },
+    {
+     "id": "04b/1275#poetr",
+     "text": "os abrasados",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "A luz dos meus sonhos acendeu-se",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "A luz dos meus sonhos pisca agora",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "mas se acaso passares perto",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Creio que os meus sonhos não acreditaram que partiste",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "A luz dos meus sonhos ... a luz dos meus sonhos acendia-se ... a luz dos meus sonhos acendeu-se",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0628#8",
-   "where": "03/0628",
-   "text": "Haha, o Ancião da Taverna, o Eldie, perfeito.",
-   "q": "Hooman shortens Amir's nickname 'Ancião da Taverna' to 'Eldie', a pet form of English elder. Does this short form work here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "O Hooman estava a escrever algo no livro com uma caneta e disse:"
-   ]
-  },
-  {
-   "id": "04b/0595#9",
-   "where": "04b/0595",
-   "text": "Mas cagou tudo. O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
-   "q": "Amir misheard 'peer' as pir, Persian for an old sage, hence his nickname 'Eldie'. Would Portuguese readers get it? If not, what word could?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir a pir?",
-    "O Hooman disse:",
-    "– Mandem um salavat. O Ancião da Taverna por fim disse alguma coisa.",
-    "O Farid disse:"
-   ]
-  },
-  {
-   "id": "04b/0387#10",
-   "where": "04b/0387",
-   "text": "Esta noite ouvi-te a ruminar.",
-   "q": "Eskandar teases Hooman for munching sweets secretly at night, like a cow chewing cud. Does this sound like natural teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "O Eskandar virou-se para o Hooman e disse:"
-   ]
-  },
-  {
-   "id": "04b/0460#11",
-   "where": "04b/0460",
-   "text": "Que raio te deu agora, a ficar teso para cima de nós, Alain Caralhon?",
-   "q": "Hooman crudely mocks a pompous roommate, using his rude nickname 'Alain Caralhon'. Does this sound like real dorm teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "O Hooman disse:"
-   ]
-  },
-  {
-   "id": "03/0432#12",
-   "where": "03/0432",
-   "text": "Refiro-me ao Alain Caralhon. Caraaalho. Ponto final.",
-   "q": "Hooman stretches out a rude nickname to mock a roommate, then closes the topic. Does this ending sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ...e fazes a boca como o cu de uma galinha e te matas para tentar falar como ele. Não é a esse que me refiro."
-   ]
-  },
-  {
-   "id": "03/0490#13",
-   "where": "03/0490",
-   "text": "Cuidado para não te partir, senhor Caralho.",
-   "q": "A roommate has just called himself an extremist nationalist anarchist. Does Hooman's mocking reply work?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "O Eskandar endireitou-se e empinou o peito. Disse:",
-    "– Sou um anarquista nacionalista extremista.",
-    "O Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0616#14",
-   "where": "04b/0616",
-   "text": "Está bem, Olho de Águia, está bem. Agora não enfies os óculos no portátil.",
-   "q": "Hooman teases short-sighted Sajad, whose face is almost touching the laptop screen. Does it sound like natural teasing?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Entrecerrou os olhos por trás dos óculos e aproximou a cabeça do ecrã do portátil.",
-    "– Se não acreditas, vem ver com os teus próprios olhos, objetivamente.",
-    "O Hooman disse:"
-   ]
-  },
-  {
-   "id": "06/0186#15",
-   "where": "06/0186",
-   "text": "Dava tudo por ti, Nini-jan – essa cabeça funciona tão bem.",
-   "q": "Amir lovingly praises his mother's quick thinking with a Persian turn of phrase. Does it sound warm and natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Digo:"
-   ]
-  },
-  {
-   "id": "03/0189#16",
-   "where": "03/0189",
-   "text": "Pff, asno, quem é que sabe mais, o homem mais rico de Teerão, amigo do primo do mestre artesão do nosso cunhado, ou tu, bezerro?",
-   "q": "A boy angrily calls his friend a donkey and a calf, using the more polite word for donkey. Do these insults sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "O sangue do Hamid ferveu e ele gritou:"
+   "key": "word_choice",
+   "title": "Palavras soltas",
+   "q": "A palavra de cada frase é a certa? O que deveria significar aparece por baixo.",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0517#word_",
+     "text": "O Farid Leopardo não sabe o que quer. Por um lado, desfere golpes homicidas; por outro, diz: ai, sangue, deu-me arrepios.",
+     "note": "\"golpes homicidas\" = murderous moves: tough-guy stunts"
+    },
+    {
+     "id": "03/0663#word_",
+     "text": "Carapinha, pareces tão espantado, como se tivesses entrado para a universidade sem o Konkoor.",
+     "note": "\"Carapinha\" = Curly: harmless nickname for curly hair"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "Eu teria preferido partilhar quarto com eles em vez de uma cabeça de pau como tu.",
+     "note": "\"cabeça de pau\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "Há um ou dois anos ouvi pelo Olho de Águia News que aquele janota também foi para a Austrália, de certa forma atrás da rapariga que vocês os dois amavam.",
+     "note": "\"aquele janota\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "Pela vida da tua mãe, não andes pelo quarto sem óculos.",
+     "note": "\"Pela vida da tua mãe\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "És muito sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Fica-se com uma tontura do caralho. Quanto mais se pensa nisso, maior fica a tontura do caralho.",
+     "note": "\"tontura do caralho\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "Agora vai buscar sementes para o Ghassem e os outros – querem ver um filme.",
+     "note": "\"sementes\" = roasted seeds to snack on"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

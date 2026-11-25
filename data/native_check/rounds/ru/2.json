@@ -1,174 +1,222 @@
 {
+ "format": 2,
  "lang": "ru",
  "slug": "ru",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Проверка носителями языка",
+  "lead": "Книгу читать не обязательно. Отвечайте на сколько угодно вопросов.",
+  "persian_words": "Маман (мама), Баба (папа) и -джан (дорогой) — персидские слова, в книге они оставлены как есть.",
+  "page": "Страница",
+  "correct": "Верно",
+  "needs_change": "Нужно исправить",
+  "not_sure": "Сомневаюсь",
+  "how_say": "Как бы вы сказали?",
+  "meaning": "Как вы думаете, что это значит?",
+  "optional": "(необязательно)",
+  "your_name": "Ваше имя",
+  "thanks_tick": "Указать моё имя на странице благодарностей",
+  "private": "Ваши ответы получит только автор.",
+  "send": "Отправить",
+  "send_continue": "Отправить и перейти к странице {n}",
+  "sending": "Отправка…",
+  "popup_title": "Спасибо!",
+  "popup_text": "Хотите, чтобы ваше имя было на странице благодарностей на сайте? Заполните все 4 страницы, и мы с радостью его добавим.",
+  "popup_button": "Перейти к странице {n}",
+  "arrived": "Спасибо, ваши ответы со страницы {n} получены.",
+  "thanks_last": "Спасибо! Ваши ответы получены.",
+  "all_done": "Вы отправили все страницы. Спасибо за все ответы!",
+  "already_sent": "Вы уже отправили эту страницу с этого устройства. Спасибо!",
+  "continue_with": "Продолжить со страницы {n}",
+  "need_one": "Выберите ответ хотя бы для одной строки.",
+  "note_no_answer": "У одной из строк есть комментарий: выберите, пожалуйста, ответ и для неё.",
+  "name_needed": "Впишите имя, под которым вас указать, или снимите галочку.",
+  "not_connected": "Отправка пока не подключена.",
+  "too_long": "Отправка заняла слишком много времени.",
+  "cannot_send": "Отсюда ответы отправить не удалось.",
+  "use_email": "Пожалуйста, воспользуйтесь кнопкой отправки письма ниже.",
+  "fallback": "С этой страницы ответы отправить не удалось. Пожалуйста, пришлите их письмом — всё, что вы ввели, сохранилось.",
+  "email_button": "Отправить ответы письмом",
+  "shortened": "Некоторые комментарии оказались слишком длинными для ссылки на письмо и были там сокращены. Полные ответы — ниже; пожалуйста, вставьте их в письмо.",
+  "noscript": "Для отправки нужен JavaScript. Вы также можете прислать ответы на {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0132#1",
-   "where": "01/0132",
-   "text": "Заглядывай во все уголки. Старики говорили: суй нос в каждую щель.",
-   "q": "Maman quotes an old saying to urge her son to explore every corner of the villages. Does it sound encouraging, as she means it?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– М-хм, хорошо делаешь. Пока есть возможность — езди, смотри все деревни."
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Верно",
+    "Нужно исправить",
+    "Сомневаюсь"
+   ],
+   "note_label": "Как бы вы сказали?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Это свободный конец нити из слов, которые когда-то были звуками.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "Или, например, холера. И она столько не убила.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#3",
-   "where": "01/0132",
-   "text": "Вот, например, тиф — или туберкулёз, или корь.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0148#4",
-   "where": "01/0148",
-   "text": "Что и улыбки?",
-   "q": "Maman catches only the end of the TV series title. Does her puzzled question read as mishearing it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ребята, скачать «Слёзы и улыбки», посмотрим сегодня вечером?",
-    "Маман поворачивает голову и говорит:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Верно",
+    "Нужно исправить",
+    "Сомневаюсь"
+   ],
+   "note_label": "Как бы вы сказали?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0026#s40",
+     "text": "Начало первого этапа задания. Батальон, нале-во!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#5",
-   "where": "01/0182",
-   "text": "Каким таким «-ником» не был?",
-   "q": "Told her husband was no womanizer, Maman mocks the word ending '-ником'. Would Russian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Бабником тоже не был.",
-    "Маман говорит:"
+   "key": "poetry",
+   "title": "Стихи",
+   "q": "Это стихотворные строки. Хорошо ли каждая звучит как стихи по-русски?",
+   "labels": [
+    "Верно",
+    "Нужно исправить",
+    "Сомневаюсь"
+   ],
+   "note_label": "Как бы вы сказали?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "я бы не взял ни за какие сокровища перстень Сулеймана, которого порой касается рука...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "«Слаще Аттару рыдать до рассвета» или «теперь он стал ещё более убитым»?",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "На всём можно писать",
+     "note": null
+    },
+    {
+     "id": "04b/1268#poetr",
+     "text": "кроме как на воде",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "пиши на воде своей собственной кровью",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "прошли здесь.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "Она прочла: «Давно уж от любимого ни вести; ни строчки привета ...», и меня разобрал смех.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "Свет моих снов теперь мигает",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Я не питаю надежды на твоё возвращение",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "снова приди в мои сны",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Сдаётся мне, мои сны не поверили, что ты ушла",
+     "note": null
+    },
+    {
+     "id": "02/0002#poetr",
+     "text": "Мои сны были тёмными",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "Свет моих снов ... свет моих снов зажигался ... свет моих снов зажёгся",
+     "note": null
+    },
+    {
+     "id": "02/0006#poetr",
+     "text": "Теперь ... теперь ... теперь тебя нет ...",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#6",
-   "where": "03/0380",
-   "text": "Самая плохая болезнь — это Айцгеймер.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say Alzheimer's as 'Айцгеймер'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Маман сказала:"
+   "key": "word_choice",
+   "title": "Отдельные слова",
+   "q": "Правильно ли выбрано слово в каждой строке? Под строкой указано, что оно должно значить.",
+   "labels": [
+    "Верно",
+    "Нужно исправить",
+    "Сомневаюсь"
+   ],
+   "note_label": "Как бы вы сказали?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#word_",
+     "text": "С этой стороны я разматываю нить слов, а с другой стороны ты собираешь их.",
+     "note": "\"собираешь их\" = you gather the words up"
+    },
+    {
+     "id": "Opening/0007#word_2",
+     "text": "Может быть, твоё поколение появилось на несколько лет позже этого мира пряжи, но представь: когда-то в каком-то уголке мира дети вот так и играли.",
+     "note": "\"этого мира пряжи\" = that world of yarn (childhood memory)"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "Вход на главную улицу: тс-тс.",
+     "note": "\"тс-тс\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "Ты очень сники.",
+     "note": "\"сники\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "сгоревшие",
+     "note": "\"сгоревшие\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "У человека начинается говнокружение. Чем больше об этом думаешь, тем сильнее говнокружение.",
+     "note": "\"говнокружение\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "И дрожащими руками я торопливо листал газели, выискивая тот бейт Хафеза, в глубину которого — как и в ту картину, по словам той другой девушки, — чем дальше погружаешься, тем сильнее говнокружение, — чтобы показать его Нилуфар.",
+     "note": "\"говнокружение\" = more baffled; echoes her crude coinage"
+    }
    ]
-  },
-  {
-   "id": "06/0052#7",
-   "where": "06/0052",
-   "text": "В конце концов Махбуб позвонила, приехали на амбуласе и увезли Наней.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say ambulance as 'амбуласе'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#8",
-   "where": "03/0362",
-   "text": "Махбуб, вот что они говорят в новостях — Амерока...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Russian speaker say America as 'Амерока'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…и прикрепил листок на стену рядом с остальными конкурными записями. Вышел из домика в конце двора и прошёл двор в девять шагов — радость от новой находки всё ещё светилась в сердце. Когда я вошёл со двора в гостиную, Маман лежала перед телевизором. Обе руки она положила на живот и говорила Махбубе:"
-   ]
-  },
-  {
-   "id": "03/0290#9",
-   "where": "03/0290",
-   "text": "Арасте — это подрезанное Араасте?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Russian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Господин Арасте.",
-    "Я поворачиваю голову к нему."
-   ]
-  },
-  {
-   "id": "03/0309#10",
-   "where": "03/0309",
-   "text": "Дай Бог, чтобы жизнь твоя всегда была араасте.",
-   "q": "The guard wishes him a neat, orderly life; 'араасте' is Persian for neat. Would Russian readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Охранник улыбается и говорит:"
-   ]
-  },
-  {
-   "id": "04b/0595#11",
-   "where": "04b/0595",
-   "text": "Но он всё просрал. Орлиный Глаз говорит «пиэр-ту-пиэр», а Элди — «пир-ту-пир».",
-   "q": "Amir misheard the computer term as 'пир' (Persian for elder, as in his nickname). Would Russian readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Прочтите-ка салават. Старец Таверны наконец-то что-то сказал.",
-    "Фарид сказал:"
-   ]
-  },
-  {
-   "id": "04b/0591#12",
-   "where": "04b/0591",
-   "text": "Пир ту пир?",
-   "q": "Amir mishears 'пиэр ту пиэр' as the Persian word pir, meaning elder. Would Russian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Что-то вроде электронных денег пиэр ту пиэр.",
-    "Я сказал:"
-   ]
-  },
-  {
-   "id": "04b/0460#13",
-   "where": "04b/0460",
-   "text": "Опять что за хворь на тебя напала, что ты на нас колом встал, Ален Членон?",
-   "q": "Hooman again calls Eskandar 'Ален Членон', a rude pun on Alain Delon. Does the crude teasing work here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Хуман сказал:"
-   ]
-  },
-  {
-   "id": "04b/1320#14",
-   "where": "04b/1320",
-   "text": "И дрожащими руками я торопливо листал газели, выискивая тот бейт Хафеза, в глубину которого — как и в ту картину, по словам той другой девушки, — чем дальше погружаешься, тем сильнее говнокружение, — чтобы показать его Нилуфар.",
-   "q": "The narrator echoes a girl's crude made-up word 'говнокружение' (shit plus dizziness). Does it still work in his own sentence?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "04b/0616#15",
-   "where": "04b/0616",
-   "text": "Ладно, Орлиный Глаз, ладно. Только не суй ты свои очки в ноутбук.",
-   "q": "Farid teases short-sighted Sajad, nicknamed Eagle Eye, for peering right into his laptop. Does the teasing come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Хуман сказал:"
-   ]
-  },
-  {
-   "id": "03/0278#16",
-   "where": "03/0278",
-   "text": "Можно в каком-то смысле сказать, что они захватили университет. Карруби — это любовь, честно и по совести.",
-   "q": "Farid gushes about a politician he admires, in student slang. Does this sound like natural youthful enthusiasm?",
-   "ctx": 0,
-   "kind": "joke"
   }
- ]
+ ],
+ "first": 7
 }

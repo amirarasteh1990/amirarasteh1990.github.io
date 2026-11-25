@@ -2,48 +2,13 @@
  "lang": "ku",
  "slug": "ku",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
-  {
-   "id": "01/0138#1",
-   "where": "01/0138",
-   "text": "Got, dilê min dirize.",
-   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
   {
    "id": "04a/0128#2",
    "where": "04a/0128",
    "text": "Xemê nexwe kurê min ê biaqil.",
    "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0509#3",
-   "where": "04b/0509",
-   "text": "Hooman bi kenê destê xwe bi hêz li pişta min dixe, û perçeya şekir dihilpeke nava qirika min.",
-   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, Xwedê rûhê wê şad bike, di wê rûdanên wiha de digotin: eger bibêjim zimanê min dişewite; eger nebêjim mejiyê hestiyê min dişewite.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Baran ji erdê ber bi ezmanê nabare.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Ghassem dîsa jî kenên xwe dike, dibêje saleke baş ji biharê tê zanîn.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -54,6 +19,30 @@
    "kind": "saying"
   },
   {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Got, dilê min dirize.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "Hooman bi kenê destê xwe bi hêz li pişta min dixe, û perçeya şekir dihilpeke nava qirika min.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1256#6",
+   "where": "04b/1256",
+   "text": "– Eger tu difikirî kamyonê bi xwe re bibî, ha.",
+   "q": "Taghi accepts a fight on one condition. Does 'ha' read as yes?",
+   "before": [
+    "– Hûn dixwazin şer bikin?",
+    "Kamyon di destê min de bû lê me nedikarîbû birevin. Negar rawestiyabû û li me dinihêrî. Taqî got:"
+   ]
+  },
+  {
    "id": "04b/0824#8",
    "where": "04b/0824",
    "text": "Ez nû piştî ku bi zorê malbatê tevlî mirîşkan bûm, fêr bûm çi cîhaneke cuda ye ew aliyê çîrokê.",
@@ -61,11 +50,34 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Destê min kurt e û gihîştina te dûr.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0361#3",
+   "where": "03/0361",
+   "text": "Ji xaniyê dawiya hewşê derketim û bi neh gavên dirêjiya hewşê pêya bûm û kêfa dîtina nû hîn di dilê min de dibiriqî.",
+   "q": "Is it clear he crossed the whole courtyard in nine steps?",
+   "before": [
+    "– Baş e.",
+    "…ku Mahboubeh perdeyê ber deriyê hewşê berda û derî girt. Rast bû. Êdî pêwîst nebû wê koma formulan û nîşanên konkûrê yên mijarê trigonometriyê ji ber bikim. Xweş ji rêbaza hêsan û bikêr ku min dîtibû, ji kêleka sobeyê rabûm û min kaxeza li ser dîwêr, li kêleka mayî yên nîşanên konkûrê, zeliq kir."
+   ]
+  },
+  {
+   "id": "01/0196#2",
+   "where": "01/0196",
+   "text": "Bi Xwedê, gava li malê ye, mal ewqas biçûk dibe, hest dikim dixwazim xefik bibim.",
+   "q": "Maman means the house feels so small she could suffocate. Is that clear?",
+   "before": [
+    "– Wê demê baş e ku pir li ba te nîye.",
+    "– Mm-hm, niha bi kêmî ve hinekî nefes dikêşim."
+   ]
+  },
+  {
+   "id": "03/0570#4",
+   "where": "03/0570",
+   "text": "Rasterast bi heman cilên derve ketim nivîna xwe û nixûm ser serê xwe kişandim.",
+   "q": "Is it clear he pulled the blanket over his head?",
+   "before": [
+    "– Çil û pênc kursî. Eger kêm bêne, ji sinifên din jî kursî dikarin bên anîn û li pêşiya sinifê bên rêzkirin.",
+    "…Lê Nîlûfer tewra ji bo temaşekirina vê dînîtiya helbestî jî nehatibû. Tewra ji ber deriyê sinifê jî derbas nebûbû. Bi gavên bilez û dirêj vegeriyam xewgehê. Dixwestim zû dirêj bikişim. Law li xaliyê kêlekî nivîna Ferîd rûniştibûn. Di nava nîqaşê de bûn û tewra hay ji ketina min nediatî odeyê."
+   ]
   }
  ]
 }

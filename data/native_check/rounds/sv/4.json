@@ -1,187 +1,342 @@
 {
+ "format": 2,
  "lang": "sv",
  "slug": "sv",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålskoll",
+  "lead": "Du behöver inte ha läst boken. Svara på så många du vill.",
+  "persian_words": "Maman (mor), Baba (far) och -jan (kära) är persiska ord som har behållits i boken.",
+  "page": "Sida",
+  "correct": "Rätt",
+  "needs_change": "Behöver ändras",
+  "not_sure": "Osäker",
+  "how_say": "Hur skulle du säga det?",
+  "meaning": "Vad tror du att det betyder?",
+  "optional": "(valfritt)",
+  "your_name": "Ditt namn",
+  "thanks_tick": "Visa mitt namn på tacksidan",
+  "private": "Dina svar går bara till författaren.",
+  "send": "Skicka",
+  "send_continue": "Skicka och fortsätt till sida {n}",
+  "sending": "Skickar…",
+  "popup_title": "Tack!",
+  "popup_text": "Vill du ha ditt namn på webbplatsens tacksida? Gör klart alla 4 sidorna, så lägger vi gärna till det.",
+  "popup_button": "Fortsätt till sida {n}",
+  "arrived": "Tack, dina svar från sida {n} har kommit fram.",
+  "thanks_last": "Tack! Dina svar har kommit fram.",
+  "all_done": "Du har skickat alla sidor. Tack för allihop!",
+  "already_sent": "Du har redan skickat den här sidan från den här enheten. Tack!",
+  "continue_with": "Fortsätt med sida {n}",
+  "need_one": "Välj ett svar för minst en rad.",
+  "note_no_answer": "En rad har en kommentar: välj ett svar för den också.",
+  "name_needed": "Skriv namnet du vill ska stå med, eller bocka ur rutan.",
+  "not_connected": "Skickfunktionen är inte ansluten än.",
+  "too_long": "Det tog för lång tid att skicka.",
+  "cannot_send": "Svaren kunde inte skickas härifrån.",
+  "use_email": "Använd e-postknappen nedan.",
+  "fallback": "Svaren kunde inte skickas från den här sidan. Mejla dem i stället; inget av det du skrivit går förlorat.",
+  "email_button": "Mejla svaren",
+  "shortened": "Några kommentarer var för långa för en e-postlänk och kortades där. Dina fullständiga svar finns nedan; klistra in dem i mejlet.",
+  "noscript": "Att skicka kräver JavaScript. Du kan också mejla dina svar till {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "06/0027#1",
-   "where": "06/0027",
-   "text": "– Nana-pesar-jan, ingen stress. Det var bara tjugo gäster.",
-   "q": "Maman reassures her son that the gathering was small and safe. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Usch, varför gick du dit? Vad i hela friden ska vi göra om du får corona?"
+   "key": "crude",
+   "title": "Grovt språk",
+   "q": "Här svär personerna eller talar grovt. Låter varje rad naturlig?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Förbannad vare den som förnekar Örnaöga News.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Jag säger att jag inte kan se, din jävel.",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Svaret är att det inte passar dig att slicka mästare Hooman i röven.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– Vad spelar det för roll? Om McCain kommer till makten fuckar han upp Iran, objektivt sett.",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Ugh, vad är det med det där äckliga tänkarposerandet igen?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Den som vill fortsätta med den där filosofiska skitsnacksdebatten kan gå ut i köket. Lampan är starkare där; kanske lyser era hjärnor upp.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Din värdelösa kuk ... huuuuuh ... med huvudet sänkt så där ... huuuuh ... vart är du på väg så fort? ... huuuh ... jag får ingen luft.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, jäklar. Nu bor du utomlands och struntar i oss. Din utlandsdyrkande överlöpare.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Den här regionala antagningspolitiken knullade oss totalt. Under täckmanteln av att vilja ha barn nära sina familjer, stoppade de käppen upp i röven på oss från provinserna.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Om ålder är det som räknas, borde du slicka Bahmans kulor. Han är minst fem år äldre än oss.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– Ja, i samma stund de ser oss kniper de ihop arslena och håller ett sånt avstånd att jag får lust att flyga rakt i ansiktet på dem med båda fötterna.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Fan ta vår jävla otur.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "– Då är du en jävla förstaårsstudent.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Vad tillförde det till längden på min kuk att vara bäst i klassen och, jag vet inte, ta en andra examen, när mitt jobb nu är att inspektera elnätsstationer?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "– Och i det där åt helvete-läget, vilka antikviteter fick vi på halsen? Flugan och det där andra eländiga stolpskottet med vanföreställningar.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Sådana där mordiska manövrer är precis vad man väntar sig av dig, men det jag verkligen undrar är vilken jävel som hade öppnat sin butik klockan sex en fredagsmorgon, så att du kunde gå och köpa en kamera.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Du kunde inte ens äta huvudet på den. Men jävlar vad goda de där sötsakerna var. Ananas.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "– Är du Heisenberg eller Einstein, eftersom du förväntar dig att få tjugo och bli hyllad för dina upplysta teorier?",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– Så du menar att den här skitusla turen vi har, där lotten föll på oss och gav oss en antikvitet som du, bara fortsätter att upprepas?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Inga diskussioner i rummet idag. Jag fick tolv av tjugo i idrott; mina nerver är åt helvete, och jag skäller ut er.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Fint, vad fan som helst.",
+     "note": null
+    },
+    {
+     "id": "04b/1300#crude",
+     "text": "– Så med den repliken, sket du just på oss eller på Mister Lockhårige Schrödinger?",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#2",
-   "where": "03/0362",
-   "text": "– Mahboub, det här de säger i nyheterna, Ameroka ...",
-   "q": "Maman, lying in front of the TV, starts asking about the news, saying 'Ameroka' on purpose. Does her opening sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…väggen bredvid de andra Konkoor-anteckningarna. Jag lämnade huset längst in på gården och korsade gården på nio steg, med glädjen över upptäckten fortfarande lysande i hjärtat. När jag kom in i vardagsrummet från gården låg Maman framför teven. Hon hade båda händerna på magen och sa till Mahboubeh:"
-   ]
-  },
-  {
-   "id": "03/0263#3",
-   "where": "03/0263",
-   "text": "Den här håriga kroppen, det här ansiktet beväpnat till tänderna med skägg och behåring. Om du är Hooman, då är jag Soosan.",
-   "q": "Eskandar says the gentle name Hooman fits his hairy roommate as little as a girl's name fits Eskandar himself. Does the joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Tror du verkligen att det namnet passar dig?"
-   ]
-  },
-  {
-   "id": "03/0175#4",
-   "where": "03/0175",
-   "text": "– Rikare än vännen till kusinen till...",
-   "q": "Amir blurts out the start of Hamid's favourite long phrase, teasing him. Does this slip of the tongue read naturally?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Det bara flög ur mig:"
-   ]
-  },
-  {
-   "id": "04b/1248#5",
-   "where": "04b/1248",
-   "text": "Vännen till kusinen till vår svågers mästerhantverkare — Teherans rikaste man — har sagt att svart är kärlekens färg.",
-   "q": "Hamid, a boy, cites his usual long chain of authorities about toy cars. Does it sound like a boy talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "…satt vi på trappstegen, var och en med ett bilsnöre i handen. Yaser hade inte kommit. Min bil och Hamids såg likadana ut. Min var blå och Hamids var röd. Vi hade köpt dem för tjugofem toman. Lite större än en tändsticksask. Vi pratade om vems bil som hade den bästa färgen. Taghi sa gul. Hamid sa:",
-    "– Om det hade funnits svart hade jag tagit svart."
-   ]
-  },
-  {
-   "id": "04b/0738#6",
-   "where": "04b/0738",
-   "text": "– Åh, om jag bara en dag kunde genomborra de där öronen på dig med mina naglar, så att de inte spetsar sig mer.",
-   "q": "Niloofar plays on Amir saying he pricks up his ears whenever her name comes up. Does her playful threat come through?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Jo, när jag sitter runt om på fakulteten letar jag efter ditt namn i de andra studenternas samtal. Så fort ditt namn dyker upp spetsar jag öronen.",
-    "Hon lyfte handen, pressade naglarna hårt mot varandra och sa:"
-   ]
-  },
-  {
-   "id": "04b/1314#7",
-   "where": "04b/1314",
-   "text": "– I trettiotvå månader har jag älskat Er. På avstånd. Utan att Ni visste det. I tystnad, utan ett enda ord.",
-   "q": "Amir finally declares his love to Niloofar, a fellow student, addressing her as 'Ni'. Does this sound heartfelt and natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Jag gick till andra sidan av samma trottoar på Valiasrgatan och stod under ett platanträd och väntade på att Niloofar skulle skilja sig från de andra, så att jag kunde stiga fram och säga henne, ansikte mot ansikte, att jag älskade henne."
-   ]
-  },
-  {
-   "id": "03/0345#8",
-   "where": "03/0345",
-   "text": "– Är inte Ert ärende klart?",
-   "q": "A woman, losing patience, politely asks a young visitor this. Does it sound natural?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– De tjugo minuter Ni sa att Ni hade är inte slut än.",
-    "Hon sa:"
-   ]
-  },
-  {
-   "id": "04b/0186#9",
-   "where": "04b/0186",
-   "text": "– Jag skulle ha föredragit att dela rum med dem framför en kukhjärna som du.",
-   "q": "Eskandar snaps back at Hooman with a crude insult. Does 'kukhjärna' sound like a natural Swedish swear word?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– AmirKabir-universitetets pionjärroll i studentrörelserna saknar motstycke. Sharif må ha sin samling av så kallade eliter, men de har ännu inte frambringat en enda revolutionär teori."
-   ]
-  },
-  {
-   "id": "03/0663#10",
-   "where": "03/0663",
-   "text": "Den här regionala antagningspolitiken knullade oss totalt. Under täckmanteln av att vilja ha barn nära sina familjer, stoppade de käppen upp i röven på oss från provinserna.",
-   "q": "Hooman rants that a university admissions policy screwed them over. Does 'knullade oss totalt' say that naturally?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Lockiga, du låter så förvånad, som om du kom till universitetet utan Konkoor."
-   ]
-  },
-  {
-   "id": "04b/0394#11",
-   "where": "04b/0394",
-   "text": "– ... vi blev knullade.",
-   "q": "Hooman, still grumbling about the admissions policy, says they were screwed over. Does 'vi blev knullade' sound natural for that?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…Bahman lutade sig mot det tredje och fjärde av rummets sex smala, långa skåp, som stod mitt emot Farids och Sajads säng. Den våningssäng som Bahman och jag delade upptog resten av den sidan av rummet, i linje med skåpen. Hooman åt russin till teet och klagade över den regionala antagningsregeln."
-   ]
-  },
-  {
-   "id": "04b/0146#12",
-   "where": "04b/0146",
-   "text": "– Hjärndöd. Du tvingar mig att stava ut allt.",
-   "q": "Hooman snaps at a roommate who pretends he only heard rumours. Does 'stava ut allt' sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Ja, alltså, ryktet spred sig på universitetet."
-   ]
-  },
-  {
-   "id": "04b/0997#13",
-   "where": "04b/0997",
-   "text": "– Fint, vad fan som helst.",
-   "q": "Eskandar, fed up with a quickening argument, gives in with a curse. Does this sound like natural swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Och så gick det fram och tillbaka, och för varje utbyte tog tempot till, tills Eskandar sade:"
-   ]
-  },
-  {
-   "id": "04b/0385#14",
-   "where": "04b/0385",
-   "text": "– Äldi är Taverny. Han rår inte för det. Det är hans fabriksinställning. Alltid mycket elegant och formell, skiter han precis vid den historiska vändpunkten.",
-   "q": "Hooman mocks Amir for always ruining things at the crucial moment. Does this joke read naturally?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman satt på knä i sin säng och åt kaka med chokladmjölk. Han kramade chokladmjölkspaketet och sörplade högljutt upp den sista klunken. Han sa:"
-   ]
-  },
-  {
-   "id": "03/0502#15",
-   "where": "03/0502",
-   "text": "– Usch. Det fick det att krypa i skinnet på mig.",
-   "q": "Farid, a tough young man, reacts to a bloody video with disgust. Does this sentence sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "03/0517#16",
-   "where": "03/0517",
-   "text": "Ena stunden gör han sina mördarrörelser, nästa säger han: \"Åh, blod. Det fick det att krypa i skinnet på mig.\"",
-   "q": "Hooman mocks Farid for being both reckless and squeamish. Does this read naturally?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Leopard-Farid vet inte ens själv vad han vill."
+   "key": "natural",
+   "title": "Låter det naturligt?",
+   "q": "Låter varje rad naturlig och tydlig?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Håll nu händerna upp mot himlen. Känner du jorddroppar mot händerna?",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "– Ja, vår Baba-jan hungrar verkligen efter respekt.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Men han har också hamnat hos fel personer – vi har krossat den sista resten av den.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– Och ännu mer.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Är inte Ert ärende klart?",
+     "note": null
+    },
+    {
+     "id": "03/0389#natur",
+     "text": "Det var inte för inte jag kallade den Dokumentären om kackerlackan som förstörde spindelns hus.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "– Den här veckan har jag ingen tid alls. Nästa vecka, torsdag klockan tre, samma ställe som vi träffades förra gången. Jag ska också säga att jag bara har en halvtimme.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "– Usch. Det fick det att krypa i skinnet på mig.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "Ena stunden gör han sina mördarrörelser, nästa säger han: \"Åh, blod. Det fick det att krypa i skinnet på mig.\"",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Var på min hals står det \"fotfäste\"?",
+     "note": null
+    },
+    {
+     "id": "03/0649#natur",
+     "text": "– Ingenting. Jag tog bara en runda.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objektivt sett, bara för att vi kom några dagar för sent, beter sig de här Teheran-grabbarna – de som bara kom in på AmirKabir tack vare den regionala antagningspolitiken – som om det är vi som kom in via kvot, inte de. Objektivt sett.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– Ja. Låt dig inte luras av den här Arasteh; fånig som han ser ut var hans Konkoor-placering sjuttiofyra.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– Det retar mig så mycket när du sitter tyst så där. Jag får lust att slå dig med knytnäven.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Ingen annans rum har matta, Baba-jan. Det är bara vi som har matta, och det är för att vi är eliterummet.",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Örnaöga, må Gud aldrig förlåta dig, du förstörde min rygg. Varför har du inte glasögonen på dig?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "När du går utan glasögon känns det som om jag är mitt på ett slagfält, med alla grejer du har sparkat upp i huvudet och ansiktet på mig.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektivt, om det slår igenom packar det ihop hela bankröran och allt sådant.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "– Vad är det bra för? Det viktiga är att varje gång jag går till snabbköpet betalar jag pengar, köper min mjölk och kaka och stoppar i mig den.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Okej, Örnaöga, okej. Stick nu inte in glasögonen i datorn.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Vore Flugan här skulle hans antenner spetsas till över det här som ger sådan avkastning.",
+     "note": null
+    },
+    {
+     "id": "04b/0634#natur",
+     "text": "– Kom igen, Örnaöga-jan, förklara det på en nivå under studentexamen, så att vi också fattar. Vi har ju mycket lågt förnuft och låg intelligens, särskilt den här krullhårige Mister Schrödinger.",
+     "note": null
+    },
+    {
+     "id": "04b/0736#natur",
+     "text": "– Jo, när jag sitter runt om på fakulteten letar jag efter ditt namn i de andra studenternas samtal. Så fort ditt namn dyker upp spetsar jag öronen.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Åh, om jag bara en dag kunde genomborra de där öronen på dig med mina naglar, så att de inte spetsar sig mer.",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "– Säg nu vad du vill, men ha det avslutande beitet i åtanke.",
+     "note": null
+    },
+    {
+     "id": "04b/1119#natur",
+     "text": "– Ni är allihop som mina egna barn.",
+     "note": null
+    },
+    {
+     "id": "04b/1173#natur",
+     "text": "– Vad sägs om den lockhårige?",
+     "note": null
+    },
+    {
+     "id": "04b/1355#natur",
+     "text": "– Nåväl, låt mig då visa dig det – kanske kommer det tillbaka till dig.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, Farfar fick också corona, men man skulle aldrig tro det – han skakade av sig det som en vanlig förkylning.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Jag skulle ge allt för dig, Nini-jan. Ditt huvud fungerar så bra.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Fåglarna har återvänt och sitter i äppelträdet bakom fönstret. Jag kan höra dem. Mitt i denna vinterkyla, var har sångfåglarna kommit ifrån?",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 16
 }

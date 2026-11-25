@@ -1,189 +1,337 @@
 {
+ "format": 2,
  "lang": "nl",
  "slug": "nl",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Moedertaalcheck",
+  "lead": "Je hoeft het boek niet gelezen te hebben. Beantwoord er zoveel als je wilt.",
+  "persian_words": "Maman (moeder), Baba (vader) en -jan (lieve) zijn Perzische woorden die het boek onvertaald laat.",
+  "page": "Pagina",
+  "correct": "Klopt",
+  "needs_change": "Moet anders",
+  "not_sure": "Niet zeker",
+  "how_say": "Hoe zou jij het zeggen?",
+  "meaning": "Wat denk je dat het betekent?",
+  "optional": "(optioneel)",
+  "your_name": "Je naam",
+  "thanks_tick": "Zet mijn naam op de bedankpagina",
+  "private": "Je antwoorden gaan alleen naar de auteur.",
+  "send": "Versturen",
+  "send_continue": "Versturen en door naar pagina {n}",
+  "sending": "Bezig met versturen…",
+  "popup_title": "Dank je wel!",
+  "popup_text": "Wil je je naam op de bedankpagina van de website? Maak alle 4 pagina's af, dan zetten we hem er graag op.",
+  "popup_button": "Door naar pagina {n}",
+  "arrived": "Dank je wel, je antwoorden van pagina {n} zijn aangekomen.",
+  "thanks_last": "Dank je wel! Je antwoorden zijn aangekomen.",
+  "all_done": "Je hebt alle pagina's verstuurd. Dank je wel voor elke pagina!",
+  "already_sent": "Je hebt deze pagina al vanaf dit apparaat verstuurd. Dank je wel!",
+  "continue_with": "Verder met pagina {n}",
+  "need_one": "Kies bij minstens één regel een antwoord.",
+  "note_no_answer": "Bij een regel staat een opmerking: kies daar ook een antwoord bij.",
+  "name_needed": "Vul de naam in die je vermeld wilt zien, of haal het vinkje weg.",
+  "not_connected": "Versturen is nog niet gekoppeld.",
+  "too_long": "Het versturen duurde te lang.",
+  "cannot_send": "De antwoorden konden hier niet worden verstuurd.",
+  "use_email": "Gebruik de e-mailknop hieronder.",
+  "fallback": "De antwoorden konden niet vanaf deze pagina worden verstuurd. Stuur ze in plaats daarvan per e-mail; niets van wat je hebt ingevuld is verloren.",
+  "email_button": "Antwoorden e-mailen",
+  "shortened": "Sommige opmerkingen waren te lang voor een e-maillink en zijn daar ingekort. Je volledige antwoorden staan hieronder; plak ze in de e-mail.",
+  "noscript": "Voor het versturen is JavaScript nodig. Je kunt je antwoorden ook mailen naar {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0263#1",
-   "where": "03/0263",
-   "text": "Dit behaarde lichaam, dit gezicht bewapend tot aan de tanden met baard en beharing. Als jij Hooman bent, dan ben ik Soesan.",
-   "q": "Eskandar says the gentle name Hooman fits his hairy roommate as little as a girl's name fits Eskandar himself. Does the joke work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Denk je echt dat die naam bij je past?"
+   "key": "crude",
+   "title": "Grove taal",
+   "q": "Hier vloeken de personages of praten ze grof. Klinkt elke regel natuurlijk?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Vervloekt zij wie Arendsoog News ontkent.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Als jij geen zak geeft om de wereld of wat dan ook daarin, waarom ben je dan zo geobsedeerd door quizzen en tentamens?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Het antwoord is dat het jou niet past om meester Hooman in zijn kont te likken.",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Pff, waarom neem je alweer die waardeloze denkerpose aan?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Iedereen die filosofisch wil lopen lullen, kan naar de keuken gaan. Het licht daar is ook feller — misschien gaan jullie hersenen aan.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Jij nutteloze lul ... hoooooh ... met je hoofd zo naar beneden ... hooooh ... waar ga je zo snel naartoe? ... hoooh ... ik ben buiten adem.",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, vervloekt. Nu je in het buitenland woont, kan het je geen reet meer schelen wat er met ons gebeurt. Jij verrader die alles wat buitenlands is aanbidt.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Dit lokaliseringsbeleid heeft ons genaaid. Ze zeggen dat het is om kinderen dicht bij hun familie te houden, maar ze hebben ieder van ons uit de provincie een stok in zijn reet geduwd.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Als leeftijd telt, dan zou je Bahmans ballen moeten likken. Hij is minstens vijf jaar ouder dan wij.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "– Ja, op het moment dat ze ons zien knijpen ze hun kont dicht en houden zoveel afstand dat ik met beide voeten in hun gezicht zou willen springen.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Godverdomme, wat een klotepech hebben wij.",
+     "note": null
+    },
+    {
+     "id": "04b/0226#crude",
+     "text": "– ... telkens als ik kwam voor de colleges en het werk van die tweede kloteopleiding, zag ik ze ruziën.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Wat hebben die eerste plaats en, ik weet niet, dat tweede diploma aan de lengte van mijn lul toegevoegd, nu mijn werk eruit bestaat elektriciteitsstations te inspecteren?",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– Zulke moorddadige acties verbazen me niks van jou, maar wat ik me echt afvraag is welke klootzak om zes uur op een vrijdagochtend zijn winkel had geopend zodat jij er een camera kon kopen.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "– Je had niet eens de kop ervan kunnen eten. Maar verdomme, wat waren die zoetigheden lekker. Ananas.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "– Als Kamyar zich niet als zo'n verwaand klootzakje had gedragen en in de slaapzaal was gebleven, was er geen bed vrijgekomen en waren deze wonderlijke wezens ons niet ten deel gevallen.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Was ik het, dan bleef het niet bij een nul; ik zou je de kop van mijn pik laten opeten en je daarna met een schop onder je kont van de universiteit trappen.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "– Dus je wilt zeggen dat deze klotepech van ons, waarbij het lot ons een antiek stuk als jij heeft toebedeeld, zich telkens herhaalt?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "– Geen discussies vandaag in de kamer, ik heb een twaalf voor mijn lichamelijke opvoeding gehaald, mijn zenuwen zijn naar de klote en ik scheld jullie verrot.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Wat voor stront vreet er nu weer aan je hersenen?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Je hebt met die klotestem van je de stemming verpest die ik aan het liedje beleefde.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Nou, wat dan ook, verdomme.",
+     "note": null
+    },
+    {
+     "id": "04b/1017#crude",
+     "text": "– Ik ben mijn bril aan het zoeken, klootzak. Zeg tegen die Farid dat hij zijn glas niet telkens voor mijn voeten zet.",
+     "note": null
+    },
+    {
+     "id": "04b/1300#crude",
+     "text": "– Heb je met die uitspraak nu op ons gescheten of op Mister de krulharige Schrödinger?",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0175#2",
-   "where": "03/0175",
-   "text": "– Rijker dan de vriend van de neef...",
-   "q": "Amir blurts out the start of Hamid's favourite long phrase, teasing him. Does this slip of the tongue read naturally?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Het ontglipte me:"
-   ]
-  },
-  {
-   "id": "04b/1248#3",
-   "where": "04b/1248",
-   "text": "De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is, heeft gezegd dat zwart de kleur van de liefde is.",
-   "q": "Hamid, a boy, cites his usual long chain of authorities about toy cars. Does it sound like a boy talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "…in de hand. Yaser was niet gekomen. Mijn auto en die van Hamid leken op elkaar. Mijn auto was blauw en die van Hamid rood. We hadden ze voor vijfentwintig toman gekocht. Ze waren iets groter dan een luciferdoosje. Het gesprek ging erover wiens auto de mooiste kleur had. Taghi zei geel. Hamid zei:",
-    "– Als er zwart was geweest, had ik zwart genomen."
-   ]
-  },
-  {
-   "id": "04b/0738#4",
-   "where": "04b/0738",
-   "text": "– Ach, kon ik op een dag maar met mijn nagels gaten in die oren van je prikken zodat ze zich niet meer spitsen.",
-   "q": "Niloofar plays on Amir saying his ears prick up whenever her name comes up. Does her playful threat come through?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Nou, zo terwijl ik op de faculteit zit, zoek ik in de gesprekken van de studenten naar jouw naam. Zodra je naam valt, spitsen mijn oren zich.",
-    "Ze bracht haar hand omhoog, drukte haar nagels op elkaar en zei:"
-   ]
-  },
-  {
-   "id": "04b/1314#5",
-   "where": "04b/1314",
-   "text": "– Tweeëndertig maanden hou ik al van u. Van een afstand. Zonder dat u het wist. In stilte. Zonder één woord.",
-   "q": "Amir finally declares his love to Niloofar, a fellow student, calling her 'u'. Does this sound heartfelt and natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Ik liep naar de plataan aan de overkant van het trottoir van de Valiasr-straat en bleef wachten tot Niloofar zich van de rest zou afzonderen, zodat ik naar voren kon gaan en haar van aangezicht tot aangezicht zou zeggen dat ik van haar hou."
-   ]
-  },
-  {
-   "id": "04b/1275#6",
-   "where": "04b/1275",
-   "text": "de verbranden",
-   "q": "From a mystical poem: lovers, drunkards and those burned by love passed this way. Does 'de verbranden' read clearly as those burned ones?",
-   "ctx": 3,
-   "kind": "poetry",
-   "before": [
-    "weet dat",
-    "de minnaars en",
-    "de dronkenen en"
-   ]
-  },
-  {
-   "id": "04b/0385#7",
-   "where": "04b/0385",
-   "text": "– Het Oudje is nu eenmaal van de Kroeg. Hij kan er niets aan doen. Dat is zijn fabrieksinstelling. Altijd heel chic en plechtig schijt hij precies op het historische keerpunt.",
-   "q": "Hooman mocks Amir for always ruining things at the crucial moment. Does this joke read naturally?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman zat op zijn knieën op zijn bed cake met chocolademelk te eten. Hij kneep in het pak chocolademelk en zoog de laatste slok luidruchtig op. Hij zei:"
-   ]
-  },
-  {
-   "id": "04b/0520#8",
-   "where": "04b/0520",
-   "text": "– Geen discussies vandaag in de kamer, ik heb een twaalf voor mijn lichamelijke opvoeding gehaald, mijn zenuwen zijn naar de klote en ik scheld jullie verrot.",
-   "q": "Hooman got a poor grade in PE and warns his roommates not to argue. Does this warning sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman zei:"
-   ]
-  },
-  {
-   "id": "03/0638#9",
-   "where": "03/0638",
-   "text": "Vervloekt, honderdzeventig meter heb je me met dit lichaam achter je aan gesleurd.",
-   "q": "Hooman, fat and panting, greets an old friend with mock anger. Does 'Vervloekt' sound like friendly swearing from a man today?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– En als we dat laatste stuk meetellen, waar het smaller wordt en bijna tot aan de Valiasr-poort loopt, wordt het honderdzeventig meter."
-   ]
-  },
-  {
-   "id": "03/0640#10",
-   "where": "03/0640",
-   "text": "– Pfff, vervloekt. Nu je in het buitenland woont, kan het je geen reet meer schelen wat er met ons gebeurt. Jij verrader die alles wat buitenlands is aanbidt.",
-   "q": "Hooman jokingly scolds his old friend for moving abroad. Does this sound like something a friend would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Het spijt me echt."
-   ]
-  },
-  {
-   "id": "03/0392#11",
-   "where": "03/0392",
-   "text": "– Als jij geen zak geeft om de wereld of wat dan ook daarin, waarom ben je dan zo geobsedeerd door quizzen en tentamens?",
-   "q": "Eskandar needles Hooman about exams. Does 'geen zak geeft om' sound like how a student would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Ik lag op mijn zij op het bed, met Hooman en Eskandar in mijn blikveld zonder echt naar hen te kijken. Nadat hij ongeveer een uur lang iets binnensmonds had gemompeld, draaide Eskandar zich naar Hooman en zei:"
-   ]
-  },
-  {
-   "id": "03/0394#12",
-   "where": "03/0394",
-   "text": "Ofwel ben je hersenpi... nou ja, je was al hersenpik, nu ben je nog meer hersenpik geworden. Of je hebt iets genomen.",
-   "q": "Hooman starts a crude insult, breaks it off, then repeats it. Does 'hersenpik' work as a crude insult between students?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Je bent ineens vastgelopen op die vraag. Er zijn een paar mogelijkheden. Ofwel heb je je hoofd ergens gestoten."
-   ]
-  },
-  {
-   "id": "04b/0554#13",
-   "where": "04b/0554",
-   "text": "– Wat voor tijd om examen te doen is het begin van de maand Esfand?",
-   "q": "Hooman grumbles that an exam is scheduled at an odd time of year. Does this question sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hooman zei:"
-   ]
-  },
-  {
-   "id": "04b/0717#14",
-   "where": "04b/0717",
-   "text": "– Ik zeg je, Oudje-jan, maar onder ons gezegd, je bent door stomme kutmazzel in het buitenland beland.",
-   "q": "Hooman tells Amir he got abroad by sheer dumb luck. Does 'stomme kutmazzel' sound natural from him?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman zegt:"
-   ]
-  },
-  {
-   "id": "04b/0343#15",
-   "where": "04b/0343",
-   "text": "– Dus je bent een klote-eerstejaars.",
-   "q": "Hooman, surprised, swears casually on learning a young man is in his first year. Does 'klote-eerstejaars' fit that casual swearing?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Is dit je eerste jaar?",
-    "– Ja."
-   ]
-  },
-  {
-   "id": "04b/0353#16",
-   "where": "04b/0353",
-   "text": "– En in die verklote situatie, welke antieke stukken vielen ons ten deel? De Vlieg en die andere ellendige waanzinnige.",
-   "q": "Hooman remembers two odd roommates with mocking scorn. Does 'vielen ons ten deel' sound like his everyday talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hij slaat zijn thee achterover en veegt zijn mond af met de rug van zijn hand."
+   "key": "natural",
+   "title": "Klinkt het natuurlijk?",
+   "q": "Klinkt elke regel natuurlijk en duidelijk?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Houd nu je handen omhoog naar de lucht. Voel je de aarddruppels op je handen?",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "– Ja, onze Baba-jan heeft echt honger naar respect.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "Maar hij is ook bij de verkeerde mensen terechtgekomen – we hebben ieder greintje respect aan diggelen geslagen.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "– En nog erger.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "– Bent u nog niet klaar met waarvoor u gekomen bent?",
+     "note": null
+    },
+    {
+     "id": "03/0389#natur",
+     "text": "Niet voor niets heb ik het De documentaire over de kakkerlak die het huis van de spin verwoestte genoemd.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "– Deze week heb ik helemaal geen tijd. Volgende week donderdag om drie uur, op dezelfde plek waar we de vorige keer afspraken. Ik zeg er ook bij dat ik maar een halfuur heb.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "Het ene moment haalt hij moorddadige capriolen uit; het volgende zegt hij: ‘Oei, bloed. Daar krijg ik de kriebels van.’",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Waar staat er op mijn nek dan dat het een opstapje is?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Vervloekt, honderdzeventig meter heb je me met dit lichaam achter je aan gesleurd.",
+     "note": null
+    },
+    {
+     "id": "03/0649#natur",
+     "text": "– Niets. Ik liep gewoon een rondje.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objectief gezien, alleen maar omdat we een paar dagen later aankwamen, doen die Teheraanse jochies – die zelf alleen maar dankzij de lokalisering AmirKabir in konden – alsof wij degenen zijn die via een quotum binnenkwamen, en niet zij. Objectief gezien.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "– Ja. Laat je niet misleiden door deze Arasteh; zo onnozel als hij is, was zijn Konkoer-plaatsing vierenzeventig.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "– Het ergert me zo wanneer je zo zwijgend zit. Ik zou je willen slaan.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Niemands kamer heeft een tapijt, Baba-jan, alleen wij hebben een tapijt, en dat omdat wij de kamer der uitblinkers zijn.",
+     "note": null
+    },
+    {
+     "id": "04b/0554#natur",
+     "text": "– Wat voor tijd om examen te doen is het begin van de maand Esfand?",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "– Arendsoog, God vergeve je niet, je hebt mijn rug helemaal kapotgemaakt. Waarom draag je geen bril?",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "Als je zonder bril loopt, voel ik me midden op een slagveld, zo vaak heb je die dingen tegen mijn hoofd en kop geschopt.",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objectief gezien, als het aanslaat, ruimt het de hele rommel van banken en dat soort dingen op.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "– Wat heb je eraan? Wat telt is dat ik, telkens als ik naar de supermarkt ga, geld betaal, mijn melk en cake koop en naar binnen werk.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Goed, Arendsoog, goed. Plak je bril nou niet tegen de laptop.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Als de Vlieg er was geweest, zouden zijn voelsprieten nu scherp staan: wat is dit voor iets dat zo veel winst oplevert?",
+     "note": null
+    },
+    {
+     "id": "04b/0634#natur",
+     "text": "– Kom op, Arendsoog-jan, zeg het onder het niveau van een middelbareschooldiploma zodat wij het ook snappen. Ons verstand en onze intelligentie zijn nou eenmaal heel laag, vooral die van deze krulharige Mister Schrödinger.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Ach, kon ik op een dag maar met mijn nagels gaten in die oren van je prikken zodat ze zich niet meer spitsen.",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "– Zeg nu wat je maar wilt, maar houd het laatste beit in gedachten.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "– Amir, opa heeft ook corona gehad, maar je zou het nooit zeggen – hij schudde het van zich af als een gewone verkoudheid.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "– Ik zou mezelf voor je opofferen, Nini-jan. Wat werkt dat hoofd van jou goed.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "De vogels zijn teruggekomen en zitten in de appelboom achter het raam. Ik hoor ze. Midden in deze winterse kou, waar komen de zangvogels vandaan?",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

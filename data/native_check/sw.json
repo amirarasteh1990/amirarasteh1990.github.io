@@ -2,48 +2,8 @@
  "lang": "sw",
  "slug": "sw",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Kutoka upande huu, ninafungua uzi wa maneno, na kutoka upande ule, unaukusanya.",
-   "q": "Is it clear the reader gathers the words themselves, not just the thread?",
-   "before": [
-    "Ufunguzi",
-    "…zimekwisha pita. Dakika na picha ambazo zingemezwa na msongo wa matukio ya ulimwengu kama hazingeandikwa hapa. Ziliandikwa ili ziwe daraja kati ya ulimwengu wangu na wako. Daraja kutoka ulimwengu wangu, katika dakika ninayoandika sentensi hizi, hadi ulimwengu wako, katika dakika unayokaa kukisoma."
-   ]
-  },
-  {
-   "id": "03/0176#2",
-   "where": "03/0176",
-   "text": "Taghi alikuwa ameiba nyanya tano kutoka duka la matunda la Ami Badiollah.",
-   "q": "Badiollah is a neighborhood fruit seller, not family. Does 'Ami Badiollah' sound natural?",
-   "before": [
-    "Ilitoroka kinywani mwangu:",
-    "– Yaani matajiri kuliko rafiki wa binamu wa ..."
-   ]
-  },
-  {
-   "id": "03/0178#3",
-   "where": "03/0178",
-   "text": "Mimi, Yaser, Taghi na Hamid tulikuwa tumekaa kwenye kingo la barabara kuu, tukisubiri kuona nyanya ipi ingepigwa kwanza chini ya magurudumu ya magari yanayopita.",
-   "q": "Boys wait to see a tomato crushed by passing cars. Does this read naturally?",
-   "before": [
-    "– Hii ni wizi. Ni haramu.",
-    "Walinifanya dhihaka. Baada ya hapo, nilikuwa nahesabu nyanya zangu, na Maman aniambie kununua nyanya, ningetoa idadi ile ile kutoka kwenye mfuko wa plastiki na, Ami Badiollah asipotazama, kuzitupa kwenye sanduku lake la nyanya."
-   ]
-  },
-  {
-   "id": "04b/0285#4",
-   "where": "04b/0285",
-   "text": "Zana bora ya kulainisha pembe hizi kali ni tupa la metali: uhusiano, kuanzia mahusiano rahisi kabisa hadi yale ya karibu zaidi.",
-   "q": "Is it clear relationships work like a file, smoothing sharp edges?",
-   "before": [
-    "Sikusema lolote. Akaendelea:",
-    "…na kurudi tena ndani ya ganda lako baya zaidi kuliko awali. Unajua, nasema nafsi yetu ni kama almasi. Almasi iliyojaa pembe kali. Maana yake, yenyewe ina thamani kubwa sana, lakini kama roho yangu inatakiwa kugusana na yako, lazima niweze kugusa roho yako; sasa kama pembe zako ni kali, zinaniumiza."
-   ]
-  },
   {
    "id": "04b/1263#5",
    "where": "04b/1263",
@@ -62,6 +22,109 @@
    "before": [
     "– Ndiyo, Hamoun ni jina zuri kwako. Kama Hamoun kwenye filamu, wewe pia umejaa maswali. Umejaa wasiwasi na chanzo cha msongo, sio kwako bali kwangu.",
     "Hooman alisema:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Mvua hainyeshi kuelekea juu kutoka ardhini.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Mkono wangu ni mfupi na kuungana nawe ni mbali.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Nasema kama utaendelea kuketi tu hapa na kusoma mashairi, hakuna mkate utakaopata moto kwa ajili yako.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibi, Mungu amrehemu, alikuwa akisema katika nyakati kama hizi: nikisema, ulimi wangu unawaka moto; nisiposema, uboho wa mifupa yangu unawaka moto.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Anasema, \"Mwaka mzuri unajulikana tangu majira yake ya kuchipua.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Alisema, moyo wangu unaoza.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Akiwa anacheka, Hooman ananipiga mgongoni kwa nguvu kwa mkono wake, na kipande cha sukari kinaruka kooni mwangu.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#9",
+   "where": "03/0634",
+   "text": "Usimwambie Eskandar yule mseria, au atakaa nasi kwa saa moja tena ya mawaidha na chakula kitageuka sumu ya nyoka kwangu.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0176#2",
+   "where": "03/0176",
+   "text": "Taghi alikuwa ameiba nyanya tano kutoka duka la matunda la Ami Badiollah.",
+   "q": "Badiollah is a neighborhood fruit seller, not family. Does 'Ami Badiollah' sound natural?",
+   "before": [
+    "Ilitoroka kinywani mwangu:",
+    "– Yaani matajiri kuliko rafiki wa binamu wa ..."
+   ]
+  },
+  {
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Ndipo tu baada ya familia yangu kunisukuma ndani ya banda la kuku, nilifahamu ni ulimwengu tofauti kiasi gani upande ule wa hadithi.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kutoka upande huu, ninafungua uzi wa maneno, na kutoka upande ule, unaukusanya.",
+   "q": "Is it clear the reader gathers the words themselves, not just the thread?",
+   "before": [
+    "Ufunguzi",
+    "…zimekwisha pita. Dakika na picha ambazo zingemezwa na msongo wa matukio ya ulimwengu kama hazingeandikwa hapa. Ziliandikwa ili ziwe daraja kati ya ulimwengu wangu na wako. Daraja kutoka ulimwengu wangu, katika dakika ninayoandika sentensi hizi, hadi ulimwengu wako, katika dakika unayokaa kukisoma."
+   ]
+  },
+  {
+   "id": "04b/0285#4",
+   "where": "04b/0285",
+   "text": "Zana bora ya kulainisha pembe hizi kali ni tupa la metali: uhusiano, kuanzia mahusiano rahisi kabisa hadi yale ya karibu zaidi.",
+   "q": "Is it clear relationships work like a file, smoothing sharp edges?",
+   "before": [
+    "Sikusema lolote. Akaendelea:",
+    "…na kurudi tena ndani ya ganda lako baya zaidi kuliko awali. Unajua, nasema nafsi yetu ni kama almasi. Almasi iliyojaa pembe kali. Maana yake, yenyewe ina thamani kubwa sana, lakini kama roho yangu inatakiwa kugusana na yako, lazima niweze kugusa roho yako; sasa kama pembe zako ni kali, zinaniumiza."
+   ]
+  },
+  {
+   "id": "03/0178#3",
+   "where": "03/0178",
+   "text": "Mimi, Yaser, Taghi na Hamid tulikuwa tumekaa kwenye kingo la barabara kuu, tukisubiri kuona nyanya ipi ingepigwa kwanza chini ya magurudumu ya magari yanayopita.",
+   "q": "Boys wait to see a tomato crushed by passing cars. Does this read naturally?",
+   "before": [
+    "– Hii ni wizi. Ni haramu.",
+    "Walinifanya dhihaka. Baada ya hapo, nilikuwa nahesabu nyanya zangu, na Maman aniambie kununua nyanya, ningetoa idadi ile ile kutoka kwenye mfuko wa plastiki na, Ami Badiollah asipotazama, kuzitupa kwenye sanduku lake la nyanya."
    ]
   }
  ]

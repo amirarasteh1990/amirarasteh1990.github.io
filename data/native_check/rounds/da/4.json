@@ -1,189 +1,247 @@
 {
+ "format": 2,
  "lang": "da",
  "slug": "da",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålstjek",
+  "lead": "Du behøver ikke at have læst bogen. Svar på så mange, du har lyst til.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kære) er persiske ord, som er bevaret i bogen.",
+  "page": "Side",
+  "correct": "Rigtigt",
+  "needs_change": "Bør ændres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sige det?",
+  "meaning": "Hvad tror du, det betyder?",
+  "optional": "(valgfrit)",
+  "your_name": "Dit navn",
+  "thanks_tick": "Skriv mit navn på takkesiden",
+  "private": "Dine svar går kun til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og fortsæt til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tak!",
+  "popup_text": "Vil du have dit navn på hjemmesidens takkeside? Gør alle 4 sider færdige, så tilføjer vi det med glæde.",
+  "popup_button": "Fortsæt til side {n}",
+  "arrived": "Tak, dine svar fra side {n} er kommet frem.",
+  "thanks_last": "Tak! Dine svar er kommet frem.",
+  "all_done": "Du har sendt alle siderne. Tak for dem alle!",
+  "already_sent": "Du har allerede sendt denne side fra denne enhed. Tak!",
+  "continue_with": "Fortsæt med side {n}",
+  "need_one": "Vælg et svar til mindst én linje.",
+  "note_no_answer": "En linje har en kommentar: vælg venligst også et svar til den.",
+  "name_needed": "Skriv det navn, du gerne vil stå med, eller fjern fluebenet.",
+  "not_connected": "Afsendelse er ikke sat op endnu.",
+  "too_long": "Afsendelsen tog for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Brug venligst e-mail-knappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne side. Send dem i stedet på e-mail; intet af det, du har skrevet, er gået tabt.",
+  "email_button": "Send svarene på e-mail",
+  "shortened": "Nogle kommentarer var for lange til et e-mail-link og blev forkortet der. Dine fulde svar står nedenfor; sæt dem venligst ind i e-mailen.",
+  "noscript": "Afsendelse kræver JavaScript. Du kan også sende dine svar på e-mail til {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "03/0345#1",
-   "where": "03/0345",
-   "text": "– Er De ikke færdig med det, De kom for?",
-   "q": "Niloofar, wanting to end the meeting, uses the very formal 'De'. Does it sound right between two students?",
-   "ctx": 2,
-   "kind": "dialogue",
-   "before": [
-    "– De tyve minutter, De sagde, De havde, er ikke gået endnu.",
-    "Hun sagde:"
+   "key": "crude",
+   "title": "Grov tale",
+   "q": "Her bander personerne eller taler groft. Lyder hver linje naturlig?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "– Forbandet være den der betvivler Ørneøje News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "– Argh, hvad vil du, Eskandar? Hvad fanden fejler du?",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "– Jeg siger, jeg kan ikke se det, røvhul.",
+     "note": null
+    },
+    {
+     "id": "03/0392#crude",
+     "text": "– Hvis du skider højt og flot på verden og alt i den, hvorfor er du så besat af quizzer og eksamener?",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "– Svaret er, at det ikke klæder dig at slikke Mester Hooman i røven.",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "– Load nu, røvhul.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "– Hvad forskel gør det? Hvis McCain kommer til magten, fucker han Iran op, objektivt.",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "– Åh, hvad skal den skide tænkerpositur nu til for?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "– Enhver, der vil lukke filosofisk pis ud, kan gå ud i køkkenet. Pæren lyser også stærkere derude; så kommer der også lys ind i jeres hjerner.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "– Dit uduelige svin ... huuuuh ... med hovedet bøjet sådan ... huuuh ... hvor skal du hen så hurtigt?",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "– Pfff, fanden tage dig. Nu bor du i udlandet, så du skider på os. Du tilbeder alt udenlandsk, din skide overløber.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "– Hvis alder tæller, skulle du slikke Bahmans nosser. Han er mindst fem år ældre end os.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "– Fuck det lorteheld, vi har.",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "– De der morderiske manøvrer er lige dig, men det, jeg virkelig undrer mig over, er, hvilken skide galning der havde åbnet sin butik klokken seks en fredag morgen, så du kunne købe et kamera af ham.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "– Hvad for noget lort kører rundt i dit hoved nu?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "– Du sked ud over den stemning, sangen havde sat mig i, med din lortestemme.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "– Nå, skide være med det.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "– Sikke et kønt rod, du har lavet, din lortehjerne.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0663#2",
-   "where": "03/0663",
-   "text": "De siger, det er for at holde børnene tæt på deres familier, men de har stukket en kæp op i røven på os alle sammen fra provinsen.",
-   "q": "Hooman rants about the regional university quota. Does 'stukket en kæp op i røven' clearly mean they were all screwed over?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Krøltop, du lyder så overrasket, som om du var kommet ind på universitetet uden at tage Konkur. Den her lokaliseringspolitik har kneppet os godt og grundigt."
-   ]
-  },
-  {
-   "id": "04b/0181#3",
-   "where": "04b/0181",
-   "text": "– Æd hovedet på min pik, mand. Vi orker dig ikke.",
-   "q": "Hooman, raising his thumb rudely, uses a crude Persian insult kept close to literal. Does it sound like a real insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman løftede tommelfingeren igen og sagde:"
-   ]
-  },
-  {
-   "id": "04b/0899#4",
-   "where": "04b/0899",
-   "text": "– Din pikhovedæder, hvorfor vrøvler du?",
-   "q": "Hooman swears at Eskandar with a crude Persian insult kept close to literal. Does 'pikhovedæder' work as a real insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman sagde:"
-   ]
-  },
-  {
-   "id": "04b/0378#5",
-   "where": "04b/0378",
-   "text": "– Lortehjerne, ingen kalder dig stum, bare fordi du lader være med at prutte.",
-   "q": "Eskandar twists a Persian saying, no one calls you mute if you stay silent, into a crude jab. Does it land?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…på det, Niloofar og jeg havde sagt til hinanden. Ganglyset gik ud, og støjen fra de andre værelser faldt også i søvn. I mørket og stilheden ved midnat gled Hoomans skygge ind ad døren og gik direkte til æsken med søde sager. Som om han snusede sig frem. Om morgenen vækkede Eskandar mig og sagde:"
-   ]
-  },
-  {
-   "id": "04b/0440#6",
-   "where": "04b/0440",
-   "text": "– Efter den der lokaliseringssag bliver jeg ikke overrasket over, hvad der end lander af pik på hovedet af os.",
-   "q": "Hooman uses a crude Persian image for any bad luck that falls on them. Would a reader guess that from context?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Bahman sagde, det var fint. Eskandar havde rakt hånden ind under min seng for at trække bogen frem, mens Meysam sad på knæ og redte sin soveplads op under knagerækken. Hooman kiggede på dem og sagde:"
-   ]
-  },
-  {
-   "id": "04b/0822#7",
-   "where": "04b/0822",
-   "text": "Altså, fra grunden ville det hele have udviklet sig anderledes, og du ville ikke gå rundt i gaderne med pik i hånden sådan.",
-   "q": "Hooman uses a crude Persian image, 'med pik i hånden', for aimless and empty-handed. Would a reader guess that from context?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– ... så kunne I være rejst sammen."
-   ]
-  },
-  {
-   "id": "04b/0209#8",
-   "where": "04b/0209",
-   "text": "– Pfff, men for helvede, du pakkede sammen og tog derover, og nu sidder du og griner af vores skæg og pik.",
-   "q": "Hooman teases a friend abroad. 'griner af vores skæg og pik' is a crude Persian image for mocking us. Would a reader guess that?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Og han øser latter oven på latter."
-   ]
-  },
-  {
-   "id": "04b/0389#9",
-   "where": "04b/0389",
-   "text": "– Du kunne ikke engang æde hovedet på den. Men hold kæft, hvor var de kager gode. Med ananas.",
-   "q": "Hooman retorts with a crude Persian put-down meaning you couldn't do a thing. Is 'æde hovedet på den' clear?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– I nat kunne jeg høre dig tygge drøv. Ærgerligt min Baba sov, ellers var jeg stået op og trukket hvert eneste stykke slik ud af din strube.",
-    "Hooman sagde:"
-   ]
-  },
-  {
-   "id": "04b/0571#10",
-   "where": "04b/0571",
-   "text": "– Kom først og dokumentér denne tommelfinger, og lav så film om, hvad I vil.",
-   "q": "In Iran a raised thumb is a rude gesture, like the middle finger. Is Hooman's taunt clear?",
-   "ctx": 2,
-   "kind": "banter",
-   "before": [
-    "– Gutter, lad os lave en dokumentarfilm om vores værelse.",
-    "Hooman tog hånden frem under tæppet og sagde:"
-   ]
-  },
-  {
-   "id": "01/0090#11",
-   "where": "01/0090",
-   "text": "– Nej. Det er jo mig, der er staklen, jeg siger aldrig noget, jeg holder altid mund. Jeg ser bare til og spiser sorg.",
-   "q": "Maman says this; 'spiser sorg' is a Persian image for grieving in silence. Would a reader guess that from context?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "Jeg siger:",
-    "– Du sagde ikke noget til ham."
-   ]
-  },
-  {
-   "id": "03/0531#12",
-   "where": "03/0531",
-   "text": "Da han kom i fjor, havde hans kones brødre banket ham så meget, at han var sort over det hele.",
-   "q": "Maman means he was covered in bruises. Is 'sort over det hele' clear for that?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "…blive forelskede. Lær personen at kende først, gift jer, og hvis I så vil, så bliv forelskede. Så skal du se, om jeg siger et ord. Abolfazl plejede at sige: Hvis I ikke går hen og beder om den piges hånd for mig, slår jeg mig selv ihjel. Jo, vi fik ægteskabet i stand, og hvad kom der så ud af det?"
-   ]
-  },
-  {
-   "id": "04b/0434#13",
-   "where": "04b/0434",
-   "text": "– Hvis Kamyar ikke havde været så skide fin på den og var forblevet på kollegiet, var der ikke kommet en ledig seng, så disse mærkværdigheder kunne falde i skødet på os.",
-   "q": "Hooman grumbles sarcastically about the two odd roommates they got stuck with. Does 'falde i skødet på os' work here?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…under min seng. Så gjorde han tegn til Meysam med hånden og lagde sig i sin seng oven over min. Eskandar stirrede et øjeblik på hjørnerne af de få bøger, der stak frem under min seng, og kravlede så på alle fire hen mod Bahmans bøger. Han sænkede hovedet og kiggede på Bahmans bøger. Hooman sagde:"
-   ]
-  },
-  {
-   "id": "03/0394#14",
-   "where": "03/0394",
-   "text": "Enten har du slået hovedet et sted. Eller du er hjernepi... nå ja, du var allerede hjernepik, nu er du bare endnu mere hjernepik.",
-   "q": "Hooman mocks Eskandar's sudden question. Does 'hjernepik' work as a young man's insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Du er pludselig låst fast på det spørgsmål. Der er et par muligheder."
-   ]
-  },
-  {
-   "id": "04b/0146#15",
-   "where": "04b/0146",
-   "text": "– Lortehjerne. Du får mig til at åbne munden. Jeg mener: Har du bare hørt om det? Blev du ikke selv ramt?",
-   "q": "Hooman snaps at Eskandar, a roommate he finds annoying. Does 'Lortehjerne' sound like a natural crude insult?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Hørt?",
-    "– Ja, altså, nyheden bredte sig på universitetet."
-   ]
-  },
-  {
-   "id": "03/0396#16",
-   "where": "03/0396",
-   "text": "– Svaret er, at det ikke klæder dig at slikke Mester Hooman i røven.",
-   "q": "Hooman brushes off Eskandar's prying questions. Does 'det ikke klæder dig' sound natural in this crude put-down?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar gav sig ikke. Han sagde, det måtte undersøges til bunds, og han var sikker på, at hvis svaret på dette spørgsmål blev fundet, ville det være til stor hjælp for Hooman og hele menneskeheden. Hooman sagde:"
+   "key": "natural",
+   "title": "Lyder det naturligt?",
+   "q": "Lyder hver linje naturlig og klar?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0140#natur",
+     "text": "– Tænk så på, hvad vores stakkels Baba må gå igennem – han har siddet uvirksom derhjemme alle de her år.",
+     "note": null
+    },
+    {
+     "id": "01/0224#natur",
+     "text": "– Jo da, Baba hungrer virkelig efter respekt. Men han er også havnet hos de forkerte; vi har smadret den sidste rest af den.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "– Så lad os drikke denne te til Ørneøje News' sundhed.",
+     "note": null
+    },
+    {
+     "id": "03/0458#natur",
+     "text": "– Jeg har slet ikke tid i denne uge. Torsdag i næste uge klokken tre, samme sted som sidst. Bare så det er sagt: Jeg har kun en halv time.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "– Leopard-Farid kan ikke engang blive enig med sig selv. Det ene øjeblik laver han et morderisk stunt; det næste siger han: \"Åh, blod. Det gav mig myrekryb.\"",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "– Hvor på min hals står der fodstøtte?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Det lader vi ligge. Men hvorfor tager du den ikke, uanset hvor mange gange jeg ringer? Har du viderestillet mine opkald til et sted, du ikke burde?",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "– Objektivt, bare fordi vi kom nogle dage for sent, opfører de her teheranere sig – dem, der kun kom ind på AmirKabir takket være lokalisering – som om det er os, der kom ind via kvote, ikke dem. Objektivt.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "– Altså, tal ikke så høfligt til ham, det stiger ham til hovedet. Vi sled os igennem alle de prøver og endte som værelsesfæller med den antikvitet.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "– Ingen andres værelse har tæppe, Baba-jan. Det er kun os, der har tæppe, og det er, fordi vi er eliteværelset.",
+     "note": null
+    },
+    {
+     "id": "04b/0427#natur",
+     "text": "– Det spørger vi os selv om.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "– Fint, Ørneøje, fint. Stik nu ikke brillerne ind i laptopen.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "– Var Fluen her, ville hans antenner straks spidse sig: Hvad er det her for noget, siden det giver sådan et afkast?",
+     "note": null
+    },
+    {
+     "id": "04b/0736#natur",
+     "text": "Så snart dit navn dukker op, spidser jeg ører.",
+     "note": null
+    },
+    {
+     "id": "04b/0738#natur",
+     "text": "– Åh, gid jeg en dag kunne gennembore de ører dér med mine negle, så du aldrig kan spidse dem mere.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "– I toogtredive måneder har jeg elsket dig. På afstand. Uden at du vidste det. I stilhed, uden et eneste ord.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 21
 }

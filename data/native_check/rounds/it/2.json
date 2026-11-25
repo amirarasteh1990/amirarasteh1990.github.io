@@ -1,185 +1,257 @@
 {
+ "format": 2,
  "lang": "it",
  "slug": "it",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisione madrelingua",
+  "lead": "Non serve aver letto il libro. Rispondi a quante domande vuoi.",
+  "persian_words": "Maman (madre), Baba (padre) e -jan (caro) sono parole persiane, mantenute nel libro.",
+  "page": "Pagina",
+  "correct": "Corretto",
+  "needs_change": "Da cambiare",
+  "not_sure": "Non so",
+  "how_say": "Come lo diresti?",
+  "meaning": "Secondo te, che cosa significa?",
+  "optional": "(facoltativo)",
+  "your_name": "Il tuo nome",
+  "thanks_tick": "Inserisci il mio nome nella pagina dei ringraziamenti",
+  "private": "Le tue risposte arrivano solo all'autore.",
+  "send": "Invia",
+  "send_continue": "Invia e vai alla pagina {n}",
+  "sending": "Invio in corso…",
+  "popup_title": "Grazie!",
+  "popup_text": "Vuoi il tuo nome nella pagina dei ringraziamenti del sito? Completa tutte e 4 le pagine e lo aggiungeremo volentieri.",
+  "popup_button": "Vai alla pagina {n}",
+  "arrived": "Grazie, le tue risposte della pagina {n} sono arrivate.",
+  "thanks_last": "Grazie! Le tue risposte sono arrivate.",
+  "all_done": "Hai inviato tutte le pagine. Grazie per ognuna!",
+  "already_sent": "Hai già inviato questa pagina da questo dispositivo. Grazie!",
+  "continue_with": "Continua con la pagina {n}",
+  "need_one": "Scegli una risposta per almeno una riga.",
+  "note_no_answer": "Una riga ha una nota: scegli, per favore, una risposta anche per quella.",
+  "name_needed": "Aggiungi il nome che vuoi vedere nell'elenco, oppure togli la spunta.",
+  "not_connected": "L'invio non è ancora attivo.",
+  "too_long": "L'invio ha richiesto troppo tempo.",
+  "cannot_send": "Non è stato possibile inviare le risposte da qui.",
+  "use_email": "Usa, per favore, il pulsante email qui sotto.",
+  "fallback": "Non è stato possibile inviare le risposte da questa pagina. Inviale per email; niente di ciò che hai scritto è andato perso.",
+  "email_button": "Invia le risposte per email",
+  "shortened": "Alcune note erano troppo lunghe per un link email e lì sono state accorciate. Le tue risposte complete sono qui sotto: incollale nell'email, per favore.",
+  "noscript": "Per inviare serve JavaScript. Puoi anche mandare le tue risposte via email a {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0132#1",
-   "where": "01/0132",
-   "text": "C'era il tifo, per esempio, o la tubercolosi, o il morbillo.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#2",
-   "where": "01/0132",
-   "text": "O il colera, per esempio. Anche quello non ne ammazzava così tante.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "La malattia peggiore è l'Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Italian speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Maman, c'è una malattia che paralizza lentamente i muscoli. È una malattia molto brutta.",
-    "Maman disse:"
+   "key": "one",
+   "title": null,
+   "q": "He almost repeats the crude word, then stops. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#s12",
+     "text": "Come quello: più pensi a queste dieci parole, più ti viene un capogiro del ca... cioè, più ti gira la testa.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#4",
-   "where": "06/0052",
-   "text": "Alla fine Mahboub ha chiamato; sono venuti con un'amublanza e hanno portato via Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Italian speaker say ambulanza as 'amublanza'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#5",
-   "where": "03/0362",
-   "text": "Mahboub, questa cosa che dicono al telegiornale, l'Ameroca",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Italian speaker say America as 'Ameroca'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Uscii dalla casa in fondo al cortile e percorsi la lunghezza del cortile in nove passi, con la gioia della nuova scoperta ancora accesa nel cuore. Quando entrai nel salone dal cortile, Maman era distesa davanti alla televisione. Aveva entrambe le mani sulla pancia e stava dicendo a Mahboubeh:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Come da bambini, quando Maman disfaceva i vecchi vestiti di lana e noi prendevamo il filo e giravamo per casa perché la lana non si ammucchiasse.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0182#6",
-   "where": "01/0182",
-   "text": "Che — aiolo non era?",
-   "q": "Maman, hard of hearing, catches only the end of 'donnaiolo'. Would Italian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Non era neanche un donnaiolo.",
-    "Maman dice:"
+   "key": "one",
+   "title": null,
+   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0389#s32",
+     "text": "Non avresti potuto mangiarne nemmeno la testa.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#7",
-   "where": "01/0148",
-   "text": "Cosa e Sorrisi?",
-   "q": "Maman, hard of hearing, catches only the end of the TV series title 'Lacrime e Sorrisi'. Does her question read that way?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Ragazzi, scarico Lacrime e Sorrisi così lo vediamo stasera?",
-    "Maman gira la testa e dice:"
+   "key": "one",
+   "title": null,
+   "q": "A boy's running joke: an absurd chain of authorities. Does it land?",
+   "q_lang": "en",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1248#s34",
+     "text": "L'uomo più ricco di Teheran, l'amico del cugino del mastro artigiano di nostro cognato, ha detto che il nero è il colore dell'amore.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0628#8",
-   "where": "03/0628",
-   "text": "Haha, l'Anziano della Taverna, Eldie — perfetto.",
-   "q": "Hooman shortens Amir's nickname 'Anziano della Taverna' to 'Eldie', a pet form of English elder. Does this short form work here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman stava scrivendo qualcosa nel libro con una penna e disse:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Battaglione, avanti, marc'!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Battaglione, fianco sinistr!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0595#9",
-   "where": "04b/0595",
-   "text": "Ma ha fatto una cagata. Occhio d'Aquila dice peer to peer; Taverny dice Eldie a Eldie.",
-   "q": "Amir misheard 'peer' as pir, Persian for an old sage, hence his nickname 'Eldie'. Would Italian readers get it? If not, what word could?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir a pir?",
-    "Hooman disse:",
-    "– Mandate un salavat. L'Anziano della Taverna ha detto qualcosa, finalmente.",
-    "Farid disse:"
+   "key": "poetry",
+   "title": "Poesia",
+   "q": "Questi sono versi. Ognuno suona bene come poesia in italiano?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Non prenderei per nulla al mondo quell'anello di Salomone, ché di tanto in tanto su di esso la mano di",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "«Per Attar è più dolce piangere fino all'alba», oppure «ora giace ancor più ucciso»?",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "scrivi sull'acqua con il tuo stesso sangue",
+     "note": null
+    },
+    {
+     "id": "04b/1275#poetr",
+     "text": "gli arsi",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "«Da molto tempo l'amata non manda messaggi; non ha scritto un saluto",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "La luce dei miei sogni ora lampeggia",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "ma se ti capiterà di passare",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "credo che i miei sogni non credano che te ne sia andata",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "La luce dei miei sogni ... la luce dei miei sogni si accendeva ... la luce dei miei sogni si è accesa",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0387#10",
-   "where": "04b/0387",
-   "text": "Stanotte sentivo il rumore della tua ruminazione.",
-   "q": "Eskandar teases Hooman for munching sweets secretly at night, like a cow chewing cud. Does this sound like natural teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar si girò verso Hooman e disse:"
-   ]
-  },
-  {
-   "id": "04b/0460#11",
-   "where": "04b/0460",
-   "text": "Che diavolo ti ha preso adesso, a rizzartelo contro di noi, Alain Cazzon?",
-   "q": "Hooman crudely mocks a pompous roommate, using his rude nickname 'Alain Cazzon'. Does this sound like real dorm teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "03/0432#12",
-   "where": "03/0432",
-   "text": "Intendo Alain Cazzon. Caaazzon. Punto, fine.",
-   "q": "Hooman stretches out a rude nickname to mock a roommate, then closes the topic. Does this ending sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ...e fai la bocca come il culo di una gallina e ti ammazzi per parlare come lui. Non intendo quello."
-   ]
-  },
-  {
-   "id": "03/0490#13",
-   "where": "03/0490",
-   "text": "Attento a non incrinarti, signor Cazzon.",
-   "q": "A roommate has just called himself an extremist nationalist anarchist. Does Hooman's mocking reply work?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Eskandar raddrizzò la testa e il petto e disse:",
-    "– Sono un anarchico nazionalista estremista.",
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0616#14",
-   "where": "04b/0616",
-   "text": "Vabbè, Occhio d'Aquila, vabbè. Adesso non infilare gli occhiali nel portatile.",
-   "q": "Hooman teases short-sighted Sajad, whose face is almost touching the laptop screen. Does it sound like natural teasing?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Strinse gli occhi dietro gli occhiali e avvicinò la testa allo schermo del portatile.",
-    "– Se non ci credi, vieni a vedere di persona, oggettivamente.",
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "06/0186#15",
-   "where": "06/0186",
-   "text": "Darei qualsiasi cosa per te, Nini-jan. La tua testa funziona così bene.",
-   "q": "Amir lovingly praises his mother's quick thinking with a Persian turn of phrase. Does it sound warm and natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Dico:"
-   ]
-  },
-  {
-   "id": "03/0189#16",
-   "where": "03/0189",
-   "text": "Pfff, asino, chi lo sa meglio, l'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, o tu, vitello?",
-   "q": "A boy angrily calls his friend a donkey and a calf, meaning stupid. Do these insults sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid ribollì di rabbia e urlò:"
+   "key": "word_choice",
+   "title": "Singole parole",
+   "q": "La parola in ogni riga è quella giusta? Sotto è indicato cosa dovrebbe significare.",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0278#word_",
+     "text": "Karroubi è amore, a onor del vero.",
+     "note": "\"a onor del vero\" = honestly and truly (excited slang)"
+    },
+    {
+     "id": "03/0517#word_",
+     "text": "Farid Leopardo non sa nemmeno da che parte stare. Da un lato sfodera mosse omicide, dall'altro dice: oh, sangue, mi si accappona la pelle.",
+     "note": "\"mosse omicide\" = murderous moves: tough-guy stunts"
+    },
+    {
+     "id": "04b/0228#word_",
+     "text": "Un anno o due fa ho sentito dall'Occhio d'Aquila News che quel fighetto era andato in Australia anche lui, un po' all'inseguimento della ragazza che amavate entrambi.",
+     "note": "\"quel fighetto\" = vain show-off, a dandy (mocking)"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "Per amor di tua madre, non andare in giro per la stanza senza occhiali.",
+     "note": "\"Per amor di tua madre\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0784#word_",
+     "text": "Sei proprio sneaky.",
+     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Ti viene un capogiro del cazzo. Più ci pensi, più ti viene un capogiro del cazzo.",
+     "note": "\"capogiro del cazzo\" = crude coinage: so baffled your head spins"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

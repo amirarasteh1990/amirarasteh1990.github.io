@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="kk" dir="ltr">Қазақ</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 2 of 3. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/kk/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong> &middot; <a href="/sedaha/check/kk/3/" data-round="3">3</a></p>
-    <div class="nc-guide" id="ncResume" data-total="3" data-base="/sedaha/check/kk/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
+    <p class="nc-round">Round 2 of 2, the last one.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <a href="/sedaha/check/kk/" data-round="1">1</a> &middot; <strong aria-current="page" data-round="2">2</strong></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/kk/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,13 +122,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="kk" data-language="Kazakh" data-version="2026-11-23.sayings" data-round="2" novalidate>
-    <fieldset class="nc-item" data-id="01/0138#1">
+  <form class="nc-form" id="ncForm" data-lang="kk" data-language="Kazakh" data-version="2026-11-25.o2" data-round="2" novalidate>
+    <fieldset class="nc-item" data-id="04b/0274#6">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">«Жүрегім шіріп барады» деді.</p>
+        <p class="nc-line">Мен айтам, осылай тек осында отырып, өлең оқи берсең, наның пісіп бермейді.</p>
       </div>
-      <p class="nc-q" id="q1">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q1">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -139,12 +139,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0509#2">
+    <fieldset class="nc-item" data-id="01/0138#1">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Күліп тұрып, Хуман қолымен арқамнан қатты ұрады да, қант кесегі тамағыма секіріп кетеді.</p>
+        <p class="nc-line">«Жүрегім шіріп барады» деді.</p>
       </div>
-      <p class="nc-q" id="q2">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <p class="nc-q" id="q2">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -155,12 +155,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0203#3">
+    <fieldset class="nc-item" data-id="04b/0509#2">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Биби, Алла рақым етсін, осындай кездерде айтатын: «Айтсам тілім күйеді, айтпасам, сүйегімнің жілігі күйеді».</p>
+        <p class="nc-line">Күліп тұрып, Хуман қолымен арқамнан қатты ұрады да, қант кесегі тамағыма секіріп кетеді.</p>
       </div>
-      <p class="nc-q" id="q3">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q3">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -171,12 +171,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0188#4">
+    <fieldset class="nc-item" data-id="03/0634#9">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Жаңбыр жерден аспанға жаумайды.</p>
+        <p class="nc-line">Сол пәлекет Аскандарға айтпа, тағы бір сағат уағыз айтып, асымды жыланның уына айналдырады.</p>
       </div>
-      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q4">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -187,12 +187,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0073#5">
+    <fieldset class="nc-item" data-id="01/0116#2">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">– Ғасәм тағы әзілдеп жатыр: «Жақсы жыл өз көктемінен бәлгілі» дейді.</p>
+        <p class="nc-ctx">– Жоқ, алаңдама. Мұнда тіпті тамақ-азықты тапсырыс беріп, есікке әкелдіруге болады.</p>
+        <p class="nc-ctx">– О, қандай жақсы. Мм-иә, тапсырыс берсең, әкеледі. Бірақ Әмір жан, әрқашан үйде отыра берме.</p>
+        <p class="nc-line">Сыртқа да шық. Адам көп болмайтын жерлерге бар.</p>
       </div>
-      <p class="nc-q" id="q5">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q5">During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -203,12 +205,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0274#6">
+    <fieldset class="nc-item" data-id="04b/0204#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Мен айтам, осылай тек осында отырып, өлең оқи берсең, наның пісіп бермейді.</p>
+        <p class="nc-ctx">– Қой, мұның бәрін таста, кел, екі стақан набат шай алдым, соны ішейік.</p>
+        <p class="nc-ctx">Айтамын:</p>
+        <p class="nc-line">– Сен бұндай нәрселер істемеуші едің ғой.</p>
       </div>
-      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q6">Someone asks this in surprise. Does it read as a question?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -235,12 +239,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0334#8">
+    <fieldset class="nc-item" data-id="03/0601#5">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Қолым қысқа, саған қауышу алыс.</p>
+        <p class="nc-ctx">– Негар бізден немере ағасын ұрыңдар деп сұраған ба еді, алданған сезімде болуымыз жөн бе?</p>
+        <p class="nc-ctx">…надарам, «жақсы көрмеймін», болып шығады. Түн соңында қағаздарды олардың есігінің астына тықтық. Іс жүзінде Тақи тықты, ал мен не істеп жатқанымыздан қорқып, тек Тақидің ашулануынан қорыққаным үшін ілестіп жүрдім. Келесі күні Тақи келіп, қағаздарды Негардың орнына шешесі алып оқығанын айтты.</p>
+        <p class="nc-line">Ол дайындарымды «қандай ұятсыз адам қызыма жезөкше деп атауға батыл болды» деп жүз одан да жаман нәрселерімен бірге айтып, маңайды өрт алды.</p>
       </div>
-      <p class="nc-q" id="q8">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q8">Negar's mother rages at the whole street. Does this sentence read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -251,12 +257,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0634#9">
+    <fieldset class="nc-item" data-id="03/0045#4">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="kk" dir="ltr">
-        <p class="nc-line">Сол пәлекет Аскандарға айтпа, тағы бір сағат уағыз айтып, асымды жыланның уына айналдырады.</p>
+        <p class="nc-ctx">– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.</p>
+        <p class="nc-ctx">Фаридтің өлімші қадамы туралы ой мені сәл ерітті, бірақ ауаным да, күшім де жоқ еді. Тек белімді сәл қаттырақ ұстадым.</p>
+        <p class="nc-line">Мазандаран ятауы бүгін жасыл алхоры бере ді, оның үстіне бізбен атауын білмейтін шөппен деп айтқанда, «Менің Қалам – Менің Мәдениетім» көрмесінің баспалдақтарымен Фаридпен бірге төмен жүріп бара жатқанымды байқадым.</p>
       </div>
-      <p class="nc-q" id="q9">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q9">Farid hears a stall gives out green plums with a herb. Is this clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -271,17 +279,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -299,7 +305,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/kk/3/">More lines: round 3 of 3 &rarr;</a></p>
+    <p>That was the last round. Thank you for all of them.</p>
     <p><a href="/sedaha/read/kk/">&larr; <span class="native" lang="kk" dir="ltr">Қазақ</span></a></p>
   </section>
 </main>
@@ -318,7 +324,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

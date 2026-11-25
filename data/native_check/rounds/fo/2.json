@@ -2,20 +2,20 @@
  "lang": "fo",
  "slug": "fo",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Eg sigi, situr tú her og lesur yrking, verður eingin breyð heitur til tín.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Hon segði, hjarta mítt rotnar.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Et ikki sorg, klóki dreingurin mín.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,34 +26,6 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, Gud náði sál hennara, segði í slíkum løtum: Tali eg, brennur tunga mín; tegi eg, brennur merg beinanna.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Regn dettur ikki upp frá jørðini.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "– Ghassem er farin aftur á fløgur, hann sigur: eitt gott ár kennist á vári sínum.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Eg sigi, situr tú her og lesur yrking, verður eingin breyð heitur til tín.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
    "id": "04b/0824#8",
    "where": "04b/0824",
    "text": "Eg fatti fyrst, hvussu ólíkur hin síðan av søguni er, aftaná at familjan við valdi drógst meg inn millum høsnini.",
@@ -61,11 +33,54 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Hond mín er stutt, og samveran við teg er langt burtur.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0664#2",
+   "where": "03/0664",
+   "text": "Krullurnar í ullini hansara líktust ullini í mottuni míni.",
+   "q": "Is 'mottuni' right for a wool-stuffed mattress?",
+   "before": [
+    "– Krullhár, tú undrast, sum um tú kom til háskúlan uttan Konkoor. Hendan lokaliseringarreglan riggaði okkum av. Í navni av, at tey vildu, at næmingar skuldu vera nær familju síni, stungu teir stavin upp í rassin á okkum burturfrá.",
+    "Í sjónvarpinum søgdu tey, at teir høvdu gjørt ein seyð, líkan hinum seyðunum."
+   ]
+  },
+  {
+   "id": "04b/0418#3",
+   "where": "04b/0418",
+   "text": "Ein lítil drongur við longum, ópumpaðum hári, stórum eygum, sera myrkari húð, og eitt sera lítið høvur, ið, uttan tað ópumpaða hárið, hevði sæð lítið út enntá á sínum lítla likami.",
+   "q": "His hair is long and puffed up. Is 'ópumpaðum' right for that?",
+   "before": [
+    "– Salaam. Navn mítt er Meysam. Heimavistarleiðarin segði, eg skuldi koma til rúm 403.",
+    "Og hann stóð har frammanfyri hálvopnu dyrunum og segði einki."
+   ]
+  },
+  {
+   "id": "04b/0964#5",
+   "where": "04b/0964",
+   "text": "Hon fór beinleiðis út av universitetinum, og í ímyndan míni, hvønn dag, tá Niloofar og Sina møttust, tóku tey hondina á hvørjum øðrum.",
+   "q": "Is it clear 'tóku tey hondina á hvørjum øðrum' means they shook hands?",
+   "before": [
+    "…og garnar av Walkmaninum á jørðini. Taghi hyggjaði illur at øllum. Frá tí kvøldið høvdu vit einki meira at lurta at. Aftur, sum í døgunum áðrenn Walkmanin, tá ljósið í húsinum hjá Negar doyði, fóru vit og settust har, á fortógskantinum við aðalbreytina, og hyggjaðu at bilunum, ið keyrdu framvið.",
+    "Aftaná tann dagin fór Niloofar ikki longur við hinum gentunum í flokkinum til Yaghoob-bóðina."
+   ]
+  },
+  {
+   "id": "04b/1178#8",
+   "where": "04b/1178",
+   "text": "Sami drongurin, ið rørir hendur, veiggjar hondina sum ein vagi og rópar:",
+   "q": "A boy waves his hand like a fan. Do 'veiggjar' and 'vagi' read naturally?",
+   "before": [
+    "…upp við síðuna av dýnu síni og fór aftur út. Til morgunin eftir, tá eg kom higar og sá, at Niloofar ikki var her, hugsaði eg enn, at hon sat beint her. Haðani síggi eg inn í klasseherbergið hinumegin gangin. Yalda-náttar-hátíðin hjá fakultetinum tað árið var hildin beint í hesum klasseherbergi.",
+    "…til Keyvan, ein til pápa, og kanska ein til Niloofar. Tí eg kundi ikki, tí eg kundi ikki siga kensluna mína í orðum. Og um eg segði hana, var tað ikki á ein slíkan hátt, at tað kundi fáa spíruna av tí, sum hevði tikið skap millum okkum, at bera frukt. Trættan millum tríggjar drongar er vaksin."
+   ]
+  },
+  {
+   "id": "04b/1070#7",
+   "where": "04b/1070",
+   "text": "Eg lati høvdið síga, og handan fyri gangin á triðju hædd fellur eyga mítt á hurðina hjá Elektriskum Skipanum-lab-tíðini.",
+   "q": "He sees the door of the Electrical Circuits lab room. Is this clear?",
+   "before": [
+    "– Ó, harmiligt. Gud gevi mær deyðan. Umskylda, Agha, eg opnaði hurðina í skundi, og hetta hendi.",
+    "…at hon ikki hevur lokað hurðina á herberginum, hon hevði opnað. Eg hyggi inn í herbergið. Borð og stólar líta út at vera nýggj. Eg fari móti glugganum, ið vendir móti tí tóma rúminum millum hæddirnar, og hyggi upp móti fjórðu hædd frá hæddini niðanfyri. Bert efsta hornið av klassuhurðunum sæst."
+   ]
   }
  ]
 }

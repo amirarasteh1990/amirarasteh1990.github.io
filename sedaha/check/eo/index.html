@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="eo" dir="ltr">Esperanto</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/eo/2/" data-round="2">2</a></p>
-    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/eo/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +119,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="eo" data-language="Esperanto" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="eo" data-language="Esperanto" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1312#3">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="eo" dir="ltr">
-        <p class="nc-ctx">Enkonduko</p>
-        <p class="nc-ctx">…ĉi tie. Ili estis skribitaj por fariĝi ponto inter mia mondo kaj la via. Ponto el mia mondo, en la momento kiam mi skribas ĉi tiujn frazojn, al la via, en la momento kiam vi eksidas por legi ilin. De ĉi tiu flanko, mi malvolvas la fadenon de vortoj, kaj de la alia flanko, vi kolektas la vortojn.</p>
-        <p class="nc-line">Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu.</p>
+        <p class="nc-ctx">…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:</p>
+        <p class="nc-ctx">– ... rigardu, vere kiom pripensiga ĝi estas.</p>
+        <p class="nc-line">Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear the children walked around inside the house?</p>
+      <p class="nc-q" id="q1">Is it clear the caption under the drawing says: this is not a pipe?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +138,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#2">
+    <fieldset class="nc-item" data-id="04b/1312#4">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="eo" dir="ltr">
-        <p class="nc-ctx">Enkonduko</p>
-        <p class="nc-ctx">…vi kolektas la vortojn. Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu. Eble via generacio venis kelkajn jarojn post tiu mondo de lanfadeno — sed imagu: iam, ie en la mondo, infanoj ludis tiamaniere.</p>
-        <p class="nc-line">Nun mi malvolvas la fadenon de vortoj, kaj vi prenu ilin kaj portu ilin en vian propran mondon, por ke ili ne amasiĝu ĉi tie, en mia mondo.</p>
+        <p class="nc-ctx">…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:</p>
+        <p class="nc-ctx">– ... rigardu, vere kiom pripensiga ĝi estas. Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.</p>
+        <p class="nc-line">Oni feke kapturniĝas. Ju pli vi pensas pri ĝi, des pli feke vi kapturniĝas.</p>
       </div>
-      <p class="nc-q" id="q2">Does this sentence read naturally?</p>
+      <p class="nc-q" id="q2">A girl is meant to joke with a crude made-up word. Does it work?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +156,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#3">
+    <fieldset class="nc-item" data-id="03/0430#5">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="eo" dir="ltr">
-        <p class="nc-ctx">…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:</p>
-        <p class="nc-ctx">– ... rigardu, vere kiom pripensiga ĝi estas.</p>
-        <p class="nc-line">Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.</p>
+        <p class="nc-ctx">– Jes, Hamoon estas bona nomo por vi. Kiel Hamoon en la filmo, vi ankaŭ estas plena de demandoj. Vi estas plena de maltrankvilo kaj fonto de aflikteco, ne por vi mem, sed por mi.</p>
+        <p class="nc-ctx">Hooman diris:</p>
+        <p class="nc-line">Kaj vi, kun tiu kaceca maniero paroli, via nomo devus esti Alain Kacon.</p>
       </div>
-      <p class="nc-q" id="q3">Is it clear the caption under the drawing says: this is not a pipe?</p>
+      <p class="nc-q" id="q3">'Alain Kacon' is meant as a rude pun on the actor Alain Delon. Would Esperanto readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +174,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#4">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="eo" dir="ltr">
-        <p class="nc-ctx">…knabino estis kaŝita malantaŭ la anonco pri la somera farbado kaj riparoj de la konstruaĵo Abu-Reyhan. Kun batanta koro mi antaŭeniris. Estis Niloofar, Niloofar mem. Frontante la Universitaton de Arto, apud kelkaj aliaj knabinoj ŝi staris. Unu el la knabinoj montris paperon al la ceteraj kaj diris:</p>
-        <p class="nc-ctx">– ... rigardu, vere kiom pripensiga ĝi estas. Li desegnis ĉi tion kaj sub ĝi skribis: ne estas pipo.</p>
-        <p class="nc-line">Oni feke kapturniĝas. Ju pli vi pensas pri ĝi, des pli feke vi kapturniĝas.</p>
+        <p class="nc-line">La pluvo ne falas supren el la tero.</p>
       </div>
-      <p class="nc-q" id="q4">A girl is meant to joke with a crude made-up word. Does it work?</p>
+      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +190,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#5">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="eo" dir="ltr">
-        <p class="nc-ctx">– Jes, Hamoon estas bona nomo por vi. Kiel Hamoon en la filmo, vi ankaŭ estas plena de demandoj. Vi estas plena de maltrankvilo kaj fonto de aflikteco, ne por vi mem, sed por mi.</p>
-        <p class="nc-ctx">Hooman diris:</p>
-        <p class="nc-line">Kaj vi, kun tiu kaceca maniero paroli, via nomo devus esti Alain Kacon.</p>
+        <p class="nc-line">Mia mano estas mallonga kaj la unuiĝo kun vi malproksima.</p>
       </div>
-      <p class="nc-q" id="q5">'Alain Kacon' is meant as a rude pun on the actor Alain Delon. Would Esperanto readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q5">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,21 +206,183 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="04a/0128#2">
+      <legend>Line 6</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Ne manĝu malĝojon, mia lerta filo.</p>
+      </div>
+      <p class="nc-q" id="q6">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
+        <label><input type="radio" name="v6" value="ok"> Correct</label>
+        <label><input type="radio" name="v6" value="change"> Needs change</label>
+        <label><input type="radio" name="v6" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n6">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0274#7">
+      <legend>Line 7</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Mi diras, ke se vi nur ade sidos ĉi tie kaj recitos poezion, neniu pano varmiĝos por vi.</p>
+      </div>
+      <p class="nc-q" id="q7">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
+        <label><input type="radio" name="v7" value="ok"> Correct</label>
+        <label><input type="radio" name="v7" value="change"> Needs change</label>
+        <label><input type="radio" name="v7" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n7">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0203#4">
+      <legend>Line 8</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Bibi, Dio ripozigu ŝin, kutimis diri en tiaj momentoj: se mi diras ĝin, mia lango brulas; se mi ne diras, la medolo de miaj ostoj brulas.</p>
+      </div>
+      <p class="nc-q" id="q8">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
+        <label><input type="radio" name="v8" value="ok"> Correct</label>
+        <label><input type="radio" name="v8" value="change"> Needs change</label>
+        <label><input type="radio" name="v8" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n8">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0073#6">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Li diras: "Bona jaro montriĝas jam en sia printempo."</p>
+      </div>
+      <p class="nc-q" id="q9">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="01/0138#1">
+      <legend>Line 10</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Ŝi diris: mia koro putras.</p>
+      </div>
+      <p class="nc-q" id="q10">Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
+        <label><input type="radio" name="v10" value="ok"> Correct</label>
+        <label><input type="radio" name="v10" value="change"> Needs change</label>
+        <label><input type="radio" name="v10" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n10">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0509#3">
+      <legend>Line 11</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Ridante, Hooman forte frapas mian dorson per la mano, kaj la sukerpeco saltas en mian gorĝon.</p>
+      </div>
+      <p class="nc-q" id="q11">Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
+        <label><input type="radio" name="v11" value="ok"> Correct</label>
+        <label><input type="radio" name="v11" value="change"> Needs change</label>
+        <label><input type="radio" name="v11" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n11">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="03/0634#10">
+      <legend>Line 12</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Ne diru al tiu mizera Eskandar, aŭ li sidigos nin por alia horo da konsiletoj kaj la manĝo fariĝos serpenta veneno por mi.</p>
+      </div>
+      <p class="nc-q" id="q12">A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
+        <label><input type="radio" name="v12" value="ok"> Correct</label>
+        <label><input type="radio" name="v12" value="change"> Needs change</label>
+        <label><input type="radio" name="v12" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n12">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="04b/0824#8">
+      <legend>Line 13</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-line">Mi nur post kiam la familio perforte ŝovis min inter la kokinojn, komprenis kia malsama mondo estas tiu flanko de la rakonto.</p>
+      </div>
+      <p class="nc-q" id="q13">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
+        <label><input type="radio" name="v13" value="ok"> Correct</label>
+        <label><input type="radio" name="v13" value="change"> Needs change</label>
+        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#1">
+      <legend>Line 14</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-ctx">Enkonduko</p>
+        <p class="nc-ctx">…ĉi tie. Ili estis skribitaj por fariĝi ponto inter mia mondo kaj la via. Ponto el mia mondo, en la momento kiam mi skribas ĉi tiujn frazojn, al la via, en la momento kiam vi eksidas por legi ilin. De ĉi tiu flanko, mi malvolvas la fadenon de vortoj, kaj de la alia flanko, vi kolektas la vortojn.</p>
+        <p class="nc-line">Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu.</p>
+      </div>
+      <p class="nc-q" id="q14">Is it clear the children walked around inside the house?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
+        <label><input type="radio" name="v14" value="ok"> Correct</label>
+        <label><input type="radio" name="v14" value="change"> Needs change</label>
+        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
+    <fieldset class="nc-item" data-id="Opening/0007#2">
+      <legend>Line 15</legend>
+      <div class="reader nc-text" lang="eo" dir="ltr">
+        <p class="nc-ctx">Enkonduko</p>
+        <p class="nc-ctx">…vi kolektas la vortojn. Kiel en infaneco, kiam Maman malvolvis la lanfadenon el malnovaj trikaĵoj, kaj ni prenis la fadenon kaj rondiris tra la domo, por ke ĝi ne amasiĝu. Eble via generacio venis kelkajn jarojn post tiu mondo de lanfadeno — sed imagu: iam, ie en la mondo, infanoj ludis tiamaniere.</p>
+        <p class="nc-line">Nun mi malvolvas la fadenon de vortoj, kaj vi prenu ilin kaj portu ilin en vian propran mondon, por ke ili ne amasiĝu ĉi tie, en mia mondo.</p>
+      </div>
+      <p class="nc-q" id="q15">Does this sentence read naturally?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q15">
+        <label><input type="radio" name="v15" value="ok"> Correct</label>
+        <label><input type="radio" name="v15" value="change"> Needs change</label>
+        <label><input type="radio" name="v15" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n15">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -245,7 +400,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/eo/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/eo/">&larr; <span class="native" lang="eo" dir="ltr">Esperanto</span></a></p>
   </section>
 </main>
@@ -264,7 +418,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

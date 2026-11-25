@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="guestbook-intro">
     <h1>Native check: <span class="native" lang="ku" dir="ltr">Kurmancî</span></h1>
     <p class="lead">Native speaker? Each line below is from the book. Read it and its question, then choose Correct if it is fine as it is, Needs change if it is not (and write how you would say it), or Not sure. Answer as many lines as you like.</p>
-    <p class="nc-round">Round 1 of 3. After you send, the next round has more lines.</p>
-    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/ku/2/" data-round="2">2</a> &middot; <a href="/sedaha/check/ku/3/" data-round="3">3</a></p>
-    <div class="nc-guide" id="ncResume" data-total="3" data-base="/sedaha/check/ku/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
+    <p class="nc-round">Round 1 of 2. After you send, the next round has more lines.</p>
+    <p class="nc-round nc-rounds" id="ncRounds">Rounds: <strong aria-current="page" data-round="1">1</strong> &middot; <a href="/sedaha/check/ku/2/" data-round="2">2</a></p>
+    <div class="nc-guide" id="ncResume" data-total="2" data-base="/sedaha/check/ku/" hidden><p id="ncResumeText"></p><p><a class="btn btn-primary" id="ncResumeLink" href="#" hidden></a></p></div>
     <div class="nc-guide">
       <p><strong>You don't need to have read the book.</strong> The grey lines above each line show what comes just before it; only the line marked at the side is being checked.</p>
       <ul>
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="ku" data-language="Kurdish (Kurmanji)" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="ku" data-language="Kurdish (Kurmanji)" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1003#5">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">Vekirin</p>
-        <p class="nc-ctx">…dibûn, heke li vir nehatibûna nivîsandin. Hatin nivîsandin da ku bibin pireke di navbera cîhana min û cîhana te de. Pirek ji cîhana min, di gavê ku van hevokên dinivîsim de, bo cîhana te, di gavê ku rûdinêvî û dixwîniyan de. Ji vê alî ve, ez rêzika peyvan vedikim û ji wî alî ve, tu wan dicivînî.</p>
-        <p class="nc-line">Mîna zaroktiyê — dema Maman kemaxa cilên kevn vedikir û em rêzikê digirtin û dora malan digeryan da ku kemaxa li ser hev bihev nebûya.</p>
+        <p class="nc-ctx">– Tu jî Reşîdek î.</p>
+        <p class="nc-ctx">Eskandar ber bi min zivirî û ser û sînga xwe ber bi min kişand. Çavên xwe gir kiribû û bi devhalekî dijwar, bê ku devhalê xwe yê Alain Delonî ji dest bide, got:</p>
+        <p class="nc-line">– Binêre te çi destegulek avêt avê, mêjîrîtî.</p>
       </div>
-      <p class="nc-q" id="q1">Is it clear the children walked around inside their own house?</p>
+      <p class="nc-q" id="q1">Is it clear this means: look what a mess you've made?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0196#2">
+    <fieldset class="nc-item" data-id="03/0430#8">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Wê demê baş e ku pir li ba te nîye.</p>
-        <p class="nc-ctx">– Mm-hm, niha bi kêmî ve hinekî nefes dikêşim.</p>
-        <p class="nc-line">Bi Xwedê, gava li malê ye, mal ewqas biçûk dibe, hest dikim dixwazim xefik bibim.</p>
+        <p class="nc-ctx">– Erê, Hamûn navekî baş e ji bo te. Mîna Hamûnê di fîlmê de, tu jî tije pirsî. Tije fikar û jêdera bêhêviyiyê yî, ne ji bo xwe, lê ji bo min.</p>
+        <p class="nc-ctx">Hooman got:</p>
+        <p class="nc-line">Û te jî, bi wê rêbaza axaftina xwe ya kîrane, diviya navê te bûbûya Alain Kîrlon.</p>
       </div>
-      <p class="nc-q" id="q2">Maman means the house feels so small she could suffocate. Is that clear?</p>
+      <p class="nc-q" id="q2">'<bdi lang="ku" dir="ltr">Alain Kîrlon</bdi>' is meant as a rude pun on the actor Alain Delon. Would Kurmanji Kurdish readers get it? If not, what word could?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +159,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0361#3">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Baş e.</p>
-        <p class="nc-ctx">…ku Mahboubeh perdeyê ber deriyê hewşê berda û derî girt. Rast bû. Êdî pêwîst nebû wê koma formulan û nîşanên konkûrê yên mijarê trigonometriyê ji ber bikim. Xweş ji rêbaza hêsan û bikêr ku min dîtibû, ji kêleka sobeyê rabûm û min kaxeza li ser dîwêr, li kêleka mayî yên nîşanên konkûrê, zeliq kir.</p>
-        <p class="nc-line">Ji xaniyê dawiya hewşê derketim û bi neh gavên dirêjiya hewşê pêya bûm û kêfa dîtina nû hîn di dilê min de dibiriqî.</p>
+        <p class="nc-line">Baran ji erdê ber bi ezmanê nabare.</p>
       </div>
-      <p class="nc-q" id="q3">Is it clear he crossed the whole courtyard in nine steps?</p>
+      <p class="nc-q" id="q3">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +175,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0570#4">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Çil û pênc kursî. Eger kêm bêne, ji sinifên din jî kursî dikarin bên anîn û li pêşiya sinifê bên rêzkirin.</p>
-        <p class="nc-ctx">…Lê Nîlûfer tewra ji bo temaşekirina vê dînîtiya helbestî jî nehatibû. Tewra ji ber deriyê sinifê jî derbas nebûbû. Bi gavên bilez û dirêj vegeriyam xewgehê. Dixwestim zû dirêj bikişim. Law li xaliyê kêlekî nivîna Ferîd rûniştibûn. Di nava nîqaşê de bûn û tewra hay ji ketina min nediatî odeyê.</p>
-        <p class="nc-line">Rasterast bi heman cilên derve ketim nivîna xwe û nixûm ser serê xwe kişandim.</p>
+        <p class="nc-line">Destê min kurt e û gihîştina te dûr.</p>
       </div>
-      <p class="nc-q" id="q4">Is it clear he pulled the blanket over his head?</p>
+      <p class="nc-q" id="q4">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +191,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1003#5">
+    <fieldset class="nc-item" data-id="01/0203#4">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Tu jî Reşîdek î.</p>
-        <p class="nc-ctx">Eskandar ber bi min zivirî û ser û sînga xwe ber bi min kişand. Çavên xwe gir kiribû û bi devhalekî dijwar, bê ku devhalê xwe yê Alain Delonî ji dest bide, got:</p>
-        <p class="nc-line">– Binêre te çi destegulek avêt avê, mêjîrîtî.</p>
+        <p class="nc-line">Bibi, Xwedê rûhê wê şad bike, di wê rûdanên wiha de digotin: eger bibêjim zimanê min dişewite; eger nebêjim mejiyê hestiyê min dişewite.</p>
       </div>
-      <p class="nc-q" id="q5">Is it clear this means: look what a mess you've made?</p>
+      <p class="nc-q" id="q5">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +207,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1256#6">
+    <fieldset class="nc-item" data-id="01/0073#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Hûn dixwazin şer bikin?</p>
-        <p class="nc-ctx">Kamyon di destê min de bû lê me nedikarîbû birevin. Negar rawestiyabû û li me dinihêrî. Taqî got:</p>
-        <p class="nc-line">– Eger tu difikirî kamyonê bi xwe re bibî, ha.</p>
+        <p class="nc-line">Ghassem dîsa jî kenên xwe dike, dibêje saleke baş ji biharê tê zanîn.</p>
       </div>
-      <p class="nc-q" id="q6">Taghi accepts a fight on one condition. Does 'ha' read as yes?</p>
+      <p class="nc-q" id="q6">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +223,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0298#7">
+    <fieldset class="nc-item" data-id="04b/1321#1">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Erê, here razê, Nini-jan.</p>
-        <p class="nc-ctx">Em xatirxwestin dikin û carek din pencereya di navbera cîhanên me de tê girtin. Ji camê derve mêze dikim.</p>
-        <p class="nc-line">Tariya parmakên darî yên reş ên pêşiya malê di bin keska pelûşên ku li dora wan pêçiyane ve veşartiye.</p>
+        <p class="nc-line">«Ew mey ku li wir e heqîqet e ne mecaz.»</p>
       </div>
-      <p class="nc-q" id="q7">Is it clear this is a black wooden fence, covered in ivy?</p>
+      <p class="nc-q" id="q7">Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +239,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#8">
+    <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="ku" dir="ltr">
-        <p class="nc-ctx">– Erê, Hamûn navekî baş e ji bo te. Mîna Hamûnê di fîlmê de, tu jî tije pirsî. Tije fikar û jêdera bêhêviyiyê yî, ne ji bo xwe, lê ji bo min.</p>
-        <p class="nc-ctx">Hooman got:</p>
-        <p class="nc-line">Û te jî, bi wê rêbaza axaftina xwe ya kîrane, diviya navê te bûbûya Alain Kîrlon.</p>
+        <p class="nc-ctx">Vekirin</p>
+        <p class="nc-ctx">…dibûn, heke li vir nehatibûna nivîsandin. Hatin nivîsandin da ku bibin pireke di navbera cîhana min û cîhana te de. Pirek ji cîhana min, di gavê ku van hevokên dinivîsim de, bo cîhana te, di gavê ku rûdinêvî û dixwîniyan de. Ji vê alî ve, ez rêzika peyvan vedikim û ji wî alî ve, tu wan dicivînî.</p>
+        <p class="nc-line">Mîna zaroktiyê — dema Maman kemaxa cilên kevn vedikir û em rêzikê digirtin û dora malan digeryan da ku kemaxa li ser hev bihev nebûya.</p>
       </div>
-      <p class="nc-q" id="q8">'<bdi lang="ku" dir="ltr">Alain Kîrlon</bdi>' is meant as a rude pun on the actor Alain Delon. Would Kurmanji Kurdish readers get it? If not, what word could?</p>
+      <p class="nc-q" id="q8">Is it clear the children walked around inside their own house?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,21 +257,37 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
+    <fieldset class="nc-item" data-id="06/0298#7">
+      <legend>Line 9</legend>
+      <div class="reader nc-text" lang="ku" dir="ltr">
+        <p class="nc-ctx">– Erê, here razê, Nini-jan.</p>
+        <p class="nc-ctx">Em xatirxwestin dikin û carek din pencereya di navbera cîhanên me de tê girtin. Ji camê derve mêze dikim.</p>
+        <p class="nc-line">Tariya parmakên darî yên reş ên pêşiya malê di bin keska pelûşên ku li dora wan pêçiyane ve veşartiye.</p>
+      </div>
+      <p class="nc-q" id="q9">Is it clear this is a black wooden fence, covered in ivy?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
+        <label><input type="radio" name="v9" value="ok"> Correct</label>
+        <label><input type="radio" name="v9" value="change"> Needs change</label>
+        <label><input type="radio" name="v9" value="unsure"> Not sure</label>
+      </div>
+      <p class="guestbook-field">
+        <label for="n9">How would you say it? <span class="nc-optional">(optional)</span></label>
+        <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -299,7 +305,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   <section class="nc-thanks" id="ncThanks" tabindex="-1" hidden>
     <h2>Thank you.</h2>
     <p>Your answers reached Amir.</p>
-    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ku/2/">More lines: round 2 of 3 &rarr;</a></p>
+    <p><a class="btn btn-primary" id="ncNext" href="/sedaha/check/ku/2/">More lines: round 2 of 2 &rarr;</a></p>
     <p><a href="/sedaha/read/ku/">&larr; <span class="native" lang="ku" dir="ltr">Kurmancî</span></a></p>
   </section>
 </main>
@@ -318,7 +324,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

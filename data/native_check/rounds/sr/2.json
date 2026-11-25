@@ -2,20 +2,13 @@
  "lang": "sr",
  "slug": "sr",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
-   "id": "01/0138#1",
-   "where": "01/0138",
-   "text": "Рекла је: срце ми труне.",
-   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Не једи тугу, мој паметни дечаче.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Биби, нека јој је лака земља, говорила је у таквим тренуцима: ако то кажем, језик ме пече; ако не кажем, коштана срж ми гори.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +19,45 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Биби, нека јој је лака земља, говорила је у таквим тренуцима: ако то кажем, језик ме пече; ако не кажем, коштана срж ми гори.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Немој да кажеш оном проклетом Ескандару — опет ће да седне и сат времена нам дели савете, па ће ми се јело претворити у змијски отров.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Киша не пада са земље ка небу.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0278#9",
+   "where": "03/0278",
+   "text": "Каруби је љубав, искрено и објективно.",
+   "q": "A student cheers for the politician Karroubi in campus slang. Does this sound natural?",
+   "ctx": 1,
+   "before": [
+    "– Хеј, Таверни, трчи. Трчи, хајдемо. Кажу да нису пустили Карубија на универзитет. Његове присталице су разбиле Хафизову капију и ушле. На неки начин, можеш рећи да су заузели универзитет."
+   ]
   },
   {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Каже: „Добра година познаје се по свом пролећу.“",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0116#3",
+   "where": "01/0116",
+   "text": "Изађи и напоље. Иди тамо где нема много људи.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "ctx": 1,
+   "before": [
+    "– О, колико лепо. Мм-хм, наручиш и донесу ти. Али, Амире-џане, немој да седиш цело време кући."
+   ]
   },
   {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Кажем, ако само седиш овде и читаш поезију, никакав ти се хлеб неће угрејати.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0152#4",
+   "where": "01/0152",
+   "text": "Волео бих да знам шта се дешава у Нини-џаниној глави.",
+   "q": "Nini-jan is Maman, a woman. Does 'Нини-џаниној глави' sound right?",
+   "ctx": 0
+  },
+  {
+   "id": "06/0182#15",
+   "where": "06/0182",
+   "text": "Немој да једеш тугу због Тагија, чујеш, Нана-песар-џан. Ако ти једеш тугу, и ја једем тугу.",
+   "q": "Maman talks to her son about Taghi, who has died; 'једеш тугу' is a Persian idiom kept literally. Would a reader guess that from context?",
+   "ctx": 0
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +67,45 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Рука ми је кратка, а сједињење с тобом далеко.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "Opening/0007#2",
+   "where": "Opening/0007",
+   "text": "Можда је твоја генерација дошла коју годину касније за тај свет предива — али замисли: некад, негде у свету, деца су се тако играла.",
+   "q": "Does this sentence read naturally?",
+   "ctx": 1,
+   "before": [
+    "…мог света, у тренутку кад пишем ове реченице, у твој свет, у тренутку кад седнеш да их читаш. Са ове стране, ја одмотавам нит речи, а са оне стране ти скупљаш речи. Као у детињству, кад би Маман распредала предиво са старе одеће, а ми бисмо узели нит и кружили по кући да се предиво не би гомилало."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Немој да кажеш оном проклетом Ескандару — опет ће да седне и сат времена нам дели савете, па ће ми се јело претворити у змијски отров.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0135#7",
+   "where": "03/0135",
+   "text": "Јасер рече јер Бабин Хавар камион не стаје у сокак.",
+   "q": "Children say why a house on a side street is better; Yaser's reason is his father's truck. Does this read naturally?",
+   "ctx": 2,
+   "before": [
+    "– ... кажем да је раскрсница боља јер мој брат каже да џини више лутају по сокацима. Да ли бисте више волели да вам је кућа у сокаку, као наша, или у раскрсници?",
+    "Сви рекосмо у раскрсници, односно на споредној улици."
+   ]
+  },
+  {
+   "id": "03/0091#6",
+   "where": "03/0091",
+   "text": "Улазна врата су се отворила и ушли су. Врата се затворише.",
+   "q": "The narrator watches a professor and two students enter a building. Does 'затворише' read naturally here?",
+   "ctx": 1,
+   "before": [
+    "…нас, чији је пласман на конкуру био знатно бољи од просека, као надокнаду добијемо лаптопове, а за нашу собу да се купи тепих. Наш проблем није решен, али докторова доброта била је попут хладне воде на жалост оних дана. Пењали су се уз степенице зграде Абу-Рејхан, стигли до врха и скренули улево."
+   ]
+  },
+  {
+   "id": "04b/1106#12",
+   "where": "04b/1106",
+   "text": "Попут оног вуненог кончића за који сам веровао да ме неће пустити да се изгубим, а који се, кад сам имао четири године, закачио за нечију ногу и у гужви се удаљио од мене и оставио ме самог.",
+   "q": "He means the strand of yarn he held as a child. Does 'вуненог кончића' fit?",
+   "ctx": 1,
+   "before": [
+    "…улица Валиаср и Талегани, нека рука ме повуче уназад. Зелена наруквица се заврте у ваздуху и, праћена дугим трубљењем једног црвеног аутомобила у пролазу, одлете до средине улице Валиаср. Још пре него што је стигла до земље, прође аутобус, и наруквица би повучена за аутобусом ка тргу Валиаср."
+   ]
   }
  ]
 }

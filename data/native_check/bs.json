@@ -2,17 +2,90 @@
  "lang": "bs",
  "slug": "bs",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Kao u djetinjstvu, kad bi Maman odmotavala vunu sa starih odjevnih predmeta, a mi bismo uzeli nit i hodali po kući da se vuna ne bi nagomilala.",
-   "q": "Does this sentence read naturally?",
+   "id": "04b/1263#4",
+   "where": "04b/1263",
+   "text": "– Vrrrum, Baba, Baba, kupiš mi ovu vejiku lutkicu?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "before": [
-    "Otvaranje",
-    "…se izgubili u grozničavom šumu svjetskih zbivanja da nisu ovdje zapisani. Zapisani su da postanu most između mog svijeta i tvog. Most iz mog svijeta, u trenutku kad pišem ove rečenice, do tvog, u trenutku kad sjediš da ih čitaš. S ove strane odmotavam nit riječi, a s one strane ti sakupljaš riječi."
+    "– Amir, Amir-jan, sine moj. Probudi se. Probudi se, mamin. Sve je bio san. Ne boj se, ja sam tu.",
+    "…svjetiljku koja je uklonila onu umirujuću tamnu tišinu, a nije imala dovoljno svjetla da me vodi. Treperavu svjetiljku u ruci djevojke za koju nikad nisam saznao gdje se boja vrata njihove kuće smješta u kutiji drvenih bojica. Djevojčica dolazi vrteći se i staje pored mene. Gleda igračke. Kaže:"
    ]
+  },
+  {
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "A ti, s tim svojim kurčevitim načinom govora, trebalo je da se zoveš Alain Kurčon.",
+   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Would Bosnian readers get it? If not, what word could carry it?",
+   "before": [
+    "– Da, Hamoun je dobro ime za tebe. Kao i Hamoun iz filma, i ti si pun pitanja. Pun si tjeskobe i izvor si nemira, ne za sebe, nego za mene.",
+    "Hooman je rekao:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Kiša ne pada uvis sa zemlje.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Ruka mi je kratka, a sjedinjenje s tobom daleko.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Nemoj jesti tugu, moj pametni dječače.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Kažem da ti ovako, ako samo sjediš ovdje i čitaš pjesme, neće ti se hljeb sam ispeći.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Allah da joj se smiluje, govorila bi u ovakvim trenucima: ako kažem, jezik mi izgori; ako ne kažem, srž kostiju mi izgori.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Kaže: „Dobra godina poznaje se po proljeću.“",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Rekla je: srce mi truhne.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "Smijući se, Hooman me snažno pljesne po leđima, a kockica šećera mi uskoči u grlo.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Ne govori tom jadnom Eskandaru, inače će nas sat vremena poučavati i jelo će mi se pretvoriti u zmijski otrov.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04a/0044#2",
@@ -35,23 +108,20 @@
    ]
   },
   {
-   "id": "04b/1263#4",
-   "where": "04b/1263",
-   "text": "– Vrrrum, Baba, Baba, kupiš mi ovu vejiku lutkicu?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "before": [
-    "– Amir, Amir-jan, sine moj. Probudi se. Probudi se, mamin. Sve je bio san. Ne boj se, ja sam tu.",
-    "…svjetiljku koja je uklonila onu umirujuću tamnu tišinu, a nije imala dovoljno svjetla da me vodi. Treperavu svjetiljku u ruci djevojke za koju nikad nisam saznao gdje se boja vrata njihove kuće smješta u kutiji drvenih bojica. Djevojčica dolazi vrteći se i staje pored mene. Gleda igračke. Kaže:"
-   ]
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "Tek nakon što su me roditelji silom ubacili među kokoši, shvatio sam kakav je to drugačiji svijet na onoj strani priče.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "A ti, s tim svojim kurčevitim načinom govora, trebalo je da se zoveš Alain Kurčon.",
-   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Would Bosnian readers get it? If not, what word could carry it?",
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Kao u djetinjstvu, kad bi Maman odmotavala vunu sa starih odjevnih predmeta, a mi bismo uzeli nit i hodali po kući da se vuna ne bi nagomilala.",
+   "q": "Does this sentence read naturally?",
    "before": [
-    "– Da, Hamoun je dobro ime za tebe. Kao i Hamoun iz filma, i ti si pun pitanja. Pun si tjeskobe i izvor si nemira, ne za sebe, nego za mene.",
-    "Hooman je rekao:"
+    "Otvaranje",
+    "…se izgubili u grozničavom šumu svjetskih zbivanja da nisu ovdje zapisani. Zapisani su da postanu most između mog svijeta i tvog. Most iz mog svijeta, u trenutku kad pišem ove rečenice, do tvog, u trenutku kad sjediš da ih čitaš. S ove strane odmotavam nit riječi, a s one strane ti sakupljaš riječi."
    ]
   }
  ]

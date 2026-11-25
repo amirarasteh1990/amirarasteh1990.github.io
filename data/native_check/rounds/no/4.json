@@ -1,178 +1,452 @@
 {
+ "format": 2,
  "lang": "no",
  "slug": "no",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Morsmålssjekk",
+  "lead": "Du trenger ikke å ha lest boken. Svar på så mange du vil.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kjære) er persiske ord som er beholdt i boken.",
+  "page": "Side",
+  "correct": "Riktig",
+  "needs_change": "Bør endres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sagt det?",
+  "meaning": "Hva tror du det betyr?",
+  "optional": "(valgfritt)",
+  "your_name": "Navnet ditt",
+  "thanks_tick": "Før opp navnet mitt på takkesiden",
+  "private": "Svarene dine går bare til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og gå videre til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tusen takk!",
+  "popup_text": "Vil du ha navnet ditt på takkesiden på nettstedet? Fullfør alle de 4 sidene, så legger vi det gjerne til.",
+  "popup_button": "Gå videre til side {n}",
+  "arrived": "Takk, svarene dine fra side {n} har kommet fram.",
+  "thanks_last": "Tusen takk! Svarene dine har kommet fram.",
+  "all_done": "Du har sendt alle sidene. Takk for alle sammen!",
+  "already_sent": "Du har allerede sendt denne siden fra denne enheten. Takk!",
+  "continue_with": "Fortsett med side {n}",
+  "need_one": "Velg et svar for minst én linje.",
+  "note_no_answer": "En linje har en merknad: velg et svar for den også.",
+  "name_needed": "Skriv inn navnet du vil ha oppført, eller fjern haken.",
+  "not_connected": "Innsending er ikke koblet til ennå.",
+  "too_long": "Innsendingen tok for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Bruk e-postknappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne siden. Send dem heller på e-post; ingenting du har skrevet, går tapt.",
+  "email_button": "Send svarene på e-post",
+  "shortened": "Noen merknader var for lange for en e-postlenke og ble forkortet der. De fullstendige svarene dine står nedenfor; lim dem inn i e-posten.",
+  "noscript": "Innsending krever JavaScript. Du kan også sende svarene dine på e-post til {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "04a/0022#1",
-   "where": "04a/0022",
-   "text": "Greit, gjørmeleken er ferdig.",
-   "q": "Ghassem, a young boy, tells his little brothers that playing in the mud is over. Does this sound like a child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Omid og jeg gikk etter ham. Jeg likte det så godt. Enda mer enn gjørmelek. Omid og jeg lekte med gjørme i gårdsplassen. Ghassem ropte høyt:"
+   "key": "crude",
+   "title": "Grovt språk",
+   "q": "Her banner personene eller snakker grovt. Høres hver linje naturlig ut?",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "Forbannet være den som nekter for Ørneøye News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "Æsj, hva vil du, Eskandar? Hva i helvete er det med deg?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "Ikke noe navn passer deg, faen.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "Jeg sier jeg ikke ser det, din drittsekk.",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "Svaret er at det ikke kler deg å slikke mester Hooman i ræva.",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "Last da, din drittsekk.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "Hvis McCain kommer til makten, fucker han opp Iran, objektivt sett.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "Hva er det galt med deg nå?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "Æsj, hva er det med den jævla tenkerstillingen din nå igjen?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "Den som vil ha en drittfylt filosofisk diskusjon, kan gå ut på kjøkkenet.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "Din ubrukelige pikk ... huuuuh ... med hodet nede slik ... huuuh ... hvor skal du så fort?",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "Nå bor du i utlandet, så du bryr deg ikke om oss. Din utlandsdyrkende overløper.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Denne lokaliseringspolitikken knullet oss fullstendig.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "Hjernedød. Du får meg til å si det rett ut.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "Hvis alder teller, burde du slikke ballene til Bahman.",
+     "note": null
+    },
+    {
+     "id": "04b/0158#crude",
+     "text": "Man leser så mye, og til slutt, med den jævla uflaksen vår, ender det likevel sånn her.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "Ja, i samme øyeblikk de ser oss, klemmer de igjen rasshølene og holder en sånn avstand at jeg får lyst til å fly dem i ansiktet med begge føttene.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "Piss på dette flakset vårt.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "Da er du en jævla førsteårsstudent.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Hva la det til lengden på pikken min at jeg var best i klassen og, hva vet jeg, tok en grad til, når jobben min nå er å inspisere transformatorstasjoner?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "Og i den rablende tilstanden, hva slags antikviteter ble kastet på oss?",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "Slike morderiske manøvre er akkurat hva man venter seg av deg, men det jeg virkelig undrer meg over, er hvilken jævla idiot som hadde åpnet butikken sin klokken seks en fredag morgen, så du kunne gå og kjøpe et kamera.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "Du kunne ikke engang ete hodet på den. Men faen så gode de søtsakene var.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "vi ble knullet.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "Hvis Kamyar ikke hadde vært så jævlig fin på det og hadde blitt værende på studenthjemmet, ville ingen seng ha blitt ledig og belemret oss med disse to underverkene.",
+     "note": null
+    },
+    {
+     "id": "04b/0454#crude",
+     "text": "Den andre drittsekken, hvis navn vi aldri fant ut av, fra ham var det ingen nyheter på godt to år etter bachelorgraden.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Var det opp til meg, kunne du glemme null; jeg ville tvunget deg til å ete hodet på pikken min og så sparket deg ut av universitetet.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "Altså, du mener at den jævla uflaksen vår, der loddet falt på oss og ga oss et gammelt skrammel som deg, bare fortsetter å gjenta seg?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "Jeg fikk tolv av tjue i kroppsøving; jeg er helt frynsete, og jeg kommer til å skjelle dere ut.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "Jeg kan ikke vaske ansiktet mitt med briller på, din drittsekk.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Det ville vært nok om professorene i elektro- og maskiningeniørfag mange år tidligere ikke hadde fått ståpikk av å skulle ta Abu-Reyhan-bygningen fra Skipsbyggingsfakultetet; da ville ikke Farid ha endt sånn.",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "Jeg sier deg, Eldie-jan, men bare mellom oss: du havnet i utlandet på rein jævla flaks.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "Eldie, i stedet for å ligge og slenge deg på senga sånn og leke med pungen din, så stå opp og send dem.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "Vel, hvis du ikke er typen som søker og drar, hvorfor sprengte du da ræva på TOEFL-eksamen?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "Eldie, se hvor langt du har drevet det: Farid, som gir faen i oss eller rommet eller noen som helst, har sagt fra.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "Hva slags dritt kverner rundt i hodet ditt nå?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "Du ødela den stemningen jeg fikk fra sangen, med den dritstemmen din.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "Rævslikking kler deg ikke.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "Fint, hva som helst for faen.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "Se hvilket flott rot du har stelt i stand, ditt klin tomme hode.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0486#2",
-   "where": "04b/0486",
-   "text": "Altså, du mener at den jævla uflaksen vår, der loddet falt på oss og ga oss et gammelt skrammel som deg, bare fortsetter å gjenta seg?",
-   "q": "Hooman crudely curses their bad luck at being stuck with this roommate. Does this sound like how a young man would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…oversenga Farid tilbake med hånden, da Farid spratt opp fra plassen sin som en fjær. Lyden av Hoomans fingerknips ekkoet gjennom rommet. Farids pute passerte ved siden av Eskandars hode og traff veggen. Puten falt bak Meysam, sammen med et par av klesplaggene som hang på knaggerekken. Hooman sa:"
-   ]
-  },
-  {
-   "id": "04a/0024#3",
-   "where": "04a/0024",
-   "text": "Bataljon, fremad marsj!",
-   "q": "Ghassem, a boy, plays army commander and gives his little brothers a marching order. Does it sound like a real command?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Først stod vi litt i stua. Ghassem pleide å si noen ting. Så pleide han å si:"
-   ]
-  },
-  {
-   "id": "04b/0162#4",
-   "where": "04b/0162",
-   "text": "Ja, i samme øyeblikk de ser oss, klemmer de igjen rasshølene og holder en sånn avstand at jeg får lyst til å fly dem i ansiktet med begge føttene.",
-   "q": "Farid crudely mocks snobbish Tehran students who keep their distance. Does this sound like how young men in a dorm talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "03/0663#5",
-   "where": "03/0663",
-   "text": "Denne lokaliseringspolitikken knullet oss fullstendig.",
-   "q": "Hooman swears about an admissions policy that ruined their chances. Does this sound like natural student swearing?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04b/0181#6",
-   "where": "04b/0181",
-   "text": "Spis hodet på pikken min, mann. Vi har fått nok av deg.",
-   "q": "Hooman tells off a roommate with a crude insult. Does this sound like something young men in a dorm would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman løftet tommelfingeren igjen og sa:"
-   ]
-  },
-  {
-   "id": "04b/0899#7",
-   "where": "04b/0899",
-   "text": "Din pikkhodeeter, hvorfor vrøvler du?",
-   "q": "Hooman insults a friend with a crude compound word. Does it sound like a real insult young men would use?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman sa:"
-   ]
-  },
-  {
-   "id": "04b/1003#8",
-   "where": "04b/1003",
-   "text": "Se hvilket flott rot du har stelt i stand, ditt klin tomme hode.",
-   "q": "Eskandar, furious, calls Amir an idiot. Does this sound rough and natural for a young man?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar vendte seg mot meg og lente hode og bryst frem i min retning. Han hadde sperret opp øynene, og med en grov tone som fortsatt bevarte sin Alain Delon-kvalitet, sa han:"
-   ]
-  },
-  {
-   "id": "03/0586#9",
-   "where": "03/0586",
-   "text": "Den som vil ha en drittfylt filosofisk diskusjon, kan gå ut på kjøkkenet.",
-   "q": "Hooman switches off the light and tells his roommates to take their philosophical rubbish elsewhere. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar og Meysam hadde begynt å analysere hvordan det som skjedde på maskiningeniørfakultetet var en håndfull som viste hele lasset. De knyttet det til verdens konkurranseorienterte og forbruksorienterte samtid og den slags ting. Diskusjonen trakk ut. Hooman slukket lyset og sa:"
-   ]
-  },
-  {
-   "id": "03/0502#10",
-   "where": "03/0502",
-   "text": "Æsj. Det fikk huden min til å krype.",
-   "q": "Farid shudders at a gory video. Does this sound like a natural reaction?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "04b/0723#11",
-   "where": "04b/0723",
-   "text": "Vel, hvis du ikke er typen som søker og drar, hvorfor sprengte du da ræva på TOEFL-eksamen?",
-   "q": "Hooman crudely asks why Amir worked so hard for the TOEFL exam. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Og han lo. Jeg sa ingenting. Hooman fortsatte:"
-   ]
-  },
-  {
-   "id": "04b/0353#12",
-   "where": "04b/0353",
-   "text": "Og i den rablende tilstanden, hva slags antikviteter ble kastet på oss?",
-   "q": "Hooman, crude and bitter, recalls a messed-up time and the odd roommates they got. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Han tømmer teen sin og tørker munnen med baksiden av hånden."
-   ]
-  },
-  {
-   "id": "04b/1314#13",
-   "where": "04b/1314",
-   "text": "I trettito måneder har jeg elsket Dem. Fra avstand.",
-   "q": "Amir, shy and very formal, finally confesses his love to a fellow student. Does the way he addresses her suit the moment?",
-   "ctx": 0,
-   "kind": "dialogue"
-  },
-  {
-   "id": "03/0345#14",
-   "where": "03/0345",
-   "text": "Er ikke Deres ærend avsluttet?",
-   "q": "A young woman coldly asks Amir whether he has finished what he came for. Does this sound natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "Hun sa:"
-   ]
-  },
-  {
-   "id": "03/0432#15",
-   "where": "03/0432",
-   "text": "og former munnen som en hønsebak og river deg selv i stykker for å snakke som ham.",
-   "q": "Hooman mocks Eskandar for pursing his lips and straining to talk like a film star. Does this crude image sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman rundet munnen og laget nesen sin så liten og rynket som han kunne — akkurat som Eskandars ansikt ble når han snakket."
-   ]
-  },
-  {
-   "id": "04a/0054#16",
-   "where": "04a/0054",
-   "text": "Æsj, jeg er trøtt.",
-   "q": "Omid, a small boy, complains that he is tired on a long walk. Does this sound like a small child?",
-   "ctx": 1,
-   "kind": "child",
-   "before": [
-    "Det var veldig langt. Helt til den andre enden av verden. Kanskje ikke. Men det var veldig langt. Jeg pleide å bli trøtt halvveis. Men jeg sa ingenting. En gang sa Omid:"
+   "key": "natural",
+   "title": "Høres det naturlig ut?",
+   "q": "Høres hver linje naturlig og tydelig ut?",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Så enkelt – på et blunk er alle jordkornene forvandlet til gull.",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "Tenk da bare hva stakkars Baba må gå igjennom – han har sittet hjemme uten arbeid alle disse årene.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "Ja, vår Baba-jan er virkelig sulten på respekt.",
+     "note": null
+    },
+    {
+     "id": "03/0079#natur",
+     "text": "Og enda mer.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "La oss da skåle med denne teen for Ørneøye News' helse.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "Er ikke Deres ærend avsluttet?",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "Jeg er en ekstremistisk nasjonalistisk anarkist.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "Æsj. Det fikk huden min til å krype.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "Det ene øyeblikket gjør han mordermanøvrer, det neste sier han: «Å, blod. Det fikk huden min til å krype.»",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "Hvor på halsen min står det «fotfeste»?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Har du viderekoblet samtalene mine til et sted du virkelig ikke burde?",
+     "note": null
+    },
+    {
+     "id": "04a/0048#natur",
+     "text": "Det er alderen, nabo.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "Objektivt, bare fordi vi kom noen dager for sent, oppfører disse teheranerne seg – de som bare kom inn på AmirKabir takket være lokalisering – som om det er vi som kom inn via kvote, ikke de.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "Altså, ikke snakk så høflig til ham, det stiger ham til hodet.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "Ikke la deg lure av denne Arasteh; tåpelig som han ser ut, var Konkur-plasseringen hans syttifire.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "For et par år siden hørte jeg fra Ørneøye News at den pjattete hadde reist til Australia også, litt på jakt etter jenta som dere begge elsket.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "Du er nødt til å komme ut av tilfluktsstedet ditt og faktisk gjøre noe, ikke komme hit og sitte og fantasere.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "Det irriterer meg så mye når du sitter sånn stille. Jeg får lyst til å slå deg med knyttneven.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "Ingen andres værelse har teppe, Baba-jan.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "Leopard-Farid, hold nervene i tømme og ikke gjør en morderisk manøver.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "Det er alt filosofi og romaner. Fint, Nietzsche er her også.",
+     "note": null
+    },
+    {
+     "id": "04b/0554#natur",
+     "text": "Hva slags tid er begynnelsen av måneden Esfand for en eksamen?",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "Ørneøye, Gud tilgi deg aldri, du ødela ryggen min.",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "For din mors skyld, ikke gå rundt på rommet uten briller.",
+     "note": null
+    },
+    {
+     "id": "04b/0586#natur",
+     "text": "Hva-coin?",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objektivt, hvis det slår an, pakker det sammen hele bankvesenet og alt sånt.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Med eller uten mellomledd er det meg likegyldig.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "Fint, Ørneøye, fint. Stikk nå ikke brillene inn i laptopen.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "Var Flua her, ville antennene hans ha spisset seg med én gang: Hva er dette som gir en slik avkastning?",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "Si nå hva du vil, men hold det avsluttende beitet i minne.",
+     "note": null
+    },
+    {
+     "id": "04b/1260#natur",
+     "text": "Han var gått tilbake for å hente sandalen min, og guttene fra det motsatte stredet lukket seg om ham som en ulveflokk.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "Sannsynligvis fordi han ikke hører noe og ikke vet hva som foregår, fikk frykten aldri tak i ham.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "Åååhhhh. Det var jeg som hadde sagt det til henne.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "Jeg ville gjort alt for deg, Nini-jan. Hodet ditt fungerer så godt.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "Midt i all denne vinterkulden, hvor har sangfuglene kommet fra? Nok en gang er jeg mine egne forestillingers fange.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 17
 }

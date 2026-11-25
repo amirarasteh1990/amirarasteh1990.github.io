@@ -1,192 +1,357 @@
 {
+ "format": 2,
  "lang": "it",
  "slug": "it",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisione madrelingua",
+  "lead": "Non serve aver letto il libro. Rispondi a quante domande vuoi.",
+  "persian_words": "Maman (madre), Baba (padre) e -jan (caro) sono parole persiane, mantenute nel libro.",
+  "page": "Pagina",
+  "correct": "Corretto",
+  "needs_change": "Da cambiare",
+  "not_sure": "Non so",
+  "how_say": "Come lo diresti?",
+  "meaning": "Secondo te, che cosa significa?",
+  "optional": "(facoltativo)",
+  "your_name": "Il tuo nome",
+  "thanks_tick": "Inserisci il mio nome nella pagina dei ringraziamenti",
+  "private": "Le tue risposte arrivano solo all'autore.",
+  "send": "Invia",
+  "send_continue": "Invia e vai alla pagina {n}",
+  "sending": "Invio in corso…",
+  "popup_title": "Grazie!",
+  "popup_text": "Vuoi il tuo nome nella pagina dei ringraziamenti del sito? Completa tutte e 4 le pagine e lo aggiungeremo volentieri.",
+  "popup_button": "Vai alla pagina {n}",
+  "arrived": "Grazie, le tue risposte della pagina {n} sono arrivate.",
+  "thanks_last": "Grazie! Le tue risposte sono arrivate.",
+  "all_done": "Hai inviato tutte le pagine. Grazie per ognuna!",
+  "already_sent": "Hai già inviato questa pagina da questo dispositivo. Grazie!",
+  "continue_with": "Continua con la pagina {n}",
+  "need_one": "Scegli una risposta per almeno una riga.",
+  "note_no_answer": "Una riga ha una nota: scegli, per favore, una risposta anche per quella.",
+  "name_needed": "Aggiungi il nome che vuoi vedere nell'elenco, oppure togli la spunta.",
+  "not_connected": "L'invio non è ancora attivo.",
+  "too_long": "L'invio ha richiesto troppo tempo.",
+  "cannot_send": "Non è stato possibile inviare le risposte da qui.",
+  "use_email": "Usa, per favore, il pulsante email qui sotto.",
+  "fallback": "Non è stato possibile inviare le risposte da questa pagina. Inviale per email; niente di ciò che hai scritto è andato perso.",
+  "email_button": "Invia le risposte per email",
+  "shortened": "Alcune note erano troppo lunghe per un link email e lì sono state accorciate. Le tue risposte complete sono qui sotto: incollale nell'email, per favore.",
+  "noscript": "Per inviare serve JavaScript. Puoi anche mandare le tue risposte via email a {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/0571#1",
-   "where": "04b/0571",
-   "text": "Prima venite a documentare questo pollice, poi fate un film su quello che vi pare.",
-   "q": "In Iran a raised thumb is a rude gesture, like the middle finger. Does Hooman's crude joke work here?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Farid guardava qualcosa nel piccolo monitor della fotocamera che aveva comprato il mese prima. Disse:",
-    "– Ragazzi, facciamo un documentario sulla nostra stanza.",
-    "Hooman tirò fuori la mano da sotto la coperta e disse:"
+   "key": "maman",
+   "title": "La voce della madre",
+   "q": "La madre parla con calore, a volte rimproverando, come una donna qualunque di una piccola città. Ogni riga sembra detta da lei?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0090#maman",
+     "text": "Sto a guardare e mi mangio il dolore.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Vai anche fuori. Vai dove non c'è gente.",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "Quello con l'insegnante stupido? Mm-hm, guardate quello. È divertente. Ridete un po'.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Sto forse mentendo? È seduto in casa dall'anno in cui sei nato.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Scherziamo per ridere, Nana-pesar-jan. Figurati se se ne va.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "Pettegolezzo? È pettegolezzo se non ti hanno fatto un torto.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "Hmm, vediamo: vi viene in mente una sola cosa buona di vostro Baba? Ditela, e starò zitta.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "Magari fosse diventato un drogato, invece di essere così.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "Chi lo vuole se lo prenda. Ci aggiungiamo pure qualcosa.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Avevamo camminato a piedi dal viale fino a casa, e continuava ad alzare la mano – come se la sua mano fosse una cosa sacra da baciare.",
+     "note": null
+    },
+    {
+     "id": "01/0222#maman",
+     "text": "Hmph! Certo che Ghassem dice la verità.",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "Mm-hm, è cambiato molto, molto. È diventato così magro e scuro in viso.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "Amir, avere il ruolo principale è una cosa buona?",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "Tutto quello che fai è raffazzonato.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Hmm, neanch'io dico che non dobbiate innamorarvi. Prima conoscete la persona, sposatevi, e poi se volete, innamoratevi.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "Ti ho trovato quattro volte. Adesso vieni, bambino mio, da bravo.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "No. Finché questo filo ce l'hai in mano, non ti perdi. L'altro capo ce l'ho io.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "Bravo, il mio bambino furbo. Ogni volta che qualcosa ti spaventa, usa un trucco così non ti spaventi.",
+     "note": null
+    },
+    {
+     "id": "04b/0526#maman",
+     "text": "Da dove è arrivata un'onda così?",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "Caspita. Allora i paesi dovevano essere vicini tra loro.",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "È arrivata la fine dei tempi. La generazione di Bibi diceva che, quando arriva la fine dei tempi, la terra non smette di tremare.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "Ho fatto voto che, se guarisce, andrò a Mashhad a piedi.",
+     "note": null
+    },
+    {
+     "id": "06/0009#maman",
+     "text": "Voglio dire, hai superato la prova?",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "Hmm, allora anch'io dico che il mio cuore si stringe. Lasciatemi andare a trovare le mie amiche.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "Hmm, pensavamo che ci saresti rimasto male, Nana-pesar-jan. Dovevi discutere la tesi di dottorato.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, devi proprio mangiare bene. Mangia cose che ti diano forza.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "All'ospedale continuavano a chiamare: «Familiari della signora Adham!» Nessuno si muoveva.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "Hmm, quella gente non aveva fatto quasi niente per lei nemmeno quand'era viva.",
+     "note": null
+    },
+    {
+     "id": "06/0165#maman",
+     "text": "Aveva bevuto troppa bibita gassata.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "È così che dici grazie?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "Hmm, ci sei andato per farti un giro e divertirti, e ti sei divertito. Le difficoltà, però, non le hai viste.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "Pfff, ogni volta che gli si chiede di andare a prendere qualcosa, sembra che prenda una scossa elettrica.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "Si lamenta senza motivo, eh, Amir-jan. Se non è questo, troverà qualcos'altro.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "Oh, a Nini è venuto sonno tutt'a un tratto. Sono sveglia da stamattina.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0389#2",
-   "where": "04b/0389",
-   "text": "Non avresti potuto mangiarne nemmeno la testa.",
-   "q": "Hooman retorts crudely, meaning: you couldn't have done a thing about it. Does this comeback make sense?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Stanotte sentivo il rumore della tua ruminazione. Peccato che il mio Baba dormisse, altrimenti mi sarei alzato e ti avrei tirato fuori dalla gola ogni singolo dolce.",
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "03/0630#3",
-   "where": "03/0630",
-   "text": "È proprio un Taverny, in tutta onestà.",
-   "q": "Farid turns 'Anziano della Taverna' into the nickname 'Taverny' for Amir. Does this nickname sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, l'Anziano della Taverna, Eldie — perfetto. Hai fatto centro, Farid Leopardo.",
-    "Farid disse:"
-   ]
-  },
-  {
-   "id": "04b/0591#4",
-   "where": "04b/0591",
-   "text": "Pir a pir?",
-   "q": "Amir mishears the English 'peer to peer' as pir, Persian for an old sage. Would Italian readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Una specie di moneta elettronica peer to peer.",
-    "Dissi:"
-   ]
-  },
-  {
-   "id": "03/0126#5",
-   "where": "03/0126",
-   "text": "Hm. L'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, parla esattamente così.",
-   "q": "Hamid always cites this absurdly long chain of people as his authority, a running joke. Is it funny and clear?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid disse:"
-   ]
-  },
-  {
-   "id": "04b/1248#6",
-   "where": "04b/1248",
-   "text": "L'uomo più ricco di Teheran, l'amico del cugino del mastro artigiano di nostro cognato, ha detto che il nero è il colore dell'amore.",
-   "q": "A boy repeats his catchphrase: an absurd chain of people he quotes as his authority. Does it sound like a catchphrase?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Se ci fosse stato il nero, avrei preso il nero."
-   ]
-  },
-  {
-   "id": "03/0388#7",
-   "where": "03/0388",
-   "text": "Senza occhiali non vedo niente, oggettivamente.",
-   "q": "Sajad says 'oggettivamente' all the time, out of habit. Does it sound like a funny verbal tic here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Sajad disse:"
-   ]
-  },
-  {
-   "id": "03/0055#8",
-   "where": "03/0055",
-   "text": "Io parlo così e basta; voi mi sentite e pensate che io stia recitando poesie.",
-   "q": "Hamid, a boy poet, answers in a sing-song, poem-like rhythm. Does this line have some of that rhythm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid disse, con lo stesso ritmo con cui recitava le sue poesie:"
-   ]
-  },
-  {
-   "id": "04b/0181#9",
-   "where": "04b/0181",
-   "text": "Mangia la testa del mio cazzo, dai.",
-   "q": "Hooman tells a know-it-all roommate to shut up, in the crudest way. Does this sound like a real Italian insult?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman alzò di nuovo il pollice e disse:"
-   ]
-  },
-  {
-   "id": "04b/0899#10",
-   "where": "04b/0899",
-   "text": "Mangiateste di cazzo, perché dici scemenze?",
-   "q": "Hooman insults a roommate with a crude made-up word. Does it sound like something a young Italian would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0997#11",
-   "where": "04b/0997",
-   "text": "Vabbè, qualunque stronzata.",
-   "q": "After a silly back-and-forth over a name, Eskandar gives up with a crude shrug. Does this sound natural?",
-   "ctx": 4,
-   "kind": "crude",
-   "before": [
-    "– Hamoon, ammettilo che ...",
-    "– Hooman.",
-    "– Hamoon.",
-    "E così continuavano a ripetere botta e risposta, e a ogni botta e risposta le ripetizioni acceleravano. Finché Eskandar disse:"
-   ]
-  },
-  {
-   "id": "04b/0351#12",
-   "where": "04b/0351",
-   "text": "Cago su quei giorni e su come la pensavamo.",
-   "q": "Hooman, now older, crudely dismisses his student days. Does this sound like natural Italian swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Che «bei tempi», Dottore?"
-   ]
-  },
-  {
-   "id": "04b/0385#13",
-   "where": "04b/0385",
-   "text": "Sempre molto elegante e formale, caga proprio al momento storico cruciale.",
-   "q": "Hooman jokes, crudely, that Amir always messes up at the decisive moment. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Eldie è Taverny. Non può farci nulla. È la sua impostazione di fabbrica."
-   ]
-  },
-  {
-   "id": "04b/0893#14",
-   "where": "04b/0893",
-   "text": "Con quella tua voce di merda hai cagato sull'atmosfera in cui mi aveva immerso la canzone.",
-   "q": "Hooman crudely complains that a roommate's singing ruined his mood. Does this sound like natural slang?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman disse:"
-   ]
-  },
-  {
-   "id": "04b/0378#15",
-   "where": "04b/0378",
-   "text": "Testa di merda, nessuno ti chiama muto se non scoreggi.",
-   "q": "Eskandar wakes Amir with a crude Persian saying, put word for word. Does it work in Italian?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…avevo scambiato con Niloofar. Le luci del corridoio si spensero e il rumore delle altre stanze si addormentò. Nel buio e nel silenzio della mezzanotte, l'ombra di Hooman scivolò dalla porta e andò direttamente alla scatola dei dolci. Come se la annusasse. La mattina, Eskandar mi svegliò e disse:"
-   ]
-  },
-  {
-   "id": "03/0640#16",
-   "where": "03/0640",
-   "text": "Rinnegato adoratore degli stranieri.",
-   "q": "Hooman jokingly insults his old friend who moved abroad. Does this insult sound like everyday speech?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Pfff, accidenti a te. Sei diventato un espatriato e ormai te ne sbatti i coglioni di noi."
+   "key": "child_talk",
+   "title": "Come parlano i bambini",
+   "q": "Queste righe sono dette da bambini. Ognuna sembra detta da un bambino?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "Che bomba.",
+     "note": null
+    },
+    {
+     "id": "03/0185#child",
+     "text": "Va bene, ma cosa fai se qualcuno lancia un sasso e si rompe?",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "Pfff, asino, chi lo sa meglio, l'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran, o tu, vitello?",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "Quindi perché adesso che sono fermo dietro alla porta del vicolo non viene a trovarmi neanche una volta?",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "Stamattina sono andato nel cortile. Maman ha detto che sono in gamba.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "Va bene, vieni anche tu in missione, ma devi stare molto attento. Le tappe sono molto difficili.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "Be', mettine meno. Ma non troppo di meno. Un pochino meno.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "Ingresso nella strada principale: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "Si chiama il bazar di Quchan, e la nostra casa è in fondo al bazar di Quchan.",
+     "note": null
+    },
+    {
+     "id": "04a/0049#child",
+     "text": "Se non fosse vecchio non toglierebbe i ceci. Se non li toglie, Maman fa più ash.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "La terza tappa è un incrocio. Un incrocio vuol dire molto grande.",
+     "note": null
+    },
+    {
+     "id": "04a/0053#child",
+     "text": "Era tanto. Fino alla fine del mondo. Forse no. Ma era tanto.",
+     "note": null
+    },
+    {
+     "id": "04a/0059#child",
+     "text": "Maman ha detto che Dio è in cielo. Anche il cielo è blu dopotutto.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "Tanti falliscono qui. Vanno a sinistra.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "Il lato sinistro è pericoloso. La casa con la porta rossa è di un vecchio molto arrabbiato. Ancora più arrabbiato di Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "Se facciamo rumore, il maestro ci picchia sulle mani con il righello.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "Dall'altra parte della scuola c'è il cimitero. È molto vecchio. Alcune lapidi sono sparite. Si vedono le ossa dei morti.",
+     "note": null
+    },
+    {
+     "id": "04a/0071#child",
+     "text": "Il mio cuore si svuotava. Non volevo andarci.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "Niente domande. Ascolta il comandante.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "Ehi, perché hai buttato via il bastone? Con cosa suoniamo il campanello, allora?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "Non l'hai detto.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "Appena impara i nostri nomi, le saremo simpatici.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

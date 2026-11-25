@@ -2,38 +2,8 @@
  "lang": "gd",
  "slug": "gd",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "03/0582#1",
-   "where": "03/0582",
-   "text": "Thog Farid a chluasag 's a phlaide agus thàinig e a laighe air an leabaidh os cionn mo thè-sa, an leabaidh air an do chaidil Bahman fad a' chiad dà theirm den oilthigh, agus an oidhche sin, faisg air trì bliadhna, bha blàths corp Bahman air a dhol à cuimhne an tashkaid air an leabaidh.",
-   "q": "Is 'tashkaid' a clear word for the mattress on the bed?",
-   "before": [
-    "– Càite air m' amhach a tha e sgrìobhte gur e àite-coise a th' ann?",
-    "– Gu h-oibeactach, chaidh mi a bhrusadh mo fhiaclan, nigh mi mo làmhan 's m' aodann cuideachd, chan eil na speuclairean agam orm, chan fhaca mi."
-   ]
-  },
-  {
-   "id": "04b/0582#2",
-   "where": "04b/0582",
-   "text": "Mura biodh an sgriubha aige air stad air mar gum feumadh e ceum fhaighinn bho Oilthigh Sharif an toiseach mus fàgadh e Ìran, bhiodh e air Ìran fhàgail dìreach às dèidh a' cheum-bhun-sgoile.",
-   "q": "Is 'cheum-bhun-sgoile' clear for a first university degree, a bachelor's?",
-   "before": [
-    "– Sùil Iolaire, thig an seo. Dh'fhàg thu do speuclairean aig bonn mo leapa.",
-    "– ... leis na sùilean laga aige, chaidh e a dh'Ameireagaidh às dèidh a cheum mhaighstireil. Gu dearbh, mar a chanadh e fhèin, gu h-oibeactach, ha-ha, gu h-oibeactach nam biodh aon againn ri dhol thall thairis, b' e Sùil Iolaire a bhiodh ann."
-   ]
-  },
-  {
-   "id": "04b/0964#3",
-   "where": "04b/0964",
-   "text": "Agus nam bhruadar, gach latha, nuair a choinnicheadh Niloofar agus Sina, bheireadh iad làmh a chèile.",
-   "q": "Is it clear Niloofar and Sina shake hands when they meet?",
-   "before": [
-    "…air càch le fearg. Bhon oidhche sin, cha robh dad air fhàgail againn ri èisteachd ris. A-rithist, mar na làithean ron Walkman, às dèidh do sholais taigh Negar a dhol às, rachamaid agus shuidheamaid an sin, air a' chabhsair ri taobh na prìomh shràide, a' coimhead nan càraichean a' dol seachad.",
-    "Às dèidh an latha sin, cha rachadh Niloofar còmhla ris na nigheanan eile a-null gu bothan Yaghoob. Rachadh i dìreach a-mach às an oilthigh."
-   ]
-  },
   {
    "id": "04b/1003#4",
    "where": "04b/1003",
@@ -45,14 +15,49 @@
    ]
   },
   {
-   "id": "04b/1225#5",
-   "where": "04b/1225",
-   "text": "A bharrachd air caraid co-ogha maighstir-ciùird an fhir-chèile aca, cha robh ach am falt-cùil aige na adhbhar pròis.",
-   "q": "Is 'an fhir-chèile aca' right for their brother-in-law, a sister's husband?",
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "– Agus thusa, leis an dòigh bhoidich agad air bruidhinn, bu chòir gum biodh Alain Bodlon mar ainm ort.",
+   "q": "'Alain Bodlon' is meant as a rude pun on the actor Alain Delon. Would Scottish Gaelic readers get it? If not, what word could?",
    "before": [
-    "Chunnaic mi rud beag soilleir an oisean eile den mhullach. Choimhead mi gu cùramach. B' e Farid a bh' ann. Bliadhna às dèidh do ghlùin Farid tighinn a-nuas air sròn Eskandar, bha Farid na shuidhe crois-chasach an oisean dorcha den mhullach. Bha e air fhalt a rùsgadh.",
-    "Bha ad le oir aig Hamid gus fhalt a bha air a bhearradh gu goirid a chòmhdach."
+    "– Tha, tha Hamoon na ainm math dhut. Coltach ri Hamoon san fhilm, tha thusa cuideachd làn cheistean. Làn iomagain, agus tha thu nad thùs do-fhoighidinn, chan ann dhut fhèin ach dhòmhsa.",
+    "Thuirt Hooman:"
    ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Chan eil an t-uisge a' tuiteam bhon talamh suas chun na speuran.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Tha mo làmh goirid agus tha do choinneachadh fada air falbh.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Tha mi ag ràdh, ma bhios tu dìreach an-comhnaidh a' suidhe an seo a' leughadh bardachd, cha teid arain a dhèanamh dhut.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bhiodh Bibi, Dia gum bi tròcaireach oirre, ag ràdh aig amannan mar seo, ma chanas mi e, loisgidh mo theanga; mura can mi e, loisgidh smior mo chnàmhan.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Tha e ag ràdh, chithear bliadhna mhath bhon earrach aice.",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/1256#6",
@@ -65,16 +70,6 @@
    ]
   },
   {
-   "id": "06/0214#7",
-   "where": "06/0214",
-   "text": "A rèir choltais, bha eagal air a bhean ro na h-euslaintich aige, is sin as coireach, an aghaidh a h-uile taigh eile, gu bheil na sgàilean fiodha dubha seo againn air beulaibh an taighe.",
-   "q": "Is 'sgàilean fiodha' right for a wooden fence in front of the house?",
-   "before": [
-    "Chaidh sinn a-mach air an doras. Thuirt e:",
-    "– B' e lighiche air tinneasan inntinn a bh' anns an lighiche a cheannaich an taigh."
-   ]
-  },
-  {
    "id": "06/0298#8",
    "where": "06/0298",
    "text": "A-nis, on a tha mo thràchdas seachad agus mi air socrachadh beagan, faodaidh mi sgrìobhadh gu Niloofar gus fios a bhith aice gun do thog mi broinn-tasgaidh dhi, làn fhaclan.",
@@ -82,16 +77,6 @@
    "before": [
     "– Ceart, rach is gabh cadal, a Nini-jan.",
     "…dà itealan a chaidh seachad roimhe. Cia mheud naidheachd mì-thlachdmhor eile a tha air a bhith air an cumail bhuam? Cia mheud snàth caol eile a chaidh a tharraing a-mach à mo chridhe mìosan air ais gun fhios agam? Bidh mi a' gabhail fasgadh anns an aithris uair is uair de na tha mi air sgrìobhadh."
-   ]
-  },
-  {
-   "id": "03/0430#9",
-   "where": "03/0430",
-   "text": "– Agus thusa, leis an dòigh bhoidich agad air bruidhinn, bu chòir gum biodh Alain Bodlon mar ainm ort.",
-   "q": "'Alain Bodlon' is meant as a rude pun on the actor Alain Delon. Would Scottish Gaelic readers get it? If not, what word could?",
-   "before": [
-    "– Tha, tha Hamoon na ainm math dhut. Coltach ri Hamoon san fhilm, tha thusa cuideachd làn cheistean. Làn iomagain, agus tha thu nad thùs do-fhoighidinn, chan ann dhut fhèin ach dhòmhsa.",
-    "Thuirt Hooman:"
    ]
   }
  ]

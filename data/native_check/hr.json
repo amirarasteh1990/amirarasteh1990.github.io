@@ -2,58 +2,8 @@
  "lang": "hr",
  "slug": "hr",
  "dir": "ltr",
- "version": "2026-11-22",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "S ove strane odmotavam nit riječi, a s druge strane ti skupljaš riječi.",
-   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0430#2",
-   "where": "03/0430",
-   "text": "I ti, s tim svojim kurčevitim načinom govora, trebao si se zvati Alain Kurčon.",
-   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Would Croatian readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0528#3",
-   "where": "03/0528",
-   "text": "Za norouz stolom, u trenutku dolaska nove godine, kad sam čitao pjesmu za majku, Maman je umjesto da se raduje postala uznemirena.",
-   "q": "At the Persian spring festival table, he read the poem exactly as the year turned. Is that moment clear?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0666#4",
-   "where": "03/0666",
-   "text": "Maman je bacila moj madrac na vrh dvorišnog zida.",
-   "q": "Maman simply put his mattress on top of the wall, without anger. Does 'bacila' say that?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0042#5",
-   "where": "04a/0042",
-   "text": "– Zove se Quchan Bazaar i naša kuća je na kraju Quchan Bazaara.",
-   "q": "Two boys argue about what their street is called. Does 'Quchan Bazaar' read naturally as its name?",
-   "ctx": 3,
-   "before": [
-    "Taj dan Hashem se posvađao s Abolfazlom. Abolfazl je rekao:",
-    "– To je glavna ulica.",
-    "Hashem je rekao:"
-   ]
-  },
-  {
-   "id": "04a/0076#6",
-   "where": "04a/0076",
-   "text": "– To je mramal. Mramal znači jako skupo.",
-   "q": "A small boy says 'mramal' for 'mramor' and wrongly thinks it means expensive; both mistakes are intended. Does it sound like a child?",
-   "ctx": 1,
-   "before": [
-    "Krenuli smo dalje. Na pola puta bila je kuća. Njezin zid je bio lijep. Ghassem bi uvijek govorio:"
-   ]
-  },
   {
    "id": "04b/1263#7",
    "where": "04b/1263",
@@ -62,17 +12,6 @@
    "ctx": 1,
    "before": [
     "…lampu koja je uništila onu ugodnu, umirujuću tamnu tišinu, a nije davala dovoljno svjetla da me negdje povede. Lampu koja trepće u ruci djevojke za boju čijih vrata nikad nisam znao na kojem je mjestu u kutiji drvenih bojica. Jedna djevojčica dolazi bučno i staje pored mene. Gleda igračke. Kaže:"
-   ]
-  },
-  {
-   "id": "04b/1265#8",
-   "where": "04b/1265",
-   "text": "– Da, kupit ću ti vejiku lutkicu. Kad mi dođe novac, kupit ću ti i bolju od te, Babina djevojčice.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Viiiž, Baba, Baba, kupiš mi ovu vejiku lutkicu?",
-    "Neki glas iza mene kaže:"
    ]
   },
   {
@@ -86,18 +25,49 @@
    ]
   },
   {
-   "id": "04b/1321#10",
-   "where": "04b/1321",
-   "text": "\"Ono vino što je onde istina je ne metafora.\"",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
+   "id": "03/0430#2",
+   "where": "03/0430",
+   "text": "I ti, s tim svojim kurčevitim načinom govora, trebao si se zvati Alain Kurčon.",
+   "q": "'Alain Kurčon' is meant as a rude pun on the actor Alain Delon. Would Croatian readers get it? If not, what word could carry it?",
    "ctx": 0
   },
   {
-   "id": "04b/1322#11",
-   "where": "04b/1322",
-   "text": "Uvjeren da će mi odgovoriti, nazvah Maman i rekoh da su nam organizirali dopunsku nastavu pa moram ostati duže.",
-   "q": "His made-up excuse is extra classes. Does 'dopunsku nastavu' mean that?",
-   "ctx": 0
+   "id": "04a/0076#6",
+   "where": "04a/0076",
+   "text": "– To je mramal. Mramal znači jako skupo.",
+   "q": "A small boy says 'mramal' for 'mramor' and wrongly thinks it means expensive; both mistakes are intended. Does it sound like a child?",
+   "ctx": 1,
+   "before": [
+    "Krenuli smo dalje. Na pola puta bila je kuća. Njezin zid je bio lijep. Ghassem bi uvijek govorio:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Kiša ne pada uvis sa zemlje.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Ruka mi je kratka, a sjedinjenje s tobom daleko.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Ne jedi tugu, moj pametni dječače.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, neka joj je laka zemlja, znala je reći u ovakvim trenucima: Ako kažem, gori mi jezik; ako ne kažem, gori mi srž kostiju.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "06/0056#12",
@@ -110,20 +80,24 @@
    ]
   },
   {
-   "id": "06/0236#13",
-   "where": "06/0236",
-   "text": "Khe, khe. Vukao si nas amo-tamo.",
-   "q": "Does 'Vukao si nas amo-tamo' mean you wore us out?",
-   "ctx": 1,
-   "before": [
-    "– ...khe. Da. Ti nas nikad nisi vodio na takva mjesta. Uvijek groblje i bog zna što —crkva."
-   ]
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Kaže: \"Dobra se godina od proljeća poznaje.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "06/0298#14",
-   "where": "06/0298",
-   "text": "Srce mi je vedro pri pomisli da ćemo jednog dana sjediti jedno nasuprot drugome u kafiću, za stolom, kraj prozora, i dok kiša nježno sjeda na staklo, čitat ću joj priču, a ona će slušati sa zadovoljnim osmijehom.",
-   "q": "Amir imagines reading his story to Niloofar in a cafe. Does this read naturally?",
+   "id": "04b/1321#10",
+   "where": "04b/1321",
+   "text": "\"Ono vino što je onde istina je ne metafora.\"",
+   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
+   "ctx": 0
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "S ove strane odmotavam nit riječi, a s druge strane ti skupljaš riječi.",
+   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
    "ctx": 0
   }
  ]

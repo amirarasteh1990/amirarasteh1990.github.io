@@ -2,20 +2,20 @@
  "lang": "ug",
  "slug": "ug",
  "dir": "rtl",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
-  {
-   "id": "01/0138#1",
-   "where": "01/0138",
-   "text": "يۈرىكىم چىرىۋاتىدۇ، دەيتتى.",
-   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
   {
    "id": "04a/0128#2",
    "where": "04a/0128",
    "text": "غەم يېمە ئەقىللىق بالام.",
    "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "يۈرىكىم چىرىۋاتىدۇ، دەيتتى.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,27 +26,6 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "بىبى، خۇدا رەھمەت قىلسۇن، مۇنداق چاغلاردا: ئېيتسام تىلىم كۆيىدۇ، ئېيتمىسام سۆڭىكىمنىڭ يىلىكى كۆيىدۇ، دەيتتى.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "يەردىن ئاسمانغا يامغۇر ياغمايدۇ.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "ياخشى يىل باھارىدىن مەلۇم بولىدۇ، دەيدۇ.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
    "id": "04b/0824#7",
    "where": "04b/0824",
    "text": "مەن ئائىلەمنىڭ زورلۇقى بىلەن توخۇلار ئارىسىغا ئارىلاشقاندىن كېيىنلا، ھېكايىنىڭ ئۇ تەرىپىنىڭ قانچىلىك باشقىچە بىر دۇنيا ئىكەنلىكىنى چۈشەندىم.",
@@ -54,11 +33,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "قولۇم قىسقا، سەن بىلەن ۋىسال يىراق.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1266#6",
+   "where": "04b/1266",
+   "text": "بابىنىڭ قىزى سۇسۇل رەڭلىك پۇت ماشىنىسىنى ئىتتىرىپ، ۋىژ-ۋىژ قىلغىنىچە ئۇزاقلىشىدۇ.",
+   "q": "A little girl pushes her kick scooter. Is 'پۇت ماشىنىسى' the right word?",
+   "before": [
+    "ئارقامدىن بىر ئاۋاز دەيدۇ:",
+    "– ھەئە، بۇ قوغۇلچاقنى ئېلىپ بېرىمەن. پۇل قولۇمغا كىرسە بۇنىڭدىنمۇ ياخشى بىر قوغۇلچاقنى ساڭا ئالىمەن، بابىنىڭ قىزى."
+   ]
+  },
+  {
+   "id": "03/0528#3",
+   "where": "03/0528",
+   "text": "بېشىنى ئىرغىتتى. نوروز داستىخىنىدا، ئانام ھەققىدىكى شېئىرنى ئوقۇغىنىمدا، مامان خۇشال بولۇشنىڭ ئورنىغا ئەنسىرەپ كەتتى.",
+   "q": "Does 'بېشىنى ئىرغىتتى' mean she shook her head, side to side?",
+   "before": [
+    "دېدىم:",
+    "– دوستلىرىم مېنى ئەيىبلەيدۇ، ھېچقانداق تونۇشماي، بىر ئېغىزمۇ سۆزلەشمەي كۆڭۈل بەرگىنىم ئۈچۈن."
+   ]
+  },
+  {
+   "id": "04b/0556#4",
+   "where": "04b/0556",
+   "text": "– نۆۋەتتىن سىرت ئۇنىڭدىن ئىمتىھان ئېلىشنى، بەلكىم ئۆتۈپ كېتەرمەن دەپ سورىغانىدى.",
+   "q": "He asked for a specially arranged exam. Is 'نۆۋەتتىن سىرت' clear for that?",
+   "before": [
+    "– ئېسفەند ئېيىنىڭ بېشى قانداقمۇ ئىمتىھان ۋاقتى بولىدۇ؟",
+    "ۋە راستىنلا ئىمتىھان پەسلى بولۇپ، ئۆزىنىڭ ئۇنتۇپ قالغان بولۇشىدىن ئەنسىرىدى. بەھمەن ھۇماننىڭ ئەنسىرىگىنىنى بايقىدى. دېدى:"
+   ]
+  },
+  {
+   "id": "06/0298#7",
+   "where": "06/0298",
+   "text": "خوشلىشىمىز، دۇنيالىرىمىزنى تۇتاشتۇرغان كىچىك دېرىزە يەنە ئېتىلىدۇ. دېرىزىدىن سىرتقا قارايمەن.",
+   "q": "Is it clear the first 'دېرىزە' is figurative, not the real window?",
+   "before": [
+    "– نېمە بولدى، نىنىنىڭ تۇيۇقسىز ئۇيقۇسى كېلىشكە باشلاپتۇ. ئەتىگەندىن بۇيان ئويغاق، ئۇخلىمىدىم.",
+    "– خوپ، بېرىپ ئۇخلىغىن نىنى-جان."
+   ]
   }
  ]
 }

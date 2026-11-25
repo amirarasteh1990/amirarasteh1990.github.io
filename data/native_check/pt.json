@@ -1,123 +1,453 @@
 {
+ "format": 2,
  "lang": "pt",
  "slug": "pt",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisão por falantes nativos",
+  "lead": "Não precisa de ter lido o livro. Responda a quantas quiser.",
+  "persian_words": "Maman (mãe), Baba (pai) e -jan (querido) são palavras persas mantidas no livro.",
+  "page": "Página",
+  "correct": "Correto",
+  "needs_change": "Precisa de alteração",
+  "not_sure": "Não tenho a certeza",
+  "how_say": "Como diria isto?",
+  "meaning": "O que acha que significa?",
+  "optional": "(opcional)",
+  "your_name": "O seu nome",
+  "thanks_tick": "Incluir o meu nome na página de Agradecimentos",
+  "private": "As suas respostas chegam apenas ao autor.",
+  "send": "Enviar",
+  "send_continue": "Enviar e continuar para a página {n}",
+  "sending": "A enviar…",
+  "popup_title": "Obrigado!",
+  "popup_text": "Gostaria de ver o seu nome na página de Agradecimentos do site? Termine as 4 páginas e teremos todo o gosto em acrescentá-lo.",
+  "popup_button": "Continuar para a página {n}",
+  "arrived": "Obrigado, as suas respostas da página {n} chegaram.",
+  "thanks_last": "Obrigado! As suas respostas chegaram.",
+  "all_done": "Enviou todas as páginas. Obrigado por todas elas!",
+  "already_sent": "Já enviou esta página a partir deste dispositivo. Obrigado!",
+  "continue_with": "Continuar com a página {n}",
+  "need_one": "Escolha uma resposta para pelo menos uma frase.",
+  "note_no_answer": "Uma frase tem uma nota: escolha também uma resposta para ela.",
+  "name_needed": "Escreva o nome que gostaria de ver na lista, ou desmarque a caixa.",
+  "not_connected": "O envio ainda não está ligado.",
+  "too_long": "O envio demorou demasiado.",
+  "cannot_send": "Não foi possível enviar as respostas a partir daqui.",
+  "use_email": "Use o botão de e-mail abaixo.",
+  "fallback": "Não foi possível enviar as respostas a partir desta página. Envie-as por e-mail; nada do que escreveu se perdeu.",
+  "email_button": "Enviar as respostas por e-mail",
+  "shortened": "Algumas notas eram demasiado longas para uma ligação de e-mail e foram aí encurtadas. As suas respostas completas estão abaixo; cole-as no e-mail, por favor.",
+  "noscript": "O envio precisa de JavaScript. Também pode enviar as suas respostas por e-mail para {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Aqui, nada acontece. Nada aqui vai ser corrigido, nem destruído.",
-   "q": "From the opening page. Do these lines read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Como na infância, quando a Maman desmanchava a lã das roupas velhas, e nós pegávamos no fio e dávamos voltas dentro de casa para que a lã não se amontoasse.",
-   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#3",
-   "where": "01/0116",
-   "text": "Sai também. Vai a sítios onde não haja muita gente.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Oh, que bom. Mm-hm, pedes e trazem-to. Mas Amir-jan, não fiques em casa o tempo todo."
+   "key": "slips",
+   "title": "Palavras mal pronunciadas",
+   "q": "A mãe do livro pronuncia mal algumas palavras estrangeiras. Parecem erros de pronúncia credíveis?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "congeladol",
+     "note": "= congelador"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Améroca",
+     "note": "= América"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublância",
+     "note": "= ambulância"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "burdozer",
+     "note": "= bulldozer"
+    }
    ]
   },
   {
-   "id": "01/0148#4",
-   "where": "01/0148",
-   "text": "– O quê e Sorrisos?",
-   "q": "Maman catches only the end of the title 'Lágrimas e Sorrisos'. Does her question sound natural?",
-   "ctx": 2,
-   "before": [
-    "– Miúdos, descarrego o Lágrimas e Sorrisos para vermos esta noite?",
-    "A Maman vira a cabeça e diz:"
+   "key": "images",
+   "title": "Ditos persas",
+   "q": "Alguns ditos e imagens persas estão traduzidos palavra a palavra. Cada um dá-lhe alguma ideia do seu sentido, ou não lhe diz nada?",
+   "labels": [
+    "Consigo adivinhar",
+    "Não consigo",
+    "Não tenho a certeza"
+   ],
+   "note_label": "O que acha que significa?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "A chuva não cai da terra para o céu.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Um bom ano conhece-se pela sua primavera.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Não comas a tristeza",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "o meu coração está a apodrecer",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "A minha mão é curta e a união contigo está longe.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "se o digo, a língua me queima; se não o digo, o tutano dos ossos me queima",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "a comida vira veneno de cobra para mim",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "não vai aquecer pão nenhum para ti",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "a minha família me ter metido à força no galinheiro",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "o torrão de açúcar salta-me na garganta",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "espreita para todos os cantos",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "palavras não custam nada – é só ar quente",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "de certeza que ia cair dos olhos da Negar",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Só uma promessa de colheita?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "deixa-me servir-te as entranhas da amizade numa bandeja",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "caíram-lhes logo todos os pelos do corpo",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "não te exaltes tanto, o leite seca-te",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "não se diz que és mudo só porque não peidas",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Come a cabeça da minha pila",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Comedor de cabeças de pila",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "a rir das nossas barbas e dos nossos caralhos",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "não andarias assim pelas ruas com a pila na mão",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "qualquer caralho que nos caia na cabeça",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "– Hamid Gato, até ontem dizias burro. Agora és civilizado e dizes asno?",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it land?",
-   "ctx": 2,
-   "before": [
-    "– Pff, burro, quem é que sabe mais, o homem mais rico de Teerão, amigo do primo do mestre artesão do nosso cunhado, ou tu, bezerro? Está bem, vai comprar um. Se o vidro partir, não digas que não te avisei.",
-    "O Taghi disse:"
+   "key": "children",
+   "title": "Palavras de crianças",
+   "q": "Algumas crianças do livro dizem palavras mal, como fazem as crianças pequenas. Cada uma soa a erro de criança, e não a gralha?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "É pedra de málmore. Málmore quer dizer muito caro.",
+     "note": "málmore = mármore"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Chama-se Tatanic.",
+     "note": "Tatanic = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, compas-me essa boneca gande?",
+     "note": "uma menina pequena"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Sim, compro-te a boneca gande.",
+     "note": "o pai imita-a"
+    }
    ]
   },
   {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "E tu, com esse teu jeito de falar do caralho, devias chamar-te Alain Caralhon.",
-   "q": "'Alain Caralhon' is meant as a rude pun on the actor Alain Delon. Would Portuguese readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#7",
-   "where": "04a/0076",
-   "text": "– É pedra de málmore. Málmore quer dizer muito caro.",
-   "q": "A small boy says 'málmore' for mármore and wrongly thinks it means very expensive, both on purpose. Does it sound childlike?",
-   "ctx": 1,
-   "before": [
-    "Continuávamos. A meio do caminho havia uma casa. A sua parede era bonita. O Ghassem dizia:"
+   "key": "nicknames",
+   "title": "Alcunhas",
+   "q": "Os amigos do livro dão alcunhas divertidas uns aos outros, muitas vezes com jogos de palavras. Cada uma funciona como alcunha em português?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Caralhon",
+     "note": "alcunha de um dos amigos: o nome do ator Alain Delon, com uma parte transformada numa palavra grosseira para pénis"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Ancião da Taverna",
+     "note": "um título de falsa grandeza, tirado da poesia de Hafez"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Eldie",
+     "note": "forma carinhosa de «Ancião da Taverna»"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, meu Tavinho",
+     "note": "formas carinhosas feitas a partir de «taverna»"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Farid Leopardo",
+     "note": "para um amigo ousado e imprudente"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Arasteh é apenas araasteh, polido?",
+     "note": "araasteh = «arrumado» em persa"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "senhora dona Armaaan",
+     "note": "o apelido Arman, arrastado para troçar"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Schrödinger de cabelo encaracolado",
+     "note": "um título trocista para quem não se consegue decidir"
+    }
    ]
   },
   {
-   "id": "04b/1263#8",
-   "where": "04b/1263",
-   "text": "– Vrrrum, Baba, Baba, compas-me essa boneca gande?",
-   "q": "On the street, a stranger's little girl says 'gande' for grande, as toddlers do. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…reconfortante de tom escuro, mas dava luz de menos para me guiar. Uma lâmpada a piscar na mão de uma rapariga de quem nunca soube em que parte da caixa de lápis de cor cabe a cor da porta da casa dela. Uma menina pequena vem a fazer «vrrrum» e para-se ao meu lado. Olha para os brinquedos. Diz:"
+   "key": "jokes",
+   "title": "Piadas e jogos de palavras",
+   "q": "Estas frases têm uma piada ou um jogo de palavras. Cada uma funciona em português?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "É assim que o sistema da fábrica dele funciona.",
+     "note": "fazer asneira é simplesmente a natureza dele"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Perdoado. Todo este bulevar é para ti.",
+     "note": "em persa, «perdoar» também quer dizer «oferecer»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "até ontem dizias burro. Agora és civilizado e dizes asno?",
+     "note": "gozam com um rapaz por mudar para uma palavra mais educada"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir a pir? … O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
+     "note": "ouve «peer» como o persa pir, «ancião», a raiz da sua alcunha"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Esta noite ouvi-te a ruminar.",
+     "note": "mastigar de noite, como uma vaca a ruminar"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Que raio te deu agora, a ficar teso para cima de nós, Alain Caralhon?",
+     "note": "duplo sentido: endireitar-se com orgulho, e uma ereção"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "E não era o quê — engo?",
+     "note": "a mãe só apanha o fim de «mulherengo»"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "O homem mais rico de Teerão, amigo do primo do mestre artesão do nosso cunhado",
+     "note": "a gabarolice habitual de um rapaz"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Ou és cabeça-de-pi... bom, já eras cabeça-de-pila, agora ficaste ainda mais cabeça-de-pila.",
+     "note": "o insulto é cortado e depois piora"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Pois, todos temos fábricas. … Temos uma fábrica de dizer merda.",
+     "note": "só produzem merda: só dizem disparates"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ó fóssil, tu próprio és a estátua da estupidez e da degradação",
+     "note": "um insulto trocista"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "a vida parece-se com uma nota de mil tomans: seja de que lado for que a olhes, cheira a arroz de lentilhas.",
+     "note": "um dito absurdo"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "É assim que eu falo; vocês ouvem-me e acham que estou a recitar poemas.",
+     "note": "um rapaz responde num ritmo cantarolado"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Cuidado para não te partir, senhor Caralho.",
+     "note": "acabou de inchar o peito"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Tu és a maior vaca de todas.",
+     "note": "«vaca» = um tolo lerdo, dito a um homem"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "ele gostava sempre imenso de meter a palavra «ciente» duas vezes naquela frase.",
+     "note": "«ciente» usado duas vezes, por brincadeira"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "o problema está no recetor; o emissor não pode resolver o problema.",
+     "note": "o «recetor» é a vista fraca do amigo"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Refiro-me ao Alain Caralhon. Caraaalho.",
+     "note": "a parte grosseira do trocadilho, arrastada"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Se tu és o Hooman, então eu sou a Susan.",
+     "note": "o nome suave Hooman não assenta a um homem tão peludo"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "A derivada? O significado? Ou o significado da derivada? Ou a derivada do significado?",
+     "note": "um jogo de palavras de falsa profundidade"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Se Deus quiser, que sejas sempre araasteh.",
+     "note": "uma bênção que brinca com o apelido Arasteh; araasteh = «arrumado»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Sem óculos não vejo nada, objetivamente.",
+     "note": "o bordão da personagem, usado a toda a hora"
+    }
    ]
   },
   {
-   "id": "04b/1265#9",
-   "where": "04b/1265",
-   "text": "– Sim, compro-te a boneca gande.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vrrrum, Baba, Baba, compas-me essa boneca gande?",
-    "Uma voz diz atrás de mim:"
-   ]
-  },
-  {
-   "id": "04b/1312#10",
-   "where": "04b/1312",
-   "text": "Fica-se com uma tontura do caralho. Quanto mais se pensa nisso, maior fica a tontura do caralho.",
-   "q": "A girl jokes crudely: the painting makes you dizzy. Does 'tontura do caralho' sound natural?",
-   "ctx": 1,
-   "before": [
-    "– ... vejam como é realmente sugestivo. Desenhou isto e por baixo escreveu: isto não é um cachimbo."
-   ]
-  },
-  {
-   "id": "04b/1320#11",
-   "where": "04b/1320",
-   "text": "E, com as mãos a tremer, percorria rapidamente os ghazals para encontrar um beit de Hafez que, tal como a pintura, como dizia aquela outra rapariga, nos desse uma tontura do caralho cada vez maior quanto mais nos afundássemos na sua profundidade. Queria mostrá-lo à Niloofar.",
-   "q": "A nervous young man searches Hafez's poems, recalling what a girl said about a painting. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#12",
-   "where": "04b/1321",
-   "text": "«Aquele vinho que ali está é verdade não metáfora.»",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#13",
-   "where": "06/0056",
-   "text": "Deitaram terra por cima dela com um burdozer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Portuguese speaker say bulldozer as 'burdozer'? If not, how?",
-   "ctx": 0
+   "key": "hafez",
+   "title": "Um verso de Hafez",
+   "q": "Este verso do poeta Hafez está escrito sem vírgula, por isso pode ler-se de duas maneiras opostas:",
+   "labels": [
+    "Sim, das duas",
+    "Só de uma",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Aquele vinho que ali está é verdade não metáfora.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Uma maneira: o vinho é verdade, não metáfora.",
+    "A outra maneira: o vinho não é verdade, é só metáfora."
+   ],
+   "after_q": "A versão em português pode ler-se das duas maneiras?"
   }
- ]
+ ],
+ "first": 1
 }

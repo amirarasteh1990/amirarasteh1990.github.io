@@ -2,23 +2,16 @@
  "lang": "ca",
  "slug": "ca",
  "dir": "ltr",
- "version": "2026-11-22",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Com en la infantesa, quan la Maman desfeia la llana dels vestits vells, i nosaltres agafàvem el fil i voltàvem per la casa perquè la llana no s'amuntegués.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Vés a llocs on no hi hagi gaire gent.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "id": "04b/1263#12",
+   "where": "04b/1263",
+   "text": "Vruuum, Baba, Baba, em comples aquella nina tan glan?",
+   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
    "ctx": 1,
    "before": [
-    "– Ai, quina meravella. Sí, fas la comanda i te la porten. Però Amir-jan, no estiguis sempre a casa. Surt també."
+    "…i reposant i que no tenia prou claror per guiar-me. Un llum parpellejant a la mà d'una noia de qui mai no vaig saber en quin punt de la capsa de llapis de colors col·locar el color de la porta de casa seva. Una nena petita ve fent «vrum vrum» i s'atura al meu costat. Mira les joguines. Diu:"
    ]
   },
   {
@@ -45,39 +38,14 @@
    ]
   },
   {
-   "id": "03/0384#5",
-   "where": "03/0384",
-   "text": "Per la banda dreta del maqnaeh deixava escapar una part dels cabells i s'hi posava una petita pinça groga.",
-   "q": "A lock of hair escapes her headscarf, held by a clip. Does this read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0384#6",
-   "where": "03/0384",
-   "text": "De vegades portava unes sabates verdes amb puntets blancs, que eren les que més m'agradaven de totes les que tenia. Em recordaven el moment de tastar prunes verdes al costat de la Niloofar.",
-   "q": "Do these two sentences read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0384#7",
-   "where": "03/0384",
-   "text": "Les cames em formiguegen, com si alguna cosa palpitant i inquieta hi panteixés a dins.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0412#8",
-   "where": "03/0412",
-   "text": "Un noi està dret al costat del llarg camí d'asfalt que uneix la porta Hafez amb la porta Valiasr de la universitat i allarga uns papers petits cap als qui passen.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0412#9",
-   "where": "03/0412",
-   "text": "També me'n dóna un a mi. Li pregunto què són aquests papers.",
-   "q": "A student hands out leaflets; the narrator asks what they are. Does this read naturally?",
-   "ctx": 0
+   "id": "04b/1312#13",
+   "where": "04b/1312",
+   "text": "T'entra un merder al cap. Com més hi penses, més merder se't fa al cap.",
+   "q": "She says crudely that it makes your head spin. Does this sound natural?",
+   "ctx": 1,
+   "before": [
+    "– ... Mireu que n'és, de suggeridor, de debò. Va dibuixar això i a sota va escriure: això no és una pipa."
+   ]
   },
   {
    "id": "03/0430#10",
@@ -97,24 +65,39 @@
    ]
   },
   {
-   "id": "04b/1263#12",
-   "where": "04b/1263",
-   "text": "Vruuum, Baba, Baba, em comples aquella nina tan glan?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…i reposant i que no tenia prou claror per guiar-me. Un llum parpellejant a la mà d'una noia de qui mai no vaig saber en quin punt de la capsa de llapis de colors col·locar el color de la porta de casa seva. Una nena petita ve fent «vrum vrum» i s'atura al meu costat. Mira les joguines. Diu:"
-   ]
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "La pluja no cau cap amunt des de la terra.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "04b/1312#13",
-   "where": "04b/1312",
-   "text": "T'entra un merder al cap. Com més hi penses, més merder se't fa al cap.",
-   "q": "She says crudely that it makes your head spin. Does this sound natural?",
-   "ctx": 1,
-   "before": [
-    "– ... Mireu que n'és, de suggeridor, de debò. Va dibuixar això i a sota va escriure: això no és una pipa."
-   ]
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "La meva mà és massa curta i la teva unió, llunyana.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "No mengis tristesa, fill meu el llest.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "La Bibi, que Déu la tingui en pau, solia dir en moments com aquest: si ho dic, em crema la llengua; si no ho dic, em crema el moll dels ossos.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Diu: «Un bon any es coneix per la seva primavera.»",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/1321#14",

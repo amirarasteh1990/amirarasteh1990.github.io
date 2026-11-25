@@ -2,58 +2,8 @@
  "lang": "be",
  "slug": "be",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Гэта вольны канец ніткі слоў, якія некалі былі гукамі.",
-   "q": "Does this sentence read naturally?",
-   "before": [
-    "Уступ",
-    "Тут нічога не адбываецца. Тут нічога не будзе выпраўлена і нічога не будзе зруйнавана. Ніякага тлумачэння не будзе. Ніякай высновы."
-   ]
-  },
-  {
-   "id": "02/0005#2",
-   "where": "02/0005",
-   "text": "Святло маіх сноў ... святло маіх сноў запальвалася ... святло маіх сноў запалілася",
-   "q": "This line restarts twice. Does the middle attempt sound broken off, unfinished?",
-   "before": [
-    "Я нічога не бачыў",
-    "Ты прыйшла"
-   ]
-  },
-  {
-   "id": "03/0661#3",
-   "where": "03/0661",
-   "text": "– Месцы на конкур?",
-   "q": "Someone asks about entrance-exam ranks. Does 'Месцы на конкур' sound natural?",
-   "before": [
-    "Бахман сказаў:",
-    "– Праз нашы месцы на конкур."
-   ]
-  },
-  {
-   "id": "04a/0044#4",
-   "where": "04a/0044",
-   "text": "– Пачатак другой часткі місіі. Батальён, направа круг!",
-   "q": "Big brother plays soldiers. Is 'направа круг' the right command for turning right?",
-   "before": [
-    "– Яна называецца Кучанскі базар, і наш дом у канцы Кучанскага базара.",
-    "Машыны праязджаюць праз яе вельмі хутка. Калі мне было чатыры, яны ехалі хутчэй. Праляталі вжжж-вжжж. Гасэм заўсёды казаў:"
-   ]
-  },
-  {
-   "id": "04b/0639#5",
-   "where": "04b/0639",
-   "text": "– То бок праз месяц пасля таго, як нам прыслалі гэты антыкварыят.",
-   "q": "Hooman mockingly calls someone an old antique. Does 'антыкварыят' fit here?",
-   "before": [
-    "– Выходзіць прыкладна Абан 1387 года.",
-    "Хуман сказаў:"
-   ]
-  },
   {
    "id": "04b/1263#6",
    "where": "04b/1263",
@@ -82,6 +32,54 @@
    "before": [
     "– Так, Хамун — добрае імя для цябе. Як Хамун у фільме, ты таксама ўвесь у пытаннях. Ты поўны трывогі і крыніца неспакою — не для сябе, а для мяне.",
     "Хуман сказаў:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Дождж не падае ўгору з зямлі.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Рука мая кароткая, а злучэнне з табою далёкае.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Бабуля, царства ёй нябеснае, у такія моманты казала: скажу — язык гарыць; не скажу — касцявы мозг гарыць.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Кажа: «Добры год пазнаецца з вясны».",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "02/0005#2",
+   "where": "02/0005",
+   "text": "Святло маіх сноў ... святло маіх сноў запальвалася ... святло маіх сноў запалілася",
+   "q": "This line restarts twice. Does the middle attempt sound broken off, unfinished?",
+   "before": [
+    "Я нічога не бачыў",
+    "Ты прыйшла"
+   ]
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Гэта вольны канец ніткі слоў, якія некалі былі гукамі.",
+   "q": "Does this sentence read naturally?",
+   "before": [
+    "Уступ",
+    "Тут нічога не адбываецца. Тут нічога не будзе выпраўлена і нічога не будзе зруйнавана. Ніякага тлумачэння не будзе. Ніякай высновы."
    ]
   }
  ]

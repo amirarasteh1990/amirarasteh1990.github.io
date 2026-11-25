@@ -2,20 +2,20 @@
  "lang": "vi",
  "slug": "vi",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Em đang nói nếu anh cứ ngồi đây đọc thơ thế này, thì chẳng có cái bánh nào nóng lên cho anh đâu.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Bà ấy nói, lòng tôi đang mục rữa.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Đừng ăn nỗi buồn, con trai thông minh của mẹ.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,31 +26,10 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, cầu Trời cho bà yên nghỉ, thường nói lúc như thế này: nếu nói thì lưỡi bỏng; nếu không nói thì tủy xương bỏng.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Mưa đâu rơi ngược từ đất lên trời.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Nó nói, \"Năm tốt lành nhìn mùa xuân là biết.\"",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Em đang nói nếu anh cứ ngồi đây đọc thơ thế này, thì chẳng có cái bánh nào nóng lên cho anh đâu.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Đừng nói với cái thằng Eskandar đáng ghét đó, không nó lại ngồi giảng đạo cho bọn mình cả tiếng, bữa cơm hóa thành nọc rắn với tớ.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -61,18 +40,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Tay anh ngắn mà sự hợp nhất với em thì xa vời.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04a/0047#4",
+   "where": "04a/0047",
+   "text": "Tay của Haaj Kazem lúc nào cũng lắc. Khi chúng tôi đến đó với Maman, tay ông cũng lắc.",
+   "q": "A child narrates. Is it clear the grocer's hands tremble all the time?",
+   "before": [
+    "– Kết thúc phần hai.",
+    "Chúng tôi đứng trước cửa hàng của Haaj Kazem. Ghassem luôn lắc tay chào ông."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Đừng nói với cái thằng Eskandar đáng ghét đó, không nó lại ngồi giảng đạo cho bọn mình cả tiếng, bữa cơm hóa thành nọc rắn với tớ.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0137#3",
+   "where": "03/0137",
+   "text": "Tôi rẽ vào con đường bên trái, con đường chạy cạnh nhà thờ Hồi giáo và kết thúc ở phòng tẩy uế.",
+   "q": "This is the room where Muslims wash before prayer. Is 'phòng tẩy uế' right?",
+   "before": [
+    "– Giơ tay lên kiểu đó rồi chọc vào mắt người ta cho coi.",
+    "Tôi hạ tay xuống. Tôi đã đến khoảng sân trung tâm của trường. Hội trường và nhà thờ Hồi giáo cũng chẳng đổi thay."
+   ]
+  },
+  {
+   "id": "01/0095#2",
+   "where": "01/0095",
+   "text": "Đôi khi mẹ nghĩ bụng, chắc mẹ phải trơ trẽn lắm mới còn thở được thế này.",
+   "q": "Maman feels ashamed that she is still breathing. Does this read naturally?",
+   "before": [
+    "– Nhưng nếu mẹ nói thì có gì được sửa lại không?",
+    "– Lòng mẹ nhẹ hơn một chút, ít ra là thế. Nếu các con là những người làm mẹ thì sẽ hiểu. Người làm mẹ thật tội nghiệp, thật đấy. Rồi còn đứa kia, Abolfazl, mất tích không để lại dấu vết. Ba năm rồi, không có một lời. Không có gì cả."
+   ]
+  },
+  {
+   "id": "04b/1309#6",
+   "where": "04b/1309",
+   "text": "Họ định cùng nhau trải qua cả mùa hè ấy trong chiếc Mazda kính râm kia ư?",
+   "q": "The black Mazda has tinted windows. Is 'kính râm' clear here?",
+   "before": [
+    "– Cô ấy chắc đã lên xe buýt. Nhưng xe buýt có dừng đâu. Có lẽ cô ấy bước lên vỉa hè và đi tiếp theo lối đi bộ.",
+    "Chiếc Mazda đen rẽ lối giữa dòng xe và biến mất. Dưới nắng đầu tháng Tir nó lóe lên một thứ ánh chói gắt – gắt hơn nhiều ánh tóc Sina dưới thứ nắng tháng Azar nhợt nhạt ba năm trước đó. Có thật là Sina không?"
+   ]
   }
  ]
 }

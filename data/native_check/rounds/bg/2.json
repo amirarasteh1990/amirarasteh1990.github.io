@@ -2,20 +2,31 @@
  "lang": "bg",
  "slug": "bg",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "03/0390#5",
+   "where": "03/0390",
+   "text": "– Казвам ти, нищо не виждам, мръснико.",
+   "q": "This should be a crude everyday insult, like asshole. Is 'мръснико' that crude?",
+   "ctx": 0
+  },
+  {
+   "id": "04b/1265#9",
+   "where": "04b/1265",
+   "text": "– Да, ще ти купя куклицка. Като ми дойдат пари, ще ти купя още по-хубава, момичето на татко.",
+   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
+   "ctx": 2,
+   "before": [
+    "– Бръъъм, тате, тате, купис ми тая голяма куклицка?",
+    "Един глас зад мен казва:"
+   ]
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Каза: сърцето ми гние.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Не яж тъга, умно момченце мое.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +37,60 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Биби, Бог да я прости, казваше в такива моменти: Ако кажа, изгаря езикът ми; ако не кажа, изгаря костният ми мозък.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Не казвай на нещастния Ескандар, иначе ще ни седне час да ни чете наставления и яденето ще ми стане змийска отрова.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Дъждът не вали нагоре от земята.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1320#11",
+   "where": "04b/1320",
+   "text": "И с треперещи ръце бързо-бързо прелиствах газелите, за да намеря онзи бейт от Хафез, на който, по думите на онова друго момиче, колкото повече се потапяме в дълбините му, толкова по-силно ни хваща лайнян световъртеж, и да го покажа на Нилуфар.",
+   "q": "A nervous young man leafs through a book of poems. Does this long sentence read naturally?",
+   "ctx": 0
   },
   {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Казва: „Добрата година се познава по пролетта.“",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "06/0023#13",
+   "where": "06/0023",
+   "text": "– Нося я, не се стресирай.",
+   "q": "Maman tells her son not to worry: she does wear her mask. Does this sound natural?",
+   "ctx": 1,
+   "before": [
+    "– Но ти носи своята, Нини-джан."
+   ]
   },
   {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Казвам, че ако само си седиш тук и четеш стихове, хляб няма да ти се опече от това.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Ходи там, където няма много хора.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "ctx": 1,
+   "before": [
+    "– Ех, колко добре. Да, поръчваш и го донасят при теб. Ама Амир-джан, не стой вкъщи цяло време. Излизай навън също."
+   ]
+  },
+  {
+   "id": "02/0005#3",
+   "where": "02/0005",
+   "text": "Светлината на сънищата ми ... светлината на сънищата ми светваше ... светлината на сънищата ми светна",
+   "q": "In his poem, the narrator restarts this phrase twice, as if searching for the right verb. Does that come through?",
+   "ctx": 3,
+   "before": [
+    "Сънищата ми бяха тъмни",
+    "Не виждах нищо",
+    "Ти дойде"
+   ]
+  },
+  {
+   "id": "06/0236#15",
+   "where": "06/0236",
+   "text": "Все гробището и кой знае какво – църква. Кхе, кхе. Влачеше ни насам-натам.",
+   "q": "Meaning: you wore us out. Does 'Влачеше ни насам-натам' say that?",
+   "ctx": 1,
+   "before": [
+    "– ...кхе. Да. Ти никога не ни водеше на такива места."
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +100,21 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Ръката ми е къса, а съединяването с теб — далечно.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "06/0289#16",
+   "where": "06/0289",
+   "text": "Татко каза, колко? Току-що ми дойде съобщение на телефона – два милиона.",
+   "q": "A sister retells Dad's reply about the electricity bill. Does this read naturally?",
+   "ctx": 1,
+   "before": [
+    "…изпод одеялото, каза какво пак грачиш? Какво е сгрешил Амир? А татко каза, това е работа на Амир – дърпа конците оттам и казва, деца, съберете пари, купете това, купете онова, и дори не мисли за джоба на татко си, от който трябва да се плати сметката за ток. Тогава Маман каза, е, колко може да е?"
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Не казвай на нещастния Ескандар, иначе ще ни седне час да ни чете наставления и яденето ще ми стане змийска отрова.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1262#8",
+   "where": "04b/1262",
+   "text": "Оттогава, година след година все повече и повече ме теглеше към молитвата, джамията и дуата.",
+   "q": "Is 'дуата' clear as prayers asking God for help?",
+   "ctx": 0
   }
  ]
 }

@@ -1,179 +1,212 @@
 {
+ "format": 2,
  "lang": "es",
  "slug": "es",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Revisión por hablantes nativos",
+  "lead": "No hace falta haber leído el libro. Responde a tantas como quieras.",
+  "persian_words": "Maman (madre), Baba (padre) y -jan (querido) son palabras persas que se mantienen en el libro.",
+  "page": "Página",
+  "correct": "Correcto",
+  "needs_change": "Necesita cambios",
+  "not_sure": "Tengo dudas",
+  "how_say": "¿Cómo lo dirías tú?",
+  "meaning": "¿Qué crees que significa?",
+  "optional": "(opcional)",
+  "your_name": "Tu nombre",
+  "thanks_tick": "Incluir mi nombre en la página de Agradecimientos",
+  "private": "Tus respuestas solo le llegan al autor.",
+  "send": "Enviar",
+  "send_continue": "Enviar y seguir a la página {n}",
+  "sending": "Enviando…",
+  "popup_title": "¡Gracias!",
+  "popup_text": "¿Quieres que tu nombre aparezca en la página de Agradecimientos de la web? Termina las 4 páginas y lo añadiremos con mucho gusto.",
+  "popup_button": "Seguir a la página {n}",
+  "arrived": "Gracias, han llegado tus respuestas de la página {n}.",
+  "thanks_last": "¡Gracias! Han llegado tus respuestas.",
+  "all_done": "Has enviado todas las páginas. ¡Gracias por todas ellas!",
+  "already_sent": "Ya has enviado esta página desde este dispositivo. ¡Gracias!",
+  "continue_with": "Seguir con la página {n}",
+  "need_one": "Elige una respuesta para al menos una frase.",
+  "note_no_answer": "Una frase tiene una nota: elige también una respuesta para ella.",
+  "name_needed": "Escribe el nombre que quieres que aparezca o desmarca la casilla.",
+  "not_connected": "El envío todavía no está conectado.",
+  "too_long": "El envío ha tardado demasiado.",
+  "cannot_send": "No se han podido enviar las respuestas desde aquí.",
+  "use_email": "Usa el botón de correo de abajo.",
+  "fallback": "No se han podido enviar las respuestas desde esta página. Envíalas por correo electrónico; no se ha perdido nada de lo que has escrito.",
+  "email_button": "Enviar las respuestas por correo",
+  "shortened": "Algunas notas eran demasiado largas para un enlace de correo y allí se han acortado. Tus respuestas completas están abajo; pégalas en el correo, por favor.",
+  "noscript": "Para enviar hace falta JavaScript. También puedes mandar tus respuestas por correo a {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0182#1",
-   "where": "01/0182",
-   "text": "¿Qué... iego dices que no fue?",
-   "q": "Told her husband was no womanizer, Maman echoes the end of the word. Would Spanish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Tampoco fue mujeriego.",
-    "Maman dice:"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Correcto",
+    "Necesita cambios",
+    "Tengo dudas"
+   ],
+   "note_label": "¿Cómo lo dirías tú?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "Hace treinta y dos meses que la quiero. De lejos.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#2",
-   "where": "06/0052",
-   "text": "Al final, Mahboub llamó, vinieron con una amublancia y se llevaron a Naney.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Spanish speaker say ambulance as 'amublancia'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "La peor enfermedad es el Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Spanish speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman dijo:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Correcto",
+    "Necesita cambios",
+    "Tengo dudas"
+   ],
+   "note_label": "¿Cómo lo dirías tú?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Aquí no ocurre nada. Aquí nada va a arreglarse ni a destruirse.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Estaba el tifus, por ejemplo, o la tuberculosis, o el sarampión.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#5",
-   "where": "01/0132",
-   "text": "O el cólera, por ejemplo. Ese tampoco mató a tantos.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0148#6",
-   "where": "01/0148",
-   "text": "¿El qué y Sonrisas?",
-   "q": "Maman is hard of hearing and catches only the end of the series title 'Lágrimas y Sonrisas'. Does her question read naturally?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Niños, ¿descargo Lágrimas y Sonrisas para verla esta noche?",
-    "Maman gira la cabeza y dice:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Correcto",
+    "Necesita cambios",
+    "Tengo dudas"
+   ],
+   "note_label": "¿Cómo lo dirías tú?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Batallón, ¡de frente, marchad!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Comienzo de la primera etapa de la misión. Batallón, ¡girad a la izquierda!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0362#7",
-   "where": "03/0362",
-   "text": "Mahboub, esto que dicen en las noticias, Améroca...",
-   "q": "Grandpa, an old man, says 'Améroca' for America on purpose. Does it read as his slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…casa al fondo del patio y recorrí la longitud del patio en nueve pasos, y la alegría del nuevo descubrimiento seguía brillando en mi corazón. Cuando entré en el salón desde el patio, Maman estaba tumbada delante del televisor. Tenía las dos manos sobre el estómago y le estaba diciendo a Mahboubeh:"
+   "key": "poetry",
+   "title": "Poesía",
+   "q": "Estos son versos. ¿Cada uno se lee bien como poesía en español?",
+   "labels": [
+    "Correcto",
+    "Necesita cambios",
+    "Tengo dudas"
+   ],
+   "note_label": "¿Cómo lo dirías tú?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "No tomaría ese anillo de Salomón por nada del mundo, sobre el que a veces la mano de ...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "¿«Para Attar, llorar hasta el alba es más dulce» o «ahora ha quedado aún más muerto»?",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "escribe sobre el agua con tu propia sangre",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "para que el que venga en tu estela",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "han pasado por aquí.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "La luz de mis sueños ahora parpadea",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "No tengo esperanza de tu regreso",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "vuelve otra vez a mis sueños",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Creo que mis sueños no se han creído que te has ido",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "La luz de mis sueños ... la luz de mis sueños se encendía ... la luz de mis sueños se encendió",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0290#8",
-   "where": "03/0290",
-   "text": "¿Arasteh no es más que araasteh recortado?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Spanish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Señor Arasteh.",
-    "Giro la cabeza hacia él."
+   "key": "word_choice",
+   "title": "Palabras sueltas",
+   "q": "¿Es correcta la palabra de cada frase? Debajo se indica lo que debería significar.",
+   "labels": [
+    "Correcto",
+    "Necesita cambios",
+    "Tengo dudas"
+   ],
+   "note_label": "¿Cómo lo dirías tú?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0278#word_",
+     "text": "Karroubi es amor, honestamente.",
+     "note": "\"honestamente\" = honestly and truly (excited slang)"
+    },
+    {
+     "id": "04b/0721#word_",
+     "text": "Eldie, en lugar de quedarte ahí tumbado en la cama jugando con tus huevos, levántate y mándalos.",
+     "note": "\"mándalos\" = send them (the applications)"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Le entra a uno un mareo de mierda. Cuanto más lo piensas, más mareo de mierda te entra.",
+     "note": "\"mareo de mierda\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "Y con las manos temblorosas pasaba deprisa los gazales, buscando un beit de Hafez que, como la pintura de la que había hablado aquella otra chica, nos diera más mareo de mierda cuanto más nos hundiéramos en su hondura, para enseñárselo a Niloofar.",
+     "note": "\"mareo de mierda\" = more baffled; echoes her crude coinage"
+    }
    ]
-  },
-  {
-   "id": "03/0309#9",
-   "where": "03/0309",
-   "text": "Si Dios quiere, que siempre seas araasteh.",
-   "q": "The guard plays on the name again: 'araasteh' means neat and well groomed. Would Spanish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "El guardia sonríe y dice:"
-   ]
-  },
-  {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "Pero la cagó. Ojo de Águila dice peer to peer; Taverny dice Eldie a Eldie.",
-   "q": "Farid mocks Amir for hearing 'peer-to-peer' as Persian pir, elder, his nickname. Would Spanish readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– ¿Pir a pir?",
-    "Hooman dijo:",
-    "– Mandad un salavat. El Anciano de la Taberna por fin ha dicho algo.",
-    "Farid dijo:"
-   ]
-  },
-  {
-   "id": "04b/0591#11",
-   "where": "04b/0591",
-   "text": "¿Pir a pir?",
-   "q": "Amir mishears the English term 'peer to peer' and repeats it wrongly. Would Spanish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Una especie de dinero electrónico peer to peer.",
-    "Yo dije:"
-   ]
-  },
-  {
-   "id": "04b/0460#12",
-   "where": "04b/0460",
-   "text": "¿Qué mosca te ha picado ahora para empalmarte con nosotros, Alain Pollón?",
-   "q": "Hooman mocks a roommate with the rude nickname 'Alain Pollón' and a sexual taunt. Does this sound like young men teasing in a dorm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman dijo:"
-   ]
-  },
-  {
-   "id": "03/0432#13",
-   "where": "03/0432",
-   "text": "Me refiero a Alain Pollón. Pooolla.",
-   "q": "'Alain Pollón' is a rude pun on the actor Alain Delon; Hooman stretches the crude part. Does the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ...y pones la boca como el culo de una gallina y te matas por hablar como él. A ese no me refiero."
-   ]
-  },
-  {
-   "id": "04a/0080#14",
-   "where": "04a/0080",
-   "text": "¿Por qué no fuisteis a la casa de málmol?",
-   "q": "Ghassem, a young boy, again says 'málmol' for mármol (marble). Does it read as a child's slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…esa misma puerta roja grande. Me senté al lado de la acequia. Puse los pies dentro de la acequia. No tenía agua. Mi corazón estaba vacío por dentro. El hombre volvió. La rueda delantera ya no giraba. Le dio una bofetada a Omid. Los dos lloramos. El hombre se fue. Ghassem volvió. Nos regañó. Dijo:"
-   ]
-  },
-  {
-   "id": "04b/0387#15",
-   "where": "04b/0387",
-   "text": "Anoche oía cómo rumiabas.",
-   "q": "Eskandar teases Hooman, who secretly ate sweets at night, by likening him to a cow chewing cud. Does the joke come across?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar se volvió hacia Hooman y dijo:"
-   ]
-  },
-  {
-   "id": "04b/1320#16",
-   "where": "04b/1320",
-   "text": "Y con las manos temblorosas pasaba deprisa los gazales, buscando un beit de Hafez que, como la pintura de la que había hablado aquella otra chica, nos diera más mareo de mierda cuanto más nos hundiéramos en su hondura, para enseñárselo a Niloofar.",
-   "q": "The narrator echoes a girl's crude phrase for being dizzy with confusion, 'mareo de mierda'. Does it work here?",
-   "ctx": 0,
-   "kind": "joke"
   }
- ]
+ ],
+ "first": 7
 }

@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,13 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="el" data-language="Greek" data-version="2026-11-22" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="el" data-language="Greek" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="03/0191#5">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-line">Αυτό είναι το ελεύθερο άκρο ενός νήματος λέξεων που κάποτε ήταν ήχοι.</p>
+        <p class="nc-ctx">– Πφφ, γαϊδούρι, ποιος ξέρει καλύτερα — ο φίλος του ξαδέλφου του μάστορα του γαμπρού μας, που είναι ο πλουσιότερος άνθρωπος στην Τεχεράνη, ή εσύ, μοσχαράκι; Εντάξει, πήγαινε και αγόρασε. Αν σπάσει το γυαλί του, μην πεις ότι δεν σε προειδοποίησα.</p>
+        <p class="nc-ctx">Ο Ταγκί είπε:</p>
+        <p class="nc-line">Χαμίντ Γάτα, χθες ακόμα έλεγες «χαρ». Τώρα είσαι πολιτισμένος και λες «γαϊδούρι»;</p>
       </div>
-      <p class="nc-q" id="q1">Does this sentence read naturally?</p>
+      <p class="nc-q" id="q1">'<bdi lang="el" dir="ltr">χαρ</bdi>' is a crude Persian word for donkey. Does Taghi's teasing of Hamid come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -139,13 +141,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="Opening/0007#2">
+    <fieldset class="nc-item" data-id="04a/0076#9">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">…το νήμα από τα παλιά ρούχα, κι εμείς παίρναμε την άκρη του και τριγυρνούσαμε μέσα στο σπίτι για να μη μαζευτεί το νήμα σωρός. Μπορεί η γενιά σου να ήρθε λίγα χρόνια μετά από εκείνον τον κόσμο του νήματος, αλλά φαντάσου ότι μια φορά κι έναν καιρό, σε κάποια γωνιά του κόσμου, έτσι έπαιζαν τα παιδιά.</p>
-        <p class="nc-line">Τώρα ξετυλίγω το νήμα των λέξεων, κι εσύ πάρε τες και φέρ' τες στον κόσμο σου, για να μη συσσωρευτούν εδώ, στον δικό μου κόσμο.</p>
+        <p class="nc-ctx">Πηγαίναμε πάλι. Στα μισά του δρόμου ήταν ένα σπίτι. Ο τοίχος του ήταν όμορφος. Ο Γκάσεμ έλεγε:</p>
+        <p class="nc-line">– Είναι μάρμαρο. Μάρμαρο σημαίνει πολύ ακριβό.</p>
       </div>
-      <p class="nc-q" id="q2">The reader takes the words away. Does '<bdi lang="el" dir="ltr">πάρε τες και φέρ</bdi>' τες' sound natural?</p>
+      <p class="nc-q" id="q2">The little boy is meant to mangle the word marble and naively think it means expensive. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -156,13 +158,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0203#3">
+    <fieldset class="nc-item" data-id="04b/1312#12">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">…να μην είχε σκίσει τα χαρτιά του ανάπηρου βετεράνου; Εμένα άσε με· τι αμάρτια έκαναν αυτά τα παιδιά που πρέπει να ανέχονται τους καβγάδες σου, να ακούνε το κοχτ-κοχτ σου μέρα νύχτα, να χαλάνε τα νεύρα τους, και να μη βγάζουν καμία ωφέλεια από το ότι είσαι ανάπηρος βετεράνος, τουλάχιστον;</p>
-        <p class="nc-line">Τότε που ήταν η εποχή του κονκούρ, το κοχτ-κοχτ του δεν σας άφηνε να διαβάζετε ήσυχοι, μπα ...</p>
+        <p class="nc-ctx">– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα.</p>
+        <p class="nc-line">Σε πιάνει σκατοζάλη. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ σε πιάνει η σκατοζάλη.</p>
       </div>
-      <p class="nc-q" id="q3">Maman complains about Baba's cough, then runs out of breath. Does '<bdi lang="el" dir="ltr">μπα</bdi>' fit as her words fade?</p>
+      <p class="nc-q" id="q3">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -173,15 +175,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="02/0005#4">
+    <fieldset class="nc-item" data-id="03/0430#7">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">Τα όνειρά μου ήταν σκοτεινά</p>
-        <p class="nc-ctx">Δεν έβλεπα τίποτα</p>
-        <p class="nc-ctx">Ήρθες</p>
-        <p class="nc-line">Το φως των ονείρων μου ... το φως των ονείρων μου άναβε ... το φως των ονείρων μου άναψε</p>
+        <p class="nc-line">Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.</p>
       </div>
-      <p class="nc-q" id="q4">In this poem, the line restarts twice before it is complete. Does the middle attempt sound broken off?</p>
+      <p class="nc-q" id="q4">'<bdi lang="el" dir="ltr">Αλέν Πουτσόν</bdi>' is meant as a rude pun on the actor Alain Delon. Would Greek readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -192,14 +191,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0191#5">
+    <fieldset class="nc-item" data-id="06/0188#5">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">– Πφφ, γαϊδούρι, ποιος ξέρει καλύτερα — ο φίλος του ξαδέλφου του μάστορα του γαμπρού μας, που είναι ο πλουσιότερος άνθρωπος στην Τεχεράνη, ή εσύ, μοσχαράκι; Εντάξει, πήγαινε και αγόρασε. Αν σπάσει το γυαλί του, μην πεις ότι δεν σε προειδοποίησα.</p>
-        <p class="nc-ctx">Ο Ταγκί είπε:</p>
-        <p class="nc-line">Χαμίντ Γάτα, χθες ακόμα έλεγες «χαρ». Τώρα είσαι πολιτισμένος και λες «γαϊδούρι»;</p>
+        <p class="nc-line">Η βροχή δεν πέφτει από κάτω προς τα πάνω.</p>
       </div>
-      <p class="nc-q" id="q5">'<bdi lang="el" dir="ltr">χαρ</bdi>' is a crude Persian word for donkey. Does Taghi's teasing of Hamid come through?</p>
+      <p class="nc-q" id="q5">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -210,14 +207,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0290#6">
+    <fieldset class="nc-item" data-id="04b/0334#9">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">– Κύριε Αραστέ.</p>
-        <p class="nc-ctx">Γυρίζω το κεφάλι προς αυτόν.</p>
-        <p class="nc-line">– Ο Αραστέ είναι απλώς araasteh, κομμένος;</p>
+        <p class="nc-line">Το χέρι μου είναι κοντό κι η ένωση μαζί σου μακριά.</p>
       </div>
-      <p class="nc-q" id="q6">The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Would Greek readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q6">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -228,12 +223,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#7">
+    <fieldset class="nc-item" data-id="04a/0128#2">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-line">Κι εσύ, με εκείνο τον πουτσάτο τρόπο που μιλάς, θα έπρεπε να σε λένε Αλέν Πουτσόν.</p>
+        <p class="nc-line">Μην τρως λύπη, έξυπνο παιδί μου.</p>
       </div>
-      <p class="nc-q" id="q7">'<bdi lang="el" dir="ltr">Αλέν Πουτσόν</bdi>' is meant as a rude pun on the actor Alain Delon. Would Greek readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q7">Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -244,13 +239,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0560#8">
+    <fieldset class="nc-item" data-id="04b/0274#7">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">…αμπελώνες πίσω από το πήλινο γιαχτσάλ απέναντι από το παλιό νεκροταφείο. Η Μαχμπουμπέ και η Μαριάμ έδεσαν κόμπους στα σαμπζέ, και μόλις σκοτείνιασε γυρίσαμε. Το βράδυ η Μαμάν ήταν ξαπλωμένη στη μέση του καθιστικού πάνω στο χαλί και κοιτούσε τα βραχιόλια της. Σαν να μιλούσε σε μένα, είπε στον Ομίντ:</p>
-        <p class="nc-line">– Πείτε στη μάνα σας τα πάντα.</p>
+        <p class="nc-line">Λέω ότι αν απλώς κάθεσαι εδώ και διαβάζεις ποίηση, δεν πρόκειται να ζεσταθεί ψωμί για σένα.</p>
       </div>
-      <p class="nc-q" id="q8">Maman says this to Omid alone, though she means it for the narrator. Does it sound right said to one person?</p>
+      <p class="nc-q" id="q8">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -261,13 +255,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04a/0076#9">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">Πηγαίναμε πάλι. Στα μισά του δρόμου ήταν ένα σπίτι. Ο τοίχος του ήταν όμορφος. Ο Γκάσεμ έλεγε:</p>
-        <p class="nc-line">– Είναι μάρμαρο. Μάρμαρο σημαίνει πολύ ακριβό.</p>
+        <p class="nc-ctx">…να μην είχε σκίσει τα χαρτιά του ανάπηρου βετεράνου; Εμένα άσε με· τι αμάρτια έκαναν αυτά τα παιδιά που πρέπει να ανέχονται τους καβγάδες σου, να ακούνε το κοχτ-κοχτ σου μέρα νύχτα, να χαλάνε τα νεύρα τους, και να μη βγάζουν καμία ωφέλεια από το ότι είσαι ανάπηρος βετεράνος, τουλάχιστον;</p>
+        <p class="nc-line">Τότε που ήταν η εποχή του κονκούρ, το κοχτ-κοχτ του δεν σας άφηνε να διαβάζετε ήσυχοι, μπα ...</p>
       </div>
-      <p class="nc-q" id="q9">The little boy is meant to mangle the word marble and naively think it means expensive. Does that come through?</p>
+      <p class="nc-q" id="q9">Maman complains about Baba's cough, then runs out of breath. Does '<bdi lang="el" dir="ltr">μπα</bdi>' fit as her words fade?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -278,12 +272,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0391#10">
+    <fieldset class="nc-item" data-id="04b/0460#11">
       <legend>Line 10</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-line">– ... ο βλάκας αυτός υπέφερε από οξεία παραφροσύνη.</p>
+        <p class="nc-ctx">– Καλό πράγμα η αντίληψη. Σας λέω πως είστε αγελάδες και πρόβατα, και θίγεστε.</p>
+        <p class="nc-ctx">Ο Χουμάν είπε:</p>
+        <p class="nc-line">– Τι σ' έπιασε πάλι και μας καβάλησες, Αλέν Πουτσόν;</p>
       </div>
-      <p class="nc-q" id="q10">Students mock a roommate's delusions of grandeur. Does '<bdi lang="el" dir="ltr">οξεία παραφροσύνη</bdi>' say that?</p>
+      <p class="nc-q" id="q10">A roommate is mocked with a rude nickname built on Alain Delon. Does this retort sound crude and mocking?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q10">
         <label><input type="radio" name="v10" value="ok"> Correct</label>
         <label><input type="radio" name="v10" value="change"> Needs change</label>
@@ -294,14 +290,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0460#11">
+    <fieldset class="nc-item" data-id="01/0073#6">
       <legend>Line 11</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">– Καλό πράγμα η αντίληψη. Σας λέω πως είστε αγελάδες και πρόβατα, και θίγεστε.</p>
-        <p class="nc-ctx">Ο Χουμάν είπε:</p>
-        <p class="nc-line">– Τι σ' έπιασε πάλι και μας καβάλησες, Αλέν Πουτσόν;</p>
+        <p class="nc-line">Λέει: «Μια καλή χρονιά φαίνεται από την άνοιξή της.»</p>
       </div>
-      <p class="nc-q" id="q11">A roommate is mocked with a rude nickname built on Alain Delon. Does this retort sound crude and mocking?</p>
+      <p class="nc-q" id="q11">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q11">
         <label><input type="radio" name="v11" value="ok"> Correct</label>
         <label><input type="radio" name="v11" value="change"> Needs change</label>
@@ -312,13 +306,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1312#12">
+    <fieldset class="nc-item" data-id="03/0290#6">
       <legend>Line 12</legend>
       <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">– ...Κοιτάξτε το, είναι πραγματικά συγκλονιστικό. Το ζωγράφισε αυτό κι έγραψε από κάτω: δεν είναι πίπα.</p>
-        <p class="nc-line">Σε πιάνει σκατοζάλη. Όσο πιο πολύ το σκέφτεσαι, τόσο πιο πολύ σε πιάνει η σκατοζάλη.</p>
+        <p class="nc-ctx">– Κύριε Αραστέ.</p>
+        <p class="nc-ctx">Γυρίζω το κεφάλι προς αυτόν.</p>
+        <p class="nc-line">– Ο Αραστέ είναι απλώς araasteh, κομμένος;</p>
       </div>
-      <p class="nc-q" id="q12">A student describes this painting with a crude, slangy phrase for mind-bending. Does that come through?</p>
+      <p class="nc-q" id="q12">The guard jokes that Arasteh is a trimmed 'araasteh', Persian for neat. Would Greek readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q12">
         <label><input type="radio" name="v12" value="ok"> Correct</label>
         <label><input type="radio" name="v12" value="change"> Needs change</label>
@@ -329,54 +324,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#13">
-      <legend>Line 13</legend>
-      <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-line">Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.»</p>
-      </div>
-      <p class="nc-q" id="q13">Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q13">
-        <label><input type="radio" name="v13" value="ok"> Correct</label>
-        <label><input type="radio" name="v13" value="change"> Needs change</label>
-        <label><input type="radio" name="v13" value="unsure"> Not sure</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n13">How would you say it? <span class="nc-optional">(optional)</span></label>
-        <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
-    <fieldset class="nc-item" data-id="04b/1321#14">
-      <legend>Line 14</legend>
-      <div class="reader nc-text" lang="el" dir="ltr">
-        <p class="nc-ctx">– Αυτό είναι. Άκου αυτό. Σε, σε παρακαλώ άκου. «Εκείνο το κρασί που είναι εκεί είναι αλήθεια όχι μεταφορά.» Αυτό είναι το ίδιο. Είναι σαν εκείνη τη ζωγραφιά που σου έδειχνε η φί-φίλη σου.</p>
-        <p class="nc-line">Σαν εκείνο — όσο πιο πολύ σκέφτεσαι αυτές τις δέκα λέξεις, τόσο πιο πολύ σκα... τέλος πάντων, ζαλίζεσαι.</p>
-      </div>
-      <p class="nc-q" id="q14">He nearly repeats a girl's crude word for dizzy, stops, and says a milder one. Does that come through?</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="q14">
-        <label><input type="radio" name="v14" value="ok"> Correct</label>
-        <label><input type="radio" name="v14" value="change"> Needs change</label>
-        <label><input type="radio" name="v14" value="unsure"> Not sure</label>
-      </div>
-      <p class="guestbook-field">
-        <label for="n14">How would you say it? <span class="nc-optional">(optional)</span></label>
-        <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </fieldset>
     <p class="guestbook-field">
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -413,7 +373,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

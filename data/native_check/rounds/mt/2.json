@@ -2,20 +2,30 @@
  "lang": "mt",
  "slug": "mt",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/1150#6",
+   "where": "04b/1150",
+   "text": "Ħarab b'veloċità ogħla mid-dawl, jekk le kont neqirdu.",
+   "q": "The speaker means he'd have hung him up by the backside. Is that clear?",
+   "before": [
+    "…Eskandar. Hu u jaħrab lejn il-bieb, sieq Farid laqtet il-ktieb ta' Eskandar u ċarrtet il-qoxra tal-gazzetta tiegħu. Parti mit-titlu twil u mħawwad tal-ktieb dehret: 'Għaxart Elef ... Għaġeb, Kunjizzjoni ... Afor... Għal ...' Farid ma ġiex lura l-kamra għal jumejn jew tlieta. Eskandar baqa' jgħid:",
+    "– Dak il-gremxul żgħir kiser il-liġijiet tal-fiżika wkoll."
+   ]
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Qed ngħid jekk toqgħod hekk biss bilqiegħda taqra l-poeżija, l-ħobż ma jissaħħanx għalik.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Qalet, qalbi qed timmarċixxi.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Tikolx id-dwejjaq, tifel għaqli tiegħi.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +36,14 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, Alla jkollha ħniena minnha, kienet tgħid f'mumenti bħal dawn: jekk ngħidha, ilsieni jinħaraq; jekk ma ngħidhiex, il-mudullun ta' għadmi jinħaraq.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Ix-xita ma tinżilx mill-art lejn is-sema.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Jgħid, «Sena tajba tingħaraf mir-rebbiegħa tagħha.»",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Qed ngħid jekk toqgħod hekk biss bilqiegħda taqra l-poeżija, l-ħobż ma jissaħħanx għalik.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0216#5",
+   "where": "04b/0216",
+   "text": "– Ej, tħawwadx rasek hekk, Duttur.",
+   "q": "Is it clear he means: don't shake your head like that?",
+   "before": [
+    "Jidħak aktar minn qabel.",
+    "Kieku żammejt għalija dawk iż-żewġ beits li Niloofar kienet talbitni ma naqrahomx lil ħadd, ma kontx ikolli bżonn dan kollu ħolm. Ċaqlaqt rasi biex il-ħsieb ta' dik il-mixja twila, u Esfandiar u Jesse, jaqgħu minn quddiem għajnejja. Hooman jgħid:"
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,11 +53,34 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Idi qasira u l-għaqda miegħek 'il bogħod.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1266#8",
+   "where": "04b/1266",
+   "text": "It-tifla ta' Baba timbotta l-ġugarell żgħir roża tagħha u titbiegħed tagħmel viżż viżż.",
+   "q": "Is it clear the girl is pushing a small pink kick scooter?",
+   "before": [
+    "Vuċi tiġi minn warajja:",
+    "– Iva, nixtlilek pupa. Meta jkolli l-flus, nixtlilek waħda aħjar, tifla ta' Baba."
+   ]
+  },
+  {
+   "id": "03/0060#3",
+   "where": "03/0060",
+   "text": "Hamid ġibed 'il fuq iċ-ċintorin l-aħmar imċajpar tal-libsa tal-glieda tiegħu u, b'daqqa ta' dahar idu, tefa' l-għoqda tal-ħsara wara dahru minn fuq spallejh.",
+   "q": "Hamid pulls up the shoulder strap of his singlet. Is 'ċintorin' the right word?",
+   "before": [
+    "L-istess vuċi li kienet staqsiet lil Ghassem dwar ir-rank tal-Konkoor tiegħi, qalet bil-mod ħafna:",
+    "– Ħe, l-Ostad Hamid, il-qattus imħawwad."
+   ]
+  },
+  {
+   "id": "04b/1236#7",
+   "where": "04b/1236",
+   "text": "Minn ġol-ħabta tal-bieb tal-kabina tad-doċċa, ħarist 'il barra.",
+   "q": "Amir peeks out through a gap in the shower door. Is 'ħabta' right?",
+   "before": [
+    "– Mur neħħi l-berritta ta' Hamid u tih daqqa fuq wara ta' rasu l-qarquċa, jekk le llum meta Negar toħroġ nerfa' lil Yasi r-raqiq fuq rasi. Imbagħad ikun int u l-Qattus ta' Hamid biss.",
+    "…tad-demm ħakmet id-dinja kollha. Żewġ sulari taħt l-art. Kant kien ġej minn taħt bosta doċeċ. Ftit kienu żiedu l-ispeakers tal-mowbajls tagħhom mal-ġagħġigħ tas-sala tad-doċeċ. Fil-bidu ma stax tinfired l-għajta mill-kant u l-mużika. Ġiet ir-riħa tad-demm. Ir-riħa saret aktar b'saħħitha mill-ħoss."
+   ]
   }
  ]
 }

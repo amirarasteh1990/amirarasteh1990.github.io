@@ -187,8 +187,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <button type="button" class="btn btn-icon btn-share" lang="en" aria-label="Share this opening" title="Share this opening" data-share-url="https://arasteh.art/sedaha/read/it/" data-share-title="Sedaha (Sounds) &mdash; Book One" data-share-text="Il filo di parole che un tempo erano suoni…"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M20 10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9"/></svg></button>
     </div>
     <p class="muted-note dl-terms" lang="it">Questa edizione elettronica completa può essere letta e condivisa gratuitamente, purché il file rimanga completo e invariato. Brevi estratti possono essere citati, purché ogni estratto indichi chiaramente la fonte: il titolo del libro, il nome dell'autore e arasteh.art.</p>
-    <p class="native-check-link"><a href="/sedaha/check/it/" lang="it" dir="ltr">L'italiano è la tua lingua madre? Aiuta a verificare questa traduzione (le domande sono in inglese) &rarr;</a></p>
+    <p class="native-check-link"><a href="/sedaha/check/it/" lang="it" dir="ltr">L'italiano è la tua lingua madre? Aiuta a verificare questa traduzione &rarr;</a></p>
     <a class="read-back" href="/sedaha/"><span lang="it">Suoni</span> &rarr;</a>
   </div>
 </main>

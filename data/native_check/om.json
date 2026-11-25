@@ -2,27 +2,52 @@
  "lang": "om",
  "slug": "om",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "03/0582#1",
-   "where": "03/0582",
-   "text": "Farid barcuma isaa fi ganfaa isaa fudhatee dhufee siree koo irratti ol ciise – siree Bahman waggoota lamaan jalqabaa yunivarsiitii irra ciisaa ture san; halkan sana waggaa sadii dhiyaatu ture kan ho'a dhagna Bahman tasa siree irraa dagatame.",
-   "q": "Farid brings his pillow and blanket. Are 'barcuma' and 'ganfaa' the right words?",
+   "id": "04b/1312#1",
+   "where": "04b/1312",
+   "text": "Nama fiixaanii baasa. Hammam caalaa itti yaaddu, hammuma fiixaan si baasa.",
+   "q": "A student's crude slang for 'it makes your head spin' (like 'shit-dizzy'). Is there a crude word here? Which would a young person use?",
+   "kind": "textlook"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "Atis, haala dubbii kee kan akka qulaa kanaan, maqaan kee Alain Qulalon taʼuu qaba ture.",
+   "q": "'Alain Qulalon' is meant as a rude pun on the actor Alain Delon. Would Oromo readers get it? If not, what word could carry it?",
    "before": [
-    "– Eessatu morma koo irratti 'iddoo miilaa' jedhee barreeffame?",
-    "– Obbjektiivii dhaan, ilkaan rigachuuf deemee harkaa fi fuula koos nan dhiqadhe; ijaajjee waan hin qabneef, hin argine."
+    "– Ee, Hamoon maqaa gaarii dha siif. Akka Hamoon fiilmii keessaa, atis gaaffiidhaan guutamteerta. Yaaddoo fi madda jeeqamaatiin guutamteerta — ofii keetiif utuu hin taane, anaaf.",
+    "Hooman ni jedhe:"
    ]
   },
   {
-   "id": "04a/0093#2",
-   "where": "04a/0093",
-   "text": "Mandaraatti nan deeme. Dashoriin mandara keessa jira.",
-   "q": "A child walks to the yard toilet. Are 'mandara' (yard) and 'Dashoriin' (toilet) clear?",
-   "before": [
-    "Dhuuqaan koo hin jiidhu ture. Maman ni jette:",
-    "– Yeroo akkasitti hin taane, ganama barii dashoritti deemi."
-   ]
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Bokkaan lafaa gara samiitti hin roobu.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Harki koo gabaabaa dha, walitti dhufeenyi kees fagoo dha.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibi, Waaqni ishee haa boqochiisu, yeroo akkanaa akkana jetti turte: \"yoon dubbadhe, arrabni koo guba; yoon hin dubbatin, dhuka lafee kootu guba.\"",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "\"Waggaan gaariin Arfaasaa isaatii beekama\" jedha.",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/0171#3",
@@ -32,16 +57,6 @@
    "before": [
     "– Namni akkamitti dadhabbii fi rakkina isaa akkasumaan badu irratti hin gaddu?",
     "Hooman ni jedhe:"
-   ]
-  },
-  {
-   "id": "04b/0306#4",
-   "where": "04b/0306",
-   "text": "Ergasii kitaabichi banamuun ija ishee bantee, gara fuula banamee ilaalte.",
-   "q": "Is it clear that she opens the book herself, on purpose?",
-   "before": [
-    "– ... A, ti, hin, taa, ne, ambishiyeeffataa. Kanaafuu maaloo haguuggii fi fakkeenya nagaa-jaalataa jala dhokachuu hin yaalin.",
-    "…– Waan tokko hin jenne. Garuu kaayyoon keenya maal akka ta'e beekta, jala kutuu hin dandeessu. Ija ishee cufattee, kitaaba qoma ishee dura qabattee, quba ishee akka kitaabicha bantutti kitaaba irra kaayatte. Hidhii jalaan hafuura xiqqaan ni jette: – Yaa Hafez Shiraaz, ati iccitii hunda beekta."
    ]
   },
   {
@@ -55,43 +70,20 @@
    ]
   },
   {
-   "id": "04b/1067#6",
-   "where": "04b/1067",
-   "text": "Yeroo hunda sodaa kana qaba ture, yoo Taghi guyyaa tokko fedhii qabaate Yaser mataa isaa naanneessuuf, yoos ani Hamid mataa koo irra naanneessuu qaba ture.",
-   "q": "Is it clear that Hamid would swing the narrator above his own head?",
-   "before": [
-    "…harkaa rukutame, baayʼinni lolaa akka malee hir'ate. Hamid Taghi sodaata, dubbii isaa irratti waan tokko iyyuu dubbachuu hin dandeenye, anis akkaataa tokkoon aangoo Taghi kanarraa faayidaa nan argadhe. Waan erga oduu Hassan-Kompiitaraa booda, Taghi na eegaa ture. Hidhii jalaan natti hime ture:",
-    "– Yeroo Negar baatu, ani Hamid-adurree ol nan kaasa. Ergasii siif fi Yaasi-huqqaa qofatu hafa."
-   ]
+   "id": "04b/1321#2",
+   "where": "04b/1321",
+   "text": "\"Daadhiin achi jiru dhugaa dha, hin-fakkaatu\"",
+   "q": "Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?",
+   "kind": "textlook"
   },
   {
-   "id": "04b/1135#7",
-   "where": "04b/1135",
-   "text": "Foolii daabboo garuu fedhii koo caalaa jabaata ture.",
-   "q": "The classrooms are being painted. Is 'daabboo' the right word for paint?",
+   "id": "04b/0306#4",
+   "where": "04b/0306",
+   "text": "Ergasii kitaabichi banamuun ija ishee bantee, gara fuula banamee ilaalte.",
+   "q": "Is it clear that she opens the book herself, on purpose?",
    "before": [
-    "– Haala baramaa fi addunyaa haqaa keessatti, ee. Garuu utuu nama akka keetii waliin kutaa hin qooddannee. Xiqqoo sodaa yoo dhagootte, hunda dabarsita.",
-    "…Ganna ture, duwwaadhas. Erga wal-argii jalqabaa booda, Niloofar \"tarii\" fi \"garuu\" qofaan deebii naaf kennaa turte. Tarii ji'a itti aanu, tarii lakkis. Ji'a ji'aan gara dhaabbata barnootaa dhufee, guyyoota ganna sanaa hunda akkan dabarsu hin amanuu ture, akka tarii ji'a itti aanu Niloofar arguuf."
-   ]
-  },
-  {
-   "id": "04b/1140#8",
-   "where": "04b/1140",
-   "text": "Waadaan gala, xiqqoo isarratti hojjenna, fuula keessan duratti of duuba deebi'ee \"fudhadhaa\" jedha.",
-   "q": "Is it clear he would pull down his own trousers in front of you?",
-   "before": [
-    "…hin dubbanne, akka karoorri isaa maal akka ta'e hin beekamneef. Onneen isaa fi xiyyeeffannaan isaa darbii jalqabaa gamoo Abu-Reyhan keessatti, gidduu ijoollee dhaabbata Doonii-hojjechuu keessatti qabamee ture. Eskandar walakkaa kutaa alangaa irratti, fuula Hooman fi Sajad dura taaʼee ni jedha ture:",
-    "– ... wal-lolaa? Ani hamma ammaatti sammuu namticha kanaa akka calaqaa harka kootii beekeera. Hojiin isaa hundi yaada-maleessummaa irraa dhufa. Kanuma jaalala isaa ilaalaa. Namni ji'oota muraasa keessatti akkas jaallataa? Isheenis niitii nama biraa ti."
-   ]
-  },
-  {
-   "id": "03/0430#9",
-   "where": "03/0430",
-   "text": "Atis, haala dubbii kee kan akka qulaa kanaan, maqaan kee Alain Qulalon taʼuu qaba ture.",
-   "q": "'Alain Qulalon' is meant as a rude pun on the actor Alain Delon. Would Oromo readers get it? If not, what word could carry it?",
-   "before": [
-    "– Ee, Hamoon maqaa gaarii dha siif. Akka Hamoon fiilmii keessaa, atis gaaffiidhaan guutamteerta. Yaaddoo fi madda jeeqamaatiin guutamteerta — ofii keetiif utuu hin taane, anaaf.",
-    "Hooman ni jedhe:"
+    "– ... A, ti, hin, taa, ne, ambishiyeeffataa. Kanaafuu maaloo haguuggii fi fakkeenya nagaa-jaalataa jala dhokachuu hin yaalin.",
+    "…– Waan tokko hin jenne. Garuu kaayyoon keenya maal akka ta'e beekta, jala kutuu hin dandeessu. Ija ishee cufattee, kitaaba qoma ishee dura qabattee, quba ishee akka kitaabicha bantutti kitaaba irra kaayatte. Hidhii jalaan hafuura xiqqaan ni jette: – Yaa Hafez Shiraaz, ati iccitii hunda beekta."
    ]
   }
  ]

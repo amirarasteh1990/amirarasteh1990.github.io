@@ -2,21 +2,24 @@
  "lang": "sq",
  "slug": "sq",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
-   "id": "01/0138#1",
-   "where": "01/0138",
-   "text": "Tha: zemra ime po kalbet.",
-   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Zoti e mëshiroftë, thoshte në çaste të tilla: nëse e them, më digjet gjuha; nëse nuk e them, më digjet palca e kockave.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Mos ha hidhërim, djali im i zgjuar.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "06/0077#8",
+   "where": "06/0077",
+   "text": "– Veç kësaj, Amir — mbrëmë unë dhe Maman i çuam Gjyshit ushqim e fruta, dhe i hodha pak alkool në duar që t'i dezinfektonte — e mendoi se ishte ujë trëndafili dhe e leu nëpër gjithë kokën e fytyrën.",
+   "q": "Mahboubeh casually changes the subject. Does 'Veç kësaj' sound right here?",
+   "before": [
+    "– Ahaa.",
+    "Mahboubeh thotë:"
+   ]
   },
   {
    "id": "04b/0509#3",
@@ -26,32 +29,21 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Bibi, Zoti e mëshiroftë, thoshte në çaste të tilla: nëse e them, më digjet gjuha; nëse nuk e them, më digjet palca e kockave.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Mos i thuaj atij Eskandar-it të mjerë, sërish ulet e na bën një orë këshilla e mësime, më bëhet helm gjarpri.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Shiu nuk bie përpjetë nga toka.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Thotë: \"Një vit i mirë njihet nga pranvera e tij.\"",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Po them, po të rrish kështu vetëm këtu e të lexosh poezi, nuk të nxehet asnjë bukë.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1259#6",
+   "where": "04b/1259",
+   "text": "– Janë gjashtë veta së shumti. Unë i dal për zot tre prej tyre.",
+   "q": "Before a fight, Taghi means he can take on three. Is that clear?",
+   "before": [
+    "– Mirë pra, hajde dilni përpara.",
+    "…na shikonte ende. Ne e shikonim atë. Takimi i vështrimeve tona ishte i shkurtër. S'kaloi shumë dhe Negari s'na shikonte më, por ia nguli sytë diçkaje pas nesh. Me një tundje koke, ia përcolli syve tona atë që po shihte. U kthyem. Dy biçikleta po vinin drejt nesh. Shikuam njëri-tjetrin. Taghi tha:"
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +53,34 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Dora ime është e shkurtër dhe bashkimi me ty është larg.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1280#7",
+   "where": "04b/1280",
+   "text": "Nuk kemi asnjë vend në letërsinë botërore; askush në botë nuk na grin as edhe një presh.",
+   "q": "A professor uses a Persian saying meaning nobody cares about us. Would a reader guess that from context?",
+   "before": [
+    "…me hidhërim, herë me butësi. Të qeshurën e tij të fundit e shoqëroi gjithë klasa. Mori Zotin dëshmitar të fjalës së tij. Pas mësimit të gjithë e kishin rrethuar dhe bënin pyetje. Dikush pyeti diçka dhe Ostad Kadkani iu përgjigj, e më pas, gjersa fryma ia lejoi, e ngriti zërin dhe tha me dhembshuri:",
+    "…kohën kur Nezami e Atari e Rumiu e Saadiu e Hafezi dhe sa e sa emra të tjerë shkëlqenin në letërsinë tonë, shumë gjuhë sapo kishin hedhur këmbën në shkallët e para të letërsisë. Kur Hafezi, duke thyer çdo kufi, e kishte çuar poezinë në përsosurinë e saj, Dostojevskët ende s'kishin lindur. Po tani?"
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Mos i thuaj atij Eskandar-it të mjerë, sërish ulet e na bën një orë këshilla e mësime, më bëhet helm gjarpri.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0556#5",
+   "where": "04b/0556",
+   "text": "– Kishte kërkuar t'i jepnin provim jashtë radhe, që ndoshta të kalonte.",
+   "q": "Is it clear 'provim jashtë radhe' means a specially arranged exam?",
+   "before": [
+    "– Fillimi i muajit esfand ç'kohë është për provim?",
+    "Dhe u shqetësua se mos vërtet ishte stina e provimeve dhe ai e kishte harruar. Bahmani vuri re shqetësimin e Hoomanit. Tha:"
+   ]
+  },
+  {
+   "id": "04b/0551#4",
+   "where": "04b/0551",
+   "text": "Isha ulur në krevatin tim dhe ende ndihesha i lumtur me lumturinë e asaj dite, që kisha shikuar Niloofar për tërë gjatësinë e ndërtesës Abu-Reyhan.",
+   "q": "Does 'kisha shikuar Niloofar' sound grammatically right here?",
+   "before": [
+    "– Të mbetur nga anija e thyer jemi; o erë e favorshme, çohu.",
+    "Deri afër perëndimit ndenja aty me Niloofarin dhe lexuam poezi. Faljen e akshamit dhe të jacisë i fala në faltoren e konviktit dhe pastaj shkova në dhomë."
+   ]
   }
  ]
 }

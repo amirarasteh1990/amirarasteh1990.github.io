@@ -2,8 +2,15 @@
  "lang": "om",
  "slug": "om",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Kanan jedhu, yoo as taa'ii walaloo qofa dubbisaa jiraatte, buddeenni siif hin ho'u.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
@@ -19,32 +26,14 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Bibi, Waaqni ishee haa boqochiisu, yeroo akkanaa akkana jetti turte: \"yoon dubbadhe, arrabni koo guba; yoon hin dubbatin, dhuka lafee kootu guba.\"",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "Bokkaan lafaa gara samiitti hin roobu.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "\"Waggaan gaariin Arfaasaa isaatii beekama\" jedha.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Kanan jedhu, yoo as taa'ii walaloo qofa dubbisaa jiraatte, buddeenni siif hin ho'u.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1140#8",
+   "where": "04b/1140",
+   "text": "Waadaan gala, xiqqoo isarratti hojjenna, fuula keessan duratti of duuba deebi'ee \"fudhadhaa\" jedha.",
+   "q": "Is it clear he would pull down his own trousers in front of you?",
+   "before": [
+    "…hin dubbanne, akka karoorri isaa maal akka ta'e hin beekamneef. Onneen isaa fi xiyyeeffannaan isaa darbii jalqabaa gamoo Abu-Reyhan keessatti, gidduu ijoollee dhaabbata Doonii-hojjechuu keessatti qabamee ture. Eskandar walakkaa kutaa alangaa irratti, fuula Hooman fi Sajad dura taaʼee ni jedha ture:",
+    "– ... wal-lolaa? Ani hamma ammaatti sammuu namticha kanaa akka calaqaa harka kootii beekeera. Hojiin isaa hundi yaada-maleessummaa irraa dhufa. Kanuma jaalala isaa ilaalaa. Namni ji'oota muraasa keessatti akkas jaallataa? Isheenis niitii nama biraa ti."
+   ]
   },
   {
    "id": "04b/0824#7",
@@ -54,11 +43,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Harki koo gabaabaa dha, walitti dhufeenyi kees fagoo dha.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1067#6",
+   "where": "04b/1067",
+   "text": "Yeroo hunda sodaa kana qaba ture, yoo Taghi guyyaa tokko fedhii qabaate Yaser mataa isaa naanneessuuf, yoos ani Hamid mataa koo irra naanneessuu qaba ture.",
+   "q": "Is it clear that Hamid would swing the narrator above his own head?",
+   "before": [
+    "…harkaa rukutame, baayʼinni lolaa akka malee hir'ate. Hamid Taghi sodaata, dubbii isaa irratti waan tokko iyyuu dubbachuu hin dandeenye, anis akkaataa tokkoon aangoo Taghi kanarraa faayidaa nan argadhe. Waan erga oduu Hassan-Kompiitaraa booda, Taghi na eegaa ture. Hidhii jalaan natti hime ture:",
+    "– Yeroo Negar baatu, ani Hamid-adurree ol nan kaasa. Ergasii siif fi Yaasi-huqqaa qofatu hafa."
+   ]
+  },
+  {
+   "id": "04b/1135#7",
+   "where": "04b/1135",
+   "text": "Foolii daabboo garuu fedhii koo caalaa jabaata ture.",
+   "q": "The classrooms are being painted. Is 'daabboo' the right word for paint?",
+   "before": [
+    "– Haala baramaa fi addunyaa haqaa keessatti, ee. Garuu utuu nama akka keetii waliin kutaa hin qooddannee. Xiqqoo sodaa yoo dhagootte, hunda dabarsita.",
+    "…Ganna ture, duwwaadhas. Erga wal-argii jalqabaa booda, Niloofar \"tarii\" fi \"garuu\" qofaan deebii naaf kennaa turte. Tarii ji'a itti aanu, tarii lakkis. Ji'a ji'aan gara dhaabbata barnootaa dhufee, guyyoota ganna sanaa hunda akkan dabarsu hin amanuu ture, akka tarii ji'a itti aanu Niloofar arguuf."
+   ]
+  },
+  {
+   "id": "04a/0093#2",
+   "where": "04a/0093",
+   "text": "Mandaraatti nan deeme. Dashoriin mandara keessa jira.",
+   "q": "A child walks to the yard toilet. Are 'mandara' (yard) and 'Dashoriin' (toilet) clear?",
+   "before": [
+    "Dhuuqaan koo hin jiidhu ture. Maman ni jette:",
+    "– Yeroo akkasitti hin taane, ganama barii dashoritti deemi."
+   ]
+  },
+  {
+   "id": "03/0582#1",
+   "where": "03/0582",
+   "text": "Farid barcuma isaa fi ganfaa isaa fudhatee dhufee siree koo irratti ol ciise – siree Bahman waggoota lamaan jalqabaa yunivarsiitii irra ciisaa ture san; halkan sana waggaa sadii dhiyaatu ture kan ho'a dhagna Bahman tasa siree irraa dagatame.",
+   "q": "Farid brings his pillow and blanket. Are 'barcuma' and 'ganfaa' the right words?",
+   "before": [
+    "– Eessatu morma koo irratti 'iddoo miilaa' jedhee barreeffame?",
+    "– Obbjektiivii dhaan, ilkaan rigachuuf deemee harkaa fi fuula koos nan dhiqadhe; ijaajjee waan hin qabneef, hin argine."
+   ]
   }
  ]
 }

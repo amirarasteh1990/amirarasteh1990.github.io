@@ -2,20 +2,23 @@
  "lang": "tl",
  "slug": "tl",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0394#4",
+   "where": "04b/0394",
+   "text": "– ... nakeri tayo.",
+   "q": "Is it clear 'nakeri tayo' is crude slang meaning they got badly screwed?",
+   "before": [
+    "At tumatawa siya nang malakas.",
+    "…mahahabang aparador ng silid, na nakatayo sa tapat ng kama nina Farid at Sajad. Ang dalawang-palapag na kama namin ni Bahman ay nagpapanatili sa natitirang bahagi ng silid na nakahanay sa mga aparador. Kumakain si Hooman ng pasas kasama ng tsaa at naghihinaing tungkol sa patakaran ng localization."
+   ]
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Sinabi niya, nabubulok na ang puso ko.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Huwag kang kumain ng kalungkutan, matalinong anak ko.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,31 +29,10 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Si Bibi, nawa'y ipahinga ng Diyos ang kanyang kaluluwa, ay nagsasabi sa mga oras na ganito: kung sasabihin ko ito, masusunog ang aking dila; kung hindi ko sasabihin ito, masusunog ang utak ng aking mga buto.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Hindi umuulan paitaas mula sa lupa.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "Sinabi niya, \"Ang magandang taon ay makikilala sa tagsibol nito.\"",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Sinasabi ko, kung ganito ka lang nakaupo rito at nagbabasa ng tula, walang tinapay na iinit para sa iyo.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Huwag mong sabihin sa buwisit na Eskandar na iyon, o pauupuin niya kami nang isa pang oras na puno ng payo at magiging kamandag ng ahas ito para sa akin.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -61,18 +43,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Maikli ang kamay ko at malayo ang pagkakaisa sa iyo.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1280#8",
+   "where": "04b/1280",
+   "text": "Wala tayong lugar sa panitikan ng daigdig; walang sinuman sa mundo ang magtatadtad man lang ng isang leek para sa atin.",
+   "q": "A professor uses a Persian saying meaning nobody cares about us. Would a reader guess that from context?",
+   "before": [
+    "…klase. Tinawag niya ang Diyos na saksi ng kaniyang salita. Pagkatapos ng klase ay nagsiksikan ang lahat sa paligid niya at nagtatanong. May nagtanong ng isang bagay at sinagot ito ni Dr. Kadkani, pagkatapos ay itinaas ang tinig hanggang sa abot ng kaniyang hininga at nagsabi nang may damdamin:",
+    "…na pangalan ay nagniningning sa ating panitikan, marami pang wika ang bahagya pa lamang nakatutuntong sa mga unang baitang ng panitikan. Nang dalhin ni Hafez ang tula sa kasakdalan nito, na winawasak ang lahat ng hangganan, hindi pa isinisilang ang mga tulad ni Dostoevsky. Ngunit ngayon?"
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Huwag mong sabihin sa buwisit na Eskandar na iyon, o pauupuin niya kami nang isa pang oras na puno ng payo at magiging kamandag ng ahas ito para sa akin.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04a/0045#3",
+   "where": "04a/0045",
+   "text": "Lagi niyang itinaas ang kamay patungo sa tindahan ni Haaj Kazem.",
+   "q": "A small child describes a habit. Does this sentence read naturally?",
+   "before": [
+    "Napakabilis na tumatakbo ng mga sasakyan doon. Noong apat taon ako, mas mabilis pa sila. Wiish-wiish ang takbo nila. Lagi namang sinasabi ni Ghassem:",
+    "– Simula ng ikalawang bahagi ng misyon. Batalyon, kanan liko."
+   ]
+  },
+  {
+   "id": "04b/0457#5",
+   "where": "04b/0457",
+   "text": "Nang araw na iyon, pagkatapos ng pagsusulit sa differential equations, muling dumating ang batang iyon na makinis ang buhok at matipuno ang katawan, at umalis silang magkasama ni Niloofar.",
+   "q": "Is it clear 'batang iyon' is a young university man, not a child?",
+   "before": [
+    "Tumawa siya nang malakas at inuulit:",
+    "– ... sariling mga teorya niya ..."
+   ]
+  },
+  {
+   "id": "04b/1023#7",
+   "where": "04b/1023",
+   "text": "Sinusubukan kong makita ang kabilang dulo ng pasilyo mula sa magkakapatong na dungawan ng apat na bukas na espasyo sa pagitan ng mga palapag.",
+   "q": "Is it clear he peers through four stacked open wells between the floors?",
+   "before": [
+    "…tumakas na bati mula sa aking bibig at bilang sagot ay may dumating na bati. Mula nang araw na iyon hanggang sa araw na narinig ko ang tawa ni Niloofar, ang lahat ay ang nag-uulit na bating iyon. Nakarating ako sa ikalawang palapag. Kapag iniisip ko ang ikatlong palapag, nahihirapan akong huminga.",
+    "…gitna ng mga palapag, at alam kong sa kabilang panig ng unang bukas na espasyo ay muli silang nagtatagpo at nagpipilipitan. Nakikita ko ang apat na paso ng bulaklak. Tulad noong mga taong iyon, naroon pa rin sila, sa paanan ng dungawang nagdadala ng liwanag ng bukas na espasyo papasok sa pasilyo."
+   ]
   }
  ]
 }

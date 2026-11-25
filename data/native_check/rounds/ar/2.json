@@ -1,192 +1,222 @@
 {
+ "format": 2,
  "lang": "ar",
  "slug": "ar",
  "dir": "rtl",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "مراجعة الناطقين الأصليين",
+  "lead": "لا يلزم أن تكون قد قرأت الكتاب. أجب عن العدد الذي تشاء.",
+  "persian_words": "«مامان» (الأم) و«بابا» (الأب) و«-جان» (عزيزي) كلمات فارسية أُبقيت في الكتاب.",
+  "page": "صفحة",
+  "correct": "صحيح",
+  "needs_change": "يحتاج إلى تعديل",
+  "not_sure": "لست متأكدًا",
+  "how_say": "كيف تقولها أنت؟",
+  "meaning": "ما معناها برأيك؟",
+  "optional": "(اختياري)",
+  "your_name": "اسمك",
+  "thanks_tick": "أدرِج اسمي في صفحة الشكر",
+  "private": "لا تصل إجاباتك إلا إلى المؤلف.",
+  "send": "إرسال",
+  "send_continue": "إرسال والمتابعة إلى الصفحة {n}",
+  "sending": "جارٍ الإرسال…",
+  "popup_title": "شكرًا لك!",
+  "popup_text": "هل تودّ أن يظهر اسمك في صفحة الشكر على الموقع؟ أكمِل الصفحات الأربع كلها، ويسعدنا أن نضيفه.",
+  "popup_button": "المتابعة إلى الصفحة {n}",
+  "arrived": "شكرًا لك، وصلت إجاباتك عن الصفحة {n}.",
+  "thanks_last": "شكرًا لك! وصلت إجاباتك.",
+  "all_done": "لقد أرسلت كل الصفحات. شكرًا لك عليها جميعًا!",
+  "already_sent": "لقد أرسلت هذه الصفحة من هذا الجهاز من قبل. شكرًا لك!",
+  "continue_with": "تابِع بالصفحة {n}",
+  "need_one": "اختر إجابةً لسطر واحد على الأقل.",
+  "note_no_answer": "في أحد الأسطر ملاحظة: يُرجى أن تختار له إجابةً أيضًا.",
+  "name_needed": "أضِف الاسم الذي تودّ أن يُذكر، أو أزِل العلامة من المربع.",
+  "not_connected": "الإرسال غير متصل بعد.",
+  "too_long": "استغرق الإرسال وقتًا طويلًا.",
+  "cannot_send": "تعذّر إرسال الإجابات من هنا.",
+  "use_email": "يُرجى استخدام زر البريد الإلكتروني أدناه.",
+  "fallback": "تعذّر إرسال الإجابات من هذه الصفحة. يُرجى إرسالها بالبريد الإلكتروني بدلًا من ذلك؛ لم يضِع شيء مما أدخلته.",
+  "email_button": "إرسال الإجابات بالبريد الإلكتروني",
+  "shortened": "بعض الملاحظات كانت أطول مما يتّسع له رابط البريد الإلكتروني، فاختُصرت هناك. إجاباتك الكاملة أدناه؛ يُرجى لصقها في الرسالة.",
+  "noscript": "يحتاج الإرسال إلى JavaScript. ويمكنك أيضًا إرسال إجاباتك بالبريد الإلكتروني إلى {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "04b/0595#1",
-   "where": "04b/0595",
-   "text": "– لكنه خرا فيها. عين النسر يقول پيير-تو-پيير، وخراباتي يقول پير-تو-پير.",
-   "q": "Amir misheard 'peer' as 'پير', Persian for an old sage, which fits his nickname. Would Arabic readers get it? If not, what word could?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– پير-تو-پير؟",
-    "قال هومن:",
-    "– صلّوا على النبي. شيخ الخرابات قال شيئاً أخيراً.",
-    "قال فريد:"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "صحيح",
+    "يحتاج إلى تعديل",
+    "لست متأكدًا"
+   ],
+   "note_label": "كيف تقولها أنت؟",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "من هذه الجهة أفك خيط الكلمات، ومن الجهة الأخرى تجمعها يداك.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0591#2",
-   "where": "04b/0591",
-   "text": "– پير-تو-پير؟",
-   "q": "Amir mishears the English word 'peer' as 'پير', meaning an old sage. Would Arabic readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– نوعٌ من المال الإلكتروني الـپيير-تو-پيير.",
-    "قلت:"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "صحيح",
+    "يحتاج إلى تعديل",
+    "لست متأكدًا"
+   ],
+   "note_label": "كيف تقولها أنت؟",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "– كتيبة، إلى الأمام سِر!",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0290#3",
-   "where": "03/0290",
-   "text": "– هل «آرسته» نسخة مشذبة من «آراسته»؟",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would Arabic readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "أدير رأسي نحوه."
+   "key": "poetry",
+   "title": "شعر",
+   "q": "هذه أسطر من الشعر. هل يُقرأ كلٌّ منها شعرًا حسنًا في لغتك؟",
+   "labels": [
+    "صحيح",
+    "يحتاج إلى تعديل",
+    "لست متأكدًا"
+   ],
+   "note_label": "كيف تقولها أنت؟",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "– ... لن آخذ خاتم سليمان بشيء، فبين الحين والحين عليه يدُ ...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "– «أحلى أن يبكي عطّار حتى السحر»، أم «صار الآن أكثر قتلاً»؟",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "على كل شيءٍ يمكن أن يُكتب",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "فاكتُب على الماء بدمك أنت",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "كي يعلم من يأتي في إثرك",
+     "note": null
+    },
+    {
+     "id": "04b/1275#poetr",
+     "text": "المحترقين",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "قد مرّوا من هنا.",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "أنشدت: «طال الأمد ولم يُرسل الحبيب رسالة؛ ولم يكتب سلاماً...»",
+     "note": null
+    },
+    {
+     "id": "04b/1390#poetr",
+     "text": "أضاء ضوءُ أحلامي",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "صار ضوءُ أحلامي يومض الآن",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "لا أرجو عودتكِ",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "لكن إن مررتِ من هنا صدفةً",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "فتعالي إلى أحلامي من جديد",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "أظنّ أحلامي لم تُصدّق أنكِ رحلتِ",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "ضوءُ أحلامي ... ضوءُ أحلامي يُضيـ... أضاء ضوءُ أحلامي",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0309#4",
-   "where": "03/0309",
-   "text": "– إن شاء الله، ليكن حالك دائماً آراسته.",
-   "q": "The guard wishes Amir well, playing on his surname and the Persian word for neat. Would Arabic readers get it? If not, what word could?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "يبتسم الحارس ويقول:"
-   ]
-  },
-  {
-   "id": "03/0362#5",
-   "where": "03/0362",
-   "text": "– محبوب، هذا الشيء الذي يقولونه في الأخبار، أمروكا...",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Arabic speaker say America as 'أمروكا'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…التي وجدتها، نهضت من جانب المدفأة ولصقت الورقة على الجدار بجانب بقية ملاحظات الكونكور. خرجت من البيت عند الطرف الآخر من الفناء، وقطعته في تسع خطوات، وكانت بهجة الاكتشاف الجديد لا تزال مضيئة في قلبي. وحين دخلت الصالة من الفناء، كانت مامان ممددة أمام التلفزيون، تضع كلتا يديها على بطنها وتقول لمحبوبة:"
-   ]
-  },
-  {
-   "id": "03/0373#6",
-   "where": "03/0373",
-   "text": "– أقول إن أمروكا أكدت أن إيران أوقفت البرنامج النووي. هل يعني هذا أن حرباً ستقع أم لا؟",
-   "q": "Maman, a small-town mother, asks about the news, mispronouncing America again on purpose. Does her question sound like her?",
-   "ctx": 3,
-   "kind": "known",
-   "before": [
-    "وسحبت رأسي إلى الأسفل وقبّلته. قبّلت أنا أيضاً جبهة مامان. أخذت يخنة الآبگوشت من المدفأة. كانت مامان قد ثردت لي الخبز فيه أيضاً. لبضع لحظات لم يكن يُسمع إلا صوت التلفزيون. كانوا يتحدثون عن تقرير استخباراتي أمريكي بشأن البرنامج النووي الإيراني. قالت مامان:",
-    "– محبوب، أنا أتحدث إليكِ.",
-    "– ماذا؟"
-   ]
-  },
-  {
-   "id": "04b/1265#7",
-   "where": "04b/1265",
-   "text": "– نعم أشتليها لكِ. حين يأتيني مال أشتلي لكِ أفضل منها، يا ابنة بابا.",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does 'أشتلي' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– ويييژژژ، بابا بابا، أتشتلي لي هذه الدمية الكبيلة؟",
-    "يقول صوتٌ من خلفي:"
-   ]
-  },
-  {
-   "id": "03/0380#8",
-   "where": "03/0380",
-   "text": "– أسوأ مرض هو أيزهايمر.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Arabic speaker say Alzheimer's as 'أيزهايمر'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "قالت مامان:"
-   ]
-  },
-  {
-   "id": "06/0052#9",
-   "where": "06/0052",
-   "text": "وفي النهاية اتصلت محبوب، فجاءوا بآنبولاس وأخذوا نَنه.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Arabic speaker say ambulance as 'آنبولاس'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– لكنهم لم يكونوا يحتاطون، هذه هي المسألة. الجد لا يسمع ولا يدري ما يجري، أما نَنه فقلت لها مرات: حاج خانم، تجلسان في الزقاق، ستُصابان بكوفيد لا قدّر الله. فكأنها تعاند، وصارا يجلسان هناك أكثر. لكن يا أمير، كان صدر نَنه يُخشخش بشدة. قلت لمحبوب والآخرين: يا أولاد، هذا كوفيد."
-   ]
-  },
-  {
-   "id": "01/0182#10",
-   "where": "01/0182",
-   "text": "– أيّ نساء لم يكن؟",
-   "q": "Maman, hard of hearing, catches only the end of 'زير نساء'. Would Arabic readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– لم يكن زير نساء أيضًا.",
-    "تقول مامان:"
-   ]
-  },
-  {
-   "id": "03/0630#11",
-   "where": "03/0630",
-   "text": "– إنه خراباتي، الحق والإنصاف.",
-   "q": "Farid gives Amir a teasing nickname made from the word tavern. Does 'خراباتي' work as that nickname here?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "قال فريد:"
-   ]
-  },
-  {
-   "id": "03/0628#12",
-   "where": "03/0628",
-   "text": "– هاها، شيخ الخرابات، شيخو، رائع. أصبت الهدف يا فريد الفهد.",
-   "q": "Hooman shortens Amir's nickname 'شيخ الخرابات' into a pet name. Does 'شيخو' work as that short nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "كان هومن يكتب شيئاً في الكتاب بالقلم وقال:"
-   ]
-  },
-  {
-   "id": "04b/0460#13",
-   "where": "04b/0460",
-   "text": "– ما الذي أصابك من جديد فانتصبتَ علينا يا آلان زُبّيلون؟",
-   "q": "Hooman again uses his rude pun on the actor Alain Delon to insult Eskandar. Does the insult work in this line?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "قال هومن:"
-   ]
-  },
-  {
-   "id": "03/0432#14",
-   "where": "03/0432",
-   "text": "وتكوّر فمك كمؤخرة دجاجة ومزّقت نفسك كي تتكلم مثله. لا أعنيه. أعني آلان زُبّيلون. زُوووبّ. نقطة. انتهى.",
-   "q": "Hooman mocks Eskandar's puckered mouth and drags out the rude word in his pun. Does this crude teasing work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "جعل هومن فمه دائرة وجعل أنفه صغيراً ومتجعّداً قدر المستطاع. تماماً كما يصبح وجه إسكندر حين يتكلم."
-   ]
-  },
-  {
-   "id": "04b/0387#15",
-   "where": "04b/0387",
-   "text": "– البارحة كان يأتيني صوت اجترارك. حسرةً أن أبي كان نائماً، وإلا لنهضتُ وانتزعتُ كل قطعة حلوى من حلقك واحدةً واحدة.",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, chewing like a cow. Does this mocking line work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "أدار إسكندر وجهه نحو هومن وقال:"
-   ]
-  },
-  {
-   "id": "04a/0080#16",
-   "where": "04a/0080",
-   "text": "– لماذا لم تذهبا إلى بيت المَلْمَل؟",
-   "q": "An older boy uses his own wrong word for marble again while scolding two little boys. Does it sound like a child talking?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…هرب قاسم. كانت الدراجة في وسط الشارع. كانت مائلة. وكانت عجلتها الأمامية تدور. كانت حمراء. مثل ذلك الباب الأحمر الكبير نفسه. جلست بجانب الساقية. وضعت قدميّ فيها. لم يكن فيها ماء. كان قلبي فارغاً. عاد الرجل. لم تعد العجلة الأمامية تدور. صفع أميد. بكينا نحن الاثنان. ذهب الرجل. عاد قاسم. وبّخنا. قال:"
+   "key": "word_choice",
+   "title": "كلمات مفردة",
+   "q": "هل الكلمة في كل سطر هي الكلمة الصحيحة؟ المعنى المقصود مكتوب تحتها.",
+   "labels": [
+    "صحيح",
+    "يحتاج إلى تعديل",
+    "لست متأكدًا"
+   ],
+   "note_label": "كيف تقولها أنت؟",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0162#word_",
+     "text": "وعلاوة على ذلك وصلت اليوم رسالة إلى هواتف محبوب والآخرين تقول إن كان رجالكم يزعجونكم في البيت، اتصلوا بنا نأتي ونأخذهم.",
+     "note": "\"وعلاوة على ذلك\" = and also (plain, everyday)"
+    },
+    {
+     "id": "03/0514#word_",
+     "text": "– قتلوا القذافي. موضوعياً، تعال شاهد الفيلم.",
+     "note": "\"الفيلم\" = the video clip of the news"
+    },
+    {
+     "id": "04b/0351#word_",
+     "text": "خريتُ على تلك الأيام وعلى طريقة تفكيرنا.",
+     "note": "\"خريتُ على\" = I shit on (scornful dismissal)"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "تُصيب المرءَ بدوخة خرائية. كلما فكّرتِ فيها أكثر، ازدادت دوختكِ الخرائية.",
+     "note": "\"دوخة خرائية\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "وبيدين مرتجفتين رحتُ أُقلّب الغزليات سريعًا لأجد بيتًا من شعر حافظ تزداد دوختنا الخرائية كلما غُصنا في عمقه، كاللوحة، على حدّ تعبير تلك الفتاة الأخرى، لأعرضه على نيلوفر.",
+     "note": "\"دوختنا الخرائية\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "والآن اذهب واشترِ بعض حبوب التسالي لقاسم والآخرين؛ يريدون مشاهدة فيلم.",
+     "note": "\"حبوب التسالي\" = roasted seeds to snack on"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

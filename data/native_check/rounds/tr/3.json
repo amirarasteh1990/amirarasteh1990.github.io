@@ -1,184 +1,362 @@
 {
+ "format": 2,
  "lang": "tr",
  "slug": "tr",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Ana dil kontrolü",
+  "lead": "Kitabı okumuş olmanız gerekmiyor. İstediğiniz kadarını yanıtlayın.",
+  "persian_words": "Maman (anne), Baba (baba) ve -jan (canım), kitapta korunan Farsça kelimelerdir.",
+  "page": "Sayfa",
+  "correct": "Doğru",
+  "needs_change": "Değişmeli",
+  "not_sure": "Emin değilim",
+  "how_say": "Siz nasıl söylerdiniz?",
+  "meaning": "Sizce ne anlama geliyor?",
+  "optional": "(isteğe bağlı)",
+  "your_name": "Adınız",
+  "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
+  "private": "Yanıtlarınız yalnızca yazara gider.",
+  "send": "Gönder",
+  "send_continue": "Gönder ve {n}. sayfaya geç",
+  "sending": "Gönderiliyor…",
+  "popup_title": "Teşekkürler!",
+  "popup_text": "Adınızın web sitesindeki Teşekkürler sayfasında yer almasını ister misiniz? 4 sayfanın hepsini bitirin, memnuniyetle ekleriz.",
+  "popup_button": "{n}. sayfaya geç",
+  "arrived": "Teşekkürler, {n}. sayfadaki yanıtlarınız ulaştı.",
+  "thanks_last": "Teşekkürler! Yanıtlarınız ulaştı.",
+  "all_done": "Bütün sayfaları gönderdiniz. Hepsi için teşekkürler!",
+  "already_sent": "Bu sayfayı bu cihazdan zaten gönderdiniz. Teşekkürler!",
+  "continue_with": "{n}. sayfayla devam et",
+  "need_one": "En az bir satır için bir yanıt seçin.",
+  "note_no_answer": "Bir satırda not var: lütfen o satır için de bir yanıt seçin.",
+  "name_needed": "Listelenmesini istediğiniz adı yazın ya da kutudaki işareti kaldırın.",
+  "not_connected": "Gönderme henüz bağlı değil.",
+  "too_long": "Gönderme çok uzun sürdü.",
+  "cannot_send": "Yanıtlar buradan gönderilemedi.",
+  "use_email": "Lütfen aşağıdaki e-posta düğmesini kullanın.",
+  "fallback": "Yanıtlar bu sayfadan gönderilemedi. Lütfen onları e-postayla gönderin; girdiğiniz hiçbir şey kaybolmadı.",
+  "email_button": "Yanıtları e-postayla gönder",
+  "shortened": "Bazı notlar e-posta bağlantısı için çok uzundu ve orada kısaltıldı. Yanıtlarınızın tamamı aşağıda; lütfen onları e-postaya yapıştırın.",
+  "noscript": "Göndermek için JavaScript gerekiyor. Yanıtlarınızı {email} adresine e-postayla da gönderebilirsiniz."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/0784#1",
-   "where": "04b/0784",
-   "text": "Çok sneaky'sin.",
-   "q": "Niloofar playfully drops the English word 'sneaky' into her speech. Does it read as a deliberate borrowed word?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Bugün fakültenin ortasında birkaç başka kızla konuşuyordun, duydum."
+   "key": "maman",
+   "title": "Annenin sesi",
+   "q": "Anne, küçük bir kasabadan sıradan bir kadın gibi sıcak, bazen de azarlayarak konuşur. Her satır ona benziyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Nevruzun kutlu olsun, Nana-pesar-jan. İnşallah senin için iyi bir yıl olsun.",
+     "note": null
+    },
+    {
+     "id": "01/0077#maman",
+     "text": "Sawaab? O, insanların birbirini gördüğüne sevindikleri zaman olur; birbirlerinin sinirini daha da bozdukları zaman değil.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Dışarı da çık. Kalabalık olmayan yerlere git.",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "Şapşal öğretmenli film mi o? Mm-hm, onu izleyin. O film komik. Biraz gülün.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Hepimiz arayıp otuz yıldır bizi rahatsız ediyor, gelin alın demek istiyoruz. Sen de razıysan arayalım.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Şaka yapıyoruz, gülelim diye, Nana-pesar-jan. Sanki gidecek.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "Gıybet mi? Sana zulmetmemişlerse gıybet olur.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "Hmm, bakalım, Baba'nız hakkında tek bir iyi şey hatırlayabiliyor musunuz? Söyleyin de ben susayım.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "Keşke bağımlı olsaydı da böyle olmasaydı.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "Kadın mı? Keşke gitseydi. Kim isterse alsın.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Kerbela'dan döndüğünde beyaz bir eldiven takmıştı; bulvardan eve kadar yürüyerek geldik, elini yukarı kaldırıyordu — sanki insanlar elini kutsal sayıp öpmeliymiş gibi.",
+     "note": null
+    },
+    {
+     "id": "01/0222#maman",
+     "text": "Hıh! Tabii ki Ghassem doğruyu söylüyor.",
+     "note": null
+    },
+    {
+     "id": "01/0248#maman",
+     "text": "Yeniden şiir mi yazıyorsun?",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "Mm-hm, çok çok değişmiş. Çok zayıflamış ve kararmış.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "Amir, başrolde olmak iyi bir şey mi?",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "Yaptıklarının hepsi geçici çözüm.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Önce kişiyi tanıyın, evlenin, ondan sonra istiyorsanız âşık olun.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "Seni dört kez buldum. Hadi gel, iyi oğlum, gel şunu al, evin içinde dolaş.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "Hayır. Bu ip elinde olduğu sürece kaybolmazsın. Öbür ucu benim elimde.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "Aferin, zeki oğlum. Ne zaman bir şeyden korkarsan bir numara yap da korkmayasın.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "Vaaay. Hımm, ülkeler mutlaka birbirine yakınmış. Bam depremi ne zamandı?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "Ahir zaman gelmiş. Bibi'nin kuşağı derdi ki ahir zaman gelince yer durmadan sarsılır.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "Adadım, iyileşirse Meşhed'e yürüyerek gideceğim.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "Hmm, o zaman ben de diyorum ki benim de içim daralıyor. Bırakın da arkadaşlarımı görmeye gideyim.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "Hmm, üzülürsün diye düşündük, Nana-pesar-jan. Doktora savunman vardı.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, yediklerine gerçekten dikkat et. Sana kuvvet verecek şeyler ye.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "Kimse kımıldamadı. Sonra hemşire kendisi gelip “Sanırım o sizin yakınınız,” dedi.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "Hmm, bu insanlar o hayattayken bile onun için neredeyse hiçbir şey yapmadılar.",
+     "note": null
+    },
+    {
+     "id": "06/0192#maman",
+     "text": "Neyse, Nana-pesar-jan, yeni yerine taşındın mı?",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "Böyle mi teşekkür ediyorsun?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "Hmm, sen gezmeye, eğlenmeye gitmiştin – hoşuna da gitti. Zorlukları yaşamadın.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "Ah, bir şey getir dediğinde elektrik çarpmışa dönüyor.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "Durup dururken söyleniyor, heh, Amir-jan. Bu olmazsa başka bir şey bulur.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "Vay, Nini'nin birden uykusu geldi. Sabahtan beri ayaktayım, hiç uyumadım.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0055#2",
-   "where": "03/0055",
-   "text": "Ben böyle konuşurum; siz beni duyarsınız, şiir söylediğimi sanırsınız.",
-   "q": "Hamid, a boy who writes poems, answers in his poems' rhythm. Does the line have a playful, verse-like ring?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid, şiirlerini okurken kullandığı ritimle dedi ki:"
-   ]
-  },
-  {
-   "id": "04a/0080#3",
-   "where": "04a/0080",
-   "text": "Neden mermelli eve gitmediniz?",
-   "q": "The older brother uses his made-up word 'mermelli' for marble again, on purpose. Does it read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…Eğriydi. Ön tekerleği dönüyordu. Kırmızıydı. Aynı o büyük kırmızı kapı gibi. Ben oluğun yanına oturdum. Ayaklarımı oluğun içine koydum. Su yoktu. Kalbimin içi boştu. Adam geri döndü. Ön tekerlek artık dönmüyordu. Omid'e tokat attı. İkimiz de ağladık. Adam gitti. Ghassem döndü. Azarladı. Dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0189#4",
-   "where": "03/0189",
-   "text": "Pfff, merkep, eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı mı daha iyi bilir, yoksa sen, buzağı mı?",
-   "q": "An angry boy calls his friend 'merkep' and 'buzağı'. Does his outburst sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid köpürdü ve bağırdı:"
-   ]
-  },
-  {
-   "id": "03/0373#5",
-   "where": "03/0373",
-   "text": "Ameroka'nın İran'ın nükleer programını durdurduğunu doğruladığını söylüyorum. Bu, savaş olacak mı olmayacak mı demek?",
-   "q": "Maman, worried, asks her daughter about the news, saying 'Ameroka' on purpose. Does her question sound natural?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Ne?"
-   ]
-  },
-  {
-   "id": "04b/0385#6",
-   "where": "04b/0385",
-   "text": "Elinde değil. Fabrika sistemi böyle çalışıyor.",
-   "q": "Hooman jokes that Amir's odd habits are built in, like a factory setting. Does this sound natural?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Eldie öyle biri."
-   ]
-  },
-  {
-   "id": "04b/0182#7",
-   "where": "04b/0182",
-   "text": "Sen hepsinden daha ineksin. Fiziksel yapın da ona uyuyor.",
-   "q": "Eskandar hits back at heavy Hooman, calling him the biggest cow, meaning a dull oaf. Does the insult land?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Sikimin başını ye, be adam; sana katlanacak sinir yok bizde. Şerif'te elektrik mühendisliği ne demek bilir misin? Hem zaten kimse senin görüşünü sordu mu?"
-   ]
-  },
-  {
-   "id": "04b/0317#8",
-   "where": "04b/0317",
-   "text": "Böyle sessizce oturduğunda o kadar sinirleniyor ki içim... Yumruklamak istiyorum seni.",
-   "q": "A young woman, exasperated, scolds a silent young man. Does this sound natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "…meleğin aşktan ve sevişmekten hiçbir şey anlamadığını görünce güzelliğinin cilvelerini Âdem'e yöneltti. Sen nasıl olur da onun yarattığından, aşkın daha ilk harfini bilmeyen biri için yanmasını beklersin? İç çekti; soluğunun buğusu kıvrıla kıvrıla göğe yükseldi. Ben de tek söz etmeden onu izledim."
-   ]
-  },
-  {
-   "id": "03/0517#9",
-   "where": "03/0517",
-   "text": "Pars Farid kendisiyle bile kaç kaç olduğunu bilmiyor.",
-   "q": "Hooman teases Farid for not being able to make up his own mind. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Hooman dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/0567#10",
-   "where": "04b/0567",
-   "text": "Yüzümü yıkamaya gitmiştim. Gözlüğün üstünden yıkayamam ki yüzümü, göt herif.",
-   "q": "Sajad, who keeps losing his glasses, snaps that he can't wash his face with them on. Does it sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Kartal Göz, Kartal Göz, umarım hiç ..."
-   ]
-  },
-  {
-   "id": "04b/0618#11",
-   "where": "04b/0618",
-   "text": "Sinek burada olsaydı, böyle kâr veren bu şeyin ne olduğuna antenleri sivrilirdi şimdi.",
-   "q": "Farid jokes that a roommate nicknamed Fly would perk up his antennae at such profit. Does the joke work?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Farid dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/0378#12",
-   "where": "04b/0378",
-   "text": "Beyni boklu, osurmasan kimse sana dilsiz demezdi.",
-   "q": "Eskandar uses a crude old saying to tell a friend nobody asked him to speak. Does it read as a real saying?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "…yatağıma uzanmış, Niloofar'la konuştuklarımızı düşünüyordum. Koridor ışıkları söndü, diğer odaların gürültüsü de uykuya daldı. Gece yarısının karanlığında ve sessizliğinde Hooman'ın gölgesi kapıdan girdi ve dümdüz tatlı kutusuna yöneldi. Sanki koku alıyordu. Sabah Eskandar beni uyandırıp dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/1003#13",
-   "where": "04b/1003",
-   "text": "Bak ne biçim bir çuval inciri berbat ettin, beyni sıçmış.",
-   "q": "Eskandar scolds Amir rudely for ruining everything. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar bana döndü ve başını, göğsünü bana doğru öne çekti. Gözlerini iri açmıştı ve Alain Delon edasını kaybetmeden, sert bir tonla dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/0181#14",
-   "where": "04b/0181",
-   "text": "Sikimin başını ye, be adam; sana katlanacak sinir yok bizde.",
-   "q": "A young man in a dorm crudely tells a know-it-all roommate to shut up. Does this sound like how he would talk?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman tekrar başparmağını kaldırarak dedi ki:"
-   ]
-  },
-  {
-   "id": "03/0638#15",
-   "where": "03/0638",
-   "text": "Bunu bir kenara bırakayım; seni kaç kez aradıysam neden açmadın? Aramalarımı olmaması gereken bir yere mi yönlendirdin?",
-   "q": "Hooman, out of breath, asks why Amir never answers his calls. Does this sound like how a friend would say it?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Hem son kısmı, daraldığı ve Veliasr kapısına yaklaştığı bölümü de sayarsak yüz yetmiş metre oluyor. Ağzına sıçayım, bu cüsseyle beni yüz yetmiş metre peşinden sürükledin."
-   ]
-  },
-  {
-   "id": "04b/0343#16",
-   "where": "04b/0343",
-   "text": "Demek birinci sınıf sümüklüsüsün.",
-   "q": "Hooman, older now, mocks a young student for being a freshman. Does this sound as rough as he would say it?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Evet."
+   "key": "child_talk",
+   "title": "Çocukların konuşması",
+   "q": "Bu satırları çocuklar söylüyor. Her biri bir çocuk gibi geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "Ne parça ama.",
+     "note": null
+    },
+    {
+     "id": "03/0143#child",
+     "text": "Hı. Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı, bunun iyi bir kitap olmadığını söyledi. Okuyan intihar eder.",
+     "note": null
+    },
+    {
+     "id": "03/0181#child",
+     "text": "Eniştemiz en zengin adamın kendisinde en son model bir Benz olduğunu söylüyor.",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "Pfff, merkep, eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı mı daha iyi bilir, yoksa sen, buzağı mı?",
+     "note": null
+    },
+    {
+     "id": "04a/0001#child",
+     "text": "Maman kararıyordu. Elektriğin gittiği o günkü gibi.",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "Yoksa kayboldum mu? Elimde ip de yok.",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "Sabah avluya gittim. Maman çok akıllı olduğumu söyledi.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "Olur, sen de göreve gel, ama çok dikkatli olman lazım. Aşamaları çok zor.",
+     "note": null
+    },
+    {
+     "id": "04a/0022#child",
+     "text": "Peki, çamur oyunu bitti. Gizli görev için hazır ol.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "Tamam, az koy, ama çok az değil. Birazcık az.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "Adı Kuçan çarşısı, bizim ev de Kuçan çarşısının sonunda.",
+     "note": null
+    },
+    {
+     "id": "04a/0047#child",
+     "text": "Nohutları hızlı hızlı sallar. Hep teraziye fazla nohut döker.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "Üçüncü aşama bir kavşak. Kavşak çok büyük demek.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "Yoruluyorsan artık göreve gelme.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "Çoğu kişi burada yenilir. Sola giderler.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "Sol taraf tehlikeli. O kırmızı kapılı ev çok sinirli yaşlı bir adamın evi. Baba'dan bile daha sinirli.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "Okulumuz orada, en sonda. Son ev. Gürültü yaparsak öğretmen ellerimize cetvelle vurur.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "Bazı mezarların taşları yok. Ölülerin kemikleri görünüyor.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "Soru yok. Komutanı dinle.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "Hey, çubuğu niye attın, zili ne ile çalacağız o zaman?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "Söylemedin ki.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "Adlarımızı öğrenince bizden hoşlanır.",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "Siyah olsaydı siyah alırdım. Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı, siyah aşkın rengidir demiş.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 12
 }

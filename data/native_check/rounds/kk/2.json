@@ -2,8 +2,15 @@
  "lang": "kk",
  "slug": "kk",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Мен айтам, осылай тек осында отырып, өлең оқи берсең, наның пісіп бермейді.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
@@ -19,32 +26,31 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Биби, Алла рақым етсін, осындай кездерде айтатын: «Айтсам тілім күйеді, айтпасам, сүйегімнің жілігі күйеді».",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#9",
+   "where": "03/0634",
+   "text": "Сол пәлекет Аскандарға айтпа, тағы бір сағат уағыз айтып, асымды жыланның уына айналдырады.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "Жаңбыр жерден аспанға жаумайды.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "01/0116#2",
+   "where": "01/0116",
+   "text": "Сыртқа да шық. Адам көп болмайтын жерлерге бар.",
+   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
+   "before": [
+    "– Жоқ, алаңдама. Мұнда тіпті тамақ-азықты тапсырыс беріп, есікке әкелдіруге болады.",
+    "– О, қандай жақсы. Мм-иә, тапсырыс берсең, әкеледі. Бірақ Әмір жан, әрқашан үйде отыра берме."
+   ]
   },
   {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "– Ғасәм тағы әзілдеп жатыр: «Жақсы жыл өз көктемінен бәлгілі» дейді.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Мен айтам, осылай тек осында отырып, өлең оқи берсең, наның пісіп бермейді.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0204#6",
+   "where": "04b/0204",
+   "text": "– Сен бұндай нәрселер істемеуші едің ғой.",
+   "q": "Someone asks this in surprise. Does it read as a question?",
+   "before": [
+    "– Қой, мұның бәрін таста, кел, екі стақан набат шай алдым, соны ішейік.",
+    "Айтамын:"
+   ]
   },
   {
    "id": "04b/0824#7",
@@ -54,18 +60,24 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Қолым қысқа, саған қауышу алыс.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0601#5",
+   "where": "03/0601",
+   "text": "Ол дайындарымды «қандай ұятсыз адам қызыма жезөкше деп атауға батыл болды» деп жүз одан да жаман нәрселерімен бірге айтып, маңайды өрт алды.",
+   "q": "Negar's mother rages at the whole street. Does this sentence read naturally?",
+   "before": [
+    "– Негар бізден немере ағасын ұрыңдар деп сұраған ба еді, алданған сезімде болуымыз жөн бе?",
+    "…надарам, «жақсы көрмеймін», болып шығады. Түн соңында қағаздарды олардың есігінің астына тықтық. Іс жүзінде Тақи тықты, ал мен не істеп жатқанымыздан қорқып, тек Тақидің ашулануынан қорыққаным үшін ілестіп жүрдім. Келесі күні Тақи келіп, қағаздарды Негардың орнына шешесі алып оқығанын айтты."
+   ]
   },
   {
-   "id": "03/0634#9",
-   "where": "03/0634",
-   "text": "Сол пәлекет Аскандарға айтпа, тағы бір сағат уағыз айтып, асымды жыланның уына айналдырады.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0045#4",
+   "where": "03/0045",
+   "text": "Мазандаран ятауы бүгін жасыл алхоры бере ді, оның үстіне бізбен атауын білмейтін шөппен деп айтқанда, «Менің Қалам – Менің Мәдениетім» көрмесінің баспалдақтарымен Фаридпен бірге төмен жүріп бара жатқанымды байқадым.",
+   "q": "Farid hears a stall gives out green plums with a herb. Is this clear?",
+   "before": [
+    "– Ақсақал, тұрып кет, Фарид-барыс саған өлімші қадам жасамай тұрып.",
+    "Фаридтің өлімші қадамы туралы ой мені сәл ерітті, бірақ ауаным да, күшім де жоқ еді. Тек белімді сәл қаттырақ ұстадым."
+   ]
   }
  ]
 }

@@ -2,8 +2,94 @@
  "lang": "cy",
  "slug": "cy",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
+  {
+   "id": "04b/1312#5",
+   "where": "04b/1312",
+   "text": "Mae'n rhoi cach-bendro i chi. Po fwyaf rwyt ti'n meddwl amdano, mwyaf o gach-bendro gei di.",
+   "q": "Thinking about the painting makes your head spin. Does this sound natural?",
+   "before": [
+    "…i hysbysiad am ailbeintio ac atgyweiriadau haf adeilad Abu-Reyhan. Â'm calon yn curo, cerddais ymlaen. Niloofar oedd hi – Niloofar ei hun. Roedd hi'n sefyll yn wynebu'r Brifysgol Gelf, wrth ymyl ychydig o ferched eraill. Roedd un ohonynt yn dal dalen o bapur i fyny i'r lleill ei gweld ac yn dweud:",
+    "– ... Edrychwch arno, mae'n wir yn troi'r meddwl. Tynnodd hwn ac ysgrifennu oddi tano: nid pibell yw hon."
+   ]
+  },
+  {
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "– A thi, gyda'r ffordd bidlenaidd yna o siarad, dylai dy enw fod yn Alain Pidlon.",
+   "q": "'Alain Pidlon' is meant as a rude pun on the actor Alain Delon. Would Welsh readers get it? If not, what word could carry it?",
+   "before": [
+    "– Ie, mae Hamoun yn enw da i ti. Fel Hamoun yn y ffilm, rwyt tithau'n llawn cwestiynau. Rwyt yn llawn pryder ac yn ffynhonnell gofid, nid i ti dy hun, ond i mi.",
+    "Dywedodd Hooman:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Dydy'r glaw ddim yn disgyn i fyny o'r ddaear.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Mae fy llaw'n fyr ac mae uniad â thi'n bell.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Dwi'n dweud os wyt ti'n dal i eistedd yma'n unig a darllen barddoniaeth, fydd dim bara'n cynhesu i ti.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Roedd Bibi, Duw a'i gorfwyso hi, yn arfer dweud ar adegau fel hyn: os dywedaf i, mae fy nhafod yn llosgi; os na ddywedaf i, mae mêr fy esgyrn yn llosgi.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Mae e'n dweud, \"Gwelir blwyddyn dda o'i gwanwyn.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Dywedodd, mae fy nghalon yn pydru.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Gan chwerthin, mae Hooman yn fy nharo'n galed ar fy nghefn, ac mae'r ciwb siwgr yn neidio i mewn i'm llwnc.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1256#4",
+   "where": "04b/1256",
+   "text": "– Os wyt ti'n meddwl mynd â'r lorri honno gyda ti – ie.",
+   "q": "Asked to fight, Taghi agrees on one condition. Does this sound natural?",
+   "before": [
+    "– Ydych chi eisiau ymladd?",
+    "Roedd y lorri yn fy llaw ond ni allem redeg – roedd Negar yn sefyll yno'n ein gwylio. Dywedodd Taghi:"
+   ]
+  },
+  {
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Dim ond ar ôl i'm teulu fy ngwthio i'r cwt ieir y deallais pa fath o fyd gwahanol yw'r ochr arall honno i'r stori.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "Opening/0007#1",
    "where": "Opening/0007",
@@ -32,36 +118,6 @@
    "before": [
     "– Yn fy marn i, mae bywyd fel papur mil toman: pa ochr bynnag yr edrychi arno, mae'n arogli o reis a chorbys.",
     "…yn y tywyllwch. Corff bach, main Meysam o dan ei wallt pwff, yn wynebu ffigwr cymharol fawr Eskandar â'i law wedi'i wasgu yn erbyn ei dalcen – fel rhywun oedd ychydig funudau ynghynt un cam o fuddugoliaeth ac a oedd nawr wedi derbyn trechu – a wnaeth dywyllwch yr ystafell ymddangos yn ddyfnach."
-   ]
-  },
-  {
-   "id": "04b/1256#4",
-   "where": "04b/1256",
-   "text": "– Os wyt ti'n meddwl mynd â'r lorri honno gyda ti – ie.",
-   "q": "Asked to fight, Taghi agrees on one condition. Does this sound natural?",
-   "before": [
-    "– Ydych chi eisiau ymladd?",
-    "Roedd y lorri yn fy llaw ond ni allem redeg – roedd Negar yn sefyll yno'n ein gwylio. Dywedodd Taghi:"
-   ]
-  },
-  {
-   "id": "04b/1312#5",
-   "where": "04b/1312",
-   "text": "Mae'n rhoi cach-bendro i chi. Po fwyaf rwyt ti'n meddwl amdano, mwyaf o gach-bendro gei di.",
-   "q": "Thinking about the painting makes your head spin. Does this sound natural?",
-   "before": [
-    "…i hysbysiad am ailbeintio ac atgyweiriadau haf adeilad Abu-Reyhan. Â'm calon yn curo, cerddais ymlaen. Niloofar oedd hi – Niloofar ei hun. Roedd hi'n sefyll yn wynebu'r Brifysgol Gelf, wrth ymyl ychydig o ferched eraill. Roedd un ohonynt yn dal dalen o bapur i fyny i'r lleill ei gweld ac yn dweud:",
-    "– ... Edrychwch arno, mae'n wir yn troi'r meddwl. Tynnodd hwn ac ysgrifennu oddi tano: nid pibell yw hon."
-   ]
-  },
-  {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "– A thi, gyda'r ffordd bidlenaidd yna o siarad, dylai dy enw fod yn Alain Pidlon.",
-   "q": "'Alain Pidlon' is meant as a rude pun on the actor Alain Delon. Would Welsh readers get it? If not, what word could carry it?",
-   "before": [
-    "– Ie, mae Hamoun yn enw da i ti. Fel Hamoun yn y ffilm, rwyt tithau'n llawn cwestiynau. Rwyt yn llawn pryder ac yn ffynhonnell gofid, nid i ti dy hun, ond i mi.",
-    "Dywedodd Hooman:"
    ]
   }
  ]

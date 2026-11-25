@@ -1,190 +1,287 @@
 {
+ "format": 2,
  "lang": "ja",
  "slug": "ja",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "ネイティブチェック",
+  "lead": "本を読んでいなくても大丈夫です。答えたいだけ答えてください。",
+  "persian_words": "ママン（お母さん）、バーバ（お父さん）、〜ジャン（いとしい）はペルシア語の言葉で、本の中でもそのまま使っています。",
+  "page": "ページ",
+  "correct": "正しい",
+  "needs_change": "要修正",
+  "not_sure": "よくわからない",
+  "how_say": "あなたならどう言いますか？",
+  "meaning": "どういう意味だと思いますか？",
+  "optional": "（任意）",
+  "your_name": "お名前",
+  "thanks_tick": "感謝ページに名前を載せる",
+  "private": "回答は著者にだけ届きます。",
+  "send": "送信",
+  "send_continue": "送信して {n} ページへ進む",
+  "sending": "送信中…",
+  "popup_title": "ありがとうございます！",
+  "popup_text": "ウェブサイトの感謝ページにお名前を載せませんか？ 全4ページを終えていただければ、喜んで載せます。",
+  "popup_button": "{n} ページへ進む",
+  "arrived": "ありがとうございます。{n} ページの回答が届きました。",
+  "thanks_last": "ありがとうございます！ 回答が届きました。",
+  "all_done": "すべてのページを送っていただきました。どのページも本当にありがとうございます！",
+  "already_sent": "このページは、この端末からすでに送信されています。ありがとうございます！",
+  "continue_with": "続けて {n} ページへ",
+  "need_one": "少なくとも1行、答えを選んでください。",
+  "note_no_answer": "メモが書かれた行があります。その行の答えも選んでください。",
+  "name_needed": "載せたいお名前を入力するか、チェックを外してください。",
+  "not_connected": "送信機能はまだつながっていません。",
+  "too_long": "送信に時間がかかりすぎました。",
+  "cannot_send": "ここからは回答を送信できませんでした。",
+  "use_email": "下のメールボタンをお使いください。",
+  "fallback": "このページから回答を送信できませんでした。代わりにメールで送ってください。入力した内容は消えていません。",
+  "email_button": "回答をメールで送る",
+  "shortened": "メモの一部がメールのリンクには長すぎたため、そちらでは短くしてあります。回答の全文は下にありますので、メールに貼り付けてください。",
+  "noscript": "送信には JavaScript が必要です。回答を {email} にメールで送ることもできます。"
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "03/0278#1",
-   "where": "03/0278",
-   "text": "おい、酒場者、走れ。",
-   "q": "Farid calls Amir by his nickname, which means tavern-goer. Does '酒場者' read as that nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…る並行世界では、私はニルーファルをまったく見ることがないのかもしれない。しかし私たちが生きているこのバージョンの世界では、日に日に昨日より頭がニルーファルのことでいっぱいになっていった。夜さえも彼女の面影とともに朝を迎えた。一ヶ月と経たないうちに私の世界のすべてが日曜の午前と火曜の午後に凝縮されてしまった。大学のハーフェズ門に着く。地下から突き出た二つの大きな歯車の間を通り抜ける。あの頃、この歯車はまだ地面から現れて互いに向かって頭を垂れてはいなかった。アミール・キャビール大学は門の構造物がなく、緑色の格子門だけが大学をハーフェズ通りの歩道から隔てていた。ファリードが学部棟で呼びかけて言った："
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "こちら側で、私は言葉の糸をほどく。向こう側で、あなたがその言葉を集める。",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0628#2",
-   "where": "03/0628",
-   "text": "ははは、酒場の長老、酒場じい、最高だ。",
-   "q": "Hooman turns Amir's nickname, Elder of the Tavern, into a short pet name. Does '酒場じい' read as that short form?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "フーマンはペンで本に何かを書きながら言った："
+   "key": "one",
+   "title": null,
+   "q": "The pole image means they were all screwed over. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0663#s30",
+     "text": "子どもを家族のそばに置くという名目で、地方出身の俺たち全員の尻に棒を突っ込みやがった。",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0591#3",
-   "where": "04b/0591",
-   "text": "ピール・トゥ・ピール？",
-   "q": "Amir mishears 'peer' as the Persian pir, meaning elder, which is his own nickname. Would Japanese readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– 一種のピア・トゥ・ピアの電子マネーだ。",
-    "私は言った。"
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "部隊、前へ進め！",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0595#4",
-   "where": "04b/0595",
-   "text": "鷹の目はピア・トゥ・ピアって言うのに、酒場者は酒場じい・トゥ・酒場じいだとさ。",
-   "q": "Pir is Persian for elder. Farid mocks Amir, nicknamed '酒場じい', for hearing peer-to-peer as elder-to-elder. Would Japanese readers get it? If not, what word could?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– でも、しくじったな。"
+   "key": "poetry",
+   "title": "詩",
+   "q": "これらは詩の行です。それぞれ、日本語の詩としてよく読めますか？",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "ソロモンの指輪を何ものにも替えないだろう",
+     "note": null
+    },
+    {
+     "id": "04b/0316#poetr",
+     "text": "神がその壮麗な美を天使たちの前に顕したとき、彼らには愛がないと見た。その嫉妬の熱から、その顕れは純粋な火となり、アダムの粘土を打った。",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "「アッタールは夜明けまで泣いていたほうが甘い」なのか、それとも「今やいっそう深く討たれた身となった」のやつか?",
+     "note": null
+    },
+    {
+     "id": "04b/1267#poetr",
+     "text": "すべてのものに書くことができる",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "おのが血で水の上に書きしるすがいい",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "おまえの後に続く者が",
+     "note": null
+    },
+    {
+     "id": "04b/1301#poetr",
+     "text": "愛しい人が便りもよこさず、久しくなった；挨拶の一文字も書かず",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "僕の夢の灯は明滅している",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "君が戻る望みは持っていない",
+     "note": null
+    },
+    {
+     "id": "04b/1394#poetr",
+     "text": "でも、もし君の道がこのそばを通ったなら",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "僕の夢は、君が行ってしまったことを信じていないのだと思う",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "僕の夢の灯......僕の夢の灯がともり......僕の夢の灯がともった",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0380#5",
-   "where": "03/0380",
-   "text": "一番悪い病気は、アイズハイマーよ。",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say Alzheimer's (アルツハイマー) as 'アイズハイマー'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "ママンが言った："
-   ]
-  },
-  {
-   "id": "06/0052#6",
-   "where": "06/0052",
-   "text": "最後はマフブーブが電話して、アンブラスが来てナネイを連れていったら、やっぱりコロナだって。",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Japanese speaker say ambulance (救急車) as 'アンブラス'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– でも、気をつけてなかったのよ、それが問題なの。おじいちゃんは耳が聞こえなくて何もわからないから仕方ないけど、ナネイには何度も言ったの。ハージ・ハーヌム、お二人で路地に座ってたら、コロナにかかりますよ、神様、どうかそんなことになりませんようにって。そう言うほど、二人はかえって長く座るのよ。でもね、アミール、ナネイの胸がひどくゼーゼー鳴ってたの。マフブーブたちに、みんな、これはコロナよって言ったの。"
-   ]
-  },
-  {
-   "id": "01/0182#7",
-   "where": "01/0182",
-   "text": "何が好きじゃなかったの？",
-   "q": "Maman, hard of hearing, catches only the end of '女好き'. Would Japanese readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– 女好きでもなかったわ。",
-    "ママンは言う。"
-   ]
-  },
-  {
-   "id": "01/0148#8",
-   "where": "01/0148",
-   "text": "何と微笑み？",
-   "q": "Maman half-hears the title of a TV series her daughter mentions. Does her puzzled reply sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– みんな、「涙と微笑み」をダウンロードして、今夜見る？",
-    "ママンは頭を向けて言う。"
-   ]
-  },
-  {
-   "id": "03/0290#9",
-   "where": "03/0290",
-   "text": "アラステはアラアステを刈り込んだ形ですか？",
-   "q": "A guard puns on Amir's surname Arasteh, as if trimmed from araasteh, Persian for neat. Would Japanese readers get it? If not, what word could?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– アラステさん。",
-    "頭を彼の方へ向ける。"
-   ]
-  },
-  {
-   "id": "03/0309#10",
-   "where": "03/0309",
-   "text": "神の思し召しがあれば、いつもアラアステでありますように。",
-   "q": "The guard blesses Amir with a pun on his surname; araasteh means neat. Would Japanese readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "警備員が微笑んで言う："
-   ]
-  },
-  {
-   "id": "04b/0182#11",
-   "where": "04b/0182",
-   "text": "お前こそみんなの中で一番の牛だ。",
-   "q": "A student calls his heavy-set roommate a cow, meaning a big fool. Does '牛' read as an insult here?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– 俺のちんこの頭でも食ってろ、お前に付き合う神経はない。シャリーフの電気工学が何を意味するか、お前に何がわかる？それに、誰がお前の意見を訊いた？"
-   ]
-  },
-  {
-   "id": "04b/0575#12",
-   "where": "04b/0575",
-   "text": "母ちゃんのためだ、眼鏡なしで部屋を歩くな。",
-   "q": "Eskandar begs Sajad 'for your mother's sake' not to walk around blind. Does '母ちゃんのためだ' read as a natural plea?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– 鷹の目、蠅はもう神様に打たれてるんだから、お前まで打つな。"
-   ]
-  },
-  {
-   "id": "03/0055#13",
-   "where": "03/0055",
-   "text": "俺はこういう話し方なんだ。みんな俺の話を聞くと、詩を読んでいると思う。",
-   "q": "Hamid, who fancies himself a poet, says this in the rhythm of his poems. Does it sound rhythmic and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "ハミードは詩を読むときのリズムで言った："
-   ]
-  },
-  {
-   "id": "03/0126#14",
-   "where": "03/0126",
-   "text": "うちの義兄の親方職人のいとこの友達で、テヘラン一の金持ちが、ちょうどあんなふうに話すんだ。",
-   "q": "Hamid's running boast quotes a far-off acquaintance, the richest man in Tehran. Does this long chain sound funny and natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– うん。"
-   ]
-  },
-  {
-   "id": "04b/0387#15",
-   "where": "04b/0387",
-   "text": "昨夜、お前が反芻する音が聞こえてたぞ。",
-   "q": "Eskandar teases Hooman for secretly eating sweets at night, like a cow chewing cud. Is the joke clear?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "エスカンダルはフーマンのほうへ向き直って言った。"
-   ]
-  },
-  {
-   "id": "03/0576#16",
-   "where": "03/0576",
-   "text": "お前のあのナイチンゲールのような目に俺は命を捧げてもいい、鷹の目・ジャン、だが問題は受信側にある。",
-   "q": "Farid teases short-sighted Sajad: the toothbrushes look different, so the fault is Sajad's eyes. Is the joke clear?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "– 鷹の目、また俺の歯ブラシを取っただろ。",
-    "– 客観的に言えば、次は別の色を買え。",
-    "ファリードが言った："
+   "key": "word_choice",
+   "title": "単語",
+   "q": "各行のその言葉は正しいですか？ 本来の意味はその下に書いてあります。",
+   "labels": [
+    "正しい",
+    "要修正",
+    "よくわからない"
+   ],
+   "note_label": "あなたならどう言いますか？",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0049#word_",
+     "text": "– うん、コンクールでの彼の順位は本当に良かった、二桁だった。",
+     "note": "\"コンクール\" = Iran's national university entrance exam"
+    },
+    {
+     "id": "03/0268#word_",
+     "text": "どんな名前もお前には似合わない、このくそったれ。",
+     "note": "\"このくそったれ\" = damn you (angry swearing)"
+    },
+    {
+     "id": "03/0531#word_",
+     "text": "去年来たとき、奥さんの兄弟たちにひどく殴られて、体中が黒くなっていた。",
+     "note": "\"体中が黒くなっていた\" = covered in bruises"
+    },
+    {
+     "id": "04a/0038#word_",
+     "text": "大通りへの進入：チッチッ。",
+     "note": "\"チッチッ\" = tongue click meaning no, forbidden"
+    },
+    {
+     "id": "04a/0065#word_",
+     "text": "ぼくはいつもずるをしていた。",
+     "note": "\"ずる\" = a trick (a child's word)"
+    },
+    {
+     "id": "04b/0146#word_",
+     "text": "脳みそクソ詰まりが。いちいち言わせるなよ。",
+     "note": "\"脳みそクソ詰まり\" = shit-for-brains, crude insult for a dimwit"
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "俺はお前みたいなチンポ頭と同室になるくらいなら、そっちと同室になるほうがよかったよ。",
+     "note": "\"チンポ頭\" = dick-brain, crude insult for an idiot"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "じゃあクソ一年坊主だな。",
+     "note": "\"クソ一年坊主\" = fucking freshman, casual friendly swearing"
+    },
+    {
+     "id": "04b/0421#word_",
+     "text": "ヒョウのファリード、気を落ち着けて、殺人的な動きはするなよ。",
+     "note": "\"殺人的な動き\" = a rash, wild move (running joke)"
+    },
+    {
+     "id": "04b/0494#word_",
+     "text": "また、あの呪われた不連続に行き着く。",
+     "note": "\"呪われた\" = damned (a mild swear)"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "鷹の目、お前なんか神様に許されるな、俺の腰をぶっ壊しやがって。",
+     "note": "\"神様に許されるな\" = half-joking curse: may God not forgive you"
+    },
+    {
+     "id": "04b/0575#word_",
+     "text": "母ちゃんのためだ、眼鏡なしで部屋を歩くな。",
+     "note": "\"母ちゃんのためだ\" = a plea, I beg you; not an insult"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "なんで尻を引き裂くようにしてトーフルの試験を受けたんだ?",
+     "note": "\"尻を引き裂くようにして\" = crude: slaved away, worked very hard"
+    },
+    {
+     "id": "04b/1275#word_",
+     "text": "焼かれし者たちが",
+     "note": "\"焼かれし者たちが\" = those burned, consumed by love"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "クソほどくらくらする。考えれば考えるほど、クソほどくらくらするのよ。",
+     "note": "\"クソほどくらくらする\" = crude coinage: so baffled your head spins"
+    },
+    {
+     "id": "04b/1320#word_",
+     "text": "深く沈み込めば沈み込むほどクソほどくらくらするというハーフェズのベイトを見つけて",
+     "note": "\"クソほどくらくらする\" = more baffled; echoes her crude coinage"
+    },
+    {
+     "id": "06/0108#word_",
+     "text": "あああぁぁぁぁ。",
+     "note": "\"あああぁぁぁぁ\" = long, teasing, mock-tender 'aww'"
+    },
+    {
+     "id": "06/0253#word_",
+     "text": "さあ、ガーセムたちのおやつに種を取ってきて。",
+     "note": "\"おやつに種を取ってきて\" = roasted seeds to snack on"
+    }
    ]
   }
- ]
+ ],
+ "first": 7
 }

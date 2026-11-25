@@ -1,189 +1,337 @@
 {
+ "format": 2,
  "lang": "sv",
  "slug": "sv",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålskoll",
+  "lead": "Du behöver inte ha läst boken. Svara på så många du vill.",
+  "persian_words": "Maman (mor), Baba (far) och -jan (kära) är persiska ord som har behållits i boken.",
+  "page": "Sida",
+  "correct": "Rätt",
+  "needs_change": "Behöver ändras",
+  "not_sure": "Osäker",
+  "how_say": "Hur skulle du säga det?",
+  "meaning": "Vad tror du att det betyder?",
+  "optional": "(valfritt)",
+  "your_name": "Ditt namn",
+  "thanks_tick": "Visa mitt namn på tacksidan",
+  "private": "Dina svar går bara till författaren.",
+  "send": "Skicka",
+  "send_continue": "Skicka och fortsätt till sida {n}",
+  "sending": "Skickar…",
+  "popup_title": "Tack!",
+  "popup_text": "Vill du ha ditt namn på webbplatsens tacksida? Gör klart alla 4 sidorna, så lägger vi gärna till det.",
+  "popup_button": "Fortsätt till sida {n}",
+  "arrived": "Tack, dina svar från sida {n} har kommit fram.",
+  "thanks_last": "Tack! Dina svar har kommit fram.",
+  "all_done": "Du har skickat alla sidor. Tack för allihop!",
+  "already_sent": "Du har redan skickat den här sidan från den här enheten. Tack!",
+  "continue_with": "Fortsätt med sida {n}",
+  "need_one": "Välj ett svar för minst en rad.",
+  "note_no_answer": "En rad har en kommentar: välj ett svar för den också.",
+  "name_needed": "Skriv namnet du vill ska stå med, eller bocka ur rutan.",
+  "not_connected": "Skickfunktionen är inte ansluten än.",
+  "too_long": "Det tog för lång tid att skicka.",
+  "cannot_send": "Svaren kunde inte skickas härifrån.",
+  "use_email": "Använd e-postknappen nedan.",
+  "fallback": "Svaren kunde inte skickas från den här sidan. Mejla dem i stället; inget av det du skrivit går förlorat.",
+  "email_button": "Mejla svaren",
+  "shortened": "Några kommentarer var för långa för en e-postlänk och kortades där. Dina fullständiga svar finns nedan; klistra in dem i mejlet.",
+  "noscript": "Att skicka kräver JavaScript. Du kan också mejla dina svar till {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "03/0630#1",
-   "where": "03/0630",
-   "text": "– Han är Taverny, på heder och samvete.",
-   "q": "Farid shortens Amir's nickname 'Tavernens Äldste' to the pet name 'Taverny'. Does that pet name sound natural here?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Haha, Tavernens Äldste, Äldi — perfekt. Du träffade mitt i prick, Leopard-Farid.",
-    "Farid sa:"
+   "key": "maman",
+   "title": "Moderns röst",
+   "q": "Modern talar varmt, ibland tillrättavisande, som en vanlig kvinna från en liten stad. Låter varje rad som hon?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "– Salaam, jigaram. Hur har du det? Är du frisk? Mår du bra? Glad Norouz, Nana-pesar-jan. Må det bli ett bra år för dig. För alla.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Gå till ställen där det inte är så mycket folk.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "– Baba vad?",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "– Den med den dumme läraren? Mm-hm, titta på den. Den är rolig. Skratta lite.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Vi vill allihop ringa och säga att han har stört oss i trettio år, kom och hämta honom. Om du också håller med ringer vi.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Hur mycket jag än sade: slå inte barnen, sade han: jag blev granatchockad under kriget, jag rår inte för det. Jag såg att det var som det var, och så gav jag upp.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Skvaller? Det är skvaller när de inte har gjort dig något ont.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "– Hmm, låt oss se – kan någon av er komma på en enda bra sak med er Baba? Säg det, så håller jag tyst.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "– Jag önskar att han hade blivit missbrukare i stället för att vara så här.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "– Kvinnor? Om han ändå hade gjort det. Den som vill ha honom kan få honom. Vi ger något extra på köpet.",
+     "note": null
+    },
+    {
+     "id": "01/0206#maman",
+     "text": "Det är bra nu också, ja, men jag går fortfarande hela tiden med den här stressen över att han kan dyka upp när som helst.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "När han kom tillbaka från Karbala hade han tagit på sig en vit handske. Vi gick hela vägen från boulevarden hem till fots, och han höll hela tiden upp handen – som om hans hand var något heligt som folk skulle kyssa.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "– Amir, är det bra att ha huvudrollen?",
+     "note": null
+    },
+    {
+     "id": "03/0383#maman",
+     "text": "– Nej, Ayzheimer är mycket dålig. En av mina väninnor har fått Ayzheimer; hon känner inte igen sina barn.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "– Hmm, jag säger inte att ni inte ska bli kära. Lär känna personen först, gift er, och om ni sedan vill, bli kära. Se om jag säger ett ord då.",
+     "note": null
+    },
+    {
+     "id": "04a/0002#maman",
+     "text": "– Ih, Amir, jag hittade dig.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "– Jag hittade dig fyra gånger. Kom nu, min duktiga pojke. Kom och ta den här och gå runt inne i huset.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "– Nej. Så länge den här tråden är i din hand går du inte vilse. Den andra änden är i min hand. Så här går du inte vilse.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Bra, min kloka pojke. När något skrämmer dig, använd ett knep så att du inte blir rädd.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Bevaaars. Nå, då måste länderna ha legat nära varandra. När var jordbävningen i Bam?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Det är den yttersta tiden. Bibis generation brukade säga att när den yttersta tiden kommer fortsätter jorden att skaka.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Jag lovade att om han blir bättre ska jag gå till fots till Mashhad.",
+     "note": null
+    },
+    {
+     "id": "06/0023#maman",
+     "text": "– Jag har det på, ingen stress. Men jag hatar det verkligen.",
+     "note": null
+    },
+    {
+     "id": "06/0027#maman",
+     "text": "– Nana-pesar-jan, ingen stress. Det var bara tjugo gäster.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– Hmm, då säger jag också att mitt hjärta blir tungt – låt mig gå till mina väninnor.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "– Hmm, vi tänkte att du skulle bli ledsen, Nana-pesar-jan. Du hade din doktorsdisputation.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, du måste verkligen vara noga med att äta. Ät sådant som bygger upp dig. Bara du äter ordentligt oroar jag mig inte för resten.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– På sjukhuset ropade de hela tiden: anhöriga till fru Adham. Ingen rörde sig ur fläcken. Sedan kom sköterskan själv och sa, jag tror att hon hör till er.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "– Hmm, de där människorna gjorde inte heller mycket för henne medan hon levde.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "– Är det så du tackar?",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "– Usch, varje gång man ber honom hämta något är det som om han får en elektrisk stöt.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "– Han klagar utan anledning, hehe, Amir-jan. Om det inte är det ena hittar han något annat.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– Oj då, Nini blev visst sömnig helt plötsligt. Jag har varit vaken sedan i morse och inte sovit.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0278#2",
-   "where": "03/0278",
-   "text": "På ett sätt kan man säga att de erövrade universitetet. Karroubi är kärlek, på riktigt.",
-   "q": "Farid, an excited student, gushes about a politician in slang. Does 'Karroubi är kärlek, på riktigt' sound like a young man's slang?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hej Taverny, spring. Spring, vi går. De säger att de inte lät Karroubi komma in på universitetet. Hans anhängare bröt upp Hafez-porten och gick in."
-   ]
-  },
-  {
-   "id": "04b/0616#3",
-   "where": "04b/0616",
-   "text": "– Okej, Örnaöga, okej. Stick nu inte in glasögonen i datorn.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed 'Örnaöga', who peers very close to his laptop. Does the tease come through?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sa:"
-   ]
-  },
-  {
-   "id": "01/0142#4",
-   "where": "01/0142",
-   "text": "– Baba vad?",
-   "q": "Maman, hard of hearing, catches only one word of her son's joke. Does her short question sound natural?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Tänk då bara vad vår stackars Baba måste gå igenom – han har suttit overksam hemma alla dessa år.",
-    "Maman säger:"
-   ]
-  },
-  {
-   "id": "06/0023#5",
-   "where": "06/0023",
-   "text": "– Jag har det på, ingen stress. Men jag hatar det verkligen.",
-   "q": "Maman tells her son not to worry: she does wear her mask. Does this sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Men du ska ha ditt på, Nini-jan."
-   ]
-  },
-  {
-   "id": "03/0189#6",
-   "where": "03/0189",
-   "text": "– Pff, åsna, vem vet mer, vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, eller du, kalv?",
-   "q": "Hamid, a boy, angrily calls his friend 'åsna', the polite word for donkey, and 'kalv'. Does it sound like a child's angry insult?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid kokade över och skrek:"
-   ]
-  },
-  {
-   "id": "03/0309#7",
-   "where": "03/0309",
-   "text": "– Om Gud vill, må du alltid vara araasteh.",
-   "q": "The guard's blessing puns on Arasteh: araasteh is Persian for neat. Would Swedish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Vakten ler och säger:"
-   ]
-  },
-  {
-   "id": "06/0186#8",
-   "where": "06/0186",
-   "text": "– Jag skulle ge allt för dig, Nini-jan. Ditt huvud fungerar så bra.",
-   "q": "Amir, delighted by his mother's clever idea, praises her warmly. Does this sound like a loving son talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Amir, när Taghi dog kom hans mor till dörren och sa till Maman: vi vet inte vad vi ska säga till folk. Jag menar, om vi säger att han hade druckit stark, hembränd aragh och fått synkope blir det en fruktansvärd skandal. Då sa Maman till henne: säg bara att han fick corona.",
-    "Jag säger:"
-   ]
-  },
-  {
-   "id": "03/0624#9",
-   "where": "03/0624",
-   "text": "– Toppen, Tavernens Äldste. Det passar perfekt för Arasteh.",
-   "q": "Farid gives Amir the mock-grand nickname 'Tavernens Äldste', from a Hafez poem. Does it sound funny and natural as a nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "03/0628#10",
-   "where": "03/0628",
-   "text": "– Haha, Tavernens Äldste, Äldi — perfekt. Du träffade mitt i prick, Leopard-Farid.",
-   "q": "Hooman shortens that nickname to 'Äldi'. Does this pet name sound natural and playful between friends?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman skrev något i boken med en penna och sa:"
-   ]
-  },
-  {
-   "id": "03/0388#11",
-   "where": "03/0388",
-   "text": "– Jag kan inte se någonting utan glasögon, objektivt sett.",
-   "q": "Sajad starts or ends almost every sentence with 'objektivt sett', a habit his roommates mock. Does this habit read naturally?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Sajad sa:"
-   ]
-  },
-  {
-   "id": "03/0126#12",
-   "where": "03/0126",
-   "text": "– Hm. Vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, pratar exakt så.",
-   "q": "Hamid, a boy, always cites this long chain of people as his authority, a running joke. Does it read naturally and funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hamid sa:"
-   ]
-  },
-  {
-   "id": "04b/1300#13",
-   "where": "04b/1300",
-   "text": "– Så med den repliken, sket du just på oss eller på Mister Lockhårige Schrödinger?",
-   "q": "Farid crudely asks whom a lofty remark insulted, mocking a roommate as 'Mister Lockhårige Schrödinger'. Does it sound natural?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– ... som du talar måste den som inte förstår dig vara mycket djup, och den som tycker om att lyssna på dig mycket ytlig.",
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "01/0132#14",
-   "where": "01/0132",
-   "text": "Stick in näsan i varenda skrymsle och vrå. De gamla sade alltid: kika in i vartenda hörn.",
-   "q": "Maman encourages her son to explore every village, quoting an old saying. Does this sound like a mother from a small town?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Mm-hm, du gör rätt. Medan du har chansen, gå och se alla byar."
-   ]
-  },
-  {
-   "id": "04a/0111#15",
-   "where": "04a/0111",
-   "text": "Jag stötte in i en mur. Den var av marmel. Jag plockade upp en pinne.",
-   "q": "A lost six-year-old tells this, using his brother's wrong word 'marmel' for marmor. Does it read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Tråden var inte i min hand mer. Den följde efter en fot. Jag följde efter den också. Ett litet barn kom fram mellan benen. Barnet tog tag i min fot med ena handen. Jag föll. Det blev fler och fler ben. Det fanns ingen tråd. Jag gick mellan benen."
-   ]
-  },
-  {
-   "id": "03/0383#16",
-   "where": "03/0383",
-   "text": "– Nej, Ayzheimer är mycket dålig. En av mina väninnor har fått Ayzheimer; hon känner inte igen sina barn.",
-   "q": "Maman, again saying 'Ayzheimer' for Alzheimer, explains her fear of the illness. Does it sound like her talking?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "Omid sa:",
-    "– Nej, den här är mycket dålig. Det finns inte ens medicin mot den."
+   "key": "child_talk",
+   "title": "Barnspråk",
+   "q": "De här raderna sägs av barn. Låter var och en som ett barn?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "– Vilken läckerbit.",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "– Pff, åsna, vem vet mer, vännen till kusinen till vår svågers hantverksmästare, som är den rikaste mannen i Teheran, eller du, kalv?",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "– I morse gick jag ut på gården. Maman sa att jag var smart.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Visst, du får följa med på uppdraget också, men du måste vara väldigt försiktig. Etapperna är jättesvåra.",
+     "note": null
+    },
+    {
+     "id": "04a/0022#child",
+     "text": "– Okej, lerlek är slut. Gör dig redo för det hemliga uppdraget.",
+     "note": null
+    },
+    {
+     "id": "04a/0032#child",
+     "text": "– Lägg på massor av salt.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– Okej, lägg på mindre. Men inte mycket mindre. Lite mindre.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "– Inträde på huvudgatan: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "– Den heter Quchan-basaren, och vårt hus ligger i slutet av Quchan-basaren.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Tredje etappen är en korsning. En korsning betyder att det är jättestort. Från den ena sidan hela vägen till den andra. Från den här gatan till den där gatan.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "– Om du blir trött ska du inte följa med på uppdraget mer.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– Vänster sida är farlig. Huset med den röda dörren tillhör en väldigt arg gammal man. Ännu argare än Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "– Vår skola ligger längst bort. Det sista huset. Om vi stökar slår läraren oss på händerna med en linjal.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– På andra sidan skolan finns kyrkogården. Den är väldigt gammal. Några gravstenar är borta. Man kan se de dödas ben.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "– Inga frågor. Lyssna på befälhavaren.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Hej, varför kastade du pinnen? Vad ska vi ringa på dörrklockan med då?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "– Det sa du inte.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– När hon lär sig våra namn kommer hon att tycka om oss.",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "Vännen till kusinen till vår svågers mästerhantverkare — Teherans rikaste man — har sagt att svart är kärlekens färg.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 14
 }

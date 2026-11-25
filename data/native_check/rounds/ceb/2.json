@@ -2,20 +2,13 @@
  "lang": "ceb",
  "slug": "ceb",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
   {
    "id": "01/0138#1",
    "where": "01/0138",
    "text": "Miingon siya, nagkadunot ang akong kasingkasing.",
    "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04a/0128#2",
-   "where": "04a/0128",
-   "text": "Ayaw pagkaon og kasubo, akong utok nga anak.",
-   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
@@ -26,32 +19,21 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#4",
-   "where": "01/0203",
-   "text": "Si Bibi, kaloy-i unta siya sa Diyos, moingon niini nga panahona, kon isulti nako, mangasunog ang akong dila; kon dili nako isulti, mangasunog ang unod sa akong bukog.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Ayaw isulti niadtong samok nga si Eskandar, kay palingkuron na usab ta niya sulod sa usa ka oras nga tambag ug mahimong lala sa bitin ang akong pagkaon.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#5",
-   "where": "06/0188",
-   "text": "Dili mo-ulan gikan sa yuta paingon sa langit.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "01/0073#6",
-   "where": "01/0073",
-   "text": "– Nagbugalbugal si Ghassem, moingon siya, 'Ang maayong tuig ilhan gikan sa tingpamulak niini.'",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#7",
-   "where": "04b/0274",
-   "text": "Nag-ingon ko nga kon molingkod ka lang dinhi ug mobasa og balak, walay tinapay nga mo-init para nimo.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1195#7",
+   "where": "04b/1195",
+   "text": "– Sama pa ni tadyaw kaysa baso.",
+   "q": "Something looks more like a clay jar than a vase. Is 'baso' right for vase?",
+   "before": [
+    "– Hamoon, kumusta man ning lawas nga morag baso-sa-bulak?",
+    "Miingon si Hooman:"
+   ]
   },
   {
    "id": "04b/0824#8",
@@ -61,18 +43,44 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#9",
-   "where": "04b/0334",
-   "text": "Mubo ang akong kamot ug layo ang paghiusa kanimo.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1063#5",
+   "where": "04b/1063",
+   "text": "Sila Amir, Taghi, Hamid, ug Yaser nga gisulat ang labing dako sa tanan.",
+   "q": "Four names are written. Is it clear Yaser's name was written largest?",
+   "before": [
+    "Si Yaser, nagsulat sa among mga ngalan sa paril atbang sa balay ni Negar gamit ang espray nga iyang gikawat gikan sa trak nga Khavar sa iyang Baba, miingon:",
+    "– Kon matun-an niya ang among mga ngalan, magustohan ta niya."
+   ]
   },
   {
-   "id": "03/0634#10",
-   "where": "03/0634",
-   "text": "Ayaw isulti niadtong samok nga si Eskandar, kay palingkuron na usab ta niya sulod sa usa ka oras nga tambag ug mahimong lala sa bitin ang akong pagkaon.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1135#6",
+   "where": "04b/1135",
+   "text": "Naghisgot sila bahin sa importansya sa katungod sa mga bayot ug sa laing gutlo, sama sa pagduol niini, naghilayo na usab ang ilang mga tingog.",
+   "q": "Students discuss gay rights. Does 'bayot' sound neutral here, not insulting?",
+   "before": [
+    "– Sa naandan nga kahimtang, sa usa ka patas ug normal nga kalibotan, oo. Apan dili kon nakig-uban ka sa lawak sa usa ka nating-baka sama nimo. Sa gamay ra nga hulga, ibaligya nimo ang tanan.",
+    "…ko sa bahin tunga sa duha ka walay-sulod nga luna nga nagdugtong sa duha ka bahin sa agianan sama sa taytayan. Sa mubo nga pahulay tunga sa mga klase, kanunay kami molingkod sa mga lingkoranan dinhi. Molingkod ko. May sultihanay nga naduol gikan sa tumoy sa agianan. Naduol ug naduol pa ang tingog."
+   ]
+  },
+  {
+   "id": "03/0355#1",
+   "where": "03/0355",
+   "text": "Sa balay sa tumoy sa hardin, tapad sa heater, naghigda ko nga nag-atubang sa tiyan, tunga-tunga na sa pagpangita og paagi sa pagsulbad sa daghang Konkoor trigonometry nga pangutana gamit lang ang unit circle.",
+   "q": "Is 'hardin' right for a house's inner courtyard?",
+   "before": [
+    "– Nan, tungod lang sa paghulat nga akong nasinati, lingkod kamo og gamay pa tapad nako.",
+    "…Ang kasakit sa paghinumdom niadtong gutlo sa panamilit. Ug tingali ang kasakit sa paglimot sa usa ka butang nga akong gibati nga dili unta nako kalimtan. Usa ka butang nga sama sa kabalaka, usa ka kabalaka nga nagtindog luyo sa gabon. Ah sa paglimot, ah sa pagkalimot, ah sa pagkahikalimtan."
+   ]
+  },
+  {
+   "id": "03/0577#3",
+   "where": "03/0577",
+   "text": "Sa makadiyot, ang tingog ra ni Eskandar ug Meysam ang nadungog hangtod nga mikusog ang tingog ni Farid nga morag nalumsan.",
+   "q": "Farid's voice rises as if he were choking. Is 'nalumsan' right?",
+   "before": [
+    "– Andam ko mamatay para sa imong mga mata nga sama sa nightingale, Mata sa Agila-jan, apan ang problema naa sa dawat, dili masulbad sa magpadala ang problema. Kondili, ang akong toothbrush dili parehas ang kolor o hitsura sa imoha.",
+    "Nagkatawa ang tulo ug migawas si Sajad sa kwarto."
+   ]
   }
  ]
 }

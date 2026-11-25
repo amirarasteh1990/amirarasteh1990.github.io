@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="gd" data-language="Scottish Gaelic" data-version="2026-11-23.sayings" data-round="2" novalidate>
+  <form class="nc-form" id="ncForm" data-lang="gd" data-language="Scottish Gaelic" data-version="2026-11-25.o2" data-round="2" novalidate>
     <fieldset class="nc-item" data-id="01/0138#1">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
@@ -155,12 +155,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0203#3">
+    <fieldset class="nc-item" data-id="04b/0824#7">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Bhiodh Bibi, Dia gum bi tròcaireach oirre, ag ràdh aig amannan mar seo, ma chanas mi e, loisgidh mo theanga; mura can mi e, loisgidh smior mo chnàmhan.</p>
+        <p class="nc-line">Cha do thuig mi dè cho eadar-dhealaichte 's a bha an taobh eile den sgeulachd gus an do chuir mo theaghlach a-steach mi am measg nan cearcan le fòirneart.</p>
       </div>
-      <p class="nc-q" id="q3">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q3">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -171,12 +171,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="06/0188#4">
+    <fieldset class="nc-item" data-id="04b/1225#5">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Chan eil an t-uisge a' tuiteam bhon talamh suas chun na speuran.</p>
+        <p class="nc-ctx">Chunnaic mi rud beag soilleir an oisean eile den mhullach. Choimhead mi gu cùramach. B' e Farid a bh' ann. Bliadhna às dèidh do ghlùin Farid tighinn a-nuas air sròn Eskandar, bha Farid na shuidhe crois-chasach an oisean dorcha den mhullach. Bha e air fhalt a rùsgadh.</p>
+        <p class="nc-ctx">Bha ad le oir aig Hamid gus fhalt a bha air a bhearradh gu goirid a chòmhdach.</p>
+        <p class="nc-line">A bharrachd air caraid co-ogha maighstir-ciùird an fhir-chèile aca, cha robh ach am falt-cùil aige na adhbhar pròis.</p>
       </div>
-      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q4">Is '<bdi lang="gd" dir="ltr">an fhir-chèile aca</bdi>' right for their brother-in-law, a sister's husband?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -187,12 +189,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="01/0073#5">
+    <fieldset class="nc-item" data-id="06/0214#7">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Tha e ag ràdh, chithear bliadhna mhath bhon earrach aice.</p>
+        <p class="nc-ctx">Chaidh sinn a-mach air an doras. Thuirt e:</p>
+        <p class="nc-ctx">– B' e lighiche air tinneasan inntinn a bh' anns an lighiche a cheannaich an taigh.</p>
+        <p class="nc-line">A rèir choltais, bha eagal air a bhean ro na h-euslaintich aige, is sin as coireach, an aghaidh a h-uile taigh eile, gu bheil na sgàilean fiodha dubha seo againn air beulaibh an taighe.</p>
       </div>
-      <p class="nc-q" id="q5">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q5">Is '<bdi lang="gd" dir="ltr">sgàilean fiodha</bdi>' right for a wooden fence in front of the house?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -203,12 +207,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0274#6">
+    <fieldset class="nc-item" data-id="04b/0582#2">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Tha mi ag ràdh, ma bhios tu dìreach an-comhnaidh a' suidhe an seo a' leughadh bardachd, cha teid arain a dhèanamh dhut.</p>
+        <p class="nc-ctx">– Sùil Iolaire, thig an seo. Dh'fhàg thu do speuclairean aig bonn mo leapa.</p>
+        <p class="nc-ctx">– ... leis na sùilean laga aige, chaidh e a dh'Ameireagaidh às dèidh a cheum mhaighstireil. Gu dearbh, mar a chanadh e fhèin, gu h-oibeactach, ha-ha, gu h-oibeactach nam biodh aon againn ri dhol thall thairis, b' e Sùil Iolaire a bhiodh ann.</p>
+        <p class="nc-line">Mura biodh an sgriubha aige air stad air mar gum feumadh e ceum fhaighinn bho Oilthigh Sharif an toiseach mus fàgadh e Ìran, bhiodh e air Ìran fhàgail dìreach às dèidh a' cheum-bhun-sgoile.</p>
       </div>
-      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q6">Is 'cheum-bhun-sgoile' clear for a first university degree, a bachelor's?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -219,12 +225,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0824#7">
+    <fieldset class="nc-item" data-id="04b/0964#3">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Cha do thuig mi dè cho eadar-dhealaichte 's a bha an taobh eile den sgeulachd gus an do chuir mo theaghlach a-steach mi am measg nan cearcan le fòirneart.</p>
+        <p class="nc-ctx">…air càch le fearg. Bhon oidhche sin, cha robh dad air fhàgail againn ri èisteachd ris. A-rithist, mar na làithean ron Walkman, às dèidh do sholais taigh Negar a dhol às, rachamaid agus shuidheamaid an sin, air a' chabhsair ri taobh na prìomh shràide, a' coimhead nan càraichean a' dol seachad.</p>
+        <p class="nc-ctx">Às dèidh an latha sin, cha rachadh Niloofar còmhla ris na nigheanan eile a-null gu bothan Yaghoob. Rachadh i dìreach a-mach às an oilthigh.</p>
+        <p class="nc-line">Agus nam bhruadar, gach latha, nuair a choinnicheadh Niloofar agus Sina, bheireadh iad làmh a chèile.</p>
       </div>
-      <p class="nc-q" id="q7">A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q7">Is it clear Niloofar and Sina shake hands when they meet?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -235,12 +243,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0334#8">
+    <fieldset class="nc-item" data-id="03/0582#1">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="gd" dir="ltr">
-        <p class="nc-line">Tha mo làmh goirid agus tha do choinneachadh fada air falbh.</p>
+        <p class="nc-ctx">– Càite air m' amhach a tha e sgrìobhte gur e àite-coise a th' ann?</p>
+        <p class="nc-ctx">– Gu h-oibeactach, chaidh mi a bhrusadh mo fhiaclan, nigh mi mo làmhan 's m' aodann cuideachd, chan eil na speuclairean agam orm, chan fhaca mi.</p>
+        <p class="nc-line">Thog Farid a chluasag 's a phlaide agus thàinig e a laighe air an leabaidh os cionn mo thè-sa, an leabaidh air an do chaidil Bahman fad a' chiad dà theirm den oilthigh, agus an oidhche sin, faisg air trì bliadhna, bha blàths corp Bahman air a dhol à cuimhne an tashkaid air an leabaidh.</p>
       </div>
-      <p class="nc-q" id="q8">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
+      <p class="nc-q" id="q8">Is 'tashkaid' a clear word for the mattress on the bed?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -255,17 +265,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -302,7 +310,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

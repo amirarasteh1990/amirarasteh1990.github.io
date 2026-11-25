@@ -1,154 +1,453 @@
 {
+ "format": 2,
  "lang": "tr",
  "slug": "tr",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Ana dil kontrolü",
+  "lead": "Kitabı okumuş olmanız gerekmiyor. İstediğiniz kadarını yanıtlayın.",
+  "persian_words": "Maman (anne), Baba (baba) ve -jan (canım), kitapta korunan Farsça kelimelerdir.",
+  "page": "Sayfa",
+  "correct": "Doğru",
+  "needs_change": "Değişmeli",
+  "not_sure": "Emin değilim",
+  "how_say": "Siz nasıl söylerdiniz?",
+  "meaning": "Sizce ne anlama geliyor?",
+  "optional": "(isteğe bağlı)",
+  "your_name": "Adınız",
+  "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
+  "private": "Yanıtlarınız yalnızca yazara gider.",
+  "send": "Gönder",
+  "send_continue": "Gönder ve {n}. sayfaya geç",
+  "sending": "Gönderiliyor…",
+  "popup_title": "Teşekkürler!",
+  "popup_text": "Adınızın web sitesindeki Teşekkürler sayfasında yer almasını ister misiniz? 4 sayfanın hepsini bitirin, memnuniyetle ekleriz.",
+  "popup_button": "{n}. sayfaya geç",
+  "arrived": "Teşekkürler, {n}. sayfadaki yanıtlarınız ulaştı.",
+  "thanks_last": "Teşekkürler! Yanıtlarınız ulaştı.",
+  "all_done": "Bütün sayfaları gönderdiniz. Hepsi için teşekkürler!",
+  "already_sent": "Bu sayfayı bu cihazdan zaten gönderdiniz. Teşekkürler!",
+  "continue_with": "{n}. sayfayla devam et",
+  "need_one": "En az bir satır için bir yanıt seçin.",
+  "note_no_answer": "Bir satırda not var: lütfen o satır için de bir yanıt seçin.",
+  "name_needed": "Listelenmesini istediğiniz adı yazın ya da kutudaki işareti kaldırın.",
+  "not_connected": "Gönderme henüz bağlı değil.",
+  "too_long": "Gönderme çok uzun sürdü.",
+  "cannot_send": "Yanıtlar buradan gönderilemedi.",
+  "use_email": "Lütfen aşağıdaki e-posta düğmesini kullanın.",
+  "fallback": "Yanıtlar bu sayfadan gönderilemedi. Lütfen onları e-postayla gönderin; girdiğiniz hiçbir şey kaybolmadı.",
+  "email_button": "Yanıtları e-postayla gönder",
+  "shortened": "Bazı notlar e-posta bağlantısı için çok uzundu ve orada kısaltıldı. Yanıtlarınızın tamamı aşağıda; lütfen onları e-postaya yapıştırın.",
+  "noscript": "Göndermek için JavaScript gerekiyor. Yanıtlarınızı {email} adresine e-postayla da gönderebilirsiniz."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 0
-  },
-  {
-   "id": "Opening/0007#2",
-   "where": "Opening/0007",
-   "text": "Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.",
-   "q": "Is it clear the children carried the yarn around the house?",
-   "ctx": 1,
-   "before": [
-    "…kaybolup gidecek anlar ve imgeler. Benim dünyam ile senin dünyan arasında bir köprü olsunlar diye yazıya geçirildiler. Bu cümleleri yazdığım andaki dünyamdan, onları okumaya oturduğun andaki dünyana uzanan bir köprü. Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun."
+   "key": "slips",
+   "title": "Yanlış söylenen kelimeler",
+   "q": "Kitaptaki anne bazı yabancı kelimeleri yanlış telaffuz ediyor. Bunlar inandırıcı telaffuz hataları gibi geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "dondulucu",
+     "note": "= dondurucu"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzheimer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "amublans",
+     "note": "= ambulans"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "Burdozer",
+     "note": "= buldozer"
+    }
    ]
   },
   {
-   "id": "01/0116#3",
-   "where": "01/0116",
-   "text": "Dışarı da çık. Kalabalık olmayan yerlere git.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Vay be, ne güzel. Mm-hm, sipariş ver, getirsinler. Ama Amir-jan, hep evde oturma ha."
+   "key": "images",
+   "title": "Farsça deyişler",
+   "q": "Bazı Farsça deyişler ve imgeler kelimesi kelimesine çevrildi. Her biri size anlamı hakkında bir fikir veriyor mu, yoksa size hiçbir şey ifade etmiyor mu?",
+   "labels": [
+    "Tahmin edebiliyorum",
+    "Edemiyorum",
+    "Emin değilim"
+   ],
+   "note_label": "Sizce ne anlama geliyor?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Yağmur yerden göğe yağmaz.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "İyi yıl baharından belli olur",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Gam yeme",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "Yüreğim çürüyor",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Elim kısa, sana kavuşmak uzak.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "Söylersem dilim yanar, söylemezsem kemiklerimin iliği yanar.",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "yemek bana yılan zehri olur",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "senin için hiçbir ekmek ısınmayacak",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "ailem zorla beni tavukların arasına katınca",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "şeker küpü boğazımda sıçrıyor",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "her köşe bucağa göz at",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "sözün masrafı yok — havadan ibaret",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "mutlaka Negar'ın gözünden düşerdi",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Sadece bir hasat vakti vaadi mi?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "dostluğun bağırsaklarını bir tepside önüne sereyim",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "tüyleri döküldü",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "bu kadar köpürme, sütün kurur",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "osurmasan kimse sana dilsiz demezdi",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Sikimin başını ye",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "sik başı yiyen",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "sakalımıza ve sikimize gülüyorsunuz",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "böyle elinde aletinle sokaklarda dolaşmazdın",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "başımıza ne sik gelse",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0148#4",
-   "where": "01/0148",
-   "text": "– Ne ve Gülüşler?",
-   "q": "Maman, hard of hearing, catches only the end of the title just mentioned. Does her question work?",
-   "ctx": 2,
-   "before": [
-    "– Çocuklar, Gözyaşları ve Gülüşler'i indireyim de bu akşam izlesek mi?",
-    "Maman başını çevirir ve der ki:"
+   "key": "children",
+   "title": "Çocukların kelimeleri",
+   "q": "Kitaptaki bazı çocuklar, küçük çocukların yaptığı gibi kelimeleri yanlış söylüyor. Her biri yazım hatası değil de bir çocuk hatası gibi geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Mermel taşı. Mermel çok pahalı demek.",
+     "note": "mermel = mermer"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Adı Tatanik.",
+     "note": "Tatanik = Titanik"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, şu büük bebeği bana alıl mısın?",
+     "note": "küçük bir kız"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Evet, bebeği alılım.",
+     "note": "babası onun konuşmasını taklit ediyor"
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "– Oho. Hamid Kedi, düne kadar “eşek” diyordun. Şimdi adam oldun da “merkep” mi diyorsun?",
-   "q": "Taghi mocks Hamid for switching to a politer word for donkey. Does it work?",
-   "ctx": 2,
-   "before": [
-    "– Pfff, merkep, eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı mı daha iyi bilir, yoksa sen, buzağı mı? Haydi git al bakalım. Camı kırıldığında söylemedim demeyesin.",
-    "Taghi dedi ki:"
+   "key": "nicknames",
+   "title": "Lakaplar",
+   "q": "Kitaptaki arkadaşlar birbirlerine şakacı lakaplar takıyor, çoğu zaman kelime oyunuyla. Her biri Türkçede lakap olarak işe yarıyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Siklon",
+     "note": "arkadaşlardan birinin lakabı: aktör Alain Delon'un adı, bir kısmı penis anlamına gelen kaba bir kelimeye çevrilmiş"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Tavernanın Ulu Yaşlısı",
+     "note": "Hafız'ın şiirinden alınmış, alaycı biçimde görkemli bir unvan"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Eldie",
+     "note": "“Tavernanın Ulu Yaşlısı” için sevimli bir kısa ad"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, benim Tavvy'm",
+     "note": "“taverna”dan türetilmiş sevimli adlar"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Pars Farid",
+     "note": "cesur, gözü kara bir arkadaş için"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Arasteh, “Araasteh”in budanmış hâli mi?",
+     "note": "araasteh = Farsçada “derli toplu, düzgün”"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "Sayın Hanımefendi Armaaan",
+     "note": "Armaan soyadı, alay için uzatılmış"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Kıvırcık Saçlı Schrödinger",
+     "note": "kararını veremeyen biri için alaycı bir unvan"
+    }
    ]
   },
   {
-   "id": "03/0290#6",
-   "where": "03/0290",
-   "text": "– Arasteh, “Araasteh”in budanmış hâli mi?",
-   "q": "The guard jokes that Arasteh is a trimmed Araasteh, Persian for neat. Would Turkish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "before": [
-    "– Bay Arasteh.",
-    "Başımı ona doğru çeviriyorum."
+   "key": "jokes",
+   "title": "Şakalar ve kelime oyunları",
+   "q": "Bu satırlarda bir şaka ya da kelime oyunu var. Her biri Türkçede işe yarıyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Fabrika sistemi böyle çalışıyor.",
+     "note": "işleri berbat etmek düpedüz onun doğası"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Affettim. Bütün bu bulvar senin olsun.",
+     "note": "Farsçada “affetmek” “hediye etmek” anlamına da gelir"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "düne kadar “eşek” diyordun. Şimdi adam oldun da “merkep” mi diyorsun?",
+     "note": "daha kibar bir kelimeye geçen bir oğlana takılıyor"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir tu Pir mi? … Kartal Göz “peer-to-peer” diyor, Taverny “Pir-to-Pir” diyor.",
+     "note": "“peer”i Farsça pir, yani “ulu, yaşlı” diye duyuyor; lakabının kökü bu"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Dün gece geviş getirdiğini duydum.",
+     "note": "geceleyin, geviş getiren bir inek gibi çiğnemek"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Yine ne bok oldu da Alain Siklon'u bize doğru kaldırdın?",
+     "note": "çift anlam: gururla dikilip oturmak ve sertleşme"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Ne “avcısı” değildi ki?",
+     "note": "anne “kadın avcısı”nın yalnızca sonunu duyuyor"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Eniştemizin usta zanaatkârının kuzeninin Tahran'ın en zengini olan arkadaşı",
+     "note": "bir oğlanın dilinden düşürmediği övünme"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Ya sik kaf... tabii zaten sik kafalıydın, şimdi daha da sik kafalı oldun.",
+     "note": "hakaret yarıda kesiliyor, sonra daha da ağırlaşıyor"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Evet, hepimizin fabrikası var. … Bok muhabbeti fabrikamız var.",
+     "note": "ürettikleri tek şey bok muhabbeti: sadece saçmalıyorlar"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "fosil, sen kendin aptallık ve çöküş heykelisin",
+     "note": "alaycı bir hakaret"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "hayat bin tümenlik bir banknota benziyor: hangi tarafından baksan mercimek pilavı kokuyor.",
+     "note": "saçma bir espri"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Ben böyle konuşurum; siz beni duyarsınız, şiir söylediğimi sanırsınız.",
+     "note": "bir oğlan şarkı söyler gibi ritimli cevap veriyor"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Dikkat et de çatlama, Bay Sik.",
+     "note": "göğsünü az önce kabartmış"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Sen hepsinden daha ineksin.",
+     "note": "“inek” = kalın kafalı aptal; bir erkeğe söyleniyor"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "o cümlede “âgâh” kelimesini iki kez kullanmaktan hep büyük keyif alırdı.",
+     "note": "“âgâh” şakacı biçimde iki kez kullanılıyor"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "sorun alıcıda; verici sorunu çözemez.",
+     "note": "arkadaşın zayıf gözleri “alıcı”"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Alain Siklon'u kastediyorum. Siiik.",
+     "note": "kelime oyununun kaba kısmı, uzatılarak"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Sen Hooman'san, ben de Suzan'ım.",
+     "note": "Hooman gibi yumuşak bir isim bu kadar kıllı bir adama yakışmıyor"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Türevi mi? Anlamı mı? Yoksa türevin anlamını mı? Ya da anlamın türevini mi?",
+     "note": "derin görünmeye çalışan kelime oyunu"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "İnşallah hâlin hep araasteh olsun.",
+     "note": "Arasteh soyadıyla kelime oyunu yapan bir dua; araasteh = “derli toplu”"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Gözlüğüm olmadan hiçbir şey göremiyorum, objektif olarak.",
+     "note": "karakterin her yerde kullandığı, dilinden düşmeyen kelime"
+    }
    ]
   },
   {
-   "id": "03/0430#7",
-   "where": "03/0430",
-   "text": "Senin de o sikik konuşma biçiminle adın Alain Siklon olmalıydı.",
-   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Would Turkish readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0590#8",
-   "where": "03/0590",
-   "text": "Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.",
-   "q": "Is 'namaz çarşafı' right for Maman's full-length prayer cloak?",
-   "ctx": 0
-  },
-  {
-   "id": "04a/0076#9",
-   "where": "04a/0076",
-   "text": "– Mermel taşı. Mermel çok pahalı demek.",
-   "q": "A little boy says 'Mermel' for 'mermer' and wrongly thinks it means expensive. Does it read as a child's mix-up, not a typo?",
-   "ctx": 1,
-   "before": [
-    "Yine giderdik. Yolun yarısında bir ev vardı. Duvarı güzeldi. Ghassem derdi ki:"
-   ]
-  },
-  {
-   "id": "04b/0595#10",
-   "where": "04b/0595",
-   "text": "– Ama sıçtı. Kartal Göz “peer-to-peer” diyor, Taverny “Pir-to-Pir” diyor.",
-   "q": "Taverny, nickname of the Tavern's Elder just mentioned, misheard 'peer-to-peer' as 'Pir-to-Pir'. Would Turkish readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "before": [
-    "– Pir tu Pir mi?",
-    "Hooman dedi ki:",
-    "– Bir salavat getirin. Tavernanın Ulu Yaşlısı sonunda bir laf etti.",
-    "Farid dedi ki:"
-   ]
-  },
-  {
-   "id": "04b/1263#11",
-   "where": "04b/1263",
-   "text": "– Vınnn, Baba, Baba, şu büük bebeği bana alıl mısın?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…sessizliği ortadan kaldırmış ama bana yol gösterecek kadar da aydınlığı yoktu. Evlerinin kapısının renginin boya kalemleri kutusunda nereye düştüğünü hiç bilemediğim bir kızın elinde göz kırpan bir lamba. Küçük bir kız çocuğu vınvın ederek geliyor ve yanımda duruyor. Oyuncaklara bakıyor. Diyor ki:"
-   ]
-  },
-  {
-   "id": "04b/1265#12",
-   "where": "04b/1265",
-   "text": "– Evet, bebeği alılım. Param olunca onun daha iyisini alılım sana, Baba'nın kızı.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 3,
-   "before": [
-    "…sessizliği ortadan kaldırmış ama bana yol gösterecek kadar da aydınlığı yoktu. Evlerinin kapısının renginin boya kalemleri kutusunda nereye düştüğünü hiç bilemediğim bir kızın elinde göz kırpan bir lamba. Küçük bir kız çocuğu vınvın ederek geliyor ve yanımda duruyor. Oyuncaklara bakıyor. Diyor ki:",
-    "– Vınnn, baba baba, şu büyük belebeği bana alıl mısın?",
-    "Arkamdan bir ses diyor ki:"
-   ]
-  },
-  {
-   "id": "04b/1312#13",
-   "where": "04b/1312",
-   "text": "İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.",
-   "q": "A student coins a crude phrase for how the painting makes your head spin. Is 'bok sersemi' clear?",
-   "ctx": 1,
-   "before": [
-    "– ... bakın, gerçekten ne kadar düşündürücü. Bunu çizmiş ve altına “bu bir pipo değil” yazmış."
-   ]
-  },
-  {
-   "id": "04b/1321#14",
-   "where": "04b/1321",
-   "text": "“Oradaki şarap gerçektir, mecazi değildir.”",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "06/0056#15",
-   "where": "06/0056",
-   "text": "Burdozerle üstüne toprak döktüler. Toprak ve kireç.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly Turkish speaker say 'buldozerle' (with a bulldozer) as 'Burdozerle'? If not, how?",
-   "ctx": 1,
-   "before": [
-    "…edilenlerin götürüldüğü yer, Covid ölülerini de oraya gömüyorlar. Allah bilir usulüne uygun gasledip gasletmediklerini. Uzaktan izledik. Kabre koyduklarında bir an kefen açıldı – bana, hastaneye götürülürken üzerinde olan kıyafetlerle kefene sarılmış gibi göründü. Kabirleri çok derin kazıyorlar."
-   ]
+   "key": "hafez",
+   "title": "Hafız'dan bir dize",
+   "q": "Şair Hafız'ın bu dizesi virgülsüz yazılmıştır, bu yüzden birbirine zıt iki türlü okunabilir:",
+   "labels": [
+    "Evet, iki türlü de",
+    "Tek türlü",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "Oradaki şarap gerçektir, mecazi değildir.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Bir okuma: şarap gerçektir, mecaz değildir.",
+    "Öbür okuma: şarap gerçek değildir, yalnızca bir mecazdır."
+   ],
+   "after_q": "Türkçe hâli iki türlü de okunabiliyor mu?"
   }
- ]
+ ],
+ "first": 1
 }

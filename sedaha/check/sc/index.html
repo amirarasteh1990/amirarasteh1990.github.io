@@ -46,8 +46,8 @@ try{s=localStorage.getItem(K)}catch(e){}u=q?q[1].toLowerCase():s;
 if(!u||!L[u]&&u!=="x-extract"){var b=String((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),c=b.split("-")[0];
 if(c==="pt")c=/-br\b/.test(b)?"pt-br":"pt";else if(c==="nb"||c==="nn")c="no";else if(c==="zh"&&/-(tw|hk|mo|hant)/.test(b))c="";u=L[c]?c:"en"}
 window.__ui=u;window.__UI_RTL=R;
-if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=0c8266f5"><\/script>')}})();</script>
-<script src="/assets/js/i18n.js?v=0c8266f5" defer></script>
+if(u!=="en"&&u!=="x-extract"||u==="en"&&(s==="en"||q)&&h.lang==="fa"){h.className+=" i18n-wait";document.write('<script src="/assets/i18n/'+u+'.js?v=1f960a44"><\/script>')}})();</script>
+<script src="/assets/js/i18n.js?v=1f960a44" defer></script>
 <script>/* Books tab -> the Opening this reader last opened (reader.js, lang-mine.js) */
 document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.getItem("sedaha-lang-url");if(!u||!/^\/sedaha\/read\/([a-z-]+\/)?$/.test(u)||location.pathname.indexOf("/sedaha/")===0)return;var a=document.querySelector('.appnav a[href="/sedaha/"]');if(a)a.href=u}catch(e){}});</script>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -122,15 +122,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     </div>
   </section>
 
-  <form class="nc-form" id="ncForm" data-lang="sc" data-language="Sardinian" data-version="2026-11-23" data-round="1" novalidate>
-    <fieldset class="nc-item" data-id="Opening/0007#1">
+  <form class="nc-form" id="ncForm" data-lang="sc" data-language="Sardinian" data-version="2026-11-25.o1" data-round="1" novalidate>
+    <fieldset class="nc-item" data-id="04b/1263#8">
       <legend>Line 1</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">Abertura</p>
-        <p class="nc-ctx">…betzos, e nois pigaìamus su filu e giraìamus intro de sa domo po chi su filu de lana non s'ammuntonesset. Forsis sa generatzione tua est arribada unos cantos annos troppu tardu pro connòschere custu mundu de filos, ma imàgina: unu die, in un'incàntu de su mundu, is pipios si trastulaiant gasi.</p>
-        <p class="nc-line">Immoi deo isolvo su filu de is fueddos e tue leadilu, giughe·lu in su mundu tuo, po chi no si ammuntonent inoghe, in su mundu meu.</p>
+        <p class="nc-ctx">– Amir, Amir-jan, fizu meu. Isveglia·ti. Isveglia·ti pro sa Maman. Totu fiat unu sonnu. Non tènnere timoria, seo inoghe.</p>
+        <p class="nc-ctx">…pro mi guidare. Una lugore chi lampizat in sa manu de una fizeddu de qui no apo mai ischidu in cale colore de sa boèsta de lapis de colores s'ajustaiat sa janna de domo sua. Benit currende una pitzinna faghende su sonu de su giogatolu sou e s'arrestat acanta mia. Càstiat is giogatolos. Narat:</p>
+        <p class="nc-line">– Viiiiish, Baba, Baba, clòmpami custa pupixedda manna manna?</p>
       </div>
-      <p class="nc-q" id="q1">You take the words with you. Does this sentence read naturally?</p>
+      <p class="nc-q" id="q1">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q1">
         <label><input type="radio" name="v1" value="ok"> Correct</label>
         <label><input type="radio" name="v1" value="change"> Needs change</label>
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0413#2">
+    <fieldset class="nc-item" data-id="04b/1003#5">
       <legend>Line 2</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">Bessio dae sa tenda pesada. Unu giovanu est in pès accanta de su caminu longu de asfaltu chi acòzat sa janna Hafez cun sa janna Valiasr de s'universidade, tendende papeleddos a chie passat. A mie puru mi ndi dat unu. Domando ite sunt is papeleddos. Cun meda entusiasmu, narat:</p>
-        <p class="nc-ctx">– Est note de cinema. Sa peliculedda Hamoun.</p>
-        <p class="nc-line">Oe a sero, in s'auditòriu.</p>
+        <p class="nc-ctx">– E tue puru ses unu Rashid.</p>
+        <p class="nc-ctx">S'Eskandar si furriat cara a mie e avantzat sa conca e su pettus cara a mie. Teniat is ogros meda abertos, e cun unu tonu rude, sena perdere pro custu s'aria sua a s'Alain Delon, at naradu:</p>
+        <p class="nc-line">– Càstia comente si la coghet, ti cagas su tzérebru.</p>
       </div>
-      <p class="nc-q" id="q2">A film is shown this afternoon. Is 'Oe a sero' right for this afternoon?</p>
+      <p class="nc-q" id="q2">Someone scolds a friend: look what a mess you made. Is that clear?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q2">
         <label><input type="radio" name="v2" value="ok"> Correct</label>
         <label><input type="radio" name="v2" value="change"> Needs change</label>
@@ -159,14 +159,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0508#3">
+    <fieldset class="nc-item" data-id="03/0430#9">
       <legend>Line 3</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">Unos cantos istantes de silèntziu. Forsis pro sa prima e ultima borta, totu is giovanos de sa cambera isetaìant chi su Meysam fueddaret.</p>
-        <p class="nc-ctx">– Feti m'ammento chi su professore m'at leadu a palas e m'at pretzidu sutas de is còstulas, e su temperalapis est bessidu lantzadu. Ma cuddu sonu chi at resonadu in is origas mias no m'est mai bessidu dae conca.</p>
-        <p class="nc-line">Cheret nàrrere chi calicuna die ando a mòrrere ancora aici, de una pegariàs?</p>
+        <p class="nc-ctx">– Eja, Hamoun est unu bonu nùmene pro tie. Comente su Hamoun de sa peliculedda, tue puru ses prenu de preguntas. Ses prenu de angustia e ses fonte de disassossegu, no pro tie, ma pro mie.</p>
+        <p class="nc-ctx">Su Hooman naràt:</p>
+        <p class="nc-line">E tue, cun cussu modu tuo de fueddare de cazu, su nùmene tuo diat dèpere èssere Alain Cazon.</p>
       </div>
-      <p class="nc-q" id="q3">He fears dying again for no reason. Is '<bdi lang="sc" dir="ltr">de una pegariàs</bdi>' clear?</p>
+      <p class="nc-q" id="q3">'Alain Cazon' is meant as a rude pun on the actor Alain Delon. Would Sardinian readers get it? If not, what word could carry it?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q3">
         <label><input type="radio" name="v3" value="ok"> Correct</label>
         <label><input type="radio" name="v3" value="change"> Needs change</label>
@@ -177,14 +177,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/0556#4">
+    <fieldset class="nc-item" data-id="06/0188#4">
       <legend>Line 4</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">– Ite ora est custa pro un'esàmene, a su cumintzu de su mese de Esfand?</p>
-        <p class="nc-ctx">E li sunt bènnidos is nervios de punta, pensende chi forsis fiat de veras s'època de esàmenes e issu s'immentigaret. Su Bahman s'est abbistadu de su nervosismu de su Hooman. At naradu:</p>
-        <p class="nc-line">– Aiat domandadu chi li facessent s'esàmene foras de turnu, pro su casu chi capitaret de aprobare.</p>
+        <p class="nc-line">Sa proida non falat dae terra a chelu.</p>
       </div>
-      <p class="nc-q" id="q4">He asked for a special exam outside the normal schedule. Is 'foras de turnu' clear?</p>
+      <p class="nc-q" id="q4">Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q4">
         <label><input type="radio" name="v4" value="ok"> Correct</label>
         <label><input type="radio" name="v4" value="change"> Needs change</label>
@@ -195,14 +193,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1003#5">
+    <fieldset class="nc-item" data-id="04b/0334#8">
       <legend>Line 5</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">– E tue puru ses unu Rashid.</p>
-        <p class="nc-ctx">S'Eskandar si furriat cara a mie e avantzat sa conca e su pettus cara a mie. Teniat is ogros meda abertos, e cun unu tonu rude, sena perdere pro custu s'aria sua a s'Alain Delon, at naradu:</p>
-        <p class="nc-line">– Càstia comente si la coghet, ti cagas su tzérebru.</p>
+        <p class="nc-line">Sa manu mia est curtza e s'unione tua est attesu.</p>
       </div>
-      <p class="nc-q" id="q5">Someone scolds a friend: look what a mess you made. Is that clear?</p>
+      <p class="nc-q" id="q5">Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q5">
         <label><input type="radio" name="v5" value="ok"> Correct</label>
         <label><input type="radio" name="v5" value="change"> Needs change</label>
@@ -213,14 +209,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1150#6">
+    <fieldset class="nc-item" data-id="04b/0274#6">
       <legend>Line 6</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">…su pè sou at intrapadu su libru de s'Eskandar e at rutu sa cobertura sua de giornale. Si biiat unu tretu de su longu e intrevaradu títulu de su libru: «Dèighi mizi... meravìglias, ischire... afor... pro...». Su Farid non est torradu a sa cambera in duas o tres notes. S'Eskandar sighiat a nàrrere:</p>
-        <p class="nc-ctx">– Custu ludrò tambene at violadu is leis de sa fisica.</p>
-        <p class="nc-line">At fuidu a prus velotzidade de sa lugore, si nono ja li petariat su culu.</p>
+        <p class="nc-line">Su chi naro est chi, si restas inoghe sètzidu leghende poesia, no ti si at a callentare su pane.</p>
       </div>
-      <p class="nc-q" id="q6">Eskandar threatens Farid. Is it clear he'd have hung him up by the backside?</p>
+      <p class="nc-q" id="q6">A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q6">
         <label><input type="radio" name="v6" value="ok"> Correct</label>
         <label><input type="radio" name="v6" value="change"> Needs change</label>
@@ -231,14 +225,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1232#7">
+    <fieldset class="nc-item" data-id="01/0203#3">
       <legend>Line 7</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">Seo andadu cara a su Farid. Cheria li domandare proite aiat rasadu su pilu. Fricaiat su didu contra su sòlu de sa terratza. No apo naradu nudda. Mi seo sètzidu acanta sua. Intre sa posca de su formigone asfaltadu de sa terratza, aiat dessenhada sa Mozhgan. Apo naradu:</p>
-        <p class="nc-ctx">– Cras sa posca l'at a torrare a cobèrrere.</p>
-        <p class="nc-line">At naradu chi non la dessenhaiat pro chi restaret.</p>
+        <p class="nc-line">Bibi, chi Deus dda tèngiat in gròria, naraiat in custos momentos: si ddu naro, sa limba mia s'abbrusat; si no ddu naro, sa medudda de is ossos mios s'abbrusat.</p>
       </div>
-      <p class="nc-q" id="q7">Farid writes Mozhgan's name in the dust. Is 'dessenhaiat' right for writing?</p>
+      <p class="nc-q" id="q7">Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q7">
         <label><input type="radio" name="v7" value="ok"> Correct</label>
         <label><input type="radio" name="v7" value="change"> Needs change</label>
@@ -249,14 +241,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="04b/1263#8">
+    <fieldset class="nc-item" data-id="01/0073#5">
       <legend>Line 8</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">– Amir, Amir-jan, fizu meu. Isveglia·ti. Isveglia·ti pro sa Maman. Totu fiat unu sonnu. Non tènnere timoria, seo inoghe.</p>
-        <p class="nc-ctx">…pro mi guidare. Una lugore chi lampizat in sa manu de una fizeddu de qui no apo mai ischidu in cale colore de sa boèsta de lapis de colores s'ajustaiat sa janna de domo sua. Benit currende una pitzinna faghende su sonu de su giogatolu sou e s'arrestat acanta mia. Càstiat is giogatolos. Narat:</p>
-        <p class="nc-line">– Viiiiish, Baba, Baba, clòmpami custa pupixedda manna manna?</p>
+        <p class="nc-line">– Ghassem torra a fàghere is fainas suas, narat «un'annu bonu si connoschet dae su beranu suo».</p>
       </div>
-      <p class="nc-q" id="q8">On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?</p>
+      <p class="nc-q" id="q8">The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q8">
         <label><input type="radio" name="v8" value="ok"> Correct</label>
         <label><input type="radio" name="v8" value="change"> Needs change</label>
@@ -267,14 +257,14 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </fieldset>
-    <fieldset class="nc-item" data-id="03/0430#9">
+    <fieldset class="nc-item" data-id="Opening/0007#1">
       <legend>Line 9</legend>
       <div class="reader nc-text" lang="sc" dir="ltr">
-        <p class="nc-ctx">– Eja, Hamoun est unu bonu nùmene pro tie. Comente su Hamoun de sa peliculedda, tue puru ses prenu de preguntas. Ses prenu de angustia e ses fonte de disassossegu, no pro tie, ma pro mie.</p>
-        <p class="nc-ctx">Su Hooman naràt:</p>
-        <p class="nc-line">E tue, cun cussu modu tuo de fueddare de cazu, su nùmene tuo diat dèpere èssere Alain Cazon.</p>
+        <p class="nc-ctx">Abertura</p>
+        <p class="nc-ctx">…betzos, e nois pigaìamus su filu e giraìamus intro de sa domo po chi su filu de lana non s'ammuntonesset. Forsis sa generatzione tua est arribada unos cantos annos troppu tardu pro connòschere custu mundu de filos, ma imàgina: unu die, in un'incàntu de su mundu, is pipios si trastulaiant gasi.</p>
+        <p class="nc-line">Immoi deo isolvo su filu de is fueddos e tue leadilu, giughe·lu in su mundu tuo, po chi no si ammuntonent inoghe, in su mundu meu.</p>
       </div>
-      <p class="nc-q" id="q9">'Alain Cazon' is meant as a rude pun on the actor Alain Delon. Would Sardinian readers get it? If not, what word could carry it?</p>
+      <p class="nc-q" id="q9">You take the words with you. Does this sentence read naturally?</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="q9">
         <label><input type="radio" name="v9" value="ok"> Correct</label>
         <label><input type="radio" name="v9" value="change"> Needs change</label>
@@ -289,17 +279,15 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <label for="ncName">Your name <span class="nc-optional">(optional)</span></label>
       <input id="ncName" name="name" type="text" maxlength="60" dir="auto" autocomplete="name">
     </p>
-    <!-- the Thanks-page tick is offered only once every line has an answer (author 2026-11-25):
-         a reader who looked at one line is not listed; native-check.js shows it -->
-    <p class="muted-note" id="ncConsentHint">Answer every line on this page to be offered a place on the <a href="/thanks/">Thanks page</a>.</p>
-    <p class="nc-consent" id="ncConsent" hidden>
+    <p class="nc-consent" id="ncConsent">
       <label><input id="ncListMe" name="thanks" type="checkbox"> You may list my name on the <a href="/thanks/">Thanks page</a></label>
     </p>
     <p class="guestbook-honeypot" aria-hidden="true">
       <label for="ncWebsite">Website</label>
       <input id="ncWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
     </p>
-    <p class="muted-note">No account needed. Your answers, and your name if you add one, are filed as a public issue in this website's GitHub repository, where Amir reads them.</p>
+    <!-- 2026-11-25: answers are filed in a private repository (the Worker's CHECK_REPO) -->
+    <p class="muted-note">No account needed. Your answers go only to the author.</p>
     <div class="guestbook-submit-row">
       <button class="btn btn-primary" id="ncSend" type="submit">Send</button>
       <p class="guestbook-form-status" id="ncStatus" role="status" aria-live="polite" hidden></p>
@@ -336,7 +324,7 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
     <br>Contact: <a href="mailto:amirarasteh.art@gmail.com">amirarasteh.art@gmail.com</a>
   </div>
 </footer>
-<script src="/assets/js/native-check.js?v=39" defer></script>
+<script src="/assets/js/native-check.js?v=40" defer></script>
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>

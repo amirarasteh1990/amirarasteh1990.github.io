@@ -2,8 +2,15 @@
  "lang": "uz",
  "slug": "uz",
  "dir": "ltr",
- "version": "2026-11-23.sayings",
+ "version": "2026-11-25.o2",
  "items": [
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Aytmoqchimanki, shunday hadeb faqat bu yerda o'tirib she'r o'qiysang, senga non issiq bo'lmaydi.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
   {
    "id": "01/0138#1",
    "where": "01/0138",
@@ -19,32 +26,31 @@
    "kind": "saying"
   },
   {
-   "id": "01/0203#3",
-   "where": "01/0203",
-   "text": "Buvi — Xudo rahmat qilsin — bunday paytlarda derdi: Aysam tilim kuyadi; aymasam, suyagimning iligi kuyadi.",
-   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "id": "03/0634#9",
+   "where": "03/0634",
+   "text": "Bu balo Eskandarga aytma — yana bir soat pand-nasihat qilib, ovqatimni menga ilon zahariga aylantiradi.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
    "kind": "saying"
   },
   {
-   "id": "06/0188#4",
-   "where": "06/0188",
-   "text": "Yomg'ir yerdan osmonga yog'maydi.",
-   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "03/0044#2",
+   "where": "03/0044",
+   "text": "– Oqsoqol, tur, ket — Qoplon Farid senga o'limchi harakat qilmasidan oldin.",
+   "q": "A dorm joke about a murderous move. Does 'o'limchi harakat' sound natural?",
+   "before": [
+    "– Bugun \"Mening Shahrim — Mening Madaniyatim\" ko'rgazmasi boshlanadi. Tur, tur. Bu ko'rinishlarni menga qo'yganing yetadi, Xarobotiy. Universitetga kiygan o'sha kiyiming bilan kecha kechasi uxlading — hech bahona ham topolmaysan.",
+    "U voz kechishini iltijo qildim. Hooman dedi:"
+   ]
   },
   {
-   "id": "01/0073#5",
-   "where": "01/0073",
-   "text": "\"Yaxshi yil bahorigidan bilinadi\" deya.",
-   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
-   "kind": "saying"
-  },
-  {
-   "id": "04b/0274#6",
-   "where": "04b/0274",
-   "text": "Aytmoqchimanki, shunday hadeb faqat bu yerda o'tirib she'r o'qiysang, senga non issiq bo'lmaydi.",
-   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0204#4",
+   "where": "04b/0204",
+   "text": "– Sen bunaqa ishlarni qilmasding-ku.",
+   "q": "Amir asks, surprised. Does this line read as a question?",
+   "before": [
+    "– Hozir bularni qo'y, kel, ikkita nabot choy olgandim, ichaylik.",
+    "Deyman:"
+   ]
   },
   {
    "id": "04b/0824#7",
@@ -54,18 +60,34 @@
    "kind": "saying"
   },
   {
-   "id": "04b/0334#8",
-   "where": "04b/0334",
-   "text": "Qo'lim kalta, visoling esa uzoq.",
-   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/0418#5",
+   "where": "04b/0418",
+   "text": "Mayda gavdali, uzun pufak soch, katta ko'z, juda qora terili va o'ta kichik kalla — agar pufak sochlari bo'lmasa, kichkina gavdasida ham kichik ko'rinadigan bola edi.",
+   "q": "Is it clear his head, not the boy, would look small without the hair?",
+   "before": [
+    "– Salaam. Ismim Maysam. Yotoqxona mas'uli 403-xonaga bor dedi.",
+    "Va shundoq xonaning yarim ochiq eshigi oldida turib, gapirmasdi."
+   ]
   },
   {
-   "id": "03/0634#9",
-   "where": "03/0634",
-   "text": "Bu balo Eskandarga aytma — yana bir soat pand-nasihat qilib, ovqatimni menga ilon zahariga aylantiradi.",
-   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
-   "kind": "saying"
+   "id": "04b/1385#8",
+   "where": "04b/1385",
+   "text": "Bu Niloofarning gulpparlaridan biri. Uning tili ustida turibman.",
+   "q": "Amir stands on a water-lily petal. Is 'gulpparlaridan' spelled correctly?",
+   "before": [
+    "– Sening ahvoling juda yomon ekan, dengiz bilan osmonni aralashtirib yubording.",
+    "…qilmaydi. Sukunat, to'la sukunat. Uning yodi va xotirasida g'arq bo'laman, yodi va xotirasida, xotirasida, xotira, xotira, xotira. Yer og'iz ochadi va hamma narsa qulab tushadi. Cheksiz bir cho'l va men havoda osilib qolganman. Oyog'im ostiga qarayman. Ostimda chiroyli nilrang, egilgan shakl bor."
+   ]
+  },
+  {
+   "id": "03/0613#3",
+   "where": "03/0613",
+   "text": "Oshxona kirishining o'ng tarafimizdan va Abu Rayhon binosi pastki qavatiga kichik kirishning chap tarafimizdan o'tib, ko'rgazma va Abu Rayhon binosi o'rtasidagi yo'lni olamiz.",
+   "q": "Is it clear: dining hall on our right, small entrance on our left?",
+   "before": [
+    "– Sen bechora... huhh... boshingni shunday pastga soldingki... huhh... qayoqqa buncha tez ketayapsan... huhh... nafas qisdi. Meni bu vujud bilan bu qadar yo'l... huhh... sening orqangdan yurgizding.",
+    "Valiasr darvozasidan ikki qadam narida orqaga qaytib, o'sha bir necha zinapoyadan tushamiz."
+   ]
   }
  ]
 }

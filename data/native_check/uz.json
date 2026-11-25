@@ -2,67 +2,52 @@
  "lang": "uz",
  "slug": "uz",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Xuddi bolaligimizda Maman eski kiyimlardan ipni yechar, biz esa ip uy ichida uyulib qolmasin deb uni ko'tarib xona-xona aylanardik.",
-   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
+   "id": "04b/1312#1",
+   "where": "04b/1312",
+   "text": "Odamning boshi aylanib qoladi. Qancha ko'p o'ylasang, shuncha ko'proq boshing aylanadi.",
+   "q": "A student's crude slang for 'it makes your head spin' (like 'shit-dizzy'). Is there a crude word here? Which would a young person use?",
+   "kind": "textlook"
+  },
+  {
+   "id": "03/0430#9",
+   "where": "03/0430",
+   "text": "Sen ham bu \"qo'toqqa o'xshash\" gap uslub bilan isming \"Alen Qo'toqon\" bo'lishi kerak edi.",
+   "q": "'Alen Qo'toqon' is meant as a rude pun on the actor Alain Delon. Would Uzbek readers get it? If not, what word could carry it?",
    "before": [
-    "Kirish",
-    "…bo'lgan lahzalar va tasvirlar. Ular mening dunyom bilan sizning dunyongiz o'rtasida ko'prik bo'lsin uchun yozilgan. Bu satrlarni yozayotgan lahzamdagi dunyomdan, ularni o'qib o'tirgan lahzangizdagi dunyongizga uzatilgan ko'prik. Bu tomondan men so'zlar ipini yoyaman, u tomondan siz ularni yig'asiz."
+    "– Ha, Homun senga yaxshi ism. Filmdagi Homun kabi, sen ham savollarga to'lasin. Iztirob va parishonlikning manbaisan — o'zing uchun emas, men uchun.",
+    "Hooman dedi:"
    ]
   },
   {
-   "id": "03/0044#2",
-   "where": "03/0044",
-   "text": "– Oqsoqol, tur, ket — Qoplon Farid senga o'limchi harakat qilmasidan oldin.",
-   "q": "A dorm joke about a murderous move. Does 'o'limchi harakat' sound natural?",
-   "before": [
-    "– Bugun \"Mening Shahrim — Mening Madaniyatim\" ko'rgazmasi boshlanadi. Tur, tur. Bu ko'rinishlarni menga qo'yganing yetadi, Xarobotiy. Universitetga kiygan o'sha kiyiming bilan kecha kechasi uxlading — hech bahona ham topolmaysan.",
-    "U voz kechishini iltijo qildim. Hooman dedi:"
-   ]
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Yomg'ir yerdan osmonga yog'maydi.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "03/0613#3",
-   "where": "03/0613",
-   "text": "Oshxona kirishining o'ng tarafimizdan va Abu Rayhon binosi pastki qavatiga kichik kirishning chap tarafimizdan o'tib, ko'rgazma va Abu Rayhon binosi o'rtasidagi yo'lni olamiz.",
-   "q": "Is it clear: dining hall on our right, small entrance on our left?",
-   "before": [
-    "– Sen bechora... huhh... boshingni shunday pastga soldingki... huhh... qayoqqa buncha tez ketayapsan... huhh... nafas qisdi. Meni bu vujud bilan bu qadar yo'l... huhh... sening orqangdan yurgizding.",
-    "Valiasr darvozasidan ikki qadam narida orqaga qaytib, o'sha bir necha zinapoyadan tushamiz."
-   ]
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Qo'lim kalta, visoling esa uzoq.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "04b/0204#4",
-   "where": "04b/0204",
-   "text": "– Sen bunaqa ishlarni qilmasding-ku.",
-   "q": "Amir asks, surprised. Does this line read as a question?",
-   "before": [
-    "– Hozir bularni qo'y, kel, ikkita nabot choy olgandim, ichaylik.",
-    "Deyman:"
-   ]
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Buvi — Xudo rahmat qilsin — bunday paytlarda derdi: Aysam tilim kuyadi; aymasam, suyagimning iligi kuyadi.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
-   "id": "04b/0418#5",
-   "where": "04b/0418",
-   "text": "Mayda gavdali, uzun pufak soch, katta ko'z, juda qora terili va o'ta kichik kalla — agar pufak sochlari bo'lmasa, kichkina gavdasida ham kichik ko'rinadigan bola edi.",
-   "q": "Is it clear his head, not the boy, would look small without the hair?",
-   "before": [
-    "– Salaam. Ismim Maysam. Yotoqxona mas'uli 403-xonaga bor dedi.",
-    "Va shundoq xonaning yarim ochiq eshigi oldida turib, gapirmasdi."
-   ]
-  },
-  {
-   "id": "04b/1227#6",
-   "where": "04b/1227",
-   "text": "Pochchalarining usta-mahram amakivachchasining do'sti sochini babiliss bilan jingalak qilarmish degan gapni eshitganga o'xshaydi.",
-   "q": "Is 'usta-mahram' clear as the master craftsman their in-law works under?",
-   "before": [
-    "…ustasining amakivachchasining do'stidan boshqa faqat o'sha orqa sochlari uning faxri edi. Doim orqa sochi Negarning uyi tomonga qaraydigan qilib o'tirardi. Orqa sochlari jingalak edi va Hamid doim bir qo'lini o'sha boshining orqasidagi jingalakka qo'yib turardi. Bir marta Yaserga aytgandi:",
-    "– Babangning puli bo'lmasligiga, bir qo'l-bir oyog'ing bo'lmasligiga rozi bo'lib, o'rniga mening orqa sochlarim bo'lishini istarmiding?"
-   ]
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "\"Yaxshi yil bahorigidan bilinadi\" deya.",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/1228#7",
@@ -75,23 +60,30 @@
    ]
   },
   {
-   "id": "04b/1385#8",
-   "where": "04b/1385",
-   "text": "Bu Niloofarning gulpparlaridan biri. Uning tili ustida turibman.",
-   "q": "Amir stands on a water-lily petal. Is 'gulpparlaridan' spelled correctly?",
+   "id": "04b/1321#2",
+   "where": "04b/1321",
+   "text": "\"U yerdagi may haqiqat, majoz emas\"",
+   "q": "Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?",
+   "kind": "textlook"
+  },
+  {
+   "id": "04b/1227#6",
+   "where": "04b/1227",
+   "text": "Pochchalarining usta-mahram amakivachchasining do'sti sochini babiliss bilan jingalak qilarmish degan gapni eshitganga o'xshaydi.",
+   "q": "Is 'usta-mahram' clear as the master craftsman their in-law works under?",
    "before": [
-    "– Sening ahvoling juda yomon ekan, dengiz bilan osmonni aralashtirib yubording.",
-    "…qilmaydi. Sukunat, to'la sukunat. Uning yodi va xotirasida g'arq bo'laman, yodi va xotirasida, xotirasida, xotira, xotira, xotira. Yer og'iz ochadi va hamma narsa qulab tushadi. Cheksiz bir cho'l va men havoda osilib qolganman. Oyog'im ostiga qarayman. Ostimda chiroyli nilrang, egilgan shakl bor."
+    "…ustasining amakivachchasining do'stidan boshqa faqat o'sha orqa sochlari uning faxri edi. Doim orqa sochi Negarning uyi tomonga qaraydigan qilib o'tirardi. Orqa sochlari jingalak edi va Hamid doim bir qo'lini o'sha boshining orqasidagi jingalakka qo'yib turardi. Bir marta Yaserga aytgandi:",
+    "– Babangning puli bo'lmasligiga, bir qo'l-bir oyog'ing bo'lmasligiga rozi bo'lib, o'rniga mening orqa sochlarim bo'lishini istarmiding?"
    ]
   },
   {
-   "id": "03/0430#9",
-   "where": "03/0430",
-   "text": "Sen ham bu \"qo'toqqa o'xshash\" gap uslub bilan isming \"Alen Qo'toqon\" bo'lishi kerak edi.",
-   "q": "'Alen Qo'toqon' is meant as a rude pun on the actor Alain Delon. Would Uzbek readers get it? If not, what word could carry it?",
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Xuddi bolaligimizda Maman eski kiyimlardan ipni yechar, biz esa ip uy ichida uyulib qolmasin deb uni ko'tarib xona-xona aylanardik.",
+   "q": "Maman unravels old clothes; the children carry the yarn around. Does this read naturally?",
    "before": [
-    "– Ha, Homun senga yaxshi ism. Filmdagi Homun kabi, sen ham savollarga to'lasin. Iztirob va parishonlikning manbaisan — o'zing uchun emas, men uchun.",
-    "Hooman dedi:"
+    "Kirish",
+    "…bo'lgan lahzalar va tasvirlar. Ular mening dunyom bilan sizning dunyongiz o'rtasida ko'prik bo'lsin uchun yozilgan. Bu satrlarni yozayotgan lahzamdagi dunyomdan, ularni o'qib o'tirgan lahzangizdagi dunyongizga uzatilgan ko'prik. Bu tomondan men so'zlar ipini yoyaman, u tomondan siz ularni yig'asiz."
    ]
   }
  ]

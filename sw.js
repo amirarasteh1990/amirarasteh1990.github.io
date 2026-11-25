@@ -101,7 +101,11 @@
 /* v39 (2026-11-25): check pages -- the Thanks-page tick only once every line is
    answered; a strip linking every round, ticked for the rounds this browser has
    sent, and on a round already sent a link to the next one (native-check.js?v=39). */
-var VERSION = 'arasteh-v39';
+/* v40 (2026-11-25): the simplified check pages for the wave-1 languages --
+   4 pages, all in the reader's language, numbered questions, a note box only when asked
+   for, a pop-up after page 1; answers filed privately; the Thanks tick no longer waits for
+   every line; guestbook.js and gallery.js re-pinned with it. */
+var VERSION = 'arasteh-v40';
 
 /* The shell: enough to render any page offline, kept deliberately small. */
 var SHELL = [
@@ -116,7 +120,7 @@ var SHELL = [
   '/assets/js/lang-alias.js',
   '/assets/js/share.js',
   '/assets/js/backtotop.js',
-  '/assets/js/guestbook.js?v=39',
+  '/assets/js/guestbook.js?v=40',
   '/assets/data/guestbook.json',
   '/assets/fonts/ebgaramond-regular.woff2',
   '/assets/fonts/ebgaramond-italic.woff2',

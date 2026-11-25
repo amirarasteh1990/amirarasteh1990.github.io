@@ -2,17 +2,45 @@
  "lang": "eu",
  "slug": "eu",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Munduko gertakarien sukar-murrumuran galduko ziren uneak eta irudiak, hemen idatzita geratu ez balira.",
-   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?",
+   "id": "03/0430#5",
+   "where": "03/0430",
+   "text": "Eta zuk, hitz egiteko duzun zakil-modu horrekin, zure izena Alain Zakilon izango zen.",
+   "q": "'Alain Zakilon' is meant as a rude pun on the actor Alain Delon. Would Basque readers get it? If not, what word could carry it?",
    "before": [
-    "Sarrera",
-    "…orrialdean. Denak isildu dira. Soinu guztiak, eta agian mundu hura bera ere, bere jendearekin. Baliteke are soinu hauek paperean trazatu zituen gogoa aspaldi arnasa hartu gabe egotea. Une hau bera — esaldi hau irakurtzen ari zaren unea — igaro den bezalaxe, liburu honetako une guztiak igaro dira."
+    "– Bai, Hamoon izen ona da zuretzat. Filmeko Hamoun bezala, zu ere galderaz betea zaude. Antsietaz betea eta nahasmen-iturri zara, zure buruarentzat ez, nirentzat baizik.",
+    "Hoomanek esan zuen:"
    ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "Euria ez da lurretik gorantz erortzen.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Nire eskua laburregia da eta zurekiko batasuna urrun.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Diot honela hemen eseri eta poesia irakurtzen jarraitzen baduzu, ez zaizula ogirik berotuko.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibik, Jainkoak arima har dezala, horrelako momentuetan esaten zuen: esaten badut, nire mihia erretzen da; esaten ez badut, nire hezurren mamia erretzen da.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "03/0576#2",
@@ -25,6 +53,34 @@
    ]
   },
   {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Esaten du: \"Urte on bat udaberriak agerian uzten du.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Esan zuen: nire bihotza usteltzen ari da.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Barrez, Hoomanek eskuaz bizkarrean gogor jotzen nau, eta azukre-koxkorra eztarrira joaten zait.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#9",
+   "where": "03/0634",
+   "text": "Ez esan miserable horri Eskandarri, bestela berriro ordubete emango digu sermoika, eta arroz hura suge-pozoia bihurtuko zait.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
    "id": "04b/1337#3",
    "where": "04b/1337",
    "text": "Horregatik etorri naiz. Ahazten laguntzera etorri naiz.",
@@ -35,6 +91,23 @@
    ]
   },
   {
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Familiak indarrez oiloen artean sartu ninduen arte ez nuen ulertu zein mundu desberdina den istorioaren beste alde hori.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Munduko gertakarien sukar-murrumuran galduko ziren uneak eta irudiak, hemen idatzita geratu ez balira.",
+   "q": "Moments that would be lost in the world's feverish noise. Does this read naturally?",
+   "before": [
+    "Sarrera",
+    "…orrialdean. Denak isildu dira. Soinu guztiak, eta agian mundu hura bera ere, bere jendearekin. Baliteke are soinu hauek paperean trazatu zituen gogoa aspaldi arnasa hartu gabe egotea. Une hau bera — esaldi hau irakurtzen ari zaren unea — igaro den bezalaxe, liburu honetako une guztiak igaro dira."
+   ]
+  },
+  {
    "id": "06/0294#4",
    "where": "06/0294",
    "text": "Bide batez – duela bizpahiru aste kontagailua irakurtzera etorri zenean, Baba atea irekitzera joan zen, ikuskariaren ahotsa entzun zen esaten, zuen kontsumoa altua da, Haaj Agha, eta Maman erdi lo zegoen eta esan zigun esateko, irakur ezazu kontagailua eta zoaz – zer axola zaizu zenbat kontsumitu dugun?",
@@ -42,16 +115,6 @@
    "before": [
     "Mahboubehk dio:",
     "– Oso barregarria izan zen."
-   ]
-  },
-  {
-   "id": "03/0430#5",
-   "where": "03/0430",
-   "text": "Eta zuk, hitz egiteko duzun zakil-modu horrekin, zure izena Alain Zakilon izango zen.",
-   "q": "'Alain Zakilon' is meant as a rude pun on the actor Alain Delon. Would Basque readers get it? If not, what word could carry it?",
-   "before": [
-    "– Bai, Hamoon izen ona da zuretzat. Filmeko Hamoun bezala, zu ere galderaz betea zaude. Antsietaz betea eta nahasmen-iturri zara, zure buruarentzat ez, nirentzat baizik.",
-    "Hoomanek esan zuen:"
    ]
   }
  ]

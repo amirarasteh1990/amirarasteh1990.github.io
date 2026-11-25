@@ -2,16 +2,85 @@
  "lang": "fy",
  "slug": "fy",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Lykas eartiids yn 'e bernejierren, as Maman it jern út 'e âlde klean losmakke, en wy de tried pakten en troch it hûs omrûnen, sadat it jern him net opsteapelje soe.",
-   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
+   "id": "03/0430#8",
+   "where": "03/0430",
+   "text": "– En do, mei dat lullige praat fan dy, dyn namme hie Alain Lullon wêze moatten.",
+   "q": "'Alain Lullon' is meant as a rude pun on the actor Alain Delon. Would Frisian readers get it? If not, what word could carry it?",
    "before": [
-    "Oanhef",
-    "…opskreaun wiene. Se waarden opskreaun as in brêge tusken myn wrâld en dines. In brêge fan myn wrâld, yn it stuit dat ik dizze sinnen skriuw, nei dines, yn it stuit datsto dy deljoust om se te lêzen. Fan dizze kant ôf wynje ik de tried fan wurden ôf, en fan 'e oare kant ôf garrest do de wurden op."
+    "– Ja, Hamoon is in goede namme foar dy. Krekt as Hamoon yn de film bist ek do fol fragen. Do bist fol ûnrêst en in boarne fan fertriet, net foar dysels, mar foar my.",
+    "Hooman sei:"
+   ]
+  },
+  {
+   "id": "06/0188#4",
+   "where": "06/0188",
+   "text": "It reint net omheech fan de ierde nei de himel ta.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#8",
+   "where": "04b/0334",
+   "text": "Myn hân is te koart en de ferieniging mei dy is fier fuort.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#6",
+   "where": "04b/0274",
+   "text": "Ik sis allinnich: at do hjirhinne bliuwst sitten en gedichten lêze, wurdt der gjin brea waarm foar dy.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#3",
+   "where": "01/0203",
+   "text": "Bibi, God hawwe har siel, sei by sokke gelegenheden: sis ik it, dan baarnt my de tonge; sis ik it net, dan baarnt my it murch yn 'e bonken.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/1248#6",
+   "where": "04b/1248",
+   "text": "De freon fan de neef fan de masterfeint fan ús sweager dy't de rykste man fan Teheran is, seit dat swart de kleur fan leafde is.",
+   "q": "Does 'masterfeint' clearly mean a master craftsman, a skilled tradesman?",
+   "before": [
+    "…autootsje yn 'e hân. Yaser wie net kommen. Myn autootsje en dat fan Hamid leken op elkoar. Myn autootsje wie blau en dat fan Hamid read. Wy hienen se foar fiifentweintich Toman kocht. Se wiene wat grutter as in lucifersdoaske. Wy praten oer waans autokleur it moaist wie. Taghi sei giel. Hamid sei:",
+    "– At der in swart west hie, hie ik swart nommen."
+   ]
+  },
+  {
+   "id": "01/0073#5",
+   "where": "01/0073",
+   "text": "Hy seit: «In goed jier kenst oan syn maitiid.»",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Se sei: myn hert rottet fuort.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#2",
+   "where": "04b/0509",
+   "text": "Under it laitsjen slacht Hooman my hurd op 'e rêch, en it sûkerklontsje springt myn kiel yn.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0951#5",
+   "where": "04b/0951",
+   "text": "– De maat fan de neef fan de master fan ús sweager, dy't de rykste man fan Teheran is, hie it him ferteld.",
+   "q": "A comic chain of relatives. Is 'master' clear as a master craftsman here?",
+   "before": [
+    "– Jou him wer oan my. Alsof hy wit hoe't dy mei draden wurkje.",
+    "Taghi ving Hamid syn hân yn de loft en rêdde de Walkman. Mar Yaser krige noch in pear stompen en skoppen. Hamid sei:"
    ]
   },
   {
@@ -25,14 +94,11 @@
    ]
   },
   {
-   "id": "04b/0391#3",
-   "where": "04b/0391",
-   "text": "– ... dy idioat hie in slim gefal fan weanwize ynbylding.",
-   "q": "Does 'weanwize ynbylding' clearly mean he was badly deluded?",
-   "before": [
-    "– Sels de kop hiest net iens opite kinnen. Mar wat wienen it foar lekkere snobbersguodsjes. Ananas.",
-    "– Kou, do bist in kou. In kealtsje fan Samiri."
-   ]
+   "id": "04b/0824#7",
+   "where": "04b/0824",
+   "text": "Ik haw sels pas, nei't ik mei geweld troch myn famylje by de hinnen set waard, begrepen wat foar oare wrâld dat oan de oare kant fan it ferhaal is.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/0508#4",
@@ -45,23 +111,13 @@
    ]
   },
   {
-   "id": "04b/0951#5",
-   "where": "04b/0951",
-   "text": "– De maat fan de neef fan de master fan ús sweager, dy't de rykste man fan Teheran is, hie it him ferteld.",
-   "q": "A comic chain of relatives. Is 'master' clear as a master craftsman here?",
+   "id": "04b/0391#3",
+   "where": "04b/0391",
+   "text": "– ... dy idioat hie in slim gefal fan weanwize ynbylding.",
+   "q": "Does 'weanwize ynbylding' clearly mean he was badly deluded?",
    "before": [
-    "– Jou him wer oan my. Alsof hy wit hoe't dy mei draden wurkje.",
-    "Taghi ving Hamid syn hân yn de loft en rêdde de Walkman. Mar Yaser krige noch in pear stompen en skoppen. Hamid sei:"
-   ]
-  },
-  {
-   "id": "04b/1248#6",
-   "where": "04b/1248",
-   "text": "De freon fan de neef fan de masterfeint fan ús sweager dy't de rykste man fan Teheran is, seit dat swart de kleur fan leafde is.",
-   "q": "Does 'masterfeint' clearly mean a master craftsman, a skilled tradesman?",
-   "before": [
-    "…autootsje yn 'e hân. Yaser wie net kommen. Myn autootsje en dat fan Hamid leken op elkoar. Myn autootsje wie blau en dat fan Hamid read. Wy hienen se foar fiifentweintich Toman kocht. Se wiene wat grutter as in lucifersdoaske. Wy praten oer waans autokleur it moaist wie. Taghi sei giel. Hamid sei:",
-    "– At der in swart west hie, hie ik swart nommen."
+    "– Sels de kop hiest net iens opite kinnen. Mar wat wienen it foar lekkere snobbersguodsjes. Ananas.",
+    "– Kou, do bist in kou. In kealtsje fan Samiri."
    ]
   },
   {
@@ -75,13 +131,13 @@
    ]
   },
   {
-   "id": "03/0430#8",
-   "where": "03/0430",
-   "text": "– En do, mei dat lullige praat fan dy, dyn namme hie Alain Lullon wêze moatten.",
-   "q": "'Alain Lullon' is meant as a rude pun on the actor Alain Delon. Would Frisian readers get it? If not, what word could carry it?",
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Lykas eartiids yn 'e bernejierren, as Maman it jern út 'e âlde klean losmakke, en wy de tried pakten en troch it hûs omrûnen, sadat it jern him net opsteapelje soe.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
    "before": [
-    "– Ja, Hamoon is in goede namme foar dy. Krekt as Hamoon yn de film bist ek do fol fragen. Do bist fol ûnrêst en in boarne fan fertriet, net foar dysels, mar foar my.",
-    "Hooman sei:"
+    "Oanhef",
+    "…opskreaun wiene. Se waarden opskreaun as in brêge tusken myn wrâld en dines. In brêge fan myn wrâld, yn it stuit dat ik dizze sinnen skriuw, nei dines, yn it stuit datsto dy deljoust om se te lêzen. Fan dizze kant ôf wynje ik de tried fan wurden ôf, en fan 'e oare kant ôf garrest do de wurden op."
    ]
   }
  ]

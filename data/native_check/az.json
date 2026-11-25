@@ -2,18 +2,8 @@
  "lang": "az",
  "slug": "az",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Eynilə uşaqlıqda — Maman köhnə paltarların ipini açanda, biz ipi götürüb evdə gəzirdik ki, yun üst-üstə yığılmasın.",
-   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
-   "before": [
-    "Açılış",
-    "…qızğın uğultusunda yox olub gedəcək anlar və görüntülər. Mənim dünyam ilə sənin dünyanın arasında körpü olsunlar deyə yazıldılar. Bu cümlələri yazdığım andakı dünyamdan, onları oxumağa oturduğun andakı dünyana uzanan körpü. Bu tərəfdən mən sözlərin ipini açıram, o tərəfdən sən toplayırsan."
-   ]
-  },
   {
    "id": "04b/1003#2",
    "where": "04b/1003",
@@ -25,24 +15,42 @@
    ]
   },
   {
-   "id": "04b/1070#3",
-   "where": "04b/1070",
-   "text": "Mərtəbələrin arasındakı boş fəzaya baxan dəlikciyə tərəf gedirəm və bir mərtəbə aşağıdan dördüncü mərtəbəyə baxıram.",
-   "q": "Is 'dəlikciyə' right for a window onto the open well between floors?",
+   "id": "03/0430#6",
+   "where": "03/0430",
+   "text": "Sən də bu sik kimi danışıq tərzinlə gərək adın \"Alain Siklon\" olaydı.",
+   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Would Azerbaijani readers get it? If not, what word could carry it?",
    "before": [
-    "– Ay vay. Allah məni öldürsün. Ağa, bağışla, tələsik qapını açdım, belə oldu.",
-    "Deyirəm bir şey olmayıb. Könlü sakitləşir və tələsik uzaqlaşır, açdığı otağın qapısını bağlamadığını bilmədən. Otağın içinə baxıram. Masalar və stullar yeni görünür."
+    "– Bəli, Hamun sənin üçün yaxşı addır. Filmdəki Hamun kimi, sən də suallarla dolusun. Narahatlıqla dolusun və iztiraba mənbəsən, özün üçün yox, mənim üçün.",
+    "Hooman dedi:"
    ]
   },
   {
-   "id": "04b/1225#4",
-   "where": "04b/1225",
-   "text": "Hamid dibdən qısaldılmış saçlarını örtmək üçün günlüklü papaq qoymuşdu.",
-   "q": "Is 'günlüklü papaq' right for a cap with a brim (a peaked cap)?",
-   "before": [
-    "– Əgər cəsarətin olsaydı və aşağı tullansaydın, heç olmasa bir dəfə də olsa səndən bir xəbər Niloofarın qulağına çatardı ki, sənin üçün darıxa bilərdi.",
-    "Damın o biri küncündə kiçik bir işıqlı şey gördüm. Diqqətlə baxdım. Farid idi. Faridin dizinin Eskandarın burnuna endiyindən bir il sonra, Farid damın qaranlıq küncündə bardaş qurub oturmuşdu. Saçlarını qırxmışdı."
-   ]
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Yağış yerdən göyə yağmır.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Əlim qısadır və sənə qovuşmaq uzaq.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, Allah rəhmət eləsin, bu cür anlarda deyirdi: desəm dilim yanar, deməsəm ilik-ilik yanar sümüklərim.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "– Ghassem yenə şirinçilik edir, deyir: \"Yaxşı ilin yazından bilinər.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
   },
   {
    "id": "04b/1256#5",
@@ -55,13 +63,20 @@
    ]
   },
   {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "Sən də bu sik kimi danışıq tərzinlə gərək adın \"Alain Siklon\" olaydı.",
-   "q": "'Alain Siklon' is meant as a rude pun on the actor Alain Delon. Would Azerbaijani readers get it? If not, what word could carry it?",
+   "id": "04b/1321#1",
+   "where": "04b/1321",
+   "text": "Orda olan o mey həqiqətdir, məcaz deyil.",
+   "q": "Hafez's line should allow two readings: 'real, not a metaphor' and 'not real, only a metaphor'. Can one line carry both? How?",
+   "kind": "textlook"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Eynilə uşaqlıqda — Maman köhnə paltarların ipini açanda, biz ipi götürüb evdə gəzirdik ki, yun üst-üstə yığılmasın.",
+   "q": "A childhood memory of playing with unravelled wool. Does this read naturally?",
    "before": [
-    "– Bəli, Hamun sənin üçün yaxşı addır. Filmdəki Hamun kimi, sən də suallarla dolusun. Narahatlıqla dolusun və iztiraba mənbəsən, özün üçün yox, mənim üçün.",
-    "Hooman dedi:"
+    "Açılış",
+    "…qızğın uğultusunda yox olub gedəcək anlar və görüntülər. Mənim dünyam ilə sənin dünyanın arasında körpü olsunlar deyə yazıldılar. Bu cümlələri yazdığım andakı dünyamdan, onları oxumağa oturduğun andakı dünyana uzanan körpü. Bu tərəfdən mən sözlərin ipini açıram, o tərəfdən sən toplayırsan."
    ]
   }
  ]

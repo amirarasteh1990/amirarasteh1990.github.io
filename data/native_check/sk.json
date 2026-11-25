@@ -1,157 +1,453 @@
 {
+ "format": 2,
  "lang": "sk",
  "slug": "sk",
  "dir": "ltr",
- "version": "2026-11-22",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Kontrola rodenými hovoriacimi",
+  "lead": "Knihu nemusíte mať prečítanú. Odpovedzte na toľko riadkov, na koľko chcete.",
+  "persian_words": "Maman (matka), Baba (otec) a -jan (drahý) sú perzské slová, ktoré kniha ponecháva.",
+  "page": "Strana",
+  "correct": "Správne",
+  "needs_change": "Treba zmeniť",
+  "not_sure": "Neviem isto",
+  "how_say": "Ako by ste to povedali?",
+  "meaning": "Čo podľa vás znamená?",
+  "optional": "(nepovinné)",
+  "your_name": "Vaše meno",
+  "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
+  "private": "Vaše odpovede dostane iba autor.",
+  "send": "Odoslať",
+  "send_continue": "Odoslať a pokračovať na stranu {n}",
+  "sending": "Odosiela sa…",
+  "popup_title": "Ďakujeme!",
+  "popup_text": "Chceli by ste mať svoje meno na stránke Poďakovanie na webe? Dokončite všetky 4 strany a radi ho tam pridáme.",
+  "popup_button": "Pokračovať na stranu {n}",
+  "arrived": "Ďakujeme, vaše odpovede zo strany {n} dorazili.",
+  "thanks_last": "Ďakujeme! Vaše odpovede dorazili.",
+  "all_done": "Odoslali ste všetky strany. Ďakujeme za každú z nich!",
+  "already_sent": "Túto stranu ste z tohto zariadenia už odoslali. Ďakujeme!",
+  "continue_with": "Pokračovať stranou {n}",
+  "need_one": "Vyberte odpoveď aspoň pri jednom riadku.",
+  "note_no_answer": "Pri jednom riadku je poznámka: vyberte, prosím, odpoveď aj preň.",
+  "name_needed": "Doplňte meno, ktoré chcete uviesť, alebo zrušte zaškrtnutie.",
+  "not_connected": "Odosielanie ešte nie je pripojené.",
+  "too_long": "Odosielanie trvalo príliš dlho.",
+  "cannot_send": "Odpovede sa odtiaľto nepodarilo odoslať.",
+  "use_email": "Použite, prosím, tlačidlo e-mailu nižšie.",
+  "fallback": "Odpovede sa z tejto stránky nepodarilo odoslať. Pošlite ich, prosím, e-mailom; nič z toho, čo ste napísali, sa nestratilo.",
+  "email_button": "Poslať odpovede e-mailom",
+  "shortened": "Niektoré poznámky boli pre e-mailový odkaz príliš dlhé, preto sa tam skrátili. Vaše úplné odpovede sú nižšie; vložte ich, prosím, do e-mailu.",
+  "noscript": "Odosielanie potrebuje JavaScript. Odpovede môžete poslať aj e-mailom na {email}."
+ },
+ "version": "2026-11-25.s1.p1",
+ "page": 1,
+ "groups": [
   {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
-   "q": "Does this sentence read naturally?",
-   "ctx": 1,
-   "before": [
-    "…z môjho sveta — v okamihu, keď píšem tieto vety — do tvojho sveta, v okamihu, keď si sadneš k ich čítaniu. Z tejto strany odvíjam niť slov a z druhej strany ich zbieraš. Ako v detstve, keď Maman párala priadzu zo starých šiat a my sme vzali niť a chodili s ňou po dome, aby sa priadza nehromadila."
+   "key": "slips",
+   "title": "Zle vyslovené slová",
+   "q": "Matka v knihe zle vyslovuje niektoré cudzie slová. Znejú tieto chyby vo výslovnosti uveriteľne?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0014#slip",
+     "text": "mrazničly",
+     "note": "= mrazničky"
+    },
+    {
+     "id": "03/0362#slip",
+     "text": "Ameroka",
+     "note": "= Amerika"
+    },
+    {
+     "id": "03/0380#slip",
+     "text": "Ayzhajmer",
+     "note": "= Alzheimer"
+    },
+    {
+     "id": "06/0052#slip",
+     "text": "anbulanciou",
+     "note": "= ambulanciou"
+    },
+    {
+     "id": "06/0056#slip",
+     "text": "burdozér",
+     "note": "= buldozér"
+    }
    ]
   },
   {
-   "id": "01/0116#2",
-   "where": "01/0116",
-   "text": "Choď tam, kde nie je veľa ľudí.",
-   "q": "During Covid, Maman tells her son abroad not to stay home all the time, but to avoid crowds. Does this sound natural from a mother?",
-   "ctx": 1,
-   "before": [
-    "– Och, aká dobrá vec. Mm-hm, objednáš a donesú ti to. Ale Amir-jan, nesedávaj doma celý čas. Choď aj von."
+   "key": "images",
+   "title": "Perzské príslovia",
+   "q": "Niektoré perzské príslovia a obrazy sú preložené doslova. Dáva vám každé z nich aspoň trochu tušiť, čo znamená, alebo vám nehovorí nič?",
+   "labels": [
+    "Viem uhádnuť",
+    "Neviem",
+    "Neviem isto"
+   ],
+   "note_label": "Čo podľa vás znamená?",
+   "note_on": "ok",
+   "rows": [
+    {
+     "id": "06/0188#img",
+     "text": "Dážď nepadá nahor zo zeme.",
+     "note": null
+    },
+    {
+     "id": "01/0073#img",
+     "text": "Dobrý rok sa pozná po jari.",
+     "note": null
+    },
+    {
+     "id": "04a/0128#img",
+     "text": "Nejedz smútok",
+     "note": null
+    },
+    {
+     "id": "01/0138#img",
+     "text": "srdce mi hnije",
+     "note": null
+    },
+    {
+     "id": "04b/0334#img",
+     "text": "Moja ruka je krátka a spojenie s tebou ďaleké.",
+     "note": null
+    },
+    {
+     "id": "01/0203#img",
+     "text": "ak to poviem, jazyk mi horí; ak to nepoviem, špik v kostiach mi horí",
+     "note": null
+    },
+    {
+     "id": "03/0634#img",
+     "text": "jedlo sa mi zmení na hadí jed",
+     "note": null
+    },
+    {
+     "id": "04b/0274#img",
+     "text": "žiadny chlieb sa ti nezohreje",
+     "note": null
+    },
+    {
+     "id": "04b/0824#img",
+     "text": "ma rodina násilím napchala medzi kvočky",
+     "note": null
+    },
+    {
+     "id": "04b/0509#img",
+     "text": "kocka cukru mi skočí do hrdla",
+     "note": null
+    },
+    {
+     "id": "01/0132#img",
+     "text": "nakukni do každého posledného rohu",
+     "note": null
+    },
+    {
+     "id": "06/0118#img",
+     "text": "slová nič nestoja — sú len vietor vo vzduchu",
+     "note": null
+    },
+    {
+     "id": "04b/1247#img",
+     "text": "iste klesne v Negariných očiach",
+     "note": null
+    },
+    {
+     "id": "04b/1293#img",
+     "text": "Len sľub na žatvu?",
+     "note": null
+    },
+    {
+     "id": "04b/0205#img",
+     "text": "naservírujem vnútornosti priateľstva na podnose",
+     "note": null
+    },
+    {
+     "id": "04b/1125#img",
+     "text": "vypadali im všetky chlpy na tele",
+     "note": null
+    },
+    {
+     "id": "03/0417#img",
+     "text": "netráp sa, vyschne ti mlieko",
+     "note": null
+    },
+    {
+     "id": "04b/0378#img",
+     "text": "keď si neprdneš, nikto ťa nebude mať za nemého",
+     "note": null
+    },
+    {
+     "id": "04b/0181#img",
+     "text": "Zožer hlavičku môjho kokota",
+     "note": null
+    },
+    {
+     "id": "04b/0899#img",
+     "text": "Ty žrút hláv kokotov",
+     "note": null
+    },
+    {
+     "id": "04b/0209#img",
+     "text": "smeješ sa našim bradám a vtákom",
+     "note": null
+    },
+    {
+     "id": "04b/0822#img",
+     "text": "netúlal by si sa takto ulicami s vtákom v ruke",
+     "note": null
+    },
+    {
+     "id": "04b/0440#img",
+     "text": "nech nám na hlavu spadne akýkoľvek vták",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0119#3",
-   "where": "03/0119",
-   "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
-   "q": "Does 'pocit známosti' (a sense of having seen her before) sound natural?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0135#4",
-   "where": "03/0135",
-   "text": "Yaser povedal, lebo nákladiak Khavar jeho otca sa nezmestí do uličky.",
-   "q": "Children explain why a side street beats an alley. Is it clear Yaser means his own father's truck?",
-   "ctx": 1,
-   "before": [
-    "Všetci sme povedali: na križovatke, teda na vedľajšej ulici."
+   "key": "children",
+   "title": "Detské slová",
+   "q": "Niektoré deti v knihe hovoria slová nesprávne, tak ako malé deti. Znie každé ako detská chyba, a nie ako preklep?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0076#child",
+     "text": "Je to kameň z marmolu. Marmol znamená veľmi drahý.",
+     "note": "marmol = mramor"
+    },
+    {
+     "id": "04b/0953#child",
+     "text": "Volá sa to Tatanik.",
+     "note": "Tatanik = Titanic"
+    },
+    {
+     "id": "04b/1263#child",
+     "text": "Baba, Baba, kúpis mi tú velkú bábiku?",
+     "note": "malé dievčatko"
+    },
+    {
+     "id": "04b/1265#child",
+     "text": "Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.",
+     "note": "otec napodobňuje jej reč"
+    }
    ]
   },
   {
-   "id": "03/0191#5",
-   "where": "03/0191",
-   "text": "Hamid Mačka, ešte včera si hovoril khár. Teraz si sa poľudštil a hovoríš somár?",
-   "q": "In Persian, 'khár' is the blunt word for donkey. Taghi teases Hamid for now saying polite 'somár'. Does the jab work?",
-   "ctx": 3,
-   "before": [
-    "– Pfff, somár, kto vie lepšie — priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne, alebo ty, ty teľa? No tak, kúp si ju. Keď sa sklenená strecha rozbije, nehovor, že som ťa nevaroval.",
-    "Taghi povedal:",
-    "– Oho."
+   "key": "nicknames",
+   "title": "Prezývky",
+   "q": "Kamaráti v knihe si dávajú hravé prezývky, často so slovnou hračkou. Funguje každá ako prezývka v slovenčine?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0430#nick",
+     "text": "Alain Kokoton",
+     "note": "prezývka jedného z kamarátov: meno herca Alaina Delona, ktorého časť sa zmenila na vulgárne slovo pre penis"
+    },
+    {
+     "id": "03/0624#nick",
+     "text": "Starší z Krčmy",
+     "note": "posmešne vznešený titul z Háfezovej poézie"
+    },
+    {
+     "id": "03/0628#nick",
+     "text": "Krčmárik",
+     "note": "láskavá podoba prezývky „Starší z Krčmy“"
+    },
+    {
+     "id": "03/0630#nick",
+     "text": "Taverny, môj Krčmár",
+     "note": "láskavé prezývky odvodené od slov „taverna“ a „krčma“"
+    },
+    {
+     "id": "03/0504#nick",
+     "text": "Leopard Farid",
+     "note": "pre odvážneho, bezhlavého kamaráta"
+    },
+    {
+     "id": "03/0290#nick",
+     "text": "Je Arasteh len zostrihnuté Araasteh?",
+     "note": "araasteh = po perzsky „úhľadný“"
+    },
+    {
+     "id": "04b/0820#nick",
+     "text": "jej Jasnosťou slečnou Armaaan",
+     "note": "priezvisko Arman, posmešne natiahnuté"
+    },
+    {
+     "id": "04b/1109#nick",
+     "text": "Mister Kučeravý Schrödinger",
+     "note": "posmešný titul pre niekoho, kto sa nevie rozhodnúť"
+    }
    ]
   },
   {
-   "id": "03/0430#6",
-   "where": "03/0430",
-   "text": "A ty by si sa s tým svojím kokotským spôsobom reči mal volať Alain Kokoton.",
-   "q": "'Alain Kokoton' is meant as a rude pun on the actor Alain Delon. Would Slovak readers get it? If not, what word could carry it?",
-   "ctx": 0
-  },
-  {
-   "id": "03/0462#7",
-   "where": "03/0462",
-   "text": "– Máte sa dobre?",
-   "q": "She is silent, and he senses something is wrong. Does this question fit?",
-   "ctx": 1,
-   "before": [
-    "Prišiel som na druhú stranu nádvoria. Práve sem, kde teraz stojím. Niloofar prišla. Zaradoval som sa. Išiel som k nej. Odpovedala na môj pozdrav. Vstúpili sme do budovy. Bez slova zamierila k schodom. Aj ja som stúpal, o jeden schod pod ňou. Keď sme sa dostali na vrch schodov, povedal som:"
+   "key": "jokes",
+   "title": "Vtipy a slovné hračky",
+   "q": "V týchto riadkoch je vtip alebo slovná hračka. Funguje každý v slovenčine?",
+   "labels": [
+    "Správne",
+    "Treba zmeniť",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Má to tak nastavené od výroby.",
+     "note": "kaziť veci má jednoducho v povahe"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Odpustené. Celý tento bulvár je tvoj.",
+     "note": "v perzštine „odpustiť“ znamená aj „darovať“"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "ešte včera si hovoril khár. Teraz si sa poľudštil a hovoríš somár?",
+     "note": "doberanie chlapca, že prešiel na slušnejšie slovo"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pír na pír? … Orlie Oko hovorí peer-to-peer, Taverny hovorí pír na pír.",
+     "note": "„peer“ počuje ako perzské pir, „starší“, z ktorého je jeho prezývka"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Včera v noci som počul, ako prežúvaš.",
+     "note": "žuvanie v noci, ako keď krava prežúva"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Čo ťa zase trápi, že sa ti na nás postavil, Alain Kokoton?",
+     "note": "dvojaký význam: hrdo sa postaviť a erekcia"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Akým -károm teda nebol?",
+     "note": "matka zachytí len koniec slova „sukničkár“"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne",
+     "note": "chlapcovo stále opakované chvastanie"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Alebo si kokotohl... no, kokotohlavec si bol, teraz si len ešte väčší kokotohlavec.",
+     "note": "nadávka sa preruší a potom ešte pritvrdí"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Áno, chlapče, všetci máme továrne. … Máme fabriku na kecanie sračiek.",
+     "note": "jediné, čo vyrábajú, sú sračky: len kecajú nezmysly"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ty starožitnosť, veď ty sám si socha sprostosti a úpadku",
+     "note": "posmešná nadávka"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "Podľa môjho názoru je život ako tisíctomanová bankovka: z akejkoľvek strany sa na ňu pozrieš, cítiť z nej šošovicovú ryžu.",
+     "note": "absurdný vtip"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Ja proste takto rozprávam, a vy myslíte, že verše skladám.",
+     "note": "chlapec odpovedá spevavým rytmom"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Daj pozor, aby si nepraskol, pán Kokot.",
+     "note": "práve vypäl hruď"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Ty si zo všetkých najväčšia krava.",
+     "note": "„krava“ = tupý hlupák, povedané mužovi"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "vždy si náramne užíval, ako do tej vety dvakrát vloží slovo „vedomý“.",
+     "note": "„vedomý“ dvakrát, pre zábavu"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "problém je u prijímača; vysielač to nevyrieši.",
+     "note": "kamarátov slabý zrak je ten „prijímač“"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Myslím Alain Kokoton. Kooo-kot.",
+     "note": "vulgárna časť slovnej hračky, natiahnutá"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Ak si ty Hooman, tak ja som Zuzana.",
+     "note": "jemné meno Hooman nesedí takému chlpatému chlapovi"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Deriváciu? Zmysel? Alebo zmysel derivácie? Alebo deriváciu zmyslu?",
+     "note": "pseudohlboká slovná hračka"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Dajbože, nech si vždy araasteh.",
+     "note": "požehnanie so slovnou hračkou na priezvisko Arasteh; araasteh = „úhľadný“"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Bez okuliarov nič nevidím, objektívne.",
+     "note": "obľúbené slovo postavy, používa ho stále"
+    }
    ]
   },
   {
-   "id": "03/0560#8",
-   "where": "03/0560",
-   "text": "– Povedz svojej mame všetko.",
-   "q": "Maman says this to one boy, Omid. Does this wording fit?",
-   "ctx": 1,
-   "before": [
-    "Vyšli sme. Asi hodinu sme sedeli vo viniciach za budovou hlinenej ľadovne oproti starému cintorínu. Mahboubeh a Maryam uviazali na sabzeh uzly a keď sa zotmelo, vrátili sme sa. V noci Maman ležala uprostred obývacej izby na koberci a pozerala na svoje náramky. Akoby hovorila mne, povedala Omidovi:"
-   ]
-  },
-  {
-   "id": "04b/0460#9",
-   "where": "04b/0460",
-   "text": "– Čo ťa zase trápi, že sa ti na nás postavil, Alain Kokoton?",
-   "q": "The speaker mocks a roommate for getting an erection at them, using his rude nickname. Is the crude joke clear?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/0743#10",
-   "where": "04b/0743",
-   "text": "Ležal som v tme izby a škárou vo dverách som videl Ghassema, ako sedí v hale pred televízorom a lúska semienka, a Maman sedela vedľa neho.",
-   "q": "They sit in the family's main living room. Does 'v hale' fit?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1263#11",
-   "where": "04b/1263",
-   "text": "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
-   "q": "On the street, a stranger's little girl asks her dad for a big doll. Does it sound like baby talk?",
-   "ctx": 1,
-   "before": [
-    "…príjemné, konejšivé tmavé ticho, ale nevrhala dosť svetla, aby ma niekam doviedla. Blikajúcu lampu v ruke dievčaťa, pri ktorého farbe domových dverí som nikdy nevedel, kam patrí v škatuľke pasteliek. Pribieha malé dievčatko, bzučí ako autíčko a zastaví sa vedľa mňa. Díva sa na hračky. Hovorí:"
-   ]
-  },
-  {
-   "id": "04b/1265#12",
-   "where": "04b/1265",
-   "text": "– Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.",
-   "q": "A stranger on the street answers his little girl, playfully copying her baby talk. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "– Vžžžum, Baba, Baba, kúpis mi tú velkú bábiku?",
-    "Zozadu sa ozýva hlas:"
-   ]
-  },
-  {
-   "id": "04b/1312#13",
-   "where": "04b/1312",
-   "text": "Človek z toho dostane posratý závrat. Čím viac o tom premýšľate, tým väčší je ten posratý závrat.",
-   "q": "A student describes a baffling painting with a crude made-up phrase. Does 'posratý závrat' work as that?",
-   "ctx": 1,
-   "before": [
-    "– ...Pozrite sa na to, je to naozaj zarážajúce. Toto nakreslil a pod to napísal: toto nie je fajka."
-   ]
-  },
-  {
-   "id": "04b/1320#14",
-   "where": "04b/1320",
-   "text": "hľadajúc ten beit od Háfeza, pri ktorom, rovnako ako pri tej maľbe, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
-   "q": "A girl had said a painting gives you a crude kind of dizziness. Is the verse compared to that painting here?",
-   "ctx": 1,
-   "before": [
-    "A trasúcimi sa rukami som prekotne listoval ghazalmi,"
-   ]
-  },
-  {
-   "id": "04b/1321#15",
-   "where": "04b/1321",
-   "text": "Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“",
-   "q": "Hafez's line, read one way: the wine is real, not a metaphor. Read another: not real, only a metaphor. Do both readings work here?",
-   "ctx": 0
-  },
-  {
-   "id": "04b/1321#16",
-   "where": "04b/1321",
-   "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým väčší po... teda, tým väčší závrat dostaneš.",
-   "q": "He starts to repeat the crude 'posratý závrat', stops, and says a polite word. Does that come through?",
-   "ctx": 2,
-   "before": [
-    "A trasúcimi sa rukami som prekotne listoval ghazalmi, hľadajúc ten beit od Háfeza, o ktorom, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
-    "– Tu. Vypočuj si toto. Pre-preboha, počúvaj. „To víno tam je naozaj skutočné nie je to metafora.“ Toto je to isté. Je to ako tá maľba, ktorú ti ukazovala ka-kamarátka."
-   ]
+   "key": "hafez",
+   "title": "Háfezov verš",
+   "q": "Tento verš básnika Háfeza je napísaný bez čiarky, takže sa dá čítať dvoma opačnými spôsobmi:",
+   "labels": [
+    "Áno, oboma",
+    "Len jedným",
+    "Neviem isto"
+   ],
+   "note_label": "Ako by ste to povedali?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1321#hafez",
+     "text": "To víno tam je naozaj skutočné nie je to metafora.",
+     "note": null
+    }
+   ],
+   "after": [
+    "Jeden spôsob: víno je skutočné, nie metafora.",
+    "Druhý spôsob: víno nie je skutočné, je len metafora."
+   ],
+   "after_q": "Dá sa vaša verzia čítať oboma spôsobmi?"
   }
- ]
+ ],
+ "first": 1
 }

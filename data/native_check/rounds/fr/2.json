@@ -1,179 +1,232 @@
 {
+ "format": 2,
  "lang": "fr",
  "slug": "fr",
  "dir": "ltr",
- "version": "2026-11-22.r2",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Relecture par des locuteurs natifs",
+  "lead": "Pas besoin d'avoir lu le livre. Réponds à autant de questions que tu veux.",
+  "persian_words": "Maman (mère), Baba (père) et -jan (cher) sont des mots persans, conservés dans le livre.",
+  "page": "Page",
+  "correct": "Correct",
+  "needs_change": "À modifier",
+  "not_sure": "Je ne sais pas",
+  "how_say": "Comment le dirais-tu ?",
+  "meaning": "Selon toi, qu'est-ce que cela veut dire ?",
+  "optional": "(facultatif)",
+  "your_name": "Ton nom",
+  "thanks_tick": "Inscrire mon nom sur la page des remerciements",
+  "private": "Tes réponses ne sont transmises qu'à l'auteur.",
+  "send": "Envoyer",
+  "send_continue": "Envoyer et passer à la page {n}",
+  "sending": "Envoi…",
+  "popup_title": "Merci !",
+  "popup_text": "Aimerais-tu voir ton nom sur la page des remerciements du site ? Termine les 4 pages et nous l'ajouterons avec plaisir.",
+  "popup_button": "Passer à la page {n}",
+  "arrived": "Merci, tes réponses de la page {n} sont bien arrivées.",
+  "thanks_last": "Merci ! Tes réponses sont bien arrivées.",
+  "all_done": "Tu as envoyé toutes les pages. Merci pour chacune d'elles !",
+  "already_sent": "Tu as déjà envoyé cette page depuis cet appareil. Merci !",
+  "continue_with": "Continuer avec la page {n}",
+  "need_one": "Choisis une réponse pour au moins une ligne.",
+  "note_no_answer": "Une ligne a une remarque : merci de choisir aussi une réponse pour elle.",
+  "name_needed": "Ajoute le nom que tu souhaites voir affiché, ou décoche la case.",
+  "not_connected": "L'envoi n'est pas encore activé.",
+  "too_long": "L'envoi a pris trop de temps.",
+  "cannot_send": "Les réponses n'ont pas pu être envoyées d'ici.",
+  "use_email": "Merci d'utiliser le bouton e-mail ci-dessous.",
+  "fallback": "Les réponses n'ont pas pu être envoyées depuis cette page. Envoie-les plutôt par e-mail ; rien de ce que tu as saisi n'est perdu.",
+  "email_button": "Envoyer les réponses par e-mail",
+  "shortened": "Certaines remarques étaient trop longues pour un lien e-mail et y ont été raccourcies. Tes réponses complètes sont ci-dessous ; merci de les coller dans l'e-mail.",
+  "noscript": "L'envoi nécessite JavaScript. Tu peux aussi envoyer tes réponses par e-mail à {email}."
+ },
+ "version": "2026-11-25.s1.p2",
+ "page": 2,
+ "groups": [
   {
-   "id": "01/0182#1",
-   "where": "01/0182",
-   "text": "Il n'était pas quoi — eur ?",
-   "q": "Told her husband was no womanizer, Maman echoes the end of the word. Would French readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Il n'était pas coureur non plus.",
-    "Maman dit :"
+   "key": "one",
+   "title": null,
+   "q": "He addresses her with the polite 'you'. Does that fit here?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#s17",
+     "text": "Cela fait trente-deux mois que je vous aime. De loin.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "06/0052#2",
-   "where": "06/0052",
-   "text": "À la fin Mahboub a appelé, l'équipe est arrivée en amublance et a emmené Naney",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly French speaker say ambulance as 'amublance'? If not, how?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0380#3",
-   "where": "03/0380",
-   "text": "La pire maladie, c'est Ayzheimer.",
-   "q": "Maman mispronounces foreign words on purpose, all through the book. Would an elderly French speaker say Alzheimer as 'Ayzheimer'? If not, how?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Maman dit :"
+   "key": "one",
+   "title": null,
+   "q": "The book's opening. Does it read naturally and clearly?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#s18",
+     "text": "Il se peut même que l'esprit qui traça jadis ces sons sur le papier n'ait plus respiré depuis longtemps.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "01/0132#4",
-   "where": "01/0132",
-   "text": "Il y avait la typhoïde, par exemple, ou la tuberculose, ou la rougeole.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "01/0132#5",
-   "where": "01/0132",
-   "text": "Ou le choléra, par exemple. Celui-là non plus ne tuait pas autant.",
-   "q": "During Covid, Maman recalls the deadly diseases her elders spoke of. Does her list sound natural?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0362#6",
-   "where": "03/0362",
-   "text": "Mahboub, ce que disent les informations, l'Améroque...",
-   "q": "Grandpa, an old man, says 'Améroque' for America on purpose. Does it read as his slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…au fond de la cour et parcourus la longueur de la cour en neuf pas, et la joie de la nouvelle trouvaille brillait encore dans mon cœur. Quand j'entrai dans le salon depuis la cour, Maman était allongée devant la télévision. Elle avait posé ses deux mains sur son ventre et disait à Mahboubeh :"
+   "key": "one",
+   "title": null,
+   "q": "The pole image means they were all screwed over. Is that clear?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0663#s30",
+     "text": "Sous prétexte de vouloir garder les enfants près de leur famille, ils nous ont foutu le bâton dans le cul, nous les gosses de province.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0290#7",
-   "where": "03/0290",
-   "text": "Arasteh, c'est Araasteh une fois « pirasteh » — élagué ?",
-   "q": "The guard puns: Arasteh is Persian araasteh (neat), one letter trimmed. Would French readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Monsieur Arasteh.",
-    "Je tourne la tête vers lui."
+   "key": "one",
+   "title": null,
+   "q": "A boy plays soldier. Does the command sound like real army drill?",
+   "q_lang": "en",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#s40",
+     "text": "Bataillon, en avant marche !",
+     "note": null
+    },
+    {
+     "id": "04a/0026#s40",
+     "text": "Début de la première étape de la mission. Bataillon, à gauche, gauche !",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0309#8",
-   "where": "03/0309",
-   "text": "Si Dieu le veut, puisses-tu toujours être araasteh.",
-   "q": "The guard plays on the name again: 'araasteh' means neat and well groomed. Would French readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Le garde sourit et dit :"
+   "key": "poetry",
+   "title": "Poésie",
+   "q": "Ce sont des vers. Chacun se lit-il bien comme de la poésie en français ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0244#poetr",
+     "text": "Je ne prendrais pas cet anneau de Salomon pour rien au monde, sur lequel parfois la main de ...",
+     "note": null
+    },
+    {
+     "id": "04b/0935#poetr",
+     "text": "« Est-il plus doux qu'Attar pleure jusqu'à l'aube », ou « est-il plus terrassé à présent » ?",
+     "note": null
+    },
+    {
+     "id": "04b/1270#poetr",
+     "text": "écris sur l'eau avec ton propre sang",
+     "note": null
+    },
+    {
+     "id": "04b/1271#poetr",
+     "text": "afin que celui qui vient dans ton sillage",
+     "note": null
+    },
+    {
+     "id": "04b/1274#poetr",
+     "text": "les ivres et",
+     "note": null
+    },
+    {
+     "id": "04b/1276#poetr",
+     "text": "sont passés par ici.",
+     "note": null
+    },
+    {
+     "id": "04b/1392#poetr",
+     "text": "La lumière de mes rêves clignote à présent",
+     "note": null
+    },
+    {
+     "id": "04b/1393#poetr",
+     "text": "Je n'ai aucun espoir de ton retour",
+     "note": null
+    },
+    {
+     "id": "04b/1395#poetr",
+     "text": "reviens dans mes rêves",
+     "note": null
+    },
+    {
+     "id": "04b/1396#poetr",
+     "text": "Je crois que mes rêves n'ont pas cru que tu étais partie",
+     "note": null
+    },
+    {
+     "id": "02/0005#poetr",
+     "text": "La lumière de mes rêves ... la lumière de mes rêves s'allumait ... la lumière de mes rêves s'est allumée",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0595#9",
-   "where": "04b/0595",
-   "text": "Mais bon, il a tout foiré. Œil d'Aigle dit peer to peer ; Taverny dit pir à pir.",
-   "q": "Farid mocks Amir for hearing 'peer-to-peer' as Persian pir, elder, his nickname. Would French readers get it? If not, what word could carry it?",
-   "ctx": 4,
-   "kind": "joke",
-   "before": [
-    "– Pir à pir ?",
-    "Hooman dit :",
-    "– Envoyez un salavat. L'Aîné de la Taverne a fini par dire quelque chose.",
-    "Farid dit :"
+   "key": "word_choice",
+   "title": "Mots isolés",
+   "q": "Le mot de chaque ligne est-il le bon ? Le sens voulu est indiqué en dessous.",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#word_",
+     "text": "De ce côté-ci, je déroule le fil des mots, et de l'autre côté, tu les recueilles.",
+     "note": "\"tu les recueilles\" = you gather the words up"
+    },
+    {
+     "id": "03/0278#word_",
+     "text": "D'une certaine façon on peut dire qu'ils ont conquis l'université. Karroubi c'est l'amour, en toute honnêteté.",
+     "note": "\"Karroubi c'est l'amour\" = Karroubi is great (excited youth slang)"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Ça vous fout un putain de tournis. Plus on y réfléchit, plus on a un putain de tournis.",
+     "note": "\"un putain de tournis\" = crude coinage: so baffled your head spins"
+    }
    ]
-  },
-  {
-   "id": "04b/0591#10",
-   "where": "04b/0591",
-   "text": "Pir à pir ?",
-   "q": "Amir mishears the English term 'peer to peer' and repeats it wrongly. Would French readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Une sorte de monnaie électronique peer to peer.",
-    "Je dis :"
-   ]
-  },
-  {
-   "id": "04b/0460#11",
-   "where": "04b/0460",
-   "text": "Qu'est-ce qui te prend encore, à bander contre nous, Alain Bitelon ?",
-   "q": "Hooman mocks a roommate with the rude nickname 'Alain Bitelon' and a sexual taunt. Does this sound like young men teasing in a dorm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman dit :"
-   ]
-  },
-  {
-   "id": "03/0432#12",
-   "where": "03/0432",
-   "text": "Je veux dire Alain Bitelon. Biiite.",
-   "q": "'Alain Bitelon' is a rude pun on the actor Alain Delon; Hooman stretches the crude part. Does the joke land?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– ... et tu fais ta bouche en cul de poule et tu te tues à essayer de parler comme lui. Ce n'est pas lui que je veux dire."
-   ]
-  },
-  {
-   "id": "04a/0080#13",
-   "where": "04a/0080",
-   "text": "Pourquoi vous n'êtes pas allés à la maison en malbre ?",
-   "q": "Ghassem, a young boy, again says 'malbre' for marbre (marble). Does it read as a child's slip, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…suis assis à côté du caniveau. J'ai mis mes pieds dans le caniveau. Il n'y avait pas d'eau. À l'intérieur de mon cœur, c'était vide. L'homme est revenu. La roue avant ne tournait plus. Il a giflé Omid. On a tous les deux pleuré. L'homme est parti. Ghassem est revenu. Il nous a grondés. Il a dit :"
-   ]
-  },
-  {
-   "id": "04b/0387#14",
-   "where": "04b/0387",
-   "text": "Cette nuit, je t'entendais ruminer.",
-   "q": "Eskandar teases Hooman, who secretly ate sweets at night, by likening him to a cow chewing cud. Does the joke come across?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Eskandar se tourna vers Hooman et dit :"
-   ]
-  },
-  {
-   "id": "04b/1265#15",
-   "where": "04b/1265",
-   "text": "Oui, je te l'atète.",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does 'atète' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Vrouuum, Baba, Baba, tu m'atètes cette gande poupée ?",
-    "Une voix, derrière moi, dit :"
-   ]
-  },
-  {
-   "id": "03/0278#16",
-   "where": "03/0278",
-   "text": "D'une certaine façon on peut dire qu'ils ont conquis l'université. Karroubi c'est l'amour, en toute honnêteté.",
-   "q": "Farid, an excited student, praises a reformist politician in slang. Does 'Karroubi c'est l'amour' sound like natural youthful slang?",
-   "ctx": 0,
-   "kind": "joke"
   }
- ]
+ ],
+ "first": 7
 }

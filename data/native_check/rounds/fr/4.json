@@ -1,168 +1,467 @@
 {
+ "format": 2,
  "lang": "fr",
  "slug": "fr",
  "dir": "ltr",
- "version": "2026-11-22.r4",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Relecture par des locuteurs natifs",
+  "lead": "Pas besoin d'avoir lu le livre. Réponds à autant de questions que tu veux.",
+  "persian_words": "Maman (mère), Baba (père) et -jan (cher) sont des mots persans, conservés dans le livre.",
+  "page": "Page",
+  "correct": "Correct",
+  "needs_change": "À modifier",
+  "not_sure": "Je ne sais pas",
+  "how_say": "Comment le dirais-tu ?",
+  "meaning": "Selon toi, qu'est-ce que cela veut dire ?",
+  "optional": "(facultatif)",
+  "your_name": "Ton nom",
+  "thanks_tick": "Inscrire mon nom sur la page des remerciements",
+  "private": "Tes réponses ne sont transmises qu'à l'auteur.",
+  "send": "Envoyer",
+  "send_continue": "Envoyer et passer à la page {n}",
+  "sending": "Envoi…",
+  "popup_title": "Merci !",
+  "popup_text": "Aimerais-tu voir ton nom sur la page des remerciements du site ? Termine les 4 pages et nous l'ajouterons avec plaisir.",
+  "popup_button": "Passer à la page {n}",
+  "arrived": "Merci, tes réponses de la page {n} sont bien arrivées.",
+  "thanks_last": "Merci ! Tes réponses sont bien arrivées.",
+  "all_done": "Tu as envoyé toutes les pages. Merci pour chacune d'elles !",
+  "already_sent": "Tu as déjà envoyé cette page depuis cet appareil. Merci !",
+  "continue_with": "Continuer avec la page {n}",
+  "need_one": "Choisis une réponse pour au moins une ligne.",
+  "note_no_answer": "Une ligne a une remarque : merci de choisir aussi une réponse pour elle.",
+  "name_needed": "Ajoute le nom que tu souhaites voir affiché, ou décoche la case.",
+  "not_connected": "L'envoi n'est pas encore activé.",
+  "too_long": "L'envoi a pris trop de temps.",
+  "cannot_send": "Les réponses n'ont pas pu être envoyées d'ici.",
+  "use_email": "Merci d'utiliser le bouton e-mail ci-dessous.",
+  "fallback": "Les réponses n'ont pas pu être envoyées depuis cette page. Envoie-les plutôt par e-mail ; rien de ce que tu as saisi n'est perdu.",
+  "email_button": "Envoyer les réponses par e-mail",
+  "shortened": "Certaines remarques étaient trop longues pour un lien e-mail et y ont été raccourcies. Tes réponses complètes sont ci-dessous ; merci de les coller dans l'e-mail.",
+  "noscript": "L'envoi nécessite JavaScript. Tu peux aussi envoyer tes réponses par e-mail à {email}."
+ },
+ "version": "2026-11-25.s1.p4",
+ "page": 4,
+ "groups": [
   {
-   "id": "04b/0181#1",
-   "where": "04b/0181",
-   "text": "Bouffe la tête de ma bite, vieux, tu nous tapes sur les nerfs.",
-   "q": "Hooman tells off a roommate with a crude insult. Does this sound like something young men in a dorm would say?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman releva son pouce et dit :"
+   "key": "crude",
+   "title": "Langage cru",
+   "q": "Ici, les personnages jurent ou parlent crûment. Chaque ligne paraît-elle naturelle ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0077#crude",
+     "text": "Maudit soit quiconque nie Œil d'Aigle News.",
+     "note": null
+    },
+    {
+     "id": "03/0264#crude",
+     "text": "Qu'est-ce que tu veux, Eskandar ? Qu'est-ce que tu as ?",
+     "note": null
+    },
+    {
+     "id": "03/0268#crude",
+     "text": "Aucun nom ne te va, bon sang.",
+     "note": null
+    },
+    {
+     "id": "03/0390#crude",
+     "text": "Je te dis que je ne vois rien, espèce d'enfoiré.",
+     "note": null
+    },
+    {
+     "id": "03/0396#crude",
+     "text": "La réponse, c'est que lécher le cul de Maître Hooman, ça ne te va pas.",
+     "note": null
+    },
+    {
+     "id": "03/0415#crude",
+     "text": "Charge donc, enfoiré.",
+     "note": null
+    },
+    {
+     "id": "03/0418#crude",
+     "text": "Si McCain arrive, il va foutre l'Iran en l'air, objectivement.",
+     "note": null
+    },
+    {
+     "id": "03/0422#crude",
+     "text": "Qu'est-ce qui t'arrive encore ?",
+     "note": null
+    },
+    {
+     "id": "03/0521#crude",
+     "text": "Pff, c'est quoi encore cette pose de penseur à la con ?",
+     "note": null
+    },
+    {
+     "id": "03/0586#crude",
+     "text": "Ceux qui veulent débiter des conneries philosophiques peuvent aller à la cuisine.",
+     "note": null
+    },
+    {
+     "id": "03/0612#crude",
+     "text": "Sale type... houhhhhh... tu filais la tête baissée comme ça... houhhhh... tu allais où à cette vitesse...",
+     "note": null
+    },
+    {
+     "id": "03/0640#crude",
+     "text": "Tu t'es expatrié, maintenant tu n'en as plus rien à foutre de nous. Espèce de vendu, lèche-bottes des étrangers.",
+     "note": null
+    },
+    {
+     "id": "03/0663#crude",
+     "text": "Cette politique de localisation nous a bien niqués.",
+     "note": null
+    },
+    {
+     "id": "04b/0146#crude",
+     "text": "Cervelle de merde. Tu me fais ouvrir la bouche et le dire.",
+     "note": null
+    },
+    {
+     "id": "04b/0150#crude",
+     "text": "Si c'est l'âge qui compte, alors tu devrais lécher les couilles de Bahman.",
+     "note": null
+    },
+    {
+     "id": "04b/0162#crude",
+     "text": "Ouais, à la seconde où ils nous voient, ils serrent les fesses et prennent tellement leurs distances que j'ai envie de leur sauter à la figure à pieds joints.",
+     "note": null
+    },
+    {
+     "id": "04b/0164#crude",
+     "text": "Putain, j'emmerde cette chance qu'on a.",
+     "note": null
+    },
+    {
+     "id": "04b/0186#crude",
+     "text": "J'aurais préféré partager une chambre avec eux plutôt qu'avec une tête de nœud comme toi.",
+     "note": null
+    },
+    {
+     "id": "04b/0343#crude",
+     "text": "Alors t'es un bizut de merde.",
+     "note": null
+    },
+    {
+     "id": "04b/0351#crude",
+     "text": "Qu'est-ce que ça a ajouté à la longueur de ma bite, d'être major de promo et, je ne sais pas, d'avoir un deuxième diplôme, alors que maintenant mon boulot c'est d'aller inspecter des postes électriques ?",
+     "note": null
+    },
+    {
+     "id": "04b/0353#crude",
+     "text": "Et dans cette situation pourrie, quelles antiquités on s'est ramassées ?",
+     "note": null
+    },
+    {
+     "id": "04b/0360#crude",
+     "text": "Ces coups mortels, ça ne m'étonne pas de toi, mais ce que je me demande vraiment, c'est quel salaud avait ouvert sa boutique à six heures du matin un vendredi pour que tu ailles lui acheter un appareil photo.",
+     "note": null
+    },
+    {
+     "id": "04b/0389#crude",
+     "text": "Tu n'aurais même pas pu bouffer la tête de ma bite. Mais quelles pâtisseries, quand même.",
+     "note": null
+    },
+    {
+     "id": "04b/0394#crude",
+     "text": "on s'est fait baiser.",
+     "note": null
+    },
+    {
+     "id": "04b/0434#crude",
+     "text": "Si Kamyar n'avait pas fait son petit merdeux prétentieux et était resté au foyer, aucun lit ne se serait libéré pour que ces phénomènes nous tombent dessus.",
+     "note": null
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Si c'était moi, zéro encore ce serait trop ; je te ferais bouffer la tête de ma bite, puis je te virerais de l'université à coups de pied au cul.",
+     "note": null
+    },
+    {
+     "id": "04b/0486#crude",
+     "text": "Donc tu veux dire que cette putain de malchance qu'on a, le sort qui nous a refilé une antiquité comme toi, ça se répète sans arrêt ?",
+     "note": null
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "Pas de débat dans la chambre aujourd'hui : j'ai eu douze en EPS, j'ai les nerfs en vrac, je vais vous insulter.",
+     "note": null
+    },
+    {
+     "id": "04b/0567#crude",
+     "text": "Je ne peux pas me laver le visage par-dessus mes lunettes, espèce d'enfoiré.",
+     "note": null
+    },
+    {
+     "id": "04b/0690#crude",
+     "text": "Il aurait suffi que les profs d'électrique et de mécanique, tant d'années plus tôt, ne se soient pas mis à bander à l'idée de prendre le bâtiment Abu-Reyhan",
+     "note": null
+    },
+    {
+     "id": "04b/0717#crude",
+     "text": "Je te le dis, Eldie-jan, mais entre nous, tu t'es retrouvé à l'étranger par un putain de coup de bol.",
+     "note": null
+    },
+    {
+     "id": "04b/0721#crude",
+     "text": "Eldie, au lieu de te vautrer comme ça sur le lit à jouer avec tes couilles, lève-toi et envoie-les.",
+     "note": null
+    },
+    {
+     "id": "04b/0723#crude",
+     "text": "Bon, si tu n'es pas du genre à faire une candidature et à partir, pourquoi tu t'es défoncé le cul à passer le TOEFL ?",
+     "note": null
+    },
+    {
+     "id": "04b/0818#crude",
+     "text": "Eldie, regarde un peu jusqu'où tu es allé : Farid, qui n'en a rien à foutre de nous, de la chambre, de personne, voilà qu'il se manifeste.",
+     "note": null
+    },
+    {
+     "id": "04b/0844#crude",
+     "text": "C'est quoi encore, cette merde qui te bouffe le cerveau ?",
+     "note": null
+    },
+    {
+     "id": "04b/0893#crude",
+     "text": "Tu viens de bousiller l'émotion que la chanson me donnait, avec ta voix de merde.",
+     "note": null
+    },
+    {
+     "id": "04b/0919#crude",
+     "text": "Lécher des culs, ça ne te va pas.",
+     "note": null
+    },
+    {
+     "id": "04b/0997#crude",
+     "text": "Bon, peu importe, merde.",
+     "note": null
+    },
+    {
+     "id": "04b/1003#crude",
+     "text": "Regarde la belle bourde que tu as faite, cervelle de merde.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0899#2",
-   "where": "04b/0899",
-   "text": "Bouffeur de têtes de bite, pourquoi tu racontes n'importe quoi ?",
-   "q": "Hooman insults a friend with a crude made-up word. Does it sound like a real insult young men would use?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Hooman dit :"
+   "key": "natural",
+   "title": "Est-ce naturel ?",
+   "q": "Chaque ligne paraît-elle naturelle et claire ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0042#natur",
+     "text": "Maintenant, tends les mains vers le ciel. Tu sens les gouttes de terre sur tes mains ?",
+     "note": null
+    },
+    {
+     "id": "01/0140#natur",
+     "text": "Alors imagine un peu ce que doit endurer notre pauvre Baba — assis à ne rien faire à la maison pendant toutes ces années.",
+     "note": null
+    },
+    {
+     "id": "01/0216#natur",
+     "text": "Ouais, notre Baba-jan est très avide de respect.",
+     "note": null
+    },
+    {
+     "id": "03/0081#natur",
+     "text": "Alors trinquons avec ce thé à la santé d'Œil d'Aigle News.",
+     "note": null
+    },
+    {
+     "id": "03/0189#natur",
+     "text": "Vas-y, va t'en acheter une.",
+     "note": null
+    },
+    {
+     "id": "03/0345#natur",
+     "text": "Vous n'avez pas encore fini ce pour quoi vous êtes venu ?",
+     "note": null
+    },
+    {
+     "id": "03/0488#natur",
+     "text": "Je suis un anarchiste nationaliste extrémiste.",
+     "note": null
+    },
+    {
+     "id": "03/0502#natur",
+     "text": "Ahhh. Ça m'a donné la chair de poule.",
+     "note": null
+    },
+    {
+     "id": "03/0517#natur",
+     "text": "D'un côté il décoche des coups meurtriers, de l'autre il dit : oh, du sang, ça me donne la chair de poule.",
+     "note": null
+    },
+    {
+     "id": "03/0580#natur",
+     "text": "Où est-ce qu'il est écrit sur mon cou « marchepied » ?",
+     "note": null
+    },
+    {
+     "id": "03/0638#natur",
+     "text": "Tu as renvoyé mes appels quelque part où il ne fallait pas ?",
+     "note": null
+    },
+    {
+     "id": "04a/0048#natur",
+     "text": "C'est la vieillesse, voisine.",
+     "note": null
+    },
+    {
+     "id": "04b/0160#natur",
+     "text": "Objectivement, juste parce qu'on est arrivés quelques jours plus tard, ces gosses de Téhéran, qui n'ont pu entrer à AmirKabir que grâce à la localisation, se comportent comme si c'était nous qui étions entrés à l'université avec un quota, et pas eux.",
+     "note": null
+    },
+    {
+     "id": "04b/0171#natur",
+     "text": "Mais arrête de lui parler aussi poliment, ça lui monte à la tête.",
+     "note": null
+    },
+    {
+     "id": "04b/0173#natur",
+     "text": "Alors vous êtes tous de petits malins.",
+     "note": null
+    },
+    {
+     "id": "04b/0175#natur",
+     "text": "Ne te fie pas à cet Arasteh ; tout dadais qu'il est, son classement au Konkoor était soixante-quatorze.",
+     "note": null
+    },
+    {
+     "id": "04b/0228#natur",
+     "text": "Il y a un an ou deux, j'ai entendu par Œil d'Aigle News que ce dandy était parti en Australie lui aussi, à la poursuite, en quelque sorte, de la fille que vous aimiez tous les deux.",
+     "note": null
+    },
+    {
+     "id": "04b/0270#natur",
+     "text": "Tu dois sortir de ce refuge et faire vraiment quelque chose, pas venir t'asseoir ici à rêvasser.",
+     "note": null
+    },
+    {
+     "id": "04b/0317#natur",
+     "text": "Ça me fait tellement enrager quand tu restes assis sans rien dire comme ça. J'ai envie de te donner un coup de poing.",
+     "note": null
+    },
+    {
+     "id": "04b/0370#natur",
+     "text": "La chambre de personne n'a de tapis, Baba-jan.",
+     "note": null
+    },
+    {
+     "id": "04b/0421#natur",
+     "text": "Farid-la-Panthère, garde ton sang-froid et ne nous refais pas un de tes coups mortels.",
+     "note": null
+    },
+    {
+     "id": "04b/0436#natur",
+     "text": "C'est que de la philo et des romans. Génial, il y a du Nietzsche aussi.",
+     "note": null
+    },
+    {
+     "id": "04b/0462#natur",
+     "text": "J'ai écrit mes propres théories sur la physique quantique, et notre imbécile de professeur est allé me donner vingt-cinq centièmes.",
+     "note": null
+    },
+    {
+     "id": "04b/0554#natur",
+     "text": "Depuis quand organise-t-on des examens au début du mois d'Esfand ?",
+     "note": null
+    },
+    {
+     "id": "04b/0562#natur",
+     "text": "Œil d'Aigle, que Dieu ne te pardonne pas, tu m'as bousillé le dos.",
+     "note": null
+    },
+    {
+     "id": "04b/0575#natur",
+     "text": "Sur la vie de ta mère, ne marche pas dans la chambre sans tes lunettes.",
+     "note": null
+    },
+    {
+     "id": "04b/0586#natur",
+     "text": "Quoi-coin ?",
+     "note": null
+    },
+    {
+     "id": "04b/0598#natur",
+     "text": "Objectivement, si ça s'impose, ça remballe tout le bazar des banques et tout ça.",
+     "note": null
+    },
+    {
+     "id": "04b/0600#natur",
+     "text": "Ce qui compte, c'est que chaque fois que je vais au supermarché, je paie, j'achète mon lait et mon gâteau et je me les colle dans le corps.",
+     "note": null
+    },
+    {
+     "id": "04b/0616#natur",
+     "text": "D'accord, Œil d'Aigle, d'accord. Maintenant n'enfonce pas tes lunettes dans le portable.",
+     "note": null
+    },
+    {
+     "id": "04b/0618#natur",
+     "text": "Si la Mouche était là, ses antennes se dresseraient aussitôt : qu'est-ce que c'est que ce truc qui rapporte autant ?",
+     "note": null
+    },
+    {
+     "id": "04b/0784#natur",
+     "text": "Tu es très sneaky.",
+     "note": null
+    },
+    {
+     "id": "04b/0882#natur",
+     "text": "Maintenant, dis tout ce que tu veux, mais garde le dernier beit à l'esprit.",
+     "note": null
+    },
+    {
+     "id": "04b/1314#natur",
+     "text": "Mais cela est, et je vous aime vraiment.",
+     "note": null
+    },
+    {
+     "id": "04b/1320#natur",
+     "text": "Et de mes mains tremblantes, je parcourais rapidement les ghazals pour trouver, et montrer à Niloofar, un beit de Hafez dont, comme l'autre fille l'avait dit de cette peinture, plus on s'enfonce dans les profondeurs, plus on a un putain de tournis.",
+     "note": null
+    },
+    {
+     "id": "06/0050#natur",
+     "text": "Probablement parce qu'il n'entend rien et ne sait pas ce qui se passe, la peur ne l'a jamais saisi.",
+     "note": null
+    },
+    {
+     "id": "06/0108#natur",
+     "text": "Ooohhhh. C'est moi qui lui avais dit ça.",
+     "note": null
+    },
+    {
+     "id": "06/0186#natur",
+     "text": "Je donnerais tout pour toi, Nini-jan. Ta tête fonctionne si bien.",
+     "note": null
+    },
+    {
+     "id": "02/0001#natur",
+     "text": "En plein hiver, par ce froid, d'où viennent ces oiseaux chanteurs ? Une fois encore, me voilà prisonnier de mes propres chimères.",
+     "note": null
+    }
    ]
-  },
-  {
-   "id": "03/0373#3",
-   "where": "03/0373",
-   "text": "Je dis, cette chose que l'Améroque a confirmée, que l'Iran a arrêté le nucléaire.",
-   "q": "Grandpa, an old man, asks his son about the news. Does the way he opens his question sound natural?",
-   "ctx": 1,
-   "kind": "dialogue",
-   "before": [
-    "– Quoi ?"
-   ]
-  },
-  {
-   "id": "03/0189#4",
-   "where": "03/0189",
-   "text": "Pfff, âne bâté, qui s'y connaît mieux, l'ami du cousin du maître artisan de notre beau-frère, l'homme le plus riche de Téhéran, ou toi, veau ?",
-   "q": "Hamid, a boy, angrily calls his friend a donkey and a calf, meaning a fool. Do these insults work?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Le sang de Hamid se mit à bouillir et il cria :"
-   ]
-  },
-  {
-   "id": "03/0189#5",
-   "where": "03/0189",
-   "text": "Vas-y, va t'en acheter une.",
-   "q": "Hamid, annoyed, tells his friend to go ahead and buy one. Does this read correctly?",
-   "ctx": 0,
-   "kind": "banter"
-  },
-  {
-   "id": "01/0178#6",
-   "where": "01/0178",
-   "text": "J'aurais préféré qu'il le soit, et qu'il ne soit pas comme ça.",
-   "q": "Omid says his father is no addict; Maman says she would rather he were. Does her bitter reply sound like her?",
-   "ctx": 2,
-   "kind": "maman",
-   "before": [
-    "– Il n'est pas toxicomane. Honnêtement, le fait qu'il ne soit pas devenu accro au front, sous les bombes et les obus, c'est pas rien.",
-    "Maman dit :"
-   ]
-  },
-  {
-   "id": "04b/0389#7",
-   "where": "04b/0389",
-   "text": "Tu n'aurais même pas pu bouffer la tête de ma bite. Mais quelles pâtisseries, quand même.",
-   "q": "Hooman brushes off Eskandar's threat crudely, then admits the stolen sweets were good. Does this sound natural?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Cette nuit, je t'entendais ruminer. Malheureusement, mon Baba dormait ; sinon je me serais levé pour t'arracher de la gorge chaque pâtisserie, une par une.",
-    "Hooman dit :"
-   ]
-  },
-  {
-   "id": "04b/0440#8",
-   "where": "04b/0440",
-   "text": "Après cette histoire de localisation, n'importe quelle bite qui nous tombe dessus, ça ne m'étonnera plus.",
-   "q": "Hooman says, crudely, that no awful roommate could surprise him anymore. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Bahman dit que ce n'était pas un problème. Eskandar avait passé la main sous mon lit pour en tirer le livre, tandis que Meysam, à genoux, installait son couchage sous le portemanteau. En les regardant, Hooman dit :"
-   ]
-  },
-  {
-   "id": "04b/0209#9",
-   "where": "04b/0209",
-   "text": "Pfff, mais toi, enfoiré, tu as plié bagage et tu es parti là-bas, et maintenant tu es là à rire de notre barbe et de notre bite.",
-   "q": "Hooman teases Amir, who moved abroad, for laughing at the friends left behind. Does this crude line sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Et il déverse rire sur rire."
-   ]
-  },
-  {
-   "id": "04b/0822#10",
-   "where": "04b/0822",
-   "text": "Je veux dire que tout aurait été radicalement différent, et tu ne traînerais pas dans les rues comme ça, la bite à la main.",
-   "q": "Hooman crudely says Amir now wanders the streets aimless and lost. Does this crude image sound natural?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04b/0351#11",
-   "where": "04b/0351",
-   "text": "Qu'est-ce que ça a ajouté à la longueur de ma bite, d'être major de promo et, je ne sais pas, d'avoir un deuxième diplôme, alors que maintenant mon boulot c'est d'aller inspecter des postes électriques ?",
-   "q": "Hooman, bitter, says being top of the class did him no good at all. Does this crude image sound natural?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04b/0351#12",
-   "where": "04b/0351",
-   "text": "Je chie sur ces jours-là et sur notre façon de penser.",
-   "q": "Hooman, bitter about his student years, swears he despises them now. Does this sound like natural swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Comment ça, le bon temps, docteur ?"
-   ]
-  },
-  {
-   "id": "04b/0146#13",
-   "where": "04b/0146",
-   "text": "Cervelle de merde. Tu me fais ouvrir la bouche et le dire.",
-   "q": "Hooman insults a roommate who forces him to spell out an embarrassing point. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Ouais, enfin, la nouvelle a fait le tour de l'université."
-   ]
-  },
-  {
-   "id": "03/0663#14",
-   "where": "03/0663",
-   "text": "Sous prétexte de vouloir garder les enfants près de leur famille, ils nous ont foutu le bâton dans le cul, nous les gosses de province.",
-   "q": "Hooman says, crudely, that the admissions policy hurt every student from the provinces. Does this crude image sound natural?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04b/1314#15",
-   "where": "04b/1314",
-   "text": "Cela fait trente-deux mois que je vous aime. De loin.",
-   "q": "Amir, shy and very formal, finally confesses his love to a fellow student. Does the way he addresses her suit the moment?",
-   "ctx": 0,
-   "kind": "dialogue"
-  },
-  {
-   "id": "04b/1314#16",
-   "where": "04b/1314",
-   "text": "Mais cela est, et je vous aime vraiment.",
-   "q": "Amir ends his shy, formal confession by insisting his love is real. Does this sound natural?",
-   "ctx": 0,
-   "kind": "dialogue"
   }
- ]
+ ],
+ "first": 15
 }

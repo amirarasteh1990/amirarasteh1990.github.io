@@ -1,186 +1,332 @@
 {
+ "format": 2,
  "lang": "lv",
  "slug": "lv",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Dzimtās valodas pārbaude",
+  "lead": "Grāmatai nav jābūt izlasītai. Atbildiet uz tik daudz jautājumu, cik vēlaties.",
+  "persian_words": "Maman (māte), Baba (tēvs) un -jan (mīļais) ir persiešu vārdi, kas grāmatā saglabāti.",
+  "page": "Lappuse",
+  "correct": "Pareizi",
+  "needs_change": "Jāmaina",
+  "not_sure": "Grūti pateikt",
+  "how_say": "Kā jūs to teiktu?",
+  "meaning": "Ko, jūsuprāt, tas nozīmē?",
+  "optional": "(nav obligāti)",
+  "your_name": "Jūsu vārds",
+  "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
+  "private": "Jūsu atbildes saņem tikai autors.",
+  "send": "Sūtīt",
+  "send_continue": "Sūtīt un pāriet uz {n}. lappusi",
+  "sending": "Sūta…",
+  "popup_title": "Paldies!",
+  "popup_text": "Vai vēlaties, lai jūsu vārds būtu vietnes pateicību lapā? Pabeidziet visas 4 lappuses, un mēs to labprāt pievienosim.",
+  "popup_button": "Pāriet uz {n}. lappusi",
+  "arrived": "Paldies, jūsu atbildes no {n}. lappuses ir saņemtas.",
+  "thanks_last": "Paldies! Jūsu atbildes ir saņemtas.",
+  "all_done": "Visas lappuses ir nosūtītas. Paldies par tām visām!",
+  "already_sent": "Šī lappuse no šīs ierīces jau ir nosūtīta. Paldies!",
+  "continue_with": "Turpināt ar {n}. lappusi",
+  "need_one": "Izvēlieties atbildi vismaz vienai rindai.",
+  "note_no_answer": "Pie kādas rindas ir piezīme: lūdzu, izvēlieties atbildi arī tai.",
+  "name_needed": "Ierakstiet vārdu, ko vēlaties redzēt sarakstā, vai noņemiet atzīmi.",
+  "not_connected": "Sūtīšana vēl nav pieslēgta.",
+  "too_long": "Sūtīšana aizņēma pārāk ilgu laiku.",
+  "cannot_send": "Atbildes no šejienes neizdevās nosūtīt.",
+  "use_email": "Lūdzu, izmantojiet e-pasta pogu zemāk.",
+  "fallback": "Atbildes no šīs lappuses neizdevās nosūtīt. Lūdzu, nosūtiet tās pa e-pastu; nekas no ievadītā nav zudis.",
+  "email_button": "Sūtīt atbildes pa e-pastu",
+  "shortened": "Dažas piezīmes bija pārāk garas e-pasta saitei, tāpēc tur tās tika saīsinātas. Jūsu pilnās atbildes ir zemāk; lūdzu, ielīmējiet tās e-pastā.",
+  "noscript": "Sūtīšanai nepieciešams JavaScript. Atbildes varat nosūtīt arī uz {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/0558#1",
-   "where": "04b/0558",
-   "text": "Atvasinājumu? Jēgu? Vai atvasinājuma jēgu? Vai jēgas atvasinājumu?",
-   "q": "Eskandar pompously plays with the words derivative and meaning. Does the wordplay work?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Ko tu tiecies saprast, Muša?"
+   "key": "maman",
+   "title": "Mātes balss",
+   "q": "Māte runā sirsnīgi, reizēm bāroties, kā parasta sieviete no mazpilsētas. Vai katra rinda izklausās pēc viņas?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Kā tev iet? Kā tev klājas? Vai esi vesels? Laimīgu Norouz, Nana-pesar-jan.",
+     "note": null
+    },
+    {
+     "id": "01/0077#maman",
+     "text": "– Sawaab? Sawaab ir tad, kad cilvēki ir priecīgi viens otru redzēt. Ne tad, kad viņi tikai viens otru kaitina.",
+     "note": null
+    },
+    {
+     "id": "01/0090#maman",
+     "text": "– Nē. Es jau esmu tā nabadzīte, es nekad neko nesaku, es vienmēr klusēju. Es tikai skatos un ēdu bēdas.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Ej arī ārā. Ej tur, kur nav daudz cilvēku.",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "– To ar stulbo skolotāju? Mm-hm, skatieties to. Tā ir smieklīga. Pasmejieties mazliet.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Mēs visi gribam piezvanīt un teikt, ka viņš trīsdesmit gadus kaitina, nāciet un paņemiet viņu. Ja arī tu piekrīti, mēs piezvanām.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Lai cik reižu es teicu: nesit bērnus, viņš atbildēja: karā dabūju kontūziju, tas nav manā varā. Es redzēju, ka tā tas ir, un padevos.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Tenkas? Tenkas ir tad, kad viņi tev nav nodarījuši ļaunu.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "– Hmm, paskatīsimies: vai kāds no jums atceras kaut vienu labu lietu par savu Baba? Sakiet, un es klusēšu.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "– Kaut viņš būtu kļuvis atkarīgs un nebūtu bijis tāds.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "– Sievietes? Kaut viņš būtu skrējis pakaļ sievietēm. Kura viņu grib, lai ņem sev. Mēs vēl kaut ko piemaksāsim.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "– Vai jūs neatceraties? Kad viņš atgriezās no Karbala, viņš bija uzvilcis baltu cimdu.",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "– Mm-hm, viņš ir ļoti, ļoti mainījies. Viņš ir kļuvis tik tievs un tumšs.",
+     "note": null
+    },
+    {
+     "id": "03/0070#maman",
+     "text": "– Baidos, ka viņš galu galā kļūs tāds pats kā viņa draugs Hamid.",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "– Viss, ko dari, ir ielāpīšana.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Vispirms iepazīsti cilvēku, apprecies, un pēc tam, ja gribi, mīli. Redzēsi, vai tad es teikšu kaut vārdu.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "– Es tevi atradu četras reizes. Nāc šurp, mans labais zēns.",
+     "note": null
+    },
+    {
+     "id": "04a/0034#maman",
+     "text": "– Sāls ir kaitīgs tev.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Labi, mans apķērīgais zēn. Kad kaut kas tevi biedē, izmanto triku, lai nebaidītos.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Ohooo. Tad valstis noteikti bijušas tuvu cita citai. Kad bija Bam zemestrīce?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Ir pienācis pasaules gals. Bibi paaudze mēdza teikt: kad pienāks pasaules gals, zeme arvien trīcēs.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Es devu solījumu: ja viņš atveseļosies, es kājām došos uz Mešhedu.",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– Hmm, tad arī es saku, ka man sirds kļūst smaga. Ļaujiet man mazliet aiziet pie savām draudzenēm.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, tev tiešām jārūpējas par to, ko ēd. Ēd labas lietas. Tādas, kas dara stipru. Tikai ēd labi. Pārējais man vienalga.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– Slimnīcā viņi visu laiku sauca: «Adham kundzes piederīgie!» Neviens nepakustējās. Tad māsiņa pati pienāca un teica: «Man šķiet, viņa ir ar jums.»",
+     "note": null
+    },
+    {
+     "id": "06/0165#maman",
+     "text": "– Viņš bija pārāk daudz dzēris limonādi.",
+     "note": null
+    },
+    {
+     "id": "06/0238#maman",
+     "text": "– Tā tu pateicies?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "– Hmm, tu biji aizbraucis apskatīties un labi pavadīt laiku — un tev patika. Visas grūtības tu nepiedzīvoji.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "– Ah, tiklīdz pasaki, lai viņš ko atnes, viņu it kā strāva trāpa.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "– Viņš žēlojas bez jebkāda iemesla, he, Amir-jan. Ja ne par šo, viņš atradīs ko citu.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– Ak vai, Nini pēkšņi nāk miegs. Esmu nomodā kopš rīta, neizgulējusies.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "03/0490#2",
-   "where": "03/0490",
-   "text": "– Uzmanies, lai neieplaisā, Pimpja kungs.",
-   "q": "Hooman mocks a roommate who just puffed out his chest, giving him a crude title. Does it sound like dorm banter?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Es esmu galēji nacionālistisks anarhists.",
-    "Hooman teica:"
-   ]
-  },
-  {
-   "id": "04b/0385#3",
-   "where": "04b/0385",
-   "text": "Tādi ir viņa rūpnīcas iestatījumi. Vienmēr ļoti elegants un svinīgs, viņš nodirš tieši vēsturiskajā pagrieziena punktā.",
-   "q": "Hooman jokes that keeping quiet at key moments is just Amir's factory setting. Does this crude joke sound natural?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Vecais ir Kroģis. Viņš neko nevar darīt."
-   ]
-  },
-  {
-   "id": "04b/0591#4",
-   "where": "04b/0591",
-   "text": "– Pīr-tu-pīr?",
-   "q": "Amir mishears 'peer-to-peer' as 'Pīr-tu-pīr'; pir is Persian for elder. Would Latvian readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Sava veida peer-to-peer elektroniskā nauda.",
-    "Es teicu:"
-   ]
-  },
-  {
-   "id": "03/0657#5",
-   "where": "03/0657",
-   "text": "– Mums ir diršanas fabrika.",
-   "q": "Asked sarcastically about owning factories, Hooman says theirs produces only bullshit. Does the crude punch line work?",
-   "ctx": 3,
-   "kind": "crude",
-   "before": [
-    "Hooman teica:",
-    "– Jā, mums visiem pieder fabrikas.",
-    "Eskandar pacēla galvu no paklāja un ar ieplestām acīm paskatījās uz Hooman. Hooman turpināja:"
-   ]
-  },
-  {
-   "id": "04b/0571#6",
-   "where": "04b/0571",
-   "text": "– Vispirms nāciet nodokumentējiet šo īkšķi, tad taisiet filmu par ko vien gribat.",
-   "q": "Hooman sticks out his thumb as a rude gesture and tells them to film it first. Does the joke come across?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman izvilka roku no zem segas un teica:"
-   ]
-  },
-  {
-   "id": "04b/0744#7",
-   "where": "04b/0744",
-   "text": "– Es devu solījumu: ja viņš atveseļosies, es kājām došos uz Mešhedu.",
-   "q": "Maman says she vowed to walk to the holy city if he recovers. Does this sound right?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "…Ghassem, kas sēdēja mājas zālē televizora priekšā, grauza sēkliņas, un Maman, kas sēdēja viņam blakus. Ziņās stāstīja par postījumiem, ko nodarījuši plašie plūdi valsts ziemeļu un rietumu provincēs. No aizmugures Maman man izskatījās kā mazs aplis, kas sēž blakus lielākam taisnstūrim. Maman teica:"
-   ]
-  },
-  {
-   "id": "01/0090#8",
-   "where": "01/0090",
-   "text": "– Nē. Es jau esmu tā nabadzīte, es nekad neko nesaku, es vienmēr klusēju. Es tikai skatos un ēdu bēdas.",
-   "q": "Maman complains, half joking, that she always keeps quiet and suffers. Does it sound like her?",
-   "ctx": 1,
-   "kind": "maman",
-   "before": [
-    "– Tu viņam neko neteici."
-   ]
-  },
-  {
-   "id": "04b/0512#9",
-   "where": "04b/0512",
-   "text": "Pēc tam viņš pavisam pazuda, un es nezinu, kādu sūdu viņš tagad rij.",
-   "q": "Hooman laughs that he has no idea what a vanished roommate is up to now. Does this crude ending sound natural?",
-   "ctx": 0,
-   "kind": "crude"
-  },
-  {
-   "id": "04b/0997#10",
-   "where": "04b/0997",
-   "text": "– Nu, lai vai kāds sūds.",
-   "q": "Eskandar gives up an argument with a crude 'whatever'. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Un tā viņi atkārtoja šurpu turpu, un katrā reizē atkārtojumi paātrinājās. Līdz Eskandar teica:"
-   ]
-  },
-  {
-   "id": "04b/0343#11",
-   "where": "04b/0343",
-   "text": "– Tātad tu esi sūdīgs pirmkursnieks.",
-   "q": "Hooman crudely sums up that a student is just a freshman. Does this sound natural?",
-   "ctx": 2,
-   "kind": "crude",
-   "before": [
-    "– Tev šis ir pirmais gads?",
-    "– Jā."
-   ]
-  },
-  {
-   "id": "03/0612#12",
-   "where": "03/0612",
-   "text": "– Tu nejēga ... hoooooh ... tā nodūris galvu ... hooooh ... kur tu tik ātri ej? ... hoooh ... man trūkst elpas.",
-   "q": "Out of breath, heavy Hooman swears at his friend for making him chase him. Does the insult sound strong enough?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Kāda roka parauj manu kreiso plecu atpakaļ. Tas ir Hooman. Viņš elšo."
-   ]
-  },
-  {
-   "id": "03/0586#13",
-   "where": "03/0586",
-   "text": "– Kurš grib risināt sūdīgas filozofiskas sarunas, var iet uz virtuvi. Tur lampa ir arī spožāka; varbūt jūsu smadzenes iedegsies.",
-   "q": "Hooman turns off the light and crudely tells the debaters to go to the kitchen. Does this sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Eskandar un Meysam bija sākuši analizēt, kā notikušais Mehānikas fakultātē ir sauja, pēc kuras redzama visa krava. Viņi to sasaistīja ar mūsdienu konkurences un patērniecības pasauli un tamlīdzīgām lietām. Viņu saruna ievilkās gara. Hooman izslēdza gaismu un teica:"
-   ]
-  },
-  {
-   "id": "03/0268#14",
-   "where": "03/0268",
-   "text": "– Neviens vārds tev neder, veln.",
-   "q": "A young man shouts this at his roommate. Does 'veln' sound like a dorm student's swearing?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "Viņa balss kļuva skaļāka, un viņš teica:"
-   ]
-  },
-  {
-   "id": "03/0394#15",
-   "where": "03/0394",
-   "text": "Vai arī tev pimpis sma... nu, tev jau bija pimpis smadzeņu vietā, tagad tev tāds kļuvis vēl vairāk.",
-   "q": "Hooman starts a crude insult about having a dick for a brain, then corrects himself. Does it sound natural?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Tu piepeši esi iecirties šajā jautājumā. Ir dažas iespējas. Vai nu tu kaut kur esi atsities ar galvu."
-   ]
-  },
-  {
-   "id": "03/0390#16",
-   "where": "03/0390",
-   "text": "– Es tev saku, ka neredzu, dirsa.",
-   "q": "Sajad crudely tells Farid he cannot see without glasses. Does 'dirsa' work as an insult between friends?",
-   "ctx": 1,
-   "kind": "crude",
-   "before": [
-    "– Beigas. Skaties beigas. Skaties, cik ātri tas aizbēg. Tas saplosīja arī zirnekļa māju. Ne velti es to nosaucu par Dokumentālo filmu par prusaku, kas izpostīja zirnekļa māju."
+   "key": "child_talk",
+   "title": "Bērnu runa",
+   "q": "Šīs rindas runā bērni. Vai katra izklausās pēc bērna?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "– Nu gan gabaliņš!",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "– Pfff, ēzelis, kurš labāk zina — mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks, vai tu, teļš?",
+     "note": null
+    },
+    {
+     "id": "04a/0001#child",
+     "text": "Skatījos caur caurumu aizkara vidū. Maman piepildījās ar gaismu.",
+     "note": null
+    },
+    {
+     "id": "04a/0005#child",
+     "text": "Tajā laikā man bija četri gadi. Viņa vienmēr mani atrada četras reizes. Tagad man ir seši.",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "– Šorīt es gāju pagalmā. Maman teica, ka esmu gudrs.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Labi, tu arī vari nākt uz uzdevumu, bet tev jābūt ļoti uzmanīgam. Posmi ir ļoti grūti.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– Labi, uzber mazāk. Bet ne daudz mazāk. Mazliet mazāk.",
+     "note": null
+    },
+    {
+     "id": "04a/0042#child",
+     "text": "– Tās nosaukums ir Quchan tirgus, un mūsu māja ir Quchan tirgus galā.",
+     "note": null
+    },
+    {
+     "id": "04a/0049#child",
+     "text": "Tas ir tik garšīgs. Haaj Kazem veikals arī ir garšīgs.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Trešais posms ir krustojums. Krustojums nozīmē, ka tas ir ļoti liels. No šā gala līdz tam galam. No šīs ielas līdz tai ielai.",
+     "note": null
+    },
+    {
+     "id": "04a/0053#child",
+     "text": "Tas bija tālu. Līdz pat otram pasaules galam. Varbūt nē. Bet tas bija tālu.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "– Ja tu nogursti, vairs nenāc uz uzdevumu.",
+     "note": null
+    },
+    {
+     "id": "04a/0059#child",
+     "text": "Maman teica, ka Dievs ir debesīs. Debesis arī ir zilas.",
+     "note": null
+    },
+    {
+     "id": "04a/0061#child",
+     "text": "Šo daļu es nekad neapguvu. Viņš vienmēr teica vissvarīgākais... kaut kas... uzdevumā.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "– Daudzi šeit cieš neveiksmi. Viņi iet pa kreisi.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– Kreisā puse ir bīstama. Mājā ar sarkanajām durvīm dzīvo ļoti dusmīgs vecs vīrs. Pat dusmīgāks nekā Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "– Mūsu skola ir galā. Pēdējā māja. Ja mēs trokšņosim, skolotājs sitīs mums pa rokām ar lineālu.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– Aiz skolas ir kapsēta. Tā ir ļoti veca. Dažiem kapiem nav akmens. Var redzēt mirušo kaulus.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Hei, kāpēc tu izmeti kociņu? Ar ko tad mēs zvanīsim pie durvīm?",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– Kad viņa iemācīsies mūsu vārdus, mēs viņai iepatiksimies.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 13
 }

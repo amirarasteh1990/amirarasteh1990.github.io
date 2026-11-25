@@ -1,179 +1,207 @@
 {
+ "format": 2,
  "lang": "da",
  "slug": "da",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Modersmålstjek",
+  "lead": "Du behøver ikke at have læst bogen. Svar på så mange, du har lyst til.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kære) er persiske ord, som er bevaret i bogen.",
+  "page": "Side",
+  "correct": "Rigtigt",
+  "needs_change": "Bør ændres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sige det?",
+  "meaning": "Hvad tror du, det betyder?",
+  "optional": "(valgfrit)",
+  "your_name": "Dit navn",
+  "thanks_tick": "Skriv mit navn på takkesiden",
+  "private": "Dine svar går kun til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og fortsæt til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tak!",
+  "popup_text": "Vil du have dit navn på hjemmesidens takkeside? Gør alle 4 sider færdige, så tilføjer vi det med glæde.",
+  "popup_button": "Fortsæt til side {n}",
+  "arrived": "Tak, dine svar fra side {n} er kommet frem.",
+  "thanks_last": "Tak! Dine svar er kommet frem.",
+  "all_done": "Du har sendt alle siderne. Tak for dem alle!",
+  "already_sent": "Du har allerede sendt denne side fra denne enhed. Tak!",
+  "continue_with": "Fortsæt med side {n}",
+  "need_one": "Vælg et svar til mindst én linje.",
+  "note_no_answer": "En linje har en kommentar: vælg venligst også et svar til den.",
+  "name_needed": "Skriv det navn, du gerne vil stå med, eller fjern fluebenet.",
+  "not_connected": "Afsendelse er ikke sat op endnu.",
+  "too_long": "Afsendelsen tog for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Brug venligst e-mail-knappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne side. Send dem i stedet på e-mail; intet af det, du har skrevet, er gået tabt.",
+  "email_button": "Send svarene på e-mail",
+  "shortened": "Nogle kommentarer var for lange til et e-mail-link og blev forkortet der. Dine fulde svar står nedenfor; sæt dem venligst ind i e-mailen.",
+  "noscript": "Afsendelse kræver JavaScript. Du kan også sende dine svar på e-mail til {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04a/0080#1",
-   "where": "04a/0080",
-   "text": "– Hvorfor gik I ikke hen til marmelhuset?",
-   "q": "Ghassem, a boy, repeats his own mistake 'marmel' for marmor. Does 'marmelhuset' read as a child's word, not a typo?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "…store røde dør. Jeg satte mig ved rendestenen. Jeg satte fødderne ned i rendestenen. Der var ikke noget vand. Der var tomt inde i mit hjerte. Manden kom tilbage. Forhjulet drejede ikke rundt mere. Han gav Omid en lussing. Vi græd begge to. Manden gik. Ghassem kom tilbage. Han skældte ud. Han sagde:"
+   "key": "maman",
+   "title": "Morens stemme",
+   "q": "Moren taler varmt, nogle gange skældende, som en almindelig kvinde fra en lille by. Lyder hver linje som hende?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Hvordan har du det? Er du rask? Har du det godt? God Norouz, Nana-pesar-jan.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "– Baba hvad?",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Vi vil alle gerne ringe og sige, han har generet os i tredive år, kom og hent ham. Hvis du også er enig, ringer vi.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "– Sladder? Det er sladder, når de ikke har gjort dig noget.",
+     "note": null
+    },
+    {
+     "id": "01/0265#maman",
+     "text": "– Amir, er det godt at have hovedrollen?",
+     "note": null
+    },
+    {
+     "id": "03/0383#maman",
+     "text": "– Nej, Aeyzheimer er meget slem. En af mine veninder har fået Aeyzheimer; hun kan ikke genkende sine børn.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "– Okay, jeg siger ikke, at I ikke må blive forelskede. Lær personen at kende først, gift jer, og hvis I så vil, så bliv forelskede. Så skal du se, om jeg siger et ord.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "– Nej. Så længe den her snor er i din hånd, bliver du ikke væk. Den anden ende er i min hånd. Sådan bliver du ikke væk.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "– Godt, min kvikke dreng. Når noget skræmmer dig, så brug et trick, så du ikke bliver bange.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "– Bevaaares. Hmm, landene må have ligget tæt. Hvornår var Bam-jordskælvet?",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "– Endetiden er kommet. Bibis generation plejede at sige, at når endetiden kommer, bliver jorden ved med at ryste.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "– Jeg lovede, at hvis han får det bedre, vil jeg gå til Mashhad som pilgrim.",
+     "note": null
+    },
+    {
+     "id": "06/0009#maman",
+     "text": "– Jeg mener, har du bestået?",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "– Hmm, så siger jeg, mit hjerte bliver tungt – lad mig gå hen til mine veninder.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Nana-pesar-jan, du skal virkelig sørge for at spise godt. Spis noget, der giver dig kræfter. Bare du spiser ordentligt, bekymrer jeg mig ikke om resten.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "– På hospitalet råbte de hele tiden: »Pårørende til fru Adham!« Ingen rørte sig af pletten. Så kom sygeplejersken selv hen og sagde: »Jeg tror, hun hører til jer.«",
+     "note": null
+    },
+    {
+     "id": "06/0165#maman",
+     "text": "– Han havde drukket for meget sodavand.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "– Du godeste, Nini er pludselig blevet søvnig. Jeg har været oppe siden i morges og har ikke sovet.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0616#2",
-   "where": "04b/0616",
-   "text": "– Fint, Ørneøje, fint. Stik nu ikke brillerne ind i laptopen.",
-   "q": "Hooman teases short-sighted Sajad, nicknamed Eagle Eye, who peers very close to his laptop. Does the teasing land?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "Han kneb øjnene bag brillerne sammen og bøjede hovedet tæt ned mod sin laptopskærm.",
-    "– Tror du det ikke, så kom og se selv, objektivt.",
-    "Hooman sagde:"
-   ]
-  },
-  {
-   "id": "04b/1320#3",
-   "where": "04b/1320",
-   "text": "Og med rystende hænder bladrede jeg hurtigt gennem ghazalerne og ledte efter det beit hos Hafez, der ligesom maleriet, sådan som den anden pige havde sagt, ville gøre en mere og mere skideforvirret, jo dybere man sank ned i det – så jeg kunne vise det til Niloofar.",
-   "q": "Amir echoes a girl's crude made-up word for baffling. Does 'skideforvirret' read naturally in his own storytelling?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "04b/1265#4",
-   "where": "04b/1265",
-   "text": "– Ja, det viw jeg. Når jeg får penge i hånden, viw jeg købe en endnu bedre til dig, Babas pige.",
-   "q": "A stranger on the street answers his little girl, copying her baby talk. Does 'viw' read that way, not as a typo?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Viiizj, Baba, Baba, viw du købe mig den stole dukke?",
-    "En stemme bag mig siger:"
-   ]
-  },
-  {
-   "id": "04b/0591#5",
-   "where": "04b/0591",
-   "text": "– Pir-til-pir?",
-   "q": "Amir mishears 'peer-to-peer' as Persian pir, meaning elder, which fits his nicknames. Would Danish readers get it? If not, what word could carry it?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– En slags peer-to-peer elektroniske penge.",
-    "Jeg sagde:"
-   ]
-  },
-  {
-   "id": "03/0309#6",
-   "where": "03/0309",
-   "text": "– Om Gud vil, må du altid være araasteh.",
-   "q": "The guard puns on the Persian word araasteh, meaning neat and well-groomed. Would Danish readers get it? If not, what word could carry it?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Vagten smiler og siger:"
-   ]
-  },
-  {
-   "id": "03/0476#7",
-   "where": "03/0476",
-   "text": "– Kan De forklare mig, hvordan Deres forhold er til Deres mandlige slægtninge?",
-   "q": "Amir, a shy student, addresses a girl he likes with the very formal 'De'. Does that sound right here?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Hun nikkede let. Glad over det, jeg troede var en løsning, fortsatte jeg."
-   ]
-  },
-  {
-   "id": "04b/0863#8",
-   "where": "04b/0863",
-   "text": "– Tilgivet. Hele boulevarden er din.",
-   "q": "Niloofar forgives him, then playfully grants him the whole boulevard too (in Persian, forgive and give are one word). Does it read naturally?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Hallo. Ingen snyd. Sidst valgte du. I aften er det min tur.",
-    "– Undskyld, jeg tænkte ikke over det."
-   ]
-  },
-  {
-   "id": "04b/0794#9",
-   "where": "04b/0794",
-   "text": "– Drengene på værelset har givet dig et rigtig godt øgenavn. Virkelig, nogle gange roder du tingene fuldstændig til og rammer ved siden af. Det er selvfølgelig dig, min Tavvi.",
-   "q": "Niloofar teases Amir, shortening his dorm nickname Taverni. Does 'min Tavvi' sound affectionate and natural?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Nej selvfølgelig ikke, den gamle mand, der sidder på den anden bænk.",
-    "Jeg kiggede. En gammel mand havde støttet sin stok mod bænken og var fordybet i at læse avis."
-   ]
-  },
-  {
-   "id": "03/0090#10",
-   "where": "03/0090",
-   "text": "Drengen bøjer sig ned og gnider undersiden af sit knæ med hånden.",
-   "q": "The boy has run into a low brick wall. Is it clear he is rubbing the spot just below his knee?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "04b/0509#11",
-   "where": "04b/0509",
-   "text": "Mens han ler, dunker Hooman mig hårdt i ryggen, og sukkerknalden springer ned i halsen på mig.",
-   "q": "Amir is holding a sugar cube in his mouth while drinking tea. Is it clear he nearly chokes on it?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "04b/0512#12",
-   "where": "04b/0512",
-   "text": "Efter et stykke tid begyndte han at lægge opslag om det moderne menneskes forfald på grund af de sociale medier, og der var ingen til at sige til ham: \"Din antikvitet, du er selv et monument over dumhed og forfald,\" haha.",
-   "q": "Hooman laughs about an old roommate's online posts. Does his mocking insult sound natural and funny?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "04b/0251#13",
-   "where": "04b/0251",
-   "text": "– Håbet om forening med dig holder mig i live; ellers ville hvert åndedrag, skilt fra dig, være frygten for at forgå.",
-   "q": "Amir reads Niloofar a line of Hafez. Does it read as poetry, with a clear meaning?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Hvilken andel? Det hele er pine og ensomhed. Jeg forstår virkelig ikke, hvad du har sat dit hjerte til. Jeg åbnede bogen og læste:"
-   ]
-  },
-  {
-   "id": "01/0132#14",
-   "where": "01/0132",
-   "text": "Stik næsen ind i hver en afkrog. De gamle sagde altid: kig ind i hver eneste krog.",
-   "q": "Maman quotes an old saying, kept close to the Persian. Would a reader guess its meaning from context?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "– Mm-hm, du gør det rigtige. Mens du har chancen, så gå ud og se alle landsbyerne."
-   ]
-  },
-  {
-   "id": "03/0640#15",
-   "where": "03/0640",
-   "text": "– Pfff, fanden tage dig. Nu bor du i udlandet, så du skider på os. Du tilbeder alt udenlandsk, din skide overløber.",
-   "q": "Hooman, crude and half joking, scolds his old friend for moving abroad. Does this sound like how he would really talk?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "…hen til Valiasr-porten, bliver det hundrede og halvfjerds meter. Fanden tage dig, du trak mig hundrede og halvfjerds meter efter dig med den her krop. Det lader vi ligge. Men hvorfor tager du den ikke, uanset hvor mange gange jeg ringer? Har du viderestillet mine opkald til et sted, du ikke burde?",
-    "– Jeg er virkelig ked af det."
-   ]
-  },
-  {
-   "id": "04b/0818#16",
-   "where": "04b/0818",
-   "text": "– Ældi, se hvor langt du har drevet det: Farid, som ikke giver en fløjtende fis for os eller værelset eller nogen som helst, har talt.",
-   "q": "Hooman, the crudest talker in the room, says this. Does 'ikke giver en fløjtende fis' fit his coarse way of talking?",
-   "ctx": 1,
-   "kind": "known",
-   "before": [
-    "Det var den sidste gang, Farid reagerede på ord og begivenheder på værelset, uden at nogen henvendte sig direkte til ham. Hooman sagde:"
+   "key": "child_talk",
+   "title": "Børns tale",
+   "q": "Disse linjer bliver sagt af børn. Lyder hver af dem som et barn?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0189#child",
+     "text": "– Pfff, æsel, hvem ved bedre – vennen til fætteren til vores svogers mesterhåndværker, der er den rigeste i Teheran, eller dig, din kalv?",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "– Okay, du må også komme med på missionen, men du skal være rigtig forsigtig. Etaperne er rigtig svære.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "– Okay, kom mindre på. Men ikke for meget mindre. Lidt mindre.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "– Tredje etape er et vejkryds. Et vejkryds betyder, at det er rigtig stort. Fra den ene side helt over til den anden side. Fra denne gade til den anden gade.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "– Venstre side er farlig. I huset med den røde dør bor der en rigtig vred gammel mand. Endnu vredere end Baba.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "– På den anden side af skolen ligger gravpladsen. Den er rigtig gammel. Nogle af gravstenene er væk. Man kan se de dødes knogler.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "– Ej, hvorfor smed du pinden væk? Hvad skal vi så ringe på dørklokken med?",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "– Når hun lærer vores navne, vil hun godt kunne lide os.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 19
 }

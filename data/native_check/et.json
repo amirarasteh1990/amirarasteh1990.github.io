@@ -2,48 +2,8 @@
  "lang": "et",
  "slug": "et",
  "dir": "ltr",
- "version": "2026-11-23",
+ "version": "2026-11-25.o1",
  "items": [
-  {
-   "id": "Opening/0007#1",
-   "where": "Opening/0007",
-   "text": "Siit küljelt kerin ma lahti sõnade lõnga, ja teiselt küljelt kogud sina sõnad kokku.",
-   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
-   "before": [
-    "Avamine",
-    "…ja kujundid, mis oleksid kadunud maailmasündmuste palavikulisse sosinasse, kui neid siia kirja ei oleks pandud. Need pandi kirja, et saada sillaks minu maailma ja sinu maailma vahel. Sild minu maailmast — sel hetkel, kui ma neid lauseid kirjutan — sinu maailma, sel hetkel, kui sa istud neid lugema."
-   ]
-  },
-  {
-   "id": "03/0412#2",
-   "where": "03/0412",
-   "text": "Pika asfalttee ääres, mis viib Hafezi väravast ülikooli Valiasri väravani, seisab poiss ja ulatab möödujatele väikesi pabereid.",
-   "q": "A boy hands out leaflets on campus. Does this sentence read naturally?",
-   "before": [
-    "– Ligi tuhat aastat. Mõtle sellele: üks käsi tuhat aastat tagasi kõverdas selle poti käepideme nii. Kas suudad ette kujutada? Hämmastav. Hämmastav.",
-    "Lahkun telgist."
-   ]
-  },
-  {
-   "id": "03/0446#3",
-   "where": "03/0446",
-   "text": "Seisin tema kõrval ja olime koos, samal ajal, söönud rohelisi ploome erilise ürdiga. Ilma et ta oleks seda teadnud.",
-   "q": "Amir eats the same snack beside Niloofar, unnoticed by her. Does this read naturally?",
-   "before": [
-    "– ... räägitakse ...",
-    "…ploomile tükikese ürti ja andis selle Niloofarile. Niloofar pistis rohelise ploomi suhu ja ta põskedesse tekkisid lohukesed. Oma ühepäevase võltskindlusega astusin tema kõrvale Mazandarani stendi juurde. Stendi töötaja pani rohelisele ploomile natuke sama erilist ürti ja ulatas selle mulle."
-   ]
-  },
-  {
-   "id": "04b/0556#4",
-   "where": "04b/0556",
-   "text": "– Ta oli palunud, et talt järjekorravälisel ajal eksamit küsitaks, et ta vahest läbi saaks.",
-   "q": "Is 'järjekorravälisel ajal' right for a special exam outside the usual schedule?",
-   "before": [
-    "– Mis aeg eksamiks on esfandikuu algus?",
-    "Ja muutus ärevaks, et äkki on tõesti eksamihooaeg ja tema on selle unustanud. Bahman märkas Hoomani ärevust. Ütles:"
-   ]
-  },
   {
    "id": "04b/1312#5",
    "where": "04b/1312",
@@ -62,6 +22,116 @@
    "before": [
     "– Jah, Hamoon on sulle hea nimi. Nagu filmis Hamoun, oled sinagi küsimustega täis. Oled ärevuse ja ahastuse allikas, mitte enda, vaid minu jaoks.",
     "Hooman ütles:"
+   ]
+  },
+  {
+   "id": "06/0188#5",
+   "where": "06/0188",
+   "text": "Vihm ei saja maast ülespoole.",
+   "q": "Her son says he would die for her; Maman objects. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0334#9",
+   "where": "04b/0334",
+   "text": "Mu käsi on lühike ja sinuga ühinemine kaugel.",
+   "q": "Amir tells the girl he loves why he holds back. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04a/0128#2",
+   "where": "04a/0128",
+   "text": "Ära söö muret, mu tark poeg.",
+   "q": "Maman comforts her little boy, whose feet are hurt. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0274#7",
+   "where": "04b/0274",
+   "text": "Ma ütlen, et kui sa lihtsalt aina siin istud ja luuletusi loed, ei lähe ükski leib sulle ahju kuumaks.",
+   "q": "A friend criticises Amir for reading poetry all day. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0203#4",
+   "where": "01/0203",
+   "text": "Bibi, jumal hoidku tema hinge, ütles sellistel hetkedel: kui ütlen, põleb mu keel; kui ei ütle, põleb mu luuüdi.",
+   "q": "Maman hesitates before criticising her husband. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0073#6",
+   "where": "01/0073",
+   "text": "Ta ütleb: \"Head aastat tuntakse kevadest ära.\"",
+   "q": "The family's New Year visits were cancelled; a brother jokes about it. An old Persian proverb kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "01/0138#1",
+   "where": "01/0138",
+   "text": "Ta ütles, mu süda mädaneb.",
+   "q": "Maman quotes a lonely friend who has nothing to do all day. A Persian saying kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0509#3",
+   "where": "04b/0509",
+   "text": "Naerdes patsutab Hooman mind kõvasti seljale ja suhkrutükk hüppab mulle kurku.",
+   "q": "Hooman thumps Amir on the back while he drinks tea. A Persian image kept word for word: can you guess what happens?",
+   "kind": "saying"
+  },
+  {
+   "id": "03/0634#10",
+   "where": "03/0634",
+   "text": "Ära ütle sellele armetule Eskandarile, muidu istutab meid jälle tunniks nõuandeid kuulama ja söök muutub mulle maomürgiks.",
+   "q": "A student got a big portion of rice and fears a friend's lecture. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "04b/0824#8",
+   "where": "04b/0824",
+   "text": "Ma sain alles pärast seda, kui pere mind sundis kanade sekka, aru, milline teine maailm on too pool lugu.",
+   "q": "A friend talks about his own life after his family pushed him. A Persian expression kept word for word: can you guess its meaning?",
+   "kind": "saying"
+  },
+  {
+   "id": "Opening/0007#1",
+   "where": "Opening/0007",
+   "text": "Siit küljelt kerin ma lahti sõnade lõnga, ja teiselt küljelt kogud sina sõnad kokku.",
+   "q": "The author unravels a thread of words; the reader gathers them. Does this read naturally?",
+   "before": [
+    "Avamine",
+    "…ja kujundid, mis oleksid kadunud maailmasündmuste palavikulisse sosinasse, kui neid siia kirja ei oleks pandud. Need pandi kirja, et saada sillaks minu maailma ja sinu maailma vahel. Sild minu maailmast — sel hetkel, kui ma neid lauseid kirjutan — sinu maailma, sel hetkel, kui sa istud neid lugema."
+   ]
+  },
+  {
+   "id": "03/0446#3",
+   "where": "03/0446",
+   "text": "Seisin tema kõrval ja olime koos, samal ajal, söönud rohelisi ploome erilise ürdiga. Ilma et ta oleks seda teadnud.",
+   "q": "Amir eats the same snack beside Niloofar, unnoticed by her. Does this read naturally?",
+   "before": [
+    "– ... räägitakse ...",
+    "…ploomile tükikese ürti ja andis selle Niloofarile. Niloofar pistis rohelise ploomi suhu ja ta põskedesse tekkisid lohukesed. Oma ühepäevase võltskindlusega astusin tema kõrvale Mazandarani stendi juurde. Stendi töötaja pani rohelisele ploomile natuke sama erilist ürti ja ulatas selle mulle."
+   ]
+  },
+  {
+   "id": "03/0412#2",
+   "where": "03/0412",
+   "text": "Pika asfalttee ääres, mis viib Hafezi väravast ülikooli Valiasri väravani, seisab poiss ja ulatab möödujatele väikesi pabereid.",
+   "q": "A boy hands out leaflets on campus. Does this sentence read naturally?",
+   "before": [
+    "– Ligi tuhat aastat. Mõtle sellele: üks käsi tuhat aastat tagasi kõverdas selle poti käepideme nii. Kas suudad ette kujutada? Hämmastav. Hämmastav.",
+    "Lahkun telgist."
+   ]
+  },
+  {
+   "id": "04b/0556#4",
+   "where": "04b/0556",
+   "text": "– Ta oli palunud, et talt järjekorravälisel ajal eksamit küsitaks, et ta vahest läbi saaks.",
+   "q": "Is 'järjekorravälisel ajal' right for a special exam outside the usual schedule?",
+   "before": [
+    "– Mis aeg eksamiks on esfandikuu algus?",
+    "Ja muutus ärevaks, et äkki on tõesti eksamihooaeg ja tema on selle unustanud. Bahman märkas Hoomani ärevust. Ütles:"
    ]
   }
  ]

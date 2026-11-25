@@ -1,177 +1,362 @@
 {
+ "format": 2,
  "lang": "no",
  "slug": "no",
  "dir": "ltr",
- "version": "2026-11-22.r3",
- "items": [
+ "pages": 4,
+ "strings": {
+  "native_check": "Morsmålssjekk",
+  "lead": "Du trenger ikke å ha lest boken. Svar på så mange du vil.",
+  "persian_words": "Maman (mor), Baba (far) og -jan (kjære) er persiske ord som er beholdt i boken.",
+  "page": "Side",
+  "correct": "Riktig",
+  "needs_change": "Bør endres",
+  "not_sure": "Usikker",
+  "how_say": "Hvordan ville du sagt det?",
+  "meaning": "Hva tror du det betyr?",
+  "optional": "(valgfritt)",
+  "your_name": "Navnet ditt",
+  "thanks_tick": "Før opp navnet mitt på takkesiden",
+  "private": "Svarene dine går bare til forfatteren.",
+  "send": "Send",
+  "send_continue": "Send og gå videre til side {n}",
+  "sending": "Sender…",
+  "popup_title": "Tusen takk!",
+  "popup_text": "Vil du ha navnet ditt på takkesiden på nettstedet? Fullfør alle de 4 sidene, så legger vi det gjerne til.",
+  "popup_button": "Gå videre til side {n}",
+  "arrived": "Takk, svarene dine fra side {n} har kommet fram.",
+  "thanks_last": "Tusen takk! Svarene dine har kommet fram.",
+  "all_done": "Du har sendt alle sidene. Takk for alle sammen!",
+  "already_sent": "Du har allerede sendt denne siden fra denne enheten. Takk!",
+  "continue_with": "Fortsett med side {n}",
+  "need_one": "Velg et svar for minst én linje.",
+  "note_no_answer": "En linje har en merknad: velg et svar for den også.",
+  "name_needed": "Skriv inn navnet du vil ha oppført, eller fjern haken.",
+  "not_connected": "Innsending er ikke koblet til ennå.",
+  "too_long": "Innsendingen tok for lang tid.",
+  "cannot_send": "Svarene kunne ikke sendes herfra.",
+  "use_email": "Bruk e-postknappen nedenfor.",
+  "fallback": "Svarene kunne ikke sendes fra denne siden. Send dem heller på e-post; ingenting du har skrevet, går tapt.",
+  "email_button": "Send svarene på e-post",
+  "shortened": "Noen merknader var for lange for en e-postlenke og ble forkortet der. De fullstendige svarene dine står nedenfor; lim dem inn i e-posten.",
+  "noscript": "Innsending krever JavaScript. Du kan også sende svarene dine på e-post til {email}."
+ },
+ "version": "2026-11-25.s1.p3",
+ "page": 3,
+ "groups": [
   {
-   "id": "04b/1320#1",
-   "where": "04b/1320",
-   "text": "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt – så jeg kunne vise det til Niloofar.",
-   "q": "The narrator echoes a girl's crude made-up word for being dizzy with confusion. Does 'drittsvimle' work here?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "03/0278#2",
-   "where": "03/0278",
-   "text": "På en måte kan man si at de erobret universitetet. Karroubi er kjærlighet, virkelig.",
-   "q": "Farid, an excited student, praises a reformist politician in slang. Does 'Karroubi er kjærlighet' sound like natural youthful slang?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "06/0186#3",
-   "where": "06/0186",
-   "text": "Jeg ville gjort alt for deg, Nini-jan. Hodet ditt fungerer så godt.",
-   "q": "Amir lovingly praises his mother, called Nini in the family, for her quick thinking. Does this sound warm and natural?",
-   "ctx": 2,
-   "kind": "known",
-   "before": [
-    "– Amir, da Taghi døde, kom moren hans til døren og sa til Maman: Vi vet ikke hva vi skal si til folk. Jeg mener, om vi sier at han hadde drukket sterk, hjemmebrent aragh og fått synkope, blir det en fryktelig skam. Da sa Maman til henne: Si bare at han fikk korona.",
-    "Jeg sier:"
+   "key": "maman",
+   "title": "Morens stemme",
+   "q": "Moren snakker varmt, noen ganger skjennende, som en vanlig kvinne fra en liten by. Høres hver linje ut som henne?",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "01/0001#maman",
+     "text": "Er du frisk? Har du det bra?",
+     "note": null
+    },
+    {
+     "id": "01/0077#maman",
+     "text": "Det får man når folk er glade for å se hverandre – ikke når de bare irriterer hverandre.",
+     "note": null
+    },
+    {
+     "id": "01/0090#maman",
+     "text": "Det er jo jeg som er stakkaren, jeg sier aldri noe, jeg holder alltid munn. Jeg ser bare på og spiser sorg.",
+     "note": null
+    },
+    {
+     "id": "01/0116#maman",
+     "text": "Gå steder der det ikke er så mye folk.",
+     "note": null
+    },
+    {
+     "id": "01/0142#maman",
+     "text": "Baba hva?",
+     "note": null
+    },
+    {
+     "id": "01/0158#maman",
+     "text": "Den med den dumme læreren? Mm-hm, se den.",
+     "note": null
+    },
+    {
+     "id": "01/0162#maman",
+     "text": "Vi vil alle ringe og si han har plaget oss i tretti år, kom og hent ham.",
+     "note": null
+    },
+    {
+     "id": "01/0166#maman",
+     "text": "Uansett hvor mye jeg sa: ikke slå barna, sa han: jeg ble granatsjokkert i krigen, jeg kan ikke noe for det.",
+     "note": null
+    },
+    {
+     "id": "01/0170#maman",
+     "text": "Baksnakking? Det er baksnakking når de ikke har gjort deg urett.",
+     "note": null
+    },
+    {
+     "id": "01/0174#maman",
+     "text": "Hmm, la oss se – kan noen av dere huske én god ting ved Baba deres? Si det, så holder jeg munn.",
+     "note": null
+    },
+    {
+     "id": "01/0178#maman",
+     "text": "Jeg skulle ønske han hadde blitt rusmisbruker i stedet for å være slik.",
+     "note": null
+    },
+    {
+     "id": "01/0184#maman",
+     "text": "Den som vil ha ham, kan ta ham for seg selv. Vi slenger med noe på kjøpet.",
+     "note": null
+    },
+    {
+     "id": "01/0188#maman",
+     "text": "Han er i det huset der. Huset for enden av gården.",
+     "note": null
+    },
+    {
+     "id": "01/0214#maman",
+     "text": "Vi gikk hele veien fra boulevarden og hjem, og han løftet hele tiden hånden – som om hånden hans var noe hellig folk skulle kysse.",
+     "note": null
+    },
+    {
+     "id": "01/0261#maman",
+     "text": "Mm-hm, han har forandret seg veldig, veldig mye. Han er blitt så mager og mørk.",
+     "note": null
+    },
+    {
+     "id": "03/0070#maman",
+     "text": "Jeg er redd han skal ende opp som vennen sin Hamid.",
+     "note": null
+    },
+    {
+     "id": "03/0297#maman",
+     "text": "Alt du gjør er et lappverk.",
+     "note": null
+    },
+    {
+     "id": "03/0531#maman",
+     "text": "Lær personen å kjenne først, gift dere, og hvis dere vil, bli forelskede etterpå.",
+     "note": null
+    },
+    {
+     "id": "04a/0004#maman",
+     "text": "Kom nå, gutten min. Kom og ta denne, og gå rundt inne i huset.",
+     "note": null
+    },
+    {
+     "id": "04a/0008#maman",
+     "text": "Nei. Så lenge denne tråden er i hånden din, blir du ikke borte.",
+     "note": null
+    },
+    {
+     "id": "04a/0014#maman",
+     "text": "Bra, Amir-jan! Du er veldig smart.",
+     "note": null
+    },
+    {
+     "id": "04a/0034#maman",
+     "text": "Salt er skadelig.",
+     "note": null
+    },
+    {
+     "id": "04a/0066#maman",
+     "text": "Bra, den kloke gutten min. Når noe skremmer deg, bruk et triks så du ikke blir redd.",
+     "note": null
+    },
+    {
+     "id": "04b/0536#maman",
+     "text": "Bevaaares. Hmm, landene må ha ligget tett.",
+     "note": null
+    },
+    {
+     "id": "04b/0538#maman",
+     "text": "Det er endetider. Bibis generasjon pleide å si at når endetiden kommer, fortsetter jorden å skjelve.",
+     "note": null
+    },
+    {
+     "id": "04b/0744#maman",
+     "text": "Jeg lovet at hvis han blir bedre, skal jeg gå til fots hele veien til Mashhad.",
+     "note": null
+    },
+    {
+     "id": "06/0009#maman",
+     "text": "Jeg mener, besto du?",
+     "note": null
+    },
+    {
+     "id": "06/0033#maman",
+     "text": "Hmm, da sier jeg også at hjertet mitt blir tungt. La meg gå til venninnene mine.",
+     "note": null
+    },
+    {
+     "id": "06/0040#maman",
+     "text": "Hmm, vi tenkte at du ville bli opprørt, Nana-pesar-jan. Du hadde disputasen din.",
+     "note": null
+    },
+    {
+     "id": "06/0044#maman",
+     "text": "Siste gangen jeg var hos henne og vasket henne i badet, var det ikke noe kjøtt igjen på kroppen – bare skinn og bein.",
+     "note": null
+    },
+    {
+     "id": "06/0066#maman",
+     "text": "Så kom sykepleieren selv og sa, jeg tror hun hører til dere.",
+     "note": null
+    },
+    {
+     "id": "06/0104#maman",
+     "text": "Hmm, disse menneskene gjorde heller ikke mye for henne mens hun levde.",
+     "note": null
+    },
+    {
+     "id": "06/0192#maman",
+     "text": "Åh, Nana-pesar-jan, har du flyttet inn i den nye boligen din?",
+     "note": null
+    },
+    {
+     "id": "06/0253#maman",
+     "text": "Gå og hent litt frø til Ghassem og de andre, de vil se film.",
+     "note": null
+    },
+    {
+     "id": "06/0264#maman",
+     "text": "Uff, hver gang man ber ham hente noe, er det som om han får elektrisk støt.",
+     "note": null
+    },
+    {
+     "id": "06/0291#maman",
+     "text": "Han klager uten grunn, hehe, Amir-jan. Om det ikke er det ene, finner han noe annet.",
+     "note": null
+    },
+    {
+     "id": "06/0296#maman",
+     "text": "Oi, Nini ble plutselig søvnig.",
+     "note": null
+    }
    ]
   },
   {
-   "id": "04b/0616#4",
-   "where": "04b/0616",
-   "text": "Fint, Ørneøye, fint. Stikk nå ikke brillene inn i laptopen.",
-   "q": "Farid teases short-sighted Sajad, who peers at his laptop from very close. Does this sound like natural teasing?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman sa:"
-   ]
-  },
-  {
-   "id": "01/0132#5",
-   "where": "01/0132",
-   "text": "Stikk nesen inn i alle kriker og kroker. De gamle sa alltid: kikk inn i alle kroker og kott.",
-   "q": "Maman urges her son to see every village and quotes an old saying. Does the saying sound natural from her?",
-   "ctx": 0,
-   "kind": "known"
-  },
-  {
-   "id": "03/0394#6",
-   "where": "03/0394",
-   "text": "Eller så er du pikkhjer ... ja ja, pikkhjerne var du allerede, nå er du blitt enda mer pikkhjerne.",
-   "q": "Hooman starts a crude insult, breaks off, and makes it worse on purpose. Does the joke land for young men in a dorm?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Du har plutselig hengt deg opp i dette spørsmålet. Det finnes noen muligheter. Enten har du slått hodet i noe."
-   ]
-  },
-  {
-   "id": "04b/0378#7",
-   "where": "04b/0378",
-   "text": "Du har dritt til hjerne. Ingen sier du er stum bare fordi du ikke fjerter.",
-   "q": "Eskandar twists a saying, 'nobody calls you mute if you keep quiet', into a crude jibe. Does the joke come across?",
-   "ctx": 0,
-   "kind": "joke"
-  },
-  {
-   "id": "04b/0175#8",
-   "where": "04b/0175",
-   "text": "Ikke la deg lure av denne Arasteh; tåpelig som han ser ut, var Konkur-plasseringen hans syttifire.",
-   "q": "Hooman says Amir ranked seventy-fourth in the national entrance exam. Does the number sound natural here?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Ja."
-   ]
-  },
-  {
-   "id": "04b/0385#9",
-   "where": "04b/0385",
-   "text": "Han kan ikke noe for det. Sånn er fabrikkinnstillingen hans.",
-   "q": "Hooman jokes that Amir behaves this way because of his factory settings, like a gadget. Does this sound natural?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "– Eldie er Taverny."
-   ]
-  },
-  {
-   "id": "04b/0571#10",
-   "where": "04b/0571",
-   "text": "Kom først og dokumentér denne tommelen, og lag så film om hva dere vil.",
-   "q": "Hooman sticks up his thumb, a rude gesture in Iran, to mock Farid's film plan. Does the joke come across?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Gutter, la oss lage en dokumentarfilm om rommet vårt.",
-    "Hooman tok hånden frem under teppet og sa:"
-   ]
-  },
-  {
-   "id": "03/0576#11",
-   "where": "03/0576",
-   "text": "Jeg ville dø for de nattergaløynene du har, Ørneøye-jan, men problemet ligger hos mottakeren; senderen kan ikke løse det.",
-   "q": "Short-sighted Sajad took Farid's toothbrush; Farid answers in mock-flowery words. Does the joke come across?",
-   "ctx": 3,
-   "kind": "joke",
-   "before": [
-    "– Ørneøye, du tok tannbørsten min igjen.",
-    "– Objektivt sett, kjøp en annen farge neste gang.",
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "01/0142#12",
-   "where": "01/0142",
-   "text": "Baba hva?",
-   "q": "Maman is hard of hearing and catches only one word of her son's joke. Does her short question read naturally?",
-   "ctx": 2,
-   "kind": "joke",
-   "before": [
-    "– Tenk da bare hva stakkars Baba må gå igjennom – han har sittet hjemme uten arbeid alle disse årene.",
-    "Maman sier:"
-   ]
-  },
-  {
-   "id": "03/0388#13",
-   "where": "03/0388",
-   "text": "Objektivt, jeg ser ingenting uten brillene mine.",
-   "q": "Sajad says 'objektivt' constantly out of habit, and his friends find it funny. Does it read as his verbal habit?",
-   "ctx": 1,
-   "kind": "banter",
-   "before": [
-    "Sajad sa:"
-   ]
-  },
-  {
-   "id": "03/0126#14",
-   "where": "03/0126",
-   "text": "Vennen til fetteren til håndverksmesteren til svogeren vår, som er den rikeste mannen i Teheran, snakker nøyaktig slik.",
-   "q": "Hamid's running joke: he always cites this long chain of people as his authority. Does it read smoothly and sound funny?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "– Hm."
-   ]
-  },
-  {
-   "id": "03/0624#15",
-   "where": "03/0624",
-   "text": "Supert, tavernens eldste. Det er perfekt for Arasteh.",
-   "q": "Friends give Amir a mock-grand nickname from a Hafez poem, 'tavernens eldste'. Does it work as a fun nickname?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Farid sa:"
-   ]
-  },
-  {
-   "id": "03/0628#16",
-   "where": "03/0628",
-   "text": "Haha, tavernens eldste, Eldie — perfekt.",
-   "q": "Hooman shortens the nickname 'tavernens eldste' to 'Eldie'. Does that work as a teasing short form?",
-   "ctx": 1,
-   "kind": "joke",
-   "before": [
-    "Hooman skrev noe i boken med en penn og sa:"
+   "key": "child_talk",
+   "title": "Barnespråk",
+   "q": "Disse linjene blir sagt av barn. Høres hver av dem ut som et barn?",
+   "labels": [
+    "Riktig",
+    "Bør endres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sagt det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0118#child",
+     "text": "For en babe.",
+     "note": null
+    },
+    {
+     "id": "03/0189#child",
+     "text": "Pff, esel, hvem vet best: vennen til fetteren til håndverksmesteren til svogeren vår, som er den rikeste mannen i Teheran, eller du, din kalv?",
+     "note": null
+    },
+    {
+     "id": "04a/0006#child",
+     "text": "Jeg blir borte, Maman.",
+     "note": null
+    },
+    {
+     "id": "04a/0018#child",
+     "text": "I morges gikk jeg ut i gårdsplassen. Maman sa jeg var smart.",
+     "note": null
+    },
+    {
+     "id": "04a/0020#child",
+     "text": "Visst, du kan bli med på oppdraget også, men du må passe veldig godt på.",
+     "note": null
+    },
+    {
+     "id": "04a/0022#child",
+     "text": "Greit, gjørmeleken er ferdig.",
+     "note": null
+    },
+    {
+     "id": "04a/0036#child",
+     "text": "Greit, legg på mindre. Men ikke mye mindre. Litt mindre.",
+     "note": null
+    },
+    {
+     "id": "04a/0038#child",
+     "text": "Inntreden på hovedgaten: tsk-tsk.",
+     "note": null
+    },
+    {
+     "id": "04a/0052#child",
+     "text": "Den tredje etappen er et veikryss. Et veikryss betyr at det er veldig stort.",
+     "note": null
+    },
+    {
+     "id": "04a/0054#child",
+     "text": "Æsj, jeg er trøtt.",
+     "note": null
+    },
+    {
+     "id": "04a/0056#child",
+     "text": "Hvis du blir trøtt, skal du ikke bli med på oppdraget mer.",
+     "note": null
+    },
+    {
+     "id": "04a/0062#child",
+     "text": "Mange mislykkes her. De går til venstre.",
+     "note": null
+    },
+    {
+     "id": "04a/0064#child",
+     "text": "Venstre side er farlig. Huset med den røde døren tilhører en veldig sint gammel mann.",
+     "note": null
+    },
+    {
+     "id": "04a/0068#child",
+     "text": "Skolen vår er der bakerst. Det siste huset.",
+     "note": null
+    },
+    {
+     "id": "04a/0070#child",
+     "text": "Noen av gravsteinene er borte. Man kan se de dødes bein.",
+     "note": null
+    },
+    {
+     "id": "04a/0074#child",
+     "text": "Ingen spørsmål. Lytt til kommandanten.",
+     "note": null
+    },
+    {
+     "id": "04a/0078#child",
+     "text": "Hei, hvorfor kastet du pinnen? Hva skal vi ringe på døren med da?",
+     "note": null
+    },
+    {
+     "id": "04a/0082#child",
+     "text": "Det sa du ikke.",
+     "note": null
+    },
+    {
+     "id": "04b/1062#child",
+     "text": "Når hun lærer navnene våre, kommer hun til å like oss.",
+     "note": null
+    },
+    {
+     "id": "04b/1248#child",
+     "text": "Hadde det vært svart, hadde jeg tatt svart.",
+     "note": null
+    }
    ]
   }
- ]
+ ],
+ "first": 15
 }

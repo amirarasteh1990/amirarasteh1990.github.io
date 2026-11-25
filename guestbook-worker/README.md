@@ -18,9 +18,14 @@ does not notify anyone of their own actions: find the answers under the
 `native-check` label. **The route exists only after a redeploy:** run `npm test`, then `npm run deploy`.
 Until then the check pages fall back to a prefilled email.
 
+**Since 2026-11-25, check answers go to the private repo `amirarasteh1990/sedaha-answers`**
+(the `CHECK_REPO` var), so only Amir can read them. Guestbook notes stay in the public
+website repo. To read the answers, run `gh issue list --repo amirarasteh1990/sedaha-answers`.
+
 The browser never receives a GitHub credential. The Worker token needs only
-**Issues: read and write** on `amirarasteh1990/amirarasteh1990.github.io`. It must
-not receive Contents, Actions, Administration, or account-wide repository access.
+**Issues: read and write** on `amirarasteh1990/amirarasteh1990.github.io` **and**
+`amirarasteh1990/sedaha-answers`. It must not receive Contents, Actions, Administration,
+or account-wide repository access.
 
 ## Local verification without external writes
 
