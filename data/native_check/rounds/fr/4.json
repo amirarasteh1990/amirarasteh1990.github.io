@@ -13,7 +13,6 @@
   "needs_change": "À modifier",
   "not_sure": "Je ne sais pas",
   "how_say": "Comment le dirais-tu ?",
-  "meaning": "Selon toi, qu'est-ce que cela veut dire ?",
   "optional": "(facultatif)",
   "your_name": "Ton nom",
   "thanks_tick": "Inscrire mon nom sur la page des remerciements",
@@ -117,11 +116,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Cette politique de localisation nous a bien niqués.",
-     "note": null
-    },
-    {
      "id": "04b/0146#crude",
      "text": "Cervelle de merde. Tu me fais ouvrir la bouche et le dire.",
      "note": null
@@ -167,11 +161,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "Tu n'aurais même pas pu bouffer la tête de ma bite. Mais quelles pâtisseries, quand même.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "on s'est fait baiser.",
      "note": null
@@ -183,8 +172,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Si c'était moi, zéro encore ce serait trop ; je te ferais bouffer la tête de ma bite, puis je te virerais de l'université à coups de pied au cul.",
-     "note": null
+     "text": "Tu te prends pour Heisenberg ou Einstein, pour t'attendre à ce qu'on te mette vingt sur vingt et qu'on salue tes théories éclairantes ? Si c'était moi, zéro encore ce serait trop ; je te ferais bouffer la tête de ma bite, puis je te virerais de l'université à coups de pied au cul. D'ailleurs, je te jetterais aussi un moment dans un trou noir, pour que ta maladie ne contamine personne.",
+     "note": "en Iran, les notes vont jusqu'à 20"
     },
     {
      "id": "04b/0486#crude",
@@ -193,8 +182,8 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "Pas de débat dans la chambre aujourd'hui : j'ai eu douze en EPS, j'ai les nerfs en vrac, je vais vous insulter.",
-     "note": null
+     "text": "Pas de débat dans la chambre aujourd'hui : j'ai eu douze en EPS, j'ai les nerfs en vrac, je vais vous insulter.",
+     "note": "en Iran, les notes vont jusqu'à 20"
     },
     {
      "id": "04b/0567#crude",
@@ -250,6 +239,11 @@
      "id": "04b/1003#crude",
      "text": "Regarde la belle bourde que tu as faite, cervelle de merde.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Ça vous fout un putain de tournis. Plus on y réfléchit, plus on a un putain de tournis.",
+     "note": "\"un putain de tournis\" = expression crue inventée : tellement perdu qu'on en a la tête qui tourne"
     }
    ]
   },
@@ -308,6 +302,11 @@
     {
      "id": "03/0517#natur",
      "text": "D'un côté il décoche des coups meurtriers, de l'autre il dit : oh, du sang, ça me donne la chair de poule.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Au moment où commençait la nouvelle année, devant la table du Haft-Seen, je lus le poème pour ma mère.",
      "note": null
     },
     {
@@ -431,16 +430,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "Mais cela est, et je vous aime vraiment.",
-     "note": null
-    },
-    {
-     "id": "04b/1320#natur",
-     "text": "Et de mes mains tremblantes, je parcourais rapidement les ghazals pour trouver, et montrer à Niloofar, un beit de Hafez dont, comme l'autre fille l'avait dit de cette peinture, plus on s'enfonce dans les profondeurs, plus on a un putain de tournis.",
-     "note": null
-    },
-    {
      "id": "06/0050#natur",
      "text": "Probablement parce qu'il n'entend rien et ne sait pas ce qui se passe, la peur ne l'a jamais saisi.",
      "note": null
@@ -463,5 +452,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 16
 }

@@ -13,7 +13,6 @@
   "needs_change": "Needs change",
   "not_sure": "Not sure",
   "how_say": "How would you say it?",
-  "meaning": "What do you think it means?",
   "optional": "(optional)",
   "your_name": "Your name",
   "thanks_tick": "List my name on the Thanks page",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "The pole image means they were all screwed over. Is that clear?",
-   "q_lang": "en",
+   "q": "The narrator is nervous here. Does each line sound natural in your language?",
    "labels": [
     "Correct",
     "Needs change",
@@ -58,17 +56,79 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0663#s30",
-     "text": "They say it's to keep kids near their families, but they've rammed a pole up the ass of every one of us from the provinces.",
+     "id": "04b/1320#nerv",
+     "text": "With trembling hands I flipped frantically through the ghazals, searching for the Hafez beit that, like the painting, as that other girl had said, would make us more shit-dizzy the deeper we sank into it.",
+     "note": "he repeats a crude word a girl made up about a painting"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Like that: the more you think about these ten words, the more sh— I mean, the dizzier you get.",
+     "note": "he almost says the crude word again, then stops"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "For-for God's sake, listen. … It's like that painting your fr-fr-friend was showing you.",
+     "note": "he stammers"
+    }
+   ]
+  },
+  {
+   "key": "confess",
+   "title": null,
+   "q": "The narrator finally tells the girl he loves her. Does it sound natural and heartfelt?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#conf",
+     "text": "I've loved you for thirty-two months. From a distance. Without your knowing. In silence, without a single word. You might say it's impossible: it can't be real; it's just fantasy. But it is real, and I truly love you.",
+     "note": "in Persian he speaks to her formally, with the polite 'you'"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "These are the book's first lines. Do they read naturally and clearly?",
+   "labels": [
+    "Correct",
+    "Needs change",
+    "Not sure"
+   ],
+   "note_label": "How would you say it?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Here, nothing happens. Nothing will be set right, nothing torn down. No interpretation is coming. No conclusion.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "This is the loose end of a thread of words that were once sounds.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "As in childhood, when Maman would unravel the yarn of old clothes, and we would take the thread and walk around inside the house so the yarn would not pile up.",
+     "note": "Maman is Persian for 'mother', kept untranslated on purpose. The children carry the thread through the house as she unravels it."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Now I unwind the thread of words, and you pick them up and carry them into your own world, so they will not pile up here, in my world.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
-   "q_lang": "en",
+   "q": "The memory comes loose like a screw with stripped threads. Is the image clear?",
    "labels": [
     "Correct",
     "Needs change",
@@ -78,57 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0389#s32",
-     "text": "– You couldn't even eat its head. But damn, those sweets were good. Pineapple.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy's running joke: an absurd chain of authorities. Does it land?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/1248#s34",
-     "text": "– If there'd been black, I'd have picked black. The friend of the cousin of our brother-in-law's master craftsman who is the richest man in Tehran says black is the color of love.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A memory comes loose like a stripped screw. Is the image clear?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0675#s35",
+     "id": "03/0675#screw",
      "text": "After that, like a screw with stripped threads, that image was no longer bound to the darkness behind the closed door of our house.",
      "note": null
     }
-   ]
+   ],
+   "intro": "In the book:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "Iranian grades go up to twenty. Is the line clear?",
-   "q_lang": "en",
+   "q": "A boy plays soldier with his little brothers. Do his commands sound like real army drill?",
    "labels": [
     "Correct",
     "Needs change",
@@ -138,118 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0464#s36",
-     "text": "– Are you Heisenberg or Einstein, so that you expect them to give you a twenty and honor your enlightening theories?",
+     "id": "04a/0024#drill",
+     "text": "Battalion, forward march.",
      "note": null
     },
     {
-     "id": "04b/0520#s36",
-     "text": "– No arguing in the room today. I got a twelve in PE; I'm in a fucking bad mood, and I'll start swearing at you.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04a/0026#s40",
-     "text": "– Beginning of stage one of the mission. Battalion, left turn.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Two lines of a sung poem name the song. Is that clear?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/0935#s41",
-     "text": "– \"For Attar, weeping till dawn is sweeter,\" or \"now he lies more deeply slain\"?",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "The friend's habit word 'objectively': does it work as a verbal tic?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0398#s43",
-     "text": "– Asshole. Objectively, the dollar's about to hit fifteen hundred tomans, and here you are hounding that poor wretch?",
-     "note": null
-    },
-    {
-     "id": "03/0514#s43",
-     "text": "– They killed Gaddafi. Objectively, come watch the video.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0175#s44",
-     "text": "– You mean richer than the friend of the cousin of ...",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Is it clear he rubs the spot just below his knee?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "Needs change",
-    "Not sure"
-   ],
-   "note_label": "How would you say it?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0090#s51",
-     "text": "The boy has bent down and rubs just below his knee with his hand.",
+     "id": "04a/0026#drill",
+     "text": "Beginning of stage one of the mission. Battalion, left turn.",
      "note": null
     }
    ]
@@ -257,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poetry",
-   "q": "These are lines of poetry. Does each one read well as poetry in your language?",
+   "q": "These are poems and lines of poetry: the narrator's own poem and lines by classical Persian poets (Kharaghani, Hafez, Attar). Does each one read as poetry in your language?",
    "labels": [
     "Correct",
     "Needs change",
@@ -267,61 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... I would not take that signet ring of Solomon at any price, for now and then upon it the hand of ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "My dreams were dark / I could see nothing / You came / The light of my dreams turned on / Now you are gone / The light of my dreams now blinks / I hold no hope of your return / But if your path should bring you near / come into my dreams one more time / I don't think my dreams believe you're gone / they think you are lost and",
+     "note": "the narrator's own simple poem to the girl he lost"
     },
     {
-     "id": "04b/0251#poetr",
-     "text": "– The hope of union with you keeps me alive; or else my every breath, parted from you, would be the dread of death.",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "My dreams were dark / I could see nothing / You came / The light of my dreams ... the light of my dreams turned ... the light of my dreams turned on / Now ... now ... now you are gone ...",
+     "note": "he rehearses it half-asleep; the stumbling is on purpose"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "One may write upon all things",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "One may write upon all things / except on water / and if you cross the sea / write upon the water with your own blood / so that the one who follows in your wake / will know that / lovers and / drunkards and / the burned ones / have passed this way.",
+     "note": "an old Persian poem by Kharaghani, written on a classroom board"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "write upon the water with your own blood",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... I would not take that signet ring of Solomon at any price, for now and then upon it the hand of ...",
+     "note": "a line by Hafez, a classical Persian poet; cut off as in the book"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "have passed this way.",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "I serve the Elder of the Tavern, whose grace ...",
+     "note": "a line by Hafez, a classical Persian poet; cut off as in the book"
     },
     {
-     "id": "04b/1387#poetr",
-     "text": "My dreams were dark",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "The hope of union with you keeps me alive; or else my every breath, parted from you, would be the dread of death. … If you deal the wound, better that than another's balm, and if you give the poison, better that than ...",
+     "note": "two lines by Hafez, a classical Persian poet; the second is cut off as in the book"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "I hold no hope of your return",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Of Hafez's enchanting verse, only those are aware; those who know poetic grace and how to speak Persian.",
+     "note": "a line by Hafez, a classical Persian poet; cut off as in the book"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "But if your path should bring you near",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "God unveiled the magnificent beauty of the divine face before the angels and saw they knew nothing of love; from that jealous zeal it turned to pure fire and struck the clay of Adam.",
+     "note": "a line by Hafez, a classical Persian poet"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "I don't think my dreams believe you're gone",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "Remembering beloved and homeland, I will weep in such bitter grief, that from the world the road and custom of travel ...",
+     "note": "a line by Hafez, a classical Persian poet; cut off as in the book"
     },
     {
-     "id": "02/0006#poetr",
-     "text": "Now ... now ... now you are gone ...",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Long has it been since the beloved sent any message; no greeting written ...",
+     "note": "a line by Hafez, a classical Persian poet; cut off as in the book"
+    },
+    {
+     "id": "04b/0935#poem",
+     "text": "\"For Attar, weeping till dawn is sweeter,\" or \"now he lies more deeply slain\"?",
+     "note": "a friend asks which of two songs; each is named by a line from a poem by Attar, a classical Persian poet"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Single words",
-   "q": "Is the word in each line the right one? What it should mean is shown below it.",
+   "q": "Under each line is one word from it and what it should mean. Is it the right word here?",
    "labels": [
     "Correct",
     "Needs change",
@@ -339,11 +259,6 @@
      "id": "01/0040#word_",
      "text": "– No peeking. If you peek, I'll sew you up.",
      "note": "\"I'll sew you up\" = joking threat: I'll sew your eyes shut"
-    },
-    {
-     "id": "01/0087#word_",
-     "text": "– He had become so thin and dark, that brainless ape.",
-     "note": "\"that brainless ape\" = insult: a stupid, foolish man"
     },
     {
      "id": "01/0184#word_",
@@ -411,19 +326,9 @@
      "note": "\"localization\" = regional quota system for university places"
     },
     {
-     "id": "04b/0162#word_",
-     "text": "– Yeah, the minute they see us, they clench their assholes and keep so much distance I want to plant both feet in their faces.",
-     "note": "\"clench their assholes\" = tense up and act snooty (crude image)"
-    },
-    {
      "id": "04b/0175#word_",
      "text": "– Yeah. Don't let this Arasteh fool you; goofy as he is, his Konkoor rank was seventy-four.",
      "note": "\"goofy as he is\" = goofy, silly, said fondly"
-    },
-    {
-     "id": "04b/0226#word_",
-     "text": "– ... whenever I came over for classes or other stuff for my shitty second major, I'd see them arguing.",
-     "note": "\"my shitty second major\" = my crappy second degree (crude grumble)"
     },
     {
      "id": "04b/0228#word_",
@@ -436,11 +341,6 @@
      "note": "\"I'm no dummy\" = I'm not stupid (said half annoyed)"
     },
     {
-     "id": "04b/0351#word_",
-     "text": "What did being top of the class and, I don't know, getting a second degree add to the length of my dick, when now my job is inspecting electrical substations?",
-     "note": "\"add to the length of my dick\" = do me any good (crude)"
-    },
-    {
      "id": "04b/0353#word_",
      "text": "– And in that fucked-up situation, what antiques did we get stuck with?",
      "note": "\"antiques\" = odd, weird people (mocking slang)"
@@ -449,16 +349,6 @@
      "id": "04b/0421#word_",
      "text": "– Leopard Farid, control your nerves and don't make a murderous move.",
      "note": "\"murderous move\" = a rash, wild move (running joke)"
-    },
-    {
-     "id": "04b/0454#word_",
-     "text": "From what I gathered from the post, he'd become a physics teacher at one of the high schools in his town, and that deluded dipshit had been teaching his own theories instead of the material in the book.",
-     "note": "\"deluded dipshit\" = crude: a deluded idiot"
-    },
-    {
-     "id": "04b/0562#word_",
-     "text": "– Eagle Eye, may God not forgive you, you destroyed my back. Why don't you wear your glasses?",
-     "note": "\"may God not forgive you\" = half-joking curse: may God not forgive you"
     },
     {
      "id": "04b/0575#word_",
@@ -471,29 +361,14 @@
      "note": "\"put them in my body\" = eat them (blunt and funny)"
     },
     {
-     "id": "04b/0690#word_",
-     "text": "It would have been enough if, years earlier, the Electrical and Mechanical professors hadn't gotten a hard-on for taking the Abu-Reyhan building from the Shipbuilding Department; then Farid wouldn't have ended up that way.",
-     "note": "\"gotten a hard-on for\" = crude: lusted after, were dying to grab"
-    },
-    {
      "id": "04b/0721#word_",
      "text": "– Eldie, instead of sprawling on the bed like this and playing with your balls, get up and send them. It's a bargain.",
      "note": "\"It's a bargain\" = a good deal; worth it"
     },
     {
-     "id": "04b/0723#word_",
-     "text": "– But you're not the kind of person who wants to apply abroad and leave, so why did you bust your ass taking the TOEFL?",
-     "note": "\"bust your ass\" = crude: slaved away, worked very hard"
-    },
-    {
      "id": "04b/0784#word_",
      "text": "– You're very sneaky.",
      "note": "\"You're very sneaky\" = very sneaky (playful teasing)"
-    },
-    {
-     "id": "04b/0818#word_",
-     "text": "– Eldie, see how far you've taken it: Farid, who doesn't give a damn about us or the room or anyone, has spoken up.",
-     "note": "\"doesn't give a damn\" = coarse: doesn't care at all"
     },
     {
      "id": "04b/0897#word_",
@@ -504,26 +379,6 @@
      "id": "04b/0919#word_",
      "text": "– Kissing his ass doesn't suit you.",
      "note": "\"doesn't suit you\" = sucking up isn't like you"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "the burned ones",
-     "note": "\"the burned ones\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.",
-     "note": "\"shit-dizzy\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "With trembling hands I flipped frantically through the ghazals, searching for the Hafez beit that, like the painting, as that other girl had said, would make us more shit-dizzy the deeper we sank into it.",
-     "note": "\"shit-dizzy\" = more baffled; echoes her crude coinage"
-    },
-    {
-     "id": "04b/1392#word_",
-     "text": "The light of my dreams now blinks",
-     "note": "\"now blinks\" = now flickers, like a failing light"
     },
     {
      "id": "06/0108#word_",
@@ -544,11 +399,6 @@
      "id": "06/0291#word_",
      "text": "– He complains for no reason, heh, Amir-jan. If it isn't this, he'll find something else.",
      "note": "\"heh\" = a short, soft laugh"
-    },
-    {
-     "id": "02/0005#word_",
-     "text": "The light of my dreams ... the light of my dreams turned ... the light of my dreams turned on",
-     "note": "\"turned on\" = came on, as a lamp does"
     }
    ]
   }

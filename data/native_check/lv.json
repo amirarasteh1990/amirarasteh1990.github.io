@@ -13,7 +13,6 @@
   "needs_change": "Jāmaina",
   "not_sure": "Grūti pateikt",
   "how_say": "Kā jūs to teiktu?",
-  "meaning": "Ko, jūsuprāt, tas nozīmē?",
   "optional": "(nav obligāti)",
   "your_name": "Jūsu vārds",
   "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Persiešu teicieni",
-   "q": "Daži persiešu teicieni un tēli ir tulkoti vārds vārdā. Vai katrs no tiem ļauj jums kaut nedaudz nojaust nozīmi, vai arī tas jums neko neizsaka?",
+   "q": "Šie persiešu teicieni ir tulkoti vārds vārdā. Vispirms mēģiniet katru uzminēt, tad parādiet tā nozīmi.",
    "labels": [
-    "Varu uzminēt",
-    "Nevaru",
-    "Grūti pateikt"
+    "Uzminēju, pirms redzēju nozīmi",
+    "Sapratu, kad redzēju nozīmi",
+    "Pat redzot nozīmi, nevaru to sasaistīt"
    ],
-   "note_label": "Ko, jūsuprāt, tas nozīmē?",
-   "note_on": "ok",
+   "note_label": "Kas padara to neskaidru?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Lietus no zemes uz augšu nekrīt.",
-     "note": null
+     "note": "Vecāki upurējas bērnu labā, nevis bērni vecāku labā."
     },
     {
      "id": "01/0073#img",
      "text": "Labu gadu pazīst pēc tā pavasara.",
-     "note": null
+     "note": "Pēc sākuma var redzēt, kāds būs viss gads."
     },
     {
      "id": "04a/0128#img",
      "text": "Neēd bēdas",
-     "note": null
+     "note": "Neskumsti, neuztraucies."
     },
     {
      "id": "01/0138#img",
      "text": "mana sirds pūst",
-     "note": null
+     "note": "Es nīkstu no garlaicības un vientulības."
     },
     {
      "id": "04b/0334#img",
      "text": "Mana roka ir īsa, un savienošanās ar tevi ir tālu.",
-     "note": null
+     "note": "Būt kopā ar tevi nav manā varā; es neko nespēju darīt."
     },
     {
      "id": "01/0203#img",
      "text": "ja to saku, mana mēle deg; ja to nesaku, manu kaulu smadzenes deg",
-     "note": null
+     "note": "Runāt sāp, bet klusēt sāp vēl vairāk."
     },
     {
      "id": "03/0634#img",
      "text": "ēdiens man pārvērtīsies čūsku indē",
-     "note": null
+     "note": "Viņš man sabojās visu maltīti."
     },
     {
      "id": "04b/0274#img",
      "text": "neviena maize tev nesasils",
-     "note": null
+     "note": "Tas tev neko nedos; tu neko neiegūsi."
     },
     {
      "id": "04b/0824#img",
      "text": "ģimenes spiediena dēļ nokļuvu starp vistām",
-     "note": null
+     "note": "Ģimenes spiediena dēļ es apprecējos."
     },
     {
      "id": "04b/0509#img",
      "text": "cukurgabaliņš ielec man rīklē",
-     "note": null
+     "note": "Cukurgabaliņš iekļūst ne tur, kur vajag, un es aizrijos."
     },
     {
      "id": "01/0132#img",
      "text": "ielūkojies visos nostūros un kaktiņos",
-     "note": null
+     "note": "Izpēti visu; apskati katru vietu, ko vari."
     },
     {
      "id": "06/0118#img",
      "text": "vārdi neko nemaksā — tas ir tikai karsts gaiss",
-     "note": null
+     "note": "Pateikt ir viegli; vārdi vien neko nepierāda."
     },
     {
      "id": "04b/1247#img",
      "text": "viņš noteikti kristu Negar acīs",
-     "note": null
+     "note": "Meitene noteikti vairs nedomātu par viņu labi."
     },
     {
      "id": "04b/1293#img",
      "text": "Tikai ražas laika solījumu?",
-     "note": null
+     "note": "Tikai tukšu solījumu, kas nekad netiks pildīts?"
     },
     {
      "id": "04b/0205#img",
      "text": "ļauj man tev pasniegt draudzības iekšas uz paplātes",
-     "note": null
+     "note": "Ļauj man tevi uzņemt ar visu draudzību, kas man ir."
     },
     {
      "id": "04b/1125#img",
      "text": "viņiem visas spalvas uzreiz izbira",
-     "note": null
+     "note": "Viņi bija pilnīgi apstulbuši."
     },
     {
      "id": "03/0417#img",
      "text": "tik ļoti neuztraucies, tev piens izsīks",
-     "note": null
+     "note": "Nomierinies; nav vērts tā uztraukties."
     },
     {
      "id": "04b/0378#img",
      "text": "ja tu nepērd, neviens tevi par mēmu nesauks",
-     "note": null
+     "note": "Nevienam nebūtu nekas pretī, ja tu būtu paklusējis."
     },
     {
      "id": "04b/0181#img",
      "text": "Apēd mana krāna galvu",
-     "note": null
+     "note": "Rupjš veids, kā pateikt: ej prom, nevienam tavs viedoklis nav vajadzīgs."
     },
     {
      "id": "04b/0899#img",
      "text": "Tu krānu galvu ēdāj",
-     "note": null
+     "note": "Rupjš lamuvārds starp draugiem, aptuveni „tu, muļķi”."
     },
     {
      "id": "04b/0209#img",
      "text": "smejies par mūsu bārdām un pimpjiem",
-     "note": null
+     "note": "Tu izsmej mūs, tos, kas palika šeit."
     },
     {
      "id": "04b/0822#img",
      "text": "tu tā nestaigātu pa ielām ar pimpi rokā",
-     "note": null
+     "note": "Klīst apkārt vienam un bez mērķa, joprojām neprecētam."
     },
     {
      "id": "04b/0440#img",
      "text": "kāds pimpis vēl uzkritīs mums uz galvas",
-     "note": null
+     "note": "Lai kāda nelaime mūs vēl piemeklētu."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "ikvienam no mums, kas nāk no provinces, viņi ir iebāzuši mietu pakaļā",
+     "note": "Šī politika pret mums visiem no provinces ir bijusi ļoti netaisnīga."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Tu pat tā galvu nebūtu varējis apēst.",
+     "note": "Rupja atbilde („tā galva” = pimpja galva): tu nebūtu spējis neko izdarīt."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Es varētu riņķot un riņķot ap sava Nini-jan galviņu.",
+     "note": "Mīlošs teiciens: viņas dēļ es atdotu visu."
     }
+   ],
+   "hint": "Parādīt nozīmi",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

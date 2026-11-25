@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> 페르시아 속담</h2>
-    <p class="nc-gq">페르시아 속담과 비유 몇 개를 글자 그대로 옮겼어요. 각각 뜻이 어느 정도 짐작되나요, 아니면 아무 뜻도 와닿지 않나요?</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">이 페르시아 속담들은 글자 그대로 옮겼어요. 먼저 각각의 뜻을 짐작해 본 다음, 뜻을 확인해 보세요.</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l6">비가 땅에서 하늘로 내리는 건 아니잖아.</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>부모가 자식을 위해 희생하는 거지, 자식이 부모를 위해서가 아니야.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v6" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v6" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v6" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v6" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v6" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n6">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l7">좋은 해는 봄부터 알 수 있다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>한 해가 어떨지는 시작을 보면 알 수 있다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v7" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v7" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v7" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v7" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v7" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n7">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l8">슬픔을 먹지 마</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>슬퍼하지 마, 걱정하지 마.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v8" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v8" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v8" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v8" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v8" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n8">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l9">가슴이 썩어들어간다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>심심하고 외로워서 견딜 수가 없어.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v9" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v9" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v9" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v9" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v9" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n9">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l10">내 손은 짧고 너와의 합일은 멀어.</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>너와 함께하는 건 내 힘으로는 안 돼. 난 어쩔 수가 없어.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v10" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v10" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v10" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v10" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v10" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n10">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l11">말하면 혀가 타고, 말하지 않으면 뼛속이 탄다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>말하자니 괴롭고, 참자니 더 괴롭다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v11" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v11" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v11" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v11" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v11" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n11">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l12">밥맛을 뱀독으로 만들 테니까</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>그 녀석이 내 식사를 다 망쳐 놓을 거야.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v12" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v12" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v12" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v12" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v12" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n12">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l13">네게 데워질 빵은 없다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>그래 봤자 아무 소용 없어, 얻는 게 하나도 없어.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v13" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v13" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v13" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v13" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v13" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n13">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l14">집안이 억지로 닭장에 처넣은</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>집안이 등 떠밀어 나를 결혼시켰다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v14" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v14" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v14" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v14" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v14" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n14">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l15">각설탕이 내 목구멍 안에서 튀어 오른다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>각설탕이 잘못 넘어가 사레가 들린다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v15" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v15" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v15" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v15" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v15" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n15">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l16">마지막 구석까지 들여다보라고</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>다 둘러봐, 갈 수 있는 곳은 다 가 봐.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v16" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v16" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v16" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v16" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v16" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n16">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l17">말은 돈이 들지 않는다고, 그저 허공의 바람이라고</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>말로만 하는 건 쉬워, 말만으로는 아무것도 증명되지 않아.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v17" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v17" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v17" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v17" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v17" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n17">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l18">분명 네가르의 눈 밖에 날 것이었다</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>그 여자아이는 분명 그를 더는 좋게 보지 않을 것이었다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v18" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v18" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v18" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v18" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v18" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n18">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l19">그저 수확철 약속 하나뿐?</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>끝내 지켜지지 않을 빈 약속뿐?</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v19" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v19" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v19" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v19" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v19" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n19">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l20">의리의 내장을 다 꺼내서 쟁반에 차려주자</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>내 우정을 다 쏟아서 너를 대접하자.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v20" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v20" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v20" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v20" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v20" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n20">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l21">온몸의 털이 다 빠졌지</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>다들 완전히 기겁했지.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v21" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v21" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v21" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v21" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v21" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n21">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l22">그렇게 열 올리지 마. 젖 마른다.</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>진정해, 그렇게 흥분할 일 아니야.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v22" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v22" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v22" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v22" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v22" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n22">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l23">방귀 안 뀐다고 누가 벙어리라겠냐</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>가만히 있었으면 아무도 뭐라 안 했을 거야.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v23" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v23" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v23" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v23" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v23" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n23">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l24">내 좆대가리나 먹어라</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>무례한 말: 꺼져, 아무도 네 의견 안 물어봤어.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v24" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v24" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v24" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v24" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v24" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n24">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l25">이 좆대가리 먹는 놈아</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>친구끼리 하는 거친 욕으로, 대략 “이 멍청아” 정도의 뜻.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v25" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v25" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v25" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v25" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v25" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n25">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l26">우리 수염이랑 좆을 비웃는구나</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>여기 남은 우리를 비웃고 있어.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v26" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v26" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v26" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v26" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v26" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n26">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l27">이렇게 좆을 손에 쥔 채 거리를 헤매고 다니진 않았을 거란 말이야</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>아직도 짝 없이 혼자 정처 없이 떠돌고 있다.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v27" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v27" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v27" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v27" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v27" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n27">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l28">어떤 좆이 우리 머리 위로 떨어져도</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>어떤 재앙이 닥쳐도.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> 짐작돼요</label>
-        <label><input type="radio" name="v28" value="change"> 짐작 안 돼요</label>
-        <label><input type="radio" name="v28" value="unsure"> 잘 모르겠어요</label>
+        <label><input type="radio" name="v28" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v28" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v28" value="change"> 뜻을 봐도 연결이 안 돼요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">무슨 뜻이라고 생각하세요? <span class="nc-optional">(선택)</span></label>
+        <label for="n28">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l29">우리 지방 출신들 똥구멍에 몽둥이를 쑤셔 박았다고</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>그 정책이 우리 지방 출신 모두를 아주 부당하게 대했다.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v29" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v29" value="change"> 뜻을 봐도 연결이 안 돼요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l30">그 좆대가리도 못 먹었을걸.</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>무례한 대꾸: 넌 아무것도 못 했을 거야.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v30" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v30" value="change"> 뜻을 봐도 연결이 안 돼요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l31">내 니니-잔의 머리 주위를 빙빙 돌고 싶구나.</p></div>
+      <details class="nc-hint"><summary>뜻 보기</summary><p>사랑을 담은 말: 그녀를 위해서라면 무엇이든 내줄 수 있어.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> 뜻을 보기 전에 짐작했어요</label>
+        <label><input type="radio" name="v31" value="unsure"> 뜻을 보고 이해했어요</label>
+        <label><input type="radio" name="v31" value="change"> 뜻을 봐도 연결이 안 돼요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">어떤 점이 불분명한가요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> 아이들의 단어</h2>
     <p class="nc-gq">책 속 아이들 몇 명은 어린아이들이 흔히 그러듯 단어를 틀리게 말해요. 각각 오타가 아니라 아이의 실수처럼 들리나요?</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l29">대리설 돌이야. 대리설은 아주 비싸다는 뜻이야.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l32">대리설 돌이야. 대리설은 아주 비싸다는 뜻이야.</p></div>
       <p class="nc-note">대리설 = 대리석</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> 맞아요</label>
-        <label><input type="radio" name="v29" value="change"> 고쳐야 해요</label>
-        <label><input type="radio" name="v29" value="unsure"> 잘 모르겠어요</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l30">제목이 타타닉이야.</p></div>
-      <p class="nc-note">타타닉 = 타이타닉</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> 맞아요</label>
-        <label><input type="radio" name="v30" value="change"> 고쳐야 해요</label>
-        <label><input type="radio" name="v30" value="unsure"> 잘 모르겠어요</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l31">바바 바바, 이 큰 인형 사 쥴 꺼야?</p></div>
-      <p class="nc-note">어린 여자아이</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> 맞아요</label>
-        <label><input type="radio" name="v31" value="change"> 고쳐야 해요</label>
-        <label><input type="radio" name="v31" value="unsure"> 잘 모르겠어요</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l32">그래, 인형 사쥴게.</p></div>
-      <p class="nc-note">아버지가 딸의 말투를 흉내 냄</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> 맞아요</label>
         <label><input type="radio" name="v32" value="change"> 고쳐야 해요</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> 별명</h2>
-    <p class="nc-gq">책 속 친구들은 서로 장난스러운 별명을 붙이는데, 말장난인 경우가 많아요. 각각 한국어에서 별명으로 통하나요?</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l33">알랭 자지롱</p></div>
-      <p class="nc-note">친구 한 명의 별명: 배우 알랭 들롱의 이름 일부를 남성 성기를 뜻하는 비속어로 바꾼 것</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l33">제목이 타타닉이야.</p></div>
+      <p class="nc-note">타타닉 = 타이타닉</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> 맞아요</label>
         <label><input type="radio" name="v33" value="change"> 고쳐야 해요</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l34">술집 어르신</p></div>
-      <p class="nc-note">하페즈의 시에서 따온, 짐짓 거창한 칭호</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l34">바바 바바, 이 큰 인형 사 쥴 꺼야?</p></div>
+      <p class="nc-note">어린 여자아이</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> 맞아요</label>
         <label><input type="radio" name="v34" value="change"> 고쳐야 해요</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l35">엘디</p></div>
-      <p class="nc-note">“술집 어르신”의 애칭</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l35">그래, 인형 사쥴게.</p></div>
+      <p class="nc-note">아버지가 딸의 말투를 흉내 냄</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> 맞아요</label>
         <label><input type="radio" name="v35" value="change"> 고쳐야 해요</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l36">태버니, 내 술집쟁이</p></div>
-      <p class="nc-note">“술집”(태번)에서 만든 애칭들</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> 별명</h2>
+    <p class="nc-gq">책 속 친구들은 서로 장난스러운 별명을 붙이는데, 말장난인 경우가 많아요. 각각 한국어에서 별명으로 통하나요?</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l36">알랭 자지롱</p></div>
+      <p class="nc-note">친구 한 명의 별명: 배우 알랭 들롱의 이름 일부를 남성 성기를 뜻하는 비속어로 바꾼 것</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> 맞아요</label>
         <label><input type="radio" name="v36" value="change"> 고쳐야 해요</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l37">표범 파리드</p></div>
-      <p class="nc-note">대담하고 무모한 친구를 부르는 말</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l37">술집 어르신</p></div>
+      <p class="nc-note">하페즈의 시에서 따온, 짐짓 거창한 칭호</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> 맞아요</label>
         <label><input type="radio" name="v37" value="change"> 고쳐야 해요</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l38">아라스테는 아라아스테를 다듬은 건가요?</p></div>
-      <p class="nc-note">아라아스테 = 페르시아어로 ‘단정한’</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l38">엘디</p></div>
+      <p class="nc-note">“술집 어르신”의 애칭</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> 맞아요</label>
         <label><input type="radio" name="v38" value="change"> 고쳐야 해요</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l39">아르마아안 아씨</p></div>
-      <p class="nc-note">성 아르만을 놀리듯 길게 늘인 것</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l39">태버니, 내 술집쟁이</p></div>
+      <p class="nc-note">“술집”(태번)에서 만든 애칭들</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> 맞아요</label>
         <label><input type="radio" name="v39" value="change"> 고쳐야 해요</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l40">곱슬머리 미스터 슈뢰딩거</p></div>
-      <p class="nc-note">결정을 내리지 못하는 사람을 놀리는 칭호</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l40">표범 파리드</p></div>
+      <p class="nc-note">대담하고 무모한 친구를 부르는 말</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> 맞아요</label>
         <label><input type="radio" name="v40" value="change"> 고쳐야 해요</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> 농담과 말장난</h2>
-    <p class="nc-gq">이 줄들에는 농담이나 말장난이 들어 있어요. 각각 한국어에서도 통하나요?</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l41">그 양반 공장 시스템이 원래 그래.</p></div>
-      <p class="nc-note">일을 망치는 게 그냥 타고난 천성이라는 뜻</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l41">아라스테는 아라아스테를 다듬은 건가요?</p></div>
+      <p class="nc-note">아라아스테 = 페르시아어로 ‘단정한’</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> 맞아요</label>
         <label><input type="radio" name="v41" value="change"> 고쳐야 해요</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l42">용서했어. 이 대로 전체가 네 거야.</p></div>
-      <p class="nc-note">페르시아어에서 ‘용서하다’는 ‘거저 주다’라는 뜻도 있음</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l42">아르마아안 아씨</p></div>
+      <p class="nc-note">성 아르만을 놀리듯 길게 늘인 것</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> 맞아요</label>
         <label><input type="radio" name="v42" value="change"> 고쳐야 해요</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l43">어제까지만 해도 당나귀라고 하더니, 이제 사람 됐다고 나귀라고 하냐?</p></div>
-      <p class="nc-note">더 점잖은 말로 바꾼 소년을 놀림</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l43">곱슬머리 미스터 슈뢰딩거</p></div>
+      <p class="nc-note">결정을 내리지 못하는 사람을 놀리는 칭호</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> 맞아요</label>
         <label><input type="radio" name="v43" value="change"> 고쳐야 해요</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l44">피르 투 피르? … 독수리눈은 피어 투 피어라고 하는데, 태버니는 피르 투 피르라고 하네.</p></div>
-      <p class="nc-note">‘피어’를 페르시아어 피르, 곧 ‘어르신’으로 알아들음. 그의 별명의 뿌리</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> 농담과 말장난</h2>
+    <p class="nc-gq">이 줄들에는 농담이나 말장난이 들어 있어요. 각각 한국어에서도 통하나요?</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l44">그 양반 공장 시스템이 원래 그래.</p></div>
+      <p class="nc-note">일을 망치는 게 그냥 타고난 천성이라는 뜻</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> 맞아요</label>
         <label><input type="radio" name="v44" value="change"> 고쳐야 해요</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l45">어젯밤 네가 되새김질하는 소리가 들리더라.</p></div>
-      <p class="nc-note">밤에 소가 되새김질하듯 씹는 것</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l45">용서했어. 이 대로 전체가 네 거야.</p></div>
+      <p class="nc-note">페르시아어에서 ‘용서하다’는 ‘거저 주다’라는 뜻도 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> 맞아요</label>
         <label><input type="radio" name="v45" value="change"> 고쳐야 해요</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l46">또 무슨 지랄이 나서 우리한테 발딱 섰냐, 알랭 자지롱?</p></div>
-      <p class="nc-note">이중 의미: 거만하게 몸을 일으켜 앉은 것, 그리고 발기</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l46">어제까지만 해도 당나귀라고 하더니, 이제 사람 됐다고 나귀라고 하냐?</p></div>
+      <p class="nc-note">더 점잖은 말로 바꾼 소년을 놀림</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> 맞아요</label>
         <label><input type="radio" name="v46" value="change"> 고쳐야 해요</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l47">뭐가 둥이가 아니었어?</p></div>
-      <p class="nc-note">어머니는 ‘바람둥이’의 끝부분만 알아들음</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l47">피르 투 피르? … 독수리눈은 피어 투 피어라고 하는데, 태버니는 피르 투 피르라고 하네.</p></div>
+      <p class="nc-note">‘피어’를 페르시아어 피르, 곧 ‘어르신’으로 알아들음. 그의 별명의 뿌리</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> 맞아요</label>
         <label><input type="radio" name="v47" value="change"> 고쳐야 해요</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l48">우리 매형네 장인 기술자의 사촌의 친구, 그 테헤란 최고 부자</p></div>
-      <p class="nc-note">한 소년이 입버릇처럼 늘어놓는 자랑</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l48">어젯밤 네가 되새김질하는 소리가 들리더라.</p></div>
+      <p class="nc-note">밤에 소가 되새김질하듯 씹는 것</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> 맞아요</label>
         <label><input type="radio" name="v48" value="change"> 고쳐야 해요</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l49">아니면 좆대가...... 아니, 원래도 좆대가리였는데 이제 더 좆대가리가 됐거나.</p></div>
-      <p class="nc-note">욕이 중간에 끊겼다가 더 심해짐</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l49">또 무슨 지랄이 나서 우리한테 발딱 섰냐, 알랭 자지롱?</p></div>
+      <p class="nc-note">이중 의미: 거만하게 몸을 일으켜 앉은 것, 그리고 발기</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> 맞아요</label>
         <label><input type="radio" name="v49" value="change"> 고쳐야 해요</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l50">응, 우리 다 공장 있어. … 우리한테는 헛소리 공장도 있잖아.</p></div>
-      <p class="nc-note">만드는 건 헛소리뿐: 그저 쓸데없는 말만 한다는 뜻</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l50">뭐가 둥이가 아니었어?</p></div>
+      <p class="nc-note">어머니는 ‘바람둥이’의 끝부분만 알아들음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> 맞아요</label>
         <label><input type="radio" name="v50" value="change"> 고쳐야 해요</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l51">이 화석아, 너 자신이 멍청함과 타락의 동상이라고</p></div>
-      <p class="nc-note">조롱하는 욕</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l51">우리 매형네 장인 기술자의 사촌의 친구, 그 테헤란 최고 부자</p></div>
+      <p class="nc-note">한 소년이 입버릇처럼 늘어놓는 자랑</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> 맞아요</label>
         <label><input type="radio" name="v51" value="change"> 고쳐야 해요</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l52">삶은 천 토만짜리 지폐 같아서, 어느 쪽을 봐도 렌즈콩 필라프 냄새가 나.</p></div>
-      <p class="nc-note">엉뚱한 농담</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l52">아니면 좆대가...... 아니, 원래도 좆대가리였는데 이제 더 좆대가리가 됐거나.</p></div>
+      <p class="nc-note">욕이 중간에 끊겼다가 더 심해짐</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> 맞아요</label>
         <label><input type="radio" name="v52" value="change"> 고쳐야 해요</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l53">내 말투가 원래 이래. 내가 말하는 걸 들으면 시를 읊는 줄 안다니까.</p></div>
-      <p class="nc-note">소년이 노래하듯 운율에 맞춰 대답함</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l53">응, 우리 다 공장 있어. … 우리한테는 헛소리 공장도 있잖아.</p></div>
+      <p class="nc-note">만드는 건 헛소리뿐: 그저 쓸데없는 말만 한다는 뜻</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> 맞아요</label>
         <label><input type="radio" name="v53" value="change"> 고쳐야 해요</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l54">깨지지 않게 조심해, 자지 선생.</p></div>
-      <p class="nc-note">그가 방금 가슴을 쫙 편 참</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l54">이 화석아, 너 자신이 멍청함과 타락의 동상이라고</p></div>
+      <p class="nc-note">조롱하는 욕</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> 맞아요</label>
         <label><input type="radio" name="v54" value="change"> 고쳐야 해요</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l55">넌 그 중에서도 제일 소대가리야.</p></div>
-      <p class="nc-note">“소대가리” = 둔한 바보, 남자에게 하는 말</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l55">삶은 천 토만짜리 지폐 같아서, 어느 쪽을 봐도 렌즈콩 필라프 냄새가 나.</p></div>
+      <p class="nc-note">엉뚱한 농담</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> 맞아요</label>
         <label><input type="radio" name="v55" value="change"> 고쳐야 해요</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l56">“깨닫다”라는 단어를 그 한 문장에 두 번 넣을 수 있다는 데 늘 무척이나 흐뭇해했어.</p></div>
-      <p class="nc-note">“깨닫다”를 장난스럽게 두 번 씀</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l56">내 말투가 원래 이래. 내가 말하는 걸 들으면 시를 읊는 줄 안다니까.</p></div>
+      <p class="nc-note">소년이 노래하듯 운율에 맞춰 대답함</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> 맞아요</label>
         <label><input type="radio" name="v56" value="change"> 고쳐야 해요</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l57">문제는 수신자 쪽에 있어서 송신자가 고칠 수 있는 게 아니야.</p></div>
-      <p class="nc-note">친구의 나쁜 시력이 “수신자”</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l57">깨지지 않게 조심해, 자지 선생.</p></div>
+      <p class="nc-note">그가 방금 가슴을 쫙 편 참</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> 맞아요</label>
         <label><input type="radio" name="v57" value="change"> 고쳐야 해요</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l58">알랭 자지롱 말하는 거야. 자아아-지.</p></div>
-      <p class="nc-note">말장난의 상스러운 부분을 길게 늘임</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l58">넌 그 중에서도 제일 소대가리야.</p></div>
+      <p class="nc-note">“소대가리” = 둔한 바보, 남자에게 하는 말</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> 맞아요</label>
         <label><input type="radio" name="v58" value="change"> 고쳐야 해요</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l59">네가 후만이면, 나는 수잔이다.</p></div>
-      <p class="nc-note">부드러운 이름 후만은 이렇게 털 많은 남자에게 어울리지 않음</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l59">“깨닫다”라는 단어를 그 한 문장에 두 번 넣을 수 있다는 데 늘 무척이나 흐뭇해했어.</p></div>
+      <p class="nc-note">“깨닫다”를 장난스럽게 두 번 씀</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> 맞아요</label>
         <label><input type="radio" name="v59" value="change"> 고쳐야 해요</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l60">미분? 의미? 아니면 미분의 의미? 아니면 의미의 미분?</p></div>
-      <p class="nc-note">심오한 척하는 말장난</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l60">문제는 수신자 쪽에 있어서 송신자가 고칠 수 있는 게 아니야.</p></div>
+      <p class="nc-note">친구의 나쁜 시력이 “수신자”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> 맞아요</label>
         <label><input type="radio" name="v60" value="change"> 고쳐야 해요</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l61">신의 뜻이라면, 언제나 아라아스테하시길.</p></div>
-      <p class="nc-note">성 아라스테로 말장난하는 축복. 아라아스테 = ‘단정한’</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l61">알랭 자지롱 말하는 거야. 자아아-지.</p></div>
+      <p class="nc-note">말장난의 상스러운 부분을 길게 늘임</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> 맞아요</label>
         <label><input type="radio" name="v61" value="change"> 고쳐야 해요</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l62">객관적으로, 안경 없이는 아무것도 안 보여.</p></div>
-      <p class="nc-note">이 인물이 어디서나 쓰는 입버릇</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l62">네가 후만이면, 나는 수잔이다.</p></div>
+      <p class="nc-note">부드러운 이름 후만은 이렇게 털 많은 남자에게 어울리지 않음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> 맞아요</label>
         <label><input type="radio" name="v62" value="change"> 고쳐야 해요</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> 하페즈의 한 구절</h2>
-    <p class="nc-gq">시인 하페즈의 이 구절은 쉼표 없이 쓰여 있어서, 서로 정반대인 두 가지로 읽을 수 있어요:</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l63">그곳에 있는 바로 그 술은 진짜 술이 아니오 비유가 아니오</p></div>
-      <ul class="nc-after"><li>한 가지 읽기: 술은 진짜이고, 비유가 아니에요.</li><li>다른 읽기: 술은 진짜가 아니고, 비유일 뿐이에요.</li></ul>
-      <p class="nc-q">한국어판의 이 구절도 두 가지로 읽을 수 있나요?</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l63">미분? 의미? 아니면 미분의 의미? 아니면 의미의 미분?</p></div>
+      <p class="nc-note">심오한 척하는 말장난</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> 네, 두 가지 다</label>
-        <label><input type="radio" name="v63" value="change"> 한 가지로만</label>
+        <label><input type="radio" name="v63" value="ok"> 맞아요</label>
+        <label><input type="radio" name="v63" value="change"> 고쳐야 해요</label>
         <label><input type="radio" name="v63" value="unsure"> 잘 모르겠어요</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l64">신의 뜻이라면, 언제나 아라아스테하시길.</p></div>
+      <p class="nc-note">성 아라스테로 말장난하는 축복. 아라아스테 = ‘단정한’</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> 맞아요</label>
+        <label><input type="radio" name="v64" value="change"> 고쳐야 해요</label>
+        <label><input type="radio" name="v64" value="unsure"> 잘 모르겠어요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l65">객관적으로, 안경 없이는 아무것도 안 보여.</p></div>
+      <p class="nc-note">이 인물이 어디서나 쓰는 입버릇</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> 맞아요</label>
+        <label><input type="radio" name="v65" value="change"> 고쳐야 해요</label>
+        <label><input type="radio" name="v65" value="unsure"> 잘 모르겠어요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> 하페즈의 한 구절</h2>
+    <p class="nc-gq">시인 하페즈의 이 구절은 쉼표 없이 쓰여 있어서, 서로 정반대인 두 가지로 읽을 수 있어요:</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l66">그곳에 있는 바로 그 술은 진짜 술이 아니오 비유가 아니오</p></div>
+      <ul class="nc-after"><li>한 가지 읽기: 술은 진짜이고, 비유가 아니에요.</li><li>다른 읽기: 술은 진짜가 아니고, 비유일 뿐이에요.</li></ul>
+      <p class="nc-q">한국어판의 이 구절도 두 가지로 읽을 수 있나요?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> 네, 두 가지 다</label>
+        <label><input type="radio" name="v66" value="change"> 한 가지로만</label>
+        <label><input type="radio" name="v66" value="unsure"> 잘 모르겠어요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="da" data-language="Danish" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/da/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The pole image means they were all screwed over. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="03/0663#s30" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l1">De siger, det er for at holde børnene tæt på deres familier, men de har stukket en kæp op i røven på os alle sammen fra provinsen.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>Fortælleren er nervøs her. Lyder hver linje naturlig på dansk?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l1">Og med rystende hænder bladrede jeg hurtigt gennem ghazalerne og ledte efter det beit hos Hafez, der ligesom maleriet, sådan som den anden pige havde sagt, ville gøre en mere og mere skideforvirret, jo dybere man sank ned i det</p></div>
+      <p class="nc-note">han gentager et groft ord, som en pige fandt på om et maleri</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v1" value="change"> Bør ændres</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">This crude put-down means 'you could do nothing'. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/0389#s32" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l2">– Du kunne ikke engang æde hovedet på den. Men hold kæft, hvor var de kager gode. Med ananas.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l2">Ligesom det – jo mere du tænker over de her ti ord, desto mere skide-, altså, desto mere snurrer det rundt i hovedet på dig.</p></div>
+      <p class="nc-note">han er lige ved at sige det grove ord igen, men stopper sig selv</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v2" value="change"> Bør ændres</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy's running joke: an absurd chain of authorities. Does it land?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1248#s34" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l3">– Hvis der havde været sort, havde jeg taget sort. Vennen til fætteren til vores svogers mesterhåndværker, som er den rigeste mand i Teheran, har sagt, at sort er kærlighedens farve.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l3">For-for Guds skyld, hør efter. … Det er ligesom det maleri, din ve-ve-veninde viste dig.</p></div>
+      <p class="nc-note">han stammer</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v3" value="change"> Bør ændres</label>
@@ -187,10 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span lang="en" dir="ltr">A memory comes loose like a stripped screw. Is the image clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0675#s35" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l4">Fra da af var det billede, som en skrue med ødelagt gevind, ikke længere bundet til mørket bag husets lukkede dør.</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>Fortælleren siger endelig til pigen, at han elsker hende. Lyder det naturligt og inderligt?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l4">I toogtredive måneder har jeg elsket dig. På afstand. Uden at du vidste det. I stilhed, uden et eneste ord. Du siger måske, det er umuligt – at det ikke kan være virkeligt, at det er ren fantasi. Men det er virkeligt, og jeg elsker dig virkelig.</p></div>
+      <p class="nc-note">på persisk taler han formelt til hende og bruger det høflige »De«</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v4" value="change"> Bør ændres</label>
@@ -202,10 +203,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span lang="en" dir="ltr">Iranian grades go up to twenty. Is the line clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0464#s36" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l5">– Er du Heisenberg eller Einstein, siden du forventer at få tyve og blive hædret for dine oplysende teorier?</p></div>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>Dette er bogens første linjer. Læses de naturligt og klart?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l5">Her sker ingenting. Her skal intet rettes op eller rives ned. Der er ingen fortolkning på vej. Ingen konklusion.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v5" value="change"> Bør ændres</label>
@@ -216,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/0520#s36" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l6">– Ingen diskussioner på værelset i dag. Jeg fik tolv ud af tyve i idræt; jeg er pissesur og sviner jer til.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l6">Dette er den løse ende af en tråd af ord, der engang var lyde.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v6" value="change"> Bør ændres</label>
@@ -228,11 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g12">
-    <h2 class="nc-gh nc-gh-q" id="g12"><span class="nc-num">12</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04a/0026#s40" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l7">– Start på missionens første etape. Bataljon, venstre om.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l7">Ligesom i barndommen, når Maman trevlede garnet op af gammelt tøj, og vi tog tråden og kredsede rundt i huset, så garnet ikke hobede sig op.</p></div>
+      <p class="nc-note">Maman er persisk for »mor« og er med vilje ikke oversat. Børnene bærer tråden rundt i huset, mens hun trevler garnet op.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v7" value="change"> Bør ændres</label>
@@ -243,11 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g13">
-    <h2 class="nc-gh nc-gh-q" id="g13"><span class="nc-num">13</span> <span lang="en" dir="ltr">Two lines of a sung poem name the song. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/0935#s41" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l8">– "For Attar er det sødere at græde til daggry" eller "nu ligger han dybere dræbt"?</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l8">Nu vikler jeg ordenes tråd ud, og du tager dem op og bærer dem ind i din egen verden, så de ikke hober sig op her, i min verden.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v8" value="change"> Bør ændres</label>
@@ -259,10 +255,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g14">
-    <h2 class="nc-gh nc-gh-q" id="g14"><span class="nc-num">14</span> <span lang="en" dir="ltr">The friend's habit word 'objectively': does it work as a verbal tic?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0398#s43" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l9">– Røvhul. Objektivt set er dollaren ved at ramme 1500 toman, og du sidder og hakker på den stakkel?</p></div>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>Erindringen går løs som en skrue med ødelagt gevind. Er billedet klart?</span></h2>
+    <p class="nc-gq">I bogen:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l9">Fra da af var det billede, som en skrue med ødelagt gevind, ikke længere bundet til mørket bag husets lukkede dør.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v9" value="change"> Bør ændres</label>
@@ -273,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="03/0514#s43" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l10">– De dræbte Gaddafi. Objektivt, kom og se videoen.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>En dreng leger soldat med sine små brødre. Lyder hans kommandoer som rigtig militær eksercits?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l10">Bataljon, fremad march.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v10" value="change"> Bør ændres</label>
@@ -285,11 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g15">
-    <h2 class="nc-gh nc-gh-q" id="g15"><span class="nc-num">15</span> <span lang="en" dir="ltr">The narrator teases a friend by echoing his catchphrase. Does it land?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="03/0175#s44" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l11">– Altså rigere end vennen til fætteren til ...</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l11">Start på missionens første etape. Bataljon, venstre om.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v11" value="change"> Bør ændres</label>
@@ -301,10 +298,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g16">
-    <h2 class="nc-gh nc-gh-q" id="g16"><span class="nc-num">16</span> <span lang="en" dir="ltr">Is it clear he rubs the spot just below his knee?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0090#s51" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l12">Drengen bøjer sig ned og gnider undersiden af sit knæ med hånden.</p></div>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Poesi</h2>
+    <p class="nc-gq">Dette er digte og verselinjer: fortællerens eget digt og linjer af klassiske persiske digtere (Kharaghani, Hafez, Attar). Læses hver af dem som poesi på dansk?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l12">Mine drømme var mørke / Jeg kunne intet se / Du kom / Lyset i mine drømme blev tændt / Nu er du borte / Lyset i mine drømme blinker nu / Jeg nærer intet håb om din tilbagevenden / Men hvis din vej fører dig forbi / kom ind i mine drømme igen / Jeg tror ikke, mine drømme tror på, at du er gået / de tror, du er faret vild og</p></div>
+      <p class="nc-note">fortællerens eget enkle digt til pigen, han mistede</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v12" value="change"> Bør ændres</label>
@@ -315,12 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g17">
-    <h2 class="nc-gh" id="g17"><span class="nc-num">17</span> Poesi</h2>
-    <p class="nc-gq">Dette er linjer af poesi. Lyder hver af dem godt som poesi på dansk?</p>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l13">– ... Salomons signetring tager jeg ikke for nogen pris, for af og til hviler over den hånden af ...</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l13">Mine drømme var mørke / Jeg kunne intet se / Du kom / Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt / Nu ... nu ... nu er du borte ...</p></div>
+      <p class="nc-note">han øver sig på det halvt i søvne; at han snubler i ordene, er med vilje</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v13" value="change"> Bør ændres</label>
@@ -331,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0251#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l14">– Håbet om forening med dig holder mig i live; ellers ville hvert åndedrag, skilt fra dig, være frygten for at forgå.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l14">På alt kan der skrives / undtagen på vand / og hvis du krydser havet / skriv på vandet med dit eget blod / så at den, der følger i dit kølvand / vil vide at / elskende og / berusede og / brændte / har vandret her.</p></div>
+      <p class="nc-note">et gammelt persisk digt af Kharaghani, skrevet på tavlen i et klasseværelse</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v14" value="change"> Bør ændres</label>
@@ -343,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l15">På alt kan der skrives</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l15">... Salomons signetring tager jeg ikke for nogen pris, for af og til hviler over den hånden af ...</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v15" value="change"> Bør ændres</label>
@@ -355,8 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l16">skriv på vandet med dit eget blod</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l16">Jeg er tjener hos Tavernens Ældste, hvis nåde ...</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v16" value="change"> Bør ændres</label>
@@ -367,8 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/1276#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l17">har vandret her.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l17">Håbet om forening med dig holder mig i live; ellers ville hvert åndedrag, skilt fra dig, være frygten for at forgå. … Sårer du, er det bedre end en andens balsam, og giver du gift, bedre end ...</p></div>
+      <p class="nc-note">to linjer af Hafez, en klassisk persisk digter; den anden er afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v17" value="change"> Bør ændres</label>
@@ -379,8 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1387#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l18">Mine drømme var mørke</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l18">...Kun de er sig Hafez' bedårende digtning bevidst; de, der kender poetisk ynde og kan tale persisk.</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v18" value="change"> Bør ændres</label>
@@ -391,8 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l19">Jeg nærer intet håb om din tilbagevenden</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l19">Gud åbenbarede sin strålende skønhed for englene og så, at de intet vidste om kærlighed; af denne nidkærhed blev det til ren ild og slog ned i Adams ler.</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v19" value="change"> Bør ændres</label>
@@ -403,8 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l20">Men hvis din vej fører dig forbi</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l20">Når jeg mindes elskede og hjemstavn, vil jeg græde i så bitter sorg, at jeg fra verden vil jage både rejsens vej og skik ...</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v20" value="change"> Bør ændres</label>
@@ -415,8 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1395#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l21">kom ind i mine drømme igen</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l21">Længe har den elskede ikke sendt bud, ikke skrevet en hilsen ...</p></div>
+      <p class="nc-note">en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v21" value="change"> Bør ændres</label>
@@ -427,8 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l22">Jeg tror ikke, mine drømme tror på, at du er gået</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l22">"For Attar er det sødere at græde til daggry" eller "nu ligger han dybere dræbt"?</p></div>
+      <p class="nc-note">en ven spørger, hvilken af to sange han mener; hver sang er opkaldt efter en linje fra et digt af Attar, en klassisk persisk digter</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v22" value="change"> Bør ændres</label>
@@ -439,8 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="02/0006#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l23">Nu ... nu ... nu er du borte ...</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> Enkelte ord</h2>
+    <p class="nc-gq">Under hver linje står et ord fra den, og hvad det skal betyde. Er det det rigtige ord her?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="01/0004#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l23">– Du gjorde det helt rigtige, Nini-jan. De siger, at babyer har brug for meget søvn. Ti timer om dagen.</p></div>
+      <p class="nc-note">"Nini" = kærligt kælenavn i familien for mor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v23" value="change"> Bør ændres</label>
@@ -451,13 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g18">
-    <h2 class="nc-gh" id="g18"><span class="nc-num">18</span> Enkelte ord</h2>
-    <p class="nc-gq">Er ordet i hver linje det rigtige? Det, det skal betyde, står under linjen.</p>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="01/0004#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l24">– Du gjorde det helt rigtige, Nini-jan. De siger, at babyer har brug for meget søvn. Ti timer om dagen.</p></div>
-      <p class="nc-note">"Nini" = loving family pet name for Mother</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="01/0040#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l24">– Ikke noget med at snyde og åbne øjnene. Snyder du, syr jeg dig sammen.</p></div>
+      <p class="nc-note">"syr jeg dig sammen" = spøgefuld trussel: så syr jeg dine øjne i</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v24" value="change"> Bør ændres</label>
@@ -468,9 +474,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="01/0040#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l25">– Ikke noget med at snyde og åbne øjnene. Snyder du, syr jeg dig sammen.</p></div>
-      <p class="nc-note">"syr jeg dig sammen" = joking threat: I'll sew your eyes shut</p>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="01/0166#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l25">Uanset hvor meget jeg sagde: lad være med at slå børnene, sagde han, jeg blev granatchokeret i krigen, jeg kan ikke gøre for det.</p></div>
+      <p class="nc-note">"jeg blev granatchokeret" = jeg fik granatchok i krigen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
         <label><input type="radio" name="v25" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v25" value="change"> Bør ændres</label>
@@ -481,9 +487,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="01/0087#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l26">– Han var blevet så mager og mørk, den hjerneløse abe.</p></div>
-      <p class="nc-note">"den hjerneløse abe" = insult: a stupid, foolish man</p>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="01/0184#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l26">– Kvinder? Bare han dog havde. Den, der vil have ham, kan få ham. Vi giver noget ekstra oveni.</p></div>
+      <p class="nc-note">"Vi giver noget ekstra oveni" = vi giver endda noget ekstra med i købet</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
         <label><input type="radio" name="v26" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v26" value="change"> Bør ændres</label>
@@ -494,9 +500,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="01/0166#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l27">Uanset hvor meget jeg sagde: lad være med at slå børnene, sagde han, jeg blev granatchokeret i krigen, jeg kan ikke gøre for det.</p></div>
-      <p class="nc-note">"jeg blev granatchokeret" = I was shell-shocked in the war</p>
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="01/0222#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l27">– Hmpf! Selvfølgelig taler Ghassem sandt.</p></div>
+      <p class="nc-note">"taler Ghassem sandt" = han taler selvfølgelig sandt (sarkastisk)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
         <label><input type="radio" name="v27" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v27" value="change"> Bør ændres</label>
@@ -507,9 +513,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="01/0184#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l28">– Kvinder? Bare han dog havde. Den, der vil have ham, kan få ham. Vi giver noget ekstra oveni.</p></div>
-      <p class="nc-note">"Vi giver noget ekstra oveni" = we'd even add something extra as a bonus</p>
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="03/0026#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l28">– Ja ja, klart.</p></div>
+      <p class="nc-note">"Ja ja, klart" = ja, selvfølgelig, det var dig, jeg kaldte på</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
         <label><input type="radio" name="v28" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v28" value="change"> Bør ændres</label>
@@ -520,9 +526,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="01/0222#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l29">– Hmpf! Selvfølgelig taler Ghassem sandt.</p></div>
-      <p class="nc-note">"taler Ghassem sandt" = Ghassem is telling the truth (sarcastic)</p>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0079#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l29">– Og endnu mere.</p></div>
+      <p class="nc-note">"Og endnu mere" = jeg er helt enig, og mere til</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
         <label><input type="radio" name="v29" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v29" value="change"> Bør ændres</label>
@@ -533,9 +539,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="03/0026#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l30">– Ja ja, klart.</p></div>
-      <p class="nc-note">"Ja ja, klart" = obviously yes, I was calling you</p>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="03/0118#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l30">– Sikke en lækkerbisken.</p></div>
+      <p class="nc-note">"Sikke en lækkerbisken" = sikke en flot pige (drengeslang)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
         <label><input type="radio" name="v30" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v30" value="change"> Bør ændres</label>
@@ -546,9 +552,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="03/0079#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l31">– Og endnu mere.</p></div>
-      <p class="nc-note">"Og endnu mere" = I fully agree, and even more</p>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="03/0227#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l31">– Intet problem. Jeg slås med jer begge på én gang, for I er bare et par små finker.</p></div>
+      <p class="nc-note">"et par små finker" = små og svage, nemme at slå</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
         <label><input type="radio" name="v31" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v31" value="change"> Bør ændres</label>
@@ -559,9 +565,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="03/0118#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l32">– Sikke en lækkerbisken.</p></div>
-      <p class="nc-note">"Sikke en lækkerbisken" = what a pretty girl (boy's slang)</p>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="03/0278#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l32">Man kan på en måde sige, de erobrede universitetet. Karroubi er kærlighed, ærligt talt.</p></div>
+      <p class="nc-note">"Karroubi er kærlighed, ærligt talt" = Karroubi er fantastisk (begejstret ungdomsslang)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v32" value="change"> Bør ændres</label>
@@ -572,9 +578,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0227#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l33">– Intet problem. Jeg slås med jer begge på én gang, for I er bare et par små finker.</p></div>
-      <p class="nc-note">"et par små finker" = tiny and weak, easy to beat</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0297#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l33">– Alt, hvad du laver, er lappeløsninger.</p></div>
+      <p class="nc-note">"lappeløsninger" = sjuskede nødløsninger</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v33" value="change"> Bør ændres</label>
@@ -585,9 +591,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0278#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l34">Man kan på en måde sige, de erobrede universitetet. Karroubi er kærlighed, ærligt talt.</p></div>
-      <p class="nc-note">"Karroubi er kærlighed, ærligt talt" = Karroubi is great (excited youth slang)</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0310#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l34">Stemmerne fra en dreng og en pige trænger ud af elevatoren. De kalder mig syg.</p></div>
+      <p class="nc-note">"De kalder mig syg" = skør, en særling (sagt hånligt)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v34" value="change"> Bør ændres</label>
@@ -598,9 +604,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0297#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l35">– Alt, hvad du laver, er lappeløsninger.</p></div>
-      <p class="nc-note">"lappeløsninger" = sloppy makeshift fixes</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0345#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l35">– Er De ikke færdig med det, De kom for?</p></div>
+      <p class="nc-note">"De" = høfligt »De«, der lyder koldt og distanceret</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v35" value="change"> Bør ændres</label>
@@ -611,9 +617,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0310#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l36">Stemmerne fra en dreng og en pige trænger ud af elevatoren. De kalder mig syg.</p></div>
-      <p class="nc-note">"De kalder mig syg" = nuts, a weirdo (said mockingly)</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0476#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l36">– Kan De forklare mig, hvordan Deres forhold er til Deres mandlige slægtninge?</p></div>
+      <p class="nc-note">"De" = høfligt »De« fra en genert studerende</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v36" value="change"> Bør ændres</label>
@@ -624,9 +630,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0345#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l37">– Er De ikke færdig med det, De kom for?</p></div>
-      <p class="nc-note">"De" = formal 'you', sounding cold and distant</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0531#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l37">Da han kom i fjor, havde hans kones brødre banket ham så meget, at han var sort over det hele.</p></div>
+      <p class="nc-note">"sort over det hele" = fuld af blå mærker</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v37" value="change"> Bør ændres</label>
@@ -637,9 +643,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0476#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l38">– Kan De forklare mig, hvordan Deres forhold er til Deres mandlige slægtninge?</p></div>
-      <p class="nc-note">"De" = formal 'you' from a shy student</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l38">– Ind på hovedgaden: tsk-tsk.</p></div>
+      <p class="nc-note">"tsk-tsk" = klik med tungen, der betyder nej, forbudt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v38" value="change"> Bør ændres</label>
@@ -650,9 +656,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0531#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l39">Da han kom i fjor, havde hans kones brødre banket ham så meget, at han var sort over det hele.</p></div>
-      <p class="nc-note">"sort over det hele" = covered in bruises</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0142#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l39">– Ja, jeg har hørt et og andet om det der med lokalisering.</p></div>
+      <p class="nc-note">"lokalisering" = regionalt kvotesystem for studiepladser på universitetet</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v39" value="change"> Bør ændres</label>
@@ -663,9 +669,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l40">– Ind på hovedgaden: tsk-tsk.</p></div>
-      <p class="nc-note">"tsk-tsk" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/0175#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l40">– Ja. Lad dig ikke narre af den her Arasteh; tåbelig som han er, var hans Konkur-placering fireoghalvfjerds.</p></div>
+      <p class="nc-note">"tåbelig som han er" = fjollet, tosset, sagt kærligt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v40" value="change"> Bør ændres</label>
@@ -676,9 +682,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0142#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l41">– Ja, jeg har hørt et og andet om det der med lokalisering.</p></div>
-      <p class="nc-note">"lokalisering" = regional quota system for university places</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0228#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l41">For et par år siden hørte jeg fra Ørneøje News, at den spradebasse også var rejst til Australien, sådan lidt på jagt efter den pige, I begge elskede.</p></div>
+      <p class="nc-note">"den spradebasse" = forfængelig pralhals, en laps (hånligt)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v41" value="change"> Bør ændres</label>
@@ -689,9 +695,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0146#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l42">– Lortehjerne. Du får mig til at åbne munden. Jeg mener: Har du bare hørt om det? Blev du ikke selv ramt?</p></div>
-      <p class="nc-note">"Lortehjerne" = shit-for-brains, crude insult for a dimwit</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0270#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l42">– Jeg ved det. Jeg er ingen dumrian. Men det her duer ikke.</p></div>
+      <p class="nc-note">"Jeg er ingen dumrian" = jeg er ikke dum (sagt halvt irriteret)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v42" value="change"> Bør ændres</label>
@@ -702,9 +708,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/0162#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l43">– Ja, i samme øjeblik de ser os, klemmer de røvhullerne sammen og holder sådan afstand, at jeg har lyst til at plante begge fødder i ansigtet på dem.</p></div>
-      <p class="nc-note">"klemmer de røvhullerne sammen" = tense up and act snooty (crude image)</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/0317#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l43">– Jeg bliver så gal, når du bare sidder der uden at sige noget. Jeg har lyst til at slå dig med knytnæven.</p></div>
+      <p class="nc-note">"slå dig med knytnæven" = slå dig (legende sagt af en irriteret ung kvinde)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v43" value="change"> Bør ændres</label>
@@ -715,9 +721,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0175#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l44">– Ja. Lad dig ikke narre af den her Arasteh; tåbelig som han er, var hans Konkur-placering fireoghalvfjerds.</p></div>
-      <p class="nc-note">"tåbelig som han er" = goofy, silly, said fondly</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0353#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l44">– Og i den lortesituation, hvilke antikviteter fik vi kastet på os?</p></div>
+      <p class="nc-note">"antikviteter" = underlige, mærkelige typer (hånligt slang)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v44" value="change"> Bør ændres</label>
@@ -728,9 +734,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0186#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l45">– Jeg ville have foretrukket at dele værelse med dem frem for en pikhjerne som dig.</p></div>
-      <p class="nc-note">"pikhjerne" = dick-brain, crude insult for an idiot</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0421#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l45">– Leopard-Farid, behersk dig og lav ikke en morderisk manøvre.</p></div>
+      <p class="nc-note">"morderisk manøvre" = et vildt, overilet træk (gennemgående joke)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v45" value="change"> Bør ændres</label>
@@ -741,9 +747,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0228#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l46">For et par år siden hørte jeg fra Ørneøje News, at den spradebasse også var rejst til Australien, sådan lidt på jagt efter den pige, I begge elskede.</p></div>
-      <p class="nc-note">"den spradebasse" = vain show-off, a dandy (mocking)</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0434#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l46">– Hvis Kamyar ikke havde været så skide fin på den og var forblevet på kollegiet, var der ikke kommet en ledig seng, så disse mærkværdigheder kunne falde i skødet på os.</p></div>
+      <p class="nc-note">"falde i skødet på os" = som vi fik på halsen (sagt sarkastisk)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v46" value="change"> Bør ændres</label>
@@ -754,9 +760,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0270#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l47">– Jeg ved det. Jeg er ingen dumrian. Men det her duer ikke.</p></div>
-      <p class="nc-note">"Jeg er ingen dumrian" = I'm not stupid (said half annoyed)</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0540#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l47">Med den hæshed, sukkerknalden har efterladt i min stemme, siger jeg:</p></div>
+      <p class="nc-note">"den hæshed, sukkerknalden har efterladt" = den ru hæshed, som sukkerstykket har efterladt i stemmen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v47" value="change"> Bør ændres</label>
@@ -767,9 +773,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0317#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l48">– Jeg bliver så gal, når du bare sidder der uden at sige noget. Jeg har lyst til at slå dig med knytnæven.</p></div>
-      <p class="nc-note">"slå dig med knytnæven" = punch you (playful, annoyed young woman)</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0575#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l48">– Ørneøje, Gud har allerede ramt Fluen, så lad være med også at ramme ham. For din mors skyld, lad være med at gå rundt på værelset uden briller.</p></div>
+      <p class="nc-note">"For din mors skyld" = en bøn, jeg beder dig; ikke en fornærmelse</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v48" value="change"> Bør ændres</label>
@@ -780,9 +786,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0343#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l49">– Så er du en fucking førsteårsstuderende.</p></div>
-      <p class="nc-note">"fucking førsteårsstuderende" = fucking freshman, casual friendly swearing</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0586#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l49">– Hvad-coin?</p></div>
+      <p class="nc-note">"Hvad-coin?" = Hvilken coin? (fanger kun en del af »Bitcoin«)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v49" value="change"> Bør ændres</label>
@@ -793,9 +799,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="04b/0351#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l50">Hvad føjede førsteplads og jeg ved ikke, en ekstra uddannelse til længden på min pik, når mit job nu er at tilse elstationer?</p></div>
-      <p class="nc-note">"til længden på min pik" = do me any good (crude)</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="04b/0600#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l50">Det vigtige er, at når jeg går i supermarkedet, betaler jeg penge, køber min mælk og kage og putter det i kroppen.</p></div>
+      <p class="nc-note">"putter det i kroppen" = spiser dem (ligeud og morsomt sagt)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v50" value="change"> Bør ændres</label>
@@ -806,9 +812,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0353#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l51">– Og i den lortesituation, hvilke antikviteter fik vi kastet på os?</p></div>
-      <p class="nc-note">"antikviteter" = odd, weird people (mocking slang)</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0721#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l51">– Ældi, i stedet for at ligge og slænge dig på sengen sådan og lege med dine nosser, så stå op og send dem. Det er et kup.</p></div>
+      <p class="nc-note">"Det er et kup" = en god handel; det er det værd</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v51" value="change"> Bør ændres</label>
@@ -819,9 +825,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="04b/0394#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l52">– ... vi blev kneppet.</p></div>
-      <p class="nc-note">"vi blev kneppet" = we got screwed over, cheated</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="04b/0784#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l52">– Du er meget lusket.</p></div>
+      <p class="nc-note">"Du er meget lusket" = meget snu (legende drilleri)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v52" value="change"> Bør ændres</label>
@@ -832,9 +838,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="04b/0421#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l53">– Leopard-Farid, behersk dig og lav ikke en morderisk manøvre.</p></div>
-      <p class="nc-note">"morderisk manøvre" = a rash, wild move (running joke)</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="04b/0897#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l53">– I kan bare gå tilbage til jeres jigily-jigily-pop og Soosan Khanom. Hvad skal I lytte til Moein for?</p></div>
+      <p class="nc-note">"jigily-jigily-pop" = billig, hoppende pop (sagt hånligt)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v53" value="change"> Bør ændres</label>
@@ -845,9 +851,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0434#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l54">– Hvis Kamyar ikke havde været så skide fin på den og var forblevet på kollegiet, var der ikke kommet en ledig seng, så disse mærkværdigheder kunne falde i skødet på os.</p></div>
-      <p class="nc-note">"falde i skødet på os" = landed us with (said sarcastically)</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0919#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l54">– Røvslikkeri klæder dig ikke.</p></div>
+      <p class="nc-note">"Røvslikkeri klæder dig ikke" = det ligner ikke dig at fedte for nogen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v54" value="change"> Bør ændres</label>
@@ -858,9 +864,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0454#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l55">Så vidt jeg kunne forstå af opslaget, var han blevet fysiklærer på et af gymnasierne i sin hjemby, og idioten med vrangforestillinger havde undervist i sine egne teorier i stedet for stoffet i bogen.</p></div>
-      <p class="nc-note">"idioten med vrangforestillinger" = crude: a deluded idiot</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="06/0040#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l55">– Hmm, vi tænkte, du ville blive ked af det, Nana-pesar-jan. Du havde jo dit ph.d.-forsvar.</p></div>
+      <p class="nc-note">"ph.d.-forsvar" = ph.d.-forsvar, sagt med morens enkle ord</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v55" value="change"> Bør ændres</label>
@@ -871,9 +877,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0540#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l56">Med den hæshed, sukkerknalden har efterladt i min stemme, siger jeg:</p></div>
-      <p class="nc-note">"den hæshed, sukkerknalden har efterladt" = the rasp the sugar cube left</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="06/0108#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l56">– Nååååh. Det var mig, der havde sagt det til hende. Nini så, at det var en god sætning og sendte den videre til dig.</p></div>
+      <p class="nc-note">"Nååååh" = langt, drillende, spøgefuldt ømt »åh«</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v56" value="change"> Bør ændres</label>
@@ -884,9 +890,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="04b/0562#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l57">– Ørneøje, må Gud aldrig tilgive dig, du ødelagde min ryg. Hvorfor bærer du ikke briller?</p></div>
-      <p class="nc-note">"må Gud aldrig tilgive dig" = half-joking curse: may God not forgive you</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="06/0186#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l57">– Jeg ville ofre mig for dig, Nini-jan. Du har sådan et godt hoved.</p></div>
+      <p class="nc-note">"Jeg ville ofre mig for dig" = kærligt udtryk: jeg ville give mit liv for dig</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v57" value="change"> Bør ændres</label>
@@ -897,9 +903,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0575#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l58">– Ørneøje, Gud har allerede ramt Fluen, så lad være med også at ramme ham. For din mors skyld, lad være med at gå rundt på værelset uden briller.</p></div>
-      <p class="nc-note">"For din mors skyld" = a plea, I beg you; not an insult</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="06/0253#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l58">Gå nu og hent lidt kerner til Ghassem og de andre – de vil se film.</p></div>
+      <p class="nc-note">"kerner" = ristede kerner at gumle på</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v58" value="change"> Bør ændres</label>
@@ -910,9 +916,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0586#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l59">– Hvad-coin?</p></div>
-      <p class="nc-note">"Hvad-coin?" = What coin? (catching only part of Bitcoin)</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="06/0291#word_" data-note-on="change">
+      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l59">– Han brokker sig uden grund, hæ, Amir-jan. Er det ikke det ene, finder han noget andet.</p></div>
+      <p class="nc-note">"hæ" = en kort, stille latter</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> Rigtigt</label>
         <label><input type="radio" name="v59" value="change"> Bør ændres</label>
@@ -921,253 +927,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n59">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0600#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l60">Det vigtige er, at når jeg går i supermarkedet, betaler jeg penge, køber min mælk og kage og putter det i kroppen.</p></div>
-      <p class="nc-note">"putter det i kroppen" = eat them (blunt and funny)</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
-        <label><input type="radio" name="v60" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v60" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v60" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n60">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="04b/0690#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l61">Det ville have været nok, hvis elektro- og maskiningeniørprofessorerne mange år tidligere ikke havde fået pikken op at stå for at tage Abu-Reyhan-bygningen fra Skibsbygningsfakultetet</p></div>
-      <p class="nc-note">"fået pikken op at stå for" = crude: lusted after, were dying to grab</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
-        <label><input type="radio" name="v61" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v61" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v61" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n61">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="04b/0717#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l62">– Jeg siger, Ældi-jan, men bare mellem os: du endte i udlandet ved et rent pisseheld.</p></div>
-      <p class="nc-note">"ved et rent pisseheld" = a fucking fluke, sheer dumb luck</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
-        <label><input type="radio" name="v62" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v62" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v62" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n62">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0721#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l63">– Ældi, i stedet for at ligge og slænge dig på sengen sådan og lege med dine nosser, så stå op og send dem. Det er et kup.</p></div>
-      <p class="nc-note">"Det er et kup" = a good deal; worth it</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v63" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v63" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n63">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l64" data-id="04b/0723#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l64">– Nå, hvis du ikke er typen, der vil søge ind på et universitet i udlandet og rejse væk, hvorfor rev du så røven i laser for at tage TOEFL-eksamen?</p></div>
-      <p class="nc-note">"rev du så røven i laser" = crude: slaved away, worked very hard</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
-        <label><input type="radio" name="v64" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v64" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v64" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n64">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l65" data-id="04b/0784#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l65">– Du er meget lusket.</p></div>
-      <p class="nc-note">"Du er meget lusket" = very sneaky (playful teasing)</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
-        <label><input type="radio" name="v65" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v65" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v65" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n65">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/0818#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l66">– Ældi, se hvor langt du har drevet det: Farid, som ikke giver en fløjtende fis for os eller værelset eller nogen som helst, har talt.</p></div>
-      <p class="nc-note">"ikke giver en fløjtende fis" = coarse: doesn't care at all</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
-        <label><input type="radio" name="v66" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v66" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v66" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n66">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l67" data-id="04b/0897#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l67">– I kan bare gå tilbage til jeres jigily-jigily-pop og Soosan Khanom. Hvad skal I lytte til Moein for?</p></div>
-      <p class="nc-note">"jigily-jigily-pop" = cheap bouncy pop (said with a sneer)</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l67">
-        <label><input type="radio" name="v67" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v67" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v67" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n67">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n67" name="n67" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l68" data-id="04b/0919#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l68">– Røvslikkeri klæder dig ikke.</p></div>
-      <p class="nc-note">"Røvslikkeri klæder dig ikke" = sucking up isn't like you</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l68">
-        <label><input type="radio" name="v68" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v68" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v68" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n68">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n68" name="n68" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l69" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l69">brændte</p></div>
-      <p class="nc-note">"brændte" = those burned, consumed by love</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l69">
-        <label><input type="radio" name="v69" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v69" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v69" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n69">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n69" name="n69" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l70" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l70">Man bliver helt skideforvirret. Jo mere man tænker over det, desto mere skideforvirret bliver man.</p></div>
-      <p class="nc-note">"skideforvirret" = crude coinage: so baffled your head spins</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l70">
-        <label><input type="radio" name="v70" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v70" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v70" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n70">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n70" name="n70" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l71" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l71">Og med rystende hænder bladrede jeg hurtigt gennem ghazalerne og ledte efter det beit hos Hafez, der ligesom maleriet, sådan som den anden pige havde sagt, ville gøre en mere og mere skideforvirret, jo dybere man sank ned i det – så jeg kunne vise det til Niloofar.</p></div>
-      <p class="nc-note">"skideforvirret" = more baffled; echoes her crude coinage</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l71">
-        <label><input type="radio" name="v71" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v71" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v71" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n71">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n71" name="n71" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l72" data-id="04b/1392#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l72">Lyset i mine drømme blinker nu</p></div>
-      <p class="nc-note">"blinker nu" = now flickers, like a failing light</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l72">
-        <label><input type="radio" name="v72" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v72" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v72" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n72">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n72" name="n72" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l73" data-id="06/0040#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l73">– Hmm, vi tænkte, du ville blive ked af det, Nana-pesar-jan. Du havde jo dit ph.d.-forsvar.</p></div>
-      <p class="nc-note">"ph.d.-forsvar" = doctoral defense, in Maman's plain words</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l73">
-        <label><input type="radio" name="v73" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v73" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v73" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n73">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n73" name="n73" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l74" data-id="06/0108#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l74">– Nååååh. Det var mig, der havde sagt det til hende. Nini så, at det var en god sætning og sendte den videre til dig.</p></div>
-      <p class="nc-note">"Nååååh" = long, teasing, mock-tender 'aww'</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l74">
-        <label><input type="radio" name="v74" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v74" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v74" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n74">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n74" name="n74" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l75" data-id="06/0186#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l75">– Jeg ville ofre mig for dig, Nini-jan. Du har sådan et godt hoved.</p></div>
-      <p class="nc-note">"Jeg ville ofre mig for dig" = loving endearment: I'd give my life for you</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l75">
-        <label><input type="radio" name="v75" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v75" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v75" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n75">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n75" name="n75" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l76" data-id="06/0253#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l76">Gå nu og hent lidt kerner til Ghassem og de andre – de vil se film.</p></div>
-      <p class="nc-note">"kerner" = roasted seeds to snack on</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l76">
-        <label><input type="radio" name="v76" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v76" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v76" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n76">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n76" name="n76" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l77" data-id="06/0291#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l77">– Han brokker sig uden grund, hæ, Amir-jan. Er det ikke det ene, finder han noget andet.</p></div>
-      <p class="nc-note">"hæ" = a short, soft laugh</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l77">
-        <label><input type="radio" name="v77" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v77" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v77" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n77">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n77" name="n77" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l78" data-id="02/0005#word_" data-note-on="change">
-      <div class="reader nc-text" lang="da" dir="ltr"><p class="nc-line" id="l78">Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt</p></div>
-      <p class="nc-note">"blev tændt" = came on, as a lamp does</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l78">
-        <label><input type="radio" name="v78" value="ok"> Rigtigt</label>
-        <label><input type="radio" name="v78" value="change"> Bør ændres</label>
-        <label><input type="radio" name="v78" value="unsure"> Usikker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n78">Hvordan ville du sige det? <span class="nc-optional">(valgfrit)</span></label>
-        <textarea id="n78" name="n78" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1218,4 +977,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 78 rows -->
+<!-- 59 rows -->

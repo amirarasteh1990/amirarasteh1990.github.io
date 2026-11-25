@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> Պարսկական ասույթներ</h2>
-    <p class="nc-gq">Որոշ պարսկական ասույթներ ու պատկերներ թարգմանված են բառացի։ Յուրաքանչյուրը քեզ գոնե մի փոքր հասկացնո՞ւմ է իր իմաստը, թե՞ քեզ համար ոչինչ չի նշանակում։</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">Այս պարսկական ասույթները թարգմանված են բառացի։ Նախ փորձիր կռահել յուրաքանչյուրի իմաստը, հետո բաց այն։</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l6">Գետնից երկինք չէ՞ որ անձրև չի գալիս։</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ծնողներն են զոհողության գնում երեխաների համար, ոչ թե երեխաները՝ ծնողների։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v6" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v6" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v6" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v6" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v6" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n6">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l7">Լավ տարին գարնանից է երևում</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Սկզբից արդեն կարելի է հասկանալ, թե տարին ինչպես կանցնի։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v7" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v7" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v7" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v7" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v7" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n7">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l8">Վիշտ մի՛ կեր</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Մի՛ տխրիր, մի՛ անհանգստացիր։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v8" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v8" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v8" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v8" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v8" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n8">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l9">սիրտս փտում է</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ձանձրույթից ու մենությունից մաշվում եմ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v9" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v9" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v9" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v9" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v9" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n9">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l10">Ձեռքս կարճ է, ու քեզ հետ միանալը՝ հեռու։</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Քեզ հետ լինելն ինձ համար անհասանելի է. անզոր եմ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v10" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v10" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v10" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v10" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v10" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n10">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l11">ասեմ՝ լեզուս կվառվի, չասեմ՝ ոսկորիս ծուծը կվառվի</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Խոսելը ցավոտ է, բայց լռելն ավելի ցավոտ է։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v11" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v11" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v11" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v11" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v11" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n11">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l12">կերակուրը բերանումս օձի թույն կդառնա</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ճաշս կփչացնի։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v12" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v12" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v12" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v12" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v12" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n12">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l13">քեզ համար ոչ մի հաց չի տաքանա</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Դրանով ոչնչի չես հասնի, ոչ մի օգուտ չես ունենա։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v13" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v13" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v13" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v13" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v13" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n13">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l14">ընտանիքի զոռով հավերի մեջ խառնվելուց</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ընտանիքս ինձ ստիպեց ամուսնանալ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v14" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v14" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v14" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v14" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v14" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n14">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l15">շաքարի կտորը կոկորդիս մեջ վեր է թռչում</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Շաքարի կտորը կոկորդումս խրվում է, ու խեղդվում եմ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v15" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v15" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v15" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v15" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v15" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n15">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l16">բոլոր անկյուն-պուճախները ման արի</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ամեն ինչ ուսումնասիրիր, տես ամեն տեղ, որ կարող ես։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v16" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v16" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v16" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v16" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v16" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n16">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l17">խոսքը ծախս չունի, քամի է</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ասելը հեշտ է. միայն խոսքով ոչինչ չի ապացուցվում։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v17" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v17" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v17" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v17" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v17" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n17">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l18">անպայման Նեգարի աչքից կընկներ</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Աղջիկը նրա մասին լավ կարծիքն անպայման կկորցներ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v18" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v18" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v18" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v18" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v18" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n18">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l19">Ընդամենը մի հունձքի խոստո՞ւմ։</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ընդամենը մի դատարկ խոստո՞ւմ, որը երբեք չի կատարվի։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v19" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v19" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v19" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v19" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v19" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n19">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l20">ընկերության փորոտիքը սկուտեղի վրա շարեմ քեզ համար</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Թող քեզ հյուրասիրեմ՝ ողջ ընկերական սրտով։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v20" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v20" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v20" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v20" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v20" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n20">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l21">բրդերը թափվեցին</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Լրիվ ապշեցին։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v21" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v21" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v21" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v21" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v21" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n21">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l22">այդքան մի՛ եռա, կաթդ կչորանա</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Հանգստացիր, չարժե այդքան նեղվել։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v22" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v22" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v22" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v22" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v22" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n22">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l23">եթե չտռես՝ չեն ասի՝ համր ես</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ոչ ոք դեմ չէր լինի, եթե լռեիր։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v23" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v23" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v23" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v23" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v23" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n23">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l24">Քութակիս գլուխը կե՛ր</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Կոպիտ ձև ասելու. կորի՛ր, քո կարծիքը ոչ ոքի պետք չէ։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v24" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v24" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v24" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v24" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v24" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n24">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l25">Քութակի գլուխ ուտո՛ղ</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ընկերների միջև կոպիտ հայհոյանք, մոտավորապես՝ «ա՛յ ապուշ»։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v25" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v25" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v25" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v25" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v25" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n25">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l26">մեր մորուքի ու քութակի վրա ծիծաղում</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ծիծաղում ես մեզ վրա՝ մեզ, որ այստեղ մնացինք։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v26" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v26" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v26" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v26" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v26" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n26">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l27">այսպես քութակը ձեռքին փողոցներում չէիր թափառի</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Չէիր թափառի մենակ ու աննպատակ՝ դեռ ամուրի։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v27" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v27" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v27" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v27" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v27" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n27">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l28">ինչ քութակ էլ գլխներիս գա</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Ինչ աղետ էլ մեզ պատահի։</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> Կարող եմ կռահել</label>
-        <label><input type="radio" name="v28" value="change"> Չեմ կարող</label>
-        <label><input type="radio" name="v28" value="unsure"> Վստահ չեմ</label>
+        <label><input type="radio" name="v28" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v28" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v28" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">Քո կարծիքով՝ ի՞նչ է նշանակում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <label for="n28">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l29">մեր՝ մարզաբնակներիս հետույքը փայտ խրեցին</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Այդ քաղաքականությունը մեզ՝ բոլոր մարզաբնակներիս, շատ անարդար վերաբերվեց։</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v29" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v29" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l30">Գլուխն էլ չէիր կարող ուտել։</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Կոպիտ պատասխան («գլուխը»՝ քութակի գլուխը). ոչինչ էլ չէիր կարող անել։</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v30" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v30" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l31">Իմ Նինի-ջանի գլխի շուրջ պտտվե՜մ ու պտտվեմ</p></div>
+      <details class="nc-hint"><summary>Ցույց տալ իմաստը</summary><p>Քնքուշ արտահայտություն. նրա համար ամեն ինչ կտայի։</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> Կռահեցի՝ առանց իմաստը նայելու</label>
+        <label><input type="radio" name="v31" value="unsure"> Հասկացա՝ իմաստը նայելով</label>
+        <label><input type="radio" name="v31" value="change"> Իմաստը նայելով էլ՝ կապը չեմ տեսնում</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">Ի՞նչն է այն անհասկանալի դարձնում։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> Երեխաների բառեր</h2>
     <p class="nc-gq">Գրքում որոշ երեխաներ բառերը սխալ են ասում, ինչպես փոքրիկներն են անում։ Յուրաքանչյուրը երեխայի սխա՞լ է թվում, ոչ թե վրիպակ։</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l29">Մարմալ քար է։ Մարմալ նշանակում է շատ թանկ։</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l32">Մարմալ քար է։ Մարմալ նշանակում է շատ թանկ։</p></div>
       <p class="nc-note">մարմալ = մարմար</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> Ճիշտ է</label>
-        <label><input type="radio" name="v29" value="change"> Պետք է փոխել</label>
-        <label><input type="radio" name="v29" value="unsure"> Վստահ չեմ</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l30">Անունը Թաթանիկ է։</p></div>
-      <p class="nc-note">Թաթանիկ = Տիտանիկ</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> Ճիշտ է</label>
-        <label><input type="radio" name="v30" value="change"> Պետք է փոխել</label>
-        <label><input type="radio" name="v30" value="unsure"> Վստահ չեմ</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l31">Բաբա՛, Բաբա՛, էս մե՛ց տիկնիկը ինձ կգընե՞ս։</p></div>
-      <p class="nc-note">փոքրիկ աղջիկ</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> Ճիշտ է</label>
-        <label><input type="radio" name="v31" value="change"> Պետք է փոխել</label>
-        <label><input type="radio" name="v31" value="unsure"> Վստահ չեմ</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l32">Հա, տիկնիկը կգընեմ քեզ։</p></div>
-      <p class="nc-note">հայրը նմանակում է նրա խոսքը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v32" value="change"> Պետք է փոխել</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Մականուններ</h2>
-    <p class="nc-gq">Գրքի ընկերները միմյանց խաղային մականուններ են տալիս, հաճախ՝ բառախաղով։ Յուրաքանչյուրը քո լեզվով որպես մականուն ստացվո՞ւմ է։</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l33">Ալեն Քութակոն</p></div>
-      <p class="nc-note">ընկերներից մեկի մականունը. դերասան Ալեն Դելոնի անունը, որի մի մասը դարձել է առնանդամի կոպիտ անվանում</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l33">Անունը Թաթանիկ է։</p></div>
+      <p class="nc-note">Թաթանիկ = Տիտանիկ</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v33" value="change"> Պետք է փոխել</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l34">Խրաբաթի ծերուկ</p></div>
-      <p class="nc-note">ծաղրական շքեղ տիտղոս՝ վերցված Հաֆեզի պոեզիայից</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l34">Բաբա՛, Բաբա՛, էս մե՛ց տիկնիկը ինձ կգընե՞ս։</p></div>
+      <p class="nc-note">փոքրիկ աղջիկ</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v34" value="change"> Պետք է փոխել</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l35">Ծերուկ</p></div>
-      <p class="nc-note">«Խրաբաթի ծերուկ»-ի փաղաքշական ձևը</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l35">Հա, տիկնիկը կգընեմ քեզ։</p></div>
+      <p class="nc-note">հայրը նմանակում է նրա խոսքը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v35" value="change"> Պետք է փոխել</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l36">Խրաբաթցի, իմ Խրաբի՛կ</p></div>
-      <p class="nc-note">«Խրաբաթ» (գինետուն) բառից կազմված փաղաքշական ձևեր</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Մականուններ</h2>
+    <p class="nc-gq">Գրքի ընկերները միմյանց խաղային մականուններ են տալիս, հաճախ՝ բառախաղով։ Յուրաքանչյուրը քո լեզվով որպես մականուն ստացվո՞ւմ է։</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l36">Ալեն Քութակոն</p></div>
+      <p class="nc-note">ընկերներից մեկի մականունը. դերասան Ալեն Դելոնի անունը, որի մի մասը դարձել է առնանդամի կոպիտ անվանում</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v36" value="change"> Պետք է փոխել</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l37">Հովազ Ֆարիդ</p></div>
-      <p class="nc-note">համարձակ, անխոհեմ ընկերոջ համար</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l37">Խրաբաթի ծերուկ</p></div>
+      <p class="nc-note">ծաղրական շքեղ տիտղոս՝ վերցված Հաֆեզի պոեզիայից</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v37" value="change"> Պետք է փոխել</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l38">Արասթեն արաասթեի՞ էտված ձևն է։</p></div>
-      <p class="nc-note">արաասթե = պարսկերեն՝ «հարդարված»</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l38">Ծերուկ</p></div>
+      <p class="nc-note">«Խրաբաթի ծերուկ»-ի փաղաքշական ձևը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v38" value="change"> Պետք է փոխել</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l39">տիկին Արմա՛ա՛նի</p></div>
-      <p class="nc-note">Արման ազգանունը՝ ծաղրելու համար երկարացված</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l39">Խրաբաթցի, իմ Խրաբի՛կ</p></div>
+      <p class="nc-note">«Խրաբաթ» (գինետուն) բառից կազմված փաղաքշական ձևեր</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v39" value="change"> Պետք է փոխել</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l40">ժամանակի գանգուրմա՛զ Միստեր Շրյոդինգեր</p></div>
-      <p class="nc-note">ծաղրական տիտղոս մեկի համար, ով չի կարողանում որոշում կայացնել</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l40">Հովազ Ֆարիդ</p></div>
+      <p class="nc-note">համարձակ, անխոհեմ ընկերոջ համար</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v40" value="change"> Պետք է փոխել</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Կատակներ և բառախաղ</h2>
-    <p class="nc-gq">Այս տողերում կատակ կամ բառախաղ կա։ Յուրաքանչյուրը քո լեզվով ստացվո՞ւմ է։</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l41">Գործարանի համակարգը հենց այսպես է։</p></div>
-      <p class="nc-note">գործերը փչացնելը պարզապես նրա բնույթն է</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l41">Արասթեն արաասթեի՞ էտված ձևն է։</p></div>
+      <p class="nc-note">արաասթե = պարսկերեն՝ «հարդարված»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v41" value="change"> Պետք է փոխել</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l42">Ներեցի։ Այս ողջ պողոտան քեզ։</p></div>
-      <p class="nc-note">պարսկերենում «ներել» բառը նշանակում է նաև «նվիրել»</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l42">տիկին Արմա՛ա՛նի</p></div>
+      <p class="nc-note">Արման ազգանունը՝ ծաղրելու համար երկարացված</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v42" value="change"> Պետք է փոխել</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l43">մինչև երեկ «էշ» էիր ասում։ Հիմա մարդացե՞լ ես, ասում ես «ավանակ»։</p></div>
-      <p class="nc-note">ծաղրում են տղային, որ անցել է ավելի քաղաքավարի բառի</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l43">ժամանակի գանգուրմա՛զ Միստեր Շրյոդինգեր</p></div>
+      <p class="nc-note">ծաղրական տիտղոս մեկի համար, ով չի կարողանում որոշում կայացնել</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v43" value="change"> Պետք է փոխել</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l44">Փի՞ր-թու-փիր։ … Արծվաչյան ասում է փիեր-թու-փիեր, Խրաբաթցին ասում է փիր-թու-փիր։</p></div>
-      <p class="nc-note">նա «փիեր»-ը լսում է որպես պարսկերեն «փիր»՝ «ծերուկ», իր մականվան արմատը</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Կատակներ և բառախաղ</h2>
+    <p class="nc-gq">Այս տողերում կատակ կամ բառախաղ կա։ Յուրաքանչյուրը քո լեզվով ստացվո՞ւմ է։</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l44">Գործարանի համակարգը հենց այսպես է։</p></div>
+      <p class="nc-note">գործերը փչացնելը պարզապես նրա բնույթն է</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v44" value="change"> Պետք է փոխել</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l45">Երեկ գիշեր որոճալուդ ձայնը գալիս էր։</p></div>
-      <p class="nc-note">գիշերով ծամում է, ինչպես կովն է որոճում</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l45">Ներեցի։ Այս ողջ պողոտան քեզ։</p></div>
+      <p class="nc-note">պարսկերենում «ներել» բառը նշանակում է նաև «նվիրել»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v45" value="change"> Պետք է փոխել</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l46">Է՛լ ի՞նչ է պատահել քեզ, որ մեզ վրա կանգնեցրիր, Ալեն Քութակո՛ն։</p></div>
-      <p class="nc-note">երկիմաստ է՝ հպարտ շտկվել նստած տեղում, և էրեկցիա</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l46">մինչև երեկ «էշ» էիր ասում։ Հիմա մարդացե՞լ ես, ասում ես «ավանակ»։</p></div>
+      <p class="nc-note">ծաղրում են տղային, որ անցել է ավելի քաղաքավարի բառի</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v46" value="change"> Պետք է փոխել</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l47">Ի՞նչ-մոլ չի եղել։</p></div>
-      <p class="nc-note">մայրը լսում է միայն «կնամոլ» բառի վերջը</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l47">Փի՞ր-թու-փիր։ … Արծվաչյան ասում է փիեր-թու-փիեր, Խրաբաթցին ասում է փիր-թու-փիր։</p></div>
+      <p class="nc-note">նա «փիեր»-ը լսում է որպես պարսկերեն «փիր»՝ «ծերուկ», իր մականվան արմատը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v47" value="change"> Պետք է փոխել</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l48">Մեր փեսայի վարպետի հորեղբորորդու ընկերը, որ Թեհրանի ամենահարուստ մարդն է</p></div>
-      <p class="nc-note">տղայի անընդհատ կրկնվող պարծանքը</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l48">Երեկ գիշեր որոճալուդ ձայնը գալիս էր։</p></div>
+      <p class="nc-note">գիշերով ծամում է, ինչպես կովն է որոճում</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v48" value="change"> Պետք է փոխել</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l49">Կա՛մ քութակ-ուղե... ի դեպ, քութակ-ուղեղ որ էիր՝ հիմա ավելի քութակ-ուղեղ ես դարձել։</p></div>
-      <p class="nc-note">հայհոյանքը կիսատ է մնում, հետո ավելի է սաստկանում</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l49">Է՛լ ի՞նչ է պատահել քեզ, որ մեզ վրա կանգնեցրիր, Ալեն Քութակո՛ն։</p></div>
+      <p class="nc-note">երկիմաստ է՝ հպարտ շտկվել նստած տեղում, և էրեկցիա</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v49" value="change"> Պետք է փոխել</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l50">Հա, է, բոլորս գործարան ունենք։ … Քաքաբանության գործարան ունենք։</p></div>
-      <p class="nc-note">արտադրում են միայն քաքաբանություն, այսինքն՝ պարզապես դատարկ բաներ են խոսում</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l50">Ի՞նչ-մոլ չի եղել։</p></div>
+      <p class="nc-note">մայրը լսում է միայն «կնամոլ» բառի վերջը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v50" value="change"> Պետք է փոխել</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l51">ա՛յ բրածո, դու ի՛նքդ ես հիմարության ու անկման արձանը</p></div>
-      <p class="nc-note">ծաղրական հայհոյանք</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l51">Մեր փեսայի վարպետի հորեղբորորդու ընկերը, որ Թեհրանի ամենահարուստ մարդն է</p></div>
+      <p class="nc-note">տղայի անընդհատ կրկնվող պարծանքը</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v51" value="change"> Պետք է փոխել</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l52">կյանքը նման է հազարթումանանոց թղթադրամի, որ որ կողմից էլ նայես՝ ոսպով փլավի հոտ է փչում։</p></div>
-      <p class="nc-note">անհեթեթ սրախոսություն</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l52">Կա՛մ քութակ-ուղե... ի դեպ, քութակ-ուղեղ որ էիր՝ հիմա ավելի քութակ-ուղեղ ես դարձել։</p></div>
+      <p class="nc-note">հայհոյանքը կիսատ է մնում, հետո ավելի է սաստկանում</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v52" value="change"> Պետք է փոխել</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l53">Ես էսպես եմ խոսում. դուք լսում եք խոսելս, կարծում եք՝ բանաստեղծություն է։</p></div>
-      <p class="nc-note">տղան պատասխանում է երգեցիկ ռիթմով</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l53">Հա, է, բոլորս գործարան ունենք։ … Քաքաբանության գործարան ունենք։</p></div>
+      <p class="nc-note">արտադրում են միայն քաքաբանություն, այսինքն՝ պարզապես դատարկ բաներ են խոսում</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v53" value="change"> Պետք է փոխել</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l54">Զգո՛ւյշ, չճաքես, պարո՛ն Քութակ։</p></div>
-      <p class="nc-note">նա հենց նոր կուրծքն ուռցրել է</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l54">ա՛յ բրածո, դու ի՛նքդ ես հիմարության ու անկման արձանը</p></div>
+      <p class="nc-note">ծաղրական հայհոյանք</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v54" value="change"> Պետք է փոխել</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l55">Դու բոլորից շատ ես հորթ։</p></div>
-      <p class="nc-note">«հորթ»՝ բութ հիմար, ասված տղամարդուն</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l55">կյանքը նման է հազարթումանանոց թղթադրամի, որ որ կողմից էլ նայես՝ ոսպով փլավի հոտ է փչում։</p></div>
+      <p class="nc-note">անհեթեթ սրախոսություն</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v55" value="change"> Պետք է փոխել</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l56">Ու միշտ էլ մեծ հաճույք էր ստանում, որ «տեղյակ» բառն այդ նախադասության մեջ երկու անգամ էր դնում։</p></div>
-      <p class="nc-note">«տեղյակ»-ը՝ երկու անգամ, խաղալով</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l56">Ես էսպես եմ խոսում. դուք լսում եք խոսելս, կարծում եք՝ բանաստեղծություն է։</p></div>
+      <p class="nc-note">տղան պատասխանում է երգեցիկ ռիթմով</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v56" value="change"> Պետք է փոխել</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l57">թերությունն ընդունողի մոտ է, ուղարկողը խնդիրը չի լուծի</p></div>
-      <p class="nc-note">ընկերոջ թույլ տեսողությունն է «ընդունողը»</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l57">Զգո՛ւյշ, չճաքես, պարո՛ն Քութակ։</p></div>
+      <p class="nc-note">նա հենց նոր կուրծքն ուռցրել է</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v57" value="change"> Պետք է փոխել</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l58">Ալեն Քութակոնն եմ ասում, Քո՜ւուու-թակ</p></div>
-      <p class="nc-note">բառախաղի կոպիտ մասը՝ երկարացված</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l58">Դու բոլորից շատ ես հորթ։</p></div>
+      <p class="nc-note">«հորթ»՝ բութ հիմար, ասված տղամարդուն</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v58" value="change"> Պետք է փոխել</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l59">Թե դու Հուման ես՝ ես էլ Շուշան եմ։</p></div>
-      <p class="nc-note">Հուման նուրբ անունը չի սազում այսքան մազոտ տղամարդուն</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l59">Ու միշտ էլ մեծ հաճույք էր ստանում, որ «տեղյակ» բառն այդ նախադասության մեջ երկու անգամ էր դնում։</p></div>
+      <p class="nc-note">«տեղյակ»-ը՝ երկու անգամ, խաղալով</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v59" value="change"> Պետք է փոխել</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l60">Ածանցյա՞լը։ Իմա՞ստը։ Թե՞ ածանցյալի իմաստը։ Թե՞ իմաստի ածանցյալը։</p></div>
-      <p class="nc-note">կեղծ խորիմաստ բառախաղ</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l60">թերությունն ընդունողի մոտ է, ուղարկողը խնդիրը չի լուծի</p></div>
+      <p class="nc-note">ընկերոջ թույլ տեսողությունն է «ընդունողը»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v60" value="change"> Պետք է փոխել</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l61">Աստված տա՝ միշտ արաասթե՝ հարդարված լինես։</p></div>
-      <p class="nc-note">օրհնանք, որ խաղ է անում Արասթե ազգանվան հետ. արաասթե = «հարդարված»</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l61">Ալեն Քութակոնն եմ ասում, Քո՜ւուու-թակ</p></div>
+      <p class="nc-note">բառախաղի կոպիտ մասը՝ երկարացված</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v61" value="change"> Պետք է փոխել</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l62">Առանց ակնոցի ոչինչ չեմ տեսնում՝ օբյեկտիվ ասած։</p></div>
-      <p class="nc-note">կերպարի սիրած բառը, որ գործածում է ամենուր</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l62">Թե դու Հուման ես՝ ես էլ Շուշան եմ։</p></div>
+      <p class="nc-note">Հուման նուրբ անունը չի սազում այսքան մազոտ տղամարդուն</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> Ճիշտ է</label>
         <label><input type="radio" name="v62" value="change"> Պետք է փոխել</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Մի տող Հաֆեզից</h2>
-    <p class="nc-gq">Բանաստեղծ Հաֆեզի այս տողը գրված է առանց ստորակետի, ուստի այն կարելի է կարդալ երկու հակադիր ձևով.</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l63">Այն գինին որ այնտեղ է իսկական գինի է ոչ փոխաբերություն</p></div>
-      <ul class="nc-after"><li>Մի ձևը՝ գինին իսկական է, ոչ թե փոխաբերություն։</li><li>Մյուս ձևը՝ գինին իսկական չէ, միայն փոխաբերություն է։</li></ul>
-      <p class="nc-q">Հայերեն տարբերակը կարելի՞ է կարդալ երկու ձևով էլ։</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l63">Ածանցյա՞լը։ Իմա՞ստը։ Թե՞ ածանցյալի իմաստը։ Թե՞ իմաստի ածանցյալը։</p></div>
+      <p class="nc-note">կեղծ խորիմաստ բառախաղ</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> Այո, երկու ձևով էլ</label>
-        <label><input type="radio" name="v63" value="change"> Միայն մեկ ձևով</label>
+        <label><input type="radio" name="v63" value="ok"> Ճիշտ է</label>
+        <label><input type="radio" name="v63" value="change"> Պետք է փոխել</label>
         <label><input type="radio" name="v63" value="unsure"> Վստահ չեմ</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l64">Աստված տա՝ միշտ արաասթե՝ հարդարված լինես։</p></div>
+      <p class="nc-note">օրհնանք, որ խաղ է անում Արասթե ազգանվան հետ. արաասթե = «հարդարված»</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> Ճիշտ է</label>
+        <label><input type="radio" name="v64" value="change"> Պետք է փոխել</label>
+        <label><input type="radio" name="v64" value="unsure"> Վստահ չեմ</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l65">Առանց ակնոցի ոչինչ չեմ տեսնում՝ օբյեկտիվ ասած։</p></div>
+      <p class="nc-note">կերպարի սիրած բառը, որ գործածում է ամենուր</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> Ճիշտ է</label>
+        <label><input type="radio" name="v65" value="change"> Պետք է փոխել</label>
+        <label><input type="radio" name="v65" value="unsure"> Վստահ չեմ</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Մի տող Հաֆեզից</h2>
+    <p class="nc-gq">Բանաստեղծ Հաֆեզի այս տողը գրված է առանց ստորակետի, ուստի այն կարելի է կարդալ երկու հակադիր ձևով.</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="hy" dir="ltr"><p class="nc-line" id="l66">Այն գինին որ այնտեղ է իսկական գինի է ոչ փոխաբերություն</p></div>
+      <ul class="nc-after"><li>Մի ձևը՝ գինին իսկական է, ոչ թե փոխաբերություն։</li><li>Մյուս ձևը՝ գինին իսկական չէ, միայն փոխաբերություն է։</li></ul>
+      <p class="nc-q">Հայերեն տարբերակը կարելի՞ է կարդալ երկու ձևով էլ։</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> Այո, երկու ձևով էլ</label>
+        <label><input type="radio" name="v66" value="change"> Միայն մեկ ձևով</label>
+        <label><input type="radio" name="v66" value="unsure"> Վստահ չեմ</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">Ինչպե՞ս կասեիր դու։ <span class="nc-optional">(պարտադիր չէ)</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

@@ -13,7 +13,6 @@
   "needs_change": "Jāmaina",
   "not_sure": "Grūti pateikt",
   "how_say": "Kā jūs to teiktu?",
-  "meaning": "Ko, jūsuprāt, tas nozīmē?",
   "optional": "(nav obligāti)",
   "your_name": "Jūsu vārds",
   "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Stāstītājs šeit ir nervozs. Vai latviski katra rinda skan dabiski?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "– Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot.",
-     "note": null
+     "id": "04b/1320#nerv",
+     "text": "Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis",
+     "note": "viņš atkārto rupju vārdu, ko kāda meitene izdomāja par kādu gleznu"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Tāpat — jo vairāk tu domā par šiem desmit vārdiem, jo lielāks tev sū... tas ir, jo vairāk reibst galva.",
+     "note": "viņš gandrīz atkal pasaka rupjo vārdu, bet apstājas"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Di-Dieva dēļ, klausies. … Tāpat kā tā glezna, ko tava dr-draudzene rādīja.",
+     "note": "viņš stostās"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Stāstītājs beidzot pasaka meitenei, ka viņu mīl. Vai tas skan dabiski un no sirds?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot. Klusumā, bez neviena vārda. Jūs varbūt teiksiet, ka tā nevar būt, ka tas nav iespējams, ka tā ir tikai iztēle un nav īsta. Bet tā ir, un es jūs patiešām mīlu.",
+     "note": "persiski viņš viņu uzrunā oficiāli, ar pieklājīgo „jūs”"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
+   "q": "Šīs ir grāmatas pirmās rindas. Vai tās lasās dabiski un skaidri?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -98,22 +104,31 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04a/0024#s40",
-     "text": "– Bataljons, uz priekšu marš!",
+     "id": "Opening/0007#op1",
+     "text": "Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts. Nekādas interpretācijas nebūs. Nekāda secinājuma.",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
-     "text": "– Misijas pirmā posma sākums. Bataljons, pa kreisi!",
+     "id": "Opening/0007#op2",
+     "text": "Tas ir vārdu pavediena vaļīgais gals, un šie vārdi kādreiz bija skaņas.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Tāpat kā bērnībā, kad Maman atšķetināja dziju no vecām drēbēm un mēs paņēmām pavedienu un staigājām ar to riņķī pa māju, lai dzija nesakrātos kaudzē.",
+     "note": "Maman persiešu valodā nozīmē „māte”; vārds apzināti atstāts netulkots. Kamēr viņa atšķetina dziju, bērni nēsā pavedienu pa māju."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Tagad es atšķetinu vārdu pavedienu, un tu paņem vārdus un aiznes tos uz savu pasauli, lai tie šeit, manā pasaulē, nesakrātos kaudzē.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "Is the image clear: choking like a vine coiling around him?",
-   "q_lang": "en",
+   "q": "Atmiņa atraisās kā skrūve ar nodilušu vītni. Vai tēls ir skaidrs?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -123,8 +138,33 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1178#s52",
-     "text": "Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.",
+     "id": "03/0675#screw",
+     "text": "Pēc tam tas attēls, kā skrūve ar nodilušu vītni, vairs nebija saistīts ar tumsu aiz mūsu mājas aizvērtajām durvīm.",
+     "note": null
+    }
+   ],
+   "intro": "Grāmatā:"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Zēns ar mazajiem brāļiem spēlē kariņu. Vai viņa komandas skan kā īstas armijas ierindas komandas?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Bataljons, uz priekšu marš!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Misijas pirmā posma sākums. Bataljons, pa kreisi!",
      "note": null
     }
    ]
@@ -132,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Dzeja",
-   "q": "Šīs ir dzejas rindas. Vai latviski katra no tām labi skan kā dzeja?",
+   "q": "Šie ir dzejoļi un dzejas rindas: paša stāstītāja dzejolis un klasisko persiešu dzejnieku (Kharaghani, Hafez, Attar) rindas. Vai latviski katrs no tiem skan kā dzeja?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -142,101 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Es nepaņemtu to Zālamana gredzenu ne par ko, uz kura reizēm rokas ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mani sapņi bija tumši / Es neko neredzēju / Tu atnāci / Manu sapņu gaisma ieslēdzās / Tagad tevis vairs nav / Manu sapņu gaisma tagad mirkšķina / Man nav cerības uz tavu atgriešanos / Bet, ja tavs ceļš tevi atvedīs tuvumā / nāc atkal manos sapņos / Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi / viņi domā, ka tu esi pazudusi un",
+     "note": "paša stāstītāja vienkāršais dzejolis meitenei, kuru viņš zaudēja"
     },
     {
-     "id": "04b/0742#poetr",
-     "text": "– Es zinu, ko tu gribi lasīt. Ka \"atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ...\"",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mani sapņi bija tumši / Es neko neredzēju / Tu atnāci / Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās / Tagad ... tagad ... tagad tevis vairs nav ...",
+     "note": "viņš to pusmiegā atkārto; aizķeršanās ir tīša"
     },
     {
-     "id": "04b/0935#poetr",
-     "text": "– To ar \"Attar saldāk raudāt līdz rītausmai\" vai to ar \"tagad viņš ir vēl jo vairāk nokauts\"?",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Uz visa var rakstīt / izņemot uz ūdens / un, ja tu šķērso jūru / raksti uz ūdens ar savām asinīm / lai tas, kas nāk tavās pēdās / zinātu, ka / mīlētāji un / piedzērušies un / sadegušie / ir gājuši šo ceļu.",
+     "note": "sens persiešu dzejnieka Kharaghani dzejolis, uzrakstīts uz tāfeles klasē"
     },
     {
-     "id": "04b/1268#poetr",
-     "text": "izņemot uz ūdens",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Es nepaņemtu to Zālamana gredzenu ne par ko, uz kura reizēm rokas ...",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1269#poetr",
-     "text": "un, ja tu šķērso jūru",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Es esmu Kroga Vecākā kalps, kura žēlastība ...",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "raksti uz ūdens ar savām asinīm",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Cerība savienoties ar tevi uztur mani dzīvu; citādi ik elpas vilciens šķirtībā no tevis būtu bojāejas bailes. … Ja tu ievaino, tas ir labāk par cita balzamu, un, ja tu dod indi, labāk nekā ...",
+     "note": "divas klasiskā persiešu dzejnieka Hafez rindas; otrā aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1272#poetr",
-     "text": "zinātu, ka",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Hafez valdzinošo dzeju apzinās tikai tas, kurš pazīst dzejas smalkumu un prot runāt persiešu valodā.",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1274#poetr",
-     "text": "piedzērušies un",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Dievs eņģeļu priekšā atsedza savu diženo skaistumu un redzēja, ka tie nepazīst mīlestību; no šīs greizsirdīgās dedzības šī atklāsme kļuva par tīru uguni un trāpīja Ādama mālam.",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "ir gājuši šo ceļu.",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ...",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1301#poetr",
-     "text": "Viņa lasīja: \"Sen jau mīļotā nav sūtījusi ne ziņas; ne sveicienu rakstījusi ...\" — un man uznāca smiekli.",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Sen jau mīļotā nav sūtījusi ne ziņas; ne sveicienu rakstījusi ...",
+     "note": "klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā"
     },
     {
-     "id": "04b/1390#poetr",
-     "text": "Manu sapņu gaisma ieslēdzās",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "Manu sapņu gaisma tagad mirkšķina",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "Man nav cerības uz tavu atgriešanos",
-     "note": null
-    },
-    {
-     "id": "04b/1394#poetr",
-     "text": "Bet, ja tavs ceļš tevi atvedīs tuvumā",
-     "note": null
-    },
-    {
-     "id": "04b/1395#poetr",
-     "text": "nāc atkal manos sapņos",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās",
-     "note": null
-    },
-    {
-     "id": "02/0006#poetr",
-     "text": "Tagad ... tagad ... tagad tevis vairs nav ...",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "To ar \"Attar saldāk raudāt līdz rītausmai\" vai to ar \"tagad viņš ir vēl jo vairāk nokauts\"?",
+     "note": "draugs jautā, kuru no divām dziesmām; katru sauc pēc rindas no klasiskā persiešu dzejnieka Attar dzejoļa"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Atsevišķi vārdi",
-   "q": "Vai vārds katrā rindā ir īstais? Zem rindas norādīts, kas tam būtu jānozīmē.",
+   "q": "Zem katras rindas ir viens vārds no tās un tas, kas tam būtu jānozīmē. Vai šeit tas ir īstais vārds?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -246,44 +251,24 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0268#word_",
-     "text": "– Neviens vārds tev neder, veln.",
-     "note": "\"veln\" = damn you (angry swearing)"
-    },
-    {
      "id": "03/0278#word_",
      "text": "Kādā ziņā var teikt, viņi ieņēma universitāti. Karroubi ir mīlestība, taisnīgi sakot.",
-     "note": "\"Karroubi ir mīlestība, taisnīgi sakot\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karroubi ir mīlestība, taisnīgi sakot\" = Karroubi ir lielisks (sajūsmināts jauniešu slengs)"
     },
     {
      "id": "04a/0038#word_",
      "text": "– Iet uz galveno ielu: tsk-tsk.",
-     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+     "note": "\"tsk-tsk\" = mēles klikšķis, kas nozīmē „nē, aizliegts”"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Tu esi tāds sneaky.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "sadegušie",
-     "note": "\"sadegušie\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.",
-     "note": "\"sūdu juceklis\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis, un parādītu to Niloofar.",
-     "note": "\"sūdu juceklis\" = more baffled; echoes her crude coinage"
+     "note": "\"sneaky\" = angļu „sneaky”, rotaļīgi iestarpināts"
     },
     {
      "id": "02/0001#word_",
      "text": "Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.",
-     "note": "\"Mana sirds ir gaiša\" = I feel hopeful, sure of tomorrow"
+     "note": "\"Mana sirds ir gaiša\" = jūtos cerību pilns, drošs par rītdienu"
     }
    ]
   }

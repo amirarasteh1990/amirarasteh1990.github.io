@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> Perzische gezegden</h2>
-    <p class="nc-gq">Sommige Perzische gezegden en beelden zijn woord voor woord vertaald. Geeft elk ervan je enig idee van wat het betekent, of zegt het je niets?</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">Deze Perzische gezegden zijn woord voor woord vertaald. Probeer elk ervan eerst te raden en laat dan de betekenis zien.</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l6">Regen valt niet omhoog van de aarde.</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Ouders offeren zich op voor hun kinderen, niet kinderen voor hun ouders.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v6" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v6" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v6" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v6" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v6" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n6">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l7">Een goed jaar is te zien aan zijn lente.</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Hoe een jaar wordt, zie je al aan het begin.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v7" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v7" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v7" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v7" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v7" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n7">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l8">Eet geen verdriet</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Wees niet verdrietig; maak je geen zorgen.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v8" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v8" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v8" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v8" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v8" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n8">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l9">mijn hart verrot</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Ik kwijn weg van verveling en eenzaamheid.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v9" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v9" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v9" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v9" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v9" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n9">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l10">Mijn hand is te kort en de vereniging met jou is ver.</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Samen zijn met jou is voor mij onbereikbaar; ik ben machteloos.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v10" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v10" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v10" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v10" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v10" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n10">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l11">zeg ik het, dan brandt mijn tong; zeg ik het niet, dan brandt het merg van mijn botten</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Iets zeggen doet pijn, maar zwijgen doet nog meer pijn.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v11" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v11" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v11" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v11" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v11" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n11">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l12">wordt het eten voor mij slangengif</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Hij verpest het eten voor me.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v12" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v12" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v12" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v12" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v12" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n12">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l13">geen brood voor je warm wordt</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Daar kom je niet verder mee; het levert je niets op.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v13" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v13" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v13" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v13" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v13" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n13">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l14">mijn familie me met dwang tussen de kippen had gestopt</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Mijn familie heeft me gedwongen te trouwen.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v14" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v14" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v14" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v14" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v14" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n14">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l15">het suikerklontje springt mijn keel in</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Het suikerklontje schiet in mijn verkeerde keelgat en ik verslik me.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v15" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v15" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v15" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v15" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v15" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n15">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l16">kijk in elke uithoek</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Ontdek alles; bekijk zoveel plekken als je kunt.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v16" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v16" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v16" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v16" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v16" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n16">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l17">woorden kosten niets – het is gewoon hete lucht</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Iets zeggen kost niets; woorden alleen bewijzen niets.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v17" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v17" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v17" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v17" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v17" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n17">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l18">zou hij vast en zeker uit Negars ogen vallen</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Het meisje zou vast geen hoge dunk meer van hem hebben.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v18" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v18" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v18" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v18" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v18" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n18">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l19">Alleen maar een belofte voor de oogsttijd?</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Alleen maar een loze belofte die nooit wordt nagekomen?</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v19" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v19" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v19" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v19" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v19" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n19">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l20">laat me je de ingewanden van de vriendschap op een dienblad voorzetten</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Laat me je trakteren op alle vriendschap die ik heb.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v20" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v20" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v20" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v20" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v20" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n20">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l21">al hun lichaamshaar viel er ter plekke van uit</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Ze waren compleet verbijsterd.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v21" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v21" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v21" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v21" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v21" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n21">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l22">maak je niet zo druk, je melk droogt op</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Rustig maar; het is het niet waard om je zo op te winden.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v22" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v22" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v22" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v22" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v22" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n22">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l23">niemand noemt je stom als je geen scheet laat</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Niemand had het erg gevonden als je je mond had gehouden.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v23" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v23" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v23" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v23" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v23" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n23">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l24">Vreet de kop van mijn pik op</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Een grove manier om te zeggen: rot op, niemand wil jouw mening.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v24" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v24" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v24" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v24" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v24" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n24">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l25">Pikkoppenvreter</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Een grove scheldnaam tussen vrienden, ongeveer "jij sukkel".</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v25" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v25" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v25" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v25" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v25" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n25">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l26">lachen om onze baarden en pikken</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Ons belachelijk maken, ons die zijn achtergebleven.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v26" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v26" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v26" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v26" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v26" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n26">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l27">zo met je lul in je hand door de straten zwerven</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Alleen en doelloos rondzwerven, nog steeds vrijgezel.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v27" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v27" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v27" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v27" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v27" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n27">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l28">geen enkele lul die ons overkomt</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Welke ramp ons ook overkomt.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> Ik kan het raden</label>
-        <label><input type="radio" name="v28" value="change"> Lukt me niet</label>
-        <label><input type="radio" name="v28" value="unsure"> Niet zeker</label>
+        <label><input type="radio" name="v28" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v28" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v28" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">Wat denk je dat het betekent? <span class="nc-optional">(optioneel)</span></label>
+        <label for="n28">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l29">ze hebben ieder van ons uit de provincie een stok in zijn reet geduwd</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Het beleid heeft ons allemaal uit de provincie heel oneerlijk behandeld.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v29" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v29" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l30">Je had niet eens de kop ervan kunnen eten.</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Een grof antwoord ("ervan" = van een pik): je had helemaal niets klaargespeeld.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v30" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v30" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l31">Ik zou wel rond en rond om het hoofd van mijn Nini-jan kunnen lopen.</p></div>
+      <details class="nc-hint"><summary>Betekenis tonen</summary><p>Een liefdevolle uitdrukking: ik zou alles voor haar overhebben.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> Ik heb het zonder de betekenis geraden</label>
+        <label><input type="radio" name="v31" value="unsure"> Ik heb het met de betekenis begrepen</label>
+        <label><input type="radio" name="v31" value="change"> Zelfs met de betekenis zie ik het verband niet</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">Wat maakt het onduidelijk? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> Kinderwoorden</h2>
     <p class="nc-gq">Sommige kinderen in het boek zeggen woorden verkeerd, zoals kleine kinderen dat doen. Klinkt elk ervan als een kinderfout, niet als een tikfout?</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l29">Het is malmersteen. Malmer betekent heel duur.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l32">Het is malmersteen. Malmer betekent heel duur.</p></div>
       <p class="nc-note">malmer = marmer</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> Klopt</label>
-        <label><input type="radio" name="v29" value="change"> Moet anders</label>
-        <label><input type="radio" name="v29" value="unsure"> Niet zeker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l30">Hij heet Tataniek.</p></div>
-      <p class="nc-note">Tataniek = Titanic</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> Klopt</label>
-        <label><input type="radio" name="v30" value="change"> Moet anders</label>
-        <label><input type="radio" name="v30" value="unsure"> Niet zeker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l31">Baba, Baba, die gote pop voo mij kopen?</p></div>
-      <p class="nc-note">een klein meisje</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> Klopt</label>
-        <label><input type="radio" name="v31" value="change"> Moet anders</label>
-        <label><input type="radio" name="v31" value="unsure"> Niet zeker</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l32">Ja, die koop ik. Als ik geld heb, koop ik een nog mooiere voo je</p></div>
-      <p class="nc-note">haar vader doet haar na</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> Klopt</label>
         <label><input type="radio" name="v32" value="change"> Moet anders</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Bijnamen</h2>
-    <p class="nc-gq">De vrienden in het boek geven elkaar speelse bijnamen, vaak als woordgrap. Werkt elk ervan als bijnaam in jouw taal?</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l33">Alain Lullon</p></div>
-      <p class="nc-note">een bijnaam voor een van de vrienden: de naam van acteur Alain Delon, met een deel veranderd in het grove woord "lul"</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l33">Hij heet Tataniek.</p></div>
+      <p class="nc-note">Tataniek = Titanic</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> Klopt</label>
         <label><input type="radio" name="v33" value="change"> Moet anders</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l34">Ouderling van de Kroeg</p></div>
-      <p class="nc-note">een spottend-plechtige titel uit de poëzie van Hafez</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l34">Baba, Baba, die gote pop voo mij kopen?</p></div>
+      <p class="nc-note">een klein meisje</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> Klopt</label>
         <label><input type="radio" name="v34" value="change"> Moet anders</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l35">Oudje</p></div>
-      <p class="nc-note">koosnaam voor "Ouderling van de Kroeg"</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l35">Ja, die koop ik. Als ik geld heb, koop ik een nog mooiere voo je</p></div>
+      <p class="nc-note">haar vader doet haar na</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> Klopt</label>
         <label><input type="radio" name="v35" value="change"> Moet anders</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l36">Oudje, mijn Oudje</p></div>
-      <p class="nc-note">koosnamen, gemaakt van "Ouderling"</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Bijnamen</h2>
+    <p class="nc-gq">De vrienden in het boek geven elkaar speelse bijnamen, vaak als woordgrap. Werkt elk ervan als bijnaam in jouw taal?</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l36">Alain Lullon</p></div>
+      <p class="nc-note">een bijnaam voor een van de vrienden: de naam van acteur Alain Delon, met een deel veranderd in het grove woord "lul"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> Klopt</label>
         <label><input type="radio" name="v36" value="change"> Moet anders</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l37">Farid de Panter</p></div>
-      <p class="nc-note">voor een stoutmoedige, roekeloze vriend</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l37">Ouderling van de Kroeg</p></div>
+      <p class="nc-note">een spottend-plechtige titel uit de poëzie van Hafez</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> Klopt</label>
         <label><input type="radio" name="v37" value="change"> Moet anders</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l38">Is Arasteh een gesnoeide araasteh?</p></div>
-      <p class="nc-note">araasteh = Perzisch voor "netjes"</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l38">Oudje</p></div>
+      <p class="nc-note">koosnaam voor "Ouderling van de Kroeg"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> Klopt</label>
         <label><input type="radio" name="v38" value="change"> Moet anders</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l39">mevrouw Armaaan</p></div>
-      <p class="nc-note">de achternaam Arman, spottend uitgerekt</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l39">Oudje, mijn Oudje</p></div>
+      <p class="nc-note">koosnamen, gemaakt van "Ouderling"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> Klopt</label>
         <label><input type="radio" name="v39" value="change"> Moet anders</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l40">Mister de krulharige Schrödinger</p></div>
-      <p class="nc-note">spottende titel voor iemand die maar geen keuze kan maken</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l40">Farid de Panter</p></div>
+      <p class="nc-note">voor een stoutmoedige, roekeloze vriend</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> Klopt</label>
         <label><input type="radio" name="v40" value="change"> Moet anders</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Grappen en woordspelingen</h2>
-    <p class="nc-gq">In deze regels zit een grap of een woordspeling. Werkt elk ervan in jouw taal?</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l41">Dat is zijn fabrieksinstelling.</p></div>
-      <p class="nc-note">dingen verknoeien zit gewoon in zijn aard</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l41">Is Arasteh een gesnoeide araasteh?</p></div>
+      <p class="nc-note">araasteh = Perzisch voor "netjes"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> Klopt</label>
         <label><input type="radio" name="v41" value="change"> Moet anders</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l42">Vergeven. De hele boulevard is voor jou.</p></div>
-      <p class="nc-note">in het Perzisch betekent "vergeven" ook "weggeven"</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l42">mevrouw Armaaan</p></div>
+      <p class="nc-note">de achternaam Arman, spottend uitgerekt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> Klopt</label>
         <label><input type="radio" name="v42" value="change"> Moet anders</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l43">tot gisteren zei je nog "langoor". Nu ben je ineens zo beschaafd dat je "ezel" zegt?</p></div>
-      <p class="nc-note">een jongen wordt geplaagd omdat hij op een netter woord is overgestapt</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l43">Mister de krulharige Schrödinger</p></div>
+      <p class="nc-note">spottende titel voor iemand die maar geen keuze kan maken</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> Klopt</label>
         <label><input type="radio" name="v43" value="change"> Moet anders</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l44">Peer-tot-peer? … Arendsoog zegt peer-to-peer; het Oudje zegt peer-tot-peer.</p></div>
-      <p class="nc-note">hij hoort "peer" als het Perzische pir, "ouderling", de wortel van zijn bijnaam</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Grappen en woordspelingen</h2>
+    <p class="nc-gq">In deze regels zit een grap of een woordspeling. Werkt elk ervan in jouw taal?</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l44">Dat is zijn fabrieksinstelling.</p></div>
+      <p class="nc-note">dingen verknoeien zit gewoon in zijn aard</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> Klopt</label>
         <label><input type="radio" name="v44" value="change"> Moet anders</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l45">Gisteravond hoorde ik je herkauwen.</p></div>
-      <p class="nc-note">'s nachts kauwen, zoals een koe die herkauwt</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l45">Vergeven. De hele boulevard is voor jou.</p></div>
+      <p class="nc-note">in het Perzisch betekent "vergeven" ook "weggeven"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> Klopt</label>
         <label><input type="radio" name="v45" value="change"> Moet anders</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l46">Wat heb je nou weer, dat je hem tegen ons overeind hebt gezet, Alain Lullon?</p></div>
-      <p class="nc-note">dubbele betekenis: trots rechtop zitten, en een erectie</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l46">tot gisteren zei je nog "langoor". Nu ben je ineens zo beschaafd dat je "ezel" zegt?</p></div>
+      <p class="nc-note">een jongen wordt geplaagd omdat hij op een netter woord is overgestapt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> Klopt</label>
         <label><input type="radio" name="v46" value="change"> Moet anders</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l47">Wat-jager was hij niet?</p></div>
-      <p class="nc-note">de moeder vangt alleen het eind van "rokkenjager" op</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l47">Peer-tot-peer? … Arendsoog zegt peer-to-peer; het Oudje zegt peer-tot-peer.</p></div>
+      <p class="nc-note">hij hoort "peer" als het Perzische pir, "ouderling", de wortel van zijn bijnaam</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> Klopt</label>
         <label><input type="radio" name="v47" value="change"> Moet anders</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l48">De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is</p></div>
-      <p class="nc-note">het vaste opschepzinnetje van een jongen</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l48">Gisteravond hoorde ik je herkauwen.</p></div>
+      <p class="nc-note">'s nachts kauwen, zoals een koe die herkauwt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> Klopt</label>
         <label><input type="radio" name="v48" value="change"> Moet anders</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l49">Ofwel ben je hersenpi... nou ja, je was al hersenpik, nu ben je nog meer hersenpik geworden.</p></div>
-      <p class="nc-note">de belediging wordt afgebroken en daarna nog erger gemaakt</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l49">Wat heb je nou weer, dat je hem tegen ons overeind hebt gezet, Alain Lullon?</p></div>
+      <p class="nc-note">dubbele betekenis: trots rechtop zitten, en een erectie</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> Klopt</label>
         <label><input type="radio" name="v49" value="change"> Moet anders</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l50">Ja hoor, we bezitten allemaal fabrieken. … We hebben een lulkoekfabriek.</p></div>
-      <p class="nc-note">ze maken alleen lulkoek: ze kletsen maar wat</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l50">Wat-jager was hij niet?</p></div>
+      <p class="nc-note">de moeder vangt alleen het eind van "rokkenjager" op</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> Klopt</label>
         <label><input type="radio" name="v50" value="change"> Moet anders</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l51">fossiel dat je bent, je bent zelf het standbeeld van domheid en verval</p></div>
-      <p class="nc-note">een spottende belediging</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l51">De vriend van de neef van de meesterambachtsman van onze zwager, die de rijkste man van Teheran is</p></div>
+      <p class="nc-note">het vaste opschepzinnetje van een jongen</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> Klopt</label>
         <label><input type="radio" name="v51" value="change"> Moet anders</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l52">lijkt het leven op een biljet van duizend toman: hoe je het ook bekijkt, het ruikt naar linzenrijst.</p></div>
-      <p class="nc-note">een absurde kwinkslag</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l52">Ofwel ben je hersenpi... nou ja, je was al hersenpik, nu ben je nog meer hersenpik geworden.</p></div>
+      <p class="nc-note">de belediging wordt afgebroken en daarna nog erger gemaakt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> Klopt</label>
         <label><input type="radio" name="v52" value="change"> Moet anders</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l53">Dit is gewoon hoe ik praat. Jullie horen me en denken dat ik gedichten reciteer.</p></div>
-      <p class="nc-note">een jongen antwoordt op een zangerig ritme</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l53">Ja hoor, we bezitten allemaal fabrieken. … We hebben een lulkoekfabriek.</p></div>
+      <p class="nc-note">ze maken alleen lulkoek: ze kletsen maar wat</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> Klopt</label>
         <label><input type="radio" name="v53" value="change"> Moet anders</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l54">Pas op dat je niet barst, meneer Lul.</p></div>
-      <p class="nc-note">hij heeft net een hoge borst opgezet</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l54">fossiel dat je bent, je bent zelf het standbeeld van domheid en verval</p></div>
+      <p class="nc-note">een spottende belediging</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> Klopt</label>
         <label><input type="radio" name="v54" value="change"> Moet anders</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l55">Jij bent de grootste koe van allemaal.</p></div>
-      <p class="nc-note">"koe" = een domme sukkel, gezegd tegen een man</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l55">lijkt het leven op een biljet van duizend toman: hoe je het ook bekijkt, het ruikt naar linzenrijst.</p></div>
+      <p class="nc-note">een absurde kwinkslag</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> Klopt</label>
         <label><input type="radio" name="v55" value="change"> Moet anders</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l56">het deed hem altijd veel plezier om het woord "bewust" twee keer in die zin te verwerken.</p></div>
-      <p class="nc-note">"bewust" twee keer gebruikt, voor de grap</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l56">Dit is gewoon hoe ik praat. Jullie horen me en denken dat ik gedichten reciteer.</p></div>
+      <p class="nc-note">een jongen antwoordt op een zangerig ritme</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> Klopt</label>
         <label><input type="radio" name="v56" value="change"> Moet anders</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l57">het probleem ligt bij de ontvanger; de zender kan het niet oplossen.</p></div>
-      <p class="nc-note">het slechte zicht van de vriend is de "ontvanger"</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l57">Pas op dat je niet barst, meneer Lul.</p></div>
+      <p class="nc-note">hij heeft net een hoge borst opgezet</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> Klopt</label>
         <label><input type="radio" name="v57" value="change"> Moet anders</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l58">Ik bedoel Alain Lullon. Luuul.</p></div>
-      <p class="nc-note">het grove deel van de woordgrap, uitgerekt</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l58">Jij bent de grootste koe van allemaal.</p></div>
+      <p class="nc-note">"koe" = een domme sukkel, gezegd tegen een man</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> Klopt</label>
         <label><input type="radio" name="v58" value="change"> Moet anders</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l59">Als jij Hooman bent, dan ben ik Soesan.</p></div>
-      <p class="nc-note">de zachte naam Hooman past niet bij zo'n behaarde man</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l59">het deed hem altijd veel plezier om het woord "bewust" twee keer in die zin te verwerken.</p></div>
+      <p class="nc-note">"bewust" twee keer gebruikt, voor de grap</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> Klopt</label>
         <label><input type="radio" name="v59" value="change"> Moet anders</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l60">De afgeleide? De betekenis? Of de betekenis van de afgeleide? Of de afgeleide van de betekenis?</p></div>
-      <p class="nc-note">quasi-diepzinnige woordspeling</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l60">het probleem ligt bij de ontvanger; de zender kan het niet oplossen.</p></div>
+      <p class="nc-note">het slechte zicht van de vriend is de "ontvanger"</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> Klopt</label>
         <label><input type="radio" name="v60" value="change"> Moet anders</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l61">Als God het wil, moge je altijd araasteh zijn.</p></div>
-      <p class="nc-note">een zegen met een woordspeling op de achternaam Arasteh; araasteh = "netjes"</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l61">Ik bedoel Alain Lullon. Luuul.</p></div>
+      <p class="nc-note">het grove deel van de woordgrap, uitgerekt</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> Klopt</label>
         <label><input type="radio" name="v61" value="change"> Moet anders</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l62">Zonder bril zie ik helemaal niets, objectief gezien.</p></div>
-      <p class="nc-note">het stopwoord van het personage, overal gebruikt</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l62">Als jij Hooman bent, dan ben ik Soesan.</p></div>
+      <p class="nc-note">de zachte naam Hooman past niet bij zo'n behaarde man</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> Klopt</label>
         <label><input type="radio" name="v62" value="change"> Moet anders</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Een regel van Hafez</h2>
-    <p class="nc-gq">Deze regel van de dichter Hafez staat er zonder komma, dus je kunt hem op twee tegengestelde manieren lezen:</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l63">Die wijn daar is de echte wijn niet een metafoor.</p></div>
-      <ul class="nc-after"><li>Zo gelezen: de wijn is echt, geen metafoor.</li><li>Anders gelezen: de wijn is niet echt, alleen een metafoor.</li></ul>
-      <p class="nc-q">Kan de versie in jouw taal op beide manieren worden gelezen?</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l63">De afgeleide? De betekenis? Of de betekenis van de afgeleide? Of de afgeleide van de betekenis?</p></div>
+      <p class="nc-note">quasi-diepzinnige woordspeling</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> Ja, allebei</label>
-        <label><input type="radio" name="v63" value="change"> Maar op één manier</label>
+        <label><input type="radio" name="v63" value="ok"> Klopt</label>
+        <label><input type="radio" name="v63" value="change"> Moet anders</label>
         <label><input type="radio" name="v63" value="unsure"> Niet zeker</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l64">Als God het wil, moge je altijd araasteh zijn.</p></div>
+      <p class="nc-note">een zegen met een woordspeling op de achternaam Arasteh; araasteh = "netjes"</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> Klopt</label>
+        <label><input type="radio" name="v64" value="change"> Moet anders</label>
+        <label><input type="radio" name="v64" value="unsure"> Niet zeker</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l65">Zonder bril zie ik helemaal niets, objectief gezien.</p></div>
+      <p class="nc-note">het stopwoord van het personage, overal gebruikt</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> Klopt</label>
+        <label><input type="radio" name="v65" value="change"> Moet anders</label>
+        <label><input type="radio" name="v65" value="unsure"> Niet zeker</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Een regel van Hafez</h2>
+    <p class="nc-gq">Deze regel van de dichter Hafez staat er zonder komma, dus je kunt hem op twee tegengestelde manieren lezen:</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="nl" dir="ltr"><p class="nc-line" id="l66">Die wijn daar is de echte wijn niet een metafoor.</p></div>
+      <ul class="nc-after"><li>Zo gelezen: de wijn is echt, geen metafoor.</li><li>Anders gelezen: de wijn is niet echt, alleen een metafoor.</li></ul>
+      <p class="nc-q">Kan de versie in jouw taal op beide manieren worden gelezen?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> Ja, allebei</label>
+        <label><input type="radio" name="v66" value="change"> Maar op één manier</label>
+        <label><input type="radio" name="v66" value="unsure"> Niet zeker</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">Hoe zou jij het zeggen? <span class="nc-optional">(optioneel)</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

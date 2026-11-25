@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> Perzské príslovia</h2>
-    <p class="nc-gq">Niektoré perzské príslovia a obrazy sú preložené doslova. Dáva vám každé z nich aspoň trochu tušiť, čo znamená, alebo vám nehovorí nič?</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">Tieto perzské príslovia sú preložené doslova. Skúste najprv každé uhádnuť a potom si zobrazte jeho význam.</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l6">Dážď nepadá nahor zo zeme.</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Rodičia sa obetujú za deti, nie deti za rodičov.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v6" value="change"> Neviem</label>
-        <label><input type="radio" name="v6" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v6" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v6" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v6" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n6">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l7">Dobrý rok sa pozná po jari.</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Podľa začiatku sa dá poznať, aký bude celý rok.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v7" value="change"> Neviem</label>
-        <label><input type="radio" name="v7" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v7" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v7" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v7" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n7">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l8">Nejedz smútok</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Nebuď smutný; nerob si starosti.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v8" value="change"> Neviem</label>
-        <label><input type="radio" name="v8" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v8" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v8" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v8" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n8">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l9">srdce mi hnije</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Chradnem od nudy a samoty.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v9" value="change"> Neviem</label>
-        <label><input type="radio" name="v9" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v9" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v9" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v9" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n9">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l10">Moja ruka je krátka a spojenie s tebou ďaleké.</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Byť s tebou je pre mňa nedosiahnuteľné; nemám na to silu.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v10" value="change"> Neviem</label>
-        <label><input type="radio" name="v10" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v10" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v10" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v10" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n10">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l11">ak to poviem, jazyk mi horí; ak to nepoviem, špik v kostiach mi horí</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Hovoriť bolí, ale mlčať bolí ešte viac.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v11" value="change"> Neviem</label>
-        <label><input type="radio" name="v11" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v11" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v11" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v11" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n11">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l12">jedlo sa mi zmení na hadí jed</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Celé jedlo mi tým pokazí.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v12" value="change"> Neviem</label>
-        <label><input type="radio" name="v12" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v12" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v12" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v12" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n12">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l13">žiadny chlieb sa ti nezohreje</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Nikam ťa to nedovedie; nič tým nezískaš.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v13" value="change"> Neviem</label>
-        <label><input type="radio" name="v13" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v13" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v13" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v13" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n13">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l14">ma rodina násilím napchala medzi kvočky</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Rodina ma dotlačila do manželstva.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v14" value="change"> Neviem</label>
-        <label><input type="radio" name="v14" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v14" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v14" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v14" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n14">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l15">kocka cukru mi skočí do hrdla</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Kocka cukru mi zabehne a začnem sa dusiť.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v15" value="change"> Neviem</label>
-        <label><input type="radio" name="v15" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v15" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v15" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v15" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n15">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l16">nakukni do každého posledného rohu</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Všetko preskúmaj; pozri si čo najviac miest.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v16" value="change"> Neviem</label>
-        <label><input type="radio" name="v16" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v16" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v16" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v16" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n16">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l17">slová nič nestoja — sú len vietor vo vzduchu</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Povedať niečo nič nestojí; samotné slová nič nedokazujú.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v17" value="change"> Neviem</label>
-        <label><input type="radio" name="v17" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v17" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v17" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v17" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n17">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l18">iste klesne v Negariných očiach</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Dievča by o ňom určite stratilo dobrú mienku.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v18" value="change"> Neviem</label>
-        <label><input type="radio" name="v18" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v18" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v18" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v18" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n18">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l19">Len sľub na žatvu?</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Len prázdny sľub, ktorý sa nikdy nesplní?</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v19" value="change"> Neviem</label>
-        <label><input type="radio" name="v19" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v19" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v19" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v19" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n19">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l20">naservírujem vnútornosti priateľstva na podnose</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Pohostím ťa všetkým priateľstvom, ktoré mám.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v20" value="change"> Neviem</label>
-        <label><input type="radio" name="v20" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v20" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v20" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v20" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n20">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l21">vypadali im všetky chlpy na tele</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Úplne ich to ohromilo.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v21" value="change"> Neviem</label>
-        <label><input type="radio" name="v21" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v21" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v21" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v21" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n21">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l22">netráp sa, vyschne ti mlieko</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Upokoj sa; nestojí to za také rozčuľovanie.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v22" value="change"> Neviem</label>
-        <label><input type="radio" name="v22" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v22" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v22" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v22" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n22">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l23">keď si neprdneš, nikto ťa nebude mať za nemého</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Nikomu by neprekážalo, keby si mlčal.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v23" value="change"> Neviem</label>
-        <label><input type="radio" name="v23" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v23" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v23" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v23" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n23">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l24">Zožer hlavičku môjho kokota</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Hrubo povedané: zmizni, tvoj názor nikoho nezaujíma.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v24" value="change"> Neviem</label>
-        <label><input type="radio" name="v24" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v24" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v24" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v24" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n24">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l25">Ty žrút hláv kokotov</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Hrubá nadávka medzi kamarátmi, asi ako „ty trúba“.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v25" value="change"> Neviem</label>
-        <label><input type="radio" name="v25" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v25" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v25" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v25" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n25">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l26">smeješ sa našim bradám a vtákom</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Vysmievaš sa nám, ktorí sme zostali doma.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v26" value="change"> Neviem</label>
-        <label><input type="radio" name="v26" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v26" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v26" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v26" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n26">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l27">netúlal by si sa takto ulicami s vtákom v ruke</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Netúlal by si sa sám a bez cieľa, stále slobodný.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v27" value="change"> Neviem</label>
-        <label><input type="radio" name="v27" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v27" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v27" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v27" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n27">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l28">nech nám na hlavu spadne akýkoľvek vták</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Nech nás postihne akákoľvek pohroma.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> Viem uhádnuť</label>
-        <label><input type="radio" name="v28" value="change"> Neviem</label>
-        <label><input type="radio" name="v28" value="unsure"> Neviem isto</label>
+        <label><input type="radio" name="v28" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v28" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v28" value="change"> Ani s významom nevidím súvislosť</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">Čo podľa vás znamená? <span class="nc-optional">(nepovinné)</span></label>
+        <label for="n28">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l29">palicu vrazili do zadku nám, deckám z provincií</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>To pravidlo bolo voči nám všetkým z provincií veľmi nespravodlivé.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v29" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v29" value="change"> Ani s významom nevidím súvislosť</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l30">Aj tak by si nemohol zožrať ani tú hlavičku.</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Hrubá odpoveď („tú hlavičku“ = hlavičku kokota): aj tak by si nič nedokázal.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v30" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v30" value="change"> Ani s významom nevidím súvislosť</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l31">Nech krúžim okolo hlavičky Nini-jan</p></div>
+      <details class="nc-hint"><summary>Zobraziť význam</summary><p>Láskavý výraz: pre ňu dám čokoľvek.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> Viem to uhádnuť aj bez významu</label>
+        <label><input type="radio" name="v31" value="unsure"> S významom tomu rozumiem</label>
+        <label><input type="radio" name="v31" value="change"> Ani s významom nevidím súvislosť</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">Čo je na tom nejasné? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> Detské slová</h2>
     <p class="nc-gq">Niektoré deti v knihe hovoria slová nesprávne, tak ako malé deti. Znie každé ako detská chyba, a nie ako preklep?</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l29">Je to kameň z marmolu. Marmol znamená veľmi drahý.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l32">Je to kameň z marmolu. Marmol znamená veľmi drahý.</p></div>
       <p class="nc-note">marmol = mramor</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> Správne</label>
-        <label><input type="radio" name="v29" value="change"> Treba zmeniť</label>
-        <label><input type="radio" name="v29" value="unsure"> Neviem isto</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l30">Volá sa to Tatanik.</p></div>
-      <p class="nc-note">Tatanik = Titanic</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> Správne</label>
-        <label><input type="radio" name="v30" value="change"> Treba zmeniť</label>
-        <label><input type="radio" name="v30" value="unsure"> Neviem isto</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l31">Baba, Baba, kúpis mi tú velkú bábiku?</p></div>
-      <p class="nc-note">malé dievčatko</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> Správne</label>
-        <label><input type="radio" name="v31" value="change"> Treba zmeniť</label>
-        <label><input type="radio" name="v31" value="unsure"> Neviem isto</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l32">Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.</p></div>
-      <p class="nc-note">otec napodobňuje jej reč</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> Správne</label>
         <label><input type="radio" name="v32" value="change"> Treba zmeniť</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Prezývky</h2>
-    <p class="nc-gq">Kamaráti v knihe si dávajú hravé prezývky, často so slovnou hračkou. Funguje každá ako prezývka v slovenčine?</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l33">Alain Kokoton</p></div>
-      <p class="nc-note">prezývka jedného z kamarátov: meno herca Alaina Delona, ktorého časť sa zmenila na vulgárne slovo pre penis</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l33">Volá sa to Tatanik.</p></div>
+      <p class="nc-note">Tatanik = Titanic</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> Správne</label>
         <label><input type="radio" name="v33" value="change"> Treba zmeniť</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l34">Starší z Krčmy</p></div>
-      <p class="nc-note">posmešne vznešený titul z Háfezovej poézie</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l34">Baba, Baba, kúpis mi tú velkú bábiku?</p></div>
+      <p class="nc-note">malé dievčatko</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> Správne</label>
         <label><input type="radio" name="v34" value="change"> Treba zmeniť</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l35">Krčmárik</p></div>
-      <p class="nc-note">láskavá podoba prezývky „Starší z Krčmy“</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l35">Áno, kúpim ti bábiku. Keď budem mať nejaké peniaze, kúpim ti este lepsiu, Babova dievčinka.</p></div>
+      <p class="nc-note">otec napodobňuje jej reč</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> Správne</label>
         <label><input type="radio" name="v35" value="change"> Treba zmeniť</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l36">Taverny, môj Krčmár</p></div>
-      <p class="nc-note">láskavé prezývky odvodené od slov „taverna“ a „krčma“</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Prezývky</h2>
+    <p class="nc-gq">Kamaráti v knihe si dávajú hravé prezývky, často so slovnou hračkou. Funguje každá ako prezývka v slovenčine?</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l36">Alain Kokoton</p></div>
+      <p class="nc-note">prezývka jedného z kamarátov: meno herca Alaina Delona, ktorého časť sa zmenila na vulgárne slovo pre penis</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> Správne</label>
         <label><input type="radio" name="v36" value="change"> Treba zmeniť</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l37">Leopard Farid</p></div>
-      <p class="nc-note">pre odvážneho, bezhlavého kamaráta</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l37">Starší z Krčmy</p></div>
+      <p class="nc-note">posmešne vznešený titul z Háfezovej poézie</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> Správne</label>
         <label><input type="radio" name="v37" value="change"> Treba zmeniť</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l38">Je Arasteh len zostrihnuté Araasteh?</p></div>
-      <p class="nc-note">araasteh = po perzsky „úhľadný“</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l38">Krčmárik</p></div>
+      <p class="nc-note">láskavá podoba prezývky „Starší z Krčmy“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> Správne</label>
         <label><input type="radio" name="v38" value="change"> Treba zmeniť</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l39">jej Jasnosťou slečnou Armaaan</p></div>
-      <p class="nc-note">priezvisko Arman, posmešne natiahnuté</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l39">Taverny, môj Krčmár</p></div>
+      <p class="nc-note">láskavé prezývky odvodené od slov „taverna“ a „krčma“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> Správne</label>
         <label><input type="radio" name="v39" value="change"> Treba zmeniť</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l40">Mister Kučeravý Schrödinger</p></div>
-      <p class="nc-note">posmešný titul pre niekoho, kto sa nevie rozhodnúť</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l40">Leopard Farid</p></div>
+      <p class="nc-note">pre odvážneho, bezhlavého kamaráta</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> Správne</label>
         <label><input type="radio" name="v40" value="change"> Treba zmeniť</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Vtipy a slovné hračky</h2>
-    <p class="nc-gq">V týchto riadkoch je vtip alebo slovná hračka. Funguje každý v slovenčine?</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l41">Má to tak nastavené od výroby.</p></div>
-      <p class="nc-note">kaziť veci má jednoducho v povahe</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l41">Je Arasteh len zostrihnuté Araasteh?</p></div>
+      <p class="nc-note">araasteh = po perzsky „úhľadný“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> Správne</label>
         <label><input type="radio" name="v41" value="change"> Treba zmeniť</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l42">Odpustené. Celý tento bulvár je tvoj.</p></div>
-      <p class="nc-note">v perzštine „odpustiť“ znamená aj „darovať“</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l42">jej Jasnosťou slečnou Armaaan</p></div>
+      <p class="nc-note">priezvisko Arman, posmešne natiahnuté</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> Správne</label>
         <label><input type="radio" name="v42" value="change"> Treba zmeniť</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l43">ešte včera si hovoril khár. Teraz si sa poľudštil a hovoríš somár?</p></div>
-      <p class="nc-note">doberanie chlapca, že prešiel na slušnejšie slovo</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l43">Mister Kučeravý Schrödinger</p></div>
+      <p class="nc-note">posmešný titul pre niekoho, kto sa nevie rozhodnúť</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> Správne</label>
         <label><input type="radio" name="v43" value="change"> Treba zmeniť</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l44">Pír na pír? … Orlie Oko hovorí peer-to-peer, Taverny hovorí pír na pír.</p></div>
-      <p class="nc-note">„peer“ počuje ako perzské pir, „starší“, z ktorého je jeho prezývka</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Vtipy a slovné hračky</h2>
+    <p class="nc-gq">V týchto riadkoch je vtip alebo slovná hračka. Funguje každý v slovenčine?</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l44">Má to tak nastavené od výroby.</p></div>
+      <p class="nc-note">kaziť veci má jednoducho v povahe</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> Správne</label>
         <label><input type="radio" name="v44" value="change"> Treba zmeniť</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l45">Včera v noci som počul, ako prežúvaš.</p></div>
-      <p class="nc-note">žuvanie v noci, ako keď krava prežúva</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l45">Odpustené. Celý tento bulvár je tvoj.</p></div>
+      <p class="nc-note">v perzštine „odpustiť“ znamená aj „darovať“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> Správne</label>
         <label><input type="radio" name="v45" value="change"> Treba zmeniť</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l46">Čo ťa zase trápi, že sa ti na nás postavil, Alain Kokoton?</p></div>
-      <p class="nc-note">dvojaký význam: hrdo sa postaviť a erekcia</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l46">ešte včera si hovoril khár. Teraz si sa poľudštil a hovoríš somár?</p></div>
+      <p class="nc-note">doberanie chlapca, že prešiel na slušnejšie slovo</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> Správne</label>
         <label><input type="radio" name="v46" value="change"> Treba zmeniť</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l47">Akým -károm teda nebol?</p></div>
-      <p class="nc-note">matka zachytí len koniec slova „sukničkár“</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l47">Pír na pír? … Orlie Oko hovorí peer-to-peer, Taverny hovorí pír na pír.</p></div>
+      <p class="nc-note">„peer“ počuje ako perzské pir, „starší“, z ktorého je jeho prezývka</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> Správne</label>
         <label><input type="radio" name="v47" value="change"> Treba zmeniť</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l48">Priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne</p></div>
-      <p class="nc-note">chlapcovo stále opakované chvastanie</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l48">Včera v noci som počul, ako prežúvaš.</p></div>
+      <p class="nc-note">žuvanie v noci, ako keď krava prežúva</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> Správne</label>
         <label><input type="radio" name="v48" value="change"> Treba zmeniť</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l49">Alebo si kokotohl... no, kokotohlavec si bol, teraz si len ešte väčší kokotohlavec.</p></div>
-      <p class="nc-note">nadávka sa preruší a potom ešte pritvrdí</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l49">Čo ťa zase trápi, že sa ti na nás postavil, Alain Kokoton?</p></div>
+      <p class="nc-note">dvojaký význam: hrdo sa postaviť a erekcia</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> Správne</label>
         <label><input type="radio" name="v49" value="change"> Treba zmeniť</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l50">Áno, chlapče, všetci máme továrne. … Máme fabriku na kecanie sračiek.</p></div>
-      <p class="nc-note">jediné, čo vyrábajú, sú sračky: len kecajú nezmysly</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l50">Akým -károm teda nebol?</p></div>
+      <p class="nc-note">matka zachytí len koniec slova „sukničkár“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> Správne</label>
         <label><input type="radio" name="v50" value="change"> Treba zmeniť</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l51">ty starožitnosť, veď ty sám si socha sprostosti a úpadku</p></div>
-      <p class="nc-note">posmešná nadávka</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l51">Priateľ bratranca majstra remeselníka nášho švagra, ktorý je najbohatším mužom v Teheráne</p></div>
+      <p class="nc-note">chlapcovo stále opakované chvastanie</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> Správne</label>
         <label><input type="radio" name="v51" value="change"> Treba zmeniť</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l52">Podľa môjho názoru je život ako tisíctomanová bankovka: z akejkoľvek strany sa na ňu pozrieš, cítiť z nej šošovicovú ryžu.</p></div>
-      <p class="nc-note">absurdný vtip</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l52">Alebo si kokotohl... no, kokotohlavec si bol, teraz si len ešte väčší kokotohlavec.</p></div>
+      <p class="nc-note">nadávka sa preruší a potom ešte pritvrdí</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> Správne</label>
         <label><input type="radio" name="v52" value="change"> Treba zmeniť</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l53">Ja proste takto rozprávam, a vy myslíte, že verše skladám.</p></div>
-      <p class="nc-note">chlapec odpovedá spevavým rytmom</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l53">Áno, chlapče, všetci máme továrne. … Máme fabriku na kecanie sračiek.</p></div>
+      <p class="nc-note">jediné, čo vyrábajú, sú sračky: len kecajú nezmysly</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> Správne</label>
         <label><input type="radio" name="v53" value="change"> Treba zmeniť</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l54">Daj pozor, aby si nepraskol, pán Kokot.</p></div>
-      <p class="nc-note">práve vypäl hruď</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l54">ty starožitnosť, veď ty sám si socha sprostosti a úpadku</p></div>
+      <p class="nc-note">posmešná nadávka</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> Správne</label>
         <label><input type="radio" name="v54" value="change"> Treba zmeniť</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l55">Ty si zo všetkých najväčšia krava.</p></div>
-      <p class="nc-note">„krava“ = tupý hlupák, povedané mužovi</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l55">Podľa môjho názoru je život ako tisíctomanová bankovka: z akejkoľvek strany sa na ňu pozrieš, cítiť z nej šošovicovú ryžu.</p></div>
+      <p class="nc-note">absurdný vtip</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> Správne</label>
         <label><input type="radio" name="v55" value="change"> Treba zmeniť</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l56">vždy si náramne užíval, ako do tej vety dvakrát vloží slovo „vedomý“.</p></div>
-      <p class="nc-note">„vedomý“ dvakrát, pre zábavu</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l56">Ja proste takto rozprávam, a vy myslíte, že verše skladám.</p></div>
+      <p class="nc-note">chlapec odpovedá spevavým rytmom</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> Správne</label>
         <label><input type="radio" name="v56" value="change"> Treba zmeniť</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l57">problém je u prijímača; vysielač to nevyrieši.</p></div>
-      <p class="nc-note">kamarátov slabý zrak je ten „prijímač“</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l57">Daj pozor, aby si nepraskol, pán Kokot.</p></div>
+      <p class="nc-note">práve vypäl hruď</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> Správne</label>
         <label><input type="radio" name="v57" value="change"> Treba zmeniť</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l58">Myslím Alain Kokoton. Kooo-kot.</p></div>
-      <p class="nc-note">vulgárna časť slovnej hračky, natiahnutá</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l58">Ty si zo všetkých najväčšia krava.</p></div>
+      <p class="nc-note">„krava“ = tupý hlupák, povedané mužovi</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> Správne</label>
         <label><input type="radio" name="v58" value="change"> Treba zmeniť</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l59">Ak si ty Hooman, tak ja som Zuzana.</p></div>
-      <p class="nc-note">jemné meno Hooman nesedí takému chlpatému chlapovi</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l59">vždy si náramne užíval, ako do tej vety dvakrát vloží slovo „vedomý“.</p></div>
+      <p class="nc-note">„vedomý“ dvakrát, pre zábavu</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> Správne</label>
         <label><input type="radio" name="v59" value="change"> Treba zmeniť</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l60">Deriváciu? Zmysel? Alebo zmysel derivácie? Alebo deriváciu zmyslu?</p></div>
-      <p class="nc-note">pseudohlboká slovná hračka</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l60">problém je u prijímača; vysielač to nevyrieši.</p></div>
+      <p class="nc-note">kamarátov slabý zrak je ten „prijímač“</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> Správne</label>
         <label><input type="radio" name="v60" value="change"> Treba zmeniť</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l61">Dajbože, nech si vždy araasteh.</p></div>
-      <p class="nc-note">požehnanie so slovnou hračkou na priezvisko Arasteh; araasteh = „úhľadný“</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l61">Myslím Alain Kokoton. Kooo-kot.</p></div>
+      <p class="nc-note">vulgárna časť slovnej hračky, natiahnutá</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> Správne</label>
         <label><input type="radio" name="v61" value="change"> Treba zmeniť</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l62">Bez okuliarov nič nevidím, objektívne.</p></div>
-      <p class="nc-note">obľúbené slovo postavy, používa ho stále</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l62">Ak si ty Hooman, tak ja som Zuzana.</p></div>
+      <p class="nc-note">jemné meno Hooman nesedí takému chlpatému chlapovi</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> Správne</label>
         <label><input type="radio" name="v62" value="change"> Treba zmeniť</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Háfezov verš</h2>
-    <p class="nc-gq">Tento verš básnika Háfeza je napísaný bez čiarky, takže sa dá čítať dvoma opačnými spôsobmi:</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l63">To víno tam je naozaj skutočné nie je to metafora.</p></div>
-      <ul class="nc-after"><li>Jeden spôsob: víno je skutočné, nie metafora.</li><li>Druhý spôsob: víno nie je skutočné, je len metafora.</li></ul>
-      <p class="nc-q">Dá sa vaša verzia čítať oboma spôsobmi?</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l63">Deriváciu? Zmysel? Alebo zmysel derivácie? Alebo deriváciu zmyslu?</p></div>
+      <p class="nc-note">pseudohlboká slovná hračka</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> Áno, oboma</label>
-        <label><input type="radio" name="v63" value="change"> Len jedným</label>
+        <label><input type="radio" name="v63" value="ok"> Správne</label>
+        <label><input type="radio" name="v63" value="change"> Treba zmeniť</label>
         <label><input type="radio" name="v63" value="unsure"> Neviem isto</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l64">Dajbože, nech si vždy araasteh.</p></div>
+      <p class="nc-note">požehnanie so slovnou hračkou na priezvisko Arasteh; araasteh = „úhľadný“</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> Správne</label>
+        <label><input type="radio" name="v64" value="change"> Treba zmeniť</label>
+        <label><input type="radio" name="v64" value="unsure"> Neviem isto</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l65">Bez okuliarov nič nevidím, objektívne.</p></div>
+      <p class="nc-note">obľúbené slovo postavy, používa ho stále</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> Správne</label>
+        <label><input type="radio" name="v65" value="change"> Treba zmeniť</label>
+        <label><input type="radio" name="v65" value="unsure"> Neviem isto</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Háfezov verš</h2>
+    <p class="nc-gq">Tento verš básnika Háfeza je napísaný bez čiarky, takže sa dá čítať dvoma opačnými spôsobmi:</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="sk" dir="ltr"><p class="nc-line" id="l66">To víno tam je naozaj skutočné nie je to metafora.</p></div>
+      <ul class="nc-after"><li>Jeden spôsob: víno je skutočné, nie metafora.</li><li>Druhý spôsob: víno nie je skutočné, je len metafora.</li></ul>
+      <p class="nc-q">Dá sa vaša verzia čítať oboma spôsobmi?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> Áno, oboma</label>
+        <label><input type="radio" name="v66" value="change"> Len jedným</label>
+        <label><input type="radio" name="v66" value="unsure"> Neviem isto</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">Ako by ste to povedali? <span class="nc-optional">(nepovinné)</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

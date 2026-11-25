@@ -13,7 +13,6 @@
   "needs_change": "Bør ændres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sige det?",
-  "meaning": "Hvad tror du, det betyder?",
   "optional": "(valgfrit)",
   "your_name": "Dit navn",
   "thanks_tick": "Skriv mit navn på takkesiden",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Persiske ordsprog",
-   "q": "Nogle persiske ordsprog og billeder er oversat ord for ord. Giver hvert af dem dig en fornemmelse af, hvad det betyder, eller siger det dig ingenting?",
+   "q": "Disse persiske ordsprog er oversat ord for ord. Prøv først at gætte hvert af dem, og vis så betydningen.",
    "labels": [
-    "Jeg kan gætte det",
-    "Det kan jeg ikke",
-    "Usikker"
+    "Jeg gættede det uden betydningen",
+    "Jeg forstod det med betydningen",
+    "Selv med betydningen kan jeg ikke se sammenhængen"
    ],
-   "note_label": "Hvad tror du, det betyder?",
-   "note_on": "ok",
+   "note_label": "Hvad gør det uklart?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Det regner ikke opad fra jorden.",
-     "note": null
+     "note": "Forældre ofrer sig for deres børn, ikke børn for deres forældre."
     },
     {
      "id": "01/0073#img",
      "text": "Et godt år kendes på dets forår.",
-     "note": null
+     "note": "Man kan se på begyndelsen, hvordan året bliver."
     },
     {
      "id": "04a/0128#img",
      "text": "Du skal ikke spise sorg",
-     "note": null
+     "note": "Vær ikke ked af det; lad være med at bekymre dig."
     },
     {
      "id": "01/0138#img",
      "text": "mit hjerte rådner",
-     "note": null
+     "note": "Jeg visner hen af kedsomhed og ensomhed."
     },
     {
      "id": "04b/0334#img",
      "text": "Min hånd er kort, og foreningen med dig er fjern.",
-     "note": null
+     "note": "At være sammen med dig er uden for min rækkevidde; jeg er magtesløs."
     },
     {
      "id": "01/0203#img",
      "text": "Siger jeg det, brænder min tunge; siger jeg det ikke, brænder marven i mine knogler",
-     "note": null
+     "note": "Det gør ondt at sige det, men det gør endnu mere ondt at tie."
     },
     {
      "id": "03/0634#img",
      "text": "bliver maden til slangegift for mig",
-     "note": null
+     "note": "Han ødelægger maden for mig."
     },
     {
      "id": "04b/0274#img",
      "text": "så bliver der ikke varmet noget brød til dig",
-     "note": null
+     "note": "Det fører ikke til noget; du får intet ud af det."
     },
     {
      "id": "04b/0824#img",
      "text": "min familie med vold og magt puttede mig ind i hønsegården",
-     "note": null
+     "note": "Min familie pressede mig til at gifte mig."
     },
     {
      "id": "04b/0509#img",
      "text": "sukkerknalden springer ned i halsen på mig",
-     "note": null
+     "note": "Sukkerknalden kommer i den gale hals, og jeg er ved at blive kvalt."
     },
     {
      "id": "01/0132#img",
      "text": "kig ind i hver eneste krog",
-     "note": null
+     "note": "Udforsk alt; se så mange steder som muligt."
     },
     {
      "id": "06/0118#img",
      "text": "ord koster ingenting – det er bare varm luft",
-     "note": null
+     "note": "Det koster ingenting at sige noget; ord alene beviser intet."
     },
     {
      "id": "04b/1247#img",
      "text": "ville han helt sikkert synke i Negars øjne",
-     "note": null
+     "note": "Pigen ville helt sikkert ikke længere tænke godt om ham."
     },
     {
      "id": "04b/1293#img",
      "text": "Bare et høsttidsløfte?",
-     "note": null
+     "note": "Bare et tomt løfte, der aldrig bliver holdt?"
     },
     {
      "id": "04b/0205#img",
      "text": "lad mig servere dig venskabets indvolde på et fad",
-     "note": null
+     "note": "Lad mig forkæle dig med alt det venskab, jeg har."
     },
     {
      "id": "04b/1125#img",
      "text": "alt deres kropshår faldt af",
-     "note": null
+     "note": "De var fuldstændig lamslåede."
     },
     {
      "id": "03/0417#img",
      "text": "hids dig ikke sådan op, ellers tørrer din mælk ud",
-     "note": null
+     "note": "Tag det roligt; det er ikke værd at blive så oprevet over."
     },
     {
      "id": "04b/0378#img",
      "text": "ingen kalder dig stum, bare fordi du lader være med at prutte",
-     "note": null
+     "note": "Ingen havde haft noget imod det, hvis du havde holdt mund."
     },
     {
      "id": "04b/0181#img",
      "text": "Æd hovedet på min pik",
-     "note": null
+     "note": "En grov måde at sige: skrid, ingen vil høre din mening."
     },
     {
      "id": "04b/0899#img",
      "text": "Din pikhovedæder",
-     "note": null
+     "note": "Et groft skældsord mellem venner, nærmest »din idiot«."
     },
     {
      "id": "04b/0209#img",
      "text": "griner af vores skæg og pik",
-     "note": null
+     "note": "Gør grin med os, der blev tilbage."
     },
     {
      "id": "04b/0822#img",
      "text": "du ville ikke gå rundt i gaderne med pik i hånden sådan",
-     "note": null
+     "note": "Du ville ikke gå alene og formålsløst rundt, stadig single."
     },
     {
      "id": "04b/0440#img",
      "text": "hvad der end lander af pik på hovedet af os",
-     "note": null
+     "note": "Hvilken ulykke der end rammer os."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "de har stukket en kæp op i røven på os alle sammen fra provinsen",
+     "note": "Politikken har behandlet os alle fra provinsen meget uretfærdigt."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Du kunne ikke engang æde hovedet på den.",
+     "note": "Et groft svar (»den« = pikken): du kunne slet ikke have gjort noget."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Jeg kunne gå rundt og rundt om min Nini-jans hoved.",
+     "note": "Et kærligt udtryk: jeg ville give alt for hende."
     }
+   ],
+   "hint": "Vis betydningen",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

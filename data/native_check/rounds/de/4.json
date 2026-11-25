@@ -13,7 +13,6 @@
   "needs_change": "Änderung nötig",
   "not_sure": "Nicht sicher",
   "how_say": "Wie würdest du es sagen?",
-  "meaning": "Was glaubst du, was es bedeutet?",
   "optional": "(optional)",
   "your_name": "Dein Name",
   "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
@@ -107,9 +106,9 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Diese Lokalisierungspolitik hat uns richtig gefickt. Sie sagen, sie soll die Kinder in der Nähe ihrer Familien halten, aber uns allen aus der Provinz haben sie einen Stock in den Arsch geschoben.",
-     "note": null
+     "id": "04b/0146#word_",
+     "text": "– Scheißkopf. Du bringst mich dazu, den Mund aufzumachen und es auszusprechen.",
+     "note": "\"Scheißkopf\" = Scheiße im Hirn, derbes Schimpfwort für einen Dummkopf"
     },
     {
      "id": "04b/0150#crude",
@@ -127,6 +126,16 @@
      "note": null
     },
     {
+     "id": "04b/0226#word_",
+     "text": "– ... immer wenn ich für die Kurse und Arbeiten des zweiten Scheißstudiengangs kam, sah ich sie streiten.",
+     "note": "\"des zweiten Scheißstudiengangs\" = mein beschissenes Zweitstudium (derbes Gemecker)"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "– Also bist du ein Scheiß-Erstie.",
+     "note": "\"Scheiß-Erstie\" = Scheiß-Erstsemester, lockeres, freundschaftliches Fluchen"
+    },
+    {
      "id": "04b/0351#crude",
      "text": "Was hat mir der erste Platz in der Klasse und ein, ich weiß nicht, zweiter Abschluss zur Länge meines Schwanzes hinzugefügt, wenn mein Job jetzt ist, Umspannwerke zu inspizieren?",
      "note": null
@@ -137,19 +146,24 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "– Nicht einmal den Kopf davon hättest du fressen können. Aber verdammt, waren diese Süßigkeiten gut. Ananas.",
-     "note": null
+     "id": "04b/0464#crude",
+     "text": "Bist du Heisenberg oder Einstein, dass du erwartest, sie geben dir eine Zwanzig und würdigen deine erleuchtenden Theorien? Wenn ich es wäre, vergiss null; ich würde dich den Kopf meines Schwanzes fressen lassen und dich dann mit einem Tritt aus der Universität rauswerfen. Ich würde dich übrigens auch eine Weile in ein Schwarzes Loch werfen, damit deine Krankheit niemanden ansteckt.",
+     "note": "im Iran gehen die Noten bis 20"
     },
     {
      "id": "04b/0520#crude",
-     "text": "– Streitet heute nicht im Zimmer. Ich habe eine Zwölf im Sport bekommen, ich bin verdammt schlecht drauf, und ich beschimpfe euch.",
-     "note": null
+     "text": "Streitet heute nicht im Zimmer. Ich habe eine Zwölf im Sport bekommen, ich bin verdammt schlecht drauf, und ich beschimpfe euch.",
+     "note": "im Iran gehen die Noten bis 20"
     },
     {
      "id": "04b/0567#crude",
      "text": "– Ich war mir das Gesicht waschen. Ich kann mir doch nicht mit aufgesetzter Brille das Gesicht waschen, du Arschloch.",
      "note": null
+    },
+    {
+     "id": "04b/0717#word_",
+     "text": "– Ich sag dir, Äldi-jan, aber mal unter uns: Du bist durch einen verfickten Zufall ins Ausland gelangt.",
+     "note": "\"verfickten Zufall\" = ein verfickter Glückstreffer, purer Dusel"
     },
     {
      "id": "04b/0723#crude",
@@ -177,6 +191,11 @@
      "note": null
     },
     {
+     "id": "04b/1003#word_",
+     "text": "– Schau mal, was für ein Schlamassel du angerichtet hast, Kackhirn.",
+     "note": "\"Kackhirn\" = Scheiße im Hirn (derbes Schimpfwort)"
+    },
+    {
      "id": "04b/1017#crude",
      "text": "– Ich suche meine Brille, du Arschloch. Sag diesem Farid, er soll sein Glas nicht ständig direkt vor meine Füße stellen.",
      "note": null
@@ -185,6 +204,11 @@
      "id": "04b/1300#crude",
      "text": "– Hast du mit diesem Satz gerade auf uns geschissen oder auf Mister lockenhaarigen Schrödinger?",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.",
+     "note": "\"scheißschwindlig\" = derbe Wortschöpfung: so verwirrt, dass einem der Kopf schwirrt"
     }
    ]
   },
@@ -233,6 +257,11 @@
     {
      "id": "03/0517#natur",
      "text": "Im einen Augenblick zieht er einen mörderischen Stunt ab, im nächsten sagt er: „Oh, Blut. Mir graust es.“",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Am Haft-Seen beim Jahreswechsel zu Norouz las ich meiner Mutter das Gedicht vor.",
      "note": null
     },
     {
@@ -316,11 +345,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "– Ich liebe dich seit zweiunddreißig Monaten. Von weitem. Ohne dass du es weißt. Im Stillen, ohne ein einziges Wort.",
-     "note": null
-    },
-    {
      "id": "06/0050#natur",
      "text": "– Amir, der Opa hat sich auch mit Covid angesteckt, aber man hätte es ihm nie angesehen – er hat es wie eine einfache Erkältung abgeschüttelt.",
      "note": null
@@ -338,5 +362,5 @@
    ]
   }
  ],
- "first": 13
+ "first": 16
 }

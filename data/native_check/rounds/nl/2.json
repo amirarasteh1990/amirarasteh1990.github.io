@@ -13,7 +13,6 @@
   "needs_change": "Moet anders",
   "not_sure": "Niet zeker",
   "how_say": "Hoe zou jij het zeggen?",
-  "meaning": "Wat denk je dat het betekent?",
   "optional": "(optioneel)",
   "your_name": "Je naam",
   "thanks_tick": "Zet mijn naam op de bedankpagina",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "De verteller is hier zenuwachtig. Klinkt elke regel natuurlijk in jouw taal?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -58,17 +56,79 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "– Tweeëndertig maanden hou ik al van u. Van een afstand. Zonder dat u het wist. In stilte. Zonder één woord.",
+     "id": "04b/1320#nerv",
+     "text": "En met trillende handen bekeek ik haastig de ghazals om dat beit van Hafez te vinden waar je, net als van dat schilderij, zoals dat andere meisje had gezegd, steeds schijttureluurser van wordt naarmate je dieper in zijn diepte verzinkt",
+     "note": "hij herhaalt een grof woord dat een meisje over een schilderij verzon"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Net zoals dat, hoe meer je over deze tien woorden nadenkt, hoe sch... dinges, hoe verwarder je wordt.",
+     "note": "hij zegt het grove woord bijna weer, maar houdt zich in"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Jij, in godsnaam, luister. … Net als dat schilderij dat je vrie-vrie-vriendin liet zien.",
+     "note": "hij stottert"
+    }
+   ]
+  },
+  {
+   "key": "confess",
+   "title": null,
+   "q": "De verteller zegt het meisje eindelijk dat hij van haar houdt. Klinkt het natuurlijk en oprecht?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#conf",
+     "text": "Tweeëndertig maanden hou ik al van u. Van een afstand. Zonder dat u het wist. In stilte. Zonder één woord. Misschien zegt u dat het zo niet kan, dat het onmogelijk is, dat het ingebeeld is en niet echt. Maar het is zo en ik hou werkelijk van u.",
+     "note": "in het Perzisch spreekt hij haar formeel aan, met het beleefde ‘u’"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Dit zijn de eerste regels van het boek. Lezen ze natuurlijk en helder?",
+   "labels": [
+    "Klopt",
+    "Moet anders",
+    "Niet zeker"
+   ],
+   "note_label": "Hoe zou jij het zeggen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Hier gebeurt niets. Hier zal niets worden rechtgezet of verwoest. Er komt geen interpretatie. Geen conclusie.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Dit is het losse uiteinde van een draad van woorden die ooit geluiden waren.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Zoals in onze kindertijd, toen Maman het garen uit oude kleren losmaakte, en wij de draad namen en er rondjes mee door het huis liepen zodat het garen zich niet zou ophopen.",
+     "note": "Maman is Perzisch voor ‘moeder’ en is met opzet onvertaald gelaten. De kinderen lopen met de draad door het huis terwijl zij het garen uithaalt."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Nu wikkel ik de draad van woorden af, en jij raapt ze op en draagt ze jouw eigen wereld in, zodat ze zich hier, in mijn wereld, niet ophopen.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "De herinnering raakt los als een schroef met dolgedraaide draad. Is het beeld duidelijk?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -78,17 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Het kan zelfs zijn dat de geest die ooit het spoor van die geluiden op papier zette al lang niet meer ademt.",
+     "id": "03/0675#screw",
+     "text": "Sindsdien, als een schroef met dolgedraaide draad, was dat beeld niet langer gebonden aan de duisternis achter de gesloten deur van ons huis",
      "note": null
     }
-   ]
+   ],
+   "intro": "In het boek:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
-   "q_lang": "en",
+   "q": "Een jongen speelt soldaatje met zijn kleine broertjes. Klinken zijn bevelen als echte exercitie in het leger?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -98,8 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0175#s44",
-     "text": "– Rijker dan de vriend van de neef...",
+     "id": "04a/0024#drill",
+     "text": "Bataljon, voorwaarts mars!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Begin van etappe één van de missie. Bataljon, linksom!",
      "note": null
     }
    ]
@@ -107,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poëzie",
-   "q": "Dit zijn dichtregels. Leest elk ervan goed als poëzie in jouw taal?",
+   "q": "Dit zijn gedichten en dichtregels: het eigen gedicht van de verteller en regels van klassieke Perzische dichters (Kharaqani, Hafez, Attar). Leest elk ervan als poëzie in jouw taal?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -117,66 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Ik zou die zegelring van Salomo voor geen prijs aannemen, waarop soms de hand van ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mijn dromen waren donker / Ik kon niets zien / Je kwam / Het licht van mijn dromen ging aan / Nu ben je weg / Het licht van mijn dromen knippert nu / Ik koester geen hoop op je terugkeer / Maar als je weg je langs me voert / kom dan opnieuw in mijn dromen / Ik denk dat mijn dromen niet hebben geloofd dat je weg bent / ze denken dat je verdwaald bent en",
+     "note": "een eenvoudig gedicht van de verteller zelf, voor het meisje dat hij kwijtraakte"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "Op alle dingen kan men schrijven",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mijn dromen waren donker / Ik kon niets zien / Je kwam / Het licht van mijn dromen ... het licht van mijn dromen ging ... het licht van mijn dromen ging aan / Nu ... nu ... nu ben je weg ...",
+     "note": "hij oefent het half in slaap; het haperen is met opzet"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "schrijf dan op het water met je eigen bloed",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Op alle dingen kan men schrijven / behalve op water / en als je de zee oversteekt / schrijf dan op het water met je eigen bloed / zodat wie na jou komt / weet dat / de minnaars en / de dronkenen en / de verbranden / voorbij zijn gegaan.",
+     "note": "een oud Perzisch gedicht van Kharaqani, in de les op het bord geschreven"
     },
     {
-     "id": "04b/1271#poetr",
-     "text": "zodat wie na jou komt",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Ik zou die zegelring van Salomo voor geen prijs aannemen, waarop soms de hand van ...",
+     "note": "een regel van Hafez, een klassieke Perzische dichter; afgebroken zoals in het boek"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "voorbij zijn gegaan.",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Ik ben de dienaar van de Ouderling van de Kroeg, wiens genade ...",
+     "note": "een regel van Hafez, een klassieke Perzische dichter; afgebroken zoals in het boek"
     },
     {
-     "id": "04b/1390#poetr",
-     "text": "Het licht van mijn dromen ging aan",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "De hoop op vereniging met jou houdt me in leven; anders zou elke ademtocht van mij, gescheiden van jou, de angst voor de ondergang zijn. … Als jij de wond toebrengt, is dat beter dan de balsem van een ander, en als jij het gif geeft, beter dan ...",
+     "note": "twee regels van Hafez, een klassieke Perzische dichter; de tweede is afgebroken zoals in het boek"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Ik koester geen hoop op je terugkeer",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Van Hafez' betoverende dichtkunst is zich alleen iemand bewust die poëtische fijnzinnigheid kent en Perzisch weet te spreken.",
+     "note": "een regel van Hafez, een klassieke Perzische dichter; afgebroken zoals in het boek"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "Maar als je weg je langs me voert",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "God ontsluierde de schitterende schoonheid van het goddelijk aangezicht voor de engelen en zag dat zij niets van liefde wisten; uit die ijverzucht werd die verschijning louter vuur en trof het leem van Adam.",
+     "note": "een regel van Hafez, een klassieke Perzische dichter"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "kom dan opnieuw in mijn dromen",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "terugdenkend aan geliefde en vaderland zal ik zo bitter wenen, dat uit de wereld de weg en het gebruik van het reizen ...",
+     "note": "een regel van Hafez, een klassieke Perzische dichter; afgebroken zoals in het boek"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "Ik denk dat mijn dromen niet hebben geloofd dat je weg bent",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Al lange tijd heeft de geliefde geen bericht gestuurd; geen groet geschreven ...",
+     "note": "een regel van Hafez, een klassieke Perzische dichter; afgebroken zoals in het boek"
     },
     {
-     "id": "02/0005#poetr",
-     "text": "Het licht van mijn dromen ... het licht van mijn dromen ging ... het licht van mijn dromen ging aan",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "\"Voor Attar is wenen tot de dageraad zoeter\" of \"nu is hij nog meer gedood\"?",
+     "note": "een vriend vraagt welk van twee liedjes het is; elk is genoemd naar een regel uit een gedicht van Attar, een klassieke Perzische dichter"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Losse woorden",
-   "q": "Is het woord in elke regel het juiste? Wat het zou moeten betekenen, staat eronder.",
+   "q": "Onder elke regel staat één woord daaruit en wat het zou moeten betekenen. Is het hier het juiste woord?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -188,127 +253,67 @@
     {
      "id": "01/0166#word_",
      "text": "Hoe vaak ik ook zei: sla de kinderen niet, hij zei: ik heb shellshock opgelopen in de oorlog, ik kan er niets aan doen.",
-     "note": "\"shellshock\" = war nerve damage, in plain words"
+     "note": "\"shellshock\" = zenuwschade door de oorlog, in gewone woorden"
     },
     {
      "id": "01/0261#word_",
      "text": "– Mm-hm, hij is heel, heel erg veranderd. Hij is zo mager en donker geworden.",
-     "note": "\"donker geworden\" = skin grown darker from the sun"
+     "note": "\"donker geworden\" = huid die donkerder is geworden door de zon"
     },
     {
      "id": "03/0278#word_",
      "text": "Op een bepaalde manier kan men zeggen dat ze de universiteit hebben ingenomen. Karroubi is liefde, echt.",
-     "note": "\"Karroubi is liefde, echt\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karroubi is liefde, echt\" = Karroubi is geweldig (opgewonden jongerentaal)"
     },
     {
      "id": "03/0502#word_",
      "text": "– Ahhh. Daar krijg ik de kriebels van.",
-     "note": "\"de kriebels\" = skin crawling with disgust"
+     "note": "\"de kriebels\" = kippenvel van walging"
     },
     {
      "id": "04a/0062#word_",
      "text": "– Heel veel mensen falen hier. Ze gaan naar links.",
-     "note": "\"falen\" = fail, go wrong (as a boy says it)"
-    },
-    {
-     "id": "04b/0146#word_",
-     "text": "– Strontkop. Je laat me mijn mond opendoen en het zeggen.",
-     "note": "\"Strontkop\" = shit-for-brains, crude insult for a dimwit"
+     "note": "\"falen\" = mislukken, misgaan (zoals een jongen het zegt)"
     },
     {
      "id": "04b/0171#word_",
      "text": "We hebben al die proeftoetsen gemaakt en zijn nu kamergenoten met dit antiek.",
-     "note": "\"dit antiek\" = odd, old-fashioned person (mocking)"
-    },
-    {
-     "id": "04b/0186#word_",
-     "text": "– Ik had nog liever een kamer gedeeld met hen dan met een lulbrein als jij.",
-     "note": "\"lulbrein\" = dick-brain, crude insult for an idiot"
+     "note": "\"dit antiek\" = rare, ouderwetse figuur (spottend)"
     },
     {
      "id": "04b/0228#word_",
      "text": "Een jaar of twee geleden hoorde ik van Arendsoog News dat die fat ook naar Australië was gegaan, een beetje achter het meisje aan van wie jullie allebei hielden.",
-     "note": "\"die fat\" = vain show-off, a dandy (mocking)"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Dus je bent een klote-eerstejaars.",
-     "note": "\"klote-eerstejaars\" = fucking freshman, casual friendly swearing"
+     "note": "\"die fat\" = ijdele opschepper, een dandy (spottend)"
     },
     {
      "id": "04b/0353#word_",
      "text": "– En in die verklote situatie, welke antieke stukken vielen ons ten deel? De Vlieg en die andere ellendige waanzinnige.",
-     "note": "\"vielen ons ten deel\" = we got stuck with (casual)"
+     "note": "\"vielen ons ten deel\" = waarmee we werden opgezadeld (informeel)"
     },
     {
      "id": "04b/0421#word_",
      "text": "– Farid de Panter, beheers je zenuwen en haal geen moorddadige actie uit.",
-     "note": "\"moorddadige actie\" = a rash, wild move (running joke)"
-    },
-    {
-     "id": "04b/0717#word_",
-     "text": "– Ik zeg je, Oudje-jan, maar onder ons gezegd, je bent door stomme kutmazzel in het buitenland beland.",
-     "note": "\"stomme kutmazzel\" = a fucking fluke, sheer dumb luck"
-    },
-    {
-     "id": "04b/0723#word_",
-     "text": "– Nou, als jij niet het type bent dat toelating aanvraagt en vertrekt, waarom heb je dan je kont kapotgewerkt om het TOEFL-examen af te leggen?",
-     "note": "\"je kont kapotgewerkt\" = crude: slaved away, worked very hard"
+     "note": "\"moorddadige actie\" = een overhaaste, wilde actie (terugkerende grap)"
     },
     {
      "id": "04b/0736#word_",
      "text": "Zodra je naam valt, spitsen mijn oren zich.",
-     "note": "\"spitsen mijn oren zich\" = my ears prick up: I listen eagerly"
+     "note": "\"spitsen mijn oren zich\" = ik spits mijn oren: ik luister gretig"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Wat ben je toch sneaky.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
+     "note": "\"sneaky\" = Engels ‘sneaky’, speels ertussendoor gebruikt"
     },
     {
      "id": "04b/0818#word_",
      "text": "– Oudje, kijk eens hoe ver je het hebt gedreven: Farid, die geen reet geeft om ons of de kamer of wie dan ook, heeft zich laten horen.",
-     "note": "\"die geen reet geeft om ons\" = who doesn't give a damn about us"
-    },
-    {
-     "id": "04b/0935#word_",
-     "text": "– \"Voor Attar is wenen tot de dageraad zoeter\" of \"nu is hij nog meer gedood\"?",
-     "note": "\"nu is hij nog meer gedood\" = now he lies more deeply slain (by love)"
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "– Kijk wat een puinhoop je hebt aangericht, hersenschijter.",
-     "note": "\"hersenschijter\" = shit-for-brains (a crude insult)"
-    },
-    {
-     "id": "04b/1274#word_",
-     "text": "de dronkenen en",
-     "note": "\"de dronkenen\" = drunk with love, in the mystic sense"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "de verbranden",
-     "note": "\"de verbranden\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Je wordt er schijttureluurs van. Hoe meer je erover nadenkt, hoe schijttureluurser je wordt.",
-     "note": "\"schijttureluurs\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "En met trillende handen bekeek ik haastig de ghazals om dat beit van Hafez te vinden waar je, net als van dat schilderij, zoals dat andere meisje had gezegd, steeds schijttureluurser van wordt naarmate je dieper in zijn diepte verzinkt, en hem aan Niloofar te laten zien.",
-     "note": "\"steeds schijttureluurser\" = more baffled; echoes her crude coinage"
-    },
-    {
-     "id": "04b/1392#word_",
-     "text": "Het licht van mijn dromen knippert nu",
-     "note": "\"knippert\" = now flickers, like a failing light"
+     "note": "\"die geen reet geeft om ons\" = die zich geen moer van ons aantrekt"
     },
     {
      "id": "06/0253#word_",
      "text": "Ga nu wat pitten halen voor Ghassem en de anderen, ze willen een film kijken.",
-     "note": "\"wat pitten halen\" = roasted seeds to snack on"
+     "note": "\"wat pitten halen\" = geroosterde zaadjes om op te knabbelen"
     }
    ]
   }

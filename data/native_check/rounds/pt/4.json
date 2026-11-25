@@ -13,7 +13,6 @@
   "needs_change": "Precisa de alteração",
   "not_sure": "Não tenho a certeza",
   "how_say": "Como diria isto?",
-  "meaning": "O que acha que significa?",
   "optional": "(opcional)",
   "your_name": "O seu nome",
   "thanks_tick": "Incluir o meu nome na página de Agradecimentos",
@@ -122,11 +121,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Em nome de querer que os filhos fiquem perto das famílias, enfiaram-nos a vara no cu a nós, os da província.",
-     "note": null
-    },
-    {
      "id": "04b/0146#crude",
      "text": "Cabeça de merda. Fazes-me abrir a boca e dizê-lo.",
      "note": null
@@ -150,6 +144,11 @@
      "id": "04b/0164#crude",
      "text": "Que se foda esta nossa sorte.",
      "note": null
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "Eu teria preferido partilhar quarto com eles em vez de uma cabeça de pau como tu.",
+     "note": "\"cabeça de pau\" = cabeça de caralho: insulto grosseiro para um idiota"
     },
     {
      "id": "04b/0343#crude",
@@ -178,8 +177,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Se fosse por mim, zero qual quê; obrigava-te a comer a cabeça da minha pila e depois expulsava-te da universidade com um pontapé.",
-     "note": null
+     "text": "Então és o Heisenberg ou o Einstein, para esperares que te deem um vinte e te homenageiem pelas tuas teorias esclarecedoras? Se fosse por mim, zero qual quê; obrigava-te a comer a cabeça da minha pila e depois expulsava-te da universidade com um pontapé. Aliás, ainda te metia um tempo num buraco negro, para a tua doença não contagiar ninguém.",
+     "note": "no Irão, as notas vão até 20"
     },
     {
      "id": "04b/0486#crude",
@@ -194,7 +193,7 @@
     {
      "id": "04b/0520#crude",
      "text": "Hoje não discutam no quarto, que tive um doze a Educação Física, tenho os nervos fodidos e ainda vos mando à merda.",
-     "note": null
+     "note": "no Irão, as notas vão até 20"
     },
     {
      "id": "04b/0690#crude",
@@ -245,6 +244,11 @@
      "id": "04b/1017#crude",
      "text": "Estou à procura dos meus óculos, cabrão. E diz a esse Farid que não deixe o copo sempre à frente dos meus pés.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Fica-se com uma tontura do caralho. Quanto mais se pensa nisso, maior fica a tontura do caralho.",
+     "note": "\"tontura do caralho\" = expressão grosseira inventada: tão confuso que a cabeça anda à roda"
     }
    ]
   },
@@ -323,6 +327,11 @@
     {
      "id": "03/0523#natur",
      "text": "Uma revolução que começa com este tipo de sangue e violência tem um fim terrível.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Quando o ano novo começou, junto à mesa do Haft-Seen, li o poema para a minha mãe.",
      "note": null
     },
     {
@@ -461,16 +470,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "Há trinta e dois meses que gosto de si. De longe. Sem que saiba. Em silêncio.",
-     "note": null
-    },
-    {
-     "id": "04b/1320#natur",
-     "text": "E, com as mãos a tremer, percorria rapidamente os ghazals para encontrar um beit de Hafez que, tal como a pintura, como dizia aquela outra rapariga, nos desse uma tontura do caralho cada vez maior quanto mais nos afundássemos na sua profundidade. Queria mostrá-lo à Niloofar.",
-     "note": null
-    },
-    {
      "id": "06/0050#natur",
      "text": "Amir, o Avô apanhou Covid também, mas nem se deu conta – sacudiu-o como uma simples constipação.",
      "note": null
@@ -493,5 +492,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 16
 }

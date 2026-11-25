@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="lv" data-language="Latvian" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/lv/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">He addresses her with the polite 'you'. Does that fit here?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1314#s17" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l1">– Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>Stāstītājs šeit ir nervozs. Vai latviski katra rinda skan dabiski?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l1">Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis</p></div>
+      <p class="nc-note">viņš atkārto rupju vārdu, ko kāda meitene izdomāja par kādu gleznu</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> Pareizi</label>
         <label><input type="radio" name="v1" value="change"> Jāmaina</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l2">Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l2">Tāpat — jo vairāk tu domā par šiem desmit vārdiem, jo lielāks tev sū... tas ir, jo vairāk reibst galva.</p></div>
+      <p class="nc-note">viņš gandrīz atkal pasaka rupjo vārdu, bet apstājas</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> Pareizi</label>
         <label><input type="radio" name="v2" value="change"> Jāmaina</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0024#s40" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l3">– Bataljons, uz priekšu marš!</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l3">Di-Dieva dēļ, klausies. … Tāpat kā tā glezna, ko tava dr-draudzene rādīja.</p></div>
+      <p class="nc-note">viņš stostās</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> Pareizi</label>
         <label><input type="radio" name="v3" value="change"> Jāmaina</label>
@@ -186,8 +186,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04a/0026#s40" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l4">– Misijas pirmā posma sākums. Bataljons, pa kreisi!</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>Stāstītājs beidzot pasaka meitenei, ka viņu mīl. Vai tas skan dabiski un no sirds?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l4">Es jūs mīlu jau trīsdesmit divus mēnešus. No attāluma. Jums nezinot. Klusumā, bez neviena vārda. Jūs varbūt teiksiet, ka tā nevar būt, ka tas nav iespējams, ka tā ir tikai iztēle un nav īsta. Bet tā ir, un es jūs patiešām mīlu.</p></div>
+      <p class="nc-note">persiski viņš viņu uzrunā oficiāli, ar pieklājīgo „jūs”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> Pareizi</label>
         <label><input type="radio" name="v4" value="change"> Jāmaina</label>
@@ -199,10 +203,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span lang="en" dir="ltr">Is the image clear: choking like a vine coiling around him?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/1178#s52" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l5">Vēl tagad, atceroties tās viņa siltās rokas, kas zem mana nežēlīgā skatiena sastinga un nokrita viņam klēpī, man rodas nosmakšanas sajūta — nosmakšana kā vītenis, kas apvijas ap cilvēku, — tik liels un spēcīgs vītenis, ka ar vienu spiedienu spētu sadragāt cilvēka kaulus.</p></div>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>Šīs ir grāmatas pirmās rindas. Vai tās lasās dabiski un skaidri?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l5">Šeit nekas nenotiek. Šeit nekas netiks vērsts par labu, nekas nojaukts. Nekādas interpretācijas nebūs. Nekāda secinājuma.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> Pareizi</label>
         <label><input type="radio" name="v5" value="change"> Jāmaina</label>
@@ -213,12 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> Dzeja</h2>
-    <p class="nc-gq">Šīs ir dzejas rindas. Vai latviski katra no tām labi skan kā dzeja?</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l6">– ... Es nepaņemtu to Zālamana gredzenu ne par ko, uz kura reizēm rokas ...</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l6">Tas ir vārdu pavediena vaļīgais gals, un šie vārdi kādreiz bija skaņas.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> Pareizi</label>
         <label><input type="radio" name="v6" value="change"> Jāmaina</label>
@@ -229,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/0742#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l7">– Es zinu, ko tu gribi lasīt. Ka "atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ..."</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l7">Tāpat kā bērnībā, kad Maman atšķetināja dziju no vecām drēbēm un mēs paņēmām pavedienu un staigājām ar to riņķī pa māju, lai dzija nesakrātos kaudzē.</p></div>
+      <p class="nc-note">Maman persiešu valodā nozīmē „māte”; vārds apzināti atstāts netulkots. Kamēr viņa atšķetina dziju, bērni nēsā pavedienu pa māju.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> Pareizi</label>
         <label><input type="radio" name="v7" value="change"> Jāmaina</label>
@@ -241,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l8">– To ar "Attar saldāk raudāt līdz rītausmai" vai to ar "tagad viņš ir vēl jo vairāk nokauts"?</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l8">Tagad es atšķetinu vārdu pavedienu, un tu paņem vārdus un aiznes tos uz savu pasauli, lai tie šeit, manā pasaulē, nesakrātos kaudzē.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> Pareizi</label>
         <label><input type="radio" name="v8" value="change"> Jāmaina</label>
@@ -253,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1268#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l9">izņemot uz ūdens</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>Atmiņa atraisās kā skrūve ar nodilušu vītni. Vai tēls ir skaidrs?</span></h2>
+    <p class="nc-gq">Grāmatā:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l9">Pēc tam tas attēls, kā skrūve ar nodilušu vītni, vairs nebija saistīts ar tumsu aiz mūsu mājas aizvērtajām durvīm.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> Pareizi</label>
         <label><input type="radio" name="v9" value="change"> Jāmaina</label>
@@ -265,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1269#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l10">un, ja tu šķērso jūru</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>Zēns ar mazajiem brāļiem spēlē kariņu. Vai viņa komandas skan kā īstas armijas ierindas komandas?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l10">Bataljons, uz priekšu marš!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> Pareizi</label>
         <label><input type="radio" name="v10" value="change"> Jāmaina</label>
@@ -277,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l11">raksti uz ūdens ar savām asinīm</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l11">Misijas pirmā posma sākums. Bataljons, pa kreisi!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> Pareizi</label>
         <label><input type="radio" name="v11" value="change"> Jāmaina</label>
@@ -289,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1272#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l12">zinātu, ka</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Dzeja</h2>
+    <p class="nc-gq">Šie ir dzejoļi un dzejas rindas: paša stāstītāja dzejolis un klasisko persiešu dzejnieku (Kharaghani, Hafez, Attar) rindas. Vai latviski katrs no tiem skan kā dzeja?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l12">Mani sapņi bija tumši / Es neko neredzēju / Tu atnāci / Manu sapņu gaisma ieslēdzās / Tagad tevis vairs nav / Manu sapņu gaisma tagad mirkšķina / Man nav cerības uz tavu atgriešanos / Bet, ja tavs ceļš tevi atvedīs tuvumā / nāc atkal manos sapņos / Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi / viņi domā, ka tu esi pazudusi un</p></div>
+      <p class="nc-note">paša stāstītāja vienkāršais dzejolis meitenei, kuru viņš zaudēja</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> Pareizi</label>
         <label><input type="radio" name="v12" value="change"> Jāmaina</label>
@@ -301,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1274#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l13">piedzērušies un</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l13">Mani sapņi bija tumši / Es neko neredzēju / Tu atnāci / Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās / Tagad ... tagad ... tagad tevis vairs nav ...</p></div>
+      <p class="nc-note">viņš to pusmiegā atkārto; aizķeršanās ir tīša</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> Pareizi</label>
         <label><input type="radio" name="v13" value="change"> Jāmaina</label>
@@ -313,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1276#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l14">ir gājuši šo ceļu.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l14">Uz visa var rakstīt / izņemot uz ūdens / un, ja tu šķērso jūru / raksti uz ūdens ar savām asinīm / lai tas, kas nāk tavās pēdās / zinātu, ka / mīlētāji un / piedzērušies un / sadegušie / ir gājuši šo ceļu.</p></div>
+      <p class="nc-note">sens persiešu dzejnieka Kharaghani dzejolis, uzrakstīts uz tāfeles klasē</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> Pareizi</label>
         <label><input type="radio" name="v14" value="change"> Jāmaina</label>
@@ -325,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l15">Viņa lasīja: "Sen jau mīļotā nav sūtījusi ne ziņas; ne sveicienu rakstījusi ..." — un man uznāca smiekli.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l15">... Es nepaņemtu to Zālamana gredzenu ne par ko, uz kura reizēm rokas ...</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> Pareizi</label>
         <label><input type="radio" name="v15" value="change"> Jāmaina</label>
@@ -337,8 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="04b/1390#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l16">Manu sapņu gaisma ieslēdzās</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l16">Es esmu Kroga Vecākā kalps, kura žēlastība ...</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> Pareizi</label>
         <label><input type="radio" name="v16" value="change"> Jāmaina</label>
@@ -349,8 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l17">Manu sapņu gaisma tagad mirkšķina</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l17">Cerība savienoties ar tevi uztur mani dzīvu; citādi ik elpas vilciens šķirtībā no tevis būtu bojāejas bailes. … Ja tu ievaino, tas ir labāk par cita balzamu, un, ja tu dod indi, labāk nekā ...</p></div>
+      <p class="nc-note">divas klasiskā persiešu dzejnieka Hafez rindas; otrā aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> Pareizi</label>
         <label><input type="radio" name="v17" value="change"> Jāmaina</label>
@@ -361,8 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l18">Man nav cerības uz tavu atgriešanos</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l18">...Hafez valdzinošo dzeju apzinās tikai tas, kurš pazīst dzejas smalkumu un prot runāt persiešu valodā.</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> Pareizi</label>
         <label><input type="radio" name="v18" value="change"> Jāmaina</label>
@@ -373,8 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l19">Bet, ja tavs ceļš tevi atvedīs tuvumā</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l19">Dievs eņģeļu priekšā atsedza savu diženo skaistumu un redzēja, ka tie nepazīst mīlestību; no šīs greizsirdīgās dedzības šī atklāsme kļuva par tīru uguni un trāpīja Ādama mālam.</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> Pareizi</label>
         <label><input type="radio" name="v19" value="change"> Jāmaina</label>
@@ -385,8 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/1395#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l20">nāc atkal manos sapņos</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l20">atcerēdamies mīļoto un dzimteni, es tik gauži raudāšu, ka no pasaules ceļošanas ceļu un paražu ...</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> Pareizi</label>
         <label><input type="radio" name="v20" value="change"> Jāmaina</label>
@@ -397,8 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l21">Man šķiet, mani sapņi nav noticējuši, ka tu esi aizgājusi</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l21">Sen jau mīļotā nav sūtījusi ne ziņas; ne sveicienu rakstījusi ...</p></div>
+      <p class="nc-note">klasiskā persiešu dzejnieka Hafez rinda; aprauta tāpat kā grāmatā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> Pareizi</label>
         <label><input type="radio" name="v21" value="change"> Jāmaina</label>
@@ -409,8 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l22">Manu sapņu gaisma ... manu sapņu gaisma ieslēdzas ... manu sapņu gaisma ieslēdzās</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l22">To ar "Attar saldāk raudāt līdz rītausmai" vai to ar "tagad viņš ir vēl jo vairāk nokauts"?</p></div>
+      <p class="nc-note">draugs jautā, kuru no divām dziesmām; katru sauc pēc rindas no klasiskā persiešu dzejnieka Attar dzejoļa</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> Pareizi</label>
         <label><input type="radio" name="v22" value="change"> Jāmaina</label>
@@ -421,8 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="02/0006#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l23">Tagad ... tagad ... tagad tevis vairs nav ...</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> Atsevišķi vārdi</h2>
+    <p class="nc-gq">Zem katras rindas ir viens vārds no tās un tas, kas tam būtu jānozīmē. Vai šeit tas ir īstais vārds?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0278#word_" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l23">Kādā ziņā var teikt, viņi ieņēma universitāti. Karroubi ir mīlestība, taisnīgi sakot.</p></div>
+      <p class="nc-note">"Karroubi ir mīlestība, taisnīgi sakot" = Karroubi ir lielisks (sajūsmināts jauniešu slengs)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> Pareizi</label>
         <label><input type="radio" name="v23" value="change"> Jāmaina</label>
@@ -433,13 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g12">
-    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Atsevišķi vārdi</h2>
-    <p class="nc-gq">Vai vārds katrā rindā ir īstais? Zem rindas norādīts, kas tam būtu jānozīmē.</p>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="03/0268#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l24">– Neviens vārds tev neder, veln.</p></div>
-      <p class="nc-note">"veln" = damn you (angry swearing)</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l24">– Iet uz galveno ielu: tsk-tsk.</p></div>
+      <p class="nc-note">"tsk-tsk" = mēles klikšķis, kas nozīmē „nē, aizliegts”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> Pareizi</label>
         <label><input type="radio" name="v24" value="change"> Jāmaina</label>
@@ -450,9 +474,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="03/0278#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l25">Kādā ziņā var teikt, viņi ieņēma universitāti. Karroubi ir mīlestība, taisnīgi sakot.</p></div>
-      <p class="nc-note">"Karroubi ir mīlestība, taisnīgi sakot" = Karroubi is great (excited youth slang)</p>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0784#word_" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l25">– Tu esi tāds sneaky.</p></div>
+      <p class="nc-note">"sneaky" = angļu „sneaky”, rotaļīgi iestarpināts</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
         <label><input type="radio" name="v25" value="ok"> Pareizi</label>
         <label><input type="radio" name="v25" value="change"> Jāmaina</label>
@@ -463,9 +487,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l26">– Iet uz galveno ielu: tsk-tsk.</p></div>
-      <p class="nc-note">"tsk-tsk" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="02/0001#word_" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l26">Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.</p></div>
+      <p class="nc-note">"Mana sirds ir gaiša" = jūtos cerību pilns, drošs par rītdienu</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
         <label><input type="radio" name="v26" value="ok"> Pareizi</label>
         <label><input type="radio" name="v26" value="change"> Jāmaina</label>
@@ -474,71 +498,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n26">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0784#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l27">– Tu esi tāds sneaky.</p></div>
-      <p class="nc-note">"sneaky" = English 'sneaky', slipped in playfully</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v27" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v27" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l28">sadegušie</p></div>
-      <p class="nc-note">"sadegušie" = those burned, consumed by love</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v28" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v28" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l29">Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.</p></div>
-      <p class="nc-note">"sūdu juceklis" = crude coinage: so baffled your head spins</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v29" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v29" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l30">Un ar trīcošām rokām es strauji šķirstīju gazalus, lai atrastu to Hafez beitu, kurā, tāpat kā tajā gleznā, kā teica tā otra meitene, jo dziļāk ienirstam, jo lielāks mums galvā sūdu juceklis, un parādītu to Niloofar.</p></div>
-      <p class="nc-note">"sūdu juceklis" = more baffled; echoes her crude coinage</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v30" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v30" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="02/0001#word_" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l31">Mana sirds ir gaiša: rīt, kad atvēršu acis, viss būs beidzies un tumsa atgriezīsies manos sapņos.</p></div>
-      <p class="nc-note">"Mana sirds ir gaiša" = I feel hopeful, sure of tomorrow</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v31" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v31" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -589,4 +548,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 31 rows -->
+<!-- 26 rows -->

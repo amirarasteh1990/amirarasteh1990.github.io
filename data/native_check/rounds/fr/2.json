@@ -13,7 +13,6 @@
   "needs_change": "À modifier",
   "not_sure": "Je ne sais pas",
   "how_say": "Comment le dirais-tu ?",
-  "meaning": "Selon toi, qu'est-ce que cela veut dire ?",
   "optional": "(facultatif)",
   "your_name": "Ton nom",
   "thanks_tick": "Inscrire mon nom sur la page des remerciements",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Ici, le narrateur est nerveux. Chaque ligne sonne-t-elle naturelle en français ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "Cela fait trente-deux mois que je vous aime. De loin.",
-     "note": null
+     "id": "04b/1320#nerv",
+     "text": "Et de mes mains tremblantes, je parcourais rapidement les ghazals pour trouver, et montrer à Niloofar, un beit de Hafez dont, comme l'autre fille l'avait dit de cette peinture, plus on s'enfonce dans les profondeurs, plus on a un putain de tournis.",
+     "note": "il répète un mot cru qu'une fille a inventé à propos d'une peinture"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Comme ça, justement : plus tu réfléchis à ces dix mots, plus tu as un p..., enfin, le tournis.",
+     "note": "il est sur le point de redire le mot cru, puis s'arrête"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Toi, p-pour l'amour de Dieu, écoute. … Comme cette peinture que ton a-a-amie montrait.",
+     "note": "il bégaie"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Le narrateur dit enfin à la fille qu'il l'aime. Est-ce naturel et sincère ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Il se peut même que l'esprit qui traça jadis ces sons sur le papier n'ait plus respiré depuis longtemps.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "Cela fait trente-deux mois que je vous aime. De loin. Sans que vous le sachiez. En silence. Sans un seul mot. Vous direz peut-être que ce n'est pas possible, que cela ne se peut pas, que c'est imaginaire et non réel. Mais cela est, et je vous aime vraiment.",
+     "note": "en persan, il lui parle de façon formelle, avec le « vous » de politesse"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "The pole image means they were all screwed over. Is that clear?",
-   "q_lang": "en",
+   "q": "Ce sont les premières lignes du livre. Se lisent-elles de façon naturelle et claire ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -98,33 +104,67 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0663#s30",
-     "text": "Sous prétexte de vouloir garder les enfants près de leur famille, ils nous ont foutu le bâton dans le cul, nous les gosses de province.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
-   "labels": [
-    "Correct",
-    "À modifier",
-    "Je ne sais pas"
-   ],
-   "note_label": "Comment le dirais-tu ?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04a/0024#s40",
-     "text": "Bataillon, en avant marche !",
+     "id": "Opening/0007#op1",
+     "text": "Ici, rien ne se passe. Rien ici ne sera remis en ordre, ni détruit. Aucune interprétation ne viendra. Aucune conclusion.",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
-     "text": "Début de la première étape de la mission. Bataillon, à gauche, gauche !",
+     "id": "Opening/0007#op2",
+     "text": "C'est le bout libre d'un fil de mots qui furent jadis des sons.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Comme autrefois dans l'enfance, quand Maman défaisait la laine des vieux vêtements, et que nous prenions le fil et tournions en rond dans la maison afin que la laine ne s'accumule pas.",
+     "note": "Maman veut dire « mère » en persan ; le mot est gardé tel quel exprès. Les enfants portent le fil à travers la maison pendant qu'elle défait la laine."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Maintenant je déroule le fil des mots, et tu les recueilles pour les emporter dans ton monde à toi, afin qu'ils ne s'accumulent pas ici, dans mon monde à moi.",
+     "note": null
+    }
+   ]
+  },
+  {
+   "key": "screw",
+   "title": null,
+   "q": "Le souvenir se détache comme une vis au filetage arraché. L'image est-elle claire ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0675#screw",
+     "text": "Depuis lors, comme une vis au filetage arraché, cette image n'était plus liée à l'obscurité derrière la porte fermée de notre maison",
+     "note": null
+    }
+   ],
+   "intro": "Dans le livre :"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Un garçon joue au soldat avec ses petits frères. Ses ordres sonnent-ils comme un vrai exercice militaire ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Bataillon, en avant marche !",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Début de la première étape de la mission. Bataillon, à gauche, gauche !",
      "note": null
     }
    ]
@@ -132,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poésie",
-   "q": "Ce sont des vers. Chacun se lit-il bien comme de la poésie en français ?",
+   "q": "Voici des poèmes et des vers : le poème du narrateur lui-même et des vers de poètes persans classiques (Kharaghani, Hafez, Attar). Chacun se lit-il comme de la poésie en français ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -142,66 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "Je ne prendrais pas cet anneau de Salomon pour rien au monde, sur lequel parfois la main de ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mes rêves étaient sombres / Je ne voyais rien / Tu es venue / La lumière de mes rêves s'est allumée / Maintenant, tu es partie / La lumière de mes rêves clignote à présent / Je n'ai aucun espoir de ton retour / Mais si ton chemin te ramène par ici / reviens dans mes rêves / Je crois que mes rêves n'ont pas cru que tu étais partie / ils s'imaginent que tu t'es perdue et",
+     "note": "le poème simple du narrateur lui-même, pour la fille qu'il a perdue"
     },
     {
-     "id": "04b/0935#poetr",
-     "text": "« Est-il plus doux qu'Attar pleure jusqu'à l'aube », ou « est-il plus terrassé à présent » ?",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mes rêves étaient sombres / Je ne voyais rien / Tu es venue / La lumière de mes rêves ... la lumière de mes rêves s'allumait ... la lumière de mes rêves s'est allumée / Maintenant ... maintenant ... maintenant tu es partie ...",
+     "note": "il le répète à moitié endormi ; les hésitations sont voulues"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "écris sur l'eau avec ton propre sang",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "On peut écrire sur toute chose / sauf sur l'eau / et si tu traverses la mer / écris sur l'eau avec ton propre sang / afin que celui qui vient dans ton sillage / sache que / les amants et / les ivres et / les brûlés / sont passés par ici.",
+     "note": "un ancien poème persan de Kharaghani, écrit au tableau d'une salle de classe"
     },
     {
-     "id": "04b/1271#poetr",
-     "text": "afin que celui qui vient dans ton sillage",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Je ne prendrais pas cet anneau de Salomon pour rien au monde, sur lequel parfois la main de ...",
+     "note": "un vers de Hafez, poète persan classique ; coupé comme dans le livre"
     },
     {
-     "id": "04b/1274#poetr",
-     "text": "les ivres et",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Je suis le serviteur de l'Aîné de la Taverne, dont la grâce...",
+     "note": "un vers de Hafez, poète persan classique ; coupé comme dans le livre"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "sont passés par ici.",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "L'espoir de m'unir à toi me garde en vie ; sinon, chacun de mes souffles, séparé de toi, ne serait que la peur de périr. … Si c'est toi qui blesses, mieux vaut cela que le baume d'un autre, et si c'est toi qui donnes le poison, mieux vaut cela que ...",
+     "note": "deux vers de Hafez, poète persan classique ; le second est coupé comme dans le livre"
     },
     {
-     "id": "04b/1392#poetr",
-     "text": "La lumière de mes rêves clignote à présent",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...De la poésie enchanteresse de Hafez, n'est conscient que celui qui connaît la grâce poétique et sait parler persan.",
+     "note": "un vers de Hafez, poète persan classique ; coupé comme dans le livre"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Je n'ai aucun espoir de ton retour",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Dieu dévoila sa magnifique beauté devant les anges et vit qu'ils ne savaient rien de l'amour ; par cette jalousie ardente, cette manifestation devint feu pur et frappa l'argile d'Adam.",
+     "note": "un vers de Hafez, poète persan classique"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "reviens dans mes rêves",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "En souvenir de l'aimée et du pays natal, je pleurerai si amèrement que du monde la route et la coutume du voyage ...",
+     "note": "un vers de Hafez, poète persan classique ; coupé comme dans le livre"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "Je crois que mes rêves n'ont pas cru que tu étais partie",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Voilà longtemps que l'aimée n'a envoyé aucun message, n'a écrit aucun salut ...",
+     "note": "un vers de Hafez, poète persan classique ; coupé comme dans le livre"
     },
     {
-     "id": "02/0005#poetr",
-     "text": "La lumière de mes rêves ... la lumière de mes rêves s'allumait ... la lumière de mes rêves s'est allumée",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "« Est-il plus doux qu'Attar pleure jusqu'à l'aube », ou « est-il plus terrassé à présent » ?",
+     "note": "un ami demande laquelle de deux chansons ; chacune est désignée par un vers d'un poème d'Attar, poète persan classique"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Mots isolés",
-   "q": "Le mot de chaque ligne est-il le bon ? Le sens voulu est indiqué en dessous.",
+   "q": "Sous chaque ligne figure un de ses mots et ce que ce mot doit signifier. Est-ce le bon mot ici ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -211,19 +251,9 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#word_",
-     "text": "De ce côté-ci, je déroule le fil des mots, et de l'autre côté, tu les recueilles.",
-     "note": "\"tu les recueilles\" = you gather the words up"
-    },
-    {
      "id": "03/0278#word_",
      "text": "D'une certaine façon on peut dire qu'ils ont conquis l'université. Karroubi c'est l'amour, en toute honnêteté.",
-     "note": "\"Karroubi c'est l'amour\" = Karroubi is great (excited youth slang)"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Ça vous fout un putain de tournis. Plus on y réfléchit, plus on a un putain de tournis.",
-     "note": "\"un putain de tournis\" = crude coinage: so baffled your head spins"
+     "note": "\"Karroubi c'est l'amour\" = Karroubi est génial (argot de jeunes, enthousiaste)"
     }
    ]
   }

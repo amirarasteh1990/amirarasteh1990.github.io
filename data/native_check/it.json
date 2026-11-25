@@ -13,7 +13,6 @@
   "needs_change": "Da cambiare",
   "not_sure": "Non so",
   "how_say": "Come lo diresti?",
-  "meaning": "Secondo te, che cosa significa?",
   "optional": "(facoltativo)",
   "your_name": "Il tuo nome",
   "thanks_tick": "Inserisci il mio nome nella pagina dei ringraziamenti",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Modi di dire persiani",
-   "q": "Alcuni modi di dire e immagini persiane sono tradotti alla lettera. Ognuno ti dà un'idea del suo significato, o non ti dice niente?",
+   "q": "Questi modi di dire persiani sono tradotti alla lettera. Prova prima a indovinarli uno per uno, poi mostra il significato.",
    "labels": [
-    "Lo intuisco",
-    "Non ci arrivo",
-    "Non so"
+    "L'ho indovinato senza il significato",
+    "L'ho capito con il significato",
+    "Anche con il significato, non riesco a collegarlo"
    ],
-   "note_label": "Secondo te, che cosa significa?",
-   "note_on": "ok",
+   "note_label": "Che cosa non è chiaro?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "La pioggia non cade dalla terra verso il cielo.",
-     "note": null
+     "note": "Sono i genitori a sacrificarsi per i figli, non il contrario."
     },
     {
      "id": "01/0073#img",
      "text": "Un buon anno si riconosce dalla sua primavera.",
-     "note": null
+     "note": "Da come comincia l'anno, si capisce come andrà."
     },
     {
      "id": "04a/0128#img",
      "text": "Non mangiare il dolore",
-     "note": null
+     "note": "Non essere triste; non preoccuparti."
     },
     {
      "id": "01/0138#img",
      "text": "Il mio cuore sta marcendo.",
-     "note": null
+     "note": "Mi sto consumando di noia e di solitudine."
     },
     {
      "id": "04b/0334#img",
      "text": "La mia mano è corta e l'unione con te è lontana.",
-     "note": null
+     "note": "Stare con te è fuori dalla mia portata; non posso farci niente."
     },
     {
      "id": "01/0203#img",
      "text": "se lo dico, mi brucia la lingua; se non lo dico, mi brucia il midollo delle ossa",
-     "note": null
+     "note": "Parlare fa male, ma tacere fa ancora più male."
     },
     {
      "id": "03/0634#img",
      "text": "il pasto mi diventa veleno di serpente",
-     "note": null
+     "note": "Mi rovina il pasto."
     },
     {
      "id": "04b/0274#img",
      "text": "non si scalderà nessun pane per te",
-     "note": null
+     "note": "Non ti porterà da nessuna parte; non ci guadagnerai niente."
     },
     {
      "id": "04b/0824#img",
      "text": "la mia famiglia mi ha cacciato a forza in mezzo alle galline",
-     "note": null
+     "note": "La mia famiglia mi ha spinto a sposarmi."
     },
     {
      "id": "04b/0509#img",
      "text": "la zolletta di zucchero mi salta in gola",
-     "note": null
+     "note": "La zolletta di zucchero mi va di traverso e mi strozzo."
     },
     {
      "id": "01/0132#img",
      "text": "sbircia in ogni cantuccio",
-     "note": null
+     "note": "Esplora tutto; visita ogni posto che puoi."
     },
     {
      "id": "06/0118#img",
      "text": "le parole non costano niente — sono vento",
-     "note": null
+     "note": "Dire qualcosa non costa nulla; le parole da sole non provano niente."
     },
     {
      "id": "04b/1247#img",
      "text": "di sicuro sarebbe caduto dagli occhi di Negar",
-     "note": null
+     "note": "La bambina avrebbe di sicuro smesso di stimarlo."
     },
     {
      "id": "04b/1293#img",
      "text": "Solo una promessa per il tempo del raccolto?",
-     "note": null
+     "note": "Solo una promessa vuota, che non sarà mai mantenuta?"
     },
     {
      "id": "04b/0205#img",
      "text": "lascia che ti stenda le interiora dell'amicizia su un vassoio",
-     "note": null
+     "note": "Lascia che ti offra tutta la mia amicizia."
     },
     {
      "id": "04b/1125#img",
      "text": "gli sono caduti tutti i peli del corpo",
-     "note": null
+     "note": "Sono rimasti completamente sbalorditi."
     },
     {
      "id": "03/0417#img",
      "text": "non scaldarti così, il latte ti si secca",
-     "note": null
+     "note": "Calmati; non vale la pena arrabbiarsi tanto."
     },
     {
      "id": "04b/0378#img",
      "text": "nessuno ti chiama muto se non scoreggi",
-     "note": null
+     "note": "Nessuno ti avrebbe detto niente se fossi stato zitto."
     },
     {
      "id": "04b/0181#img",
      "text": "Mangia la testa del mio cazzo",
-     "note": null
+     "note": "Un modo volgare per dire: sparisci, nessuno vuole la tua opinione."
     },
     {
      "id": "04b/0899#img",
      "text": "Mangiateste di cazzo",
-     "note": null
+     "note": "Un insulto volgare tra amici, più o meno «scemo»."
     },
     {
      "id": "04b/0209#img",
      "text": "ridere delle nostre barbe e dei nostri cazzi",
-     "note": null
+     "note": "Prenderci in giro, noi che siamo rimasti."
     },
     {
      "id": "04b/0822#img",
      "text": "non te ne saresti andato in giro per le strade così, con l'uccello in mano",
-     "note": null
+     "note": "Andare in giro da solo e senza meta, ancora single."
     },
     {
      "id": "04b/0440#img",
      "text": "qualsiasi cazzo ci cada in testa",
-     "note": null
+     "note": "Qualunque disgrazia ci capiti."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "hanno infilato un bastone nel culo a noi della provincia",
+     "note": "Quella politica è stata molto ingiusta con tutti noi della provincia."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Non avresti potuto mangiarne nemmeno la testa.",
+     "note": "Una risposta volgare («la testa» = la testa del cazzo): non avresti combinato niente."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Potrei girare e rigirare intorno a quella testa della mia Nini-jan",
+     "note": "Un'espressione affettuosa: darei qualsiasi cosa per lei."
     }
+   ],
+   "hint": "Mostra il significato",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

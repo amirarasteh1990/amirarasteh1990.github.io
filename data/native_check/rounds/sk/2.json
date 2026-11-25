@@ -13,7 +13,6 @@
   "needs_change": "Treba zmeniť",
   "not_sure": "Neviem isto",
   "how_say": "Ako by ste to povedali?",
-  "meaning": "Čo podľa vás znamená?",
   "optional": "(nepovinné)",
   "your_name": "Vaše meno",
   "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He almost repeats the crude word, then stops. Is that clear?",
-   "q_lang": "en",
+   "q": "Rozprávač je tu nervózny. Znie každý riadok v slovenčine prirodzene?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1321#s12",
+     "id": "04b/1320#nerv",
+     "text": "A trasúcimi sa rukami som prekotne listoval ghazalmi, hľadajúc ten beit od Háfeza, pri ktorom, rovnako ako pri tej maľbe, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme",
+     "note": "opakuje hrubé slovo, ktoré si o istej maľbe vymyslelo jedno dievča"
+    },
+    {
+     "id": "04b/1321#nerv1",
      "text": "Ako to – čím viac premýšľaš o týchto desiatich slovách, tým väčší po... teda, tým väčší závrat dostaneš.",
-     "note": null
+     "note": "takmer znova povie to hrubé slovo, ale zarazí sa"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Pre-preboha, počúvaj. … Je to ako tá maľba, ktorú ti ukazovala ka-kamarátka.",
+     "note": "zajakáva sa"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Rozprávač konečne dievčaťu povie, že ju miluje. Znie to prirodzene a úprimne?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "Tridsaťdva mesiacov vás milujem. Z diaľky. Bez toho, aby ste vedeli.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "Tridsaťdva mesiacov vás milujem. Z diaľky. Bez toho, aby ste vedeli. V tichu, bez slova. Možno poviete, že to nejde, že to nie je možné, že je to len predstava a nie je to skutočné. Ale stalo sa to a naozaj vás milujem.",
+     "note": "v perzštine sa jej prihovára formálne, zdvorilým „vy“ (vyká jej)"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Toto sú prvé riadky knihy. Čítajú sa prirodzene a jasne?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -98,17 +104,31 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Možno sa tvoja generácia narodila o pár rokov neskoro na to, aby poznala ten svet priadze, ale predstav si: raz, kdesi vo svete, deti sa hrali práve takto.",
+     "id": "Opening/0007#op1",
+     "text": "Tu sa nič nedeje. Nič sa tu nedá do poriadku ani nezborí. Žiadny výklad neprichádza. Žiadny záver.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Toto je voľný koniec nite slov, ktoré boli kedysi zvukmi.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Ako v detstve, keď Maman párala priadzu zo starých šiat a my sme vzali niť a chodili s ňou po dome, aby sa priadza nehromadila.",
+     "note": "Maman je perzské slovo pre „matka“, zámerne nepreložené. Deti nosia niť po dome, zatiaľ čo ona pára priadzu."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Teraz odvíjam niť slov a ty ich vezmi a odnes do svojho sveta, aby sa tu, v mojom svete, nehromadili.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "Is it clear the Hafez verse is compared to the painting?",
-   "q_lang": "en",
+   "q": "Spomienka sa uvoľní ako skrutka so strhnutým závitom. Je ten obraz jasný?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -118,17 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1320#s21",
-     "text": "hľadajúc ten beit od Háfeza, pri ktorom, rovnako ako pri tej maľbe, ako povedala tá druhá dievčina, čím hlbšie sa doň ponoríme, tým väčší posratý závrat dostaneme – aby som ho mohol Niloofar ukázať.",
+     "id": "03/0675#screw",
+     "text": "Odvtedy už, ako pri skrutke so strhnutým závitom, ten obraz nebol viazaný na tmu za zatvorenými dverami nášho domu",
      "note": null
     }
-   ]
+   ],
+   "intro": "V knihe:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "Is it clear he read the poem as the year turned?",
-   "q_lang": "en",
+   "q": "Chlapec sa hrá na vojakov so svojimi malými bratmi. Znejú jeho povely ako skutočný vojenský dril?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -138,93 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0528#s26",
-     "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A doting Persian endearment. Does it sound affectionate?",
-   "q_lang": "en",
-   "labels": [
-    "Správne",
-    "Treba zmeniť",
-    "Neviem isto"
-   ],
-   "note_label": "Ako by ste to povedali?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/0751#s38",
-     "text": "Jéééj. Nech krúžim okolo hlavičky Nini-jan, ako jej to dobre myslí.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
-   "labels": [
-    "Správne",
-    "Treba zmeniť",
-    "Neviem isto"
-   ],
-   "note_label": "Ako by ste to povedali?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04a/0024#s40",
+     "id": "04a/0024#drill",
      "text": "Prápor, vpred pochod!",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
+     "id": "04a/0026#drill",
      "text": "Začiatok prvej časti misie. Prápor, vľavo vbok!",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "The mother says this to one son. Does the wording fit?",
-   "q_lang": "en",
-   "labels": [
-    "Správne",
-    "Treba zmeniť",
-    "Neviem isto"
-   ],
-   "note_label": "Ako by ste to povedali?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0560#s49",
-     "text": "– Povedz svojej mame všetko.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Is it clear the boy means his own father's truck?",
-   "q_lang": "en",
-   "labels": [
-    "Správne",
-    "Treba zmeniť",
-    "Neviem isto"
-   ],
-   "note_label": "Ako by ste to povedali?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0135#s53",
-     "text": "Yaser povedal, lebo nákladiak Khavar jeho otca sa nezmestí do uličky.",
      "note": null
     }
    ]
@@ -232,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poézia",
-   "q": "Toto sú verše. Znie každý v slovenčine dobre ako poézia?",
+   "q": "Toto sú básne a verše: rozprávačova vlastná báseň a verše klasických perzských básnikov (Charaqání, Háfez, Atár). Znie každá ukážka v slovenčine ako poézia?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -242,96 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "Ten Šalamúnov pečatný prsteň by som za nijakú cenu neprijal, keďže naň občas siaha ruka...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Moje sny boli temné / Nič som nevidel / Prišla si / svetlo mojich snov sa rozsvietilo / teraz si preč / svetlo mojich snov bliká / nemám nádej, že sa vrátiš / ale keby ťa cesta zaviedla bližšie / príď zase do mojich snov / myslím, že moje sny neuverili, že si odišla / myslia si, že si sa stratila a",
+     "note": "rozprávačova vlastná jednoduchá báseň pre dievča, ktoré stratil"
     },
     {
-     "id": "03/0622#poetr",
+     "id": "02/0002#poem",
+     "text": "Moje sny boli temné / Nič som nevidel / Prišla si / Svetlo mojich snov ... svetlo mojich snov sa ... svetlo mojich snov sa rozsvietilo / Teraz ... teraz ... teraz ťa niet ...",
+     "note": "skúša si ju v polospánku; to zadrhávanie je zámerné"
+    },
+    {
+     "id": "04b/1267#poem",
+     "text": "Na všetko možno písať / len na vodu nie / a ak prekročíš more / píš na vodu vlastnou krvou / aby ten, kto pôjde v tvojich stopách / vedel, že / milenci a / opití a / spálení / tadiaľto prešli.",
+     "note": "stará perzská báseň od Charaqáního, napísaná na tabuli v triede"
+    },
+    {
+     "id": "03/0244#poem",
+     "text": "... Ten Šalamúnov pečatný prsteň by som za nijakú cenu neprijal, keďže naň občas siaha ruka...",
+     "note": "verš od Háfeza, klasického perzského básnika; prerušený ako v knihe"
+    },
+    {
+     "id": "03/0622#poem",
      "text": "Som sluhom Staršieho z Krčmy, ktorého milosť ...",
-     "note": null
+     "note": "verš od Háfeza, klasického perzského básnika; prerušený ako v knihe"
     },
     {
-     "id": "04b/0742#poetr",
+     "id": "04b/0251#poem",
+     "text": "Nádej na spojenie s tebou ma drží nažive; inak by som sa pri každom nádychu v odlúčení od teba bál zániku. … Ak zasadíš ranu ty, je to lepšie než balzam od iného; a ak podáš jed, lepšie než ...",
+     "note": "dva verše od Háfeza, klasického perzského básnika; druhý je prerušený ako v knihe"
+    },
+    {
+     "id": "04b/0271#poem",
+     "text": "...Háfezovej ľúbeznej poézie si sú vedomí len tí; tí, čo poznajú pôvab ducha a vedia hovoriť po perzsky.",
+     "note": "verš od Háfeza, klasického perzského básnika; prerušený ako v knihe"
+    },
+    {
+     "id": "04b/0316#poem",
+     "text": "Boh odhalil pred anjelmi svoju veľkolepú krásu a videl, že o láske nevedia nič; táto odhalená nádhera sa zo žiarlivej horlivosti premenila na čistý oheň a udrela do Adamovej hliny.",
+     "note": "verš od Háfeza, klasického perzského básnika"
+    },
+    {
+     "id": "04b/0742#poem",
      "text": "pri spomienke na milú a domovinu budem tak horko plakať, že zo sveta cestu a obyčaj putovania ...",
-     "note": null
+     "note": "verš od Háfeza, klasického perzského básnika; prerušený ako v knihe"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "Na všetko možno písať",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Dávno je, čo milovaný neposlal žiadny odkaz, nenapísal ani pozdrav ...",
+     "note": "verš od Háfeza, klasického perzského básnika; prerušený ako v knihe"
     },
     {
-     "id": "04b/1268#poetr",
-     "text": "len na vodu nie",
-     "note": null
-    },
-    {
-     "id": "04b/1270#poetr",
-     "text": "píš na vodu vlastnou krvou",
-     "note": null
-    },
-    {
-     "id": "04b/1271#poetr",
-     "text": "aby ten, kto pôjde v tvojich stopách",
-     "note": null
-    },
-    {
-     "id": "04b/1276#poetr",
-     "text": "tadiaľto prešli.",
-     "note": null
-    },
-    {
-     "id": "04b/1301#poetr",
-     "text": "Čítala: „Dávno je, čo milovaný neposlal žiadny odkaz, nenapísal ani pozdrav ...“ a ja som sa zasmial.",
-     "note": null
-    },
-    {
-     "id": "04b/1391#poetr",
-     "text": "teraz si preč",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "svetlo mojich snov bliká",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "nemám nádej, že sa vrátiš",
-     "note": null
-    },
-    {
-     "id": "04b/1394#poetr",
-     "text": "ale keby ťa cesta zaviedla bližšie",
-     "note": null
-    },
-    {
-     "id": "04b/1395#poetr",
-     "text": "príď zase do mojich snov",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "myslím, že moje sny neuverili, že si odišla",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Svetlo mojich snov ... svetlo mojich snov sa ... svetlo mojich snov sa rozsvietilo",
-     "note": null
-    },
-    {
-     "id": "02/0006#poetr",
-     "text": "Teraz ... teraz ... teraz ťa niet ...",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "„Pre Atára je lepšie plakať až do svitania“ alebo „teraz je viac zabitý“?",
+     "note": "kamarát sa pýta, ktorú z dvoch piesní; každá je pomenovaná podľa verša z básne od Atára, klasického perzského básnika"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Jednotlivé slová",
-   "q": "Je slovo v každom riadku to správne? Čo má znamenať, je uvedené pod ním.",
+   "q": "Pod každým riadkom je jedno slovo z neho a to, čo má znamenať. Je to tu správne slovo?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -343,172 +253,112 @@
     {
      "id": "01/0152#word_",
      "text": "Jéééj. Kiežby som vedel, čo sa odohráva v Nini-janinej hlave.",
-     "note": "\"Jéééj\" = a long, fond sigh of delight"
+     "note": "\"Jéééj\" = dlhý, nežný povzdych od radosti"
     },
     {
      "id": "01/0166#word_",
      "text": "Len sa smejeme, Nana-pesar-jan.",
-     "note": "\"Len sa smejeme\" = we're only joking"
+     "note": "\"Len sa smejeme\" = len žartujeme"
     },
     {
      "id": "01/0216#word_",
      "text": "Áno, náš Baba-jan je veľmi hladný po úcte.",
-     "note": "\"hladný po úcte\" = badly craves respect (said sarcastically)"
+     "note": "\"hladný po úcte\" = veľmi túži po úcte (sarkasticky)"
     },
     {
      "id": "01/0261#word_",
      "text": "Mm-hm, zmenil sa veľmi, veľmi. Tak schudol a stmavol.",
-     "note": "\"stmavol\" = skin grown darker from the sun"
+     "note": "\"stmavol\" = koža mu od slnka stmavla"
     },
     {
      "id": "03/0119#word_",
      "text": "Pre mňa však jej krása prinášala neurčitý, vzdialený pocit známosti — akoby som pred mnohými rokmi, v akejsi stratenej tme, už videl tie veľké, takmer mandľové oči.",
-     "note": "\"pocit známosti\" = a sense of having seen her before"
+     "note": "\"pocit známosti\" = pocit, že ju už niekedy videl"
     },
     {
      "id": "04a/0002#word_",
      "text": "Ehe, Amir, našla som ťa.",
-     "note": "\"Ehe\" = happy 'oh!' on finding the child"
+     "note": "\"Ehe\" = radostné „ó!“, keď nájde dieťa"
     },
     {
      "id": "04a/0020#word_",
      "text": "Dobre, aj ty poď na misiu, ale musíš byť veľmi opatrný. Časti sú naozaj ťažké.",
-     "note": "\"Časti\" = stages of a pretend mission"
+     "note": "\"Časti\" = etapy vymyslenej misie v hre"
     },
     {
      "id": "04a/0054#word_",
      "text": "Fuj, unavil som sa.",
-     "note": "\"Fuj\" = Ugh, a tired groan"
-    },
-    {
-     "id": "04b/0146#word_",
-     "text": "Hovno v hlave. Nútiš ma otvoriť ústa.",
-     "note": "\"Hovno v hlave\" = shit-for-brains, crude insult for a dimwit"
-    },
-    {
-     "id": "04b/0162#word_",
-     "text": "Hej, ako nás uvidia, stiahnu zadok a držia si od nás taký odstup, že mám chuť im skočiť oboma nohami do tváre.",
-     "note": "\"stiahnu zadok\" = tense up and act snooty (crude image)"
+     "note": "\"Fuj\" = Uf, unavené zastonanie"
     },
     {
      "id": "04b/0175#word_",
      "text": "Hej. Nedaj sa zmiasť týmto Arastehom; hoci je trúba, v Konkoore mal umiestnenie sedemdesiatštyri.",
-     "note": "\"trúba\" = goofy, silly, said fondly"
+     "note": "\"trúba\" = popletený, hlúpučký, povedané láskavo"
     },
     {
      "id": "04b/0228#word_",
      "text": "Pred rokom dvoma som od Orlie Oko News počul, že ten frajerko odišiel do Austrálie tiež, tak akosi za dievčaťom, ktoré ste obaja milovali.",
-     "note": "\"ten frajerko\" = vain show-off, a dandy (mocking)"
+     "note": "\"ten frajerko\" = márnivý chvastúň, švihák (posmešne)"
     },
     {
      "id": "04b/0270#word_",
      "text": "Viem, nie som žiadna hlupaňa, ale takto to nejde.",
-     "note": "\"hlupaňa\" = a fool, a dummy (said of herself)"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "Tak to si zasraný prvák.",
-     "note": "\"zasraný prvák\" = fucking freshman, casual friendly swearing"
+     "note": "\"hlupaňa\" = hlúpa, trúba (hovorí to sama o sebe)"
     },
     {
      "id": "04b/0353#word_",
      "text": "A v tej zasranej situácii, aké vykopávky nám pridelili?",
-     "note": "\"vykopávky\" = odd, weird people (mocking slang)"
+     "note": "\"vykopávky\" = čudáci, zvláštni ľudia (posmešný slang)"
     },
     {
      "id": "04b/0370#word_",
      "text": "Nikto nemá v izbe koberec, Baba-jan, len my máme koberec, a to preto, že sme izba elity.",
-     "note": "\"izba elity\" = the elite room, the best room"
+     "note": "\"izba elity\" = elitná izba, najlepšia izba"
     },
     {
      "id": "04b/0421#word_",
      "text": "Leopard Farid, ovládni si nervy a nerob vražedný kúsok.",
-     "note": "\"vražedný kúsok\" = a rash, wild move (running joke)"
-    },
-    {
-     "id": "04b/0562#word_",
-     "text": "Orlie Oko, nech ti to Boh nedaruje, zničil si mi chrbát.",
-     "note": "\"nech ti to Boh nedaruje\" = half-joking curse: may God not forgive you"
+     "note": "\"vražedný kúsok\" = unáhlený, divoký kúsok (opakujúci sa vtip)"
     },
     {
      "id": "04b/0575#word_",
      "text": "Pre lásku tvojej matky nechoď po izbe bez okuliarov.",
-     "note": "\"Pre lásku tvojej matky\" = a plea, I beg you; not an insult"
-    },
-    {
-     "id": "04b/0690#word_",
-     "text": "Posratý chod sveta.",
-     "note": "\"Posratý chod sveta\" = the shitty way the world works"
-    },
-    {
-     "id": "04b/0690#word_2",
-     "text": "Stačilo by, keby profesori z elektrotechniky a strojárstva pred množstvom rokov nedostali chuť odobrať budovu Abu-Reyhan fakulte lodného staviteľstva",
-     "note": "\"nedostali chuť\" = crude: lusted after, were dying to grab"
+     "note": "\"Pre lásku tvojej matky\" = prosba, prosím ťa; nie urážka"
     },
     {
      "id": "04b/0743#word_",
      "text": "Ležal som v tme izby a škárou vo dverách som videl Ghassema, ako sedí v hale pred televízorom a lúska semienka, a Maman sedela vedľa neho.",
-     "note": "\"v hale\" = in the hall (main living room)"
+     "note": "\"v hale\" = v hale (hlavnej obývacej izbe)"
     },
     {
      "id": "04b/0744#word_",
      "text": "Sľúbila som, že keď sa uzdraví, pôjdem pešo do Mašhadu.",
-     "note": "\"Sľúbila som\" = I vowed (a religious vow)"
+     "note": "\"Sľúbila som\" = zložila som sľub (náboženský sľub)"
     },
     {
      "id": "04b/0784#word_",
      "text": "Ty si ale sníki.",
-     "note": "\"sníki\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/0935#word_",
-     "text": "„Pre Atára je lepšie plakať až do svitania“ alebo „teraz je viac zabitý“?",
-     "note": "\"teraz je viac zabitý\" = now he lies more deeply slain (by love)"
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "Pozri, čo si to vyviedol, ty mozog na hovno.",
-     "note": "\"ty mozog na hovno\" = shit-for-brains (a crude insult)"
-    },
-    {
-     "id": "04b/1274#word_",
-     "text": "opití a",
-     "note": "\"opití\" = drunk with love, in the mystic sense"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "spálení",
-     "note": "\"spálení\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Človek z toho dostane posratý závrat. Čím viac o tom premýšľate, tým väčší je ten posratý závrat.",
-     "note": "\"posratý závrat\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1314#word_",
-     "text": "Možno poviete, že to nejde, že to nie je možné, že je to len predstava a nie je to skutočné. Ale stalo sa to a naozaj vás milujem.",
-     "note": "\"Ale stalo sa to\" = but it is real, not fantasy"
+     "note": "\"sníki\" = anglické „sneaky“ (prefíkaný), hravo vložené do vety"
     },
     {
      "id": "06/0090#word_",
      "text": "Medzitým Mahboub plakala celý týždeň v jednom kuse.",
-     "note": "\"Medzitým\" = back then, at that time"
+     "note": "\"Medzitým\" = vtedy, v tom čase"
     },
     {
      "id": "06/0165#word_",
      "text": "Vypil priveľa limonády.",
-     "note": "\"limonády\" = soda, fizzy soft drinks"
+     "note": "\"limonády\" = sódovka, sladené bublinkové nápoje"
     },
     {
      "id": "06/0253#word_",
      "text": "Hmm, ty si šiel na výlet, zabaviť sa, padlo ti to dobre. Tie ťažké stránky si nevidel.",
-     "note": "\"padlo ti to dobre\" = you enjoyed yourself there"
+     "note": "\"padlo ti to dobre\" = dobre si sa tam zabavil"
     },
     {
      "id": "06/0291#word_",
      "text": "Hľadá si výhovorky, aby reptal pre nič za nič, che, Amir-jan.",
-     "note": "\"che\" = a short, soft laugh"
+     "note": "\"che\" = krátky, tichý smiech"
     }
    ]
   }

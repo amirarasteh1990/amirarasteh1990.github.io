@@ -13,7 +13,6 @@
   "needs_change": "Bør ændres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sige det?",
-  "meaning": "Hvad tror du, det betyder?",
   "optional": "(valgfrit)",
   "your_name": "Dit navn",
   "thanks_tick": "Skriv mit navn på takkesiden",
@@ -56,6 +55,11 @@
    "note_label": "Hvordan ville du sige det?",
    "note_on": "change",
    "rows": [
+    {
+     "id": "01/0087#word_",
+     "text": "– Han var blevet så mager og mørk, den hjerneløse abe.",
+     "note": "\"den hjerneløse abe\" = skældsord: en dum, tåbelig mand"
+    },
     {
      "id": "03/0077#crude",
      "text": "– Forbandet være den der betvivler Ørneøje News.",
@@ -112,9 +116,19 @@
      "note": null
     },
     {
+     "id": "04b/0146#word_",
+     "text": "– Lortehjerne. Du får mig til at åbne munden. Jeg mener: Har du bare hørt om det? Blev du ikke selv ramt?",
+     "note": "\"Lortehjerne\" = lortehjerne, groft skældsord for en dumrian"
+    },
+    {
      "id": "04b/0150#crude",
      "text": "– Hvis alder tæller, skulle du slikke Bahmans nosser. Han er mindst fem år ældre end os.",
      "note": null
+    },
+    {
+     "id": "04b/0162#word_",
+     "text": "– Ja, i samme øjeblik de ser os, klemmer de røvhullerne sammen og holder sådan afstand, at jeg har lyst til at plante begge fødder i ansigtet på dem.",
+     "note": "\"klemmer de røvhullerne sammen\" = spænder op og bliver snobbede (groft billede)"
     },
     {
      "id": "04b/0164#crude",
@@ -122,9 +136,69 @@
      "note": null
     },
     {
+     "id": "04b/0186#word_",
+     "text": "– Jeg ville have foretrukket at dele værelse med dem frem for en pikhjerne som dig.",
+     "note": "\"pikhjerne\" = pikhjerne, groft skældsord for en idiot"
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "– Så er du en fucking førsteårsstuderende.",
+     "note": "\"fucking førsteårsstuderende\" = fucking rus, afslappet og venskabeligt banderi"
+    },
+    {
+     "id": "04b/0351#word_",
+     "text": "Hvad føjede førsteplads og jeg ved ikke, en ekstra uddannelse til længden på min pik, når mit job nu er at tilse elstationer?",
+     "note": "\"til længden på min pik\" = gavne mig det mindste (groft)"
+    },
+    {
      "id": "04b/0360#crude",
      "text": "– De der morderiske manøvrer er lige dig, men det, jeg virkelig undrer mig over, er, hvilken skide galning der havde åbnet sin butik klokken seks en fredag morgen, så du kunne købe et kamera af ham.",
      "note": null
+    },
+    {
+     "id": "04b/0394#word_",
+     "text": "– ... vi blev kneppet.",
+     "note": "\"vi blev kneppet\" = vi blev røvrendt, snydt"
+    },
+    {
+     "id": "04b/0454#word_",
+     "text": "Så vidt jeg kunne forstå af opslaget, var han blevet fysiklærer på et af gymnasierne i sin hjemby, og idioten med vrangforestillinger havde undervist i sine egne teorier i stedet for stoffet i bogen.",
+     "note": "\"idioten med vrangforestillinger\" = groft: en idiot, der tror på sine egne fantasier"
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Er du Heisenberg eller Einstein, siden du forventer at få tyve og blive hædret for dine oplysende teorier? Var det mig, ville jeg ikke nøjes med et nul; jeg ville få dig til at æde hovedet på min pik og så sparke dig ud af universitetet. Og så ville jeg smide dig i et sort hul et stykke tid, så du ikke smittede nogen med din sygdom.",
+     "note": "i Iran går karaktererne op til 20"
+    },
+    {
+     "id": "04b/0520#crude",
+     "text": "Ingen diskussioner på værelset i dag. Jeg fik tolv ud af tyve i idræt; jeg er pissesur og sviner jer til.",
+     "note": "i Iran går karaktererne op til 20"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "– Ørneøje, må Gud aldrig tilgive dig, du ødelagde min ryg. Hvorfor bærer du ikke briller?",
+     "note": "\"må Gud aldrig tilgive dig\" = halvt spøgende forbandelse: må Gud ikke tilgive dig"
+    },
+    {
+     "id": "04b/0690#word_",
+     "text": "Det ville have været nok, hvis elektro- og maskiningeniørprofessorerne mange år tidligere ikke havde fået pikken op at stå for at tage Abu-Reyhan-bygningen fra Skibsbygningsfakultetet",
+     "note": "\"fået pikken op at stå for\" = groft: havde savlet efter, var vilde efter at snuppe"
+    },
+    {
+     "id": "04b/0717#word_",
+     "text": "– Jeg siger, Ældi-jan, men bare mellem os: du endte i udlandet ved et rent pisseheld.",
+     "note": "\"ved et rent pisseheld\" = et fucking lykketræf, rent dumt held"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "– Nå, hvis du ikke er typen, der vil søge ind på et universitet i udlandet og rejse væk, hvorfor rev du så røven i laser for at tage TOEFL-eksamen?",
+     "note": "\"rev du så røven i laser\" = groft: knoklede røven ud af bukserne, sled meget hårdt"
+    },
+    {
+     "id": "04b/0818#word_",
+     "text": "– Ældi, se hvor langt du har drevet det: Farid, som ikke giver en fløjtende fis for os eller værelset eller nogen som helst, har talt.",
+     "note": "\"ikke giver en fløjtende fis\" = groft: er fuldstændig ligeglad"
     },
     {
      "id": "04b/0844#crude",
@@ -145,6 +219,11 @@
      "id": "04b/1003#crude",
      "text": "– Sikke et kønt rod, du har lavet, din lortehjerne.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Man bliver helt skideforvirret. Jo mere man tænker over det, desto mere skideforvirret bliver man.",
+     "note": "\"skideforvirret\" = groft, opfundet ord: så forvirret, at hovedet snurrer"
     }
    ]
   },
@@ -183,6 +262,11 @@
     {
      "id": "03/0517#natur",
      "text": "– Leopard-Farid kan ikke engang blive enig med sig selv. Det ene øjeblik laver han et morderisk stunt; det næste siger han: \"Åh, blod. Det gav mig myrekryb.\"",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Ved Haft-Seen-bordet, da det nye år begyndte, læste jeg digtet for min mor.",
      "note": null
     },
     {
@@ -234,14 +318,9 @@
      "id": "04b/0738#natur",
      "text": "– Åh, gid jeg en dag kunne gennembore de ører dér med mine negle, så du aldrig kan spidse dem mere.",
      "note": null
-    },
-    {
-     "id": "04b/1314#natur",
-     "text": "– I toogtredive måneder har jeg elsket dig. På afstand. Uden at du vidste det. I stilhed, uden et eneste ord.",
-     "note": null
     }
    ]
   }
  ],
- "first": 21
+ "first": 16
 }

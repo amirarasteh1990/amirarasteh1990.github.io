@@ -13,7 +13,6 @@
   "needs_change": "Needs change",
   "not_sure": "Not sure",
   "how_say": "How would you say it?",
-  "meaning": "What do you think it means?",
   "optional": "(optional)",
   "your_name": "Your name",
   "thanks_tick": "List my name on the Thanks page",
@@ -56,6 +55,11 @@
    "note_label": "How would you say it?",
    "note_on": "change",
    "rows": [
+    {
+     "id": "01/0087#word_",
+     "text": "– He had become so thin and dark, that brainless ape.",
+     "note": "\"that brainless ape\" = insult: a stupid, foolish man"
+    },
     {
      "id": "03/0077#crude",
      "text": "– May whoever denies Eagle Eye News be damned.",
@@ -122,6 +126,11 @@
      "note": null
     },
     {
+     "id": "04b/0162#word_",
+     "text": "– Yeah, the minute they see us, they clench their assholes and keep so much distance I want to plant both feet in their faces.",
+     "note": "\"clench their assholes\" = tense up and act snooty (crude image)"
+    },
+    {
      "id": "04b/0164#crude",
      "text": "– Fuck this luck of ours.",
      "note": null
@@ -132,9 +141,19 @@
      "note": null
     },
     {
+     "id": "04b/0226#word_",
+     "text": "– ... whenever I came over for classes or other stuff for my shitty second major, I'd see them arguing.",
+     "note": "\"my shitty second major\" = my crappy second degree (crude grumble)"
+    },
+    {
      "id": "04b/0343#crude",
      "text": "– So you're a fucking freshman.",
      "note": null
+    },
+    {
+     "id": "04b/0351#word_",
+     "text": "What did being top of the class and, I don't know, getting a second degree add to the length of my dick, when now my job is inspecting electrical substations?",
+     "note": "\"add to the length of my dick\" = do me any good (crude)"
     },
     {
      "id": "04b/0360#crude",
@@ -147,6 +166,16 @@
      "note": null
     },
     {
+     "id": "04b/0454#word_",
+     "text": "From what I gathered from the post, he'd become a physics teacher at one of the high schools in his town, and that deluded dipshit had been teaching his own theories instead of the material in the book.",
+     "note": "\"deluded dipshit\" = crude: a deluded idiot"
+    },
+    {
+     "id": "04b/0464#crude",
+     "text": "Are you Heisenberg or Einstein, so that you expect them to give you a twenty and honor your enlightening theories? If it were me, forget zero; I'd make you eat the head of my dick and then kick you out of the university. Actually, I'd throw you into a black hole for a while too, so your illness wouldn't infect anyone.",
+     "note": "in Iran, grades go up to 20"
+    },
+    {
      "id": "04b/0486#crude",
      "text": "– So you mean our shitty luck in drawing an antique like you just keeps repeating?",
      "note": null
@@ -157,9 +186,34 @@
      "note": null
     },
     {
+     "id": "04b/0520#crude",
+     "text": "No arguing in the room today. I got a twelve in PE; I'm in a fucking bad mood, and I'll start swearing at you.",
+     "note": "in Iran, grades go up to 20"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "– Eagle Eye, may God not forgive you, you destroyed my back. Why don't you wear your glasses?",
+     "note": "\"may God not forgive you\" = half-joking curse: may God not forgive you"
+    },
+    {
+     "id": "04b/0690#word_",
+     "text": "It would have been enough if, years earlier, the Electrical and Mechanical professors hadn't gotten a hard-on for taking the Abu-Reyhan building from the Shipbuilding Department; then Farid wouldn't have ended up that way.",
+     "note": "\"gotten a hard-on for\" = crude: lusted after, were dying to grab"
+    },
+    {
      "id": "04b/0717#crude",
      "text": "– I'm telling you, Eldie-jan, between us, you ended up abroad on a fucking fluke. If it weren't for Eagle Eye News, you'd still be here with us.",
      "note": null
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "– But you're not the kind of person who wants to apply abroad and leave, so why did you bust your ass taking the TOEFL?",
+     "note": "\"bust your ass\" = crude: slaved away, worked very hard"
+    },
+    {
+     "id": "04b/0818#word_",
+     "text": "– Eldie, see how far you've taken it: Farid, who doesn't give a damn about us or the room or anyone, has spoken up.",
+     "note": "\"doesn't give a damn\" = coarse: doesn't care at all"
     },
     {
      "id": "04b/0844#crude",
@@ -185,6 +239,11 @@
      "id": "04b/1017#crude",
      "text": "– I'm looking for my glasses, asshole. Tell Farid to stop leaving his cup right in my way.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "It makes you shit-dizzy. The more you think about it, the more shit-dizzy you get.",
+     "note": "\"shit-dizzy\" = crude coinage: so baffled your head spins"
     }
    ]
   },
@@ -233,6 +292,11 @@
     {
      "id": "03/0517#natur",
      "text": "– Leopard Farid can't even make up his own mind. One minute he's pulling murderous moves; the next he's saying, \"Oh, blood. That made my skin crawl.\"",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "At the Haft-Seen spread, as the new year began, I read the poem for my mother.",
      "note": null
     },
     {
@@ -316,11 +380,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "– I've loved you for thirty-two months. From a distance. Without your knowing. In silence, without a single word.",
-     "note": null
-    },
-    {
      "id": "06/0050#natur",
      "text": "– Amir, Grandpa caught Covid too, but you'd never know it; he shook it off like a simple cold. Probably because he can't hear and has no idea what's going on, and he never got scared.",
      "note": null
@@ -328,5 +387,5 @@
    ]
   }
  ],
- "first": 21
+ "first": 16
 }

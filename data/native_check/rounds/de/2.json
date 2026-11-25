@@ -13,7 +13,6 @@
   "needs_change": "Änderung nötig",
   "not_sure": "Nicht sicher",
   "how_say": "Wie würdest du es sagen?",
-  "meaning": "Was glaubst du, was es bedeutet?",
   "optional": "(optional)",
   "your_name": "Dein Name",
   "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Der Erzähler ist hier nervös. Klingt jede Zeile in deiner Sprache natürlich?",
    "labels": [
     "Stimmt",
     "Änderung nötig",
@@ -58,17 +56,79 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden.",
+     "id": "04b/1320#nerv",
+     "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem einem ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso scheißschwindliger wird, je tiefer man darin versinkt",
+     "note": "er wiederholt ein derbes Wort, das ein Mädchen für ein Gemälde erfunden hat"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Genau so – je mehr du über diese zehn Worte nachdenkst, desto schei... ich meine, desto schwindliger wird dir.",
+     "note": "er sagt das derbe Wort fast noch einmal und hält dann inne"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Um-um Gottes willen, hör zu. … Wie das Gemälde, das deine Fre-Fre-Freundin dir gezeigt hat.",
+     "note": "er stottert"
+    }
+   ]
+  },
+  {
+   "key": "confess",
+   "title": null,
+   "q": "Der Erzähler sagt dem Mädchen endlich, dass er sie liebt. Klingt das natürlich und von Herzen?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#conf",
+     "text": "Ich liebe dich seit zweiunddreißig Monaten. Von weitem. Ohne dass du es weißt. Im Stillen, ohne ein einziges Wort. Du könntest sagen, es ist unmöglich – dass es nicht sein kann, dass es Fantasie ist. Aber es ist so, und ich liebe dich wirklich.",
+     "note": "im Persischen spricht er sie förmlich an, mit dem höflichen Sie"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Das sind die ersten Zeilen des Buches. Lesen sie sich natürlich und klar?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Hier geschieht nichts. Hier soll nichts in Ordnung gebracht oder zerstört werden. Keine Deutung wird folgen. Keine Schlussfolgerung.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Dies ist das lose Ende eines Fadens aus Wörtern, die einst Klänge waren.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Wie damals in der Kindheit, wenn Maman das Garn aus alten Kleidungsstücken auftrennte und wir den Faden nahmen und mit ihm im Haus herumwanderten, damit das Garn sich nicht aufhäufte.",
+     "note": "Maman ist Persisch für „Mutter“ und bleibt bewusst unübersetzt. Die Kinder tragen den Faden durchs Haus, während sie das Garn auftrennt."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Jetzt wickle ich den Faden der Wörter ab, und du hebst sie auf und trägst sie in deine eigene Welt, damit sie sich hier, in meiner Welt, nicht aufhäufen.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
-   "q_lang": "en",
+   "q": "Die Erinnerung löst sich wie eine Schraube mit ausgerissenem Gewinde. Ist das Bild klar?",
    "labels": [
     "Stimmt",
     "Änderung nötig",
@@ -78,8 +138,33 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0175#s44",
-     "text": "– Also reicher als der Freund des Cousins ...",
+     "id": "03/0675#screw",
+     "text": "Danach war jenes Bild, wie eine Schraube mit ausgerissenem Gewinde, nicht länger an die Dunkelheit hinter der geschlossenen Tür unseres Hauses gebunden.",
+     "note": null
+    }
+   ],
+   "intro": "Im Buch:"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Ein Junge spielt mit seinen kleinen Brüdern Soldat. Klingen seine Kommandos wie echter militärischer Drill?",
+   "labels": [
+    "Stimmt",
+    "Änderung nötig",
+    "Nicht sicher"
+   ],
+   "note_label": "Wie würdest du es sagen?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Bataillon, vorwärts marsch!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Beginn der ersten Etappe der Mission. Bataillon, links um!",
      "note": null
     }
    ]
@@ -87,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Dichtung",
-   "q": "Das sind Verszeilen. Liest sich jede davon in deiner Sprache gut als Gedicht?",
+   "q": "Das sind Gedichte und Verszeilen: das eigene Gedicht des Erzählers und Zeilen klassischer persischer Dichter (Charaqani, Hafez, Attar). Liest sich jede davon in deiner Sprache als Dichtung?",
    "labels": [
     "Stimmt",
     "Änderung nötig",
@@ -97,66 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... ich würde jenen Siegelring Salomos für nichts in der Welt nehmen, über den sich bisweilen die Hand des ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Meine Träume waren dunkel / Ich konnte nichts sehen / Du kamst / Das Licht meiner Träume ging an / Nun bist du fort / Das Licht meiner Träume blinkt jetzt / Ich hege keine Hoffnung auf deine Rückkehr / Doch wenn dein Weg dich in die Nähe führt / komm wieder in meine Träume / Ich glaube, meine Träume haben nicht geglaubt, dass du gegangen bist / Sie denken, du hast dich verlaufen, und",
+     "note": "das eigene schlichte Gedicht des Erzählers an das Mädchen, das er verloren hat"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "Auf alle Dinge darf man schreiben",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Meine Träume waren dunkel / Ich konnte nichts sehen / Du kamst / Das Licht meiner Träume ... das Licht meiner Träume ging ... das Licht meiner Träume ging an / Nun ... nun ... nun bist du fort ...",
+     "note": "er übt es im Halbschlaf; das Stocken ist Absicht"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "schreib mit deinem eigenen Blut auf das Wasser",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Auf alle Dinge darf man schreiben / außer auf Wasser / und wenn du das Meer überquerst / schreib mit deinem eigenen Blut auf das Wasser / damit derjenige, der dir folgt / weiß, dass / Liebende und / Betrunkene und / Verbrannte / hier vorbeigegangen sind.",
+     "note": "ein altes persisches Gedicht von Charaqani, im Unterricht an die Tafel geschrieben"
     },
     {
-     "id": "04b/1271#poetr",
-     "text": "damit derjenige, der dir folgt",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... ich würde jenen Siegelring Salomos für nichts in der Welt nehmen, über den sich bisweilen die Hand des ...",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter; abgebrochen wie im Buch"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "hier vorbeigegangen sind.",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Ich bin der Diener des Ältesten der Schenke, dessen Gnade ...",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter; abgebrochen wie im Buch"
     },
     {
-     "id": "04b/1390#poetr",
-     "text": "Das Licht meiner Träume ging an",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Die Hoffnung auf die Vereinigung mit dir hält mich am Leben; sonst wäre in der Trennung von dir jeder meiner Atemzüge die Angst vor dem Untergang. … Wenn du die Wunde schlägst, ist das besser als der Balsam eines anderen, und wenn du das Gift gibst, besser als ...",
+     "note": "zwei Zeilen von Hafez, einem klassischen persischen Dichter; die zweite ist abgebrochen wie im Buch"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Ich hege keine Hoffnung auf deine Rückkehr",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Hafez' bezaubernder Dichtung ist nur der gewahr, der poetische Anmut kennt und Persisch zu sprechen versteht.",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter; abgebrochen wie im Buch"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "Doch wenn dein Weg dich in die Nähe führt",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Gott ließ die prachtvolle Schönheit des göttlichen Antlitzes vor den Engeln offenbar werden und sah, dass sie nichts von Liebe wussten; aus eifersüchtigem Eifer wurde diese Offenbarung zu reinem Feuer und traf Adams Lehm.",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "komm wieder in meine Träume",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "in Erinnerung an den Geliebten und die Heimat will ich so bitterlich weinen, dass aus der Welt Wege und Bräuche der Reise ...",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter; abgebrochen wie im Buch"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "Ich glaube, meine Träume haben nicht geglaubt, dass du gegangen bist",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Lange schon hat die Geliebte keine Botschaft gesandt; keinen Gruß geschrieben ...",
+     "note": "eine Zeile von Hafez, einem klassischen persischen Dichter; abgebrochen wie im Buch"
     },
     {
-     "id": "02/0005#poetr",
-     "text": "Das Licht meiner Träume ... das Licht meiner Träume ging ... das Licht meiner Träume ging an",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "„Für Attar ist Weinen bis zur Morgenröte süßer“ oder „jetzt ist er noch mehr erschlagen“?",
+     "note": "ein Freund fragt, welches von zwei Liedern gemeint ist; jedes ist nach einer Zeile aus einem Gedicht von Attar benannt, einem klassischen persischen Dichter"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Einzelne Wörter",
-   "q": "Ist das Wort in jeder Zeile das richtige? Was es bedeuten soll, steht darunter.",
+   "q": "Unter jeder Zeile steht ein Wort daraus und was es bedeuten soll. Ist es hier das richtige Wort?",
    "labels": [
     "Stimmt",
     "Änderung nötig",
@@ -168,132 +253,77 @@
     {
      "id": "01/0261#word_",
      "text": "– Mm-hm, er hat sich sehr, sehr verändert. Er ist so dünn und dunkel geworden.",
-     "note": "\"dunkel geworden\" = skin grown darker from the sun"
+     "note": "\"dunkel geworden\" = von der Sonne dunkler gewordene Haut"
     },
     {
      "id": "03/0118#word_",
      "text": "– Was für ein Knaller.",
-     "note": "\"Knaller\" = what a pretty girl (boy's slang)"
+     "note": "\"Knaller\" = was für ein hübsches Mädchen (Jungen-Slang)"
     },
     {
      "id": "03/0278#word_",
      "text": "Irgendwie könnte man sagen, sie haben die Universität erobert. Karroubi ist Liebe, wirklich und wahrhaftig.",
-     "note": "\"Karroubi ist Liebe\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karroubi ist Liebe\" = Karroubi ist großartig (begeisterter Jugendslang)"
     },
     {
      "id": "04a/0062#word_",
      "text": "– Viele scheitern hier. Sie gehen nach links.",
-     "note": "\"scheitern\" = fail, go wrong (as a boy says it)"
-    },
-    {
-     "id": "04b/0146#word_",
-     "text": "– Scheißkopf. Du bringst mich dazu, den Mund aufzumachen und es auszusprechen.",
-     "note": "\"Scheißkopf\" = shit-for-brains, crude insult for a dimwit"
+     "note": "\"scheitern\" = scheitern, schiefgehen (wie ein Junge es sagt)"
     },
     {
      "id": "04b/0171#word_",
      "text": "Wir haben all diese Übungstests gemacht und sind mit diesem Altertum als Zimmerkollegen gelandet.",
-     "note": "\"Zimmerkollegen\" = roommates (casual student word)"
+     "note": "\"Zimmerkollegen\" = Mitbewohner im Zimmer (lockeres Wort unter Studenten)"
     },
     {
      "id": "04b/0173#word_",
      "text": "– Ihr seid also alle sehr schlaue Burschen.",
-     "note": "\"schlaue Burschen\" = very clever boys, said a bit patronizingly"
-    },
-    {
-     "id": "04b/0226#word_",
-     "text": "– ... immer wenn ich für die Kurse und Arbeiten des zweiten Scheißstudiengangs kam, sah ich sie streiten.",
-     "note": "\"des zweiten Scheißstudiengangs\" = my crappy second degree (crude grumble)"
+     "note": "\"schlaue Burschen\" = sehr schlaue Jungs, etwas herablassend gesagt"
     },
     {
      "id": "04b/0228#word_",
      "text": "Vor einem oder zwei Jahren hörte ich von Adlerauge News, dass der Geck auch nach Australien gegangen ist, irgendwie hinter dem Mädchen her, das ihr beide geliebt habt.",
-     "note": "\"der Geck\" = vain show-off, a dandy (mocking)"
+     "note": "\"der Geck\" = eitler Angeber, ein Dandy (spöttisch)"
     },
     {
      "id": "04b/0270#word_",
      "text": "– Ich weiß. Ich bin nicht blöd. Aber so geht das nicht. Du musst aus diesem Schutzraum heraustreten und wirklich etwas tun, anstatt hier zu sitzen und zu fantasieren.",
-     "note": "\"aus diesem Schutzraum heraustreten\" = come out of your safe shell"
+     "note": "\"aus diesem Schutzraum heraustreten\" = aus deinem schützenden Schneckenhaus herauskommen"
     },
     {
      "id": "04b/0317#word_",
      "text": "– Es ärgert mich so sehr, wenn du so still dasitzt. Ich will dir eine in die Fresse hauen.",
-     "note": "\"eine in die Fresse hauen\" = punch you (playful, annoyed young woman)"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Also bist du ein Scheiß-Erstie.",
-     "note": "\"Scheiß-Erstie\" = fucking freshman, casual friendly swearing"
+     "note": "\"eine in die Fresse hauen\" = dir eine reinhauen (spielerisch, von einer genervten jungen Frau)"
     },
     {
      "id": "04b/0353#word_",
      "text": "– Und in diesem beschissenen Zustand, was für Altertümer haben wir dann abgekriegt? Fliege und dieser andere elende Verblendete.",
-     "note": "\"elende Verblendete\" = deluded pest, a self-deceived nuisance"
+     "note": "\"elende Verblendete\" = verblendete Nervensäge, jemand, der sich selbst etwas vormacht"
     },
     {
      "id": "04b/0421#word_",
      "text": "– Leopard-Farid, beherrsch deine Nerven und mach keine mörderische Aktion.",
-     "note": "\"mörderische Aktion\" = a rash, wild move (running joke)"
+     "note": "\"mörderische Aktion\" = eine überstürzte, wilde Aktion (Running Gag)"
     },
     {
      "id": "04b/0486#word_",
      "text": "– Du meinst also, dieses Scheißglück, bei der Auslosung ein Altertum wie dich abzubekommen, wiederholt sich immer wieder?",
-     "note": "\"Altertum\" = an antique: odd, old-fashioned person"
-    },
-    {
-     "id": "04b/0717#word_",
-     "text": "– Ich sag dir, Äldi-jan, aber mal unter uns: Du bist durch einen verfickten Zufall ins Ausland gelangt.",
-     "note": "\"verfickten Zufall\" = a fucking fluke, sheer dumb luck"
+     "note": "\"Altertum\" = eine Antiquität: ein seltsamer, altmodischer Mensch"
     },
     {
      "id": "04b/0736#word_",
      "text": "Sobald dein Name fällt, werden meine Ohren spitz.",
-     "note": "\"werden meine Ohren spitz\" = my ears prick up: I listen eagerly"
+     "note": "\"werden meine Ohren spitz\" = ich spitze die Ohren: ich höre gespannt zu"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Du bist ganz schön sneaky.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/0935#word_",
-     "text": "– „Für Attar ist Weinen bis zur Morgenröte süßer“ oder „jetzt ist er noch mehr erschlagen“?",
-     "note": "\"noch mehr erschlagen\" = now he lies more deeply slain (by love)"
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "– Schau mal, was für ein Schlamassel du angerichtet hast, Kackhirn.",
-     "note": "\"Kackhirn\" = shit-for-brains (a crude insult)"
-    },
-    {
-     "id": "04b/1274#word_",
-     "text": "Betrunkene und",
-     "note": "\"Betrunkene\" = drunk with love, in the mystic sense"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "Verbrannte",
-     "note": "\"Verbrannte\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Davon wird einem scheißschwindlig. Je mehr man darüber nachdenkt, desto scheißschwindliger wird einem.",
-     "note": "\"scheißschwindlig\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Und mit zitternden Händen blätterte ich hektisch durch die Ghaselen, auf der Suche nach dem Beit von Hafez, bei dem einem ebenso wie bei dem Gemälde – wie jenes andere Mädchen gesagt hatte – umso scheißschwindliger wird, je tiefer man darin versinkt – um es Niloofar zu zeigen.",
-     "note": "\"umso scheißschwindliger\" = more baffled; echoes her crude coinage"
-    },
-    {
-     "id": "04b/1392#word_",
-     "text": "Das Licht meiner Träume blinkt jetzt",
-     "note": "\"blinkt\" = now flickers, like a failing light"
+     "note": "\"sneaky\" = englisch „sneaky“, spielerisch eingestreut"
     },
     {
      "id": "06/0253#word_",
      "text": "Geh jetzt und hol Kerne für Ghassem und die anderen, sie wollen einen Film schauen.",
-     "note": "\"hol Kerne\" = roasted seeds to snack on"
+     "note": "\"hol Kerne\" = geröstete Kerne zum Knabbern"
     }
    ]
   }

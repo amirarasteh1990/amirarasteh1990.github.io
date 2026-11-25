@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="uk" data-language="Ukrainian" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/uk/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l1">Тут нічого не відбувається. Тут нічого не буде виправлено і нічого не буде зруйновано.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>Тут оповідач хвилюється. Чи звучить кожен рядок природно українською?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l1">І тремтячими руками я хутко-хутко переглядав газелі, щоб знайти й показати Нілуфар той бейт Гафеза, від якого, як і від тієї картини, за словами тієї іншої дівчини, лайняне запаморочення стає тим дужчим, чим глибше в нього занурюєшся.</p></div>
+      <p class="nc-note">він повторює грубе слівце, яке одна дівчина вигадала про картину</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> Правильно</label>
         <label><input type="radio" name="v1" value="change"> Треба змінити</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">Is it clear the children carry the yarn around the house?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="Opening/0007#s19" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l2">Як у дитинстві, коли Маман розпускала пряжу зі старого одягу, а ми брали нитку й кружляли з нею по хаті, щоб пряжа не збиралася в купу.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l2">Як та сама, що, чим більше думаєш про ці десять слів, то більше лай... це, голова обертом іде.</p></div>
+      <p class="nc-note">він мало не вимовляє те грубе слово знову, але зупиняється</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> Правильно</label>
         <label><input type="radio" name="v2" value="change"> Треба змінити</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0026#s40" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l3">Початок першого етапу місії. Батальйон, ліворуч!</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l3">Ти, благаю тебе, послухай. … Як та картина, що тобі п-п-показувала подруга.</p></div>
+      <p class="nc-note">він затинається</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> Правильно</label>
         <label><input type="radio" name="v3" value="change"> Треба змінити</label>
@@ -187,11 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> Поезія</h2>
-    <p class="nc-gq">Це поетичні рядки. Чи добре кожен із них звучить як поезія українською?</p>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l4">я б не взяв за жодні скарби перстень Соломона, до якого часом торкається рука...</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>Оповідач нарешті зізнається дівчині в коханні. Чи звучить це природно й щиро?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l4">Тридцять два місяці, як я кохаю Вас. Здалеку. Так, що Ви не знаєте. У мовчанні. Без жодного слова. Може, Ви скажете, що так не буває, що це неможливо, що це уявне, а не справжнє. Але воно є, і я справді Вас кохаю.</p></div>
+      <p class="nc-note">перською він звертається до неї офіційно, на ввічливе «Ви»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> Правильно</label>
         <label><input type="radio" name="v4" value="change"> Треба змінити</label>
@@ -202,8 +202,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l5">«Аттарові солодше плакати до світанку» чи «тепер він іще дужче вбитий»?</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>Це перші рядки книжки. Чи читаються вони природно й зрозуміло?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l5">Тут нічого не відбувається. Тут нічого не буде виправлено і нічого не буде зруйновано. Жодного тлумачення не буде. Жодного висновку.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> Правильно</label>
         <label><input type="radio" name="v5" value="change"> Треба змінити</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l6">На всьому можна писати</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l6">Це вільний кінець нитки зі слів, що колись були звуками.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> Правильно</label>
         <label><input type="radio" name="v6" value="change"> Треба змінити</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1268#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l7">окрім як на воді</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l7">Як у дитинстві, коли Маман розпускала пряжу зі старого одягу, а ми брали нитку й кружляли з нею по хаті, щоб пряжа не збиралася в купу.</p></div>
+      <p class="nc-note">Маман — перською «мати»; це слово навмисно не перекладено. Діти носять нитку по хаті, поки вона розпускає пряжу.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> Правильно</label>
         <label><input type="radio" name="v7" value="change"> Треба змінити</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1271#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l8">щоб той, хто йде в твоєму сліді</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l8">Тепер я розмотую нитку слів, а ти бери їх і неси у свій світ, щоб вони не збиралися в купу тут, у моєму світі.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> Правильно</label>
         <label><input type="radio" name="v8" value="change"> Треба змінити</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1276#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l9">пройшли цим шляхом.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>Спогад вислизає, як гвинт зі зірваною різьбою. Чи зрозумілий цей образ?</span></h2>
+    <p class="nc-gq">У книжці:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l9">Відтоді той образ, наче гвинт зі зірваною різьбою, вже не був прив'язаний до темряви за зачиненими дверима нашої хати</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> Правильно</label>
         <label><input type="radio" name="v9" value="change"> Треба змінити</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l10">Прочитала «Давно вже коханий не присилав звістки; не писав вітання...», і мене розібрав сміх.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>Хлопчик грається з молодшими братиками в солдатів. Чи звучать його команди як справжня армійська муштра?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l10">Батальйон, вперед марш!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> Правильно</label>
         <label><input type="radio" name="v10" value="change"> Треба змінити</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l11">Світло моїх снів тепер блимає</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l11">Початок першого етапу місії. Батальйон, ліворуч!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> Правильно</label>
         <label><input type="radio" name="v11" value="change"> Треба змінити</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l12">Я не маю надії на твоє повернення</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Поезія</h2>
+    <p class="nc-gq">Це вірші й поетичні рядки: власний вірш оповідача і рядки класичних перських поетів (Харакані, Гафеза, Аттара). Чи звучить кожен із них як поезія українською?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l12">Мої сни були темні / Я нічого не бачив / Ти прийшла / Світло моїх снів засвітилось / Тепер тебе нема / Світло моїх снів тепер блимає / Я не маю надії на твоє повернення / але якщо доля приведе тебе сюди / прийди знову в мої сни / Здається, мої сни не повірили, що ти пішла / вони гадають, що ти загубилася і</p></div>
+      <p class="nc-note">власний простий вірш оповідача до дівчини, яку він утратив</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> Правильно</label>
         <label><input type="radio" name="v12" value="change"> Треба змінити</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l13">але якщо доля приведе тебе сюди</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l13">Мої сни були темні / Я нічого не бачив / Ти прийшла / Світло моїх снів ... світло моїх снів засвічувалось ... світло моїх снів засвітилось / Тепер ... тепер ... тепер тебе нема ...</p></div>
+      <p class="nc-note">напівсонний, він подумки повторює вірш; запинки навмисні</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> Правильно</label>
         <label><input type="radio" name="v13" value="change"> Треба змінити</label>
@@ -310,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1395#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l14">прийди знову в мої сни</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l14">На всьому можна писати / окрім як на воді / а якщо перетнеш море / пиши на воді власною кров'ю / щоб той, хто йде в твоєму сліді / знав, що / закохані й / п'яниці й / спалені / пройшли цим шляхом.</p></div>
+      <p class="nc-note">старий перський вірш Харакані, написаний на шкільній дошці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> Правильно</label>
         <label><input type="radio" name="v14" value="change"> Треба змінити</label>
@@ -322,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l15">Здається, мої сни не повірили, що ти пішла</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l15">... я б не взяв за жодні скарби перстень Соломона, до якого часом торкається рука...</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета; обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> Правильно</label>
         <label><input type="radio" name="v15" value="change"> Треба змінити</label>
@@ -334,8 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="02/0002#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l16">Мої сни були темні</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l16">Я слуга Старійшини Таверни, чия ласка...</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета; обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> Правильно</label>
         <label><input type="radio" name="v16" value="change"> Треба змінити</label>
@@ -346,8 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l17">Світло моїх снів ... світло моїх снів засвічувалось ... світло моїх снів засвітилось</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l17">Надія на з'єднання з тобою тримає мене живим; інакше кожен мій подих у розлуці з тобою був би страхом загибелі. … Якщо ти завдаєш рани, це краще за чужий бальзам, і якщо ти даєш отруту, краще за ...</p></div>
+      <p class="nc-note">два рядки Гафеза, класичного перського поета; другий обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> Правильно</label>
         <label><input type="radio" name="v17" value="change"> Треба змінити</label>
@@ -358,8 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="02/0006#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l18">Тепер ... тепер ... тепер тебе нема ...</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l18">...У чарівному вірші Гафеза обізнаний лише той, хто знає поетичну витонченість і вміє говорити перською.</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета; обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> Правильно</label>
         <label><input type="radio" name="v18" value="change"> Треба змінити</label>
@@ -370,13 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> Окремі слова</h2>
-    <p class="nc-gq">Чи правильне слово в кожному рядку? Під ним показано, що воно має означати.</p>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0784#word_" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l19">Ну й снікі ж ти.</p></div>
-      <p class="nc-note">"снікі" = English 'sneaky', slipped in playfully</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l19">Бог явив перед ангелами Свою величну красу й побачив, що вони нічого не знають про кохання; від ревнивої жаги це явлення обернулося чистим вогнем і вдарило в глину Адама.</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> Правильно</label>
         <label><input type="radio" name="v19" value="change"> Треба змінити</label>
@@ -387,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l20">спалені</p></div>
-      <p class="nc-note">"спалені" = those burned, consumed by love</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l20">у спомині про кохану й рідний край я так гірко плакатиму, що зі світу шляхи й звичаї мандрів...</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета; обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> Правильно</label>
         <label><input type="radio" name="v20" value="change"> Треба змінити</label>
@@ -400,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l21">Починається якесь лайняне запаморочення. Що більше про це думаєш, то дужчим стає це лайняне запаморочення.</p></div>
-      <p class="nc-note">"лайняне запаморочення" = crude coinage: so baffled your head spins</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l21">Давно вже коханий не присилав звістки; не писав вітання...</p></div>
+      <p class="nc-note">рядок Гафеза, класичного перського поета; обірваний, як у книжці</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> Правильно</label>
         <label><input type="radio" name="v21" value="change"> Треба змінити</label>
@@ -413,9 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l22">І тремтячими руками я хутко-хутко переглядав газелі, щоб знайти й показати Нілуфар той бейт Гафеза, від якого, як і від тієї картини, за словами тієї іншої дівчини, лайняне запаморочення стає тим дужчим, чим глибше в нього занурюєшся.</p></div>
-      <p class="nc-note">"лайняне запаморочення" = more baffled; echoes her crude coinage</p>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l22">«Аттарові солодше плакати до світанку» чи «тепер він іще дужче вбитий»?</p></div>
+      <p class="nc-note">друг питає, яку з двох пісень; кожну названо за рядком із вірша Аттара, класичного перського поета</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> Правильно</label>
         <label><input type="radio" name="v22" value="change"> Треба змінити</label>
@@ -424,6 +442,23 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n22">Як би ви це сказали? <span class="nc-optional">(необов'язково)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> Окремі слова</h2>
+    <p class="nc-gq">Під кожним рядком є одне слово з нього і те, що воно має означати. Чи правильне тут це слово?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0784#word_" data-note-on="change">
+      <div class="reader nc-text" lang="uk" dir="ltr"><p class="nc-line" id="l23">Ну й снікі ж ти.</p></div>
+      <p class="nc-note">"снікі" = англійське «sneaky» (хитрий), ужите жартома</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
+        <label><input type="radio" name="v23" value="ok"> Правильно</label>
+        <label><input type="radio" name="v23" value="change"> Треба змінити</label>
+        <label><input type="radio" name="v23" value="unsure"> Важко сказати</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n23">Як би ви це сказали? <span class="nc-optional">(необов'язково)</span></label>
+        <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -474,4 +509,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 22 rows -->
+<!-- 23 rows -->

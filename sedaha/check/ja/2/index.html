@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="ja" data-language="Japanese" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/ja/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l1">こちら側で、私は言葉の糸をほどく。向こう側で、あなたがその言葉を集める。</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>ここで語り手は緊張しています。それぞれ、日本語として自然に聞こえますか？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l1">そして私は震える手で、せわしなくガザルをめくっていた。あのもう一人の女の子があの絵について言ったように、深く沈み込めば沈み込むほどクソほどくらくらするというハーフェズのベイトを見つけて、ニルーファルに見せるために。</p></div>
+      <p class="nc-note">ある女の子が絵について作った下品な言葉を、彼がくり返している</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> 正しい</label>
         <label><input type="radio" name="v1" value="change"> 要修正</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">The pole image means they were all screwed over. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="03/0663#s30" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l2">子どもを家族のそばに置くという名目で、地方出身の俺たち全員の尻に棒を突っ込みやがった。</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l2">あれと同じで、この十の言葉について考えれば考えるほど、クソ――いや、その、もっとくらくらしてくる。</p></div>
+      <p class="nc-note">その下品な言葉をまた言いかけて、やめる</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> 正しい</label>
         <label><input type="radio" name="v2" value="change"> 要修正</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0024#s40" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l3">部隊、前へ進め！</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l3">お、お願いだから聞いて。 … 君の友達が見せてた、あの絵みたいに。</p></div>
+      <p class="nc-note">彼はどもっている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> 正しい</label>
         <label><input type="radio" name="v3" value="change"> 要修正</label>
@@ -187,11 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> 詩</h2>
-    <p class="nc-gq">これらは詩の行です。それぞれ、日本語の詩としてよく読めますか？</p>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l4">ソロモンの指輪を何ものにも替えないだろう</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>語り手がついに女の子に愛を打ち明けます。自然で、心がこもって聞こえますか？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l4">三十二か月、あなたを愛してきました。遠くから。あなたに知られることなく。沈黙のうちに。一言も発さずに。そんなのありえない、本当のはずがない、ただの空想で現実じゃない、と言われるかもしれません。でも、それは本当で、僕は本当にあなたを愛しているんです。</p></div>
+      <p class="nc-note">ペルシア語の原文では、彼は丁寧な二人称を使い、改まった言葉で彼女に話しかけている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> 正しい</label>
         <label><input type="radio" name="v4" value="change"> 要修正</label>
@@ -202,8 +202,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0316#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l5">神がその壮麗な美を天使たちの前に顕したとき、彼らには愛がないと見た。その嫉妬の熱から、その顕れは純粋な火となり、アダムの粘土を打った。</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>この本の書き出しの数行です。自然でわかりやすく読めますか？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l5">ここでは何も起こらない。何かが正されることも、壊されることもない。解釈がやってくることもない。結論も。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> 正しい</label>
         <label><input type="radio" name="v5" value="change"> 要修正</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l6">「アッタールは夜明けまで泣いていたほうが甘い」なのか、それとも「今やいっそう深く討たれた身となった」のやつか?</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l6">これは、かつて音だった言葉の糸、そのほどけた端だ。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> 正しい</label>
         <label><input type="radio" name="v6" value="change"> 要修正</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l7">すべてのものに書くことができる</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l7">子どもの頃、ママンが古い服をほどいて毛糸に戻し、私たちがその糸端を持って、毛糸が積み重ならないよう家の中を歩き回ったように。</p></div>
+      <p class="nc-note">ママンはペルシア語で「お母さん」のこと。わざと訳さずに残している。母が毛糸をほどくあいだ、子どもたちは糸を持って家の中を歩き回る。</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> 正しい</label>
         <label><input type="radio" name="v7" value="change"> 要修正</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l8">おのが血で水の上に書きしるすがいい</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l8">今、私は言葉の糸をほどく。あなたはその言葉を拾い上げ、自分の世界へ運んでいく。ここ、私の世界に積み重ならないように。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> 正しい</label>
         <label><input type="radio" name="v8" value="change"> 要修正</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1271#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l9">おまえの後に続く者が</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>記憶が、ねじ山の磨り減ったネジのように外れてしまいます。このイメージは伝わりますか？</span></h2>
+    <p class="nc-gq">本では：</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l9">それ以来、磨り減ったネジのように、あの映像は、もう家の閉ざされた扉の後ろの暗がりに縛られてはいなかった。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> 正しい</label>
         <label><input type="radio" name="v9" value="change"> 要修正</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l10">愛しい人が便りもよこさず、久しくなった；挨拶の一文字も書かず</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>男の子が弟たちと兵隊ごっこをしています。彼の号令は、本物の軍隊の号令のように聞こえますか？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l10">部隊、前へ進め！</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> 正しい</label>
         <label><input type="radio" name="v10" value="change"> 要修正</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l11">僕の夢の灯は明滅している</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l11">任務の第一段階開始。部隊、左向け左！</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> 正しい</label>
         <label><input type="radio" name="v11" value="change"> 要修正</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l12">君が戻る望みは持っていない</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> 詩</h2>
+    <p class="nc-gq">これらは詩と詩の一行です。語り手自身の詩と、古典ペルシアの詩人たち（ハラカーニー、ハーフェズ、アッタール）の詩句です。それぞれ、日本語の詩として読めますか？</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l12">僕の夢は暗かった / 何も見えなかった / 君が来た / 僕の夢の灯がともった / 今、君は行ってしまった / 僕の夢の灯は明滅している / 君が戻る望みは持っていない / でも、もし君の道がこのそばを通ったなら / もう一度、僕の夢に来ておくれ / 僕の夢は、君が行ってしまったことを信じていないのだと思う / 夢たちは、君が迷子になったのだと思い込んで</p></div>
+      <p class="nc-note">語り手が、失った女の子に書いた自作の素朴な詩</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> 正しい</label>
         <label><input type="radio" name="v12" value="change"> 要修正</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l13">でも、もし君の道がこのそばを通ったなら</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l13">僕の夢は暗かった / 何も見えなかった / 君が来た / 僕の夢の灯......僕の夢の灯がともり......僕の夢の灯がともった / 今......今......今、君は行ってしまった......</p></div>
+      <p class="nc-note">半分眠りながら詩を口の中で練習している。つかえるのはわざと</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> 正しい</label>
         <label><input type="radio" name="v13" value="change"> 要修正</label>
@@ -310,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l14">僕の夢は、君が行ってしまったことを信じていないのだと思う</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l14">すべてのものに書くことができる / ただ水の上をのぞいて / そしてもし海を渡るのなら / おのが血で水の上に書きしるすがいい / おまえの後に続く者が / 知るように / 恋する者たちと / 酔える者たちと / 焼かれし者たちが / ここを通っていったことを。</p></div>
+      <p class="nc-note">ハラカーニーの古いペルシアの詩。教室の黒板に書かれている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> 正しい</label>
         <label><input type="radio" name="v14" value="change"> 要修正</label>
@@ -322,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l15">僕の夢の灯......僕の夢の灯がともり......僕の夢の灯がともった</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l15">......ソロモンの指輪を何ものにも替えないだろう、ときおりその上に......の手が......</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行。本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> 正しい</label>
         <label><input type="radio" name="v15" value="change"> 要修正</label>
@@ -334,13 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> 単語</h2>
-    <p class="nc-gq">各行のその言葉は正しいですか？ 本来の意味はその下に書いてあります。</p>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0049#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l16">– うん、コンクールでの彼の順位は本当に良かった、二桁だった。</p></div>
-      <p class="nc-note">"コンクール" = Iran's national university entrance exam</p>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l16">我は酒場の長老の僕、その恩寵は......</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行。本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> 正しい</label>
         <label><input type="radio" name="v16" value="change"> 要修正</label>
@@ -351,9 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="03/0268#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l17">どんな名前もお前には似合わない、このくそったれ。</p></div>
-      <p class="nc-note">"このくそったれ" = damn you (angry swearing)</p>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l17">きみとの再会の望みがぼくを生かしている；さもなくば、きみと離れて吐くひと息ごとに滅びの恐れがある。 … きみが傷を負わせるなら、他人の癒しよりまし、きみが毒を与えるなら、そのほうがまし...</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの二行。二行目は本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> 正しい</label>
         <label><input type="radio" name="v17" value="change"> 要修正</label>
@@ -364,9 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="03/0531#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l18">去年来たとき、奥さんの兄弟たちにひどく殴られて、体中が黒くなっていた。</p></div>
-      <p class="nc-note">"体中が黒くなっていた" = covered in bruises</p>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l18">......ハーフェズの心とらえる詩に気づきうるのは；気性の優美を知り、ペルシア語を語るすべを知る者だけだ。</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行。本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> 正しい</label>
         <label><input type="radio" name="v18" value="change"> 要修正</label>
@@ -377,9 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l19">大通りへの進入：チッチッ。</p></div>
-      <p class="nc-note">"チッチッ" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l19">神がその壮麗な美を天使たちの前に顕したとき、彼らには愛がないと見た。その嫉妬の熱から、その顕れは純粋な火となり、アダムの粘土を打った。</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> 正しい</label>
         <label><input type="radio" name="v19" value="change"> 要修正</label>
@@ -390,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04a/0065#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l20">ぼくはいつもずるをしていた。</p></div>
-      <p class="nc-note">"ずる" = a trick (a child's word)</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l20">愛しき人と故郷を偲んで、わたしはあまりに激しく嘆き泣くので、世から旅の道も習わしも......</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行。本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> 正しい</label>
         <label><input type="radio" name="v20" value="change"> 要修正</label>
@@ -403,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/0146#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l21">脳みそクソ詰まりが。いちいち言わせるなよ。</p></div>
-      <p class="nc-note">"脳みそクソ詰まり" = shit-for-brains, crude insult for a dimwit</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l21">愛しい人が便りもよこさず、久しくなった；挨拶の一文字も書かず......</p></div>
+      <p class="nc-note">古典ペルシアの詩人ハーフェズの一行。本と同じく途中で切れている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> 正しい</label>
         <label><input type="radio" name="v21" value="change"> 要修正</label>
@@ -416,9 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0186#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l22">俺はお前みたいなチンポ頭と同室になるくらいなら、そっちと同室になるほうがよかったよ。</p></div>
-      <p class="nc-note">"チンポ頭" = dick-brain, crude insult for an idiot</p>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l22">「アッタールは夜明けまで泣いていたほうが甘い」なのか、それとも「今やいっそう深く討たれた身となった」のやつか?</p></div>
+      <p class="nc-note">友人が、二つの歌のどちらかを尋ねている。どちらの歌も、古典ペルシアの詩人アッタールの詩の一行で呼ばれている</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> 正しい</label>
         <label><input type="radio" name="v22" value="change"> 要修正</label>
@@ -429,9 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0343#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l23">じゃあクソ一年坊主だな。</p></div>
-      <p class="nc-note">"クソ一年坊主" = fucking freshman, casual friendly swearing</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> 単語</h2>
+    <p class="nc-gq">各行の下に、その行の中の一語と、その本来の意味が書いてあります。ここで正しい言葉ですか？</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0049#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l23">– うん、コンクールでの彼の順位は本当に良かった、二桁だった。</p></div>
+      <p class="nc-note">"コンクール" = イランの全国大学入試</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> 正しい</label>
         <label><input type="radio" name="v23" value="change"> 要修正</label>
@@ -442,9 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0421#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l24">ヒョウのファリード、気を落ち着けて、殺人的な動きはするなよ。</p></div>
-      <p class="nc-note">"殺人的な動き" = a rash, wild move (running joke)</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="03/0531#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l24">去年来たとき、奥さんの兄弟たちにひどく殴られて、体中が黒くなっていた。</p></div>
+      <p class="nc-note">"体中が黒くなっていた" = あざだらけ</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> 正しい</label>
         <label><input type="radio" name="v24" value="change"> 要修正</label>
@@ -455,9 +474,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0494#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l25">また、あの呪われた不連続に行き着く。</p></div>
-      <p class="nc-note">"呪われた" = damned (a mild swear)</p>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l25">大通りへの進入：チッチッ。</p></div>
+      <p class="nc-note">"チッチッ" = 「だめ、禁止」を表す舌打ち</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
         <label><input type="radio" name="v25" value="ok"> 正しい</label>
         <label><input type="radio" name="v25" value="change"> 要修正</label>
@@ -468,9 +487,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0562#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l26">鷹の目、お前なんか神様に許されるな、俺の腰をぶっ壊しやがって。</p></div>
-      <p class="nc-note">"神様に許されるな" = half-joking curse: may God not forgive you</p>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04a/0065#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l26">ぼくはいつもずるをしていた。</p></div>
+      <p class="nc-note">"ずる" = ずるい手（子どもの言葉）</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
         <label><input type="radio" name="v26" value="ok"> 正しい</label>
         <label><input type="radio" name="v26" value="change"> 要修正</label>
@@ -481,9 +500,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0575#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l27">母ちゃんのためだ、眼鏡なしで部屋を歩くな。</p></div>
-      <p class="nc-note">"母ちゃんのためだ" = a plea, I beg you; not an insult</p>
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0421#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l27">ヒョウのファリード、気を落ち着けて、殺人的な動きはするなよ。</p></div>
+      <p class="nc-note">"殺人的な動き" = 無謀でめちゃくちゃな行動（おなじみの冗談）</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
         <label><input type="radio" name="v27" value="ok"> 正しい</label>
         <label><input type="radio" name="v27" value="change"> 要修正</label>
@@ -494,9 +513,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0723#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l28">なんで尻を引き裂くようにしてトーフルの試験を受けたんだ?</p></div>
-      <p class="nc-note">"尻を引き裂くようにして" = crude: slaved away, worked very hard</p>
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0575#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l28">母ちゃんのためだ、眼鏡なしで部屋を歩くな。</p></div>
+      <p class="nc-note">"母ちゃんのためだ" = 頼み込む言い方で「お願いだから」。悪口ではない</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
         <label><input type="radio" name="v28" value="ok"> 正しい</label>
         <label><input type="radio" name="v28" value="change"> 要修正</label>
@@ -507,9 +526,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l29">焼かれし者たちが</p></div>
-      <p class="nc-note">"焼かれし者たちが" = those burned, consumed by love</p>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="06/0108#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l29">あああぁぁぁぁ。</p></div>
+      <p class="nc-note">"あああぁぁぁぁ" = 長く伸ばした、からかうような、わざと優しげな「あら〜」</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
         <label><input type="radio" name="v29" value="ok"> 正しい</label>
         <label><input type="radio" name="v29" value="change"> 要修正</label>
@@ -520,9 +539,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l30">クソほどくらくらする。考えれば考えるほど、クソほどくらくらするのよ。</p></div>
-      <p class="nc-note">"クソほどくらくらする" = crude coinage: so baffled your head spins</p>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="06/0253#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l30">さあ、ガーセムたちのおやつに種を取ってきて。</p></div>
+      <p class="nc-note">"おやつに種を取ってきて" = おやつに食べる炒った種</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
         <label><input type="radio" name="v30" value="ok"> 正しい</label>
         <label><input type="radio" name="v30" value="change"> 要修正</label>
@@ -531,45 +550,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n30">あなたならどう言いますか？ <span class="nc-optional">（任意）</span></label>
         <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l31">深く沈み込めば沈み込むほどクソほどくらくらするというハーフェズのベイトを見つけて</p></div>
-      <p class="nc-note">"クソほどくらくらする" = more baffled; echoes her crude coinage</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> 正しい</label>
-        <label><input type="radio" name="v31" value="change"> 要修正</label>
-        <label><input type="radio" name="v31" value="unsure"> よくわからない</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">あなたならどう言いますか？ <span class="nc-optional">（任意）</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="06/0108#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l32">あああぁぁぁぁ。</p></div>
-      <p class="nc-note">"あああぁぁぁぁ" = long, teasing, mock-tender 'aww'</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
-        <label><input type="radio" name="v32" value="ok"> 正しい</label>
-        <label><input type="radio" name="v32" value="change"> 要修正</label>
-        <label><input type="radio" name="v32" value="unsure"> よくわからない</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n32">あなたならどう言いますか？ <span class="nc-optional">（任意）</span></label>
-        <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="06/0253#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ja" dir="ltr"><p class="nc-line" id="l33">さあ、ガーセムたちのおやつに種を取ってきて。</p></div>
-      <p class="nc-note">"おやつに種を取ってきて" = roasted seeds to snack on</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
-        <label><input type="radio" name="v33" value="ok"> 正しい</label>
-        <label><input type="radio" name="v33" value="change"> 要修正</label>
-        <label><input type="radio" name="v33" value="unsure"> よくわからない</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n33">あなたならどう言いますか？ <span class="nc-optional">（任意）</span></label>
-        <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -620,4 +600,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 33 rows -->
+<!-- 30 rows -->

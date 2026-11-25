@@ -13,7 +13,6 @@
   "needs_change": "Değişmeli",
   "not_sure": "Emin değilim",
   "how_say": "Siz nasıl söylerdiniz?",
-  "meaning": "Sizce ne anlama geliyor?",
   "optional": "(isteğe bağlı)",
   "your_name": "Adınız",
   "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
@@ -127,11 +126,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Bu yerelleştirme politikası bizi sikti. Çocuklar ailelerinin yanında kalsın diye, taşralı olan hepimizin götüne sopayı soktular.",
-     "note": null
-    },
-    {
      "id": "04b/0146#crude",
      "text": "Bok beyinli. Ağzımı açtırıyorsun.",
      "note": null
@@ -187,11 +181,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "Başını bile yiyemezdin. Ama ne tatlılardı ya.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "sikildik.",
      "note": null
@@ -208,8 +197,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Ben olsam sıfır vermek ne kelime, sikimin başını yedirir, sonra da bir tekmeyle üniversiteden atardım seni.",
-     "note": null
+     "text": "Heisenberg ya da Einstein mısın ki sana yirmi versinler de aydınlatıcı teorilerini takdir etsinler? Ben olsam sıfır vermek ne kelime, sikimin başını yedirir, sonra da bir tekmeyle üniversiteden atardım seni. Hatta bir süre de bir kara deliğe tıkardım ki hastalığın kimseye bulaşmasın.",
+     "note": "İran'da notlar 20 üzerinden verilir"
     },
     {
      "id": "04b/0486#crude",
@@ -224,7 +213,7 @@
     {
      "id": "04b/0520#crude",
      "text": "Bugün odada tartışmayın, beden eğitiminden on iki aldım, sinirlerim bok gibi, küfrederim size.",
-     "note": null
+     "note": "İran'da notlar 20 üzerinden verilir"
     },
     {
      "id": "04b/0567#crude",
@@ -285,6 +274,11 @@
      "id": "04b/1017#crude",
      "text": "Gözlüğümü arıyorum, göt herif. Şu Farid'e söyle, bardağını sürekli ayaklarımın önüne koymasın.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.",
+     "note": "\"bok sersemi\" = kaba uydurma söz: kafanı döndürecek kadar şaşkın"
     }
    ]
   },
@@ -353,6 +347,11 @@
     {
      "id": "03/0517#natur",
      "text": "Pars Farid kendisiyle bile kaç kaç olduğunu bilmiyor.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Haft-Seen sofrasında, yeni yıl başlarken anne şiirini okuyunca, Maman sevinmek yerine endişeye kapıldı.",
      "note": null
     },
     {
@@ -476,11 +475,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "Belki böyle olmaz, mümkün değil, hayalîdir ve gerçek değil dersiniz. Ama oldu ve sizi gerçekten seviyorum.",
-     "note": null
-    },
-    {
      "id": "06/0108#natur",
      "text": "Aaayyyy. Onu ona ben söylemiştim. Nini iyi bir söz olduğunu görüp sana aktarmış.",
      "note": null
@@ -498,5 +492,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 16
 }

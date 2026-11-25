@@ -13,7 +13,6 @@
   "needs_change": "Reikia pakeisti",
   "not_sure": "Sunku pasakyti",
   "how_say": "Kaip jūs tai pasakytumėte?",
-  "meaning": "Ką, jūsų manymu, tai reiškia?",
   "optional": "(nebūtina)",
   "your_name": "Jūsų vardas",
   "thanks_tick": "Įrašyti mano vardą į padėkų puslapį",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Pasakotojas čia nervinasi. Ar lietuviškai kiekviena eilutė skamba natūraliai?",
    "labels": [
     "Teisinga",
     "Reikia pakeisti",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "– Trisdešimt du mėnesius jus myliu. Iš tolo. Jums nežinant.",
-     "note": null
+     "id": "04b/1320#nerv",
+     "text": "Ir drebančiomis rankomis greitai greitai varčiau gazeles, ieškodamas Hafezo beito, nuo kurio – kaip, anot tos kitos merginos, nuo to paveikslo – kuo giliau į jį panyrame, tuo šūdiniau mums sukasi galva",
+     "note": "jis pakartoja grubų žodį, kurį viena mergina sugalvojo apie paveikslą"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Kaip tas – kuo daugiau galvoji apie šituos dešimt žodžių, tuo labiau šū... na, tuo labiau galva sukasi.",
+     "note": "jis vos vėl neištaria grubaus žodžio, bet sustoja"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Dėl Dievo meilės, paklausyk. … Tai kaip tas paveikslas, kurį tavo dr-draugė rodė.",
+     "note": "jis mikčioja"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Pasakotojas pagaliau pasako merginai, kad ją myli. Ar tai skamba natūraliai ir nuoširdžiai?",
    "labels": [
     "Teisinga",
     "Reikia pakeisti",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "Trisdešimt du mėnesius jus myliu. Iš tolo. Jums nežinant. Tyloje, be vieno žodžio. Galbūt pasakysite, kad tai neįmanoma – kad tai negali būti tikra, kad tai tik fantazija. Bet tai tikra, ir aš tikrai jus myliu.",
+     "note": "persiškai jis į ją kreipiasi oficialiai, mandagiuoju „jūs“"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
+   "q": "Tai pirmosios knygos eilutės. Ar jos skamba natūraliai ir aiškiai?",
    "labels": [
     "Teisinga",
     "Reikia pakeisti",
@@ -98,13 +104,67 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04a/0024#s40",
-     "text": "– Batalionas, pirmyn žygiuoti!",
+     "id": "Opening/0007#op1",
+     "text": "Čia nieko nevyksta. Čia nieko nebus ištaisyta, nieko nebus sugriauta. Jokio aiškinimo neateis. Jokios išvados.",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
-     "text": "– Pirmojo misijos etapo pradžia. Batalionas, kairėn pasisukti!",
+     "id": "Opening/0007#op2",
+     "text": "Tai laisvas siūlo galas iš žodžių, kurie kadaise buvo garsai.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Kaip vaikystėje, kai Maman narstydavo siūlus iš senų drabužių, o mes imdavome siūlą ir sukdavome ratus po namus, kad siūlai nesikauptų į krūvą.",
+     "note": "Maman persiškai reiškia „motina“; žodis sąmoningai paliktas neišverstas. Kol ji narsto siūlus, vaikai nešioja siūlą po namus."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Dabar aš išvynioju žodžių siūlą, o tu paimk žodžius ir nusinešk juos į savo pasaulį, kad jie čia, mano pasaulyje, nesikauptų.",
+     "note": null
+    }
+   ]
+  },
+  {
+   "key": "screw",
+   "title": null,
+   "q": "Prisiminimas atsilaisvina kaip varžtas nudilusiu sriegiu. Ar vaizdas aiškus?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0675#screw",
+     "text": "Nuo tada tas vaizdas, tarsi varžtas nudilusiu sriegiu, nebebuvo susietas su tamsa už uždarytų mūsų namų durų.",
+     "note": null
+    }
+   ],
+   "intro": "Knygoje:"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Berniukas su mažaisiais broliais žaidžia kareivius. Ar jo komandos skamba kaip tikros kariuomenės rikiuotės komandos?",
+   "labels": [
+    "Teisinga",
+    "Reikia pakeisti",
+    "Sunku pasakyti"
+   ],
+   "note_label": "Kaip jūs tai pasakytumėte?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Batalionas, pirmyn žygiuoti!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Pirmojo misijos etapo pradžia. Batalionas, kairėn pasisukti!",
      "note": null
     }
    ]
@@ -112,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poezija",
-   "q": "Tai poezijos eilutės. Ar lietuviškai kiekviena iš jų gerai skamba kaip poezija?",
+   "q": "Tai eilėraščiai ir poezijos eilutės: paties pasakotojo eilėraštis ir klasikinių persų poetų (Charakanio, Hafezo, Ataro) eilutės. Ar lietuviškai kiekvienas iš jų skamba kaip poezija?",
    "labels": [
     "Teisinga",
     "Reikia pakeisti",
@@ -122,101 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Solomono žiedo neimčiau už nieką, ant kurio kartais ranka ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mano sapnai buvo tamsūs / Nieko nemačiau / Tu atėjai / Mano sapnų lempa užsidegė / Dabar tu išėjai / Mano sapnų lempa dabar mirksi / Neturiu vilties, kad sugrįši / Bet jei tavo kelias atvestų tave netoli / vėl ateik į mano sapnus / Man rodos, mano sapnai nepatikėjo, kad išėjai / jie mano, kad pasiklydai ir",
+     "note": "paprastas paties pasakotojo eilėraštis merginai, kurią jis prarado"
     },
     {
-     "id": "04b/0742#poetr",
-     "text": "– Žinau, ką nori skaityti. „Prisimindamas mylimąjį ir tėvynę, verksiu taip graudžiai, kad iš pasaulio kelią ir kelionės paprotį ...“",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mano sapnai buvo tamsūs / Nieko nemačiau / Tu atėjai / Mano sapnų lempa ... mano sapnų lempa užsidega ... mano sapnų lempa užsidegė / Dabar ... dabar ... dabar tu išėjai ...",
+     "note": "jis pusiau miegodamas jį kartoja; užsikirtimai tyčiniai"
     },
     {
-     "id": "04b/0935#poetr",
-     "text": "– „Saldžiau Atarui verkti iki aušros“ ar „dabar jis dar labiau nužudytas“?",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Ant visko galima rašyti / išskyrus ant vandens / o jei kirsi jūrą / rašyk ant vandens savo paties krauju / kad tas, kuris seks tavo pėdomis / žinotų, kad / įsimylėjėliai ir / girtuokliai ir / sudegusieji / praėjo šiuo keliu.",
+     "note": "senas persų poeto Charakanio eilėraštis, užrašytas ant klasės lentos"
     },
     {
-     "id": "04b/1268#poetr",
-     "text": "išskyrus ant vandens",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Solomono žiedo neimčiau už nieką, ant kurio kartais ranka ...",
+     "note": "klasikinio persų poeto Hafezo eilutė; nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1269#poetr",
-     "text": "o jei kirsi jūrą",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Esu Smuklės Seniūno tarnas, kurio malonė ...",
+     "note": "klasikinio persų poeto Hafezo eilutė; nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "rašyk ant vandens savo paties krauju",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Viltis susijungti su tavimi mane palaiko gyvą; antraip, atskirtas nuo tavęs, kiekvienu atodūsiu bijočiau mirties. … Jei tu užgauni žaizdą, geriau ji nei kito balzamas, ir jei tu duodi nuodus, geriau jie nei...",
+     "note": "dvi klasikinio persų poeto Hafezo eilutės; antroji nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1272#poetr",
-     "text": "žinotų, kad",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Hafezo žavingą poeziją suvokia tik tas, kuris pažįsta poetinę grakštybę ir moka kalbėti persiškai.",
+     "note": "klasikinio persų poeto Hafezo eilutė; nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1274#poetr",
-     "text": "girtuokliai ir",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Dievas atvėrė savo didingą grožį angelams ir pamatė, kad jie nieko neišmano apie meilę; tas atsivėręs grožis iš pavydžios aistros virto gryna ugnimi ir trenkė į Adomo molį.",
+     "note": "klasikinio persų poeto Hafezo eilutė"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "praėjo šiuo keliu.",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "Prisimindamas mylimąjį ir tėvynę, verksiu taip graudžiai, kad iš pasaulio kelią ir kelionės paprotį ...",
+     "note": "klasikinio persų poeto Hafezo eilutė; nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1301#poetr",
-     "text": "Ji skaitė: „Seniai jau mylimasis nesiuntė žinios, neparašė pasveikinimo ...“, ir aš nusijuokiau.",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Seniai jau mylimasis nesiuntė žinios, neparašė pasveikinimo ...",
+     "note": "klasikinio persų poeto Hafezo eilutė; nutraukta, kaip ir knygoje"
     },
     {
-     "id": "04b/1390#poetr",
-     "text": "Mano sapnų lempa užsidegė",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "Mano sapnų lempa dabar mirksi",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "Neturiu vilties, kad sugrįši",
-     "note": null
-    },
-    {
-     "id": "04b/1394#poetr",
-     "text": "Bet jei tavo kelias atvestų tave netoli",
-     "note": null
-    },
-    {
-     "id": "04b/1395#poetr",
-     "text": "vėl ateik į mano sapnus",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Man rodos, mano sapnai nepatikėjo, kad išėjai",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Mano sapnų lempa ... mano sapnų lempa užsidega ... mano sapnų lempa užsidegė",
-     "note": null
-    },
-    {
-     "id": "02/0006#poetr",
-     "text": "Dabar ... dabar ... dabar tu išėjai ...",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "„Saldžiau Atarui verkti iki aušros“ ar „dabar jis dar labiau nužudytas“?",
+     "note": "draugas klausia, kuri iš dviejų dainų; kiekviena įvardyta eilute iš klasikinio persų poeto Ataro eilėraščio"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Atskiri žodžiai",
-   "q": "Ar žodis kiekvienoje eilutėje yra tinkamas? Ką jis turėtų reikšti, nurodyta po eilute.",
+   "q": "Po kiekviena eilute pateiktas vienas jos žodis ir tai, ką jis turėtų reikšti. Ar čia tai tinkamas žodis?",
    "labels": [
     "Teisinga",
     "Reikia pakeisti",
@@ -226,29 +251,14 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0268#word_",
-     "text": "– Joks vardas tau netinka, velnias.",
-     "note": "\"velnias\" = damn you (angry swearing)"
-    },
-    {
      "id": "04a/0038#word_",
      "text": "– Eiti į pagrindinę gatvę: tsk-tsk.",
-     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "sudegusieji",
-     "note": "\"sudegusieji\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Žmogui šūdinai susisuka galva. Kuo daugiau apie tai galvoji, tuo šūdiniau ji sukasi.",
-     "note": "\"šūdinai susisuka galva\" = crude coinage: so baffled your head spins"
+     "note": "\"tsk-tsk\" = liežuvio caktelėjimas, reiškiantis „ne, draudžiama“"
     },
     {
      "id": "02/0001#word_",
      "text": "Mano širdyje šviesu: rytoj, kai atidarysiu akis, viskas bus baigta ir tamsa vėl grįš į mano sapnus.",
-     "note": "\"Mano širdyje šviesu\" = I feel hopeful, sure of tomorrow"
+     "note": "\"Mano širdyje šviesu\" = jaučiuosi kupinas vilties, tikras dėl rytojaus"
     }
    ]
   }

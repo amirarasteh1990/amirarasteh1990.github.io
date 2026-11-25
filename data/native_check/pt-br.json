@@ -13,7 +13,6 @@
   "needs_change": "Precisa mudar",
   "not_sure": "Não tenho certeza",
   "how_say": "Como você diria?",
-  "meaning": "O que você acha que significa?",
   "optional": "(opcional)",
   "your_name": "Seu nome",
   "thanks_tick": "Incluir meu nome na página de Agradecimentos",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Ditados persas",
-   "q": "Alguns ditados e imagens persas estão traduzidos palavra por palavra. Cada um dá alguma ideia do seu sentido, ou não quer dizer nada para você?",
+   "q": "Estes ditados persas estão traduzidos palavra por palavra. Tente adivinhar cada um primeiro e depois mostre o sentido.",
    "labels": [
-    "Consigo adivinhar",
-    "Não consigo",
-    "Não tenho certeza"
+    "Adivinhei sem ver o sentido",
+    "Entendi ao ver o sentido",
+    "Mesmo com o sentido, não faço a ligação"
    ],
-   "note_label": "O que você acha que significa?",
-   "note_on": "ok",
+   "note_label": "O que não ficou claro?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "A chuva não cai da terra pro céu.",
-     "note": null
+     "note": "São os pais que se sacrificam pelos filhos, não o contrário."
     },
     {
      "id": "01/0073#img",
      "text": "Um bom ano se conhece pela sua primavera.",
-     "note": null
+     "note": "Pelo jeito que o ano começa, dá para saber como ele vai ser."
     },
     {
      "id": "04a/0128#img",
      "text": "Não come a tristeza",
-     "note": null
+     "note": "Não fica triste; não se preocupa."
     },
     {
      "id": "01/0138#img",
      "text": "o meu coração está apodrecendo",
-     "note": null
+     "note": "Estou definhando de tédio e solidão."
     },
     {
      "id": "04b/0334#img",
      "text": "A minha mão é curta e a união com você está longe.",
-     "note": null
+     "note": "Ficar com você está fora do meu alcance; não posso fazer nada."
     },
     {
      "id": "01/0203#img",
      "text": "se digo, minha língua queima; se não digo, queima o tutano dos meus ossos",
-     "note": null
+     "note": "Falar dói, mas calar dói ainda mais."
     },
     {
      "id": "03/0634#img",
      "text": "a comida vira veneno de cobra pra mim",
-     "note": null
+     "note": "Ele vai estragar a minha comida."
     },
     {
      "id": "04b/0274#img",
      "text": "não vai esquentar pão nenhum pra você",
-     "note": null
+     "note": "Isso não vai te levar a lugar nenhum; você não vai ganhar nada."
     },
     {
      "id": "04b/0824#img",
      "text": "minha família ter me enfiado à força no galinheiro",
-     "note": null
+     "note": "Minha família me forçou a casar."
     },
     {
      "id": "04b/0509#img",
      "text": "o torrão de açúcar pula na minha garganta",
-     "note": null
+     "note": "O torrão de açúcar desce pelo lugar errado e eu engasgo."
     },
     {
      "id": "01/0132#img",
      "text": "dá uma espiada em cada cantinho",
-     "note": null
+     "note": "Explora tudo; vai a todo lugar que puder."
     },
     {
      "id": "06/0118#img",
      "text": "palavras não custam nada – é só ar quente",
-     "note": null
+     "note": "Falar não custa nada; palavras sozinhas não provam nada."
     },
     {
      "id": "04b/1247#img",
      "text": "com certeza ia cair aos olhos da Negar",
-     "note": null
+     "note": "Com certeza a menina ia deixar de ter uma boa opinião dele."
     },
     {
      "id": "04b/1293#img",
      "text": "Só uma promessa para a época da colheita?",
-     "note": null
+     "note": "Só uma promessa vazia, que nunca vai ser cumprida?"
     },
     {
      "id": "04b/0205#img",
      "text": "vou te servir as entranhas da amizade numa bandeja",
-     "note": null
+     "note": "Vou te receber com toda a amizade que eu tenho."
     },
     {
      "id": "04b/1125#img",
      "text": "todos os pelos do corpo deles caíram",
-     "note": null
+     "note": "Ficaram completamente pasmos."
     },
     {
      "id": "03/0417#img",
      "text": "não esquenta tanto, seu leite vai secar",
-     "note": null
+     "note": "Calma; não vale a pena ficar tão nervoso."
     },
     {
      "id": "04b/0378#img",
      "text": "ninguém te chama de mudo só porque você não peida",
-     "note": null
+     "note": "Ninguém ia se importar se você tivesse ficado quieto."
     },
     {
      "id": "04b/0181#img",
      "text": "Come a cabeça do meu pau",
-     "note": null
+     "note": "Um jeito grosseiro de dizer: some daqui, ninguém quer a sua opinião."
     },
     {
      "id": "04b/0899#img",
      "text": "Comedor de cabeças de pau",
-     "note": null
+     "note": "Um xingamento grosseiro entre amigos, mais ou menos “seu idiota”."
     },
     {
      "id": "04b/0209#img",
      "text": "rindo das nossas barbas e dos nossos paus",
-     "note": null
+     "note": "Zombando da gente, os que ficaram para trás."
     },
     {
      "id": "04b/0822#img",
      "text": "andaria assim pelas ruas com o pau na mão",
-     "note": null
+     "note": "Andar por aí sozinho e sem rumo, ainda solteiro."
     },
     {
      "id": "04b/0440#img",
      "text": "qualquer caralho que caia na nossa cabeça",
-     "note": null
+     "note": "Qualquer desgraça que aconteça com a gente."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "enfiaram um pau no rabo de todos nós, os do interior",
+     "note": "Essa política foi muito injusta com todos nós, os do interior."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Nem a cabeça dele você conseguia comer.",
+     "note": "Uma resposta grosseira (“a cabeça dele” = a cabeça do pau): você não teria conseguido fazer nada."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Eu podia dar voltas e voltas ao redor da cabecinha da Nini-jan.",
+     "note": "Uma expressão carinhosa: eu daria tudo por ela."
     }
+   ],
+   "hint": "Mostrar o sentido",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

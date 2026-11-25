@@ -13,7 +13,6 @@
   "needs_change": "Behöver ändras",
   "not_sure": "Osäker",
   "how_say": "Hur skulle du säga det?",
-  "meaning": "Vad tror du att det betyder?",
   "optional": "(valfritt)",
   "your_name": "Ditt namn",
   "thanks_tick": "Visa mitt namn på tacksidan",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Berättaren är nervös här. Låter varje rad naturlig på svenska?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "– I trettiotvå månader har jag älskat Er. På avstånd. Utan att Ni visste det. I tystnad, utan ett enda ord.",
-     "note": null
+     "id": "04b/1320#nerv",
+     "text": "Och med skälvande händer bläddrade jag snabbt genom ghazalerna och letade efter det beit ur Hafez som, likt målningen, som den andra flickan hade sagt, skulle göra oss mer skitförvirrade ju djupare vi sjönk ner i det",
+     "note": "han upprepar ett grovt ord som en flicka hittade på om en målning"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Som den – ju mer man tänker på de här tio orden, desto mer ski... alltså, desto mer förvirrad blir man.",
+     "note": "han säger nästan det grova ordet igen men hejdar sig"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "För-för Guds skull, lyssna. … Det är som den där målningen din v-v-väninna visade er.",
+     "note": "han stammar"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Berättaren säger äntligen till flickan att han älskar henne. Låter det naturligt och innerligt?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -78,37 +85,50 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
+     "id": "04b/1314#conf",
+     "text": "I trettiotvå månader har jag älskat Er. På avstånd. Utan att Ni visste det. I tystnad, utan ett enda ord. Ni säger kanske att det är omöjligt – att det inte kan vara verkligt, att det bara är fantasi. Men det är verkligt, och jag älskar Er verkligen.",
+     "note": "på persiska tilltalar han henne formellt, med det artiga ”ni”"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Det här är bokens första rader. Låter de naturliga och tydliga?",
+   "labels": [
+    "Rätt",
+    "Behöver ändras",
+    "Osäker"
+   ],
+   "note_label": "Hur skulle du säga det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Här sker ingenting. Här ska inget rättas till eller rivas ned. Ingen tolkning är på väg. Ingen slutsats.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
      "text": "Detta är den lösa änden av en tråd av ord som en gång var ljud.",
      "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Is it clear the children carry the yarn around the house?",
-   "q_lang": "en",
-   "labels": [
-    "Rätt",
-    "Behöver ändras",
-    "Osäker"
-   ],
-   "note_label": "Hur skulle du säga det?",
-   "note_on": "change",
-   "rows": [
+    },
     {
-     "id": "Opening/0007#s19",
+     "id": "Opening/0007#op3",
      "text": "Liksom på barndomens tid, när Maman brukade repa upp garnet ur gamla kläder och vi tog tråden och gick varv efter varv runt i huset, så att garnet inte skulle hopa sig.",
+     "note": "Maman är persiska för ”mor” och har med avsikt lämnats oöversatt. Barnen bär tråden genom huset medan hon repar upp garnet."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Nu nystar jag upp ordens tråd, och du tar upp orden och bär dem in i din egen värld, så att de inte hopar sig här, i min värld.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "Two lines of a sung poem name the song. Is that clear?",
-   "q_lang": "en",
+   "q": "Minnet lossnar som en skruv med utslitna gängor. Är bilden tydlig?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -118,17 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0935#s41",
-     "text": "– \"För Attar är det ljuvligare att gråta till gryningen\" eller \"nu är han mer slagen\"?",
+     "id": "03/0675#screw",
+     "text": "Därefter var den bilden, som en skruv med utslitna gängor, inte längre bunden till mörkret bakom den stängda dörren till vårt hus.",
      "note": null
     }
-   ]
+   ],
+   "intro": "I boken:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
-   "q_lang": "en",
+   "q": "En pojke leker soldat med sina småbröder. Låter hans kommandon som riktig militär exercis?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -138,8 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0175#s44",
-     "text": "– Rikare än vännen till kusinen till...",
+     "id": "04a/0024#drill",
+     "text": "Bataljon, framåt marsch!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Uppdragets första etapp börjar. Bataljon, vänster om!",
      "note": null
     }
    ]
@@ -147,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poesi",
-   "q": "Det här är rader ur dikter. Låter var och en bra som poesi på svenska?",
+   "q": "Det här är dikter och diktrader: berättarens egen dikt och rader av klassiska persiska poeter (Kharaqani, Hafez, Attar). Låter var och en som poesi på svenska?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -157,66 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Jag tar inte Salomos signetring till något pris, ty ibland vilar över den handen av ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mina drömmar var mörka / Jag kunde inget se / Du kom / Mina drömmars ljus tändes / Nu är du borta / Mina drömmars ljus blinkar nu / Jag närer inget hopp om din återkomst / Men om din väg för dig förbi / kom in i mina drömmar igen / Jag tror att mina drömmar inte har trott att du är borta / de tror att du har gått vilse och",
+     "note": "berättarens egen enkla dikt till flickan han förlorade"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "Man kan skriva på allt",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mina drömmar var mörka / Jag kunde inget se / Du kom / Mina drömmars ljus ... mina drömmars ljus blev ... mina drömmars ljus tändes / Nu ... nu ... nu är du borta ...",
+     "note": "han övar på den i halvsömn; att han stakar sig är avsiktligt"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "skriv på vattnet med ditt eget blod",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Man kan skriva på allt / utom på vatten / och om du korsar havet / skriv på vattnet med ditt eget blod / så att den som följer i ditt kölvatten / ska veta att / älskande och / berusade och / brända / har vandrat här.",
+     "note": "en gammal persisk dikt av Kharaqani, skriven på tavlan under en lektion"
     },
     {
-     "id": "04b/1271#poetr",
-     "text": "så att den som följer i ditt kölvatten",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Jag tar inte Salomos signetring till något pris, ty ibland vilar över den handen av ...",
+     "note": "en rad av Hafez, en klassisk persisk poet; avbruten som i boken"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "har vandrat här.",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Jag är tjänare hos Tavernens Äldste, vars nåd ...",
+     "note": "en rad av Hafez, en klassisk persisk poet; avbruten som i boken"
     },
     {
-     "id": "04b/1390#poetr",
-     "text": "Mina drömmars ljus tändes",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Hoppet om förening med dig håller mig vid liv; annars skulle jag, skild från dig, frukta döden vid varje andetag. … Sårar du, är det bättre än en annans balsam, och ger du gift, bättre än ...",
+     "note": "två rader av Hafez, en klassisk persisk poet; den andra är avbruten som i boken"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Jag närer inget hopp om din återkomst",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Endast den blir verkligt varse tjuskraften i Hafez dikt som känner den poetiska naturens grace och behärskar persiska.",
+     "note": "en rad av Hafez, en klassisk persisk poet; avbruten som i boken"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "Men om din väg för dig förbi",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Gud uppenbarade sin strålande skönhet för änglarna och såg att de inte visste något om kärleken; av denna svartsjuka nit blev det ren eld och slog ner i Adams lera.",
+     "note": "en rad av Hafez, en klassisk persisk poet"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "kom in i mina drömmar igen",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "när jag minns den älskade och hembygden ska jag gråta så bittert att från världen färdens vägar och seder ...",
+     "note": "en rad av Hafez, en klassisk persisk poet; avbruten som i boken"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "Jag tror att mina drömmar inte har trott att du är borta",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Länge är det sedan den älskade sände något bud; ingen hälsning skriven ...",
+     "note": "en rad av Hafez, en klassisk persisk poet; avbruten som i boken"
     },
     {
-     "id": "02/0005#poetr",
-     "text": "Mina drömmars ljus ... mina drömmars ljus blev ... mina drömmars ljus tändes",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "\"För Attar är det ljuvligare att gråta till gryningen\" eller \"nu är han mer slagen\"?",
+     "note": "en vän frågar vilken av två sånger det är; var och en är uppkallad efter en rad ur en dikt av Attar, en klassisk persisk poet"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Enstaka ord",
-   "q": "Är ordet i varje rad det rätta? Vad det ska betyda står under raden.",
+   "q": "Under varje rad står ett ord ur den och vad det ska betyda. Är det rätt ord här?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -226,109 +251,59 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#word_",
-     "text": "Från denna sida nystar jag upp ordens tråd, och från den andra sidan samlar du upp orden.",
-     "note": "\"nystar jag upp\" = I unravel, unwind the thread"
-    },
-    {
      "id": "01/0261#word_",
      "text": "– Mm-hm, han har förändrats mycket, mycket. Han har blivit så mager och mörk.",
-     "note": "\"mager och mörk\" = thin and darker-skinned from the sun"
+     "note": "\"mager och mörk\" = mager och mörkare i huden av solen"
     },
     {
      "id": "03/0278#word_",
      "text": "På ett sätt kan man säga att de erövrade universitetet. Karroubi är kärlek, på riktigt.",
-     "note": "\"Karroubi är kärlek, på riktigt\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karroubi är kärlek, på riktigt\" = Karroubi är grym (uppspelt ungdomsslang)"
     },
     {
      "id": "04a/0062#word_",
      "text": "– Många misslyckas här. De går åt vänster.",
-     "note": "\"misslyckas\" = fail, go wrong (as a boy says it)"
+     "note": "\"misslyckas\" = misslyckas, gå snett (som en pojke säger det)"
     },
     {
      "id": "04b/0146#word_",
      "text": "– Hjärndöd. Du tvingar mig att stava ut allt.",
-     "note": "\"stava ut allt\" = spell it all out, say it plainly"
+     "note": "\"stava ut allt\" = stava ut allt, säga det rakt ut"
     },
     {
      "id": "04b/0171#word_",
      "text": "Vi gjorde alla de där övningsproven och hamnade ändå som rumskamrater med den där antikviteten.",
-     "note": "\"den där antikviteten\" = odd, old-fashioned person (mocking)"
+     "note": "\"den där antikviteten\" = en udda, gammaldags typ (hånfullt)"
     },
     {
      "id": "04b/0173#word_",
      "text": "– Så ni är allihop väldigt smarta pojkar.",
-     "note": "\"väldigt smarta pojkar\" = very clever boys, said a bit patronizingly"
-    },
-    {
-     "id": "04b/0186#word_",
-     "text": "– Jag skulle ha föredragit att dela rum med dem framför en kukhjärna som du.",
-     "note": "\"kukhjärna\" = dick-brain, crude insult for an idiot"
-    },
-    {
-     "id": "04b/0226#word_",
-     "text": "– ... varje gång jag kom till lektionerna och uppgifterna för min skitiga andra utbildning, såg jag dem gräla.",
-     "note": "\"min skitiga andra utbildning\" = my crappy second degree (crude grumble)"
+     "note": "\"väldigt smarta pojkar\" = väldigt smarta pojkar, sagt lite nedlåtande"
     },
     {
      "id": "04b/0228#word_",
      "text": "För ett par år sedan hörde jag från Örnaöga News att den där snobben hade rest till Australien också, på sätt och vis efter flickan som ni båda älskade.",
-     "note": "\"den där snobben\" = vain show-off, a dandy (mocking)"
+     "note": "\"den där snobben\" = fåfäng skrytmåns, en sprätt (hånfullt)"
     },
     {
      "id": "04b/0270#word_",
      "text": "– Jag vet. Jag är inte dum. Men det här duger inte. Du måste komma ut ur din tillflyktsort och faktiskt göra något, inte komma hit och sitta och fantisera.",
-     "note": "\"ut ur din tillflyktsort\" = come out of your safe shell"
-    },
-    {
-     "id": "04b/0394#word_",
-     "text": "– ... vi blev knullade.",
-     "note": "\"vi blev knullade\" = we got screwed over, cheated"
+     "note": "\"ut ur din tillflyktsort\" = komma ut ur ditt trygga skal"
     },
     {
      "id": "04b/0421#word_",
      "text": "– Leopard-Farid, håll nerverna i schack och gör ingen mordisk manöver.",
-     "note": "\"mordisk manöver\" = a rash, wild move (running joke)"
-    },
-    {
-     "id": "04b/0721#word_",
-     "text": "– Äldi, i stället för att slänga dig på sängen så där och leka med dina pungkulor, res dig upp och skicka dem. Det är ett fynd.",
-     "note": "\"pungkulor\" = your balls (crude: idling, doing nothing)"
+     "note": "\"mordisk manöver\" = ett förhastat, vilt drag (återkommande skämt)"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Du är väldigt smygig.",
-     "note": "\"väldigt smygig\" = very sneaky (playful teasing)"
-    },
-    {
-     "id": "04b/1274#word_",
-     "text": "berusade och",
-     "note": "\"berusade\" = drunk with love, in the mystic sense"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "brända",
-     "note": "\"brända\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Man blir skitförvirrad. Ju mer man tänker på det, desto mer skitförvirrad blir man.",
-     "note": "\"skitförvirrad\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Och med skälvande händer bläddrade jag snabbt genom ghazalerna och letade efter det beit ur Hafez som, likt målningen, som den andra flickan hade sagt, skulle göra oss mer skitförvirrade ju djupare vi sjönk ner i det – för att kunna visa det för Niloofar.",
-     "note": "\"mer skitförvirrade\" = more baffled; echoes her crude coinage"
-    },
-    {
-     "id": "04b/1392#word_",
-     "text": "Mina drömmars ljus blinkar nu",
-     "note": "\"blinkar\" = now flickers, like a failing light"
+     "note": "\"väldigt smygig\" = väldigt lömsk (lekfullt retande)"
     },
     {
      "id": "06/0253#word_",
      "text": "Gå och hämta lite frön till Ghassem och de andra, de vill titta på film.",
-     "note": "\"lite frön\" = roasted seeds to snack on"
+     "note": "\"lite frön\" = rostade frön att knapra på"
     }
    ]
   }

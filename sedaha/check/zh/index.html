@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> 波斯俗语</h2>
-    <p class="nc-gq">一些波斯俗语和意象是逐字直译的。每一句能让您大致体会到它的意思吗？还是对您来说毫无意义？</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">这些波斯俗语是逐字直译的。请先试着猜一猜每一句，再查看它的意思。</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l6">雨不会从地上往天上下的。</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>是父母为孩子牺牲，而不是孩子为父母牺牲。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v6" value="change"> 猜不到</label>
-        <label><input type="radio" name="v6" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v6" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v6" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v6" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n6">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l7">好的一年，从它的春天就看得出来。</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>从开头就能看出这一年会怎么样。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v7" value="change"> 猜不到</label>
-        <label><input type="radio" name="v7" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v7" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v7" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v7" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n7">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l8">别吃悲伤</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>别难过，别担心。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v8" value="change"> 猜不到</label>
-        <label><input type="radio" name="v8" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v8" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v8" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v8" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n8">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l9">我的心要烂掉了</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>我又闷又孤单，快熬不住了。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v9" value="change"> 猜不到</label>
-        <label><input type="radio" name="v9" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v9" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v9" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v9" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n9">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l10">我手短够不着，与你相守又那么遥远。</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>我没办法和你在一起，我无能为力。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v10" value="change"> 猜不到</label>
-        <label><input type="radio" name="v10" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v10" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v10" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v10" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n10">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l11">说吧，舌头要烧；不说吧，骨头里的髓要烧</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>说出来难受，憋着不说更难受。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v11" value="change"> 猜不到</label>
-        <label><input type="radio" name="v11" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v11" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v11" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v11" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n11">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l12">害得这顿饭都变成蛇毒</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>他会让我这顿饭吃得很不痛快。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v12" value="change"> 猜不到</label>
-        <label><input type="radio" name="v12" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v12" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v12" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v12" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n12">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l13">是不会有热馍馍给你吃的</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>这样做没用，你什么也得不到。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v13" value="change"> 猜不到</label>
-        <label><input type="radio" name="v13" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v13" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v13" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v13" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n13">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l14">被家里硬塞进这群鸡里头</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>家里逼着我结了婚。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v14" value="change"> 猜不到</label>
-        <label><input type="radio" name="v14" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v14" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v14" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v14" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n14">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l15">那块方糖便在我的喉咙里跳了一下</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>方糖呛进了嗓子眼，我被噎住了。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v15" value="change"> 猜不到</label>
-        <label><input type="radio" name="v15" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v15" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v15" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v15" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n15">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l16">每个角落都要伸头瞧瞧</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>什么都去探一探，能去的地方都去看看。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v16" value="change"> 猜不到</label>
-        <label><input type="radio" name="v16" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v16" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v16" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v16" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n16">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l17">话又不要钱，不过是空气里的风</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>嘴上说说很容易，光凭嘴说证明不了什么。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v17" value="change"> 猜不到</label>
-        <label><input type="radio" name="v17" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v17" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v17" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v17" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n17">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l18">他肯定会从内格尔眼里跌落下去</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>那个女孩肯定再也不会看得起他了。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v18" value="change"> 猜不到</label>
-        <label><input type="radio" name="v18" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v18" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v18" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v18" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n18">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l19">只是一句等到收成时的许诺？</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>只是一句永远不会兑现的空话？</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v19" value="change"> 猜不到</label>
-        <label><input type="radio" name="v19" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v19" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v19" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v19" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n19">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l20">把这份兄弟情的肝肠都给你端上盘子来</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>让我拿出全部的情谊来好好招待你。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v20" value="change"> 猜不到</label>
-        <label><input type="radio" name="v20" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v20" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v20" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v20" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n20">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l21">吓得毛都掉了</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>他们完全惊呆了。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v21" value="change"> 猜不到</label>
-        <label><input type="radio" name="v21" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v21" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v21" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v21" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n21">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l22">别那么激动，你的奶会干掉的</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>冷静点，不值得为这个这么激动。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v22" value="change"> 猜不到</label>
-        <label><input type="radio" name="v22" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v22" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v22" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v22" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n22">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l23">你不放屁，没人会当你是哑巴</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>你要是不吭声，谁也不会介意。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v23" value="change"> 猜不到</label>
-        <label><input type="radio" name="v23" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v23" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v23" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v23" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n23">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l24">把我鸡巴的头吃了得了</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>粗鲁的说法：滚开，没人想听你的意见。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v24" value="change"> 猜不到</label>
-        <label><input type="radio" name="v24" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v24" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v24" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v24" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n24">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l25">你这个吃鸡巴头的</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>朋友之间的粗话，大致是“你这个笨蛋”。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v25" value="change"> 猜不到</label>
-        <label><input type="radio" name="v25" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v25" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v25" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v25" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n25">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l26">对着咱们的胡子和老二发笑</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>在嘲笑我们这些留下来的人。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v26" value="change"> 猜不到</label>
-        <label><input type="radio" name="v26" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v26" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v26" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v26" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n26">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l27">这么手里攥着鸡巴在街上瞎晃悠</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>一个人漫无目的地闲逛，到现在还单着。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v27" value="change"> 猜不到</label>
-        <label><input type="radio" name="v27" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v27" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v27" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v27" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n27">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l28">不管什么鸡巴落到咱们头上</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>不管我们遭上什么灾。</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> 我能猜到</label>
-        <label><input type="radio" name="v28" value="change"> 猜不到</label>
-        <label><input type="radio" name="v28" value="unsure"> 不确定</label>
+        <label><input type="radio" name="v28" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v28" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v28" value="change"> 看了意思，我也联系不起来</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">您觉得它是什么意思？ <span class="nc-optional">（选填）</span></label>
+        <label for="n28">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l29">往我们这些外地人每个人的屁股里都捅了一根棍子</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>这个政策对我们这些外地人都极不公平。</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v29" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v29" value="change"> 看了意思，我也联系不起来</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l30">你连它的头都吃不到。</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>粗鲁的回嘴（“它的头”= 鸡巴的头）：你根本什么也干不了。</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v30" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v30" value="change"> 看了意思，我也联系不起来</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l31">我愿绕着我妮妮·江的脑袋转。</p></div>
+      <details class="nc-hint"><summary>显示意思</summary><p>满怀爱意的话：为了她，我什么都愿意付出。</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> 不看意思，我也猜到了</label>
+        <label><input type="radio" name="v31" value="unsure"> 看了意思，我才明白</label>
+        <label><input type="radio" name="v31" value="change"> 看了意思，我也联系不起来</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">哪里让您觉得不清楚？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> 孩子说错的词</h2>
     <p class="nc-gq">书中有些孩子会把词说错，就像小孩子常有的那样。每一处听起来像孩子的口误，而不是错别字吗？</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l29">是大米石。大米石就是很贵很贵的意思。</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l32">是大米石。大米石就是很贵很贵的意思。</p></div>
       <p class="nc-note">大米石 = 大理石</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> 正确</label>
-        <label><input type="radio" name="v29" value="change"> 需要修改</label>
-        <label><input type="radio" name="v29" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l30">叫《泰塔尼克号》。</p></div>
-      <p class="nc-note">泰塔尼克号 = 泰坦尼克号</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> 正确</label>
-        <label><input type="radio" name="v30" value="change"> 需要修改</label>
-        <label><input type="radio" name="v30" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l31">巴巴巴巴，你给我买介个大娃娃好不好？</p></div>
-      <p class="nc-note">一个小女孩</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> 正确</label>
-        <label><input type="radio" name="v31" value="change"> 需要修改</label>
-        <label><input type="radio" name="v31" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l32">好，我给你买介个娃娃。</p></div>
-      <p class="nc-note">她父亲学她说话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> 正确</label>
         <label><input type="radio" name="v32" value="change"> 需要修改</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> 绰号</h2>
-    <p class="nc-gq">书中的朋友们互相起好玩的绰号，常常是文字游戏。每一个在中文里能当绰号用吗？</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l33">阿兰·屌龙</p></div>
-      <p class="nc-note">给一个朋友起的绰号：演员阿兰·德龙的名字，其中一部分换成了指阴茎的粗话</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l33">叫《泰塔尼克号》。</p></div>
+      <p class="nc-note">泰塔尼克号 = 泰坦尼克号</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> 正确</label>
         <label><input type="radio" name="v33" value="change"> 需要修改</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l34">酒馆长老</p></div>
-      <p class="nc-note">一个故作庄重的称号，取自哈菲兹的诗</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l34">巴巴巴巴，你给我买介个大娃娃好不好？</p></div>
+      <p class="nc-note">一个小女孩</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> 正确</label>
         <label><input type="radio" name="v34" value="change"> 需要修改</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l35">馆老</p></div>
-      <p class="nc-note">“酒馆长老”的昵称</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l35">好，我给你买介个娃娃。</p></div>
+      <p class="nc-note">她父亲学她说话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> 正确</label>
         <label><input type="radio" name="v35" value="change"> 需要修改</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l36">酒馆客, 我的小馆客</p></div>
-      <p class="nc-note">由“酒馆”变出来的昵称</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> 绰号</h2>
+    <p class="nc-gq">书中的朋友们互相起好玩的绰号，常常是文字游戏。每一个在中文里能当绰号用吗？</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l36">阿兰·屌龙</p></div>
+      <p class="nc-note">给一个朋友起的绰号：演员阿兰·德龙的名字，其中一部分换成了指阴茎的粗话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> 正确</label>
         <label><input type="radio" name="v36" value="change"> 需要修改</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l37">豹子法里德</p></div>
-      <p class="nc-note">称呼一个大胆鲁莽的朋友</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l37">酒馆长老</p></div>
+      <p class="nc-note">一个故作庄重的称号，取自哈菲兹的诗</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> 正确</label>
         <label><input type="radio" name="v37" value="change"> 需要修改</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l38">“阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？</p></div>
-      <p class="nc-note">阿拉阿斯特 = 波斯语，意为“整齐”</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l38">馆老</p></div>
+      <p class="nc-note">“酒馆长老”的昵称</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> 正确</label>
         <label><input type="radio" name="v38" value="change"> 需要修改</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l39">尊贵的阿尔玛小姐</p></div>
-      <p class="nc-note">用姓氏阿尔玛来嘲弄</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l39">酒馆客, 我的小馆客</p></div>
+      <p class="nc-note">由“酒馆”变出来的昵称</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> 正确</label>
         <label><input type="radio" name="v39" value="change"> 需要修改</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l40">密斯特卷毛薛定谔</p></div>
-      <p class="nc-note">嘲笑拿不定主意的人的称号</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l40">豹子法里德</p></div>
+      <p class="nc-note">称呼一个大胆鲁莽的朋友</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> 正确</label>
         <label><input type="radio" name="v40" value="change"> 需要修改</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> 笑话和文字游戏</h2>
-    <p class="nc-gq">这些句子里有笑话或文字游戏。每一处在中文里行得通吗？</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l41">他出厂设定就这德行。</p></div>
-      <p class="nc-note">把事情搞砸就是他的本性</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l41">“阿拉斯特”是“阿拉阿斯特”被皮拉斯特——修剪——之后的样子吗？</p></div>
+      <p class="nc-note">阿拉阿斯特 = 波斯语，意为“整齐”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> 正确</label>
         <label><input type="radio" name="v41" value="change"> 需要修改</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l42">原谅你了。这整条大道都归你。</p></div>
-      <p class="nc-note">在波斯语里，“原谅”也有“送给”的意思</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l42">尊贵的阿尔玛小姐</p></div>
+      <p class="nc-note">用姓氏阿尔玛来嘲弄</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> 正确</label>
         <label><input type="radio" name="v42" value="change"> 需要修改</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l43">你昨天还说“哈尔”，今天突然文明了，改说“驴”了？</p></div>
-      <p class="nc-note">取笑一个男孩改用了更文雅的词</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l43">密斯特卷毛薛定谔</p></div>
+      <p class="nc-note">嘲笑拿不定主意的人的称号</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> 正确</label>
         <label><input type="radio" name="v43" value="change"> 需要修改</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l44">长老对长老？ … 鹰眼说的是皮尔对皮尔，酒馆客听成了长老对长老。</p></div>
-      <p class="nc-note">他把“皮尔”（peer）听成了波斯语的“皮尔”，意为“长老”，正是他绰号的词根</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> 笑话和文字游戏</h2>
+    <p class="nc-gq">这些句子里有笑话或文字游戏。每一处在中文里行得通吗？</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l44">他出厂设定就这德行。</p></div>
+      <p class="nc-note">把事情搞砸就是他的本性</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> 正确</label>
         <label><input type="radio" name="v44" value="change"> 需要修改</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l45">昨晚我都听见你反刍的声音了。</p></div>
-      <p class="nc-note">夜里嚼东西，像牛反刍一样</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l45">原谅你了。这整条大道都归你。</p></div>
+      <p class="nc-note">在波斯语里，“原谅”也有“送给”的意思</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> 正确</label>
         <label><input type="radio" name="v45" value="change"> 需要修改</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l46">你又抽什么风冲我们硬起来了，阿兰·屌龙？</p></div>
-      <p class="nc-note">双关：既指神气地挺起来，也指勃起</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l46">你昨天还说“哈尔”，今天突然文明了，改说“驴”了？</p></div>
+      <p class="nc-note">取笑一个男孩改用了更文雅的词</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> 正确</label>
         <label><input type="radio" name="v46" value="change"> 需要修改</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l47">他没什么草来着？</p></div>
-      <p class="nc-note">母亲只听到了“拈花惹草”的最后一个字</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l47">长老对长老？ … 鹰眼说的是皮尔对皮尔，酒馆客听成了长老对长老。</p></div>
+      <p class="nc-note">他把“皮尔”（peer）听成了波斯语的“皮尔”，意为“长老”，正是他绰号的词根</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> 正确</label>
         <label><input type="radio" name="v47" value="change"> 需要修改</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l48">我们姐夫的师傅的堂兄弟的朋友，就是德黑兰最有钱的那个人</p></div>
-      <p class="nc-note">一个男孩挂在嘴边的炫耀</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l48">昨晚我都听见你反刍的声音了。</p></div>
+      <p class="nc-note">夜里嚼东西，像牛反刍一样</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> 正确</label>
         <label><input type="radio" name="v48" value="change"> 需要修改</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l49">要么你是鸡巴脑......当然，你本来就是鸡巴脑子，现在更鸡巴脑子了。</p></div>
-      <p class="nc-note">骂人的话说到一半断了，接着骂得更狠</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l49">你又抽什么风冲我们硬起来了，阿兰·屌龙？</p></div>
+      <p class="nc-note">双关：既指神气地挺起来，也指勃起</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> 正确</label>
         <label><input type="radio" name="v49" value="change"> 需要修改</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l50">是啊，我们人人都有工厂。 … 废话工厂。</p></div>
-      <p class="nc-note">他们只生产废话：就是光会胡说八道</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l50">他没什么草来着？</p></div>
+      <p class="nc-note">母亲只听到了“拈花惹草”的最后一个字</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> 正确</label>
         <label><input type="radio" name="v50" value="change"> 需要修改</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l51">老化石，你自己就是一座愚蠢与堕落的雕像</p></div>
-      <p class="nc-note">一句嘲讽的骂人话</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l51">我们姐夫的师傅的堂兄弟的朋友，就是德黑兰最有钱的那个人</p></div>
+      <p class="nc-note">一个男孩挂在嘴边的炫耀</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> 正确</label>
         <label><input type="radio" name="v51" value="change"> 需要修改</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l52">生命就像一张千托曼的钞票，不管从哪面看，都透着扁豆饭的味道。</p></div>
-      <p class="nc-note">一句荒诞的俏皮话</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l52">要么你是鸡巴脑......当然，你本来就是鸡巴脑子，现在更鸡巴脑子了。</p></div>
+      <p class="nc-note">骂人的话说到一半断了，接着骂得更狠</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> 正确</label>
         <label><input type="radio" name="v52" value="change"> 需要修改</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l53">我说话就是这样；你们一听我开口，就以为我在念诗。</p></div>
-      <p class="nc-note">一个男孩用唱歌似的节奏回答</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l53">是啊，我们人人都有工厂。 … 废话工厂。</p></div>
+      <p class="nc-note">他们只生产废话：就是光会胡说八道</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> 正确</label>
         <label><input type="radio" name="v53" value="change"> 需要修改</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l54">小心别裂开了，屌先生。</p></div>
-      <p class="nc-note">他刚刚挺起了胸膛</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l54">老化石，你自己就是一座愚蠢与堕落的雕像</p></div>
+      <p class="nc-note">一句嘲讽的骂人话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> 正确</label>
         <label><input type="radio" name="v54" value="change"> 需要修改</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l55">你才是这里头最大的一头牛。</p></div>
-      <p class="nc-note">“牛”= 呆笨的蠢货，用来说男人</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l55">生命就像一张千托曼的钞票，不管从哪面看，都透着扁豆饭的味道。</p></div>
+      <p class="nc-note">一句荒诞的俏皮话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> 正确</label>
         <label><input type="radio" name="v55" value="change"> 需要修改</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l56">每次能把“觉知”这个词在那句话里用上两遍，他自己都得意得不行。</p></div>
-      <p class="nc-note">“觉知”故意用了两次，开个玩笑</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l56">我说话就是这样；你们一听我开口，就以为我在念诗。</p></div>
+      <p class="nc-note">一个男孩用唱歌似的节奏回答</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> 正确</label>
         <label><input type="radio" name="v56" value="change"> 需要修改</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l57">问题出在接收端，发送端解决不了。</p></div>
-      <p class="nc-note">朋友视力差，就是那个“接收端”</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l57">小心别裂开了，屌先生。</p></div>
+      <p class="nc-note">他刚刚挺起了胸膛</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> 正确</label>
         <label><input type="radio" name="v57" value="change"> 需要修改</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l58">我说的是阿兰·屌龙。屌——龙。</p></div>
-      <p class="nc-note">把双关里粗俗的部分拖长</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l58">你才是这里头最大的一头牛。</p></div>
+      <p class="nc-note">“牛”= 呆笨的蠢货，用来说男人</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> 正确</label>
         <label><input type="radio" name="v58" value="change"> 需要修改</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l59">你要是胡曼，我就是苏珊。</p></div>
-      <p class="nc-note">胡曼这个温和的名字，不配这么毛茸茸的男人</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l59">每次能把“觉知”这个词在那句话里用上两遍，他自己都得意得不行。</p></div>
+      <p class="nc-note">“觉知”故意用了两次，开个玩笑</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> 正确</label>
         <label><input type="radio" name="v59" value="change"> 需要修改</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l60">导数？意义？还是导数的意义？还是意义的导数？</p></div>
-      <p class="nc-note">故作高深的文字游戏</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l60">问题出在接收端，发送端解决不了。</p></div>
+      <p class="nc-note">朋友视力差，就是那个“接收端”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> 正确</label>
         <label><input type="radio" name="v60" value="change"> 需要修改</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l61">真主若愿，愿你永远都阿拉阿斯特。</p></div>
-      <p class="nc-note">一句祝福，拿姓氏阿拉斯特打趣；阿拉阿斯特 = “整齐”</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l61">我说的是阿兰·屌龙。屌——龙。</p></div>
+      <p class="nc-note">把双关里粗俗的部分拖长</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> 正确</label>
         <label><input type="radio" name="v61" value="change"> 需要修改</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l62">客观地说，不戴眼镜我什么都看不见。</p></div>
-      <p class="nc-note">“客观地说”是这个人物的口头禅，处处都用</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l62">你要是胡曼，我就是苏珊。</p></div>
+      <p class="nc-note">胡曼这个温和的名字，不配这么毛茸茸的男人</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> 正确</label>
         <label><input type="radio" name="v62" value="change"> 需要修改</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> 哈菲兹的一句诗</h2>
-    <p class="nc-gq">诗人哈菲兹的这句诗没有逗号，所以可以读出两种相反的意思：</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l63">那处之酒是真不是譬喻。</p></div>
-      <ul class="nc-after"><li>一种读法：酒是真的，不是譬喻。</li><li>另一种读法：酒不是真的，只是譬喻。</li></ul>
-      <p class="nc-q">中文译文也能这样两种读法都成立吗？</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l63">导数？意义？还是导数的意义？还是意义的导数？</p></div>
+      <p class="nc-note">故作高深的文字游戏</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> 能，两种都行</label>
-        <label><input type="radio" name="v63" value="change"> 只有一种</label>
+        <label><input type="radio" name="v63" value="ok"> 正确</label>
+        <label><input type="radio" name="v63" value="change"> 需要修改</label>
         <label><input type="radio" name="v63" value="unsure"> 不确定</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">您会怎么说？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l64">真主若愿，愿你永远都阿拉阿斯特。</p></div>
+      <p class="nc-note">一句祝福，拿姓氏阿拉斯特打趣；阿拉阿斯特 = “整齐”</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> 正确</label>
+        <label><input type="radio" name="v64" value="change"> 需要修改</label>
+        <label><input type="radio" name="v64" value="unsure"> 不确定</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">您会怎么说？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l65">客观地说，不戴眼镜我什么都看不见。</p></div>
+      <p class="nc-note">“客观地说”是这个人物的口头禅，处处都用</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> 正确</label>
+        <label><input type="radio" name="v65" value="change"> 需要修改</label>
+        <label><input type="radio" name="v65" value="unsure"> 不确定</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">您会怎么说？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> 哈菲兹的一句诗</h2>
+    <p class="nc-gq">诗人哈菲兹的这句诗没有逗号，所以可以读出两种相反的意思：</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l66">那处之酒是真不是譬喻。</p></div>
+      <ul class="nc-after"><li>一种读法：酒是真的，不是譬喻。</li><li>另一种读法：酒不是真的，只是譬喻。</li></ul>
+      <p class="nc-q">中文译文也能这样两种读法都成立吗？</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> 能，两种都行</label>
+        <label><input type="radio" name="v66" value="change"> 只有一种</label>
+        <label><input type="radio" name="v66" value="unsure"> 不确定</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">您会怎么说？ <span class="nc-optional">（选填）</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

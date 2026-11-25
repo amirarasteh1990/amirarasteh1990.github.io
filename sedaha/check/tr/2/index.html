@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="tr" data-language="Turkish" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/tr/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l1">Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>Anlatıcı burada gergin. Her satır Türkçede doğal geliyor mu?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l1">Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.</p></div>
+      <p class="nc-note">bir kızın bir resim için uydurduğu kaba bir sözü tekrarlıyor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> Doğru</label>
         <label><input type="radio" name="v1" value="change"> Değişmeli</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">Is it clear the children carry the yarn around the house?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="Opening/0007#s19" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l2">Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l2">Onun gibi, bu on kelimeyi ne kadar çok düşünürsen o kadar bo-, şey, sersemliyorsun.</p></div>
+      <p class="nc-note">kaba sözü neredeyse yine söyleyecekken duruyor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> Doğru</label>
         <label><input type="radio" name="v2" value="change"> Değişmeli</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0026#s40" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l3">Görevin birinci aşaması başlıyor. Tabur, sola dön!</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l3">Sen, Allah aşkına dinle. … Hani şu arkadaşının gösterdiği resim gibi.</p></div>
+      <p class="nc-note">kekeliyor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> Doğru</label>
         <label><input type="radio" name="v3" value="change"> Değişmeli</label>
@@ -187,11 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> Şiir</h2>
-    <p class="nc-gq">Bunlar şiir dizeleri. Her biri Türkçede şiir olarak iyi okunuyor mu?</p>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l4">Süleyman'ın o mührünü hiçbir bedel karşılığında almam; çünkü zaman zaman üzerinde bir el...</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>Anlatıcı sonunda kıza onu sevdiğini söylüyor. Doğal ve içten geliyor mu?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l4">Otuz iki aydır sizi seviyorum. Uzaktan. Siz bilmeden. Sessizce. Tek söz etmeden. Belki böyle olmaz, mümkün değil, hayalîdir ve gerçek değil dersiniz. Ama oldu ve sizi gerçekten seviyorum.</p></div>
+      <p class="nc-note">Farsçada ona resmî biçimde, kibar “siz” ile hitap ediyor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> Doğru</label>
         <label><input type="radio" name="v4" value="change"> Değişmeli</label>
@@ -202,8 +202,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l5">“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>Bunlar kitabın ilk satırları. Doğal ve anlaşılır okunuyor mu?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l5">Burada hiçbir şey olmaz. Burada hiçbir şey düzeltilmeyecek ya da yıkılmayacak. Hiçbir yorum gelmeyecek. Hiçbir sonuç.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> Doğru</label>
         <label><input type="radio" name="v5" value="change"> Değişmeli</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l6">Her şeyin üstüne yazılabilir</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l6">Bu, bir zamanlar ses olan sözcüklerden oluşan bir ipin boşta kalan ucu.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> Doğru</label>
         <label><input type="radio" name="v6" value="change"> Değişmeli</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1268#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l7">suyun üstü hariç</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l7">Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.</p></div>
+      <p class="nc-note">Maman, Farsçada “anne” demektir; bilerek çevrilmeden bırakıldı. O ipliği söktükçe çocuklar ipliği evin içinde dolaştırıyor.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> Doğru</label>
         <label><input type="radio" name="v7" value="change"> Değişmeli</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1271#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l8">ki senin ardından gelen</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l8">Şimdi sözcüklerin ipini çözüyorum, sen de sözcükleri alıp kendi dünyana götür; burada, benim dünyamda üst üste yığılmasınlar.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> Doğru</label>
         <label><input type="radio" name="v8" value="change"> Değişmeli</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1276#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l9">bu yoldan geçmiş.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>Anı, yivleri sıyrılmış bir vida gibi yerinden çıkıyor. İmge anlaşılır mı?</span></h2>
+    <p class="nc-gq">Kitapta:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l9">O günden sonra, yivleri sıyrılmış bir vida gibi, o görüntü artık evimizin kapalı kapısının ardındaki karanlığa bağlı değildi</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> Doğru</label>
         <label><input type="radio" name="v9" value="change"> Değişmeli</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l10">Okudu: “Çoktandır yâr bir haber göndermedi, ne bir selam yazdı...” ve gülmem geldi.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>Bir çocuk küçük kardeşleriyle askercilik oynuyor. Komutları gerçek askerî talim komutları gibi geliyor mu?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l10">Tabur, ileri marş!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> Doğru</label>
         <label><input type="radio" name="v10" value="change"> Değişmeli</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l11">Rüyalarımın lambası şimdi göz kırpıyor</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l11">Görevin birinci aşaması başlıyor. Tabur, sola dön!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> Doğru</label>
         <label><input type="radio" name="v11" value="change"> Değişmeli</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l12">Dönüşünün umudunu taşımıyorum</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Şiir</h2>
+    <p class="nc-gq">Bunlar şiirler ve şiir dizeleri: anlatıcının kendi şiiri ve klasik Fars şairlerinden (Harakani, Hafız, Attar) dizeler. Her biri Türkçede şiir gibi okunuyor mu?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l12">Rüyalarım karanlıktı / Hiçbir şey göremiyordum / Sen geldin / Rüyalarımın lambası yandı / Şimdi gittin / Rüyalarımın lambası şimdi göz kırpıyor / Dönüşünün umudunu taşımıyorum / Ama yolun düşerse / yine rüyalarıma gel / Sanırım rüyalarım gittiğine inanmamışlar / kaybolduğunu sanıyorlar ve</p></div>
+      <p class="nc-note">anlatıcının kaybettiği kıza yazdığı kendi sade şiiri</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> Doğru</label>
         <label><input type="radio" name="v12" value="change"> Değişmeli</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l13">Ama yolun düşerse</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l13">Rüyalarım karanlıktı / Hiçbir şey göremiyordum / Sen geldin / Rüyalarımın lambası ... rüyalarımın lambası yan... rüyalarımın lambası yandı / Şimdi ... şimdi ... şimdi gittin ...</p></div>
+      <p class="nc-note">yarı uykulu hâlde şiiri prova ediyor; takılmalar bilerek yapılmış</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> Doğru</label>
         <label><input type="radio" name="v13" value="change"> Değişmeli</label>
@@ -310,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1395#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l14">yine rüyalarıma gel</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l14">Her şeyin üstüne yazılabilir / suyun üstü hariç / ve denizi geçersen / suyun üstüne kendi kanınla yaz / ki senin ardından gelen / bilsin ki / âşıklar ve / sarhoşlar ve / yananlar / bu yoldan geçmiş.</p></div>
+      <p class="nc-note">Harakani'nin eski bir Fars şiiri; sınıftaki tahtaya yazılmış</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> Doğru</label>
         <label><input type="radio" name="v14" value="change"> Değişmeli</label>
@@ -322,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l15">Sanırım rüyalarım gittiğine inanmamışlar</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l15">... Süleyman'ın o mührünü hiçbir bedel karşılığında almam; çünkü zaman zaman üzerinde bir el...</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> Doğru</label>
         <label><input type="radio" name="v15" value="change"> Değişmeli</label>
@@ -334,8 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="02/0002#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l16">Rüyalarım karanlıktı</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l16">Tavernanın Ulu Yaşlısı'nın kölesiyim, lütfu...</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> Doğru</label>
         <label><input type="radio" name="v16" value="change"> Değişmeli</label>
@@ -346,8 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l17">Rüyalarımın lambası ... rüyalarımın lambası yan... rüyalarımın lambası yandı</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l17">Sana kavuşma umudu beni hayatta tutuyor; yoksa senden ayrı her nefesim, yok olma korkusu olurdu. … Yarayı sen vurursan, başkasının merheminden iyidir, zehri de sen verirsen ...</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan iki dize; ikincisi kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> Doğru</label>
         <label><input type="radio" name="v17" value="change"> Değişmeli</label>
@@ -358,8 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="02/0006#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l18">Şimdi ... şimdi ... şimdi gittin ...</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l18">...Hafız'ın gönül çelen şiirinden ancak şiirsel zarafeti bilen ve Farsça konuşabilen kimse âgâhtır.</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> Doğru</label>
         <label><input type="radio" name="v18" value="change"> Değişmeli</label>
@@ -370,13 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> Tek kelimeler</h2>
-    <p class="nc-gq">Her satırdaki kelime doğru kelime mi? Ne anlama gelmesi gerektiği altında yazıyor.</p>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="03/0590#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l19">Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.</p></div>
-      <p class="nc-note">"namaz çarşafı" = Maman's full-length prayer chador</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l19">Tanrı, kendi görkemli güzelliğini meleklerin önünde perdesizce gösterdi ve onların aşktan hiçbir şey bilmediğini gördü; o kıskanç gayretten bu tecelli saf ateşe dönüp Âdem'in balçığına vurdu.</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> Doğru</label>
         <label><input type="radio" name="v19" value="change"> Değişmeli</label>
@@ -387,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l20">Ana caddeye girmek: cık cık.</p></div>
-      <p class="nc-note">"cık cık" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l20">Yâri ve diyarı anarak öyle ağlayayım ki, dünyadan yolculuğun yolunu yordamını ...</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> Doğru</label>
         <label><input type="radio" name="v20" value="change"> Değişmeli</label>
@@ -400,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/0784#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l21">Çok sneaky'sin.</p></div>
-      <p class="nc-note">"sneaky" = English 'sneaky', slipped in playfully</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l21">Çoktandır yâr bir haber göndermedi, ne bir selam yazdı...</p></div>
+      <p class="nc-note">klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> Doğru</label>
         <label><input type="radio" name="v21" value="change"> Değişmeli</label>
@@ -413,9 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l22">yananlar</p></div>
-      <p class="nc-note">"yananlar" = those burned, consumed by love</p>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l22">“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?</p></div>
+      <p class="nc-note">bir arkadaş iki şarkıdan hangisi olduğunu soruyor; her biri, klasik Fars şairi Attar'ın bir şiirinden bir dizeyle anılıyor</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> Doğru</label>
         <label><input type="radio" name="v22" value="change"> Değişmeli</label>
@@ -426,9 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l23">İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.</p></div>
-      <p class="nc-note">"bok sersemi" = crude coinage: so baffled your head spins</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> Tek kelimeler</h2>
+    <p class="nc-gq">Her satırın altında o satırdan bir kelime ve ne anlama gelmesi gerektiği yazıyor. Burada doğru kelime mi?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0590#word_" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l23">Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.</p></div>
+      <p class="nc-note">"namaz çarşafı" = Maman'ın boydan boya namaz çarşafı</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> Doğru</label>
         <label><input type="radio" name="v23" value="change"> Değişmeli</label>
@@ -439,9 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l24">Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.</p></div>
-      <p class="nc-note">"bok sersemi" = more baffled; echoes her crude coinage</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l24">Ana caddeye girmek: cık cık.</p></div>
+      <p class="nc-note">"cık cık" = dil şaklatma (cıklama): hayır, yasak</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> Doğru</label>
         <label><input type="radio" name="v24" value="change"> Değişmeli</label>
@@ -450,6 +472,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n24">Siz nasıl söylerdiniz? <span class="nc-optional">(isteğe bağlı)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0784#word_" data-note-on="change">
+      <div class="reader nc-text" lang="tr" dir="ltr"><p class="nc-line" id="l25">Çok sneaky'sin.</p></div>
+      <p class="nc-note">"sneaky" = İngilizce sneaky (“sinsi, kurnaz”), şakayla araya sıkıştırılmış</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
+        <label><input type="radio" name="v25" value="ok"> Doğru</label>
+        <label><input type="radio" name="v25" value="change"> Değişmeli</label>
+        <label><input type="radio" name="v25" value="unsure"> Emin değilim</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n25">Siz nasıl söylerdiniz? <span class="nc-optional">(isteğe bağlı)</span></label>
+        <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -500,4 +535,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 24 rows -->
+<!-- 25 rows -->

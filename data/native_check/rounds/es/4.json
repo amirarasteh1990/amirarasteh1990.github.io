@@ -13,7 +13,6 @@
   "needs_change": "Necesita cambios",
   "not_sure": "Tengo dudas",
   "how_say": "¿Cómo lo dirías tú?",
-  "meaning": "¿Qué crees que significa?",
   "optional": "(opcional)",
   "your_name": "Tu nombre",
   "thanks_tick": "Incluir mi nombre en la página de Agradecimientos",
@@ -117,11 +116,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "En nombre de que los chicos estén cerca de sus familias, nos metieron un palo por el culo a nosotros los de provincias.",
-     "note": null
-    },
-    {
      "id": "04b/0146#crude",
      "text": "Cerebro de caca. Me haces abrir la boca y decirlo.",
      "note": null
@@ -172,11 +166,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "Ni su cabeza podrías comerte. Pero qué dulces más buenos eran.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "nos jodieron.",
      "note": null
@@ -193,8 +182,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Si fuera por mí, cero ni hablar; te haría comerte la cabeza de mi polla y luego te echaría de la universidad de una patada.",
-     "note": null
+     "text": "¿Acaso eres Heisenberg o Einstein, para esperar que te pongan un veinte y honren tus teorías esclarecedoras? Si fuera por mí, cero ni hablar; te haría comerte la cabeza de mi polla y luego te echaría de la universidad de una patada. Eso sí, también te metería un tiempo en un agujero negro para que tu enfermedad no contagiara a nadie.",
+     "note": "en Irán, las notas llegan hasta 20"
     },
     {
      "id": "04b/0486#crude",
@@ -204,7 +193,7 @@
     {
      "id": "04b/0520#crude",
      "text": "Hoy no discutáis en el cuarto, que me han puesto un doce en Educación Física, tengo los nervios de mierda y os pongo a parir.",
-     "note": null
+     "note": "en Irán, las notas llegan hasta 20"
     },
     {
      "id": "04b/0567#crude",
@@ -255,6 +244,11 @@
      "id": "04b/1003#crude",
      "text": "Mira qué buena la has armado, cerebro de mierda.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Le entra a uno un mareo de mierda. Cuanto más lo piensas, más mareo de mierda te entra.",
+     "note": "\"mareo de mierda\" = expresión grosera inventada: tan perplejo que te da vueltas la cabeza"
     }
    ]
   },
@@ -308,6 +302,11 @@
     {
      "id": "03/0517#natur",
      "text": "Por un lado hace jugadas homicidas, y por otro dice: ay, sangre, me puso los pelos de punta.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "En el momento del Norouz, junto al mantel del Haft-Seen, leí el poema para mi madre.",
      "note": null
     },
     {
@@ -431,11 +430,6 @@
      "note": null
     },
     {
-     "id": "04b/1314#natur",
-     "text": "Pero ha sido así y de verdad la quiero.",
-     "note": null
-    },
-    {
      "id": "06/0050#natur",
      "text": "Probablemente porque no oye nada y no sabe lo que pasa, el miedo nunca le entró.",
      "note": null
@@ -458,5 +452,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 16
 }

@@ -13,7 +13,6 @@
   "needs_change": "Değişmeli",
   "not_sure": "Emin değilim",
   "how_say": "Siz nasıl söylerdiniz?",
-  "meaning": "Sizce ne anlama geliyor?",
   "optional": "(isteğe bağlı)",
   "your_name": "Adınız",
   "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Farsça deyişler",
-   "q": "Bazı Farsça deyişler ve imgeler kelimesi kelimesine çevrildi. Her biri size anlamı hakkında bir fikir veriyor mu, yoksa size hiçbir şey ifade etmiyor mu?",
+   "q": "Bu Farsça deyişler kelimesi kelimesine çevrildi. Önce her birini tahmin etmeye çalışın, sonra anlamına bakın.",
    "labels": [
-    "Tahmin edebiliyorum",
-    "Edemiyorum",
-    "Emin değilim"
+    "Anlamına bakmadan tahmin ettim",
+    "Anlamına bakınca anladım",
+    "Anlamına baksam da bağlantı kuramıyorum"
    ],
-   "note_label": "Sizce ne anlama geliyor?",
-   "note_on": "ok",
+   "note_label": "Anlaşılmasını ne zorlaştırıyor?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Yağmur yerden göğe yağmaz.",
-     "note": null
+     "note": "Anne baba çocukları için fedakârlık eder, çocuklar anne babaları için değil."
     },
     {
      "id": "01/0073#img",
      "text": "İyi yıl baharından belli olur",
-     "note": null
+     "note": "Bir yılın nasıl geçeceği başlangıcından anlaşılır."
     },
     {
      "id": "04a/0128#img",
      "text": "Gam yeme",
-     "note": null
+     "note": "Üzülme; kaygılanma."
     },
     {
      "id": "01/0138#img",
      "text": "Yüreğim çürüyor",
-     "note": null
+     "note": "Can sıkıntısından ve yalnızlıktan eriyip bitiyorum."
     },
     {
      "id": "04b/0334#img",
      "text": "Elim kısa, sana kavuşmak uzak.",
-     "note": null
+     "note": "Seninle olmak benim için ulaşılmaz; çaresizim."
     },
     {
      "id": "01/0203#img",
      "text": "Söylersem dilim yanar, söylemezsem kemiklerimin iliği yanar.",
-     "note": null
+     "note": "Konuşmak acı veriyor, ama susmak daha da çok acı veriyor."
     },
     {
      "id": "03/0634#img",
      "text": "yemek bana yılan zehri olur",
-     "note": null
+     "note": "Yemeğimin tadını kaçırır."
     },
     {
      "id": "04b/0274#img",
      "text": "senin için hiçbir ekmek ısınmayacak",
-     "note": null
+     "note": "Bu seni hiçbir yere götürmez; hiçbir şey kazanmazsın."
     },
     {
      "id": "04b/0824#img",
      "text": "ailem zorla beni tavukların arasına katınca",
-     "note": null
+     "note": "Ailem beni evlenmeye zorladı."
     },
     {
      "id": "04b/0509#img",
      "text": "şeker küpü boğazımda sıçrıyor",
-     "note": null
+     "note": "Şeker küpü genzime kaçıyor ve boğuluyorum."
     },
     {
      "id": "01/0132#img",
      "text": "her köşe bucağa göz at",
-     "note": null
+     "note": "Her şeyi keşfet; görebildiğin her yeri gör."
     },
     {
      "id": "06/0118#img",
      "text": "sözün masrafı yok — havadan ibaret",
-     "note": null
+     "note": "Bir şey söylemek bedavadır; laf tek başına hiçbir şey kanıtlamaz."
     },
     {
      "id": "04b/1247#img",
      "text": "mutlaka Negar'ın gözünden düşerdi",
-     "note": null
+     "note": "Kız onun hakkındaki iyi fikrini mutlaka kaybederdi."
     },
     {
      "id": "04b/1293#img",
      "text": "Sadece bir hasat vakti vaadi mi?",
-     "note": null
+     "note": "Sadece asla tutulmayacak boş bir vaat mi?"
     },
     {
      "id": "04b/0205#img",
      "text": "dostluğun bağırsaklarını bir tepside önüne sereyim",
-     "note": null
+     "note": "Seni bütün dostluğumla ağırlayayım."
     },
     {
      "id": "04b/1125#img",
      "text": "tüyleri döküldü",
-     "note": null
+     "note": "Tamamen şaşkına döndüler."
     },
     {
      "id": "03/0417#img",
      "text": "bu kadar köpürme, sütün kurur",
-     "note": null
+     "note": "Sakin ol; bu kadar sinirlenmeye değmez."
     },
     {
      "id": "04b/0378#img",
      "text": "osurmasan kimse sana dilsiz demezdi",
-     "note": null
+     "note": "Sussaydın kimse yadırgamazdı."
     },
     {
      "id": "04b/0181#img",
      "text": "Sikimin başını ye",
-     "note": null
+     "note": "Kabaca şunu demek: defol, fikrini isteyen yok."
     },
     {
      "id": "04b/0899#img",
      "text": "sik başı yiyen",
-     "note": null
+     "note": "Arkadaşlar arasında kaba bir hakaret, aşağı yukarı “seni salak”."
     },
     {
      "id": "04b/0209#img",
      "text": "sakalımıza ve sikimize gülüyorsunuz",
-     "note": null
+     "note": "Bizimle, geride kalanlarla dalga geçiyorsunuz."
     },
     {
      "id": "04b/0822#img",
      "text": "böyle elinde aletinle sokaklarda dolaşmazdın",
-     "note": null
+     "note": "Hâlâ bekâr, yalnız ve amaçsızca dolaşmazdın."
     },
     {
      "id": "04b/0440#img",
      "text": "başımıza ne sik gelse",
-     "note": null
+     "note": "Başımıza hangi felaket gelirse gelsin."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "taşralı olan hepimizin götüne sopayı soktular",
+     "note": "Bu politika taşralı hepimize büyük haksızlık etti."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Başını bile yiyemezdin.",
+     "note": "Kaba bir cevap (“başını” = sikin başını): hiçbir şey yapamazdın."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Nini-jan'ımın başının etrafında dönüp durayım",
+     "note": "Sevgi dolu bir söz: onun için her şeyimi veririm."
     }
+   ],
+   "hint": "Anlamını göster",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

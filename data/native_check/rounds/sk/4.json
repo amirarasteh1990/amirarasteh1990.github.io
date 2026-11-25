@@ -13,7 +13,6 @@
   "needs_change": "Treba zmeniť",
   "not_sure": "Neviem isto",
   "how_say": "Ako by ste to povedali?",
-  "meaning": "Čo podľa vás znamená?",
   "optional": "(nepovinné)",
   "your_name": "Vaše meno",
   "thanks_tick": "Uviesť moje meno na stránke Poďakovanie",
@@ -127,9 +126,9 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "To pravidlo lokalizácie s nami poriadne vyjebalo. Vraj aby deti zostali blízko rodiny, no palicu vrazili do zadku nám, deckám z provincií.",
-     "note": null
+     "id": "04b/0146#word_",
+     "text": "Hovno v hlave. Nútiš ma otvoriť ústa.",
+     "note": "\"Hovno v hlave\" = hovno v hlave, hrubá nadávka pre tupca"
     },
     {
      "id": "04b/0150#crude",
@@ -140,6 +139,11 @@
      "id": "04b/0158#crude",
      "text": "Toľko sa učíš, a nakoniec to s našou zasranou smolou aj tak dopadne takto.",
      "note": null
+    },
+    {
+     "id": "04b/0162#word_",
+     "text": "Hej, ako nás uvidia, stiahnu zadok a držia si od nás taký odstup, že mám chuť im skočiť oboma nohami do tváre.",
+     "note": "\"stiahnu zadok\" = stiahnu sa a robia sa povýšení (hrubý obraz)"
     },
     {
      "id": "04b/0164#crude",
@@ -155,6 +159,11 @@
      "id": "04b/0226#crude",
      "text": "kedykoľvek som prišiel na hodiny a prácu pre ten zasraný druhý odbor, videl som, ako sa hádajú.",
      "note": null
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "Tak to si zasraný prvák.",
+     "note": "\"zasraný prvák\" = zasraný prvák, bežné kamarátske nadávanie"
     },
     {
      "id": "04b/0351#crude",
@@ -178,8 +187,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Keby to bolo na mne, nula by bola málo; dal by som ti zožrať hlavičku môjho kokota a potom by som ťa kopancom vyhodil z univerzity.",
-     "note": null
+     "text": "To si Heisenberg alebo Einstein, že čakáš, že ti dajú dvadsať a ocenia tvoje osvietené teórie? Keby to bolo na mne, nula by bola málo; dal by som ti zožrať hlavičku môjho kokota a potom by som ťa kopancom vyhodil z univerzity. A načas by som ťa aj hodil do čiernej diery, aby tvoja choroba nikoho nenakazila.",
+     "note": "v Iráne idú známky až do 20"
     },
     {
      "id": "04b/0486#crude",
@@ -189,12 +198,27 @@
     {
      "id": "04b/0520#crude",
      "text": "Dnes sa v izbe nehádajte, dostal som z telesnej dvanástku, mám nervy v hajzli a vynadám vám.",
-     "note": null
+     "note": "v Iráne idú známky až do 20"
+    },
+    {
+     "id": "04b/0562#word_",
+     "text": "Orlie Oko, nech ti to Boh nedaruje, zničil si mi chrbát.",
+     "note": "\"nech ti to Boh nedaruje\" = napoly žartovná kliatba: nech ti to Boh neodpustí"
     },
     {
      "id": "04b/0567#crude",
      "text": "Šiel som si umyť tvár. Cez okuliare si predsa tvár umyť nemôžem, ty hajzel.",
      "note": null
+    },
+    {
+     "id": "04b/0690#word_",
+     "text": "Posratý chod sveta.",
+     "note": "\"Posratý chod sveta\" = ten posratý spôsob, akým funguje svet"
+    },
+    {
+     "id": "04b/0690#word_2",
+     "text": "Stačilo by, keby profesori z elektrotechniky a strojárstva pred množstvom rokov nedostali chuť odobrať budovu Abu-Reyhan fakulte lodného staviteľstva",
+     "note": "\"nedostali chuť\" = hrubo: dostali chúťky, strašne to chceli uchmatnúť"
     },
     {
      "id": "04b/0717#crude",
@@ -235,6 +259,16 @@
      "id": "04b/0997#crude",
      "text": "No čokoľvek, do hajzla.",
      "note": null
+    },
+    {
+     "id": "04b/1003#word_",
+     "text": "Pozri, čo si to vyviedol, ty mozog na hovno.",
+     "note": "\"ty mozog na hovno\" = hovno v hlave (hrubá nadávka)"
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Človek z toho dostane posratý závrat. Čím viac o tom premýšľate, tým väčší je ten posratý závrat.",
+     "note": "\"posratý závrat\" = hrubé vymyslené slovo: taký zmätok, že sa človeku točí hlava"
     }
    ]
   },
@@ -288,6 +322,11 @@
     {
      "id": "03/0502#natur",
      "text": "Argh. Až mi z toho naskočila husia koža.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
      "note": null
     },
     {
@@ -358,5 +397,5 @@
    ]
   }
  ],
- "first": 20
+ "first": 16
 }

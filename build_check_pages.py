@@ -183,16 +183,28 @@ def load_v2(path: Path, d: dict, slug: str | None) -> dict:
         for key in ("q", "labels", "note_label", "note_on", "rows"):
             if key not in g:
                 raise DataError(f"{where}: missing '{key}'")
-        if (not isinstance(g["labels"], list) or len(g["labels"]) != 3
+        # 3 answers (ok/change/unsure), or 2 (ok/change: the sayings, author 2026-11-25)
+        if (not isinstance(g["labels"], list) or len(g["labels"]) not in (2, 3)
                 or not all(isinstance(x, str) and x.strip() for x in g["labels"])):
-            raise DataError(f"{where}: labels must be 3 answers")
-        if g["note_on"] not in ("ok", "change", "unsure"):
-            raise DataError(f"{where}: note_on must be ok, change or unsure")
+            raise DataError(f"{where}: labels must be 2 or 3 answers")
+        # values: the verdict each answer sends, in label order (default ok, change, unsure);
+        # the images list sends ok / unsure / change (author 2026-11-25)
+        values = g.get("values") or ["ok", "change", "unsure"][:len(g["labels"])]
+        if (not isinstance(values, list) or len(values) != len(g["labels"])
+                or len(set(values)) != len(values) or not set(values) <= {"ok", "change", "unsure"}):
+            raise DataError(f"{where}: values must be one of ok/change/unsure per answer")
+        if g["note_on"] not in values:
+            raise DataError(f"{where}: note_on must be one of the answers' values")
+        for key in ("hint", "intro"):
+            if key in g and (not isinstance(g[key], str) or not g[key].strip()):
+                raise DataError(f"{where}: {key} must be a text")
         if not g["rows"]:
             raise DataError(f"{where}: no rows")
         for r in g["rows"]:
             if not isinstance(r.get("text"), str) or not r["text"].strip():
                 raise DataError(f"{where}: a row has no text")
+            if g.get("hint") and not (isinstance(r.get("note"), str) and r["note"].strip()):
+                raise DataError(f"{where}: row {r.get('id')!r} has no text behind the hint")
             if not ID_RE.match(str(r.get("id", ""))) or r["id"] in seen:
                 raise DataError(f"{where}: bad or duplicate id {r.get('id')!r}")
             seen.add(r["id"])
@@ -207,6 +219,9 @@ def _v2_row(k: int, r: dict, g: dict, d: dict) -> str:
     e = lambda s: html.escape(s, quote=False)  # noqa: E731
     st, lang, dir_ = d["strings"], d["lang"], d["dir"]
     note = f'\n      <p class="nc-note">{e(r["note"])}</p>' if r.get("note") else ""
+    if g.get("hint"):   # the note is the answer to a guess: shown only when the reader asks
+        note = (f'\n      <details class="nc-hint"><summary>{e(g["hint"])}</summary>'
+                f'<p>{e(r["note"])}</p></details>')
     after = ""
     if g.get("after"):
         after = ('\n      <ul class="nc-after">' + "".join(f"<li>{e(x)}</li>" for x in g["after"])
@@ -215,7 +230,7 @@ def _v2_row(k: int, r: dict, g: dict, d: dict) -> str:
             after += f'\n      <p class="nc-q">{e(g["after_q"])}</p>'
     radios = "\n".join(
         f'        <label><input type="radio" name="v{k}" value="{v}"> {e(lab)}</label>'
-        for v, lab in zip(("ok", "change", "unsure"), g["labels"]))
+        for v, lab in zip(g.get("values") or ("ok", "change", "unsure"), g["labels"]))
     return f"""    <div class="nc-item" role="group" aria-labelledby="l{k}" data-id="{html.escape(r['id'], quote=True)}" data-note-on="{g['note_on']}">
       <div class="reader nc-text" lang="{lang}" dir="{dir_}"><p class="nc-line" id="l{k}">{e(r['text'])}</p></div>{note}{after}
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l{k}">
@@ -240,6 +255,8 @@ def _v2_groups(d: dict) -> str:
         else:   # a one-off question: the question is the heading
             head = (f'    <h2 class="nc-gh nc-gh-q" id="g{num}"><span class="nc-num">{num}</span> '
                     f'<span{ql}>{e(g["q"])}</span></h2>')
+        if g.get("intro"):   # a lead-in before the rows ("In the book:", decisions.md #13)
+            head += f'\n    <p class="nc-gq">{e(g["intro"])}</p>'
         rows = []
         for r in g["rows"]:
             k += 1
@@ -264,6 +281,9 @@ V2_STYLE = """<style>
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}

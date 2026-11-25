@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="zh" data-language="Chinese" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/zh/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l1">就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>叙述者在这里很紧张。每一句在中文里听起来自然吗？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l1">我双手发抖，飞快地翻着一首首抒情诗，想找出一个哈菲兹的拜特——就像那另一个女孩说那幅画的那样，越往它的深处沉下去，就越他妈的晕——好拿给尼鲁法尔看。</p></div>
+      <p class="nc-note">他重复了一个女孩形容一幅画时自创的粗话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> 正确</label>
         <label><input type="radio" name="v1" value="change"> 需要修改</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">The pole image means they were all screwed over. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="03/0663#s30" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l2">打着让孩子留在家人身边的旗号，往我们这些外地人每个人的屁股里都捅了一根棍子。</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l2">就像那个——你越琢磨这十个字，就越他妈——那个，越晕。</p></div>
+      <p class="nc-note">他差点又说出那个粗话，然后收住了</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> 正确</label>
         <label><input type="radio" name="v2" value="change"> 需要修改</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0024#s40" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l3">全营，向前进！</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l3">你，看在老天份上你听。 … 就像你朋——朋友给你看的那幅画。</p></div>
+      <p class="nc-note">他结巴了</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> 正确</label>
         <label><input type="radio" name="v3" value="change"> 需要修改</label>
@@ -187,11 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> 诗</h2>
-    <p class="nc-gq">这些是诗句。每一句作为中文诗读起来好吗？</p>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l4">我绝不会以任何代价接受所罗门的那枚印戒</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>叙述者终于向那个女孩表白了。听起来自然、真挚吗？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l4">我爱您已经三十二个月了。从远处。不让您知道。在沉默里，一个字都没说过。您也许会说这不可能——说这不可能是真的，说只是幻想、不是现实。可它是真的，我真的爱您。</p></div>
+      <p class="nc-note">在波斯语原文里，他用敬称“您”郑重地对她说话</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> 正确</label>
         <label><input type="radio" name="v4" value="change"> 需要修改</label>
@@ -202,8 +202,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0316#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l5">上帝在众天使面前揭开了祂壮美的容颜，见他们对爱一无所知；那显露的美出于护爱的妒忌，化作纯然烈焰，击中了亚当的泥土。</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>这是本书开头的几句。读起来自然、清楚吗？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l5">这里，什么也不会发生。没有什么会被纠正，也没有什么会被摧毁。不会有任何解读到来。也不会有结论。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> 正确</label>
         <label><input type="radio" name="v5" value="change"> 需要修改</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l6">是“阿塔尔哭到天明更觉甜美”那句，还是“如今他被杀得更彻底了”那句？</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l6">这是词语之线松脱的一端；这些词语曾经是声音。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> 正确</label>
         <label><input type="radio" name="v6" value="change"> 需要修改</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l7">万物之上皆可书写</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l7">就像小时候，玛曼从旧衣服上拆下毛线，我们拿起线，在屋里绕着圈走，好让毛线不至于堆积起来。</p></div>
+      <p class="nc-note">玛曼是波斯语的“母亲”，特意不译。她拆毛线时，孩子们拿着线在屋里走来走去。</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> 正确</label>
         <label><input type="radio" name="v7" value="change"> 需要修改</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l8">就用你自己的血在水上书写</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l8">现在，我解开词语之线，你把这些词拾起来，带进你自己的世界，使它们不至于堆积在这里——在我的世界里。</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> 正确</label>
         <label><input type="radio" name="v8" value="change"> 需要修改</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1271#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l9">好让那循着你的航迹而来的人</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>记忆像一颗滑了牙的螺丝一样松脱了。这个意象清楚吗？</span></h2>
+    <p class="nc-gq">书中：</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l9">自那以后，就像一颗滑牙的螺丝，那幅影像不再被束缚在我们家紧闭的门后的黑暗里</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> 正确</label>
         <label><input type="radio" name="v9" value="change"> 需要修改</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l10">久矣，爱人不曾捎来音信；不曾写下问候</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>一个男孩和几个弟弟玩当兵的游戏。他的口令听起来像真正的军队队列口令吗？</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l10">全营，向前进！</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> 正确</label>
         <label><input type="radio" name="v10" value="change"> 需要修改</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l11">我梦的灯开始闪烁</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l11">任务第一阶段开始。全营，向左转！</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> 正确</label>
         <label><input type="radio" name="v11" value="change"> 需要修改</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l12">我不抱你归来的希望</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> 诗</h2>
+    <p class="nc-gq">这些是诗和诗句：叙述者自己写的诗，以及古典波斯诗人（哈拉卡尼、哈菲兹、阿塔尔）的诗句。每一首在中文里读起来像诗吗？</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l12">我的梦曾是黑暗的 / 我什么也看不见 / 你来了 / 我梦的灯亮了 / 如今你走了 / 我梦的灯开始闪烁 / 我不抱你归来的希望 / 可若你恰巧路过 / 请再到我的梦里来 / 我想我的梦还没相信你已经走了 / 它们以为你只是走失了，而且</p></div>
+      <p class="nc-note">叙述者自己写的一首简单的诗，写给他失去的女孩</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> 正确</label>
         <label><input type="radio" name="v12" value="change"> 需要修改</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l13">可若你恰巧路过</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l13">我的梦曾是黑暗的 / 我什么也看不见 / 你来了 / 我梦的灯......我梦的灯亮......我梦的灯亮了 / 如今......如今......如今你走了......</p></div>
+      <p class="nc-note">他半睡半醒地默念这首诗；结结巴巴是有意的</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> 正确</label>
         <label><input type="radio" name="v13" value="change"> 需要修改</label>
@@ -310,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l14">我想我的梦还没相信你已经走了</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l14">万物之上皆可书写 / 唯独水上除外 / 而你若渡海 / 就用你自己的血在水上书写 / 好让那循着你的航迹而来的人 / 知道 / 恋人们与 / 醉者们与 / 被焚者们 / 曾从这里走过。</p></div>
+      <p class="nc-note">哈拉卡尼的一首古老的波斯诗，写在教室的黑板上</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> 正确</label>
         <label><input type="radio" name="v14" value="change"> 需要修改</label>
@@ -322,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l15">我梦的灯......我梦的灯亮......我梦的灯亮了</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l15">......我绝不会以任何代价接受所罗门的那枚印戒，因为不时有......的手......</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗；照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> 正确</label>
         <label><input type="radio" name="v15" value="change"> 需要修改</label>
@@ -334,13 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> 单个词语</h2>
-    <p class="nc-gq">每一行里的这个词用得对吗？它应有的意思写在下面。</p>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0268#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l16">没有任何名字适合你，该死的。</p></div>
-      <p class="nc-note">"该死的" = damn you (angry swearing)</p>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l16">我是酒馆长老的奴仆，他的恩惠......</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗；照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> 正确</label>
         <label><input type="radio" name="v16" value="change"> 需要修改</label>
@@ -351,9 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="03/0291#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l17">《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。</p></div>
-      <p class="nc-note">"加油！吉塔斯" = Chinese title of the cartoon Ganbare, Kickers!</p>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l17">是与你相聚的盼望让我活着；否则与你分离，我的每一次呼吸都是对死亡的恐惧。 … 若你来施以创伤，胜过他人来敷以良药，若你来递上毒药，胜过......</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的两句诗；第二句照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> 正确</label>
         <label><input type="radio" name="v17" value="change"> 需要修改</label>
@@ -364,9 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="03/0620#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l18">嘿，豹子法里德，给我，我占一卦。</p></div>
-      <p class="nc-note">"占一卦" = take a fortune from Hafez's book</p>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l18">......觉知哈菲兹动人心魄诗篇的，唯有这样的人；那便是懂得性情之雅韵、懂得说波斯语之人。</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗；照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> 正确</label>
         <label><input type="radio" name="v18" value="change"> 需要修改</label>
@@ -377,9 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l19">进入大街：啧啧。</p></div>
-      <p class="nc-note">"啧啧" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l19">上帝在众天使面前揭开了祂壮美的容颜，见他们对爱一无所知；那显露的美出于护爱的妒忌，化作纯然烈焰，击中了亚当的泥土。</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> 正确</label>
         <label><input type="radio" name="v19" value="change"> 需要修改</label>
@@ -390,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0146#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l20">屁脑子。什么都得我一句句给你掰开了说。</p></div>
-      <p class="nc-note">"屁脑子" = shit-for-brains, crude insult for a dimwit</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l20">忆及爱人与故土，我将哭得如此凄苦，以至要把这世上的行旅之道、远游之法......</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗；照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> 正确</label>
         <label><input type="radio" name="v20" value="change"> 需要修改</label>
@@ -403,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/0186#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l21">我宁愿跟他们当室友，也不愿跟你这种屌脑子住一块儿。</p></div>
-      <p class="nc-note">"屌脑子" = dick-brain, crude insult for an idiot</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l21">久矣，爱人不曾捎来音信；不曾写下问候……</p></div>
+      <p class="nc-note">古典波斯诗人哈菲兹的一句诗；照书中原样截断</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> 正确</label>
         <label><input type="radio" name="v21" value="change"> 需要修改</label>
@@ -416,9 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0343#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l22">那你是个屌新生。</p></div>
-      <p class="nc-note">"屌新生" = fucking freshman, casual friendly swearing</p>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l22">是“阿塔尔哭到天明更觉甜美”那句，还是“如今他被杀得更彻底了”那句？</p></div>
+      <p class="nc-note">一个朋友问是哪一首歌；两首歌都以古典波斯诗人阿塔尔诗中的一句为名</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> 正确</label>
         <label><input type="radio" name="v22" value="change"> 需要修改</label>
@@ -429,9 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0421#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l23">豹子法里德，控制好你的脾气，别使出什么要命的招数。</p></div>
-      <p class="nc-note">"要命的招数" = a rash, wild move (running joke)</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> 单个词语</h2>
+    <p class="nc-gq">每一句下面列出了句中的一个词和它应有的意思。这个词在这里用得对吗？</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0291#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l23">《加油！吉塔斯》的片尾曲还没播完，亚瑟尔的“嘟嘟”声就从巷子里传来了。</p></div>
+      <p class="nc-note">"加油！吉塔斯" = 日本动画片《Ganbare, Kickers!》的中文片名</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> 正确</label>
         <label><input type="radio" name="v23" value="change"> 需要修改</label>
@@ -442,9 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0434#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l24">要是卡米亚尔当初别耍那小子气、留在宿舍，就不会空出床来，叫这两个活宝落到咱们头上了。</p></div>
-      <p class="nc-note">"耍那小子气" = acting like a spoiled little shit</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="03/0620#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l24">嘿，豹子法里德，给我，我占一卦。</p></div>
+      <p class="nc-note">"占一卦" = 用哈菲兹的诗集占卜</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> 正确</label>
         <label><input type="radio" name="v24" value="change"> 需要修改</label>
@@ -455,9 +474,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0494#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l25">我们又会回到那该死的不连续上。</p></div>
-      <p class="nc-note">"该死的" = damned (a mild swear)</p>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l25">进入大街：啧啧。</p></div>
+      <p class="nc-note">"啧啧" = 咂舌声，意思是“不行、不准”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
         <label><input type="radio" name="v25" value="ok"> 正确</label>
         <label><input type="radio" name="v25" value="change"> 需要修改</label>
@@ -468,9 +487,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0575#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l26">看在你妈的份上，别不戴眼镜在房间里走。</p></div>
-      <p class="nc-note">"看在你妈的份上" = a plea, I beg you; not an insult</p>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0421#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l26">豹子法里德，控制好你的脾气，别使出什么要命的招数。</p></div>
+      <p class="nc-note">"要命的招数" = 鲁莽、疯狂的举动（反复出现的笑话）</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
         <label><input type="radio" name="v26" value="ok"> 正确</label>
         <label><input type="radio" name="v26" value="change"> 需要修改</label>
@@ -481,9 +500,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0589#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l27">一种叫皮尔对皮尔的电子货币，也就是点对点。</p></div>
-      <p class="nc-note">"皮尔对皮尔" = peer-to-peer, as the English term</p>
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0575#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l27">看在你妈的份上，别不戴眼镜在房间里走。</p></div>
+      <p class="nc-note">"看在你妈的份上" = 恳求：求求你了；不是骂人</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
         <label><input type="radio" name="v27" value="ok"> 正确</label>
         <label><input type="radio" name="v27" value="change"> 需要修改</label>
@@ -494,9 +513,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0723#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l28">那当初干嘛把屁股都拼烂了去考托福？</p></div>
-      <p class="nc-note">"把屁股都拼烂了" = crude: slaved away, worked very hard</p>
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0589#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l28">一种叫皮尔对皮尔的电子货币，也就是点对点。</p></div>
+      <p class="nc-note">"皮尔对皮尔" = 即英语术语 peer-to-peer（点对点）</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
         <label><input type="radio" name="v28" value="ok"> 正确</label>
         <label><input type="radio" name="v28" value="change"> 需要修改</label>
@@ -507,9 +526,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l29">被焚者们</p></div>
-      <p class="nc-note">"被焚者们" = those burned, consumed by love</p>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="06/0108#word_" data-note-on="change">
+      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l29">哎哎哎呀呀呀呀。</p></div>
+      <p class="nc-note">"哎哎哎呀呀呀呀" = 拖长声调、带着逗弄、假装心疼的“哎呀”</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
         <label><input type="radio" name="v29" value="ok"> 正确</label>
         <label><input type="radio" name="v29" value="change"> 需要修改</label>
@@ -518,45 +537,6 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n29">您会怎么说？ <span class="nc-optional">（选填）</span></label>
         <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l30">他画了这个，下面写着：这不是一只烟斗。让人他妈的晕。</p></div>
-      <p class="nc-note">"让人他妈的晕" = crude coinage: so baffled your head spins</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> 正确</label>
-        <label><input type="radio" name="v30" value="change"> 需要修改</label>
-        <label><input type="radio" name="v30" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l31">就像那另一个女孩说那幅画的那样，越往它的深处沉下去，就越他妈的晕</p></div>
-      <p class="nc-note">"越他妈的晕" = more baffled; echoes her crude coinage</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> 正确</label>
-        <label><input type="radio" name="v31" value="change"> 需要修改</label>
-        <label><input type="radio" name="v31" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="06/0108#word_" data-note-on="change">
-      <div class="reader nc-text" lang="zh" dir="ltr"><p class="nc-line" id="l32">哎哎哎呀呀呀呀。</p></div>
-      <p class="nc-note">"哎哎哎呀呀呀呀" = long, teasing, mock-tender 'aww'</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
-        <label><input type="radio" name="v32" value="ok"> 正确</label>
-        <label><input type="radio" name="v32" value="change"> 需要修改</label>
-        <label><input type="radio" name="v32" value="unsure"> 不确定</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n32">您会怎么说？ <span class="nc-optional">（选填）</span></label>
-        <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -607,4 +587,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 32 rows -->
+<!-- 29 rows -->

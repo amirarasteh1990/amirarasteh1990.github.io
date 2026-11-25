@@ -13,7 +13,6 @@
   "needs_change": "Do zmiany",
   "not_sure": "Trudno powiedzieć",
   "how_say": "Jak to ująć po Twojemu?",
-  "meaning": "Co Twoim zdaniem to znaczy?",
   "optional": "(nieobowiązkowo)",
   "your_name": "Twoje imię",
   "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He almost repeats the crude word, then stops. Is that clear?",
-   "q_lang": "en",
+   "q": "Narrator jest tu zdenerwowany. Czy każdy fragment brzmi naturalnie po polsku?",
    "labels": [
     "Dobrze",
     "Do zmiany",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1321#s12",
+     "id": "04b/1320#nerv",
+     "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.",
+     "note": "powtarza wulgarne słowo, które jakaś dziewczyna wymyśliła o pewnym obrazie"
+    },
+    {
+     "id": "04b/1321#nerv1",
      "text": "Tak jak tamto — im więcej myślisz o tych dziesięciu słowach, tym większego dostajesz gó..., no, tym bardziej ci się miesza w głowie.",
-     "note": null
+     "note": "prawie znów wypowiada wulgarne słowo, ale się powstrzymuje"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Na, na Boga, posłuchaj. … Tak jak ten obraz, który pokazywała twoja przyj-przyj-przyjaciółka.",
+     "note": "jąka się"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Narrator w końcu mówi dziewczynie, że ją kocha. Czy brzmi to naturalnie i prosto z serca?",
    "labels": [
     "Dobrze",
     "Do zmiany",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "– Kocham panią od trzydziestu dwóch miesięcy. Z daleka. Bez pani wiedzy.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "Kocham panią od trzydziestu dwóch miesięcy. Z daleka. Bez pani wiedzy. W ciszy. Bez jednego słowa. Może pani powie, że tak się nie da, że to niemożliwe, że to fantazja, a nie rzeczywistość. Ale tak się stało i naprawdę panią kocham.",
+     "note": "po persku zwraca się do niej oficjalnie, per „pani”"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "To pierwsze linijki książki. Czy czyta się je naturalnie i jasno?",
    "labels": [
     "Dobrze",
     "Do zmiany",
@@ -98,33 +104,67 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Z tej strony rozwijam nić słów, a z tamtej strony ty je zbierasz.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
-   "labels": [
-    "Dobrze",
-    "Do zmiany",
-    "Trudno powiedzieć"
-   ],
-   "note_label": "Jak to ująć po Twojemu?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04a/0024#s40",
-     "text": "– Batalion, naprzód marsz.",
+     "id": "Opening/0007#op1",
+     "text": "Tu nic się nie dzieje. Tu nic nie zostanie naprawione ani zburzone. Nie nadejdzie żadna interpretacja. Żadnych wniosków.",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
-     "text": "– Początek pierwszego etapu misji. Batalion, w lewo zwrot.",
+     "id": "Opening/0007#op2",
+     "text": "To jest wolny koniec nici ze słów, które niegdyś były dźwiękami.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Jak w dzieciństwie, gdy Maman pruła włóczkę ze starych ubrań, a my braliśmy nić i chodziliśmy po domu, żeby włóczka się nie piętrzyła.",
+     "note": "Maman to po persku „matka”; słowo celowo zostawiono bez tłumaczenia. Gdy ona pruje włóczkę, dzieci noszą nić po całym domu."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Teraz rozwijam nić słów, a ty podnieś je i zanieś do swojego świata, żeby nie piętrzyły się tu, w moim świecie.",
+     "note": null
+    }
+   ]
+  },
+  {
+   "key": "screw",
+   "title": null,
+   "q": "Wspomnienie obluzowuje się jak śruba ze zdartym gwintem. Czy ten obraz jest jasny?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "03/0675#screw",
+     "text": "Potem, niczym śruba ze zdartym gwintem, tamten obraz nie był już związany z mrokiem za zamkniętymi drzwiami naszego domu.",
+     "note": null
+    }
+   ],
+   "intro": "W książce:"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Chłopiec bawi się z małymi braćmi w wojsko. Czy jego komendy brzmią jak prawdziwa musztra wojskowa?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Batalion, naprzód marsz.",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
+     "text": "Początek pierwszego etapu misji. Batalion, w lewo zwrot.",
      "note": null
     }
    ]
@@ -132,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poezja",
-   "q": "To są wersy poezji. Czy każdy z nich dobrze brzmi jako poezja po polsku?",
+   "q": "To wiersze i wersy poezji: własny wiersz narratora oraz wersy klasycznych poetów perskich (Charakaniego, Hafeza, Attara). Czy każdy z nich brzmi po polsku jak poezja?",
    "labels": [
     "Dobrze",
     "Do zmiany",
@@ -142,81 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Za żadną cenę nie wziąłbym sygnetu Salomona, bo czasem na nim ręka...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Moje sny były ciemne / Nic nie widziałem / Przyszłaś / Światło moich snów zapaliło się / Teraz cię nie ma / Światło moich snów teraz miga / Nie mam nadziei, że wrócisz / Lecz jeśli droga przywiedzie cię blisko / przyjdź znów do moich snów / Zdaje mi się, że moje sny nie uwierzyły, że odeszłaś / Wyobrażają sobie, że zaginęłaś, i",
+     "note": "prosty wiersz samego narratora dla dziewczyny, którą stracił"
     },
     {
-     "id": "04b/0935#poetr",
-     "text": "– „Słodziej Attarowi płakać aż do świtu” czy „teraz bardziej zabity”?",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Moje sny były ciemne / Nic nie widziałem / Przyszłaś / Światło moich snów ... światło moich snów zapaliło ... światło moich snów zapaliło się / Teraz ... teraz ... teraz cię nie ma ...",
+     "note": "powtarza go sobie w półśnie; potknięcia są celowe"
     },
     {
-     "id": "04b/1268#poetr",
-     "text": "prócz wody",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "Na wszystkim można pisać / prócz wody / a jeśli przeprawisz się przez morze / pisz na wodzie własną krwią / aby ten, kto pójdzie twoim śladem / wiedział, że / zakochani i / pijani i / spaleni / przeszli tędy.",
+     "note": "stary perski wiersz Charakaniego, zapisany na tablicy w klasie"
     },
     {
-     "id": "04b/1269#poetr",
-     "text": "a jeśli przeprawisz się przez morze",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Za żadną cenę nie wziąłbym sygnetu Salomona, bo czasem na nim ręka...",
+     "note": "wers Hafeza, klasycznego poety perskiego; urwany jak w książce"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "pisz na wodzie własną krwią",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Jestem sługą Starszego Tawerny, którego łaska...",
+     "note": "wers Hafeza, klasycznego poety perskiego; urwany jak w książce"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "przeszli tędy.",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Nadzieja złączenia z tobą przy życiu mnie trzyma; inaczej każdy mój oddech w rozłące z tobą jest trwogą zatraty. … Gdy ty zadasz ranę, lepsza niż cudzy balsam, a gdy ty truciznę dasz, lepsza niż...",
+     "note": "dwa wersy Hafeza, klasycznego poety perskiego; drugi urwany jak w książce"
     },
     {
-     "id": "04b/1301#poetr",
-     "text": "Czytała: „Dawno już luby nie przysłał wieści; nie skreślił pozdrowienia...”, a mnie zebrało się na śmiech.",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Świadom czarującej poezji Hafeza jest tylko ten, kto zna wdzięk natury i mowę perską.",
+     "note": "wers Hafeza, klasycznego poety perskiego; urwany jak w książce"
     },
     {
-     "id": "04b/1392#poetr",
-     "text": "Światło moich snów teraz miga",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Bóg odsłonił przed aniołami swe wspaniałe piękno i zobaczył, że nic nie wiedzą o miłości; z zazdrosnego żaru owo objawione piękno przemieniło się w czysty ogień i uderzyło w glinę Adama.",
+     "note": "wers Hafeza, klasycznego poety perskiego"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Nie mam nadziei, że wrócisz",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "Za ukochaną i ojczyzną tak gorzko zapłaczę, że ze świata i drogę, i obyczaj podróży...",
+     "note": "wers Hafeza, klasycznego poety perskiego; urwany jak w książce"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "Lecz jeśli droga przywiedzie cię blisko",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Dawno już luby nie przysłał wieści; nie skreślił pozdrowienia...",
+     "note": "wers Hafeza, klasycznego poety perskiego; urwany jak w książce"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "przyjdź znów do moich snów",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Zdaje mi się, że moje sny nie uwierzyły, że odeszłaś",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Światło moich snów ... światło moich snów zapaliło ... światło moich snów zapaliło się",
-     "note": null
-    },
-    {
-     "id": "02/0006#poetr",
-     "text": "Teraz ... teraz ... teraz cię nie ma ...",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "„Słodziej Attarowi płakać aż do świtu” czy „teraz bardziej zabity”?",
+     "note": "przyjaciel pyta, o którą z dwóch piosenek chodzi; każdą nazywa się wersem z wiersza Attara, klasycznego poety perskiego"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Pojedyncze słowa",
-   "q": "Czy słowo w każdym fragmencie jest właściwe? Pod spodem podano, co ma znaczyć.",
+   "q": "Pod każdym fragmentem podano jedno jego słowo i to, co ma ono znaczyć. Czy to tutaj właściwe słowo?",
    "labels": [
     "Dobrze",
     "Do zmiany",
@@ -226,44 +251,24 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0268#word_",
-     "text": "– Żadne imię ci nie pasuje, do licha.",
-     "note": "\"do licha\" = damn you (angry swearing)"
-    },
-    {
      "id": "03/0278#word_",
      "text": "Można powiedzieć, że zdobyli uczelnię. Karrubi to miłość, naprawdę.",
-     "note": "\"Karrubi to miłość\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karrubi to miłość\" = Karrubi jest super (entuzjastyczny młodzieżowy slang)"
     },
     {
      "id": "04a/0038#word_",
      "text": "– Wejście na główną ulicę: tsk-tsk.",
-     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+     "note": "\"tsk-tsk\" = cmoknięcie językiem znaczące „nie, nie wolno”"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Ale ty jesteś sneaky.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "spaleni",
-     "note": "\"spaleni\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
-     "note": "\"gównozamęt\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Drżącymi rękami przeglądałem szybko ghazale, żeby znaleźć bejt Hafeza, który — podobnie jak tamten obraz, o którym mówiła tamta druga dziewczyna — przyprawiałby nas o coraz większy gównozamęt, im głębiej byśmy się w niego zanurzali.",
-     "note": "\"gównozamęt\" = more baffled; echoes her crude coinage"
+     "note": "\"sneaky\" = angielskie „sneaky”, wtrącone żartobliwie"
     },
     {
      "id": "02/0001#word_",
      "text": "Mam światło w sercu: jutro, gdy otworzę oczy, wszystko będzie skończone i ciemność powróci do moich snów.",
-     "note": "\"Mam światło w sercu\" = I feel hopeful, sure of tomorrow"
+     "note": "\"Mam światło w sercu\" = jestem pełen nadziei, pewien jutra"
     }
    ]
   }

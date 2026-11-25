@@ -13,7 +13,6 @@
   "needs_change": "Bør endres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sagt det?",
-  "meaning": "Hva tror du det betyr?",
   "optional": "(valgfritt)",
   "your_name": "Navnet ditt",
   "thanks_tick": "Før opp navnet mitt på takkesiden",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He almost repeats the crude word, then stops. Is that clear?",
-   "q_lang": "en",
+   "q": "Fortelleren er nervøs her. Høres hver linje naturlig ut på norsk?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1321#s12",
+     "id": "04b/1320#nerv",
+     "text": "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt",
+     "note": "han gjentar et grovt ord som en jente fant på om et maleri"
+    },
+    {
+     "id": "04b/1321#nerv1",
      "text": "Som det – jo mer du tenker over disse ti ordene, desto mer dri– altså, desto svimlere blir du.",
-     "note": null
+     "note": "han sier nesten det grove ordet igjen, men stopper seg selv"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "For-for Guds skyld, hør etter. … Det er som det maleriet ve-ve-venninnen din viste deg.",
+     "note": "han stammer"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "He addresses her with the polite 'you'. Does that fit here?",
-   "q_lang": "en",
+   "q": "Fortelleren sier endelig til jenta at han elsker henne. Høres det naturlig og inderlig ut?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -78,17 +85,16 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1314#s17",
-     "text": "I trettito måneder har jeg elsket Dem. Fra avstand.",
-     "note": null
+     "id": "04b/1314#conf",
+     "text": "I trettito måneder har jeg elsket Dem. Fra avstand. Uten at De visste det. I stillhet, uten et eneste ord. De sier kanskje at det er umulig – at det ikke kan være virkelig, at det er ren fantasi. Men det er virkelig, og jeg elsker Dem virkelig.",
+     "note": "på persisk snakker han formelt til henne, med høflighetsformen «De»"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "opening",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Dette er bokens første linjer. Leses de naturlig og tydelig?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -98,17 +104,31 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
+     "id": "Opening/0007#op1",
+     "text": "Her skjer ingenting. Ingenting her skal rettes opp eller rives ned. Ingen tolkning er på vei. Ingen konklusjon.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Dette er den løse enden av en tråd av ord som en gang var lyder.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
      "text": "Som i barndommen, da Maman pleide å trevle opp garnet fra gamle klær, og vi tok tråden og gikk rundt inne i huset slik at garnet ikke hopet seg opp.",
+     "note": "Maman er persisk for «mor» og er med vilje latt uoversatt. Barna bærer tråden gjennom huset mens hun trevler opp garnet."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Nå vikler jeg ut ordenes tråd, og du tar dem og bærer dem inn i din egen verden, slik at de ikke hoper seg opp her, i min verden.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "The pole image means they were all screwed over. Is that clear?",
-   "q_lang": "en",
+   "q": "Minnet løsner som en skrue med utslitte gjenger. Er bildet tydelig?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -118,17 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0663#s30",
-     "text": "Under påskudd av å ville holde barna nær familiene sine stakk de kjeppen opp i ræva på oss fra provinsene.",
+     "id": "03/0675#screw",
+     "text": "Etter det var det bildet ikke lenger bundet til mørket bak den lukkede døren til huset vårt, som en skrue med utslitte gjenger.",
      "note": null
     }
-   ]
+   ],
+   "intro": "I boken:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
+   "q": "En gutt leker soldat med småbrødrene sine. Høres kommandoene hans ut som ekte militær eksersis?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -138,33 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04a/0024#s40",
+     "id": "04a/0024#drill",
      "text": "Bataljon, fremad marsj!",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
+     "id": "04a/0026#drill",
      "text": "Oppdragets første etappe begynner. Bataljon, venstre om!",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Is it clear that six boys ride on each bicycle?",
-   "q_lang": "en",
-   "labels": [
-    "Riktig",
-    "Bør endres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sagt det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/1260#s50",
-     "text": "To sto på bakhjulets bolter, én på bagasjebæreren, én på styret, og én satt på framrøret. Med ham som trampet, ble det seks per sykkel.",
      "note": null
     }
    ]
@@ -172,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poesi",
-   "q": "Dette er verselinjer. Leses hver av dem godt som poesi på norsk?",
+   "q": "Dette er dikt og verselinjer: fortellerens eget dikt og linjer av klassiske persiske diktere (Kharaqani, Hafez, Attar). Leses hver av dem som poesi på norsk?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -182,61 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "Jeg ville ikke byttet den ringen av Salomo mot noe i verden, på hvilken noen ganger hånden av ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Drømmene mine var mørke / Jeg kunne ingenting se / Du kom / Lyset i drømmene mine ble tent / Nå er du borte / Lyset i drømmene mine blinker nå / Jeg nærer intet håp om din tilbakekomst / Men hvis veien din fører deg forbi / kom inn i drømmene mine igjen / Jeg tror ikke drømmene mine tror at du er borte / de tror du har gått deg bort og",
+     "note": "fortellerens eget enkle dikt til jenta han mistet"
     },
     {
-     "id": "04b/0935#poetr",
+     "id": "02/0002#poem",
+     "text": "Drømmene mine var mørke / Jeg kunne ingenting se / Du kom / Lyset i drømmene mine ... lyset i drømmene mine ble ... lyset i drømmene mine ble tent / Nå ... nå ... nå er du borte ...",
+     "note": "han øver på det i halvsøvne; at han snubler i ordene, er med vilje"
+    },
+    {
+     "id": "04b/1267#poem",
+     "text": "På alt kan en skrive / unntatt på vann / og hvis du krysser havet / skriv på vannet med ditt eget blod / så at den som følger i ditt kjølvann / vil vite at / elskende og / berusede og / brente / har vandret her.",
+     "note": "et gammelt persisk dikt av Kharaqani, skrevet på tavla i timen"
+    },
+    {
+     "id": "03/0244#poem",
+     "text": "... Jeg ville ikke byttet den ringen av Salomo mot noe i verden, på hvilken noen ganger hånden av ...",
+     "note": "en linje av Hafez, en klassisk persisk dikter; avbrutt som i boken"
+    },
+    {
+     "id": "03/0622#poem",
+     "text": "Jeg er tjener hos tavernens eldste, hvis nåde ...",
+     "note": "en linje av Hafez, en klassisk persisk dikter; avbrutt som i boken"
+    },
+    {
+     "id": "04b/0251#poem",
+     "text": "Håpet om forening med deg holder meg i live; ellers ville jeg, skilt fra deg, frykte å forgå ved hvert åndedrag. … Sårer du, er det bedre enn en annens balsam, og gir du gift, bedre enn ...",
+     "note": "to linjer av Hafez, en klassisk persisk dikter; den andre er avbrutt som i boken"
+    },
+    {
+     "id": "04b/0271#poem",
+     "text": "...Bare den er klar over Hafez' bedårende diktning som kjenner sinnets ynde og kan tale persisk.",
+     "note": "en linje av Hafez, en klassisk persisk dikter; avbrutt som i boken"
+    },
+    {
+     "id": "04b/0316#poem",
+     "text": "Gud åpenbarte sin strålende skjønnhet for englene og så at de ikke visste noe om kjærlighet; av denne nidkjærheten ble det til ren ild og slo ned i Adams leire.",
+     "note": "en linje av Hafez, en klassisk persisk dikter"
+    },
+    {
+     "id": "04b/0742#poem",
+     "text": "når jeg minnes den elskede og hjemstavnen, vil jeg gråte så bittert at fra verden veiene og skikkene ved reisen ...",
+     "note": "en linje av Hafez, en klassisk persisk dikter; avbrutt som i boken"
+    },
+    {
+     "id": "04b/1301#poem",
+     "text": "Lenge er det siden den elskede sendte bud; ingen hilsen skrevet ...",
+     "note": "en linje av Hafez, en klassisk persisk dikter; avbrutt som i boken"
+    },
+    {
+     "id": "04b/0935#poem",
      "text": "«For Attar er det søtere å gråte til daggry» eller «nå er han enda mer slagen»?",
-     "note": null
-    },
-    {
-     "id": "04b/1270#poetr",
-     "text": "skriv på vannet med ditt eget blod",
-     "note": null
-    },
-    {
-     "id": "04b/1271#poetr",
-     "text": "så at den som følger i ditt kjølvann",
-     "note": null
-    },
-    {
-     "id": "04b/1276#poetr",
-     "text": "har vandret her.",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "Lyset i drømmene mine blinker nå",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "Jeg nærer intet håp om din tilbakekomst",
-     "note": null
-    },
-    {
-     "id": "04b/1395#poetr",
-     "text": "kom inn i drømmene mine igjen",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Jeg tror ikke drømmene mine tror at du er borte",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Lyset i drømmene mine ... lyset i drømmene mine ble ... lyset i drømmene mine ble tent",
-     "note": null
+     "note": "en venn spør hvilken av to sanger det er; hver er oppkalt etter en linje fra et dikt av Attar, en klassisk persisk dikter"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Enkeltord",
-   "q": "Er ordet i hver linje det riktige? Hva det skal bety, står under linjen.",
+   "q": "Under hver linje står ett ord fra den og hva det skal bety. Er det riktig ord her?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -248,22 +253,7 @@
     {
      "id": "03/0278#word_",
      "text": "På en måte kan man si at de erobret universitetet. Karroubi er kjærlighet, virkelig.",
-     "note": "\"Karroubi er kjærlighet\" = Karroubi is great (excited youth slang)"
-    },
-    {
-     "id": "04b/0186#word_",
-     "text": "Jeg ville heller ha delt rom med dem enn med en pikkhjerne som deg.",
-     "note": "\"pikkhjerne\" = dick-brain, crude insult for an idiot"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
-     "note": "\"drittsvimmel\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Og med skjelvende hender bladde jeg fort gjennom ghazalene og lette etter det beitet fra Hafez som, i likhet med maleriet, ville gjøre oss mer drittsvimle jo dypere vi sank ned i det, slik den andre jenta hadde sagt – så jeg kunne vise det til Niloofar.",
-     "note": "\"drittsvimle\" = more baffled; echoes her crude coinage"
+     "note": "\"Karroubi er kjærlighet\" = Karroubi er rå (begeistret ungdomsslang)"
     }
    ]
   }

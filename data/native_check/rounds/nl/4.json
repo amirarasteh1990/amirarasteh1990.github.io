@@ -13,7 +13,6 @@
   "needs_change": "Moet anders",
   "not_sure": "Niet zeker",
   "how_say": "Hoe zou jij het zeggen?",
-  "meaning": "Wat denk je dat het betekent?",
   "optional": "(optioneel)",
   "your_name": "Je naam",
   "thanks_tick": "Zet mijn naam op de bedankpagina",
@@ -92,9 +91,9 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Dit lokaliseringsbeleid heeft ons genaaid. Ze zeggen dat het is om kinderen dicht bij hun familie te houden, maar ze hebben ieder van ons uit de provincie een stok in zijn reet geduwd.",
-     "note": null
+     "id": "04b/0146#word_",
+     "text": "– Strontkop. Je laat me mijn mond opendoen en het zeggen.",
+     "note": "\"Strontkop\" = stront in je kop, grof scheldwoord voor een domkop"
     },
     {
      "id": "04b/0150#crude",
@@ -112,9 +111,19 @@
      "note": null
     },
     {
+     "id": "04b/0186#word_",
+     "text": "– Ik had nog liever een kamer gedeeld met hen dan met een lulbrein als jij.",
+     "note": "\"lulbrein\" = lulhoofd, grof scheldwoord voor een idioot"
+    },
+    {
      "id": "04b/0226#crude",
      "text": "– ... telkens als ik kwam voor de colleges en het werk van die tweede kloteopleiding, zag ik ze ruziën.",
      "note": null
+    },
+    {
+     "id": "04b/0343#word_",
+     "text": "– Dus je bent een klote-eerstejaars.",
+     "note": "\"klote-eerstejaars\" = fucking eerstejaars, losjes en vriendschappelijk gevloek"
     },
     {
      "id": "04b/0351#crude",
@@ -127,19 +136,14 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "– Je had niet eens de kop ervan kunnen eten. Maar verdomme, wat waren die zoetigheden lekker. Ananas.",
-     "note": null
-    },
-    {
      "id": "04b/0434#crude",
      "text": "– Als Kamyar zich niet als zo'n verwaand klootzakje had gedragen en in de slaapzaal was gebleven, was er geen bed vrijgekomen en waren deze wonderlijke wezens ons niet ten deel gevallen.",
      "note": null
     },
     {
      "id": "04b/0464#crude",
-     "text": "Was ik het, dan bleef het niet bij een nul; ik zou je de kop van mijn pik laten opeten en je daarna met een schop onder je kont van de universiteit trappen.",
-     "note": null
+     "text": "Ben je soms Heisenberg of Einstein, dat je verwacht dat ze je een twintig geven en je verlichtende theorieën eren? Was ik het, dan bleef het niet bij een nul; ik zou je de kop van mijn pik laten opeten en je daarna met een schop onder je kont van de universiteit trappen. Voor de zekerheid zou ik je trouwens ook een tijdje in een zwart gat gooien zodat je ziekte niemand zou besmetten.",
+     "note": "in Iran gaan de cijfers tot 20"
     },
     {
      "id": "04b/0486#crude",
@@ -148,8 +152,18 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "– Geen discussies vandaag in de kamer, ik heb een twaalf voor mijn lichamelijke opvoeding gehaald, mijn zenuwen zijn naar de klote en ik scheld jullie verrot.",
-     "note": null
+     "text": "Geen discussies vandaag in de kamer, ik heb een twaalf voor mijn lichamelijke opvoeding gehaald, mijn zenuwen zijn naar de klote en ik scheld jullie verrot.",
+     "note": "in Iran gaan de cijfers tot 20"
+    },
+    {
+     "id": "04b/0717#word_",
+     "text": "– Ik zeg je, Oudje-jan, maar onder ons gezegd, je bent door stomme kutmazzel in het buitenland beland.",
+     "note": "\"stomme kutmazzel\" = een kuttoevalstreffer, puur stom geluk"
+    },
+    {
+     "id": "04b/0723#word_",
+     "text": "– Nou, als jij niet het type bent dat toelating aanvraagt en vertrekt, waarom heb je dan je kont kapotgewerkt om het TOEFL-examen af te leggen?",
+     "note": "\"je kont kapotgewerkt\" = grof: je uit de naad gewerkt, keihard gewerkt"
     },
     {
      "id": "04b/0844#crude",
@@ -167,6 +181,11 @@
      "note": null
     },
     {
+     "id": "04b/1003#word_",
+     "text": "– Kijk wat een puinhoop je hebt aangericht, hersenschijter.",
+     "note": "\"hersenschijter\" = stront in je kop (grof scheldwoord)"
+    },
+    {
      "id": "04b/1017#crude",
      "text": "– Ik ben mijn bril aan het zoeken, klootzak. Zeg tegen die Farid dat hij zijn glas niet telkens voor mijn voeten zet.",
      "note": null
@@ -175,6 +194,11 @@
      "id": "04b/1300#crude",
      "text": "– Heb je met die uitspraak nu op ons gescheten of op Mister de krulharige Schrödinger?",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Je wordt er schijttureluurs van. Hoe meer je erover nadenkt, hoe schijttureluurser je wordt.",
+     "note": "\"schijttureluurs\" = grof verzonnen woord: zo verbijsterd dat je hoofd tolt"
     }
    ]
   },
@@ -228,6 +252,11 @@
     {
      "id": "03/0517#natur",
      "text": "Het ene moment haalt hij moorddadige capriolen uit; het volgende zegt hij: ‘Oei, bloed. Daar krijg ik de kriebels van.’",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Aan de Haft-Seen-tafel, toen het nieuwe jaar begon en ik het gedicht voor mijn moeder las, werd Maman onrustig in plaats van blij.",
      "note": null
     },
     {
@@ -333,5 +362,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 16
 }

@@ -13,7 +13,6 @@
   "needs_change": "Değişmeli",
   "not_sure": "Emin değilim",
   "how_say": "Siz nasıl söylerdiniz?",
-  "meaning": "Sizce ne anlama geliyor?",
   "optional": "(isteğe bağlı)",
   "your_name": "Adınız",
   "thanks_tick": "Adım Teşekkürler sayfasında yer alsın",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "Anlatıcı burada gergin. Her satır Türkçede doğal geliyor mu?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
-     "text": "Bu taraftan sözcüklerin ipini çözüyorum, öte taraftan sen sözcükleri topluyorsun.",
-     "note": null
+     "id": "04b/1320#nerv",
+     "text": "Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.",
+     "note": "bir kızın bir resim için uydurduğu kaba bir sözü tekrarlıyor"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Onun gibi, bu on kelimeyi ne kadar çok düşünürsen o kadar bo-, şey, sersemliyorsun.",
+     "note": "kaba sözü neredeyse yine söyleyecekken duruyor"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Sen, Allah aşkına dinle. … Hani şu arkadaşının gösterdiği resim gibi.",
+     "note": "kekeliyor"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "Is it clear the children carry the yarn around the house?",
-   "q_lang": "en",
+   "q": "Anlatıcı sonunda kıza onu sevdiğini söylüyor. Doğal ve içten geliyor mu?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -78,17 +85,50 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s19",
+     "id": "04b/1314#conf",
+     "text": "Otuz iki aydır sizi seviyorum. Uzaktan. Siz bilmeden. Sessizce. Tek söz etmeden. Belki böyle olmaz, mümkün değil, hayalîdir ve gerçek değil dersiniz. Ama oldu ve sizi gerçekten seviyorum.",
+     "note": "Farsçada ona resmî biçimde, kibar “siz” ile hitap ediyor"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Bunlar kitabın ilk satırları. Doğal ve anlaşılır okunuyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Burada hiçbir şey olmaz. Burada hiçbir şey düzeltilmeyecek ya da yıkılmayacak. Hiçbir yorum gelmeyecek. Hiçbir sonuç.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Bu, bir zamanlar ses olan sözcüklerden oluşan bir ipin boşta kalan ucu.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
      "text": "Tıpkı çocukluğumuzda, Maman'ın eski giysilerin örgü ipliğini söktüğü, bizim de ipliği alıp üst üste yığılmasın diye evin içinde dolaştığımız gibi.",
+     "note": "Maman, Farsçada “anne” demektir; bilerek çevrilmeden bırakıldı. O ipliği söktükçe çocuklar ipliği evin içinde dolaştırıyor."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Şimdi sözcüklerin ipini çözüyorum, sen de sözcükleri alıp kendi dünyana götür; burada, benim dünyamda üst üste yığılmasınlar.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
+   "q": "Anı, yivleri sıyrılmış bir vida gibi yerinden çıkıyor. İmge anlaşılır mı?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -98,7 +138,32 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04a/0026#s40",
+     "id": "03/0675#screw",
+     "text": "O günden sonra, yivleri sıyrılmış bir vida gibi, o görüntü artık evimizin kapalı kapısının ardındaki karanlığa bağlı değildi",
+     "note": null
+    }
+   ],
+   "intro": "Kitapta:"
+  },
+  {
+   "key": "drill",
+   "title": null,
+   "q": "Bir çocuk küçük kardeşleriyle askercilik oynuyor. Komutları gerçek askerî talim komutları gibi geliyor mu?",
+   "labels": [
+    "Doğru",
+    "Değişmeli",
+    "Emin değilim"
+   ],
+   "note_label": "Siz nasıl söylerdiniz?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04a/0024#drill",
+     "text": "Tabur, ileri marş!",
+     "note": null
+    },
+    {
+     "id": "04a/0026#drill",
      "text": "Görevin birinci aşaması başlıyor. Tabur, sola dön!",
      "note": null
     }
@@ -107,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Şiir",
-   "q": "Bunlar şiir dizeleri. Her biri Türkçede şiir olarak iyi okunuyor mu?",
+   "q": "Bunlar şiirler ve şiir dizeleri: anlatıcının kendi şiiri ve klasik Fars şairlerinden (Harakani, Hafız, Attar) dizeler. Her biri Türkçede şiir gibi okunuyor mu?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -117,86 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "Süleyman'ın o mührünü hiçbir bedel karşılığında almam; çünkü zaman zaman üzerinde bir el...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Rüyalarım karanlıktı / Hiçbir şey göremiyordum / Sen geldin / Rüyalarımın lambası yandı / Şimdi gittin / Rüyalarımın lambası şimdi göz kırpıyor / Dönüşünün umudunu taşımıyorum / Ama yolun düşerse / yine rüyalarıma gel / Sanırım rüyalarım gittiğine inanmamışlar / kaybolduğunu sanıyorlar ve",
+     "note": "anlatıcının kaybettiği kıza yazdığı kendi sade şiiri"
     },
     {
-     "id": "04b/0935#poetr",
+     "id": "02/0002#poem",
+     "text": "Rüyalarım karanlıktı / Hiçbir şey göremiyordum / Sen geldin / Rüyalarımın lambası ... rüyalarımın lambası yan... rüyalarımın lambası yandı / Şimdi ... şimdi ... şimdi gittin ...",
+     "note": "yarı uykulu hâlde şiiri prova ediyor; takılmalar bilerek yapılmış"
+    },
+    {
+     "id": "04b/1267#poem",
+     "text": "Her şeyin üstüne yazılabilir / suyun üstü hariç / ve denizi geçersen / suyun üstüne kendi kanınla yaz / ki senin ardından gelen / bilsin ki / âşıklar ve / sarhoşlar ve / yananlar / bu yoldan geçmiş.",
+     "note": "Harakani'nin eski bir Fars şiiri; sınıftaki tahtaya yazılmış"
+    },
+    {
+     "id": "03/0244#poem",
+     "text": "... Süleyman'ın o mührünü hiçbir bedel karşılığında almam; çünkü zaman zaman üzerinde bir el...",
+     "note": "klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "03/0622#poem",
+     "text": "Tavernanın Ulu Yaşlısı'nın kölesiyim, lütfu...",
+     "note": "klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "04b/0251#poem",
+     "text": "Sana kavuşma umudu beni hayatta tutuyor; yoksa senden ayrı her nefesim, yok olma korkusu olurdu. … Yarayı sen vurursan, başkasının merheminden iyidir, zehri de sen verirsen ...",
+     "note": "klasik Fars şairi Hafız'dan iki dize; ikincisi kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "04b/0271#poem",
+     "text": "...Hafız'ın gönül çelen şiirinden ancak şiirsel zarafeti bilen ve Farsça konuşabilen kimse âgâhtır.",
+     "note": "klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "04b/0316#poem",
+     "text": "Tanrı, kendi görkemli güzelliğini meleklerin önünde perdesizce gösterdi ve onların aşktan hiçbir şey bilmediğini gördü; o kıskanç gayretten bu tecelli saf ateşe dönüp Âdem'in balçığına vurdu.",
+     "note": "klasik Fars şairi Hafız'dan bir dize"
+    },
+    {
+     "id": "04b/0742#poem",
+     "text": "Yâri ve diyarı anarak öyle ağlayayım ki, dünyadan yolculuğun yolunu yordamını ...",
+     "note": "klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "04b/1301#poem",
+     "text": "Çoktandır yâr bir haber göndermedi, ne bir selam yazdı...",
+     "note": "klasik Fars şairi Hafız'dan bir dize; kitaptaki gibi yarıda kesilmiş"
+    },
+    {
+     "id": "04b/0935#poem",
      "text": "“Attar için şafağa dek ağlamak daha hoştur” mu, yoksa “şimdi daha da öldürüldü” mü?",
-     "note": null
-    },
-    {
-     "id": "04b/1267#poetr",
-     "text": "Her şeyin üstüne yazılabilir",
-     "note": null
-    },
-    {
-     "id": "04b/1268#poetr",
-     "text": "suyun üstü hariç",
-     "note": null
-    },
-    {
-     "id": "04b/1271#poetr",
-     "text": "ki senin ardından gelen",
-     "note": null
-    },
-    {
-     "id": "04b/1276#poetr",
-     "text": "bu yoldan geçmiş.",
-     "note": null
-    },
-    {
-     "id": "04b/1301#poetr",
-     "text": "Okudu: “Çoktandır yâr bir haber göndermedi, ne bir selam yazdı...” ve gülmem geldi.",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "Rüyalarımın lambası şimdi göz kırpıyor",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "Dönüşünün umudunu taşımıyorum",
-     "note": null
-    },
-    {
-     "id": "04b/1394#poetr",
-     "text": "Ama yolun düşerse",
-     "note": null
-    },
-    {
-     "id": "04b/1395#poetr",
-     "text": "yine rüyalarıma gel",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Sanırım rüyalarım gittiğine inanmamışlar",
-     "note": null
-    },
-    {
-     "id": "02/0002#poetr",
-     "text": "Rüyalarım karanlıktı",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "Rüyalarımın lambası ... rüyalarımın lambası yan... rüyalarımın lambası yandı",
-     "note": null
-    },
-    {
-     "id": "02/0006#poetr",
-     "text": "Şimdi ... şimdi ... şimdi gittin ...",
-     "note": null
+     "note": "bir arkadaş iki şarkıdan hangisi olduğunu soruyor; her biri, klasik Fars şairi Attar'ın bir şiirinden bir dizeyle anılıyor"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Tek kelimeler",
-   "q": "Her satırdaki kelime doğru kelime mi? Ne anlama gelmesi gerektiği altında yazıyor.",
+   "q": "Her satırın altında o satırdan bir kelime ve ne anlama gelmesi gerektiği yazıyor. Burada doğru kelime mi?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -208,32 +253,17 @@
     {
      "id": "03/0590#word_",
      "text": "Şiir gecesi planı çökünce Maman'ın namaz çarşafı aklıma geldi.",
-     "note": "\"namaz çarşafı\" = Maman's full-length prayer chador"
+     "note": "\"namaz çarşafı\" = Maman'ın boydan boya namaz çarşafı"
     },
     {
      "id": "04a/0038#word_",
      "text": "Ana caddeye girmek: cık cık.",
-     "note": "\"cık cık\" = tongue click meaning no, forbidden"
+     "note": "\"cık cık\" = dil şaklatma (cıklama): hayır, yasak"
     },
     {
      "id": "04b/0784#word_",
      "text": "Çok sneaky'sin.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "yananlar",
-     "note": "\"yananlar\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "İnsan bok sersemi oluyor. Ne kadar çok düşünürsen o kadar bok sersemi oluyorsun.",
-     "note": "\"bok sersemi\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Ve titreyen ellerle hızlı hızlı gazellere bakıyordum ki o öteki kızın deyişiyle, tıpkı o resim gibi, derinliğine ne kadar dalarsak o kadar bok sersemi olduğumuz Hafız'dan bir beit bulup Niloofar'a göstereyim.",
-     "note": "\"bok sersemi\" = more baffled; echoes her crude coinage"
+     "note": "\"sneaky\" = İngilizce sneaky (“sinsi, kurnaz”), şakayla araya sıkıştırılmış"
     }
    ]
   }

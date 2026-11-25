@@ -13,7 +13,6 @@
   "needs_change": "Needs change",
   "not_sure": "Not sure",
   "how_say": "How would you say it?",
-  "meaning": "What do you think it means?",
   "optional": "(optional)",
   "your_name": "Your name",
   "thanks_tick": "List my name on the Thanks page",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Persian sayings",
-   "q": "Some Persian sayings and images are translated word for word. Does each one give you some sense of its meaning, or does it mean nothing to you?",
+   "q": "These Persian sayings are translated word for word. Try to guess each one first, then show its meaning.",
    "labels": [
-    "I can guess it",
-    "I can't",
-    "Not sure"
+    "I guessed it without the meaning",
+    "I understood it with the meaning",
+    "Even with the meaning, I can't connect it"
    ],
-   "note_label": "What do you think it means?",
-   "note_on": "ok",
+   "note_label": "What makes it unclear?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Rain doesn't fall upward from the earth.",
-     "note": null
+     "note": "Parents sacrifice for their children, not children for their parents."
     },
     {
      "id": "01/0073#img",
      "text": "A good year is known from its spring.",
-     "note": null
+     "note": "You can tell how a year will go from how it starts."
     },
     {
      "id": "04a/0128#img",
      "text": "Don't eat sorrow",
-     "note": null
+     "note": "Don't be sad; don't worry."
     },
     {
      "id": "01/0138#img",
      "text": "my heart is rotting",
-     "note": null
+     "note": "I'm wasting away from boredom and loneliness."
     },
     {
      "id": "04b/0334#img",
      "text": "My hand is short and union with you is far.",
-     "note": null
+     "note": "Being with you is out of my reach; I'm powerless."
     },
     {
      "id": "01/0203#img",
      "text": "if I say it, my tongue burns; if I don't say it, the marrow of my bones burns",
-     "note": null
+     "note": "Speaking up hurts, but keeping quiet hurts even more."
     },
     {
      "id": "03/0634#img",
      "text": "the meal will turn to snake venom for me",
-     "note": null
+     "note": "He'll ruin the meal for me."
     },
     {
      "id": "04b/0274#img",
      "text": "no bread is going to warm up for you",
-     "note": null
+     "note": "It won't get you anywhere; you'll gain nothing."
     },
     {
      "id": "04b/0824#img",
      "text": "my family shoved me into the henhouse",
-     "note": null
+     "note": "My family pushed me into getting married."
     },
     {
      "id": "04b/0509#img",
      "text": "the sugar cube jumps in my throat",
-     "note": null
+     "note": "The sugar cube goes down the wrong way and I choke."
     },
     {
      "id": "01/0132#img",
      "text": "peek into every last corner",
-     "note": null
+     "note": "Explore everything; see every place you can."
     },
     {
      "id": "06/0118#img",
      "text": "words cost nothing; it's just hot air",
-     "note": null
+     "note": "Saying something costs nothing; words alone prove nothing."
     },
     {
      "id": "04b/1247#img",
      "text": "he would surely fall from Negar's eyes",
-     "note": null
+     "note": "The girl would surely stop thinking well of him."
     },
     {
      "id": "04b/1293#img",
      "text": "Just a harvest-time promise?",
-     "note": null
+     "note": "Just an empty promise that will never be kept?"
     },
     {
      "id": "04b/0205#img",
      "text": "let me serve you the guts of friendship on a tray",
-     "note": null
+     "note": "Let me treat you with all the friendship I have."
     },
     {
      "id": "04b/1125#img",
      "text": "all their body hair fell right out",
-     "note": null
+     "note": "They were completely stunned."
     },
     {
      "id": "03/0417#img",
      "text": "don't get so worked up, or your milk will dry up",
-     "note": null
+     "note": "Calm down; it isn't worth getting so upset."
     },
     {
      "id": "04b/0378#img",
      "text": "no one will call you mute if you don't fart",
-     "note": null
+     "note": "Nobody would have minded if you had kept quiet."
     },
     {
      "id": "04b/0181#img",
      "text": "Eat the head of my dick",
-     "note": null
+     "note": "A rude way to say: get lost, nobody wants your opinion."
     },
     {
      "id": "04b/0899#img",
      "text": "You dick-head eater",
-     "note": null
+     "note": "A crude insult between friends, roughly \"you idiot\"."
     },
     {
      "id": "04b/0209#img",
      "text": "laughing at our beards and dicks",
-     "note": null
+     "note": "Making fun of us, the ones who stayed behind."
     },
     {
      "id": "04b/0822#img",
      "text": "wandering the streets like this with your dick in your hand",
-     "note": null
+     "note": "Wandering around alone and aimless, still single."
     },
     {
      "id": "04b/0440#img",
      "text": "no matter what dick lands on our heads",
-     "note": null
+     "note": "No matter what disaster hits us."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "they've rammed a pole up the ass of every one of us from the provinces",
+     "note": "The policy has treated all of us from the provinces very unfairly."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "You couldn't even eat its head.",
+     "note": "A rude reply ('its head' = the head of a dick): you couldn't have done a thing."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "I could go round and round my Nini-jan's head.",
+     "note": "A loving phrase: I'd give anything for her."
     }
+   ],
+   "hint": "Show the meaning",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

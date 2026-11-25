@@ -13,7 +13,6 @@
   "needs_change": "Jāmaina",
   "not_sure": "Grūti pateikt",
   "how_say": "Kā jūs to teiktu?",
-  "meaning": "Ko, jūsuprāt, tas nozīmē?",
   "optional": "(nav obligāti)",
   "your_name": "Jūsu vārds",
   "thanks_tick": "Iekļaut manu vārdu pateicību lapā",
@@ -65,6 +64,11 @@
      "id": "03/0264#crude",
      "text": "– Ak, ko tu gribi, Eskandar? Kas, pie velna, ar tevi notiek?",
      "note": null
+    },
+    {
+     "id": "03/0268#word_",
+     "text": "– Neviens vārds tev neder, veln.",
+     "note": "\"veln\" = lai velns tevi parauj (dusmīga lamāšanās)"
     },
     {
      "id": "03/0390#crude",
@@ -119,11 +123,6 @@
     {
      "id": "03/0640#crude",
      "text": "– Pfff, lai tevi. Tagad esi kļuvis par emigrantu, tāpēc tev uz mums nospļauties. Tu ārzemju pielūdzēj, sasodītais nodevēj.",
-     "note": null
-    },
-    {
-     "id": "03/0663#crude",
-     "text": "Šī lokalizācijas politika mūs pamatīgi izčakarēja. Viņi saka, ka tā domāta, lai bērni paliktu ģimenes tuvumā, bet ikvienam no mums, kas nāk no provinces, viņi ir iebāzuši mietu pakaļā.",
      "note": null
     },
     {
@@ -182,11 +181,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "– Tu pat tā galvu nebūtu varējis apēst. Bet sasodīts, cik tie saldumi bija labi. Ananasu.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "– ... mūs izčakarēja.",
      "note": null
@@ -203,8 +197,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes.",
-     "note": null
+     "text": "Vai tu esi Heisenberg vai Einstein, ka gaidi, lai tev iedod divdesmit un godina tavas apgaismojošās teorijas? Es profesora vietā — nulli vēl par maz — es liktu tev apēst mana krāna galvu un pēc tam ar spērienu pa dibenu izmestu no universitātes. Turklāt es tevi uz kādu laiku iemestu melnajā caurumā, lai tava slimība nevienu neinficētu.",
+     "note": "Irānā augstākā atzīme ir 20"
     },
     {
      "id": "04b/0486#crude",
@@ -213,8 +207,8 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "– Šodien istabā nestrīdieties — sportā es dabūju divpadsmit, man ir sasodīti slikts garastāvoklis, es jūs nolamāšu.",
-     "note": null
+     "text": "Šodien istabā nestrīdieties — sportā es dabūju divpadsmit, man ir sasodīti slikts garastāvoklis, es jūs nolamāšu.",
+     "note": "Irānā augstākā atzīme ir 20"
     },
     {
      "id": "04b/0567#crude",
@@ -275,6 +269,11 @@
      "id": "04b/1017#crude",
      "text": "– Es meklēju savas brilles, dirsa. Pasaki tam Farid, lai pārstāj likt savu glāzi man tieši zem kājām.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Cilvēkam galvā sākas īsts sūdu juceklis. Jo vairāk par to domā, jo lielāks sūdu juceklis galvā.",
+     "note": "\"sūdu juceklis\" = rupjš jaunvārds: tik apjucis, ka galva griežas"
     }
    ]
   },
@@ -338,6 +337,11 @@
     {
      "id": "03/0517#natur",
      "text": "– Leopard Farid pat nezina, ko pats grib. Vienu brīdi viņš izstrādā slepkavnieciskus trikus; nākamajā saka: \"Ak, asinis. Man zosāda uzmetās.\"",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Gadumijas brīdī pie Haft-Seen klājuma, kad nolasīju dzejoli savai mātei, Maman tā vietā, lai priecātos, satraucās.",
      "note": null
     },
     {
@@ -463,5 +467,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 16
 }

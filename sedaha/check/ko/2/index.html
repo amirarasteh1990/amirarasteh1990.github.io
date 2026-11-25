@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="ko" data-language="Korean" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/ko/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l1">이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>여기서 화자는 긴장하고 있어요. 각 줄이 한국어로 자연스럽게 들리나요?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l1">그러면서 떨리는 손으로 가잘들을 빠르게 넘기며, 그 다른 여자아이가 말했듯이, 그 그림처럼 깊이 파고들수록 더 개어지러워진다는 하페즈의 한 베이트를 찾아 닐루파르에게 보여주려 했다.</p></div>
+      <p class="nc-note">한 여자아이가 그림을 두고 지어낸 거친 말을 그가 되풀이함</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> 맞아요</label>
         <label><input type="radio" name="v1" value="change"> 고쳐야 해요</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">The pole image means they were all screwed over. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="03/0663#s30" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l2">아이들을 가족 곁에 두겠다는 명목으로 우리 지방 출신들 똥구멍에 몽둥이를 쑤셔 박았다고.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l2">똑같이, 이 열 단어를 생각하면 할수록 개... 그게, 더 어지러워져.</p></div>
+      <p class="nc-note">그 거친 말을 또 하려다가 멈춤</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> 맞아요</label>
         <label><input type="radio" name="v2" value="change"> 고쳐야 해요</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0024#s40" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l3">대대, 앞으로 가.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l3">제, 제발 들어봐. … 네 치, 친구가 너한테 보여주던 그 그림이랑 똑같아.</p></div>
+      <p class="nc-note">말을 더듬음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> 맞아요</label>
         <label><input type="radio" name="v3" value="change"> 고쳐야 해요</label>
@@ -187,11 +187,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> 시</h2>
-    <p class="nc-gq">시 구절들이에요. 각각 한국어 시로 잘 읽히나요?</p>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l4">나는 솔로몬의 그 인장 반지를 아무 값에도 받지 않으리</p></div>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>화자가 마침내 그 여자아이에게 사랑을 고백해요. 자연스럽고 진심 어리게 들리나요?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l4">서른두 달째 당신을 사랑하고 있어요. 멀리서. 당신이 모르게. 침묵 속에서. 단 한마디도 없이. 그럴 리 없다고, 있을 수 없는 일이라고, 환상일 뿐 진짜가 아니라고 할지도 몰라요. 하지만 그렇게 되었고 나는 정말로 당신을 사랑해요.</p></div>
+      <p class="nc-note">페르시아어 원문에서 그는 그녀에게 존댓말로 격식을 갖춰 말함</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> 맞아요</label>
         <label><input type="radio" name="v4" value="change"> 고쳐야 해요</label>
@@ -202,8 +202,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n4" name="n4" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="04b/0316#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l5">신은 천사들 앞에서 자신의 장엄한 아름다움을 베일 없이 드러내 보이셨고, 그들이 사랑을 전혀 모른다는 것을 보셨다. 그 질투 어린 열정으로 그 현현은 순수한 불이 되어 아담의 흙을 내리쳤다.</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>이 책의 첫 줄들이에요. 자연스럽고 분명하게 읽히나요?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l5">여기서는 아무 일도 일어나지 않는다. 여기서 아무것도 바로잡히거나 허물어지지 않는다. 어떤 해석도 오지 않는다. 어떤 결론도.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> 맞아요</label>
         <label><input type="radio" name="v5" value="change"> 고쳐야 해요</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l6">“아타르가 새벽까지 우는 게 더 달콤하다”, 아니면 “그가 이제 더 깊이 죽임당했네”?</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l6">이것은 한때 소리였던 말들의 실타래에서 풀린 끝자락이다.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> 맞아요</label>
         <label><input type="radio" name="v6" value="change"> 고쳐야 해요</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1267#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l7">모든 것 위에 쓸 수 있다</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l7">어린 시절, 마망이 낡은 옷에서 털실을 풀어내고 실이 쌓이지 않도록 우리가 실 끝을 들고 집 안을 돌아다니던 것처럼.</p></div>
+      <p class="nc-note">마망은 페르시아어로 ‘어머니’라는 뜻으로, 일부러 번역하지 않았음. 어머니가 털실을 푸는 동안 아이들이 실을 들고 집 안을 돌아다님.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> 맞아요</label>
         <label><input type="radio" name="v7" value="change"> 고쳐야 해요</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l8">네 피로 물 위에 써라</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l8">이제 내가 말들의 실을 풀어낼 테니, 그 말들을 집어 들어 당신의 세계로 가져가라. 여기, 내 세계에 쌓이지 않도록.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> 맞아요</label>
         <label><input type="radio" name="v8" value="change"> 고쳐야 해요</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1271#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l9">네 뒤를 따라오는 이가</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>기억이 나사산이 닳은 나사처럼 헐거워져 빠져 버려요. 이 이미지가 잘 와닿나요?</span></h2>
+    <p class="nc-gq">책에서:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l9">그 뒤로는 헛나사처럼, 그 이미지는 더 이상 우리 집의 닫힌 문 뒤의 어둠에 매여 있지 않았다.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> 맞아요</label>
         <label><input type="radio" name="v9" value="change"> 고쳐야 해요</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1301#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l10">오래되었구나, 연인이 소식 한 줄 보내지 않은 지; 인사도 적지 않고</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>한 소년이 어린 남동생들과 군인 놀이를 해요. 그의 명령이 실제 군대 제식 구령처럼 들리나요?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l10">대대, 앞으로 가.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> 맞아요</label>
         <label><input type="radio" name="v10" value="change"> 고쳐야 해요</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l11">내 꿈들의 등불이 깜빡이게 되었어</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l11">임무 1단계 시작. 대대, 왼쪽으로 돌아.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> 맞아요</label>
         <label><input type="radio" name="v11" value="change"> 고쳐야 해요</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1393#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l12">네가 돌아오리라는 희망은 없어</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> 시</h2>
+    <p class="nc-gq">시와 시 구절들이에요. 화자가 직접 쓴 시와 고전 페르시아 시인들(하라카니, 하페즈, 아타르)의 시구예요. 각각 한국어 시로 읽히나요?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l12">내 꿈들은 어두웠어 / 아무것도 보이지 않았어 / 네가 왔어 / 내 꿈들의 등불이 켜졌어 / 이제 너는 떠났어 / 내 꿈들의 등불이 깜빡이게 되었어 / 네가 돌아오리라는 희망은 없어 / 하지만 혹 네 길이 이 근처를 지나거든 / 다시 내 꿈들 속으로 와줘 / 내 꿈들은 네가 떠났다는 걸 믿지 못한 것 같아 / 네가 길을 잃었다고 여기며</p></div>
+      <p class="nc-note">화자가 잃어버린 여자아이에게 쓴 소박한 자작시</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> 맞아요</label>
         <label><input type="radio" name="v12" value="change"> 고쳐야 해요</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l13">하지만 혹 네 길이 이 근처를 지나거든</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l13">내 꿈들은 어두웠어 / 아무것도 보이지 않았어 / 네가 왔어 / 내 꿈들의 등불이......내 꿈들의 등불이 켜졌......내 꿈들의 등불이 켜졌어 / 이제......이제......이제 너는 떠났어......</p></div>
+      <p class="nc-note">반쯤 잠든 채 시를 되뇌어 봄. 더듬거림은 의도된 것</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> 맞아요</label>
         <label><input type="radio" name="v13" value="change"> 고쳐야 해요</label>
@@ -310,8 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l14">내 꿈들은 네가 떠났다는 걸 믿지 못한 것 같아</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l14">모든 것 위에 쓸 수 있다 / 물 위만은 빼고 / 그리고 바다를 건넌다면 / 네 피로 물 위에 써라 / 네 뒤를 따라오는 이가 / 알 수 있도록 / 연인들과 / 취한 자들과 / 타버린 자들이 / 이 길을 지나갔음을.</p></div>
+      <p class="nc-note">하라카니의 오래된 페르시아 시로, 교실 칠판에 적혀 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> 맞아요</label>
         <label><input type="radio" name="v14" value="change"> 고쳐야 해요</label>
@@ -322,8 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="02/0002#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l15">내 꿈들은 어두웠어</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l15">... 나는 솔로몬의 그 인장 반지를 아무 값에도 받지 않으리, 때때로 그 위에 ...의 손이 ...</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구로, 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> 맞아요</label>
         <label><input type="radio" name="v15" value="change"> 고쳐야 해요</label>
@@ -334,8 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l16">내 꿈들의 등불이......내 꿈들의 등불이 켜졌......내 꿈들의 등불이 켜졌어</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l16">나는 술집 어르신을 섬기나니, 그 은혜는......</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구로, 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> 맞아요</label>
         <label><input type="radio" name="v16" value="change"> 고쳐야 해요</label>
@@ -346,13 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> 단어 하나</h2>
-    <p class="nc-gq">각 줄의 단어가 알맞은 단어인가요? 원래 뜻은 그 아래에 적혀 있어요.</p>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="03/0531#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l17">작년에 왔을 때 처남들한테 얼마나 맞았는지 온몸이 시커멓게 됐더라고.</p></div>
-      <p class="nc-note">"온몸이 시커멓게 됐더라고" = covered in bruises</p>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l17">너와의 합일의 희망이 나를 살게 하노라; 그렇지 않으면 너와 떨어져 숨 쉴 때마다 죽음이 두려우리라. … 네가 상처를 준다면 남이 약을 발라주는 것보다 낫고, 네가 독을 준다면 그편이 차라리...</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 두 시구로, 두 번째는 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> 맞아요</label>
         <label><input type="radio" name="v17" value="change"> 고쳐야 해요</label>
@@ -363,9 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04a/0038#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l18">큰길 진입: 쯧쯧.</p></div>
-      <p class="nc-note">"쯧쯧" = tongue click meaning no, forbidden</p>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l18">...마음을 사로잡는 하페즈의 시를 깨닫는 이는 따로 있으니; 기질의 우아함을 알고 페르시아어로 말할 줄 아는 이라네.</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구로, 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> 맞아요</label>
         <label><input type="radio" name="v18" value="change"> 고쳐야 해요</label>
@@ -376,9 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04a/0059#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l19">마망이 하느님은 하늘에 있다고 했다.</p></div>
-      <p class="nc-note">"하느님" = God, as a small child says it</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l19">신은 천사들 앞에서 자신의 장엄한 아름다움을 베일 없이 드러내 보이셨고, 그들이 사랑을 전혀 모른다는 것을 보셨다. 그 질투 어린 열정으로 그 현현은 순수한 불이 되어 아담의 흙을 내리쳤다.</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> 맞아요</label>
         <label><input type="radio" name="v19" value="change"> 고쳐야 해요</label>
@@ -389,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0146#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l20">이 똥골통아. 내 입으로 말하게 만드네.</p></div>
-      <p class="nc-note">"똥골통" = shit-for-brains, crude insult for a dimwit</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l20">임과 고향을 그리며 그토록 서럽게 울리니, 세상에서 여행의 길과 풍습이 ...</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구로, 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> 맞아요</label>
         <label><input type="radio" name="v20" value="change"> 고쳐야 해요</label>
@@ -402,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/0351#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l21">그 시절이랑 우리 사고방식에 똥이나 싸.</p></div>
-      <p class="nc-note">"똥이나 싸" = I shit on (scornful dismissal)</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l21">오래되었구나, 연인이 소식 한 줄 보내지 않은 지; 인사도 적지 않고 ...</p></div>
+      <p class="nc-note">고전 페르시아 시인 하페즈의 시구로, 책에서처럼 중간에 끊겨 있음</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> 맞아요</label>
         <label><input type="radio" name="v21" value="change"> 고쳐야 해요</label>
@@ -415,9 +431,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0421#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l22">표범 파리드, 신경 좀 가라앉히고 살인적인 짓 하지 마.</p></div>
-      <p class="nc-note">"살인적인 짓" = a rash, wild move (running joke)</p>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l22">“아타르가 새벽까지 우는 게 더 달콤하다”, 아니면 “그가 이제 더 깊이 죽임당했네”?</p></div>
+      <p class="nc-note">친구가 두 노래 중 어느 쪽인지 묻는 말. 두 노래 모두 고전 페르시아 시인 아타르의 시 한 구절로 불림</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
         <label><input type="radio" name="v22" value="ok"> 맞아요</label>
         <label><input type="radio" name="v22" value="change"> 고쳐야 해요</label>
@@ -428,9 +444,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0744#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l23">쟤가 나으면 마슈하드까지 걸어가겠다고 서원했단다.</p></div>
-      <p class="nc-note">"서원했단다" = I vowed (a religious vow)</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> 단어 하나</h2>
+    <p class="nc-gq">각 줄 아래에 그 줄의 단어 하나와 그 단어가 뜻해야 하는 바가 적혀 있어요. 여기에 맞는 단어인가요?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0531#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l23">작년에 왔을 때 처남들한테 얼마나 맞았는지 온몸이 시커멓게 됐더라고.</p></div>
+      <p class="nc-note">"온몸이 시커멓게 됐더라고" = 온몸이 멍투성이</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
         <label><input type="radio" name="v23" value="ok"> 맞아요</label>
         <label><input type="radio" name="v23" value="change"> 고쳐야 해요</label>
@@ -441,9 +461,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/1275#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l24">타버린 자들이</p></div>
-      <p class="nc-note">"타버린 자들이" = those burned, consumed by love</p>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04a/0038#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l24">큰길 진입: 쯧쯧.</p></div>
+      <p class="nc-note">"쯧쯧" = ‘안 돼, 금지’라는 뜻으로 혀를 차는 소리</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
         <label><input type="radio" name="v24" value="ok"> 맞아요</label>
         <label><input type="radio" name="v24" value="change"> 고쳐야 해요</label>
@@ -454,9 +474,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l25">개어지러워. 생각하면 할수록 더 개어지러워져.</p></div>
-      <p class="nc-note">"개어지러워" = crude coinage: so baffled your head spins</p>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04a/0059#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l25">마망이 하느님은 하늘에 있다고 했다.</p></div>
+      <p class="nc-note">"하느님" = 어린아이가 말하는 식의 ‘하느님’</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
         <label><input type="radio" name="v25" value="ok"> 맞아요</label>
         <label><input type="radio" name="v25" value="change"> 고쳐야 해요</label>
@@ -467,9 +487,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/1320#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l26">그 그림처럼 깊이 파고들수록 더 개어지러워진다는 하페즈의 한 베이트를 찾아</p></div>
-      <p class="nc-note">"개어지러워진다" = more baffled; echoes her crude coinage</p>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0421#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l26">표범 파리드, 신경 좀 가라앉히고 살인적인 짓 하지 마.</p></div>
+      <p class="nc-note">"살인적인 짓" = 무모하고 과격한 짓 (계속 나오는 농담)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
         <label><input type="radio" name="v26" value="ok"> 맞아요</label>
         <label><input type="radio" name="v26" value="change"> 고쳐야 해요</label>
@@ -480,9 +500,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="06/0108#word_" data-note-on="change">
-      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l27">아이이이고오오오.</p></div>
-      <p class="nc-note">"아이이이고오오오" = long, teasing, mock-tender 'aww'</p>
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0744#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l27">쟤가 나으면 마슈하드까지 걸어가겠다고 서원했단다.</p></div>
+      <p class="nc-note">"서원했단다" = (신께) 맹세했다, 종교적인 서원</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
         <label><input type="radio" name="v27" value="ok"> 맞아요</label>
         <label><input type="radio" name="v27" value="change"> 고쳐야 해요</label>
@@ -491,6 +511,19 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n27">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="06/0108#word_" data-note-on="change">
+      <div class="reader nc-text" lang="ko" dir="ltr"><p class="nc-line" id="l28">아이이이고오오오.</p></div>
+      <p class="nc-note">"아이이이고오오오" = 길게 끄는, 놀리듯 짐짓 다정한 ‘아이고’</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
+        <label><input type="radio" name="v28" value="ok"> 맞아요</label>
+        <label><input type="radio" name="v28" value="change"> 고쳐야 해요</label>
+        <label><input type="radio" name="v28" value="unsure"> 잘 모르겠어요</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n28">어떻게 말하시겠어요? <span class="nc-optional">(선택)</span></label>
+        <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -541,4 +574,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 27 rows -->
+<!-- 28 rows -->

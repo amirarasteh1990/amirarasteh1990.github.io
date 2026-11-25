@@ -13,7 +13,6 @@
   "needs_change": "Änderung nötig",
   "not_sure": "Nicht sicher",
   "how_say": "Wie würdest du es sagen?",
-  "meaning": "Was glaubst du, was es bedeutet?",
   "optional": "(optional)",
   "your_name": "Dein Name",
   "thanks_tick": "Meinen Namen auf der Danke-Seite nennen",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Persische Redensarten",
-   "q": "Einige persische Redensarten und Bilder sind Wort für Wort übersetzt. Gibt dir jede davon eine Ahnung ihrer Bedeutung, oder sagt sie dir gar nichts?",
+   "q": "Diese persischen Redensarten sind Wort für Wort übersetzt. Versuch zuerst, jede zu erraten, und lass dir dann die Bedeutung zeigen.",
    "labels": [
-    "Kann ich erraten",
-    "Kann ich nicht",
-    "Nicht sicher"
+    "Ich habe es ohne die Bedeutung erraten",
+    "Ich habe es mit der Bedeutung verstanden",
+    "Auch mit der Bedeutung sehe ich keinen Zusammenhang"
    ],
-   "note_label": "Was glaubst du, was es bedeutet?",
-   "note_on": "ok",
+   "note_label": "Was ist daran unklar?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Der Regen fällt nicht von der Erde zum Himmel.",
-     "note": null
+     "note": "Eltern opfern sich für ihre Kinder, nicht Kinder für ihre Eltern."
     },
     {
      "id": "01/0073#img",
      "text": "An seinem Frühling erkennt man ein gutes Jahr.",
-     "note": null
+     "note": "Wie ein Jahr wird, sieht man schon an seinem Anfang."
     },
     {
      "id": "04a/0128#img",
      "text": "Iss keinen Kummer",
-     "note": null
+     "note": "Sei nicht traurig; mach dir keine Sorgen."
     },
     {
      "id": "01/0138#img",
      "text": "mein Herz fault",
-     "note": null
+     "note": "Ich gehe ein vor Langeweile und Einsamkeit."
     },
     {
      "id": "04b/0334#img",
      "text": "Meine Hand ist kurz und die Vereinigung mit dir ist fern.",
-     "note": null
+     "note": "Mit dir zusammen zu sein, ist für mich unerreichbar; ich bin machtlos."
     },
     {
      "id": "01/0203#img",
      "text": "Sage ich es, verbrennt mir die Zunge; sage ich es nicht, verbrennt mir das Mark in den Knochen",
-     "note": null
+     "note": "Reden tut weh, aber Schweigen tut noch mehr weh."
     },
     {
      "id": "03/0634#img",
      "text": "wird mir das Essen zu Schlangengift",
-     "note": null
+     "note": "Er verdirbt mir das Essen."
     },
     {
      "id": "04b/0274#img",
      "text": "wird dir kein Brot warm",
-     "note": null
+     "note": "Damit kommst du nicht weiter; es bringt dir nichts."
     },
     {
      "id": "04b/0824#img",
      "text": "meine Familie mich mit Gewalt unter die Hühner gesteckt hatte",
-     "note": null
+     "note": "Meine Familie hat mich zur Heirat gedrängt."
     },
     {
      "id": "04b/0509#img",
      "text": "der Zuckerwürfel springt mir in den Hals",
-     "note": null
+     "note": "Ich verschlucke mich am Zuckerwürfel und bekomme keine Luft."
     },
     {
      "id": "01/0132#img",
      "text": "schau in jeden letzten Winkel",
-     "note": null
+     "note": "Erkunde alles; schau dir so viele Orte an wie möglich."
     },
     {
      "id": "06/0118#img",
      "text": "Worte kosten nichts – das ist nur heiße Luft",
-     "note": null
+     "note": "Etwas zu sagen kostet nichts; Worte allein beweisen nichts."
     },
     {
      "id": "04b/1247#img",
      "text": "würde er sicher aus Negars Augen fallen",
-     "note": null
+     "note": "Das Mädchen würde sicher nicht mehr viel von ihm halten."
     },
     {
      "id": "04b/1293#img",
      "text": "Nur ein Erntezeitversprechen?",
-     "note": null
+     "note": "Nur ein leeres Versprechen, das nie gehalten wird?"
     },
     {
      "id": "04b/0205#img",
      "text": "will ich dir die Eingeweide der Freundschaft auf einem Tablett servieren",
-     "note": null
+     "note": "Lass mich dich mit aller Freundschaft bewirten, die ich habe."
     },
     {
      "id": "04b/1125#img",
      "text": "denen sind glatt sämtliche Körperhaare ausgefallen",
-     "note": null
+     "note": "Sie waren völlig fassungslos."
     },
     {
      "id": "03/0417#img",
      "text": "reg dich nicht so auf, deine Milch versiegt noch",
-     "note": null
+     "note": "Beruhig dich; so viel Aufregung ist es nicht wert."
     },
     {
      "id": "04b/0378#img",
      "text": "niemand nennt dich stumm, wenn du nicht furzt",
-     "note": null
+     "note": "Es hätte niemanden gestört, wenn du geschwiegen hättest."
     },
     {
      "id": "04b/0181#img",
      "text": "Friss den Kopf meines Schwanzes",
-     "note": null
+     "note": "Eine grobe Art zu sagen: Hau ab, deine Meinung will keiner hören."
     },
     {
      "id": "04b/0899#img",
      "text": "Du Schwanzkopffresser",
-     "note": null
+     "note": "Eine derbe Beschimpfung unter Freunden, etwa „du Idiot“."
     },
     {
      "id": "04b/0209#img",
      "text": "lachst über unsere Bärte und Schwänze",
-     "note": null
+     "note": "Du machst dich über uns lustig, die wir hiergeblieben sind."
     },
     {
      "id": "04b/0822#img",
      "text": "so mit dem Schwanz in der Hand durch die Straßen schlendern",
-     "note": null
+     "note": "Allein und ziellos herumlaufen, immer noch Single."
     },
     {
      "id": "04b/0440#img",
      "text": "welcher Schwanz uns auch auf den Kopf fällt",
-     "note": null
+     "note": "Welches Unglück uns auch trifft."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "uns allen aus der Provinz haben sie einen Stock in den Arsch geschoben",
+     "note": "Diese Politik hat uns alle aus der Provinz sehr ungerecht behandelt."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Nicht einmal den Kopf davon hättest du fressen können.",
+     "note": "Eine grobe Antwort („davon“ = vom Schwanz): Du hättest gar nichts ausrichten können."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Ich könnte immer und immer wieder um den Kopf meiner Nini-jan kreisen.",
+     "note": "Ein liebevoller Ausdruck: Für sie würde ich alles geben."
     }
+   ],
+   "hint": "Bedeutung zeigen",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

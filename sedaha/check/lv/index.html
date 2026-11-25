@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -213,329 +216,352 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
   </section>
   <section class="nc-group" aria-labelledby="g2">
     <h2 class="nc-gh" id="g2"><span class="nc-num">2</span> Persiešu teicieni</h2>
-    <p class="nc-gq">Daži persiešu teicieni un tēli ir tulkoti vārds vārdā. Vai katrs no tiem ļauj jums kaut nedaudz nojaust nozīmi, vai arī tas jums neko neizsaka?</p>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="ok">
+    <p class="nc-gq">Šie persiešu teicieni ir tulkoti vārds vārdā. Vispirms mēģiniet katru uzminēt, tad parādiet tā nozīmi.</p>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="06/0188#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l6">Lietus no zemes uz augšu nekrīt.</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Vecāki upurējas bērnu labā, nevis bērni vecāku labā.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
-        <label><input type="radio" name="v6" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v6" value="change"> Nevaru</label>
-        <label><input type="radio" name="v6" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v6" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v6" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v6" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n6">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n6">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="01/0073#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l7">Labu gadu pazīst pēc tā pavasara.</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Pēc sākuma var redzēt, kāds būs viss gads.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
-        <label><input type="radio" name="v7" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v7" value="change"> Nevaru</label>
-        <label><input type="radio" name="v7" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v7" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v7" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v7" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n7">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n7">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04a/0128#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l8">Neēd bēdas</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Neskumsti, neuztraucies.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
-        <label><input type="radio" name="v8" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v8" value="change"> Nevaru</label>
-        <label><input type="radio" name="v8" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v8" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v8" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v8" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n8">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n8">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="01/0138#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l9">mana sirds pūst</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Es nīkstu no garlaicības un vientulības.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
-        <label><input type="radio" name="v9" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v9" value="change"> Nevaru</label>
-        <label><input type="radio" name="v9" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v9" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v9" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v9" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n9">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n9">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/0334#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l10">Mana roka ir īsa, un savienošanās ar tevi ir tālu.</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Būt kopā ar tevi nav manā varā; es neko nespēju darīt.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
-        <label><input type="radio" name="v10" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v10" value="change"> Nevaru</label>
-        <label><input type="radio" name="v10" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v10" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v10" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v10" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n10">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n10">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="01/0203#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l11">ja to saku, mana mēle deg; ja to nesaku, manu kaulu smadzenes deg</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Runāt sāp, bet klusēt sāp vēl vairāk.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
-        <label><input type="radio" name="v11" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v11" value="change"> Nevaru</label>
-        <label><input type="radio" name="v11" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v11" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v11" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v11" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n11">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n11">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="03/0634#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l12">ēdiens man pārvērtīsies čūsku indē</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Viņš man sabojās visu maltīti.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
-        <label><input type="radio" name="v12" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v12" value="change"> Nevaru</label>
-        <label><input type="radio" name="v12" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v12" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v12" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v12" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n12">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n12">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="04b/0274#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l13">neviena maize tev nesasils</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Tas tev neko nedos; tu neko neiegūsi.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
-        <label><input type="radio" name="v13" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v13" value="change"> Nevaru</label>
-        <label><input type="radio" name="v13" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v13" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v13" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v13" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n13">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n13">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/0824#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l14">ģimenes spiediena dēļ nokļuvu starp vistām</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Ģimenes spiediena dēļ es apprecējos.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
-        <label><input type="radio" name="v14" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v14" value="change"> Nevaru</label>
-        <label><input type="radio" name="v14" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v14" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v14" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v14" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n14">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n14">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="04b/0509#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l15">cukurgabaliņš ielec man rīklē</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Cukurgabaliņš iekļūst ne tur, kur vajag, un es aizrijos.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
-        <label><input type="radio" name="v15" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v15" value="change"> Nevaru</label>
-        <label><input type="radio" name="v15" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v15" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v15" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v15" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n15">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n15">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="01/0132#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l16">ielūkojies visos nostūros un kaktiņos</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Izpēti visu; apskati katru vietu, ko vari.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
-        <label><input type="radio" name="v16" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v16" value="change"> Nevaru</label>
-        <label><input type="radio" name="v16" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v16" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v16" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v16" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n16">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n16">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="06/0118#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l17">vārdi neko nemaksā — tas ir tikai karsts gaiss</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Pateikt ir viegli; vārdi vien neko nepierāda.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
-        <label><input type="radio" name="v17" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v17" value="change"> Nevaru</label>
-        <label><input type="radio" name="v17" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v17" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v17" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v17" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n17">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n17">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/1247#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l18">viņš noteikti kristu Negar acīs</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Meitene noteikti vairs nedomātu par viņu labi.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
-        <label><input type="radio" name="v18" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v18" value="change"> Nevaru</label>
-        <label><input type="radio" name="v18" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v18" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v18" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v18" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n18">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n18">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/1293#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l19">Tikai ražas laika solījumu?</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Tikai tukšu solījumu, kas nekad netiks pildīts?</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
-        <label><input type="radio" name="v19" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v19" value="change"> Nevaru</label>
-        <label><input type="radio" name="v19" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v19" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v19" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v19" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n19">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n19">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0205#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l20">ļauj man tev pasniegt draudzības iekšas uz paplātes</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Ļauj man tevi uzņemt ar visu draudzību, kas man ir.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
-        <label><input type="radio" name="v20" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v20" value="change"> Nevaru</label>
-        <label><input type="radio" name="v20" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v20" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v20" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v20" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n20">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n20">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1125#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l21">viņiem visas spalvas uzreiz izbira</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Viņi bija pilnīgi apstulbuši.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
-        <label><input type="radio" name="v21" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v21" value="change"> Nevaru</label>
-        <label><input type="radio" name="v21" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v21" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v21" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v21" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n21">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n21">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="03/0417#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l22">tik ļoti neuztraucies, tev piens izsīks</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Nomierinies; nav vērts tā uztraukties.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
-        <label><input type="radio" name="v22" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v22" value="change"> Nevaru</label>
-        <label><input type="radio" name="v22" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v22" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v22" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v22" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n22">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n22">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="04b/0378#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l23">ja tu nepērd, neviens tevi par mēmu nesauks</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Nevienam nebūtu nekas pretī, ja tu būtu paklusējis.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
-        <label><input type="radio" name="v23" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v23" value="change"> Nevaru</label>
-        <label><input type="radio" name="v23" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v23" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v23" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v23" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n23">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n23">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="04b/0181#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l24">Apēd mana krāna galvu</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Rupjš veids, kā pateikt: ej prom, nevienam tavs viedoklis nav vajadzīgs.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
-        <label><input type="radio" name="v24" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v24" value="change"> Nevaru</label>
-        <label><input type="radio" name="v24" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v24" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v24" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v24" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n24">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n24">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0899#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l25">Tu krānu galvu ēdāj</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Rupjš lamuvārds starp draugiem, aptuveni „tu, muļķi”.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
-        <label><input type="radio" name="v25" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v25" value="change"> Nevaru</label>
-        <label><input type="radio" name="v25" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v25" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v25" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v25" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n25">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n25">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0209#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l26">smejies par mūsu bārdām un pimpjiem</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Tu izsmej mūs, tos, kas palika šeit.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
-        <label><input type="radio" name="v26" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v26" value="change"> Nevaru</label>
-        <label><input type="radio" name="v26" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v26" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v26" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v26" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n26">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n26">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0822#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l27">tu tā nestaigātu pa ielām ar pimpi rokā</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Klīst apkārt vienam un bez mērķa, joprojām neprecētam.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
-        <label><input type="radio" name="v27" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v27" value="change"> Nevaru</label>
-        <label><input type="radio" name="v27" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v27" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v27" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v27" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n27">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n27">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="ok">
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="04b/0440#img" data-note-on="change">
       <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l28">kāds pimpis vēl uzkritīs mums uz galvas</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Lai kāda nelaime mūs vēl piemeklētu.</p></details>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
-        <label><input type="radio" name="v28" value="ok"> Varu uzminēt</label>
-        <label><input type="radio" name="v28" value="change"> Nevaru</label>
-        <label><input type="radio" name="v28" value="unsure"> Grūti pateikt</label>
+        <label><input type="radio" name="v28" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v28" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v28" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
-        <label for="n28">Ko, jūsuprāt, tas nozīmē? <span class="nc-optional">(nav obligāti)</span></label>
+        <label for="n28">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l29" data-id="03/0663#img" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l29">ikvienam no mums, kas nāk no provinces, viņi ir iebāzuši mietu pakaļā</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Šī politika pret mums visiem no provinces ir bijusi ļoti netaisnīga.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
+        <label><input type="radio" name="v29" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v29" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v29" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n29">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0389#img" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l30">Tu pat tā galvu nebūtu varējis apēst.</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Rupja atbilde („tā galva” = pimpja galva): tu nebūtu spējis neko izdarīt.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
+        <label><input type="radio" name="v30" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v30" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v30" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n30">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/0751#img" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l31">Es varētu riņķot un riņķot ap sava Nini-jan galviņu.</p></div>
+      <details class="nc-hint"><summary>Parādīt nozīmi</summary><p>Mīlošs teiciens: viņas dēļ es atdotu visu.</p></details>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
+        <label><input type="radio" name="v31" value="ok"> Uzminēju, pirms redzēju nozīmi</label>
+        <label><input type="radio" name="v31" value="unsure"> Sapratu, kad redzēju nozīmi</label>
+        <label><input type="radio" name="v31" value="change"> Pat redzot nozīmi, nevaru to sasaistīt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n31">Kas padara to neskaidru? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
   <section class="nc-group" aria-labelledby="g3">
     <h2 class="nc-gh" id="g3"><span class="nc-num">3</span> Bērnu vārdi</h2>
     <p class="nc-gq">Daži bērni grāmatā pasaka vārdus nepareizi, kā to dara mazi bērni. Vai katrs izklausās pēc bērna kļūdas, nevis drukas kļūdas?</p>
-    <div class="nc-item" role="group" aria-labelledby="l29" data-id="04a/0076#child" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l29">Tas ir marmala akmens. Marmals nozīmē ļoti dārgi.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04a/0076#child" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l32">Tas ir marmala akmens. Marmals nozīmē ļoti dārgi.</p></div>
       <p class="nc-note">marmals = marmors</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l29">
-        <label><input type="radio" name="v29" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v29" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v29" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n29">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n29" name="n29" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l30" data-id="04b/0953#child" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l30">To sauc Tatāniks.</p></div>
-      <p class="nc-note">Tatāniks = Titāniks</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l30">
-        <label><input type="radio" name="v30" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v30" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v30" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n30">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n30" name="n30" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l31" data-id="04b/1263#child" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l31">Baba, Baba, nopilksi man sito lielo lellīti?</p></div>
-      <p class="nc-note">maza meitene</p>
-      <div class="nc-verdict" role="radiogroup" aria-labelledby="l31">
-        <label><input type="radio" name="v31" value="ok"> Pareizi</label>
-        <label><input type="radio" name="v31" value="change"> Jāmaina</label>
-        <label><input type="radio" name="v31" value="unsure"> Grūti pateikt</label>
-      </div>
-      <p class="guestbook-field nc-notebox" hidden>
-        <label for="n31">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
-        <textarea id="n31" name="n31" rows="2" maxlength="600" dir="auto"></textarea>
-      </p>
-    </div>
-    <div class="nc-item" role="group" aria-labelledby="l32" data-id="04b/1265#child" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l32">Jā, nopilkšu tev lellīti.</p></div>
-      <p class="nc-note">tēvs viņu atdarina</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l32">
         <label><input type="radio" name="v32" value="ok"> Pareizi</label>
         <label><input type="radio" name="v32" value="change"> Jāmaina</label>
@@ -546,13 +572,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n32" name="n32" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g4">
-    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Iesaukas</h2>
-    <p class="nc-gq">Draugi grāmatā cits citam dod rotaļīgas iesaukas, bieži kā vārdu spēli. Vai latviski katra no tām der kā iesauka?</p>
-    <div class="nc-item" role="group" aria-labelledby="l33" data-id="03/0430#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l33">Alain Pimplon</p></div>
-      <p class="nc-note">iesauka vienam no draugiem: aktiera Alain Delon vārds, kura daļa pārvērsta par rupju vārdu dzimumloceklim</p>
+    <div class="nc-item" role="group" aria-labelledby="l33" data-id="04b/0953#child" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l33">To sauc Tatāniks.</p></div>
+      <p class="nc-note">Tatāniks = Titāniks</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l33">
         <label><input type="radio" name="v33" value="ok"> Pareizi</label>
         <label><input type="radio" name="v33" value="change"> Jāmaina</label>
@@ -563,9 +585,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n33" name="n33" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l34" data-id="03/0624#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l34">Kroga Vecākais</p></div>
-      <p class="nc-note">zobgalīgi cildens tituls no Hafez dzejas</p>
+    <div class="nc-item" role="group" aria-labelledby="l34" data-id="04b/1263#child" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l34">Baba, Baba, nopilksi man sito lielo lellīti?</p></div>
+      <p class="nc-note">maza meitene</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l34">
         <label><input type="radio" name="v34" value="ok"> Pareizi</label>
         <label><input type="radio" name="v34" value="change"> Jāmaina</label>
@@ -576,9 +598,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n34" name="n34" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l35" data-id="03/0628#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l35">Vecais</p></div>
-      <p class="nc-note">mīlināmā forma no «Kroga Vecākais»</p>
+    <div class="nc-item" role="group" aria-labelledby="l35" data-id="04b/1265#child" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l35">Jā, nopilkšu tev lellīti.</p></div>
+      <p class="nc-note">tēvs viņu atdarina</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l35">
         <label><input type="radio" name="v35" value="ok"> Pareizi</label>
         <label><input type="radio" name="v35" value="change"> Jāmaina</label>
@@ -589,9 +611,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n35" name="n35" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0630#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l36">Kroģis, mans Kroģīti</p></div>
-      <p class="nc-note">mīlināmās formas no vārda «krogs»</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g4">
+    <h2 class="nc-gh" id="g4"><span class="nc-num">4</span> Iesaukas</h2>
+    <p class="nc-gq">Draugi grāmatā cits citam dod rotaļīgas iesaukas, bieži kā vārdu spēli. Vai latviski katra no tām der kā iesauka?</p>
+    <div class="nc-item" role="group" aria-labelledby="l36" data-id="03/0430#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l36">Alain Pimplon</p></div>
+      <p class="nc-note">iesauka vienam no draugiem: aktiera Alain Delon vārds, kura daļa pārvērsta par rupju vārdu dzimumloceklim</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l36">
         <label><input type="radio" name="v36" value="ok"> Pareizi</label>
         <label><input type="radio" name="v36" value="change"> Jāmaina</label>
@@ -602,9 +628,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n36" name="n36" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0504#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l37">Leopard Farid</p></div>
-      <p class="nc-note">drosmīgam, pārgalvīgam draugam</p>
+    <div class="nc-item" role="group" aria-labelledby="l37" data-id="03/0624#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l37">Kroga Vecākais</p></div>
+      <p class="nc-note">zobgalīgi cildens tituls no Hafez dzejas</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l37">
         <label><input type="radio" name="v37" value="ok"> Pareizi</label>
         <label><input type="radio" name="v37" value="change"> Jāmaina</label>
@@ -615,9 +641,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n37" name="n37" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0290#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l38">Vai Arasteh ir apcirpts Araasteh?</p></div>
-      <p class="nc-note">araasteh = persiski «kārtīgs»</p>
+    <div class="nc-item" role="group" aria-labelledby="l38" data-id="03/0628#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l38">Vecais</p></div>
+      <p class="nc-note">mīlināmā forma no «Kroga Vecākais»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l38">
         <label><input type="radio" name="v38" value="ok"> Pareizi</label>
         <label><input type="radio" name="v38" value="change"> Jāmaina</label>
@@ -628,9 +654,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n38" name="n38" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l39" data-id="04b/0820#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l39">viņas augstību kundzi Armāāān</p></div>
-      <p class="nc-note">uzvārds Arman, izstiepts izsmieklam</p>
+    <div class="nc-item" role="group" aria-labelledby="l39" data-id="03/0630#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l39">Kroģis, mans Kroģīti</p></div>
+      <p class="nc-note">mīlināmās formas no vārda «krogs»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l39">
         <label><input type="radio" name="v39" value="ok"> Pareizi</label>
         <label><input type="radio" name="v39" value="change"> Jāmaina</label>
@@ -641,9 +667,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n39" name="n39" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l40" data-id="04b/1109#nick" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l40">cirtainmatainais misters Schrödinger</p></div>
-      <p class="nc-note">zobgalīgs tituls tam, kurš nespēj izšķirties</p>
+    <div class="nc-item" role="group" aria-labelledby="l40" data-id="03/0504#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l40">Leopard Farid</p></div>
+      <p class="nc-note">drosmīgam, pārgalvīgam draugam</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l40">
         <label><input type="radio" name="v40" value="ok"> Pareizi</label>
         <label><input type="radio" name="v40" value="change"> Jāmaina</label>
@@ -654,13 +680,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n40" name="n40" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g5">
-    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Joki un vārdu spēles</h2>
-    <p class="nc-gq">Šajās rindās ir joks vai vārdu spēle. Vai latviski katrs no tiem izdodas?</p>
-    <div class="nc-item" role="group" aria-labelledby="l41" data-id="04b/0385#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l41">Tādi ir viņa rūpnīcas iestatījumi.</p></div>
-      <p class="nc-note">visu sabojāt — tāda vienkārši ir viņa daba</p>
+    <div class="nc-item" role="group" aria-labelledby="l41" data-id="03/0290#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l41">Vai Arasteh ir apcirpts Araasteh?</p></div>
+      <p class="nc-note">araasteh = persiski «kārtīgs»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l41">
         <label><input type="radio" name="v41" value="ok"> Pareizi</label>
         <label><input type="radio" name="v41" value="change"> Jāmaina</label>
@@ -671,9 +693,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n41" name="n41" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0863#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l42">Piedots. Viss šis bulvāris ir tavs.</p></div>
-      <p class="nc-note">persiski «piedot» nozīmē arī «atdot»</p>
+    <div class="nc-item" role="group" aria-labelledby="l42" data-id="04b/0820#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l42">viņas augstību kundzi Armāāān</p></div>
+      <p class="nc-note">uzvārds Arman, izstiepts izsmieklam</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l42">
         <label><input type="radio" name="v42" value="ok"> Pareizi</label>
         <label><input type="radio" name="v42" value="change"> Jāmaina</label>
@@ -684,9 +706,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n42" name="n42" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l43" data-id="03/0191#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l43">līdz vakardienai tu teici "khar". Tagad pēkšņi esi tik smalks un saki "ēzelis"?</p></div>
-      <p class="nc-note">zobojas par zēnu, kas pārgājis uz pieklājīgāku vārdu</p>
+    <div class="nc-item" role="group" aria-labelledby="l43" data-id="04b/1109#nick" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l43">cirtainmatainais misters Schrödinger</p></div>
+      <p class="nc-note">zobgalīgs tituls tam, kurš nespēj izšķirties</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l43">
         <label><input type="radio" name="v43" value="ok"> Pareizi</label>
         <label><input type="radio" name="v43" value="change"> Jāmaina</label>
@@ -697,9 +719,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n43" name="n43" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0591#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l44">Pīr-tu-pīr? … Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.</p></div>
-      <p class="nc-note">viņš «peer» dzird kā persiešu pir, «vecākais», no kā cēlusies viņa iesauka</p>
+  </section>
+  <section class="nc-group" aria-labelledby="g5">
+    <h2 class="nc-gh" id="g5"><span class="nc-num">5</span> Joki un vārdu spēles</h2>
+    <p class="nc-gq">Šajās rindās ir joks vai vārdu spēle. Vai latviski katrs no tiem izdodas?</p>
+    <div class="nc-item" role="group" aria-labelledby="l44" data-id="04b/0385#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l44">Tādi ir viņa rūpnīcas iestatījumi.</p></div>
+      <p class="nc-note">visu sabojāt — tāda vienkārši ir viņa daba</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l44">
         <label><input type="radio" name="v44" value="ok"> Pareizi</label>
         <label><input type="radio" name="v44" value="change"> Jāmaina</label>
@@ -710,9 +736,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n44" name="n44" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0387#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l45">Pagājušonakt es dzirdēju, kā tu atgremo.</p></div>
-      <p class="nc-note">naktī košļā kā govs, kas atgremo</p>
+    <div class="nc-item" role="group" aria-labelledby="l45" data-id="04b/0863#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l45">Piedots. Viss šis bulvāris ir tavs.</p></div>
+      <p class="nc-note">persiski «piedot» nozīmē arī «atdot»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l45">
         <label><input type="radio" name="v45" value="ok"> Pareizi</label>
         <label><input type="radio" name="v45" value="change"> Jāmaina</label>
@@ -723,9 +749,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n45" name="n45" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l46" data-id="04b/0460#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l46">Kas tev atkal par mēri, uztaisījis pret mums stāvu, Alain Pimplon?</p></div>
-      <p class="nc-note">divdomība: lepni izslējies un erekcija</p>
+    <div class="nc-item" role="group" aria-labelledby="l46" data-id="03/0191#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l46">līdz vakardienai tu teici "khar". Tagad pēkšņi esi tik smalks un saki "ēzelis"?</p></div>
+      <p class="nc-note">zobojas par zēnu, kas pārgājis uz pieklājīgāku vārdu</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l46">
         <label><input type="radio" name="v46" value="ok"> Pareizi</label>
         <label><input type="radio" name="v46" value="change"> Jāmaina</label>
@@ -736,9 +762,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n46" name="n46" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l47" data-id="01/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l47">Kāds -nieks viņš nebija?</p></div>
-      <p class="nc-note">māte saklausa tikai vārda «sieviešu mednieks» beigas</p>
+    <div class="nc-item" role="group" aria-labelledby="l47" data-id="04b/0591#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l47">Pīr-tu-pīr? … Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.</p></div>
+      <p class="nc-note">viņš «peer» dzird kā persiešu pir, «vecākais», no kā cēlusies viņa iesauka</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l47">
         <label><input type="radio" name="v47" value="ok"> Pareizi</label>
         <label><input type="radio" name="v47" value="change"> Jāmaina</label>
@@ -749,9 +775,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n47" name="n47" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l48" data-id="03/0126#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l48">Mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks</p></div>
-      <p class="nc-note">zēna pastāvīgā lielīšanās</p>
+    <div class="nc-item" role="group" aria-labelledby="l48" data-id="04b/0387#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l48">Pagājušonakt es dzirdēju, kā tu atgremo.</p></div>
+      <p class="nc-note">naktī košļā kā govs, kas atgremo</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l48">
         <label><input type="radio" name="v48" value="ok"> Pareizi</label>
         <label><input type="radio" name="v48" value="change"> Jāmaina</label>
@@ -762,9 +788,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n48" name="n48" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l49" data-id="03/0394#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l49">Vai arī tev pimpis sma... nu, tev jau bija pimpis smadzeņu vietā, tagad tev tāds kļuvis vēl vairāk.</p></div>
-      <p class="nc-note">apvainojums tiek aprauts un tad padarīts vēl ļaunāks</p>
+    <div class="nc-item" role="group" aria-labelledby="l49" data-id="04b/0460#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l49">Kas tev atkal par mēri, uztaisījis pret mums stāvu, Alain Pimplon?</p></div>
+      <p class="nc-note">divdomība: lepni izslējies un erekcija</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l49">
         <label><input type="radio" name="v49" value="ok"> Pareizi</label>
         <label><input type="radio" name="v49" value="change"> Jāmaina</label>
@@ -775,9 +801,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n49" name="n49" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l50" data-id="03/0655#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l50">Jā, mums visiem pieder fabrikas. … Mums ir diršanas fabrika.</p></div>
-      <p class="nc-note">viss, ko viņi ražo, ir sūdi: viņi tikai runā niekus</p>
+    <div class="nc-item" role="group" aria-labelledby="l50" data-id="01/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l50">Kāds -nieks viņš nebija?</p></div>
+      <p class="nc-note">māte saklausa tikai vārda «sieviešu mednieks» beigas</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l50">
         <label><input type="radio" name="v50" value="ok"> Pareizi</label>
         <label><input type="radio" name="v50" value="change"> Jāmaina</label>
@@ -788,9 +814,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n50" name="n50" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l51" data-id="04b/0512#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l51">tu, fosilija, tu pats esi muļķības un degradācijas iemiesojums</p></div>
-      <p class="nc-note">izsmejošs apvainojums</p>
+    <div class="nc-item" role="group" aria-labelledby="l51" data-id="03/0126#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l51">Mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks</p></div>
+      <p class="nc-note">zēna pastāvīgā lielīšanās</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l51">
         <label><input type="radio" name="v51" value="ok"> Pareizi</label>
         <label><input type="radio" name="v51" value="change"> Jāmaina</label>
@@ -801,9 +827,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n51" name="n51" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0588#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l52">dzīve ir kā tūkstoš tomanu naudaszīme: lai no kuras puses uz to skatās, tā smaržo pēc lēcu rīsiem.</p></div>
-      <p class="nc-note">absurds joks</p>
+    <div class="nc-item" role="group" aria-labelledby="l52" data-id="03/0394#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l52">Vai arī tev pimpis sma... nu, tev jau bija pimpis smadzeņu vietā, tagad tev tāds kļuvis vēl vairāk.</p></div>
+      <p class="nc-note">apvainojums tiek aprauts un tad padarīts vēl ļaunāks</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l52">
         <label><input type="radio" name="v52" value="ok"> Pareizi</label>
         <label><input type="radio" name="v52" value="change"> Jāmaina</label>
@@ -814,9 +840,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n52" name="n52" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0055#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l53">Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.</p></div>
-      <p class="nc-note">zēns atbild dziedošā ritmā</p>
+    <div class="nc-item" role="group" aria-labelledby="l53" data-id="03/0655#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l53">Jā, mums visiem pieder fabrikas. … Mums ir diršanas fabrika.</p></div>
+      <p class="nc-note">viss, ko viņi ražo, ir sūdi: viņi tikai runā niekus</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l53">
         <label><input type="radio" name="v53" value="ok"> Pareizi</label>
         <label><input type="radio" name="v53" value="change"> Jāmaina</label>
@@ -827,9 +853,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n53" name="n53" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l54" data-id="03/0490#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l54">Uzmanies, lai neieplaisā, Pimpja kungs.</p></div>
-      <p class="nc-note">viņš tikko izriezis krūtis</p>
+    <div class="nc-item" role="group" aria-labelledby="l54" data-id="04b/0512#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l54">tu, fosilija, tu pats esi muļķības un degradācijas iemiesojums</p></div>
+      <p class="nc-note">izsmejošs apvainojums</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l54">
         <label><input type="radio" name="v54" value="ok"> Pareizi</label>
         <label><input type="radio" name="v54" value="change"> Jāmaina</label>
@@ -840,9 +866,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n54" name="n54" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l55" data-id="04b/0182#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l55">Tu esi vislielākais vērsis no visiem.</p></div>
-      <p class="nc-note">«vērsis» = truls muļķis, saka par vīrieti</p>
+    <div class="nc-item" role="group" aria-labelledby="l55" data-id="03/0588#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l55">dzīve ir kā tūkstoš tomanu naudaszīme: lai no kuras puses uz to skatās, tā smaržo pēc lēcu rīsiem.</p></div>
+      <p class="nc-note">absurds joks</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l55">
         <label><input type="radio" name="v55" value="ok"> Pareizi</label>
         <label><input type="radio" name="v55" value="change"> Jāmaina</label>
@@ -853,9 +879,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n55" name="n55" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l56" data-id="04b/0271#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l56">viņam vienmēr sagādāja milzu prieku šajā teikumā divreiz lietot vārdu "apzināties".</p></div>
-      <p class="nc-note">«apzināties» lietots divreiz, rotaļīgi</p>
+    <div class="nc-item" role="group" aria-labelledby="l56" data-id="03/0055#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l56">Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.</p></div>
+      <p class="nc-note">zēns atbild dziedošā ritmā</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l56">
         <label><input type="radio" name="v56" value="ok"> Pareizi</label>
         <label><input type="radio" name="v56" value="change"> Jāmaina</label>
@@ -866,9 +892,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n56" name="n56" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0576#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l57">vaina ir uztvērējā; raidītājs to neatrisinās.</p></div>
-      <p class="nc-note">drauga vājā redze ir «uztvērējs»</p>
+    <div class="nc-item" role="group" aria-labelledby="l57" data-id="03/0490#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l57">Uzmanies, lai neieplaisā, Pimpja kungs.</p></div>
+      <p class="nc-note">viņš tikko izriezis krūtis</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l57">
         <label><input type="radio" name="v57" value="ok"> Pareizi</label>
         <label><input type="radio" name="v57" value="change"> Jāmaina</label>
@@ -879,9 +905,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n57" name="n57" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l58" data-id="03/0432#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l58">Es domāju Alain Pimplon. Piiim-pis.</p></div>
-      <p class="nc-note">joka rupjā daļa, izstiepta</p>
+    <div class="nc-item" role="group" aria-labelledby="l58" data-id="04b/0182#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l58">Tu esi vislielākais vērsis no visiem.</p></div>
+      <p class="nc-note">«vērsis» = truls muļķis, saka par vīrieti</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l58">
         <label><input type="radio" name="v58" value="ok"> Pareizi</label>
         <label><input type="radio" name="v58" value="change"> Jāmaina</label>
@@ -892,9 +918,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n58" name="n58" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l59" data-id="03/0263#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l59">Ja tu esi Hooman, tad es esmu Zuzanna.</p></div>
-      <p class="nc-note">maigais vārds Hooman neder tik spalvainam vīrietim</p>
+    <div class="nc-item" role="group" aria-labelledby="l59" data-id="04b/0271#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l59">viņam vienmēr sagādāja milzu prieku šajā teikumā divreiz lietot vārdu "apzināties".</p></div>
+      <p class="nc-note">«apzināties» lietots divreiz, rotaļīgi</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l59">
         <label><input type="radio" name="v59" value="ok"> Pareizi</label>
         <label><input type="radio" name="v59" value="change"> Jāmaina</label>
@@ -905,9 +931,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n59" name="n59" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l60" data-id="04b/0558#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l60">Atvasinājumu? Jēgu? Vai atvasinājuma jēgu? Vai jēgas atvasinājumu?</p></div>
-      <p class="nc-note">šķietami dziļdomīga vārdu spēle</p>
+    <div class="nc-item" role="group" aria-labelledby="l60" data-id="03/0576#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l60">vaina ir uztvērējā; raidītājs to neatrisinās.</p></div>
+      <p class="nc-note">drauga vājā redze ir «uztvērējs»</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l60">
         <label><input type="radio" name="v60" value="ok"> Pareizi</label>
         <label><input type="radio" name="v60" value="change"> Jāmaina</label>
@@ -918,9 +944,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n60" name="n60" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0309#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l61">Ja Dievs dos, lai tu vienmēr būtu araasteh.</p></div>
-      <p class="nc-note">svētības vēlējums ar vārdu spēli uz uzvārdu Arasteh; araasteh = «kārtīgs»</p>
+    <div class="nc-item" role="group" aria-labelledby="l61" data-id="03/0432#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l61">Es domāju Alain Pimplon. Piiim-pis.</p></div>
+      <p class="nc-note">joka rupjā daļa, izstiepta</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l61">
         <label><input type="radio" name="v61" value="ok"> Pareizi</label>
         <label><input type="radio" name="v61" value="change"> Jāmaina</label>
@@ -931,9 +957,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n61" name="n61" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0388#joke" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l62">Bez brillēm es neko neredzu, objektīvi.</p></div>
-      <p class="nc-note">tēla iemīļotais vārds, ko viņš lieto visur</p>
+    <div class="nc-item" role="group" aria-labelledby="l62" data-id="03/0263#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l62">Ja tu esi Hooman, tad es esmu Zuzanna.</p></div>
+      <p class="nc-note">maigais vārds Hooman neder tik spalvainam vīrietim</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l62">
         <label><input type="radio" name="v62" value="ok"> Pareizi</label>
         <label><input type="radio" name="v62" value="change"> Jāmaina</label>
@@ -944,22 +970,61 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n62" name="n62" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g6">
-    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Hafez rinda</h2>
-    <p class="nc-gq">Šī dzejnieka Hafez rinda ir uzrakstīta bez komata, tāpēc to var lasīt divos pretējos veidos:</p>
-    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/1321#hafez" data-note-on="change">
-      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l63">Tas vīns, kas tur atrodas, ir patiešām īsts nav metafora.</p></div>
-      <ul class="nc-after"><li>Viens veids: vīns ir īsts, nevis metafora.</li><li>Otrs veids: vīns nav īsts, tikai metafora.</li></ul>
-      <p class="nc-q">Vai jūsu versiju var lasīt abos veidos?</p>
+    <div class="nc-item" role="group" aria-labelledby="l63" data-id="04b/0558#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l63">Atvasinājumu? Jēgu? Vai atvasinājuma jēgu? Vai jēgas atvasinājumu?</p></div>
+      <p class="nc-note">šķietami dziļdomīga vārdu spēle</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l63">
-        <label><input type="radio" name="v63" value="ok"> Jā, abos veidos</label>
-        <label><input type="radio" name="v63" value="change"> Tikai vienā veidā</label>
+        <label><input type="radio" name="v63" value="ok"> Pareizi</label>
+        <label><input type="radio" name="v63" value="change"> Jāmaina</label>
         <label><input type="radio" name="v63" value="unsure"> Grūti pateikt</label>
       </div>
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n63">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
         <textarea id="n63" name="n63" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l64" data-id="03/0309#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l64">Ja Dievs dos, lai tu vienmēr būtu araasteh.</p></div>
+      <p class="nc-note">svētības vēlējums ar vārdu spēli uz uzvārdu Arasteh; araasteh = «kārtīgs»</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l64">
+        <label><input type="radio" name="v64" value="ok"> Pareizi</label>
+        <label><input type="radio" name="v64" value="change"> Jāmaina</label>
+        <label><input type="radio" name="v64" value="unsure"> Grūti pateikt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n64">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n64" name="n64" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l65" data-id="03/0388#joke" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l65">Bez brillēm es neko neredzu, objektīvi.</p></div>
+      <p class="nc-note">tēla iemīļotais vārds, ko viņš lieto visur</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l65">
+        <label><input type="radio" name="v65" value="ok"> Pareizi</label>
+        <label><input type="radio" name="v65" value="change"> Jāmaina</label>
+        <label><input type="radio" name="v65" value="unsure"> Grūti pateikt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n65">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n65" name="n65" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g6">
+    <h2 class="nc-gh" id="g6"><span class="nc-num">6</span> Hafez rinda</h2>
+    <p class="nc-gq">Šī dzejnieka Hafez rinda ir uzrakstīta bez komata, tāpēc to var lasīt divos pretējos veidos:</p>
+    <div class="nc-item" role="group" aria-labelledby="l66" data-id="04b/1321#hafez" data-note-on="change">
+      <div class="reader nc-text" lang="lv" dir="ltr"><p class="nc-line" id="l66">Tas vīns, kas tur atrodas, ir patiešām īsts nav metafora.</p></div>
+      <ul class="nc-after"><li>Viens veids: vīns ir īsts, nevis metafora.</li><li>Otrs veids: vīns nav īsts, tikai metafora.</li></ul>
+      <p class="nc-q">Vai jūsu versiju var lasīt abos veidos?</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l66">
+        <label><input type="radio" name="v66" value="ok"> Jā, abos veidos</label>
+        <label><input type="radio" name="v66" value="change"> Tikai vienā veidā</label>
+        <label><input type="radio" name="v66" value="unsure"> Grūti pateikt</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n66">Kā jūs to teiktu? <span class="nc-optional">(nav obligāti)</span></label>
+        <textarea id="n66" name="n66" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -1017,4 +1082,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 63 rows -->
+<!-- 66 rows -->

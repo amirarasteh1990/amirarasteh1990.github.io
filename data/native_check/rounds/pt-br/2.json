@@ -13,7 +13,6 @@
   "needs_change": "Precisa mudar",
   "not_sure": "Não tenho certeza",
   "how_say": "Como você diria?",
-  "meaning": "O que você acha que significa?",
   "optional": "(opcional)",
   "your_name": "Seu nome",
   "thanks_tick": "Incluir meu nome na página de Agradecimentos",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "He almost repeats the crude word, then stops. Is that clear?",
-   "q_lang": "en",
+   "q": "Aqui o narrador está nervoso. Cada trecho soa natural em português?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -58,17 +56,26 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/1321#s12",
+     "id": "04b/1320#nerv",
+     "text": "Com as mãos tremendo, folheava às pressas os ghazals à procura de um beit de Hafez que, como aquela pintura, segundo aquela outra garota, dava uma tontura do caralho cada vez maior quanto mais a gente se afundava na profundidade dele.",
+     "note": "ele repete uma palavra grosseira que uma garota inventou sobre uma pintura"
+    },
+    {
+     "id": "04b/1321#nerv1",
      "text": "Igual: quanto mais você pensa nestas dez palavras, mais ca..., quer dizer, mais tonto você fica.",
-     "note": null
+     "note": "ele quase repete a palavra grosseira, mas para"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "Por, por Deus, escuta. … É como aquela pintura que a sua a-a-amiga mostrava.",
+     "note": "ele gagueja"
     }
    ]
   },
   {
-   "key": "one",
+   "key": "confess",
    "title": null,
-   "q": "The book's opening. Does it read naturally and clearly?",
-   "q_lang": "en",
+   "q": "O narrador finalmente diz para a garota que a ama. Soa natural e sincero?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -78,17 +85,50 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "Opening/0007#s18",
+     "id": "04b/1314#conf",
+     "text": "Faz trinta e dois meses que eu gosto de você. De longe. Sem que você saiba. Em silêncio. Sem uma única palavra. Talvez você diga que assim não pode ser, que é impossível, que é imaginário e não real. Mas foi assim e eu gosto mesmo de você.",
+     "note": "em persa, ele fala com ela de modo formal, com o tratamento de respeito"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Estas são as primeiras linhas do livro. A leitura é natural e clara?",
+   "labels": [
+    "Correto",
+    "Precisa mudar",
+    "Não tenho certeza"
+   ],
+   "note_label": "Como você diria?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Aqui, nada acontece. Nada será corrigido, nem destruído. Nenhuma interpretação virá. Nenhuma conclusão.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Esta é a ponta solta de um fio de palavras que um dia foram sons.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
      "text": "Como na infância, quando Maman desmanchava as roupas velhas de lã, e nós pegávamos o fio e andávamos pela casa para que a lã não se amontoasse.",
+     "note": "Maman é a palavra persa para “mãe”, mantida sem tradução de propósito. As crianças levam o fio pela casa enquanto ela desmancha a lã."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Agora eu desenrolo o fio das palavras, e você as pega e leva para dentro do seu próprio mundo, para que não se amontoem aqui, no meu mundo.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
-   "q_lang": "en",
+   "q": "A lembrança se solta como um parafuso com a rosca espanada. A imagem está clara?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -98,17 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0389#s32",
-     "text": "Nem a cabeça dele você conseguia comer.",
+     "id": "03/0675#screw",
+     "text": "A partir daí, como um parafuso com a rosca espanada, aquela imagem já não estava presa à escuridão atrás da porta fechada da nossa casa",
      "note": null
     }
-   ]
+   ],
+   "intro": "No livro:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
+   "q": "Um menino brinca de soldado com os irmãos mais novos. As ordens dele soam como as de um treino militar de verdade?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -118,13 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04a/0024#s40",
+     "id": "04a/0024#drill",
      "text": "Batalhão, em frente, marche!",
      "note": null
     },
     {
-     "id": "04a/0026#s40",
-     "text": "Batalhão, esquerda, volver!",
+     "id": "04a/0026#drill",
+     "text": "Começo da primeira etapa da missão. Batalhão, esquerda, volver!",
      "note": null
     }
    ]
@@ -132,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poesia",
-   "q": "Estes são versos de poesia. Cada um soa bem como poesia em português?",
+   "q": "Estes são poemas e versos: o poema do próprio narrador e versos de poetas persas clássicos (Kharaghani, Hafez, Attar). Cada um soa como poesia em português?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -142,61 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "Não aceitaria por preço algum esse anel de Salomão, pois de vez em quando sobre ele a mão de",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Meus sonhos eram escuros / Eu não conseguia ver nada / Você veio / A luz dos meus sonhos se acendeu / Agora você se foi / A luz dos meus sonhos agora pisca / Não tenho esperança no seu regresso / mas se acaso você passar perto / volta outra vez aos meus sonhos / Acho que os meus sonhos não acreditaram que você partiu / imaginam que você se perdeu e",
+     "note": "o poema simples do próprio narrador, para a garota que ele perdeu"
     },
     {
-     "id": "04b/0935#poetr",
+     "id": "02/0002#poem",
+     "text": "Meus sonhos eram escuros / Eu não conseguia ver nada / Você veio / A luz dos meus sonhos ... a luz dos meus sonhos acesa ... a luz dos meus sonhos se acendeu / Agora ... agora ... agora você se foi ...",
+     "note": "ele o ensaia meio dormindo; os tropeços são de propósito"
+    },
+    {
+     "id": "04b/1267#poem",
+     "text": "Em tudo se pode escrever / menos na água / e se atravessares o mar / escreve na água com o teu próprio sangue / para que aquele que vier na tua esteira / saiba que / os amantes e / os ébrios e / os abrasados / passaram por aqui.",
+     "note": "um antigo poema persa de Kharaghani, escrito no quadro de uma sala de aula"
+    },
+    {
+     "id": "03/0244#poem",
+     "text": "... Não aceitaria por preço algum esse anel de Salomão, pois de vez em quando sobre ele a mão de ...",
+     "note": "um verso de Hafez, poeta persa clássico; cortado como no livro"
+    },
+    {
+     "id": "03/0622#poem",
+     "text": "Sou servo do Ancião da Taverna, cuja graça...",
+     "note": "um verso de Hafez, poeta persa clássico; cortado como no livro"
+    },
+    {
+     "id": "04b/0251#poem",
+     "text": "A esperança de me unir a você me mantém vivo; senão, cada respiração minha, separado de você, seria o medo de perecer. … Se é você quem fere, vale mais isso do que o bálsamo de outro, e se é você quem dá o veneno, vale mais isso do que ...",
+     "note": "dois versos de Hafez, poeta persa clássico; o segundo é cortado como no livro"
+    },
+    {
+     "id": "04b/0271#poem",
+     "text": "...Só percebe a poesia encantadora de Hafez quem conhece a graça poética e sabe falar persa.",
+     "note": "um verso de Hafez, poeta persa clássico; cortado como no livro"
+    },
+    {
+     "id": "04b/0316#poem",
+     "text": "Deus desvelou a Sua magnífica beleza diante dos anjos e viu que eles nada sabiam do amor; então aquela beleza manifestada, movida por zelo ciumento, tornou-se fogo puro e atingiu o barro de Adão.",
+     "note": "um verso de Hafez, poeta persa clássico"
+    },
+    {
+     "id": "04b/0742#poem",
+     "text": "lembrando a amada e a pátria, chorarei tão amargamente que do mundo os caminhos e costumes da viagem ...",
+     "note": "um verso de Hafez, poeta persa clássico; cortado como no livro"
+    },
+    {
+     "id": "04b/1301#poem",
+     "text": "Há muito que o amado não manda recado, não escreve uma saudação ...",
+     "note": "um verso de Hafez, poeta persa clássico; cortado como no livro"
+    },
+    {
+     "id": "04b/0935#poem",
      "text": "«É mais doce que Attar chore até a madrugada» ou «agora ficou ainda mais morto»?",
-     "note": null
-    },
-    {
-     "id": "04b/1270#poetr",
-     "text": "escreve na água com o teu próprio sangue",
-     "note": null
-    },
-    {
-     "id": "04b/1275#poetr",
-     "text": "os abrasados",
-     "note": null
-    },
-    {
-     "id": "04b/1390#poetr",
-     "text": "A luz dos meus sonhos se acendeu",
-     "note": null
-    },
-    {
-     "id": "04b/1392#poetr",
-     "text": "A luz dos meus sonhos agora pisca",
-     "note": null
-    },
-    {
-     "id": "04b/1393#poetr",
-     "text": "Não tenho esperança no seu regresso",
-     "note": null
-    },
-    {
-     "id": "04b/1394#poetr",
-     "text": "mas se acaso você passar perto",
-     "note": null
-    },
-    {
-     "id": "04b/1396#poetr",
-     "text": "Acho que os meus sonhos não acreditaram que você partiu",
-     "note": null
-    },
-    {
-     "id": "02/0005#poetr",
-     "text": "A luz dos meus sonhos ... a luz dos meus sonhos acesa ... a luz dos meus sonhos se acendeu",
-     "note": null
+     "note": "um amigo pergunta qual de duas músicas; cada uma é chamada por um verso de um poema de Attar, poeta persa clássico"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Palavras isoladas",
-   "q": "A palavra de cada trecho é a certa? O que ela deveria significar aparece logo abaixo.",
+   "q": "Embaixo de cada trecho há uma palavra dele e o que ela deveria significar. É a palavra certa aqui?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -208,32 +253,27 @@
     {
      "id": "03/0517#word_",
      "text": "O Farid Leopardo não sabe nem o que quer. De um lado desfere golpes homicidas; do outro diz: ai, sangue, me deu arrepios.",
-     "note": "\"golpes homicidas\" = murderous moves: tough-guy stunts"
+     "note": "\"golpes homicidas\" = golpes mortais: exibições de valentão"
     },
     {
      "id": "04b/0228#word_",
      "text": "Há um ou dois anos ouvi pelo Olho de Águia News que aquele janota também foi pra Austrália, de certa forma atrás da garota que vocês dois amavam.",
-     "note": "\"aquele janota\" = vain show-off, a dandy (mocking)"
+     "note": "\"aquele janota\" = metido e exibido, um almofadinha (em tom de deboche)"
     },
     {
      "id": "04b/0575#word_",
      "text": "Pela vida da sua mãe, não anda pelo quarto sem óculos.",
-     "note": "\"Pela vida da sua mãe\" = a plea, I beg you; not an insult"
+     "note": "\"Pela vida da sua mãe\" = um pedido, eu te imploro; não é um insulto"
     },
     {
      "id": "04b/0784#word_",
      "text": "Você é muito sneaky.",
-     "note": "\"sneaky\" = English 'sneaky', slipped in playfully"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Dá uma tontura do caralho. Quanto mais você pensa nisso, maior é a tontura do caralho.",
-     "note": "\"tontura do caralho\" = crude coinage: so baffled your head spins"
+     "note": "\"sneaky\" = a palavra inglesa “sneaky” (sorrateiro), usada de brincadeira"
     },
     {
      "id": "06/0253#word_",
      "text": "Agora vai buscar sementes pro Ghassem e os outros – eles querem assistir um filme.",
-     "note": "\"sementes\" = roasted seeds to snack on"
+     "note": "\"sementes\" = sementes torradas para beliscar"
     }
    ]
   }

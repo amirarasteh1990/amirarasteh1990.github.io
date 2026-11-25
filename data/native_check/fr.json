@@ -13,7 +13,6 @@
   "needs_change": "À modifier",
   "not_sure": "Je ne sais pas",
   "how_say": "Comment le dirais-tu ?",
-  "meaning": "Selon toi, qu'est-ce que cela veut dire ?",
   "optional": "(facultatif)",
   "your_name": "Ton nom",
   "thanks_tick": "Inscrire mon nom sur la page des remerciements",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Expressions persanes",
-   "q": "Certaines expressions et images persanes sont traduites mot à mot. Chacune te donne-t-elle une idée de son sens, ou ne te dit-elle rien ?",
+   "q": "Ces expressions persanes sont traduites mot à mot. Essaie d'abord de deviner chacune, puis affiche son sens.",
    "labels": [
-    "Je devine le sens",
-    "Je ne vois pas",
-    "Je ne sais pas"
+    "J'ai deviné sans voir le sens",
+    "J'ai compris en voyant le sens",
+    "Même avec le sens, je ne fais pas le lien"
    ],
-   "note_label": "Selon toi, qu'est-ce que cela veut dire ?",
-   "note_on": "ok",
+   "note_label": "Qu'est-ce qui n'est pas clair ?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "La pluie ne remonte pas de la terre vers le ciel.",
-     "note": null
+     "note": "Ce sont les parents qui se sacrifient pour leurs enfants, pas l'inverse."
     },
     {
      "id": "01/0073#img",
      "text": "Une bonne année se reconnaît à son printemps.",
-     "note": null
+     "note": "On voit dès le début comment l'année va se passer."
     },
     {
      "id": "04a/0128#img",
      "text": "Ne mange pas de chagrin",
-     "note": null
+     "note": "Ne sois pas triste ; ne t'inquiète pas."
     },
     {
      "id": "01/0138#img",
      "text": "mon cœur pourrit",
-     "note": null
+     "note": "Je dépéris d'ennui et de solitude."
     },
     {
      "id": "04b/0334#img",
      "text": "Ma main est trop courte et l'union avec toi lointaine.",
-     "note": null
+     "note": "Être avec toi est hors de ma portée ; je n'y peux rien."
     },
     {
      "id": "01/0203#img",
      "text": "si je le dis, ma langue brûle ; si je ne le dis pas, la moelle de mes os brûle",
-     "note": null
+     "note": "Parler fait mal, mais se taire fait encore plus mal."
     },
     {
      "id": "03/0634#img",
      "text": "le repas tournera pour moi au venin de serpent",
-     "note": null
+     "note": "Il va me gâcher le repas."
     },
     {
      "id": "04b/0274#img",
      "text": "Aucun pain ne va se réchauffer pour toi",
-     "note": null
+     "note": "Ça ne te mènera nulle part ; tu n'y gagneras rien."
     },
     {
      "id": "04b/0824#img",
      "text": "ma famille m'a fourré de force dans le poulailler",
-     "note": null
+     "note": "Ma famille m'a poussé à me marier."
     },
     {
      "id": "04b/0509#img",
      "text": "le morceau de sucre saute dans ma gorge",
-     "note": null
+     "note": "Le morceau de sucre passe de travers et je m'étouffe."
     },
     {
      "id": "01/0132#img",
      "text": "glisse-toi dans le moindre recoin",
-     "note": null
+     "note": "Explore tout ; va voir tous les endroits possibles."
     },
     {
      "id": "06/0118#img",
      "text": "les paroles ne coûtent rien — c'est du vent",
-     "note": null
+     "note": "Parler ne coûte rien ; les mots seuls ne prouvent rien."
     },
     {
      "id": "04b/1247#img",
      "text": "il tomberait sûrement des yeux de Negar",
-     "note": null
+     "note": "La fillette ne penserait sûrement plus de bien de lui."
     },
     {
      "id": "04b/1293#img",
      "text": "Rien qu'une promesse pour la moisson ?",
-     "note": null
+     "note": "Rien qu'une promesse en l'air, qui ne sera jamais tenue ?"
     },
     {
      "id": "04b/0205#img",
      "text": "laisse-moi te servir les entrailles de l'amitié sur un plateau",
-     "note": null
+     "note": "Laisse-moi te recevoir avec toute mon amitié."
     },
     {
      "id": "04b/1125#img",
      "text": "leurs poils sont tombés d'un coup",
-     "note": null
+     "note": "Ils étaient complètement sidérés."
     },
     {
      "id": "03/0417#img",
      "text": "ne t'énerve pas comme ça, ton lait va se tarir",
-     "note": null
+     "note": "Calme-toi ; ça ne vaut pas la peine de te mettre dans cet état."
     },
     {
      "id": "04b/0378#img",
      "text": "on ne te traitera pas de muet si tu ne pètes pas",
-     "note": null
+     "note": "Personne ne t'aurait rien reproché si tu t'étais tu."
     },
     {
      "id": "04b/0181#img",
      "text": "Bouffe la tête de ma bite",
-     "note": null
+     "note": "Une façon grossière de dire : dégage, personne ne veut de ton avis."
     },
     {
      "id": "04b/0899#img",
      "text": "Bouffeur de têtes de bite",
-     "note": null
+     "note": "Une insulte grossière entre amis, à peu près « espèce d'idiot »."
     },
     {
      "id": "04b/0209#img",
      "text": "rire de notre barbe et de notre bite",
-     "note": null
+     "note": "Se moquer de nous, ceux qui sont restés."
     },
     {
      "id": "04b/0822#img",
      "text": "tu ne traînerais pas dans les rues comme ça, la bite à la main",
-     "note": null
+     "note": "Traîner seul et sans but, toujours célibataire."
     },
     {
      "id": "04b/0440#img",
      "text": "n'importe quelle bite qui nous tombe dessus",
-     "note": null
+     "note": "Quelle que soit la catastrophe qui nous frappe."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "ils nous ont foutu le bâton dans le cul, nous les gosses de province",
+     "note": "Cette politique a été très injuste envers nous tous, les provinciaux."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Tu n'aurais même pas pu bouffer la tête de ma bite.",
+     "note": "Une réplique grossière : tu n'aurais rien pu faire du tout."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Je pourrais tourner et tourner autour de la tête de ma Nini-jan.",
+     "note": "Une formule tendre : je donnerais tout pour elle."
     }
+   ],
+   "hint": "Afficher le sens",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

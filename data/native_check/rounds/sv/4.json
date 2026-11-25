@@ -13,7 +13,6 @@
   "needs_change": "Behöver ändras",
   "not_sure": "Osäker",
   "how_say": "Hur skulle du säga det?",
-  "meaning": "Vad tror du att det betyder?",
   "optional": "(valfritt)",
   "your_name": "Ditt namn",
   "thanks_tick": "Visa mitt namn på tacksidan",
@@ -97,11 +96,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Den här regionala antagningspolitiken knullade oss totalt. Under täckmanteln av att vilja ha barn nära sina familjer, stoppade de käppen upp i röven på oss från provinserna.",
-     "note": null
-    },
-    {
      "id": "04b/0150#crude",
      "text": "– Om ålder är det som räknas, borde du slicka Bahmans kulor. Han är minst fem år äldre än oss.",
      "note": null
@@ -115,6 +109,16 @@
      "id": "04b/0164#crude",
      "text": "– Fan ta vår jävla otur.",
      "note": null
+    },
+    {
+     "id": "04b/0186#word_",
+     "text": "– Jag skulle ha föredragit att dela rum med dem framför en kukhjärna som du.",
+     "note": "\"kukhjärna\" = kukhjärna, grovt skällsord för en idiot"
+    },
+    {
+     "id": "04b/0226#word_",
+     "text": "– ... varje gång jag kom till lektionerna och uppgifterna för min skitiga andra utbildning, såg jag dem gräla.",
+     "note": "\"min skitiga andra utbildning\" = min skitiga andra utbildning (grovt gnäll)"
     },
     {
      "id": "04b/0343#crude",
@@ -137,14 +141,14 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "– Du kunde inte ens äta huvudet på den. Men jävlar vad goda de där sötsakerna var. Ananas.",
-     "note": null
+     "id": "04b/0394#word_",
+     "text": "– ... vi blev knullade.",
+     "note": "\"vi blev knullade\" = vi blev blåsta, lurade"
     },
     {
      "id": "04b/0464#crude",
-     "text": "– Är du Heisenberg eller Einstein, eftersom du förväntar dig att få tjugo och bli hyllad för dina upplysta teorier?",
-     "note": null
+     "text": "Är du Heisenberg eller Einstein, eftersom du förväntar dig att få tjugo och bli hyllad för dina upplysta teorier? Vore det jag, glöm nollan; jag skulle tvinga dig att äta upp huvudet på min kuk och sedan sparka ut dig från universitetet. Faktiskt skulle jag dessutom slänga dig i ett svart hål ett tag, så att din sjukdom inte smittade någon.",
+     "note": "i Iran går betygen upp till 20"
     },
     {
      "id": "04b/0486#crude",
@@ -153,8 +157,13 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "– Inga diskussioner i rummet idag. Jag fick tolv av tjugo i idrott; mina nerver är åt helvete, och jag skäller ut er.",
-     "note": null
+     "text": "Inga diskussioner i rummet idag. Jag fick tolv av tjugo i idrott; mina nerver är åt helvete, och jag skäller ut er.",
+     "note": "i Iran går betygen upp till 20"
+    },
+    {
+     "id": "04b/0721#word_",
+     "text": "– Äldi, i stället för att slänga dig på sängen så där och leka med dina pungkulor, res dig upp och skicka dem. Det är ett fynd.",
+     "note": "\"pungkulor\" = dina ballar (grovt: att slöa och inte göra något)"
     },
     {
      "id": "04b/0997#crude",
@@ -165,6 +174,11 @@
      "id": "04b/1300#crude",
      "text": "– Så med den repliken, sket du just på oss eller på Mister Lockhårige Schrödinger?",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Man blir skitförvirrad. Ju mer man tänker på det, desto mer skitförvirrad blir man.",
+     "note": "\"skitförvirrad\" = grov nybildning: så förvirrad att huvudet snurrar"
     }
    ]
   },
@@ -223,6 +237,11 @@
     {
      "id": "03/0517#natur",
      "text": "Ena stunden gör han sina mördarrörelser, nästa säger han: \"Åh, blod. Det fick det att krypa i skinnet på mig.\"",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "När det nya året började läste jag dikten för min mor vid Haft-Seen-bordet.",
      "note": null
     },
     {

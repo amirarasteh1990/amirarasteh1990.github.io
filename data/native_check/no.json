@@ -13,7 +13,6 @@
   "needs_change": "Bør endres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sagt det?",
-  "meaning": "Hva tror du det betyr?",
   "optional": "(valgfritt)",
   "your_name": "Navnet ditt",
   "thanks_tick": "Før opp navnet mitt på takkesiden",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Persiske ordtak",
-   "q": "Noen persiske ordtak og bilder er oversatt ord for ord. Gir hvert av dem deg en viss følelse av hva det betyr, eller sier det deg ingenting?",
+   "q": "Disse persiske ordtakene er oversatt ord for ord. Prøv først å gjette hvert av dem, og vis så betydningen.",
    "labels": [
-    "Jeg kan gjette det",
-    "Jeg kan ikke",
-    "Usikker"
+    "Jeg gjettet det uten betydningen",
+    "Jeg forsto det med betydningen",
+    "Selv med betydningen ser jeg ikke sammenhengen"
    ],
-   "note_label": "Hva tror du det betyr?",
-   "note_on": "ok",
+   "note_label": "Hva gjør det uklart?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Regnet faller ikke opp fra jorden.",
-     "note": null
+     "note": "Foreldre ofrer seg for barna sine, ikke barn for foreldrene sine."
     },
     {
      "id": "01/0073#img",
      "text": "Et godt år kjennes på våren.",
-     "note": null
+     "note": "Man ser på starten hvordan året kommer til å bli."
     },
     {
      "id": "04a/0128#img",
      "text": "Ikke spis sorg",
-     "note": null
+     "note": "Ikke vær lei deg; ikke bekymre deg."
     },
     {
      "id": "01/0138#img",
      "text": "hjertet mitt råtner",
-     "note": null
+     "note": "Jeg går til grunne av kjedsomhet og ensomhet."
     },
     {
      "id": "04b/0334#img",
      "text": "Hånden min er kort og foreningen med deg er fjern.",
-     "note": null
+     "note": "Å være sammen med deg er utenfor min rekkevidde; jeg er maktesløs."
     },
     {
      "id": "01/0203#img",
      "text": "Sier jeg det, brenner tunga mi; sier jeg det ikke, brenner margen i knoklene mine",
-     "note": null
+     "note": "Det gjør vondt å si det, men det gjør enda mer vondt å tie."
     },
     {
      "id": "03/0634#img",
      "text": "maten blir til slangegift for meg",
-     "note": null
+     "note": "Han ødelegger maten for meg."
     },
     {
      "id": "04b/0274#img",
      "text": "blir det ikke varmet noe brød til deg",
-     "note": null
+     "note": "Det fører ingen vei; du får ingenting ut av det."
     },
     {
      "id": "04b/0824#img",
      "text": "familien min med vold og makt puttet meg inn i hønsegården",
-     "note": null
+     "note": "Familien min presset meg til å gifte meg."
     },
     {
      "id": "04b/0509#img",
      "text": "sukkerbiten hopper i halsen min",
-     "note": null
+     "note": "Sukkerbiten går i vrangstrupen, og jeg holder på å kveles."
     },
     {
      "id": "01/0132#img",
      "text": "kikk inn i alle kroker og kott",
-     "note": null
+     "note": "Utforsk alt; se så mange steder du kan."
     },
     {
      "id": "06/0118#img",
      "text": "ord koster ingenting – det er bare varm luft",
-     "note": null
+     "note": "Det koster ingenting å si noe; ord alene beviser ingenting."
     },
     {
      "id": "04b/1247#img",
      "text": "ville han uten tvil synke i Negars øyne",
-     "note": null
+     "note": "Jenta ville helt sikkert ikke lenger tenke godt om ham."
     },
     {
      "id": "04b/1293#img",
      "text": "Bare et innhøstingstidsløfte?",
-     "note": null
+     "note": "Bare et tomt løfte som aldri blir holdt?"
     },
     {
      "id": "04b/0205#img",
      "text": "la meg servere deg vennskapets innvoller på et brett",
-     "note": null
+     "note": "La meg by deg på alt vennskapet jeg har."
     },
     {
      "id": "04b/1125#img",
      "text": "alt kroppshåret falt rett av dem",
-     "note": null
+     "note": "De ble fullstendig lamslått."
     },
     {
      "id": "03/0417#img",
      "text": "ikke stress deg opp, melken din tørker ut",
-     "note": null
+     "note": "Ro deg ned; det er ikke verdt å bli så opprørt."
     },
     {
      "id": "04b/0378#img",
      "text": "Ingen sier du er stum bare fordi du ikke fjerter.",
-     "note": null
+     "note": "Ingen hadde hatt noe imot det om du hadde holdt munn."
     },
     {
      "id": "04b/0181#img",
      "text": "Spis hodet på pikken min",
-     "note": null
+     "note": "En grov måte å si: stikk, ingen vil høre meningen din."
     },
     {
      "id": "04b/0899#img",
      "text": "Din pikkhodeeter",
-     "note": null
+     "note": "Et grovt skjellsord mellom venner, omtrent «din idiot»."
     },
     {
      "id": "04b/0209#img",
      "text": "ler av skjeggene og pikkene våre",
-     "note": null
+     "note": "Gjør narr av oss som ble igjen."
     },
     {
      "id": "04b/0822#img",
      "text": "gått rundt i gatene med pikken i hånden sånn",
-     "note": null
+     "note": "Gått rundt alene og uten mål, fortsatt singel."
     },
     {
      "id": "04b/0440#img",
      "text": "blir jeg ikke overrasket over noen pikk som lander på hodene våre",
-     "note": null
+     "note": "Jeg blir ikke overrasket over noen ulykke som rammer oss."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "stakk de kjeppen opp i ræva på oss fra provinsene",
+     "note": "Politikken har behandlet alle oss fra provinsene svært urettferdig."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Du kunne ikke engang ete hodet på den.",
+     "note": "Et grovt svar («den» = pikken): du kunne ikke ha gjort noe som helst."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Jeg kunne gå rundt og rundt hodet til Nini-jan.",
+     "note": "Et kjærlig uttrykk: Jeg ville gitt alt for henne."
     }
+   ],
+   "hint": "Vis betydningen",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

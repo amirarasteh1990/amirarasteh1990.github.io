@@ -13,7 +13,6 @@
   "needs_change": "Bør ændres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sige det?",
-  "meaning": "Hvad tror du, det betyder?",
   "optional": "(valgfrit)",
   "your_name": "Dit navn",
   "thanks_tick": "Skriv mit navn på takkesiden",
@@ -45,10 +44,9 @@
  "page": 2,
  "groups": [
   {
-   "key": "one",
+   "key": "nervous",
    "title": null,
-   "q": "The pole image means they were all screwed over. Is that clear?",
-   "q_lang": "en",
+   "q": "Fortælleren er nervøs her. Lyder hver linje naturlig på dansk?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -58,17 +56,79 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0663#s30",
-     "text": "De siger, det er for at holde børnene tæt på deres familier, men de har stukket en kæp op i røven på os alle sammen fra provinsen.",
+     "id": "04b/1320#nerv",
+     "text": "Og med rystende hænder bladrede jeg hurtigt gennem ghazalerne og ledte efter det beit hos Hafez, der ligesom maleriet, sådan som den anden pige havde sagt, ville gøre en mere og mere skideforvirret, jo dybere man sank ned i det",
+     "note": "han gentager et groft ord, som en pige fandt på om et maleri"
+    },
+    {
+     "id": "04b/1321#nerv1",
+     "text": "Ligesom det – jo mere du tænker over de her ti ord, desto mere skide-, altså, desto mere snurrer det rundt i hovedet på dig.",
+     "note": "han er lige ved at sige det grove ord igen, men stopper sig selv"
+    },
+    {
+     "id": "04b/1321#nerv2",
+     "text": "For-for Guds skyld, hør efter. … Det er ligesom det maleri, din ve-ve-veninde viste dig.",
+     "note": "han stammer"
+    }
+   ]
+  },
+  {
+   "key": "confess",
+   "title": null,
+   "q": "Fortælleren siger endelig til pigen, at han elsker hende. Lyder det naturligt og inderligt?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/1314#conf",
+     "text": "I toogtredive måneder har jeg elsket dig. På afstand. Uden at du vidste det. I stilhed, uden et eneste ord. Du siger måske, det er umuligt – at det ikke kan være virkeligt, at det er ren fantasi. Men det er virkeligt, og jeg elsker dig virkelig.",
+     "note": "på persisk taler han formelt til hende og bruger det høflige »De«"
+    }
+   ]
+  },
+  {
+   "key": "opening",
+   "title": null,
+   "q": "Dette er bogens første linjer. Læses de naturligt og klart?",
+   "labels": [
+    "Rigtigt",
+    "Bør ændres",
+    "Usikker"
+   ],
+   "note_label": "Hvordan ville du sige det?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "Opening/0007#op1",
+     "text": "Her sker ingenting. Her skal intet rettes op eller rives ned. Der er ingen fortolkning på vej. Ingen konklusion.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op2",
+     "text": "Dette er den løse ende af en tråd af ord, der engang var lyde.",
+     "note": null
+    },
+    {
+     "id": "Opening/0007#op3",
+     "text": "Ligesom i barndommen, når Maman trevlede garnet op af gammelt tøj, og vi tog tråden og kredsede rundt i huset, så garnet ikke hobede sig op.",
+     "note": "Maman er persisk for »mor« og er med vilje ikke oversat. Børnene bærer tråden rundt i huset, mens hun trevler garnet op."
+    },
+    {
+     "id": "Opening/0007#op4",
+     "text": "Nu vikler jeg ordenes tråd ud, og du tager dem op og bærer dem ind i din egen verden, så de ikke hober sig op her, i min verden.",
      "note": null
     }
    ]
   },
   {
-   "key": "one",
+   "key": "screw",
    "title": null,
-   "q": "This crude put-down means 'you could do nothing'. Is that clear?",
-   "q_lang": "en",
+   "q": "Erindringen går løs som en skrue med ødelagt gevind. Er billedet klart?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -78,57 +138,17 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0389#s32",
-     "text": "– Du kunne ikke engang æde hovedet på den. Men hold kæft, hvor var de kager gode. Med ananas.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy's running joke: an absurd chain of authorities. Does it land?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/1248#s34",
-     "text": "– Hvis der havde været sort, havde jeg taget sort. Vennen til fætteren til vores svogers mesterhåndværker, som er den rigeste mand i Teheran, har sagt, at sort er kærlighedens farve.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A memory comes loose like a stripped screw. Is the image clear?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0675#s35",
+     "id": "03/0675#screw",
      "text": "Fra da af var det billede, som en skrue med ødelagt gevind, ikke længere bundet til mørket bag husets lukkede dør.",
      "note": null
     }
-   ]
+   ],
+   "intro": "I bogen:"
   },
   {
-   "key": "one",
+   "key": "drill",
    "title": null,
-   "q": "Iranian grades go up to twenty. Is the line clear?",
-   "q_lang": "en",
+   "q": "En dreng leger soldat med sine små brødre. Lyder hans kommandoer som rigtig militær eksercits?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -138,118 +158,13 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "04b/0464#s36",
-     "text": "– Er du Heisenberg eller Einstein, siden du forventer at få tyve og blive hædret for dine oplysende teorier?",
+     "id": "04a/0024#drill",
+     "text": "Bataljon, fremad march.",
      "note": null
     },
     {
-     "id": "04b/0520#s36",
-     "text": "– Ingen diskussioner på værelset i dag. Jeg fik tolv ud af tyve i idræt; jeg er pissesur og sviner jer til.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "A boy plays soldier. Does the command sound like real army drill?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04a/0026#s40",
-     "text": "– Start på missionens første etape. Bataljon, venstre om.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Two lines of a sung poem name the song. Is that clear?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "04b/0935#s41",
-     "text": "– \"For Attar er det sødere at græde til daggry\" eller \"nu ligger han dybere dræbt\"?",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "The friend's habit word 'objectively': does it work as a verbal tic?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0398#s43",
-     "text": "– Røvhul. Objektivt set er dollaren ved at ramme 1500 toman, og du sidder og hakker på den stakkel?",
-     "note": null
-    },
-    {
-     "id": "03/0514#s43",
-     "text": "– De dræbte Gaddafi. Objektivt, kom og se videoen.",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "The narrator teases a friend by echoing his catchphrase. Does it land?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0175#s44",
-     "text": "– Altså rigere end vennen til fætteren til ...",
-     "note": null
-    }
-   ]
-  },
-  {
-   "key": "one",
-   "title": null,
-   "q": "Is it clear he rubs the spot just below his knee?",
-   "q_lang": "en",
-   "labels": [
-    "Rigtigt",
-    "Bør ændres",
-    "Usikker"
-   ],
-   "note_label": "Hvordan ville du sige det?",
-   "note_on": "change",
-   "rows": [
-    {
-     "id": "03/0090#s51",
-     "text": "Drengen bøjer sig ned og gnider undersiden af sit knæ med hånden.",
+     "id": "04a/0026#drill",
+     "text": "Start på missionens første etape. Bataljon, venstre om.",
      "note": null
     }
    ]
@@ -257,7 +172,7 @@
   {
    "key": "poetry",
    "title": "Poesi",
-   "q": "Dette er linjer af poesi. Lyder hver af dem godt som poesi på dansk?",
+   "q": "Dette er digte og verselinjer: fortællerens eget digt og linjer af klassiske persiske digtere (Kharaghani, Hafez, Attar). Læses hver af dem som poesi på dansk?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -267,66 +182,66 @@
    "note_on": "change",
    "rows": [
     {
-     "id": "03/0244#poetr",
-     "text": "– ... Salomons signetring tager jeg ikke for nogen pris, for af og til hviler over den hånden af ...",
-     "note": null
+     "id": "04b/1387#poem",
+     "text": "Mine drømme var mørke / Jeg kunne intet se / Du kom / Lyset i mine drømme blev tændt / Nu er du borte / Lyset i mine drømme blinker nu / Jeg nærer intet håb om din tilbagevenden / Men hvis din vej fører dig forbi / kom ind i mine drømme igen / Jeg tror ikke, mine drømme tror på, at du er gået / de tror, du er faret vild og",
+     "note": "fortællerens eget enkle digt til pigen, han mistede"
     },
     {
-     "id": "04b/0251#poetr",
-     "text": "– Håbet om forening med dig holder mig i live; ellers ville hvert åndedrag, skilt fra dig, være frygten for at forgå.",
-     "note": null
+     "id": "02/0002#poem",
+     "text": "Mine drømme var mørke / Jeg kunne intet se / Du kom / Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt / Nu ... nu ... nu er du borte ...",
+     "note": "han øver sig på det halvt i søvne; at han snubler i ordene, er med vilje"
     },
     {
-     "id": "04b/1267#poetr",
-     "text": "På alt kan der skrives",
-     "note": null
+     "id": "04b/1267#poem",
+     "text": "På alt kan der skrives / undtagen på vand / og hvis du krydser havet / skriv på vandet med dit eget blod / så at den, der følger i dit kølvand / vil vide at / elskende og / berusede og / brændte / har vandret her.",
+     "note": "et gammelt persisk digt af Kharaghani, skrevet på tavlen i et klasseværelse"
     },
     {
-     "id": "04b/1270#poetr",
-     "text": "skriv på vandet med dit eget blod",
-     "note": null
+     "id": "03/0244#poem",
+     "text": "... Salomons signetring tager jeg ikke for nogen pris, for af og til hviler over den hånden af ...",
+     "note": "en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen"
     },
     {
-     "id": "04b/1276#poetr",
-     "text": "har vandret her.",
-     "note": null
+     "id": "03/0622#poem",
+     "text": "Jeg er tjener hos Tavernens Ældste, hvis nåde ...",
+     "note": "en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen"
     },
     {
-     "id": "04b/1387#poetr",
-     "text": "Mine drømme var mørke",
-     "note": null
+     "id": "04b/0251#poem",
+     "text": "Håbet om forening med dig holder mig i live; ellers ville hvert åndedrag, skilt fra dig, være frygten for at forgå. … Sårer du, er det bedre end en andens balsam, og giver du gift, bedre end ...",
+     "note": "to linjer af Hafez, en klassisk persisk digter; den anden er afbrudt som i bogen"
     },
     {
-     "id": "04b/1393#poetr",
-     "text": "Jeg nærer intet håb om din tilbagevenden",
-     "note": null
+     "id": "04b/0271#poem",
+     "text": "...Kun de er sig Hafez' bedårende digtning bevidst; de, der kender poetisk ynde og kan tale persisk.",
+     "note": "en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen"
     },
     {
-     "id": "04b/1394#poetr",
-     "text": "Men hvis din vej fører dig forbi",
-     "note": null
+     "id": "04b/0316#poem",
+     "text": "Gud åbenbarede sin strålende skønhed for englene og så, at de intet vidste om kærlighed; af denne nidkærhed blev det til ren ild og slog ned i Adams ler.",
+     "note": "en linje af Hafez, en klassisk persisk digter"
     },
     {
-     "id": "04b/1395#poetr",
-     "text": "kom ind i mine drømme igen",
-     "note": null
+     "id": "04b/0742#poem",
+     "text": "Når jeg mindes elskede og hjemstavn, vil jeg græde i så bitter sorg, at jeg fra verden vil jage både rejsens vej og skik ...",
+     "note": "en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen"
     },
     {
-     "id": "04b/1396#poetr",
-     "text": "Jeg tror ikke, mine drømme tror på, at du er gået",
-     "note": null
+     "id": "04b/1301#poem",
+     "text": "Længe har den elskede ikke sendt bud, ikke skrevet en hilsen ...",
+     "note": "en linje af Hafez, en klassisk persisk digter; afbrudt som i bogen"
     },
     {
-     "id": "02/0006#poetr",
-     "text": "Nu ... nu ... nu er du borte ...",
-     "note": null
+     "id": "04b/0935#poem",
+     "text": "\"For Attar er det sødere at græde til daggry\" eller \"nu ligger han dybere dræbt\"?",
+     "note": "en ven spørger, hvilken af to sange han mener; hver sang er opkaldt efter en linje fra et digt af Attar, en klassisk persisk digter"
     }
    ]
   },
   {
    "key": "word_choice",
    "title": "Enkelte ord",
-   "q": "Er ordet i hver linje det rigtige? Det, det skal betyde, står under linjen.",
+   "q": "Under hver linje står et ord fra den, og hvad det skal betyde. Er det det rigtige ord her?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -338,277 +253,187 @@
     {
      "id": "01/0004#word_",
      "text": "– Du gjorde det helt rigtige, Nini-jan. De siger, at babyer har brug for meget søvn. Ti timer om dagen.",
-     "note": "\"Nini\" = loving family pet name for Mother"
+     "note": "\"Nini\" = kærligt kælenavn i familien for mor"
     },
     {
      "id": "01/0040#word_",
      "text": "– Ikke noget med at snyde og åbne øjnene. Snyder du, syr jeg dig sammen.",
-     "note": "\"syr jeg dig sammen\" = joking threat: I'll sew your eyes shut"
-    },
-    {
-     "id": "01/0087#word_",
-     "text": "– Han var blevet så mager og mørk, den hjerneløse abe.",
-     "note": "\"den hjerneløse abe\" = insult: a stupid, foolish man"
+     "note": "\"syr jeg dig sammen\" = spøgefuld trussel: så syr jeg dine øjne i"
     },
     {
      "id": "01/0166#word_",
      "text": "Uanset hvor meget jeg sagde: lad være med at slå børnene, sagde han, jeg blev granatchokeret i krigen, jeg kan ikke gøre for det.",
-     "note": "\"jeg blev granatchokeret\" = I was shell-shocked in the war"
+     "note": "\"jeg blev granatchokeret\" = jeg fik granatchok i krigen"
     },
     {
      "id": "01/0184#word_",
      "text": "– Kvinder? Bare han dog havde. Den, der vil have ham, kan få ham. Vi giver noget ekstra oveni.",
-     "note": "\"Vi giver noget ekstra oveni\" = we'd even add something extra as a bonus"
+     "note": "\"Vi giver noget ekstra oveni\" = vi giver endda noget ekstra med i købet"
     },
     {
      "id": "01/0222#word_",
      "text": "– Hmpf! Selvfølgelig taler Ghassem sandt.",
-     "note": "\"taler Ghassem sandt\" = Ghassem is telling the truth (sarcastic)"
+     "note": "\"taler Ghassem sandt\" = han taler selvfølgelig sandt (sarkastisk)"
     },
     {
      "id": "03/0026#word_",
      "text": "– Ja ja, klart.",
-     "note": "\"Ja ja, klart\" = obviously yes, I was calling you"
+     "note": "\"Ja ja, klart\" = ja, selvfølgelig, det var dig, jeg kaldte på"
     },
     {
      "id": "03/0079#word_",
      "text": "– Og endnu mere.",
-     "note": "\"Og endnu mere\" = I fully agree, and even more"
+     "note": "\"Og endnu mere\" = jeg er helt enig, og mere til"
     },
     {
      "id": "03/0118#word_",
      "text": "– Sikke en lækkerbisken.",
-     "note": "\"Sikke en lækkerbisken\" = what a pretty girl (boy's slang)"
+     "note": "\"Sikke en lækkerbisken\" = sikke en flot pige (drengeslang)"
     },
     {
      "id": "03/0227#word_",
      "text": "– Intet problem. Jeg slås med jer begge på én gang, for I er bare et par små finker.",
-     "note": "\"et par små finker\" = tiny and weak, easy to beat"
+     "note": "\"et par små finker\" = små og svage, nemme at slå"
     },
     {
      "id": "03/0278#word_",
      "text": "Man kan på en måde sige, de erobrede universitetet. Karroubi er kærlighed, ærligt talt.",
-     "note": "\"Karroubi er kærlighed, ærligt talt\" = Karroubi is great (excited youth slang)"
+     "note": "\"Karroubi er kærlighed, ærligt talt\" = Karroubi er fantastisk (begejstret ungdomsslang)"
     },
     {
      "id": "03/0297#word_",
      "text": "– Alt, hvad du laver, er lappeløsninger.",
-     "note": "\"lappeløsninger\" = sloppy makeshift fixes"
+     "note": "\"lappeløsninger\" = sjuskede nødløsninger"
     },
     {
      "id": "03/0310#word_",
      "text": "Stemmerne fra en dreng og en pige trænger ud af elevatoren. De kalder mig syg.",
-     "note": "\"De kalder mig syg\" = nuts, a weirdo (said mockingly)"
+     "note": "\"De kalder mig syg\" = skør, en særling (sagt hånligt)"
     },
     {
      "id": "03/0345#word_",
      "text": "– Er De ikke færdig med det, De kom for?",
-     "note": "\"De\" = formal 'you', sounding cold and distant"
+     "note": "\"De\" = høfligt »De«, der lyder koldt og distanceret"
     },
     {
      "id": "03/0476#word_",
      "text": "– Kan De forklare mig, hvordan Deres forhold er til Deres mandlige slægtninge?",
-     "note": "\"De\" = formal 'you' from a shy student"
+     "note": "\"De\" = høfligt »De« fra en genert studerende"
     },
     {
      "id": "03/0531#word_",
      "text": "Da han kom i fjor, havde hans kones brødre banket ham så meget, at han var sort over det hele.",
-     "note": "\"sort over det hele\" = covered in bruises"
+     "note": "\"sort over det hele\" = fuld af blå mærker"
     },
     {
      "id": "04a/0038#word_",
      "text": "– Ind på hovedgaden: tsk-tsk.",
-     "note": "\"tsk-tsk\" = tongue click meaning no, forbidden"
+     "note": "\"tsk-tsk\" = klik med tungen, der betyder nej, forbudt"
     },
     {
      "id": "04b/0142#word_",
      "text": "– Ja, jeg har hørt et og andet om det der med lokalisering.",
-     "note": "\"lokalisering\" = regional quota system for university places"
-    },
-    {
-     "id": "04b/0146#word_",
-     "text": "– Lortehjerne. Du får mig til at åbne munden. Jeg mener: Har du bare hørt om det? Blev du ikke selv ramt?",
-     "note": "\"Lortehjerne\" = shit-for-brains, crude insult for a dimwit"
-    },
-    {
-     "id": "04b/0162#word_",
-     "text": "– Ja, i samme øjeblik de ser os, klemmer de røvhullerne sammen og holder sådan afstand, at jeg har lyst til at plante begge fødder i ansigtet på dem.",
-     "note": "\"klemmer de røvhullerne sammen\" = tense up and act snooty (crude image)"
+     "note": "\"lokalisering\" = regionalt kvotesystem for studiepladser på universitetet"
     },
     {
      "id": "04b/0175#word_",
      "text": "– Ja. Lad dig ikke narre af den her Arasteh; tåbelig som han er, var hans Konkur-placering fireoghalvfjerds.",
-     "note": "\"tåbelig som han er\" = goofy, silly, said fondly"
-    },
-    {
-     "id": "04b/0186#word_",
-     "text": "– Jeg ville have foretrukket at dele værelse med dem frem for en pikhjerne som dig.",
-     "note": "\"pikhjerne\" = dick-brain, crude insult for an idiot"
+     "note": "\"tåbelig som han er\" = fjollet, tosset, sagt kærligt"
     },
     {
      "id": "04b/0228#word_",
      "text": "For et par år siden hørte jeg fra Ørneøje News, at den spradebasse også var rejst til Australien, sådan lidt på jagt efter den pige, I begge elskede.",
-     "note": "\"den spradebasse\" = vain show-off, a dandy (mocking)"
+     "note": "\"den spradebasse\" = forfængelig pralhals, en laps (hånligt)"
     },
     {
      "id": "04b/0270#word_",
      "text": "– Jeg ved det. Jeg er ingen dumrian. Men det her duer ikke.",
-     "note": "\"Jeg er ingen dumrian\" = I'm not stupid (said half annoyed)"
+     "note": "\"Jeg er ingen dumrian\" = jeg er ikke dum (sagt halvt irriteret)"
     },
     {
      "id": "04b/0317#word_",
      "text": "– Jeg bliver så gal, når du bare sidder der uden at sige noget. Jeg har lyst til at slå dig med knytnæven.",
-     "note": "\"slå dig med knytnæven\" = punch you (playful, annoyed young woman)"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Så er du en fucking førsteårsstuderende.",
-     "note": "\"fucking førsteårsstuderende\" = fucking freshman, casual friendly swearing"
-    },
-    {
-     "id": "04b/0351#word_",
-     "text": "Hvad føjede førsteplads og jeg ved ikke, en ekstra uddannelse til længden på min pik, når mit job nu er at tilse elstationer?",
-     "note": "\"til længden på min pik\" = do me any good (crude)"
+     "note": "\"slå dig med knytnæven\" = slå dig (legende sagt af en irriteret ung kvinde)"
     },
     {
      "id": "04b/0353#word_",
      "text": "– Og i den lortesituation, hvilke antikviteter fik vi kastet på os?",
-     "note": "\"antikviteter\" = odd, weird people (mocking slang)"
-    },
-    {
-     "id": "04b/0394#word_",
-     "text": "– ... vi blev kneppet.",
-     "note": "\"vi blev kneppet\" = we got screwed over, cheated"
+     "note": "\"antikviteter\" = underlige, mærkelige typer (hånligt slang)"
     },
     {
      "id": "04b/0421#word_",
      "text": "– Leopard-Farid, behersk dig og lav ikke en morderisk manøvre.",
-     "note": "\"morderisk manøvre\" = a rash, wild move (running joke)"
+     "note": "\"morderisk manøvre\" = et vildt, overilet træk (gennemgående joke)"
     },
     {
      "id": "04b/0434#word_",
      "text": "– Hvis Kamyar ikke havde været så skide fin på den og var forblevet på kollegiet, var der ikke kommet en ledig seng, så disse mærkværdigheder kunne falde i skødet på os.",
-     "note": "\"falde i skødet på os\" = landed us with (said sarcastically)"
-    },
-    {
-     "id": "04b/0454#word_",
-     "text": "Så vidt jeg kunne forstå af opslaget, var han blevet fysiklærer på et af gymnasierne i sin hjemby, og idioten med vrangforestillinger havde undervist i sine egne teorier i stedet for stoffet i bogen.",
-     "note": "\"idioten med vrangforestillinger\" = crude: a deluded idiot"
+     "note": "\"falde i skødet på os\" = som vi fik på halsen (sagt sarkastisk)"
     },
     {
      "id": "04b/0540#word_",
      "text": "Med den hæshed, sukkerknalden har efterladt i min stemme, siger jeg:",
-     "note": "\"den hæshed, sukkerknalden har efterladt\" = the rasp the sugar cube left"
-    },
-    {
-     "id": "04b/0562#word_",
-     "text": "– Ørneøje, må Gud aldrig tilgive dig, du ødelagde min ryg. Hvorfor bærer du ikke briller?",
-     "note": "\"må Gud aldrig tilgive dig\" = half-joking curse: may God not forgive you"
+     "note": "\"den hæshed, sukkerknalden har efterladt\" = den ru hæshed, som sukkerstykket har efterladt i stemmen"
     },
     {
      "id": "04b/0575#word_",
      "text": "– Ørneøje, Gud har allerede ramt Fluen, så lad være med også at ramme ham. For din mors skyld, lad være med at gå rundt på værelset uden briller.",
-     "note": "\"For din mors skyld\" = a plea, I beg you; not an insult"
+     "note": "\"For din mors skyld\" = en bøn, jeg beder dig; ikke en fornærmelse"
     },
     {
      "id": "04b/0586#word_",
      "text": "– Hvad-coin?",
-     "note": "\"Hvad-coin?\" = What coin? (catching only part of Bitcoin)"
+     "note": "\"Hvad-coin?\" = Hvilken coin? (fanger kun en del af »Bitcoin«)"
     },
     {
      "id": "04b/0600#word_",
      "text": "Det vigtige er, at når jeg går i supermarkedet, betaler jeg penge, køber min mælk og kage og putter det i kroppen.",
-     "note": "\"putter det i kroppen\" = eat them (blunt and funny)"
-    },
-    {
-     "id": "04b/0690#word_",
-     "text": "Det ville have været nok, hvis elektro- og maskiningeniørprofessorerne mange år tidligere ikke havde fået pikken op at stå for at tage Abu-Reyhan-bygningen fra Skibsbygningsfakultetet",
-     "note": "\"fået pikken op at stå for\" = crude: lusted after, were dying to grab"
-    },
-    {
-     "id": "04b/0717#word_",
-     "text": "– Jeg siger, Ældi-jan, men bare mellem os: du endte i udlandet ved et rent pisseheld.",
-     "note": "\"ved et rent pisseheld\" = a fucking fluke, sheer dumb luck"
+     "note": "\"putter det i kroppen\" = spiser dem (ligeud og morsomt sagt)"
     },
     {
      "id": "04b/0721#word_",
      "text": "– Ældi, i stedet for at ligge og slænge dig på sengen sådan og lege med dine nosser, så stå op og send dem. Det er et kup.",
-     "note": "\"Det er et kup\" = a good deal; worth it"
-    },
-    {
-     "id": "04b/0723#word_",
-     "text": "– Nå, hvis du ikke er typen, der vil søge ind på et universitet i udlandet og rejse væk, hvorfor rev du så røven i laser for at tage TOEFL-eksamen?",
-     "note": "\"rev du så røven i laser\" = crude: slaved away, worked very hard"
+     "note": "\"Det er et kup\" = en god handel; det er det værd"
     },
     {
      "id": "04b/0784#word_",
      "text": "– Du er meget lusket.",
-     "note": "\"Du er meget lusket\" = very sneaky (playful teasing)"
-    },
-    {
-     "id": "04b/0818#word_",
-     "text": "– Ældi, se hvor langt du har drevet det: Farid, som ikke giver en fløjtende fis for os eller værelset eller nogen som helst, har talt.",
-     "note": "\"ikke giver en fløjtende fis\" = coarse: doesn't care at all"
+     "note": "\"Du er meget lusket\" = meget snu (legende drilleri)"
     },
     {
      "id": "04b/0897#word_",
      "text": "– I kan bare gå tilbage til jeres jigily-jigily-pop og Soosan Khanom. Hvad skal I lytte til Moein for?",
-     "note": "\"jigily-jigily-pop\" = cheap bouncy pop (said with a sneer)"
+     "note": "\"jigily-jigily-pop\" = billig, hoppende pop (sagt hånligt)"
     },
     {
      "id": "04b/0919#word_",
      "text": "– Røvslikkeri klæder dig ikke.",
-     "note": "\"Røvslikkeri klæder dig ikke\" = sucking up isn't like you"
-    },
-    {
-     "id": "04b/1275#word_",
-     "text": "brændte",
-     "note": "\"brændte\" = those burned, consumed by love"
-    },
-    {
-     "id": "04b/1312#word_",
-     "text": "Man bliver helt skideforvirret. Jo mere man tænker over det, desto mere skideforvirret bliver man.",
-     "note": "\"skideforvirret\" = crude coinage: so baffled your head spins"
-    },
-    {
-     "id": "04b/1320#word_",
-     "text": "Og med rystende hænder bladrede jeg hurtigt gennem ghazalerne og ledte efter det beit hos Hafez, der ligesom maleriet, sådan som den anden pige havde sagt, ville gøre en mere og mere skideforvirret, jo dybere man sank ned i det – så jeg kunne vise det til Niloofar.",
-     "note": "\"skideforvirret\" = more baffled; echoes her crude coinage"
-    },
-    {
-     "id": "04b/1392#word_",
-     "text": "Lyset i mine drømme blinker nu",
-     "note": "\"blinker nu\" = now flickers, like a failing light"
+     "note": "\"Røvslikkeri klæder dig ikke\" = det ligner ikke dig at fedte for nogen"
     },
     {
      "id": "06/0040#word_",
      "text": "– Hmm, vi tænkte, du ville blive ked af det, Nana-pesar-jan. Du havde jo dit ph.d.-forsvar.",
-     "note": "\"ph.d.-forsvar\" = doctoral defense, in Maman's plain words"
+     "note": "\"ph.d.-forsvar\" = ph.d.-forsvar, sagt med morens enkle ord"
     },
     {
      "id": "06/0108#word_",
      "text": "– Nååååh. Det var mig, der havde sagt det til hende. Nini så, at det var en god sætning og sendte den videre til dig.",
-     "note": "\"Nååååh\" = long, teasing, mock-tender 'aww'"
+     "note": "\"Nååååh\" = langt, drillende, spøgefuldt ømt »åh«"
     },
     {
      "id": "06/0186#word_",
      "text": "– Jeg ville ofre mig for dig, Nini-jan. Du har sådan et godt hoved.",
-     "note": "\"Jeg ville ofre mig for dig\" = loving endearment: I'd give my life for you"
+     "note": "\"Jeg ville ofre mig for dig\" = kærligt udtryk: jeg ville give mit liv for dig"
     },
     {
      "id": "06/0253#word_",
      "text": "Gå nu og hent lidt kerner til Ghassem og de andre – de vil se film.",
-     "note": "\"kerner\" = roasted seeds to snack on"
+     "note": "\"kerner\" = ristede kerner at gumle på"
     },
     {
      "id": "06/0291#word_",
      "text": "– Han brokker sig uden grund, hæ, Amir-jan. Er det ikke det ene, finder han noget andet.",
-     "note": "\"hæ\" = a short, soft laugh"
-    },
-    {
-     "id": "02/0005#word_",
-     "text": "Lyset i mine drømme ... lyset i mine drømme blev ... lyset i mine drømme blev tændt",
-     "note": "\"blev tændt\" = came on, as a lamp does"
+     "note": "\"hæ\" = en kort, stille latter"
     }
    ]
   }

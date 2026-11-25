@@ -34,6 +34,9 @@
   border-radius:0;background:none}
 .nc-group .nc-item .reader p.nc-line{margin:0 0 4px}
 .nc-note{margin:0 0 2px;color:var(--muted);font-size:.92rem}
+.nc-hint{margin:0 0 4px}
+.nc-hint summary{cursor:pointer;color:var(--accent);font-size:.92rem;min-height:32px;display:list-item}
+.nc-hint p{margin:2px 0 4px}
 .nc-after{margin:4px 0 6px;padding-inline-start:1.2em}
 .nc-group .nc-q{margin:6px 0 0}
 .nc-notebox[hidden]{display:none}
@@ -143,9 +146,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 
   <form class="nc-form" id="ncForm" data-format="2" data-lang="pt" data-language="Portuguese" data-version="2026-11-25.s1.p2" data-round="2" data-pages="4" data-base="/sedaha/check/pt/" novalidate>
   <section class="nc-group" aria-labelledby="g7">
-    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span lang="en" dir="ltr">The book's opening. Does it read naturally and clearly?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l1" data-id="Opening/0007#s18" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l1">Aqui, nada acontece. Nada aqui vai ser corrigido, nem destruído.</p></div>
+    <h2 class="nc-gh nc-gh-q" id="g7"><span class="nc-num">7</span> <span>Aqui o narrador está nervoso. Cada frase soa natural em português?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l1" data-id="04b/1320#nerv" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l1">E, com as mãos a tremer, percorria rapidamente os ghazals para encontrar um beit de Hafez que, tal como a pintura, como dizia aquela outra rapariga, nos desse uma tontura do caralho cada vez maior quanto mais nos afundássemos na sua profundidade.</p></div>
+      <p class="nc-note">ele repete uma palavra grosseira que uma rapariga inventou sobre uma pintura</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l1">
         <label><input type="radio" name="v1" value="ok"> Correto</label>
         <label><input type="radio" name="v1" value="change"> Precisa de alteração</label>
@@ -156,11 +160,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n1" name="n1" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g8">
-    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span lang="en" dir="ltr">This crude put-down means 'you could do nothing'. Is that clear?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/0389#s32" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l2">Nem a cabeça dela conseguias comer.</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l2" data-id="04b/1321#nerv1" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l2">Igual: quanto mais pensas nestas dez palavras, mais ca..., coisa, mais tonto ficas.</p></div>
+      <p class="nc-note">está quase a repetir a palavra grosseira, mas para</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l2">
         <label><input type="radio" name="v2" value="ok"> Correto</label>
         <label><input type="radio" name="v2" value="change"> Precisa de alteração</label>
@@ -171,11 +173,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n2" name="n2" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g9">
-    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span lang="en" dir="ltr">A boy plays soldier. Does the command sound like real army drill?</span></h2>
-    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04a/0024#s40" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l3">Batalhão, em frente, marche!</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l3" data-id="04b/1321#nerv2" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l3">Por, por Deus, escuta. … É como aquela pintura que a tua a-a-amiga mostrava.</p></div>
+      <p class="nc-note">ele gagueja</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l3">
         <label><input type="radio" name="v3" value="ok"> Correto</label>
         <label><input type="radio" name="v3" value="change"> Precisa de alteração</label>
@@ -186,8 +186,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n3" name="n3" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04a/0026#s40" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l4">Batalhão, à esquerda, volver!</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g8">
+    <h2 class="nc-gh nc-gh-q" id="g8"><span class="nc-num">8</span> <span>O narrador diz finalmente à rapariga que a ama. Soa natural e sentido?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l4" data-id="04b/1314#conf" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l4">Há trinta e dois meses que gosto de si. De longe. Sem que saiba. Em silêncio. Sem uma única palavra. Talvez diga que assim não pode ser, que é impossível, que é imaginário e não real. Mas foi assim e gosto mesmo de si.</p></div>
+      <p class="nc-note">em persa, ele fala-lhe de forma formal, com o tratamento de cortesia (não por «tu»)</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l4">
         <label><input type="radio" name="v4" value="ok"> Correto</label>
         <label><input type="radio" name="v4" value="change"> Precisa de alteração</label>
@@ -199,11 +203,10 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       </p>
     </div>
   </section>
-  <section class="nc-group" aria-labelledby="g10">
-    <h2 class="nc-gh" id="g10"><span class="nc-num">10</span> Poesia</h2>
-    <p class="nc-gq">Estes são versos de poesia. Cada um lê-se bem como poesia em português?</p>
-    <div class="nc-item" role="group" aria-labelledby="l5" data-id="03/0244#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l5">Não aceitaria por preço nenhum esse anel de Salomão, sobre o qual às vezes a mão de</p></div>
+  <section class="nc-group" aria-labelledby="g9">
+    <h2 class="nc-gh nc-gh-q" id="g9"><span class="nc-num">9</span> <span>Estas são as primeiras linhas do livro. Leem-se de forma natural e clara?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l5" data-id="Opening/0007#op1" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l5">Aqui, nada acontece. Nada aqui vai ser corrigido, nem destruído. Nenhuma interpretação virá. Nenhuma conclusão.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l5">
         <label><input type="radio" name="v5" value="ok"> Correto</label>
         <label><input type="radio" name="v5" value="change"> Precisa de alteração</label>
@@ -214,8 +217,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n5" name="n5" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l6" data-id="04b/0935#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l6">«Para Attar, chorar até à madrugada é mais doce» ou «agora ficou ainda mais morto»?</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l6" data-id="Opening/0007#op2" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l6">Esta é a ponta solta de um fio de palavras que outrora foram sons.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l6">
         <label><input type="radio" name="v6" value="ok"> Correto</label>
         <label><input type="radio" name="v6" value="change"> Precisa de alteração</label>
@@ -226,8 +229,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n6" name="n6" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l7" data-id="04b/1270#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l7">escreve sobre a água com o teu próprio sangue</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l7" data-id="Opening/0007#op3" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l7">Como na infância, quando a Maman desmanchava a lã das roupas velhas, e nós pegávamos no fio e dávamos voltas dentro de casa para que a lã não se amontoasse.</p></div>
+      <p class="nc-note">Maman é a palavra persa para «mãe», mantida sem tradução de propósito. As crianças levam o fio pela casa enquanto ela desmancha a lã.</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l7">
         <label><input type="radio" name="v7" value="ok"> Correto</label>
         <label><input type="radio" name="v7" value="change"> Precisa de alteração</label>
@@ -238,8 +242,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n7" name="n7" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l8" data-id="04b/1275#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l8">os abrasados</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l8" data-id="Opening/0007#op4" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l8">Agora eu vou desenrolando o fio das palavras, e tu vais recolhendo essas palavras e levando-as para o teu mundo, para que não se amontoem aqui, no meu mundo.</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l8">
         <label><input type="radio" name="v8" value="ok"> Correto</label>
         <label><input type="radio" name="v8" value="change"> Precisa de alteração</label>
@@ -250,8 +254,12 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n8" name="n8" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l9" data-id="04b/1390#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l9">A luz dos meus sonhos acendeu-se</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g10">
+    <h2 class="nc-gh nc-gh-q" id="g10"><span class="nc-num">10</span> <span>A memória solta-se como um parafuso com a rosca moída. A imagem é clara?</span></h2>
+    <p class="nc-gq">No livro:</p>
+    <div class="nc-item" role="group" aria-labelledby="l9" data-id="03/0675#screw" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l9">A partir daí, como um parafuso com a rosca moída, aquela imagem já não estava presa à escuridão por detrás da porta fechada da nossa casa</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l9">
         <label><input type="radio" name="v9" value="ok"> Correto</label>
         <label><input type="radio" name="v9" value="change"> Precisa de alteração</label>
@@ -262,8 +270,11 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n9" name="n9" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04b/1392#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l10">A luz dos meus sonhos pisca agora</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g11">
+    <h2 class="nc-gh nc-gh-q" id="g11"><span class="nc-num">11</span> <span>Um rapaz brinca aos soldados com os irmãos mais novos. As ordens dele soam a verdadeira instrução militar?</span></h2>
+    <div class="nc-item" role="group" aria-labelledby="l10" data-id="04a/0024#drill" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l10">Batalhão, em frente, marche!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l10">
         <label><input type="radio" name="v10" value="ok"> Correto</label>
         <label><input type="radio" name="v10" value="change"> Precisa de alteração</label>
@@ -274,8 +285,8 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n10" name="n10" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04b/1394#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l11">mas se acaso passares perto</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l11" data-id="04a/0026#drill" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l11">Início da primeira etapa da missão. Batalhão, à esquerda, volver!</p></div>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l11">
         <label><input type="radio" name="v11" value="ok"> Correto</label>
         <label><input type="radio" name="v11" value="change"> Precisa de alteração</label>
@@ -286,8 +297,13 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n11" name="n11" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1396#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l12">Creio que os meus sonhos não acreditaram que partiste</p></div>
+  </section>
+  <section class="nc-group" aria-labelledby="g12">
+    <h2 class="nc-gh" id="g12"><span class="nc-num">12</span> Poesia</h2>
+    <p class="nc-gq">São poemas e versos: o poema do próprio narrador e versos de poetas persas clássicos (Kharaghani, Hafez, Attar). Cada um lê-se como poesia em português?</p>
+    <div class="nc-item" role="group" aria-labelledby="l12" data-id="04b/1387#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l12">Os meus sonhos eram escuros / Não conseguia ver nada / Tu vieste / A luz dos meus sonhos acendeu-se / Agora partiste / A luz dos meus sonhos pisca agora / Não tenho esperança no teu regresso / mas se acaso passares perto / volta outra vez aos meus sonhos / Creio que os meus sonhos não acreditaram que partiste / imaginam que te perdeste e</p></div>
+      <p class="nc-note">o poema simples do próprio narrador, para a rapariga que perdeu</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l12">
         <label><input type="radio" name="v12" value="ok"> Correto</label>
         <label><input type="radio" name="v12" value="change"> Precisa de alteração</label>
@@ -298,8 +314,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n12" name="n12" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0005#poetr" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l13">A luz dos meus sonhos ... a luz dos meus sonhos acendia-se ... a luz dos meus sonhos acendeu-se</p></div>
+    <div class="nc-item" role="group" aria-labelledby="l13" data-id="02/0002#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l13">Os meus sonhos eram escuros / Não conseguia ver nada / Tu vieste / A luz dos meus sonhos ... a luz dos meus sonhos acendia-se ... a luz dos meus sonhos acendeu-se / Agora ... agora ... agora partiste ...</p></div>
+      <p class="nc-note">ensaia-o meio a dormir; os tropeções são propositados</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l13">
         <label><input type="radio" name="v13" value="ok"> Correto</label>
         <label><input type="radio" name="v13" value="change"> Precisa de alteração</label>
@@ -310,13 +327,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n13" name="n13" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-  </section>
-  <section class="nc-group" aria-labelledby="g11">
-    <h2 class="nc-gh" id="g11"><span class="nc-num">11</span> Palavras soltas</h2>
-    <p class="nc-gq">A palavra de cada frase é a certa? O que deveria significar aparece por baixo.</p>
-    <div class="nc-item" role="group" aria-labelledby="l14" data-id="03/0517#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l14">O Farid Leopardo não sabe o que quer. Por um lado, desfere golpes homicidas; por outro, diz: ai, sangue, deu-me arrepios.</p></div>
-      <p class="nc-note">"golpes homicidas" = murderous moves: tough-guy stunts</p>
+    <div class="nc-item" role="group" aria-labelledby="l14" data-id="04b/1267#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l14">Pode escrever-se sobre todas as coisas / exceto sobre a água / e se atravessares o mar / escreve sobre a água com o teu próprio sangue / para que aquele que vier na tua esteira / saiba que / os amantes e / os ébrios e / os abrasados / passaram por aqui.</p></div>
+      <p class="nc-note">um antigo poema persa de Kharaghani, escrito no quadro de uma sala de aula</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l14">
         <label><input type="radio" name="v14" value="ok"> Correto</label>
         <label><input type="radio" name="v14" value="change"> Precisa de alteração</label>
@@ -327,9 +340,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n14" name="n14" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0663#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l15">Carapinha, pareces tão espantado, como se tivesses entrado para a universidade sem o Konkoor.</p></div>
-      <p class="nc-note">"Carapinha" = Curly: harmless nickname for curly hair</p>
+    <div class="nc-item" role="group" aria-labelledby="l15" data-id="03/0244#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l15">... Não aceitaria por preço nenhum esse anel de Salomão, sobre o qual às vezes a mão de ...</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico; cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l15">
         <label><input type="radio" name="v15" value="ok"> Correto</label>
         <label><input type="radio" name="v15" value="change"> Precisa de alteração</label>
@@ -340,9 +353,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n15" name="n15" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l16" data-id="04b/0186#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l16">Eu teria preferido partilhar quarto com eles em vez de uma cabeça de pau como tu.</p></div>
-      <p class="nc-note">"cabeça de pau" = dick-brain, crude insult for an idiot</p>
+    <div class="nc-item" role="group" aria-labelledby="l16" data-id="03/0622#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l16">Sou servo do Ancião da Taverna, cuja graça...</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico; cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l16">
         <label><input type="radio" name="v16" value="ok"> Correto</label>
         <label><input type="radio" name="v16" value="change"> Precisa de alteração</label>
@@ -353,9 +366,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n16" name="n16" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0228#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l17">Há um ou dois anos ouvi pelo Olho de Águia News que aquele janota também foi para a Austrália, de certa forma atrás da rapariga que vocês os dois amavam.</p></div>
-      <p class="nc-note">"aquele janota" = vain show-off, a dandy (mocking)</p>
+    <div class="nc-item" role="group" aria-labelledby="l17" data-id="04b/0251#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l17">A esperança de me unir a ti mantém-me vivo; senão, cada respiração minha, separado de ti, seria o medo de perecer. … Se és tu a ferir, mais vale isso do que o bálsamo de outro, e se és tu a dar o veneno, mais vale isso do que ...</p></div>
+      <p class="nc-note">dois versos de Hafez, poeta persa clássico; o segundo está cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l17">
         <label><input type="radio" name="v17" value="ok"> Correto</label>
         <label><input type="radio" name="v17" value="change"> Precisa de alteração</label>
@@ -366,9 +379,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n17" name="n17" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0575#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l18">Pela vida da tua mãe, não andes pelo quarto sem óculos.</p></div>
-      <p class="nc-note">"Pela vida da tua mãe" = a plea, I beg you; not an insult</p>
+    <div class="nc-item" role="group" aria-labelledby="l18" data-id="04b/0271#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l18">...Da poesia encantadora de Hafez só aqueles estão cientes; aqueles que conhecem a graça poética e sabem falar persa.</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico; cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l18">
         <label><input type="radio" name="v18" value="ok"> Correto</label>
         <label><input type="radio" name="v18" value="change"> Precisa de alteração</label>
@@ -379,9 +392,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n18" name="n18" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0784#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l19">És muito sneaky.</p></div>
-      <p class="nc-note">"sneaky" = English 'sneaky', slipped in playfully</p>
+    <div class="nc-item" role="group" aria-labelledby="l19" data-id="04b/0316#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l19">Deus desvelou diante dos anjos a Sua magnífica beleza e viu que nada sabiam de amor; desse zelo ciumento, a manifestação da beleza fez-se puro fogo e atingiu o barro de Adão.</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l19">
         <label><input type="radio" name="v19" value="ok"> Correto</label>
         <label><input type="radio" name="v19" value="change"> Precisa de alteração</label>
@@ -392,9 +405,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n19" name="n19" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/1312#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l20">Fica-se com uma tontura do caralho. Quanto mais se pensa nisso, maior fica a tontura do caralho.</p></div>
-      <p class="nc-note">"tontura do caralho" = crude coinage: so baffled your head spins</p>
+    <div class="nc-item" role="group" aria-labelledby="l20" data-id="04b/0742#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l20">recordando a amada e a pátria, chorarei tão amargamente que do mundo os caminhos e costumes da viagem ...</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico; cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l20">
         <label><input type="radio" name="v20" value="ok"> Correto</label>
         <label><input type="radio" name="v20" value="change"> Precisa de alteração</label>
@@ -405,9 +418,9 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
         <textarea id="n20" name="n20" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
-    <div class="nc-item" role="group" aria-labelledby="l21" data-id="06/0253#word_" data-note-on="change">
-      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l21">Agora vai buscar sementes para o Ghassem e os outros – querem ver um filme.</p></div>
-      <p class="nc-note">"sementes" = roasted seeds to snack on</p>
+    <div class="nc-item" role="group" aria-labelledby="l21" data-id="04b/1301#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l21">Há muito que o amado não manda recado, não escreve uma saudação ...</p></div>
+      <p class="nc-note">um verso de Hafez, poeta persa clássico; cortado como no livro</p>
       <div class="nc-verdict" role="radiogroup" aria-labelledby="l21">
         <label><input type="radio" name="v21" value="ok"> Correto</label>
         <label><input type="radio" name="v21" value="change"> Precisa de alteração</label>
@@ -416,6 +429,101 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
       <p class="guestbook-field nc-notebox" hidden>
         <label for="n21">Como diria isto? <span class="nc-optional">(opcional)</span></label>
         <textarea id="n21" name="n21" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l22" data-id="04b/0935#poem" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l22">«Para Attar, chorar até à madrugada é mais doce» ou «agora ficou ainda mais morto»?</p></div>
+      <p class="nc-note">um amigo pergunta qual de duas canções; cada uma é designada por um verso de um poema de Attar, poeta persa clássico</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l22">
+        <label><input type="radio" name="v22" value="ok"> Correto</label>
+        <label><input type="radio" name="v22" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v22" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n22">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n22" name="n22" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+  </section>
+  <section class="nc-group" aria-labelledby="g13">
+    <h2 class="nc-gh" id="g13"><span class="nc-num">13</span> Palavras soltas</h2>
+    <p class="nc-gq">Por baixo de cada frase está uma palavra dela e o que deveria significar. É a palavra certa aqui?</p>
+    <div class="nc-item" role="group" aria-labelledby="l23" data-id="03/0517#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l23">O Farid Leopardo não sabe o que quer. Por um lado, desfere golpes homicidas; por outro, diz: ai, sangue, deu-me arrepios.</p></div>
+      <p class="nc-note">"golpes homicidas" = golpes mortíferos: fanfarronices de quem se arma em duro</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l23">
+        <label><input type="radio" name="v23" value="ok"> Correto</label>
+        <label><input type="radio" name="v23" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v23" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n23">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n23" name="n23" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l24" data-id="03/0663#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l24">Carapinha, pareces tão espantado, como se tivesses entrado para a universidade sem o Konkoor.</p></div>
+      <p class="nc-note">"Carapinha" = alcunha inofensiva para quem tem o cabelo muito encaracolado</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l24">
+        <label><input type="radio" name="v24" value="ok"> Correto</label>
+        <label><input type="radio" name="v24" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v24" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n24">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n24" name="n24" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l25" data-id="04b/0228#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l25">Há um ou dois anos ouvi pelo Olho de Águia News que aquele janota também foi para a Austrália, de certa forma atrás da rapariga que vocês os dois amavam.</p></div>
+      <p class="nc-note">"aquele janota" = vaidoso que gosta de se exibir, um peralta (em tom de troça)</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l25">
+        <label><input type="radio" name="v25" value="ok"> Correto</label>
+        <label><input type="radio" name="v25" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v25" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n25">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n25" name="n25" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l26" data-id="04b/0575#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l26">Pela vida da tua mãe, não andes pelo quarto sem óculos.</p></div>
+      <p class="nc-note">"Pela vida da tua mãe" = um pedido, peço-te; não é um insulto</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l26">
+        <label><input type="radio" name="v26" value="ok"> Correto</label>
+        <label><input type="radio" name="v26" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v26" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n26">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n26" name="n26" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l27" data-id="04b/0784#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l27">És muito sneaky.</p></div>
+      <p class="nc-note">"sneaky" = a palavra inglesa «sneaky» (matreiro), metida por brincadeira</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l27">
+        <label><input type="radio" name="v27" value="ok"> Correto</label>
+        <label><input type="radio" name="v27" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v27" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n27">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n27" name="n27" rows="2" maxlength="600" dir="auto"></textarea>
+      </p>
+    </div>
+    <div class="nc-item" role="group" aria-labelledby="l28" data-id="06/0253#word_" data-note-on="change">
+      <div class="reader nc-text" lang="pt" dir="ltr"><p class="nc-line" id="l28">Agora vai buscar sementes para o Ghassem e os outros – querem ver um filme.</p></div>
+      <p class="nc-note">"sementes" = sementes torradas para petiscar</p>
+      <div class="nc-verdict" role="radiogroup" aria-labelledby="l28">
+        <label><input type="radio" name="v28" value="ok"> Correto</label>
+        <label><input type="radio" name="v28" value="change"> Precisa de alteração</label>
+        <label><input type="radio" name="v28" value="unsure"> Não tenho a certeza</label>
+      </div>
+      <p class="guestbook-field nc-notebox" hidden>
+        <label for="n28">Como diria isto? <span class="nc-optional">(opcional)</span></label>
+        <textarea id="n28" name="n28" rows="2" maxlength="600" dir="auto"></textarea>
       </p>
     </div>
   </section>
@@ -466,4 +574,4 @@ document.addEventListener("DOMContentLoaded",function(){try{var u=localStorage.g
 <script src="/assets/js/backtotop.js" defer></script>
 </body>
 </html>
-<!-- 21 rows -->
+<!-- 28 rows -->

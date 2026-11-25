@@ -13,7 +13,6 @@
   "needs_change": "Moet anders",
   "not_sure": "Niet zeker",
   "how_say": "Hoe zou jij het zeggen?",
-  "meaning": "Wat denk je dat het betekent?",
   "optional": "(optioneel)",
   "your_name": "Je naam",
   "thanks_tick": "Zet mijn naam op de bedankpagina",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Perzische gezegden",
-   "q": "Sommige Perzische gezegden en beelden zijn woord voor woord vertaald. Geeft elk ervan je enig idee van wat het betekent, of zegt het je niets?",
+   "q": "Deze Perzische gezegden zijn woord voor woord vertaald. Probeer elk ervan eerst te raden en laat dan de betekenis zien.",
    "labels": [
-    "Ik kan het raden",
-    "Lukt me niet",
-    "Niet zeker"
+    "Ik heb het zonder de betekenis geraden",
+    "Ik heb het met de betekenis begrepen",
+    "Zelfs met de betekenis zie ik het verband niet"
    ],
-   "note_label": "Wat denk je dat het betekent?",
-   "note_on": "ok",
+   "note_label": "Wat maakt het onduidelijk?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "Regen valt niet omhoog van de aarde.",
-     "note": null
+     "note": "Ouders offeren zich op voor hun kinderen, niet kinderen voor hun ouders."
     },
     {
      "id": "01/0073#img",
      "text": "Een goed jaar is te zien aan zijn lente.",
-     "note": null
+     "note": "Hoe een jaar wordt, zie je al aan het begin."
     },
     {
      "id": "04a/0128#img",
      "text": "Eet geen verdriet",
-     "note": null
+     "note": "Wees niet verdrietig; maak je geen zorgen."
     },
     {
      "id": "01/0138#img",
      "text": "mijn hart verrot",
-     "note": null
+     "note": "Ik kwijn weg van verveling en eenzaamheid."
     },
     {
      "id": "04b/0334#img",
      "text": "Mijn hand is te kort en de vereniging met jou is ver.",
-     "note": null
+     "note": "Samen zijn met jou is voor mij onbereikbaar; ik ben machteloos."
     },
     {
      "id": "01/0203#img",
      "text": "zeg ik het, dan brandt mijn tong; zeg ik het niet, dan brandt het merg van mijn botten",
-     "note": null
+     "note": "Iets zeggen doet pijn, maar zwijgen doet nog meer pijn."
     },
     {
      "id": "03/0634#img",
      "text": "wordt het eten voor mij slangengif",
-     "note": null
+     "note": "Hij verpest het eten voor me."
     },
     {
      "id": "04b/0274#img",
      "text": "geen brood voor je warm wordt",
-     "note": null
+     "note": "Daar kom je niet verder mee; het levert je niets op."
     },
     {
      "id": "04b/0824#img",
      "text": "mijn familie me met dwang tussen de kippen had gestopt",
-     "note": null
+     "note": "Mijn familie heeft me gedwongen te trouwen."
     },
     {
      "id": "04b/0509#img",
      "text": "het suikerklontje springt mijn keel in",
-     "note": null
+     "note": "Het suikerklontje schiet in mijn verkeerde keelgat en ik verslik me."
     },
     {
      "id": "01/0132#img",
      "text": "kijk in elke uithoek",
-     "note": null
+     "note": "Ontdek alles; bekijk zoveel plekken als je kunt."
     },
     {
      "id": "06/0118#img",
      "text": "woorden kosten niets – het is gewoon hete lucht",
-     "note": null
+     "note": "Iets zeggen kost niets; woorden alleen bewijzen niets."
     },
     {
      "id": "04b/1247#img",
      "text": "zou hij vast en zeker uit Negars ogen vallen",
-     "note": null
+     "note": "Het meisje zou vast geen hoge dunk meer van hem hebben."
     },
     {
      "id": "04b/1293#img",
      "text": "Alleen maar een belofte voor de oogsttijd?",
-     "note": null
+     "note": "Alleen maar een loze belofte die nooit wordt nagekomen?"
     },
     {
      "id": "04b/0205#img",
      "text": "laat me je de ingewanden van de vriendschap op een dienblad voorzetten",
-     "note": null
+     "note": "Laat me je trakteren op alle vriendschap die ik heb."
     },
     {
      "id": "04b/1125#img",
      "text": "al hun lichaamshaar viel er ter plekke van uit",
-     "note": null
+     "note": "Ze waren compleet verbijsterd."
     },
     {
      "id": "03/0417#img",
      "text": "maak je niet zo druk, je melk droogt op",
-     "note": null
+     "note": "Rustig maar; het is het niet waard om je zo op te winden."
     },
     {
      "id": "04b/0378#img",
      "text": "niemand noemt je stom als je geen scheet laat",
-     "note": null
+     "note": "Niemand had het erg gevonden als je je mond had gehouden."
     },
     {
      "id": "04b/0181#img",
      "text": "Vreet de kop van mijn pik op",
-     "note": null
+     "note": "Een grove manier om te zeggen: rot op, niemand wil jouw mening."
     },
     {
      "id": "04b/0899#img",
      "text": "Pikkoppenvreter",
-     "note": null
+     "note": "Een grove scheldnaam tussen vrienden, ongeveer \"jij sukkel\"."
     },
     {
      "id": "04b/0209#img",
      "text": "lachen om onze baarden en pikken",
-     "note": null
+     "note": "Ons belachelijk maken, ons die zijn achtergebleven."
     },
     {
      "id": "04b/0822#img",
      "text": "zo met je lul in je hand door de straten zwerven",
-     "note": null
+     "note": "Alleen en doelloos rondzwerven, nog steeds vrijgezel."
     },
     {
      "id": "04b/0440#img",
      "text": "geen enkele lul die ons overkomt",
-     "note": null
+     "note": "Welke ramp ons ook overkomt."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "ze hebben ieder van ons uit de provincie een stok in zijn reet geduwd",
+     "note": "Het beleid heeft ons allemaal uit de provincie heel oneerlijk behandeld."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Je had niet eens de kop ervan kunnen eten.",
+     "note": "Een grof antwoord (\"ervan\" = van een pik): je had helemaal niets klaargespeeld."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Ik zou wel rond en rond om het hoofd van mijn Nini-jan kunnen lopen.",
+     "note": "Een liefdevolle uitdrukking: ik zou alles voor haar overhebben."
     }
+   ],
+   "hint": "Betekenis tonen",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

@@ -13,7 +13,6 @@
   "needs_change": "Bør endres",
   "not_sure": "Usikker",
   "how_say": "Hvordan ville du sagt det?",
-  "meaning": "Hva tror du det betyr?",
   "optional": "(valgfritt)",
   "your_name": "Navnet ditt",
   "thanks_tick": "Før opp navnet mitt på takkesiden",
@@ -117,11 +116,6 @@
      "note": null
     },
     {
-     "id": "03/0663#crude",
-     "text": "Denne lokaliseringspolitikken knullet oss fullstendig.",
-     "note": null
-    },
-    {
      "id": "04b/0146#crude",
      "text": "Hjernedød. Du får meg til å si det rett ut.",
      "note": null
@@ -147,6 +141,11 @@
      "note": null
     },
     {
+     "id": "04b/0186#word_",
+     "text": "Jeg ville heller ha delt rom med dem enn med en pikkhjerne som deg.",
+     "note": "\"pikkhjerne\" = pikkhjerne, grovt skjellsord om en idiot"
+    },
+    {
      "id": "04b/0343#crude",
      "text": "Da er du en jævla førsteårsstudent.",
      "note": null
@@ -167,11 +166,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "Du kunne ikke engang ete hodet på den. Men faen så gode de søtsakene var.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "vi ble knullet.",
      "note": null
@@ -188,8 +182,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Var det opp til meg, kunne du glemme null; jeg ville tvunget deg til å ete hodet på pikken min og så sparket deg ut av universitetet.",
-     "note": null
+     "text": "Er du Heisenberg eller Einstein, siden du forventer å få tjue og bli hedret for dine opplyste teorier? Var det opp til meg, kunne du glemme null; jeg ville tvunget deg til å ete hodet på pikken min og så sparket deg ut av universitetet. Faktisk ville jeg kastet deg i et svart hull en stund også, så sykdommen din ikke smittet noen.",
+     "note": "i Iran går karakterene opp til 20"
     },
     {
      "id": "04b/0486#crude",
@@ -198,8 +192,8 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "Jeg fikk tolv av tjue i kroppsøving; jeg er helt frynsete, og jeg kommer til å skjelle dere ut.",
-     "note": null
+     "text": "Ingen diskusjoner på rommet i dag. Jeg fikk tolv av tjue i kroppsøving; jeg er helt frynsete, og jeg kommer til å skjelle dere ut.",
+     "note": "i Iran går karakterene opp til 20"
     },
     {
      "id": "04b/0567#crude",
@@ -255,6 +249,11 @@
      "id": "04b/1003#crude",
      "text": "Se hvilket flott rot du har stelt i stand, ditt klin tomme hode.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Man blir drittsvimmel. Jo mer man tenker over det, desto mer drittsvimmel blir man.",
+     "note": "\"drittsvimmel\" = grov nyskaping: så forvirret at hodet snurrer"
     }
    ]
   },
@@ -313,6 +312,11 @@
     {
      "id": "03/0517#natur",
      "text": "Det ene øyeblikket gjør han mordermanøvrer, det neste sier han: «Å, blod. Det fikk huden min til å krype.»",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Da det nye året begynte, leste jeg diktet for moren min ved Haft-Seen-bordet.",
      "note": null
     },
     {
@@ -448,5 +452,5 @@
    ]
   }
  ],
- "first": 17
+ "first": 16
 }

@@ -13,7 +13,6 @@
   "needs_change": "Necesita cambios",
   "not_sure": "Tengo dudas",
   "how_say": "¿Cómo lo dirías tú?",
-  "meaning": "¿Qué crees que significa?",
   "optional": "(opcional)",
   "your_name": "Tu nombre",
   "thanks_tick": "Incluir mi nombre en la página de Agradecimientos",
@@ -86,130 +85,151 @@
   {
    "key": "images",
    "title": "Dichos persas",
-   "q": "Algunos dichos e imágenes persas están traducidos palabra por palabra. ¿Cada uno te da alguna idea de lo que significa, o no te dice nada?",
+   "q": "Estos dichos persas están traducidos palabra por palabra. Intenta adivinar primero cada uno y luego muestra su significado.",
    "labels": [
-    "Lo adivino",
-    "No lo adivino",
-    "Tengo dudas"
+    "Lo adiviné sin ver el significado",
+    "Lo entendí al ver el significado",
+    "Ni con el significado consigo relacionarlo"
    ],
-   "note_label": "¿Qué crees que significa?",
-   "note_on": "ok",
+   "note_label": "¿Qué no queda claro?",
+   "note_on": "change",
    "rows": [
     {
      "id": "06/0188#img",
      "text": "La lluvia no sube de la tierra al cielo.",
-     "note": null
+     "note": "Son los padres quienes se sacrifican por los hijos, no al revés."
     },
     {
      "id": "01/0073#img",
      "text": "El buen año se conoce por su primavera",
-     "note": null
+     "note": "Por cómo empieza el año, se sabe cómo irá."
     },
     {
      "id": "04a/0128#img",
      "text": "No comas pena",
-     "note": null
+     "note": "No estés triste; no te preocupes."
     },
     {
      "id": "01/0138#img",
      "text": "se me está pudriendo el corazón",
-     "note": null
+     "note": "Me estoy consumiendo de aburrimiento y soledad."
     },
     {
      "id": "04b/0334#img",
      "text": "Mi mano es demasiado corta y la unión contigo, lejana.",
-     "note": null
+     "note": "Estar contigo está fuera de mi alcance; no puedo hacer nada."
     },
     {
      "id": "01/0203#img",
      "text": "si lo digo, me arde la lengua; si no lo digo, me arden los tuétanos",
-     "note": null
+     "note": "Hablar duele, pero callar duele todavía más."
     },
     {
      "id": "03/0634#img",
      "text": "la comida se me convertirá en veneno de serpiente",
-     "note": null
+     "note": "Me va a amargar la comida."
     },
     {
      "id": "04b/0274#img",
      "text": "no se calentará ningún pan para ti",
-     "note": null
+     "note": "No te llevará a ninguna parte; no ganarás nada."
     },
     {
      "id": "04b/0824#img",
      "text": "mi familia me metiera a la fuerza en el gallinero",
-     "note": null
+     "note": "Mi familia me empujó a casarme."
     },
     {
      "id": "04b/0509#img",
      "text": "el terrón de azúcar me salta en la garganta",
-     "note": null
+     "note": "El terrón de azúcar se me va por el otro lado y me atraganto."
     },
     {
      "id": "01/0132#img",
      "text": "asómate a todos los rincones y recovecos",
-     "note": null
+     "note": "Explóralo todo; visita todos los sitios que puedas."
     },
     {
      "id": "06/0118#img",
      "text": "las palabras no cuestan nada — son aire caliente",
-     "note": null
+     "note": "Decir algo no cuesta nada; las palabras por sí solas no demuestran nada."
     },
     {
      "id": "04b/1247#img",
      "text": "seguro que caería de los ojos de Negar",
-     "note": null
+     "note": "Seguro que la niña dejaría de tener buena opinión de él."
     },
     {
      "id": "04b/1293#img",
      "text": "¿Solo una promesa para cuando llegue la cosecha?",
-     "note": null
+     "note": "¿Solo una promesa vacía que nunca se cumplirá?"
     },
     {
      "id": "04b/0205#img",
      "text": "déjame servirte las tripas de la amistad en una bandeja",
-     "note": null
+     "note": "Déjame agasajarte con toda la amistad que tengo."
     },
     {
      "id": "04b/1125#img",
      "text": "se les cayeron los pelos del susto",
-     "note": null
+     "note": "Se quedaron completamente pasmados."
     },
     {
      "id": "03/0417#img",
      "text": "no te pongas tan nervioso, se te va a secar la leche",
-     "note": null
+     "note": "Cálmate; no merece la pena ponerte así."
     },
     {
      "id": "04b/0378#img",
      "text": "nadie te va a llamar mudo por no tirarte un pedo",
-     "note": null
+     "note": "A nadie le habría importado que te callaras."
     },
     {
      "id": "04b/0181#img",
      "text": "Cómete la cabeza de mi polla",
-     "note": null
+     "note": "Una forma grosera de decir: lárgate, nadie quiere tu opinión."
     },
     {
      "id": "04b/0899#img",
      "text": "Comecabezas de polla",
-     "note": null
+     "note": "Un insulto grosero entre amigos, más o menos «idiota»."
     },
     {
      "id": "04b/0209#img",
      "text": "riéndote de nuestras barbas y nuestras pollas",
-     "note": null
+     "note": "Burlándote de nosotros, los que nos quedamos."
     },
     {
      "id": "04b/0822#img",
      "text": "no andarías así por las calles con la polla en la mano",
-     "note": null
+     "note": "Vagar solo y sin rumbo, todavía soltero."
     },
     {
      "id": "04b/0440#img",
      "text": "qué polla nos caiga encima",
-     "note": null
+     "note": "Cualquier desgracia que nos pase."
+    },
+    {
+     "id": "03/0663#img",
+     "text": "nos metieron un palo por el culo a nosotros los de provincias",
+     "note": "Esa política fue muy injusta con todos nosotros, los de provincias."
+    },
+    {
+     "id": "04b/0389#img",
+     "text": "Ni su cabeza podrías comerte.",
+     "note": "Una respuesta grosera («su cabeza» = la cabeza de la polla): no habrías podido hacer nada."
+    },
+    {
+     "id": "04b/0751#img",
+     "text": "Podría dar vueltas y vueltas alrededor de la cabeza de mi Nini-jan.",
+     "note": "Una expresión cariñosa: daría cualquier cosa por ella."
     }
+   ],
+   "hint": "Mostrar el significado",
+   "values": [
+    "ok",
+    "unsure",
+    "change"
    ]
   },
   {

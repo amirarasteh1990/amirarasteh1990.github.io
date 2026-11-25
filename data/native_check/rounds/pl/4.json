@@ -13,7 +13,6 @@
   "needs_change": "Do zmiany",
   "not_sure": "Trudno powiedzieć",
   "how_say": "Jak to ująć po Twojemu?",
-  "meaning": "Co Twoim zdaniem to znaczy?",
   "optional": "(nieobowiązkowo)",
   "your_name": "Twoje imię",
   "thanks_tick": "Dodaj moje imię do strony z podziękowaniami",
@@ -65,6 +64,11 @@
      "id": "03/0264#crude",
      "text": "– Czego chcesz, Eskandar? Co ci jest?",
      "note": null
+    },
+    {
+     "id": "03/0268#word_",
+     "text": "– Żadne imię ci nie pasuje, do licha.",
+     "note": "\"do licha\" = niech cię szlag (gniewne przekleństwo)"
     },
     {
      "id": "03/0390#crude",
@@ -119,11 +123,6 @@
     {
      "id": "03/0640#crude",
      "text": "– Pfff, niech cię szlag. Teraz jesteś emigrantem, więc masz nas gdzieś. Ty zaprzedany czcicielu cudzoziemszczyzny.",
-     "note": null
-    },
-    {
-     "id": "03/0663#crude",
-     "text": "Ta polityka regionalizacji nas wyruchała. Mówią, że chodzi o trzymanie dzieci blisko rodzin, a wszystkim nam z prowincji wsadzili kij w dupę.",
      "note": null
     },
     {
@@ -182,11 +181,6 @@
      "note": null
     },
     {
-     "id": "04b/0389#crude",
-     "text": "– Nawet jego główki nie zdołałeś zjeść. Ale co to były za słodycze. Ananasowe.",
-     "note": null
-    },
-    {
      "id": "04b/0394#crude",
      "text": "– ... wyruchali nas.",
      "note": null
@@ -203,8 +197,8 @@
     },
     {
      "id": "04b/0464#crude",
-     "text": "Gdyby to zależało ode mnie, zero to za mało: kazałbym ci zjeść główkę mojego kutasa, a potem wykopał cię z uniwersytetu kopniakiem.",
-     "note": null
+     "text": "Jesteś Heisenbergiem albo Einsteinem, że oczekujesz, żeby dali ci dwadzieścia i uhonorowali twoje oświecające teorie? Gdyby to zależało ode mnie, zero to za mało: kazałbym ci zjeść główkę mojego kutasa, a potem wykopał cię z uniwersytetu kopniakiem. Właściwie wrzuciłbym cię jeszcze na jakiś czas do czarnej dziury, żeby twoja choroba na nikogo się nie przeniosła.",
+     "note": "w Iranie oceny są w skali do 20"
     },
     {
      "id": "04b/0486#crude",
@@ -213,8 +207,8 @@
     },
     {
      "id": "04b/0520#crude",
-     "text": "– Nie dyskutujcie dziś w pokoju, dostałem dwanaście z wuefu, mam nerwy do dupy i was zwyzywam.",
-     "note": null
+     "text": "Nie dyskutujcie dziś w pokoju, dostałem dwanaście z wuefu, mam nerwy do dupy i was zwyzywam.",
+     "note": "w Iranie oceny są w skali do 20"
     },
     {
      "id": "04b/0567#crude",
@@ -275,6 +269,11 @@
      "id": "04b/1017#crude",
      "text": "– Szukam okularów, chuju. Powiedz temu Faridowi, żeby przestał stawiać swój kubek tuż przed moimi stopami.",
      "note": null
+    },
+    {
+     "id": "04b/1312#word_",
+     "text": "Można od tego dostać kompletnego gównozamętu w głowie. Im więcej o tym myślisz, tym większy masz gównozamęt.",
+     "note": "\"gównozamęt\" = wulgarny neologizm: taki mętlik, że aż kręci się w głowie"
     }
    ]
   },
@@ -338,6 +337,11 @@
     {
      "id": "03/0517#natur",
      "text": "– Farid Lampart sam nie wie, czego chce. Z jednej strony wykonuje mordercze zagrania, a z drugiej, na widok krwi, aż przechodzą go ciarki.",
+     "note": null
+    },
+    {
+     "id": "03/0528#natur",
+     "text": "Gdy wraz z nadejściem nowego roku przeczytałem przy Haft-Sin wiersz dla matki, zamiast ucieszyć Maman, wzbudziłem jej niepokój.",
      "note": null
     },
     {
@@ -468,5 +472,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 16
 }
