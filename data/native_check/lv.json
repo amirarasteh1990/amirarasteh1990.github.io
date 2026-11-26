@@ -87,9 +87,9 @@
    "title": "Persiešu teicieni",
    "q": "Šie persiešu teicieni ir tulkoti vārds vārdā. Vispirms mēģiniet katru uzminēt, tad parādiet tā nozīmi.",
    "labels": [
-    "Uzminēju, pirms redzēju nozīmi",
-    "Sapratu, kad redzēju nozīmi",
-    "Pat redzot nozīmi, nevaru to sasaistīt"
+    "Skaidrs, neredzot nozīmi",
+    "Saprotams, redzot nozīmi",
+    "Neskaidrs, pat redzot nozīmi"
    ],
    "note_label": "Kas padara to neskaidru?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "Lietus no zemes uz augšu nekrīt.",
-     "note": "Vecāki upurējas bērnu labā, nevis bērni vecāku labā."
+     "note": "Dažas lietas notiek tikai vienā virzienā un nekad otrādi. Šeit: vecāki upurējas bērnu labā, nevis bērni vecāku labā."
     },
     {
      "id": "01/0073#img",
      "text": "Labu gadu pazīst pēc tā pavasara.",
-     "note": "Pēc sākuma var redzēt, kāds būs viss gads."
+     "note": "Labs sākums rāda, kā viss izdosies."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "mana sirds pūst",
-     "note": "Es nīkstu no garlaicības un vientulības."
+     "note": "Man ir nāvīgi garlaicīgi; gaidīšana vai vientulība mani nomoka."
     },
     {
      "id": "04b/0334#img",
      "text": "Mana roka ir īsa, un savienošanās ar tevi ir tālu.",
-     "note": "Būt kopā ar tevi nav manā varā; es neko nespēju darīt."
+     "note": "Tas, ko gribu, man nav sasniedzams; es neko nespēju darīt. Šeit: būt kopā ar tevi."
     },
     {
      "id": "01/0203#img",
      "text": "ja to saku, mana mēle deg; ja to nesaku, manu kaulu smadzenes deg",
-     "note": "Runāt sāp, bet klusēt sāp vēl vairāk."
+     "note": "Sāpīga izvēle: runāt sāp, bet klusēt sāp vēl vairāk."
     },
     {
      "id": "03/0634#img",
      "text": "ēdiens man pārvērtīsies čūsku indē",
-     "note": "Viņš man sabojās visu maltīti."
+     "note": "Kaut kas labs tiek sabojāts, un es to nevaru izbaudīt. Šeit: viņš man sabojās maltīti."
     },
     {
      "id": "04b/0274#img",
      "text": "neviena maize tev nesasils",
-     "note": "Tas tev neko nedos; tu neko neiegūsi."
+     "note": "Tu no tā neko neiegūsi; tas ir bezjēdzīgi."
     },
     {
      "id": "04b/0824#img",
      "text": "ģimenes spiediena dēļ nokļuvu starp vistām",
-     "note": "Ģimenes spiediena dēļ es apprecējos."
+     "note": "Jokains veids, kā pateikt „apprecēties”. Šeit: ģimene mani piespieda apprecēties."
     },
     {
      "id": "04b/0509#img",
      "text": "cukurgabaliņš ielec man rīklē",
-     "note": "Cukurgabaliņš iekļūst ne tur, kur vajag, un es aizrijos."
+     "note": "Tas iekrīt ne tajā kaklā, un es aizrijos. Irānā tēju bieži dzer caur mutē turētu cukurgabaliņu."
     },
     {
      "id": "01/0132#img",
      "text": "ielūkojies visos nostūros un kaktiņos",
-     "note": "Izpēti visu; apskati katru vietu, ko vari."
+     "note": "Izpēti visas vietas; aiz ziņkāres ieskaties it visā."
     },
     {
      "id": "06/0118#img",
      "text": "vārdi neko nemaksā — tas ir tikai karsts gaiss",
-     "note": "Pateikt ir viegli; vārdi vien neko nepierāda."
+     "note": "Runāt jau var daudz; vārdi vien neko nepierāda."
     },
     {
      "id": "04b/1247#img",
      "text": "viņš noteikti kristu Negar acīs",
-     "note": "Meitene noteikti vairs nedomātu par viņu labi."
+     "note": "Zaudēt kāda cieņu. Šeit: meitene vairs nedomātu par viņu labi."
     },
     {
      "id": "04b/1293#img",
      "text": "Tikai ražas laika solījumu?",
-     "note": "Tikai tukšu solījumu, kas nekad netiks pildīts?"
+     "note": "Solījums uz „vēlāk”, kas nekad nepienāk; tukšs solījums."
     },
     {
      "id": "04b/0205#img",
      "text": "ļauj man tev pasniegt draudzības iekšas uz paplātes",
-     "note": "Ļauj man tevi uzņemt ar visu draudzību, kas man ir."
+     "note": "Dāvāt kādam visu savu sirdi. Šeit: visu savu draudzību."
     },
     {
      "id": "04b/1125#img",
      "text": "viņiem visas spalvas uzreiz izbira",
-     "note": "Viņi bija pilnīgi apstulbuši."
+     "note": "Būt pilnīgi apstulbušam."
     },
     {
      "id": "03/0417#img",
      "text": "tik ļoti neuztraucies, tev piens izsīks",
-     "note": "Nomierinies; nav vērts tā uztraukties."
+     "note": "Pārāk stipras dusmas tev kaitēs (sākotnēji teikts zīdītājām mātēm). Šeit: nomierinies, tas nav tā vērts."
     },
     {
      "id": "04b/0378#img",
      "text": "ja tu nepērd, neviens tevi par mēmu nesauks",
-     "note": "Nevienam nebūtu nekas pretī, ja tu būtu paklusējis."
+     "note": "Rupjš variants teicienam „ja tu nerunā, neviens tevi par mēmu nesauks”: tu varētu vienkārši klusēt. Šeit: nevienam nebūtu nekas pretī, ja tu būtu paklusējis."
     },
     {
      "id": "04b/0181#img",
      "text": "Apēd mana krāna galvu",
-     "note": "Rupjš veids, kā pateikt: ej prom, nevienam tavs viedoklis nav vajadzīgs."
+     "note": "Ļoti rupjš „pazūdi”: nevienu neinteresē, ko tu domā."
     },
     {
      "id": "04b/0899#img",
      "text": "Tu krānu galvu ēdāj",
-     "note": "Rupjš lamuvārds starp draugiem, aptuveni „tu, muļķi”."
+     "note": "Rupjš lamuvārds, aptuveni „tu, muļķi”, bieži starp draugiem."
     },
     {
      "id": "04b/0209#img",
      "text": "smejies par mūsu bārdām un pimpjiem",
-     "note": "Tu izsmej mūs, tos, kas palika šeit."
+     "note": "Izsmiet kādu (no teiciena „smieties par kāda bārdu”, tikai rupjāk). Šeit: tu izsmej mūs, tos, kas palika."
     },
     {
      "id": "04b/0822#img",
      "text": "tu tā nestaigātu pa ielām ar pimpi rokā",
-     "note": "Klīst apkārt vienam un bez mērķa, joprojām neprecētam."
+     "note": "Dīkā un bez mērķa, neko nesasniedzot. Šeit: joprojām neprecēts, klīsti apkārt viens."
     },
     {
      "id": "04b/0440#img",
      "text": "kāds pimpis vēl uzkritīs mums uz galvas",
-     "note": "Lai kāda nelaime mūs vēl piemeklētu."
+     "note": "Lai kāda nelaime mūs piemeklētu (rupji)."
     },
     {
      "id": "03/0663#img",
      "text": "ikvienam no mums, kas nāk no provinces, viņi ir iebāzuši mietu pakaļā",
-     "note": "Šī politika pret mums visiem no provinces ir bijusi ļoti netaisnīga."
+     "note": "Izturēties pret kādu ļoti netaisnīgi (rupji). Šeit: politika tā izturējās pret mums visiem no provinces."
     },
     {
      "id": "04b/0389#img",
      "text": "Tu pat tā galvu nebūtu varējis apēst.",
-     "note": "Rupja atbilde („tā galva” = pimpja galva): tu nebūtu spējis neko izdarīt."
+     "note": "Rupja atbilde: tu nebūtu spējis neko izdarīt („tā galva” = pimpja galva)."
     },
     {
      "id": "04b/0751#img",
      "text": "Es varētu riņķot un riņķot ap sava Nini-jan galviņu.",
-     "note": "Mīlošs teiciens: viņas dēļ es atdotu visu."
+     "note": "Mīlošs teiciens: es ņemtu tavas bēdas uz sevi (no senas paražas riņķot ap mīļu cilvēku, lai pasargātu viņu no nelaimes). Šeit: viņas dēļ es atdotu visu."
     }
    ],
    "hint": "Parādīt nozīmi",

@@ -87,9 +87,9 @@
    "title": "Persiški posakiai",
    "q": "Šie persiški posakiai išversti pažodžiui. Pirmiausia pabandykite kiekvieną atspėti, tada parodykite jo prasmę.",
    "labels": [
-    "Atspėjau, kol dar nemačiau prasmės",
-    "Supratau, kai pamačiau prasmę",
-    "Net pamačius prasmę, negaliu susieti"
+    "Aišku, net neparodžius prasmės",
+    "Suprantama, parodžius prasmę",
+    "Neaišku, net parodžius prasmę"
    ],
    "note_label": "Kas trukdo suprasti?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "Lietus iš žemės aukštyn nekrinta.",
-     "note": "Tėvai aukojasi dėl vaikų, o ne vaikai dėl tėvų."
+     "note": "Kai kurie dalykai vyksta tik viena kryptimi ir niekada atvirkščiai. Čia: tėvai aukojasi dėl vaikų, o ne vaikai dėl tėvų."
     },
     {
      "id": "01/0073#img",
      "text": "Geri metai pažįstami iš pavasario.",
-     "note": "Iš pradžios matyti, kokie bus visi metai."
+     "note": "Gera pradžia parodo, kaip viskas klostysis."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "mano širdis pūva",
-     "note": "Nykstu iš nuobodulio ir vienatvės."
+     "note": "Man mirtinai nuobodu; laukimas ar vienatvė mane sekina."
     },
     {
      "id": "04b/0334#img",
      "text": "Ranka per trumpa, o susijungimas su tavimi toli.",
-     "note": "Negaliu būti su tavimi; nieko negaliu padaryti."
+     "note": "Tai, ko noriu, man nepasiekiama; nieko negaliu padaryti. Čia: būti su tavimi."
     },
     {
      "id": "01/0203#img",
      "text": "jei sakau – liežuvis dega; jei nesakau – kaulų čiulpai dega",
-     "note": "Kalbėti skauda, bet tylėti skauda dar labiau."
+     "note": "Skaudus pasirinkimas: kalbėti skauda, bet tylėti skauda dar labiau."
     },
     {
      "id": "03/0634#img",
      "text": "maistas man pavirs gyvačių nuodais",
-     "note": "Jis man sugadins visą valgį."
+     "note": "Kažkas gero sugadinama, ir aš negaliu tuo mėgautis. Čia: jis man sugadins valgį."
     },
     {
      "id": "04b/0274#img",
      "text": "jokia duona tau neiškeps",
-     "note": "Iš to nieko nebus; nieko nelaimėsi."
+     "note": "Iš to nieko nelaimėsi; tai beprasmiška."
     },
     {
      "id": "04b/0824#img",
      "text": "šeima per prievartą mane įgrūdo į vištidę",
-     "note": "Šeima mane privertė vesti."
+     "note": "Juokais sakomas posakis, reiškiantis „susituokti“. Čia: šeima mane privertė vesti."
     },
     {
      "id": "04b/0509#img",
      "text": "cukraus gabalėlis šoka man į gerklę",
-     "note": "Cukraus gabalėlis nueina ne ten, kur reikia, ir aš paspringstu."
+     "note": "Jis patenka ne į tą gerklę, ir aš paspringstu. Irane arbata dažnai geriama per burnoje laikomą cukraus gabalėlį."
     },
     {
      "id": "01/0132#img",
      "text": "žvilgtelėk į kiekvieną atokiausią kampą",
-     "note": "Viską ištyrinėk; pamatyk kiekvieną vietą, kurią gali."
+     "note": "Išnaršyk visur; iš smalsumo pasidomėk viskuo."
     },
     {
      "id": "06/0118#img",
      "text": "žodžiai nieko nekainuoja — tai tik karštas oras",
-     "note": "Pasakyti lengva; vien žodžiai nieko neįrodo."
+     "note": "Kalbėti lengva; vien žodžiai nieko neįrodo."
     },
     {
      "id": "04b/1247#img",
      "text": "jis tikrai kristų Negar akyse",
-     "note": "Mergaitė tikrai nustotų apie jį gerai galvoti."
+     "note": "Prarasti kieno nors pagarbą. Čia: mergaitė nustotų apie jį gerai galvoti."
     },
     {
      "id": "04b/1293#img",
      "text": "Tik derliaus meto pažadas?",
-     "note": "Tik tuščias pažadas, kuris niekada nebus ištesėtas?"
+     "note": "Pažadas tam „vėliau“, kuris niekada neateina; tuščias pažadas."
     },
     {
      "id": "04b/0205#img",
      "text": "išklosiu tau draugystės vidurius ant padėklo",
-     "note": "Priimsiu tave su visa draugyste, kokią turiu."
+     "note": "Atiduoti kam nors visą savo širdį. Čia: visą savo draugystę."
     },
     {
      "id": "04b/1125#img",
      "text": "jiems iš baimės visi kūno plaukai nuslinko",
-     "note": "Jie buvo visiškai priblokšti."
+     "note": "Būti visiškai priblokštam."
     },
     {
      "id": "03/0417#img",
      "text": "nesijaudink taip, pienas išdžius",
-     "note": "Nusiramink; neverta taip jaudintis."
+     "note": "Per didelis pyktis tau pakenks (iš pradžių taip sakydavo žindančioms motinoms). Čia: nusiramink, tai to neverta."
     },
     {
      "id": "04b/0378#img",
      "text": "niekas tavęs neapšauks nebyliu, jei nepersi",
-     "note": "Niekas nebūtų prieštaravęs, jei būtum patylėjęs."
+     "note": "Grubus posakio „niekas tavęs neapšauks nebyliu, jei nekalbėsi“ variantas: galėtum tiesiog patylėti. Čia: niekas nebūtų prieštaravęs, jei būtum patylėjęs."
     },
     {
      "id": "04b/0181#img",
      "text": "Suvalgyk mano bybio galvą",
-     "note": "Grubus būdas pasakyti: dink, niekam neįdomi tavo nuomonė."
+     "note": "Labai grubus „dink“: niekam neįdomu, ką tu galvoji."
     },
     {
      "id": "04b/0899#img",
      "text": "Bybių galvų ėdike",
-     "note": "Grubus keiksmažodis tarp draugų, maždaug „tu, kvaily“."
+     "note": "Grubus keiksmažodis, maždaug „tu, kvaily“, dažnai tarp draugų."
     },
     {
      "id": "04b/0209#img",
      "text": "juokiesi iš mūsų barzdų ir bybių",
-     "note": "Šaipaisi iš mūsų, likusių čia."
+     "note": "Šaipytis iš ko nors (pagal posakį „juoktis iš kieno nors barzdos“, tik grubiau). Čia: šaipaisi iš mūsų, likusių čia."
     },
     {
      "id": "04b/0822#img",
      "text": "tu šitaip nevaikščiotum gatvėmis su pimpalu rankoje",
-     "note": "Klaidžioti vienam ir be tikslo, vis dar nevedusiam."
+     "note": "Dykinėti be tikslo ir nieko nepasiekti. Čia: vis dar nevedęs, klaidžioji vienas."
     },
     {
      "id": "04b/0440#img",
      "text": "koks bybis benukristų mums ant galvos",
-     "note": "Kad ir kokia nelaimė mus ištiktų."
+     "note": "Kad ir kokia nelaimė mus ištiktų (grubiai)."
     },
     {
      "id": "03/0663#img",
      "text": "kiekvienam iš mūsų, atvykusių iš provincijos, įkišo lazdą į užpakalį",
-     "note": "Ta politika su visais mumis iš provincijos pasielgė labai neteisingai."
+     "note": "Labai neteisingai su kuo nors pasielgti (grubiai). Čia: ta politika taip pasielgė su visais mumis iš provincijos."
     },
     {
      "id": "04b/0389#img",
      "text": "Net jo galvos nebūtum įstengęs suvalgyti.",
-     "note": "Grubus atkirtis („jo galvos“ = bybio galvos): nieko nebūtum sugebėjęs padaryti."
+     "note": "Grubus atkirtis: nieko nebūtum sugebėjęs padaryti („jo galvos“ = bybio galvos)."
     },
     {
      "id": "04b/0751#img",
      "text": "Galėčiau suktis ir suktis aplink savo Nini-džan galvelę.",
-     "note": "Meilus posakis: dėl jos atiduočiau viską."
+     "note": "Meilus posakis: visas tavo bėdas prisiimčiau sau (iš seno papročio suktis aplink brangų žmogų, kad nelaimė jį aplenktų). Čia: dėl jos atiduočiau viską."
     }
    ],
    "hint": "Rodyti prasmę",

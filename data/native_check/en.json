@@ -87,9 +87,9 @@
    "title": "Persian sayings",
    "q": "These Persian sayings are translated word for word. Try to guess each one first, then show its meaning.",
    "labels": [
-    "I guessed it without the meaning",
-    "I understood it with the meaning",
-    "Even with the meaning, I can't connect it"
+    "Clear without the meaning",
+    "Makes sense with the meaning",
+    "Unclear even with the meaning"
    ],
    "note_label": "What makes it unclear?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "Rain doesn't fall upward from the earth.",
-     "note": "Parents sacrifice for their children, not children for their parents."
+     "note": "Some things only go one way and never happen in reverse. Here: parents sacrifice for their children, not children for their parents."
     },
     {
      "id": "01/0073#img",
      "text": "A good year is known from its spring.",
-     "note": "You can tell how a year will go from how it starts."
+     "note": "A good start shows how things will turn out."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "my heart is rotting",
-     "note": "I'm wasting away from boredom and loneliness."
+     "note": "I'm bored to death; waiting or loneliness is wearing me down."
     },
     {
      "id": "04b/0334#img",
      "text": "My hand is short and union with you is far.",
-     "note": "Being with you is out of my reach; I'm powerless."
+     "note": "What I want is out of my reach; I'm powerless. Here: being with you."
     },
     {
      "id": "01/0203#img",
      "text": "if I say it, my tongue burns; if I don't say it, the marrow of my bones burns",
-     "note": "Speaking up hurts, but keeping quiet hurts even more."
+     "note": "A painful choice: speaking hurts, but keeping quiet hurts more."
     },
     {
      "id": "03/0634#img",
      "text": "the meal will turn to snake venom for me",
-     "note": "He'll ruin the meal for me."
+     "note": "Something good gets spoiled, so I can't enjoy it. Here: he'll ruin the meal for me."
     },
     {
      "id": "04b/0274#img",
      "text": "no bread is going to warm up for you",
-     "note": "It won't get you anywhere; you'll gain nothing."
+     "note": "You'll gain nothing from it; it's pointless."
     },
     {
      "id": "04b/0824#img",
      "text": "my family shoved me into the henhouse",
-     "note": "My family pushed me into getting married."
+     "note": "A joking way to say \"to get married\". Here: my family pushed me into marriage."
     },
     {
      "id": "04b/0509#img",
      "text": "the sugar cube jumps in my throat",
-     "note": "The sugar cube goes down the wrong way and I choke."
+     "note": "It goes down the wrong way and I choke. In Iran, tea is often drunk through a sugar cube held in the mouth."
     },
     {
      "id": "01/0132#img",
      "text": "peek into every last corner",
-     "note": "Explore everything; see every place you can."
+     "note": "Explore everywhere; look into everything out of curiosity."
     },
     {
      "id": "06/0118#img",
      "text": "words cost nothing; it's just hot air",
-     "note": "Saying something costs nothing; words alone prove nothing."
+     "note": "Talk is cheap; words alone prove nothing."
     },
     {
      "id": "04b/1247#img",
      "text": "he would surely fall from Negar's eyes",
-     "note": "The girl would surely stop thinking well of him."
+     "note": "To lose someone's respect. Here: the girl would stop thinking well of him."
     },
     {
      "id": "04b/1293#img",
      "text": "Just a harvest-time promise?",
-     "note": "Just an empty promise that will never be kept?"
+     "note": "A promise for a \"later\" that never comes; an empty promise."
     },
     {
      "id": "04b/0205#img",
      "text": "let me serve you the guts of friendship on a tray",
-     "note": "Let me treat you with all the friendship I have."
+     "note": "To offer someone your whole heart. Here: all my friendship."
     },
     {
      "id": "04b/1125#img",
      "text": "all their body hair fell right out",
-     "note": "They were completely stunned."
+     "note": "To be completely stunned."
     },
     {
      "id": "03/0417#img",
      "text": "don't get so worked up, or your milk will dry up",
-     "note": "Calm down; it isn't worth getting so upset."
+     "note": "Getting too angry will harm you (first said to nursing mothers). Here: calm down, it isn't worth it."
     },
     {
      "id": "04b/0378#img",
      "text": "no one will call you mute if you don't fart",
-     "note": "Nobody would have minded if you had kept quiet."
+     "note": "A crude form of \"nobody calls you mute if you don't speak\": you could just keep quiet. Here: nobody would have minded if you'd kept quiet."
     },
     {
      "id": "04b/0181#img",
      "text": "Eat the head of my dick",
-     "note": "A rude way to say: get lost, nobody wants your opinion."
+     "note": "A very rude \"get lost\": nobody cares what you think."
     },
     {
      "id": "04b/0899#img",
      "text": "You dick-head eater",
-     "note": "A crude insult between friends, roughly \"you idiot\"."
+     "note": "A crude insult, roughly \"you idiot\", often between friends."
     },
     {
      "id": "04b/0209#img",
      "text": "laughing at our beards and dicks",
-     "note": "Making fun of us, the ones who stayed behind."
+     "note": "To mock someone (from \"laughing at someone's beard\", made crude). Here: making fun of us who stayed behind."
     },
     {
      "id": "04b/0822#img",
      "text": "wandering the streets like this with your dick in your hand",
-     "note": "Wandering around alone and aimless, still single."
+     "note": "Idle and aimless, with nothing to show for it. Here: still single, wandering around alone."
     },
     {
      "id": "04b/0440#img",
      "text": "no matter what dick lands on our heads",
-     "note": "No matter what disaster hits us."
+     "note": "Whatever disaster hits us (crude)."
     },
     {
      "id": "03/0663#img",
      "text": "they've rammed a pole up the ass of every one of us from the provinces",
-     "note": "The policy has treated all of us from the provinces very unfairly."
+     "note": "To treat someone very unfairly (crude). Here: the policy did that to all of us from the provinces."
     },
     {
      "id": "04b/0389#img",
      "text": "You couldn't even eat its head.",
-     "note": "A rude reply ('its head' = the head of a dick): you couldn't have done a thing."
+     "note": "A rude reply: you couldn't have done a thing (\"its head\" = the head of a dick)."
     },
     {
      "id": "04b/0751#img",
      "text": "I could go round and round my Nini-jan's head.",
-     "note": "A loving phrase: I'd give anything for her."
+     "note": "A loving phrase: I'd take your troubles on myself (from an old custom of circling a loved one to keep misfortune away). Here: I'd give anything for her."
     }
    ],
    "hint": "Show the meaning",

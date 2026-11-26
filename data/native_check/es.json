@@ -87,9 +87,9 @@
    "title": "Dichos persas",
    "q": "Estos dichos persas están traducidos palabra por palabra. Intenta adivinar primero cada uno y luego muestra su significado.",
    "labels": [
-    "Lo adiviné sin ver el significado",
-    "Lo entendí al ver el significado",
-    "Ni con el significado consigo relacionarlo"
+    "Claro sin el significado",
+    "Se entiende con el significado",
+    "No queda claro ni con el significado"
    ],
    "note_label": "¿Qué no queda claro?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "La lluvia no sube de la tierra al cielo.",
-     "note": "Son los padres quienes se sacrifican por los hijos, no al revés."
+     "note": "Algunas cosas solo van en un sentido y nunca al revés. Aquí: los padres se sacrifican por los hijos, no los hijos por los padres."
     },
     {
      "id": "01/0073#img",
      "text": "El buen año se conoce por su primavera",
-     "note": "Por cómo empieza el año, se sabe cómo irá."
+     "note": "Un buen comienzo muestra cómo saldrán las cosas."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "se me está pudriendo el corazón",
-     "note": "Me estoy consumiendo de aburrimiento y soledad."
+     "note": "Me muero de aburrimiento; la espera o la soledad me está desgastando."
     },
     {
      "id": "04b/0334#img",
      "text": "Mi mano es demasiado corta y la unión contigo, lejana.",
-     "note": "Estar contigo está fuera de mi alcance; no puedo hacer nada."
+     "note": "Lo que quiero está fuera de mi alcance; no puedo hacer nada. Aquí: estar contigo."
     },
     {
      "id": "01/0203#img",
      "text": "si lo digo, me arde la lengua; si no lo digo, me arden los tuétanos",
-     "note": "Hablar duele, pero callar duele todavía más."
+     "note": "Una elección dolorosa: hablar duele, pero callar duele más."
     },
     {
      "id": "03/0634#img",
      "text": "la comida se me convertirá en veneno de serpiente",
-     "note": "Me va a amargar la comida."
+     "note": "Algo bueno se estropea y no puedo disfrutarlo. Aquí: me va a amargar la comida."
     },
     {
      "id": "04b/0274#img",
      "text": "no se calentará ningún pan para ti",
-     "note": "No te llevará a ninguna parte; no ganarás nada."
+     "note": "No vas a ganar nada con eso; no sirve de nada."
     },
     {
      "id": "04b/0824#img",
      "text": "mi familia me metiera a la fuerza en el gallinero",
-     "note": "Mi familia me empujó a casarme."
+     "note": "Una manera de decir «casarse» en broma. Aquí: mi familia me empujó a casarme."
     },
     {
      "id": "04b/0509#img",
      "text": "el terrón de azúcar me salta en la garganta",
-     "note": "El terrón de azúcar se me va por el otro lado y me atraganto."
+     "note": "Se me va por el otro lado y me atraganto. En Irán, el té se suele tomar a través de un terrón de azúcar que se tiene en la boca."
     },
     {
      "id": "01/0132#img",
      "text": "asómate a todos los rincones y recovecos",
-     "note": "Explóralo todo; visita todos los sitios que puedas."
+     "note": "Explora por todas partes; míralo todo por curiosidad."
     },
     {
      "id": "06/0118#img",
      "text": "las palabras no cuestan nada — son aire caliente",
-     "note": "Decir algo no cuesta nada; las palabras por sí solas no demuestran nada."
+     "note": "Hablar es fácil; las palabras por sí solas no demuestran nada."
     },
     {
      "id": "04b/1247#img",
      "text": "seguro que caería de los ojos de Negar",
-     "note": "Seguro que la niña dejaría de tener buena opinión de él."
+     "note": "Perder la estima de alguien. Aquí: la niña dejaría de tener buena opinión de él."
     },
     {
      "id": "04b/1293#img",
      "text": "¿Solo una promesa para cuando llegue la cosecha?",
-     "note": "¿Solo una promesa vacía que nunca se cumplirá?"
+     "note": "Una promesa para un «después» que nunca llega; una promesa vacía."
     },
     {
      "id": "04b/0205#img",
      "text": "déjame servirte las tripas de la amistad en una bandeja",
-     "note": "Déjame agasajarte con toda la amistad que tengo."
+     "note": "Ofrecer a alguien todo el corazón. Aquí: toda mi amistad."
     },
     {
      "id": "04b/1125#img",
      "text": "se les cayeron los pelos del susto",
-     "note": "Se quedaron completamente pasmados."
+     "note": "Quedarse completamente pasmado."
     },
     {
      "id": "03/0417#img",
      "text": "no te pongas tan nervioso, se te va a secar la leche",
-     "note": "Cálmate; no merece la pena ponerte así."
+     "note": "Enfadarse demasiado hace daño (al principio se les decía a las madres que dan el pecho). Aquí: cálmate, no merece la pena."
     },
     {
      "id": "04b/0378#img",
      "text": "nadie te va a llamar mudo por no tirarte un pedo",
-     "note": "A nadie le habría importado que te callaras."
+     "note": "Versión grosera de «nadie te va a llamar mudo por no hablar»: podías simplemente callarte. Aquí: a nadie le habría importado que te callaras."
     },
     {
      "id": "04b/0181#img",
      "text": "Cómete la cabeza de mi polla",
-     "note": "Una forma grosera de decir: lárgate, nadie quiere tu opinión."
+     "note": "Un «lárgate» muy grosero: a nadie le importa lo que pienses."
     },
     {
      "id": "04b/0899#img",
      "text": "Comecabezas de polla",
-     "note": "Un insulto grosero entre amigos, más o menos «idiota»."
+     "note": "Un insulto grosero, más o menos «idiota», a menudo entre amigos."
     },
     {
      "id": "04b/0209#img",
      "text": "riéndote de nuestras barbas y nuestras pollas",
-     "note": "Burlándote de nosotros, los que nos quedamos."
+     "note": "Burlarse de alguien (de «reírse en las barbas de alguien», en versión grosera). Aquí: burlándote de nosotros, los que nos quedamos."
     },
     {
      "id": "04b/0822#img",
      "text": "no andarías así por las calles con la polla en la mano",
-     "note": "Vagar solo y sin rumbo, todavía soltero."
+     "note": "Ocioso y sin rumbo, sin haber logrado nada. Aquí: todavía soltero, vagando solo."
     },
     {
      "id": "04b/0440#img",
      "text": "qué polla nos caiga encima",
-     "note": "Cualquier desgracia que nos pase."
+     "note": "Cualquier desgracia que nos pase (grosero)."
     },
     {
      "id": "03/0663#img",
      "text": "nos metieron un palo por el culo a nosotros los de provincias",
-     "note": "Esa política fue muy injusta con todos nosotros, los de provincias."
+     "note": "Tratar a alguien de forma muy injusta (grosero). Aquí: esa política nos lo hizo a todos los de provincias."
     },
     {
      "id": "04b/0389#img",
      "text": "Ni su cabeza podrías comerte.",
-     "note": "Una respuesta grosera («su cabeza» = la cabeza de la polla): no habrías podido hacer nada."
+     "note": "Una respuesta grosera: no habrías podido hacer nada («su cabeza» = la cabeza de la polla)."
     },
     {
      "id": "04b/0751#img",
      "text": "Podría dar vueltas y vueltas alrededor de la cabeza de mi Nini-jan.",
-     "note": "Una expresión cariñosa: daría cualquier cosa por ella."
+     "note": "Una expresión cariñosa: cargaría con tus males (de una vieja costumbre de dar vueltas alrededor de un ser querido para alejar de él la desgracia). Aquí: daría cualquier cosa por ella."
     }
    ],
    "hint": "Mostrar el significado",

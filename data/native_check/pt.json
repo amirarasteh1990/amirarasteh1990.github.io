@@ -87,9 +87,9 @@
    "title": "Ditos persas",
    "q": "Estes ditos persas estão traduzidos palavra a palavra. Tente adivinhar cada um primeiro e depois mostre o sentido.",
    "labels": [
-    "Adivinhei sem ver o sentido",
-    "Percebi ao ver o sentido",
-    "Mesmo com o sentido, não faço a ligação"
+    "Claro sem o sentido",
+    "Compreensível com o sentido",
+    "Não está claro, mesmo com o sentido"
    ],
    "note_label": "O que é que não está claro?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "A chuva não cai da terra para o céu.",
-     "note": "São os pais que se sacrificam pelos filhos, e não o contrário."
+     "note": "Há coisas que só vão num sentido e nunca ao contrário. Aqui: os pais sacrificam-se pelos filhos, e não os filhos pelos pais."
     },
     {
      "id": "01/0073#img",
      "text": "Um bom ano conhece-se pela sua primavera.",
-     "note": "Pela forma como o ano começa, percebe-se como vai correr."
+     "note": "Um bom começo mostra como as coisas vão correr."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "o meu coração está a apodrecer",
-     "note": "Estou a definhar de tédio e solidão."
+     "note": "Estou a morrer de tédio; a espera ou a solidão está a desgastar-me."
     },
     {
      "id": "04b/0334#img",
      "text": "A minha mão é curta e a união contigo está longe.",
-     "note": "Estar contigo está fora do meu alcance; não posso fazer nada."
+     "note": "O que quero está fora do meu alcance; não posso fazer nada. Aqui: estar contigo."
     },
     {
      "id": "01/0203#img",
      "text": "se o digo, a língua me queima; se não o digo, o tutano dos ossos me queima",
-     "note": "Falar dói, mas calar dói ainda mais."
+     "note": "Uma escolha dolorosa: falar dói, mas calar dói ainda mais."
     },
     {
      "id": "03/0634#img",
      "text": "a comida vira veneno de cobra para mim",
-     "note": "Ele estraga-me a refeição."
+     "note": "Algo bom fica estragado e não consigo aproveitá-lo. Aqui: ele vai estragar-me a refeição."
     },
     {
      "id": "04b/0274#img",
      "text": "não vai aquecer pão nenhum para ti",
-     "note": "Não te leva a lado nenhum; não ganhas nada com isso."
+     "note": "Não ganhas nada com isso; não serve de nada."
     },
     {
      "id": "04b/0824#img",
      "text": "a minha família me ter metido à força no galinheiro",
-     "note": "A minha família obrigou-me a casar."
+     "note": "Uma maneira brincalhona de dizer «casar». Aqui: a minha família empurrou-me para o casamento."
     },
     {
      "id": "04b/0509#img",
      "text": "o torrão de açúcar salta-me na garganta",
-     "note": "O torrão de açúcar vai-me para o goto e engasgo-me."
+     "note": "Vai-me para o goto e engasgo-me. No Irão, bebe-se muitas vezes o chá através de um torrão de açúcar que se segura na boca."
     },
     {
      "id": "01/0132#img",
      "text": "espreita para todos os cantos",
-     "note": "Explora tudo; vai a todos os sítios que puderes."
+     "note": "Explora todos os sítios; vai ver tudo por curiosidade."
     },
     {
      "id": "06/0118#img",
      "text": "palavras não custam nada – é só ar quente",
-     "note": "Dizer algo não custa nada; as palavras sozinhas não provam nada."
+     "note": "Falar é fácil; as palavras sozinhas não provam nada."
     },
     {
      "id": "04b/1247#img",
      "text": "de certeza que ia cair dos olhos da Negar",
-     "note": "A menina ia de certeza deixar de ter boa opinião dele."
+     "note": "Perder a estima de alguém. Aqui: a menina ia deixar de ter boa opinião dele."
     },
     {
      "id": "04b/1293#img",
      "text": "Só uma promessa de colheita?",
-     "note": "Só uma promessa vã, que nunca vai ser cumprida?"
+     "note": "Uma promessa para um «depois» que nunca chega; uma promessa vã."
     },
     {
      "id": "04b/0205#img",
      "text": "deixa-me servir-te as entranhas da amizade numa bandeja",
-     "note": "Deixa-me receber-te com toda a amizade que tenho."
+     "note": "Oferecer a alguém o coração inteiro. Aqui: toda a minha amizade."
     },
     {
      "id": "04b/1125#img",
      "text": "caíram-lhes logo todos os pelos do corpo",
-     "note": "Ficaram completamente pasmados."
+     "note": "Ficar completamente pasmado."
     },
     {
      "id": "03/0417#img",
      "text": "não te exaltes tanto, o leite seca-te",
-     "note": "Acalma-te; não vale a pena ficares tão irritado."
+     "note": "Irritar-se demais faz mal (dizia-se primeiro às mães que amamentam). Aqui: acalma-te, não vale a pena."
     },
     {
      "id": "04b/0378#img",
      "text": "não se diz que és mudo só porque não peidas",
-     "note": "Ninguém se teria importado se tivesses ficado calado."
+     "note": "Versão grosseira de «não se diz que és mudo só porque não falas»: podias simplesmente calar-te. Aqui: ninguém se teria importado se tivesses ficado calado."
     },
     {
      "id": "04b/0181#img",
      "text": "Come a cabeça da minha pila",
-     "note": "Uma forma grosseira de dizer: desaparece, ninguém quer a tua opinião."
+     "note": "Um «desaparece» muito grosseiro: ninguém quer saber o que pensas."
     },
     {
      "id": "04b/0899#img",
      "text": "Comedor de cabeças de pila",
-     "note": "Um insulto grosseiro entre amigos, mais ou menos «seu parvo»."
+     "note": "Um insulto grosseiro, mais ou menos «seu parvo», muitas vezes entre amigos."
     },
     {
      "id": "04b/0209#img",
      "text": "a rir das nossas barbas e dos nossos caralhos",
-     "note": "A gozar connosco, os que cá ficámos."
+     "note": "Gozar com alguém (de «rir-se da barba de alguém», em versão grosseira). Aqui: a gozar connosco, os que cá ficámos."
     },
     {
      "id": "04b/0822#img",
      "text": "não andarias assim pelas ruas com a pila na mão",
-     "note": "Andar por aí sozinho e sem rumo, ainda solteiro."
+     "note": "Ocioso e sem rumo, sem conseguir nada. Aqui: ainda solteiro, a andar por aí sozinho."
     },
     {
      "id": "04b/0440#img",
      "text": "qualquer caralho que nos caia na cabeça",
-     "note": "Seja qual for a desgraça que nos aconteça."
+     "note": "Seja qual for a desgraça que nos aconteça (grosseiro)."
     },
     {
      "id": "03/0663#img",
      "text": "enfiaram-nos a vara no cu a nós, os da província",
-     "note": "Essa política foi muito injusta para todos nós, os da província."
+     "note": "Tratar alguém de forma muito injusta (grosseiro). Aqui: essa política fez isso a todos nós, os da província."
     },
     {
      "id": "04b/0389#img",
      "text": "Nem a cabeça dela conseguias comer.",
-     "note": "Uma resposta grosseira («a cabeça dela» = a cabeça da pila): não terias conseguido fazer nada."
+     "note": "Uma resposta grosseira: não terias conseguido fazer nada («a cabeça dela» = a cabeça da pila)."
     },
     {
      "id": "04b/0751#img",
      "text": "Eu podia dar voltas e voltas à volta da cabecinha da minha Nini-jan.",
-     "note": "Uma expressão carinhosa: dava tudo por ela."
+     "note": "Uma expressão carinhosa: tomava para mim os teus males (de um velho costume de andar à volta de uma pessoa querida para afastar dela a desgraça). Aqui: dava tudo por ela."
     }
    ],
    "hint": "Mostrar o sentido",

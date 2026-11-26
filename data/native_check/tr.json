@@ -87,9 +87,9 @@
    "title": "Farsça deyişler",
    "q": "Bu Farsça deyişler kelimesi kelimesine çevrildi. Önce her birini tahmin etmeye çalışın, sonra anlamına bakın.",
    "labels": [
-    "Anlamına bakmadan tahmin ettim",
-    "Anlamına bakınca anladım",
-    "Anlamına baksam da bağlantı kuramıyorum"
+    "Anlamına bakmadan da anlaşılıyor",
+    "Anlamıyla birlikte anlaşılıyor",
+    "Anlamıyla bile anlaşılmıyor"
    ],
    "note_label": "Anlaşılmasını ne zorlaştırıyor?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "Yağmur yerden göğe yağmaz.",
-     "note": "Anne baba çocukları için fedakârlık eder, çocuklar anne babaları için değil."
+     "note": "Bazı şeyler yalnızca tek yönde olur, asla tersine dönmez. Burada: anne baba çocukları için fedakârlık eder, çocuklar anne babaları için değil."
     },
     {
      "id": "01/0073#img",
      "text": "İyi yıl baharından belli olur",
-     "note": "Bir yılın nasıl geçeceği başlangıcından anlaşılır."
+     "note": "İyi bir başlangıç, işlerin nasıl gideceğini gösterir."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "Yüreğim çürüyor",
-     "note": "Can sıkıntısından ve yalnızlıktan eriyip bitiyorum."
+     "note": "Can sıkıntısından ölüyorum; beklemek ya da yalnızlık beni yıpratıyor."
     },
     {
      "id": "04b/0334#img",
      "text": "Elim kısa, sana kavuşmak uzak.",
-     "note": "Seninle olmak benim için ulaşılmaz; çaresizim."
+     "note": "İstediğim şey benim için ulaşılmaz; çaresizim. Burada: seninle olmak."
     },
     {
      "id": "01/0203#img",
      "text": "Söylersem dilim yanar, söylemezsem kemiklerimin iliği yanar.",
-     "note": "Konuşmak acı veriyor, ama susmak daha da çok acı veriyor."
+     "note": "Acı bir seçim: konuşmak acıtır, ama susmak daha çok acıtır."
     },
     {
      "id": "03/0634#img",
      "text": "yemek bana yılan zehri olur",
-     "note": "Yemeğimin tadını kaçırır."
+     "note": "Güzel bir şey bozulur ve keyfini çıkaramam. Burada: yemeğimin tadını kaçırır."
     },
     {
      "id": "04b/0274#img",
      "text": "senin için hiçbir ekmek ısınmayacak",
-     "note": "Bu seni hiçbir yere götürmez; hiçbir şey kazanmazsın."
+     "note": "Bundan hiçbir kazancın olmaz; boşuna."
     },
     {
      "id": "04b/0824#img",
      "text": "ailem zorla beni tavukların arasına katınca",
-     "note": "Ailem beni evlenmeye zorladı."
+     "note": "“Evlenmek” demenin şakacı bir yolu. Burada: ailem beni evlenmeye zorladı."
     },
     {
      "id": "04b/0509#img",
      "text": "şeker küpü boğazımda sıçrıyor",
-     "note": "Şeker küpü genzime kaçıyor ve boğuluyorum."
+     "note": "Genzime kaçıyor ve boğuluyorum. İran'da çay çoğu zaman ağızda bir şeker küpü tutularak içilir."
     },
     {
      "id": "01/0132#img",
      "text": "her köşe bucağa göz at",
-     "note": "Her şeyi keşfet; görebildiğin her yeri gör."
+     "note": "Her yeri gez; merakla her şeyi incele."
     },
     {
      "id": "06/0118#img",
      "text": "sözün masrafı yok — havadan ibaret",
-     "note": "Bir şey söylemek bedavadır; laf tek başına hiçbir şey kanıtlamaz."
+     "note": "Söylemesi kolay; laf tek başına hiçbir şey kanıtlamaz."
     },
     {
      "id": "04b/1247#img",
      "text": "mutlaka Negar'ın gözünden düşerdi",
-     "note": "Kız onun hakkındaki iyi fikrini mutlaka kaybederdi."
+     "note": "Birinin saygısını kaybetmek. Burada: kız artık onun hakkında iyi düşünmezdi."
     },
     {
      "id": "04b/1293#img",
      "text": "Sadece bir hasat vakti vaadi mi?",
-     "note": "Sadece asla tutulmayacak boş bir vaat mi?"
+     "note": "Hiç gelmeyecek bir “sonra” için verilen söz; boş bir vaat."
     },
     {
      "id": "04b/0205#img",
      "text": "dostluğun bağırsaklarını bir tepside önüne sereyim",
-     "note": "Seni bütün dostluğumla ağırlayayım."
+     "note": "Birine bütün kalbini sunmak. Burada: bütün dostluğumu."
     },
     {
      "id": "04b/1125#img",
      "text": "tüyleri döküldü",
-     "note": "Tamamen şaşkına döndüler."
+     "note": "Tamamen şaşkına dönmek."
     },
     {
      "id": "03/0417#img",
      "text": "bu kadar köpürme, sütün kurur",
-     "note": "Sakin ol; bu kadar sinirlenmeye değmez."
+     "note": "Fazla sinirlenmek insana zarar verir (ilk önce emziren annelere söylenirdi). Burada: sakin ol, buna değmez."
     },
     {
      "id": "04b/0378#img",
      "text": "osurmasan kimse sana dilsiz demezdi",
-     "note": "Sussaydın kimse yadırgamazdı."
+     "note": "“Konuşmasan kimse sana dilsiz demez” sözünün kaba hâli: sadece susabilirdin. Burada: sussaydın kimse yadırgamazdı."
     },
     {
      "id": "04b/0181#img",
      "text": "Sikimin başını ye",
-     "note": "Kabaca şunu demek: defol, fikrini isteyen yok."
+     "note": "Çok kaba bir “defol”: ne düşündüğün kimsenin umurunda değil."
     },
     {
      "id": "04b/0899#img",
      "text": "sik başı yiyen",
-     "note": "Arkadaşlar arasında kaba bir hakaret, aşağı yukarı “seni salak”."
+     "note": "Kaba bir hakaret, aşağı yukarı “seni salak”; çoğu zaman arkadaşlar arasında."
     },
     {
      "id": "04b/0209#img",
      "text": "sakalımıza ve sikimize gülüyorsunuz",
-     "note": "Bizimle, geride kalanlarla dalga geçiyorsunuz."
+     "note": "Biriyle alay etmek (“birinin sakalına gülmek” sözünden, kabalaştırılmış). Burada: geride kalan bizlerle dalga geçiyorsunuz."
     },
     {
      "id": "04b/0822#img",
      "text": "böyle elinde aletinle sokaklarda dolaşmazdın",
-     "note": "Hâlâ bekâr, yalnız ve amaçsızca dolaşmazdın."
+     "note": "Aylak ve amaçsız, hiçbir şey başaramadan. Burada: hâlâ bekâr ve yalnız başına dolaşıyor olmazdın."
     },
     {
      "id": "04b/0440#img",
      "text": "başımıza ne sik gelse",
-     "note": "Başımıza hangi felaket gelirse gelsin."
+     "note": "Başımıza hangi felaket gelirse gelsin (kaba)."
     },
     {
      "id": "03/0663#img",
      "text": "taşralı olan hepimizin götüne sopayı soktular",
-     "note": "Bu politika taşralı hepimize büyük haksızlık etti."
+     "note": "Birine büyük haksızlık etmek (kaba). Burada: bu politika taşralı hepimize bunu yaptı."
     },
     {
      "id": "04b/0389#img",
      "text": "Başını bile yiyemezdin.",
-     "note": "Kaba bir cevap (“başını” = sikin başını): hiçbir şey yapamazdın."
+     "note": "Kaba bir cevap: hiçbir şey yapamazdın (“başını” = sikin başını)."
     },
     {
      "id": "04b/0751#img",
      "text": "Nini-jan'ımın başının etrafında dönüp durayım",
-     "note": "Sevgi dolu bir söz: onun için her şeyimi veririm."
+     "note": "Sevgi dolu bir söz: derdini ben alayım (eski bir gelenekten gelir: kötülük uzak dursun diye sevilen birinin çevresinde dönülür). Burada: onun için her şeyimi veririm."
     }
    ],
    "hint": "Anlamını göster",

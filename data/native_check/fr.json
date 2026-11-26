@@ -87,9 +87,9 @@
    "title": "Expressions persanes",
    "q": "Ces expressions persanes sont traduites mot à mot. Essaie d'abord de deviner chacune, puis affiche son sens.",
    "labels": [
-    "J'ai deviné sans voir le sens",
-    "J'ai compris en voyant le sens",
-    "Même avec le sens, je ne fais pas le lien"
+    "Clair sans le sens",
+    "Compréhensible avec le sens",
+    "Pas clair, même avec le sens"
    ],
    "note_label": "Qu'est-ce qui n'est pas clair ?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "La pluie ne remonte pas de la terre vers le ciel.",
-     "note": "Ce sont les parents qui se sacrifient pour leurs enfants, pas l'inverse."
+     "note": "Certaines choses ne vont que dans un sens et jamais à l'inverse. Ici : les parents se sacrifient pour leurs enfants, pas les enfants pour leurs parents."
     },
     {
      "id": "01/0073#img",
      "text": "Une bonne année se reconnaît à son printemps.",
-     "note": "On voit dès le début comment l'année va se passer."
+     "note": "Un bon début montre comment les choses vont tourner."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "mon cœur pourrit",
-     "note": "Je dépéris d'ennui et de solitude."
+     "note": "Je m'ennuie à mourir ; l'attente ou la solitude me ronge."
     },
     {
      "id": "04b/0334#img",
      "text": "Ma main est trop courte et l'union avec toi lointaine.",
-     "note": "Être avec toi est hors de ma portée ; je n'y peux rien."
+     "note": "Ce que je veux est hors de ma portée ; je n'y peux rien. Ici : être avec toi."
     },
     {
      "id": "01/0203#img",
      "text": "si je le dis, ma langue brûle ; si je ne le dis pas, la moelle de mes os brûle",
-     "note": "Parler fait mal, mais se taire fait encore plus mal."
+     "note": "Un choix douloureux : parler fait mal, mais se taire fait encore plus mal."
     },
     {
      "id": "03/0634#img",
      "text": "le repas tournera pour moi au venin de serpent",
-     "note": "Il va me gâcher le repas."
+     "note": "Quelque chose de bon est gâché, et je ne peux pas en profiter. Ici : il va me gâcher le repas."
     },
     {
      "id": "04b/0274#img",
      "text": "Aucun pain ne va se réchauffer pour toi",
-     "note": "Ça ne te mènera nulle part ; tu n'y gagneras rien."
+     "note": "Tu n'y gagneras rien ; ça ne sert à rien."
     },
     {
      "id": "04b/0824#img",
      "text": "ma famille m'a fourré de force dans le poulailler",
-     "note": "Ma famille m'a poussé à me marier."
+     "note": "Une façon plaisante de dire « se marier ». Ici : ma famille m'a poussé à me marier."
     },
     {
      "id": "04b/0509#img",
      "text": "le morceau de sucre saute dans ma gorge",
-     "note": "Le morceau de sucre passe de travers et je m'étouffe."
+     "note": "Il passe de travers et je m'étouffe. En Iran, on boit souvent le thé à travers un morceau de sucre tenu dans la bouche."
     },
     {
      "id": "01/0132#img",
      "text": "glisse-toi dans le moindre recoin",
-     "note": "Explore tout ; va voir tous les endroits possibles."
+     "note": "Explore partout ; va tout voir par curiosité."
     },
     {
      "id": "06/0118#img",
      "text": "les paroles ne coûtent rien — c'est du vent",
-     "note": "Parler ne coûte rien ; les mots seuls ne prouvent rien."
+     "note": "Parler, c'est facile ; les mots seuls ne prouvent rien."
     },
     {
      "id": "04b/1247#img",
      "text": "il tomberait sûrement des yeux de Negar",
-     "note": "La fillette ne penserait sûrement plus de bien de lui."
+     "note": "Perdre l'estime de quelqu'un. Ici : la fillette ne penserait plus de bien de lui."
     },
     {
      "id": "04b/1293#img",
      "text": "Rien qu'une promesse pour la moisson ?",
-     "note": "Rien qu'une promesse en l'air, qui ne sera jamais tenue ?"
+     "note": "Une promesse pour un « plus tard » qui ne vient jamais ; une promesse en l'air."
     },
     {
      "id": "04b/0205#img",
      "text": "laisse-moi te servir les entrailles de l'amitié sur un plateau",
-     "note": "Laisse-moi te recevoir avec toute mon amitié."
+     "note": "Offrir à quelqu'un tout son cœur. Ici : toute mon amitié."
     },
     {
      "id": "04b/1125#img",
      "text": "leurs poils sont tombés d'un coup",
-     "note": "Ils étaient complètement sidérés."
+     "note": "Être complètement sidéré."
     },
     {
      "id": "03/0417#img",
      "text": "ne t'énerve pas comme ça, ton lait va se tarir",
-     "note": "Calme-toi ; ça ne vaut pas la peine de te mettre dans cet état."
+     "note": "Se mettre trop en colère fait du mal (on le disait d'abord aux mères qui allaitent). Ici : calme-toi, ça n'en vaut pas la peine."
     },
     {
      "id": "04b/0378#img",
      "text": "on ne te traitera pas de muet si tu ne pètes pas",
-     "note": "Personne ne t'aurait rien reproché si tu t'étais tu."
+     "note": "Forme grossière de « on ne te traite pas de muet si tu ne parles pas » : tu pouvais tout simplement te taire. Ici : personne ne t'aurait rien reproché si tu t'étais tu."
     },
     {
      "id": "04b/0181#img",
      "text": "Bouffe la tête de ma bite",
-     "note": "Une façon grossière de dire : dégage, personne ne veut de ton avis."
+     "note": "Un « dégage » très grossier : ton avis n'intéresse personne."
     },
     {
      "id": "04b/0899#img",
      "text": "Bouffeur de têtes de bite",
-     "note": "Une insulte grossière entre amis, à peu près « espèce d'idiot »."
+     "note": "Une insulte grossière, à peu près « espèce d'idiot », souvent entre amis."
     },
     {
      "id": "04b/0209#img",
      "text": "rire de notre barbe et de notre bite",
-     "note": "Se moquer de nous, ceux qui sont restés."
+     "note": "Se moquer de quelqu'un (de « rire à la barbe de quelqu'un », rendu grossier). Ici : se moquer de nous, ceux qui sont restés."
     },
     {
      "id": "04b/0822#img",
      "text": "tu ne traînerais pas dans les rues comme ça, la bite à la main",
-     "note": "Traîner seul et sans but, toujours célibataire."
+     "note": "Désœuvré et sans but, sans rien accomplir. Ici : toujours célibataire, à traîner tout seul."
     },
     {
      "id": "04b/0440#img",
      "text": "n'importe quelle bite qui nous tombe dessus",
-     "note": "Quelle que soit la catastrophe qui nous frappe."
+     "note": "Quelle que soit la catastrophe qui nous frappe (grossier)."
     },
     {
      "id": "03/0663#img",
      "text": "ils nous ont foutu le bâton dans le cul, nous les gosses de province",
-     "note": "Cette politique a été très injuste envers nous tous, les provinciaux."
+     "note": "Traiter quelqu'un de façon très injuste (grossier). Ici : cette politique nous a fait ça à tous, nous les provinciaux."
     },
     {
      "id": "04b/0389#img",
      "text": "Tu n'aurais même pas pu bouffer la tête de ma bite.",
-     "note": "Une réplique grossière : tu n'aurais rien pu faire du tout."
+     "note": "Une réponse grossière : tu n'aurais rien pu faire du tout."
     },
     {
      "id": "04b/0751#img",
      "text": "Je pourrais tourner et tourner autour de la tête de ma Nini-jan.",
-     "note": "Une formule tendre : je donnerais tout pour elle."
+     "note": "Une formule tendre : je prendrais tes peines sur moi (d'une vieille coutume où l'on tourne autour d'un être cher pour éloigner de lui le mauvais sort). Ici : je donnerais tout pour elle."
     }
    ],
    "hint": "Afficher le sens",

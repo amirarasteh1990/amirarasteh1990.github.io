@@ -87,9 +87,9 @@
    "title": "Perskie powiedzenia",
    "q": "Te perskie powiedzenia są przetłumaczone dosłownie. Spróbuj najpierw odgadnąć każde z nich, a potem pokaż znaczenie.",
    "labels": [
-    "Domyślam się bez podglądania znaczenia",
-    "Rozumiem dopiero ze znaczeniem",
-    "Nawet ze znaczeniem nie widzę związku"
+    "Jasne bez pokazania znaczenia",
+    "Zrozumiałe po pokazaniu znaczenia",
+    "Niejasne nawet po pokazaniu znaczenia"
    ],
    "note_label": "Co jest niejasne?",
    "note_on": "change",
@@ -97,12 +97,12 @@
     {
      "id": "06/0188#img",
      "text": "Deszcz nie pada z ziemi w niebo.",
-     "note": "To rodzice poświęcają się dla dzieci, a nie odwrotnie."
+     "note": "Niektóre rzeczy dzieją się tylko w jedną stronę, nigdy odwrotnie. Tutaj: to rodzice poświęcają się dla dzieci, a nie dzieci dla rodziców."
     },
     {
      "id": "01/0073#img",
      "text": "dobry rok już po wiośnie widać",
-     "note": "Po początku można poznać, jaki będzie cały rok."
+     "note": "Dobry początek pokazuje, jak wszystko się potoczy."
     },
     {
      "id": "04a/0128#img",
@@ -112,117 +112,117 @@
     {
      "id": "01/0138#img",
      "text": "serce mi gnije",
-     "note": "Marnieję z nudów i samotności."
+     "note": "Nudzę się śmiertelnie; czekanie albo samotność mnie wykańczają."
     },
     {
      "id": "04b/0334#img",
      "text": "Ręka moja krótka, a połączenie z tobą dalekie.",
-     "note": "Bycie z tobą jest poza moim zasięgiem; nic nie mogę zrobić."
+     "note": "To, czego chcę, jest poza moim zasięgiem; nic nie mogę zrobić. Tutaj: bycie z tobą."
     },
     {
      "id": "01/0203#img",
      "text": "jeśli powiem, język mi się spali; jeśli nie powiem, szpik w kościach mi się spali",
-     "note": "Mówienie boli, ale milczenie boli jeszcze bardziej."
+     "note": "Bolesny wybór: mówienie boli, ale milczenie boli bardziej."
     },
     {
      "id": "03/0634#img",
      "text": "posiłek zamieni mi się w jad węża",
-     "note": "Zepsuje mi cały posiłek."
+     "note": "Coś dobrego zostaje zepsute i nie mogę się tym cieszyć. Tutaj: zepsuje mi posiłek."
     },
     {
      "id": "04b/0274#img",
      "text": "żaden chleb ci się od tego nie zagrzeje",
-     "note": "Nic ci to nie da; niczego w ten sposób nie zyskasz."
+     "note": "Nic ci to nie da; to bez sensu."
     },
     {
      "id": "04b/0824#img",
      "text": "rodzina na siłę wepchnęła mnie między kury",
-     "note": "Rodzina zmusiła mnie do ożenku."
+     "note": "Żartobliwe powiedzenie oznaczające „wziąć ślub”. Tutaj: rodzina zmusiła mnie do ożenku."
     },
     {
      "id": "04b/0509#img",
      "text": "kostka cukru wskakuje mi do gardła",
-     "note": "Kostka cukru wpada mi nie tą dziurką i się krztuszę."
+     "note": "Wpada nie tą dziurką i się krztuszę. W Iranie herbatę często pije się przez kostkę cukru trzymaną w ustach."
     },
     {
      "id": "01/0132#img",
      "text": "zajrzyj we wszystkie zakątki",
-     "note": "Zwiedź wszystko; zobacz każde miejsce, jakie tylko możesz."
+     "note": "Zwiedź każde miejsce; z ciekawości zajrzyj we wszystko."
     },
     {
      "id": "06/0118#img",
      "text": "słowa nic nie kosztują — to tylko gorące powietrze",
-     "note": "Powiedzieć można wszystko; same słowa niczego nie dowodzą."
+     "note": "Gadać każdy może; same słowa niczego nie dowodzą."
     },
     {
      "id": "04b/1247#img",
      "text": "na pewno upadłby w oczach Negar",
-     "note": "Dziewczynka na pewno przestałaby dobrze o nim myśleć."
+     "note": "Stracić czyjś szacunek. Tutaj: dziewczynka przestałaby dobrze o nim myśleć."
     },
     {
      "id": "04b/1293#img",
      "text": "Tylko obietnica na czas żniw?",
-     "note": "Tylko pusta obietnica, której nikt nigdy nie dotrzyma?"
+     "note": "Obietnica na „później”, które nigdy nie nadchodzi; pusta obietnica."
     },
     {
      "id": "04b/0205#img",
      "text": "wyłożę ci flaki przyjaźni na tacy",
-     "note": "Pozwól, że ugoszczę cię z całą moją przyjaźnią."
+     "note": "Ofiarować komuś całe serce. Tutaj: całą moją przyjaźń."
     },
     {
      "id": "04b/1125#img",
      "text": "aż wszystkie włosy na ciele im powypadały",
-     "note": "Kompletnie osłupieli."
+     "note": "Kompletnie osłupieć."
     },
     {
      "id": "03/0417#img",
      "text": "nie gorączkuj się tak, wyschnie ci mleko",
-     "note": "Uspokój się; nie warto się tak denerwować."
+     "note": "Zbytnia złość ci zaszkodzi (mówiono tak najpierw matkom karmiącym). Tutaj: uspokój się, nie warto."
     },
     {
      "id": "04b/0378#img",
      "text": "nikt cię nie nazwie niemową, jak nie pierdniesz",
-     "note": "Nikt by nie miał pretensji, gdybyś siedział cicho."
+     "note": "Wulgarna wersja powiedzenia „nikt cię nie nazwie niemową, jak nic nie powiesz”: mógłbyś po prostu siedzieć cicho. Tutaj: nikt by nie miał pretensji, gdybyś siedział cicho."
     },
     {
      "id": "04b/0181#img",
      "text": "Zjedz główkę mojego kutasa",
-     "note": "Wulgarny sposób, by powiedzieć: spadaj, nikogo nie obchodzi twoje zdanie."
+     "note": "Bardzo wulgarne „spadaj”: nikogo nie obchodzi, co myślisz."
     },
     {
      "id": "04b/0899#img",
      "text": "Ty pożeraczu główek kutasów",
-     "note": "Wulgarna obelga między kumplami, mniej więcej „ty głupku”."
+     "note": "Wulgarna obelga, mniej więcej „ty głupku”, często między kumplami."
     },
     {
      "id": "04b/0209#img",
      "text": "śmiejesz się z naszych bród i fiutów",
-     "note": "Nabijasz się z nas, tych, którzy zostali."
+     "note": "Kpić z kogoś (od „śmiać się z czyjejś brody”, w wersji wulgarnej). Tutaj: nabijasz się z nas, tych, którzy zostali."
     },
     {
      "id": "04b/0822#img",
      "text": "nie włóczyłbyś się tak po ulicach z fiutem w garści",
-     "note": "Snuć się samotnie i bez celu, wciąż jako kawaler."
+     "note": "Snuć się bez zajęcia i bez celu, nic nie osiągając. Tutaj: wciąż kawaler, włóczysz się sam."
     },
     {
      "id": "04b/0440#img",
      "text": "żaden chuj, który nam spadnie na głowę",
-     "note": "Jakiekolwiek nieszczęście by nas nie spotkało."
+     "note": "Jakiekolwiek nieszczęście nas spotka (wulgarnie)."
     },
     {
      "id": "03/0663#img",
      "text": "wszystkim nam z prowincji wsadzili kij w dupę",
-     "note": "Ta polityka bardzo skrzywdziła nas wszystkich z prowincji."
+     "note": "Potraktować kogoś bardzo niesprawiedliwie (wulgarnie). Tutaj: ta polityka zrobiła to nam wszystkim z prowincji."
     },
     {
      "id": "04b/0389#img",
      "text": "Nawet jego główki nie zdołałeś zjeść.",
-     "note": "Ordynarna odpowiedź („jego główka” = główka kutasa): nic byś nie zdziałał."
+     "note": "Ordynarna odpowiedź: nic byś nie zdziałał („jego główka” = główka kutasa)."
     },
     {
      "id": "04b/0751#img",
      "text": "Mógłbym krążyć wokół główki mojej Nini-dżan",
-     "note": "Czuły zwrot: oddałbym za nią wszystko."
+     "note": "Czuły zwrot: wezmę na siebie wszystkie twoje troski (od dawnego zwyczaju krążenia wokół bliskiej osoby, by odpędzić od niej nieszczęście). Tutaj: oddałbym za nią wszystko."
     }
    ],
    "hint": "Pokaż znaczenie",
