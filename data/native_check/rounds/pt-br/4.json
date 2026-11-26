@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Linguagem grosseira",
-   "q": "Aqui os personagens xingam ou falam de forma grosseira. Cada trecho soa natural?",
+   "q": "Aqui os personagens xingam ou falam de forma grosseira. Alguns trechos mantêm uma imagem persa, então podem soar um pouco estranhos. Mesmo assim, cada trecho soa como fala grosseira e chula?",
    "labels": [
     "Correto",
     "Precisa mudar",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Maldito seja quem negar o Olho de Águia News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Ah, o que você quer, Eskandar? Que diabo deu em você?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Nenhum nome combina com você, raios.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Tô falando que não consigo ver, seu cuzão.",
      "note": null
     },
     {
@@ -98,11 +83,6 @@
     {
      "id": "03/0418#crude",
      "text": "Que diferença faz? Se o McCain entrar, vai foder o Irã, objetivamente.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Ugh, qual é a dessa pose de pensador de merda outra vez?",
      "note": null
     },
     {
@@ -141,18 +121,8 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Que se foda a nossa sorte.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "Eu teria preferido dividir quarto com eles em vez de um cabeça de pica igual a você.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Então você é um calouro do caralho.",
      "note": null
     },
     {
@@ -186,11 +156,6 @@
      "note": null
     },
     {
-     "id": "04b/0494#crude",
-     "text": "A gente volta a chegar naquela mesma maldita descontinuidade.",
-     "note": null
-    },
-    {
      "id": "04b/0520#crude",
      "text": "Hoje não briguem no quarto, que tirei um doze em Educação Física, estou com os nervos fodidos e ainda mando vocês à merda.",
      "note": "no Irã, as notas vão até 20"
@@ -221,23 +186,8 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Que merda anda agora te roendo o cérebro?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Você cagou na sensação que eu estava tirando da música com essa voz de merda que você tem.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Bom, o que for, foda-se.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Olha só a bela confusão que você armou, cérebro de merda.",
      "note": null
     },
     {
@@ -315,11 +265,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Argh. Me deu arrepios.",
-     "note": null
-    },
-    {
      "id": "03/0514#natur",
      "text": "Mataram o Kadafi. Objetivamente, vem ver o vídeo.",
      "note": null
@@ -370,18 +315,8 @@
      "note": null
     },
     {
-     "id": "04b/0173#natur",
-     "text": "Então vocês são todos uns garotos muito inteligentes.",
-     "note": null
-    },
-    {
      "id": "04b/0175#natur",
      "text": "Pois é. Não se deixe enganar por esse Arasteh; bobo como parece, a colocação dele no Konkoor foi setenta e quatro.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "Ah, então é por isso. Nunca tinha visto nenhum quarto com tapete.",
      "note": null
     },
     {
@@ -402,11 +337,6 @@
     {
      "id": "04b/0421#natur",
      "text": "Farid Leopardo, controle os nervos e não faça nenhuma manobra mortal.",
-     "note": null
-    },
-    {
-     "id": "04b/0427#natur",
-     "text": "É a nossa pergunta também.",
      "note": null
     },
     {
@@ -497,5 +427,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

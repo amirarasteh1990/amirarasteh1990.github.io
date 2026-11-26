@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Grovt språk",
-   "q": "Her banner personene eller snakker grovt. Høres hver linje naturlig ut?",
+   "q": "Her banner personene eller snakker grovt. Noen linjer beholder et persisk bilde, så de kan høres litt rare ut. Høres hver linje likevel ut som grov, frekk prat?",
    "labels": [
     "Riktig",
     "Bør endres",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Forbannet være den som nekter for Ørneøye News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Æsj, hva vil du, Eskandar? Hva i helvete er det med deg?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Ikke noe navn passer deg, faen.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Jeg sier jeg ikke ser det, din drittsekk.",
      "note": null
     },
     {
@@ -93,11 +78,6 @@
     {
      "id": "03/0422#crude",
      "text": "Hva er det galt med deg nå?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Æsj, hva er det med den jævla tenkerstillingen din nå igjen?",
      "note": null
     },
     {
@@ -136,19 +116,9 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Piss på dette flakset vårt.",
-     "note": null
-    },
-    {
      "id": "04b/0186#word_",
      "text": "Jeg ville heller ha delt rom med dem enn med en pikkhjerne som deg.",
      "note": "\"pikkhjerne\" = pikkhjerne, grovt skjellsord om en idiot"
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Da er du en jævla førsteårsstudent.",
-     "note": null
     },
     {
      "id": "04b/0351#crude",
@@ -226,11 +196,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Hva slags dritt kverner rundt i hodet ditt nå?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Du ødela den stemningen jeg fikk fra sangen, med den dritstemmen din.",
      "note": null
@@ -238,16 +203,6 @@
     {
      "id": "04b/0919#crude",
      "text": "Rævslikking kler deg ikke.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Fint, hva som helst for faen.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Se hvilket flott rot du har stelt i stand, ditt klin tomme hode.",
      "note": null
     },
     {
@@ -302,11 +257,6 @@
     {
      "id": "03/0488#natur",
      "text": "Jeg er en ekstremistisk nasjonalistisk anarkist.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "Æsj. Det fikk huden min til å krype.",
      "note": null
     },
     {
@@ -452,5 +402,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

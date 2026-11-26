@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Crude speech",
-   "q": "Here the characters swear or speak crudely. Does each line sound natural?",
+   "q": "Here the characters swear or speak crudely. Some lines keep a Persian image, so they may sound a little odd. Does each line still feel like rude, crude talk?",
    "labels": [
     "Correct",
     "Needs change",
@@ -66,21 +66,6 @@
      "note": null
     },
     {
-     "id": "03/0264#crude",
-     "text": "– Ugh, what do you want, Eskandar? What the hell is wrong with you?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "– No name suits you, damn you.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "– I'm telling you I can't see, asshole.",
-     "note": null
-    },
-    {
      "id": "03/0392#crude",
      "text": "– If you don't give a fuck about the world or anything in it, why are you so obsessed with quizzes and exams?",
      "note": null
@@ -93,11 +78,6 @@
     {
      "id": "03/0418#crude",
      "text": "– What difference? If McCain gets in, he'll fuck Iran up, objectively.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Ugh, what's with that shitty thinker pose again?",
      "note": null
     },
     {
@@ -131,11 +111,6 @@
      "note": "\"clench their assholes\" = tense up and act snooty (crude image)"
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Fuck this luck of ours.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "– I would have preferred rooming with them instead of a dick-brain like you.",
      "note": null
@@ -144,11 +119,6 @@
      "id": "04b/0226#word_",
      "text": "– ... whenever I came over for classes or other stuff for my shitty second major, I'd see them arguing.",
      "note": "\"my shitty second major\" = my crappy second degree (crude grumble)"
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "– So you're a fucking freshman.",
-     "note": null
     },
     {
      "id": "04b/0351#word_",
@@ -178,11 +148,6 @@
     {
      "id": "04b/0486#crude",
      "text": "– So you mean our shitty luck in drawing an antique like you just keeps repeating?",
-     "note": null
-    },
-    {
-     "id": "04b/0494#crude",
-     "text": "– Again we reach that same damned discontinuity.",
      "note": null
     },
     {
@@ -216,23 +181,8 @@
      "note": "\"doesn't give a damn\" = coarse: doesn't care at all"
     },
     {
-     "id": "04b/0844#crude",
-     "text": "– What kind of shit is going on in that brain of yours now?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "– You shat all over the mood that song had put me in with that fucking voice of yours.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Fine, whatever the fuck.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "– See what a fine mess you've made, you shit-for-brains.",
      "note": null
     },
     {
@@ -270,11 +220,6 @@
      "note": null
     },
     {
-     "id": "03/0212#natur",
-     "text": "– Whose cousin?",
-     "note": null
-    },
-    {
      "id": "03/0345#natur",
      "text": "– Haven't you finished what you came for?",
      "note": null
@@ -282,11 +227,6 @@
     {
      "id": "03/0458#natur",
      "text": "– I have no time at all this week. Next week, Thursday at three, the same place we met last time. I should also say I only have half an hour to spare.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "– Aghhh. That made my skin crawl.",
      "note": null
     },
     {
@@ -325,16 +265,6 @@
      "note": null
     },
     {
-     "id": "04b/0173#natur",
-     "text": "– So you're all very clever boys.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "At best, the dorm monitors got blue wall-to-wall carpeting instead of the dust-colored kind.",
-     "note": null
-    },
-    {
      "id": "04b/0317#natur",
      "text": "– It makes me so mad when you just sit there in silence like this. I want to punch you.",
      "note": null
@@ -342,11 +272,6 @@
     {
      "id": "04b/0370#natur",
      "text": "– No one's room has a carpet, Baba-jan. Only we have a carpet, and that's because we're the elite room.",
-     "note": null
-    },
-    {
-     "id": "04b/0427#natur",
-     "text": "– That's our question too.",
      "note": null
     },
     {
@@ -387,5 +312,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

@@ -44,6 +44,130 @@
  "page": 3,
  "groups": [
   {
+   "key": "jokes",
+   "title": "Piadas e jogos de palavras",
+   "q": "Estas frases têm uma piada ou um jogo de palavras. Cada uma funciona em português?",
+   "labels": [
+    "Correto",
+    "Precisa de alteração",
+    "Não tenho a certeza"
+   ],
+   "note_label": "Como diria isto?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "É assim que o sistema da fábrica dele funciona.",
+     "note": "fazer asneira é simplesmente a natureza dele"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Perdoado. Todo este bulevar é para ti.",
+     "note": "em persa, «perdoar» também quer dizer «oferecer»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "até ontem dizias burro. Agora és civilizado e dizes asno?",
+     "note": "gozam com um rapaz por mudar para uma palavra mais educada"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir a pir? … O Olho de Águia diz peer to peer; o Taverny diz Eldie a Eldie.",
+     "note": "ouve «peer» como o persa pir, «ancião», a raiz da sua alcunha"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Esta noite ouvi-te a ruminar.",
+     "note": "mastigar de noite, como uma vaca a ruminar"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Que raio te deu agora, a ficar teso para cima de nós, Alain Caralhon?",
+     "note": "duplo sentido: endireitar-se com orgulho, e uma ereção"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "E não era o quê — engo?",
+     "note": "a mãe só apanha o fim de «mulherengo»"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "O homem mais rico de Teerão, amigo do primo do mestre artesão do nosso cunhado",
+     "note": "a gabarolice habitual de um rapaz"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Ou és cabeça-de-pi... bom, já eras cabeça-de-pila, agora ficaste ainda mais cabeça-de-pila.",
+     "note": "o insulto é cortado e depois piora"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Pois, todos temos fábricas. … Temos uma fábrica de dizer merda.",
+     "note": "só produzem merda: só dizem disparates"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ó fóssil, tu próprio és a estátua da estupidez e da degradação",
+     "note": "um insulto trocista"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "a vida parece-se com uma nota de mil tomans: seja de que lado for que a olhes, cheira a arroz de lentilhas.",
+     "note": "um dito absurdo"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "É assim que eu falo; vocês ouvem-me e acham que estou a recitar poemas.",
+     "note": "um rapaz responde num ritmo cantarolado"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Cuidado para não te partires, senhor Caralho.",
+     "note": "acabou de inchar o peito"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Tu és a maior vaca de todas.",
+     "note": "«vaca» = um tolo lerdo, dito a um homem"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "ele gostava sempre imenso de meter a palavra «ciente» duas vezes naquela frase.",
+     "note": "«ciente» usado duas vezes, por brincadeira"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "o problema está no recetor; o emissor não pode resolver o problema.",
+     "note": "o «recetor» é a vista fraca do amigo"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Refiro-me ao Alain Caralhon. Caraaalho.",
+     "note": "a parte grosseira do trocadilho, arrastada"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Se tu és o Hooman, então eu sou a Susan.",
+     "note": "o nome suave Hooman não assenta a um homem tão peludo"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "A derivada? O significado? Ou o significado da derivada? Ou a derivada do significado?",
+     "note": "um jogo de palavras de falsa profundidade"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Se Deus quiser, que sejas sempre araasteh.",
+     "note": "uma bênção que brinca com o apelido Arasteh; araasteh = «arrumado»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Sem óculos não vejo nada, objetivamente.",
+     "note": "o bordão da personagem, usado a toda a hora"
+    }
+   ]
+  },
+  {
    "key": "child_talk",
    "title": "Fala de crianças",
    "q": "Estas frases são ditas por crianças. Cada uma soa como uma criança?",
@@ -168,5 +292,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 12
 }

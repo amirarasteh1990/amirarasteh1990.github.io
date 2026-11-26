@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Hrubá reč",
-   "q": "Tu postavy nadávajú alebo hovoria hrubo. Znie každý riadok prirodzene?",
+   "q": "Tu postavy nadávajú alebo hovoria hrubo. Niektoré riadky si zachovávajú perzský obraz, preto môžu znieť trochu zvláštne. Znie aj tak každý riadok ako hrubá, vulgárna reč?",
    "labels": [
     "Správne",
     "Treba zmeniť",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Nech je zlorečený každý, kto popiera Orlie Oko News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Čo chceš, Eskandar? Čo sa s tebou deje?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Žiadne meno ti nepasuje, do riti.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Hovorím ti, nevidím, ty hajzel.",
      "note": null
     },
     {
@@ -103,11 +88,6 @@
     {
      "id": "03/0422#crude",
      "text": "Čo ťa zas popadlo?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Fuj, čo má zase znamenať tá zasraná póza mysliteľa?",
      "note": null
     },
     {
@@ -146,11 +126,6 @@
      "note": "\"stiahnu zadok\" = stiahnu sa a robia sa povýšení (hrubý obraz)"
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Do riti s tým naším šťastím.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "To by som radšej býval s nimi než s takým kokotohlavcom, ako si ty.",
      "note": null
@@ -159,11 +134,6 @@
      "id": "04b/0226#crude",
      "text": "kedykoľvek som prišiel na hodiny a prácu pre ten zasraný druhý odbor, videl som, ako sa hádajú.",
      "note": null
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "Tak to si zasraný prvák.",
-     "note": "\"zasraný prvák\" = zasraný prvák, bežné kamarátske nadávanie"
     },
     {
      "id": "04b/0351#crude",
@@ -241,11 +211,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Aká sračka ti zase hlodá v mozgu?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Tým svojím skurveným hlasom si mi zničil náladu, ktorú som z tej pesničky mal.",
      "note": null
@@ -254,16 +219,6 @@
      "id": "04b/0919#crude",
      "text": "Lízanie riti ti nesvedčí.",
      "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "No čokoľvek, do hajzla.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "Pozri, čo si to vyviedol, ty mozog na hovno.",
-     "note": "\"ty mozog na hovno\" = hovno v hlave (hrubá nadávka)"
     },
     {
      "id": "04b/1312#word_",
@@ -320,11 +275,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Argh. Až mi z toho naskočila husia koža.",
-     "note": null
-    },
-    {
      "id": "03/0528#natur",
      "text": "Pri novrúzskom prestieraní Haft-Seen, keď som prečítal báseň pre mamu, Maman sa namiesto potešenia začala trápiť.",
      "note": null
@@ -342,11 +292,6 @@
     {
      "id": "04b/0171#natur",
      "text": "Ale človeče, nehovor s ním takto zdvorilo, stúpne mu to do hlavy.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "Nanajvýš dali správcom internátu namiesto celoplošného koberca farby prachu modrý.",
      "note": null
     },
     {
@@ -397,5 +342,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

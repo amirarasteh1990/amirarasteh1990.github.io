@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Derbe Sprache",
-   "q": "Hier fluchen die Figuren oder reden derb. Klingt jede Zeile natürlich?",
+   "q": "Hier fluchen die Figuren oder reden derb. Manche Zeilen behalten ein persisches Bild und klingen deshalb vielleicht etwas seltsam. Klingt jede Zeile trotzdem nach derber, grober Rede?",
    "labels": [
     "Stimmt",
     "Änderung nötig",
@@ -58,11 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "– Verflucht sei, wer Adlerauge News leugnet.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "– Mensch, ich sag doch, ich sehe nichts, du Arschloch.",
      "note": null
     },
     {
@@ -83,11 +78,6 @@
     {
      "id": "03/0415#crude",
      "text": "– Mensch, lad endlich, du Arschloch.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Ach, was soll diese beschissene Denkerpose schon wieder?",
      "note": null
     },
     {
@@ -121,19 +111,9 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Scheiß auf dieses Glück von uns.",
-     "note": null
-    },
-    {
      "id": "04b/0226#word_",
      "text": "– ... immer wenn ich für die Kurse und Arbeiten des zweiten Scheißstudiengangs kam, sah ich sie streiten.",
      "note": "\"des zweiten Scheißstudiengangs\" = mein beschissenes Zweitstudium (derbes Gemecker)"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Also bist du ein Scheiß-Erstie.",
-     "note": "\"Scheiß-Erstie\" = Scheiß-Erstsemester, lockeres, freundschaftliches Fluchen"
     },
     {
      "id": "04b/0351#crude",
@@ -176,24 +156,9 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "– Was für ein Mist frisst jetzt wieder dein Gehirn?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "– Du hast mir das Gefühl ruiniert, das ich von dem Lied bekam, mit dieser Scheißstimme von dir.",
      "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Na schön, was auch immer für ein Scheiß.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "– Schau mal, was für ein Schlamassel du angerichtet hast, Kackhirn.",
-     "note": "\"Kackhirn\" = Scheiße im Hirn (derbes Schimpfwort)"
     },
     {
      "id": "04b/1017#crude",
@@ -247,11 +212,6 @@
     {
      "id": "03/0458#natur",
      "text": "– Diese Woche habe ich überhaupt keine Zeit. Nächsten Donnerstag um drei, am selben Ort wie beim letzten Mal. Nur damit es gesagt ist: Ich habe nur eine halbe Stunde.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "– Ahhhh. Mir graust es.",
      "note": null
     },
     {
@@ -362,5 +322,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

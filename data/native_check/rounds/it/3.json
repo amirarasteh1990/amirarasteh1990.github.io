@@ -44,6 +44,130 @@
  "page": 3,
  "groups": [
   {
+   "key": "jokes",
+   "title": "Battute e giochi di parole",
+   "q": "Queste righe contengono una battuta o un gioco di parole. Ognuna funziona in italiano?",
+   "labels": [
+    "Corretto",
+    "Da cambiare",
+    "Non so"
+   ],
+   "note_label": "Come lo diresti?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "È la sua impostazione di fabbrica.",
+     "note": "combinare guai è semplicemente nella sua natura"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Sei perdonato. Tutto questo viale è tuo.",
+     "note": "in persiano «perdonare» significa anche «regalare»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "fino a ieri dicevi ciuco. Adesso sei civilizzato e dici asino?",
+     "note": "si prende in giro un ragazzo passato a una parola più educata"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir a pir? … Occhio d'Aquila dice peer to peer; Taverny dice Eldie a Eldie.",
+     "note": "sente «peer» come il persiano pir, «anziano», la radice del suo soprannome"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Stanotte sentivo il rumore della tua ruminazione.",
+     "note": "masticare di notte, come una mucca che rumina"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Che diavolo ti ha preso adesso, a rizzartelo contro di noi, Alain Cazzon?",
+     "note": "doppio senso: rizzarsi con fierezza, e l'erezione"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Che — aiolo non era?",
+     "note": "la madre coglie solo la fine di «donnaiolo»"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "L'amico del cugino del mastro artigiano di nostro cognato, quell'amico che è l'uomo più ricco di Teheran",
+     "note": "la solita vanteria di un ragazzo"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "O sei una testa di ca... be', una testa di cazzo lo eri già, adesso lo sei ancora di più.",
+     "note": "l'insulto viene troncato, poi peggiorato"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Sì, abbiamo tutti una fabbrica. … Abbiamo una fabbrica di stronzate.",
+     "note": "producono solo stronzate: dicono solo sciocchezze"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "fossile, sei tu stesso un monumento alla stupidità e alla decadenza",
+     "note": "un insulto beffardo"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "la vita assomiglia a una banconota da mille toman: da qualunque lato la guardi, odora di riso alle lenticchie.",
+     "note": "una battuta assurda"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Io parlo così e basta; voi mi sentite e pensate che io stia recitando poesie.",
+     "note": "un ragazzo risponde con un ritmo cantilenante"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Attento a non incrinarti, signor Cazzon.",
+     "note": "ha appena gonfiato il petto"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Sei il più bue di tutti.",
+     "note": "«bue» = uno sciocco ottuso, detto a un uomo"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "si divertiva sempre un mondo a infilare due volte la parola «consapevole» in quella frase.",
+     "note": "«consapevole» usato due volte, per gioco"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "il difetto è nel ricevitore; il trasmettitore non può risolverlo.",
+     "note": "la vista debole dell'amico è il «ricevitore»"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Intendo Alain Cazzon. Caaazzon.",
+     "note": "la parte volgare del gioco di parole, allungata"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Se tu sei Hooman, allora io sono Susan.",
+     "note": "il nome gentile Hooman non si addice a un uomo così peloso"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "La derivata? Il significato? O il significato della derivata? O la derivata del significato?",
+     "note": "gioco di parole falsamente profondo"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Se Dio vuole, che tu possa essere sempre araasteh.",
+     "note": "una benedizione che gioca sul cognome Arasteh; araasteh = «ordinato»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Senza occhiali non vedo niente, oggettivamente.",
+     "note": "l'intercalare del personaggio, usato ovunque"
+    }
+   ]
+  },
+  {
    "key": "child_talk",
    "title": "Come parlano i bambini",
    "q": "Queste righe sono dette da bambini. Ognuna sembra detta da un bambino?",
@@ -168,5 +292,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 12
 }

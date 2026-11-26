@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Grovt språk",
-   "q": "Här svär personerna eller talar grovt. Låter varje rad naturlig?",
+   "q": "Här svär personerna eller talar grovt. Vissa rader behåller en persisk bild, så de kan låta lite konstiga. Låter varje rad ändå som grovt, ohyfsat prat?",
    "labels": [
     "Rätt",
     "Behöver ändras",
@@ -61,11 +61,6 @@
      "note": null
     },
     {
-     "id": "03/0390#crude",
-     "text": "– Jag säger att jag inte kan se, din jävel.",
-     "note": null
-    },
-    {
      "id": "03/0396#crude",
      "text": "– Svaret är att det inte passar dig att slicka mästare Hooman i röven.",
      "note": null
@@ -73,11 +68,6 @@
     {
      "id": "03/0418#crude",
      "text": "– Vad spelar det för roll? Om McCain kommer till makten fuckar han upp Iran, objektivt sett.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Ugh, vad är det med det där äckliga tänkarposerandet igen?",
      "note": null
     },
     {
@@ -106,11 +96,6 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Fan ta vår jävla otur.",
-     "note": null
-    },
-    {
      "id": "04b/0186#word_",
      "text": "– Jag skulle ha föredragit att dela rum med dem framför en kukhjärna som du.",
      "note": "\"kukhjärna\" = kukhjärna, grovt skällsord för en idiot"
@@ -119,11 +104,6 @@
      "id": "04b/0226#word_",
      "text": "– ... varje gång jag kom till lektionerna och uppgifterna för min skitiga andra utbildning, såg jag dem gräla.",
      "note": "\"min skitiga andra utbildning\" = min skitiga andra utbildning (grovt gnäll)"
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "– Då är du en jävla förstaårsstudent.",
-     "note": null
     },
     {
      "id": "04b/0351#crude",
@@ -164,11 +144,6 @@
      "id": "04b/0721#word_",
      "text": "– Äldi, i stället för att slänga dig på sängen så där och leka med dina pungkulor, res dig upp och skicka dem. Det är ett fynd.",
      "note": "\"pungkulor\" = dina ballar (grovt: att slöa och inte göra något)"
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Fint, vad fan som helst.",
-     "note": null
     },
     {
      "id": "04b/1300#crude",
@@ -227,11 +202,6 @@
     {
      "id": "03/0458#natur",
      "text": "– Den här veckan har jag ingen tid alls. Nästa vecka, torsdag klockan tre, samma ställe som vi träffades förra gången. Jag ska också säga att jag bara har en halvtimme.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "– Usch. Det fick det att krypa i skinnet på mig.",
      "note": null
     },
     {
@@ -357,5 +327,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Kaba konuşma",
-   "q": "Burada karakterler küfrediyor ya da kaba konuşuyor. Her satır doğal geliyor mu?",
+   "q": "Burada karakterler küfrediyor ya da kaba konuşuyor. Bazı satırlar Farsçadaki imgeyi koruyor, bu yüzden biraz tuhaf gelebilir. Yine de her satır kaba, küfürlü bir konuşma gibi geliyor mu?",
    "labels": [
     "Doğru",
     "Değişmeli",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Kartal Göz News'i inkâr edene lanet olsun.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Off, ne istiyorsun Eskandar? Ne haltın var senin?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Hiçbir isim sana yakışmıyor, lanet olası.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Sana diyorum göremiyorum, göt herif.",
      "note": null
     },
     {
@@ -103,11 +88,6 @@
     {
      "id": "03/0422#crude",
      "text": "Yine ne haltın var senin?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Üf, yine ne diye o boktan düşünür pozuna girdin?",
      "note": null
     },
     {
@@ -146,11 +126,6 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Sıçayım bu şansımıza.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "Ben, senin gibi sik beyinli biriyle kalacağıma onlarla aynı odada kalmayı tercih ederdim.",
      "note": null
@@ -158,11 +133,6 @@
     {
      "id": "04b/0226#crude",
      "text": "O boktan ikinci bölümün dersleri ve işleri için her geldiğimde, hep tartışıyorlardı.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Demek birinci sınıf sümüklüsüsün.",
      "note": null
     },
     {
@@ -206,11 +176,6 @@
      "note": null
     },
     {
-     "id": "04b/0494#crude",
-     "text": "Yine o lanet süreksizliğe varıyoruz.",
-     "note": null
-    },
-    {
      "id": "04b/0520#crude",
      "text": "Bugün odada tartışmayın, beden eğitiminden on iki aldım, sinirlerim bok gibi, küfrederim size.",
      "note": "İran'da notlar 20 üzerinden verilir"
@@ -246,11 +211,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Yine kafanda ne haltlar dönüyor?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "O boktan sesinle, şarkıdan aldığım hissi sıçıp batırdın.",
      "note": null
@@ -258,16 +218,6 @@
     {
      "id": "04b/0919#crude",
      "text": "Göt yalamak sana yakışmıyor.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Her ne haltsa artık.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Bak ne biçim bir çuval inciri berbat ettin, beyni sıçmış.",
      "note": null
     },
     {
@@ -340,11 +290,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Ahhh. İçim ürperdi.",
-     "note": null
-    },
-    {
      "id": "03/0517#natur",
      "text": "Pars Farid kendisiyle bile kaç kaç olduğunu bilmiyor.",
      "note": null
@@ -380,18 +325,8 @@
      "note": null
     },
     {
-     "id": "04b/0173#natur",
-     "text": "O zaman çok zeki çocuklarsınız demek.",
-     "note": null
-    },
-    {
      "id": "04b/0175#natur",
      "text": "Evet. Şu Arasteh'e bakma, bütün saçmalığına rağmen Konkur sıralaması yetmiş dörttü.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "Demek ondan. Daha önce halılı bir oda görmemiştim.",
      "note": null
     },
     {
@@ -492,5 +427,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

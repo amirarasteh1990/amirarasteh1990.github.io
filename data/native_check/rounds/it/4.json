@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Linguaggio volgare",
-   "q": "Qui i personaggi imprecano o parlano in modo volgare. Ogni riga suona naturale?",
+   "q": "Qui i personaggi imprecano o parlano in modo volgare. Alcune righe mantengono un'immagine persiana, quindi possono suonare un po' strane. Ogni riga suona comunque come un linguaggio rozzo e volgare?",
    "labels": [
     "Corretto",
     "Da cambiare",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Maledetto chiunque neghi Occhio d'Aquila News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Uffa, cosa vuoi, Eskandar? Cosa diavolo ti prende?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Nessun nome ti si addice, accidenti.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Ti sto dicendo che non vedo, stronzo.",
      "note": null
     },
     {
@@ -98,11 +83,6 @@
     {
      "id": "03/0418#crude",
      "text": "Che differenza fa? Se arriva McCain, fotterà l'Iran, oggettivamente.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Ugh, che ci fai di nuovo con quella posa del pensatore di merda?",
      "note": null
     },
     {
@@ -141,18 +121,8 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Che sfiga del cazzo.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "Avrei preferito condividere la stanza con loro piuttosto che con una testa di cazzo come te.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Allora sei una matricola del cazzo.",
      "note": null
     },
     {
@@ -191,11 +161,6 @@
      "note": null
     },
     {
-     "id": "04b/0494#crude",
-     "text": "Torniamo a quella stessa maledetta discontinuità.",
-     "note": null
-    },
-    {
      "id": "04b/0520#crude",
      "text": "Oggi non litigate in stanza, che mi hanno messo un dodici in Educazione fisica, ho i nervi di merda e vi mando a fanculo.",
      "note": "in Iran i voti arrivano fino a 20"
@@ -226,23 +191,8 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Che razza di merda ti sta rodendo il cervello adesso?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Con quella tua voce di merda hai cagato sull'atmosfera in cui mi aveva immerso la canzone.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Vabbè, qualunque stronzata.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Guarda che bel casino hai combinato, cervello di merda.",
      "note": null
     },
     {
@@ -320,11 +270,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Ahhh. Mi ha fatto accapponare la pelle.",
-     "note": null
-    },
-    {
      "id": "03/0514#natur",
      "text": "Hanno ucciso Gheddafi. Oggettivamente, vieni a vedere il video.",
      "note": null
@@ -375,18 +320,8 @@
      "note": null
     },
     {
-     "id": "04b/0173#natur",
-     "text": "Quindi siete tutti dei bravi ragazzi intelligenti.",
-     "note": null
-    },
-    {
      "id": "04b/0175#natur",
      "text": "Sì. Non farti ingannare da questo Arasteh: per quanto sia svitato, al Konkoor si era classificato settantaquattresimo.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "Già, appunto. Non avevo mai visto una stanza con il tappeto.",
      "note": null
     },
     {
@@ -407,11 +342,6 @@
     {
      "id": "04b/0421#natur",
      "text": "Farid Leopardo, tieni a freno i nervi e non fare mosse omicide.",
-     "note": null
-    },
-    {
-     "id": "04b/0427#natur",
-     "text": "È un mistero anche per noi.",
      "note": null
     },
     {
@@ -502,5 +432,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

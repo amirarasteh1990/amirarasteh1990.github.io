@@ -44,6 +44,130 @@
  "page": 3,
  "groups": [
   {
+   "key": "jokes",
+   "title": "Żarty i gra słów",
+   "q": "W tych fragmentach jest żart albo gra słów. Czy każdy z nich działa po polsku?",
+   "labels": [
+    "Dobrze",
+    "Do zmiany",
+    "Trudno powiedzieć"
+   ],
+   "note_label": "Jak to ująć po Twojemu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Tak działa jego system fabryczny.",
+     "note": "psucie wszystkiego to po prostu jego natura"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Wybaczam. Cały ten bulwar jest twój.",
+     "note": "po persku „wybaczyć” znaczy też „podarować”"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "jeszcze wczoraj mówiłeś „char”, a dziś ucywilizowałeś się i mówisz „osioł”?",
+     "note": "dokuczanie chłopakowi, że przeszedł na grzeczniejsze słowo"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir-to-pir? … Orle Oko mówi peer-to-peer, a Tawerniak mówi Stary-do-Starego.",
+     "note": "słyszy „peer” jako perskie pir („starszy”), od którego pochodzi jego przezwisko"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "W nocy słyszałem, jak przeżuwasz.",
+     "note": "przeżuwanie nocą, jak krowa, która przeżuwa pokarm"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Co ci znowu odbiło, że wymierzasz w nas swojego stojącego fiuta, Alain Chujon?",
+     "note": "podwójne znaczenie: dumne wyprostowanie się i erekcja"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Jakim -arzem nie był?",
+     "note": "matka słyszy tylko końcówkę słowa „kobieciarzem”"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Przyjaciel kuzyna mistrza rzemieślnika naszego szwagra — najbogatszy człowiek w Teheranie",
+     "note": "stała przechwałka jednego z chłopaków"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Albo jesteś kutasogło... no, już wcześniej byłeś kutasogłowy, a teraz zrobiłeś się jeszcze bardziej kutasogłowy.",
+     "note": "obelga urwana w pół słowa, a potem jeszcze gorsza"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "No tak, wszyscy mamy fabryki. … Fabrykę pierdolenia.",
+     "note": "produkują tylko pierdolenie, czyli gadają bzdury"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "ty skamielino, sam jesteś pomnikiem głupoty i upadku",
+     "note": "kpiąca obelga"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "życie jest jak banknot tysiąctomanowy: z której strony nie spojrzysz, pachnie ryżem z soczewicą.",
+     "note": "absurdalny dowcip"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Ja tak mówię; słyszycie, jak mówię, i myślicie, że to poezja.",
+     "note": "chłopak odpowiada śpiewnym rytmem"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Uważaj, żebyś nie pękł, panie Chuju.",
+     "note": "właśnie wypiął pierś"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Ty jesteś największą krową z nich wszystkich.",
+     "note": "„krowa” = tępy głupiec, powiedziane do mężczyzny"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "I zawsze ogromną przyjemność sprawiało mu wciśnięcie słowa „świadom” dwa razy w to zdanie.",
+     "note": "„świadom” użyte dwa razy, dla zabawy"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "problem leży po stronie odbiorcy; nadajnik nie rozwiąże sprawy.",
+     "note": "„odbiorca” to słaby wzrok przyjaciela"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Mam na myśli Alaina Chujona. Chuuuj.",
+     "note": "wulgarna część kalamburu, przeciągnięta"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Jeśli ty jesteś Human, to ja jestem Susan.",
+     "note": "łagodne imię Human nie pasuje do tak owłosionego mężczyzny"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Pochodnej? Sensu? Czy sensu pochodnej? Czy pochodnej sensu?",
+     "note": "pozornie głęboka gra słów"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Daj Boże, żebyś zawsze był araasteh.",
+     "note": "błogosławieństwo z grą słów na nazwisku Arasteh; araasteh = „schludny”"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Bez okularów nic nie widzę, obiektywnie.",
+     "note": "ulubione słówko tej postaci, wtrącane wszędzie"
+    }
+   ]
+  },
+  {
    "key": "child_talk",
    "title": "Mowa dzieci",
    "q": "Te kwestie wypowiadają dzieci. Czy każda brzmi jak mowa dziecka?",
@@ -158,5 +282,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 12
 }

@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Rupja runa",
-   "q": "Šeit tēli lamājas vai runā rupji. Vai katra rinda izklausās dabiski?",
+   "q": "Šeit tēli lamājas vai runā rupji. Dažās rindās saglabāts persiešu tēls, tāpēc tās var izklausīties mazliet dīvaini. Vai katra rinda tomēr izklausās pēc rupjas, nepieklājīgas runas?",
    "labels": [
     "Pareizi",
     "Jāmaina",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "– Lai nolādēts tas, kurš noliedz Ērgļacis News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "– Ak, ko tu gribi, Eskandar? Kas, pie velna, ar tevi notiek?",
-     "note": null
-    },
-    {
-     "id": "03/0268#word_",
-     "text": "– Neviens vārds tev neder, veln.",
-     "note": "\"veln\" = lai velns tevi parauj (dusmīga lamāšanās)"
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "– Es tev saku, ka neredzu, dirsa.",
      "note": null
     },
     {
@@ -103,11 +88,6 @@
     {
      "id": "03/0422#crude",
      "text": "– Kas tev atkal par mēri?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Ah, kas atkal par to sūdīgo domātāja pozu, ko tu ieņem?",
      "note": null
     },
     {
@@ -146,11 +126,6 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Dirsā šo mūsu veiksmi.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "– Es būtu labāk dzīvojis vienā istabā ar viņiem nekā ar tādu pimpja smadzeni kā tu.",
      "note": null
@@ -158,11 +133,6 @@
     {
      "id": "04b/0226#crude",
      "text": "– ... ikreiz, kad nācu uz nodarbībām un darbiem tajā sūdīgajā otrajā specialitātē, es redzēju, ka viņi strīdas.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "– Tātad tu esi sūdīgs pirmkursnieks.",
      "note": null
     },
     {
@@ -241,11 +211,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "– Kāds sūds tev atkal grauž smadzenes?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "– Tu tikko sabojāji noskaņu, ko es uztvēru no dziesmas, ar to savu sūdīgo balsi.",
      "note": null
@@ -253,16 +218,6 @@
     {
      "id": "04b/0919#crude",
      "text": "– Pakaļlaizīšana tev nepiestāv.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Nu, lai vai kāds sūds.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "– Paskaties, kādu jezgu tu esi sastrādājis, sūdsmadzene.",
      "note": null
     },
     {
@@ -327,11 +282,6 @@
     {
      "id": "03/0488#natur",
      "text": "– Es esmu galēji nacionālistisks anarhists.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "– Ahh. Man zosāda uzmetās.",
      "note": null
     },
     {
@@ -467,5 +417,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

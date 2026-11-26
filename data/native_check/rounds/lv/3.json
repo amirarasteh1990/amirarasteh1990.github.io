@@ -44,6 +44,130 @@
  "page": 3,
  "groups": [
   {
+   "key": "jokes",
+   "title": "Joki un vārdu spēles",
+   "q": "Šajās rindās ir joks vai vārdu spēle. Vai latviski katrs no tiem izdodas?",
+   "labels": [
+    "Pareizi",
+    "Jāmaina",
+    "Grūti pateikt"
+   ],
+   "note_label": "Kā jūs to teiktu?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "Tādi ir viņa rūpnīcas iestatījumi.",
+     "note": "visu sabojāt — tāda vienkārši ir viņa daba"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Piedots. Viss šis bulvāris ir tavs.",
+     "note": "persiski «piedot» nozīmē arī «atdot»"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "līdz vakardienai tu teici \"khar\". Tagad pēkšņi esi tik smalks un saki \"ēzelis\"?",
+     "note": "zobojas par zēnu, kas pārgājis uz pieklājīgāku vārdu"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pīr-tu-pīr? … Ērgļacis saka peer-to-peer, Kroģis saka Vecais-tu-Vecais.",
+     "note": "viņš «peer» dzird kā persiešu pir, «vecākais», no kā cēlusies viņa iesauka"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Pagājušonakt es dzirdēju, kā tu atgremo.",
+     "note": "naktī košļā kā govs, kas atgremo"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Kas tev atkal par mēri, uztaisījis pret mums stāvu, Alain Pimplon?",
+     "note": "divdomība: lepni izslējies un erekcija"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Kāds -nieks viņš nebija?",
+     "note": "māte saklausa tikai vārda «sieviešu mednieks» beigas"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "Mūsu svaiņa meistara brālēna draugs, kurš ir Teherānas bagātākais cilvēks",
+     "note": "zēna pastāvīgā lielīšanās"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Vai arī tev pimpis sma... nu, tev jau bija pimpis smadzeņu vietā, tagad tev tāds kļuvis vēl vairāk.",
+     "note": "apvainojums tiek aprauts un tad padarīts vēl ļaunāks"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Jā, mums visiem pieder fabrikas. … Mums ir diršanas fabrika.",
+     "note": "viss, ko viņi ražo, ir sūdi: viņi tikai runā niekus"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "tu, fosilija, tu pats esi muļķības un degradācijas iemiesojums",
+     "note": "izsmejošs apvainojums"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "dzīve ir kā tūkstoš tomanu naudaszīme: lai no kuras puses uz to skatās, tā smaržo pēc lēcu rīsiem.",
+     "note": "absurds joks"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "Šādi es vienkārši runāju. Jūs domājat, ka es deklamēju dzeju.",
+     "note": "zēns atbild dziedošā ritmā"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Uzmanies, lai neieplaisā, Pimpja kungs.",
+     "note": "viņš tikko izriezis krūtis"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Tu esi vislielākais vērsis no visiem.",
+     "note": "«vērsis» = truls muļķis, saka par vīrieti"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "viņam vienmēr sagādāja milzu prieku šajā teikumā divreiz lietot vārdu \"apzināties\".",
+     "note": "«apzināties» lietots divreiz, rotaļīgi"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "vaina ir uztvērējā; raidītājs to neatrisinās.",
+     "note": "drauga vājā redze ir «uztvērējs»"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Es domāju Alain Pimplon. Piiim-pis.",
+     "note": "joka rupjā daļa, izstiepta"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Ja tu esi Hooman, tad es esmu Zuzanna.",
+     "note": "maigais vārds Hooman neder tik spalvainam vīrietim"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "Atvasinājumu? Jēgu? Vai atvasinājuma jēgu? Vai jēgas atvasinājumu?",
+     "note": "šķietami dziļdomīga vārdu spēle"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Ja Dievs dos, lai tu vienmēr būtu araasteh.",
+     "note": "svētības vēlējums ar vārdu spēli uz uzvārdu Arasteh; araasteh = «kārtīgs»"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Bez brillēm es neko neredzu, objektīvi.",
+     "note": "tēla iemīļotais vārds, ko viņš lieto visur"
+    }
+   ]
+  },
+  {
    "key": "child_talk",
    "title": "Bērnu runa",
    "q": "Šīs rindas runā bērni. Vai katra izklausās pēc bērna?",
@@ -158,5 +282,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 12
 }

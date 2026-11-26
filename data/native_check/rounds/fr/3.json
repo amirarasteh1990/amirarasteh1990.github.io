@@ -44,6 +44,130 @@
  "page": 3,
  "groups": [
   {
+   "key": "jokes",
+   "title": "Blagues et jeux de mots",
+   "q": "Ces lignes contiennent une blague ou un jeu de mots. Chacune fonctionne-t-elle en français ?",
+   "labels": [
+    "Correct",
+    "À modifier",
+    "Je ne sais pas"
+   ],
+   "note_label": "Comment le dirais-tu ?",
+   "note_on": "change",
+   "rows": [
+    {
+     "id": "04b/0385#joke",
+     "text": "C'est comme ça qu'il est fabriqué.",
+     "note": "tout faire rater, c'est tout simplement sa nature"
+    },
+    {
+     "id": "04b/0863#joke",
+     "text": "Tu es pardonné. Tout ce boulevard est à toi.",
+     "note": "en persan, « pardonner » veut aussi dire « offrir »"
+    },
+    {
+     "id": "03/0191#joke",
+     "text": "hier encore tu disais bourrique. Maintenant tu es civilisé et tu dis âne ?",
+     "note": "on taquine un garçon qui passe à un mot plus poli"
+    },
+    {
+     "id": "04b/0591#joke",
+     "text": "Pir à pir ? … Œil d'Aigle dit peer to peer ; Taverny dit pir à pir.",
+     "note": "il entend « peer » comme le persan pir, « aîné », la racine de son surnom"
+    },
+    {
+     "id": "04b/0387#joke",
+     "text": "Cette nuit, je t'entendais ruminer.",
+     "note": "mâcher la nuit, comme une vache qui rumine"
+    },
+    {
+     "id": "04b/0460#joke",
+     "text": "Qu'est-ce qui te prend encore, à bander contre nous, Alain Bitelon ?",
+     "note": "double sens : se redresser fièrement, et une érection"
+    },
+    {
+     "id": "01/0182#joke",
+     "text": "Il n'était pas quoi — eur ?",
+     "note": "la mère ne saisit que la fin de « coureur »"
+    },
+    {
+     "id": "03/0126#joke",
+     "text": "L'ami du cousin du maître artisan de notre beau-frère, l'homme le plus riche de Téhéran",
+     "note": "la vantardise habituelle d'un garçon"
+    },
+    {
+     "id": "03/0394#joke",
+     "text": "Soit tu es cerveau-de-bi... enfin, tu étais déjà cerveau-de-bite, maintenant tu l'es encore plus.",
+     "note": "l'insulte est coupée, puis aggravée"
+    },
+    {
+     "id": "03/0655#joke",
+     "text": "Ouais, on a tous des usines. … On a une usine à conneries.",
+     "note": "ils ne produisent que des conneries : ils racontent n'importe quoi"
+    },
+    {
+     "id": "04b/0512#joke",
+     "text": "espèce de fossile, c'est toi-même la statue de la bêtise et de la déchéance",
+     "note": "une insulte moqueuse"
+    },
+    {
+     "id": "03/0588#joke",
+     "text": "la vie ressemble à un billet de mille tomans : de quelque côté qu'on le regarde, ça sent le riz aux lentilles.",
+     "note": "une boutade absurde"
+    },
+    {
+     "id": "03/0055#joke",
+     "text": "C'est comme ça que je parle ; vous m'entendez parler, vous croyez que c'est de la poésie.",
+     "note": "un garçon répond sur un rythme chantant"
+    },
+    {
+     "id": "03/0490#joke",
+     "text": "Fais attention à ne pas craquer, monsieur Bite.",
+     "note": "il vient de bomber le torse"
+    },
+    {
+     "id": "04b/0182#joke",
+     "text": "Toi, tu es la plus grosse vache de tous.",
+     "note": "« vache » = un imbécile borné, dit à un homme"
+    },
+    {
+     "id": "04b/0271#joke",
+     "text": "il prenait toujours un immense plaisir à glisser deux fois le mot « conscient » dans cette phrase.",
+     "note": "« conscient » employé deux fois, par jeu"
+    },
+    {
+     "id": "03/0576#joke",
+     "text": "le problème vient du récepteur ; l'émetteur ne peut pas le résoudre.",
+     "note": "la mauvaise vue de l'ami, c'est le « récepteur »"
+    },
+    {
+     "id": "03/0432#joke",
+     "text": "Je veux dire Alain Bitelon. Biiite.",
+     "note": "la partie grossière du jeu de mots, étirée"
+    },
+    {
+     "id": "03/0263#joke",
+     "text": "Si tu es Hooman, alors je suis Susan.",
+     "note": "le doux prénom Hooman ne va pas à un homme aussi poilu"
+    },
+    {
+     "id": "04b/0558#joke",
+     "text": "La dérivée ? Le sens ? Ou le sens de la dérivée ? Ou la dérivée du sens ?",
+     "note": "jeu de mots faussement profond"
+    },
+    {
+     "id": "03/0309#joke",
+     "text": "Si Dieu le veut, puisses-tu toujours être araasteh.",
+     "note": "une bénédiction qui joue sur le nom de famille Arasteh ; araasteh = « soigné »"
+    },
+    {
+     "id": "03/0388#joke",
+     "text": "Je ne vois rien sans mes lunettes, objectivement.",
+     "note": "le mot fétiche du personnage, placé partout"
+    }
+   ]
+  },
+  {
    "key": "child_talk",
    "title": "Paroles d'enfants",
    "q": "Ces lignes sont dites par des enfants. Chacune sonne-t-elle comme la parole d'un enfant ?",
@@ -163,5 +287,5 @@
    ]
   }
  ],
- "first": 14
+ "first": 12
 }

@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Grove taal",
-   "q": "Hier vloeken de personages of praten ze grof. Klinkt elke regel natuurlijk?",
+   "q": "Hier vloeken de personages of praten ze grof. Sommige regels behouden een Perzisch beeld en kunnen daardoor wat vreemd klinken. Klinkt elke regel toch als grove, platte taal?",
    "labels": [
     "Klopt",
     "Moet anders",
@@ -68,11 +68,6 @@
     {
      "id": "03/0396#crude",
      "text": "– Het antwoord is dat het jou niet past om meester Hooman in zijn kont te likken.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Pff, waarom neem je alweer die waardeloze denkerpose aan?",
      "note": null
     },
     {
@@ -106,11 +101,6 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Godverdomme, wat een klotepech hebben wij.",
-     "note": null
-    },
-    {
      "id": "04b/0186#word_",
      "text": "– Ik had nog liever een kamer gedeeld met hen dan met een lulbrein als jij.",
      "note": "\"lulbrein\" = lulhoofd, grof scheldwoord voor een idioot"
@@ -119,11 +109,6 @@
      "id": "04b/0226#crude",
      "text": "– ... telkens als ik kwam voor de colleges en het werk van die tweede kloteopleiding, zag ik ze ruziën.",
      "note": null
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Dus je bent een klote-eerstejaars.",
-     "note": "\"klote-eerstejaars\" = fucking eerstejaars, losjes en vriendschappelijk gevloek"
     },
     {
      "id": "04b/0351#crude",
@@ -166,24 +151,9 @@
      "note": "\"je kont kapotgewerkt\" = grof: je uit de naad gewerkt, keihard gewerkt"
     },
     {
-     "id": "04b/0844#crude",
-     "text": "– Wat voor stront vreet er nu weer aan je hersenen?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "– Je hebt met die klotestem van je de stemming verpest die ik aan het liedje beleefde.",
      "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Nou, wat dan ook, verdomme.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#word_",
-     "text": "– Kijk wat een puinhoop je hebt aangericht, hersenschijter.",
-     "note": "\"hersenschijter\" = stront in je kop (grof scheldwoord)"
     },
     {
      "id": "04b/1017#crude",
@@ -362,5 +332,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

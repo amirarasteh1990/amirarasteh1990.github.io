@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Grov tale",
-   "q": "Her bander personerne eller taler groft. Lyder hver linje naturlig?",
+   "q": "Her bander personerne eller taler groft. Nogle linjer beholder et persisk billede, så de kan lyde lidt mærkelige. Lyder hver linje alligevel som grov, rå snak?",
    "labels": [
     "Rigtigt",
     "Bør ændres",
@@ -63,16 +63,6 @@
     {
      "id": "03/0077#crude",
      "text": "– Forbandet være den der betvivler Ørneøje News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "– Argh, hvad vil du, Eskandar? Hvad fanden fejler du?",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "– Jeg siger, jeg kan ikke se det, røvhul.",
      "note": null
     },
     {
@@ -93,11 +83,6 @@
     {
      "id": "03/0418#crude",
      "text": "– Hvad forskel gør det? Hvis McCain kommer til magten, fucker han Iran op, objektivt.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "– Åh, hvad skal den skide tænkerpositur nu til for?",
      "note": null
     },
     {
@@ -131,19 +116,9 @@
      "note": "\"klemmer de røvhullerne sammen\" = spænder op og bliver snobbede (groft billede)"
     },
     {
-     "id": "04b/0164#crude",
-     "text": "– Fuck det lorteheld, vi har.",
-     "note": null
-    },
-    {
      "id": "04b/0186#word_",
      "text": "– Jeg ville have foretrukket at dele værelse med dem frem for en pikhjerne som dig.",
      "note": "\"pikhjerne\" = pikhjerne, groft skældsord for en idiot"
-    },
-    {
-     "id": "04b/0343#word_",
-     "text": "– Så er du en fucking førsteårsstuderende.",
-     "note": "\"fucking førsteårsstuderende\" = fucking rus, afslappet og venskabeligt banderi"
     },
     {
      "id": "04b/0351#word_",
@@ -201,23 +176,8 @@
      "note": "\"ikke giver en fløjtende fis\" = groft: er fuldstændig ligeglad"
     },
     {
-     "id": "04b/0844#crude",
-     "text": "– Hvad for noget lort kører rundt i dit hoved nu?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "– Du sked ud over den stemning, sangen havde sat mig i, med din lortestemme.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "– Nå, skide være med det.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "– Sikke et kønt rod, du har lavet, din lortehjerne.",
      "note": null
     },
     {
@@ -295,11 +255,6 @@
      "note": null
     },
     {
-     "id": "04b/0427#natur",
-     "text": "– Det spørger vi os selv om.",
-     "note": null
-    },
-    {
      "id": "04b/0616#natur",
      "text": "– Fint, Ørneøje, fint. Stik nu ikke brillerne ind i laptopen.",
      "note": null
@@ -322,5 +277,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

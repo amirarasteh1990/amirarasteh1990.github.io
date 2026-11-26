@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Lenguaje grosero",
-   "q": "Aquí los personajes dicen palabrotas o hablan de forma grosera. ¿Suena natural cada frase?",
+   "q": "Aquí los personajes dicen palabrotas o hablan de forma grosera. Algunas frases conservan una imagen persa, así que pueden sonar un poco raras. Aun así, ¿suena cada frase a lenguaje grosero y vulgar?",
    "labels": [
     "Correcto",
     "Necesita cambios",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Maldito sea quien niegue Ojo de Águila News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "¿Qué quieres, Eskandar? ¿Qué demonios te pasa?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "No te pega ningún nombre, maldita sea.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Te digo que no veo nada, cabrón.",
      "note": null
     },
     {
@@ -93,11 +78,6 @@
     {
      "id": "03/0422#crude",
      "text": "¿Qué demonios te pasa ahora?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Ugh, ¿otra vez con esa pose de pensador de mierda?",
      "note": null
     },
     {
@@ -136,18 +116,8 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Me cago en nuestra puta suerte.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "Yo habría preferido compartir cuarto con ellos antes que con un cerebro de polla como tú.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Entonces eres un puto novato.",
      "note": null
     },
     {
@@ -221,11 +191,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "¿Qué mierda te está carcomiendo el cerebro ahora?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Me has jodido la sensación que me daba la canción con esa voz de mierda que tienes.",
      "note": null
@@ -233,16 +198,6 @@
     {
      "id": "04b/0919#crude",
      "text": "Lo de lamer culos no te pega.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Bueno, lo que sea, joder.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Mira qué buena la has armado, cerebro de mierda.",
      "note": null
     },
     {
@@ -292,11 +247,6 @@
     {
      "id": "03/0488#natur",
      "text": "Soy un anarquista nacionalista extremista.",
-     "note": null
-    },
-    {
-     "id": "03/0502#natur",
-     "text": "Uaaah. Me puso los pelos de punta.",
      "note": null
     },
     {
@@ -452,5 +402,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

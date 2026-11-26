@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Langage cru",
-   "q": "Ici, les personnages jurent ou parlent crûment. Chaque ligne paraît-elle naturelle ?",
+   "q": "Ici, les personnages jurent ou parlent crûment. Certaines lignes gardent une image persane, elles peuvent donc sembler un peu étranges. Chaque ligne donne-t-elle quand même l'impression d'un parler grossier et cru ?",
    "labels": [
     "Correct",
     "À modifier",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Maudit soit quiconque nie Œil d'Aigle News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "Qu'est-ce que tu veux, Eskandar ? Qu'est-ce que tu as ?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Aucun nom ne te va, bon sang.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Je te dis que je ne vois rien, espèce d'enfoiré.",
      "note": null
     },
     {
@@ -93,11 +78,6 @@
     {
      "id": "03/0422#crude",
      "text": "Qu'est-ce qui t'arrive encore ?",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Pff, c'est quoi encore cette pose de penseur à la con ?",
      "note": null
     },
     {
@@ -131,18 +111,8 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Putain, j'emmerde cette chance qu'on a.",
-     "note": null
-    },
-    {
      "id": "04b/0186#crude",
      "text": "J'aurais préféré partager une chambre avec eux plutôt qu'avec une tête de nœud comme toi.",
-     "note": null
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Alors t'es un bizut de merde.",
      "note": null
     },
     {
@@ -216,11 +186,6 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "C'est quoi encore, cette merde qui te bouffe le cerveau ?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Tu viens de bousiller l'émotion que la chanson me donnait, avec ta voix de merde.",
      "note": null
@@ -228,16 +193,6 @@
     {
      "id": "04b/0919#crude",
      "text": "Lécher des culs, ça ne te va pas.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Bon, peu importe, merde.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Regarde la belle bourde que tu as faite, cervelle de merde.",
      "note": null
     },
     {
@@ -295,11 +250,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Ahhh. Ça m'a donné la chair de poule.",
-     "note": null
-    },
-    {
      "id": "03/0517#natur",
      "text": "D'un côté il décoche des coups meurtriers, de l'autre il dit : oh, du sang, ça me donne la chair de poule.",
      "note": null
@@ -332,11 +282,6 @@
     {
      "id": "04b/0171#natur",
      "text": "Mais arrête de lui parler aussi poliment, ça lui monte à la tête.",
-     "note": null
-    },
-    {
-     "id": "04b/0173#natur",
-     "text": "Alors vous êtes tous de petits malins.",
      "note": null
     },
     {
@@ -452,5 +397,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }

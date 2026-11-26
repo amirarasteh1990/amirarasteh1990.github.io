@@ -46,7 +46,7 @@
   {
    "key": "crude",
    "title": "Linguagem grosseira",
-   "q": "Aqui as personagens dizem palavrões ou falam de forma grosseira. Cada frase soa natural?",
+   "q": "Aqui as personagens dizem palavrões ou falam de forma grosseira. Algumas frases mantêm uma imagem persa, por isso podem soar um pouco estranhas. Mesmo assim, cada frase soa a linguagem grosseira e ordinária?",
    "labels": [
     "Correto",
     "Precisa de alteração",
@@ -58,21 +58,6 @@
     {
      "id": "03/0077#crude",
      "text": "Maldito seja quem negar o Olho de Águia News.",
-     "note": null
-    },
-    {
-     "id": "03/0264#crude",
-     "text": "O que é que queres, Eskandar? Que raio te deu?",
-     "note": null
-    },
-    {
-     "id": "03/0268#crude",
-     "text": "Nenhum nome te fica, raios.",
-     "note": null
-    },
-    {
-     "id": "03/0390#crude",
-     "text": "Estou a dizer que não vejo nada, seu cabrão.",
      "note": null
     },
     {
@@ -98,11 +83,6 @@
     {
      "id": "03/0418#crude",
      "text": "Que diferença faz? Se o McCain chegar ao poder, vai foder o Irão, objetivamente.",
-     "note": null
-    },
-    {
-     "id": "03/0521#crude",
-     "text": "Credo, que merda de pose de pensador é essa outra vez?",
      "note": null
     },
     {
@@ -141,19 +121,9 @@
      "note": null
     },
     {
-     "id": "04b/0164#crude",
-     "text": "Que se foda esta nossa sorte.",
-     "note": null
-    },
-    {
      "id": "04b/0186#word_",
      "text": "Eu teria preferido partilhar quarto com eles em vez de uma cabeça de pau como tu.",
      "note": "\"cabeça de pau\" = cabeça de caralho: insulto grosseiro para um idiota"
-    },
-    {
-     "id": "04b/0343#crude",
-     "text": "Então és um caloiro do caralho.",
-     "note": null
     },
     {
      "id": "04b/0351#crude",
@@ -183,11 +153,6 @@
     {
      "id": "04b/0486#crude",
      "text": "Ou seja, queres dizer que esta nossa sorte de merda, em que nos calhou em sorte uma antiguidade como tu, se repete vezes sem conta?",
-     "note": null
-    },
-    {
-     "id": "04b/0494#crude",
-     "text": "Voltamos a chegar àquela mesma maldita descontinuidade.",
      "note": null
     },
     {
@@ -221,23 +186,8 @@
      "note": null
     },
     {
-     "id": "04b/0844#crude",
-     "text": "Que merda te anda agora a roer o cérebro?",
-     "note": null
-    },
-    {
      "id": "04b/0893#crude",
      "text": "Cagaste na sensação que eu tirava da canção com essa voz de merda que tens.",
-     "note": null
-    },
-    {
-     "id": "04b/0997#crude",
-     "text": "Bom, o que for, foda-se.",
-     "note": null
-    },
-    {
-     "id": "04b/1003#crude",
-     "text": "Vê que bela a armaste, cérebro de merda.",
      "note": null
     },
     {
@@ -315,11 +265,6 @@
      "note": null
     },
     {
-     "id": "03/0502#natur",
-     "text": "Ahhh. Deu-me arrepios.",
-     "note": null
-    },
-    {
      "id": "03/0514#natur",
      "text": "Mataram o Khadafi. Objetivamente, vem ver o vídeo.",
      "note": null
@@ -370,18 +315,8 @@
      "note": null
     },
     {
-     "id": "04b/0173#natur",
-     "text": "Então são todos miúdos muito inteligentes.",
-     "note": null
-    },
-    {
      "id": "04b/0175#natur",
      "text": "Pois. Não te deixes enganar por este Arasteh; tolo como parece, a sua classificação no Konkoor foi setenta e quatro.",
-     "note": null
-    },
-    {
-     "id": "04b/0193#natur",
-     "text": "Pronto. Nunca tinha visto nenhum quarto com tapete.",
      "note": null
     },
     {
@@ -402,11 +337,6 @@
     {
      "id": "04b/0421#natur",
      "text": "Farid Leopardo, controla os nervos e não faças nenhuma manobra mortal.",
-     "note": null
-    },
-    {
-     "id": "04b/0427#natur",
-     "text": "É a nossa pergunta também.",
      "note": null
     },
     {
@@ -492,5 +422,5 @@
    ]
   }
  ],
- "first": 15
+ "first": 14
 }
