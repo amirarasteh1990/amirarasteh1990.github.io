@@ -536,7 +536,7 @@ def render(d: dict, source: str, rnd: int = 1, total: int = 1) -> str:
       <ul>
         <li><i>Maman</i> (mother), <i>Baba</i> (father) and <i>-jan</i> after a name (dear) are kept from Persian on purpose, like other Persian words such as <i>beit</i> and <i>ghazal</i>.</li>
         <li>Names stay Persian (<i>Niloofar</i>, <i>Hooman</i>). <i>Maman</i> and <i>Baba</i> are written with a capital, like names, because that is what the children call their parents.</li>
-        <li>Some characters swear, speak crudely or mispronounce words on purpose; the question says so when it matters.</li>
+        <li>Some characters swear or speak crudely on purpose; the question says so when it matters.</li>
       </ul>
     </div>
   </section>
